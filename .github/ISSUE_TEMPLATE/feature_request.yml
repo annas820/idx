@@ -1,0 +1,22 @@
+name: Feature request
+description: A new command, metric, provider or output
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task, not the solution. "Compare dividend yields across banks" beats "add a --sort flag".
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Where would the data come from?
+      description: If you know a free public source, link it. Paid APIs and API keys are out of scope.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Which surface?
+      multiple: true
+      options: [CLI table, JSON output, MCP tool, Web terminal]
