@@ -1,0 +1,86 @@
+//! Error type shared by every layer, with a stable mapping to process exit codes.
+//!
+//! Exit codes are part of the public contract (scripts and agents rely on them):
+//!
+//! | code | meaning                                   |
+//! |------|-------------------------------------------|
+//! | 0    | success                                   |
+//! | 1    | internal / unexpected error               |
+//! | 2    | usage error (bad flags, bad symbol)       |
+//! | 3    | network or provider failure               |
+//! | 4    | symbol or record not found                |
+//! | 5    | `--offline` and nothing usable in cache   |
+//! | 6    | configuration error                       |
+
+use std::fmt;
+
+#[derive(Debug, thiserror::Error)]
+pub enum IdxError {
+    #[error("{0}")]
+    Usage(String),
+    #[error("config: {0}")]
+    Config(String),
+    #[error("network: {0}")]
+    Network(String),
+    #[error("{provider}: {message}")]
+    Provider {
+        provider: &'static str,
+        message: String,
+    },
+    #[error("not found: {0}")]
+    NotFound(String),
+    #[error("offline: {0}")]
+    OfflineMiss(String),
+    #[error("io: {0}")]
+    Io(#[from] std::io::Error),
+    #[error("{0}")]
+    Other(String),
+}
+
+impl IdxError {
+    pub fn exit_code(&self) -> i32 {
+        match self {
+            IdxError::Usage(_) => 2,
+            IdxError::Network(_) | IdxError::Provider { .. } => 3,
+            IdxError::NotFound(_) => 4,
+            IdxError::OfflineMiss(_) => 5,
+            IdxError::Config(_) => 6,
+            IdxError::Io(_) | IdxError::Other(_) => 1,
+        }
+    }
+
+    /// Short machine-readable code used in JSON error output.
+    pub fn code(&self) -> &'static str {
+        match self {
+            IdxError::Usage(_) => "usage",
+            IdxError::Config(_) => "config",
+            IdxError::Network(_) => "network",
+            IdxError::Provider { .. } => "provider",
+            IdxError::NotFound(_) => "not_found",
+            IdxError::OfflineMiss(_) => "offline_miss",
+            IdxError::Io(_) => "io",
+            IdxError::Other(_) => "internal",
+        }
+    }
+
+    pub fn provider(provider: &'static str, message: impl fmt::Display) -> Self {
+        IdxError::Provider {
+            provider,
+            message: message.to_string(),
+        }
+    }
+}
+
+impl From<serde_json::Error> for IdxError {
+    fn from(e: serde_json::Error) -> Self {
+        IdxError::Other(format!("invalid JSON: {e}"))
+    }
+}
+
+impl From<reqwest::Error> for IdxError {
+    fn from(e: reqwest::Error) -> Self {
+        IdxError::Network(e.to_string())
+    }
+}
+
+pub type Result<T, E = IdxError> = std::result::Result<T, E>;
