@@ -31,6 +31,6 @@
   <g font-family="ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-weight="700">
     <text x="176" y="104" font-size="88" fill="#f0f6fc" letter-spacing="-4">idx</text>
     <text x="356" y="104" font-size="30" fill="#3fb950" font-weight="500">IHSG</text>
-    <text x="356" y="130" font-size="16" fill="#8b949e" font-weight="500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">Indonesian market data for people and agents</text>
+    <text x="356" y="130" font-size="16" textLength="326" lengthAdjust="spacingAndGlyphs" fill="#8b949e" font-weight="500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">Indonesian market data for people and agents</text>
   </g>
 </svg>
