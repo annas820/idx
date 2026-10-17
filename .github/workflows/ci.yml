@@ -48,7 +48,7 @@ jobs:
       - run: node --check web/src/worker.js
       - name: Versions agree (Cargo.toml, package.json, npm/package.json)
         run: |
-          cargo_ver="$(sed -n 's/^version = "\(.*\)"//p' Cargo.toml | head -1)"
+          cargo_ver="$(grep -m1 '^version = ' Cargo.toml | cut -d '"' -f2)"
           root_ver="$(node -p "require('./package.json').version")"
           npm_ver="$(node -p "require('./npm/package.json').version")"
           echo "Cargo.toml $cargo_ver · package.json $root_ver · npm/package.json $npm_ver"
