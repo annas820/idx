@@ -69,22 +69,26 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
 
 ## Install
 
-The package is called **`ihsg-cli`** on crates.io and npm; the command it
-installs is **`idx`**.
+The package is called **`ihsg-cli`**; the command it installs is **`idx`**
+(npm also adds `ihsg-cli` as an alias).
 
 ```sh
-cargo install ihsg-cli          # crates.io, builds from source (Rust 1.88+)
-npm install -g ihsg-cli         # npm, downloads the SHA-256 verified prebuilt binary
-npx ihsg-cli stocks quote BBCA  # npm, no install
+cargo install ihsg-cli                    # crates.io, builds from source (Rust 1.88+)
+npm install -g github:fzn0x/idx           # npm, straight from this repository
+npx github:fzn0x/idx stocks quote BBCA    # npm, no install
 curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh   # Linux, macOS
 ```
 
-`install.sh` and the npm wrapper both check the binary against the release's
-`SHA256SUMS`. The npm wrapper fetches it at install time, or on the first run
-when npm 12 blocks install scripts. Windows without npm: download
-`idx-<version>-x86_64-pc-windows-msvc.zip` from the
-[releases page](https://github.com/fzn0x/idx/releases). Static Linux binaries
-are musl builds and run on any distribution. The development version installs
+npm installs from this repository: the root `package.json` is a small wrapper
+that downloads the prebuilt binary for your platform from the matching GitHub
+release. On npm 12, which only installs from git when allowed, add
+`--allow-git=all` to the command. `install.sh` and the npm wrapper both check
+the binary against the release's `SHA256SUMS`. The wrapper fetches it at
+install time, or on the first run when npm 12 blocks install scripts.
+
+Windows without npm: download `idx-<version>-x86_64-pc-windows-msvc.zip` from
+the [releases page](https://github.com/fzn0x/idx/releases). Static Linux
+binaries are musl builds and run on any distribution. The development version installs
 with `cargo install --git https://github.com/fzn0x/idx`.
 
 Shell completions:
@@ -195,7 +199,8 @@ idx mcp setup muse            # prints the settings.json block Meta's Muse Code 
 
 A bare `idx` in the table assumes the binary is on `PATH`; `idx mcp setup`
 substitutes the absolute path, and `--npx` swaps in
-`npx -y ihsg-cli mcp`. Each entry's remote (HTTP) form and the
+`npx -y ihsg-cli mcp` (npm registry; from this repository use
+`npx -y github:fzn0x/idx mcp`). Each entry's remote (HTTP) form and the
 config file locations are in [docs/mcp.md](docs/mcp.md).
 
 The server lists 20 tools with typed input schemas kept to the subset every
