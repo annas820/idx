@@ -13,6 +13,7 @@ use crate::http::{Fetcher, ReqwestBackend};
 use crate::output::{self, ColorMode, OutputFormat};
 use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Sourced, Ttls};
 
+pub mod broker;
 pub mod cache_cmd;
 pub mod config_cmd;
 pub mod market;
@@ -36,6 +37,7 @@ Examples:
   idx stocks compare BBCA BBRI BMRI        # side-by-side fundamentals
   idx stocks screen -f 'pe<10,div>5,mcap>5T' # screener over ~950 IDX tickers
   idx stocks news BBCA                     # Kontan + CNBC Indonesia headlines
+  idx broker BBCA                          # which brokers bought and sold it
   idx ownership import --latest            # KSEI >1% holders into local SQLite
   idx ownership ticker BBCA                # who holds more than 1%
   idx mcp                                  # MCP server over stdio for agents
@@ -118,6 +120,22 @@ pub enum Command {
     #[command(subcommand)]
     Market(market::MarketCmd),
 
+    /// Broker summary: which brokers bought and sold a ticker (top 10 per side, IPOT).
+    #[command(after_help = "Examples:
+  idx broker BBCA                       # latest session with trades
+  idx broker BBCA --date 2026-10-16
+  idx broker BBRI --from 2026-10-12 --to 2026-10-16
+  idx broker TLKM,ASII --investor foreign
+  idx broker BBCA --board regular -n 5
+  idx -o json broker BBCA | jq '.data[0].buyers[0]'
+  idx -o csv broker BBCA BBRI > brokers.csv   # one row per broker per side
+
+Source: Indo Premier (IPOT) broker summary, the top 10 buyers and sellers by value with lots,
+value, average price and each broker's class (local, foreign, BUMN). Broker names come from
+the IDX member list bundled with idx. The source rounds figures of a million and more to one
+decimal (1.6 M); JSON marks those summaries with rounded=true.")]
+    Broker(broker::BrokerArgs),
+
     /// Quote your watchlist, or manage it (add, remove, list, clear, returns).
     #[command(
         after_help = "Examples:\n  idx watch add BBCA BBRI TLKM\n  idx watch                 # quotes for the list\n  idx watch returns         # 1w..5y returns vs IHSG\n  idx watch rm TLKM\n\nStored as plain text next to the config file (or $IDX_WATCHLIST)."
@@ -140,7 +158,7 @@ pub enum Command {
 
     /// Print the JSON Schema for a JSON output shape (run without a name to list them).
     Schema {
-        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | screen | news | sentiment | ownership-* | error | quote | candle
+        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | screen | news | sentiment | broker | ownership-* | error | quote | candle
         name: Option<String>,
     },
 
@@ -271,6 +289,10 @@ pub async fn run(cli: Cli) -> Result<()> {
         Command::Market(cmd) => {
             let ctx = build_context(&cli.global)?;
             market::run(&ctx, cmd).await
+        }
+        Command::Broker(args) => {
+            let ctx = build_context(&cli.global)?;
+            broker::run(&ctx, args).await
         }
         Command::Watch(args) => {
             let ctx = build_context(&cli.global)?;

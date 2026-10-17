@@ -4,18 +4,22 @@
 
 use std::sync::Arc;
 
+use chrono::{Datelike, NaiveDate, Weekday};
 use futures::future::join_all;
 use futures::stream::{self, StreamExt};
 
 use crate::analysis;
 use crate::analysis::screen::{self as scr, Filter, Key};
+use crate::brokers;
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{
-    BenchmarkReturns, Brief, DividendHistory, DividendSummary, Fundamentals, History, Interval,
-    MarketOverview, MarketRow, NewsItem, NewsReport, NewsSummary, OwnershipSummary, Performance,
-    Period, Quote, ScreenReport, ScreenRow, SentimentReport, Symbol, Technical,
+    BenchmarkReturns, Brief, BrokerBoard, BrokerInvestor, BrokerSummary, DividendHistory,
+    DividendSummary, Fundamentals, History, Interval, MarketOverview, MarketRow, NewsItem,
+    NewsReport, NewsSummary, OwnershipSummary, Performance, Period, Quote, ScreenReport, ScreenRow,
+    SentimentReport, Symbol, Technical,
 };
+use crate::providers::ipot;
 use crate::providers::news as newsfeed;
 use crate::providers::{Provider, Sourced};
 use crate::universe::Issuer;
@@ -820,6 +824,143 @@ pub async fn sentiment(
     Ok(n.map(|_| report))
 }
 
+/// Date range and filters for [`broker`]. Without dates each ticker gets its
+/// latest session with trades.
+#[derive(Debug, Clone, Copy)]
+pub struct BrokerQuery {
+    pub from: Option<NaiveDate>,
+    pub to: Option<NaiveDate>,
+    pub investor: BrokerInvestor,
+    pub board: BrokerBoard,
+}
+
+/// Most tickers one `broker` call fetches.
+pub const BROKER_MAX_SYMBOLS: usize = 10;
+/// Calendar days `broker` steps back to find the latest session with trades.
+const BROKER_LOOKBACK_DAYS: u32 = 10;
+
+/// Today's date in Jakarta.
+pub fn today_wib() -> NaiveDate {
+    chrono::Utc::now()
+        .with_timezone(&crate::model::wib())
+        .date_naive()
+}
+
+/// The most recent weekday at or before `today` whose summary has trades,
+/// within the look-back; otherwise the last empty one with a warning.
+async fn latest_broker_day(
+    fetcher: &Arc<Fetcher>,
+    symbol: &Symbol,
+    q: BrokerQuery,
+    today: NaiveDate,
+) -> Result<Sourced<BrokerSummary>> {
+    let mut last: Option<Sourced<BrokerSummary>> = None;
+    for back in 0..BROKER_LOOKBACK_DAYS {
+        let day = today - chrono::Days::new(back.into());
+        if matches!(day.weekday(), Weekday::Sat | Weekday::Sun) {
+            continue;
+        }
+        let s = ipot::broker_summary(fetcher, symbol, day, day, q.investor, q.board, today).await?;
+        if !s.data.is_empty() {
+            return Ok(s);
+        }
+        last = Some(s);
+    }
+    let mut s = last.ok_or_else(|| IdxError::NotFound(format!("no sessions for {symbol}")))?;
+    s.warnings.push(format!(
+        "{symbol}: no trades in the {BROKER_LOOKBACK_DAYS} days to {today}"
+    ));
+    Ok(s)
+}
+
+/// Which brokers bought and sold each ticker (IPOT broker summary), with
+/// broker names from the bundled IDX member list. Tickers that fail become
+/// warnings; the call fails only when all of them do.
+pub async fn broker(
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    symbols: &[Symbol],
+    q: BrokerQuery,
+    today: NaiveDate,
+) -> Result<Sourced<Vec<BrokerSummary>>> {
+    if symbols.is_empty() {
+        return Err(IdxError::Usage("broker needs at least one ticker".into()));
+    }
+    if symbols.len() > BROKER_MAX_SYMBOLS {
+        return Err(IdxError::Usage(format!(
+            "broker takes at most {BROKER_MAX_SYMBOLS} tickers per call"
+        )));
+    }
+    let range = match (q.from, q.to) {
+        (None, None) => None,
+        (Some(f), None) => Some((f, today)),
+        (None, Some(t)) => Some((t, t)),
+        (Some(f), Some(t)) => Some((f, t)),
+    };
+    if let Some((f, t)) = range {
+        if f > t {
+            return Err(IdxError::Usage(format!(
+                "the range starts ({f}) after it ends ({t})"
+            )));
+        }
+    }
+    let results: Vec<Result<Sourced<BrokerSummary>>> = stream::iter(symbols.iter())
+        .map(|s| async move {
+            match range {
+                Some((f, t)) => {
+                    let r =
+                        ipot::broker_summary(fetcher, s, f, t, q.investor, q.board, today).await;
+                    r.map(|mut v| {
+                        if v.data.is_empty() {
+                            v.warnings.push(format!("{s}: no trades from {f} to {t}"));
+                        }
+                        v
+                    })
+                }
+                None => latest_broker_day(fetcher, s, q, today).await,
+            }
+        })
+        .buffered(3)
+        .collect()
+        .await;
+
+    let mut out: Option<Sourced<Vec<BrokerSummary>>> = None;
+    let mut pending_warnings = Vec::new();
+    let mut first_err: Option<IdxError> = None;
+    for (sym, r) in symbols.iter().zip(results) {
+        match r {
+            Ok(mut s) => {
+                s.data.name = universe
+                    .iter()
+                    .find(|i| &i.symbol == sym)
+                    .and_then(|i| i.name.clone());
+                for f in s.data.buyers.iter_mut().chain(s.data.sellers.iter_mut()) {
+                    f.name = brokers::name(&f.code);
+                }
+                match &mut out {
+                    None => out = Some(s.map(|d| vec![d])),
+                    Some(acc) => {
+                        acc.absorb(&s);
+                        acc.data.push(s.data);
+                    }
+                }
+            }
+            Err(e) => {
+                pending_warnings.push(match &e {
+                    IdxError::NotFound(_) => format!("no broker summary for {sym}"),
+                    other => format!("{sym}: {other}"),
+                });
+                first_err.get_or_insert(e);
+            }
+        }
+    }
+    let Some(mut result) = out else {
+        return Err(first_err.unwrap_or_else(|| IdxError::NotFound("no data".into())));
+    };
+    result.warnings.extend(pending_warnings);
+    Ok(result)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -944,5 +1085,139 @@ mod tests {
         assert_eq!(err.exit_code(), 4);
         let err = compare(&Fake, &syms(&["BBCA"])).await.unwrap_err();
         assert_eq!(err.exit_code(), 2);
+    }
+    mod broker {
+        use super::super::*;
+        use crate::cache::Cache;
+        use crate::http::{CacheMode, FixtureBackend};
+
+        const DAY: &str = include_str!("../tests/fixtures/ipot/brokersummary_bbca_20261016.html");
+        const EMPTY: &str =
+            include_str!("../tests/fixtures/ipot/brokersummary_bbca_20261017_no_trades.html");
+        const INVALID: &str =
+            include_str!("../tests/fixtures/ipot/brokersummary_zzzz_invalid.html");
+
+        fn d(y: i32, m: u32, day: u32) -> NaiveDate {
+            NaiveDate::from_ymd_opt(y, m, day).unwrap()
+        }
+
+        fn fetcher(be: FixtureBackend) -> (Arc<Fetcher>, Arc<FixtureBackend>, tempfile::TempDir) {
+            let dir = tempfile::tempdir().unwrap();
+            let be = Arc::new(be);
+            let f = Arc::new(Fetcher::new(
+                be.clone(),
+                Cache::new(dir.path()),
+                CacheMode::Normal,
+            ));
+            (f, be, dir)
+        }
+
+        fn q(from: Option<NaiveDate>, to: Option<NaiveDate>) -> BrokerQuery {
+            BrokerQuery {
+                from,
+                to,
+                investor: BrokerInvestor::All,
+                board: BrokerBoard::All,
+            }
+        }
+
+        fn syms(list: &[&str]) -> Vec<Symbol> {
+            list.iter().map(|s| Symbol::parse(s).unwrap()).collect()
+        }
+
+        fn universe() -> Vec<Issuer> {
+            vec![Issuer {
+                symbol: Symbol::parse("BBCA").unwrap(),
+                name: Some("Bank Central Asia Tbk".into()),
+            }]
+        }
+
+        #[tokio::test]
+        async fn latest_session_skips_weekends_and_empty_days_and_names_brokers() {
+            // Monday 19 Oct has no trades yet; the walk skips the weekend to Friday 16 Oct.
+            let (f, be, _d) = fetcher(
+                FixtureBackend::new()
+                    .route("code=BBCA&start=10/19/2026", 200, EMPTY)
+                    .route("code=BBCA&start=10/16/2026", 200, DAY),
+            );
+            let got = broker(
+                &f,
+                &universe(),
+                &syms(&["BBCA"]),
+                q(None, None),
+                d(2026, 10, 19),
+            )
+            .await
+            .unwrap();
+            assert_eq!(be.call_count(), 2);
+            let s = &got.data[0];
+            assert_eq!((s.from, s.to), (d(2026, 10, 16), d(2026, 10, 16)));
+            assert_eq!(s.name.as_deref(), Some("Bank Central Asia Tbk"));
+            assert_eq!(
+                s.buyers[0].name.as_deref(),
+                Some("SEMESTA INDOVEST SEKURITAS")
+            );
+            assert_eq!(s.sellers[0].name.as_deref(), Some("MANDIRI SEKURITAS"));
+            assert!(got.warnings.is_empty(), "{:?}", got.warnings);
+        }
+
+        #[tokio::test]
+        async fn explicit_range_and_partial_failure() {
+            let (f, _be, _d) = fetcher(
+                FixtureBackend::new()
+                    .route("code=BBCA&start=10/17/2026", 200, EMPTY)
+                    .route("code=ZZZZ", 200, INVALID),
+            );
+            let day = d(2026, 10, 17);
+            let got = broker(&f, &[], &syms(&["BBCA", "ZZZZ"]), q(None, Some(day)), day)
+                .await
+                .unwrap();
+            assert_eq!(got.data.len(), 1);
+            assert!(got.data[0].is_empty());
+            assert!(
+                got.warnings
+                    .iter()
+                    .any(|w| w.contains("no trades from 2026-10-17")),
+                "{:?}",
+                got.warnings
+            );
+            assert!(
+                got.warnings
+                    .iter()
+                    .any(|w| w.contains("no broker summary for ZZZZ")),
+                "{:?}",
+                got.warnings
+            );
+
+            let err = broker(&f, &[], &syms(&["ZZZZ"]), q(Some(day), Some(day)), day)
+                .await
+                .unwrap_err();
+            assert_eq!(err.exit_code(), 4);
+        }
+
+        #[tokio::test]
+        async fn usage_errors() {
+            let (f, be, _d) = fetcher(FixtureBackend::new());
+            let day = d(2026, 10, 16);
+            let err = broker(
+                &f,
+                &[],
+                &syms(&["BBCA"]),
+                q(Some(day), Some(d(2026, 10, 1))),
+                day,
+            )
+            .await
+            .unwrap_err();
+            assert_eq!(err.exit_code(), 2);
+            let many: Vec<String> = (0..11)
+                .map(|i| format!("AA{}", (b'A' + i) as char))
+                .collect();
+            let many: Vec<&str> = many.iter().map(String::as_str).collect();
+            let err = broker(&f, &[], &syms(&many), q(None, None), day)
+                .await
+                .unwrap_err();
+            assert_eq!(err.exit_code(), 2);
+            assert_eq!(be.call_count(), 0);
+        }
     }
 }

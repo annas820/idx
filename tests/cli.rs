@@ -284,6 +284,64 @@ fn screen_news_sentiment_surface() {
 }
 
 #[test]
+fn broker_command_surface() {
+    let sb = sandbox();
+    idx(&sb.cache, &sb.config)
+        .args(["broker", "--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "idx broker BBCA --date 2026-10-16",
+        ))
+        .stdout(predicate::str::contains("IPOT"));
+    idx(&sb.cache, &sb.config)
+        .args(["--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("broker"));
+    let out = idx(&sb.cache, &sb.config)
+        .args(["schema", "broker"])
+        .output()
+        .unwrap();
+    assert!(out.status.success());
+    let v: serde_json::Value = serde_json::from_slice(&out.stdout).unwrap();
+    assert!(v.to_string().contains("foreign_net_value"));
+    // Offline with an empty cache: exit 5, the latest-session walk stops at the first miss.
+    idx(&sb.cache, &sb.config)
+        .args(["broker", "BBCA"])
+        .assert()
+        .code(5);
+    idx(&sb.cache, &sb.config)
+        .args(["-o", "json", "broker", "BBCA", "--date", "2026-10-16"])
+        .assert()
+        .code(5)
+        .stderr(predicate::str::contains("\"offline_miss\""));
+    for args in [
+        vec!["broker"],
+        vec![
+            "broker",
+            "BBCA",
+            "--date",
+            "2026-10-16",
+            "--from",
+            "2026-10-01",
+        ],
+        vec!["broker", "BBCA", "--investor", "retail"],
+        vec!["broker", "BBCA", "--date", "16-10-2026"],
+        vec![
+            "broker",
+            "BBCA",
+            "--from",
+            "2026-10-16",
+            "--to",
+            "2026-10-01",
+        ],
+    ] {
+        idx(&sb.cache, &sb.config).args(&args).assert().code(2);
+    }
+}
+
+#[test]
 fn msn_provider_is_selectable() {
     let sb = sandbox();
     // --provider msn is accepted; offline with no cache -> exit 5 like Yahoo.
