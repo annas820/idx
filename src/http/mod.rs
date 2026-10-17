@@ -140,6 +140,16 @@ impl FixtureBackend {
     pub fn call_count(&self) -> usize {
         self.calls.lock().unwrap().len()
     }
+
+    /// Requests whose URL contains `part`.
+    pub fn calls_matching(&self, part: &str) -> usize {
+        self.calls
+            .lock()
+            .unwrap()
+            .iter()
+            .filter(|u| u.contains(part))
+            .count()
+    }
 }
 
 #[async_trait]

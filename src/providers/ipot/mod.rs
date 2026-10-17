@@ -43,6 +43,9 @@ const TTL_TODAY: Duration = Duration::from_secs(5 * 60);
 /// Tries per request while the source answers its spurious 404.
 pub const ATTEMPTS: usize = 5;
 const RETRY_PAUSE: Duration = Duration::from_millis(if cfg!(test) { 1 } else { 250 });
+/// Before a batch caller (the bandar screen) goes over its failures once
+/// more, one at a time: a 404 stretch can outlast the per-request retries.
+pub const RECOVER_PAUSE: Duration = Duration::from_millis(if cfg!(test) { 1 } else { 3000 });
 
 pub fn url(
     symbol: &Symbol,

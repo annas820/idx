@@ -9,15 +9,16 @@ use futures::future::join_all;
 use futures::stream::{self, StreamExt};
 
 use crate::analysis;
+use crate::analysis::bandar::{self as bd, Preset};
 use crate::analysis::screen::{self as scr, Filter, Key};
 use crate::brokers;
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{
-    BenchmarkReturns, Brief, BrokerBoard, BrokerInvestor, BrokerSummary, DividendHistory,
-    DividendSummary, Fundamentals, History, Interval, MarketOverview, MarketRow, NewsItem,
-    NewsReport, NewsSummary, OwnershipSummary, Performance, Period, Quote, ScreenReport, ScreenRow,
-    SentimentReport, Symbol, Technical,
+    BandarPeriod, BandarReport, BandarScreen, BenchmarkReturns, Brief, BrokerBoard, BrokerInvestor,
+    BrokerSummary, DividendHistory, DividendSummary, Fundamentals, History, Interval,
+    MarketOverview, MarketRow, NewsItem, NewsReport, NewsSummary, OwnershipSummary, Performance,
+    Period, Quote, ScreenReport, ScreenRow, SentimentReport, Symbol, Technical,
 };
 use crate::providers::ipot;
 use crate::providers::news as newsfeed;
@@ -893,6 +894,40 @@ async fn broker_one(
     Ok(s)
 }
 
+/// Issuer name from the universe and broker names from the member list.
+fn fill_names(s: &mut BrokerSummary, universe: &[Issuer]) {
+    s.name = universe
+        .iter()
+        .find(|i| i.symbol == s.symbol)
+        .and_then(|i| i.name.clone());
+    for f in s.buyers.iter_mut().chain(s.sellers.iter_mut()) {
+        f.name = brokers::name(&f.code);
+    }
+}
+
+/// `from`/`to` as given to [`broker`] or [`bandar`] into a checked range;
+/// `None` when neither is set.
+fn explicit_range(
+    from: Option<NaiveDate>,
+    to: Option<NaiveDate>,
+    today: NaiveDate,
+) -> Result<Option<(NaiveDate, NaiveDate)>> {
+    let range = match (from, to) {
+        (None, None) => None,
+        (Some(f), None) => Some((f, today)),
+        (None, Some(t)) => Some((t, t)),
+        (Some(f), Some(t)) => Some((f, t)),
+    };
+    if let Some((f, t)) = range {
+        if f > t {
+            return Err(IdxError::Usage(format!(
+                "the range starts ({f}) after it ends ({t})"
+            )));
+        }
+    }
+    Ok(range)
+}
+
 /// Which brokers bought and sold each ticker (IPOT broker summary), with
 /// broker names from the bundled IDX member list. Tickers that fail become
 /// warnings; the call fails only when all of them do.
@@ -911,19 +946,7 @@ pub async fn broker(
             "broker takes at most {BROKER_MAX_SYMBOLS} tickers per call"
         )));
     }
-    let range = match (q.from, q.to) {
-        (None, None) => None,
-        (Some(f), None) => Some((f, today)),
-        (None, Some(t)) => Some((t, t)),
-        (Some(f), Some(t)) => Some((f, t)),
-    };
-    if let Some((f, t)) = range {
-        if f > t {
-            return Err(IdxError::Usage(format!(
-                "the range starts ({f}) after it ends ({t})"
-            )));
-        }
-    }
+    let range = explicit_range(q.from, q.to, today)?;
     let results: Vec<Result<Sourced<BrokerSummary>>> = stream::iter(symbols.to_vec())
         .map(|s| broker_one(fetcher, s, range, q, today))
         .buffered(3)
@@ -936,13 +959,7 @@ pub async fn broker(
     for (sym, r) in symbols.iter().zip(results) {
         match r {
             Ok(mut s) => {
-                s.data.name = universe
-                    .iter()
-                    .find(|i| &i.symbol == sym)
-                    .and_then(|i| i.name.clone());
-                for f in s.data.buyers.iter_mut().chain(s.data.sellers.iter_mut()) {
-                    f.name = brokers::name(&f.code);
-                }
+                fill_names(&mut s.data, universe);
                 match &mut out {
                     None => out = Some(s.map(|d| vec![d])),
                     Some(acc) => {
@@ -965,6 +982,502 @@ pub async fn broker(
     };
     result.warnings.extend(pending_warnings);
     Ok(result)
+}
+
+// ---- bandarmology ---------------------------------------------------------------
+
+/// Range, tier and filters for [`bandar`]. Explicit dates win over `period`.
+#[derive(Debug, Clone, Copy)]
+pub struct BandarQuery {
+    pub period: BandarPeriod,
+    pub from: Option<NaiveDate>,
+    pub to: Option<NaiveDate>,
+    pub top: u32,
+    pub investor: BrokerInvestor,
+    pub board: BrokerBoard,
+    /// Add the session-by-session series (one request per session).
+    pub daily: bool,
+}
+
+/// Most tickers one `bandar --daily` call takes: the series costs one
+/// request per session per ticker.
+pub const BANDAR_DAILY_MAX_SYMBOLS: usize = 3;
+/// Tickers a bandar screen scans by default: the most traded by value.
+pub const BANDAR_SCAN_DEFAULT: usize = 100;
+/// Most tickers one bandar screen scans.
+pub const BANDAR_SCAN_MAX: usize = 300;
+
+/// Daily candles that reach back past `from` (the base close sits before it).
+fn history_period_for(from: NaiveDate, today: NaiveDate) -> Period {
+    let days = (today - from).num_days() + 10;
+    [
+        (28, Period::M1),
+        (88, Period::M3),
+        (178, Period::M6),
+        (360, Period::Y1),
+        (720, Period::Y2),
+        (1800, Period::Y5),
+    ]
+    .into_iter()
+    .find(|(max, _)| days <= *max)
+    .map_or(Period::Max, |(_, p)| p)
+}
+
+/// The range's last price and its move in percent. The price is the
+/// quote's when the range ends on the quote's session (that session's daily
+/// bar can still be missing), otherwise the close on or before `to`. The
+/// base is the previous close for a one-session range on the quote's day,
+/// otherwise the last close before `from`.
+pub async fn price_move(
+    p: &dyn Provider,
+    symbol: &Symbol,
+    from: NaiveDate,
+    to: NaiveDate,
+    quote: Option<&Quote>,
+    today: NaiveDate,
+) -> Result<(Option<f64>, Option<f64>)> {
+    let live =
+        quote.filter(|q| q.price.is_some() && q.market_time.is_some_and(|t| t.date_naive() == to));
+    if let Some(q) = live {
+        if from == to && q.previous_close.is_some() {
+            return Ok((q.price, bd::change_pct(q.previous_close, q.price)));
+        }
+    }
+    let h = p
+        .history(symbol, history_period_for(from, today), Interval::Day1)
+        .await?;
+    let candles = &h.data.candles;
+    let base = candles
+        .iter()
+        .rev()
+        .find(|c| c.date() < from)
+        .map(|c| c.close);
+    let price = live.and_then(|q| q.price).or_else(|| {
+        candles
+            .iter()
+            .rev()
+            .find(|c| c.date() <= to)
+            .map(|c| c.close)
+    });
+    Ok((price, bd::change_pct(base, price)))
+}
+
+/// One ticker's summary for the query: the explicit range, or the period
+/// ending on the ticker's latest session with trades. With `daily`, every
+/// weekday of the range as well.
+async fn bandar_one(
+    fetcher: &Arc<Fetcher>,
+    symbol: Symbol,
+    range: Option<(NaiveDate, NaiveDate)>,
+    q: BandarQuery,
+    today: NaiveDate,
+) -> Result<(Sourced<BrokerSummary>, Vec<BrokerSummary>)> {
+    let bq = BrokerQuery {
+        from: None,
+        to: None,
+        investor: q.investor,
+        board: q.board,
+    };
+    let mut s = match range {
+        Some(r) => broker_one(fetcher, symbol.clone(), Some(r), bq, today).await?,
+        None => {
+            let latest = latest_broker_day(fetcher, &symbol, bq, today).await?;
+            if q.period == BandarPeriod::Day1 || latest.data.is_empty() {
+                latest
+            } else {
+                let end = latest.data.to;
+                let mut r = ipot::broker_summary(
+                    fetcher,
+                    &symbol,
+                    q.period.start(end),
+                    end,
+                    q.investor,
+                    q.board,
+                    today,
+                )
+                .await?;
+                r.absorb(&latest);
+                r
+            }
+        }
+    };
+    let mut sessions = Vec::new();
+    if q.daily {
+        let days = bd::weekdays(s.data.from, s.data.to);
+        let got: Vec<Result<Sourced<BrokerSummary>>> = stream::iter(days)
+            .map(|d| ipot::broker_summary(fetcher, &symbol, d, d, q.investor, q.board, today))
+            .buffered(3)
+            .collect()
+            .await;
+        for r in got {
+            match r {
+                Ok(day) => {
+                    s.absorb(&day);
+                    sessions.push(day.data);
+                }
+                Err(e) => s.warnings.push(format!(
+                    "{symbol}: a session of the daily series failed: {e}"
+                )),
+            }
+        }
+    }
+    Ok((s, sessions))
+}
+
+/// Bandarmology for each ticker: the top 1/3/5/10 buyers against the top
+/// sellers over the range, the headline signal and phase, the top buyers'
+/// average against the price, foreign flow, and with `daily` the session
+/// series. Tickers that fail become warnings; the call fails only when all
+/// of them do.
+pub async fn bandar(
+    p: &dyn Provider,
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    symbols: &[Symbol],
+    q: BandarQuery,
+    today: NaiveDate,
+) -> Result<Sourced<Vec<BandarReport>>> {
+    if symbols.is_empty() {
+        return Err(IdxError::Usage("bandar needs at least one ticker".into()));
+    }
+    if symbols.len() > BROKER_MAX_SYMBOLS {
+        return Err(IdxError::Usage(format!(
+            "bandar takes at most {BROKER_MAX_SYMBOLS} tickers per call"
+        )));
+    }
+    if q.daily && symbols.len() > BANDAR_DAILY_MAX_SYMBOLS {
+        return Err(IdxError::Usage(format!(
+            "the daily series takes at most {BANDAR_DAILY_MAX_SYMBOLS} tickers per call (one request per session each)"
+        )));
+    }
+    bd::check_top(q.top)?;
+    let range = explicit_range(q.from, q.to, today)?;
+    let period = if range.is_some() {
+        "custom"
+    } else {
+        q.period.as_str()
+    };
+
+    let results: Vec<Result<(Sourced<BrokerSummary>, Vec<BrokerSummary>)>> =
+        stream::iter(symbols.to_vec())
+            .map(|s| bandar_one(fetcher, s, range, q, today))
+            .buffered(3)
+            .collect()
+            .await;
+    let ok: Vec<Symbol> = symbols
+        .iter()
+        .zip(&results)
+        .filter(|(_, r)| r.is_ok())
+        .map(|(s, _)| s.clone())
+        .collect();
+    let quotes = if ok.is_empty() {
+        Vec::new()
+    } else {
+        p.quotes(&ok).await.map(|q| q.data).unwrap_or_default()
+    };
+
+    let mut out: Option<Sourced<Vec<BandarReport>>> = None;
+    let mut pending = Vec::new();
+    let mut first_err: Option<IdxError> = None;
+    for (sym, r) in symbols.iter().zip(results) {
+        let (mut s, mut sessions) = match r {
+            Ok(v) => v,
+            Err(e) => {
+                pending.push(match &e {
+                    IdxError::NotFound(_) => format!("no broker summary for {sym}"),
+                    other => format!("{sym}: {other}"),
+                });
+                first_err.get_or_insert(e);
+                continue;
+            }
+        };
+        fill_names(&mut s.data, universe);
+        let quote = quotes.iter().find(|x| &x.symbol == sym);
+        let (price, chg) = if s.data.is_empty() {
+            (quote.and_then(|x| x.price), None)
+        } else {
+            match price_move(p, sym, s.data.from, s.data.to, quote, today).await {
+                Ok(v) => v,
+                Err(e) => {
+                    s.warnings
+                        .push(format!("{sym}: no price move for the range ({e})"));
+                    (quote.and_then(|x| x.price), None)
+                }
+            }
+        };
+        let mut report = bd::report(&s.data, period, q.top, price, chg);
+        if q.daily {
+            sessions.sort_by_key(|d| d.to);
+            report.daily = Some(bd::daily(&sessions, q.top));
+        }
+        let s = s.map(|_| report);
+        match &mut out {
+            None => out = Some(s.map(|d| vec![d])),
+            Some(acc) => {
+                acc.absorb(&s);
+                acc.data.push(s.data);
+            }
+        }
+    }
+    let Some(mut result) = out else {
+        return Err(first_err.unwrap_or_else(|| IdxError::NotFound("no data".into())));
+    };
+    result.warnings.extend(pending);
+    Ok(result)
+}
+
+/// What a bandar screen applies.
+#[derive(Debug, Clone)]
+pub struct BandarScreenOptions {
+    pub period: BandarPeriod,
+    pub top: u32,
+    pub preset: Option<Preset>,
+    /// Clauses on top of the preset's.
+    pub filters: Vec<bd::Filter>,
+    /// Default `acc`.
+    pub sort: Option<bd::Key>,
+    /// Default: descending, ascending for the distribution presets.
+    pub descending: Option<bool>,
+    /// Rows returned; 0 = all.
+    pub limit: usize,
+    /// How many of the most traded tickers to scan when `symbols` is empty.
+    pub scan: usize,
+    /// Scan these instead of the most traded.
+    pub symbols: Vec<Symbol>,
+}
+
+/// One scanned ticker's range summary; owned arguments keep the stream's
+/// future general over lifetimes.
+async fn screen_summary(
+    fetcher: &Arc<Fetcher>,
+    symbol: Symbol,
+    from: NaiveDate,
+    to: NaiveDate,
+    today: NaiveDate,
+) -> (Symbol, Result<Sourced<BrokerSummary>>) {
+    let r = ipot::broker_summary(
+        fetcher,
+        &symbol,
+        from,
+        to,
+        BrokerInvestor::All,
+        BrokerBoard::All,
+        today,
+    )
+    .await;
+    (symbol, r)
+}
+
+/// A row index with its price and move over the range.
+type RowMove = (usize, Result<(Option<f64>, Option<f64>)>);
+
+/// One row's price move for the screen.
+async fn screen_move(
+    p: &dyn Provider,
+    i: usize,
+    symbol: Symbol,
+    from: NaiveDate,
+    to: NaiveDate,
+    quote: Option<Quote>,
+    today: NaiveDate,
+) -> RowMove {
+    (
+        i,
+        price_move(p, &symbol, from, to, quote.as_ref(), today).await,
+    )
+}
+
+/// Bandarmology screener: reads the most traded stocks (or the given ones)
+/// over the period ending on the latest session and keeps those matching
+/// the preset and filters. One broker-summary request per scanned ticker;
+/// on multi-day periods one history request per row the other filters
+/// left.
+pub async fn bandar_screen(
+    p: &dyn Provider,
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    opts: &BandarScreenOptions,
+    today: NaiveDate,
+) -> Result<Sourced<BandarScreen>> {
+    bd::check_top(opts.top)?;
+    let mut filters = match opts.preset {
+        Some(pr) => bd::parse_filters(pr.filter())?,
+        None => Vec::new(),
+    };
+    filters.extend(opts.filters.iter().cloned());
+
+    // Candidates and their quotes.
+    let (candidates, mut out) = if opts.symbols.is_empty() {
+        if universe.is_empty() {
+            return Err(IdxError::Usage("the ticker universe is empty".into()));
+        }
+        let all: Vec<Symbol> = universe.iter().map(|i| i.symbol.clone()).collect();
+        let q = quotes_all(p, &all).await?;
+        let traded = |x: &Quote| x.price.unwrap_or(0.0) * x.volume.unwrap_or(0) as f64;
+        let mut by_value: Vec<&Quote> = q.data.iter().filter(|x| traded(x) > 0.0).collect();
+        by_value.sort_by(|a, b| {
+            traded(b)
+                .partial_cmp(&traded(a))
+                .unwrap_or(std::cmp::Ordering::Equal)
+        });
+        let n = opts.scan.clamp(1, BANDAR_SCAN_MAX);
+        let picked: Vec<Symbol> = by_value.iter().take(n).map(|x| x.symbol.clone()).collect();
+        (picked, q)
+    } else {
+        if opts.symbols.len() > BANDAR_SCAN_MAX {
+            return Err(IdxError::Usage(format!(
+                "a bandar screen scans at most {BANDAR_SCAN_MAX} tickers"
+            )));
+        }
+        let q = quotes_all(p, &opts.symbols)
+            .await
+            .unwrap_or_else(|_| Sourced::fresh(Vec::new(), p.name()));
+        (opts.symbols.clone(), q)
+    };
+    if candidates.is_empty() {
+        return Err(IdxError::NotFound("no traded tickers to scan".into()));
+    }
+    let quotes = std::mem::take(&mut out.data);
+    out.warnings.retain(|w| !w.contains("returned no quote"));
+
+    // The latest session with trades, from the first candidates.
+    let bq = BrokerQuery {
+        from: None,
+        to: None,
+        investor: BrokerInvestor::All,
+        board: BrokerBoard::All,
+    };
+    let mut end = None;
+    for sym in candidates.iter().take(3) {
+        if let Ok(s) = latest_broker_day(fetcher, sym, bq, today).await {
+            if !s.data.is_empty() {
+                end = Some(s.data.to);
+                break;
+            }
+        }
+    }
+    let end = end.ok_or_else(|| {
+        IdxError::NotFound(format!(
+            "no session with trades in the {BROKER_LOOKBACK_DAYS} days to {today}"
+        ))
+    })?;
+    let from = opts.period.start(end);
+    let period = opts.period.as_str();
+
+    let mut fetched: Vec<(Symbol, Result<Sourced<BrokerSummary>>)> =
+        stream::iter(candidates.clone())
+            .map(|s| screen_summary(fetcher, s, from, end, today))
+            .buffer_unordered(3)
+            .collect()
+            .await;
+    // A second, sequential pass over provider failures (not unknown codes).
+    let retry: Vec<Symbol> = fetched
+        .iter()
+        .filter(|(_, r)| matches!(r, Err(e) if !matches!(e, IdxError::NotFound(_))))
+        .map(|(s, _)| s.clone())
+        .collect();
+    if !retry.is_empty() {
+        tokio::time::sleep(ipot::RECOVER_PAUSE).await;
+        for sym in retry {
+            let again = screen_summary(fetcher, sym.clone(), from, end, today).await;
+            if let Some(slot) = fetched.iter_mut().find(|(s, _)| *s == sym) {
+                *slot = again;
+            }
+        }
+    }
+    let quote_of = |sym: &Symbol| quotes.iter().find(|x| &x.symbol == sym);
+    let mut failed = 0usize;
+    let mut reports: Vec<BandarReport> = Vec::new();
+    let mut summaries: Vec<BrokerSummary> = Vec::new();
+    for (sym, r) in fetched {
+        match r {
+            Ok(mut s) if !s.data.is_empty() => {
+                out.absorb(&s);
+                fill_names(&mut s.data, universe);
+                if s.data.name.is_none() {
+                    s.data.name = quote_of(&sym).and_then(|x| x.name.clone());
+                }
+                let live =
+                    quote_of(&sym).filter(|x| x.market_time.is_some_and(|t| t.date_naive() == end));
+                let price = live.and_then(|x| x.price);
+                let chg = match (opts.period, live) {
+                    (BandarPeriod::Day1, Some(x)) => bd::change_pct(x.previous_close, x.price),
+                    _ => None,
+                };
+                reports.push(bd::report(&s.data, period, opts.top, price, chg));
+                summaries.push(s.data);
+            }
+            Ok(_) => {}
+            Err(e) => {
+                tracing::debug!(symbol = %sym, error = %e, "no broker summary");
+                failed += 1;
+            }
+        }
+    }
+    let checked = reports.len();
+    let (move_filters, plain): (Vec<bd::Filter>, Vec<bd::Filter>) =
+        filters.iter().cloned().partition(|f| f.key.needs_move());
+    let keep: Vec<usize> = (0..reports.len())
+        .filter(|i| bd::matches(&bd::screen_row(&reports[*i]), &plain))
+        .collect();
+
+    // The price move for what is left, where the quote could not give it.
+    let need: Vec<(usize, Symbol, Option<Quote>)> = keep
+        .iter()
+        .filter(|i| reports[**i].price_change_pct.is_none())
+        .map(|i| {
+            let sym = reports[*i].symbol.clone();
+            let q = quote_of(&sym).cloned();
+            (*i, sym, q)
+        })
+        .collect();
+    let moves: Vec<RowMove> = stream::iter(need)
+        .map(|(i, sym, q)| screen_move(p, i, sym, from, end, q, today))
+        .buffer_unordered(8)
+        .collect()
+        .await;
+    for (i, m) in moves {
+        if let Ok((price, chg)) = m {
+            let price = price.or(reports[i].price);
+            reports[i] = bd::report(&summaries[i], period, opts.top, price, chg);
+        }
+    }
+    let mut rows: Vec<_> = keep
+        .iter()
+        .map(|i| bd::screen_row(&reports[*i]))
+        .filter(|r| bd::matches(r, &move_filters))
+        .collect();
+    let sort = opts.sort.unwrap_or(bd::Key::Acc);
+    let descending = opts
+        .descending
+        .unwrap_or_else(|| !opts.preset.is_some_and(|p| p.ascending()));
+    bd::sort_rows(&mut rows, sort, descending);
+    let total = rows.len();
+    if opts.limit > 0 {
+        rows.truncate(opts.limit);
+    }
+    if failed > 0 {
+        out.warnings.push(format!(
+            "{failed} of {} scanned tickers had no broker summary",
+            candidates.len()
+        ));
+    }
+    let mut out = out.map(|_| BandarScreen {
+        period: opts.period,
+        from,
+        to: end,
+        top: opts.top,
+        preset: opts.preset.map(|p| p.name().to_string()),
+        filters: filters.iter().map(|f| f.raw.clone()).collect(),
+        sort: sort.name().to_string(),
+        descending,
+        scanned: candidates.len(),
+        checked,
+        total_matches: total,
+        rows,
+    });
+    out.provider = ipot::NAME;
+    Ok(out)
 }
 
 #[cfg(test)]
@@ -1224,6 +1737,307 @@ mod tests {
                 .unwrap_err();
             assert_eq!(err.exit_code(), 2);
             assert_eq!(be.call_count(), 0);
+        }
+    }
+
+    mod bandar {
+        use super::super::*;
+        use crate::cache::Cache;
+        use crate::http::{CacheMode, FixtureBackend};
+        use crate::model::{BandarPhase, BandarSignal, Candle, History};
+        use async_trait::async_trait;
+        use chrono::{FixedOffset, TimeZone};
+
+        const DAY: &str = include_str!("../tests/fixtures/ipot/brokersummary_bbca_20261016.html");
+        const WEEK: &str =
+            include_str!("../tests/fixtures/ipot/brokersummary_bbca_20261012_20261016.html");
+        const BRPT: &str =
+            include_str!("../tests/fixtures/ipot/brokersummary_brpt_20261012_20261016.html");
+        const TLKM: &str =
+            include_str!("../tests/fixtures/ipot/brokersummary_tlkm_20261012_20261016.html");
+
+        fn d(m: u32, day: u32) -> NaiveDate {
+            NaiveDate::from_ymd_opt(2026, m, day).unwrap()
+        }
+
+        fn at(day: NaiveDate, h: u32, mi: u32) -> chrono::DateTime<FixedOffset> {
+            crate::model::wib()
+                .from_local_datetime(&day.and_hms_opt(h, mi, 0).unwrap())
+                .unwrap()
+        }
+
+        /// Quotes on Friday 16 Oct; daily closes 6,050 on 9 Oct, then 5,175 by the 16th.
+        struct Prices;
+
+        #[async_trait]
+        impl Provider for Prices {
+            fn name(&self) -> &'static str {
+                "fake"
+            }
+            async fn quotes(&self, syms: &[Symbol]) -> Result<Sourced<Vec<Quote>>> {
+                let list = syms
+                    .iter()
+                    .map(|s| {
+                        let mut q = Quote::empty(s.clone(), "fake");
+                        q.price = Some(5_175.0);
+                        q.previous_close = Some(6_075.0);
+                        q.volume = Some(1_000_000);
+                        q.market_time = Some(at(d(10, 16), 16, 14));
+                        q
+                    })
+                    .collect();
+                Ok(Sourced::fresh(list, "fake"))
+            }
+            async fn history(
+                &self,
+                s: &Symbol,
+                p: Period,
+                i: Interval,
+            ) -> Result<Sourced<History>> {
+                let closes = [
+                    (d(10, 8), 6_100.0),
+                    (d(10, 9), 6_050.0),
+                    (d(10, 12), 6_000.0),
+                    (d(10, 15), 6_075.0),
+                ];
+                let candles = closes
+                    .iter()
+                    .map(|(day, c)| Candle {
+                        time: at(*day, 9, 0),
+                        open: *c,
+                        high: *c,
+                        low: *c,
+                        close: *c,
+                        adj_close: None,
+                        volume: 1,
+                    })
+                    .collect::<Vec<_>>();
+                Ok(Sourced::fresh(
+                    History {
+                        symbol: s.clone(),
+                        name: None,
+                        currency: None,
+                        period: p,
+                        interval: i,
+                        summary: History::summarise(&candles),
+                        candles,
+                    },
+                    "fake",
+                ))
+            }
+            async fn fundamentals(
+                &self,
+                _: &Symbol,
+            ) -> Result<Sourced<crate::model::Fundamentals>> {
+                unimplemented!()
+            }
+        }
+
+        fn fetcher(be: FixtureBackend) -> (Arc<Fetcher>, Arc<FixtureBackend>, tempfile::TempDir) {
+            let dir = tempfile::tempdir().unwrap();
+            let be = Arc::new(be);
+            let f = Arc::new(Fetcher::new(
+                be.clone(),
+                Cache::new(dir.path()),
+                CacheMode::Normal,
+            ));
+            (f, be, dir)
+        }
+
+        fn q(period: BandarPeriod) -> BandarQuery {
+            BandarQuery {
+                period,
+                from: None,
+                to: None,
+                top: 5,
+                investor: BrokerInvestor::All,
+                board: BrokerBoard::All,
+                daily: false,
+            }
+        }
+
+        fn syms(list: &[&str]) -> Vec<Symbol> {
+            list.iter().map(|s| Symbol::parse(s).unwrap()).collect()
+        }
+
+        fn days() -> FixtureBackend {
+            let mut be = FixtureBackend::new()
+                .route("code=BBCA&start=10/16/2026&end=10/16/2026", 200, DAY)
+                .route("code=BBCA&start=10/12/2026&end=10/16/2026", 200, WEEK);
+            for (day, html) in [
+                (
+                    "12",
+                    include_str!("../tests/fixtures/ipot/brokersummary_bbca_20261012.html"),
+                ),
+                (
+                    "13",
+                    include_str!("../tests/fixtures/ipot/brokersummary_bbca_20261013.html"),
+                ),
+                (
+                    "14",
+                    include_str!("../tests/fixtures/ipot/brokersummary_bbca_20261014.html"),
+                ),
+                (
+                    "15",
+                    include_str!("../tests/fixtures/ipot/brokersummary_bbca_20261015.html"),
+                ),
+            ] {
+                be = be.route(
+                    &format!("code=BBCA&start=10/{day}/2026&end=10/{day}/2026"),
+                    200,
+                    html,
+                );
+            }
+            be
+        }
+
+        #[tokio::test]
+        async fn the_week_ends_on_the_latest_session_and_reads_markdown() {
+            let (f, _be, _d) = fetcher(days());
+            let got = super::super::bandar(
+                &Prices,
+                &f,
+                &[],
+                &syms(&["BBCA"]),
+                q(BandarPeriod::Week1),
+                d(10, 17),
+            )
+            .await
+            .unwrap();
+            let r = &got.data[0];
+            assert_eq!(got.provider, "ipot");
+            assert_eq!(
+                (r.from, r.to, r.period.as_str()),
+                (d(10, 12), d(10, 16), "1w")
+            );
+            assert_eq!(r.signal, BandarSignal::BigDistribution);
+            assert_eq!(r.price, Some(5_175.0));
+            let chg = r.price_change_pct.unwrap();
+            assert!(
+                (chg - (5_175.0 / 6_050.0 - 1.0) * 100.0).abs() < 1e-9,
+                "{chg}"
+            );
+            assert_eq!(r.phase, Some(BandarPhase::Markdown));
+            assert_eq!(
+                r.buyers[0].name.as_deref(),
+                Some("CLSA SEKURITAS INDONESIA")
+            );
+            assert!(r.daily.is_none());
+
+            // One session: the quote's previous close is the base.
+            let got = super::super::bandar(
+                &Prices,
+                &f,
+                &[],
+                &syms(&["BBCA"]),
+                q(BandarPeriod::Day1),
+                d(10, 17),
+            )
+            .await
+            .unwrap();
+            let r = &got.data[0];
+            assert_eq!((r.from, r.to), (d(10, 16), d(10, 16)));
+            assert!((r.price_change_pct.unwrap() - -14.814814).abs() < 1e-4);
+        }
+
+        #[tokio::test]
+        async fn the_daily_series_and_explicit_ranges() {
+            let (f, be, _d) = fetcher(days());
+            let mut query = q(BandarPeriod::Month3);
+            query.from = Some(d(10, 12));
+            query.to = Some(d(10, 16));
+            query.daily = true;
+            let got = super::super::bandar(&Prices, &f, &[], &syms(&["BBCA"]), query, d(10, 17))
+                .await
+                .unwrap();
+            let r = &got.data[0];
+            assert_eq!(r.period, "custom");
+            let daily = r.daily.as_ref().unwrap();
+            assert_eq!(daily.days.len(), 5);
+            assert_eq!(daily.days[4].date, d(10, 16));
+            assert!(daily.streak < 0);
+            assert_eq!(be.call_count(), 6, "range + five sessions");
+            // Base for a range that starts on the 12th is the close of the 9th.
+            assert!((r.price_change_pct.unwrap() - (5_175.0 / 6_050.0 - 1.0) * 100.0).abs() < 1e-9);
+        }
+
+        #[tokio::test]
+        async fn usage_errors_cost_no_request() {
+            let (f, be, _d) = fetcher(FixtureBackend::new());
+            let mut bad = q(BandarPeriod::Week1);
+            bad.top = 4;
+            let err = super::super::bandar(&Prices, &f, &[], &syms(&["BBCA"]), bad, d(10, 17))
+                .await
+                .unwrap_err();
+            assert_eq!(err.exit_code(), 2);
+            let mut daily = q(BandarPeriod::Week1);
+            daily.daily = true;
+            let err = super::super::bandar(
+                &Prices,
+                &f,
+                &[],
+                &syms(&["BBCA", "BBRI", "BMRI", "BBNI"]),
+                daily,
+                d(10, 17),
+            )
+            .await
+            .unwrap_err();
+            assert!(err.to_string().contains("daily series"), "{err}");
+            assert_eq!(be.call_count(), 0);
+        }
+
+        #[tokio::test]
+        async fn the_screen_keeps_big_distribution_heaviest_first() {
+            let (f, be, _d) = fetcher(
+                FixtureBackend::new()
+                    .route("code=BBCA&start=10/16/2026&end=10/16/2026", 200, DAY)
+                    .route("code=BBCA&start=10/12/2026&end=10/16/2026", 200, WEEK)
+                    .route("code=BRPT&start=10/12/2026&end=10/16/2026", 200, BRPT)
+                    .route("code=TLKM&start=10/12/2026&end=10/16/2026", 200, TLKM),
+            );
+            let opts = BandarScreenOptions {
+                period: BandarPeriod::Week1,
+                top: 5,
+                preset: Some(Preset::BigDistribution),
+                filters: bd::parse_filters("turnover>1B").unwrap(),
+                sort: None,
+                descending: None,
+                limit: 0,
+                scan: 100,
+                symbols: syms(&["BBCA", "BRPT", "TLKM", "ZZZZ"]),
+            };
+            let got = bandar_screen(&Prices, &f, &[], &opts, d(10, 17))
+                .await
+                .unwrap();
+            let s = &got.data;
+            assert_eq!((s.from, s.to), (d(10, 12), d(10, 16)));
+            assert_eq!(s.filters, ["acc<=-15", "turnover>1B"]);
+            assert_eq!((s.scanned, s.checked), (4, 3));
+            assert!(!s.descending);
+            let order: Vec<&str> = s.rows.iter().map(|r| r.symbol.as_str()).collect();
+            assert_eq!(order, ["BBCA", "TLKM"]);
+            assert_eq!(s.rows[0].phase, Some(BandarPhase::Markdown));
+            assert!(
+                got.warnings
+                    .iter()
+                    .any(|w| w == "1 of 4 scanned tickers had no broker summary"),
+                "{:?}",
+                got.warnings
+            );
+            // ZZZZ failed on the network: retried once more after the first pass.
+            let zzzz = be.calls_matching("code=ZZZZ");
+            assert!(zzzz >= 2, "{zzzz}");
+
+            let err = bandar_screen(
+                &Prices,
+                &f,
+                &[],
+                &BandarScreenOptions { top: 2, ..opts },
+                d(10, 17),
+            )
+            .await
+            .unwrap_err();
+            assert_eq!(err.exit_code(), 2);
         }
     }
 }
