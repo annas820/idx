@@ -34,6 +34,14 @@ pub struct FileConfig {
     pub timeout_secs: Option<u64>,
     pub cache: CacheSection,
     pub msn: MsnSection,
+    pub ownership: OwnershipSection,
+}
+
+#[derive(Debug, Default, Clone, Serialize, Deserialize, PartialEq)]
+#[serde(default, deny_unknown_fields)]
+pub struct OwnershipSection {
+    /// SQLite file holding the imported shareholder registers.
+    pub db: Option<PathBuf>,
 }
 
 #[derive(Debug, Default, Clone, Serialize, Deserialize, PartialEq)]
@@ -104,6 +112,7 @@ impl FileConfig {
                 self.cache.financials_ttl_secs = Some(value.parse().map_err(|_| bad())?)
             }
             "msn.api_key" => self.msn.api_key = Some(value.to_string()),
+            "ownership.db" => self.ownership.db = Some(PathBuf::from(value)),
             _ => {
                 return Err(IdxError::Config(format!(
                     "unknown key {key:?}; valid keys: {}",
@@ -129,6 +138,7 @@ impl FileConfig {
             }
             "cache.financials_ttl_secs" => self.cache.financials_ttl_secs.map(|v| v.to_string()),
             "msn.api_key" => self.msn.api_key.clone(),
+            "ownership.db" => self.ownership.db.as_ref().map(|p| p.display().to_string()),
             _ => {
                 return Err(IdxError::Config(format!(
                     "unknown key {key:?}; valid keys: {}",
@@ -150,6 +160,7 @@ pub const KEYS: &[&str] = &[
     "cache.fundamentals_ttl_secs",
     "cache.financials_ttl_secs",
     "msn.api_key",
+    "ownership.db",
 ];
 
 /// Template written by `idx config init`.
@@ -179,6 +190,10 @@ pub const TEMPLATE: &str = r#"# idx configuration. Every key is optional.
 # MSN Money needs its own public web-client key, which idx ships with.
 # Only set this if MSN rotates the key.
 # api_key = ""               # (env: IDX_MSN_API_KEY)
+
+[ownership]
+# SQLite file for the imported KSEI shareholder registers.
+# db = "/path/to/ownership.sqlite"   # (env: IDX_OWNERSHIP_DB)
 "#;
 
 /// Values coming from the command line. `None`/`false` means "not given".
@@ -210,6 +225,7 @@ pub struct Settings {
     /// Not serialised; `config get` reports whether it is set.
     #[serde(skip)]
     pub msn_api_key: Option<String>,
+    pub ownership_db: PathBuf,
     pub config_path: PathBuf,
 }
 
@@ -380,6 +396,10 @@ pub fn resolve(
         _ => DEFAULT_FINANCIALS_TTL_SECS,
     };
     let msn_api_key = env_s("MSN_API_KEY").or_else(|| file.msn.api_key.clone());
+    let ownership_db = env_s("OWNERSHIP_DB")
+        .map(PathBuf::from)
+        .or_else(|| file.ownership.db.clone())
+        .unwrap_or_else(crate::ownership::default_db_path);
 
     Ok(Settings {
         provider,
@@ -393,6 +413,7 @@ pub fn resolve(
         fundamentals_ttl_secs,
         financials_ttl_secs,
         msn_api_key,
+        ownership_db,
         config_path,
     })
 }

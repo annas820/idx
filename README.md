@@ -47,6 +47,10 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
   command as a typed MCP tool that returns the very same JSON.
 - **Works offline.** Responses are cached with per-endpoint TTLs; `--offline`
   serves the cache instead of failing when the network is gone.
+- **Ownership, not just prices.** KSEI's monthly register of holders above 1 %
+  is imported into local SQLite with normalised entity names, so "who owns
+  more than 1 % of BBCA" and "what did this fund change last month" are one
+  command each.
 - **Single static binary.** Rust, no runtime, Linux / macOS / Windows.
 
 ## Install
@@ -79,15 +83,19 @@ idx completions powershell | Out-String | Invoke-Expression
 | `stocks fundamental <SYMBOL>` | P/E, P/B, PEG, EV/EBITDA, ROE, ROA, margins, leverage, growth, dividend, analyst targets, plus a plain-language verdict that lists every rule it applied |
 | `stocks technical <SYMBOL> [--period 1y]` | RSI, MACD, SMA/EMA 20/50/200, Bollinger, ATR, volume, support/resistance, trend, buy/sell/neutral signal with reasons |
 | `stocks compare <SYMBOLS>` | Side-by-side fundamentals for two or more tickers |
-| `mcp` | MCP server over stdio: `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_fundamental`, `idx_technical`, `idx_compare` |
+| `ownership import --latest\|--all\|--file F\|--url U` | Import KSEI's monthly ">1 % holders" register (XLSX or PDF) into local SQLite |
+| `ownership ticker <SYMBOL> [--as-of D]` | Holders above 1 % of a ticker |
+| `ownership entity "<NAME>" [--as-of D]` | Every position of a person or institution, spelling variants grouped |
+| `ownership changes --from D --to D [--symbol S] [--min-change PP]` | New holders, exits and position changes between two months |
+| `ownership releases\|discover\|path` | Imported months, files published on idx.co.id, database path |
+| `mcp` | MCP server over stdio: `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_fundamental`, `idx_technical`, `idx_compare`, `idx_ownership_ticker`, `idx_ownership_entity`, `idx_ownership_changes`, `idx_ownership_releases` |
 | `schema [name]` | JSON Schema for every payload (`quotes`, `history`, `profile`, `fundamentals`, `compare`, `financials`, `earnings`, `technical`, `error`, ...) |
 | `config init\|set\|get\|path` | Config file management |
 | `cache stats\|clear\|path` | Response cache management |
 | `completions <shell>` | bash, zsh, fish, powershell, elvish |
 | `version` | Version, build and default paths |
 
-Coming next, in order: `ownership ticker · entity · changes · import`,
-`stocks screen · news · sentiment`.
+Coming next: `stocks screen · news · sentiment`.
 
 Global flags work anywhere on the line:
 
@@ -137,6 +145,7 @@ as tool errors carrying `{error: {code, message}, exit_code}`. Details:
 | Yahoo Finance `v7/finance/quote` | quotes | anonymous cookie + crumb, cached 6 h | Falls back to the chart endpoint (fewer fields) if rejected |
 | Yahoo Finance `v10/finance/quoteSummary` | profile, fundamentals, earnings | same session | Statement modules are empty at the source, so they are not used |
 | Yahoo Finance `fundamentals-timeseries` | financials | none | Annual, quarterly and TTM statement items |
+| idx.co.id "Data Kepemilikan Saham" page + `Media/*.xlsx` | ownership (KSEI monthly register) | none, but Cloudflare bot protection | Browser-like request, then `curl-impersonate` if installed, else download in a browser and `--file`. See [docs/ownership.md](docs/ownership.md) |
 | MSN Money `Finance/Quotes`, `Finance/Equities` | quotes, profile, fundamentals, analyst targets | MSN's own public web key (shipped; override with `IDX_MSN_API_KEY`) | Tickers resolve to MSN ids through its autosuggest service, filtered to exchange `XIDX` |
 
 Prices are delayed as published by the source. This tool is for research and

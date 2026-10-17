@@ -28,6 +28,8 @@ src/
     msn/             autosuggest lookup -> Quotes / Equities (public web key)
   analysis/          technical.rs (indicators + signal), fundamental.rs (verdict); no network
   service.rs         provider call + analysis, shared by cli/ and mcp/ (fundamentals, technical, compare)
+  ownership/         KSEI >1% register: discover.rs (idx.co.id page, Cloudflare strategy), ingest.rs (XLSX/PDF),
+                     normalize.rs (entity keys), db.rs (SQLite schema + queries). Imported once, queried locally.
   mcp/               rmcp stdio server; one #[tool] per stocks command, same JSON envelope as -o json
   model/             provider-agnostic domain types = the JSON contract (Quote, Candle, History)
   output/            table.rs (comfy-table), json.rs (Envelope + JSON Schema), format.rs (numbers)
@@ -45,7 +47,7 @@ web/                 Cloudflare Worker for ihsg.midoriresearch.com (holding page
 ```
 
 Planned (later milestones): `src/analysis/screen`,
-`src/ownership/{ingest,db,query}`, `src/providers/{idx,news}`,
+`src/providers/news`,
 and the D1-backed terminal inside `web/`.
 
 ## Rules that keep the tool trustworthy
@@ -63,7 +65,8 @@ and the D1-backed terminal inside `web/`.
    one means a new version string. Every shape must be reachable through
    `idx schema <name>` (`output/json.rs`).
 5. **Providers are interchangeable.** Nothing outside `src/providers/<name>/`
-   may know about a source's URL or field names.
+   may know about a source's URL or field names. The one exception is
+   `src/ownership/`, which *is* the idx.co.id source module.
 6. **Cache keys exclude secrets.** Session tokens (crumbs, cookies) never form
    part of a cache key; pass an explicit `cache_key` to `Fetcher::get`.
 
@@ -117,6 +120,6 @@ Commits follow Conventional Commits (`feat:`, `fix:`, `docs:`, `test:`,
 1. ✅ Scaffold, `stocks quote`, `stocks history` via Yahoo, table + JSON, cache
 2. ✅ MSN provider, `profile`, `financials`, `earnings`, `fundamental`, `technical`, `compare`
 3. ✅ MCP server over stdio wrapping 1–2 (verified from Claude Code)
-4. KSEI ownership ingest (XLSX, then PDF) into SQLite + queries
+4. ✅ KSEI ownership ingest (XLSX + PDF text layer) into SQLite + queries
 5. Screener, news, sentiment
 6. Release pipeline (static binaries, install.sh, npm wrapper), web terminal

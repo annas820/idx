@@ -9,6 +9,7 @@ use serde::{Deserialize, Serialize};
 use crate::error::{IdxError, Result};
 
 pub mod fundamentals;
+pub mod ownership;
 pub mod technical;
 
 pub use fundamentals::{
@@ -16,6 +17,10 @@ pub use fundamentals::{
     FinancialPeriod, Financials, Fundamentals, Growth, Health, IncomeStatement, NextEarnings,
     PerShare, Profile, Profitability, RevenueEarnings, StatementPeriod, Valuation, Verdict,
     VerdictLabel,
+};
+pub use ownership::{
+    Change, ChangeKind, ChangesReport, DiscoveredFile, EntityReport, HoldersReport, Holding,
+    ImportReport, Release,
 };
 pub use technical::{
     Bollinger, Levels, Macd, MovingAverages, Signal, SignalLabel, Technical, Trend, VolumeStats,

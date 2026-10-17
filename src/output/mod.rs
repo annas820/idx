@@ -14,6 +14,7 @@ use crate::error::{IdxError, Result};
 pub mod format;
 pub mod json;
 pub mod table;
+pub mod table_ownership;
 pub mod table_reports;
 
 #[derive(

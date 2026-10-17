@@ -15,6 +15,7 @@ use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Ttls};
 
 pub mod cache_cmd;
 pub mod config_cmd;
+pub mod ownership;
 pub mod stocks;
 
 const LONG_ABOUT: &str = "\
@@ -30,6 +31,8 @@ Examples:
   idx stocks fundamental BBCA              # ratios plus a plain-language verdict
   idx stocks technical BBRI                # RSI, MACD, moving averages, signal
   idx stocks compare BBCA BBRI BMRI        # side-by-side fundamentals
+  idx ownership import --latest            # KSEI >1% holders into local SQLite
+  idx ownership ticker BBCA                # who holds more than 1%
   idx mcp                                  # MCP server over stdio for agents
   idx -o json stocks quote BBCA | jq '.data[0].price'
   idx --offline stocks quote BBCA        # serve from cache, never touch the network
@@ -37,7 +40,7 @@ Examples:
 
 const AFTER_HELP: &str = "\
 Exit codes: 0 ok · 1 internal · 2 usage · 3 network/provider · 4 not found · 5 offline cache miss · 6 config
-Env: IDX_PROVIDER, IDX_OUTPUT, IDX_COLOR / NO_COLOR, IDX_TIMEOUT_SECS, IDX_CACHE_DIR, IDX_OFFLINE, IDX_NO_CACHE, IDX_CONFIG, IDX_MSN_API_KEY
+Env: IDX_PROVIDER, IDX_OUTPUT, IDX_COLOR / NO_COLOR, IDX_TIMEOUT_SECS, IDX_CACHE_DIR, IDX_OFFLINE, IDX_NO_CACHE, IDX_CONFIG, IDX_MSN_API_KEY, IDX_OWNERSHIP_DB
 Docs: https://github.com/fzn0x/idx";
 
 #[derive(Debug, Parser)]
@@ -102,6 +105,10 @@ pub enum Command {
     #[command(subcommand)]
     Stocks(stocks::StocksCmd),
 
+    /// KSEI shareholder register (holders above 1 %): import monthly files, query holders, entities, changes.
+    #[command(subcommand)]
+    Ownership(ownership::OwnershipCmd),
+
     /// Read or write the config file.
     #[command(subcommand)]
     Config(config_cmd::ConfigCmd),
@@ -118,7 +125,7 @@ pub enum Command {
 
     /// Print the JSON Schema for a JSON output shape (run without a name to list them).
     Schema {
-        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | error | quote | candle
+        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | ownership-* | error | quote | candle
         name: Option<String>,
     },
 
@@ -201,9 +208,13 @@ pub async fn run(cli: Cli) -> Result<()> {
             let ctx = build_context(&cli.global)?;
             stocks::run(&ctx, cmd).await
         }
+        Command::Ownership(cmd) => {
+            let ctx = build_context(&cli.global)?;
+            ownership::run(&ctx, cmd).await
+        }
         Command::Mcp => {
             let ctx = build_context(&cli.global)?;
-            crate::mcp::serve(ctx.provider).await
+            crate::mcp::serve(ctx.provider, ctx.settings.ownership_db.clone()).await
         }
         Command::Config(cmd) => config_cmd::run(&cli.global, cmd),
         Command::Cache(cmd) => cache_cmd::run(&cli.global, cmd),

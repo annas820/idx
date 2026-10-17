@@ -8,6 +8,7 @@
 //! - [`providers`] the `Provider` trait and one module per data source
 //! - [`service`]   provider call + local analysis, shared by CLI and MCP
 //! - [`mcp`]       the same capabilities as MCP tools over stdio
+//! - [`ownership`] KSEI monthly holder register: download, parse, SQLite, queries
 //! - [`model`]     provider-agnostic domain types (the JSON contract)
 //! - [`output`]    table and JSON renderers
 //! - [`http`]      fetcher that puts the cache in front of the network
@@ -23,6 +24,7 @@ pub mod http;
 pub mod mcp;
 pub mod model;
 pub mod output;
+pub mod ownership;
 pub mod providers;
 pub mod service;
 

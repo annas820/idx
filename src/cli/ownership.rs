@@ -1,0 +1,250 @@
+//! `idx ownership ...`: KSEI's monthly ">1 % holders" register in local SQLite.
+
+use std::path::PathBuf;
+
+use chrono::NaiveDate;
+use clap::{Args, Subcommand};
+
+use crate::error::{IdxError, Result};
+use crate::model::Symbol;
+use crate::output::json::{
+    Envelope, SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_DISCOVER, SCHEMA_OWNERSHIP_ENTITY,
+    SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_IMPORT, SCHEMA_OWNERSHIP_RELEASES,
+};
+use crate::output::{self, table_ownership as tbl};
+use crate::ownership::{self, OwnershipDb};
+use crate::providers::Sourced;
+
+use super::Context;
+
+pub const LOCAL: &str = "local-db";
+
+#[derive(Debug, Subcommand)]
+pub enum OwnershipCmd {
+    /// Import a monthly "Pemegang Saham di Atas 1%" file (XLSX or PDF) into the local database.
+    #[command(
+        after_help = "Examples:\n  idx ownership import --latest                 # newest file on idx.co.id\n  idx ownership import --all                    # every month not imported yet\n  idx ownership import --file peng-2026-08-00017-satu-persen.xlsx\n  idx ownership import --url https://www.idx.co.id/Media/.../satu-persen.xlsx\n\nidx.co.id is behind Cloudflare. Downloads try a browser-like request, then\ncurl-impersonate if installed; otherwise download the file in a browser and use --file."
+    )]
+    Import(ImportArgs),
+
+    /// Holders above 1 % of one ticker.
+    #[command(
+        after_help = "Examples:\n  idx ownership ticker BBCA\n  idx ownership ticker BBRI --as-of 2026-07-31"
+    )]
+    Ticker {
+        #[arg(value_name = "SYMBOL")]
+        symbol: String,
+        /// Release date (default: newest imported). See `idx ownership releases`.
+        #[arg(long, value_name = "YYYY-MM-DD")]
+        as_of: Option<NaiveDate>,
+    },
+
+    /// Every position of a person or institution (substring match on the normalised name).
+    #[command(
+        after_help = "Examples:\n  idx ownership entity \"Dwimuria Investama\"\n  idx ownership entity \"statens pensjonsfond\" --as-of 2026-08-31"
+    )]
+    Entity {
+        #[arg(value_name = "NAME")]
+        name: String,
+        #[arg(long, value_name = "YYYY-MM-DD")]
+        as_of: Option<NaiveDate>,
+    },
+
+    /// Month-over-month changes: new holders, exits and position changes.
+    #[command(
+        after_help = "Examples:\n  idx ownership changes --from 2026-07-31 --to 2026-08-31\n  idx ownership changes --from 2026-07-31 --to 2026-08-31 --symbol BBCA\n  idx ownership changes --from 2026-02-27 --to 2026-08-31 --min-change 1 --limit 100"
+    )]
+    Changes {
+        #[arg(long, value_name = "YYYY-MM-DD")]
+        from: NaiveDate,
+        #[arg(long, value_name = "YYYY-MM-DD")]
+        to: NaiveDate,
+        /// Restrict to one ticker.
+        #[arg(long, short = 's', value_name = "SYMBOL")]
+        symbol: Option<String>,
+        /// Ignore moves smaller than this many percentage points.
+        #[arg(long, default_value_t = 0.0, value_name = "PP")]
+        min_change: f64,
+        /// Rows kept (largest moves first); 0 for all.
+        #[arg(long, short = 'n', default_value_t = 50)]
+        limit: usize,
+    },
+
+    /// Imported releases in the local database.
+    Releases,
+
+    /// List the monthly files currently published on idx.co.id (needs network).
+    Discover,
+
+    /// Print the database path.
+    Path,
+}
+
+#[derive(Debug, Args)]
+#[group(id = "mode", required = true, multiple = false)]
+pub struct ImportArgs {
+    /// Local XLSX or PDF file.
+    #[arg(long, value_name = "PATH", group = "mode")]
+    pub file: Option<PathBuf>,
+    /// Direct URL of an XLSX or PDF file.
+    #[arg(long, value_name = "URL", group = "mode")]
+    pub url: Option<String>,
+    /// Newest file on the IDX page that is not imported yet.
+    #[arg(long, group = "mode")]
+    pub latest: bool,
+    /// Every file on the IDX page that is not imported yet.
+    #[arg(long, group = "mode")]
+    pub all: bool,
+    /// Re-import even when the release date already exists (with --latest/--all).
+    #[arg(long)]
+    pub force: bool,
+}
+
+fn open(ctx: &Context) -> Result<OwnershipDb> {
+    OwnershipDb::open(&ctx.settings.ownership_db)
+}
+
+fn local<T>(data: T) -> Sourced<T> {
+    Sourced::fresh(data, LOCAL)
+}
+
+fn emit<T: serde::Serialize>(
+    ctx: &Context,
+    schema: &str,
+    s: Sourced<T>,
+    table: impl FnOnce(&T) -> String,
+) -> Result<()> {
+    if ctx.json() {
+        let env = Envelope::from_sourced(schema, s);
+        return output::print_stdout(&output::json::to_pretty(&env)?);
+    }
+    for w in &s.warnings {
+        output::print_stderr(&format!("warning: {w}"));
+    }
+    output::print_stdout(&table(&s.data))
+}
+
+pub async fn run(ctx: &Context, cmd: OwnershipCmd) -> Result<()> {
+    match cmd {
+        OwnershipCmd::Import(args) => import(ctx, args).await,
+        OwnershipCmd::Ticker { symbol, as_of } => {
+            let sym = Symbol::parse(&symbol)?;
+            let db = open(ctx)?;
+            let report = db.holders(sym.as_str(), as_of)?;
+            emit(ctx, SCHEMA_OWNERSHIP_HOLDERS, local(report), |r| {
+                tbl::holders(r, ctx.color)
+            })
+        }
+        OwnershipCmd::Entity { name, as_of } => {
+            if name.trim().len() < 3 {
+                return Err(IdxError::Usage(
+                    "entity name needs at least 3 characters".into(),
+                ));
+            }
+            let db = open(ctx)?;
+            let report = db.entity(&name, as_of)?;
+            emit(ctx, SCHEMA_OWNERSHIP_ENTITY, local(report), |r| {
+                tbl::entity(r, ctx.color)
+            })
+        }
+        OwnershipCmd::Changes {
+            from,
+            to,
+            symbol,
+            min_change,
+            limit,
+        } => {
+            let sym = symbol.map(|s| Symbol::parse(&s)).transpose()?;
+            let db = open(ctx)?;
+            let report = db.changes(
+                from,
+                to,
+                sym.as_ref().map(Symbol::as_str),
+                min_change,
+                if limit == 0 { None } else { Some(limit) },
+            )?;
+            emit(ctx, SCHEMA_OWNERSHIP_CHANGES, local(report), |r| {
+                tbl::changes(r, ctx.color)
+            })
+        }
+        OwnershipCmd::Releases => {
+            let db = open(ctx)?;
+            let list = db.releases()?;
+            let mut s = local(list);
+            if s.data.is_empty() {
+                s.warnings.push(
+                    "no ownership data imported yet; run `idx ownership import --latest`".into(),
+                );
+            }
+            emit(ctx, SCHEMA_OWNERSHIP_RELEASES, s, |r| {
+                tbl::releases(r, &ctx.settings.ownership_db, ctx.color)
+            })
+        }
+        OwnershipCmd::Discover => {
+            if ctx.settings.cache_mode == crate::http::CacheMode::Offline {
+                return Err(IdxError::OfflineMiss("discover needs the network".into()));
+            }
+            let files = ownership::discover::discover(ctx.settings.timeout()).await?;
+            let mut s = Sourced::fresh(files, "idx");
+            let have: Vec<NaiveDate> = open(ctx)?.releases()?.iter().map(|r| r.as_of).collect();
+            let missing: Vec<String> = s
+                .data
+                .iter()
+                .filter(|f| !have.contains(&f.as_of))
+                .map(|f| f.as_of.to_string())
+                .collect();
+            if !missing.is_empty() {
+                s.warnings
+                    .push(format!("not imported yet: {}", missing.join(", ")));
+            }
+            emit(ctx, SCHEMA_OWNERSHIP_DISCOVER, s, |r| {
+                tbl::discovered(r, &have, ctx.color)
+            })
+        }
+        OwnershipCmd::Path => {
+            output::print_stdout(&format!("{}\n", ctx.settings.ownership_db.display()))
+        }
+    }
+}
+
+async fn import(ctx: &Context, args: ImportArgs) -> Result<()> {
+    let mut db = open(ctx)?;
+    let timeout = ctx
+        .settings
+        .timeout()
+        .max(std::time::Duration::from_secs(60));
+    let (reports, warnings) = if let Some(path) = &args.file {
+        let (r, w) = ownership::import_file(&mut db, path)?;
+        (vec![r], w)
+    } else if let Some(url) = &args.url {
+        if ctx.settings.cache_mode == crate::http::CacheMode::Offline {
+            return Err(IdxError::OfflineMiss("--url needs the network".into()));
+        }
+        let (r, w) = ownership::import_url(&mut db, url, timeout).await?;
+        (vec![r], w)
+    } else {
+        if ctx.settings.cache_mode == crate::http::CacheMode::Offline {
+            return Err(IdxError::OfflineMiss(
+                "--latest/--all need the network".into(),
+            ));
+        }
+        let files = ownership::discover::discover(timeout).await?;
+        let (reports, warnings) =
+            ownership::import_discovered(&mut db, &files, args.latest, args.force, timeout).await?;
+        if reports.is_empty() {
+            let mut s = local(Vec::<crate::model::ImportReport>::new());
+            s.warnings.push(format!(
+                "nothing new: newest published file ({}) is already imported",
+                files
+                    .first()
+                    .map(|f| f.as_of.to_string())
+                    .unwrap_or_default()
+            ));
+            return emit(ctx, SCHEMA_OWNERSHIP_IMPORT, s, |r| tbl::imports(r));
+        }
+        (reports, warnings)
+    };
+    let mut s = local(reports);
+    s.warnings = warnings;
+    emit(ctx, SCHEMA_OWNERSHIP_IMPORT, s, |r| tbl::imports(r))
+}

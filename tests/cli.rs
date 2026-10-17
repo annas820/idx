@@ -258,6 +258,109 @@ fn msn_provider_is_selectable() {
 }
 
 #[test]
+fn ownership_import_and_queries_work_offline() {
+    let sb = sandbox();
+    let db = sb.cache.join("own.sqlite");
+    let fixture = concat!(
+        env!("CARGO_MANIFEST_DIR"),
+        "/tests/fixtures/ownership/above1_20260831_excerpt.xlsx"
+    );
+    let prev = concat!(
+        env!("CARGO_MANIFEST_DIR"),
+        "/tests/fixtures/ownership/above1_20260731_synthetic.xlsx"
+    );
+    let own = |sb: &Sandbox| {
+        let mut c = idx(&sb.cache, &sb.config);
+        c.env("IDX_OWNERSHIP_DB", &db);
+        c
+    };
+    // Empty database: a clear not-found, exit 4.
+    own(&sb)
+        .args(["ownership", "ticker", "AADI"])
+        .assert()
+        .code(4)
+        .stderr(predicate::str::contains("ownership import"));
+
+    own(&sb)
+        .args(["-o", "json", "ownership", "import", "--file", prev])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "\"schema\": \"idx.ownership.import.v1\"",
+        ))
+        .stdout(predicate::str::contains("\"as_of\": \"2026-07-31\""));
+    own(&sb)
+        .args(["ownership", "import", "--file", fixture])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("Imported 2026-08-31 (xlsx)"));
+
+    own(&sb)
+        .args(["ownership", "ticker", "aadi"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("ADARO STRATEGIC INVESTMENTS"))
+        .stdout(predicate::str::contains("as of 2026-08-31"));
+    own(&sb)
+        .args([
+            "-o",
+            "json",
+            "ownership",
+            "ticker",
+            "AADI",
+            "--as-of",
+            "2026-07-31",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "\"schema\": \"idx.ownership.holders.v1\"",
+        ))
+        .stdout(predicate::str::contains("\"as_of\": \"2026-07-31\""));
+    own(&sb)
+        .args(["ownership", "entity", "alamtri"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("ALAMTRI"));
+    own(&sb)
+        .args(["ownership", "entity", "al"])
+        .assert()
+        .code(2);
+    own(&sb)
+        .args([
+            "-o",
+            "json",
+            "ownership",
+            "changes",
+            "--from",
+            "2026-07-31",
+            "--to",
+            "2026-08-31",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("\"kind\": \"new\""))
+        .stdout(predicate::str::contains("\"kind\": \"exited\""));
+    own(&sb)
+        .args(["ownership", "releases"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("2026-07-31"))
+        .stdout(predicate::str::contains("2026-08-31"));
+    own(&sb)
+        .args(["ownership", "path"])
+        .assert()
+        .success()
+        .stdout(format!("{}\n", db.display()));
+    // Network modes refuse politely when offline.
+    own(&sb)
+        .args(["ownership", "import", "--latest"])
+        .assert()
+        .code(5);
+    own(&sb).args(["ownership", "import"]).assert().code(2);
+}
+
+#[test]
 fn cache_commands() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

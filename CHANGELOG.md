@@ -18,6 +18,14 @@ All notable changes to this project are documented here. The format follows
 - `idx schema <name>`: JSON Schema for every JSON shape.
 - Local response cache with per-endpoint TTL, `--offline`, `--no-cache`, and
   `idx cache stats|clear|path`.
+- `ownership import|ticker|entity|changes|releases|discover|path`: KSEI's
+  monthly "Pemegang Saham di Atas 1%" register parsed from the IDX XLSX (or
+  the older PDF text layer) into local SQLite, with entity-name normalisation
+  so spelling variants of one holder group together. Downloads try a
+  browser-shaped request, then `curl-impersonate`, else explain the manual
+  path (idx.co.id is behind Cloudflare).
+- MCP tools `idx_ownership_ticker`, `idx_ownership_entity`,
+  `idx_ownership_changes`, `idx_ownership_releases`.
 - `idx mcp`: MCP server over stdio (rmcp) exposing `idx_quote`, `idx_history`,
   `idx_profile`, `idx_financials`, `idx_earnings`, `idx_fundamental`,
   `idx_technical` and `idx_compare`, each returning the `-o json` envelope.

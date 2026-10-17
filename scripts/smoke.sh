@@ -88,4 +88,15 @@ expect "$TMP/mq.json" '"source": "msn:quotes"' "msn quote source"
 expect "$TMP/mf.json" '"msn:equities"' "msn fundamental source"
 expect "$TMP/mf.json" '"recommendation":' "msn fundamental has analyst block"
 
+echo "ownership (local fixture)"
+export IDX_OWNERSHIP_DB="$TMP/own.sqlite"
+"$IDX" ownership import --file tests/fixtures/ownership/above1_20260831_excerpt.xlsx >"$TMP/oi.txt" || fail "ownership import"
+expect "$TMP/oi.txt" "Imported 2026-08-31" "ownership import summary"
+"$IDX" ownership ticker AADI >"$TMP/ot.txt" || fail "ownership ticker"
+expect "$TMP/ot.txt" "ADARO STRATEGIC INVESTMENTS" "ownership ticker lists the top holder"
+set +e
+"$IDX" ownership discover >"$TMP/od.txt" 2>"$TMP/od.err"; code=$?
+set -e
+if [ "$code" = 0 ]; then pass "ownership discover reached idx.co.id"; else echo "  skip ownership discover (exit $code): $(head -c 160 "$TMP/od.err")"; fi
+
 echo "all live checks passed"

@@ -5,7 +5,10 @@ use schemars::JsonSchema;
 use serde::Serialize;
 
 use crate::error::{IdxError, Result};
-use crate::model::{Earnings, Financials, Fundamentals, History, Profile, Quote, Technical};
+use crate::model::{
+    ChangesReport, DiscoveredFile, Earnings, EntityReport, Financials, Fundamentals, History,
+    HoldersReport, ImportReport, Profile, Quote, Release, Technical,
+};
 use crate::providers::Sourced;
 
 /// Stable wrapper. `schema` names the payload shape and is versioned
@@ -50,6 +53,12 @@ pub const SCHEMA_COMPARE: &str = "idx.compare.v1";
 pub const SCHEMA_FINANCIALS: &str = "idx.financials.v1";
 pub const SCHEMA_EARNINGS: &str = "idx.earnings.v1";
 pub const SCHEMA_TECHNICAL: &str = "idx.technical.v1";
+pub const SCHEMA_OWNERSHIP_HOLDERS: &str = "idx.ownership.holders.v1";
+pub const SCHEMA_OWNERSHIP_ENTITY: &str = "idx.ownership.entity.v1";
+pub const SCHEMA_OWNERSHIP_CHANGES: &str = "idx.ownership.changes.v1";
+pub const SCHEMA_OWNERSHIP_RELEASES: &str = "idx.ownership.releases.v1";
+pub const SCHEMA_OWNERSHIP_IMPORT: &str = "idx.ownership.import.v1";
+pub const SCHEMA_OWNERSHIP_DISCOVER: &str = "idx.ownership.discover.v1";
 
 pub type QuotesEnvelope = Envelope<Vec<Quote>>;
 pub type HistoryEnvelope = Envelope<History>;
@@ -59,6 +68,12 @@ pub type CompareEnvelope = Envelope<Vec<Fundamentals>>;
 pub type FinancialsEnvelope = Envelope<Financials>;
 pub type EarningsEnvelope = Envelope<Earnings>;
 pub type TechnicalEnvelope = Envelope<Technical>;
+pub type OwnershipHoldersEnvelope = Envelope<HoldersReport>;
+pub type OwnershipEntityEnvelope = Envelope<EntityReport>;
+pub type OwnershipChangesEnvelope = Envelope<ChangesReport>;
+pub type OwnershipReleasesEnvelope = Envelope<Vec<Release>>;
+pub type OwnershipImportEnvelope = Envelope<Vec<ImportReport>>;
+pub type OwnershipDiscoverEnvelope = Envelope<Vec<DiscoveredFile>>;
 
 /// Error shape written to stderr in JSON mode.
 #[derive(Debug, Clone, Serialize, JsonSchema)]
@@ -103,6 +118,12 @@ pub fn schema_names() -> &'static [&'static str] {
         "financials",
         "earnings",
         "technical",
+        "ownership-holders",
+        "ownership-entity",
+        "ownership-changes",
+        "ownership-releases",
+        "ownership-import",
+        "ownership-discover",
         "error",
         "quote",
         "candle",
@@ -119,6 +140,12 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "financials" => schemars::schema_for!(FinancialsEnvelope),
         "earnings" => schemars::schema_for!(EarningsEnvelope),
         "technical" => schemars::schema_for!(TechnicalEnvelope),
+        "ownership-holders" => schemars::schema_for!(OwnershipHoldersEnvelope),
+        "ownership-entity" => schemars::schema_for!(OwnershipEntityEnvelope),
+        "ownership-changes" => schemars::schema_for!(OwnershipChangesEnvelope),
+        "ownership-releases" => schemars::schema_for!(OwnershipReleasesEnvelope),
+        "ownership-import" => schemars::schema_for!(OwnershipImportEnvelope),
+        "ownership-discover" => schemars::schema_for!(OwnershipDiscoverEnvelope),
         "error" => schemars::schema_for!(ErrorEnvelope),
         "quote" => schemars::schema_for!(Quote),
         "candle" => schemars::schema_for!(crate::model::Candle),

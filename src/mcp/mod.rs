@@ -6,6 +6,7 @@
 //!
 //! Nothing here may write to stdout except the protocol; logs go to stderr.
 
+use std::path::PathBuf;
 use std::sync::Arc;
 
 use rmcp::handler::server::router::tool::ToolRouter;
@@ -20,8 +21,11 @@ use crate::error::{IdxError, Result};
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     self, Envelope, ErrorEnvelope, SCHEMA_COMPARE, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
-    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_TECHNICAL,
+    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_ENTITY,
+    SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES, SCHEMA_PROFILE, SCHEMA_QUOTES,
+    SCHEMA_TECHNICAL,
 };
+use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
 use crate::service;
 
@@ -33,6 +37,8 @@ Every tool returns the same JSON envelope as the `idx -o json` CLI:
 not return are null; nothing is estimated. Prices are delayed as published.
 Errors return isError=true with {error:{code,message}, exit_code}; code not_found
 means the ticker is unknown, offline_miss means --offline with nothing cached.
+Ownership tools read the local SQLite register of holders above 1% (KSEI via IDX,
+monthly); if it is empty they say so and the user must run `idx ownership import --latest`.
 Verdicts and signals are transparent rule scores, not investment advice.";
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -80,10 +86,55 @@ pub struct TechnicalArgs {
     pub period: Option<String>,
 }
 
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct OwnershipTickerArgs {
+    /// One IDX ticker, e.g. "BBCA".
+    pub symbol: String,
+    /// Release date YYYY-MM-DD (default: newest imported). idx_ownership_releases lists them.
+    #[serde(default)]
+    pub as_of: Option<String>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct OwnershipEntityArgs {
+    /// Part of a holder's name (person or institution), at least 3 characters, e.g. "Dwimuria".
+    pub name: String,
+    /// Release date YYYY-MM-DD (default: newest imported).
+    #[serde(default)]
+    pub as_of: Option<String>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct OwnershipChangesArgs {
+    /// Earlier release date YYYY-MM-DD.
+    pub from: String,
+    /// Later release date YYYY-MM-DD.
+    pub to: String,
+    /// Restrict to one ticker.
+    #[serde(default)]
+    pub symbol: Option<String>,
+    /// Ignore moves smaller than this many percentage points (default 0).
+    #[serde(default)]
+    pub min_pct_change: Option<f64>,
+    /// Rows kept, largest moves first (default 50; 0 = all).
+    #[serde(default)]
+    pub limit: Option<u32>,
+}
+
 #[derive(Clone)]
 pub struct IdxServer {
     provider: Arc<dyn Provider>,
+    ownership_db: PathBuf,
     tool_router: ToolRouter<IdxServer>,
+}
+
+fn parse_date(v: &Option<String>) -> Result<Option<chrono::NaiveDate>> {
+    match v.as_deref().map(str::trim).filter(|s| !s.is_empty()) {
+        None => Ok(None),
+        Some(s) => chrono::NaiveDate::parse_from_str(s, "%Y-%m-%d")
+            .map(Some)
+            .map_err(|_| IdxError::Usage(format!("invalid date {s:?}; use YYYY-MM-DD"))),
+    }
 }
 
 fn ok<T: serde::Serialize>(schema: &str, s: Sourced<T>) -> Result<CallToolResult> {
@@ -113,11 +164,16 @@ fn parse_opt<T: std::str::FromStr<Err = IdxError>>(v: &Option<String>, default: 
 
 #[tool_router]
 impl IdxServer {
-    pub fn new(provider: Arc<dyn Provider>) -> Self {
+    pub fn new(provider: Arc<dyn Provider>, ownership_db: PathBuf) -> Self {
         IdxServer {
             provider,
+            ownership_db,
             tool_router: Self::tool_router(),
         }
+    }
+
+    fn db(&self) -> Result<OwnershipDb> {
+        OwnershipDb::open(&self.ownership_db)
     }
 
     /// Names of the tools, for tests and docs.
@@ -298,6 +354,98 @@ impl IdxServer {
             .await,
         )
     }
+
+    #[tool(
+        name = "idx_ownership_ticker",
+        description = "Shareholders above 1% of one IDX ticker from KSEI's monthly register (local SQLite): holder name, investor type, local/foreign, shares, percent, sorted by percent. Returns the idx.ownership.holders.v1 envelope. Needs a prior `idx ownership import`."
+    )]
+    async fn ownership_ticker(
+        &self,
+        Parameters(a): Parameters<OwnershipTickerArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbol = Symbol::parse(&a.symbol)?;
+                let as_of = parse_date(&a.as_of)?;
+                let report = self.db()?.holders(symbol.as_str(), as_of)?;
+                ok(SCHEMA_OWNERSHIP_HOLDERS, Sourced::fresh(report, "local-db"))
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_ownership_entity",
+        description = "Every IDX position above 1% held by a person or institution whose name contains the query, from KSEI's monthly register (local SQLite). Spelling variants (PT/Tbk placement, punctuation) are grouped. Returns the idx.ownership.entity.v1 envelope."
+    )]
+    async fn ownership_entity(
+        &self,
+        Parameters(a): Parameters<OwnershipEntityArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                if a.name.trim().len() < 3 {
+                    return Err(IdxError::Usage("name needs at least 3 characters".into()));
+                }
+                let as_of = parse_date(&a.as_of)?;
+                let report = self.db()?.entity(&a.name, as_of)?;
+                ok(SCHEMA_OWNERSHIP_ENTITY, Sourced::fresh(report, "local-db"))
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_ownership_changes",
+        description = "Month-over-month changes in holders above 1% between two imported release dates: new holders, exits and position changes with percentage-point and share deltas, largest moves first. Optional ticker filter. Returns the idx.ownership.changes.v1 envelope."
+    )]
+    async fn ownership_changes(
+        &self,
+        Parameters(a): Parameters<OwnershipChangesArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let from = parse_date(&Some(a.from.clone()))?.expect("checked");
+                let to = parse_date(&Some(a.to.clone()))?.expect("checked");
+                let symbol = a.symbol.as_deref().map(Symbol::parse).transpose()?;
+                let limit = match a.limit {
+                    Some(0) => None,
+                    Some(n) => Some(n as usize),
+                    None => Some(50),
+                };
+                let report = self.db()?.changes(
+                    from,
+                    to,
+                    symbol.as_ref().map(Symbol::as_str),
+                    a.min_pct_change.unwrap_or(0.0),
+                    limit,
+                )?;
+                ok(SCHEMA_OWNERSHIP_CHANGES, Sourced::fresh(report, "local-db"))
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_ownership_releases",
+        description = "Lists the monthly KSEI register releases imported into the local database (as-of date, row counts, source). Use it to pick dates for idx_ownership_changes. Returns the idx.ownership.releases.v1 envelope."
+    )]
+    async fn ownership_releases(&self) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let list = self.db()?.releases()?;
+                let mut s = Sourced::fresh(list, "local-db");
+                if s.data.is_empty() {
+                    s.warnings.push(
+                        "no ownership data imported yet; run `idx ownership import --latest`"
+                            .into(),
+                    );
+                }
+                ok(SCHEMA_OWNERSHIP_RELEASES, s)
+            }
+            .await,
+        )
+    }
 }
 
 #[tool_handler]
@@ -311,9 +459,9 @@ impl ServerHandler for IdxServer {
 }
 
 /// Runs the server on stdin/stdout until the client disconnects.
-pub async fn serve(provider: Arc<dyn Provider>) -> Result<()> {
+pub async fn serve(provider: Arc<dyn Provider>, ownership_db: PathBuf) -> Result<()> {
     use rmcp::{transport::stdio, ServiceExt};
-    let server = IdxServer::new(provider);
+    let server = IdxServer::new(provider, ownership_db);
     tracing::info!(tools = ?server.tool_names(), "idx mcp server starting on stdio");
     let running = server
         .serve(stdio())
@@ -359,7 +507,8 @@ mod tests {
     }
 
     fn server() -> IdxServer {
-        IdxServer::new(Arc::new(Fake))
+        let dir = std::env::temp_dir().join(format!("idx-mcp-test-{}", std::process::id()));
+        IdxServer::new(Arc::new(Fake), dir.join("ownership.sqlite"))
     }
 
     fn text(r: &CallToolResult) -> String {
@@ -382,6 +531,10 @@ mod tests {
                 "idx_financials",
                 "idx_fundamental",
                 "idx_history",
+                "idx_ownership_changes",
+                "idx_ownership_entity",
+                "idx_ownership_releases",
+                "idx_ownership_ticker",
                 "idx_profile",
                 "idx_quote",
                 "idx_technical",
