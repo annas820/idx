@@ -53,6 +53,7 @@ fn quote(s: &str) -> String {
 /// Picks the rows per the module rules.
 fn rows_of(data: &Value) -> Vec<&Value> {
     match data {
+        Value::Array(a) if a.is_empty() => vec![],
         Value::Array(a) if a.iter().any(Value::is_object) => {
             a.iter().filter(|x| x.is_object()).collect()
         }
