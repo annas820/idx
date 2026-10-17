@@ -1,7 +1,7 @@
 //! `idx broker`: which brokers bought and sold a ticker over a date range.
 //!
 //! A broker summary as the source publishes it: the top buyers and the top
-//! sellers by value, each with lots, value and average price, plus totals
+//! sellers by lots, each with lots, value and average price, plus totals
 //! for the whole range. The source abbreviates large figures (`1.6 M` lots,
 //! `841.2 B` IDR); those become plain numbers at the published precision and
 //! `rounded` says so. Nothing is netted or estimated here.
@@ -109,7 +109,7 @@ impl BrokerKind {
 /// One broker on one side of the summary.
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
 pub struct BrokerFlow {
-    /// Position on its side, 1 = largest value.
+    /// Position on its side as the source ranks it, 1 = most lots.
     pub rank: u32,
     /// IDX member code, e.g. `CC`.
     pub code: String,
@@ -137,9 +137,9 @@ pub struct BrokerSummary {
     pub to: NaiveDate,
     pub investor: BrokerInvestor,
     pub board: BrokerBoard,
-    /// Top buyers by value, largest first, as published (up to 10).
+    /// Top buyers by lots, most first, as published (up to 10).
     pub buyers: Vec<BrokerFlow>,
-    /// Top sellers by value, largest first, as published (up to 10).
+    /// Top sellers by lots, most first, as published (up to 10).
     pub sellers: Vec<BrokerFlow>,
     /// Value traded over the range, IDR.
     pub total_value: Option<f64>,

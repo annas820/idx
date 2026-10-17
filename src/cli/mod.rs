@@ -130,8 +130,8 @@ pub enum Command {
   idx -o json broker BBCA | jq '.data[0].buyers[0]'
   idx -o csv broker BBCA BBRI > brokers.csv   # one row per broker per side
 
-Source: Indo Premier (IPOT) broker summary, the top 10 buyers and sellers by value with lots,
-value, average price and each broker's class (local, foreign, BUMN). Broker names come from
+Source: Indo Premier (IPOT) broker summary, the top 10 buyers and sellers ranked by lots, with
+lots, value, average price and each broker's class (local, foreign, BUMN). Broker names come from
 the IDX member list bundled with idx. The source rounds figures of a million and more to one
 decimal (1.6 M); JSON marks those summaries with rounded=true.")]
     Broker(broker::BrokerArgs),

@@ -24,7 +24,7 @@ const COMMANDS = [
   { name: "returns", usage: "returns <SYMBOLS> [--benchmark ^JKSE|none]", help: "1w..5y returns, CAGR, volatility, drawdown, excess over IHSG" },
   { name: "brief", usage: "brief <SYMBOL>", help: "one page: quote, verdict, signal, returns, dividends, holders, headlines" },
   { name: "sentiment", usage: "sentiment <SYMBOL>", help: "lexicon sentiment over matching headlines" },
-  { name: "broker", usage: "broker <SYMBOLS> [--date D | --from D --to D] [--investor foreign|domestic] [--board regular|cash|negotiated]", help: "which brokers bought and sold it: top 10 per side by value (IPOT), latest session by default" },
+  { name: "broker", usage: "broker <SYMBOLS> [--date D | --from D --to D] [--investor foreign|domestic] [--board regular|cash|negotiated]", help: "which brokers bought and sold it: top 10 per side ranked by lots (IPOT), latest session by default" },
   { name: "market", usage: "market", help: "IHSG, breadth, gainers, losers, most traded" },
   { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] [--offset N] | foreign [SYMBOL] | releases", help: "KSEI holders above 1 %, synced monthly from IDX: holders, entities, monthly changes with a summary, foreign vs local" },
   { name: "json", usage: "json <command…>", help: "print the raw JSON envelope of any command" },
@@ -295,7 +295,7 @@ const R = {
       );
       frag.append(grid);
     }
-    frag.append(el("p", { class: "warn", text: `Source: IPOT broker summary, top 10 buyers and sellers by value. One lot = 100 shares.${list.some((s) => s.rounded) ? " The source rounds figures of a million and more to one decimal." : ""}` }));
+    frag.append(el("p", { class: "warn", text: `Source: IPOT broker summary, top 10 buyers and sellers ranked by lots. One lot = 100 shares.${list.some((s) => s.rounded) ? " The source rounds figures of a million and more to one decimal." : ""}` }));
     return frag;
   },
   sentiment(s) {

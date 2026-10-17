@@ -142,7 +142,7 @@ Array, one summary per requested ticker, as Indo Premier (IPOT) publishes it:
 `symbol`, `name` (bundled universe), `from` and `to` (the range the source
 applied, WIB dates), `investor` (`all` | `foreign` | `domestic`), `board`
 (`all` | `regular` | `cash` | `negotiated`), `buyers[]` and `sellers[]` (top 10
-by value, largest first: `rank`, `code`, `name` from the bundled IDX member
+ranked by lots, most first: `rank`, `code`, `name` from the bundled IDX member
 list or `null`, `kind` = `local` | `foreign` | `state_owned` or `null`, `lots`
 (1 lot = 100 shares), `value` in IDR, `average_price`), and the range totals
 `total_value`, `total_lots`, `foreign_net_value` (foreign buy minus sell),

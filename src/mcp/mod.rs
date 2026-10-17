@@ -628,7 +628,7 @@ impl IdxServer {
 
     #[tool(
         name = "idx_broker",
-        description = "Broker summary for one or more IDX tickers (Indo Premier / IPOT): which brokers bought and sold the stock over one day or a date range. Top 10 buyers and top 10 sellers by value, each with the broker code, name (IDX member list), class (local, foreign, state_owned = BUMN), lots, value in IDR and average price, plus total value, total lots, average price and foreign net value. Without dates each ticker gets its latest session with trades. The source rounds figures of a million and more to one decimal; such summaries carry rounded=true. Returns the idx.broker.v1 envelope; failed tickers are listed in warnings."
+        description = "Broker summary for one or more IDX tickers (Indo Premier / IPOT): which brokers bought and sold the stock over one day or a date range. Top 10 buyers and top 10 sellers as the source ranks them (by lots), each with the broker code, name (IDX member list), class (local, foreign, state_owned = BUMN), lots, value in IDR and average price, plus total value, total lots, average price and foreign net value. Without dates each ticker gets its latest session with trades. The source rounds figures of a million and more to one decimal; such summaries carry rounded=true. Returns the idx.broker.v1 envelope; failed tickers are listed in warnings."
     )]
     async fn broker(
         &self,

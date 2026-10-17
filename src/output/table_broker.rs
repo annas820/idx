@@ -98,7 +98,7 @@ pub fn broker(list: &[BrokerSummary], top: usize, color: bool) -> String {
         side(&mut out, "Top sellers", &s.sellers, top, false, color);
     }
     out.push_str(
-        "Source: IPOT broker summary, top 10 buyers and sellers by value. One lot = 100 shares.",
+        "Source: IPOT broker summary, top 10 buyers and sellers ranked by lots. One lot = 100 shares.",
     );
     if list.iter().any(|s| s.rounded) {
         out.push_str(" The source rounds figures of a million and more to one decimal.");

@@ -310,7 +310,7 @@ local agents can share one process and one cache this way.
 | `idx_screen` | `filter`, `sort?`, `limit?`, `max_fundamentals?` | `idx.screen.v1` |
 | `idx_news` | `symbol?`, `sources?`, `limit?`, `company_only?` | `idx.news.v1`: company items first (`scope=company`), then market context |
 | `idx_sentiment` | `symbol`, `sources?` | `idx.sentiment.v1` |
-| `idx_broker` | `symbols`, `date?` or `from?`/`to?`, `investor?` (`all` \| `foreign` \| `domestic`), `board?` (`all` \| `regular` \| `cash` \| `negotiated`) | `idx.broker.v1`: top 10 buyers and sellers by value with broker names and class, totals, foreign net; latest session with trades when no dates are given |
+| `idx_broker` | `symbols`, `date?` or `from?`/`to?`, `investor?` (`all` \| `foreign` \| `domestic`), `board?` (`all` \| `regular` \| `cash` \| `negotiated`) | `idx.broker.v1`: top 10 buyers and sellers (ranked by lots) with broker names and class, totals, foreign net; latest session with trades when no dates are given |
 | `idx_ownership_ticker` | `symbol`, `as_of?` | `idx.ownership.holders.v1` |
 | `idx_ownership_entity` | `name`, `as_of?` | `idx.ownership.entity.v1` |
 | `idx_ownership_changes` | `from`, `to`, `symbol?`, `min_pct_change?`, `limit?`, `offset?` | `idx.ownership.changes.v1`: `summary` over every match, one page of rows |

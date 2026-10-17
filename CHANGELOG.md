@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Fixed
+
+- `broker`: the IPOT summary ranks its top 10 buyers and sellers by lots, not
+  by value as the help, the docs and the JSON Schema said. Of two brokers
+  the one with more lots comes first even when it traded less value.
+
 ### Added
 
 - Web terminal: `quote` with a single symbol draws a price chart under the

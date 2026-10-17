@@ -4,8 +4,10 @@
 //! Endpoint verified 2026-10-17 (see `tests/fixtures/ipot/`), no login or key:
 //! `https://www.indopremier.com/module/saham/include/data-brokersummary.php`
 //! `?code=BBCA&start=MM/DD/YYYY&end=MM/DD/YYYY&fd=all|F|D&board=all|RG|TN|NG`
-//! - Answers an HTML fragment with the top 10 buyers and top 10 sellers by
-//!   value, each broker's class, and range totals.
+//! - Answers an HTML fragment with the top 10 buyers and top 10 sellers,
+//!   ranked by lots (not value: of two brokers the one with more lots comes
+//!   first even when it traded less value), each broker's class, and range
+//!   totals.
 //! - Figures of a million and more are abbreviated to one decimal (`1.6 M`,
 //!   `841.2 B`, `2.2 T`); smaller ones are exact.
 //! - A range without trades (weekend, holiday) gives ten blank rows and
