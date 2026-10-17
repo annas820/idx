@@ -84,3 +84,19 @@ test("ownership changes summary", () => {
   assert.equal(s.top_increases[0].holder, "A");
   assert.equal(s.top_decreases[0].holder, "C");
 });
+
+import { plan, sha256Hex } from "../src/ownership-sync.js";
+
+test("ownership sync plan: newest first, prune outside the window, reload on new sha", () => {
+  const index = { schema: "idx.ownership.mirror.v1", releases: ["2026-09-30", "2026-08-31", "2026-07-31", "2026-06-30"].map((d, i) => ({ as_of: d, sha256: `s${i}`, parts: [] })) };
+  assert.equal(plan(index, new Map(), 3).load.as_of, "2026-09-30");
+  assert.equal(plan(index, new Map([["2026-09-30", "s0"]]), 3).load.as_of, "2026-08-31");
+  assert.equal(plan(index, new Map([["2026-09-30", "old"], ["2026-08-31", "s1"]]), 3).load.as_of, "2026-09-30", "re-published file is reloaded");
+  assert.deepEqual(plan(index, new Map([["2026-01-30", "x"], ["2026-09-30", "s0"]]), 3), { prune: "2026-01-30" });
+  assert.deepEqual(plan(index, new Map([["2026-09-30", "s0"], ["2026-08-31", "s1"], ["2026-07-31", "s2"]]), 3), { upToDate: 3 });
+  assert.throws(() => plan({ schema: "nope", releases: [] }, new Map(), 3));
+});
+
+test("sha256Hex matches a known digest", async () => {
+  assert.equal(await sha256Hex("hello"), "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824");
+});

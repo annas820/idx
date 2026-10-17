@@ -21,8 +21,13 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
   keeps writes far inside D1's free tier.
 - Secrets: `ADMIN_TOKEN` (`wrangler secret put`) lets a maintainer force a
   refresh with `/api/refresh?token=…`.
-- Ownership on the web: `scripts/ownership-sync.mjs` copies a local CLI
-  register into `own_*`; until a maintainer runs it the terminal says none is loaded.
+- Ownership on the web: `src/ownership-sync.js` loads the KSEI register from
+  the repository's `ownership-data` release (published by
+  `.github/workflows/ownership.yml`) on the minute cron: index checked every
+  30 minutes, one SHA-256-verified part per minute, newest month first, within
+  `OWN_DAILY_WRITE_BUDGET`. No upload endpoint exists. Progress:
+  `/api/ownership/status`; a maintainer can force a step with
+  `/api/refresh?token=…&what=ownership`.
 
 Access is domain-only: `workers_dev = false`, `preview_urls = false`, and the
 Worker returns 404 for any Host other than `PUBLIC_HOST`.

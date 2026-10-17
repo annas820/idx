@@ -7,6 +7,16 @@
 //   accidental workers.dev or preview route exposes nothing.
 
 import { route, ApiError, refreshSnapshot } from "./api.js";
+import { ownershipSync } from "./ownership-sync.js";
+
+// Constant-time comparison for the maintainer token.
+function tokenOk(env, given) {
+  const want = env.ADMIN_TOKEN || "";
+  if (!want || typeof given !== "string" || given.length !== want.length) return false;
+  let diff = 0;
+  for (let i = 0; i < want.length; i++) diff |= want.charCodeAt(i) ^ given.charCodeAt(i);
+  return diff === 0;
+}
 
 const SECURITY_HEADERS = {
   "x-content-type-options": "nosniff",
@@ -46,8 +56,11 @@ export default {
       if (request.method !== "GET") return json({ error: { code: "usage", message: "GET only" }, exit_code: 2 }, 405);
       // Maintainer-only: force a snapshot refresh (needs the shared token).
       if (url.pathname === "/api/refresh") {
-        if (!env.ADMIN_TOKEN || url.searchParams.get("token") !== env.ADMIN_TOKEN) return json({ error: { code: "usage", message: "forbidden" }, exit_code: 2 }, 403);
-        try { return json(await refreshSnapshot(env, { force: true })); } catch (e) { return errorResponse(e); }
+        if (!tokenOk(env, url.searchParams.get("token"))) return json({ error: { code: "usage", message: "forbidden" }, exit_code: 2 }, 403);
+        try {
+          if (url.searchParams.get("what") === "ownership") return json(await ownershipSync(env, { force: true }));
+          return json(await refreshSnapshot(env, { force: true }));
+        } catch (e) { return errorResponse(e); }
       }
       try {
         const env_ = await route(env, url);
@@ -68,6 +81,12 @@ export default {
       refreshSnapshot(env)
         .then((r) => console.log("snapshot", JSON.stringify(r)))
         .catch((e) => console.error("snapshot failed", e)),
+    );
+    // KSEI register: one step per minute from the GitHub mirror (no write API).
+    ctx.waitUntil(
+      ownershipSync(env)
+        .then((r) => { if (!r.idle) console.log("ownership", JSON.stringify(r)); })
+        .catch((e) => console.error("ownership sync failed", e)),
     );
   },
 };

@@ -5,6 +5,7 @@
 import * as y from "./yahoo.js";
 import * as an from "./analysis.js";
 import * as ex from "./extras.js";
+import { syncStatus } from "./ownership-sync.js";
 import UNIVERSE from "./universe.json" with { type: "json" };
 
 const NAME_BY_SYMBOL = new Map(UNIVERSE.map(([s, n]) => [s, n]));
@@ -405,17 +406,22 @@ export async function sentiment(env, symbolRaw) {
 
 // ---- ownership (synced register) --------------------------------------
 
+async function emptyRegisterMessage(env) {
+  const s = await syncStatus(env);
+  if (s.loading) return `the KSEI register for ${s.loading.as_of} is loading from the monthly mirror (part ${s.loading.part} of ${s.loading.of}); try again in a few minutes`;
+  return `no ownership release loaded yet; the web terminal pulls the monthly KSEI register from the GitHub mirror by itself${s.checked_at ? ` (last checked ${s.checked_at})` : ""}`;
+}
 async function ownershipRelease(env, asOf) {
   const row = asOf
     ? await env.DB.prepare("SELECT as_of FROM own_releases WHERE as_of = ?1").bind(asOf).first()
     : await env.DB.prepare("SELECT as_of FROM own_releases ORDER BY as_of DESC LIMIT 1").first();
   if (!row) {
     const have = (await env.DB.prepare("SELECT as_of FROM own_releases ORDER BY as_of").all()).results.map((r) => r.as_of);
-    throw notFound(have.length ? `no ownership release for ${asOf}; available: ${have.join(", ")}` : "no ownership data loaded on the web terminal yet; the CLI can import the monthly KSEI file locally (idx ownership import --latest)");
+    throw notFound(have.length ? `no ownership release for ${asOf}; available: ${have.join(", ")}` : await emptyRegisterMessage(env));
   }
   return row.as_of;
 }
-const holdingRow = (r) => ({ as_of: r.as_of, symbol: r.symbol, issuer_name: r.issuer_name, holder: r.holder, holder_raw: r.holder_raw, entity_key: r.entity_key, investor_type: r.investor_type, local_foreign: r.local_foreign, nationality: null, domicile: null, shares_scripless: null, shares_scrip: null, shares_total: r.shares_total, pct: r.pct });
+const holdingRow = (r) => ({ as_of: r.as_of, symbol: r.symbol, issuer_name: r.issuer_name, holder: r.holder, holder_raw: r.holder_raw, entity_key: r.entity_key, investor_type: r.investor_type, local_foreign: r.local_foreign, nationality: r.nationality ?? null, domicile: r.domicile ?? null, shares_scripless: r.shares_scripless ?? null, shares_scrip: r.shares_scrip ?? null, shares_total: r.shares_total, pct: r.pct });
 
 export async function ownershipTicker(env, symbolRaw, asOf) {
   const symbol = parseSymbol(symbolRaw);
@@ -423,7 +429,7 @@ export async function ownershipTicker(env, symbolRaw, asOf) {
   const rows = (await env.DB.prepare("SELECT * FROM own_holdings WHERE as_of = ?1 AND symbol = ?2 ORDER BY pct DESC").bind(date, symbol).all()).results;
   if (!rows.length) throw notFound(`no holders above 1% recorded for ${symbol} as of ${date}`);
   const holders = rows.map(holdingRow);
-  return envelope("idx.ownership.holders.v1", { symbol, issuer_name: rows[0].issuer_name, as_of: date, listed_pct: holders.reduce((s, h) => s + h.pct, 0), holders }, { provider: "local-db", cached: true });
+  return envelope("idx.ownership.holders.v1", { symbol, issuer_name: rows[0].issuer_name, as_of: date, listed_pct: holders.reduce((s, h) => s + h.pct, 0), holders }, { provider: "github-mirror", cached: true });
 }
 export async function ownershipEntity(env, query, asOf) {
   if (!query || query.trim().length < 3) throw usage("entity name needs at least 3 characters");
@@ -432,11 +438,15 @@ export async function ownershipEntity(env, query, asOf) {
   const rows = (await env.DB.prepare("SELECT * FROM own_holdings WHERE as_of = ?1 AND entity_key LIKE ?2 ORDER BY pct DESC").bind(date, `%${key}%`).all()).results;
   if (!rows.length) throw notFound(`no holder matching "${query}" as of ${date}`);
   const entities = [...new Set(rows.map((r) => r.holder))].sort();
-  return envelope("idx.ownership.entity.v1", { query, as_of: date, entities, holdings: rows.map(holdingRow) }, { provider: "local-db", cached: true });
+  return envelope("idx.ownership.entity.v1", { query, as_of: date, entities, holdings: rows.map(holdingRow) }, { provider: "github-mirror", cached: true });
 }
 export async function ownershipReleases(env) {
   const rows = (await env.DB.prepare("SELECT * FROM own_releases ORDER BY as_of").all()).results;
-  return envelope("idx.ownership.releases.v1", rows.map((r) => ({ as_of: r.as_of, format: r.format, source: r.source, sha256: "", rows: r.rows, issuers: 0, entities: 0, imported_at: new Date(r.synced_at * 1000).toISOString() })), { provider: "local-db", cached: true, warnings: rows.length ? [] : ["no ownership data loaded on the web terminal yet"] });
+  const s = await syncStatus(env);
+  const warnings = [];
+  if (s.loading) warnings.push(`loading ${s.loading.as_of}: part ${s.loading.part} of ${s.loading.of}`);
+  if (!rows.length && !s.loading) warnings.push(await emptyRegisterMessage(env));
+  return envelope("idx.ownership.releases.v1", rows.map((r) => ({ as_of: r.as_of, format: r.format, source: r.source, sha256: r.sha256 || "", rows: r.rows, issuers: r.issuers ?? 0, entities: r.entities ?? 0, imported_at: new Date(r.synced_at * 1000).toISOString() })), { provider: "github-mirror", cached: true, warnings });
 }
 export async function ownershipChanges(env, from, to, symbolRaw, minChange = 0, limit = 50, offset = 0) {
   if (!from || !to || from >= to) throw usage("--from must be earlier than --to (YYYY-MM-DD)");
@@ -464,7 +474,7 @@ export async function ownershipChanges(env, from, to, symbolRaw, minChange = 0, 
   const summary = ex.summariseChanges(kept);
   const off = Math.min(Math.max(0, offset), kept.length);
   const page = kept.slice(off, limit > 0 ? off + limit : undefined);
-  return envelope("idx.ownership.changes.v1", { from, to, symbol, min_pct_change: minChange, total_matches: kept.length, offset: off, summary, changes: page }, { provider: "local-db", cached: true });
+  return envelope("idx.ownership.changes.v1", { from, to, symbol, min_pct_change: minChange, total_matches: kept.length, offset: off, summary, changes: page }, { provider: "github-mirror", cached: true });
 }
 
 async function ownershipPct(env, asOf) {
@@ -475,10 +485,10 @@ export async function ownershipForeign(env, symbolRaw, from, to, limit = 25) {
   const r4 = (v) => { const r = Math.round(v * 1e4) / 1e4; return r === 0 ? 0 : r; };
   if (symbolRaw) {
     const symbol = parseSymbol(symbolRaw);
-    const rows = (await env.DB.prepare("SELECT as_of, MAX(issuer_name) AS issuer_name, COALESCE(SUM(CASE WHEN local_foreign = 'A' THEN pct END), 0) AS fp, COALESCE(SUM(CASE WHEN local_foreign = 'L' THEN pct END), 0) AS lp, COALESCE(SUM(CASE WHEN local_foreign IS NULL OR local_foreign NOT IN ('A','L') THEN pct END), 0) AS up, SUM(CASE WHEN local_foreign = 'A' THEN 1 ELSE 0 END) AS fh, SUM(CASE WHEN local_foreign = 'L' THEN 1 ELSE 0 END) AS lh, SUM(pct) AS listed FROM own_holdings WHERE symbol = ?1 GROUP BY as_of ORDER BY as_of").bind(symbol).all()).results;
+    const rows = (await env.DB.prepare("SELECT as_of, MAX(issuer_name) AS issuer_name, COALESCE(SUM(CASE WHEN local_foreign = 'A' THEN pct END), 0) AS fp, COALESCE(SUM(CASE WHEN local_foreign = 'L' THEN pct END), 0) AS lp, COALESCE(SUM(CASE WHEN local_foreign IS NULL OR local_foreign NOT IN ('A','L') THEN pct END), 0) AS up, SUM(CASE WHEN local_foreign = 'A' THEN 1 ELSE 0 END) AS fh, SUM(CASE WHEN local_foreign = 'L' THEN 1 ELSE 0 END) AS lh, SUM(pct) AS listed FROM own_holdings WHERE symbol = ?1 AND as_of IN (SELECT as_of FROM own_releases) GROUP BY as_of ORDER BY as_of").bind(symbol).all()).results;
     if (!rows.length) { await ownershipRelease(env, null); throw notFound(`no holders above 1% recorded for ${symbol} in any loaded release`); }
     const points = rows.map((r, i) => ({ as_of: r.as_of, foreign_pct: r4(r.fp), local_pct: r4(r.lp), unflagged_pct: r4(r.up), foreign_holders: r.fh, local_holders: r.lh, listed_pct: r4(r.listed), foreign_change_pp: i ? r4(r.fp - rows[i - 1].fp) : null }));
-    return envelope("idx.ownership.foreign.v1", { symbol, issuer_name: rows.map((r) => r.issuer_name).filter(Boolean).pop() || null, points }, { provider: "local-db", cached: true });
+    return envelope("idx.ownership.foreign.v1", { symbol, issuer_name: rows.map((r) => r.issuer_name).filter(Boolean).pop() || null, points }, { provider: "github-mirror", cached: true });
   }
   const releases = (await env.DB.prepare("SELECT as_of FROM own_releases ORDER BY as_of").all()).results.map((r) => r.as_of);
   if (!releases.length) throw notFound("no ownership data loaded on the web terminal yet");
@@ -491,7 +501,7 @@ export async function ownershipForeign(env, symbolRaw, from, to, limit = 25) {
   const rows = [...after.entries()].map(([symbol, a]) => { const b = before.get(symbol); const pf = b ? r4(b.foreign_pct) : null; return { symbol, issuer_name: a.issuer_name, foreign_pct_from: pf, foreign_pct_to: r4(a.foreign_pct), change_pp: r4(a.foreign_pct - (pf || 0)), foreign_holders_to: a.foreign_holders }; })
     .sort((a, b) => Math.abs(b.change_pp) - Math.abs(a.change_pp) || a.symbol.localeCompare(b.symbol));
   const data = { from: fromDate, to: toDate, issuers: rows.length, inflows: rows.filter((r) => r.change_pp > 0).length, outflows: rows.filter((r) => r.change_pp < 0).length, net_pp: r4(rows.reduce((s, r) => s + r.change_pp, 0)), rows: limit > 0 ? rows.slice(0, limit) : rows };
-  return envelope("idx.ownership.foreign-flow.v1", data, { provider: "local-db", cached: true });
+  return envelope("idx.ownership.foreign-flow.v1", data, { provider: "github-mirror", cached: true });
 }
 
 // ---- brief ---------------------------------------------------------------------
@@ -568,6 +578,7 @@ export async function route(env, url) {
     case "/ownership/entity": return ownershipEntity(env, q.get("name"), q.get("as_of"));
     case "/ownership/changes": return ownershipChanges(env, q.get("from"), q.get("to"), q.get("symbol"), num(q.get("min_change"), 0), num(q.get("limit"), 50), num(q.get("offset"), 0));
     case "/ownership/releases": return ownershipReleases(env);
+    case "/ownership/status": return envelope("idx.ownership.sync.v1", await syncStatus(env), { provider: "github-mirror", cached: true });
     case "/universe": return envelope("idx.universe.v1", UNIVERSE.map(([symbol, name]) => ({ symbol, name })), { provider: "bundled", cached: true });
     default: throw notFound(`no such endpoint ${p}`);
   }

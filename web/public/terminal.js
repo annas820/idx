@@ -24,7 +24,7 @@ const COMMANDS = [
   { name: "brief", usage: "brief <SYMBOL>", help: "one page: quote, verdict, signal, returns, dividends, holders, headlines" },
   { name: "sentiment", usage: "sentiment <SYMBOL>", help: "lexicon sentiment over matching headlines" },
   { name: "market", usage: "market", help: "IHSG, breadth, gainers, losers, most traded" },
-  { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] [--offset N] | foreign [SYMBOL] | releases", help: "KSEI holders above 1 % (when a register is loaded): holders, entities, monthly changes with a summary, foreign vs local" },
+  { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] [--offset N] | foreign [SYMBOL] | releases", help: "KSEI holders above 1 %, synced monthly from IDX: holders, entities, monthly changes with a summary, foreign vs local" },
   { name: "json", usage: "json <command…>", help: "print the raw JSON envelope of any command" },
   { name: "help", usage: "help [command]", help: "this list" },
   { name: "clear", usage: "clear", help: "clear the sheet" },
