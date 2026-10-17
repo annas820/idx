@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- Web terminal and landing page at https://ihsg.midoriresearch.com with a
+  minute-refreshed D1 snapshot API (`web/`), screenshots in `docs/screenshots/`.
+- `web/scripts/ownership-sync.mjs` to publish a local ownership register to D1.
+
 ## [0.1.0] - 2026-10-17
 
 ### Added
