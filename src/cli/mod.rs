@@ -16,6 +16,7 @@ use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Sourced, T
 pub mod cache_cmd;
 pub mod config_cmd;
 pub mod market;
+pub mod mcp_cmd;
 pub mod ownership;
 pub mod stocks;
 pub mod watch;
@@ -131,11 +132,11 @@ pub enum Command {
     #[command(subcommand)]
     Cache(cache_cmd::CacheCmd),
 
-    /// Start the MCP server on stdin/stdout (for Claude Code, Cursor and other MCP clients).
+    /// MCP server over stdio (default) or HTTP; `mcp setup <client>` prints the registration recipe for any agent.
     #[command(
-        after_help = "Register with Claude Code:\n  claude mcp add idx -- idx mcp\nOther clients (Cursor, Windsurf, Codex, Gemini CLI, Claude Desktop): command `idx`, args [\"mcp\"].\n\n20 tools returning the same JSON as -o json: idx_brief (start here), idx_market, idx_quote, idx_history,\nidx_profile, idx_financials, idx_earnings, idx_dividends, idx_returns, idx_fundamental, idx_technical,\nidx_compare, idx_screen, idx_news, idx_sentiment, idx_ownership_ticker|entity|changes|foreign|releases.\nLogs go to stderr; stdout carries only the protocol."
+        after_help = "Serve:\n  idx mcp                                   # stdio, what every local agent launches\n  idx mcp --http 127.0.0.1:8765 --token T   # streamable HTTP at /mcp for URL-only clients\n\nRegister (prints the exact command or snippet, with this binary's absolute path):\n  idx mcp setup --list\n  idx mcp setup claude-code | codex | muse | antigravity | gemini | copilot-cli | vscode | cursor | windsurf |\n                kiro | jetbrains | zed | cline | continue | opencode | goose | warp | droid | vibe | qwen |\n                crush | trae | augment | chatgpt\n\n20 tools returning the same JSON as -o json: idx_brief (start here), idx_market, idx_quote, idx_history,\nidx_profile, idx_financials, idx_earnings, idx_dividends, idx_returns, idx_fundamental, idx_technical,\nidx_compare, idx_screen, idx_news, idx_sentiment, idx_ownership_ticker|entity|changes|foreign|releases.\nLogs go to stderr; stdout carries only the protocol."
     )]
-    Mcp,
+    Mcp(mcp_cmd::McpArgs),
 
     /// Print the JSON Schema for a JSON output shape (run without a name to list them).
     Schema {
@@ -224,7 +225,7 @@ pub fn resolve_settings(global: &GlobalOpts) -> Result<Settings> {
     config::resolve(&overrides, &file, config_path, &|k| std::env::var(k).ok())
 }
 
-fn build_context(global: &GlobalOpts) -> Result<Context> {
+pub fn build_context(global: &GlobalOpts) -> Result<Context> {
     let settings = resolve_settings(global)?;
     let backend = ReqwestBackend::new(settings.timeout())?;
     let fetcher = Arc::new(Fetcher::new(
@@ -275,10 +276,7 @@ pub async fn run(cli: Cli) -> Result<()> {
             let ctx = build_context(&cli.global)?;
             watch::run(&ctx, args).await
         }
-        Command::Mcp => {
-            let ctx = build_context(&cli.global)?;
-            crate::mcp::serve(ctx.provider, ctx.fetcher, ctx.settings.ownership_db.clone()).await
-        }
+        Command::Mcp(args) => mcp_cmd::run(&cli.global, args).await,
         Command::Config(cmd) => config_cmd::run(&cli.global, cmd),
         Command::Cache(cmd) => cache_cmd::run(&cli.global, cmd),
         Command::Schema { name } => {

@@ -37,6 +37,8 @@ use crate::providers::{Provider, Sourced};
 use crate::service;
 use crate::universe;
 
+pub mod clients;
+pub mod http;
 pub mod schema;
 
 const INSTRUCTIONS: &str = "\

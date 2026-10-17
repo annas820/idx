@@ -452,6 +452,62 @@ fn ownership_import_and_queries_work_offline() {
 }
 
 #[test]
+fn mcp_setup_prints_recipes_offline() {
+    let sb = sandbox();
+    idx(&sb.cache, &sb.config)
+        .args(["mcp", "setup", "--list"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("muse"))
+        .stdout(predicate::str::contains("codex"))
+        .stdout(predicate::str::contains("chatgpt"));
+    let out = idx(&sb.cache, &sb.config)
+        .args(["mcp", "setup", "codex"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("codex mcp add idx -- "))
+        .stdout(predicate::str::contains("[mcp_servers.idx]"))
+        .get_output()
+        .stdout
+        .clone();
+    let text = String::from_utf8(out).unwrap();
+    assert!(
+        text.contains("idx.exe") || text.contains("/idx"),
+        "absolute binary path expected:\n{text}"
+    );
+    idx(&sb.cache, &sb.config)
+        .args(["-o", "json", "mcp", "setup", "muse"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("schema_version"))
+        .stdout(predicate::str::contains("mcp_servers"))
+        .stdout(predicate::str::contains("\"client\": \"muse\""));
+    idx(&sb.cache, &sb.config)
+        .args([
+            "mcp",
+            "setup",
+            "cursor",
+            "--http",
+            "https://h.example/mcp",
+            "--token",
+            "t0k",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("Bearer t0k"));
+    idx(&sb.cache, &sb.config)
+        .args(["mcp", "setup", "nope"])
+        .assert()
+        .code(2);
+    // Binding a public address without a token is refused before anything listens.
+    idx(&sb.cache, &sb.config)
+        .args(["mcp", "--http", "0.0.0.0:0"])
+        .assert()
+        .code(6)
+        .stderr(predicate::str::contains("--token"));
+}
+
+#[test]
 fn watchlist_roundtrip() {
     let sb = sandbox();
     let file = sb.cache.join("watchlist.txt");
