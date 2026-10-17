@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>idx terminal · Indonesian stock market</title>
+<meta name="description" content="Browser terminal for idx: type quote BBCA, fundamental TLKM, screen pe<10 and get the same answers as the CLI, from a minute-refreshed snapshot.">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="module" src="/terminal.js"></script>
+</head>
+<body class="term-body">
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="idx home"><img src="/mark.svg" alt="" width="34" height="34"><span>idx</span></a>
+    <p class="masthead-title cond"><b>Terminal</b> · the CLI in a browser, from a minute-refreshed snapshot</p>
+    <p class="dateline"><strong id="dateline">connecting…</strong></p>
+  </div>
+</header>
+
+<main class="term-main">
+  <div class="out" id="out" aria-live="polite" aria-label="Command output">
+    <section class="entry" id="welcome">
+      <div class="caption"><span class="cmd">help</span><span class="meta">type a command below, or click one</span></div>
+      <div class="body prose">
+        <p>Same commands as the CLI, same fields. Quotes come from a board refreshed every minute in IDX hours; everything else is fetched on demand and cached. Results print as statements, newest at the bottom.</p>
+        <div class="hints" id="hints"></div>
+        <noscript><p class="err">The terminal needs JavaScript. The CLI does not: <code>curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh</code></p></noscript>
+      </div>
+    </section>
+  </div>
+
+  <form class="prompt" id="prompt" autocomplete="off">
+    <label for="cmd">Perintah · command</label>
+    <input id="cmd" name="cmd" type="text" placeholder="quote BBCA,BBRI,TLKM" spellcheck="false" autocapitalize="off" autofocus aria-describedby="prompt-help">
+    <button type="submit">Run</button>
+    <span id="prompt-help" class="sr-only">Enter runs the command; up and down arrows recall history; Tab completes a command name.</span>
+  </form>
+</main>
+</body>
+</html>

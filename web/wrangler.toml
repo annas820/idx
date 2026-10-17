@@ -16,10 +16,21 @@ routes = [
 directory = "public"
 binding = "ASSETS"
 not_found_handling = "404-page"
-run_worker_first = true
+run_worker_first = ["/api/*", "/healthz"]
 
 [vars]
 PUBLIC_HOST = "ihsg.midoriresearch.com"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "idx"
+database_id = "f9359e42-2661-4757-b55b-1e8c19e7180f"
+migrations_dir = "migrations"
+
+# Snapshot refresh. The handler itself decides how much to do: every minute
+# during IDX trading hours (WIB), every 15 minutes otherwise.
+[triggers]
+crons = ["* * * * *"]
 
 [observability]
 enabled = true

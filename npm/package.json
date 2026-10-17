@@ -1,0 +1,16 @@
+{
+  "name": "@midoriresearch/idx",
+  "version": "0.0.0",
+  "description": "Indonesian stock market (IDX / IHSG) CLI and MCP server. Downloads the prebuilt idx binary for your platform.",
+  "license": "MIT",
+  "homepage": "https://ihsg.midoriresearch.com",
+  "repository": { "type": "git", "url": "https://github.com/fzn0x/idx" },
+  "bugs": "https://github.com/fzn0x/idx/issues",
+  "keywords": ["idx", "ihsg", "stocks", "indonesia", "finance", "mcp", "cli"],
+  "bin": { "idx": "bin/idx.js" },
+  "files": ["bin/", "install.js", "README.md"],
+  "scripts": { "postinstall": "node install.js" },
+  "os": ["darwin", "linux", "win32"],
+  "cpu": ["x64", "arm64"],
+  "engines": { "node": ">=18" }
+}

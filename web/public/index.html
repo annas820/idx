@@ -3,202 +3,148 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>idx · Indonesian stock market CLI</title>
-<meta name="description" content="idx is an open-source CLI, MCP server and web terminal for Indonesian stock market (IDX / IHSG) analysis. Free data, no API keys, built for people and AI agents.">
+<title>idx · Indonesian stock market CLI, MCP server and web terminal</title>
+<meta name="description" content="idx is an open-source CLI, MCP server and web terminal for Indonesian stock market (IDX / IHSG) analysis. Free public data, no API keys, built for people and AI agents.">
 <meta property="og:title" content="idx · Indonesian stock market CLI">
-<meta property="og:description" content="Quotes, history and analysis for IDX tickers from one binary. Tables for people, JSON for scripts, MCP tools for agents.">
+<meta property="og:description" content="Quotes, fundamentals, technicals, the KSEI shareholder register and news for IDX tickers. One binary, three faces: table, JSON, MCP.">
 <meta property="og:url" content="https://ihsg.midoriresearch.com/">
 <meta property="og:image" content="https://ihsg.midoriresearch.com/mark.svg">
 <link rel="icon" href="/mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-<style>
-  :root {
-    --bg: #0b0f14;
-    --bg-raised: #10161e;
-    --line: #1f2937;
-    --ink: #e5e9ef;
-    --ink-2: #9aa7b6;
-    --ink-3: #6b7a8c;
-    --up: #4ade80;
-    --up-deep: #16a34a;
-    --dn: #f43f5e;
-    --focus: #4ade80;
-    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Menlo, Consolas, monospace;
-  }
-  * { box-sizing: border-box; }
-  html { color-scheme: dark; scrollbar-color: var(--line) var(--bg); }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-  }
-  ::selection { background: var(--up-deep); color: #04110a; }
-  a { color: var(--up); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--up) 40%, transparent); text-underline-offset: 0.18em; }
-  a:hover { text-decoration-color: var(--up); }
-  :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
-
-  .wrap { width: min(72rem, 100% - 2rem); margin: 0 auto; }
-
-  header { padding: 1.5rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-  .brand { display: inline-flex; align-items: center; gap: 0.6rem; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 1.25rem; letter-spacing: -0.02em; }
-  .brand img { width: 36px; height: 36px; display: block; border-radius: 9px; }
-  header nav a { color: var(--ink-2); text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
-  header nav a:hover { color: var(--ink); }
-
-  .hero { padding: 4rem 0 2.5rem; max-width: 46rem; }
-  .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.25rem);
-    line-height: 1.05;
-    letter-spacing: -0.025em;
-    font-weight: 600;
-    margin: 0 0 1.25rem;
-    text-wrap: balance;
-  }
-  .hero h1 em { font-style: normal; color: var(--up); }
-  .hero p { font-size: 1.15rem; color: var(--ink-2); margin: 0 0 2rem; max-width: 38rem; }
-  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    padding: 0.7rem 1.1rem; border-radius: 8px; font-weight: 500; text-decoration: none;
-    border: 1px solid var(--line); color: var(--ink); background: var(--bg-raised);
-    transition: border-color 160ms ease-out, background 160ms ease-out;
-  }
-  .btn:hover { border-color: var(--ink-3); background: #141c26; }
-  .btn.primary { background: var(--up); color: #04110a; border-color: var(--up); }
-  .btn.primary:hover { background: #6ee7a0; border-color: #6ee7a0; }
-  .btn svg { width: 18px; height: 18px; }
-  .soon { color: var(--ink-3); font-size: 0.95rem; }
-
-  .term {
-    margin: 2.5rem 0 0;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: var(--bg-raised);
-    box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.8);
-    overflow: hidden;
-  }
-  .term-bar {
-    display: flex; align-items: center; gap: 0.75rem;
-    padding: 0.65rem 1rem; border-bottom: 1px solid var(--line);
-    font-family: var(--mono); font-size: 0.8rem; color: var(--ink-3);
-  }
-  .term-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); display: inline-block; }
-  .term pre {
-    margin: 0; padding: 1rem 1.25rem 1.25rem;
-    font-family: var(--mono); font-size: 0.82rem; line-height: 1.5;
-    overflow-x: auto; font-variant-numeric: tabular-nums;
-    scrollbar-width: thin;
-  }
-  .term pre .cmd { color: var(--ink); }
-  .term pre .prompt { color: var(--up); }
-  .term pre .dn { color: var(--dn); }
-  .term pre .dim { color: var(--ink-3); }
-
-  .points { padding: 3.5rem 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 2.5rem 3rem; }
-  .points h2 { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
-  .points p { margin: 0; color: var(--ink-2); font-size: 1rem; }
-  .points code { font-family: var(--mono); font-size: 0.9em; color: var(--ink); background: var(--bg-raised); padding: 0.05em 0.35em; border-radius: 4px; }
-
-  .install { padding: 2.5rem 0 3rem; max-width: 46rem; }
-  .install h2 { font-size: 1.35rem; letter-spacing: -0.015em; margin: 0 0 0.75rem; }
-  .install p { color: var(--ink-2); margin: 0 0 1rem; }
-  .install pre {
-    margin: 0; padding: 0.9rem 1.1rem; border: 1px solid var(--line); border-radius: 8px;
-    background: var(--bg-raised); font-family: var(--mono); font-size: 0.88rem; overflow-x: auto;
-  }
-
-  footer { border-top: 1px solid var(--line); padding: 1.75rem 0 2.5rem; color: var(--ink-3); font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; justify-content: space-between; }
-  footer a { color: var(--ink-2); }
-
-  @media (max-width: 40rem) {
-    header nav a { margin-left: 1rem; }
-    .hero { padding-top: 2.5rem; }
-    .points { gap: 2rem; }
-  }
-  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="module" src="/landing.js"></script>
 </head>
-<body>
-<div class="wrap">
-  <header>
-    <a class="brand" href="/" aria-label="idx home"><img src="/mark.svg" alt="" width="36" height="36"><span>idx</span></a>
-    <nav aria-label="Primary">
-      <a href="https://github.com/fzn0x/idx">GitHub</a>
-      <a href="https://github.com/fzn0x/idx/blob/main/docs/json-output.md">JSON docs</a>
-    </nav>
-  </header>
+<body class="draw">
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="idx home"><img src="/mark.svg" alt="" width="34" height="34"><span>idx</span></a>
+    <p class="masthead-title cond"><b>Laporan Pasar</b> · Indonesian stock market CLI, MCP server and web terminal</p>
+    <p class="dateline">Published every minute · <strong id="dateline">loading board…</strong></p>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <h1>The Indonesian stock market, <em>from your terminal</em>.</h1>
-      <p>idx is one open-source binary for IDX / IHSG analysis. People get tables, scripts get stable JSON, and AI agents get the same capabilities as MCP tools. Free public data only, no API keys.</p>
-      <div class="actions">
-        <a class="btn primary" href="https://github.com/fzn0x/idx#install">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-          Install the CLI
-        </a>
-        <a class="btn" href="https://github.com/fzn0x/idx">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
-          Source on GitHub
-        </a>
-        <span class="soon">Web terminal opens here with the first release.</span>
+<main class="sheet wrap">
+  <div class="lead">
+    <section aria-labelledby="board-h">
+      <h2 id="board-h" class="strip cond"><span>Papan Harga · Live board</span><small>Heavyweights by market cap · IDR · delayed as published</small></h2>
+      <div class="index-line" id="index-line">
+        <span class="ix">IHSG composite</span>
+        <span class="px" id="ix-px">—</span>
+        <span class="chg" id="ix-chg">—</span>
+        <span class="breadth" id="breadth">advancing — · declining —</span>
       </div>
-
-      <div class="term" role="figure" aria-label="Real output of idx stocks quote">
-        <div class="term-bar"><i></i><i></i><i></i><span>idx 0.1.0 · yahoo · delayed data</span></div>
-<pre><span class="prompt">$</span> <span class="cmd">idx stocks quote BBCA,BBRI,TLKM</span>
-╭────────┬──────────────────────────────┬───────┬──────┬─────────┬───────┬───────┬───────┬───────────────┬─────────┬───────┬────────╮
-│ Symbol ┆ Name                         ┆ Price ┆ Chg  ┆ Chg %   ┆ Open  ┆ High  ┆ Low   ┆ Volume        ┆ Mkt Cap ┆ P/E   ┆ Div %  │
-╞════════╪══════════════════════════════╪═══════╪══════╪═════════╪═══════╪═══════╪═══════╪═══════════════╪═════════╪═══════╪════════╡
-│ BBCA   ┆ PT Bank Central Asia Tbk     ┆ 5,175 ┆ <span class="dn">-900</span> ┆ <span class="dn">-14.81%</span> ┆ 5,825 ┆ 5,825 ┆ 5,175 ┆ 1,241,098,200 ┆  635.7T ┆ 10.96 ┆  6.27% │
-│ BBRI   ┆ PT Bank Rakyat Indonesia (P… ┆ 2,640 ┆ <span class="dn">-460</span> ┆ <span class="dn">-14.84%</span> ┆ 2,640 ┆ 2,890 ┆ 2,640 ┆ 1,193,916,400 ┆  397.8T ┆  6.49 ┆ 13.48% │
-│ TLKM   ┆ Perusahaan Perseroan (Perse… ┆ 1,900 ┆ <span class="dn">-330</span> ┆ <span class="dn">-14.80%</span> ┆ 1,900 ┆ 1,985 ┆ 1,900 ┆   963,614,200 ┆  187.3T ┆ 10.98 ┆ 10.01% │
-╰────────┴──────────────────────────────┴───────┴──────┴─────────┴───────┴───────┴───────┴───────────────┴─────────┴───────┴────────╯
-<span class="dim">Last trade 2026-10-16 16:14 WIB · market closed · delayed data</span>
-
-<span class="prompt">$</span> <span class="cmd">idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing}'</span>
-{ "price": 5175.0, "change_pct": -14.814815, "pe_trailing": 10.963983 }</pre>
+      <div id="tape-slot"></div>
+      <div id="board">
+        <div class="tbl-wrap">
+          <table class="tbl" aria-label="Live board placeholder">
+            <thead><tr><th class="l">Symbol</th><th class="l">Name</th><th>Price</th><th>Chg</th><th>Chg %</th><th>Volume</th><th>Mkt Cap</th></tr></thead>
+            <tbody>
+              <tr><td class="l sym">BBCA</td><td class="l name muted">Loading the live board…</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><td class="l sym">BBRI</td><td class="l name muted">The board is refreshed every minute during IDX hours.</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><td class="l sym">TLKM</td><td class="l name muted">Without JavaScript, use the CLI: idx stocks quote BBCA</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+      <p class="foot" id="board-foot"><span>Source: Yahoo Finance via the idx snapshot.</span><span>Prices are delayed as published; this page is research tooling, not investment advice.</span></p>
     </section>
 
-    <section class="points" aria-label="What idx does">
-      <div>
-        <h2>Free data, no keys</h2>
-        <p>Yahoo Finance today; MSN Money, idx.co.id and Indonesian finance news next. Every source sits behind a <code>Provider</code> trait, so one breaking does not take the tool down.</p>
+    <aside class="ket" aria-labelledby="ket-h">
+      <h2 id="ket-h" class="strip cond"><span>Keterangan</span><small>Notes</small></h2>
+      <p><b>idx</b> is one open-source binary for the Indonesia Stock Exchange: quotes, history, fundamentals, technicals, the KSEI register of holders above 1 %, news.</p>
+      <p><b>Three faces, one answer.</b> A table for people, <code>-o json</code> for scripts, and <code>idx mcp</code> for Claude Code and other agents return the same fields.</p>
+      <p><b>Free, no keys.</b> Yahoo Finance, MSN Money, IDX and public feeds. Nothing is estimated; a field the source lacks is <code>null</code>.</p>
+      <div class="action">
+        <a class="stamp cond" href="/terminal">Open the terminal →</a>
+        <div class="box">
+          <span class="lbl">Install · Linux, macOS</span>
+          <pre id="install-line">curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh</pre>
+          <span id="copy-install"></span>
+        </div>
+        <div class="box">
+          <span class="lbl">Agents · Claude Code</span>
+          <pre id="mcp-line">claude mcp add idx -- idx mcp</pre>
+          <span id="copy-mcp"></span>
+        </div>
+        <p class="foot"><a href="https://github.com/fzn0x/idx">Source on GitHub</a> <a href="https://github.com/fzn0x/idx/blob/main/docs/json-output.md">JSON contract</a> <a href="https://github.com/fzn0x/idx/blob/main/docs/mcp.md">MCP tools</a></p>
       </div>
-      <div>
-        <h2>Built for agents</h2>
-        <p><code>-o json</code> emits a schema-documented envelope and exit codes mean something. <code>idx mcp</code> will expose every command as a typed MCP tool for Claude Code and friends.</p>
-      </div>
-      <div>
-        <h2>Works offline</h2>
-        <p>Responses are cached with per-endpoint TTLs. <code>--offline</code> serves the cache instead of failing when the network is gone.</p>
-      </div>
-      <div>
-        <h2>Ownership, not just prices</h2>
-        <p>Coming: KSEI monthly holder reports ingested into local SQLite, so you can ask who holds more than 1% of a ticker and how that changed month over month.</p>
-      </div>
-    </section>
+    </aside>
+  </div>
 
-    <section class="install">
-      <h2>Install</h2>
-      <p>Pre-built binaries, an <code>install.sh</code> with checksum verification and an npm wrapper arrive with the first tagged release. Until then, build from source with Rust:</p>
-      <pre>cargo install --git https://github.com/fzn0x/idx
-idx stocks quote BBCA</pre>
-    </section>
-  </main>
+  <section class="section" aria-labelledby="movers-h">
+    <h2 id="movers-h" class="strip cond"><span>Saham Teraktif · Movers</span><small>Liquid names only (market cap above 1 T) · from the same snapshot</small></h2>
+    <div class="movers" id="movers">
+      <div class="stmt"><h3 class="stmt-title">Gainers</h3><p class="muted" style="padding:.5rem 0">Loading…</p></div>
+      <div class="stmt"><h3 class="stmt-title">Losers</h3><p class="muted" style="padding:.5rem 0">Loading…</p></div>
+      <div class="stmt"><h3 class="stmt-title">Most traded by value</h3><p class="muted" style="padding:.5rem 0">Loading…</p></div>
+    </div>
+  </section>
 
-  <footer>
-    <span>MIT licensed · a <a href="https://midoriresearch.com">Midori Research</a> project</span>
-    <span>Delayed data as published by the source. Research tooling, not investment advice. Not affiliated with IDX, KSEI, Yahoo or Microsoft.</span>
+  <section class="section" aria-labelledby="notes-h">
+    <h2 id="notes-h" class="strip cond"><span>Catatan atas Laporan · Notes</span><small>What this tool does and does not do</small></h2>
+    <div class="notes">
+      <p><b>Scope.</b> <code>stocks quote · history · profile · financials · earnings · fundamental · technical · compare · screen · news · sentiment</code> and <code>ownership import · ticker · entity · changes</code>, plus <code>mcp</code>, <code>schema</code>, <code>config</code>, <code>cache</code>. Every command works on IDX tickers such as <code>BBCA</code>; the <code>.JK</code> suffix is optional.</p>
+      <p><b>Sources.</b> Yahoo Finance for prices, history, profiles, ratios, earnings and statements; MSN Money for a second opinion on ratios and analyst targets; IDX's monthly KSEI file for holders above 1 %; Kontan and CNBC Indonesia feeds for news. Every response names its <code>provider</code>, <code>fetched_at</code>, and whether it came from cache.</p>
+      <p><b>Provenance over polish.</b> When two sources disagree they are never averaged: the first answers, the second fills blanks, and <code>sources</code> lists who contributed. Yahoo publishes gross margin as 0 for banks; idx publishes <code>null</code>, because it means not applicable.</p>
+      <p><b>Ownership.</b> Since March 2026 KSEI compiles, and IDX publishes monthly, every holder above 1 % of a listed company. The CLI imports the XLSX (or the earlier PDF) into local SQLite with normalised entity names, so <em>who holds more than 1 % of BBCA</em> and <em>what did this fund change last month</em> are one command each. idx.co.id sits behind Cloudflare; the import explains the manual path when a download is refused.</p>
+      <p><b>Heuristics are labelled.</b> The fundamentals verdict, the technical signal and the news sentiment are rule scores. Every rule that fired is listed in plain language, and none of them is advice.</p>
+      <p><b>Offline and free.</b> Responses are cached with per-endpoint lifetimes; <code>--offline</code> serves the cache when the network is gone. No accounts, no keys, no paywall. MIT licence; self-hosting this page is one <code>wrangler deploy</code>.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="ikh-h">
+    <h2 id="ikh-h" class="strip cond"><span>Ikhtisar · The same answer in three forms</span><small>Real output, 16 October 2026</small></h2>
+    <div class="three">
+      <div class="stmt">
+        <h3 class="stmt-title">For people<small>idx stocks quote BBCA,BBRI,TLKM</small></h3>
+<pre>Symbol  Price   Chg    Chg %    P/E    Div %
+BBCA    5,175   -900   -14.81%  10.96  6.27%
+BBRI    2,640   -460   -14.84%   6.49  13.48%
+TLKM    1,900   -330   -14.80%  10.98  10.01%
+Last trade 2026-10-16 16:14 WIB · market closed</pre>
+      </div>
+      <div class="stmt">
+        <h3 class="stmt-title">For scripts<small>idx -o json stocks fundamental BBCA | jq .data.verdict</small></h3>
+<pre>{
+  "label": "undervalued",
+  "score": 5,
+  "reasons": [
+    "trailing P/E 12.9 is moderate (10 to 15)",
+    "ROE 21.8% is strong (over 15%)",
+    "net margin 53.1% is wide",
+    "dividend yield 6.3% is generous",
+    "analyst mean target implies 58% upside"
+  ],
+  "inputs_available": 8
+}</pre>
+      </div>
+      <div class="stmt">
+        <h3 class="stmt-title">For agents<small>idx mcp · 15 tools over stdio</small></h3>
+        <table class="tbl" aria-label="MCP tools">
+          <tbody>
+            <tr><td>idx_quote</td><td>delayed quotes</td></tr>
+            <tr><td>idx_history</td><td>OHLCV candles</td></tr>
+            <tr><td>idx_fundamental</td><td>ratios + verdict</td></tr>
+            <tr><td>idx_technical</td><td>RSI, MACD, levels, signal</td></tr>
+            <tr><td>idx_screen</td><td>filter the universe</td></tr>
+            <tr><td>idx_news · idx_sentiment</td><td>headlines, lexicon score</td></tr>
+            <tr><td>idx_ownership_*</td><td>holders above 1 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sign">
+    <div>
+      <p class="place">Jakarta, <span id="today">2026</span>. <b>Midori Research</b> · MIT licence · <a href="mailto:desk@midoriresearch.com">desk@midoriresearch.com</a></p>
+      <p class="links"><a href="https://github.com/fzn0x/idx">GitHub</a> <a href="/terminal">Web terminal</a> <a href="https://github.com/fzn0x/idx/blob/main/docs/ownership.md">Ownership data</a> <a href="https://github.com/fzn0x/idx/blob/main/CHANGELOG.md">Changelog</a></p>
+      <p class="disc">Prices and statements are delayed as published by their sources. Research tooling, not investment advice. Not affiliated with IDX, KSEI, Yahoo or Microsoft.</p>
+    </div>
+    <span class="stamp red cond" aria-hidden="true">[PUBLIC]</span>
   </footer>
-</div>
+</main>
 </body>
 </html>
