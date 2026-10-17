@@ -16,6 +16,13 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
   `ownership/entity`, `ownership/changes`, `ownership/foreign`,
   `ownership/releases`, `universe`.
 - `migrations/` D1 schema. `test/` runs with `node --test web/test/*.mjs`.
+- Search and sharing: canonical, Open Graph and Twitter tags on both pages,
+  JSON-LD on the landing page, `public/robots.txt` and `public/sitemap.xml`;
+  API responses carry `x-robots-tag: noindex`. The share card
+  `public/og.png` (1200x630) and `public/apple-touch-icon.png` are rendered
+  from `og/card.html` and `og/icon.html` by `node web/scripts/og.mjs`
+  (headless Chrome, Node 22+); re-run it after editing either source.
+  `test/seo.test.mjs` checks the tags against the files.
 - The cron (`* * * * *`) refreshes the whole quote board as one JSON row and
   the IHSG tape every minute in IDX hours, every 15 minutes otherwise, which
   keeps writes far inside D1's free tier.

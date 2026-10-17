@@ -30,7 +30,8 @@ const SECURITY_HEADERS = {
 function json(body, status = 200, extra = {}) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
-    headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store", ...SECURITY_HEADERS, ...extra },
+    // noindex: API envelopes are data for the pages and the CLI, not search results.
+    headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store", "x-robots-tag": "noindex", ...SECURITY_HEADERS, ...extra },
   });
 }
 

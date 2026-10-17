@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>idx social card</title>
+<!-- Source of public/og.png (1200x630). Not served; render with scripts/og.mjs.
+     Tokens and type follow DESIGN.md; the mono face is a web font so the
+     render does not depend on the machine's installed fonts. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@500&display=block">
+<style>
+  :root {
+    --paper: #f1f1ee; --ink: #111312; --ink-2: #3b413d; --ink-3: #5e665f;
+    --rule: #1b1e1c; --rule-soft: #b9bcb5; --green-deep: #0f6b31; --green-ink: #0b4d24; --red: #b3122f;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    display: flex; flex-direction: column;
+    background: var(--paper); color: var(--ink);
+    font-family: Archivo, sans-serif; font-variant-numeric: tabular-nums lining-nums;
+    -webkit-font-smoothing: antialiased;
+  }
+  .cond { font-stretch: 75%; font-variation-settings: "wdth" 75; }
+
+  .band {
+    flex: none; height: 118px; padding: 0 64px; display: flex; align-items: center; gap: 20px;
+    background: var(--green-deep); color: #fff; border-bottom: 4px solid var(--ink);
+  }
+  .band img { width: 70px; height: 70px; display: block; border-radius: 12px; border: 2px solid rgba(255, 255, 255, 0.35); }
+  .band .word { font-size: 62px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+  .band .kick { margin-left: auto; text-align: right; font-size: 36px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.05; }
+  .band .kick small { display: block; font-stretch: 100%; font-variation-settings: "wdth" 100; font-size: 22px; font-weight: 500; letter-spacing: 0; text-transform: none; color: #e9f6ee; }
+
+  main { flex: 1; display: flex; flex-direction: column; padding: 34px 64px 30px; }
+  h1 { font-size: 84px; font-weight: 900; line-height: 0.96; text-transform: uppercase; letter-spacing: 0.01em; }
+
+  table { width: 100%; margin-top: 30px; border-collapse: collapse; }
+  td { padding: 10px 0 9px; border-bottom: 2px solid var(--rule-soft); font-size: 26px; white-space: nowrap; }
+  tr:first-child td { border-top: 4px solid var(--rule); }
+  tr:last-child td { border-bottom: 3px solid var(--rule); }
+  .who { width: 250px; font-size: 26px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+  .cmd { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 27px; }
+  .what { text-align: right; color: var(--ink-2); }
+
+  footer { margin-top: auto; padding-top: 16px; display: flex; align-items: center; gap: 28px; font-size: 24px; color: var(--ink-2); }
+  footer b { color: var(--ink); font-weight: 800; }
+  .stamp {
+    margin-left: auto; padding: 6px 14px; transform: rotate(2deg);
+    border: 3px solid var(--red); color: var(--red);
+    font-size: 24px; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <header class="band">
+    <img src="../public/mark.svg" alt="">
+    <span class="word">idx</span>
+    <span class="kick cond">Laporan Pasar<small>Indonesian stock market · IDX / IHSG</small></span>
+  </header>
+  <main>
+    <h1 class="cond">IDX stocks for people,<br>scripts and AI agents</h1>
+    <table>
+      <tr><td class="who cond">For people</td><td class="cmd">idx stocks quote BBCA</td><td class="what">ruled tables</td></tr>
+      <tr><td class="who cond">For scripts</td><td class="cmd">idx -o json stocks quote BBCA</td><td class="what">stable JSON envelope</td></tr>
+      <tr><td class="who cond">For agents</td><td class="cmd">idx mcp</td><td class="what">MCP server, stdio or HTTP</td></tr>
+    </table>
+    <footer>
+      <b>ihsg.midoriresearch.com</b>
+      <span>Free public data · no API keys · MIT</span>
+      <span class="stamp cond">[Public]</span>
+    </footer>
+  </main>
+</body>
+</html>

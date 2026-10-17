@@ -1,0 +1,7 @@
+User-agent: *
+# The landing page and the terminal render the board from /api/market; every
+# other endpoint fetches upstream on demand and is not content to index.
+Allow: /api/market
+Disallow: /api/
+
+Sitemap: https://ihsg.midoriresearch.com/sitemap.xml
