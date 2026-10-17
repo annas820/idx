@@ -28,7 +28,7 @@ use crate::output::json::{
     self, Envelope, ErrorEnvelope, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
     SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_OWNERSHIP_CHANGES,
     SCHEMA_OWNERSHIP_ENTITY, SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES, SCHEMA_PROFILE,
-    SCHEMA_QUOTES, SCHEMA_TECHNICAL,
+    SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
 };
 use crate::output::json::{SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT};
 use crate::ownership::OwnershipDb;
@@ -162,6 +162,15 @@ pub struct NewsArgs {
     /// With a symbol: return only headlines that mention the company, no market context (default false).
     #[serde(default)]
     pub company_only: Option<bool>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct ReturnsArgs {
+    /// One or more IDX tickers, comma or space separated, e.g. "BBCA,BBRI".
+    pub symbols: String,
+    /// Index for excess returns: "^JKSE" (IHSG, default), "^JKLQ45", or "none" to skip it.
+    #[serde(default)]
+    pub benchmark: Option<String>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -378,6 +387,31 @@ impl IdxServer {
                 ok(
                     SCHEMA_DIVIDENDS,
                     service::dividends(self.provider.as_ref(), &symbol).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_returns",
+        description = "Price performance for one or more IDX tickers computed from five years of daily closes: total returns over 1w, 1m, 3m, 6m, YTD, 1y, 3y, 5y; CAGR 3y/5y; annualised 1y volatility; max drawdown (1y and whole window, with peak/trough dates); best and worst day; 52-week range and distance from the high; plus the benchmark index's returns and the ticker's excess over it (IHSG ^JKSE by default). Dividends are excluded. Returns the idx.returns.v1 envelope (array, order as requested)."
+    )]
+    async fn returns(
+        &self,
+        Parameters(a): Parameters<ReturnsArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbols = Symbol::parse_list([a.symbols.as_str()])?;
+                let bench = match a.benchmark.as_deref().map(str::trim) {
+                    None | Some("") => Some(Symbol::parse("^JKSE")?),
+                    Some(s) if s.eq_ignore_ascii_case("none") => None,
+                    Some(s) => Some(Symbol::parse(s)?),
+                };
+                ok(
+                    SCHEMA_RETURNS,
+                    service::returns(self.provider.as_ref(), &symbols, bench.as_ref()).await?,
                 )
             }
             .await,
@@ -753,6 +787,7 @@ mod tests {
                 "idx_ownership_ticker",
                 "idx_profile",
                 "idx_quote",
+                "idx_returns",
                 "idx_screen",
                 "idx_sentiment",
                 "idx_technical",

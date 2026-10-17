@@ -3,6 +3,7 @@
 
 pub mod dividends;
 pub mod fundamental;
+pub mod returns;
 pub mod screen;
 pub mod sentiment;
 pub mod technical;

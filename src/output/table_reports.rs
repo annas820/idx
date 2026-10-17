@@ -6,8 +6,8 @@ use comfy_table::{Attribute, Cell, Color, Table};
 
 use crate::analysis::fundamental::summary_line;
 use crate::model::{
-    DividendHistory, Earnings, FinancialPeriod, Financials, Fundamentals, Profile, SignalLabel,
-    StatementPeriod, Technical, Trend, VerdictLabel,
+    DividendHistory, Earnings, FinancialPeriod, Financials, Fundamentals, Performance, Profile,
+    ReturnWindows, SignalLabel, StatementPeriod, Technical, Trend, VerdictLabel,
 };
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
@@ -590,6 +590,128 @@ pub fn earnings(e: &Earnings, color: bool) -> String {
         ));
     }
     out.push_str(&format!("Source: {}\n", e.source));
+    out
+}
+
+fn window_cells(w: &ReturnWindows, color: bool) -> Vec<Cell> {
+    w.values()
+        .iter()
+        .map(|v| signed(f::pct(*v), *v, color))
+        .collect()
+}
+
+pub fn returns(list: &[Performance], color: bool) -> String {
+    let Some(first) = list.first() else {
+        return "No data.\n".to_string();
+    };
+    let mut out = format!(
+        "Price returns · as of {} · five years of daily closes · dividends excluded\n",
+        first.as_of
+    );
+    let mut cols = vec!["Symbol", "Price"];
+    cols.extend(ReturnWindows::LABELS.iter().map(|l| match *l {
+        "ytd" => "YTD",
+        other => other,
+    }));
+    cols.extend(["CAGR 3y", "Vol 1y", "MaxDD 1y"]);
+    let mut t = base_table(color);
+    t.set_header(header(&cols));
+    for p in list {
+        let mut cells = vec![
+            Cell::new(p.symbol.as_str()).add_attribute(Attribute::Bold),
+            right(f::price(Some(p.price))),
+        ];
+        cells.extend(window_cells(&p.returns, color));
+        cells.push(signed(f::pct(p.cagr_3y_pct), p.cagr_3y_pct, color));
+        cells.push(right(pct_opt(p.volatility_1y_pct)));
+        let dd = p.max_drawdown_1y.as_ref().map(|d| d.pct);
+        cells.push(signed(f::pct(dd), dd, color));
+        t.add_row(cells);
+    }
+    if let Some(b) = list.iter().find_map(|p| p.benchmark.as_ref()) {
+        let mut cells = vec![
+            Cell::new(format!(
+                "{}{}",
+                b.symbol,
+                b.name
+                    .as_ref()
+                    .map(|n| format!(" ({n})"))
+                    .unwrap_or_default()
+            ))
+            .add_attribute(Attribute::Italic),
+            right(f::DASH.to_string()),
+        ];
+        cells.extend(window_cells(&b.returns, color));
+        cells.extend([
+            right(f::DASH.into()),
+            right(f::DASH.into()),
+            right(f::DASH.into()),
+        ]);
+        t.add_row(cells);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+
+    if list.iter().any(|p| p.benchmark.is_some()) {
+        let bench = list
+            .iter()
+            .find_map(|p| p.benchmark.as_ref())
+            .map(|b| b.symbol.to_string())
+            .unwrap_or_default();
+        out.push_str(&format!("Excess over {bench} · percentage points\n"));
+        let mut cols = vec!["Symbol"];
+        cols.extend(ReturnWindows::LABELS.iter().map(|l| match *l {
+            "ytd" => "YTD",
+            other => other,
+        }));
+        let mut t = base_table(color);
+        t.set_header(header(&cols));
+        for p in list {
+            let Some(b) = &p.benchmark else { continue };
+            let mut cells = vec![Cell::new(p.symbol.as_str()).add_attribute(Attribute::Bold)];
+            cells.extend(window_cells(&b.excess, color));
+            t.add_row(cells);
+        }
+        out.push_str(&t.to_string());
+        out.push('\n');
+    }
+
+    for p in list {
+        let dd = |d: &Option<crate::model::Drawdown>| {
+            d.as_ref()
+                .map(|d| {
+                    format!(
+                        "{} ({} → {}{})",
+                        f::pct(Some(d.pct)),
+                        d.peak_date,
+                        d.trough_date,
+                        if d.recovered { ", recovered" } else { "" }
+                    )
+                })
+                .unwrap_or_else(|| f::DASH.into())
+        };
+        let day = |m: &Option<crate::model::DayMove>| {
+            m.as_ref()
+                .map(|m| format!("{} on {}", f::pct(Some(m.pct)), m.date))
+                .unwrap_or_else(|| f::DASH.into())
+        };
+        out.push_str(&format!(
+            "{} · 52w {} – {} ({} from high{}) · CAGR 5y {} · best day {} · worst day {} · max drawdown since {}: {}\n",
+            p.symbol,
+            f::price(p.low_52w),
+            f::price(p.high_52w),
+            f::pct(p.pct_from_52w_high),
+            p.days_since_52w_high
+                .map(|d| format!(", {d} days ago"))
+                .unwrap_or_default(),
+            f::pct(p.cagr_5y_pct),
+            day(&p.best_day_1y),
+            day(&p.worst_day_1y),
+            p.start,
+            dd(&p.max_drawdown_all),
+        ));
+    }
+    out.push_str("Computed by idx from provider closes; a window is — when the history does not reach back that far.\n");
     out
 }
 

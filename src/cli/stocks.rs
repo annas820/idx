@@ -8,8 +8,8 @@ use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     Envelope, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
-    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_SCREEN,
-    SCHEMA_SENTIMENT, SCHEMA_TECHNICAL,
+    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES,
+    SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT, SCHEMA_TECHNICAL,
 };
 use crate::output::table_news as newstbl;
 use crate::output::table_reports::{self as reports, StatementFlags};
@@ -102,6 +102,22 @@ pub enum StocksCmd {
         /// Most recent payments listed in table mode (JSON carries all).
         #[arg(long, short = 'n', default_value_t = 12)]
         limit: usize,
+    },
+
+    /// Price returns over 1w..5y, YTD, CAGR, volatility, drawdowns and 52-week position, with excess returns over IHSG.
+    #[command(
+        after_help = "Examples:\n  idx stocks returns BBCA\n  idx stocks returns BBCA BBRI BMRI BBNI          # side by side, plus IHSG\n  idx stocks returns TLKM --benchmark ^JKLQ45\n  idx stocks returns ASII --no-benchmark\n  idx -o json stocks returns BBCA | jq '.data[0] | {returns, benchmark}'\n\nComputed by idx from five years of daily closes (total price return, dividends excluded).\nIndex codes keep their caret: ^JKSE is IHSG, ^JKLQ45 is LQ45."
+    )]
+    Returns {
+        /// One or more IDX tickers, comma or space separated.
+        #[arg(required = true, value_name = "SYMBOLS")]
+        symbols: Vec<String>,
+        /// Index to measure excess returns against.
+        #[arg(long, default_value = "^JKSE", value_name = "INDEX")]
+        benchmark: String,
+        /// Skip the benchmark fetch.
+        #[arg(long)]
+        no_benchmark: bool,
     },
 
     /// Valuation, profitability, balance-sheet, growth and dividend ratios with a plain-language verdict.
@@ -212,6 +228,11 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
         } => financials(ctx, &symbol, period, statement).await,
         StocksCmd::Earnings { symbol } => earnings(ctx, &symbol).await,
         StocksCmd::Dividends { symbol, limit } => dividends(ctx, &symbol, limit).await,
+        StocksCmd::Returns {
+            symbols,
+            benchmark,
+            no_benchmark,
+        } => returns(ctx, &symbols, &benchmark, no_benchmark).await,
         StocksCmd::Fundamental { symbol } => fundamental(ctx, &symbol).await,
         StocksCmd::Technical { symbol, period } => technical(ctx, &symbol, period).await,
         StocksCmd::Compare { symbols } => compare(ctx, &symbols).await,
@@ -385,6 +406,22 @@ async fn dividends(ctx: &Context, raw: &str, limit: usize) -> Result<()> {
     }
     notices(ctx, &result);
     output::print_stdout(&reports::dividends(&result.data, limit, ctx.color))
+}
+
+async fn returns(ctx: &Context, raw: &[String], benchmark: &str, none: bool) -> Result<()> {
+    let symbols = Symbol::parse_list(raw)?;
+    let bench = if none || benchmark.eq_ignore_ascii_case("none") {
+        None
+    } else {
+        Some(Symbol::parse(benchmark)?)
+    };
+    let result = service::returns(ctx.provider.as_ref(), &symbols, bench.as_ref()).await?;
+    if ctx.json() {
+        let env = Envelope::from_sourced(SCHEMA_RETURNS, result);
+        return output::print_stdout(&output::json::to_pretty(&env)?);
+    }
+    notices(ctx, &result);
+    output::print_stdout(&reports::returns(&result.data, ctx.color))
 }
 
 async fn fundamental(ctx: &Context, raw: &str) -> Result<()> {

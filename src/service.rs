@@ -12,8 +12,8 @@ use crate::analysis::screen::{self as scr, Filter, Key};
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{
-    DividendHistory, Fundamentals, Interval, NewsItem, NewsReport, Period, ScreenReport, ScreenRow,
-    SentimentReport, Symbol, Technical,
+    BenchmarkReturns, DividendHistory, Fundamentals, History, Interval, NewsItem, NewsReport,
+    Performance, Period, ScreenReport, ScreenRow, SentimentReport, Symbol, Technical,
 };
 use crate::providers::news as newsfeed;
 use crate::providers::{Provider, Sourced};
@@ -216,6 +216,83 @@ pub async fn screen(
         total_matches: total,
         rows,
     }))
+}
+
+/// Price performance from five years of daily candles for each symbol, with
+/// excess returns over `benchmark` (an index such as `^JKSE`) when given.
+/// Symbols that fail become warnings; the call fails only when none succeed.
+pub async fn returns(
+    p: &dyn Provider,
+    symbols: &[Symbol],
+    benchmark: Option<&Symbol>,
+) -> Result<Sourced<Vec<Performance>>> {
+    let (results, bench) = futures::join!(
+        join_all(
+            symbols
+                .iter()
+                .map(|s| p.history(s, Period::Y5, Interval::Day1))
+        ),
+        async {
+            match benchmark {
+                Some(b) => Some(p.history(b, Period::Y5, Interval::Day1).await),
+                None => None,
+            }
+        }
+    );
+    let mut warnings: Vec<String> = Vec::new();
+    let mut bench_perf: Option<(Sourced<History>, Performance)> = None;
+    if let (Some(b), Some(r)) = (benchmark, bench) {
+        match r {
+            Ok(h) => match analysis::returns::analyse(&h.data) {
+                Some(perf) => bench_perf = Some((h, perf)),
+                None => warnings.push(format!("benchmark {b}: no candles")),
+            },
+            Err(e) => warnings.push(format!("benchmark {b} unavailable: {e}")),
+        }
+    }
+
+    let mut out: Option<Sourced<Vec<Performance>>> = None;
+    let mut first_err: Option<IdxError> = None;
+    for (sym, r) in symbols.iter().zip(results) {
+        match r {
+            Ok(h) => {
+                let Some(mut perf) = analysis::returns::analyse(&h.data) else {
+                    warnings.push(format!("{sym}: no candles"));
+                    continue;
+                };
+                if let Some((_, bp)) = &bench_perf {
+                    perf.benchmark = Some(BenchmarkReturns {
+                        symbol: bp.symbol.clone(),
+                        name: bp.name.clone(),
+                        returns: bp.returns.clone(),
+                        excess: perf.returns.minus(&bp.returns),
+                    });
+                }
+                match &mut out {
+                    None => out = Some(h.map(|_| vec![perf])),
+                    Some(acc) => {
+                        acc.absorb(&h);
+                        acc.data.push(perf);
+                    }
+                }
+            }
+            Err(e) => {
+                warnings.push(match &e {
+                    IdxError::NotFound(_) => format!("no data for {sym}"),
+                    other => format!("{sym}: {other}"),
+                });
+                first_err.get_or_insert(e);
+            }
+        }
+    }
+    let Some(mut result) = out else {
+        return Err(first_err.unwrap_or_else(|| IdxError::NotFound("no data".into())));
+    };
+    if let Some((bh, _)) = &bench_perf {
+        result.absorb(bh);
+    }
+    result.warnings.extend(warnings);
+    Ok(result)
 }
 
 /// Dividend and split history with totals, trailing yield and streak.

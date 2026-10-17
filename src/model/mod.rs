@@ -12,6 +12,7 @@ pub mod dividends;
 pub mod fundamentals;
 pub mod news;
 pub mod ownership;
+pub mod returns;
 pub mod screen;
 pub mod technical;
 
@@ -27,6 +28,7 @@ pub use ownership::{
     Change, ChangeBrief, ChangeKind, ChangesReport, ChangesSummary, DiscoveredFile, EntityReport,
     HoldersReport, Holding, ImportReport, IssuerFlow, Release, TypeFlow,
 };
+pub use returns::{BenchmarkReturns, DayMove, Drawdown, Performance, ReturnWindows};
 pub use screen::{ScreenReport, ScreenRow};
 pub use technical::{
     Bollinger, Levels, Macd, MovingAverages, Signal, SignalLabel, Technical, Trend, VolumeStats,
@@ -55,6 +57,7 @@ pub struct Symbol(String);
 
 impl Symbol {
     /// Accepts `bbca`, `BBCA`, `BBCA.JK`, ` bbca ` and returns `BBCA`.
+    /// Index codes keep their caret: `^JKSE` (IHSG), `^JKLQ45`.
     pub fn parse(raw: &str) -> Result<Symbol> {
         let mut s = raw.trim().to_ascii_uppercase();
         if let Some(stripped) = s.strip_suffix(".JK") {
@@ -63,13 +66,21 @@ impl Symbol {
         if s.is_empty() {
             return Err(IdxError::Usage("empty symbol".into()));
         }
-        let ok = s.len() <= 12 && s.chars().all(|c| c.is_ascii_alphanumeric() || c == '-');
+        let body = s.strip_prefix('^').unwrap_or(&s);
+        let ok = !body.is_empty()
+            && body.len() <= 12
+            && body.chars().all(|c| c.is_ascii_alphanumeric() || c == '-');
         if !ok {
             return Err(IdxError::Usage(format!(
                 "invalid symbol {raw:?}: expected an IDX ticker like BBCA or BBRI"
             )));
         }
         Ok(Symbol(s))
+    }
+
+    /// `true` for index codes (`^JKSE`), which have no `.JK` suffix anywhere.
+    pub fn is_index(&self) -> bool {
+        self.0.starts_with('^')
     }
 
     /// Parses `BBCA,BBRI TLKM` into unique symbols, preserving order.
@@ -100,9 +111,13 @@ impl Symbol {
         &self.0
     }
 
-    /// Yahoo Finance form, e.g. `BBCA.JK`.
+    /// Yahoo Finance form, e.g. `BBCA.JK`; indices stay as `^JKSE`.
     pub fn yahoo(&self) -> String {
-        format!("{}.JK", self.0)
+        if self.is_index() {
+            self.0.clone()
+        } else {
+            format!("{}.JK", self.0)
+        }
     }
 
     /// Reverse of [`Symbol::yahoo`].
@@ -419,6 +434,12 @@ mod tests {
         assert!(Symbol::parse("").is_err());
         assert!(Symbol::parse("B B").is_err());
         assert!(Symbol::parse("BBCA$").is_err());
+        let ix = Symbol::parse("^jkse").unwrap();
+        assert!(ix.is_index());
+        assert_eq!(ix.yahoo(), "^JKSE");
+        assert_eq!(Symbol::from_yahoo("^JKSE").as_str(), "^JKSE");
+        assert!(Symbol::parse("^").is_err());
+        assert!(!Symbol::parse("BBCA").unwrap().is_index());
     }
 
     #[test]
