@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Launcher: runs the idx binary with the same arguments and exit code, so
-// `npx @midoriresearch/idx stocks quote BBCA` and
-// `claude mcp add idx -- npx -y @midoriresearch/idx mcp` both work.
+// `npx ihsg-cli stocks quote BBCA` and
+// `claude mcp add idx -- npx -y ihsg-cli mcp` both work.
 //
 // If postinstall did not run (npm 12 blocks dependency scripts by default)
 // the binary is downloaded and SHA-256 verified here, once, before the first

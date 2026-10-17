@@ -142,24 +142,69 @@ jobs:
             dist/*.sha256
             dist/SHA256SUMS
 
+  crates:
+    # Publishes ihsg-cli to crates.io. Enable with the repository variable
+    # CRATES_PUBLISH=true, then either add a CARGO_REGISTRY_TOKEN secret or
+    # configure crates.io Trusted Publishing for this workflow (no secret).
+    needs: release
+    runs-on: ubuntu-latest
+    if: ${{ vars.CRATES_PUBLISH == 'true' }}
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      HAS_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Tag matches Cargo.toml
+        run: |
+          tag="${{ github.event.inputs.tag || github.ref_name }}"
+          ver="$(cargo metadata --no-deps --format-version 1 | python3 -c 'import json,sys; print(json.load(sys.stdin)["packages"][0]["version"])')"
+          [ "v$ver" = "$tag" ] || { echo "Cargo.toml version $ver does not match tag $tag"; exit 1; }
+      - name: Trusted publishing token
+        id: auth
+        if: env.HAS_TOKEN != 'true'
+        uses: rust-lang/crates-io-auth-action@v1
+      - name: cargo publish
+        run: |
+          ver="$(cargo metadata --no-deps --format-version 1 | python3 -c 'import json,sys; print(json.load(sys.stdin)["packages"][0]["version"])')"
+          if curl -fsS -A "ihsg-cli-release (github.com/fzn0x/idx)" "https://crates.io/api/v1/crates/ihsg-cli/$ver" >/dev/null 2>&1; then
+            echo "ihsg-cli $ver is already on crates.io"; exit 0
+          fi
+          cargo publish --locked
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN || steps.auth.outputs.token }}
+
   npm:
+    # Publishes ihsg-cli to npm. Enable with NPM_PUBLISH=true, then either add an
+    # NPM_TOKEN secret or configure npm Trusted Publishing for this workflow.
     needs: release
     runs-on: ubuntu-latest
     if: ${{ vars.NPM_PUBLISH == 'true' }}
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.inputs.tag || github.ref }}
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           registry-url: https://registry.npmjs.org
       - name: Set version from tag
         working-directory: npm
         run: |
           tag="${{ github.event.inputs.tag || github.ref_name }}"
-          npm version --no-git-tag-version "${tag#v}"
-      - run: npm publish --access public
+          npm version --no-git-tag-version --allow-same-version "${tag#v}"
+      - name: npm publish
         working-directory: npm
+        run: |
+          ver="$(node -p "require('./package.json').version")"
+          if npm view "ihsg-cli@$ver" version >/dev/null 2>&1; then echo "ihsg-cli $ver is already on npm"; exit 0; fi
+          npm publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
