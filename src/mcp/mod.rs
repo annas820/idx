@@ -12,9 +12,13 @@ use std::sync::Arc;
 use rmcp::handler::server::router::tool::ToolRouter;
 use rmcp::handler::server::wrapper::Parameters;
 use rmcp::model::{
-    CallToolResult, ContentBlock, Implementation, ProtocolVersion, ServerCapabilities, ServerConfig,
+    CallToolResult, ContentBlock, Implementation, ListToolsResult, PaginatedRequestParams,
+    ProtocolVersion, ServerCapabilities, ServerConfig, Tool,
 };
-use rmcp::{schemars, tool, tool_handler, tool_router, ErrorData as McpError, ServerHandler};
+use rmcp::service::RequestContext;
+use rmcp::{
+    schemars, tool, tool_handler, tool_router, ErrorData as McpError, RoleServer, ServerHandler,
+};
 use serde::Deserialize;
 
 use crate::error::{IdxError, Result};
@@ -31,6 +35,8 @@ use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
 use crate::service;
 use crate::universe;
+
+pub mod schema;
 
 const INSTRUCTIONS: &str = "\
 idx: Indonesian stock market (IDX / IHSG) data and analysis from free public sources.
@@ -150,6 +156,9 @@ pub struct NewsArgs {
     /// Headlines returned (default 20, 0 = all).
     #[serde(default)]
     pub limit: Option<u32>,
+    /// With a symbol: return only headlines that mention the company, no market context (default false).
+    #[serde(default)]
+    pub company_only: Option<bool>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -223,6 +232,23 @@ impl IdxServer {
             .list_all()
             .into_iter()
             .map(|t| t.name.to_string())
+            .collect()
+    }
+
+    /// The tool list with input schemas rewritten into the subset every
+    /// harness accepts (no `$schema`, no `format`, no nullable type arrays).
+    pub fn tools(&self) -> Vec<Tool> {
+        self.tool_router
+            .list_all()
+            .into_iter()
+            .map(|mut t| {
+                let mut v = serde_json::Value::Object((*t.input_schema).clone());
+                schema::portable(&mut v);
+                if let serde_json::Value::Object(m) = v {
+                    t.input_schema = Arc::new(m);
+                }
+                t
+            })
             .collect()
     }
 
@@ -437,7 +463,7 @@ impl IdxServer {
 
     #[tool(
         name = "idx_news",
-        description = "Latest Indonesian finance headlines from Kontan and CNBC Indonesia RSS feeds, optionally filtered to one IDX ticker (matched by ticker or company name), each with a lexicon sentiment score and the matched terms. Returns the idx.news.v1 envelope."
+        description = "Latest Indonesian finance headlines from Kontan and CNBC Indonesia RSS feeds. With a symbol, headlines that mention the company (scope=company, matched by ticker or name) come first, followed by general market headlines (scope=market) up to limit; company_matches says how many company items exist. Each item carries a lexicon sentiment score and the matched terms. Returns the idx.news.v1 envelope."
     )]
     async fn news(
         &self,
@@ -462,6 +488,7 @@ impl IdxServer {
                         sym.as_ref(),
                         &sources,
                         a.limit.unwrap_or(20) as usize,
+                        a.company_only.unwrap_or(false),
                     )
                     .await?,
                 )
@@ -593,6 +620,23 @@ impl ServerHandler for IdxServer {
             .with_protocol_version(ProtocolVersion::LATEST)
             .with_instructions(INSTRUCTIONS.to_string())
     }
+
+    // Hand-written so the advertised schemas are the portable ones; the
+    // `tool_handler` macro only fills in methods that are missing.
+    async fn list_tools(
+        &self,
+        _request: Option<PaginatedRequestParams>,
+        _context: RequestContext<RoleServer>,
+    ) -> std::result::Result<ListToolsResult, McpError> {
+        Ok(ListToolsResult {
+            tools: self.tools(),
+            ..Default::default()
+        })
+    }
+
+    fn get_tool(&self, name: &str) -> Option<Tool> {
+        self.tools().into_iter().find(|t| t.name == name)
+    }
 }
 
 /// Runs the server on stdin/stdout until the client disconnects.
@@ -689,12 +733,20 @@ mod tests {
                 "idx_technical",
             ]
         );
-        for t in s.tool_router.list_all() {
+        for t in s.tools() {
             let d = t.description.as_deref().unwrap_or("");
             assert!(d.len() > 60, "{} needs a real description", t.name);
             assert!(
                 t.input_schema.get("properties").is_some(),
                 "{} has no typed input",
+                t.name
+            );
+            let text = serde_json::to_string(&*t.input_schema).unwrap();
+            assert!(!text.contains("\"$schema\""), "{}: $schema key", t.name);
+            assert!(!text.contains("\"format\""), "{}: format keyword", t.name);
+            assert!(
+                !text.contains("\"null\""),
+                "{}: nullable type array breaks Gemini/OpenAI harnesses",
                 t.name
             );
         }
