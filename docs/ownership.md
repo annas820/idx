@@ -31,7 +31,8 @@ in order:
 3. the GitHub mirror (below): the same files, downloaded from the
    repository's `ownership-data` release and checked against the SHA-256 in
    its `index.json`. A warning says when the mirror was used.
-   `IDX_OWNERSHIP_MIRROR=<url>` points at another mirror, `off` disables it.
+   `IDX_OWNERSHIP_MIRROR=<url>` points at another mirror, `off` disables it;
+   `IDX_OWNERSHIP_SOURCE=mirror` skips idx.co.id, `idx` never uses the mirror.
 
 `--file <path>` and `--url <url>` import one file directly; `--url` also
 accepts `file://` paths. `idx ownership discover` lists what is available,
@@ -40,7 +41,20 @@ where it comes from and which months are already imported.
 ## The mirror
 
 `.github/workflows/ownership.yml` runs `scripts/ownership_mirror.py` at 08:17,
-14:17 and 20:17 WIB:
+14:17 and 20:17 WIB. idx.co.id blocks cloud networks: GitHub-hosted runners
+get a Cloudflare challenge even with a browser TLS fingerprint, and requests
+from Cloudflare Workers are refused. The job therefore needs a runner on an
+ordinary (home or office) connection:
+
+1. Repository → Settings → Actions → Runners → New self-hosted runner, and
+   follow the three commands on any always-on machine with Git, `gh` and
+   Python 3.10+ (Windows, macOS or Linux). Install it as a service.
+2. Repository → Settings → Secrets and variables → Actions → Variables:
+   `OWNERSHIP_RUNNER` = `self-hosted`.
+
+Without that variable the job runs on `ubuntu-latest`, leaves the mirror
+unchanged, and fails once the newest register is 45 days old, so a stale
+mirror shows up as a red run. Each run of the script:
 
 1. fetches the IDX page with [curl_cffi](https://github.com/lexiforest/curl_cffi)
    (browser TLS fingerprint), saves it, and parses it with
@@ -81,8 +95,10 @@ SHA-256) is reloaded. `/api/ownership/status` shows progress. There is no
 upload endpoint: the only input is the repository's own release.
 
 Running the workflow by hand: Actions → "ownership data" → Run workflow
-(tick "dry run" to parse without uploading). Locally:
-`pip install curl_cffi && python scripts/ownership_mirror.py --idx target/debug/idx --repo fzn0x/idx --dry-run`.
+(tick "dry run" to parse without uploading). From any machine idx.co.id
+accepts, with `gh` logged in:
+`pip install curl_cffi && python scripts/ownership_mirror.py --idx target/debug/idx --repo fzn0x/idx`
+(add `--dry-run` to change nothing).
 
 ## Database
 

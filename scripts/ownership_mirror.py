@@ -4,7 +4,11 @@
 Run by .github/workflows/ownership.yml three times a day; safe to run by hand.
 
 1. Fetch the IDX "Data Kepemilikan Saham" page through a browser-impersonating
-   client (curl_cffi): idx.co.id answers 403 to ordinary HTTP clients.
+   client (curl_cffi). idx.co.id answers 403 to ordinary HTTP clients and
+   blocks cloud networks outright (GitHub-hosted runners, Cloudflare Workers),
+   so this only succeeds from an ordinary connection: a self-hosted runner or
+   a maintainer's machine. From a blocked network the run leaves the mirror
+   as it is, and fails once the newest register is STALE_AFTER_DAYS old.
 2. Let `idx ownership discover` parse the saved page, so the CLI and the mirror
    share one parser.
 3. Reuse every file already on the mirror release; download only new or
@@ -38,6 +42,7 @@ from pathlib import Path
 PAGE_URL = "https://www.idx.co.id/id/perusahaan-tercatat/data-kepemilikan-saham/"
 SCHEMA = "idx.ownership.mirror.v1"
 IMPERSONATE = ["chrome", "chrome131", "edge", "safari"]
+STALE_AFTER_DAYS = 45
 NOTES = """Automatic mirror of the KSEI "Pemegang Saham di Atas 1%" register published monthly by \
 the Indonesia Stock Exchange at https://www.idx.co.id/id/perusahaan-tercatat/data-kepemilikan-saham/ .
 
@@ -206,7 +211,16 @@ def main() -> int:
         if not prev:
             print(f"error: idx.co.id unreachable and no mirror to fall back on: {e}", file=sys.stderr)
             return 1
-        warn(f"idx.co.id unreachable from this runner ({e}); republishing the existing mirror unchanged")
+        newest = max(prev_by_date)
+        age = (dt.date.today() - dt.date.fromisoformat(newest)).days
+        if age > STALE_AFTER_DAYS:
+            # IDX publishes each month-end register within a few weeks; past this
+            # the mirror is genuinely behind, so make the run fail visibly.
+            print(f"error: idx.co.id unreachable ({e}) and the newest mirrored register ({newest}) is {age} days old. "
+                  "Run scripts/ownership_mirror.py from a connection idx.co.id accepts (see docs/ownership.md).", file=sys.stderr)
+            return 1
+        warn(f"idx.co.id unreachable from this runner ({e}); the mirror is unchanged (newest register {newest}, {age} days old)")
+        return 0
 
     # 3. Gather files.
     wanted: dict[str, dict] = {}

@@ -261,7 +261,25 @@ pub async fn fetch_browser(url: &str, timeout: Duration) -> Result<Vec<u8>> {
 
 /// Fetches the listing page and returns the above-1 % files, newest first.
 /// Returns the files plus notes (for example that the mirror was used).
+///
+/// `IDX_OWNERSHIP_SOURCE`: `auto` (default: idx.co.id, then the mirror),
+/// `idx` (never the mirror) or `mirror` (skip idx.co.id).
 pub async fn discover(timeout: Duration) -> Result<(Vec<DiscoveredFile>, Vec<String>)> {
+    let source = std::env::var("IDX_OWNERSHIP_SOURCE")
+        .unwrap_or_default()
+        .to_ascii_lowercase();
+    if source == "mirror" {
+        let base = super::mirror::base().ok_or_else(|| {
+            IdxError::Config("IDX_OWNERSHIP_SOURCE=mirror but IDX_OWNERSHIP_MIRROR=off".into())
+        })?;
+        let index = super::mirror::index(&base, timeout).await?;
+        return Ok((
+            super::mirror::to_discovered(&base, &index),
+            vec![format!(
+                "IDX_OWNERSHIP_SOURCE=mirror: listing from {base} (same IDX files, SHA-256 checked on download)"
+            )],
+        ));
+    }
     let explicit_page = std::env::var("IDX_OWNERSHIP_PAGE_URL").ok();
     let page_url = explicit_page
         .clone()
@@ -285,7 +303,8 @@ pub async fn discover(timeout: Duration) -> Result<(Vec<DiscoveredFile>, Vec<Str
         Err(e) => e,
     };
     // A page the caller pointed at explicitly is not second-guessed.
-    let Some(base) = super::mirror::base().filter(|_| explicit_page.is_none()) else {
+    let Some(base) = super::mirror::base().filter(|_| explicit_page.is_none() && source != "idx")
+    else {
         return Err(err);
     };
     tracing::info!(error = %err, mirror = %base, "idx.co.id unavailable, using the GitHub mirror");
@@ -304,7 +323,7 @@ pub async fn discover(timeout: Duration) -> Result<(Vec<DiscoveredFile>, Vec<Str
             Ok((
                 files,
                 vec![format!(
-                    "{reason}; using the GitHub mirror {base}, which CI refreshes three times a day with the same IDX files (SHA-256 checked on download)"
+                    "{reason}; using the GitHub mirror {base}, which holds the same IDX files (SHA-256 checked on download)"
                 )],
             ))
         }

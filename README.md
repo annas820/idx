@@ -63,8 +63,8 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
 - **Ownership, not just prices.** KSEI's monthly register of holders above 1 %
   is imported into local SQLite with normalised entity names, so "who owns
   more than 1 % of BBCA" and "what did this fund change last month" are one
-  command each. A GitHub Actions job mirrors every new IDX file, so neither
-  you nor the web terminal ever imports anything by hand.
+  command each. The monthly IDX files are mirrored to GitHub, so neither you
+  nor the web terminal imports anything by hand.
 - **Single static binary.** Rust, no runtime, Linux / macOS / Windows.
 
 ## Install
@@ -243,7 +243,11 @@ can write it:
    "Pemegang Saham di Atas 1%" workbook, imports every month with `idx` to
    prove it parses, and publishes the files plus `index.json` and parsed JSON
    parts to the [`ownership-data`](https://github.com/fzn0x/idx/releases/tag/ownership-data)
-   prerelease.
+   prerelease. idx.co.id blocks cloud networks, GitHub's own runners included,
+   so the job runs on a self-hosted runner (an always-on machine with an
+   ordinary connection; set the repository variable `OWNERSHIP_RUNNER` to
+   `self-hosted`). On GitHub's runners it keeps the mirror as is and turns red
+   once the newest register is 45 days old.
 2. The web terminal's Worker reads that release on its minute cron: it checks
    `index.json` every 30 minutes, verifies each part's SHA-256 and loads one
    part per minute into D1. A month appears only once all its rows are in and
@@ -251,7 +255,7 @@ can write it:
    endpoint at all.
 3. `idx ownership import --latest` on your machine tries idx.co.id and, when
    Cloudflare refuses it, downloads the same file from the mirror and checks
-   its SHA-256.
+   its SHA-256. `IDX_OWNERSHIP_SOURCE=mirror` skips idx.co.id.
 
 <p align="center">
   <a href="https://ihsg.midoriresearch.com/terminal"><img src="docs/screenshots/terminal.png" alt="The idx web terminal showing technical BBRI" width="100%"></a>

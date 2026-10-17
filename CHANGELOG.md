@@ -16,14 +16,18 @@ All notable changes to this project are documented here. The format follows
   `NPM_PUBLISH` are enabled (token secret or Trusted Publishing).
 - Ownership data pipeline: `.github/workflows/ownership.yml` and
   `scripts/ownership_mirror.py` mirror every IDX "Pemegang Saham di Atas 1%"
-  workbook three times a day to the `ownership-data` prerelease, with
-  `index.json` (original URL, SHA-256, counts) and parsed JSON parts.
+  workbook to the `ownership-data` prerelease, with `index.json` (original
+  URL, SHA-256, counts) and parsed JSON parts. idx.co.id blocks cloud
+  networks, so the job runs on a self-hosted runner (`OWNERSHIP_RUNNER`); on
+  GitHub's runners it only alarms when the mirror is 45 days stale. The
+  mirror holds every register from February to September 2026.
 - The web terminal loads the register by itself from that release (one
   verified part per minute, newest six months, D1 write budget); new
   `/api/ownership/status`. The manual `web/scripts/ownership-sync.mjs` is gone.
 - `idx ownership import --latest|--all` and `discover` fall back to the GitHub
   mirror when idx.co.id refuses the request, checking each file's SHA-256;
-  `IDX_OWNERSHIP_MIRROR` overrides or disables it. `file://` URLs are accepted.
+  `IDX_OWNERSHIP_MIRROR` overrides or disables it, `IDX_OWNERSHIP_SOURCE`
+  forces either side. `file://` URLs are accepted.
   `idx.ownership.discover.v1` entries gain `origin`, `sha256`, `source_url`.
 
 ### Changed

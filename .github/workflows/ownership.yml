@@ -4,6 +4,13 @@ name: ownership data
 # `ownership-data` prerelease. The web terminal's Worker pulls it from there on
 # its minute cron and `idx ownership import --latest` falls back to it, so
 # nobody imports anything by hand. See scripts/ownership_mirror.py.
+#
+# idx.co.id blocks cloud networks (GitHub-hosted runners included), so the
+# scrape needs an ordinary connection: register an always-on machine you own as
+# a self-hosted runner and set the repository variable OWNERSHIP_RUNNER to
+# `self-hosted` (docs/ownership.md). On a GitHub-hosted runner the job leaves
+# the mirror unchanged and only fails when the newest register is 45 days old,
+# which works as a staleness alarm.
 
 on:
   schedule:
@@ -24,7 +31,7 @@ concurrency:
 
 jobs:
   mirror:
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.OWNERSHIP_RUNNER || 'ubuntu-latest' }}
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -46,12 +53,13 @@ jobs:
         run: python -m pip install --disable-pip-version-check "curl_cffi>=0.16,<0.17"
 
       - name: Mirror the register
+        shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: >
           python scripts/ownership_mirror.py
-          --idx target/debug/idx
-          --repo "$GITHUB_REPOSITORY"
+          --idx "target/debug/idx${{ runner.os == 'Windows' && '.exe' || '' }}"
+          --repo "${{ github.repository }}"
           --tag ownership-data
           --work build/ownership
           ${{ inputs.dry_run && '--dry-run' || '' }}
