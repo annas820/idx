@@ -106,21 +106,7 @@ pub async fn broker_summary(
         parse::Page::Summary(p) => p,
     };
     let mut s = Sourced::fresh(
-        BrokerSummary {
-            symbol: symbol.clone(),
-            name: None,
-            from: p.from.unwrap_or(from),
-            to: p.to.unwrap_or(to),
-            investor,
-            board,
-            buyers: p.buyers,
-            sellers: p.sellers,
-            total_value: p.total_value,
-            total_lots: p.total_lots,
-            foreign_net_value: p.foreign_net_value,
-            average_price: p.average_price,
-            rounded: p.rounded,
-        },
+        p.into_summary(symbol.clone(), from, to, investor, board),
         NAME,
     );
     s.cached = f.cached;

@@ -9,7 +9,7 @@
 use chrono::NaiveDate;
 
 use crate::error::{IdxError, Result};
-use crate::model::{BrokerFlow, BrokerKind};
+use crate::model::{BrokerBoard, BrokerFlow, BrokerInvestor, BrokerKind, BrokerSummary, Symbol};
 
 use super::NAME;
 
@@ -34,6 +34,35 @@ pub struct Parsed {
     pub average_price: Option<f64>,
     /// At least one figure was abbreviated (`1.6 M`).
     pub rounded: bool,
+}
+
+impl Parsed {
+    /// The summary for `symbol`; `from` and `to` stand in when the page did
+    /// not echo its range. Names are left for the caller to fill in.
+    pub fn into_summary(
+        self,
+        symbol: Symbol,
+        from: NaiveDate,
+        to: NaiveDate,
+        investor: BrokerInvestor,
+        board: BrokerBoard,
+    ) -> BrokerSummary {
+        BrokerSummary {
+            symbol,
+            name: None,
+            from: self.from.unwrap_or(from),
+            to: self.to.unwrap_or(to),
+            investor,
+            board,
+            buyers: self.buyers,
+            sellers: self.sellers,
+            total_value: self.total_value,
+            total_lots: self.total_lots,
+            foreign_net_value: self.foreign_net_value,
+            average_price: self.average_price,
+            rounded: self.rounded,
+        }
+    }
 }
 
 /// `1.6 M` -> `(1_600_000, true)`, `687,067` -> `(687_067, false)`,
