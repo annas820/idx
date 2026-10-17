@@ -2,7 +2,7 @@
   "name": "ihsg-cli",
   "version": "0.4.0",
   "private": true,
-  "description": "idx: Indonesian stock market (IDX / IHSG) CLI and MCP server for people and AI agents. Installs from this repository with `npm install -g github:fzn0x/idx` and downloads the SHA-256 verified prebuilt binary.",
+  "description": "idx: Indonesian stock market (IDX / IHSG) CLI and MCP server for people and AI agents. `npm install -g github:fzn0x/idx` installs the launcher; the first run downloads the SHA-256 verified prebuilt binary.",
   "license": "MIT",
   "author": "Muhammad Fauzan <developerfauzan@gmail.com>",
   "homepage": "https://ihsg.midoriresearch.com",
@@ -22,9 +22,6 @@
     "npm/package.json",
     "npm/README.md"
   ],
-  "scripts": {
-    "postinstall": "node npm/install.js"
-  },
   "os": [
     "darwin",
     "linux",

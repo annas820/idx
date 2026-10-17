@@ -1,10 +1,16 @@
 // Locates or downloads the idx release binary for this platform.
 //
 // Used by install.js (postinstall) and by bin/idx.js on first run, because
-// npm 12 no longer runs dependency install scripts by default: with scripts
-// blocked the package installs without a binary, and the launcher fetches
-// it on first use instead. Either path verifies SHA-256 against the
-// release's SHA256SUMS before writing anything executable.
+// npm 12 no longer runs dependency install scripts by default, and installs
+// from GitHub (`npm install -g github:fzn0x/idx`) ship no install script at
+// all: the launcher fetches the binary on first use instead. Either path
+// verifies SHA-256 against the release's SHA256SUMS before writing anything
+// executable.
+//
+// The binary goes next to the package (npm/bin) when that folder is
+// writable, otherwise into a per-user cache (root-owned global installs):
+// %LOCALAPPDATA%\ihsg-cli\<version> on Windows, $XDG_CACHE_HOME or
+// ~/.cache/ihsg-cli/<version> elsewhere; IDX_NPM_CACHE overrides it.
 "use strict";
 const fs = require("fs");
 const os = require("os");
@@ -19,6 +25,15 @@ const REPO = process.env.IDX_REPO || "fzn0x/idx";
 const VERSION = process.env.IDX_VERSION || pkg.version;
 const BIN_DIR = path.join(__dirname, "..", "bin");
 const EXE = os.platform() === "win32" ? "idx.exe" : "idx";
+
+function cacheDir() {
+  if (process.env.IDX_NPM_CACHE) return path.join(process.env.IDX_NPM_CACHE, VERSION);
+  const base = os.platform() === "win32"
+    ? process.env.LOCALAPPDATA || path.join(os.homedir(), "AppData", "Local")
+    : process.env.XDG_CACHE_HOME || path.join(os.homedir(), ".cache");
+  return path.join(base, "ihsg-cli", VERSION);
+}
+const DIRS = [BIN_DIR, cacheDir()];
 
 function target() {
   const plat = os.platform();
@@ -73,8 +88,25 @@ function untar(buf, wantedName) {
 
 /** Path of the binary if it is already installed, else null. */
 function installed() {
-  const p = path.join(BIN_DIR, EXE);
-  return fs.existsSync(p) ? p : null;
+  for (const dir of DIRS) {
+    const p = path.join(dir, EXE);
+    if (fs.existsSync(p)) return p;
+  }
+  return null;
+}
+
+/** First folder in DIRS we can write to. */
+function writableDir() {
+  for (const dir of DIRS) {
+    try {
+      fs.mkdirSync(dir, { recursive: true });
+      fs.accessSync(dir, fs.constants.W_OK);
+      return dir;
+    } catch {
+      // try the next one
+    }
+  }
+  throw new Error(`no writable folder for the binary (tried ${DIRS.join(", ")}); set IDX_NPM_CACHE`);
 }
 
 /**
@@ -96,8 +128,7 @@ async function download(log = () => {}) {
   const actual = crypto.createHash("sha256").update(archive).digest("hex");
   if (expected !== actual) throw new Error(`checksum mismatch for ${asset}: expected ${expected}, got ${actual}`);
 
-  fs.mkdirSync(BIN_DIR, { recursive: true });
-  const dest = path.join(BIN_DIR, EXE);
+  const dest = path.join(writableDir(), EXE);
   const tmp = `${dest}.${process.pid}.tmp`;
   if (ext === "tar.gz") {
     fs.writeFileSync(tmp, untar(zlib.gunzipSync(archive), EXE), { mode: 0o755 });
@@ -125,4 +156,4 @@ async function ensure(log) {
   return installed() || download(log);
 }
 
-module.exports = { installed, download, ensure, target, REPO, VERSION, BIN_DIR, EXE };
+module.exports = { installed, download, ensure, target, REPO, VERSION, BIN_DIR, EXE, DIRS };

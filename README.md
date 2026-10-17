@@ -79,12 +79,12 @@ npx github:fzn0x/idx stocks quote BBCA    # npm, no install
 curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh   # Linux, macOS
 ```
 
-npm installs from this repository: the root `package.json` is a small wrapper
-that downloads the prebuilt binary for your platform from the matching GitHub
-release. On npm 12, which only installs from git when allowed, add
-`--allow-git=all` to the command. `install.sh` and the npm wrapper both check
-the binary against the release's `SHA256SUMS`. The wrapper fetches it at
-install time, or on the first run when npm 12 blocks install scripts.
+npm installs a small launcher from this repository; the first `idx` command
+downloads the prebuilt binary for your platform from the matching GitHub
+release and checks it against the release's `SHA256SUMS` (so does
+`install.sh`). The binary is stored next to the launcher, or in a per-user
+cache when the global npm folder is not writable. On npm 12, which only
+installs from git when allowed, add `--allow-git=all` to the command.
 
 Windows without npm: download `idx-<version>-x86_64-pc-windows-msvc.zip` from
 the [releases page](https://github.com/fzn0x/idx/releases). Static Linux
