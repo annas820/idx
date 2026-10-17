@@ -26,9 +26,9 @@ use crate::http::Fetcher;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     self, Envelope, ErrorEnvelope, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
-    SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_OWNERSHIP_CHANGES,
-    SCHEMA_OWNERSHIP_ENTITY, SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES, SCHEMA_PROFILE,
-    SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
+    SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_MARKET,
+    SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_ENTITY, SCHEMA_OWNERSHIP_HOLDERS,
+    SCHEMA_OWNERSHIP_RELEASES, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
 };
 use crate::output::json::{SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT};
 use crate::ownership::OwnershipDb;
@@ -162,6 +162,16 @@ pub struct NewsArgs {
     /// With a symbol: return only headlines that mention the company, no market context (default false).
     #[serde(default)]
     pub company_only: Option<bool>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct MarketArgs {
+    /// Rows per list (default 10).
+    #[serde(default)]
+    pub top: Option<u32>,
+    /// Market-cap floor in IDR for gainers/losers (default 1e12 = 1T).
+    #[serde(default)]
+    pub min_market_cap: Option<f64>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -387,6 +397,35 @@ impl IdxServer {
                 ok(
                     SCHEMA_DIVIDENDS,
                     service::dividends(self.provider.as_ref(), &symbol).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_market",
+        description = "Whole-market overview from one pass over ~950 IDX tickers: IHSG (^JKSE) quote and market state, breadth (advancing/declining/unchanged), total turnover, and top lists of gainers, losers (both above a market-cap floor), most traded by value and heavyweights by market cap. Call this first for 'how is the market today'. Returns the idx.market.v1 envelope."
+    )]
+    async fn market(
+        &self,
+        Parameters(a): Parameters<MarketArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let mut list = universe::load(None)?;
+                universe::extend_from_ownership(&mut list, &self.ownership_db);
+                let index = Symbol::parse("^JKSE")?;
+                ok(
+                    SCHEMA_MARKET,
+                    service::market_overview(
+                        self.provider.as_ref(),
+                        &list,
+                        &index,
+                        a.top.unwrap_or(10) as usize,
+                        a.min_market_cap.unwrap_or(1e12),
+                    )
+                    .await?,
                 )
             }
             .await,
@@ -780,6 +819,7 @@ mod tests {
                 "idx_financials",
                 "idx_fundamental",
                 "idx_history",
+                "idx_market",
                 "idx_news",
                 "idx_ownership_changes",
                 "idx_ownership_entity",

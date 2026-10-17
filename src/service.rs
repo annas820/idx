@@ -12,8 +12,9 @@ use crate::analysis::screen::{self as scr, Filter, Key};
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{
-    BenchmarkReturns, DividendHistory, Fundamentals, History, Interval, NewsItem, NewsReport,
-    Performance, Period, ScreenReport, ScreenRow, SentimentReport, Symbol, Technical,
+    BenchmarkReturns, DividendHistory, Fundamentals, History, Interval, MarketOverview, MarketRow,
+    NewsItem, NewsReport, Performance, Period, Quote, ScreenReport, ScreenRow, SentimentReport,
+    Symbol, Technical,
 };
 use crate::providers::news as newsfeed;
 use crate::providers::{Provider, Sourced};
@@ -216,6 +217,128 @@ pub async fn screen(
         total_matches: total,
         rows,
     }))
+}
+
+/// Quotes for a whole universe in batches. Batches that fail with NotFound
+/// are skipped; any other failure is fatal because the quotes are the base
+/// data. Returns the quotes and the number of symbols that answered.
+pub async fn quotes_all(p: &dyn Provider, symbols: &[Symbol]) -> Result<Sourced<Vec<Quote>>> {
+    let batches: Vec<&[Symbol]> = symbols.chunks(150).collect();
+    let results = join_all(batches.iter().map(|b| p.quotes(b))).await;
+    let mut out = Sourced::fresh(Vec::<Quote>::new(), p.name());
+    out.cached = true;
+    for r in results {
+        match r {
+            Ok(s) => {
+                out.absorb(&s);
+                out.provider = s.provider;
+                out.data.extend(s.data);
+            }
+            Err(IdxError::NotFound(_)) => {}
+            Err(e) => return Err(e),
+        }
+    }
+    out.warnings.retain(|w| !w.starts_with("no data for"));
+    if out.data.len() < symbols.len() {
+        out.warnings.push(format!(
+            "{} of {} tickers returned no quote and were skipped",
+            symbols.len() - out.data.len(),
+            symbols.len()
+        ));
+    }
+    Ok(out)
+}
+
+/// The board: index quote, breadth and ranked lists from one pass over the
+/// universe. `liquid_floor` is the market-cap floor for gainers/losers.
+pub async fn market_overview(
+    p: &dyn Provider,
+    universe: &[Issuer],
+    index: &Symbol,
+    top: usize,
+    liquid_floor: f64,
+) -> Result<Sourced<MarketOverview>> {
+    if universe.is_empty() {
+        return Err(IdxError::Usage("the ticker universe is empty".into()));
+    }
+    let names: std::collections::HashMap<&Symbol, Option<&str>> = universe
+        .iter()
+        .map(|i| (&i.symbol, i.name.as_deref()))
+        .collect();
+    let symbols: Vec<Symbol> = universe.iter().map(|i| i.symbol.clone()).collect();
+    let (quotes, index_q) = futures::join!(
+        quotes_all(p, &symbols),
+        p.quotes(std::slice::from_ref(index))
+    );
+    let mut out = quotes?;
+    let mut index_row = None;
+    let mut market_state = None;
+    match index_q {
+        Ok(s) => {
+            out.absorb(&s);
+            if let Some(q) = s.data.first() {
+                market_state = q.market_state.clone();
+                index_row = Some(MarketRow::from_quote(q, None));
+            }
+        }
+        Err(e) => out.warnings.push(format!("index {index} unavailable: {e}")),
+    }
+
+    let rows: Vec<MarketRow> = out
+        .data
+        .iter()
+        .filter(|q| q.price.is_some() && q.change_pct.is_some())
+        .map(|q| MarketRow::from_quote(q, names.get(&q.symbol).copied().flatten()))
+        .collect();
+    let as_of = out.data.iter().filter_map(|q| q.market_time).max();
+    let chg = |r: &MarketRow| r.change_pct.unwrap_or(0.0);
+    let liquid: Vec<&MarketRow> = rows
+        .iter()
+        .filter(|r| r.market_cap.unwrap_or(0.0) >= liquid_floor && r.volume.unwrap_or(0) > 0)
+        .collect();
+    let mut gainers: Vec<&MarketRow> = liquid.iter().copied().filter(|r| chg(r) > 0.0).collect();
+    gainers.sort_by(|a, b| {
+        chg(b)
+            .partial_cmp(&chg(a))
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
+    let mut losers: Vec<&MarketRow> = liquid.iter().copied().filter(|r| chg(r) < 0.0).collect();
+    losers.sort_by(|a, b| {
+        chg(a)
+            .partial_cmp(&chg(b))
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
+    let mut by_value: Vec<&MarketRow> = rows.iter().filter(|r| r.value.is_some()).collect();
+    by_value.sort_by(|a, b| {
+        b.value
+            .partial_cmp(&a.value)
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
+    let mut by_cap: Vec<&MarketRow> = rows.iter().filter(|r| r.market_cap.is_some()).collect();
+    by_cap.sort_by(|a, b| {
+        b.market_cap
+            .partial_cmp(&a.market_cap)
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
+    let take =
+        |v: Vec<&MarketRow>| -> Vec<MarketRow> { v.into_iter().take(top).cloned().collect() };
+    let data = MarketOverview {
+        as_of,
+        market_state,
+        index: index_row,
+        universe: symbols.len(),
+        quoted: rows.len(),
+        advancing: rows.iter().filter(|r| chg(r) > 0.0).count(),
+        declining: rows.iter().filter(|r| chg(r) < 0.0).count(),
+        unchanged: rows.iter().filter(|r| chg(r) == 0.0).count(),
+        turnover: rows.iter().filter_map(|r| r.value).sum(),
+        liquid_min_market_cap: liquid_floor,
+        gainers: take(gainers),
+        losers: take(losers),
+        most_active: take(by_value),
+        heavyweights: take(by_cap),
+    };
+    Ok(out.map(|_| data))
 }
 
 /// Price performance from five years of daily candles for each symbol, with

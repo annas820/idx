@@ -10,6 +10,7 @@ use crate::error::{IdxError, Result};
 
 pub mod dividends;
 pub mod fundamentals;
+pub mod market;
 pub mod news;
 pub mod ownership;
 pub mod returns;
@@ -23,6 +24,7 @@ pub use fundamentals::{
     PerShare, Profile, Profitability, RevenueEarnings, StatementPeriod, Valuation, Verdict,
     VerdictLabel,
 };
+pub use market::{MarketOverview, MarketRow};
 pub use news::{NewsItem, NewsReport, SentimentLabel, SentimentReport};
 pub use ownership::{
     Change, ChangeBrief, ChangeKind, ChangesReport, ChangesSummary, DiscoveredFile, EntityReport,

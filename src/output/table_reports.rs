@@ -6,8 +6,9 @@ use comfy_table::{Attribute, Cell, Color, Table};
 
 use crate::analysis::fundamental::summary_line;
 use crate::model::{
-    DividendHistory, Earnings, FinancialPeriod, Financials, Fundamentals, Performance, Profile,
-    ReturnWindows, SignalLabel, StatementPeriod, Technical, Trend, VerdictLabel,
+    DividendHistory, Earnings, FinancialPeriod, Financials, Fundamentals, MarketOverview,
+    MarketRow, Performance, Profile, ReturnWindows, SignalLabel, StatementPeriod, Technical, Trend,
+    VerdictLabel,
 };
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
@@ -590,6 +591,79 @@ pub fn earnings(e: &Earnings, color: bool) -> String {
         ));
     }
     out.push_str(&format!("Source: {}\n", e.source));
+    out
+}
+
+fn market_list(out: &mut String, title: &str, rows: &[MarketRow], value: bool, color: bool) {
+    if rows.is_empty() {
+        return;
+    }
+    out.push_str(title);
+    out.push('\n');
+    let mut t = base_table(color);
+    let mut cols = vec!["Symbol", "Name", "Price", "Chg %"];
+    cols.push(if value { "Value" } else { "Mkt Cap" });
+    t.set_header(header(&cols));
+    for r in rows {
+        t.add_row(vec![
+            Cell::new(r.symbol.as_str()).add_attribute(Attribute::Bold),
+            Cell::new(f::clip(&f::text(&r.name), 28)),
+            right(f::price(r.price)),
+            signed(f::pct(r.change_pct), r.change_pct, color),
+            right(f::compact(if value { r.value } else { r.market_cap })),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+}
+
+pub fn market(m: &MarketOverview, color: bool) -> String {
+    let mut out = String::new();
+    match &m.index {
+        Some(ix) => out.push_str(&format!(
+            "{} {} · {} ({}) · {}{}\n",
+            ix.name.clone().unwrap_or_else(|| ix.symbol.to_string()),
+            f::price(ix.price),
+            f::change(ix.change),
+            f::pct(ix.change_pct),
+            m.market_state
+                .clone()
+                .unwrap_or_else(|| "state unknown".into()),
+            m.as_of
+                .map(|t| format!(" · last trade {}", t.format("%Y-%m-%d %H:%M WIB")))
+                .unwrap_or_default()
+        )),
+        None => out.push_str("Index quote unavailable\n"),
+    }
+    out.push_str(&format!(
+        "Breadth · {} advancing · {} declining · {} unchanged · {} of {} quoted · turnover {}\n",
+        m.advancing,
+        m.declining,
+        m.unchanged,
+        m.quoted,
+        m.universe,
+        f::compact(Some(m.turnover))
+    ));
+    market_list(
+        &mut out,
+        &format!(
+            "Gainers · market cap ≥ {}",
+            f::compact(Some(m.liquid_min_market_cap))
+        ),
+        &m.gainers,
+        false,
+        color,
+    );
+    market_list(&mut out, "Losers", &m.losers, false, color);
+    market_list(
+        &mut out,
+        "Most traded by value",
+        &m.most_active,
+        true,
+        color,
+    );
+    market_list(&mut out, "Heavyweights", &m.heavyweights, false, color);
+    out.push_str("Delayed quotes as published by the source.\n");
     out
 }
 

@@ -15,6 +15,7 @@ use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Ttls};
 
 pub mod cache_cmd;
 pub mod config_cmd;
+pub mod market;
 pub mod ownership;
 pub mod stocks;
 
@@ -110,6 +111,10 @@ pub enum Command {
     /// KSEI shareholder register (holders above 1 %): import monthly files, query holders, entities, changes.
     #[command(subcommand)]
     Ownership(ownership::OwnershipCmd),
+
+    /// Whole-market view: IHSG, breadth, gainers, losers, most traded.
+    #[command(subcommand)]
+    Market(market::MarketCmd),
 
     /// Read or write the config file.
     #[command(subcommand)]
@@ -215,6 +220,10 @@ pub async fn run(cli: Cli) -> Result<()> {
         Command::Ownership(cmd) => {
             let ctx = build_context(&cli.global)?;
             ownership::run(&ctx, cmd).await
+        }
+        Command::Market(cmd) => {
+            let ctx = build_context(&cli.global)?;
+            market::run(&ctx, cmd).await
         }
         Command::Mcp => {
             let ctx = build_context(&cli.global)?;

@@ -76,7 +76,7 @@ fn mcp_server_speaks_json_rpc_over_stdio() {
     let names: Vec<&str> = tools.iter().map(|t| t["name"].as_str().unwrap()).collect();
     assert!(names.contains(&"idx_quote"), "{names:?}");
     assert!(names.contains(&"idx_fundamental"), "{names:?}");
-    assert_eq!(names.len(), 17, "{names:?}");
+    assert_eq!(names.len(), 18, "{names:?}");
     assert!(names.contains(&"idx_ownership_ticker"), "{names:?}");
     let quote = tools.iter().find(|t| t["name"] == "idx_quote").unwrap();
     assert_eq!(
