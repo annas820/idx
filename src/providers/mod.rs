@@ -255,8 +255,31 @@ impl Provider for Chain {
         first_ok!(self, p => p.history(symbol, period, interval))
     }
 
+    /// First provider's profile, with the board and founding year filled from
+    /// the others when missing (Yahoo has neither; MSN has both).
     async fn profile(&self, symbol: &Symbol) -> Result<Sourced<Profile>> {
-        first_ok!(self, p => p.profile(symbol))
+        let mut errors = Vec::new();
+        let mut base: Option<Sourced<Profile>> = None;
+        for p in &self.providers {
+            if base.as_ref().is_some_and(|b| !b.data.has_gaps()) {
+                break;
+            }
+            match p.profile(symbol).await {
+                Ok(v) => match &mut base {
+                    None => base = Some(v),
+                    Some(b) => {
+                        b.data.fill_from(&v.data);
+                        b.absorb(&v);
+                    }
+                },
+                Err(e @ IdxError::Unsupported { .. }) => errors.push(e),
+                Err(e) => {
+                    tracing::info!(provider = p.name(), error = %e, "profile provider failed");
+                    errors.push(e);
+                }
+            }
+        }
+        base.ok_or_else(|| Self::pick(errors))
     }
 
     /// Takes the first provider's report and fills gaps from the others, so a

@@ -375,7 +375,7 @@ pub fn compare(list: &[Fundamentals], color: bool) -> String {
         };
         signed(f::pct(up), up, color)
     });
-    row!("Analysts", |fd: &Fundamentals| right(
+    row!("Rating", |fd: &Fundamentals| right(
         fd.analyst
             .recommendation
             .as_deref()
@@ -689,7 +689,7 @@ pub fn technical(t: &Technical, color: bool) -> String {
         ("EMA 20".into(), vs(ma.ema20)),
         ("EMA 50".into(), vs(ma.ema50)),
         ("EMA 200".into(), vs(ma.ema200)),
-        ("".into(), section(color, "bollinger (20, 2σ)")),
+        ("".into(), section(color, "bollinger (20, 2 sd)")),
         (
             "Lower / middle / upper".into(),
             right(match &t.bollinger {

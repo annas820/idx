@@ -41,6 +41,41 @@ pub struct Profile {
 }
 
 impl Profile {
+    /// Fills `null`s and an empty board from `other`; keeps existing values.
+    pub fn fill_from(&mut self, other: &Profile) {
+        macro_rules! fill {
+            ($f:ident) => {
+                if self.$f.is_none() {
+                    self.$f = other.$f.clone();
+                }
+            };
+        }
+        fill!(name);
+        fill!(sector);
+        fill!(industry);
+        fill!(summary);
+        fill!(employees);
+        fill!(founded_year);
+        fill!(website);
+        fill!(city);
+        fill!(country);
+        fill!(exchange);
+        fill!(currency);
+        fill!(market_cap);
+        fill!(shares_outstanding);
+        if self.directors.is_empty() {
+            self.directors = other.directors.clone();
+        }
+        if !self.source.contains(&other.source) {
+            self.source = format!("{}, {}", self.source, other.source);
+        }
+    }
+
+    /// Whether another provider could still add something useful.
+    pub fn has_gaps(&self) -> bool {
+        self.founded_year.is_none() || self.directors.is_empty() || self.sector.is_none()
+    }
+
     pub fn empty(symbol: Symbol, source: &str) -> Self {
         Profile {
             symbol,

@@ -196,14 +196,21 @@ fn period_label(v: &Value) -> String {
     }
 }
 
+/// Yahoo pads quarters it has not loaded yet with `earnings: 0`; a company
+/// with revenue and exactly zero earnings is a gap in the feed, not a result.
 fn revenue_earnings(arr: Option<&Vec<Value>>) -> Vec<RevenueEarnings> {
     arr.map(|a| {
         a.iter()
-            .map(|e| RevenueEarnings {
-                period: period_label(e),
-                revenue: raw(e, "revenue"),
-                earnings: raw(e, "earnings"),
-                profit_margin_pct: pct(e, "profitMargin"),
+            .map(|e| {
+                let revenue = raw(e, "revenue");
+                let earnings = raw(e, "earnings")
+                    .filter(|x| !(*x == 0.0 && revenue.is_some_and(|r| r != 0.0)));
+                RevenueEarnings {
+                    period: period_label(e),
+                    revenue,
+                    profit_margin_pct: pct(e, "profitMargin").filter(|_| earnings.is_some()),
+                    earnings,
+                }
             })
             .collect()
     })
