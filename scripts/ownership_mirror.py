@@ -168,7 +168,7 @@ def comparable(index: dict | None) -> str:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    ap = argparse.ArgumentParser(description=(__doc__ or "").split("\n\n")[0])
     ap.add_argument("--idx", required=True, help="path to the idx binary")
     ap.add_argument("--repo", required=True, help="owner/name of the GitHub repository")
     ap.add_argument("--tag", default="ownership-data")
@@ -188,8 +188,9 @@ def main() -> int:
     assets = release_assets(a.repo, a.tag)
     prev: dict | None = None
     if assets and "index.json" in assets:
-        prev = json.loads(download_asset(a.repo, a.tag, "index.json", prev_dir).read_text("utf-8"))
-        log(f"mirror has {len(prev['releases'])} releases")
+        loaded: dict = json.loads(download_asset(a.repo, a.tag, "index.json", prev_dir).read_text("utf-8"))
+        log(f"mirror has {len(loaded['releases'])} releases")
+        prev = loaded
     prev_by_date = {r["as_of"]: r for r in (prev or {}).get("releases", [])}
 
     # 1-2. Discover on idx.co.id.
