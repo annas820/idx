@@ -121,7 +121,7 @@ idx completions powershell | Out-String | Invoke-Expression
 | `ownership foreign [SYMBOL] [--from D --to D]` | Disclosed foreign (KSEI `A`) vs local stake: one issuer month by month, or every issuer's change between two months |
 | `watch [add\|rm\|list\|clear\|returns]` | Plain-text watchlist next to the config; `idx watch` quotes it |
 | `ownership releases\|discover\|path` | Imported months, files published on idx.co.id, database path |
-| `mcp` | MCP server over stdio, 20 tools: `idx_brief`, `idx_market`, `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_dividends`, `idx_returns`, `idx_fundamental`, `idx_technical`, `idx_compare`, `idx_screen`, `idx_news`, `idx_sentiment`, `idx_ownership_ticker`, `idx_ownership_entity`, `idx_ownership_changes`, `idx_ownership_foreign`, `idx_ownership_releases` |
+| `mcp [--http ADDR --token T]` · `mcp setup <client>` | MCP server over stdio or streamable HTTP, and the registration recipe for 25 agent harnesses. 20 tools: `idx_brief`, `idx_market`, `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_dividends`, `idx_returns`, `idx_fundamental`, `idx_technical`, `idx_compare`, `idx_screen`, `idx_news`, `idx_sentiment`, `idx_ownership_ticker`, `idx_ownership_entity`, `idx_ownership_changes`, `idx_ownership_foreign`, `idx_ownership_releases` |
 | `schema [name]` | JSON Schema for every payload (`quotes`, `history`, `profile`, `fundamentals`, `compare`, `financials`, `earnings`, `dividends`, `returns`, `market`, `brief`, `technical`, `screen`, `news`, `sentiment`, `ownership-*`, `watchlist`, `error`, ...) |
 | `config init\|set\|get\|path` | Config file management |
 | `cache stats\|clear\|path` | Response cache management |
@@ -157,18 +157,52 @@ Configuration and cache: [docs/configuration.md](docs/configuration.md).
 
 ### MCP server
 
+`idx mcp` serves the Model Context Protocol over stdio, which is what every
+local agent launches. `idx mcp --http` serves the same tools over streamable
+HTTP for products that only connect to a URL. `idx mcp setup <client>` prints
+the exact command or config snippet for your agent with the absolute path of
+the binary filled in, because GUI apps rarely inherit your shell `PATH`:
+
 ```sh
-claude mcp add idx -- idx mcp          # Claude Code
+idx mcp setup --list          # every supported client
+idx mcp setup codex           # prints: codex mcp add idx -- /abs/path/idx mcp
+idx mcp setup muse            # prints the settings.json block Meta's Muse Code expects
 ```
 
-Any MCP client that speaks stdio works the same way (`command: idx`,
-`args: ["mcp"]`): Claude Code, Claude Desktop, Cursor, Windsurf, Codex, Gemini
-CLI. The server lists 20 tools with typed input schemas kept to the subset
-every harness accepts (no nullable type arrays, no `format` keywords) and
-one-paragraph descriptions. `idx_brief` is the one-call starting point; each
-tool returns the same envelope as `-o json`, so an agent that learned the CLI
-already knows the tools. Failures come back as tool errors carrying
-`{error: {code, message}, exit_code}`. Details: [docs/mcp.md](docs/mcp.md).
+| agent | register idx |
+| --- | --- |
+| Claude Code | `claude mcp add --scope user idx -- idx mcp` |
+| Claude Desktop | `claude_desktop_config.json` → `"mcpServers": {"idx": {"command": "idx", "args": ["mcp"]}}` |
+| OpenAI Codex (CLI, IDE extension, app) | `codex mcp add idx -- idx mcp`, or `[mcp_servers.idx]` with `command`/`args` in `~/.codex/config.toml` |
+| Meta Muse Code | `~/.config/muse/settings.json`: `{"schema_version": 1, "mcp_servers": {"idx": {"transport": "stdio", "command": "idx", "args": ["mcp"], "mode": "optional"}}}` |
+| Google Antigravity (IDE, CLI) | `~/.gemini/config/mcp_config.json` → `mcpServers.idx` with an absolute `command` and no `type` field |
+| Gemini CLI | `gemini mcp add -s user idx idx mcp` |
+| GitHub Copilot CLI | `copilot mcp add idx -- idx mcp` |
+| VS Code (Copilot agent mode) | `code --add-mcp '{"name":"idx","command":"idx","args":["mcp"]}'`, or `.vscode/mcp.json` → `servers.idx` with `"type": "stdio"` |
+| Cursor · Windsurf · JetBrains · Warp · Trae · Augment | paste `{"mcpServers": {"idx": {"command": "idx", "args": ["mcp"]}}}` into the MCP settings (file paths in `idx mcp setup`) |
+| Kiro (IDE and CLI, formerly Amazon Q Developer CLI) | `~/.kiro/settings/mcp.json`, or `kiro-cli mcp add --name idx --command idx --args mcp` |
+| Zed | `settings.json` → `"context_servers": {"idx": {"command": "idx", "args": ["mcp"], "env": {}}}` |
+| Cline · Roo Code · Kilo Code | MCP Servers → Configure → `mcpServers.idx` with `"type": "stdio"` |
+| Continue | `~/.continue/mcpServers/idx.yaml` (`idx mcp setup continue` prints it) |
+| OpenCode | `opencode.json` → `"mcp": {"idx": {"type": "local", "command": ["idx", "mcp"], "enabled": true}}` |
+| Goose | `goose configure` → Add Extension → Command-line Extension → `idx mcp` |
+| Factory Droid | `droid mcp add idx "idx mcp"` |
+| Mistral Vibe | `~/.vibe/config.toml` → `[[mcp_servers]]` with `name = "idx"`, `transport = "stdio"`, `command`, `args` |
+| Qwen Code | `qwen mcp add idx idx mcp` |
+| Crush | `crush.json` → `"mcp": {"idx": {"type": "stdio", "command": "idx", "args": ["mcp"]}}` |
+| ChatGPT · Claude.ai · Perplexity · Devin · Manus | remote only: `idx mcp --http 127.0.0.1:8765 --token T --allowed-host '*'` behind an HTTPS tunnel, then add `https://<host>/mcp` as a connector with header `Authorization: Bearer T` |
+
+A bare `idx` in the table assumes the binary is on `PATH`; `idx mcp setup`
+substitutes the absolute path, and `--npx` swaps in
+`npx -y @midoriresearch/idx mcp`. Each entry's remote (HTTP) form and the
+config file locations are in [docs/mcp.md](docs/mcp.md).
+
+The server lists 20 tools with typed input schemas kept to the subset every
+harness accepts (no nullable type arrays, no `format` or `default` keywords)
+and one-paragraph descriptions. `idx_brief` is the one-call starting point;
+each tool returns the same envelope as `-o json`, so an agent that learned the
+CLI already knows the tools. Failures come back as tool errors carrying
+`{error: {code, message}, exit_code}`.
 
 ## Data sources
 

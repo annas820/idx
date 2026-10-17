@@ -6,6 +6,23 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-17
+
+### Added
+
+- `idx mcp setup <client>`: the registration command or config snippet for
+  25 agent harnesses (Claude Code, Claude Desktop, OpenAI Codex, Meta Muse
+  Code, Google Antigravity, Gemini CLI, GitHub Copilot CLI, VS Code, Cursor,
+  Windsurf, Kiro, JetBrains, Zed, Cline/Roo/Kilo, Continue, OpenCode, Goose,
+  Warp, Factory Droid, Mistral Vibe, Qwen Code, Crush, Trae, Augment, and the
+  remote-only products), with the binary's absolute path filled in; `--npx`
+  and `--http URL --token T` variants; `-o json` for scripts.
+- `idx mcp --http ADDR [--token T] [--allowed-host H]`: the same 20 tools
+  over MCP streamable HTTP at `/mcp` for ChatGPT, Claude.ai connectors,
+  Perplexity, Devin, Manus and other URL-only clients. Bearer auth, Host
+  allow-list, `/healthz`.
+- README and docs/mcp.md: install guide per agent.
+
 ## [0.2.0] - 2026-10-17
 
 ### Added

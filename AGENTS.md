@@ -35,8 +35,10 @@ src/
                      screen, news ordering, returns, dividends, market_overview, brief)
   ownership/         KSEI >1% register: discover.rs (idx.co.id page, Cloudflare strategy), ingest.rs (XLSX/PDF),
                      normalize.rs (entity keys), db.rs (SQLite schema + queries). Imported once, queried locally.
-  mcp/               rmcp stdio server; one #[tool] per command, same JSON envelope as -o json;
-                     schema.rs rewrites input schemas into the subset every harness accepts
+  mcp/               rmcp server; one #[tool] per command, same JSON envelope as -o json;
+                     schema.rs rewrites input schemas into the subset every harness accepts;
+                     http.rs streamable-HTTP transport (axum, bearer token); clients.rs the
+                     per-agent registration recipes behind `idx mcp setup` (keep docs/mcp.md in step)
   model/             provider-agnostic domain types = the JSON contract (Quote, Candle, History, ...,
                      dividends.rs, returns.rs, market.rs, brief.rs, watchlist.rs)
   output/            table*.rs (comfy-table), json.rs (Envelope + JSON Schema), csv.rs (-o csv),
