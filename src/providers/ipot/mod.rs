@@ -10,6 +10,10 @@
 //!   `841.2 B`, `2.2 T`); smaller ones are exact.
 //! - A range without trades (weekend, holiday) gives ten blank rows and
 //!   zero totals; an unknown code gives `Invalid stock code!` with HTTP 200.
+//! - In some stretches of seconds the server answers nginx's own HTTP 404
+//!   page to a third or more of requests, then recovers; the same URL then
+//!   succeeds. Since a real unknown code is a 200, a 404 is retried up to
+//!   [`ATTEMPTS`] times with doubling pauses (under 4 s in all).
 //!
 //! Broker names come from the bundled IDX member list (`crate::brokers`),
 //! filled in by `service::broker`.
@@ -34,6 +38,9 @@ const ENDPOINT: &str = "https://www.indopremier.com/module/saham/include/data-br
 const TTL_CLOSED: Duration = Duration::from_secs(7 * 24 * 3600);
 /// Today's summary moves with every trade.
 const TTL_TODAY: Duration = Duration::from_secs(5 * 60);
+/// Tries per request while the source answers its spurious 404.
+pub const ATTEMPTS: usize = 5;
+const RETRY_PAUSE: Duration = Duration::from_millis(if cfg!(test) { 1 } else { 250 });
 
 pub fn url(
     symbol: &Symbol,
@@ -74,9 +81,16 @@ pub async fn broker_summary(
 ) -> Result<Sourced<BrokerSummary>> {
     let url = url(symbol, from, to, investor, board);
     let ttl = if to < today { TTL_CLOSED } else { TTL_TODAY };
-    let f = fetcher
-        .get(&url, &[("Accept".into(), "text/html".into())], ttl, None)
-        .await?;
+    let headers = [("Accept".to_string(), "text/html".to_string())];
+    let mut f = fetcher.get(&url, &headers, ttl, None).await?;
+    for attempt in 1..ATTEMPTS {
+        if f.status != 404 {
+            break;
+        }
+        tracing::debug!(%symbol, attempt, "ipot answered 404, retrying");
+        tokio::time::sleep(RETRY_PAUSE * (1 << (attempt - 1))).await;
+        f = fetcher.get(&url, &headers, ttl, None).await?;
+    }
     if !f.is_success() {
         return Err(IdxError::provider(
             NAME,
@@ -194,10 +208,11 @@ mod tests {
 
     #[tokio::test]
     async fn unknown_code_is_not_found_and_http_errors_are_provider_errors() {
-        let (f, _be, _d) = fetcher(
+        let (f, be, _d) = fetcher(
             FixtureBackend::new()
                 .route("code=ZZZZ", 200, INVALID)
-                .route("code=BBRI", 503, "busy"),
+                .route("code=BBRI", 503, "busy")
+                .route("code=TLKM", 404, "Not Found"),
         );
         let day = d(2026, 10, 16);
         let err = broker_summary(
@@ -224,5 +239,21 @@ mod tests {
         .await
         .unwrap_err();
         assert_eq!(err.exit_code(), 3);
+        assert_eq!(be.call_count(), 2, "only the spurious 404 is retried");
+
+        let err = broker_summary(
+            &f,
+            &Symbol::parse("TLKM").unwrap(),
+            day,
+            day,
+            BrokerInvestor::All,
+            BrokerBoard::All,
+            day,
+        )
+        .await
+        .unwrap_err();
+        assert_eq!(err.exit_code(), 3);
+        assert!(err.to_string().contains("HTTP 404"), "{err}");
+        assert_eq!(be.call_count(), 2 + ATTEMPTS);
     }
 }
