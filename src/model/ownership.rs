@@ -70,6 +70,8 @@ pub struct Change {
     pub holder: String,
     pub entity_key: String,
     pub investor_type: Option<String>,
+    /// `L` (local) or `A` (foreign) in the later release (earlier one for exits).
+    pub local_foreign: Option<String>,
     pub kind: ChangeKind,
     pub pct_from: Option<f64>,
     pub pct_to: Option<f64>,
@@ -80,6 +82,67 @@ pub struct Change {
     pub shares_change: i64,
 }
 
+/// A change reduced to what a summary needs.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ChangeBrief {
+    pub symbol: String,
+    pub holder: String,
+    pub kind: ChangeKind,
+    pub pct_from: Option<f64>,
+    pub pct_to: Option<f64>,
+    pub pct_change: f64,
+}
+
+/// Net movement of one KSEI investor type.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct TypeFlow {
+    /// `CORPORATE`, `INDIVIDUAL`, `MUTUAL FUND`, ... or `UNKNOWN`.
+    pub investor_type: String,
+    /// Rows of this type among the matches.
+    pub rows: usize,
+    /// Sum of `pct_change` over those rows, percentage points.
+    pub net_pp: f64,
+}
+
+/// Net movement within one issuer.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct IssuerFlow {
+    pub symbol: String,
+    pub rows: usize,
+    /// Sum of `pct_change` over the issuer's matching rows.
+    pub net_pp: f64,
+    /// Part of `net_pp` from holders flagged foreign (`A`).
+    pub foreign_net_pp: f64,
+}
+
+/// Aggregates over every match (before paging), so an agent can describe a
+/// month without reading the rows.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ChangesSummary {
+    /// Distinct issuers with at least one match.
+    pub issuers: usize,
+    /// Distinct holders (entity keys) with at least one match.
+    pub holders: usize,
+    pub new_holders: usize,
+    pub exits: usize,
+    /// Existing holders whose stake rose / fell.
+    pub increased: usize,
+    pub decreased: usize,
+    /// Sum of `pct_change` over all matches, percentage points. Across many
+    /// issuers this is a register-wide flow indicator, not a share of any one
+    /// company; for a single symbol it is exact.
+    pub net_pp: f64,
+    pub foreign_net_pp: f64,
+    pub local_net_pp: f64,
+    /// Sorted by absolute `net_pp`.
+    pub by_investor_type: Vec<TypeFlow>,
+    /// Up to 10 issuers with the largest absolute `net_pp`.
+    pub issuer_flow: Vec<IssuerFlow>,
+    /// Up to 5 largest rises / falls.
+    pub top_increases: Vec<ChangeBrief>,
+    pub top_decreases: Vec<ChangeBrief>,
+}
+
 /// `ownership changes`.
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
 pub struct ChangesReport {
@@ -88,8 +151,13 @@ pub struct ChangesReport {
     pub symbol: Option<String>,
     /// Minimum absolute change in percentage points that was applied.
     pub min_pct_change: f64,
+    /// Matches after `min_pct_change`, before paging.
     pub total_matches: usize,
-    /// Largest absolute moves first; may be truncated by `--limit`.
+    /// Rows skipped before `changes` (`--offset`); `changes.len()` is the page size.
+    pub offset: usize,
+    /// Computed over every match, not only the page.
+    pub summary: ChangesSummary,
+    /// Largest absolute moves first; one page of `total_matches`.
     pub changes: Vec<Change>,
 }
 

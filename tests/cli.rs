@@ -383,7 +383,27 @@ fn ownership_import_and_queries_work_offline() {
         .assert()
         .success()
         .stdout(predicate::str::contains("\"kind\": \"new\""))
-        .stdout(predicate::str::contains("\"kind\": \"exited\""));
+        .stdout(predicate::str::contains("\"kind\": \"exited\""))
+        .stdout(predicate::str::contains("\"summary\""))
+        .stdout(predicate::str::contains("\"foreign_net_pp\""));
+    // Paging: one row from offset 1, summary and total unchanged.
+    own(&sb)
+        .args([
+            "ownership",
+            "changes",
+            "--from",
+            "2026-07-31",
+            "--to",
+            "2026-08-31",
+            "--limit",
+            "1",
+            "--offset",
+            "1",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("Rows 2–2 of"))
+        .stdout(predicate::str::contains("--offset 2"));
     own(&sb)
         .args(["ownership", "releases"])
         .assert()

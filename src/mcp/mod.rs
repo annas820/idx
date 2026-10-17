@@ -125,9 +125,12 @@ pub struct OwnershipChangesArgs {
     /// Ignore moves smaller than this many percentage points (default 0).
     #[serde(default)]
     pub min_pct_change: Option<f64>,
-    /// Rows kept, largest moves first (default 50; 0 = all).
+    /// Rows per page, largest moves first (default 50; 0 = all).
     #[serde(default)]
     pub limit: Option<u32>,
+    /// Rows to skip before the page (default 0). total_matches and offset in the result tell you when to stop.
+    #[serde(default)]
+    pub offset: Option<u32>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -561,7 +564,7 @@ impl IdxServer {
 
     #[tool(
         name = "idx_ownership_changes",
-        description = "Month-over-month changes in holders above 1% between two imported release dates: new holders, exits and position changes with percentage-point and share deltas, largest moves first. Optional ticker filter. Returns the idx.ownership.changes.v1 envelope."
+        description = "Month-over-month changes in holders above 1% between two imported release dates: new holders, exits and position changes with percentage-point and share deltas, largest moves first. The summary block (counts, net percentage points for foreign vs local holders and per investor type, per-issuer flow, top rises and falls) always covers every match; limit/offset page the rows. Optional ticker filter. Returns the idx.ownership.changes.v1 envelope."
     )]
     async fn ownership_changes(
         &self,
@@ -583,6 +586,7 @@ impl IdxServer {
                     symbol.as_ref().map(Symbol::as_str),
                     a.min_pct_change.unwrap_or(0.0),
                     limit,
+                    a.offset.unwrap_or(0) as usize,
                 )?;
                 ok(SCHEMA_OWNERSHIP_CHANGES, Sourced::fresh(report, "local-db"))
             }

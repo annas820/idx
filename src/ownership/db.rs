@@ -17,7 +17,8 @@ use rusqlite::{params, Connection, OptionalExtension};
 
 use crate::error::{IdxError, Result};
 use crate::model::{
-    Change, ChangeKind, ChangesReport, EntityReport, HoldersReport, Holding, ImportReport, Release,
+    Change, ChangeBrief, ChangeKind, ChangesReport, ChangesSummary, EntityReport, HoldersReport,
+    Holding, ImportReport, IssuerFlow, Release, TypeFlow,
 };
 
 use super::ingest::Parsed;
@@ -403,7 +404,8 @@ impl OwnershipDb {
         })
     }
 
-    /// Movements between two releases.
+    /// Movements between two releases: every match is summarised, then one
+    /// page (`offset`, `limit`) of rows is returned, largest moves first.
     pub fn changes(
         &self,
         from: NaiveDate,
@@ -411,6 +413,7 @@ impl OwnershipDb {
         symbol: Option<&str>,
         min_pct_change: f64,
         limit: Option<usize>,
+        offset: usize,
     ) -> Result<ChangesReport> {
         if from >= to {
             return Err(IdxError::Usage("--from must be earlier than --to".into()));
@@ -420,7 +423,8 @@ impl OwnershipDb {
         let symbol = symbol.map(str::to_uppercase);
 
         let sql =
-            "SELECT h.symbol, e.display_name, e.entity_key, h.investor_type, h.shares_total, h.pct
+            "SELECT h.symbol, e.display_name, e.entity_key, h.investor_type, h.shares_total, h.pct,
+                          h.local_foreign
                    FROM holdings h JOIN entities e ON e.id = h.entity_id
                    WHERE h.release_id = ?1 AND (?2 IS NULL OR h.symbol = ?2)";
         let load = |release_id: i64| -> Result<Positions> {
@@ -434,6 +438,7 @@ impl OwnershipDb {
                             row.get::<_, Option<String>>(3)?,
                             row.get::<_, i64>(4)?,
                             row.get::<_, f64>(5)?,
+                            row.get::<_, Option<String>>(6)?,
                         ),
                     ))
                 })
@@ -446,9 +451,9 @@ impl OwnershipDb {
         let after = load(to_id)?;
 
         let mut changes: Vec<Change> = Vec::new();
-        for ((sym, key), (name, itype, shares_to, pct_to)) in &after {
+        for ((sym, key), (name, itype, shares_to, pct_to, lf)) in &after {
             match before.get(&(sym.clone(), key.clone())) {
-                Some((_, _, shares_from, pct_from)) => {
+                Some((_, _, shares_from, pct_from, _)) => {
                     let pct_change = pct_to - pct_from;
                     if (pct_change).abs() < 1e-9 && shares_to == shares_from {
                         continue;
@@ -458,6 +463,7 @@ impl OwnershipDb {
                         holder: name.clone(),
                         entity_key: key.clone(),
                         investor_type: itype.clone(),
+                        local_foreign: lf.clone(),
                         kind: ChangeKind::Changed,
                         pct_from: Some(*pct_from),
                         pct_to: Some(*pct_to),
@@ -472,6 +478,7 @@ impl OwnershipDb {
                     holder: name.clone(),
                     entity_key: key.clone(),
                     investor_type: itype.clone(),
+                    local_foreign: lf.clone(),
                     kind: ChangeKind::New,
                     pct_from: None,
                     pct_to: Some(*pct_to),
@@ -482,13 +489,14 @@ impl OwnershipDb {
                 }),
             }
         }
-        for ((sym, key), (name, itype, shares_from, pct_from)) in &before {
+        for ((sym, key), (name, itype, shares_from, pct_from, lf)) in &before {
             if !after.contains_key(&(sym.clone(), key.clone())) {
                 changes.push(Change {
                     symbol: sym.clone(),
                     holder: name.clone(),
                     entity_key: key.clone(),
                     investor_type: itype.clone(),
+                    local_foreign: lf.clone(),
                     kind: ChangeKind::Exited,
                     pct_from: Some(*pct_from),
                     pct_to: None,
@@ -508,6 +516,9 @@ impl OwnershipDb {
                 .then_with(|| a.symbol.cmp(&b.symbol))
         });
         let total = changes.len();
+        let summary = summarise(&changes);
+        let offset = offset.min(total);
+        changes.drain(..offset);
         if let Some(n) = limit {
             changes.truncate(n);
         }
@@ -517,16 +528,137 @@ impl OwnershipDb {
             symbol,
             min_pct_change,
             total_matches: total,
+            offset,
+            summary,
             changes,
         })
     }
 }
 
-/// (symbol, entity_key) -> (display name, investor type, shares, pct).
-type Positions = BTreeMap<(String, String), (String, Option<String>, i64, f64)>;
+/// (symbol, entity_key) -> (display name, investor type, shares, pct, local/foreign).
+type Positions = BTreeMap<(String, String), (String, Option<String>, i64, f64, Option<String>)>;
+
+/// Aggregates every match into the `summary` block.
+pub fn summarise(changes: &[Change]) -> ChangesSummary {
+    use std::collections::BTreeSet;
+    let brief = |c: &Change| ChangeBrief {
+        symbol: c.symbol.clone(),
+        holder: c.holder.clone(),
+        kind: c.kind,
+        pct_from: c.pct_from,
+        pct_to: c.pct_to,
+        pct_change: c.pct_change,
+    };
+    let is_foreign = |c: &Change| c.local_foreign.as_deref() == Some("A");
+    let issuers: BTreeSet<&str> = changes.iter().map(|c| c.symbol.as_str()).collect();
+    let holders: BTreeSet<&str> = changes.iter().map(|c| c.entity_key.as_str()).collect();
+
+    let mut by_type: BTreeMap<String, (usize, f64)> = BTreeMap::new();
+    let mut by_issuer: BTreeMap<&str, (usize, f64, f64)> = BTreeMap::new();
+    for c in changes {
+        let t = c
+            .investor_type
+            .clone()
+            .filter(|s| !s.trim().is_empty())
+            .unwrap_or_else(|| "UNKNOWN".into());
+        let e = by_type.entry(t).or_default();
+        e.0 += 1;
+        e.1 += c.pct_change;
+        let i = by_issuer.entry(c.symbol.as_str()).or_default();
+        i.0 += 1;
+        i.1 += c.pct_change;
+        if is_foreign(c) {
+            i.2 += c.pct_change;
+        }
+    }
+    let mut by_investor_type: Vec<TypeFlow> = by_type
+        .into_iter()
+        .map(|(k, (rows, net))| TypeFlow {
+            investor_type: k,
+            rows,
+            net_pp: round4(net),
+        })
+        .collect();
+    by_investor_type.sort_by(|a, b| {
+        b.net_pp
+            .abs()
+            .partial_cmp(&a.net_pp.abs())
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
+    let mut issuer_flow: Vec<IssuerFlow> = by_issuer
+        .into_iter()
+        .map(|(s, (rows, net, foreign))| IssuerFlow {
+            symbol: s.to_string(),
+            rows,
+            net_pp: round4(net),
+            foreign_net_pp: round4(foreign),
+        })
+        .collect();
+    issuer_flow.sort_by(|a, b| {
+        b.net_pp
+            .abs()
+            .partial_cmp(&a.net_pp.abs())
+            .unwrap_or(std::cmp::Ordering::Equal)
+            .then_with(|| a.symbol.cmp(&b.symbol))
+    });
+    issuer_flow.truncate(10);
+
+    // `changes` arrives sorted by absolute move, so the first positive /
+    // negative rows are the largest ones.
+    let top_increases: Vec<ChangeBrief> = changes
+        .iter()
+        .filter(|c| c.pct_change > 0.0)
+        .take(5)
+        .map(brief)
+        .collect();
+    let top_decreases: Vec<ChangeBrief> = changes
+        .iter()
+        .filter(|c| c.pct_change < 0.0)
+        .take(5)
+        .map(brief)
+        .collect();
+    let net = |pred: &dyn Fn(&Change) -> bool| -> f64 {
+        round4(
+            changes
+                .iter()
+                .filter(|c| pred(c))
+                .map(|c| c.pct_change)
+                .sum(),
+        )
+    };
+    ChangesSummary {
+        issuers: issuers.len(),
+        holders: holders.len(),
+        new_holders: changes.iter().filter(|c| c.kind == ChangeKind::New).count(),
+        exits: changes
+            .iter()
+            .filter(|c| c.kind == ChangeKind::Exited)
+            .count(),
+        increased: changes
+            .iter()
+            .filter(|c| c.kind == ChangeKind::Changed && c.pct_change > 0.0)
+            .count(),
+        decreased: changes
+            .iter()
+            .filter(|c| c.kind == ChangeKind::Changed && c.pct_change < 0.0)
+            .count(),
+        net_pp: net(&|_| true),
+        foreign_net_pp: net(&is_foreign),
+        local_net_pp: net(&|c| c.local_foreign.as_deref() == Some("L")),
+        by_investor_type,
+        issuer_flow,
+        top_increases,
+        top_decreases,
+    }
+}
 
 fn round4(v: f64) -> f64 {
-    (v * 10_000.0).round() / 10_000.0
+    let r = (v * 10_000.0).round() / 10_000.0;
+    if r == 0.0 {
+        0.0 // never -0.0 in JSON
+    } else {
+        r
+    }
 }
 
 fn parse_date(s: &str) -> NaiveDate {
@@ -611,9 +743,43 @@ mod tests {
                 None,
                 0.0,
                 None,
+                0,
             )
             .unwrap();
         assert!(c.total_matches >= 3, "{c:?}");
+        let s = &c.summary;
+        assert_eq!(
+            s.new_holders + s.exits + s.increased + s.decreased,
+            c.total_matches,
+            "{s:?}"
+        );
+        assert!(s.issuers >= 1 && s.holders >= 3);
+        assert!(!s.top_increases.is_empty() && !s.top_decreases.is_empty());
+        assert!(s.top_increases[0].pct_change > 0.0);
+        assert!(s.top_decreases[0].pct_change < 0.0);
+        assert!(
+            (s.net_pp - (s.foreign_net_pp + s.local_net_pp)).abs() < 1e-6
+                || s.by_investor_type
+                    .iter()
+                    .any(|t| t.investor_type == "UNKNOWN")
+                || c.changes.iter().any(|x| x.local_foreign.is_none())
+        );
+        // Paging keeps the summary over every match.
+        let page = db
+            .changes(
+                NaiveDate::from_ymd_opt(2026, 7, 31).unwrap(),
+                NaiveDate::from_ymd_opt(2026, 8, 31).unwrap(),
+                None,
+                0.0,
+                Some(1),
+                1,
+            )
+            .unwrap();
+        assert_eq!(page.offset, 1);
+        assert_eq!(page.changes.len(), 1);
+        assert_eq!(page.changes[0], c.changes[1]);
+        assert_eq!(page.summary, c.summary);
+        assert_eq!(page.total_matches, c.total_matches);
         let kinds: Vec<ChangeKind> = c.changes.iter().map(|x| x.kind).collect();
         assert!(kinds.contains(&ChangeKind::Changed));
         assert!(kinds.contains(&ChangeKind::New));
@@ -626,6 +792,7 @@ mod tests {
                 Some("aadi"),
                 0.5,
                 Some(1),
+                0,
             )
             .unwrap();
         assert_eq!(only.changes.len(), 1);
@@ -636,7 +803,8 @@ mod tests {
                 NaiveDate::from_ymd_opt(2026, 7, 31).unwrap(),
                 None,
                 0.0,
-                None
+                None,
+                0
             )
             .is_err());
     }

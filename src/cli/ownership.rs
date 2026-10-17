@@ -50,9 +50,9 @@ pub enum OwnershipCmd {
         as_of: Option<NaiveDate>,
     },
 
-    /// Month-over-month changes: new holders, exits and position changes.
+    /// Month-over-month changes: new holders, exits and position changes, with a summary.
     #[command(
-        after_help = "Examples:\n  idx ownership changes --from 2026-07-31 --to 2026-08-31\n  idx ownership changes --from 2026-07-31 --to 2026-08-31 --symbol BBCA\n  idx ownership changes --from 2026-02-27 --to 2026-08-31 --min-change 1 --limit 100"
+        after_help = "Examples:\n  idx ownership changes --from 2026-07-31 --to 2026-08-31\n  idx ownership changes --from 2026-07-31 --to 2026-08-31 --symbol BBCA\n  idx ownership changes --from 2026-02-27 --to 2026-08-31 --min-change 1 --limit 100\n  idx ownership changes --from 2026-07-31 --to 2026-08-31 --limit 100 --offset 100   # page 2\n\nThe summary (counts, net percentage points by foreign/local and investor type, issuer flow,\nlargest rises and falls) always covers every match; --limit/--offset page the rows."
     )]
     Changes {
         #[arg(long, value_name = "YYYY-MM-DD")]
@@ -65,9 +65,12 @@ pub enum OwnershipCmd {
         /// Ignore moves smaller than this many percentage points.
         #[arg(long, default_value_t = 0.0, value_name = "PP")]
         min_change: f64,
-        /// Rows kept (largest moves first); 0 for all.
+        /// Rows per page (largest moves first); 0 for all.
         #[arg(long, short = 'n', default_value_t = 50)]
         limit: usize,
+        /// Rows to skip before the page.
+        #[arg(long, default_value_t = 0, value_name = "N")]
+        offset: usize,
     },
 
     /// Imported releases in the local database.
@@ -153,6 +156,7 @@ pub async fn run(ctx: &Context, cmd: OwnershipCmd) -> Result<()> {
             symbol,
             min_change,
             limit,
+            offset,
         } => {
             let sym = symbol.map(|s| Symbol::parse(&s)).transpose()?;
             let db = open(ctx)?;
@@ -162,6 +166,7 @@ pub async fn run(ctx: &Context, cmd: OwnershipCmd) -> Result<()> {
                 sym.as_ref().map(Symbol::as_str),
                 min_change,
                 if limit == 0 { None } else { Some(limit) },
+                offset,
             )?;
             emit(ctx, SCHEMA_OWNERSHIP_CHANGES, local(report), |r| {
                 tbl::changes(r, ctx.color)

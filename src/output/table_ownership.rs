@@ -85,8 +85,10 @@ pub fn entity(r: &EntityReport, color: bool) -> String {
 }
 
 pub fn changes(r: &ChangesReport, color: bool) -> String {
+    let s = &r.summary;
+    let pp = |v: f64| format!("{}{} pp", if v > 0.0 { "+" } else { "" }, f::num(v, 2));
     let mut out = format!(
-        "Changes {} → {}{} · {} match{}{}\n",
+        "Changes {} → {}{} · {} match{} · {} issuer{} · {} holder{}\n",
         r.from,
         r.to,
         r.symbol
@@ -95,16 +97,62 @@ pub fn changes(r: &ChangesReport, color: bool) -> String {
             .unwrap_or_default(),
         r.total_matches,
         if r.total_matches == 1 { "" } else { "es" },
-        if r.changes.len() < r.total_matches {
-            format!(" (showing {}; use --limit 0 for all)", r.changes.len())
-        } else {
-            String::new()
-        }
+        s.issuers,
+        if s.issuers == 1 { "" } else { "s" },
+        s.holders,
+        if s.holders == 1 { "" } else { "s" },
     );
+    out.push_str(&format!(
+        "Summary · {} new · {} exited · {} increased · {} decreased · net {} (foreign {}, local {})\n",
+        s.new_holders,
+        s.exits,
+        s.increased,
+        s.decreased,
+        pp(s.net_pp),
+        pp(s.foreign_net_pp),
+        pp(s.local_net_pp)
+    ));
+    if !s.by_investor_type.is_empty() {
+        out.push_str(&format!(
+            "By type · {}\n",
+            s.by_investor_type
+                .iter()
+                .take(6)
+                .map(|t| format!("{} {} ({})", t.investor_type, pp(t.net_pp), t.rows))
+                .collect::<Vec<_>>()
+                .join(" · ")
+        ));
+    }
+    if r.symbol.is_none() && !s.issuer_flow.is_empty() {
+        out.push_str(&format!(
+            "Issuer flow · {}\n",
+            s.issuer_flow
+                .iter()
+                .take(8)
+                .map(|i| format!(
+                    "{} {} (foreign {})",
+                    i.symbol,
+                    pp(i.net_pp),
+                    pp(i.foreign_net_pp)
+                ))
+                .collect::<Vec<_>>()
+                .join(" · ")
+        ));
+    }
+    if r.changes.len() < r.total_matches {
+        let first = r.offset + 1;
+        let last = r.offset + r.changes.len();
+        out.push_str(&format!(
+            "Rows {first}–{last} of {} · next page: --offset {} · all rows: --limit 0\n",
+            r.total_matches, last
+        ));
+    }
     let mut t = base_table(color);
     t.set_header(header(&[
         "Symbol",
         "Holder",
+        "Type",
+        "L/A",
         "Kind",
         "% from",
         "% to",
@@ -129,6 +177,8 @@ pub fn changes(r: &ChangesReport, color: bool) -> String {
         t.add_row(vec![
             Cell::new(&c.symbol).add_attribute(Attribute::Bold),
             Cell::new(f::clip(&c.holder, 40)),
+            Cell::new(f::clip(&f::text(&c.investor_type), 12)),
+            Cell::new(f::text(&c.local_foreign)),
             kind,
             right(pct_opt(c.pct_from)),
             right(pct_opt(c.pct_to)),

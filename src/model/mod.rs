@@ -22,8 +22,8 @@ pub use fundamentals::{
 };
 pub use news::{NewsItem, NewsReport, SentimentLabel, SentimentReport};
 pub use ownership::{
-    Change, ChangeKind, ChangesReport, DiscoveredFile, EntityReport, HoldersReport, Holding,
-    ImportReport, Release,
+    Change, ChangeBrief, ChangeKind, ChangesReport, ChangesSummary, DiscoveredFile, EntityReport,
+    HoldersReport, Holding, ImportReport, IssuerFlow, Release, TypeFlow,
 };
 pub use screen::{ScreenReport, ScreenRow};
 pub use technical::{
