@@ -1,21 +1,33 @@
 #!/usr/bin/env node
-// Thin launcher: runs the downloaded idx binary with the same arguments and
-// forwards its exit code, so `npx @midoriresearch/idx stocks quote BBCA` and
+// Launcher: runs the idx binary with the same arguments and exit code, so
+// `npx @midoriresearch/idx stocks quote BBCA` and
 // `claude mcp add idx -- npx -y @midoriresearch/idx mcp` both work.
+//
+// If postinstall did not run (npm 12 blocks dependency scripts by default)
+// the binary is downloaded and SHA-256 verified here, once, before the first
+// command. Progress goes to stderr so stdout stays clean for JSON and for
+// the MCP protocol.
 "use strict";
-const path = require("path");
-const fs = require("fs");
 const { spawnSync } = require("child_process");
+const binary = require("../lib/binary");
 
-const exe = process.platform === "win32" ? "idx.exe" : "idx";
-const bin = path.join(__dirname, exe);
-if (!fs.existsSync(bin)) {
-  console.error("idx: binary missing; reinstall the package (npm rebuild @midoriresearch/idx) or use install.sh");
-  process.exit(1);
+async function main() {
+  let bin = binary.installed();
+  if (!bin) {
+    try {
+      bin = await binary.download((line) => console.error(line));
+    } catch (e) {
+      console.error(`idx: binary missing and download failed: ${e.message}`);
+      console.error(`idx: install it manually: curl -fsSL https://raw.githubusercontent.com/${binary.REPO}/main/install.sh | sh`);
+      return 1;
+    }
+  }
+  const r = spawnSync(bin, process.argv.slice(2), { stdio: "inherit" });
+  if (r.error) {
+    console.error(`idx: ${r.error.message}`);
+    return 1;
+  }
+  return r.status === null ? 1 : r.status;
 }
-const r = spawnSync(bin, process.argv.slice(2), { stdio: "inherit" });
-if (r.error) {
-  console.error(`idx: ${r.error.message}`);
-  process.exit(1);
-}
-process.exit(r.status === null ? 1 : r.status);
+
+main().then((code) => process.exit(code));

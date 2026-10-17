@@ -17,6 +17,7 @@ pub mod ownership;
 pub mod returns;
 pub mod screen;
 pub mod technical;
+pub mod watchlist;
 
 pub use brief::{Brief, DividendSummary, NewsSummary, OwnershipSummary};
 pub use dividends::{DividendEvent, DividendHistory, DividendYear, SplitEvent};
@@ -38,6 +39,7 @@ pub use screen::{ScreenReport, ScreenRow};
 pub use technical::{
     Bollinger, Levels, Macd, MovingAverages, Signal, SignalLabel, Technical, Trend, VolumeStats,
 };
+pub use watchlist::Watchlist;
 
 /// Jakarta is UTC+7 all year (WIB).
 pub const WIB_OFFSET_SECS: i32 = 7 * 3600;

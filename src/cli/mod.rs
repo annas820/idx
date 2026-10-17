@@ -18,6 +18,7 @@ pub mod config_cmd;
 pub mod market;
 pub mod ownership;
 pub mod stocks;
+pub mod watch;
 
 const LONG_ABOUT: &str = "\
 Indonesian stock market (IDX / IHSG) analysis for humans and AI agents.
@@ -115,6 +116,12 @@ pub enum Command {
     /// Whole-market view: IHSG, breadth, gainers, losers, most traded.
     #[command(subcommand)]
     Market(market::MarketCmd),
+
+    /// Quote your watchlist, or manage it (add, remove, list, clear, returns).
+    #[command(
+        after_help = "Examples:\n  idx watch add BBCA BBRI TLKM\n  idx watch                 # quotes for the list\n  idx watch returns         # 1w..5y returns vs IHSG\n  idx watch rm TLKM\n\nStored as plain text next to the config file (or $IDX_WATCHLIST)."
+    )]
+    Watch(watch::WatchArgs),
 
     /// Read or write the config file.
     #[command(subcommand)]
@@ -263,6 +270,10 @@ pub async fn run(cli: Cli) -> Result<()> {
         Command::Market(cmd) => {
             let ctx = build_context(&cli.global)?;
             market::run(&ctx, cmd).await
+        }
+        Command::Watch(args) => {
+            let ctx = build_context(&cli.global)?;
+            watch::run(&ctx, args).await
         }
         Command::Mcp => {
             let ctx = build_context(&cli.global)?;

@@ -108,7 +108,12 @@ fn list_table(w: &Watchlist) -> String {
         );
     }
     let names: Vec<&str> = w.symbols.iter().map(Symbol::as_str).collect();
-    format!("{} ({} tickers)\n{}\n", w.path, names.len(), names.join(" "))
+    format!(
+        "{} ({} tickers)\n{}\n",
+        w.path,
+        names.len(),
+        names.join(" ")
+    )
 }
 
 pub async fn run(ctx: &Context, args: WatchArgs) -> Result<()> {
@@ -139,7 +144,9 @@ pub async fn run(ctx: &Context, args: WatchArgs) -> Result<()> {
             let symbols = non_empty(symbols, &file)?;
             let bench = Symbol::parse("^JKSE")?;
             let result = service::returns(ctx.provider.as_ref(), &symbols, Some(&bench)).await?;
-            emit(ctx, SCHEMA_RETURNS, result, |d| reports::returns(d, ctx.color))
+            emit(ctx, SCHEMA_RETURNS, result, |d| {
+                reports::returns(d, ctx.color)
+            })
         }
         None => {
             let symbols = non_empty(symbols, &file)?;
@@ -167,8 +174,14 @@ mod tests {
     fn load_parses_comments_and_dedupes() {
         let dir = std::env::temp_dir().join(format!("idx-watch-{}", std::process::id()));
         let file = dir.join("watchlist.txt");
-        assert!(load(&file).unwrap().is_empty(), "missing file is an empty list");
-        let syms = vec![Symbol::parse("BBCA").unwrap(), Symbol::parse("TLKM").unwrap()];
+        assert!(
+            load(&file).unwrap().is_empty(),
+            "missing file is an empty list"
+        );
+        let syms = vec![
+            Symbol::parse("BBCA").unwrap(),
+            Symbol::parse("TLKM").unwrap(),
+        ];
         save(&file, &syms).unwrap();
         std::fs::write(
             &file,
@@ -178,8 +191,11 @@ mod tests {
             ),
         )
         .unwrap();
-        let got: Vec<&str> = load(&file).unwrap();
-        let got: Vec<String> = got.iter().map(|s| s.as_str().to_string()).collect();
+        let got: Vec<String> = load(&file)
+            .unwrap()
+            .iter()
+            .map(|s| s.as_str().to_string())
+            .collect();
         assert_eq!(got, ["BBCA", "TLKM", "BBRI"]);
         std::fs::write(&file, "BB CA\n").unwrap();
         assert!(load(&file).is_err());

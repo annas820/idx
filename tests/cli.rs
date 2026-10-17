@@ -452,6 +452,46 @@ fn ownership_import_and_queries_work_offline() {
 }
 
 #[test]
+fn watchlist_roundtrip() {
+    let sb = sandbox();
+    let file = sb.cache.join("watchlist.txt");
+    let w = |sb: &Sandbox| {
+        let mut c = idx(&sb.cache, &sb.config);
+        c.env("IDX_WATCHLIST", &file);
+        c
+    };
+    w(&sb)
+        .args(["watch"])
+        .assert()
+        .code(2)
+        .stderr(predicate::str::contains("watch add"));
+    w(&sb)
+        .args(["watch", "add", "bbca", "BBRI,tlkm"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("BBCA BBRI TLKM"));
+    w(&sb)
+        .args(["watch", "rm", "BBRI"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("BBCA TLKM"));
+    w(&sb)
+        .args(["-o", "json", "watch", "list"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("\"schema\": \"idx.watchlist.v1\""))
+        .stdout(predicate::str::contains("\"TLKM\""));
+    assert!(file.exists());
+    // Quoting the list goes through the provider: offline + empty cache = 5.
+    w(&sb).args(["--offline", "watch"]).assert().code(5);
+    w(&sb)
+        .args(["watch", "clear"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("empty"));
+}
+
+#[test]
 fn cache_commands() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

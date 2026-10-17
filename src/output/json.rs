@@ -9,7 +9,7 @@ use crate::model::{
     Brief, ChangesReport, DiscoveredFile, DividendHistory, Earnings, EntityReport, Financials,
     ForeignFlowReport, ForeignReport, Fundamentals, History, HoldersReport, ImportReport,
     MarketOverview, NewsReport, Performance, Profile, Quote, Release, ScreenReport,
-    SentimentReport, Technical,
+    SentimentReport, Technical, Watchlist,
 };
 use crate::providers::Sourced;
 
@@ -58,6 +58,7 @@ pub const SCHEMA_DIVIDENDS: &str = "idx.dividends.v1";
 pub const SCHEMA_RETURNS: &str = "idx.returns.v1";
 pub const SCHEMA_MARKET: &str = "idx.market.v1";
 pub const SCHEMA_BRIEF: &str = "idx.brief.v1";
+pub const SCHEMA_WATCHLIST: &str = "idx.watchlist.v1";
 pub const SCHEMA_TECHNICAL: &str = "idx.technical.v1";
 pub const SCHEMA_SCREEN: &str = "idx.screen.v1";
 pub const SCHEMA_NEWS: &str = "idx.news.v1";
@@ -82,6 +83,7 @@ pub type DividendsEnvelope = Envelope<DividendHistory>;
 pub type ReturnsEnvelope = Envelope<Vec<Performance>>;
 pub type MarketEnvelope = Envelope<MarketOverview>;
 pub type BriefEnvelope = Envelope<Brief>;
+pub type WatchlistEnvelope = Envelope<Watchlist>;
 pub type TechnicalEnvelope = Envelope<Technical>;
 pub type ScreenEnvelope = Envelope<ScreenReport>;
 pub type NewsEnvelope = Envelope<NewsReport>;
@@ -141,6 +143,7 @@ pub fn schema_names() -> &'static [&'static str] {
         "returns",
         "market",
         "brief",
+        "watchlist",
         "technical",
         "screen",
         "news",
@@ -172,6 +175,7 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "returns" => schemars::schema_for!(ReturnsEnvelope),
         "market" => schemars::schema_for!(MarketEnvelope),
         "brief" => schemars::schema_for!(BriefEnvelope),
+        "watchlist" => schemars::schema_for!(WatchlistEnvelope),
         "technical" => schemars::schema_for!(TechnicalEnvelope),
         "screen" => schemars::schema_for!(ScreenEnvelope),
         "news" => schemars::schema_for!(NewsEnvelope),
