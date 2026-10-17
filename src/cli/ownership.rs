@@ -9,7 +9,8 @@ use crate::error::{IdxError, Result};
 use crate::model::Symbol;
 use crate::output::json::{
     Envelope, SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_DISCOVER, SCHEMA_OWNERSHIP_ENTITY,
-    SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_IMPORT, SCHEMA_OWNERSHIP_RELEASES,
+    SCHEMA_OWNERSHIP_FOREIGN, SCHEMA_OWNERSHIP_FOREIGN_FLOW, SCHEMA_OWNERSHIP_HOLDERS,
+    SCHEMA_OWNERSHIP_IMPORT, SCHEMA_OWNERSHIP_RELEASES,
 };
 use crate::output::{self, table_ownership as tbl};
 use crate::ownership::{self, OwnershipDb};
@@ -71,6 +72,24 @@ pub enum OwnershipCmd {
         /// Rows to skip before the page.
         #[arg(long, default_value_t = 0, value_name = "N")]
         offset: usize,
+    },
+
+    /// Disclosed foreign vs local stake: one issuer's trend across releases, or market-wide flow between two releases.
+    #[command(
+        after_help = "Examples:\n  idx ownership foreign BBCA                      # foreign share of the >1% register, month by month\n  idx ownership foreign                           # where foreign holders moved between the two newest releases\n  idx ownership foreign --from 2026-02-27 --to 2026-08-31 --limit 30\n\nKSEI flags each listed holder L (local) or A (asing / foreign). Sums cover holders above 1% only."
+    )]
+    Foreign {
+        #[arg(value_name = "SYMBOL")]
+        symbol: Option<String>,
+        /// Earlier release for the market-wide view (default: the one before --to).
+        #[arg(long, value_name = "YYYY-MM-DD", conflicts_with = "symbol")]
+        from: Option<NaiveDate>,
+        /// Later release for the market-wide view (default: newest).
+        #[arg(long, value_name = "YYYY-MM-DD", conflicts_with = "symbol")]
+        to: Option<NaiveDate>,
+        /// Rows in the market-wide view; 0 for all.
+        #[arg(long, short = 'n', default_value_t = 25)]
+        limit: usize,
     },
 
     /// Imported releases in the local database.
@@ -171,6 +190,30 @@ pub async fn run(ctx: &Context, cmd: OwnershipCmd) -> Result<()> {
             emit(ctx, SCHEMA_OWNERSHIP_CHANGES, local(report), |r| {
                 tbl::changes(r, ctx.color)
             })
+        }
+        OwnershipCmd::Foreign {
+            symbol,
+            from,
+            to,
+            limit,
+        } => {
+            let db = open(ctx)?;
+            match symbol {
+                Some(s) => {
+                    let sym = Symbol::parse(&s)?;
+                    let report = db.foreign_trend(sym.as_str())?;
+                    emit(ctx, SCHEMA_OWNERSHIP_FOREIGN, local(report), |r| {
+                        tbl::foreign(r, ctx.color)
+                    })
+                }
+                None => {
+                    let report =
+                        db.foreign_flow(from, to, if limit == 0 { None } else { Some(limit) })?;
+                    emit(ctx, SCHEMA_OWNERSHIP_FOREIGN_FLOW, local(report), |r| {
+                        tbl::foreign_flow(r, ctx.color)
+                    })
+                }
+            }
         }
         OwnershipCmd::Releases => {
             let db = open(ctx)?;

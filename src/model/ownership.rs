@@ -161,6 +161,65 @@ pub struct ChangesReport {
     pub changes: Vec<Change>,
 }
 
+/// Foreign versus local share of the >1 % register for one issuer on one date.
+/// Percentages are sums over the listed holders only (holders below 1 % are
+/// not published), so this is the disclosed foreign stake, not total foreign
+/// ownership.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ForeignPoint {
+    pub as_of: NaiveDate,
+    /// Sum of `pct` over holders flagged `A`.
+    pub foreign_pct: f64,
+    /// Sum over holders flagged `L`.
+    pub local_pct: f64,
+    /// Sum over holders with no flag in the source.
+    pub unflagged_pct: f64,
+    pub foreign_holders: usize,
+    pub local_holders: usize,
+    /// Sum over every listed holder.
+    pub listed_pct: f64,
+    /// `foreign_pct` minus the previous point's, percentage points; `null` for the first.
+    pub foreign_change_pp: Option<f64>,
+}
+
+/// `ownership foreign SYMBOL`.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ForeignReport {
+    pub symbol: String,
+    pub issuer_name: Option<String>,
+    /// Oldest first, one per imported release that lists the issuer.
+    pub points: Vec<ForeignPoint>,
+}
+
+/// One issuer's disclosed foreign stake between two releases.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct IssuerForeign {
+    pub symbol: String,
+    pub issuer_name: Option<String>,
+    /// `null` when the issuer was not in the earlier release.
+    pub foreign_pct_from: Option<f64>,
+    pub foreign_pct_to: f64,
+    /// `foreign_pct_to - foreign_pct_from` (missing side counts as 0).
+    pub change_pp: f64,
+    pub foreign_holders_to: usize,
+}
+
+/// `ownership foreign` without a symbol: where disclosed foreign holdings
+/// moved between two releases.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ForeignFlowReport {
+    pub from: NaiveDate,
+    pub to: NaiveDate,
+    /// Issuers present in the later release.
+    pub issuers: usize,
+    pub inflows: usize,
+    pub outflows: usize,
+    /// Sum of `change_pp` over all issuers (register-wide indicator).
+    pub net_pp: f64,
+    /// Largest absolute moves first; may be truncated by `--limit`.
+    pub rows: Vec<IssuerForeign>,
+}
+
 /// One imported monthly file.
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
 pub struct Release {

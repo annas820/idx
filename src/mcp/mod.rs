@@ -27,8 +27,9 @@ use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     self, Envelope, ErrorEnvelope, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
     SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_MARKET,
-    SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_ENTITY, SCHEMA_OWNERSHIP_HOLDERS,
-    SCHEMA_OWNERSHIP_RELEASES, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
+    SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_ENTITY, SCHEMA_OWNERSHIP_FOREIGN,
+    SCHEMA_OWNERSHIP_FOREIGN_FLOW, SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES,
+    SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
 };
 use crate::output::json::{SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT};
 use crate::ownership::OwnershipDb;
@@ -131,6 +132,22 @@ pub struct OwnershipChangesArgs {
     /// Rows to skip before the page (default 0). total_matches and offset in the result tell you when to stop.
     #[serde(default)]
     pub offset: Option<u32>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct OwnershipForeignArgs {
+    /// One IDX ticker for its month-by-month foreign share; omit for the market-wide flow between two releases.
+    #[serde(default)]
+    pub symbol: Option<String>,
+    /// Earlier release YYYY-MM-DD for the market-wide flow (default: the release before `to`).
+    #[serde(default)]
+    pub from: Option<String>,
+    /// Later release YYYY-MM-DD (default: newest imported).
+    #[serde(default)]
+    pub to: Option<String>,
+    /// Rows in the market-wide flow (default 25; 0 = all).
+    #[serde(default)]
+    pub limit: Option<u32>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -688,6 +705,42 @@ impl IdxServer {
     }
 
     #[tool(
+        name = "idx_ownership_foreign",
+        description = "Disclosed foreign (KSEI flag A) versus local (L) stake in the >1% register. With symbol: one issuer's foreign percent, holder counts and month-over-month change for every imported release (idx.ownership.foreign.v1). Without symbol: every issuer's change in foreign percent between two releases, largest moves first, with inflow/outflow counts (idx.ownership.foreign-flow.v1). Sums cover holders above 1% only. Needs a prior `idx ownership import`."
+    )]
+    async fn ownership_foreign(
+        &self,
+        Parameters(a): Parameters<OwnershipForeignArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let db = self.db()?;
+                match a.symbol.as_deref().map(str::trim).filter(|s| !s.is_empty()) {
+                    Some(s) => {
+                        let sym = Symbol::parse(s)?;
+                        let report = db.foreign_trend(sym.as_str())?;
+                        ok(SCHEMA_OWNERSHIP_FOREIGN, Sourced::fresh(report, "local-db"))
+                    }
+                    None => {
+                        let limit = match a.limit {
+                            Some(0) => None,
+                            Some(n) => Some(n as usize),
+                            None => Some(25),
+                        };
+                        let report =
+                            db.foreign_flow(parse_date(&a.from)?, parse_date(&a.to)?, limit)?;
+                        ok(
+                            SCHEMA_OWNERSHIP_FOREIGN_FLOW,
+                            Sourced::fresh(report, "local-db"),
+                        )
+                    }
+                }
+            }
+            .await,
+        )
+    }
+
+    #[tool(
         name = "idx_ownership_releases",
         description = "Lists the monthly KSEI register releases imported into the local database (as-of date, row counts, source). Use it to pick dates for idx_ownership_changes. Returns the idx.ownership.releases.v1 envelope."
     )]
@@ -823,6 +876,7 @@ mod tests {
                 "idx_news",
                 "idx_ownership_changes",
                 "idx_ownership_entity",
+                "idx_ownership_foreign",
                 "idx_ownership_releases",
                 "idx_ownership_ticker",
                 "idx_profile",

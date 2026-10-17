@@ -7,8 +7,9 @@ use serde::Serialize;
 use crate::error::{IdxError, Result};
 use crate::model::{
     ChangesReport, DiscoveredFile, DividendHistory, Earnings, EntityReport, Financials,
-    Fundamentals, History, HoldersReport, ImportReport, MarketOverview, NewsReport, Performance,
-    Profile, Quote, Release, ScreenReport, SentimentReport, Technical,
+    ForeignFlowReport, ForeignReport, Fundamentals, History, HoldersReport, ImportReport,
+    MarketOverview, NewsReport, Performance, Profile, Quote, Release, ScreenReport,
+    SentimentReport, Technical,
 };
 use crate::providers::Sourced;
 
@@ -64,6 +65,8 @@ pub const SCHEMA_OWNERSHIP_HOLDERS: &str = "idx.ownership.holders.v1";
 pub const SCHEMA_OWNERSHIP_ENTITY: &str = "idx.ownership.entity.v1";
 pub const SCHEMA_OWNERSHIP_CHANGES: &str = "idx.ownership.changes.v1";
 pub const SCHEMA_OWNERSHIP_RELEASES: &str = "idx.ownership.releases.v1";
+pub const SCHEMA_OWNERSHIP_FOREIGN: &str = "idx.ownership.foreign.v1";
+pub const SCHEMA_OWNERSHIP_FOREIGN_FLOW: &str = "idx.ownership.foreign-flow.v1";
 pub const SCHEMA_OWNERSHIP_IMPORT: &str = "idx.ownership.import.v1";
 pub const SCHEMA_OWNERSHIP_DISCOVER: &str = "idx.ownership.discover.v1";
 
@@ -85,6 +88,8 @@ pub type OwnershipHoldersEnvelope = Envelope<HoldersReport>;
 pub type OwnershipEntityEnvelope = Envelope<EntityReport>;
 pub type OwnershipChangesEnvelope = Envelope<ChangesReport>;
 pub type OwnershipReleasesEnvelope = Envelope<Vec<Release>>;
+pub type OwnershipForeignEnvelope = Envelope<ForeignReport>;
+pub type OwnershipForeignFlowEnvelope = Envelope<ForeignFlowReport>;
 pub type OwnershipImportEnvelope = Envelope<Vec<ImportReport>>;
 pub type OwnershipDiscoverEnvelope = Envelope<Vec<DiscoveredFile>>;
 
@@ -141,6 +146,8 @@ pub fn schema_names() -> &'static [&'static str] {
         "ownership-entity",
         "ownership-changes",
         "ownership-releases",
+        "ownership-foreign",
+        "ownership-foreign-flow",
         "ownership-import",
         "ownership-discover",
         "error",
@@ -169,6 +176,8 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "ownership-entity" => schemars::schema_for!(OwnershipEntityEnvelope),
         "ownership-changes" => schemars::schema_for!(OwnershipChangesEnvelope),
         "ownership-releases" => schemars::schema_for!(OwnershipReleasesEnvelope),
+        "ownership-foreign" => schemars::schema_for!(OwnershipForeignEnvelope),
+        "ownership-foreign-flow" => schemars::schema_for!(OwnershipForeignFlowEnvelope),
         "ownership-import" => schemars::schema_for!(OwnershipImportEnvelope),
         "ownership-discover" => schemars::schema_for!(OwnershipDiscoverEnvelope),
         "error" => schemars::schema_for!(ErrorEnvelope),

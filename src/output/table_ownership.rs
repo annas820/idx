@@ -6,7 +6,8 @@ use chrono::NaiveDate;
 use comfy_table::{Attribute, Cell, Color};
 
 use crate::model::{
-    ChangeKind, ChangesReport, DiscoveredFile, EntityReport, HoldersReport, ImportReport, Release,
+    ChangeKind, ChangesReport, DiscoveredFile, EntityReport, ForeignFlowReport, ForeignReport,
+    HoldersReport, ImportReport, Release,
 };
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
@@ -46,6 +47,92 @@ pub fn holders(r: &HoldersReport, color: bool) -> String {
     }
     out.push_str(&t.to_string());
     out.push_str("\nSource: KSEI via IDX monthly register, imported locally. Holders below 1% are not published.\n");
+    out
+}
+
+pub fn foreign(r: &ForeignReport, color: bool) -> String {
+    let last = r.points.last();
+    let mut out = format!(
+        "{} · {} · disclosed foreign stake{} · {} release{}\n",
+        r.symbol,
+        r.issuer_name.clone().unwrap_or_else(|| f::DASH.into()),
+        last.map(|p| format!(
+            " {} of the {} listed above 1% as of {}",
+            pct(p.foreign_pct),
+            pct(p.listed_pct),
+            p.as_of
+        ))
+        .unwrap_or_default(),
+        r.points.len(),
+        if r.points.len() == 1 { "" } else { "s" }
+    );
+    let mut t = base_table(color);
+    t.set_header(header(&[
+        "As of",
+        "Foreign %",
+        "Δ pp",
+        "Local %",
+        "Unflagged %",
+        "Foreign holders",
+        "Local holders",
+        "Listed %",
+    ]));
+    for p in &r.points {
+        t.add_row(vec![
+            Cell::new(p.as_of).add_attribute(Attribute::Bold),
+            right(pct(p.foreign_pct)),
+            signed(f::change(p.foreign_change_pp), p.foreign_change_pp, color),
+            right(pct(p.local_pct)),
+            right(pct(p.unflagged_pct)),
+            right(p.foreign_holders.to_string()),
+            right(p.local_holders.to_string()),
+            right(pct(p.listed_pct)),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push_str(
+        "\nSums over holders above 1% only (KSEI L/A flag); holders below 1% are not published.\n",
+    );
+    out
+}
+
+pub fn foreign_flow(r: &ForeignFlowReport, color: bool) -> String {
+    let mut out = format!(
+        "Disclosed foreign stake {} → {} · {} issuers · {} inflows · {} outflows · net {}{} pp{}\n",
+        r.from,
+        r.to,
+        r.issuers,
+        r.inflows,
+        r.outflows,
+        if r.net_pp > 0.0 { "+" } else { "" },
+        f::num(r.net_pp, 2),
+        if r.rows.len() < r.issuers {
+            format!(" · showing {} (use --limit 0 for all)", r.rows.len())
+        } else {
+            String::new()
+        }
+    );
+    let mut t = base_table(color);
+    t.set_header(header(&[
+        "Symbol",
+        "Issuer",
+        "Foreign % from",
+        "Foreign % to",
+        "Δ pp",
+        "Foreign holders",
+    ]));
+    for x in &r.rows {
+        t.add_row(vec![
+            Cell::new(&x.symbol).add_attribute(Attribute::Bold),
+            Cell::new(f::clip(&f::text(&x.issuer_name), 36)),
+            right(pct_opt(x.foreign_pct_from)),
+            right(pct(x.foreign_pct_to)),
+            signed(f::change(Some(x.change_pp)), Some(x.change_pp), color),
+            right(x.foreign_holders_to.to_string()),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push_str("\nSums over holders above 1% only; an issuer new to the register counts its whole foreign stake as inflow.\n");
     out
 }
 

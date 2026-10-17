@@ -405,6 +405,20 @@ fn ownership_import_and_queries_work_offline() {
         .stdout(predicate::str::contains("Rows 2–2 of"))
         .stdout(predicate::str::contains("--offset 2"));
     own(&sb)
+        .args(["ownership", "foreign", "AADI"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("disclosed foreign stake"))
+        .stdout(predicate::str::contains("2026-08-31"));
+    own(&sb)
+        .args(["-o", "json", "ownership", "foreign", "--limit", "2"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "\"schema\": \"idx.ownership.foreign-flow.v1\"",
+        ))
+        .stdout(predicate::str::contains("\"from\": \"2026-07-31\""));
+    own(&sb)
         .args(["ownership", "releases"])
         .assert()
         .success()

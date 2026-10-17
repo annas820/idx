@@ -17,8 +17,9 @@ use rusqlite::{params, Connection, OptionalExtension};
 
 use crate::error::{IdxError, Result};
 use crate::model::{
-    Change, ChangeBrief, ChangeKind, ChangesReport, ChangesSummary, EntityReport, HoldersReport,
-    Holding, ImportReport, IssuerFlow, Release, TypeFlow,
+    Change, ChangeBrief, ChangeKind, ChangesReport, ChangesSummary, EntityReport,
+    ForeignFlowReport, ForeignPoint, ForeignReport, HoldersReport, Holding, ImportReport,
+    IssuerFlow, IssuerForeign, Release, TypeFlow,
 };
 
 use super::ingest::Parsed;
@@ -535,6 +536,185 @@ impl OwnershipDb {
     }
 }
 
+impl OwnershipDb {
+    /// Disclosed foreign/local split of one issuer across every imported release.
+    pub fn foreign_trend(&self, symbol: &str) -> Result<ForeignReport> {
+        let symbol = symbol.to_uppercase();
+        let mut st = self
+            .conn
+            .prepare(
+                "SELECT r.as_of, MAX(h.issuer_name),
+                        COALESCE(SUM(CASE WHEN h.local_foreign = 'A' THEN h.pct END), 0),
+                        COALESCE(SUM(CASE WHEN h.local_foreign = 'L' THEN h.pct END), 0),
+                        COALESCE(SUM(CASE WHEN h.local_foreign IS NULL OR h.local_foreign NOT IN ('A','L') THEN h.pct END), 0),
+                        SUM(CASE WHEN h.local_foreign = 'A' THEN 1 ELSE 0 END),
+                        SUM(CASE WHEN h.local_foreign = 'L' THEN 1 ELSE 0 END),
+                        SUM(h.pct)
+                 FROM holdings h JOIN releases r ON r.id = h.release_id
+                 WHERE h.symbol = ?1
+                 GROUP BY r.as_of ORDER BY r.as_of",
+            )
+            .map_err(db_err)?;
+        let mut issuer_name: Option<String> = None;
+        let mut points: Vec<ForeignPoint> = st
+            .query_map([&symbol], |row| {
+                let name: Option<String> = row.get(1)?;
+                Ok((
+                    name,
+                    ForeignPoint {
+                        as_of: parse_date(&row.get::<_, String>(0)?),
+                        foreign_pct: round4(row.get(2)?),
+                        local_pct: round4(row.get(3)?),
+                        unflagged_pct: round4(row.get(4)?),
+                        foreign_holders: row.get::<_, i64>(5)? as usize,
+                        local_holders: row.get::<_, i64>(6)? as usize,
+                        listed_pct: round4(row.get(7)?),
+                        foreign_change_pp: None,
+                    },
+                ))
+            })
+            .map_err(db_err)?
+            .collect::<std::result::Result<Vec<_>, _>>()
+            .map_err(db_err)?
+            .into_iter()
+            .map(|(name, p)| {
+                if name.is_some() {
+                    issuer_name = name;
+                }
+                p
+            })
+            .collect();
+        if points.is_empty() {
+            self.release_for(None)?; // "nothing imported" message when the db is empty
+            return Err(IdxError::NotFound(format!(
+                "no holders above 1% recorded for {symbol} in any imported release"
+            )));
+        }
+        for i in 1..points.len() {
+            points[i].foreign_change_pp =
+                Some(round4(points[i].foreign_pct - points[i - 1].foreign_pct));
+        }
+        Ok(ForeignReport {
+            symbol,
+            issuer_name,
+            points,
+        })
+    }
+
+    fn foreign_by_issuer(&self, release_id: i64) -> Result<IssuerForeignAgg> {
+        let mut st = self
+            .conn
+            .prepare(
+                "SELECT symbol, MAX(issuer_name),
+                        COALESCE(SUM(CASE WHEN local_foreign = 'A' THEN pct END), 0),
+                        SUM(CASE WHEN local_foreign = 'A' THEN 1 ELSE 0 END)
+                 FROM holdings WHERE release_id = ?1 GROUP BY symbol",
+            )
+            .map_err(db_err)?;
+        let rows = st
+            .query_map([release_id], |row| {
+                Ok((
+                    row.get::<_, String>(0)?,
+                    (
+                        row.get::<_, Option<String>>(1)?,
+                        row.get::<_, f64>(2)?,
+                        row.get::<_, i64>(3)? as usize,
+                    ),
+                ))
+            })
+            .map_err(db_err)?
+            .collect::<std::result::Result<BTreeMap<_, _>, _>>()
+            .map_err(db_err)?;
+        Ok(rows)
+    }
+
+    /// Change in disclosed foreign stake per issuer between two releases
+    /// (default: the two newest). Largest absolute moves first.
+    pub fn foreign_flow(
+        &self,
+        from: Option<NaiveDate>,
+        to: Option<NaiveDate>,
+        limit: Option<usize>,
+    ) -> Result<ForeignFlowReport> {
+        let releases = self.releases()?;
+        let (to_date, _) = match to {
+            Some(d) => (d, ()),
+            None => (
+                releases
+                    .last()
+                    .ok_or_else(|| {
+                        IdxError::NotFound(
+                            "no ownership data imported yet; run `idx ownership import --latest`"
+                                .into(),
+                        )
+                    })?
+                    .as_of,
+                (),
+            ),
+        };
+        let from_date = match from {
+            Some(d) => d,
+            None => releases
+                .iter()
+                .rev()
+                .map(|r| r.as_of)
+                .find(|d| *d < to_date)
+                .ok_or_else(|| {
+                    IdxError::NotFound(format!(
+                        "only one release ({to_date}) is imported; import an earlier month to compare"
+                    ))
+                })?,
+        };
+        if from_date >= to_date {
+            return Err(IdxError::Usage("--from must be earlier than --to".into()));
+        }
+        let (from_id, _) = self.release_for(Some(from_date))?;
+        let (to_id, _) = self.release_for(Some(to_date))?;
+        let before = self.foreign_by_issuer(from_id)?;
+        let after = self.foreign_by_issuer(to_id)?;
+        let mut rows: Vec<IssuerForeign> = after
+            .iter()
+            .map(|(sym, (name, pct_to, holders))| {
+                let pct_from = before.get(sym).map(|b| round4(b.1));
+                IssuerForeign {
+                    symbol: sym.clone(),
+                    issuer_name: name.clone(),
+                    foreign_pct_from: pct_from,
+                    foreign_pct_to: round4(*pct_to),
+                    change_pp: round4(pct_to - pct_from.unwrap_or(0.0)),
+                    foreign_holders_to: *holders,
+                }
+            })
+            .collect();
+        rows.sort_by(|a, b| {
+            b.change_pp
+                .abs()
+                .partial_cmp(&a.change_pp.abs())
+                .unwrap_or(std::cmp::Ordering::Equal)
+                .then_with(|| a.symbol.cmp(&b.symbol))
+        });
+        let issuers = rows.len();
+        let inflows = rows.iter().filter(|r| r.change_pp > 0.0).count();
+        let outflows = rows.iter().filter(|r| r.change_pp < 0.0).count();
+        let net_pp = round4(rows.iter().map(|r| r.change_pp).sum());
+        if let Some(n) = limit {
+            rows.truncate(n);
+        }
+        Ok(ForeignFlowReport {
+            from: from_date,
+            to: to_date,
+            issuers,
+            inflows,
+            outflows,
+            net_pp,
+            rows,
+        })
+    }
+}
+
+/// symbol -> (issuer name, foreign pct, foreign holder count) for one release.
+type IssuerForeignAgg = BTreeMap<String, (Option<String>, f64, usize)>;
+
 /// (symbol, entity_key) -> (display name, investor type, shares, pct, local/foreign).
 type Positions = BTreeMap<(String, String), (String, Option<String>, i64, f64, Option<String>)>;
 
@@ -731,6 +911,37 @@ mod tests {
         assert!(!e.holdings.is_empty());
         assert!(e.entities.iter().all(|n| n.contains("ALAMTRI")));
         assert!(db.entity("no such holder", None).is_err());
+    }
+
+    #[test]
+    fn foreign_trend_and_flow() {
+        let db = loaded();
+        let t = db.foreign_trend("aadi").unwrap();
+        assert_eq!(t.symbol, "AADI");
+        assert_eq!(t.points.len(), 2);
+        assert!(t.points[0].foreign_change_pp.is_none());
+        assert!(t.points[1].foreign_change_pp.is_some());
+        for p in &t.points {
+            assert!(
+                (p.foreign_pct + p.local_pct + p.unflagged_pct - p.listed_pct).abs() < 1e-6,
+                "{p:?}"
+            );
+        }
+        assert!(db.foreign_trend("ZZZZ").is_err());
+        let f = db.foreign_flow(None, None, None).unwrap();
+        assert_eq!(
+            (f.from.to_string().as_str(), f.to.to_string().as_str()),
+            ("2026-07-31", "2026-08-31")
+        );
+        assert!(f.issuers >= 1);
+        assert_eq!(f.rows.len(), f.issuers);
+        assert!(f
+            .rows
+            .windows(2)
+            .all(|w| w[0].change_pp.abs() >= w[1].change_pp.abs()));
+        let one = db.foreign_flow(None, None, Some(1)).unwrap();
+        assert_eq!(one.rows.len(), 1);
+        assert_eq!(one.issuers, f.issuers);
     }
 
     #[test]

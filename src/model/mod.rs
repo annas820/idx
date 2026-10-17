@@ -28,7 +28,8 @@ pub use market::{MarketOverview, MarketRow};
 pub use news::{NewsItem, NewsReport, SentimentLabel, SentimentReport};
 pub use ownership::{
     Change, ChangeBrief, ChangeKind, ChangesReport, ChangesSummary, DiscoveredFile, EntityReport,
-    HoldersReport, Holding, ImportReport, IssuerFlow, Release, TypeFlow,
+    ForeignFlowReport, ForeignPoint, ForeignReport, HoldersReport, Holding, ImportReport,
+    IssuerFlow, IssuerForeign, Release, TypeFlow,
 };
 pub use returns::{BenchmarkReturns, DayMove, Drawdown, Performance, ReturnWindows};
 pub use screen::{ScreenReport, ScreenRow};
