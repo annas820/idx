@@ -8,6 +8,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::error::{IdxError, Result};
 
+pub mod brief;
 pub mod dividends;
 pub mod fundamentals;
 pub mod market;
@@ -17,6 +18,7 @@ pub mod returns;
 pub mod screen;
 pub mod technical;
 
+pub use brief::{Brief, DividendSummary, NewsSummary, OwnershipSummary};
 pub use dividends::{DividendEvent, DividendHistory, DividendYear, SplitEvent};
 pub use fundamentals::{
     Analyst, BalanceSheet, CashFlow, Director, Dividend, Earnings, EarningsQuarter,

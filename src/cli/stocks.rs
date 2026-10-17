@@ -7,7 +7,7 @@ use crate::error::IdxError;
 use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
-    Envelope, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
+    Envelope, SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
     SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES,
     SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT, SCHEMA_TECHNICAL,
 };
@@ -120,6 +120,15 @@ pub enum StocksCmd {
         no_benchmark: bool,
     },
 
+    /// One-page research brief: quote, verdict, signal, returns vs IHSG, dividends, holders and headlines in one call.
+    #[command(
+        after_help = "Examples:\n  idx stocks brief BBCA\n  idx -o json stocks brief TLKM | jq '.data.key_points'\n\nRuns quote, fundamental, technical, returns, dividends, ownership ticker and news\nconcurrently and merges them. A section whose source fails is left out with a warning."
+    )]
+    Brief {
+        #[arg(value_name = "SYMBOL")]
+        symbol: String,
+    },
+
     /// Valuation, profitability, balance-sheet, growth and dividend ratios with a plain-language verdict.
     #[command(
         after_help = "Examples:\n  idx stocks fundamental BBCA\n  idx -o json stocks fundamental TLKM | jq '.data.verdict'\n\nThe verdict is a transparent rule score over public ratios (every rule that fires is listed). It is not investment advice."
@@ -228,6 +237,7 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
         } => financials(ctx, &symbol, period, statement).await,
         StocksCmd::Earnings { symbol } => earnings(ctx, &symbol).await,
         StocksCmd::Dividends { symbol, limit } => dividends(ctx, &symbol, limit).await,
+        StocksCmd::Brief { symbol } => brief(ctx, &symbol).await,
         StocksCmd::Returns {
             symbols,
             benchmark,
@@ -422,6 +432,25 @@ async fn returns(ctx: &Context, raw: &[String], benchmark: &str, none: bool) -> 
     }
     notices(ctx, &result);
     output::print_stdout(&reports::returns(&result.data, ctx.color))
+}
+
+async fn brief(ctx: &Context, raw: &str) -> Result<()> {
+    let symbol = Symbol::parse(raw)?;
+    let list = universe::load(None).unwrap_or_default();
+    let result = service::brief(
+        ctx.provider.as_ref(),
+        &ctx.fetcher,
+        &list,
+        &ctx.settings.ownership_db,
+        &symbol,
+    )
+    .await?;
+    if ctx.json() {
+        let env = Envelope::from_sourced(SCHEMA_BRIEF, result);
+        return output::print_stdout(&output::json::to_pretty(&env)?);
+    }
+    notices(ctx, &result);
+    output::print_stdout(&reports::brief(&result.data, ctx.color))
 }
 
 async fn fundamental(ctx: &Context, raw: &str) -> Result<()> {

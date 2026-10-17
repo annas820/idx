@@ -25,7 +25,7 @@ use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
-    self, Envelope, ErrorEnvelope, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
+    self, Envelope, ErrorEnvelope, SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
     SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_MARKET,
     SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_ENTITY, SCHEMA_OWNERSHIP_FOREIGN,
     SCHEMA_OWNERSHIP_FOREIGN_FLOW, SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES,
@@ -414,6 +414,34 @@ impl IdxServer {
                 ok(
                     SCHEMA_DIVIDENDS,
                     service::dividends(self.provider.as_ref(), &symbol).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_brief",
+        description = "Start here for one ticker: a single call that returns the quote, fundamentals with the valuation verdict, one-year technicals with the signal, returns versus IHSG, dividend facts (TTM yield, streak), the local >1% holder register (top five, foreign share) and company headlines with sentiment, plus key_points (plain-language one-liners) and sections_failed for anything a source could not provide. Each section has the same shape as the dedicated tool. Returns the idx.brief.v1 envelope."
+    )]
+    async fn brief(
+        &self,
+        Parameters(a): Parameters<SymbolArg>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbol = Symbol::parse(&a.symbol)?;
+                let list = universe::load(None).unwrap_or_default();
+                ok(
+                    SCHEMA_BRIEF,
+                    service::brief(
+                        self.provider.as_ref(),
+                        &self.fetcher,
+                        &list,
+                        &self.ownership_db,
+                        &symbol,
+                    )
+                    .await?,
                 )
             }
             .await,
@@ -866,6 +894,7 @@ mod tests {
         assert_eq!(
             names,
             [
+                "idx_brief",
                 "idx_compare",
                 "idx_dividends",
                 "idx_earnings",

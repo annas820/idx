@@ -6,7 +6,7 @@ use comfy_table::{Attribute, Cell, Color, Table};
 
 use crate::analysis::fundamental::summary_line;
 use crate::model::{
-    DividendHistory, Earnings, FinancialPeriod, Financials, Fundamentals, MarketOverview,
+    Brief, DividendHistory, Earnings, FinancialPeriod, Financials, Fundamentals, MarketOverview,
     MarketRow, Performance, Profile, ReturnWindows, SignalLabel, StatementPeriod, Technical, Trend,
     VerdictLabel,
 };
@@ -591,6 +591,156 @@ pub fn earnings(e: &Earnings, color: bool) -> String {
         ));
     }
     out.push_str(&format!("Source: {}\n", e.source));
+    out
+}
+
+pub fn brief(b: &Brief, color: bool) -> String {
+    let mut out = format!(
+        "{}{} · brief · {}\n",
+        b.symbol,
+        b.name
+            .as_ref()
+            .map(|n| format!(" · {n}"))
+            .unwrap_or_default(),
+        b.generated_at.format("%Y-%m-%d %H:%M UTC")
+    );
+    for k in &b.key_points {
+        out.push_str(&format!("• {k}\n"));
+    }
+    if let Some(f) = &b.fundamentals {
+        out.push_str(&format!(
+            "Fundamentals · {} / {} · P/E {} · fwd {} · P/B {} · EV/EBITDA {} · ROE {} · net margin {} · D/E {} · yield {}\n",
+            f::text(&f.sector),
+            f::text(&f.industry),
+            f::ratio(f.valuation.pe_trailing),
+            f::ratio(f.valuation.pe_forward),
+            f::ratio(f.valuation.price_to_book),
+            f::ratio(f.valuation.ev_to_ebitda),
+            pct_opt(f.profitability.roe_pct),
+            pct_opt(f.profitability.net_margin_pct),
+            ratio_x(f.health.debt_to_equity),
+            pct_opt(f.dividend.yield_pct),
+        ));
+        if let Some(v) = &f.verdict {
+            for r in v.reasons.iter().take(4) {
+                out.push_str(&format!("    - {r}\n"));
+            }
+        }
+    }
+    if let Some(t) = &b.technical {
+        let ma = &t.moving_averages;
+        out.push_str(&format!(
+            "Technical · RSI {} · MACD hist {} · SMA50 {} · SMA200 {} · 52w {} – {} · support {} · resistance {}\n",
+            f::ratio(t.rsi14),
+            t.macd
+                .as_ref()
+                .map(|m| f::num(m.histogram, 2))
+                .unwrap_or_else(|| f::DASH.into()),
+            f::price(ma.sma50),
+            f::price(ma.sma200),
+            f::price(t.low_52w),
+            f::price(t.high_52w),
+            t.levels
+                .support
+                .iter()
+                .map(|v| f::price(Some(*v)))
+                .collect::<Vec<_>>()
+                .join("/"),
+            t.levels
+                .resistance
+                .iter()
+                .map(|v| f::price(Some(*v)))
+                .collect::<Vec<_>>()
+                .join("/"),
+        ));
+        for r in t.signal.reasons.iter().take(3) {
+            out.push_str(&format!("    - {r}\n"));
+        }
+    }
+    if let Some(r) = &b.returns {
+        let w = &r.returns;
+        out.push_str(&format!(
+            "Returns · 1m {} · 3m {} · 6m {} · YTD {} · 1y {} · 3y {} · 5y {} · vol 1y {} · max DD 1y {}\n",
+            f::pct(w.m1),
+            f::pct(w.m3),
+            f::pct(w.m6),
+            f::pct(w.ytd),
+            f::pct(w.y1),
+            f::pct(w.y3),
+            f::pct(w.y5),
+            pct_opt(r.volatility_1y_pct),
+            f::pct(r.max_drawdown_1y.as_ref().map(|d| d.pct)),
+        ));
+        if let Some(bm) = &r.benchmark {
+            let e = &bm.excess;
+            out.push_str(&format!(
+                "    excess vs {} · 1m {} · 3m {} · YTD {} · 1y {} · 3y {} pp\n",
+                bm.symbol,
+                f::pct(e.m1),
+                f::pct(e.m3),
+                f::pct(e.ytd),
+                f::pct(e.y1),
+                f::pct(e.y3),
+            ));
+        }
+    }
+    if let Some(o) = &b.ownership {
+        let mut t = base_table(color);
+        t.set_header(header(&["Holder", "Type", "L/A", "%"]));
+        for h in &o.top_holders {
+            t.add_row(vec![
+                Cell::new(f::clip(&h.holder, 44)).add_attribute(Attribute::Bold),
+                Cell::new(f::clip(&f::text(&h.investor_type), 16)),
+                Cell::new(f::text(&h.local_foreign)),
+                right(format!("{}%", f::num(h.pct, 2))),
+            ]);
+        }
+        out.push_str(&format!(
+            "Holders above 1% as of {} · {} listed = {}% · foreign {}%\n",
+            o.as_of,
+            o.holders_listed,
+            f::num(o.listed_pct, 2),
+            f::num(o.foreign_pct, 2)
+        ));
+        out.push_str(&t.to_string());
+        out.push('\n');
+    }
+    if let Some(n) = &b.news {
+        if !n.headlines.is_empty() {
+            out.push_str(&format!(
+                "Headlines · {} mention the company · sentiment {} ({:+.2})\n",
+                n.company_matches,
+                n.sentiment.as_str(),
+                n.score
+            ));
+            for h in &n.headlines {
+                out.push_str(&format!(
+                    "    {} {} {}  {}\n",
+                    h.published
+                        .map(|d| d.format("%m-%d").to_string())
+                        .unwrap_or_else(|| "--".into()),
+                    if h.sentiment > 0.0 {
+                        "+"
+                    } else if h.sentiment < 0.0 {
+                        "−"
+                    } else {
+                        "·"
+                    },
+                    f::clip(&h.title, 90),
+                    h.url
+                ));
+            }
+        }
+    }
+    if !b.sections_failed.is_empty() {
+        out.push_str(&format!(
+            "Missing sections: {} (see warnings)\n",
+            b.sections_failed.join(", ")
+        ));
+    }
+    out.push_str(
+        "Verdicts, signals and sentiment are transparent rule scores, not investment advice.\n",
+    );
     out
 }
 

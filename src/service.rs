@@ -12,9 +12,9 @@ use crate::analysis::screen::{self as scr, Filter, Key};
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{
-    BenchmarkReturns, DividendHistory, Fundamentals, History, Interval, MarketOverview, MarketRow,
-    NewsItem, NewsReport, Performance, Period, Quote, ScreenReport, ScreenRow, SentimentReport,
-    Symbol, Technical,
+    BenchmarkReturns, Brief, DividendHistory, DividendSummary, Fundamentals, History, Interval,
+    MarketOverview, MarketRow, NewsItem, NewsReport, NewsSummary, OwnershipSummary, Performance,
+    Period, Quote, ScreenReport, ScreenRow, SentimentReport, Symbol, Technical,
 };
 use crate::providers::news as newsfeed;
 use crate::providers::{Provider, Sourced};
@@ -416,6 +416,246 @@ pub async fn returns(
     }
     result.warnings.extend(warnings);
     Ok(result)
+}
+
+/// Collects brief sections: merges provenance, records failures.
+struct Sections {
+    out: Sourced<()>,
+    failed: Vec<String>,
+    not_found: usize,
+}
+
+impl Sections {
+    fn take<T>(&mut self, name: &str, r: Result<Sourced<T>>) -> Option<T> {
+        match r {
+            Ok(s) => {
+                self.out.absorb(&s);
+                Some(s.data)
+            }
+            Err(e) => {
+                if matches!(e, IdxError::NotFound(_)) {
+                    self.not_found += 1;
+                }
+                self.out.warnings.push(format!("{name}: {e}"));
+                self.failed.push(name.to_string());
+                None
+            }
+        }
+    }
+}
+
+/// One call, every section: quote, fundamentals with verdict, technicals,
+/// returns against IHSG, dividend facts, the local ownership register and
+/// company headlines with sentiment. Sections fetch concurrently; a failed
+/// section becomes `null` plus a warning. Fails only when the ticker is
+/// unknown to the quote, fundamentals and history sources alike.
+pub async fn brief(
+    p: &dyn Provider,
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    ownership_db: &std::path::Path,
+    symbol: &Symbol,
+) -> Result<Sourced<Brief>> {
+    let bench = Symbol::parse("^JKSE")?;
+    let (quote, fund, tech, rets, divs, headlines) = futures::join!(
+        p.quotes(std::slice::from_ref(symbol)),
+        fundamentals(p, symbol),
+        technical(p, symbol, Period::Y1),
+        returns(p, std::slice::from_ref(symbol), Some(&bench)),
+        dividends(p, symbol),
+        news(fetcher, universe, Some(symbol), &[], 0, true),
+    );
+
+    let mut c = Sections {
+        out: Sourced::fresh((), p.name()),
+        failed: Vec::new(),
+        not_found: 0,
+    };
+    c.out.cached = true;
+    let quote = c.take("quote", quote).and_then(|v| v.into_iter().next());
+    let fundamentals = c.take("fundamentals", fund);
+    let technical = c.take("technical", tech);
+    let returns = c.take("returns", rets).and_then(|v| v.into_iter().next());
+    let dividends = c.take("dividends", divs).map(|h| DividendSummary {
+        ttm_total: h.ttm_total,
+        ttm_payments: h.ttm_payments,
+        ttm_yield_pct: h.ttm_yield_pct,
+        consecutive_years: h.consecutive_years,
+        last: h.last,
+        payments_on_record: h.dividends.len(),
+    });
+    let news = c.take("news", headlines).map(|n| {
+        let rep = analysis::sentiment::aggregate(symbol, n.matched_name.clone(), &n.items, 0);
+        NewsSummary {
+            company_matches: n.company_matches,
+            sentiment: rep.label,
+            score: rep.score,
+            headlines: n.items.into_iter().take(5).collect(),
+        }
+    });
+    let Sections {
+        mut out,
+        mut failed,
+        not_found,
+    } = c;
+    if not_found >= 3 && quote.is_none() && fundamentals.is_none() && technical.is_none() {
+        return Err(IdxError::NotFound(format!(
+            "{symbol}: unknown to the quote, fundamentals and history sources"
+        )));
+    }
+
+    let ownership = match crate::ownership::OwnershipDb::open(ownership_db) {
+        Ok(db) if ownership_db.exists() => match db.holders(symbol.as_str(), None) {
+            Ok(h) => Some(OwnershipSummary {
+                as_of: h.as_of,
+                listed_pct: h.listed_pct,
+                // `+ 0.0` turns the -0.0 an empty f64 sum yields into 0.0.
+                foreign_pct: h
+                    .holders
+                    .iter()
+                    .filter(|x| x.local_foreign.as_deref() == Some("A"))
+                    .map(|x| x.pct)
+                    .sum::<f64>()
+                    + 0.0,
+                holders_listed: h.holders.len(),
+                top_holders: h.holders.into_iter().take(5).collect(),
+            }),
+            Err(e) => {
+                out.warnings.push(format!("ownership: {e}"));
+                failed.push("ownership".into());
+                None
+            }
+        },
+        _ => {
+            out.warnings
+                .push("ownership: no register imported (idx ownership import --latest)".into());
+            failed.push("ownership".into());
+            None
+        }
+    };
+
+    let name = quote
+        .as_ref()
+        .and_then(|q| q.name.clone())
+        .or_else(|| fundamentals.as_ref().and_then(|f| f.name.clone()))
+        .or_else(|| technical.as_ref().and_then(|t| t.name.clone()))
+        .or_else(|| {
+            universe
+                .iter()
+                .find(|i| &i.symbol == symbol)
+                .and_then(|i| i.name.clone())
+        });
+
+    let mut key_points: Vec<String> = Vec::new();
+    if let Some(q) = &quote {
+        if let (Some(px), Some(chg)) = (q.price, q.change_pct) {
+            key_points.push(format!(
+                "Price {} ({}{:.2}% today){}",
+                crate::output::format::price(Some(px)),
+                if chg >= 0.0 { "+" } else { "" },
+                chg,
+                q.market_cap
+                    .map(|m| format!(", market cap {}", crate::output::format::compact(Some(m))))
+                    .unwrap_or_default()
+            ));
+        }
+    }
+    if let Some(f) = &fundamentals {
+        if let Some(v) = &f.verdict {
+            key_points.push(format!(
+                "Valuation verdict: {} (score {:+}, {} inputs){}",
+                v.label.as_str(),
+                v.score,
+                v.inputs_available,
+                match (f.valuation.pe_trailing, f.valuation.price_to_book) {
+                    (Some(pe), Some(pb)) => format!("; P/E {pe:.1}, P/B {pb:.2}"),
+                    (Some(pe), None) => format!("; P/E {pe:.1}"),
+                    _ => String::new(),
+                }
+            ));
+        }
+    }
+    if let Some(t) = &technical {
+        key_points.push(format!(
+            "Technical signal: {} (score {:+}), trend {}{}",
+            t.signal.label.as_str(),
+            t.signal.score,
+            t.trend.as_str(),
+            t.rsi14.map(|r| format!(", RSI {r:.0}")).unwrap_or_default()
+        ));
+    }
+    if let Some(r) = &returns {
+        if let Some(y1) = r.returns.y1 {
+            key_points.push(format!(
+                "1y return {y1:+.1}%{}; YTD {}",
+                r.benchmark
+                    .as_ref()
+                    .and_then(|b| b
+                        .excess
+                        .y1
+                        .map(|x| format!(" ({x:+.1} pp vs {})", b.symbol)))
+                    .unwrap_or_default(),
+                r.returns
+                    .ytd
+                    .map(|v| format!("{v:+.1}%"))
+                    .unwrap_or_else(|| "n/a".into())
+            ));
+        }
+    }
+    if let Some(d) = &dividends {
+        match d.ttm_yield_pct {
+            Some(y) => key_points.push(format!(
+                "Dividends: TTM yield {y:.2}% over {} payment{}, {} consecutive years",
+                d.ttm_payments,
+                if d.ttm_payments == 1 { "" } else { "s" },
+                d.consecutive_years
+            )),
+            None if d.payments_on_record == 0 => {
+                key_points.push("Dividends: none on record".into())
+            }
+            None => key_points.push("Dividends: none in the last twelve months".into()),
+        }
+    }
+    if let Some(o) = &ownership {
+        key_points.push(format!(
+            "Ownership ({}): {} holders above 1% hold {:.1}%, foreign {:.1}%{}",
+            o.as_of,
+            o.holders_listed,
+            o.listed_pct,
+            o.foreign_pct,
+            o.top_holders
+                .first()
+                .map(|h| format!("; largest {} {:.1}%", h.holder, h.pct))
+                .unwrap_or_default()
+        ));
+    }
+    if let Some(n) = &news {
+        key_points.push(match n.company_matches {
+            0 => "News: no current headline mentions the company".into(),
+            k => format!(
+                "News: {k} current headline{} mention the company, lexicon sentiment {} ({:+.2})",
+                if k == 1 { "" } else { "s" },
+                n.sentiment.as_str(),
+                n.score
+            ),
+        });
+    }
+
+    let brief = Brief {
+        symbol: symbol.clone(),
+        name,
+        generated_at: chrono::Utc::now(),
+        key_points,
+        quote,
+        fundamentals,
+        technical,
+        returns,
+        dividends,
+        ownership,
+        news,
+        sections_failed: failed,
+    };
+    Ok(out.map(|_| brief))
 }
 
 /// Dividend and split history with totals, trailing yield and streak.
