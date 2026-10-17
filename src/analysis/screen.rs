@@ -156,6 +156,41 @@ pub fn parse_number(s: &str) -> Option<f64> {
     num.trim().parse::<f64>().ok().map(|v| v * mult)
 }
 
+/// Splits one clause into its key, operator and value text: `"pe<=15"` ->
+/// `("pe", Le, "15")`. The leftmost operator wins, the longer one on a tie.
+pub fn split_clause(clause: &str) -> Result<(&str, Op, &str)> {
+    let ops = [
+        ("<=", Op::Le),
+        (">=", Op::Ge),
+        ("!=", Op::Ne),
+        ("<", Op::Lt),
+        (">", Op::Gt),
+        ("=", Op::Eq),
+    ];
+    let Some((pos, (sym, op))) = ops
+        .iter()
+        .filter_map(|(s, o)| clause.find(s).map(|p| (p, (*s, *o))))
+        .min_by_key(|(p, (s, _))| (*p, std::cmp::Reverse(s.len())))
+    else {
+        return Err(IdxError::Usage(format!(
+            "filter {clause:?} needs an operator (<, <=, >, >=, =, !=)"
+        )));
+    };
+    Ok((clause[..pos].trim(), op, clause[pos + sym.len()..].trim()))
+}
+
+/// `v op target` for numbers; equality within 1e-9.
+pub fn compare(v: f64, op: Op, target: f64) -> bool {
+    match op {
+        Op::Lt => v < target,
+        Op::Le => v <= target,
+        Op::Gt => v > target,
+        Op::Ge => v >= target,
+        Op::Eq => (v - target).abs() < 1e-9,
+        Op::Ne => (v - target).abs() >= 1e-9,
+    }
+}
+
 /// Parses `"pe<15, roe>=15, sector=bank"` into filters.
 pub fn parse_filters(spec: &str) -> Result<Vec<Filter>> {
     let mut out = Vec::new();
@@ -163,25 +198,7 @@ pub fn parse_filters(spec: &str) -> Result<Vec<Filter>> {
         if clause.is_empty() {
             continue;
         }
-        let ops = [
-            ("<=", Op::Le),
-            (">=", Op::Ge),
-            ("!=", Op::Ne),
-            ("<", Op::Lt),
-            (">", Op::Gt),
-            ("=", Op::Eq),
-        ];
-        let Some((pos, (sym, op))) = ops
-            .iter()
-            .filter_map(|(s, o)| clause.find(s).map(|p| (p, (*s, *o))))
-            .min_by_key(|(p, (s, _))| (*p, std::cmp::Reverse(s.len())))
-        else {
-            return Err(IdxError::Usage(format!(
-                "filter {clause:?} needs an operator (<, <=, >, >=, =, !=)"
-            )));
-        };
-        let key_s = clause[..pos].trim();
-        let val_s = clause[pos + sym.len()..].trim();
+        let (key_s, op, val_s) = split_clause(clause)?;
         let Some(key) = Key::parse(key_s) else {
             return Err(IdxError::Usage(format!(
                 "unknown filter key {key_s:?}; use one of {}",
@@ -256,14 +273,7 @@ pub fn matches(row: &ScreenRow, filters: &[Filter]) -> bool {
     filters.iter().all(|f| match &f.value {
         Value::Num(target) => match numeric(row, f.key) {
             None => false,
-            Some(v) => match f.op {
-                Op::Lt => v < *target,
-                Op::Le => v <= *target,
-                Op::Gt => v > *target,
-                Op::Ge => v >= *target,
-                Op::Eq => (v - target).abs() < 1e-9,
-                Op::Ne => (v - target).abs() >= 1e-9,
-            },
+            Some(v) => compare(v, f.op, *target),
         },
         Value::Text(needle) => match text(row, f.key) {
             None => false,
