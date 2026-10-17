@@ -760,24 +760,19 @@ mod tests {
         assert_eq!(r.sellers.len(), 5);
         assert!((r.net_pct.unwrap() - -19.5).abs() < 0.1, "{:?}", r.net_pct);
         assert!((r.foreign_net_pct.unwrap() - -41.4).abs() < 0.1);
-        assert!(r.bandar_gain_pct.unwrap() < 0.0);
-        assert!(
-            r.reasons[0].starts_with("Top 5 buyers bought "),
-            "{}",
-            r.reasons[0]
+        // web/test/bandar.test.mjs pins the same text for the JS port.
+        assert_eq!(
+            r.reasons,
+            [
+                "Top 5 buyers bought 4.23T, top 5 sellers sold 6.16T: net -1.93T, -19.5% of the 9.90T traded (big distribution, at -15% or less).",
+                "Net by tier: top 1 -17.5%, top 3 -18.8%, top 5 -19.5%, top 10 -11.9%.",
+                "The top 5 buyers took 42.7% of the value, the top 5 sellers 62.2%: selling is more concentrated than buying.",
+                "Foreign investors net sold 4.10T (-41.4% of value).",
+                "Price -14.5% over the range: big distribution with the price down more than 2% reads as markdown.",
+                "The top 5 buyers paid 5,515 on average against the last price 5,175: 6.2% under water.",
+                "The source rounds figures of a million and more to one decimal.",
+            ]
         );
-        assert!(r.reasons[0].contains("(big distribution, at -15% or less)"));
-        assert!(r
-            .reasons
-            .iter()
-            .any(|l| l.starts_with("Net by tier: top 1 ")));
-        assert!(r
-            .reasons
-            .iter()
-            .any(|l| l.starts_with("Foreign investors net sold ")));
-        assert!(r.reasons.iter().any(|l| l.contains("reads as markdown")));
-        assert!(r.reasons.iter().any(|l| l.contains("under water")));
-        assert!(r.reasons.last().unwrap().contains("rounds figures"));
 
         let r = report(&s, "1w", 1, None, None);
         assert_eq!(r.buyers.len(), 1);
