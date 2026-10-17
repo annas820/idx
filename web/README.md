@@ -8,6 +8,18 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
 - `src/api.js` endpoints returning the CLI's JSON envelopes; D1-backed cache.
 - `src/ipot.js` the IPOT broker summary (port of `src/providers/ipot`, names
   from `src/brokers.json`, generated from `data/brokers.csv`).
+- `src/bandar.js` the bandarmology rules (port of `src/analysis/bandar.rs`,
+  the same reasons text pinned in both test suites); `src/bandar-scan.js` the
+  nightly scan behind `bandar screen`: from 16:45 WIB on a session day the
+  minute cron reads the session's 100 most traded stocks (by value, from the
+  quote board), four per minute, each over 1d, 1w, 1m and 3m plus its daily
+  candles, into the `bandar_scan` table (`migrations/0003_bandar.sql`, the
+  newest two sessions kept). A holiday is noticed by a probe and skipped; a
+  stock whose fetch failed is tried once more at the end of the pass.
+  `/api/bandar/status` shows the progress; a maintainer can force a step with
+  `/api/refresh?token=…&what=bandar`. `/api/bandar` itself is live like
+  `/api/broker`: up to 5 tickers, `daily` for one ticker and at most 23
+  sessions.
 - `public/chart.js` the price chart under a single-symbol `quote`: ranges 1D
   to 5Y from `/api/history`, closes over volume, a dashed previous close on
   1D, a crosshair readout (pointer, touch or arrow keys). Its layout
@@ -18,7 +30,8 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
   ownership changes summary.
 - Endpoints under `/api`: `market`, `quote`, `history`, `profile`,
   `fundamental`, `earnings`, `financials`, `dividends`, `returns`, `technical`,
-  `brief`, `compare`, `screen`, `news`, `sentiment`, `broker`, `ownership/ticker`,
+  `brief`, `compare`, `screen`, `news`, `sentiment`, `broker`, `bandar`,
+  `bandar/screen`, `bandar/status`, `ownership/ticker`,
   `ownership/entity`, `ownership/changes`, `ownership/foreign`,
   `ownership/releases`, `universe`.
 - `migrations/` D1 schema. `test/` runs with `node --test web/test/*.mjs`.
@@ -48,5 +61,6 @@ Worker returns 404 for any Host other than `PUBLIC_HOST`.
 ```sh
 cd web
 npx wrangler dev      # local
+npx wrangler d1 migrations apply idx --remote   # new tables first (0003 adds bandar_scan)
 npx wrangler deploy   # needs `wrangler login` on the Midori Research account
 ```
