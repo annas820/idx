@@ -9,6 +9,7 @@
 //! - [`service`]   provider call + local analysis, shared by CLI and MCP
 //! - [`mcp`]       the same capabilities as MCP tools over stdio
 //! - [`ownership`] KSEI monthly holder register: download, parse, SQLite, queries
+//! - [`brokers`]   IDX exchange-member directory (broker code to name)
 //! - [`model`]     provider-agnostic domain types (the JSON contract)
 //! - [`output`]    table and JSON renderers
 //! - [`http`]      fetcher that puts the cache in front of the network
@@ -16,6 +17,7 @@
 //! - [`config`]    flags > env > file > defaults
 
 pub mod analysis;
+pub mod brokers;
 pub mod cache;
 pub mod cli;
 pub mod config;
