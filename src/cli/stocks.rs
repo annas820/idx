@@ -1,10 +1,8 @@
 //! `idx stocks ...`
 
 use clap::Subcommand;
-use futures::future::join_all;
 
-use crate::analysis;
-use crate::error::{IdxError, Result};
+use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     Envelope, SCHEMA_COMPARE, SCHEMA_EARNINGS, SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS,
@@ -13,6 +11,7 @@ use crate::output::json::{
 use crate::output::table_reports::{self as reports, StatementFlags};
 use crate::output::{self, table};
 use crate::providers::Sourced;
+use crate::service;
 
 use super::Context;
 
@@ -229,8 +228,7 @@ async fn earnings(ctx: &Context, raw: &str) -> Result<()> {
 
 async fn fundamental(ctx: &Context, raw: &str) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
-    let mut result = ctx.provider.fundamentals(&symbol).await?;
-    result.data.verdict = Some(analysis::fundamental::verdict(&result.data));
+    let result = service::fundamentals(ctx.provider.as_ref(), &symbol).await?;
     if ctx.json() {
         let env = Envelope::from_sourced(SCHEMA_FUNDAMENTALS, result);
         return output::print_stdout(&output::json::to_pretty(&env)?);
@@ -241,21 +239,7 @@ async fn fundamental(ctx: &Context, raw: &str) -> Result<()> {
 
 async fn technical(ctx: &Context, raw: &str, period: Period) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
-    let hist = ctx
-        .provider
-        .history(&symbol, period, Interval::Day1)
-        .await?;
-    let Some(report) = analysis::technical::analyse(&hist.data) else {
-        return Err(IdxError::NotFound(format!("no daily candles for {symbol}")));
-    };
-    let result = Sourced {
-        data: report,
-        provider: hist.provider,
-        cached: hist.cached,
-        stale: hist.stale,
-        fetched_at: hist.fetched_at,
-        warnings: hist.warnings,
-    };
+    let result = service::technical(ctx.provider.as_ref(), &symbol, period).await?;
     if ctx.json() {
         let env = Envelope::from_sourced(SCHEMA_TECHNICAL, result);
         return output::print_stdout(&output::json::to_pretty(&env)?);
@@ -266,53 +250,7 @@ async fn technical(ctx: &Context, raw: &str, period: Period) -> Result<()> {
 
 async fn compare(ctx: &Context, raw: &[String]) -> Result<()> {
     let symbols = Symbol::parse_list(raw)?;
-    if symbols.len() < 2 {
-        return Err(IdxError::Usage(
-            "compare needs at least two different symbols".into(),
-        ));
-    }
-    let results = join_all(symbols.iter().map(|s| ctx.provider.fundamentals(s))).await;
-
-    let mut out: Option<Sourced<Vec<crate::model::Fundamentals>>> = None;
-    let mut first_err: Option<IdxError> = None;
-    for (sym, r) in symbols.iter().zip(results) {
-        match r {
-            Ok(mut s) => {
-                s.data.verdict = Some(analysis::fundamental::verdict(&s.data));
-                match &mut out {
-                    None => out = Some(s.map(|d| vec![d])),
-                    Some(acc) => {
-                        acc.absorb(&s);
-                        acc.data.push(s.data);
-                    }
-                }
-            }
-            Err(e) => {
-                let msg = match &e {
-                    IdxError::NotFound(_) => format!("no data for {sym}"),
-                    other => format!("{sym}: {other}"),
-                };
-                match &mut out {
-                    Some(acc) => acc.warnings.push(msg),
-                    None => {
-                        // Keep the message for when a later symbol succeeds.
-                        first_err.get_or_insert(e);
-                    }
-                }
-            }
-        }
-    }
-    let Some(mut result) = out else {
-        return Err(first_err.unwrap_or_else(|| IdxError::NotFound("no data".into())));
-    };
-    // Symbols that failed before the first success still need a warning.
-    for s in &symbols {
-        if !result.data.iter().any(|f| &f.symbol == s)
-            && !result.warnings.iter().any(|w| w.contains(s.as_str()))
-        {
-            result.warnings.push(format!("no data for {s}"));
-        }
-    }
+    let result = service::compare(ctx.provider.as_ref(), &symbols).await?;
     if ctx.json() {
         let env = Envelope::from_sourced(SCHEMA_COMPARE, result);
         return output::print_stdout(&output::json::to_pretty(&env)?);

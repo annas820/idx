@@ -27,6 +27,8 @@ src/
     yahoo/           chart, v7 quote (cookie/crumb session), quoteSummary (summary.rs), timeseries.rs
     msn/             autosuggest lookup -> Quotes / Equities (public web key)
   analysis/          technical.rs (indicators + signal), fundamental.rs (verdict); no network
+  service.rs         provider call + analysis, shared by cli/ and mcp/ (fundamentals, technical, compare)
+  mcp/               rmcp stdio server; one #[tool] per stocks command, same JSON envelope as -o json
   model/             provider-agnostic domain types = the JSON contract (Quote, Candle, History)
   output/            table.rs (comfy-table), json.rs (Envelope + JSON Schema), format.rs (numbers)
   http/              Fetcher: cache in front of a Backend (reqwest live / FixtureBackend tests)
@@ -35,6 +37,7 @@ src/
   error.rs           IdxError with stable exit codes
 tests/
   cli.rs             assert_cmd tests of the binary, no network
+  mcp.rs             spawns `idx mcp`, speaks JSON-RPC over stdio, offline
   fixtures/<provider>/  recorded raw responses used by unit tests
 scripts/smoke.sh     hits live providers; run manually, never in CI's test job
 docs/                json-output.md, configuration.md
@@ -42,7 +45,7 @@ web/                 Cloudflare Worker for ihsg.midoriresearch.com (holding page
 ```
 
 Planned (later milestones): `src/analysis/screen`,
-`src/ownership/{ingest,db,query}`, `src/mcp/`, `src/providers/{idx,news}`,
+`src/ownership/{ingest,db,query}`, `src/providers/{idx,news}`,
 and the D1-backed terminal inside `web/`.
 
 ## Rules that keep the tool trustworthy
@@ -91,6 +94,9 @@ and the D1-backed terminal inside `web/`.
 3. Handlers call the provider, then branch on `ctx.json()`. Warnings go to
    stderr in table mode and into `envelope.warnings` in JSON mode.
 4. Cover the parsing with fixtures and the CLI surface in `tests/cli.rs`.
+5. Add a matching `#[tool]` in `src/mcp/mod.rs` with a one-paragraph
+   description and a typed argument struct, returning the same envelope.
+   Put shared logic in `src/service.rs`, never in the handler.
 
 ## Development loop
 
@@ -110,7 +116,7 @@ Commits follow Conventional Commits (`feat:`, `fix:`, `docs:`, `test:`,
 
 1. ✅ Scaffold, `stocks quote`, `stocks history` via Yahoo, table + JSON, cache
 2. ✅ MSN provider, `profile`, `financials`, `earnings`, `fundamental`, `technical`, `compare`
-3. MCP server over stdio wrapping 1–2
+3. ✅ MCP server over stdio wrapping 1–2 (verified from Claude Code)
 4. KSEI ownership ingest (XLSX, then PDF) into SQLite + queries
 5. Screener, news, sentiment
 6. Release pipeline (static binaries, install.sh, npm wrapper), web terminal

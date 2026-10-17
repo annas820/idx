@@ -1,0 +1,120 @@
+//! End-to-end check of `idx mcp` over stdio: JSON-RPC framing, initialize,
+//! tools/list and a tools/call, without any network (IDX_OFFLINE=1).
+
+use std::io::{BufRead, BufReader, Write};
+use std::process::{Command, Stdio};
+use std::sync::mpsc;
+use std::time::Duration;
+
+fn spawn_server(dir: &std::path::Path) -> std::process::Child {
+    let mut cmd = Command::new(assert_cmd::cargo::cargo_bin("idx"));
+    cmd.arg("mcp")
+        .env_clear()
+        .env("IDX_CACHE_DIR", dir.join("cache"))
+        .env("IDX_CONFIG", dir.join("config.toml"))
+        .env("IDX_OFFLINE", "1")
+        .env("NO_COLOR", "1")
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .stderr(Stdio::piped());
+    if let Ok(v) = std::env::var("SystemRoot") {
+        cmd.env("SystemRoot", v);
+    }
+    cmd.spawn().expect("spawn idx mcp")
+}
+
+#[test]
+fn mcp_server_speaks_json_rpc_over_stdio() {
+    let dir = tempfile::tempdir().unwrap();
+    let mut child = spawn_server(dir.path());
+    let mut stdin = child.stdin.take().unwrap();
+    let stdout = child.stdout.take().unwrap();
+
+    let (tx, rx) = mpsc::channel::<String>();
+    std::thread::spawn(move || {
+        for line in BufReader::new(stdout).lines().map_while(Result::ok) {
+            if tx.send(line).is_err() {
+                break;
+            }
+        }
+    });
+    let next = || -> serde_json::Value {
+        let line = rx
+            .recv_timeout(Duration::from_secs(30))
+            .expect("server response within 30s");
+        serde_json::from_str(&line).expect("valid JSON line")
+    };
+
+    let init = serde_json::json!({
+        "jsonrpc": "2.0", "id": 1, "method": "initialize",
+        "params": {
+            "protocolVersion": "2025-06-18",
+            "capabilities": {},
+            "clientInfo": {"name": "idx-test", "version": "0"}
+        }
+    });
+    writeln!(stdin, "{init}").unwrap();
+    let r = next();
+    assert_eq!(r["id"], 1);
+    assert_eq!(r["result"]["serverInfo"]["name"], "idx");
+    assert!(r["result"]["capabilities"]["tools"].is_object());
+    assert!(r["result"]["instructions"]
+        .as_str()
+        .unwrap()
+        .contains("idx -o json"));
+
+    writeln!(
+        stdin,
+        r#"{{"jsonrpc":"2.0","method":"notifications/initialized"}}"#
+    )
+    .unwrap();
+
+    writeln!(stdin, r#"{{"jsonrpc":"2.0","id":2,"method":"tools/list"}}"#).unwrap();
+    let r = next();
+    assert_eq!(r["id"], 2);
+    let tools = r["result"]["tools"].as_array().unwrap();
+    let names: Vec<&str> = tools.iter().map(|t| t["name"].as_str().unwrap()).collect();
+    assert!(names.contains(&"idx_quote"), "{names:?}");
+    assert!(names.contains(&"idx_fundamental"), "{names:?}");
+    assert_eq!(names.len(), 8, "{names:?}");
+    let quote = tools.iter().find(|t| t["name"] == "idx_quote").unwrap();
+    assert_eq!(
+        quote["inputSchema"]["properties"]["symbols"]["type"],
+        "string"
+    );
+    assert!(quote["inputSchema"]["required"]
+        .as_array()
+        .unwrap()
+        .contains(&serde_json::json!("symbols")));
+
+    // Offline with an empty cache: a structured tool error, not a crash.
+    let call = serde_json::json!({
+        "jsonrpc": "2.0", "id": 3, "method": "tools/call",
+        "params": {"name": "idx_quote", "arguments": {"symbols": "BBCA"}}
+    });
+    writeln!(stdin, "{call}").unwrap();
+    let r = next();
+    assert_eq!(r["id"], 3);
+    assert_eq!(r["result"]["isError"], true);
+    let body: serde_json::Value =
+        serde_json::from_str(r["result"]["content"][0]["text"].as_str().unwrap()).unwrap();
+    assert_eq!(body["error"]["code"], "offline_miss");
+    assert_eq!(body["exit_code"], 5);
+
+    // A bad symbol is a usage error, still structured.
+    let call = serde_json::json!({
+        "jsonrpc": "2.0", "id": 4, "method": "tools/call",
+        "params": {"name": "idx_quote", "arguments": {"symbols": "BB$CA"}}
+    });
+    writeln!(stdin, "{call}").unwrap();
+    let r = next();
+    assert_eq!(r["result"]["isError"], true);
+    assert!(r["result"]["content"][0]["text"]
+        .as_str()
+        .unwrap()
+        .contains("usage"));
+
+    drop(stdin);
+    let status = child.wait().expect("server exits after stdin closes");
+    assert!(status.success(), "exit {status:?}");
+}

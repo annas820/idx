@@ -30,6 +30,7 @@ Examples:
   idx stocks fundamental BBCA              # ratios plus a plain-language verdict
   idx stocks technical BBRI                # RSI, MACD, moving averages, signal
   idx stocks compare BBCA BBRI BMRI        # side-by-side fundamentals
+  idx mcp                                  # MCP server over stdio for agents
   idx -o json stocks quote BBCA | jq '.data[0].price'
   idx --offline stocks quote BBCA        # serve from cache, never touch the network
   idx schema quotes                      # JSON Schema of the quote envelope";
@@ -109,6 +110,12 @@ pub enum Command {
     #[command(subcommand)]
     Cache(cache_cmd::CacheCmd),
 
+    /// Start the MCP server on stdin/stdout (for Claude Code, Cursor and other MCP clients).
+    #[command(
+        after_help = "Register with Claude Code:\n  claude mcp add idx -- idx mcp\n\nEvery stocks command becomes a tool (idx_quote, idx_history, idx_profile, idx_financials,\nidx_earnings, idx_fundamental, idx_technical, idx_compare) returning the same JSON as -o json.\nLogs go to stderr; stdout carries only the protocol."
+    )]
+    Mcp,
+
     /// Print the JSON Schema for a JSON output shape (run without a name to list them).
     Schema {
         /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | error | quote | candle
@@ -128,7 +135,7 @@ pub enum Command {
 /// Everything a handler needs. Built once per invocation.
 pub struct Context {
     pub settings: Settings,
-    pub provider: Box<dyn Provider>,
+    pub provider: Arc<dyn Provider>,
     pub color: bool,
 }
 
@@ -174,7 +181,8 @@ fn build_context(global: &GlobalOpts) -> Result<Context> {
         },
         msn_api_key: settings.msn_api_key.clone(),
     };
-    let provider = providers::build(settings.provider, fetcher, opts)?;
+    let provider: Arc<dyn Provider> =
+        Arc::from(providers::build(settings.provider, fetcher, opts)?);
     let color = settings
         .color
         .enabled(std::io::IsTerminal::is_terminal(&std::io::stdout()));
@@ -192,6 +200,10 @@ pub async fn run(cli: Cli) -> Result<()> {
         Command::Stocks(cmd) => {
             let ctx = build_context(&cli.global)?;
             stocks::run(&ctx, cmd).await
+        }
+        Command::Mcp => {
+            let ctx = build_context(&cli.global)?;
+            crate::mcp::serve(ctx.provider).await
         }
         Command::Config(cmd) => config_cmd::run(&cli.global, cmd),
         Command::Cache(cmd) => cache_cmd::run(&cli.global, cmd),

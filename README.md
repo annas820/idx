@@ -43,8 +43,8 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
   `Provider` trait, so one breaking does not take the tool down, and `auto`
   fills gaps in one source's fundamentals from the other.
 - **Built for agents.** `-o json` emits a stable, schema-documented envelope
-  (`idx schema quotes`). Exit codes mean something. `idx mcp` (next release)
-  exposes every command as a typed MCP tool.
+  (`idx schema quotes`). Exit codes mean something. `idx mcp` exposes every
+  command as a typed MCP tool that returns the very same JSON.
 - **Works offline.** Responses are cached with per-endpoint TTLs; `--offline`
   serves the cache instead of failing when the network is gone.
 - **Single static binary.** Rust, no runtime, Linux / macOS / Windows.
@@ -79,13 +79,14 @@ idx completions powershell | Out-String | Invoke-Expression
 | `stocks fundamental <SYMBOL>` | P/E, P/B, PEG, EV/EBITDA, ROE, ROA, margins, leverage, growth, dividend, analyst targets, plus a plain-language verdict that lists every rule it applied |
 | `stocks technical <SYMBOL> [--period 1y]` | RSI, MACD, SMA/EMA 20/50/200, Bollinger, ATR, volume, support/resistance, trend, buy/sell/neutral signal with reasons |
 | `stocks compare <SYMBOLS>` | Side-by-side fundamentals for two or more tickers |
+| `mcp` | MCP server over stdio: `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_fundamental`, `idx_technical`, `idx_compare` |
 | `schema [name]` | JSON Schema for every payload (`quotes`, `history`, `profile`, `fundamentals`, `compare`, `financials`, `earnings`, `technical`, `error`, ...) |
 | `config init\|set\|get\|path` | Config file management |
 | `cache stats\|clear\|path` | Response cache management |
 | `completions <shell>` | bash, zsh, fish, powershell, elvish |
 | `version` | Version, build and default paths |
 
-Coming next, in order: `mcp`, `ownership ticker · entity · changes · import`,
+Coming next, in order: `ownership ticker · entity · changes · import`,
 `stocks screen · news · sentiment`.
 
 Global flags work anywhere on the line:
@@ -114,6 +115,19 @@ idx -o json stocks history TLKM --period 1y --interval 1wk \
 
 Full field reference: [docs/json-output.md](docs/json-output.md).
 Configuration and cache: [docs/configuration.md](docs/configuration.md).
+
+### MCP server
+
+```sh
+claude mcp add idx -- idx mcp          # Claude Code
+```
+
+Any MCP client that speaks stdio works the same way (`command: idx`,
+`args: ["mcp"]`). The server lists eight tools with typed input schemas and
+one-paragraph descriptions, and each returns the same envelope as `-o json`,
+so an agent that learned the CLI already knows the tools. Failures come back
+as tool errors carrying `{error: {code, message}, exit_code}`. Details:
+[docs/mcp.md](docs/mcp.md).
 
 ## Data sources
 

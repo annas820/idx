@@ -18,6 +18,9 @@ All notable changes to this project are documented here. The format follows
 - `idx schema <name>`: JSON Schema for every JSON shape.
 - Local response cache with per-endpoint TTL, `--offline`, `--no-cache`, and
   `idx cache stats|clear|path`.
+- `idx mcp`: MCP server over stdio (rmcp) exposing `idx_quote`, `idx_history`,
+  `idx_profile`, `idx_financials`, `idx_earnings`, `idx_fundamental`,
+  `idx_technical` and `idx_compare`, each returning the `-o json` envelope.
 - `stocks profile`, `stocks financials` (annual / quarterly / TTM), `stocks
   earnings`, `stocks fundamental` (ratios plus a transparent rule-based
   verdict), `stocks technical` (RSI, MACD, SMA/EMA, Bollinger, ATR, levels,
