@@ -249,6 +249,20 @@ pub struct ImportReport {
 pub struct DiscoveredFile {
     pub as_of: NaiveDate,
     pub title: String,
+    /// Where the file is downloaded from (idx.co.id or the GitHub mirror).
     pub url: String,
     pub format: String,
+    /// `idx.co.id` or `github-mirror`.
+    #[serde(default = "default_origin")]
+    pub origin: String,
+    /// SHA-256 of the file when the listing provides it (mirror index).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub sha256: Option<String>,
+    /// The file's original address on idx.co.id when `url` is a mirror copy.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub source_url: Option<String>,
+}
+
+fn default_origin() -> String {
+    "idx.co.id".to_string()
 }

@@ -51,7 +51,7 @@ pub enum McpCmd {
         /// Bearer token to embed in the remote form.
         #[arg(long, value_name = "TOKEN", requires = "http")]
         token: Option<String>,
-        /// Use `npx -y @midoriresearch/idx mcp` as the command instead of this binary's path.
+        /// Use `npx -y ihsg-cli mcp` as the command instead of this binary's path.
         #[arg(long, conflicts_with = "http")]
         npx: bool,
     },

@@ -1311,8 +1311,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "idx"
-version = "0.3.0"
+name = "ihsg-cli"
+version = "0.4.0"
 dependencies = [
  "anyhow",
  "assert_cmd",

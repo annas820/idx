@@ -1,16 +1,35 @@
 [package]
-name = "idx"
-version = "0.3.0"
+name = "ihsg-cli"
+version = "0.4.0"
 edition = "2021"
 rust-version = "1.88"
-description = "Indonesian stock market (IDX / IHSG) analysis CLI and MCP server, built for humans and AI agents"
+description = "Indonesian stock market (IDX / IHSG) analysis: the `idx` CLI and MCP server for people and AI agents, free public data"
 license = "MIT"
+authors = ["Muhammad Fauzan <developerfauzan@gmail.com>"]
 repository = "https://github.com/fzn0x/idx"
 homepage = "https://ihsg.midoriresearch.com"
+documentation = "https://github.com/fzn0x/idx#readme"
 readme = "README.md"
-keywords = ["idx", "ihsg", "stocks", "finance", "mcp"]
+keywords = ["ihsg", "idx", "stocks", "indonesia", "mcp"]
 categories = ["command-line-utilities", "finance"]
-publish = false
+# What crates.io gets: sources, the bundled issuer list, the fixture-based
+# tests and the docs the README links to. No web/, npm/ or screenshots.
+include = [
+  "/src/**",
+  "/data/**",
+  "/tests/**",
+  "/docs/*.md",
+  "/README.md",
+  "/LICENSE",
+  "/CHANGELOG.md",
+  "/Cargo.toml",
+  "/Cargo.lock",
+]
+
+# The library keeps the short name so `use idx::...` and the binary stay `idx`.
+[lib]
+name = "idx"
+path = "src/lib.rs"
 
 [[bin]]
 name = "idx"

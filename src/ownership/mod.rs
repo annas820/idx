@@ -17,6 +17,7 @@ use crate::model::{DiscoveredFile, ImportReport};
 pub mod db;
 pub mod discover;
 pub mod ingest;
+pub mod mirror;
 pub mod normalize;
 
 pub use db::OwnershipDb;
@@ -83,8 +84,13 @@ pub async fn import_discovered(
     let mut reports = Vec::new();
     let mut warnings = Vec::new();
     for f in files.iter().filter(|f| force || !have.contains(&f.as_of)) {
-        tracing::info!(as_of = %f.as_of, url = %f.url, "importing ownership file");
-        let (report, skipped) = import_url(db, &f.url, timeout).await?;
+        tracing::info!(as_of = %f.as_of, url = %f.url, origin = %f.origin, "importing ownership file");
+        let (report, skipped) = if f.origin == mirror::ORIGIN {
+            let bytes = mirror::download(&f.url, f.sha256.as_deref(), timeout).await?;
+            import_bytes(db, &discover::basename(&f.url), &f.url, &bytes)?
+        } else {
+            import_url(db, &f.url, timeout).await?
+        };
         warnings.extend(skipped.into_iter().map(|s| format!("{}: {s}", f.as_of)));
         reports.push(report);
         if latest_only {

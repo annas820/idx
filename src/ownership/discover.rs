@@ -7,8 +7,10 @@
 //!
 //! idx.co.id sits behind Cloudflare bot management: plain HTTP clients get a
 //! 403 challenge page. `fetch_browser` tries a browser-shaped request first,
-//! then shells out to a `curl-impersonate` binary when one is installed, and
-//! otherwise explains how to download the file by hand.
+//! then shells out to a `curl-impersonate` binary when one is installed.
+//! When both fail, `discover` falls back to the GitHub mirror that CI keeps
+//! in sync (see `mirror.rs`), so `idx ownership import --latest` works
+//! without any extra tooling. `file://` URLs read a saved page or file.
 
 use std::path::Path;
 use std::time::Duration;
@@ -133,6 +135,9 @@ pub fn parse_page(html: &str) -> Vec<DiscoveredFile> {
             title: title.trim().to_string(),
             url,
             format: format.to_string(),
+            origin: "idx.co.id".to_string(),
+            sha256: None,
+            source_url: None,
         });
     }
     out.sort_by_key(|a| std::cmp::Reverse(a.as_of));
@@ -226,6 +231,15 @@ fn fetch_impersonated(url: &str, timeout: Duration) -> Option<Result<(u16, Vec<u
 
 /// Downloads `url` as a browser would. See the module docs for the strategy.
 pub async fn fetch_browser(url: &str, timeout: Duration) -> Result<Vec<u8>> {
+    if let Some(path) = url.strip_prefix("file://") {
+        let path = if cfg!(windows) {
+            path.trim_start_matches('/')
+        } else {
+            path
+        };
+        return std::fs::read(path)
+            .map_err(|e| IdxError::Usage(format!("cannot read {path}: {e}")));
+    }
     let (status, body) = fetch_plain(url, timeout).await?;
     if (200..300).contains(&status) && !looks_like_challenge(status, &body) {
         return Ok(body);
@@ -246,18 +260,67 @@ pub async fn fetch_browser(url: &str, timeout: Duration) -> Result<Vec<u8>> {
 }
 
 /// Fetches the listing page and returns the above-1 % files, newest first.
-pub async fn discover(timeout: Duration) -> Result<Vec<DiscoveredFile>> {
-    let page_url = std::env::var("IDX_OWNERSHIP_PAGE_URL").unwrap_or_else(|_| PAGE_URL.to_string());
-    let bytes = fetch_browser(&page_url, timeout).await?;
-    let html = String::from_utf8_lossy(&bytes);
-    let files = parse_page(&html);
-    if files.is_empty() {
-        return Err(IdxError::provider(
-            "idx",
-            "the Data Kepemilikan Saham page had no \"Pemegang Saham di Atas 1%\" entries; the page layout may have changed",
-        ));
+/// Returns the files plus notes (for example that the mirror was used).
+pub async fn discover(timeout: Duration) -> Result<(Vec<DiscoveredFile>, Vec<String>)> {
+    let explicit_page = std::env::var("IDX_OWNERSHIP_PAGE_URL").ok();
+    let page_url = explicit_page
+        .clone()
+        .unwrap_or_else(|| PAGE_URL.to_string());
+    let direct = match fetch_browser(&page_url, timeout).await {
+        Ok(bytes) => {
+            let files = parse_page(&String::from_utf8_lossy(&bytes));
+            if files.is_empty() {
+                Err(IdxError::provider(
+                    "idx",
+                    "the Data Kepemilikan Saham page had no \"Pemegang Saham di Atas 1%\" entries; the page layout may have changed",
+                ))
+            } else {
+                Ok(files)
+            }
+        }
+        Err(e) => Err(e),
+    };
+    let err = match direct {
+        Ok(files) => return Ok((files, vec![])),
+        Err(e) => e,
+    };
+    // A page the caller pointed at explicitly is not second-guessed.
+    let Some(base) = super::mirror::base().filter(|_| explicit_page.is_none()) else {
+        return Err(err);
+    };
+    tracing::info!(error = %err, mirror = %base, "idx.co.id unavailable, using the GitHub mirror");
+    match super::mirror::index(&base, timeout).await {
+        Ok(index) => {
+            let files = super::mirror::to_discovered(&base, &index);
+            if files.is_empty() {
+                return Err(err);
+            }
+            let reason =
+                if err.to_string().contains("Cloudflare") || err.to_string().contains("HTTP 403") {
+                    "idx.co.id refused this client (Cloudflare)".to_string()
+                } else {
+                    format!("idx.co.id unavailable ({})", short(&err.to_string()))
+                };
+            Ok((
+                files,
+                vec![format!(
+                    "{reason}; using the GitHub mirror {base}, which CI refreshes three times a day with the same IDX files (SHA-256 checked on download)"
+                )],
+            ))
+        }
+        Err(me) => Err(IdxError::Network(format!(
+            "{err}. The GitHub mirror also failed: {me}"
+        ))),
     }
-    Ok(files)
+}
+
+fn short(s: &str) -> String {
+    let first = s.split(". ").next().unwrap_or(s);
+    if first.chars().count() > 120 {
+        format!("{}…", first.chars().take(120).collect::<String>())
+    } else {
+        first.to_string()
+    }
 }
 
 /// File name component of a URL or path, for provenance.
@@ -305,6 +368,24 @@ mod tests {
         );
         assert_eq!(js_string("\"a\\\"b\" rest").unwrap().0, "a\"b");
         assert_eq!(basename("https://x/y/z.xlsx?x=1"), "z.xlsx");
+    }
+
+    #[tokio::test]
+    async fn file_urls_read_saved_pages() {
+        let path = concat!(
+            env!("CARGO_MANIFEST_DIR"),
+            "/tests/fixtures/ownership/idx_page_excerpt.html"
+        )
+        .replace('\\', "/");
+        let bytes = fetch_browser(&format!("file://{path}"), Duration::from_secs(5))
+            .await
+            .unwrap();
+        assert_eq!(parse_page(&String::from_utf8_lossy(&bytes)).len(), 3);
+        assert!(
+            fetch_browser("file:///no/such/page.html", Duration::from_secs(5))
+                .await
+                .is_err()
+        );
     }
 
     #[test]

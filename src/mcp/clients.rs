@@ -13,7 +13,7 @@ use serde_json::json;
 pub enum Launcher {
     /// Absolute path of the idx binary, run as `idx mcp`.
     Binary(String),
-    /// `npx -y @midoriresearch/idx mcp` (no install step).
+    /// `npx -y ihsg-cli mcp` (no install step).
     Npx,
     /// A running `idx mcp --http` endpoint, usually behind a tunnel.
     Http { url: String, token: Option<String> },
@@ -25,7 +25,7 @@ impl Launcher {
             Launcher::Binary(p) => (p.clone(), vec!["mcp".into()]),
             Launcher::Npx => (
                 "npx".into(),
-                vec!["-y".into(), "@midoriresearch/idx".into(), "mcp".into()],
+                vec!["-y".into(), "ihsg-cli".into(), "mcp".into()],
             ),
             Launcher::Http { .. } => (String::new(), vec![]),
         }
@@ -994,6 +994,6 @@ mod tests {
             "Bearer s3cret"
         );
         let npx = setup(find("claude-code").unwrap(), &Launcher::Npx);
-        assert!(npx.steps[0].body.contains("npx -y @midoriresearch/idx mcp"));
+        assert!(npx.steps[0].body.contains("npx -y ihsg-cli mcp"));
     }
 }

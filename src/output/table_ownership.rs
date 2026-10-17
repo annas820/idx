@@ -327,12 +327,15 @@ pub fn imports(list: &[ImportReport]) -> String {
 
 pub fn discovered(files: &[DiscoveredFile], have: &[NaiveDate], color: bool) -> String {
     let mut t = base_table(color);
-    t.set_header(header(&["As of", "Format", "Imported", "Title", "URL"]));
+    t.set_header(header(&[
+        "As of", "Format", "Imported", "From", "Title", "URL",
+    ]));
     for d in files {
         t.add_row(vec![
             Cell::new(d.as_of.to_string()).add_attribute(Attribute::Bold),
             Cell::new(&d.format),
             Cell::new(if have.contains(&d.as_of) { "yes" } else { "no" }),
+            Cell::new(&d.origin),
             Cell::new(f::clip(&d.title, 48)),
             Cell::new(&d.url),
         ]);

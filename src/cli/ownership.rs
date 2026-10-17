@@ -24,7 +24,7 @@ pub const LOCAL: &str = "local-db";
 pub enum OwnershipCmd {
     /// Import a monthly "Pemegang Saham di Atas 1%" file (XLSX or PDF) into the local database.
     #[command(
-        after_help = "Examples:\n  idx ownership import --latest                 # newest file on idx.co.id\n  idx ownership import --all                    # every month not imported yet\n  idx ownership import --file peng-2026-08-00017-satu-persen.xlsx\n  idx ownership import --url https://www.idx.co.id/Media/.../satu-persen.xlsx\n\nidx.co.id is behind Cloudflare. Downloads try a browser-like request, then\ncurl-impersonate if installed; otherwise download the file in a browser and use --file."
+        after_help = "Examples:\n  idx ownership import --latest                 # newest monthly file\n  idx ownership import --all                    # every month not imported yet\n  idx ownership import --file peng-2026-08-00017-satu-persen.xlsx\n  idx ownership import --url https://www.idx.co.id/Media/.../satu-persen.xlsx\n\nidx.co.id is behind Cloudflare. --latest/--all try idx.co.id (browser-like request, then\ncurl-impersonate if installed) and otherwise use the GitHub mirror that CI refreshes three\ntimes a day with the same IDX files, checking each file's SHA-256. IDX_OWNERSHIP_MIRROR=off\ndisables the mirror."
     )]
     Import(ImportArgs),
 
@@ -216,8 +216,19 @@ pub async fn run(ctx: &Context, cmd: OwnershipCmd) -> Result<()> {
             if ctx.settings.cache_mode == crate::http::CacheMode::Offline {
                 return Err(IdxError::OfflineMiss("discover needs the network".into()));
             }
-            let files = ownership::discover::discover(ctx.settings.timeout()).await?;
-            let mut s = Sourced::fresh(files, "idx");
+            let (files, notes) = ownership::discover::discover(ctx.settings.timeout()).await?;
+            let via_mirror = files
+                .first()
+                .is_some_and(|f| f.origin == ownership::mirror::ORIGIN);
+            let mut s = Sourced::fresh(
+                files,
+                if via_mirror {
+                    ownership::mirror::ORIGIN
+                } else {
+                    "idx"
+                },
+            );
+            s.warnings.extend(notes);
             let have: Vec<NaiveDate> = open(ctx)?.releases()?.iter().map(|r| r.as_of).collect();
             let missing: Vec<String> = s
                 .data
@@ -260,11 +271,13 @@ async fn import(ctx: &Context, args: ImportArgs) -> Result<()> {
                 "--latest/--all need the network".into(),
             ));
         }
-        let files = ownership::discover::discover(timeout).await?;
-        let (reports, warnings) =
+        let (files, notes) = ownership::discover::discover(timeout).await?;
+        let (reports, mut warnings) =
             ownership::import_discovered(&mut db, &files, args.latest, args.force, timeout).await?;
+        warnings.splice(0..0, notes.clone());
         if reports.is_empty() {
             let mut s = local(Vec::<crate::model::ImportReport>::new());
+            s.warnings.extend(notes);
             s.warnings.push(format!(
                 "nothing new: newest published file ({}) is already imported",
                 files
