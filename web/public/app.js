@@ -66,16 +66,29 @@ export function table(cols, rows, opts = {}) {
       if (c.l) td.classList.add("l");
       if (c.cls) { const cl = typeof c.cls === "function" ? c.cls(row) : c.cls; if (cl) td.className += ` ${cl}`; }
       if (c.name) td.dataset.col = c.name;
+      if (c.title) { const t = c.title(row); if (t) td.title = t; }
     }
   }
   return t;
 }
 
+/** Horizontal scroll container with a visible cue on touch screens. */
 export function wrapScroll(node) {
   const d = document.createElement("div");
   d.className = "tbl-wrap";
   d.appendChild(node);
-  return d;
+  const frag = document.createDocumentFragment();
+  const cue = el("p", { class: "scroll-cue", text: "scroll \u2192 for more columns" });
+  frag.append(d, cue);
+  const check = () => {
+    const more = d.scrollWidth - d.clientWidth - d.scrollLeft > 4;
+    d.classList.toggle("scrollable", more);
+    cue.classList.toggle("on", d.scrollWidth > d.clientWidth + 4);
+  };
+  requestAnimationFrame(check);
+  d.addEventListener("scroll", check, { passive: true });
+  if (typeof ResizeObserver !== "undefined") new ResizeObserver(check).observe(d);
+  return frag;
 }
 
 export function el(tag, attrs = {}, children = []) {

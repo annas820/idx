@@ -3,8 +3,8 @@ import { api, fmt, table, wrapScroll, el, sparkline, reink, signClass, copyButto
 const $ = (id) => document.getElementById(id);
 
 const BOARD_COLS = [
-  { h: "Symbol", k: "symbol", l: true, cls: "sym", name: "sym" },
-  { h: "Name", k: "name", l: true, cls: "name" },
+  { h: "Symbol", k: "symbol", l: true, cls: "sym", name: "sym", title: (r) => r.name || "" },
+  { h: "Name", k: "name", l: true, cls: "name", name: "name" },
   { h: "Price", f: (r) => fmt.price(r.price), cls: "num" },
   { h: "Chg", f: (r) => fmt.change(r.change), cls: (r) => `num ${signClass(r.change)}` },
   { h: "Chg %", f: (r) => fmt.pct(r.change_pct), cls: (r) => `num ${signClass(r.change_pct)}` },
@@ -35,7 +35,8 @@ function renderMarket(env) {
   }
   $("breadth").textContent = `advancing ${m.advancing} · declining ${m.declining} · unchanged ${m.unchanged} · ${m.quoted} quoted`;
   const slot = $("tape-slot");
-  slot.replaceChildren(m.index_tape.length > 1 ? sparkline(m.index_tape) : el("span", { class: "foot", text: "Index tape starts with the next trading session." }));
+  const distinct = new Set(m.index_tape.map((p) => p[1])).size;
+  slot.replaceChildren(...(distinct > 1 ? [sparkline(m.index_tape)] : []));
 
   const t = table(BOARD_COLS, m.heavyweights, { key: "symbol" });
   t.setAttribute("aria-label", "Live board: heavyweights by market cap");
@@ -43,8 +44,7 @@ function renderMarket(env) {
   boardTable = t;
   $("board").replaceChildren(wrapScroll(t));
   $("board-foot").replaceChildren(
-    el("span", { text: `Snapshot ${fmt.wib(m.refreshed_at)} · ${m.quoted} of ${m.universe} tickers quoted · Yahoo Finance via idx.` }),
-    el("span", { text: "Delayed as published. Research tooling, not investment advice." }),
+    el("span", { text: `Snapshot ${fmt.wib(m.refreshed_at)} · ${m.quoted} of ${m.universe} tickers quoted · Yahoo Finance via idx · see Catatan 2 and 3.` }),
   );
 
   const mk = (title, cols, rows) => el("div", { class: "stmt" }, [el("h3", { class: "stmt-title", text: title }), wrapScroll(table(cols, rows))]);

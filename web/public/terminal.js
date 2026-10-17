@@ -60,12 +60,20 @@ function kv(pairs) {
 const pct = (v) => fmt.pctPlain(v);
 const x = (v) => (v == null ? "—" : `${fmt.num(v, 2)}x`);
 
+const newsTable = (items) => wrapScroll(table([
+  { h: "WIB", f: (i) => (i.published ? fmt.wib(i.published).slice(5, 16) : "—"), l: true }, { h: "Source", k: "source", l: true },
+  { h: "±", f: (i) => (i.sentiment > 0 ? "+" : i.sentiment < 0 ? "−" : "·"), cls: (i) => signClass(i.sentiment) },
+  { h: "Headline", f: (i) => el("a", { href: i.url, target: "_blank", rel: "noopener", text: i.title }), l: true },
+], items));
+
 const R = {
   quotes(d) {
     return wrapScroll(table([
-      { h: "Symbol", k: "symbol", l: true, cls: "sym" }, { h: "Name", k: "name", l: true, cls: "name" },
-      { h: "Price", f: (r) => fmt.price(r.price), cls: "num" }, { h: "Chg", f: (r) => fmt.change(r.change), cls: (r) => `num ${signClass(r.change)}` },
-      { h: "Chg %", f: (r) => fmt.pct(r.change_pct), cls: (r) => `num ${signClass(r.change_pct)}` }, { h: "Open", f: (r) => fmt.price(r.open) },
+      { h: "Symbol", k: "symbol", l: true, cls: "sym" },
+      { h: "Price", f: (r) => fmt.price(r.price), cls: "num" },
+      { h: "Chg %", f: (r) => fmt.pct(r.change_pct), cls: (r) => `num ${signClass(r.change_pct)}` },
+      { h: "Chg", f: (r) => fmt.change(r.change), cls: (r) => `num ${signClass(r.change)}` },
+      { h: "Name", k: "name", l: true, cls: "name" }, { h: "Open", f: (r) => fmt.price(r.open) },
       { h: "High", f: (r) => fmt.price(r.day_high) }, { h: "Low", f: (r) => fmt.price(r.day_low) }, { h: "Volume", f: (r) => fmt.int(r.volume) },
       { h: "Mkt Cap", f: (r) => fmt.compact(r.market_cap) }, { h: "P/E", f: (r) => fmt.ratio(r.pe_trailing) }, { h: "Div %", f: (r) => pct(r.dividend_yield_pct) },
     ], d));
@@ -187,11 +195,7 @@ const R = {
   news(n) {
     const frag = document.createDocumentFragment();
     frag.append(el("p", { class: "prose", text: n.symbol ? `${n.items.length} of ${n.scanned} scanned headlines mention ${n.symbol}${n.matched_name ? ` or ${n.matched_name}` : ""} · ${n.sources.join(", ")}` : `${n.items.length} of ${n.scanned} headlines · ${n.sources.join(", ")}` }));
-    frag.append(wrapScroll(table([
-      { h: "WIB", f: (i) => (i.published ? fmt.wib(i.published).slice(5, 16) : "—"), l: true }, { h: "Source", k: "source", l: true },
-      { h: "±", f: (i) => (i.sentiment > 0 ? "+" : i.sentiment < 0 ? "−" : "·"), cls: (i) => signClass(i.sentiment) },
-      { h: "Headline", f: (i) => el("a", { href: i.url, target: "_blank", rel: "noopener", text: i.title }), l: true },
-    ], n.items)));
+    frag.append(newsTable(n.items));
     frag.append(el("p", { class: "warn", text: "± is a lexicon read of the headline, not a recommendation." }));
     return frag;
   },
@@ -201,7 +205,7 @@ const R = {
     frag.append(el("p", { class: "prose" }, [el("span", { class: `pill ${cls}`, text: s.label.replace("_", " ") }), ` score ${s.score > 0 ? "+" : ""}${fmt.num(s.score, 2)} · ${s.items} headlines: ${s.positive} positive, ${s.negative} negative, ${s.neutral} neutral${s.oldest ? ` · ${fmt.date(s.oldest)} → ${fmt.date(s.newest)}` : ""}`]));
     const terms = (l) => (l.length ? l.map(([t, n]) => `${t} ×${n}`).join(", ") : "—");
     frag.append(el("p", { class: "prose", text: `Terms · positive: ${terms(s.top_positive_terms)} · negative: ${terms(s.top_negative_terms)}` }));
-    if (s.headlines.length) frag.append(R.news({ symbol: s.symbol, matched_name: s.matched_name, items: s.headlines, scanned: s.items, sources: [] }).lastChild.previousSibling);
+    if (s.headlines.length) frag.append(newsTable(s.headlines));
     frag.append(el("p", { class: "warn", text: "Lexicon count over Indonesian and English finance terms. Indicative only." }));
     return frag;
   },
