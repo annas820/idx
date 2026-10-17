@@ -23,7 +23,7 @@ use serde::Deserialize;
 
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
-use crate::model::{Interval, Period, StatementPeriod, Symbol};
+use crate::model::{BrokerBoard, BrokerInvestor, Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     self, Envelope, ErrorEnvelope, SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
     SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_MARKET,
@@ -31,7 +31,7 @@ use crate::output::json::{
     SCHEMA_OWNERSHIP_FOREIGN_FLOW, SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES,
     SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
 };
-use crate::output::json::{SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT};
+use crate::output::json::{SCHEMA_BROKER, SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT};
 use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
 use crate::service;
@@ -49,6 +49,7 @@ Every tool returns the same JSON envelope as the `idx -o json` CLI:
 not return are null; nothing is estimated. Prices are delayed as published.
 Errors return isError=true with {error:{code,message}, exit_code}; code not_found
 means the ticker is unknown, offline_miss means --offline with nothing cached.
+idx_broker shows which brokers bought and sold a ticker (IPOT broker summary).
 Ownership tools read the local SQLite register of holders above 1% (KSEI via IDX,
 monthly); if it is empty they say so and the user must run `idx ownership import --latest`.
 Verdicts and signals are transparent rule scores, not investment advice.";
@@ -208,6 +209,27 @@ pub struct SentimentArgs {
     pub symbol: String,
     #[serde(default)]
     pub sources: Option<Vec<String>>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct BrokerArgs {
+    /// One or more IDX tickers (up to 10), comma or space separated, e.g. "BBCA,BBRI".
+    pub symbols: String,
+    /// One trading day, YYYY-MM-DD. Omit date, from and to for each ticker's latest session with trades.
+    #[serde(default)]
+    pub date: Option<String>,
+    /// Start of a range, YYYY-MM-DD; the end defaults to today. Not with date.
+    #[serde(default)]
+    pub from: Option<String>,
+    /// End of a range, YYYY-MM-DD. Not with date.
+    #[serde(default)]
+    pub to: Option<String>,
+    /// Whose trades to count: all (default), foreign or domestic.
+    #[serde(default)]
+    pub investor: Option<String>,
+    /// Market board: all (default), regular, cash or negotiated.
+    #[serde(default)]
+    pub board: Option<String>,
 }
 
 #[derive(Clone)]
@@ -605,6 +627,44 @@ impl IdxServer {
     }
 
     #[tool(
+        name = "idx_broker",
+        description = "Broker summary for one or more IDX tickers (Indo Premier / IPOT): which brokers bought and sold the stock over one day or a date range. Top 10 buyers and top 10 sellers by value, each with the broker code, name (IDX member list), class (local, foreign, state_owned = BUMN), lots, value in IDR and average price, plus total value, total lots, average price and foreign net value. Without dates each ticker gets its latest session with trades. The source rounds figures of a million and more to one decimal; such summaries carry rounded=true. Returns the idx.broker.v1 envelope; failed tickers are listed in warnings."
+    )]
+    async fn broker(
+        &self,
+        Parameters(a): Parameters<BrokerArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbols = Symbol::parse_list([a.symbols.as_str()])?;
+                let date = parse_date(&a.date)?;
+                let (from, to) = match date {
+                    Some(d) if a.from.is_some() || a.to.is_some() => {
+                        return Err(IdxError::Usage(format!(
+                            "use date ({d}) or from/to, not both"
+                        )))
+                    }
+                    Some(d) => (Some(d), Some(d)),
+                    None => (parse_date(&a.from)?, parse_date(&a.to)?),
+                };
+                let query = service::BrokerQuery {
+                    from,
+                    to,
+                    investor: parse_opt(&a.investor, BrokerInvestor::All)?,
+                    board: parse_opt(&a.board, BrokerBoard::All)?,
+                };
+                let list = universe::load(None).unwrap_or_default();
+                ok(
+                    SCHEMA_BROKER,
+                    service::broker(&self.fetcher, &list, &symbols, query, service::today_wib())
+                        .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
         name = "idx_news",
         description = "Latest Indonesian finance headlines from Kontan and CNBC Indonesia RSS feeds. With a symbol, headlines that mention the company (scope=company, matched by ticker or name) come first, followed by general market headlines (scope=market) up to limit; company_matches says how many company items exist. Each item carries a lexicon sentiment score and the matched terms. Returns the idx.news.v1 envelope."
     )]
@@ -897,6 +957,7 @@ mod tests {
             names,
             [
                 "idx_brief",
+                "idx_broker",
                 "idx_compare",
                 "idx_dividends",
                 "idx_earnings",
@@ -1003,6 +1064,35 @@ mod tests {
                 interval: None,
                 limit: None,
             }))
+            .await
+            .unwrap();
+        let v: serde_json::Value = serde_json::from_str(&text(&r)).unwrap();
+        assert_eq!(v["error"]["code"], "offline_miss");
+
+        let broker = |date: Option<&str>, from: Option<&str>, investor: Option<&str>| BrokerArgs {
+            symbols: "BBCA".into(),
+            date: date.map(Into::into),
+            from: from.map(Into::into),
+            to: None,
+            investor: investor.map(Into::into),
+            board: None,
+        };
+        for bad in [
+            broker(Some("2026-10-16"), Some("2026-10-01"), None),
+            broker(Some("16/10/2026"), None, None),
+            broker(None, None, Some("retail")),
+        ] {
+            let r = s.broker(Parameters(bad)).await.unwrap();
+            assert_eq!(r.is_error, Some(true));
+            let v: serde_json::Value = serde_json::from_str(&text(&r)).unwrap();
+            assert_eq!(v["error"]["code"], "usage", "{v}");
+        }
+        let r = s
+            .broker(Parameters(broker(
+                Some("2026-10-16"),
+                None,
+                Some("foreign"),
+            )))
             .await
             .unwrap();
         let v: serde_json::Value = serde_json::from_str(&text(&r)).unwrap();
