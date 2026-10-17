@@ -16,6 +16,12 @@ imports this file.
 Data comes only from free public endpoints, with no API keys. Every response is
 cached locally. `--offline` serves stale cache instead of failing.
 
+## Package name
+
+The crate and the npm package are published as `ihsg-cli`; the binary and the
+library keep the short name `idx` (`[lib] name = "idx"` in Cargo.toml), so
+code says `use idx::...` and users type `idx`.
+
 ## Layout
 
 ```
@@ -33,8 +39,9 @@ src/
     news/            Kontan + CNBC Indonesia RSS feeds through the Fetcher (rss crate)
   service.rs         provider call + analysis, shared by cli/ and mcp/ (fundamentals, technical, compare,
                      screen, news ordering, returns, dividends, market_overview, brief)
-  ownership/         KSEI >1% register: discover.rs (idx.co.id page, Cloudflare strategy), ingest.rs (XLSX/PDF),
-                     normalize.rs (entity keys), db.rs (SQLite schema + queries). Imported once, queried locally.
+  ownership/         KSEI >1% register: discover.rs (idx.co.id page, Cloudflare strategy), mirror.rs (GitHub
+                     mirror fallback), ingest.rs (XLSX/PDF), normalize.rs (entity keys), db.rs (SQLite schema
+                     + queries). Imported once, queried locally.
   mcp/               rmcp server; one #[tool] per command, same JSON envelope as -o json;
                      schema.rs rewrites input schemas into the subset every harness accepts;
                      http.rs streamable-HTTP transport (axum, bearer token); clients.rs the
@@ -55,8 +62,10 @@ scripts/smoke.sh     hits live providers; run manually, never in CI's test job
 docs/                json-output.md, configuration.md, mcp.md, ownership.md
 web/                 Cloudflare Worker for ihsg.midoriresearch.com: landing page, browser terminal, D1 board;
                      src/analysis.js and src/extras.js are JS ports of src/analysis/* tested on the same fixtures
-npm/                 @midoriresearch/idx wrapper: lib/binary.js downloads + verifies the release
+npm/                 ihsg-cli wrapper on npm: lib/binary.js downloads + verifies the release
                      (postinstall when allowed, otherwise on first run)
+scripts/ownership_mirror.py  CI scraper behind .github/workflows/ownership.yml: mirrors the KSEI
+                     register to the `ownership-data` prerelease (raw files, index.json, JSON parts)
 ```
 
 CLI groups: `stocks` (quote, history, profile, financials, earnings, dividends, returns,

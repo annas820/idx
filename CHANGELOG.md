@@ -6,6 +6,33 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-10-17
+
+### Added
+
+- Published as **`ihsg-cli`** on crates.io (`cargo install ihsg-cli`) and npm
+  (`npm i -g ihsg-cli`, `npx ihsg-cli`); the command is still `idx`. The
+  release workflow publishes both on every tag once `CRATES_PUBLISH` /
+  `NPM_PUBLISH` are enabled (token secret or Trusted Publishing).
+- Ownership data pipeline: `.github/workflows/ownership.yml` and
+  `scripts/ownership_mirror.py` mirror every IDX "Pemegang Saham di Atas 1%"
+  workbook three times a day to the `ownership-data` prerelease, with
+  `index.json` (original URL, SHA-256, counts) and parsed JSON parts.
+- The web terminal loads the register by itself from that release (one
+  verified part per minute, newest six months, D1 write budget); new
+  `/api/ownership/status`. The manual `web/scripts/ownership-sync.mjs` is gone.
+- `idx ownership import --latest|--all` and `discover` fall back to the GitHub
+  mirror when idx.co.id refuses the request, checking each file's SHA-256;
+  `IDX_OWNERSHIP_MIRROR` overrides or disables it. `file://` URLs are accepted.
+  `idx.ownership.discover.v1` entries gain `origin`, `sha256`, `source_url`.
+
+### Changed
+
+- Logo: the wordmark is now "IHSG" with the tagline "Indonesian market data
+  for people and agents".
+- Web ownership rows now carry nationality, domicile and scripless/scrip
+  share counts like the CLI.
+
 ## [0.3.0] - 2026-10-17
 
 ### Added
@@ -47,7 +74,6 @@ All notable changes to this project are documented here. The format follows
 - Web terminal and landing page at https://ihsg.midoriresearch.com with a
   minute-refreshed D1 snapshot API (`web/`), now serving the new endpoints
   (`dividends`, `returns`, `brief`, `ownership/foreign`) too.
-- `web/scripts/ownership-sync.mjs` to publish a local ownership register to D1.
 
 ### Changed
 

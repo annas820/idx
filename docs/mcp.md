@@ -9,7 +9,7 @@ and returns the envelope documented in [json-output.md](json-output.md).
 Run `idx mcp setup <client>` and paste what it prints: it fills in the
 absolute path of the binary (GUI apps rarely inherit your shell `PATH`), and
 `-o json` gives the same steps as data. `idx mcp setup --list` names every
-client; `--npx` swaps the path for `npx -y @midoriresearch/idx mcp`;
+client; `--npx` swaps the path for `npx -y ihsg-cli mcp`;
 `--http URL [--token T]` produces the remote form of the same entry.
 
 The snippets below use a bare `idx` for brevity. Formats were checked against

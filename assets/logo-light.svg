@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-labelledby="t d">
-  <title id="t">idx</title>
-  <desc id="d">Three candlesticks forming the letters i, d and x, followed by the wordmark idx. Light-theme variant.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-labelledby="t d">
+  <title id="t">IHSG</title>
+  <desc id="d">Candlestick mark followed by the wordmark IHSG and the tagline: Indonesian market data for people and agents. Light-theme variant.</desc>
   <defs>
     <linearGradient id="up" x1="0" y1="1" x2="0" y2="0">
       <stop offset="0" stop-color="#16a34a"/>
@@ -11,8 +11,8 @@
       <stop offset="1" stop-color="#be123c"/>
     </linearGradient>
   </defs>
-  <!-- mark: a 128x128 tile -->
-  <rect x="16" y="16" width="128" height="128" rx="28" fill="#0b0f14"/>
+  <!-- mark: a 128x128 tile of three candlesticks -->
+  <rect x="16.5" y="16.5" width="127" height="127" rx="28" fill="#0b0f14"/>
   <g stroke="#1f2937" stroke-width="1">
     <line x1="32" y1="56" x2="128" y2="56"/>
     <line x1="32" y1="80" x2="128" y2="80"/>
@@ -27,10 +27,7 @@
     <rect x="100" y="58" width="16" height="30" rx="3" fill="url(#up)"/>
   </g>
   <circle cx="52" cy="30" r="4" fill="#f8fafc"/>
-  <!-- wordmark -->
-  <g font-family="ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-weight="700">
-    <text x="176" y="104" font-size="88" fill="#0b0f14" letter-spacing="-4">idx</text>
-    <text x="356" y="104" font-size="30" fill="#15803d" font-weight="500">IHSG</text>
-    <text x="356" y="130" font-size="16" textLength="326" lengthAdjust="spacingAndGlyphs" fill="#475569" font-weight="500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">Indonesian market data for people and agents</text>
-  </g>
+  <!-- wordmark and tagline; textLength pins the tagline width on every platform font -->
+  <text fill="#0b0f14" x="170" y="99" font-family="ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-weight="800" font-size="84" letter-spacing="-2" textLength="212" lengthAdjust="spacingAndGlyphs">IHSG</text>
+  <text fill="#475569" x="174" y="131" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="17" textLength="356" lengthAdjust="spacingAndGlyphs">Indonesian market data for people and agents</text>
 </svg>

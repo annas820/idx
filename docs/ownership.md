@@ -21,17 +21,68 @@ workbooks on the same page are rejected with a clear message.
 ## Getting the files
 
 idx.co.id is behind Cloudflare bot management, so a plain HTTP client gets a
-challenge page. `ownership import --latest|--all|--url` tries, in order:
+challenge page. `ownership import --latest|--all` and `ownership discover` try,
+in order:
 
 1. a browser-shaped request (Chrome user agent and headers);
 2. a `curl-impersonate` binary on `PATH` (`curl_chrome131`, `curl_chrome124`,
    `curl_chrome116`, `curl-impersonate-chrome`, `curl-impersonate`; override
    with `IDX_CURL_IMPERSONATE=/path/to/binary`);
-3. otherwise it stops with instructions to download the workbook in a browser
-   and run `idx ownership import --file <path>`.
+3. the GitHub mirror (below): the same files, downloaded from the
+   repository's `ownership-data` release and checked against the SHA-256 in
+   its `index.json`. A warning says when the mirror was used.
+   `IDX_OWNERSHIP_MIRROR=<url>` points at another mirror, `off` disables it.
 
-`idx ownership discover` lists what the page currently offers and which
-months are already imported.
+`--file <path>` and `--url <url>` import one file directly; `--url` also
+accepts `file://` paths. `idx ownership discover` lists what is available,
+where it comes from and which months are already imported.
+
+## The mirror
+
+`.github/workflows/ownership.yml` runs `scripts/ownership_mirror.py` at 08:17,
+14:17 and 20:17 WIB:
+
+1. fetches the IDX page with [curl_cffi](https://github.com/lexiforest/curl_cffi)
+   (browser TLS fingerprint), saves it, and parses it with
+   `idx ownership discover` (one parser for CLI and CI);
+2. reuses files already mirrored, downloads new or re-published ones (a new
+   IDX URL for the same month counts as re-published) and checks they are
+   real XLSX/PDF files;
+3. imports every month, oldest first, into a fresh database with
+   `idx ownership import --file`; any parse failure fails the run, so a broken
+   file never reaches the mirror;
+4. exports each month as JSON parts of 1,000 rows and writes `index.json`:
+
+```json
+{
+  "schema": "idx.ownership.mirror.v1",
+  "generated_at": "2026-10-17T01:17:40Z",
+  "source_page": "https://www.idx.co.id/id/perusahaan-tercatat/data-kepemilikan-saham/",
+  "releases": [
+    { "as_of": "2026-09-30", "title": "Pemegang Saham di Atas 1% per 30 September 2026",
+      "format": "xlsx", "source_url": "https://www.idx.co.id/Media/.../peng-2026-09-00024-satu-persen.xlsx",
+      "file": "ksei-above1-2026-09-30.xlsx", "sha256": "804b3bb7…", "bytes": 563730,
+      "rows": 7151, "issuers": 961, "entities": 5145,
+      "parts": [ { "file": "ksei-above1-2026-09-30.part01.json", "sha256": "…", "rows": 1000 } ] }
+  ]
+}
+```
+
+5. uploads only what changed, `index.json` last, and deletes assets the new
+   index no longer lists. The release is a prerelease so it never becomes the
+   repository's "latest" release.
+
+The web terminal's Worker (`web/src/ownership-sync.js`) loads the parts into
+D1 on its minute cron, newest month first, one part per minute, within a daily
+rows-written budget (`OWN_DAILY_WRITE_BUDGET`, default 60,000, inside D1's free
+tier). It keeps `OWN_KEEP_RELEASES` months (default 6). A month is published
+only after its row count matches the index; a re-published IDX file (new
+SHA-256) is reloaded. `/api/ownership/status` shows progress. There is no
+upload endpoint: the only input is the repository's own release.
+
+Running the workflow by hand: Actions → "ownership data" → Run workflow
+(tick "dry run" to parse without uploading). Locally:
+`pip install curl_cffi && python scripts/ownership_mirror.py --idx target/debug/idx --repo fzn0x/idx --dry-run`.
 
 ## Database
 

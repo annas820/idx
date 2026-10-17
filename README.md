@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/logo-light.svg">
-    <img src="assets/logo.svg" alt="idx" width="520">
+    <img src="assets/logo.svg" alt="IHSG: Indonesian market data for people and agents" width="480">
   </picture>
 </p>
 
@@ -63,28 +63,29 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
 - **Ownership, not just prices.** KSEI's monthly register of holders above 1 %
   is imported into local SQLite with normalised entity names, so "who owns
   more than 1 % of BBCA" and "what did this fund change last month" are one
-  command each.
+  command each. A GitHub Actions job mirrors every new IDX file, so neither
+  you nor the web terminal ever imports anything by hand.
 - **Single static binary.** Rust, no runtime, Linux / macOS / Windows.
 
 ## Install
 
-One line, Linux and macOS (x64 and arm64), verifies the SHA-256 against the
-release's `SHA256SUMS`:
+The package is called **`ihsg-cli`** on crates.io and npm; the command it
+installs is **`idx`**.
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh
+cargo install ihsg-cli          # crates.io, builds from source (Rust 1.88+)
+npm install -g ihsg-cli         # npm, downloads the SHA-256 verified prebuilt binary
+npx ihsg-cli stocks quote BBCA  # npm, no install
+curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh   # Linux, macOS
 ```
 
-Other ways:
-
-```sh
-cargo install --git https://github.com/fzn0x/idx          # from source (Rust 1.88+)
-npx @midoriresearch/idx stocks quote BBCA                 # npm wrapper: fetches the release at install, or on first run when npm 12 blocks install scripts
-```
-
-Windows: download `idx-<version>-x86_64-pc-windows-msvc.zip` from the
-[releases page](https://github.com/fzn0x/idx/releases). Static Linux
-binaries are musl builds and run on any distribution.
+`install.sh` and the npm wrapper both check the binary against the release's
+`SHA256SUMS`. The npm wrapper fetches it at install time, or on the first run
+when npm 12 blocks install scripts. Windows without npm: download
+`idx-<version>-x86_64-pc-windows-msvc.zip` from the
+[releases page](https://github.com/fzn0x/idx/releases). Static Linux binaries
+are musl builds and run on any distribution. The development version installs
+with `cargo install --git https://github.com/fzn0x/idx`.
 
 Shell completions:
 
@@ -113,7 +114,7 @@ idx completions powershell | Out-String | Invoke-Expression
 | `stocks screen -f "pe<15,roe>15,sector=financial"` | Screener over ~950 IDX tickers: one batch quote for valuation/size/dividend keys, per-company fundamentals for the rest (capped, largest first) |
 | `stocks news [SYMBOL] [--company-only] [--source kontan\|cnbcindonesia\|all]` | Headlines from Kontan and CNBC Indonesia RSS. With a ticker, the company's headlines come first, then market context fills the limit |
 | `stocks sentiment <SYMBOL>` | Aggregate lexicon sentiment over the matching headlines, with counts, terms and the strongest headlines |
-| `ownership import --latest\|--all\|--file F\|--url U` | Import KSEI's monthly ">1 % holders" register (XLSX or PDF) into local SQLite |
+| `ownership import --latest\|--all\|--file F\|--url U` | Import KSEI's monthly ">1 % holders" register (XLSX or PDF) into local SQLite. `--latest`/`--all` read idx.co.id and fall back to the CI-maintained GitHub mirror |
 | `ownership ticker <SYMBOL> [--as-of D]` | Holders above 1 % of a ticker |
 | `ownership entity "<NAME>" [--as-of D]` | Every position of a person or institution, spelling variants grouped |
 | `market overview [--top 10]` | IHSG, breadth, turnover, gainers, losers, most traded, heavyweights from one pass over the universe |
@@ -194,7 +195,7 @@ idx mcp setup muse            # prints the settings.json block Meta's Muse Code 
 
 A bare `idx` in the table assumes the binary is on `PATH`; `idx mcp setup`
 substitutes the absolute path, and `--npx` swaps in
-`npx -y @midoriresearch/idx mcp`. Each entry's remote (HTTP) form and the
+`npx -y ihsg-cli mcp`. Each entry's remote (HTTP) form and the
 config file locations are in [docs/mcp.md](docs/mcp.md).
 
 The server lists 20 tools with typed input schemas kept to the subset every
@@ -212,7 +213,7 @@ CLI already knows the tools. Failures come back as tool errors carrying
 | Yahoo Finance `v7/finance/quote` | quotes | anonymous cookie + crumb, cached 6 h | Falls back to the chart endpoint (fewer fields) if rejected |
 | Yahoo Finance `v10/finance/quoteSummary` | profile, fundamentals, earnings | same session | Statement modules are empty at the source, so they are not used |
 | Yahoo Finance `fundamentals-timeseries` | financials | none | Annual, quarterly and TTM statement items |
-| idx.co.id "Data Kepemilikan Saham" page + `Media/*.xlsx` | ownership (KSEI monthly register) | none, but Cloudflare bot protection | Browser-like request, then `curl-impersonate` if installed, else download in a browser and `--file`. See [docs/ownership.md](docs/ownership.md) |
+| idx.co.id "Data Kepemilikan Saham" page + `Media/*.xlsx` | ownership (KSEI monthly register) | none, but Cloudflare bot protection | Mirrored three times a day by GitHub Actions to the [`ownership-data`](https://github.com/fzn0x/idx/releases/tag/ownership-data) release (byte-identical files, SHA-256 in `index.json`). The CLI tries idx.co.id first, then the mirror. See [docs/ownership.md](docs/ownership.md) |
 | Kontan RSS (`investasi`, `keuangan`, `industri`, `insight`) and CNBC Indonesia RSS (`market`, `research`, `news`) | news, sentiment | none | Bisnis.com refuses non-browser clients; listed as an opt-in source |
 | MSN Money `Finance/Quotes`, `Finance/Equities` | quotes, profile, fundamentals, analyst targets | MSN's own public web key (shipped; override with `IDX_MSN_API_KEY`) | Tickers resolve to MSN ids through its autosuggest service, filtered to exchange `XIDX` |
 
@@ -223,13 +224,34 @@ or Microsoft.
 ## Web terminal
 
 **https://ihsg.midoriresearch.com/terminal** runs the same commands in a
-browser, no install: `quote BBCA,BBRI`, `fundamental TLKM`,
-`screen pe<10,div>5,mcap>5T --sort div`, `news ASII`, `ownership ticker BBCA`.
-A Cloudflare Worker refreshes a D1 snapshot of the whole IDX board every
-minute in trading hours and serves `/api/*` with the exact JSON envelopes the
-CLI prints; everything else is fetched on demand and cached. The Worker lives
-in [`web/`](web/) and answers on the custom domain only (`workers_dev = false`,
-Host check in the Worker).
+browser, no install: `brief BBCA`, `quote BBCA,BBRI`, `returns BBCA BBRI`,
+`screen pe<10,div>5,mcap>5T --sort div`, `news ASII`, `ownership ticker BBCA`,
+`ownership foreign`. A Cloudflare Worker refreshes a D1 snapshot of the whole
+IDX board every minute in trading hours and serves `/api/*` with the exact JSON
+envelopes the CLI prints; everything else is fetched on demand and cached. The
+Worker lives in [`web/`](web/) and answers on the custom domain only
+(`workers_dev = false`, Host check in the Worker).
+
+## Ownership data pipeline
+
+Nobody imports the KSEI register by hand, and nothing outside the repository
+can write it:
+
+1. [`.github/workflows/ownership.yml`](.github/workflows/ownership.yml) runs at
+   08:17, 14:17 and 20:17 WIB. It fetches the IDX "Data Kepemilikan Saham" page
+   through a browser-impersonating client, downloads any new or re-published
+   "Pemegang Saham di Atas 1%" workbook, imports every month with `idx` to
+   prove it parses, and publishes the files plus `index.json` and parsed JSON
+   parts to the [`ownership-data`](https://github.com/fzn0x/idx/releases/tag/ownership-data)
+   prerelease.
+2. The web terminal's Worker reads that release on its minute cron: it checks
+   `index.json` every 30 minutes, verifies each part's SHA-256 and loads one
+   part per minute into D1. A month appears only once all its rows are in and
+   the count matches. The newest six months are kept. The Worker has no write
+   endpoint at all.
+3. `idx ownership import --latest` on your machine tries idx.co.id and, when
+   Cloudflare refuses it, downloads the same file from the mirror and checks
+   its SHA-256.
 
 <p align="center">
   <a href="https://ihsg.midoriresearch.com/terminal"><img src="docs/screenshots/terminal.png" alt="The idx web terminal showing technical BBRI" width="100%"></a>
