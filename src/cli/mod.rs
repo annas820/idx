@@ -31,6 +31,8 @@ Examples:
   idx stocks fundamental BBCA              # ratios plus a plain-language verdict
   idx stocks technical BBRI                # RSI, MACD, moving averages, signal
   idx stocks compare BBCA BBRI BMRI        # side-by-side fundamentals
+  idx stocks screen -f 'pe<10,div>5,mcap>5T' # screener over ~950 IDX tickers
+  idx stocks news BBCA                     # Kontan + CNBC Indonesia headlines
   idx ownership import --latest            # KSEI >1% holders into local SQLite
   idx ownership ticker BBCA                # who holds more than 1%
   idx mcp                                  # MCP server over stdio for agents
@@ -125,7 +127,7 @@ pub enum Command {
 
     /// Print the JSON Schema for a JSON output shape (run without a name to list them).
     Schema {
-        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | ownership-* | error | quote | candle
+        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | screen | news | sentiment | ownership-* | error | quote | candle
         name: Option<String>,
     },
 
@@ -143,6 +145,7 @@ pub enum Command {
 pub struct Context {
     pub settings: Settings,
     pub provider: Arc<dyn Provider>,
+    pub fetcher: Arc<Fetcher>,
     pub color: bool,
 }
 
@@ -189,13 +192,14 @@ fn build_context(global: &GlobalOpts) -> Result<Context> {
         msn_api_key: settings.msn_api_key.clone(),
     };
     let provider: Arc<dyn Provider> =
-        Arc::from(providers::build(settings.provider, fetcher, opts)?);
+        Arc::from(providers::build(settings.provider, fetcher.clone(), opts)?);
     let color = settings
         .color
         .enabled(std::io::IsTerminal::is_terminal(&std::io::stdout()));
     Ok(Context {
         settings,
         provider,
+        fetcher,
         color,
     })
 }
@@ -214,7 +218,7 @@ pub async fn run(cli: Cli) -> Result<()> {
         }
         Command::Mcp => {
             let ctx = build_context(&cli.global)?;
-            crate::mcp::serve(ctx.provider, ctx.settings.ownership_db.clone()).await
+            crate::mcp::serve(ctx.provider, ctx.fetcher, ctx.settings.ownership_db.clone()).await
         }
         Command::Config(cmd) => config_cmd::run(&cli.global, cmd),
         Command::Cache(cmd) => cache_cmd::run(&cli.global, cmd),

@@ -2,12 +2,22 @@
 //! provider call with local analysis lives here so both front ends behave
 //! identically.
 
+use std::sync::Arc;
+
 use futures::future::join_all;
+use futures::stream::{self, StreamExt};
 
 use crate::analysis;
+use crate::analysis::screen::{self as scr, Filter, Key};
 use crate::error::{IdxError, Result};
-use crate::model::{Fundamentals, Interval, Period, Symbol, Technical};
+use crate::http::Fetcher;
+use crate::model::{
+    Fundamentals, Interval, NewsItem, NewsReport, Period, ScreenReport, ScreenRow, SentimentReport,
+    Symbol, Technical,
+};
+use crate::providers::news as newsfeed;
 use crate::providers::{Provider, Sourced};
+use crate::universe::Issuer;
 
 /// Ratios plus the rule-based verdict.
 pub async fn fundamentals(p: &dyn Provider, symbol: &Symbol) -> Result<Sourced<Fundamentals>> {
@@ -75,10 +85,282 @@ pub async fn compare(p: &dyn Provider, symbols: &[Symbol]) -> Result<Sourced<Vec
     Ok(result)
 }
 
+/// Screener settings.
+#[derive(Debug, Clone)]
+pub struct ScreenOptions {
+    pub filters: Vec<Filter>,
+    pub sort: Key,
+    pub descending: bool,
+    /// 0 = all rows.
+    pub limit: usize,
+    /// Upper bound on per-symbol fundamentals calls (largest market caps first).
+    pub max_fundamentals: usize,
+    /// Fetch fundamentals even when no filter needs them.
+    pub with_fundamentals: bool,
+}
+
+/// Quote-level screen over the universe, then a capped fundamentals pass.
+pub async fn screen(
+    p: &dyn Provider,
+    universe: &[Issuer],
+    opts: &ScreenOptions,
+) -> Result<Sourced<ScreenReport>> {
+    if universe.is_empty() {
+        return Err(IdxError::Usage("the ticker universe is empty".into()));
+    }
+    let names: std::collections::HashMap<&Symbol, Option<&str>> = universe
+        .iter()
+        .map(|i| (&i.symbol, i.name.as_deref()))
+        .collect();
+    let symbols: Vec<Symbol> = universe.iter().map(|i| i.symbol.clone()).collect();
+
+    // Quotes in batches; one failing batch fails the screen (it is the base data).
+    let batches: Vec<&[Symbol]> = symbols.chunks(150).collect();
+    let results = join_all(batches.iter().map(|b| p.quotes(b))).await;
+    let mut out = Sourced::fresh(Vec::<ScreenRow>::new(), p.name());
+    out.cached = true;
+    let mut quoted = 0usize;
+    for r in results {
+        match r {
+            Ok(s) => {
+                out.absorb(&s);
+                out.provider = s.provider;
+                quoted += s.data.len();
+                for q in &s.data {
+                    let hint = names.get(&q.symbol).copied().flatten();
+                    out.data.push(scr::row_from_quote(q, hint));
+                }
+            }
+            Err(IdxError::NotFound(_)) => {}
+            Err(e) => return Err(e),
+        }
+    }
+    out.warnings.retain(|w| !w.starts_with("no data for"));
+    if quoted < symbols.len() {
+        out.warnings.push(format!(
+            "{} of {} tickers returned no quote and were skipped",
+            symbols.len() - quoted,
+            symbols.len()
+        ));
+    }
+
+    let (quote_filters, fund_filters): (Vec<&Filter>, Vec<&Filter>) = opts
+        .filters
+        .iter()
+        .partition(|f| !f.key.needs_fundamentals());
+    let quote_filters: Vec<Filter> = quote_filters.into_iter().cloned().collect();
+    let fund_filters: Vec<Filter> = fund_filters.into_iter().cloned().collect();
+    let mut rows: Vec<ScreenRow> = out
+        .data
+        .iter()
+        .filter(|r| scr::matches(r, &quote_filters))
+        .cloned()
+        .collect();
+    let matched_quote_level = rows.len();
+
+    let need_fund =
+        opts.with_fundamentals || !fund_filters.is_empty() || opts.sort.needs_fundamentals();
+    let mut checked = 0usize;
+    let mut capped = false;
+    if need_fund && !rows.is_empty() {
+        scr::sort_rows(&mut rows, Key::Mcap, true);
+        let cap = opts.max_fundamentals.max(1);
+        if rows.len() > cap {
+            capped = true;
+            rows.truncate(cap);
+        }
+        let wanted: Vec<Symbol> = rows.iter().map(|r| r.symbol.clone()).collect();
+        let fetched: Vec<(Symbol, Result<Sourced<Fundamentals>>)> = stream::iter(wanted)
+            .map(|s| async move {
+                let r = fundamentals(p, &s).await;
+                (s, r)
+            })
+            .buffer_unordered(8)
+            .collect()
+            .await;
+        for (sym, r) in fetched {
+            match r {
+                Ok(f) => {
+                    checked += 1;
+                    out.cached &= f.cached;
+                    out.stale |= f.stale;
+                    if let Some(row) = rows.iter_mut().find(|r| r.symbol == sym) {
+                        scr::apply_fundamentals(row, &f.data);
+                    }
+                }
+                Err(e) => tracing::debug!(symbol = %sym, error = %e, "fundamentals unavailable"),
+            }
+        }
+        rows.retain(|r| scr::matches(r, &fund_filters));
+        if capped {
+            out.warnings.push(format!(
+                "fundamentals were fetched for the {cap} largest companies that passed the quote filters; raise --max-fundamentals to widen"
+            ));
+        }
+    }
+
+    scr::sort_rows(&mut rows, opts.sort, opts.descending);
+    let total = rows.len();
+    if opts.limit > 0 {
+        rows.truncate(opts.limit);
+    }
+    Ok(out.map(|_| ScreenReport {
+        filters: opts.filters.iter().map(|f| f.raw.clone()).collect(),
+        sort: opts.sort.name().to_string(),
+        descending: opts.descending,
+        universe: symbols.len(),
+        quoted,
+        matched_quote_level,
+        fundamentals_checked: checked,
+        fundamentals_capped: capped,
+        total_matches: total,
+        rows,
+    }))
+}
+
+/// Company name without legal-form tokens, for headline matching.
+pub fn match_name(raw: &str) -> String {
+    raw.split_whitespace()
+        .map(|t| t.trim_matches(|c: char| !c.is_alphanumeric()))
+        .filter(|t| {
+            !t.is_empty()
+                && !matches!(
+                    t.to_ascii_uppercase().as_str(),
+                    "PT" | "TBK" | "PERSERO" | "LTD" | "INC"
+                )
+        })
+        .collect::<Vec<_>>()
+        .join(" ")
+}
+
+fn item_matches(item: &NewsItem, ticker: &str, name: Option<&str>) -> Option<&'static str> {
+    let text = format!("{} {}", item.title, item.summary);
+    let upper = text.to_uppercase();
+    let has_ticker = upper
+        .split(|c: char| !c.is_ascii_alphanumeric())
+        .any(|tok| tok == ticker);
+    if has_ticker {
+        return Some("ticker");
+    }
+    if let Some(n) = name {
+        if n.len() >= 4 && upper.contains(&n.to_uppercase()) {
+            return Some("name");
+        }
+    }
+    None
+}
+
+/// Headlines from the selected feeds, optionally filtered to one ticker.
+pub async fn news(
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    symbol: Option<&Symbol>,
+    sources: &[String],
+    limit: usize,
+) -> Result<Sourced<NewsReport>> {
+    let feeds = newsfeed::select(sources)?;
+    let (mut items, warnings, cached, stale) = newsfeed::fetch(fetcher, &feeds).await?;
+    let scanned = items.len();
+    let matched_name = symbol.and_then(|s| {
+        universe
+            .iter()
+            .find(|i| &i.symbol == s)
+            .and_then(|i| i.name.as_deref())
+            .map(match_name)
+            .filter(|n| !n.is_empty())
+    });
+    if let Some(sym) = symbol {
+        items.retain_mut(
+            |it| match item_matches(it, sym.as_str(), matched_name.as_deref()) {
+                Some(how) => {
+                    it.matched_by = how.into();
+                    true
+                }
+                None => false,
+            },
+        );
+    }
+    for it in &mut items {
+        analysis::sentiment::score_item(it);
+    }
+    if limit > 0 {
+        items.truncate(limit);
+    }
+    let mut s = Sourced::fresh(
+        NewsReport {
+            symbol: symbol.cloned(),
+            matched_name,
+            sources: feeds.iter().map(|f| f.id.to_string()).collect(),
+            scanned,
+            items,
+        },
+        newsfeed::NAME,
+    );
+    s.cached = cached;
+    s.stale = stale;
+    s.warnings = warnings;
+    Ok(s)
+}
+
+/// Lexicon sentiment over every matching headline.
+pub async fn sentiment(
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    symbol: &Symbol,
+    sources: &[String],
+    headline_limit: usize,
+) -> Result<Sourced<SentimentReport>> {
+    let n = news(fetcher, universe, Some(symbol), sources, 0).await?;
+    let report = analysis::sentiment::aggregate(
+        symbol,
+        n.data.matched_name.clone(),
+        &n.data.items,
+        headline_limit,
+    );
+    Ok(n.map(|_| report))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
     use crate::model::{History, Quote};
+
+    #[test]
+    fn match_names_and_items() {
+        assert_eq!(match_name("PT Bank Central Asia Tbk"), "Bank Central Asia");
+        assert_eq!(
+            match_name("ADARO ANDALAN INDONESIA Tbk"),
+            "ADARO ANDALAN INDONESIA"
+        );
+        let mk = |t: &str| NewsItem {
+            title: t.into(),
+            url: "u".into(),
+            source: "s".into(),
+            published: None,
+            summary: String::new(),
+            matched_by: String::new(),
+            sentiment: 0.0,
+            positive_terms: vec![],
+            negative_terms: vec![],
+        };
+        assert_eq!(
+            item_matches(&mk("Saham BBCA naik"), "BBCA", None),
+            Some("ticker")
+        );
+        assert_eq!(
+            item_matches(&mk("Laba (BBCA) naik"), "BBCA", None),
+            Some("ticker")
+        );
+        assert_eq!(
+            item_matches(
+                &mk("Bank Central Asia bagi dividen"),
+                "BBCA",
+                Some("Bank Central Asia")
+            ),
+            Some("name")
+        );
+        assert_eq!(item_matches(&mk("BBCAX bukan BBCA?"), "BBRI", None), None);
+    }
     use async_trait::async_trait;
 
     struct Fake;

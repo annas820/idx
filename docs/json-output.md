@@ -92,6 +92,27 @@ and average-volume fields to be `null`.
   closes.
 - `summary` is `null` when there are no candles.
 
+## `idx.screen.v1` (`stocks screen`)
+
+`data.rows[]` carry the quote-level fields (`price`, `change_pct`,
+`market_cap`, `pe_trailing`, `pe_forward`, `price_to_book`,
+`dividend_yield_pct`, `eps_ttm`, `avg_volume_3m`, 52-week range) and, when
+`fundamentals_checked` is true, `sector`, `industry`, `roe_pct`, `roa_pct`,
+`net_margin_pct`, `operating_margin_pct`, `debt_to_equity`,
+`revenue_growth_pct`, `earnings_growth_pct`, `peg`, `price_to_sales`.
+`data.universe`, `quoted`, `matched_quote_level`, `fundamentals_checked`,
+`fundamentals_capped` and `total_matches` describe the funnel, so a reader can
+tell a genuine "no match" from a capped fundamentals pass.
+
+## `idx.news.v1` (`stocks news`) and `idx.sentiment.v1` (`stocks sentiment`)
+
+News items: `title`, `url`, `source` (`kontan/investasi`,
+`cnbcindonesia/market`, ...), `published` (WIB), `summary`, `matched_by`
+(`ticker` | `name` | `all`), `sentiment` (-1..+1), `positive_terms`,
+`negative_terms`. The sentiment report adds `label` (`positive` | `negative`
+| `neutral` | `no_coverage`), `score`, counts, the covered period, top terms
+and the strongest `headlines`, plus `method` describing the lexicon rule.
+
 ## `idx.profile.v1` (`stocks profile`)
 
 `data` is one object: `symbol`, `name`, `sector`, `industry`, `summary`,

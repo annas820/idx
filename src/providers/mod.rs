@@ -24,6 +24,7 @@ use crate::model::{
 };
 
 pub mod msn;
+pub mod news;
 pub mod yahoo;
 
 /// Data plus provenance. Renderers put this in the JSON envelope.

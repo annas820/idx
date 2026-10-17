@@ -26,7 +26,10 @@ src/
   providers/         Provider trait, Chain fallback, ProviderKind; one subdir per source
     yahoo/           chart, v7 quote (cookie/crumb session), quoteSummary (summary.rs), timeseries.rs
     msn/             autosuggest lookup -> Quotes / Equities (public web key)
-  analysis/          technical.rs (indicators + signal), fundamental.rs (verdict); no network
+  analysis/          technical.rs (indicators + signal), fundamental.rs (verdict), screen.rs (filter DSL),
+                     sentiment.rs (lexicon); no network
+  universe.rs        bundled data/universe.csv (IDX issuers) + ownership-db issuers; IDX_UNIVERSE override
+    news/            Kontan + CNBC Indonesia RSS feeds through the Fetcher (rss crate)
   service.rs         provider call + analysis, shared by cli/ and mcp/ (fundamentals, technical, compare)
   ownership/         KSEI >1% register: discover.rs (idx.co.id page, Cloudflare strategy), ingest.rs (XLSX/PDF),
                      normalize.rs (entity keys), db.rs (SQLite schema + queries). Imported once, queried locally.
@@ -47,7 +50,7 @@ web/                 Cloudflare Worker for ihsg.midoriresearch.com (holding page
 ```
 
 Planned (later milestones): `src/analysis/screen`,
-`src/providers/news`,
+
 and the D1-backed terminal inside `web/`.
 
 ## Rules that keep the tool trustworthy
@@ -121,5 +124,5 @@ Commits follow Conventional Commits (`feat:`, `fix:`, `docs:`, `test:`,
 2. ✅ MSN provider, `profile`, `financials`, `earnings`, `fundamental`, `technical`, `compare`
 3. ✅ MCP server over stdio wrapping 1–2 (verified from Claude Code)
 4. ✅ KSEI ownership ingest (XLSX + PDF text layer) into SQLite + queries
-5. Screener, news, sentiment
+5. ✅ Screener, news, sentiment
 6. Release pipeline (static binaries, install.sh, npm wrapper), web terminal

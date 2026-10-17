@@ -2,16 +2,21 @@
 
 use clap::Subcommand;
 
+use crate::analysis::screen::{parse_filters, Key};
+use crate::error::IdxError;
 use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     Envelope, SCHEMA_COMPARE, SCHEMA_EARNINGS, SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS,
-    SCHEMA_HISTORY, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_TECHNICAL,
+    SCHEMA_HISTORY, SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_SCREEN, SCHEMA_SENTIMENT,
+    SCHEMA_TECHNICAL,
 };
+use crate::output::table_news as newstbl;
 use crate::output::table_reports::{self as reports, StatementFlags};
 use crate::output::{self, table};
 use crate::providers::Sourced;
-use crate::service;
+use crate::service::{self, ScreenOptions};
+use crate::universe;
 
 use super::Context;
 
@@ -108,6 +113,62 @@ pub enum StocksCmd {
         period: Period,
     },
 
+    /// Screen the IDX universe (~950 tickers) by valuation, size, dividend and, optionally, profitability.
+    #[command(
+        after_help = "Examples:\n  idx stocks screen -f \"pe<10,div>5,mcap>5T\"\n  idx stocks screen -f \"roe>15,pe<15,sector=financial\" --sort roe\n  idx stocks screen -f \"mcap>50T\" --fundamentals --sort margin -n 10\n\nKeys: pe fpe pb ps peg mcap price div eps volume chg (from one batch quote call);\n      roe roa margin opmargin de growth epsgrowth sector industry (per-company fundamentals,\n      fetched for the largest --max-fundamentals companies that pass the quote filters).\nOperators: < <= > >= = !=. Numbers accept K M B T suffixes and a trailing %.\nUniverse: bundled list of IDX issuers plus any seen by `idx ownership import`; override with --universe or IDX_UNIVERSE."
+    )]
+    Screen {
+        /// Comma-separated clauses, e.g. "pe<15,roe>15,sector=Banking".
+        #[arg(long, short = 'f', value_name = "SPEC", required = true)]
+        filter: String,
+        /// Sort key (any filter key); descending unless --asc.
+        #[arg(long, default_value = "mcap", value_name = "KEY")]
+        sort: String,
+        #[arg(long)]
+        asc: bool,
+        /// Rows shown; 0 for all.
+        #[arg(long, short = 'n', default_value_t = 25)]
+        limit: usize,
+        /// Cap on per-company fundamentals calls.
+        #[arg(long, default_value_t = 50, value_name = "N")]
+        max_fundamentals: usize,
+        /// Fetch fundamentals for the results even when no filter needs them.
+        #[arg(long)]
+        fundamentals: bool,
+        /// CSV of symbol,name to screen instead of the bundled universe.
+        #[arg(long, value_name = "PATH")]
+        universe: Option<std::path::PathBuf>,
+    },
+
+    /// Latest headlines from Kontan and CNBC Indonesia, optionally filtered to one ticker.
+    #[command(
+        after_help = "Examples:\n  idx stocks news                # market headlines\n  idx stocks news BBCA           # mentions of BBCA or Bank Central Asia\n  idx stocks news TLKM --source kontan --limit 40\n\nSources: kontan, cnbcindonesia (defaults), bisnis (blocked for non-browser clients; tried on request), all."
+    )]
+    News {
+        #[arg(value_name = "SYMBOL")]
+        symbol: Option<String>,
+        /// Publisher names; repeatable.
+        #[arg(long, short = 's', value_name = "NAME")]
+        source: Vec<String>,
+        /// Headlines shown; 0 for all.
+        #[arg(long, short = 'n', default_value_t = 20)]
+        limit: usize,
+    },
+
+    /// Lexicon sentiment over the headlines that mention one ticker.
+    #[command(
+        after_help = "Examples:\n  idx stocks sentiment BBCA\n  idx -o json stocks sentiment BBRI | jq '.data | {label, score, items}'\n\nCounts Indonesian and English finance terms per headline. Indicative only."
+    )]
+    Sentiment {
+        #[arg(value_name = "SYMBOL")]
+        symbol: String,
+        #[arg(long, short = 's', value_name = "NAME")]
+        source: Vec<String>,
+        /// Strongest headlines shown.
+        #[arg(long, short = 'n', default_value_t = 10)]
+        limit: usize,
+    },
+
     /// Side-by-side fundamentals for two or more tickers.
     #[command(
         after_help = "Examples:\n  idx stocks compare BBCA BBRI BMRI BBNI\n  idx -o json stocks compare TLKM,ISAT,EXCL | jq '.data[].valuation.pe_trailing'"
@@ -138,6 +199,70 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
         StocksCmd::Fundamental { symbol } => fundamental(ctx, &symbol).await,
         StocksCmd::Technical { symbol, period } => technical(ctx, &symbol, period).await,
         StocksCmd::Compare { symbols } => compare(ctx, &symbols).await,
+        StocksCmd::Screen {
+            filter,
+            sort,
+            asc,
+            limit,
+            max_fundamentals,
+            fundamentals,
+            universe,
+        } => {
+            let filters = parse_filters(&filter)?;
+            let Some(sort_key) = Key::parse(&sort) else {
+                return Err(IdxError::Usage(format!(
+                    "unknown sort key {sort:?}; use one of {}",
+                    Key::ALL
+                )));
+            };
+            let mut list = universe::load(universe.as_deref())?;
+            universe::extend_from_ownership(&mut list, &ctx.settings.ownership_db);
+            let opts = ScreenOptions {
+                filters,
+                sort: sort_key,
+                descending: !asc,
+                limit,
+                max_fundamentals,
+                with_fundamentals: fundamentals,
+            };
+            let result = service::screen(ctx.provider.as_ref(), &list, &opts).await?;
+            if ctx.json() {
+                let env = Envelope::from_sourced(SCHEMA_SCREEN, result);
+                return output::print_stdout(&output::json::to_pretty(&env)?);
+            }
+            notices(ctx, &result);
+            output::print_stdout(&newstbl::screen(&result.data, ctx.color))
+        }
+        StocksCmd::News {
+            symbol,
+            source,
+            limit,
+        } => {
+            let sym = symbol.map(|s| Symbol::parse(&s)).transpose()?;
+            let list = universe::load(None).unwrap_or_default();
+            let result = service::news(&ctx.fetcher, &list, sym.as_ref(), &source, limit).await?;
+            if ctx.json() {
+                let env = Envelope::from_sourced(SCHEMA_NEWS, result);
+                return output::print_stdout(&output::json::to_pretty(&env)?);
+            }
+            notices(ctx, &result);
+            output::print_stdout(&newstbl::news(&result.data, ctx.color))
+        }
+        StocksCmd::Sentiment {
+            symbol,
+            source,
+            limit,
+        } => {
+            let sym = Symbol::parse(&symbol)?;
+            let list = universe::load(None).unwrap_or_default();
+            let result = service::sentiment(&ctx.fetcher, &list, &sym, &source, limit).await?;
+            if ctx.json() {
+                let env = Envelope::from_sourced(SCHEMA_SENTIMENT, result);
+                return output::print_stdout(&output::json::to_pretty(&env)?);
+            }
+            notices(ctx, &result);
+            output::print_stdout(&newstbl::sentiment(&result.data, ctx.color))
+        }
     }
 }
 

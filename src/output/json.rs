@@ -7,7 +7,8 @@ use serde::Serialize;
 use crate::error::{IdxError, Result};
 use crate::model::{
     ChangesReport, DiscoveredFile, Earnings, EntityReport, Financials, Fundamentals, History,
-    HoldersReport, ImportReport, Profile, Quote, Release, Technical,
+    HoldersReport, ImportReport, NewsReport, Profile, Quote, Release, ScreenReport,
+    SentimentReport, Technical,
 };
 use crate::providers::Sourced;
 
@@ -53,6 +54,9 @@ pub const SCHEMA_COMPARE: &str = "idx.compare.v1";
 pub const SCHEMA_FINANCIALS: &str = "idx.financials.v1";
 pub const SCHEMA_EARNINGS: &str = "idx.earnings.v1";
 pub const SCHEMA_TECHNICAL: &str = "idx.technical.v1";
+pub const SCHEMA_SCREEN: &str = "idx.screen.v1";
+pub const SCHEMA_NEWS: &str = "idx.news.v1";
+pub const SCHEMA_SENTIMENT: &str = "idx.sentiment.v1";
 pub const SCHEMA_OWNERSHIP_HOLDERS: &str = "idx.ownership.holders.v1";
 pub const SCHEMA_OWNERSHIP_ENTITY: &str = "idx.ownership.entity.v1";
 pub const SCHEMA_OWNERSHIP_CHANGES: &str = "idx.ownership.changes.v1";
@@ -68,6 +72,9 @@ pub type CompareEnvelope = Envelope<Vec<Fundamentals>>;
 pub type FinancialsEnvelope = Envelope<Financials>;
 pub type EarningsEnvelope = Envelope<Earnings>;
 pub type TechnicalEnvelope = Envelope<Technical>;
+pub type ScreenEnvelope = Envelope<ScreenReport>;
+pub type NewsEnvelope = Envelope<NewsReport>;
+pub type SentimentEnvelope = Envelope<SentimentReport>;
 pub type OwnershipHoldersEnvelope = Envelope<HoldersReport>;
 pub type OwnershipEntityEnvelope = Envelope<EntityReport>;
 pub type OwnershipChangesEnvelope = Envelope<ChangesReport>;
@@ -118,6 +125,9 @@ pub fn schema_names() -> &'static [&'static str] {
         "financials",
         "earnings",
         "technical",
+        "screen",
+        "news",
+        "sentiment",
         "ownership-holders",
         "ownership-entity",
         "ownership-changes",
@@ -140,6 +150,9 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "financials" => schemars::schema_for!(FinancialsEnvelope),
         "earnings" => schemars::schema_for!(EarningsEnvelope),
         "technical" => schemars::schema_for!(TechnicalEnvelope),
+        "screen" => schemars::schema_for!(ScreenEnvelope),
+        "news" => schemars::schema_for!(NewsEnvelope),
+        "sentiment" => schemars::schema_for!(SentimentEnvelope),
         "ownership-holders" => schemars::schema_for!(OwnershipHoldersEnvelope),
         "ownership-entity" => schemars::schema_for!(OwnershipEntityEnvelope),
         "ownership-changes" => schemars::schema_for!(OwnershipChangesEnvelope),

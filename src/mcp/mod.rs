@@ -18,6 +18,7 @@ use rmcp::{schemars, tool, tool_handler, tool_router, ErrorData as McpError, Ser
 use serde::Deserialize;
 
 use crate::error::{IdxError, Result};
+use crate::http::Fetcher;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     self, Envelope, ErrorEnvelope, SCHEMA_COMPARE, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
@@ -25,9 +26,11 @@ use crate::output::json::{
     SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES, SCHEMA_PROFILE, SCHEMA_QUOTES,
     SCHEMA_TECHNICAL,
 };
+use crate::output::json::{SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT};
 use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
 use crate::service;
+use crate::universe;
 
 const INSTRUCTIONS: &str = "\
 idx: Indonesian stock market (IDX / IHSG) data and analysis from free public sources.
@@ -121,9 +124,46 @@ pub struct OwnershipChangesArgs {
     pub limit: Option<u32>,
 }
 
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct ScreenArgs {
+    /// Comma-separated clauses such as "pe<15,roe>15,sector=financial,mcap>10T". Keys: pe fpe pb ps peg mcap price div eps volume chg roe roa margin opmargin de growth epsgrowth sector industry. Operators < <= > >= = !=; numbers accept K/M/B/T and %.
+    pub filter: String,
+    /// Sort key (any filter key), default mcap, descending.
+    #[serde(default)]
+    pub sort: Option<String>,
+    /// Rows returned (default 25, 0 = all).
+    #[serde(default)]
+    pub limit: Option<u32>,
+    /// Cap on per-company fundamentals fetches when a filter needs them (default 50).
+    #[serde(default)]
+    pub max_fundamentals: Option<u32>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct NewsArgs {
+    /// Optional IDX ticker; omit for general market headlines.
+    #[serde(default)]
+    pub symbol: Option<String>,
+    /// Publisher names: kontan, cnbcindonesia, bisnis, all (default: kontan + cnbcindonesia).
+    #[serde(default)]
+    pub sources: Option<Vec<String>>,
+    /// Headlines returned (default 20, 0 = all).
+    #[serde(default)]
+    pub limit: Option<u32>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct SentimentArgs {
+    /// One IDX ticker.
+    pub symbol: String,
+    #[serde(default)]
+    pub sources: Option<Vec<String>>,
+}
+
 #[derive(Clone)]
 pub struct IdxServer {
     provider: Arc<dyn Provider>,
+    fetcher: Arc<Fetcher>,
     ownership_db: PathBuf,
     tool_router: ToolRouter<IdxServer>,
 }
@@ -164,9 +204,10 @@ fn parse_opt<T: std::str::FromStr<Err = IdxError>>(v: &Option<String>, default: 
 
 #[tool_router]
 impl IdxServer {
-    pub fn new(provider: Arc<dyn Provider>, ownership_db: PathBuf) -> Self {
+    pub fn new(provider: Arc<dyn Provider>, fetcher: Arc<Fetcher>, ownership_db: PathBuf) -> Self {
         IdxServer {
             provider,
+            fetcher,
             ownership_db,
             tool_router: Self::tool_router(),
         }
@@ -356,6 +397,102 @@ impl IdxServer {
     }
 
     #[tool(
+        name = "idx_screen",
+        description = "Screens the IDX universe (~950 tickers) with a filter string such as \"pe<15,roe>15,sector=financial,mcap>10T\". Quote-level keys (pe fpe pb mcap price div eps volume chg) come from one batch quote; fundamentals keys (roe roa margin opmargin de growth epsgrowth peg ps sector industry) are fetched per company for the largest max_fundamentals survivors. Returns the idx.screen.v1 envelope with counts explaining how many tickers each stage kept."
+    )]
+    async fn screen(
+        &self,
+        Parameters(a): Parameters<ScreenArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let filters = crate::analysis::screen::parse_filters(&a.filter)?;
+                let sort = match a.sort.as_deref().map(str::trim).filter(|s| !s.is_empty()) {
+                    None => crate::analysis::screen::Key::Mcap,
+                    Some(s) => crate::analysis::screen::Key::parse(s).ok_or_else(|| {
+                        IdxError::Usage(format!(
+                            "unknown sort key {s:?}; use one of {}",
+                            crate::analysis::screen::Key::ALL
+                        ))
+                    })?,
+                };
+                let mut list = universe::load(None)?;
+                universe::extend_from_ownership(&mut list, &self.ownership_db);
+                let opts = service::ScreenOptions {
+                    filters,
+                    sort,
+                    descending: true,
+                    limit: a.limit.unwrap_or(25) as usize,
+                    max_fundamentals: a.max_fundamentals.unwrap_or(50) as usize,
+                    with_fundamentals: false,
+                };
+                ok(
+                    SCHEMA_SCREEN,
+                    service::screen(self.provider.as_ref(), &list, &opts).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_news",
+        description = "Latest Indonesian finance headlines from Kontan and CNBC Indonesia RSS feeds, optionally filtered to one IDX ticker (matched by ticker or company name), each with a lexicon sentiment score and the matched terms. Returns the idx.news.v1 envelope."
+    )]
+    async fn news(
+        &self,
+        Parameters(a): Parameters<NewsArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let sym = a
+                    .symbol
+                    .as_deref()
+                    .map(str::trim)
+                    .filter(|s| !s.is_empty())
+                    .map(Symbol::parse)
+                    .transpose()?;
+                let list = universe::load(None).unwrap_or_default();
+                let sources = a.sources.unwrap_or_default();
+                ok(
+                    SCHEMA_NEWS,
+                    service::news(
+                        &self.fetcher,
+                        &list,
+                        sym.as_ref(),
+                        &sources,
+                        a.limit.unwrap_or(20) as usize,
+                    )
+                    .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_sentiment",
+        description = "Aggregate lexicon sentiment (positive | negative | neutral | no_coverage, score -1..+1) over current headlines mentioning one IDX ticker, with counts, top terms and the strongest headlines. Indicative only. Returns the idx.sentiment.v1 envelope."
+    )]
+    async fn sentiment(
+        &self,
+        Parameters(a): Parameters<SentimentArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let sym = Symbol::parse(&a.symbol)?;
+                let list = universe::load(None).unwrap_or_default();
+                let sources = a.sources.unwrap_or_default();
+                ok(
+                    SCHEMA_SENTIMENT,
+                    service::sentiment(&self.fetcher, &list, &sym, &sources, 10).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
         name = "idx_ownership_ticker",
         description = "Shareholders above 1% of one IDX ticker from KSEI's monthly register (local SQLite): holder name, investor type, local/foreign, shares, percent, sorted by percent. Returns the idx.ownership.holders.v1 envelope. Needs a prior `idx ownership import`."
     )]
@@ -459,9 +596,13 @@ impl ServerHandler for IdxServer {
 }
 
 /// Runs the server on stdin/stdout until the client disconnects.
-pub async fn serve(provider: Arc<dyn Provider>, ownership_db: PathBuf) -> Result<()> {
+pub async fn serve(
+    provider: Arc<dyn Provider>,
+    fetcher: Arc<Fetcher>,
+    ownership_db: PathBuf,
+) -> Result<()> {
     use rmcp::{transport::stdio, ServiceExt};
-    let server = IdxServer::new(provider, ownership_db);
+    let server = IdxServer::new(provider, fetcher, ownership_db);
     tracing::info!(tools = ?server.tool_names(), "idx mcp server starting on stdio");
     let running = server
         .serve(stdio())
@@ -508,7 +649,12 @@ mod tests {
 
     fn server() -> IdxServer {
         let dir = std::env::temp_dir().join(format!("idx-mcp-test-{}", std::process::id()));
-        IdxServer::new(Arc::new(Fake), dir.join("ownership.sqlite"))
+        let fetcher = Arc::new(Fetcher::new(
+            Arc::new(crate::http::FixtureBackend::new()),
+            crate::cache::Cache::new(dir.join("cache")),
+            crate::http::CacheMode::Offline,
+        ));
+        IdxServer::new(Arc::new(Fake), fetcher, dir.join("ownership.sqlite"))
     }
 
     fn text(r: &CallToolResult) -> String {
@@ -531,12 +677,15 @@ mod tests {
                 "idx_financials",
                 "idx_fundamental",
                 "idx_history",
+                "idx_news",
                 "idx_ownership_changes",
                 "idx_ownership_entity",
                 "idx_ownership_releases",
                 "idx_ownership_ticker",
                 "idx_profile",
                 "idx_quote",
+                "idx_screen",
+                "idx_sentiment",
                 "idx_technical",
             ]
         );

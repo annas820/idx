@@ -241,6 +241,46 @@ fn new_stock_commands_have_help_and_fail_offline_cleanly() {
 }
 
 #[test]
+fn screen_news_sentiment_surface() {
+    let sb = sandbox();
+    for (args, needle) in [
+        (vec!["stocks", "screen", "--help"], "Keys: pe fpe pb"),
+        (vec!["stocks", "news", "--help"], "Sources: kontan"),
+        (vec!["stocks", "sentiment", "--help"], "Indonesian and English"),
+    ] {
+        idx(&sb.cache, &sb.config)
+            .args(&args)
+            .assert()
+            .success()
+            .stdout(predicate::str::contains(needle));
+    }
+    // Filter syntax errors are usage errors, before any network.
+    idx(&sb.cache, &sb.config)
+        .args(["stocks", "screen", "-f", "pe 15"])
+        .assert()
+        .code(2)
+        .stderr(predicate::str::contains("operator"));
+    idx(&sb.cache, &sb.config)
+        .args(["stocks", "screen", "-f", "pe<15", "--sort", "nope"])
+        .assert()
+        .code(2);
+    idx(&sb.cache, &sb.config)
+        .args(["stocks", "news", "--source", "detik"])
+        .assert()
+        .code(2);
+    // Offline with nothing cached: screen is an offline miss, news reports no readable feed.
+    idx(&sb.cache, &sb.config)
+        .args(["--offline", "stocks", "screen", "-f", "pe<15"])
+        .assert()
+        .code(5);
+    idx(&sb.cache, &sb.config)
+        .args(["--offline", "-o", "json", "stocks", "news", "BBCA"])
+        .assert()
+        .code(3)
+        .stderr(predicate::str::contains("not cached"));
+}
+
+#[test]
 fn msn_provider_is_selectable() {
     let sb = sandbox();
     // --provider msn is accepted; offline with no cache -> exit 5 like Yahoo.

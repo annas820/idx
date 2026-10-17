@@ -231,6 +231,22 @@ impl OwnershipDb {
         })
     }
 
+    /// Every issuer code seen in any release, with the latest name on file.
+    pub fn issuers(&self) -> Result<Vec<(String, Option<String>)>> {
+        let mut st = self
+            .conn
+            .prepare(
+                "SELECT symbol, MAX(issuer_name) FROM holdings GROUP BY symbol ORDER BY symbol",
+            )
+            .map_err(db_err)?;
+        let rows = st
+            .query_map([], |row| Ok((row.get(0)?, row.get(1)?)))
+            .map_err(db_err)?
+            .collect::<std::result::Result<Vec<_>, _>>()
+            .map_err(db_err)?;
+        Ok(rows)
+    }
+
     pub fn releases(&self) -> Result<Vec<Release>> {
         let mut st = self
             .conn

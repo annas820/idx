@@ -27,5 +27,6 @@ pub mod output;
 pub mod ownership;
 pub mod providers;
 pub mod service;
+pub mod universe;
 
 pub use error::{IdxError, Result};

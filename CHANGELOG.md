@@ -18,6 +18,16 @@ All notable changes to this project are documented here. The format follows
 - `idx schema <name>`: JSON Schema for every JSON shape.
 - Local response cache with per-endpoint TTL, `--offline`, `--no-cache`, and
   `idx cache stats|clear|path`.
+- `stocks screen --filter "pe<15,roe>15,sector=financial"`: screener over the
+  bundled IDX universe (955 issuers, `data/universe.csv`). Quote-level keys
+  come from batched Yahoo quotes; fundamentals keys from per-company calls
+  capped at `--max-fundamentals` (largest first). Reports how many tickers
+  each stage kept.
+- `stocks news [SYMBOL]` and `stocks sentiment SYMBOL`: Kontan and CNBC
+  Indonesia RSS feeds, ticker/company-name matching, transparent lexicon
+  sentiment (terms are listed). Bisnis.com is opt-in because it blocks
+  non-browser clients.
+- MCP tools `idx_screen`, `idx_news`, `idx_sentiment`.
 - `ownership import|ticker|entity|changes|releases|discover|path`: KSEI's
   monthly "Pemegang Saham di Atas 1%" register parsed from the IDX XLSX (or
   the older PDF text layer) into local SQLite, with entity-name normalisation
