@@ -128,6 +128,20 @@ set +e
 set -e
 [ "$code" = 4 ] && pass "unknown broker ticker exits 4" || fail "unknown broker ticker exit $code"
 
+echo "bandar (ipot + yahoo)"
+"$IDX" -o json bandar detect BBCA --daily >"$TMP/bd.json" || fail "bandar detect json"
+expect "$TMP/bd.json" '"schema": "idx.bandar.v1"' "bandar json schema"
+expect "$TMP/bd.json" '"signal": "' "bandar reading has a signal"
+expect "$TMP/bd.json" '"bandar_average":' "bandar reading has the top buyers' average"
+expect "$TMP/bd.json" '"streak":' "bandar --daily has the session series"
+"$IDX" bandar detect BBRI TLKM --period 1m --top 3 >"$TMP/bd.txt" || fail "bandar detect table"
+expect "$TMP/bd.txt" "Net by tier" "bandar table has its reasons"
+"$IDX" -o json bandar screen --preset accumulation --scan 20 >"$TMP/bs.json" || fail "bandar screen json"
+expect "$TMP/bs.json" '"schema": "idx.bandar.screen.v1"' "bandar screen json schema"
+expect "$TMP/bs.json" '"scanned": 20' "bandar screen scanned the 20 most traded"
+"$IDX" bandar screen --preset big-distribution --period 1d --symbols BBCA,BBRI,TLKM >"$TMP/bs.txt" || fail "bandar screen table"
+expect "$TMP/bs.txt" "Bandar screen · big-distribution" "bandar screen table header"
+
 echo "ownership (local fixture)"
 export IDX_OWNERSHIP_DB="$TMP/own.sqlite"
 "$IDX" ownership import --file tests/fixtures/ownership/above1_20260831_excerpt.xlsx >"$TMP/oi.txt" || fail "ownership import"
