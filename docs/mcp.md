@@ -279,7 +279,7 @@ per agent (`-e IDX_PROVIDER=yahoo` in the CLI forms, `env` in the files).
 ## HTTP transport
 
 `idx mcp --http ADDR` serves MCP streamable HTTP at `http://ADDR/mcp` and a
-plain `GET /healthz`. It is the same server and the same 21 tools; several
+plain `GET /healthz`. It is the same server and the same 23 tools; several
 local agents can share one process and one cache this way.
 
 - `--token T` (or `IDX_MCP_TOKEN`) requires `Authorization: Bearer T` on
@@ -311,6 +311,8 @@ local agents can share one process and one cache this way.
 | `idx_news` | `symbol?`, `sources?`, `limit?`, `company_only?` | `idx.news.v1`: company items first (`scope=company`), then market context |
 | `idx_sentiment` | `symbol`, `sources?` | `idx.sentiment.v1` |
 | `idx_broker` | `symbols`, `date?` or `from?`/`to?`, `investor?` (`all` \| `foreign` \| `domestic`), `board?` (`all` \| `regular` \| `cash` \| `negotiated`) | `idx.broker.v1`: top 10 buyers and sellers (ranked by lots) with broker names and class, totals, foreign net; latest session with trades when no dates are given |
+| `idx_bandar` | `symbols`, `period?` (`1d` \| `1w` default \| `1m` \| `3m`), `date?` or `from?`/`to?`, `top?` (1, 3, 5 default, 10), `investor?`, `board?`, `daily?` | `idx.bandar.v1`: bandarmology per ticker: top-N net as a share of value, signal and phase, tiers, the top buyers' average against the price, foreign flow, reasons; `daily` adds the session series |
+| `idx_bandar_screen` | `preset?`, `filter?`, `period?`, `top?`, `sort?`, `ascending?`, `limit?`, `scan?` (default 100), `symbols?` | `idx.bandar.screen.v1`: the most traded stocks the top brokers accumulate or distribute |
 | `idx_ownership_ticker` | `symbol`, `as_of?` | `idx.ownership.holders.v1` |
 | `idx_ownership_entity` | `name`, `as_of?` | `idx.ownership.entity.v1` |
 | `idx_ownership_changes` | `from`, `to`, `symbol?`, `min_pct_change?`, `limit?`, `offset?` | `idx.ownership.changes.v1`: `summary` over every match, one page of rows |

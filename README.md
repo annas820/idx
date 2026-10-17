@@ -52,8 +52,8 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
 
 - **Free data, no keys.** Yahoo Finance and MSN Money for prices and
   fundamentals, IDX's monthly KSEI register for ownership, Indo Premier's
-  broker summary for who bought and sold, Kontan and CNBC Indonesia feeds for
-  news. Every source sits behind a `Provider` trait, so
+  broker summary for who bought and sold (read as bandarmology by `idx bandar`),
+  Kontan and CNBC Indonesia feeds for news. Every source sits behind a `Provider` trait, so
   one breaking does not take the tool down, and `auto` fills gaps in one
   source's fundamentals from the other.
 - **Built for agents.** `-o json` emits a stable, schema-documented envelope
@@ -123,13 +123,15 @@ idx completions powershell | Out-String | Invoke-Expression
 | `ownership ticker <SYMBOL> [--as-of D]` | Holders above 1 % of a ticker |
 | `ownership entity "<NAME>" [--as-of D]` | Every position of a person or institution, spelling variants grouped |
 | `broker <SYMBOLS> [--date D \| --from D --to D] [--investor all\|foreign\|domestic] [--board all\|regular\|cash\|negotiated]` | Broker summary: the top 10 buyers and sellers of a ticker (ranked by lots), with broker name, class (local, foreign, BUMN), lots, value and average price, plus total value and foreign net. Latest session with trades by default; `-o csv` gives one row per broker |
+| `bandar detect <SYMBOLS> [--period 1d\|1w\|1m\|3m] [--top 1\|3\|5\|10] [--daily]` | Bandarmology: are the top brokers accumulating or distributing? The top 1/3/5/10 buyers against as many sellers (bandar value and volume), net as a share of the value traded, the phase against the price move, the top buyers' average against the price, foreign flow; `--daily` adds the bandar movement session by session. See [Bandarmology](#bandarmology) |
+| `bandar screen [--preset P] [-f FILTER] [--period P] [--scan N]` | Bandarmology screener over the 100 most traded stocks by value: presets `big-accumulation`, `accumulation`, `distribution`, `big-distribution`, `quiet-accumulation`, `quiet-distribution`, `foreign-accumulation`, `below-bandar`, or filters on `acc`, `net`, `fnet`, `fpct`, `gain`, `chg`, `turnover`, `conc`, `signal`, `phase` |
 | `market overview [--top 10]` | IHSG, breadth, turnover, gainers, losers, most traded, heavyweights from one pass over the universe |
 | `ownership changes --from D --to D [--symbol S] [--min-change PP] [--limit N --offset N]` | New holders, exits and position changes between two months, paged, with a summary (counts, foreign vs local net, by investor type, issuer flow, top moves) over every match |
 | `ownership foreign [SYMBOL] [--from D --to D]` | Disclosed foreign (KSEI `A`) vs local stake: one issuer month by month, or every issuer's change between two months |
 | `watch [add\|rm\|list\|clear\|returns]` | Plain-text watchlist next to the config; `idx watch` quotes it |
 | `ownership releases\|discover\|path` | Imported months, files published on idx.co.id, database path |
-| `mcp [--http ADDR --token T]` · `mcp setup <client>` | MCP server over stdio or streamable HTTP, and the registration recipe for 25 agent harnesses. 21 tools: `idx_brief`, `idx_market`, `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_dividends`, `idx_returns`, `idx_fundamental`, `idx_technical`, `idx_compare`, `idx_screen`, `idx_news`, `idx_sentiment`, `idx_broker`, `idx_ownership_ticker`, `idx_ownership_entity`, `idx_ownership_changes`, `idx_ownership_foreign`, `idx_ownership_releases` |
-| `schema [name]` | JSON Schema for every payload (`quotes`, `history`, `profile`, `fundamentals`, `compare`, `financials`, `earnings`, `dividends`, `returns`, `market`, `brief`, `technical`, `screen`, `news`, `sentiment`, `broker`, `ownership-*`, `watchlist`, `error`, ...) |
+| `mcp [--http ADDR --token T]` · `mcp setup <client>` | MCP server over stdio or streamable HTTP, and the registration recipe for 25 agent harnesses. 23 tools: `idx_brief`, `idx_market`, `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_dividends`, `idx_returns`, `idx_fundamental`, `idx_technical`, `idx_compare`, `idx_screen`, `idx_news`, `idx_sentiment`, `idx_broker`, `idx_bandar`, `idx_bandar_screen`, `idx_ownership_ticker`, `idx_ownership_entity`, `idx_ownership_changes`, `idx_ownership_foreign`, `idx_ownership_releases` |
+| `schema [name]` | JSON Schema for every payload (`quotes`, `history`, `profile`, `fundamentals`, `compare`, `financials`, `earnings`, `dividends`, `returns`, `market`, `brief`, `technical`, `screen`, `news`, `sentiment`, `broker`, `bandar`, `bandar-screen`, `ownership-*`, `watchlist`, `error`, ...) |
 | `config init\|set\|get\|path` | Config file management |
 | `cache stats\|clear\|path` | Response cache management |
 | `completions <shell>` | bash, zsh, fish, powershell, elvish |
@@ -205,12 +207,45 @@ substitutes the absolute path, and `--npx` swaps in
 `npx -y github:fzn0x/idx mcp`). Each entry's remote (HTTP) form and the
 config file locations are in [docs/mcp.md](docs/mcp.md).
 
-The server lists 21 tools with typed input schemas kept to the subset every
+The server lists 23 tools with typed input schemas kept to the subset every
 harness accepts (no nullable type arrays, no `format` or `default` keywords)
 and one-paragraph descriptions. `idx_brief` is the one-call starting point;
 each tool returns the same envelope as `-o json`, so an agent that learned the
 CLI already knows the tools. Failures come back as tool errors carrying
 `{error: {code, message}, exit_code}`.
+
+## Bandarmology
+
+"Bandar" is market slang for the big, concentrated money that moves a stock.
+`idx bandar` reads it from the IPOT broker summary, whose top 10 buyers and
+top 10 sellers are ranked by lots. For N = 1, 3, 5 and 10 the top N buyers'
+value minus the top N sellers' value is the bandar value (in lots, the bandar
+volume); its share of all value traded is the reading, with the headline on
+the top 5 (`--top`):
+
+| Top-N net, % of value | Signal | Phase when the price over the range is... |
+|---|---|---|
+| +15 or more | `big_accumulation` | up more than 2 %: `markup`; otherwise `quiet_accumulation` |
+| +5 to +15 | `accumulation` | as above |
+| -5 to +5 | `neutral` | `neutral` |
+| -15 to -5 | `distribution` | down more than 2 %: `markdown`; otherwise `quiet_distribution` |
+| -15 or less | `big_distribution` | as above |
+
+Quiet accumulation is the usual "bandar buying quietly": concentrated buying
+while the price stalls or falls. Each reading also gives the top buyers'
+average price against the last price (`bandar_gain_pct`: below zero they sit
+under water), how much of the value the top buyers took, the foreign net
+flow, and the rules in plain words (`reasons`). `--daily` adds the session
+series with its cumulative net and streak. The thresholds were set against
+the 40 most traded stocks in October 2026, where about half of single
+sessions read neutral. They are heuristics, not advice.
+
+```sh
+idx bandar detect BBCA                         # last week, top 5 vs top 5
+idx bandar detect BBRI --period 1m --daily     # with the bandar movement
+idx bandar screen --preset quiet-accumulation  # buying while the price stalls
+idx bandar screen -f 'acc>=5,fpct>=5,gain<0'   # with foreigners, under the bandar's average
+```
 
 ## Data sources
 
@@ -221,7 +256,7 @@ CLI already knows the tools. Failures come back as tool errors carrying
 | Yahoo Finance `v10/finance/quoteSummary` | profile, fundamentals, earnings | same session | Statement modules are empty at the source, so they are not used |
 | Yahoo Finance `fundamentals-timeseries` | financials | none | Annual, quarterly and TTM statement items |
 | idx.co.id "Data Kepemilikan Saham" page + `Media/*.xlsx` | ownership (KSEI monthly register) | none, but Cloudflare bot protection | Mirrored three times a day by GitHub Actions to the [`ownership-data`](https://github.com/fzn0x/idx/releases/tag/ownership-data) release (byte-identical files, SHA-256 in `index.json`). The CLI tries idx.co.id first, then the mirror. See [docs/ownership.md](docs/ownership.md) |
-| Indo Premier (IPOT) `module/saham/include/data-brokersummary.php` | broker summary | none | Top 10 buyers and sellers per range, ranked by lots; figures of a million and more are rounded to one decimal by the source (`rounded: true`). Its nginx answers spurious 404s in bursts, so a 404 is retried with backoff. Broker names come from IDX's member list, bundled as `data/brokers.csv` |
+| Indo Premier (IPOT) `module/saham/include/data-brokersummary.php` | broker summary | none | Top 10 buyers and sellers per range, ranked by lots; figures of a million and more are rounded to one decimal by the source (`rounded: true`). Its nginx answers spurious 404s in bursts, so a 404 is retried with backoff. Broker names come from IDX's member list, bundled as `data/brokers.csv`; `bandar` computes its readings from these summaries |
 | Kontan RSS (`investasi`, `keuangan`, `industri`, `insight`) and CNBC Indonesia RSS (`market`, `research`, `news`) | news, sentiment | none | Bisnis.com refuses non-browser clients; listed as an opt-in source |
 | MSN Money `Finance/Quotes`, `Finance/Equities` | quotes, profile, fundamentals, analyst targets | MSN's own public web key (shipped; override with `IDX_MSN_API_KEY`) | Tickers resolve to MSN ids through its autosuggest service, filtered to exchange `XIDX` |
 
@@ -234,8 +269,11 @@ or Microsoft.
 **https://ihsg.midoriresearch.com/terminal** runs the same commands in a
 browser, no install: `brief BBCA`, `quote BBCA,BBRI`, `returns BBCA BBRI`,
 `screen pe<10,div>5,mcap>5T --sort div`, `news ASII`, `ownership ticker BBCA`,
-`ownership foreign`. `quote` with one symbol also draws a price chart (1D, 5D,
+`ownership foreign`, `bandar BBCA --daily`, `bandar screen --preset
+big-accumulation`. `quote` with one symbol also draws a price chart (1D, 5D,
 1M, 6M, YTD, 1Y, 5Y) with volume, the previous close and a crosshair readout.
+The web `bandar screen` reads a scan the Worker runs after each close over the
+session's 100 most traded stocks; the CLI scans live.
 A Cloudflare Worker refreshes a D1 snapshot of the whole
 IDX board every minute in trading hours and serves `/api/*` with the exact JSON
 envelopes the CLI prints; everything else is fetched on demand and cached. The

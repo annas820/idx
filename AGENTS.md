@@ -35,12 +35,14 @@ src/
     ipot/            Indo Premier broker summary (HTML fragment, parse.rs; spurious 404s retried)
   analysis/          technical.rs (indicators + signal), fundamental.rs (verdict), screen.rs (filter DSL),
                      sentiment.rs (lexicon), returns.rs (windows, CAGR, drawdown, volatility),
-                     dividends.rs (totals, TTM yield, streak); no network
+                     dividends.rs (totals, TTM yield, streak), bandar.rs (bandarmology: tiers, signal,
+                     phase, screen filters and presets); no network
   universe.rs        bundled data/universe.csv (IDX issuers) + ownership-db issuers; IDX_UNIVERSE override
   brokers.rs         bundled data/brokers.csv (IDX exchange members: code -> name)
     news/            Kontan + CNBC Indonesia RSS feeds through the Fetcher (rss crate)
   service.rs         provider call + analysis, shared by cli/ and mcp/ (fundamentals, technical, compare,
-                     screen, news ordering, returns, dividends, market_overview, brief)
+                     screen, news ordering, returns, dividends, market_overview, brief, broker, bandar,
+                     bandar_screen)
   ownership/         KSEI >1% register: discover.rs (idx.co.id page, Cloudflare strategy), mirror.rs (GitHub
                      mirror fallback), ingest.rs (XLSX/PDF), normalize.rs (entity keys), db.rs (SQLite schema
                      + queries). Imported once, queried locally.
@@ -63,7 +65,8 @@ tests/
 scripts/smoke.sh     hits live providers; run manually, never in CI's test job
 docs/                json-output.md, configuration.md, mcp.md, ownership.md
 web/                 Cloudflare Worker for ihsg.midoriresearch.com: landing page, browser terminal, D1 board;
-                     src/analysis.js and src/extras.js are JS ports of src/analysis/* tested on the same fixtures
+                     src/analysis.js, src/extras.js and src/bandar.js are JS ports of src/analysis/* tested on
+                     the same fixtures; src/bandar-scan.js is the nightly scan behind the web bandar screen
 npm/                 ihsg-cli wrapper on npm: lib/binary.js downloads + verifies the release
                      (postinstall when allowed, otherwise on first run)
 scripts/ownership_mirror.py  CI scraper behind .github/workflows/ownership.yml: mirrors the KSEI
@@ -73,7 +76,7 @@ scripts/ownership_mirror.py  CI scraper behind .github/workflows/ownership.yml: 
 CLI groups: `stocks` (quote, history, profile, financials, earnings, dividends, returns,
 fundamental, technical, brief, compare, screen, news, sentiment), `market overview`,
 `ownership` (import, ticker, entity, changes, foreign, releases, discover, path),
-`broker`, `watch`, `mcp`, `schema`, `config`, `cache`, `completions`, `version`.
+`broker`, `bandar` (detect, screen), `watch`, `mcp`, `schema`, `config`, `cache`, `completions`, `version`.
 
 ## Rules that keep the tool trustworthy
 

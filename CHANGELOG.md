@@ -14,6 +14,28 @@ All notable changes to this project are documented here. The format follows
 
 ### Added
 
+- `idx bandar detect <SYMBOLS>`: bandarmology on the broker summary. For the
+  top 1, 3, 5 and 10 buyers against as many sellers: bandar value and volume
+  (net value and lots), net as a share of the value traded and a signal
+  (`big_accumulation` at +15 %, `accumulation` at +5 %, `distribution` at
+  -5 %, `big_distribution` at -15 %), the phase against the price move
+  (`quiet_accumulation`, `markup`, `quiet_distribution`, `markdown`), the top
+  buyers' share and average price against the last price, foreign flow and
+  the reasons. `--period 1d|1w|1m|3m` (default 1w) or explicit dates, `--top`,
+  `--investor`, `--board`; `--daily` adds the session-by-session movement
+  with its cumulative net and streak. JSON schema `idx.bandar.v1`.
+- `idx bandar screen`: the bandarmology screener over the 100 most traded
+  stocks by value (`--scan`, or `--symbols`), with presets `big-accumulation`,
+  `accumulation`, `distribution`, `big-distribution`, `quiet-accumulation`,
+  `quiet-distribution`, `foreign-accumulation` and `below-bandar`, and
+  filters on `acc`, `net`, `lots`, `fnet`, `fpct`, `gain`, `chg`, `turnover`,
+  `conc`, `price`, `signal` and `phase`. JSON schema `idx.bandar.screen.v1`.
+- MCP tools `idx_bandar` and `idx_bandar_screen` (23 tools now).
+- Web: `/api/bandar`, `/api/bandar/screen` and `bandar` / `bandar screen` in
+  the terminal. The web screen reads a scan the Worker's cron runs after each
+  close (from 16:45 WIB) over the session's 100 most traded stocks, a few per
+  minute, into D1 (`migrations/0003_bandar.sql`); `/api/bandar/status` shows
+  its progress.
 - Web terminal: `quote` with a single symbol draws a price chart under the
   table, with ranges 1D, 5D, 1M, 6M, YTD, 1Y and 5Y, a volume strip, the
   previous close on 1D and a crosshair readout of each candle (pointer, touch

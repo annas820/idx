@@ -153,6 +153,47 @@ per broker or estimated. A range without trades has empty lists and a warning.
 With `-o csv` the rows are one broker per side: `symbol, from, to, investor,
 board, side (buy|sell), rank, code, name, kind, lots, value, average_price`.
 
+## `idx.bandar.v1` (`bandar detect`)
+
+Array, one reading per requested ticker, derived from the IPOT broker summary
+(see `idx.broker.v1`) and the price; the rules are in `src/analysis/bandar.rs`.
+`symbol`, `name`, `period` (`1d` | `1w` | `1m` | `3m`, or `custom` for
+explicit dates), `from`, `to`, `investor`, `board`, `top` (N behind the
+headline: 1, 3, 5 or 10), `signal` (`big_accumulation` | `accumulation` |
+`neutral` | `distribution` | `big_distribution`: top-N net at +15 %, +5 %,
+-5 %, -15 % of value), `phase` (`quiet_accumulation` | `markup` |
+`quiet_distribution` | `markdown` | `neutral`, `null` without a price move),
+`net_value` (IDR), `net_lots` and `net_pct` (of value) of the top-N tier,
+`price` (last price of the final session: the quote's when the range ends on
+the quote's session, otherwise the close), `price_change_pct` (from the close
+before `from`), `bandar_average` (volume-weighted average of the top-N
+buyers) and `bandar_gain_pct` (`price` against it), `total_value`,
+`total_lots`, `foreign_net_value`, `foreign_net_pct`, `tiers[]` (one per N in
+1, 3, 5, 10: `top`, `buy_value`, `sell_value`, `net_value`, `buy_lots`,
+`sell_lots`, `net_lots`, `net_pct`, `buy_share_pct`, `sell_share_pct`,
+`buy_average`, `sell_average`, `signal`), `buyers[]` and `sellers[]` (the
+top N, shaped as in `idx.broker.v1`), `daily` (`null` unless `--daily`:
+`days[]` of `date`, `total_value`, `net_value`, `net_pct`, `signal`,
+`cumulative_net_value`, `foreign_net_value`, then `accumulation_days`,
+`distribution_days`, `neutral_days`, `streak` (+3 = three accumulation
+sessions in a row, -2 = two distribution sessions) and
+`cumulative_net_value`), `reasons[]` and `rounded`. A range without trades
+reads `neutral` with a single reason.
+
+## `idx.bandar.screen.v1` (`bandar screen`)
+
+An object: `period`, `from`, `to`, `top`, `preset` (or `null`), `filters`
+(every clause, the preset's first), `sort`, `descending`, `scanned` (tickers
+considered: the most traded by value in the latest session, or the ones
+given), `checked` (those with trades), `total_matches` and `rows[]`: `symbol`,
+`name`, `signal`, `phase`, `net_pct`, `net_value`, `net_lots`, `price`,
+`price_change_pct`, `bandar_average`, `bandar_gain_pct`, `buy_share_pct`,
+`total_value`, `foreign_net_value`, `foreign_net_pct`, `top_buyers[]` and
+`top_sellers[]` (broker codes), `rounded`. Filter keys: `acc` (`net_pct`),
+`net`, `lots`, `fnet`, `fpct`, `gain`, `chg`, `turnover`, `conc`
+(`buy_share_pct`), `price`, `signal=`, `phase=`. With `-o csv` the rows are
+the screen rows.
+
 ## `idx.returns.v1` (`stocks returns`)
 
 Array, one `Performance` per requested ticker: `as_of`, `price`, `start`,
