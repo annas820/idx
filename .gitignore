@@ -15,3 +15,6 @@
 /.impeccable/review/
 /.impeccable/mocks/
 /.impeccable/build/
+npm/bin/idx
+npm/bin/idx.exe
+npm/bin/*.tmp
