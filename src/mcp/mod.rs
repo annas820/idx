@@ -23,7 +23,9 @@ use serde::Deserialize;
 
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
-use crate::model::{BrokerBoard, BrokerInvestor, Interval, Period, StatementPeriod, Symbol};
+use crate::model::{
+    BandarPeriod, BrokerBoard, BrokerInvestor, Interval, Period, StatementPeriod, Symbol,
+};
 use crate::output::json::{
     self, Envelope, ErrorEnvelope, SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
     SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_MARKET,
@@ -31,7 +33,10 @@ use crate::output::json::{
     SCHEMA_OWNERSHIP_FOREIGN_FLOW, SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES,
     SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
 };
-use crate::output::json::{SCHEMA_BROKER, SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT};
+use crate::output::json::{
+    SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_NEWS, SCHEMA_SCREEN,
+    SCHEMA_SENTIMENT,
+};
 use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
 use crate::service;
@@ -49,7 +54,9 @@ Every tool returns the same JSON envelope as the `idx -o json` CLI:
 not return are null; nothing is estimated. Prices are delayed as published.
 Errors return isError=true with {error:{code,message}, exit_code}; code not_found
 means the ticker is unknown, offline_miss means --offline with nothing cached.
-idx_broker shows which brokers bought and sold a ticker (IPOT broker summary).
+idx_broker shows which brokers bought and sold a ticker (IPOT broker summary);
+idx_bandar reads it as bandarmology (are the top brokers accumulating or distributing?)
+and idx_bandar_screen finds the most traded stocks they accumulate or distribute.
 Ownership tools read the local SQLite register of holders above 1% (KSEI via IDX,
 monthly); if it is empty they say so and the user must run `idx ownership import --latest`.
 Verdicts and signals are transparent rule scores, not investment advice.";
@@ -230,6 +237,67 @@ pub struct BrokerArgs {
     /// Market board: all (default), regular, cash or negotiated.
     #[serde(default)]
     pub board: Option<String>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct BandarArgs {
+    /// One or more IDX tickers (up to 10; 3 with daily), comma or space separated, e.g. "BBCA,BBRI".
+    pub symbols: String,
+    /// Look-back ending at the latest session with trades: 1d, 1w (default), 1m or 3m. Ignored with date or from/to.
+    #[serde(default)]
+    pub period: Option<String>,
+    /// One trading day, YYYY-MM-DD. Not with from/to.
+    #[serde(default)]
+    pub date: Option<String>,
+    /// Start of an explicit range, YYYY-MM-DD; the end defaults to today.
+    #[serde(default)]
+    pub from: Option<String>,
+    /// End of an explicit range, YYYY-MM-DD.
+    #[serde(default)]
+    pub to: Option<String>,
+    /// Brokers per side behind the headline signal: 1, 3, 5 (default) or 10.
+    #[serde(default)]
+    pub top: Option<u32>,
+    /// Whose trades to count: all (default), foreign or domestic.
+    #[serde(default)]
+    pub investor: Option<String>,
+    /// Market board: all (default), regular, cash or negotiated.
+    #[serde(default)]
+    pub board: Option<String>,
+    /// Add the session-by-session movement (default false; one request per session).
+    #[serde(default)]
+    pub daily: Option<bool>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct BandarScreenArgs {
+    /// Ready-made screen: big-accumulation, accumulation, distribution, big-distribution, quiet-accumulation, quiet-distribution, foreign-accumulation or below-bandar.
+    #[serde(default)]
+    pub preset: Option<String>,
+    /// Extra comma-separated clauses, combined with the preset, e.g. "acc>=5,fpct>0,gain<0". Keys: acc (top-N net, % of value), net (IDR), lots, fnet (foreign net, IDR), fpct (foreign net, % of value), gain (price vs top buyers' average, %), chg (price move, %), turnover, conc (top buyers' share of value, %), price, signal=..., phase=...
+    #[serde(default)]
+    pub filter: Option<String>,
+    /// Look-back ending at the latest session: 1d, 1w (default), 1m or 3m.
+    #[serde(default)]
+    pub period: Option<String>,
+    /// Brokers per side: 1, 3, 5 (default) or 10.
+    #[serde(default)]
+    pub top: Option<u32>,
+    /// Sort key (any numeric filter key), default acc.
+    #[serde(default)]
+    pub sort: Option<String>,
+    /// Sort ascending; the distribution presets default to it.
+    #[serde(default)]
+    pub ascending: Option<bool>,
+    /// Rows returned (default 25, 0 = all).
+    #[serde(default)]
+    pub limit: Option<u32>,
+    /// How many of the most traded stocks to scan (default 100, at most 300).
+    #[serde(default)]
+    pub scan: Option<u32>,
+    /// Scan these tickers instead of the most traded, comma or space separated.
+    #[serde(default)]
+    pub symbols: Option<String>,
 }
 
 #[derive(Clone)]
@@ -665,6 +733,111 @@ impl IdxServer {
     }
 
     #[tool(
+        name = "idx_bandar",
+        description = "Bandarmology (bandar detector) for one or more IDX tickers, from the IPOT broker summary: are the top brokers accumulating or distributing? For N = 1, 3, 5 and 10 the top N buyers' value minus the top N sellers' value (bandar value; in lots bandar volume) as a percent of all value traded: +15% or more big_accumulation, +5% accumulation, -5% distribution, -15% or less big_distribution, otherwise neutral. The headline signal uses top (default 5). phase reads it against the price move over the range (accumulation with the price within +2% = quiet_accumulation, distribution with the price within -2% = quiet_distribution, else markup/markdown). bandar_average is the top buyers' average price and bandar_gain_pct the last price against it; foreign_net_pct the foreign flow. Default period 1w ending at the latest session; daily=true adds the session-by-session movement and streak. reasons explain the reading. Heuristic, not advice. Returns the idx.bandar.v1 envelope; failed tickers are listed in warnings."
+    )]
+    async fn bandar(
+        &self,
+        Parameters(a): Parameters<BandarArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbols = Symbol::parse_list([a.symbols.as_str()])?;
+                let date = parse_date(&a.date)?;
+                let (from, to) = match date {
+                    Some(d) if a.from.is_some() || a.to.is_some() => {
+                        return Err(IdxError::Usage(format!(
+                            "use date ({d}) or from/to, not both"
+                        )))
+                    }
+                    Some(d) => (Some(d), Some(d)),
+                    None => (parse_date(&a.from)?, parse_date(&a.to)?),
+                };
+                let query = service::BandarQuery {
+                    period: parse_opt(&a.period, BandarPeriod::Week1)?,
+                    from,
+                    to,
+                    top: a.top.unwrap_or(crate::analysis::bandar::DEFAULT_TOP),
+                    investor: parse_opt(&a.investor, BrokerInvestor::All)?,
+                    board: parse_opt(&a.board, BrokerBoard::All)?,
+                    daily: a.daily.unwrap_or(false),
+                };
+                let list = universe::load(None).unwrap_or_default();
+                ok(
+                    SCHEMA_BANDAR,
+                    service::bandar(
+                        self.provider.as_ref(),
+                        &self.fetcher,
+                        &list,
+                        &symbols,
+                        query,
+                        service::today_wib(),
+                    )
+                    .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_bandar_screen",
+        description = "Bandarmology screener: scans the most traded IDX stocks by value (default 100, or the given symbols) over a period ending at the latest session and returns the ones whose top brokers accumulate or distribute, as defined by idx_bandar. Presets: big-accumulation (acc>=15), accumulation (acc>=5), distribution (acc<=-5), big-distribution (acc<=-15), quiet-accumulation (top brokers buying while the price is flat or down), quiet-distribution, foreign-accumulation (acc>=5 and foreign net >=5% of value), below-bandar (accumulation with the price under the top buyers' average). filter adds clauses on acc, net, lots, fnet, fpct, gain, chg, turnover, conc, price, signal, phase. Rows carry signal, phase, net_pct, net_value, price move, foreign flow, bandar average and gain, and the top buyer codes. One broker-summary request per scanned stock (cached). Heuristic, not advice. Returns the idx.bandar.screen.v1 envelope."
+    )]
+    async fn bandar_screen(
+        &self,
+        Parameters(a): Parameters<BandarScreenArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let preset = match a.preset.as_deref().map(str::trim).filter(|s| !s.is_empty()) {
+                    Some(p) => Some(p.parse::<crate::analysis::bandar::Preset>()?),
+                    None => None,
+                };
+                let symbols = match a
+                    .symbols
+                    .as_deref()
+                    .map(str::trim)
+                    .filter(|s| !s.is_empty())
+                {
+                    Some(s) => Symbol::parse_list([s])?,
+                    None => Vec::new(),
+                };
+                let opts = service::BandarScreenOptions {
+                    period: parse_opt(&a.period, BandarPeriod::Week1)?,
+                    top: a.top.unwrap_or(crate::analysis::bandar::DEFAULT_TOP),
+                    preset,
+                    filters: crate::analysis::bandar::parse_filters(
+                        a.filter.as_deref().unwrap_or(""),
+                    )?,
+                    sort: crate::analysis::bandar::parse_sort(a.sort.as_deref())?,
+                    descending: a.ascending.map(|asc| !asc),
+                    limit: a.limit.unwrap_or(25) as usize,
+                    scan: a
+                        .scan
+                        .map(|n| n as usize)
+                        .unwrap_or(service::BANDAR_SCAN_DEFAULT),
+                    symbols,
+                };
+                let mut list = universe::load(None)?;
+                universe::extend_from_ownership(&mut list, &self.ownership_db);
+                ok(
+                    SCHEMA_BANDAR_SCREEN,
+                    service::bandar_screen(
+                        self.provider.as_ref(),
+                        &self.fetcher,
+                        &list,
+                        &opts,
+                        service::today_wib(),
+                    )
+                    .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
         name = "idx_news",
         description = "Latest Indonesian finance headlines from Kontan and CNBC Indonesia RSS feeds. With a symbol, headlines that mention the company (scope=company, matched by ticker or name) come first, followed by general market headlines (scope=market) up to limit; company_matches says how many company items exist. Each item carries a lexicon sentiment score and the matched terms. Returns the idx.news.v1 envelope."
     )]
@@ -956,6 +1129,8 @@ mod tests {
         assert_eq!(
             names,
             [
+                "idx_bandar",
+                "idx_bandar_screen",
                 "idx_brief",
                 "idx_broker",
                 "idx_compare",
@@ -1097,6 +1272,64 @@ mod tests {
             .unwrap();
         let v: serde_json::Value = serde_json::from_str(&text(&r)).unwrap();
         assert_eq!(v["error"]["code"], "offline_miss");
+    }
+
+    #[tokio::test]
+    async fn bandar_tools_check_their_arguments_before_fetching() {
+        let s = server();
+        let detect = |period: Option<&str>,
+                      top: Option<u32>,
+                      date: Option<&str>,
+                      from: Option<&str>| BandarArgs {
+            symbols: "BBCA".into(),
+            period: period.map(Into::into),
+            date: date.map(Into::into),
+            from: from.map(Into::into),
+            to: None,
+            top,
+            investor: None,
+            board: None,
+            daily: None,
+        };
+        for bad in [
+            detect(Some("2w"), None, None, None),
+            detect(None, Some(4), None, None),
+            detect(None, None, Some("2026-10-16"), Some("2026-10-01")),
+        ] {
+            let r = s.bandar(Parameters(bad)).await.unwrap();
+            assert_eq!(r.is_error, Some(true));
+            let v: serde_json::Value = serde_json::from_str(&text(&r)).unwrap();
+            assert_eq!(v["error"]["code"], "usage", "{v}");
+        }
+        let r = s
+            .bandar(Parameters(detect(Some("1m"), Some(3), None, None)))
+            .await
+            .unwrap();
+        let v: serde_json::Value = serde_json::from_str(&text(&r)).unwrap();
+        assert_eq!(v["error"]["code"], "offline_miss", "{v}");
+
+        let screen =
+            |preset: Option<&str>, filter: Option<&str>, sort: Option<&str>| BandarScreenArgs {
+                preset: preset.map(Into::into),
+                filter: filter.map(Into::into),
+                period: None,
+                top: None,
+                sort: sort.map(Into::into),
+                ascending: None,
+                limit: None,
+                scan: None,
+                symbols: Some("BBCA".into()),
+            };
+        for bad in [
+            screen(Some("bandar-everything"), None, None),
+            screen(None, Some("pe<10"), None),
+            screen(None, None, Some("signal")),
+        ] {
+            let r = s.bandar_screen(Parameters(bad)).await.unwrap();
+            assert_eq!(r.is_error, Some(true));
+            let v: serde_json::Value = serde_json::from_str(&text(&r)).unwrap();
+            assert_eq!(v["error"]["code"], "usage", "{v}");
+        }
     }
 
     #[tokio::test]
