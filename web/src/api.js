@@ -4,6 +4,7 @@
 
 import * as y from "./yahoo.js";
 import * as an from "./analysis.js";
+import * as ex from "./extras.js";
 import UNIVERSE from "./universe.json" with { type: "json" };
 
 const NAME_BY_SYMBOL = new Map(UNIVERSE.map(([s, n]) => [s, n]));
@@ -27,7 +28,9 @@ export function envelope(schema, data, { provider: p = "yahoo", fetched_at = new
 export function parseSymbol(raw) {
   const s = String(raw || "").trim().toUpperCase().replace(/\.JK$/, "");
   if (!s) throw usage("empty symbol");
-  if (s.length > 12 || !/^[A-Z0-9-]+$/.test(s)) throw usage(`invalid symbol "${raw}": expected an IDX ticker like BBCA`);
+  // Index codes keep their caret (^JKSE is IHSG), like the CLI's Symbol::parse.
+  const body = s.startsWith("^") ? s.slice(1) : s;
+  if (!body || body.length > 12 || !/^[A-Z0-9-]+$/.test(body)) throw usage(`invalid symbol "${raw}": expected an IDX ticker like BBCA`);
   return s;
 }
 export function parseSymbols(raw) {
@@ -122,7 +125,7 @@ export async function market(env) {
   const byValue = [...quotes].sort((a, c) => ((c.volume || 0) * (c.price || 0)) - ((a.volume || 0) * (a.price || 0)));
   const ticks = await env.DB.prepare("SELECT ts, price FROM ticks WHERE symbol = '^JKSE' AND ts >= ?1 ORDER BY ts")
     .bind(Math.floor(Date.now() / 1000) - 2 * 86400).all();
-  const trim = (q) => ({ symbol: q.symbol, name: q.name, price: q.price, change: q.change, change_pct: q.change_pct, volume: q.volume, market_cap: q.market_cap });
+  const trim = (q) => ({ symbol: q.symbol, name: q.name, price: q.price, change: q.change, change_pct: q.change_pct, volume: q.volume, value: q.price != null && q.volume != null ? q.price * q.volume : null, market_cap: q.market_cap });
   const data = {
     as_of: b.value.quotes.map((q) => q.market_time).filter(Boolean).sort().pop() || null,
     refreshed_at: new Date(b.value.ts * 1000).toISOString().replace(/\.\d{3}Z$/, "Z"),
@@ -133,6 +136,9 @@ export async function market(env) {
     advancing: quotes.filter((q) => q.change_pct > 0).length,
     declining: quotes.filter((q) => q.change_pct < 0).length,
     unchanged: quotes.filter((q) => q.change_pct === 0).length,
+    turnover: quotes.reduce((s, q) => s + (q.volume || 0) * (q.price || 0), 0),
+    market_state: b.value.index?.market_state || null,
+    liquid_min_market_cap: 1e12,
     gainers: liquidByChg.slice(0, 10).map(trim),
     losers: liquidByChg.slice(-10).reverse().map(trim),
     most_active: byValue.slice(0, 10).map(trim),
@@ -227,6 +233,46 @@ export async function technical(env, symbolRaw, period = "1y") {
   return envelope("idx.technical.v1", t, { cached: h.cached, stale: h.stale, fetched_at: Date.parse(h.fetched_at) / 1000, warnings: h.warnings || [] });
 }
 
+export async function dividends(env, symbolRaw) {
+  const symbol = parseSymbol(symbolRaw);
+  const r = await cached(env, `dividends:${symbol}`, 6 * 3600, async () => {
+    const res = await y.fetchEvents(symbol);
+    if (res.notFound) return { notFound: res.message };
+    return y.parseEvents(res.body);
+  });
+  if (r.value.notFound) throw notFound(`${symbol}: ${r.value.notFound}`);
+  const today = y.wibIso(Math.floor(Date.now() / 1000)).slice(0, 10);
+  const data = ex.enrichDividends(structuredClone(r.value), today);
+  const warnings = r.warning ? [r.warning] : [];
+  if (!data.dividends.length) warnings.push(`${symbol}: the source lists no dividend events`);
+  return envelope("idx.dividends.v1", data, { cached: r.cached, stale: r.stale, fetched_at: r.fetched_at, warnings });
+}
+
+export async function returns(env, symbolsRaw, benchmark = "^JKSE") {
+  const symbols = parseSymbols(symbolsRaw);
+  const bench = benchmark && benchmark.toLowerCase() !== "none" ? parseSymbol(benchmark) : null;
+  const fetchOne = (s) => history(env, s, "5y", "1d", 0).then((e) => ({ ok: e })).catch((e) => ({ err: e }));
+  const [results, b] = await Promise.all([Promise.all(symbols.map(fetchOne)), bench ? fetchOne(bench) : null]);
+  const warnings = [];
+  let benchPerf = null;
+  if (bench) {
+    if (b.ok) { benchPerf = ex.performance(b.ok.data); if (!benchPerf) warnings.push(`benchmark ${bench}: no candles`); }
+    else warnings.push(`benchmark ${bench} unavailable: ${b.err.message}`);
+  }
+  const data = [];
+  let cachedAll = true, stale = false, fetched = Math.floor(Date.now() / 1000), firstErr = null;
+  results.forEach((r, i) => {
+    if (r.err) { warnings.push(r.err.code === "not_found" ? `no data for ${symbols[i]}` : `${symbols[i]}: ${r.err.message}`); firstErr ||= r.err; return; }
+    const p = ex.performance(r.ok.data);
+    if (!p) { warnings.push(`${symbols[i]}: no candles`); return; }
+    if (benchPerf) p.benchmark = { symbol: benchPerf.symbol, name: benchPerf.name, returns: benchPerf.returns, excess: ex.minusWindows(p.returns, benchPerf.returns) };
+    cachedAll &&= r.ok.cached; stale ||= r.ok.stale; fetched = Math.min(fetched, Date.parse(r.ok.fetched_at) / 1000);
+    data.push(p);
+  });
+  if (!data.length) throw firstErr || notFound("no data");
+  return envelope("idx.returns.v1", data, { cached: cachedAll, stale, fetched_at: fetched, warnings });
+}
+
 export async function compare(env, symbolsRaw) {
   const symbols = parseSymbols(symbolsRaw);
   if (symbols.length < 2) throw usage("compare needs at least two different symbols");
@@ -310,7 +356,7 @@ export function parseRss(xml, source) {
     if (!title || !url) continue;
     const pub = tag("pubDate");
     const d = pub ? new Date(pub) : null;
-    items.push({ title, url, source, published: d && !isNaN(d) ? y.wibIso(Math.floor(d.getTime() / 1000)) : null, summary: stripHtml(tag("description")), matched_by: "all", sentiment: 0, positive_terms: [], negative_terms: [] });
+    items.push({ title, url, source, published: d && !isNaN(d) ? y.wibIso(Math.floor(d.getTime() / 1000)) : null, summary: stripHtml(tag("description")), matched_by: "all", scope: "market", sentiment: 0, positive_terms: [], negative_terms: [] });
   }
   return items;
 }
@@ -323,7 +369,7 @@ function itemMatches(item, ticker, name) {
   if (name && name.length >= 4 && text.includes(name.toUpperCase())) return "name";
   return null;
 }
-export async function news(env, symbolRaw, limit = 20) {
+export async function news(env, symbolRaw, limit = 20, companyOnly = false) {
   const symbol = symbolRaw ? parseSymbol(symbolRaw) : null;
   const results = await Promise.all(FEEDS.map((f) => cached(env, `feed:${f.id}`, 15 * 60, async () => {
     const r = await fetch(f.url, { headers: { "User-Agent": "Mozilla/5.0 (idx web terminal)", Accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8" } });
@@ -343,16 +389,16 @@ export async function news(env, symbolRaw, limit = 20) {
   const seen = new Set(); items = items.filter((i) => !seen.has(i.url) && seen.add(i.url));
   const scanned = items.length;
   const matchedName = symbol ? matchName(NAME_BY_SYMBOL.get(symbol) || "") || null : null;
-  if (symbol) items = items.filter((it) => { const how = itemMatches(it, symbol, matchedName); if (how) it.matched_by = how; return !!how; });
+  const arranged = ex.arrangeNews(items, symbol, matchedName, limit, companyOnly, itemMatches);
+  items = arranged.items;
   for (const it of items) { const s = an.scoreText(`${it.title} ${it.summary}`); it.sentiment = s.score; it.positive_terms = s.pos; it.negative_terms = s.neg; }
   const all = items;
-  if (limit > 0) items = items.slice(0, limit);
-  const data = { symbol, matched_name: matchedName, sources: FEEDS.map((f) => f.id), scanned, items };
+  const data = { symbol, matched_name: matchedName, sources: FEEDS.map((f) => f.id), scanned, company_matches: arranged.companyMatches, company_only: !!symbol && companyOnly, items };
   return { env: envelope("idx.news.v1", data, { provider: "news", cached: cachedAll, stale, fetched_at: fetched, warnings }), all, matchedName };
 }
 export async function sentiment(env, symbolRaw) {
   const symbol = parseSymbol(symbolRaw);
-  const n = await news(env, symbol, 0);
+  const n = await news(env, symbol, 0, true);
   const rep = an.aggregateSentiment(symbol, n.matchedName, n.all, 10);
   return envelope("idx.sentiment.v1", rep, { provider: "news", cached: n.env.cached, stale: n.env.stale, fetched_at: Date.parse(n.env.fetched_at) / 1000, warnings: n.env.warnings || [] });
 }
@@ -392,13 +438,13 @@ export async function ownershipReleases(env) {
   const rows = (await env.DB.prepare("SELECT * FROM own_releases ORDER BY as_of").all()).results;
   return envelope("idx.ownership.releases.v1", rows.map((r) => ({ as_of: r.as_of, format: r.format, source: r.source, sha256: "", rows: r.rows, issuers: 0, entities: 0, imported_at: new Date(r.synced_at * 1000).toISOString() })), { provider: "local-db", cached: true, warnings: rows.length ? [] : ["no ownership data loaded on the web terminal yet"] });
 }
-export async function ownershipChanges(env, from, to, symbolRaw, minChange = 0, limit = 50) {
+export async function ownershipChanges(env, from, to, symbolRaw, minChange = 0, limit = 50, offset = 0) {
   if (!from || !to || from >= to) throw usage("--from must be earlier than --to (YYYY-MM-DD)");
   await ownershipRelease(env, from); await ownershipRelease(env, to);
   const symbol = symbolRaw ? parseSymbol(symbolRaw) : null;
   const load = async (d) => {
-    const q = symbol ? env.DB.prepare("SELECT symbol, holder, entity_key, investor_type, shares_total, pct FROM own_holdings WHERE as_of = ?1 AND symbol = ?2").bind(d, symbol)
-                     : env.DB.prepare("SELECT symbol, holder, entity_key, investor_type, shares_total, pct FROM own_holdings WHERE as_of = ?1").bind(d);
+    const q = symbol ? env.DB.prepare("SELECT symbol, holder, entity_key, investor_type, local_foreign, shares_total, pct FROM own_holdings WHERE as_of = ?1 AND symbol = ?2").bind(d, symbol)
+                     : env.DB.prepare("SELECT symbol, holder, entity_key, investor_type, local_foreign, shares_total, pct FROM own_holdings WHERE as_of = ?1").bind(d);
     const m = new Map();
     for (const r of (await q.all()).results) m.set(`${r.symbol}|${r.entity_key}`, r);
     return m;
@@ -410,12 +456,88 @@ export async function ownershipChanges(env, from, to, symbolRaw, minChange = 0, 
     const b = before.get(k);
     if (b) {
       if (Math.abs(a.pct - b.pct) < 1e-9 && a.shares_total === b.shares_total) continue;
-      changes.push({ symbol: a.symbol, holder: a.holder, entity_key: a.entity_key, investor_type: a.investor_type, kind: "changed", pct_from: b.pct, pct_to: a.pct, pct_change: r4(a.pct - b.pct), shares_from: b.shares_total, shares_to: a.shares_total, shares_change: a.shares_total - b.shares_total });
-    } else changes.push({ symbol: a.symbol, holder: a.holder, entity_key: a.entity_key, investor_type: a.investor_type, kind: "new", pct_from: null, pct_to: a.pct, pct_change: r4(a.pct), shares_from: null, shares_to: a.shares_total, shares_change: a.shares_total });
+      changes.push({ symbol: a.symbol, holder: a.holder, entity_key: a.entity_key, investor_type: a.investor_type, local_foreign: a.local_foreign, kind: "changed", pct_from: b.pct, pct_to: a.pct, pct_change: r4(a.pct - b.pct), shares_from: b.shares_total, shares_to: a.shares_total, shares_change: a.shares_total - b.shares_total });
+    } else changes.push({ symbol: a.symbol, holder: a.holder, entity_key: a.entity_key, investor_type: a.investor_type, local_foreign: a.local_foreign, kind: "new", pct_from: null, pct_to: a.pct, pct_change: r4(a.pct), shares_from: null, shares_to: a.shares_total, shares_change: a.shares_total });
   }
-  for (const [k, b] of before) if (!after.has(k)) changes.push({ symbol: b.symbol, holder: b.holder, entity_key: b.entity_key, investor_type: b.investor_type, kind: "exited", pct_from: b.pct, pct_to: null, pct_change: r4(-b.pct), shares_from: b.shares_total, shares_to: null, shares_change: -b.shares_total });
+  for (const [k, b] of before) if (!after.has(k)) changes.push({ symbol: b.symbol, holder: b.holder, entity_key: b.entity_key, investor_type: b.investor_type, local_foreign: b.local_foreign, kind: "exited", pct_from: b.pct, pct_to: null, pct_change: r4(-b.pct), shares_from: b.shares_total, shares_to: null, shares_change: -b.shares_total });
   const kept = changes.filter((c) => Math.abs(c.pct_change) + 1e-12 >= minChange).sort((a, b) => Math.abs(b.pct_change) - Math.abs(a.pct_change) || a.symbol.localeCompare(b.symbol));
-  return envelope("idx.ownership.changes.v1", { from, to, symbol, min_pct_change: minChange, total_matches: kept.length, changes: limit > 0 ? kept.slice(0, limit) : kept }, { provider: "local-db", cached: true });
+  const summary = ex.summariseChanges(kept);
+  const off = Math.min(Math.max(0, offset), kept.length);
+  const page = kept.slice(off, limit > 0 ? off + limit : undefined);
+  return envelope("idx.ownership.changes.v1", { from, to, symbol, min_pct_change: minChange, total_matches: kept.length, offset: off, summary, changes: page }, { provider: "local-db", cached: true });
+}
+
+async function ownershipPct(env, asOf) {
+  const rows = (await env.DB.prepare("SELECT symbol, MAX(issuer_name) AS issuer_name, COALESCE(SUM(CASE WHEN local_foreign = 'A' THEN pct END), 0) AS foreign_pct, SUM(CASE WHEN local_foreign = 'A' THEN 1 ELSE 0 END) AS foreign_holders FROM own_holdings WHERE as_of = ?1 GROUP BY symbol").bind(asOf).all()).results;
+  return new Map(rows.map((r) => [r.symbol, r]));
+}
+export async function ownershipForeign(env, symbolRaw, from, to, limit = 25) {
+  const r4 = (v) => { const r = Math.round(v * 1e4) / 1e4; return r === 0 ? 0 : r; };
+  if (symbolRaw) {
+    const symbol = parseSymbol(symbolRaw);
+    const rows = (await env.DB.prepare("SELECT as_of, MAX(issuer_name) AS issuer_name, COALESCE(SUM(CASE WHEN local_foreign = 'A' THEN pct END), 0) AS fp, COALESCE(SUM(CASE WHEN local_foreign = 'L' THEN pct END), 0) AS lp, COALESCE(SUM(CASE WHEN local_foreign IS NULL OR local_foreign NOT IN ('A','L') THEN pct END), 0) AS up, SUM(CASE WHEN local_foreign = 'A' THEN 1 ELSE 0 END) AS fh, SUM(CASE WHEN local_foreign = 'L' THEN 1 ELSE 0 END) AS lh, SUM(pct) AS listed FROM own_holdings WHERE symbol = ?1 GROUP BY as_of ORDER BY as_of").bind(symbol).all()).results;
+    if (!rows.length) { await ownershipRelease(env, null); throw notFound(`no holders above 1% recorded for ${symbol} in any loaded release`); }
+    const points = rows.map((r, i) => ({ as_of: r.as_of, foreign_pct: r4(r.fp), local_pct: r4(r.lp), unflagged_pct: r4(r.up), foreign_holders: r.fh, local_holders: r.lh, listed_pct: r4(r.listed), foreign_change_pp: i ? r4(r.fp - rows[i - 1].fp) : null }));
+    return envelope("idx.ownership.foreign.v1", { symbol, issuer_name: rows.map((r) => r.issuer_name).filter(Boolean).pop() || null, points }, { provider: "local-db", cached: true });
+  }
+  const releases = (await env.DB.prepare("SELECT as_of FROM own_releases ORDER BY as_of").all()).results.map((r) => r.as_of);
+  if (!releases.length) throw notFound("no ownership data loaded on the web terminal yet");
+  const toDate = to || releases[releases.length - 1];
+  const fromDate = from || [...releases].reverse().find((d) => d < toDate);
+  if (!fromDate) throw notFound(`only one release (${toDate}) is loaded; nothing earlier to compare`);
+  if (fromDate >= toDate) throw usage("from must be earlier than to");
+  await ownershipRelease(env, fromDate); await ownershipRelease(env, toDate);
+  const [before, after] = await Promise.all([ownershipPct(env, fromDate), ownershipPct(env, toDate)]);
+  const rows = [...after.entries()].map(([symbol, a]) => { const b = before.get(symbol); const pf = b ? r4(b.foreign_pct) : null; return { symbol, issuer_name: a.issuer_name, foreign_pct_from: pf, foreign_pct_to: r4(a.foreign_pct), change_pp: r4(a.foreign_pct - (pf || 0)), foreign_holders_to: a.foreign_holders }; })
+    .sort((a, b) => Math.abs(b.change_pp) - Math.abs(a.change_pp) || a.symbol.localeCompare(b.symbol));
+  const data = { from: fromDate, to: toDate, issuers: rows.length, inflows: rows.filter((r) => r.change_pp > 0).length, outflows: rows.filter((r) => r.change_pp < 0).length, net_pp: r4(rows.reduce((s, r) => s + r.change_pp, 0)), rows: limit > 0 ? rows.slice(0, limit) : rows };
+  return envelope("idx.ownership.foreign-flow.v1", data, { provider: "local-db", cached: true });
+}
+
+// ---- brief ---------------------------------------------------------------------
+
+export async function brief(env, symbolRaw) {
+  const symbol = parseSymbol(symbolRaw);
+  const sections = {
+    quote: () => quote(env, symbol), fundamentals: () => fundamentals(env, symbol), technical: () => technical(env, symbol, "1y"),
+    returns: () => returns(env, symbol, "^JKSE"), dividends: () => dividends(env, symbol), ownership: () => ownershipTicker(env, symbol, null),
+    news: () => news(env, symbol, 0, true).then((n) => n.env),
+  };
+  const names = Object.keys(sections);
+  const settled = await Promise.allSettled(names.map((n) => sections[n]()));
+  const warnings = [], failed = [];
+  let cachedAll = true, stale = false, notFoundCount = 0;
+  const got = {};
+  settled.forEach((r, i) => {
+    const n = names[i];
+    if (r.status === "fulfilled") { got[n] = r.value; cachedAll &&= !!r.value.cached; stale ||= !!r.value.stale; for (const w of r.value.warnings || []) warnings.push(`${n}: ${w}`); }
+    else { if (r.reason?.code === "not_found") notFoundCount++; warnings.push(`${n}: ${r.reason?.message || r.reason}`); failed.push(n); }
+  });
+  if (!got.quote && !got.fundamentals && !got.technical && notFoundCount >= 3) throw notFound(`${symbol}: unknown to the quote, fundamentals and history sources`);
+  const q = got.quote?.data?.[0] || null, f = got.fundamentals?.data || null, t = got.technical?.data || null, r = got.returns?.data?.[0] || null;
+  const d = got.dividends?.data || null;
+  const o = got.ownership?.data || null;
+  const n = got.news?.data || null;
+  const rep = n ? an.aggregateSentiment(symbol, n.matched_name, n.items, 0) : null;
+  const pct = (v, dp = 1) => `${v >= 0 ? "+" : ""}${v.toFixed(dp)}%`;
+  const key_points = [];
+  if (q && q.price != null && q.change_pct != null) key_points.push(`Price ${q.price.toLocaleString("en-US")} (${pct(q.change_pct, 2)} today)${q.market_cap ? `, market cap ${(q.market_cap / 1e12).toFixed(1)}T` : ""}`);
+  if (f?.verdict) key_points.push(`Valuation verdict: ${f.verdict.label} (score ${f.verdict.score >= 0 ? "+" : ""}${f.verdict.score}, ${f.verdict.inputs_available} inputs)${f.valuation.pe_trailing != null ? `; P/E ${f.valuation.pe_trailing.toFixed(1)}` : ""}${f.valuation.price_to_book != null ? `, P/B ${f.valuation.price_to_book.toFixed(2)}` : ""}`);
+  if (t) key_points.push(`Technical signal: ${t.signal.label} (score ${t.signal.score >= 0 ? "+" : ""}${t.signal.score}), trend ${t.trend}${t.rsi14 != null ? `, RSI ${t.rsi14.toFixed(0)}` : ""}`);
+  if (r?.returns?.["1y"] != null) key_points.push(`1y return ${pct(r.returns["1y"])}${r.benchmark?.excess?.["1y"] != null ? ` (${r.benchmark.excess["1y"] >= 0 ? "+" : ""}${r.benchmark.excess["1y"].toFixed(1)} pp vs ${r.benchmark.symbol})` : ""}; YTD ${r.returns.ytd != null ? pct(r.returns.ytd) : "n/a"}`);
+  if (d) key_points.push(d.ttm_yield_pct != null ? `Dividends: TTM yield ${d.ttm_yield_pct.toFixed(2)}% over ${d.ttm_payments} payment${d.ttm_payments === 1 ? "" : "s"}, ${d.consecutive_years} consecutive years` : d.dividends.length ? "Dividends: none in the last twelve months" : "Dividends: none on record");
+  const own = o ? { as_of: o.as_of, listed_pct: o.listed_pct, foreign_pct: o.holders.filter((h) => h.local_foreign === "A").reduce((s, h) => s + h.pct, 0), holders_listed: o.holders.length, top_holders: o.holders.slice(0, 5) } : null;
+  if (own) key_points.push(`Ownership (${own.as_of}): ${own.holders_listed} holders above 1% hold ${own.listed_pct.toFixed(1)}%, foreign ${own.foreign_pct.toFixed(1)}%${own.top_holders[0] ? `; largest ${own.top_holders[0].holder} ${own.top_holders[0].pct.toFixed(1)}%` : ""}`);
+  if (n) key_points.push(n.company_matches ? `News: ${n.company_matches} current headline${n.company_matches === 1 ? "" : "s"} mention the company, lexicon sentiment ${rep.label} (${rep.score >= 0 ? "+" : ""}${rep.score.toFixed(2)})` : "News: no current headline mentions the company");
+  const data = {
+    symbol, name: q?.name || f?.name || t?.name || NAME_BY_SYMBOL.get(symbol) || null, generated_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"), key_points,
+    quote: q, fundamentals: f, technical: t, returns: r,
+    dividends: d ? { ttm_total: d.ttm_total, ttm_payments: d.ttm_payments, ttm_yield_pct: d.ttm_yield_pct, consecutive_years: d.consecutive_years, last: d.last, payments_on_record: d.dividends.length } : null,
+    ownership: own,
+    news: n ? { company_matches: n.company_matches, sentiment: rep.label, score: rep.score, headlines: n.items.slice(0, 5) } : null,
+    sections_failed: failed,
+  };
+  return envelope("idx.brief.v1", data, { cached: cachedAll, stale, warnings });
 }
 
 // ---- router ----------------------------------------------------------
@@ -436,11 +558,15 @@ export async function route(env, url) {
     case "/technical": return technical(env, q.get("symbol"), q.get("period") || "1y");
     case "/compare": return compare(env, q.get("symbols"));
     case "/screen": return screen(env, q.get("filter") || "", q.get("sort") || "mcap", num(q.get("limit"), 25), num(q.get("max_fundamentals"), 20), q.get("asc") == null);
-    case "/news": return (await news(env, q.get("symbol"), num(q.get("limit"), 20))).env;
+    case "/news": return (await news(env, q.get("symbol"), num(q.get("limit"), 20), q.get("company_only") === "1" || q.get("company_only") === "true")).env;
+    case "/dividends": return dividends(env, q.get("symbol"));
+    case "/returns": return returns(env, q.get("symbols") || q.get("symbol"), q.get("benchmark") || "^JKSE");
+    case "/brief": return brief(env, q.get("symbol"));
+    case "/ownership/foreign": return ownershipForeign(env, q.get("symbol"), q.get("from"), q.get("to"), num(q.get("limit"), 25));
     case "/sentiment": return sentiment(env, q.get("symbol"));
     case "/ownership/ticker": return ownershipTicker(env, q.get("symbol"), q.get("as_of"));
     case "/ownership/entity": return ownershipEntity(env, q.get("name"), q.get("as_of"));
-    case "/ownership/changes": return ownershipChanges(env, q.get("from"), q.get("to"), q.get("symbol"), num(q.get("min_change"), 0), num(q.get("limit"), 50));
+    case "/ownership/changes": return ownershipChanges(env, q.get("from"), q.get("to"), q.get("symbol"), num(q.get("min_change"), 0), num(q.get("limit"), 50), num(q.get("offset"), 0));
     case "/ownership/releases": return ownershipReleases(env);
     case "/universe": return envelope("idx.universe.v1", UNIVERSE.map(([symbol, name]) => ({ symbol, name })), { provider: "bundled", cached: true });
     default: throw notFound(`no such endpoint ${p}`);

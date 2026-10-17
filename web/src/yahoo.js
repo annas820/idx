@@ -77,6 +77,18 @@ export async function fetchChart(symbol, period = "1y", interval = "1d") {
   return { body };
 }
 
+/** Full-history chart call carrying dividend and split events (no session needed). */
+export async function fetchEvents(symbol) {
+  const url = `${CHART}${yahooSymbol(symbol)}?range=max&interval=1mo&events=div%2Csplits`;
+  const r = await fetch(url, { headers: { "User-Agent": UA } });
+  const body = await r.json().catch(() => null);
+  if (r.status === 404 || body?.chart?.error?.code === "Not Found") {
+    return { notFound: true, message: body?.chart?.error?.description || "not found" };
+  }
+  if (!r.ok) throw new Error(`yahoo chart HTTP ${r.status}`);
+  return { body };
+}
+
 /** v7 quotes for up to ~200 symbols. Unknown symbols are silently omitted. */
 export async function fetchQuotes(env, symbols) {
   const list = symbols.map(yahooSymbol).join(",");
@@ -219,6 +231,21 @@ export function parseChart(body, period, interval) {
     period, interval,
     candles: candles.map(({ t, ...c }) => c),
     summary,
+  };
+}
+
+/** Mirrors parse::parse_events: raw dividend/split events; computed fields empty. */
+export function parseEvents(body) {
+  const r = body?.chart?.result?.[0];
+  if (!r) throw new Error("chart response has no result");
+  const meta = r.meta || {};
+  const day = (secs) => (secs == null ? null : wibIso(secs).slice(0, 10));
+  const dividends = Object.values(r.events?.dividends || {}).filter((e) => e.date != null && typeof e.amount === "number").map((e) => ({ date: day(e.date), amount: e.amount })).sort((a, b) => a.date.localeCompare(b.date));
+  const splits = Object.values(r.events?.splits || {}).filter((e) => e.date != null).map((e) => ({ date: day(e.date), numerator: e.numerator, denominator: e.denominator, ratio: e.splitRatio || `${e.numerator}:${e.denominator}` })).sort((a, b) => a.date.localeCompare(b.date));
+  return {
+    symbol: plainSymbol(meta.symbol || ""), name: meta.longName || meta.shortName || null, currency: meta.currency || null,
+    price: num(meta.regularMarketPrice), price_date: day(meta.regularMarketTime),
+    dividends, splits, years: [], last: null, ttm_total: null, ttm_payments: 0, ttm_yield_pct: null, consecutive_years: 0, as_of: null,
   };
 }
 

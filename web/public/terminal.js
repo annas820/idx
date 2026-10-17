@@ -18,15 +18,18 @@ const COMMANDS = [
   { name: "technical", usage: "technical <SYMBOL> [period]", help: "RSI, MACD, averages, levels, signal" },
   { name: "compare", usage: "compare <SYMBOLS>", help: "side-by-side fundamentals" },
   { name: "screen", usage: "screen <FILTER> [--sort KEY] [--limit N]", help: 'e.g. screen pe<10,div>5,mcap>5T --sort div' },
-  { name: "news", usage: "news [SYMBOL] [--limit N]", help: "Kontan and CNBC Indonesia headlines" },
+  { name: "news", usage: "news [SYMBOL] [--limit N] [--company-only]", help: "headlines; with a symbol the company's first, then market context" },
+  { name: "dividends", usage: "dividends <SYMBOL>", help: "payments, yearly totals, TTM yield, streak, splits" },
+  { name: "returns", usage: "returns <SYMBOLS> [--benchmark ^JKSE|none]", help: "1w..5y returns, CAGR, volatility, drawdown, excess over IHSG" },
+  { name: "brief", usage: "brief <SYMBOL>", help: "one page: quote, verdict, signal, returns, dividends, holders, headlines" },
   { name: "sentiment", usage: "sentiment <SYMBOL>", help: "lexicon sentiment over matching headlines" },
   { name: "market", usage: "market", help: "IHSG, breadth, gainers, losers, most traded" },
-  { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] | releases", help: "KSEI holders above 1 % (when a register is loaded)" },
+  { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] [--offset N] | foreign [SYMBOL] | releases", help: "KSEI holders above 1 % (when a register is loaded): holders, entities, monthly changes with a summary, foreign vs local" },
   { name: "json", usage: "json <command…>", help: "print the raw JSON envelope of any command" },
   { name: "help", usage: "help [command]", help: "this list" },
   { name: "clear", usage: "clear", help: "clear the sheet" },
 ];
-const ALIASES = { q: "quote", h: "history", f: "fundamental", t: "technical", n: "news", s: "screen", c: "compare", "?": "help", cls: "clear", own: "ownership" };
+const ALIASES = { q: "quote", h: "history", f: "fundamental", t: "technical", n: "news", s: "screen", c: "compare", d: "dividends", r: "returns", b: "brief", "?": "help", cls: "clear", own: "ownership" };
 
 function tokenize(line) {
   const toks = [];
@@ -194,9 +197,73 @@ const R = {
   },
   news(n) {
     const frag = document.createDocumentFragment();
-    frag.append(el("p", { class: "prose", text: n.symbol ? `${n.items.length} of ${n.scanned} scanned headlines mention ${n.symbol}${n.matched_name ? ` or ${n.matched_name}` : ""} · ${n.sources.join(", ")}` : `${n.items.length} of ${n.scanned} headlines · ${n.sources.join(", ")}` }));
-    frag.append(newsTable(n.items));
+    const company = n.items.filter((i) => i.scope === "company"), market = n.items.filter((i) => i.scope !== "company");
+    if (n.symbol) {
+      frag.append(el("p", { class: "prose", text: `${n.company_matches ?? company.length} of ${n.scanned} scanned headlines mention ${n.symbol}${n.matched_name ? ` or ${n.matched_name}` : ""} · ${n.sources.join(", ")}` }));
+      if (company.length) frag.append(newsTable(company)); else frag.append(el("p", { class: "warn", text: "No headline mentions the company in the current feeds." }));
+      if (market.length) { frag.append(el("h3", { class: "stmt-title", text: `Market context · ${market.length} headlines` })); frag.append(newsTable(market)); }
+    } else {
+      frag.append(el("p", { class: "prose", text: `${n.items.length} of ${n.scanned} headlines · ${n.sources.join(", ")}` }));
+      frag.append(newsTable(n.items));
+    }
     frag.append(el("p", { class: "warn", text: "± is a lexicon read of the headline, not a recommendation." }));
+    return frag;
+  },
+  dividends(h) {
+    const frag = document.createDocumentFragment();
+    frag.append(el("p", { class: "prose", html: `<b>${h.name || h.symbol}</b> · ${h.currency || "IDR"} · price ${fmt.price(h.price)} · TTM dividends ${h.ttm_total == null ? "—" : fmt.num(h.ttm_total, 2)} (${h.ttm_payments} payment${h.ttm_payments === 1 ? "" : "s"}) · TTM yield ${pct(h.ttm_yield_pct)} · ${h.consecutive_years} consecutive year${h.consecutive_years === 1 ? "" : "s"}${h.last ? ` · last ${h.last.date} ${fmt.num(h.last.amount, 2)}` : ""}` }));
+    if (!h.dividends.length) { frag.append(el("p", { class: "warn", text: "No dividend events reported by the source." })); return frag; }
+    const grid = el("div", { class: "three" });
+    grid.append(
+      el("div", { class: "stmt" }, [el("h3", { class: "stmt-title", text: "Yearly totals" }), wrapScroll(table([{ h: "Year", k: "year", l: true, cls: "sym" }, { h: "Payments", k: "payments" }, { h: "Total", f: (y) => fmt.num(y.total, 2) }, { h: "vs prev", f: (y) => fmt.pct(y.change_pct), cls: (y) => `num ${signClass(y.change_pct)}` }], h.years.slice(-10)))]),
+      el("div", { class: "stmt" }, [el("h3", { class: "stmt-title", text: `Payments · last 12 of ${h.dividends.length}` }), wrapScroll(table([{ h: "Ex-date", k: "date", l: true }, { h: "Amount", f: (d) => fmt.num(d.amount, 2) }], [...h.dividends].reverse().slice(0, 12)))]),
+    );
+    frag.append(grid);
+    if (h.splits.length) frag.append(el("p", { class: "prose", text: `Splits · ${h.splits.map((s) => `${s.date} ${s.ratio}`).join(" · ")}` }));
+    frag.append(el("p", { class: "warn", text: "Amounts as reported by the source (split-adjusted on Yahoo). TTM yield = TTM total / last price, computed here." }));
+    return frag;
+  },
+  returns(list) {
+    const frag = document.createDocumentFragment();
+    const W = ["1w", "1m", "3m", "6m", "ytd", "1y", "3y", "5y"];
+    const wc = (key) => W.map((w) => ({ h: w.toUpperCase(), f: (r) => fmt.pct(r[key]?.[w]), cls: (r) => `num ${signClass(r[key]?.[w])}` }));
+    frag.append(el("p", { class: "prose", text: `Price returns · as of ${list[0].as_of} · five years of daily closes · dividends excluded` }));
+    const rows = list.map((p) => ({ ...p, w: p.returns }));
+    const bench = list.find((p) => p.benchmark)?.benchmark;
+    if (bench) rows.push({ symbol: `${bench.symbol}${bench.name ? ` (${bench.name})` : ""}`, price: null, w: bench.returns, cagr_3y_pct: null, volatility_1y_pct: null, max_drawdown_1y: null });
+    frag.append(wrapScroll(table([{ h: "Symbol", k: "symbol", l: true, cls: "sym" }, { h: "Price", f: (r) => fmt.price(r.price) }, ...wc("w"), { h: "CAGR 3y", f: (r) => fmt.pct(r.cagr_3y_pct), cls: (r) => `num ${signClass(r.cagr_3y_pct)}` }, { h: "Vol 1y", f: (r) => pct(r.volatility_1y_pct) }, { h: "MaxDD 1y", f: (r) => fmt.pct(r.max_drawdown_1y?.pct), cls: "num dn" }], rows)));
+    if (bench) {
+      frag.append(el("h3", { class: "stmt-title", text: `Excess over ${bench.symbol} · percentage points` }));
+      frag.append(wrapScroll(table([{ h: "Symbol", k: "symbol", l: true, cls: "sym" }, ...wc("e")], list.filter((p) => p.benchmark).map((p) => ({ symbol: p.symbol, e: p.benchmark.excess })))));
+    }
+    for (const p of list) frag.append(el("p", { class: "prose", text: `${p.symbol} · 52w ${fmt.price(p.low_52w)} – ${fmt.price(p.high_52w)} (${fmt.pct(p.pct_from_52w_high)} from high${p.days_since_52w_high != null ? `, ${p.days_since_52w_high} days ago` : ""}) · CAGR 5y ${fmt.pct(p.cagr_5y_pct)} · best day ${p.best_day_1y ? `${fmt.pct(p.best_day_1y.pct)} on ${p.best_day_1y.date}` : "—"} · worst day ${p.worst_day_1y ? `${fmt.pct(p.worst_day_1y.pct)} on ${p.worst_day_1y.date}` : "—"} · max drawdown since ${p.start}: ${p.max_drawdown_all ? `${fmt.pct(p.max_drawdown_all.pct)} (${p.max_drawdown_all.peak_date} → ${p.max_drawdown_all.trough_date}${p.max_drawdown_all.recovered ? ", recovered" : ""})` : "—"}` }));
+    frag.append(el("p", { class: "warn", text: "Computed from provider closes; a window is — when the history does not reach back that far." }));
+    return frag;
+  },
+  brief(b) {
+    const frag = document.createDocumentFragment();
+    frag.append(el("p", { class: "prose", html: `<b>${b.name || b.symbol}</b> · brief · ${fmt.wib(b.generated_at.replace("Z", "+00:00")).replace(" WIB", " UTC")}` }));
+    frag.append(el("ul", { class: "reasons" }, b.key_points.map((k) => el("li", { text: k }))));
+    if (b.fundamentals) { frag.append(el("h3", { class: "stmt-title", text: "Fundamentals" })); frag.append(R.fundamentals(b.fundamentals)); }
+    if (b.technical) { frag.append(el("h3", { class: "stmt-title", text: "Technical" })); frag.append(R.technical(b.technical)); }
+    if (b.returns) { frag.append(el("h3", { class: "stmt-title", text: "Returns" })); frag.append(R.returns([b.returns])); }
+    if (b.ownership) { frag.append(el("h3", { class: "stmt-title", text: `Holders above 1 % as of ${b.ownership.as_of} · ${b.ownership.holders_listed} listed = ${pct(b.ownership.listed_pct)} · foreign ${pct(b.ownership.foreign_pct)}` })); frag.append(wrapScroll(table([{ h: "Holder", k: "holder", l: true, cls: "sym" }, { h: "Type", k: "investor_type", l: true }, { h: "L/A", k: "local_foreign", l: true }, { h: "%", f: (r) => pct(r.pct) }], b.ownership.top_holders))); }
+    if (b.news?.headlines?.length) { frag.append(el("h3", { class: "stmt-title", text: `Headlines · ${b.news.company_matches} mention the company · sentiment ${b.news.sentiment}` })); frag.append(newsTable(b.news.headlines)); }
+    if (b.sections_failed.length) frag.append(el("p", { class: "warn", text: `Missing sections: ${b.sections_failed.join(", ")} (see warnings above).` }));
+    frag.append(el("p", { class: "warn", text: "Verdicts, signals and sentiment are transparent rule scores, not investment advice." }));
+    return frag;
+  },
+  foreign(r) {
+    const frag = document.createDocumentFragment();
+    if (r.points) {
+      const last = r.points[r.points.length - 1];
+      frag.append(el("p", { class: "prose", html: `<b>${r.symbol}</b> · ${r.issuer_name || ""} · disclosed foreign stake ${pct(last.foreign_pct)} of the ${pct(last.listed_pct)} listed above 1 % as of ${last.as_of} · ${r.points.length} release${r.points.length === 1 ? "" : "s"}` }));
+      frag.append(wrapScroll(table([{ h: "As of", k: "as_of", l: true, cls: "sym" }, { h: "Foreign %", f: (p) => pct(p.foreign_pct) }, { h: "Δ pp", f: (p) => fmt.change(p.foreign_change_pp), cls: (p) => `num ${signClass(p.foreign_change_pp)}` }, { h: "Local %", f: (p) => pct(p.local_pct) }, { h: "Foreign holders", k: "foreign_holders" }, { h: "Local holders", k: "local_holders" }, { h: "Listed %", f: (p) => pct(p.listed_pct) }], r.points)));
+    } else {
+      frag.append(el("p", { class: "prose", text: `Disclosed foreign stake ${r.from} → ${r.to} · ${r.issuers} issuers · ${r.inflows} inflows · ${r.outflows} outflows · net ${fmt.change(r.net_pp)} pp` }));
+      frag.append(wrapScroll(table([{ h: "Symbol", k: "symbol", l: true, cls: "sym" }, { h: "Issuer", k: "issuer_name", l: true, cls: "name" }, { h: "Foreign % from", f: (x) => pct(x.foreign_pct_from) }, { h: "Foreign % to", f: (x) => pct(x.foreign_pct_to) }, { h: "Δ pp", f: (x) => fmt.change(x.change_pp), cls: (x) => `num ${signClass(x.change_pp)}` }, { h: "Foreign holders", k: "foreign_holders_to" }], r.rows)));
+    }
+    frag.append(el("p", { class: "warn", text: "Sums over holders above 1 % only (KSEI L/A flag); holders below 1 % are not published." }));
     return frag;
   },
   sentiment(s) {
@@ -234,8 +301,16 @@ const R = {
   },
   changes(c) {
     const frag = document.createDocumentFragment();
-    frag.append(el("p", { class: "prose", text: `Changes ${c.from} → ${c.to}${c.symbol ? ` · ${c.symbol}` : ""} · ${c.total_matches} match${c.total_matches === 1 ? "" : "es"}` }));
-    frag.append(wrapScroll(table([{ h: "Symbol", k: "symbol", l: true, cls: "sym" }, { h: "Holder", k: "holder", l: true }, { h: "Kind", k: "kind", l: true }, { h: "% from", f: (r) => pct(r.pct_from) }, { h: "% to", f: (r) => pct(r.pct_to) }, { h: "Δ pp", f: (r) => fmt.change(r.pct_change), cls: (r) => `num ${signClass(r.pct_change)}` }, { h: "Δ shares", f: (r) => fmt.change(r.shares_change), cls: (r) => `num ${signClass(r.shares_change)}` }], c.changes)));
+    const s = c.summary;
+    const pp = (v) => `${v > 0 ? "+" : ""}${fmt.num(v, 2)} pp`;
+    frag.append(el("p", { class: "prose", text: `Changes ${c.from} → ${c.to}${c.symbol ? ` · ${c.symbol}` : ""} · ${c.total_matches} match${c.total_matches === 1 ? "" : "es"}${s ? ` · ${s.issuers} issuers · ${s.holders} holders` : ""}` }));
+    if (s) {
+      frag.append(el("p", { class: "prose", text: `Summary · ${s.new_holders} new · ${s.exits} exited · ${s.increased} increased · ${s.decreased} decreased · net ${pp(s.net_pp)} (foreign ${pp(s.foreign_net_pp)}, local ${pp(s.local_net_pp)})` }));
+      if (s.by_investor_type.length) frag.append(el("p", { class: "prose", text: `By type · ${s.by_investor_type.slice(0, 6).map((t) => `${t.investor_type} ${pp(t.net_pp)} (${t.rows})`).join(" · ")}` }));
+      if (!c.symbol && s.issuer_flow.length) frag.append(el("p", { class: "prose", text: `Issuer flow · ${s.issuer_flow.slice(0, 8).map((i) => `${i.symbol} ${pp(i.net_pp)} (foreign ${pp(i.foreign_net_pp)})`).join(" · ")}` }));
+    }
+    if (c.changes.length < c.total_matches) frag.append(el("p", { class: "warn", text: `Rows ${(c.offset || 0) + 1}–${(c.offset || 0) + c.changes.length} of ${c.total_matches} · next page: --offset ${(c.offset || 0) + c.changes.length} · all: --limit 0` }));
+    frag.append(wrapScroll(table([{ h: "Symbol", k: "symbol", l: true, cls: "sym" }, { h: "Holder", k: "holder", l: true }, { h: "Type", k: "investor_type", l: true }, { h: "L/A", k: "local_foreign", l: true }, { h: "Kind", k: "kind", l: true }, { h: "% from", f: (r) => pct(r.pct_from) }, { h: "% to", f: (r) => pct(r.pct_to) }, { h: "Δ pp", f: (r) => fmt.change(r.pct_change), cls: (r) => `num ${signClass(r.pct_change)}` }, { h: "Δ shares", f: (r) => fmt.change(r.shares_change), cls: (r) => `num ${signClass(r.shares_change)}` }], c.changes)));
     return frag;
   },
   releases(list) {
@@ -271,14 +346,18 @@ async function run(line) {
     case "technical": need(pos, 1, cmd.usage); env = await api(`technical?${qs({ symbol: sym(), period: pos[1] || opt.period || "1y" })}`); render = R.technical; break;
     case "compare": need(pos, 1, cmd.usage); env = await api(`compare?symbols=${encodeURIComponent(pos.join(","))}`); render = R.compare; break;
     case "screen": need(pos, 1, cmd.usage); env = await api(`screen?${qs({ filter: pos.join(","), sort: opt.sort, limit: opt.limit, max_fundamentals: opt["max-fundamentals"], asc: opt.asc ? "1" : null })}`); render = R.screen; break;
-    case "news": env = await api(`news?${qs({ symbol: sym(), limit: opt.limit || 20 })}`); render = R.news; break;
+    case "news": env = await api(`news?${qs({ symbol: sym(), limit: opt.limit || 20, company_only: opt["company-only"] ? "1" : null })}`); render = R.news; break;
+    case "dividends": need(pos, 1, cmd.usage); env = await api(`dividends?symbol=${encodeURIComponent(sym())}`); render = R.dividends; break;
+    case "returns": need(pos, 1, cmd.usage); env = await api(`returns?${qs({ symbols: pos.join(","), benchmark: opt.benchmark })}`); render = R.returns; break;
+    case "brief": need(pos, 1, cmd.usage); env = await api(`brief?symbol=${encodeURIComponent(sym())}`); render = R.brief; break;
     case "sentiment": need(pos, 1, cmd.usage); env = await api(`sentiment?symbol=${encodeURIComponent(sym())}`); render = R.sentiment; break;
     case "market": env = await api("market"); render = R.market; break;
     case "ownership": {
       const sub = (pos[0] || "").toLowerCase();
       if (sub === "ticker") { need(pos, 2, cmd.usage); env = await api(`ownership/ticker?${qs({ symbol: pos[1], as_of: opt["as-of"] })}`); render = R.holders; }
       else if (sub === "entity") { need(pos, 2, cmd.usage); env = await api(`ownership/entity?${qs({ name: pos.slice(1).join(" "), as_of: opt["as-of"] })}`); render = R.entity; }
-      else if (sub === "changes") { need(pos, 3, cmd.usage); env = await api(`ownership/changes?${qs({ from: pos[1], to: pos[2], symbol: pos[3], min_change: opt["min-change"], limit: opt.limit })}`); render = R.changes; }
+      else if (sub === "changes") { need(pos, 3, cmd.usage); env = await api(`ownership/changes?${qs({ from: pos[1], to: pos[2], symbol: pos[3], min_change: opt["min-change"], limit: opt.limit, offset: opt.offset })}`); render = R.changes; }
+      else if (sub === "foreign") { env = await api(`ownership/foreign?${qs({ symbol: pos[1], from: opt.from, to: opt.to, limit: opt.limit })}`); render = R.foreign; }
       else if (sub === "releases") { env = await api("ownership/releases"); render = R.releases; }
       else throw Object.assign(new Error(`usage: ${cmd.usage}`), { code: "usage" });
       break;
@@ -303,7 +382,7 @@ function renderHelp(which) {
   const list = which ? COMMANDS.filter((c) => c.name === (ALIASES[which] || which)) : COMMANDS;
   if (!list.length) frag.append(el("p", { class: "err", text: `no command "${which}"` }));
   frag.append(wrapScroll(table([{ h: "Command", k: "usage", l: true, cls: "sym" }, { h: "What it does", k: "help", l: true }], list.map((c) => ({ usage: c.usage, help: c.help })))));
-  frag.append(el("p", { class: "warn", text: "Aliases: q h f t n s c own. Prefix any command with json for the raw envelope. Symbols accept BBCA or BBCA.JK; several symbols are comma or space separated." }));
+  frag.append(el("p", { class: "warn", text: "Aliases: q h f t n s c d r b own. Prefix any command with json for the raw envelope. Symbols accept BBCA or BBCA.JK; several symbols are comma or space separated." }));
   return frag;
 }
 
@@ -348,7 +427,7 @@ input.addEventListener("keydown", (ev) => {
 });
 
 // hints + deep links (?cmd=)
-const SAMPLE = ["market", "quote BBCA,BBRI,TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "compare BBCA BBRI BMRI", "history ASII 6mo 1wk", "ownership ticker BBCA", "help"];
+const SAMPLE = ["market", "brief BBCA", "quote BBCA,BBRI,TLKM", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
 document.getElementById("hints").append(...SAMPLE.map((s) => el("button", { type: "button", text: s, onclick: () => { hist.push(s); hIdx = hist.length; execute(s); } })));
 
 api("market").then((m) => { dateline.textContent = `${fmt.wib(m.data.as_of || m.data.refreshed_at)} · ${m.data.market_open ? "market open" : "market closed"} · ${m.data.quoted} quoted`; }).catch(() => { dateline.textContent = "snapshot unavailable"; });
