@@ -63,15 +63,32 @@ idx ownership ticker BBCA --as-of 2026-07-31
 idx ownership entity "Dwimuria Investama"       # every position of one holder
 idx ownership changes --from 2026-07-31 --to 2026-08-31 --symbol BBCA
 idx ownership changes --from 2026-02-27 --to 2026-08-31 --min-change 1 --limit 0
+idx ownership changes --from 2026-07-31 --to 2026-08-31 --limit 100 --offset 100   # page 2
+idx ownership foreign BBCA                      # foreign vs local share, month by month
+idx ownership foreign                           # every issuer's foreign change, newest two months
 idx ownership releases
 ```
 
 `changes` compares two imported months per (symbol, entity): `new` holders
 (absent before: crossed 1 % or newly listed), `exited` holders (absent after)
-and `changed` positions, sorted by absolute percentage-point move.
+and `changed` positions, sorted by absolute percentage-point move. Rows carry
+`local_foreign` (`L`/`A`). The `summary` block is computed over every match
+before `--limit`/`--offset` paging: counts of new, exited, increased and
+decreased holders, net percentage points split by foreign/local and by KSEI
+investor type, per-issuer flow (with the foreign part), and the top rises and
+falls. For a single symbol the net figures are exact; across the register they
+are a flow indicator.
+
+`foreign` sums the `L`/`A` flag KSEI prints on each listed holder. With a
+symbol it gives one issuer's disclosed foreign percent, holder counts and
+month-over-month change per release; without one it ranks every issuer by the
+change in disclosed foreign stake between two releases. Sums cover holders
+above 1 % only, so this is the *disclosed* foreign stake, not total foreign
+ownership.
 
 JSON schemas: `idx schema ownership-holders|ownership-entity|ownership-changes|
-ownership-releases|ownership-import|ownership-discover`.
+ownership-foreign|ownership-foreign-flow|ownership-releases|ownership-import|
+ownership-discover`.
 
 ## Caveats
 

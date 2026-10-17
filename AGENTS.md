@@ -27,15 +27,20 @@ src/
     yahoo/           chart, v7 quote (cookie/crumb session), quoteSummary (summary.rs), timeseries.rs
     msn/             autosuggest lookup -> Quotes / Equities (public web key)
   analysis/          technical.rs (indicators + signal), fundamental.rs (verdict), screen.rs (filter DSL),
-                     sentiment.rs (lexicon); no network
+                     sentiment.rs (lexicon), returns.rs (windows, CAGR, drawdown, volatility),
+                     dividends.rs (totals, TTM yield, streak); no network
   universe.rs        bundled data/universe.csv (IDX issuers) + ownership-db issuers; IDX_UNIVERSE override
     news/            Kontan + CNBC Indonesia RSS feeds through the Fetcher (rss crate)
-  service.rs         provider call + analysis, shared by cli/ and mcp/ (fundamentals, technical, compare)
+  service.rs         provider call + analysis, shared by cli/ and mcp/ (fundamentals, technical, compare,
+                     screen, news ordering, returns, dividends, market_overview, brief)
   ownership/         KSEI >1% register: discover.rs (idx.co.id page, Cloudflare strategy), ingest.rs (XLSX/PDF),
                      normalize.rs (entity keys), db.rs (SQLite schema + queries). Imported once, queried locally.
-  mcp/               rmcp stdio server; one #[tool] per stocks command, same JSON envelope as -o json
-  model/             provider-agnostic domain types = the JSON contract (Quote, Candle, History)
-  output/            table.rs (comfy-table), json.rs (Envelope + JSON Schema), format.rs (numbers)
+  mcp/               rmcp stdio server; one #[tool] per command, same JSON envelope as -o json;
+                     schema.rs rewrites input schemas into the subset every harness accepts
+  model/             provider-agnostic domain types = the JSON contract (Quote, Candle, History, ...,
+                     dividends.rs, returns.rs, market.rs, brief.rs, watchlist.rs)
+  output/            table*.rs (comfy-table), json.rs (Envelope + JSON Schema), csv.rs (-o csv),
+                     format.rs (numbers); cli/mod.rs emit() picks the format for every handler
   http/              Fetcher: cache in front of a Backend (reqwest live / FixtureBackend tests)
   cache/             content-addressed file cache, TTL decided by the caller at read time
   config/            flags > IDX_* env > config.toml > defaults
@@ -45,13 +50,17 @@ tests/
   mcp.rs             spawns `idx mcp`, speaks JSON-RPC over stdio, offline
   fixtures/<provider>/  recorded raw responses used by unit tests
 scripts/smoke.sh     hits live providers; run manually, never in CI's test job
-docs/                json-output.md, configuration.md
-web/                 Cloudflare Worker for ihsg.midoriresearch.com (holding page now; D1 terminal in milestone 6)
+docs/                json-output.md, configuration.md, mcp.md, ownership.md
+web/                 Cloudflare Worker for ihsg.midoriresearch.com: landing page, browser terminal, D1 board;
+                     src/analysis.js and src/extras.js are JS ports of src/analysis/* tested on the same fixtures
+npm/                 @midoriresearch/idx wrapper: lib/binary.js downloads + verifies the release
+                     (postinstall when allowed, otherwise on first run)
 ```
 
-Planned (later milestones): `src/analysis/screen`,
-
-and the D1-backed terminal inside `web/`.
+CLI groups: `stocks` (quote, history, profile, financials, earnings, dividends, returns,
+fundamental, technical, brief, compare, screen, news, sentiment), `market overview`,
+`ownership` (import, ticker, entity, changes, foreign, releases, discover, path),
+`watch`, `mcp`, `schema`, `config`, `cache`, `completions`, `version`.
 
 ## Rules that keep the tool trustworthy
 
@@ -102,7 +111,11 @@ and the D1-backed terminal inside `web/`.
 4. Cover the parsing with fixtures and the CLI surface in `tests/cli.rs`.
 5. Add a matching `#[tool]` in `src/mcp/mod.rs` with a one-paragraph
    description and a typed argument struct, returning the same envelope.
-   Put shared logic in `src/service.rs`, never in the handler.
+   Put shared logic in `src/service.rs`, never in the handler. Keep argument
+   types to strings, numbers, booleans and string arrays; `mcp/schema.rs`
+   strips nullability and formats, and the tests fail on anything else.
+6. Mirror it in the web terminal when it fits (`web/src/api.js` endpoint,
+   `web/public/terminal.js` command) so the three faces stay in step.
 
 ## Development loop
 

@@ -6,11 +6,47 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-17
+
 ### Added
 
+- `stocks brief SYMBOL` and MCP `idx_brief`: quote, verdict, signal, returns
+  vs IHSG, dividend facts, top holders and headlines in one call, with
+  plain-language `key_points` and a `sections_failed` list.
+- `stocks dividends SYMBOL` / `idx_dividends`: Yahoo chart events
+  (`events=div,splits`), yearly totals, TTM total and yield, payout streak.
+- `stocks returns SYMBOLS` / `idx_returns`: 1w..5y and YTD returns, CAGR,
+  volatility, max drawdown, best/worst day, 52-week position, and excess over
+  a benchmark index (`^JKSE` by default). Index codes now parse everywhere.
+- `market overview` / `idx_market`: IHSG, breadth, turnover, gainers, losers,
+  most traded, heavyweights.
+- `ownership foreign [SYMBOL]` / `idx_ownership_foreign`: disclosed foreign vs
+  local stake per issuer over time, or every issuer's change between months.
+- `ownership changes --offset` paging and a `summary` block (counts, foreign/
+  local and investor-type net, issuer flow, top rises and falls) over every
+  match; rows carry `local_foreign`.
+- `-o csv` for every command.
+- `idx watch add|rm|list|clear|returns` and `idx watch` for a local watchlist.
 - Web terminal and landing page at https://ihsg.midoriresearch.com with a
-  minute-refreshed D1 snapshot API (`web/`), screenshots in `docs/screenshots/`.
+  minute-refreshed D1 snapshot API (`web/`), now serving the new endpoints
+  (`dividends`, `returns`, `brief`, `ownership/foreign`) too.
 - `web/scripts/ownership-sync.mjs` to publish a local ownership register to D1.
+
+### Changed
+
+- `stocks news SYMBOL` lists the company's headlines first and then fills the
+  limit with market headlines (`scope` field, `company_matches`);
+  `--company-only` restores the strict filter. Sentiment uses company items only.
+- MCP tool input schemas are rewritten into the subset every harness accepts
+  (no `$schema`, no `format`, no nullable type arrays), so the tools register
+  in Gemini and OpenAI-strict clients as well as Claude.
+- README logo respects GitHub dark mode and no longer clips its tagline.
+
+### Fixed
+
+- npm wrapper: npm 12 blocks dependency install scripts by default, so the
+  package arrived without a binary. The launcher now downloads and verifies
+  the binary on first run when postinstall did not.
 
 ## [0.1.0] - 2026-10-17
 

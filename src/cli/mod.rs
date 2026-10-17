@@ -133,7 +133,7 @@ pub enum Command {
 
     /// Start the MCP server on stdin/stdout (for Claude Code, Cursor and other MCP clients).
     #[command(
-        after_help = "Register with Claude Code:\n  claude mcp add idx -- idx mcp\n\nEvery stocks command becomes a tool (idx_quote, idx_history, idx_profile, idx_financials,\nidx_earnings, idx_fundamental, idx_technical, idx_compare) returning the same JSON as -o json.\nLogs go to stderr; stdout carries only the protocol."
+        after_help = "Register with Claude Code:\n  claude mcp add idx -- idx mcp\nOther clients (Cursor, Windsurf, Codex, Gemini CLI, Claude Desktop): command `idx`, args [\"mcp\"].\n\n20 tools returning the same JSON as -o json: idx_brief (start here), idx_market, idx_quote, idx_history,\nidx_profile, idx_financials, idx_earnings, idx_dividends, idx_returns, idx_fundamental, idx_technical,\nidx_compare, idx_screen, idx_news, idx_sentiment, idx_ownership_ticker|entity|changes|foreign|releases.\nLogs go to stderr; stdout carries only the protocol."
     )]
     Mcp,
 

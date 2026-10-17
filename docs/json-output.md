@@ -6,8 +6,17 @@ JSON too. Nothing else is ever written to stdout in JSON mode, so
 `idx -o json ... | jq` is safe.
 
 Machine-readable schemas: `idx schema <name>` with `quotes`, `history`,
-`profile`, `fundamentals`, `compare`, `financials`, `earnings`, `technical`,
-`error`, `quote`, `candle`.
+`profile`, `fundamentals`, `compare`, `financials`, `earnings`, `dividends`,
+`returns`, `market`, `brief`, `technical`, `screen`, `news`, `sentiment`,
+`ownership-holders`, `ownership-entity`, `ownership-changes`,
+`ownership-foreign`, `ownership-foreign-flow`, `ownership-releases`,
+`ownership-import`, `ownership-discover`, `watchlist`, `error`, `quote`,
+`candle`.
+
+`-o csv` prints the payload's main list (candles, rows, items, holders,
+changes, dividends, ...) as comma-separated rows with a header; nested objects
+become dotted columns (`valuation.pe_trailing`), arrays of scalars join with
+`|`, and a payload with no list becomes one row. Warnings still go to stderr.
 
 ## Envelope
 
@@ -108,10 +117,62 @@ tell a genuine "no match" from a capped fundamentals pass.
 
 News items: `title`, `url`, `source` (`kontan/investasi`,
 `cnbcindonesia/market`, ...), `published` (WIB), `summary`, `matched_by`
-(`ticker` | `name` | `all`), `sentiment` (-1..+1), `positive_terms`,
-`negative_terms`. The sentiment report adds `label` (`positive` | `negative`
-| `neutral` | `no_coverage`), `score`, counts, the covered period, top terms
-and the strongest `headlines`, plus `method` describing the lexicon rule.
+(`ticker` | `name` | `all`), `scope` (`company` when the item mentions the
+requested ticker, else `market`), `sentiment` (-1..+1), `positive_terms`,
+`negative_terms`. With a symbol, `items` lists company headlines first and
+then market headlines up to the limit; `company_matches` counts the company
+headlines before the limit and `company_only` records whether market context
+was suppressed. The sentiment report (company headlines only) adds `label`
+(`positive` | `negative` | `neutral` | `no_coverage`), `score`, counts, the
+covered period, top terms and the strongest `headlines`, plus `method`
+describing the lexicon rule.
+
+## `idx.dividends.v1` (`stocks dividends`)
+
+`dividends[]` (`date` = ex-date, `amount` per share as reported, split-adjusted
+on Yahoo) and `splits[]` (`date`, `numerator`, `denominator`, `ratio`) oldest
+first, with `price` and `price_date` from the same response. Computed by idx
+and documented as such: `years[]` (`year`, `payments`, `total`, `change_pct`),
+`last`, `ttm_total`, `ttm_payments`, `ttm_yield_pct` (= TTM total / price),
+`consecutive_years`, `as_of`.
+
+## `idx.returns.v1` (`stocks returns`)
+
+Array, one `Performance` per requested ticker: `as_of`, `price`, `start`,
+`candles_used`, `returns` (`1w 1m 3m 6m ytd 1y 3y 5y`, percent, `null` when
+the history is too short), `cagr_3y_pct`, `cagr_5y_pct`, `volatility_1y_pct`
+(annualised stdev of daily log returns), `max_drawdown_1y` and
+`max_drawdown_all` (`pct`, `peak_date`, `trough_date`, `recovered`),
+`best_day_1y`, `worst_day_1y`, `high_52w`, `low_52w`, `pct_from_52w_high`,
+`pct_from_52w_low`, `days_since_52w_high`, and `benchmark` (`symbol`, `name`,
+`returns`, `excess` in percentage points) or `null`. Everything is computed
+from five years of daily closes; dividends are excluded.
+
+## `idx.market.v1` (`market overview`)
+
+`as_of`, `market_state`, `index` (a `MarketRow` for `^JKSE`), `universe`,
+`quoted`, `advancing`, `declining`, `unchanged`, `turnover`,
+`liquid_min_market_cap`, and the lists `gainers`, `losers`, `most_active`,
+`heavyweights` of `MarketRow` (`symbol`, `name`, `price`, `change`,
+`change_pct`, `volume`, `value`, `market_cap`). The web terminal serves the
+same shape plus `index_tape` and `refreshed_at`.
+
+## `idx.brief.v1` (`stocks brief`)
+
+`symbol`, `name`, `generated_at`, `key_points[]` (plain-language lines), then
+one section per topic, each either `null` or the dedicated command's object:
+`quote` (one `Quote`), `fundamentals` (`idx.fundamentals.v1` data),
+`technical`, `returns` (one `Performance`), `dividends` (`ttm_total`,
+`ttm_payments`, `ttm_yield_pct`, `consecutive_years`, `last`,
+`payments_on_record`), `ownership` (`as_of`, `listed_pct`, `foreign_pct`,
+`holders_listed`, `top_holders[]`), `news` (`company_matches`, `sentiment`,
+`score`, `headlines[]`), and `sections_failed[]` naming the `null` sections,
+with the reason in the envelope's `warnings`.
+
+## `idx.watchlist.v1` (`watch add|rm|list|clear`)
+
+`path` and `symbols[]`. `idx watch` itself returns `idx.quotes.v1` and
+`idx watch returns` returns `idx.returns.v1`.
 
 ## `idx.profile.v1` (`stocks profile`)
 
