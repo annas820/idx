@@ -1,5 +1,6 @@
 // The web terminal: parses CLI-shaped commands, calls /api, prints statements.
 import { api, fmt, table, wrapScroll, el, sparkline, signClass } from "/app.js";
+import { priceChart } from "/chart.js";
 
 const out = document.getElementById("out");
 const form = document.getElementById("prompt");
@@ -9,7 +10,7 @@ const dateline = document.getElementById("dateline");
 // ---- command table ---------------------------------------------------------
 
 const COMMANDS = [
-  { name: "quote", usage: "quote <SYMBOLS>", help: "delayed quotes, e.g. quote BBCA,BBRI" },
+  { name: "quote", usage: "quote <SYMBOLS>", help: "delayed quotes, e.g. quote BBCA,BBRI; one symbol adds a price chart (1D to 5Y)" },
   { name: "history", usage: "history <SYMBOL> [period] [interval]", help: "OHLCV candles; periods 1d 5d 1mo 3mo 6mo 1y 2y 5y 10y ytd max, intervals 5m 15m 30m 1h 1d 1wk 1mo" },
   { name: "profile", usage: "profile <SYMBOL>", help: "sector, industry, description, size" },
   { name: "financials", usage: "financials <SYMBOL> [annual|quarterly|ttm]", help: "income statement, balance sheet, cash flow" },
@@ -72,7 +73,8 @@ const newsTable = (items) => wrapScroll(table([
 
 const R = {
   quotes(d) {
-    return wrapScroll(table([
+    const frag = document.createDocumentFragment();
+    frag.append(wrapScroll(table([
       { h: "Symbol", k: "symbol", l: true, cls: "sym" },
       { h: "Price", f: (r) => fmt.price(r.price), cls: "num" },
       { h: "Chg %", f: (r) => fmt.pct(r.change_pct), cls: (r) => `num ${signClass(r.change_pct)}` },
@@ -80,7 +82,9 @@ const R = {
       { h: "Name", k: "name", l: true, cls: "name" }, { h: "Open", f: (r) => fmt.price(r.open) },
       { h: "High", f: (r) => fmt.price(r.day_high) }, { h: "Low", f: (r) => fmt.price(r.day_low) }, { h: "Volume", f: (r) => fmt.int(r.volume) },
       { h: "Mkt Cap", f: (r) => fmt.compact(r.market_cap) }, { h: "P/E", f: (r) => fmt.ratio(r.pe_trailing) }, { h: "Div %", f: (r) => pct(r.dividend_yield_pct) },
-    ], d));
+    ], d)));
+    if (d.length === 1) frag.append(priceChart(d[0]));
+    return frag;
   },
   history(d) {
     const rows = d.candles.slice(-40);
@@ -456,7 +460,7 @@ input.addEventListener("keydown", (ev) => {
 });
 
 // hints + deep links (?cmd=)
-const SAMPLE = ["market", "brief BBCA", "quote BBCA,BBRI,TLKM", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
+const SAMPLE = ["market", "brief BBCA", "quote BBCA", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
 document.getElementById("hints").append(...SAMPLE.map((s) => el("button", { type: "button", text: s, onclick: () => { hist.push(s); hIdx = hist.length; execute(s); } })));
 
 api("market").then((m) => { dateline.textContent = `${fmt.wib(m.data.as_of || m.data.refreshed_at)} · ${m.data.market_open ? "market open" : "market closed"} · ${m.data.quoted} quoted`; }).catch(() => { dateline.textContent = "snapshot unavailable"; });

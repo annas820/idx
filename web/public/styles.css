@@ -233,6 +233,34 @@ p { margin: 0; }
 .hints button { font: inherit; font-family: var(--mono); font-size: 0.8rem; background: transparent; border: 1px solid var(--rule-soft); padding: 0.15rem 0.5rem; cursor: pointer; color: var(--ink-2); }
 .hints button:hover { border-color: var(--ink); color: var(--ink); }
 .spark { height: 36px; width: 100%; display: block; }
+
+/* single-quote chart: range buttons print ink on paper when pressed, the line is green-ink or red */
+.chart { margin-top: 1rem; }
+.chart-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--rule); }
+.chart-ranges { display: flex; flex-wrap: wrap; }
+.chart-ranges button { font: inherit; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.04em; background: transparent; color: var(--ink-2); border: 1px solid var(--rule-soft); margin: 0 -1px 0 0; padding: 0.18rem 0.55rem; cursor: pointer; transition: background-color 120ms ease-out, color 120ms ease-out; }
+.chart-ranges button:hover { color: var(--ink); border-color: var(--ink); position: relative; }
+.chart-ranges button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); position: relative; }
+.chart-note { margin-left: auto; font-size: 0.8rem; color: var(--ink-3); }
+.chart-readout { font-size: 0.86rem; color: var(--ink-2); padding: 0.4rem 0 0.2rem; min-height: 1.85rem; }
+.chart-readout b { color: var(--ink); font-weight: 800; }
+.chart-plot { touch-action: pan-y; border-bottom: 2px solid var(--rule); }
+.chart-plot svg { display: block; width: 100%; height: auto; cursor: crosshair; overflow: visible; }
+.chart-plot svg:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.chart-plot .warn { padding: 1rem 0; }
+.chart .grid { stroke: var(--rule-soft); stroke-width: 1; shape-rendering: crispEdges; }
+.chart .axis { stroke: var(--rule); stroke-width: 1; shape-rendering: crispEdges; }
+.chart .ref { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 3 4; }
+.chart .vol { fill: var(--rule-soft); }
+.chart .ln { fill: none; stroke: var(--green-ink); stroke-width: 1.6; stroke-linejoin: round; }
+.chart .fall .ln { stroke: var(--red); }
+.chart text { fill: var(--ink-3); font-size: 11px; }
+.chart text.reflabel { fill: var(--ink-2); }
+.chart text.last { fill: var(--green-ink); font-weight: 800; }
+.chart .fall text.last { fill: var(--red); }
+.chart .cross line { stroke: var(--ink); stroke-width: 1; shape-rendering: crispEdges; }
+.chart .cross circle { fill: var(--paper); stroke: var(--green-ink); stroke-width: 2; }
+.chart .fall .cross circle { stroke: var(--red); }
 @media (max-width: 46rem) {
   .prompt { grid-template-columns: 1fr auto; }
   .prompt label { grid-column: 1 / -1; }
