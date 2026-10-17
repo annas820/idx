@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-labelledby="t d">
+  <title id="t">idx</title>
+  <desc id="d">Three candlesticks forming the letters i, d and x, followed by the wordmark idx. Light-theme variant.</desc>
+  <defs>
+    <linearGradient id="up" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#16a34a"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="dn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f43f5e"/>
+      <stop offset="1" stop-color="#be123c"/>
+    </linearGradient>
+  </defs>
+  <!-- mark: a 128x128 tile -->
+  <rect x="16" y="16" width="128" height="128" rx="28" fill="#0b0f14"/>
+  <g stroke="#1f2937" stroke-width="1">
+    <line x1="32" y1="56" x2="128" y2="56"/>
+    <line x1="32" y1="80" x2="128" y2="80"/>
+    <line x1="32" y1="104" x2="128" y2="104"/>
+  </g>
+  <g stroke-linecap="round">
+    <line x1="52" y1="40" x2="52" y2="124" stroke="#f43f5e" stroke-width="3"/>
+    <rect x="44" y="66" width="16" height="42" rx="3" fill="url(#dn)"/>
+    <line x1="80" y1="34" x2="80" y2="112" stroke="#4ade80" stroke-width="3"/>
+    <rect x="72" y="44" width="16" height="52" rx="3" fill="url(#up)"/>
+    <line x1="108" y1="48" x2="108" y2="118" stroke="#4ade80" stroke-width="3"/>
+    <rect x="100" y="58" width="16" height="30" rx="3" fill="url(#up)"/>
+  </g>
+  <circle cx="52" cy="30" r="4" fill="#f8fafc"/>
+  <!-- wordmark -->
+  <g font-family="ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-weight="700">
+    <text x="176" y="104" font-size="88" fill="#0b0f14" letter-spacing="-4">idx</text>
+    <text x="356" y="104" font-size="30" fill="#15803d" font-weight="500">IHSG</text>
+    <text x="356" y="130" font-size="16" fill="#475569" font-weight="500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">Indonesian market data for people and agents</text>
+  </g>
+</svg>
