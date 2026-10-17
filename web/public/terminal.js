@@ -25,6 +25,7 @@ const COMMANDS = [
   { name: "brief", usage: "brief <SYMBOL>", help: "one page: quote, verdict, signal, returns, dividends, holders, headlines" },
   { name: "sentiment", usage: "sentiment <SYMBOL>", help: "lexicon sentiment over matching headlines" },
   { name: "broker", usage: "broker <SYMBOLS> [--date D | --from D --to D] [--investor foreign|domestic] [--board regular|cash|negotiated]", help: "which brokers bought and sold it: top 10 per side ranked by lots (IPOT), latest session by default" },
+  { name: "bandar", usage: "bandar <SYMBOLS> [--period 1d|1w|1m|3m] [--top 1|3|5|10] [--daily] [--date D | --from D --to D] | bandar screen [--preset P] [--filter F] [--period P] [--sort KEY] [--limit N]", help: "bandarmology: are the top brokers accumulating or distributing? screen presets: big-accumulation, accumulation, distribution, big-distribution, quiet-accumulation, quiet-distribution, foreign-accumulation, below-bandar" },
   { name: "market", usage: "market", help: "IHSG, breadth, gainers, losers, most traded" },
   { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] [--offset N] | foreign [SYMBOL] | releases", help: "KSEI holders above 1 %, synced monthly from IDX: holders, entities, monthly changes with a summary, foreign vs local" },
   { name: "json", usage: "json <command…>", help: "print the raw JSON envelope of any command" },
@@ -70,6 +71,8 @@ const newsTable = (items) => wrapScroll(table([
   { h: "±", f: (i) => (i.sentiment > 0 ? "+" : i.sentiment < 0 ? "−" : "·"), cls: (i) => signClass(i.sentiment) },
   { h: "Headline", f: (i) => el("a", { href: i.url, target: "_blank", rel: "noopener", text: i.title }), l: true },
 ], items));
+
+const BANDAR_NOTE = "Bandarmology from the IPOT broker summary: the top N buyers against the top N sellers (ranked by lots), net value as a share of the value traded: +15% big accumulation, +5% accumulation, -5% distribution, -15% big distribution. Heuristic, not advice.";
 
 const R = {
   quotes(d) {
@@ -271,6 +274,79 @@ const R = {
     frag.append(el("p", { class: "warn", text: "Sums over holders above 1 % only (KSEI L/A flag); holders below 1 % are not published." }));
     return frag;
   },
+  bandar(list) {
+    const frag = document.createDocumentFragment();
+    const SIG = { big_accumulation: "big acc", accumulation: "acc", neutral: "neutral", distribution: "dist", big_distribution: "big dist" };
+    const sigCls = (g) => (g.endsWith("accumulation") ? "up" : g.endsWith("distribution") ? "dn" : "");
+    const p1 = (v) => (v == null ? "—" : `${v > 0 ? "+" : ""}${v.toFixed(1)}%`);
+    const net = (v) => `${v > 0 ? "+" : ""}${fmt.compact(v)}`;
+    const KIND = { local: "local", foreign: "foreign", state_owned: "BUMN" };
+    const side = (title, rows) => el("div", { class: "stmt" }, [el("h3", { class: "stmt-title", text: title }), wrapScroll(table([
+      { h: "Code", k: "code", l: true, cls: "sym" }, { h: "Broker", f: (r) => r.name, l: true, cls: "name" }, { h: "Class", f: (r) => KIND[r.kind] || "—", l: true },
+      { h: "Lots", f: (r) => fmt.compact(r.lots) }, { h: "Value", f: (r) => fmt.compact(r.value) }, { h: "Avg", f: (r) => fmt.price(r.average_price) },
+    ], rows))]);
+    for (const r of list) {
+      const range = r.from === r.to ? r.from : `${r.from} to ${r.to}`;
+      frag.append(el("p", { class: "prose" }, [el("b", { text: r.symbol }), `${r.name ? ` · ${r.name}` : ""} · ${range} (${r.period}) · ${r.investor} investors · ${r.board === "all" ? "all boards" : `${r.board} board`}`]));
+      if (!(r.total_value > 0)) { frag.append(el("p", { class: "warn", text: `No trades from ${r.from} to ${r.to}.` })); continue; }
+      frag.append(el("p", { class: "prose" }, [
+        el("span", { class: `pill ${sigCls(r.signal)}`, text: r.signal.replace("_", " ") }),
+        ` top ${r.top} net `, el("span", { class: signClass(r.net_value), text: net(r.net_value) }), ` (${p1(r.net_pct)} of ${fmt.compact(r.total_value)} traded) · phase ${r.phase ? r.phase.replace("_", " ") : "—"} · price ${fmt.price(r.price)} (`,
+        el("span", { class: signClass(r.price_change_pct), text: fmt.pct(r.price_change_pct) }), ")",
+      ]));
+      frag.append(el("p", { class: "prose" }, [
+        `Top ${r.top} buyers' average ${fmt.price(r.bandar_average == null ? null : Math.round(r.bandar_average))} (`, el("span", { class: signClass(r.bandar_gain_pct), text: p1(r.bandar_gain_pct) }),
+        " vs price) · foreign net ", el("span", { class: signClass(r.foreign_net_value), text: net(r.foreign_net_value) }), ` (${p1(r.foreign_net_pct)})`,
+      ]));
+      frag.append(wrapScroll(table([
+        { h: "Top", f: (t) => (t.top === r.top ? el("b", { text: String(t.top) }) : String(t.top)), l: true },
+        { h: "Buy value", f: (t) => fmt.compact(t.buy_value) }, { h: "Sell value", f: (t) => fmt.compact(t.sell_value) },
+        { h: "Net value", f: (t) => net(t.net_value), cls: (t) => `num ${signClass(t.net_value)}` }, { h: "Net lots", f: (t) => net(t.net_lots), cls: (t) => `num ${signClass(t.net_lots)}` },
+        { h: "Net %", f: (t) => p1(t.net_pct), cls: (t) => `num ${signClass(t.net_pct)}` }, { h: "Buy share", f: (t) => (t.buy_share_pct == null ? "—" : `${t.buy_share_pct.toFixed(1)}%`) },
+        { h: "Buy avg", f: (t) => fmt.price(t.buy_average == null ? null : Math.round(t.buy_average)) }, { h: "Sell avg", f: (t) => fmt.price(t.sell_average == null ? null : Math.round(t.sell_average)) },
+        { h: "Signal", f: (t) => SIG[t.signal], cls: (t) => sigCls(t.signal) },
+      ], r.tiers)));
+      const grid = el("div", { class: "two" });
+      grid.append(side(`Top ${r.top} buyers`, r.buyers), side(`Top ${r.top} sellers`, r.sellers));
+      frag.append(grid);
+      if (r.daily) {
+        const d = r.daily;
+        frag.append(el("h3", { class: "stmt-title", text: `Bandar movement · cumulative top ${r.top} net` }));
+        if (d.days.length > 1) frag.append(sparkline(d.days.map((x, i) => [i, x.cumulative_net_value]), { cls: "spark" }));
+        frag.append(wrapScroll(table([
+          { h: "Date", k: "date", l: true }, { h: "Value", f: (x) => fmt.compact(x.total_value) },
+          { h: `Top ${r.top} net`, f: (x) => net(x.net_value), cls: (x) => `num ${signClass(x.net_value)}` }, { h: "Net %", f: (x) => p1(x.net_pct), cls: (x) => `num ${signClass(x.net_pct)}` },
+          { h: "Signal", f: (x) => SIG[x.signal], cls: (x) => sigCls(x.signal) }, { h: "Cumulative", f: (x) => net(x.cumulative_net_value), cls: (x) => `num ${signClass(x.cumulative_net_value)}` },
+          { h: "Foreign net", f: (x) => net(x.foreign_net_value), cls: (x) => `num ${signClass(x.foreign_net_value)}` },
+        ], d.days)));
+        const streak = d.streak === 0 ? "the latest session was neutral" : `${Math.abs(d.streak)} ${d.streak > 0 ? "accumulation" : "distribution"} session${Math.abs(d.streak) === 1 ? "" : "s"} in a row`;
+        frag.append(el("p", { class: "prose", text: `${d.accumulation_days} accumulation · ${d.distribution_days} distribution · ${d.neutral_days} neutral sessions · ${streak}` }));
+      }
+      frag.append(el("ul", { class: "reasons" }, r.reasons.map((x) => el("li", { text: x }))));
+    }
+    frag.append(el("p", { class: "warn", text: BANDAR_NOTE }));
+    return frag;
+  },
+  bandarScreen(s) {
+    const frag = document.createDocumentFragment();
+    const SIG = { big_accumulation: "big acc", accumulation: "acc", neutral: "neutral", distribution: "dist", big_distribution: "big dist" };
+    const sigCls = (g) => (g.endsWith("accumulation") ? "up" : g.endsWith("distribution") ? "dn" : "");
+    const p1 = (v) => (v == null ? "—" : `${v > 0 ? "+" : ""}${v.toFixed(1)}%`);
+    frag.append(el("p", { class: "prose" }, [el("b", { text: `Bandar screen${s.preset ? ` · ${s.preset}` : ""}` }), ` · ${s.period} ${s.from} to ${s.to} · top ${s.top} · scanned ${s.scanned} · ${s.checked} with trades · ${s.total_matches} match${s.total_matches === 1 ? "" : "es"}`]));
+    frag.append(el("p", { class: "prose", text: `Filters: ${s.filters.length ? s.filters.join(", ") : "none"} · sorted by ${s.sort} ${s.descending ? "descending" : "ascending"}` }));
+    if (!s.rows.length) frag.append(el("p", { class: "warn", text: "No stock matched." }));
+    else frag.append(wrapScroll(table([
+      { h: "Symbol", k: "symbol", l: true, cls: "sym" }, { h: "Signal", f: (r) => SIG[r.signal], cls: (r) => sigCls(r.signal) },
+      { h: "Net %", f: (r) => p1(r.net_pct), cls: (r) => `num ${signClass(r.net_pct)}` }, { h: "Net value", f: (r) => `${r.net_value > 0 ? "+" : ""}${fmt.compact(r.net_value)}`, cls: (r) => `num ${signClass(r.net_value)}` },
+      { h: "Chg %", f: (r) => fmt.pct(r.price_change_pct), cls: (r) => `num ${signClass(r.price_change_pct)}` }, { h: "Phase", f: (r) => (r.phase ? r.phase.replace("_", " ") : "—"), l: true },
+      { h: "Foreign %", f: (r) => p1(r.foreign_net_pct), cls: (r) => `num ${signClass(r.foreign_net_pct)}` },
+      { h: "Bandar avg", f: (r) => fmt.price(r.bandar_average == null ? null : Math.round(r.bandar_average)) }, { h: "Gain", f: (r) => p1(r.bandar_gain_pct), cls: (r) => `num ${signClass(r.bandar_gain_pct)}` },
+      { h: "Price", f: (r) => fmt.price(r.price) }, { h: "Top buyers", f: (r) => r.top_buyers.join(" "), l: true },
+    ], s.rows)));
+    if (s.rows.length < s.total_matches) frag.append(el("p", { class: "warn", text: `Showing ${s.rows.length} of ${s.total_matches} matches; --limit 0 for all.` }));
+    frag.append(el("p", { class: "warn", text: `${BANDAR_NOTE} The web screen reads a nightly scan of the session's 100 most traded stocks (after 16:45 WIB); the CLI scans live.` }));
+    return frag;
+  },
   broker(list) {
     const frag = document.createDocumentFragment();
     const KIND = { local: "local", foreign: "foreign", state_owned: "BUMN" };
@@ -384,6 +460,18 @@ async function run(line) {
     case "brief": need(pos, 1, cmd.usage); env = await api(`brief?symbol=${encodeURIComponent(sym())}`); render = R.brief; break;
     case "sentiment": need(pos, 1, cmd.usage); env = await api(`sentiment?symbol=${encodeURIComponent(sym())}`); render = R.sentiment; break;
     case "broker": need(pos, 1, cmd.usage); env = await api(`broker?${qs({ symbols: pos.join(","), date: opt.date, from: opt.from, to: opt.to, investor: opt.investor, board: opt.board })}`); render = R.broker; break;
+    case "bandar": {
+      if ((pos[0] || "").toLowerCase() === "screen") {
+        env = await api(`bandar/screen?${qs({ preset: opt.preset, filter: opt.filter, period: opt.period, top: opt.top, sort: opt.sort, asc: opt.asc ? "1" : opt.desc ? "0" : null, limit: opt.limit })}`);
+        render = R.bandarScreen;
+      } else {
+        const syms = (pos[0] || "").toLowerCase() === "detect" ? pos.slice(1) : pos;
+        need(syms, 1, cmd.usage);
+        env = await api(`bandar?${qs({ symbols: syms.join(","), period: opt.period, top: opt.top, daily: opt.daily ? "1" : null, date: opt.date, from: opt.from, to: opt.to, investor: opt.investor, board: opt.board })}`);
+        render = R.bandar;
+      }
+      break;
+    }
     case "market": env = await api("market"); render = R.market; break;
     case "ownership": {
       const sub = (pos[0] || "").toLowerCase();
@@ -460,7 +548,7 @@ input.addEventListener("keydown", (ev) => {
 });
 
 // hints + deep links (?cmd=)
-const SAMPLE = ["market", "brief BBCA", "quote BBCA", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
+const SAMPLE = ["market", "brief BBCA", "quote BBCA", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "bandar BBCA --daily", "bandar screen --preset big-accumulation", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
 document.getElementById("hints").append(...SAMPLE.map((s) => el("button", { type: "button", text: s, onclick: () => { hist.push(s); hIdx = hist.length; execute(s); } })));
 
 api("market").then((m) => { dateline.textContent = `${fmt.wib(m.data.as_of || m.data.refreshed_at)} · ${m.data.market_open ? "market open" : "market closed"} · ${m.data.quoted} quoted`; }).catch(() => { dateline.textContent = "snapshot unavailable"; });
