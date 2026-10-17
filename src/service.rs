@@ -12,8 +12,8 @@ use crate::analysis::screen::{self as scr, Filter, Key};
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{
-    Fundamentals, Interval, NewsItem, NewsReport, Period, ScreenReport, ScreenRow, SentimentReport,
-    Symbol, Technical,
+    DividendHistory, Fundamentals, Interval, NewsItem, NewsReport, Period, ScreenReport, ScreenRow,
+    SentimentReport, Symbol, Technical,
 };
 use crate::providers::news as newsfeed;
 use crate::providers::{Provider, Sourced};
@@ -216,6 +216,20 @@ pub async fn screen(
         total_matches: total,
         rows,
     }))
+}
+
+/// Dividend and split history with totals, trailing yield and streak.
+pub async fn dividends(p: &dyn Provider, symbol: &Symbol) -> Result<Sourced<DividendHistory>> {
+    let mut h = p.dividends(symbol).await?;
+    let today = chrono::Utc::now()
+        .with_timezone(&crate::model::wib())
+        .date_naive();
+    analysis::dividends::enrich(&mut h.data, today);
+    if h.data.dividends.is_empty() {
+        h.warnings
+            .push(format!("{symbol}: the source lists no dividend events"));
+    }
+    Ok(h)
 }
 
 /// Company name without legal-form tokens, for headline matching.

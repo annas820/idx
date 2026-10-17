@@ -8,12 +8,14 @@ use serde::{Deserialize, Serialize};
 
 use crate::error::{IdxError, Result};
 
+pub mod dividends;
 pub mod fundamentals;
 pub mod news;
 pub mod ownership;
 pub mod screen;
 pub mod technical;
 
+pub use dividends::{DividendEvent, DividendHistory, DividendYear, SplitEvent};
 pub use fundamentals::{
     Analyst, BalanceSheet, CashFlow, Director, Dividend, Earnings, EarningsQuarter,
     FinancialPeriod, Financials, Fundamentals, Growth, Health, IncomeStatement, NextEarnings,

@@ -25,8 +25,8 @@ use crate::error::{IdxError, Result};
 use crate::http::Fetched;
 use crate::http::Fetcher;
 use crate::model::{
-    Earnings, Financials, Fundamentals, History, Interval, Period, Profile, Quote, StatementPeriod,
-    Symbol,
+    DividendHistory, Earnings, Financials, Fundamentals, History, Interval, Period, Profile, Quote,
+    StatementPeriod, Symbol,
 };
 
 use super::{Provider, Sourced, Ttls};
@@ -63,6 +63,14 @@ impl Yahoo {
             symbol.yahoo(),
             period.as_str(),
             interval.as_str()
+        )
+    }
+
+    /// Full-history chart call carrying dividend and split events.
+    pub fn events_url(symbol: &Symbol) -> String {
+        format!(
+            "{CHART_BASE}{}?range=max&interval=1mo&events=div%2Csplits",
+            symbol.yahoo()
         )
     }
 
@@ -402,6 +410,40 @@ impl Provider for Yahoo {
             timeseries::parse_timeseries(&f.body, symbol, period)?,
             &f,
         ))
+    }
+
+    async fn dividends(&self, symbol: &Symbol) -> Result<Sourced<DividendHistory>> {
+        let url = Self::events_url(symbol);
+        let f = match self
+            .fetcher
+            .get(&url, &[], self.ttls.fundamentals, None)
+            .await
+        {
+            Ok(f) => f,
+            Err(IdxError::OfflineMiss(_)) => {
+                return Err(IdxError::OfflineMiss(format!(
+                    "no cached dividend history for {symbol}"
+                )))
+            }
+            Err(e) => return Err(e),
+        };
+        if f.status == 404 {
+            return Err(IdxError::NotFound(format!(
+                "{symbol}: {}",
+                parse::chart_error(&f.body)
+            )));
+        }
+        if !f.is_success() {
+            return Err(IdxError::provider(
+                NAME,
+                format!(
+                    "chart endpoint HTTP {}: {}",
+                    f.status,
+                    parse::chart_error(&f.body)
+                ),
+            ));
+        }
+        Ok(Self::sourced(parse::parse_events(&f.body)?, &f))
     }
 }
 

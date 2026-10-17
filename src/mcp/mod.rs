@@ -25,10 +25,10 @@ use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
-    self, Envelope, ErrorEnvelope, SCHEMA_COMPARE, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
-    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_ENTITY,
-    SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES, SCHEMA_PROFILE, SCHEMA_QUOTES,
-    SCHEMA_TECHNICAL,
+    self, Envelope, ErrorEnvelope, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
+    SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_OWNERSHIP_CHANGES,
+    SCHEMA_OWNERSHIP_ENTITY, SCHEMA_OWNERSHIP_HOLDERS, SCHEMA_OWNERSHIP_RELEASES, SCHEMA_PROFILE,
+    SCHEMA_QUOTES, SCHEMA_TECHNICAL,
 };
 use crate::output::json::{SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT};
 use crate::ownership::OwnershipDb;
@@ -359,6 +359,26 @@ impl IdxServer {
             async {
                 let symbol = Symbol::parse(&a.symbol)?;
                 ok(SCHEMA_EARNINGS, self.provider.earnings(&symbol).await?)
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_dividends",
+        description = "Cash dividend and stock split history for one IDX ticker: every payment (ex-date, per-share amount as reported, split-adjusted), yearly totals with year-over-year change, trailing-twelve-month total and yield (TTM total / last price, computed by idx), the latest payment and the consecutive-years streak. Returns the idx.dividends.v1 envelope."
+    )]
+    async fn dividends(
+        &self,
+        Parameters(a): Parameters<SymbolArg>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbol = Symbol::parse(&a.symbol)?;
+                ok(
+                    SCHEMA_DIVIDENDS,
+                    service::dividends(self.provider.as_ref(), &symbol).await?,
+                )
             }
             .await,
         )
@@ -721,6 +741,7 @@ mod tests {
             names,
             [
                 "idx_compare",
+                "idx_dividends",
                 "idx_earnings",
                 "idx_financials",
                 "idx_fundamental",

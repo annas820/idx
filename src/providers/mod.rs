@@ -19,8 +19,8 @@ use serde::{Deserialize, Serialize};
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{
-    Earnings, Financials, Fundamentals, History, Interval, Period, Profile, Quote, StatementPeriod,
-    Symbol,
+    DividendHistory, Earnings, Financials, Fundamentals, History, Interval, Period, Profile, Quote,
+    StatementPeriod, Symbol,
 };
 
 pub mod msn;
@@ -143,6 +143,12 @@ pub trait Provider: Send + Sync {
 
     async fn earnings(&self, _symbol: &Symbol) -> Result<Sourced<Earnings>> {
         Err(IdxError::unsupported(self.name(), "earnings"))
+    }
+
+    /// Dividend and split events as reported; `analysis::dividends::enrich`
+    /// computes the totals and yield afterwards.
+    async fn dividends(&self, _symbol: &Symbol) -> Result<Sourced<DividendHistory>> {
+        Err(IdxError::unsupported(self.name(), "dividend history"))
     }
 }
 
@@ -326,6 +332,10 @@ impl Provider for Chain {
 
     async fn earnings(&self, symbol: &Symbol) -> Result<Sourced<Earnings>> {
         first_ok!(self, p => p.earnings(symbol))
+    }
+
+    async fn dividends(&self, symbol: &Symbol) -> Result<Sourced<DividendHistory>> {
+        first_ok!(self, p => p.dividends(symbol))
     }
 }
 

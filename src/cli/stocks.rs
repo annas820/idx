@@ -7,9 +7,9 @@ use crate::error::IdxError;
 use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
-    Envelope, SCHEMA_COMPARE, SCHEMA_EARNINGS, SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS,
-    SCHEMA_HISTORY, SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_SCREEN, SCHEMA_SENTIMENT,
-    SCHEMA_TECHNICAL,
+    Envelope, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
+    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_SCREEN,
+    SCHEMA_SENTIMENT, SCHEMA_TECHNICAL,
 };
 use crate::output::table_news as newstbl;
 use crate::output::table_reports::{self as reports, StatementFlags};
@@ -90,6 +90,18 @@ pub enum StocksCmd {
     Earnings {
         #[arg(value_name = "SYMBOL")]
         symbol: String,
+    },
+
+    /// Cash dividend and split history with yearly totals, trailing-twelve-month yield and the payout streak.
+    #[command(
+        after_help = "Examples:\n  idx stocks dividends BBCA\n  idx stocks dividends TLKM --limit 20\n  idx -o json stocks dividends BBRI | jq '.data | {ttm_total, ttm_yield_pct, consecutive_years}'\n\nAmounts are per share as reported by the source (split-adjusted on Yahoo), keyed by ex-date.\nThe yearly totals, TTM yield (TTM total / last price) and streak are computed by idx."
+    )]
+    Dividends {
+        #[arg(value_name = "SYMBOL")]
+        symbol: String,
+        /// Most recent payments listed in table mode (JSON carries all).
+        #[arg(long, short = 'n', default_value_t = 12)]
+        limit: usize,
     },
 
     /// Valuation, profitability, balance-sheet, growth and dividend ratios with a plain-language verdict.
@@ -199,6 +211,7 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
             statement,
         } => financials(ctx, &symbol, period, statement).await,
         StocksCmd::Earnings { symbol } => earnings(ctx, &symbol).await,
+        StocksCmd::Dividends { symbol, limit } => dividends(ctx, &symbol, limit).await,
         StocksCmd::Fundamental { symbol } => fundamental(ctx, &symbol).await,
         StocksCmd::Technical { symbol, period } => technical(ctx, &symbol, period).await,
         StocksCmd::Compare { symbols } => compare(ctx, &symbols).await,
@@ -361,6 +374,17 @@ async fn earnings(ctx: &Context, raw: &str) -> Result<()> {
     }
     notices(ctx, &result);
     output::print_stdout(&reports::earnings(&result.data, ctx.color))
+}
+
+async fn dividends(ctx: &Context, raw: &str, limit: usize) -> Result<()> {
+    let symbol = Symbol::parse(raw)?;
+    let result = service::dividends(ctx.provider.as_ref(), &symbol).await?;
+    if ctx.json() {
+        let env = Envelope::from_sourced(SCHEMA_DIVIDENDS, result);
+        return output::print_stdout(&output::json::to_pretty(&env)?);
+    }
+    notices(ctx, &result);
+    output::print_stdout(&reports::dividends(&result.data, limit, ctx.color))
 }
 
 async fn fundamental(ctx: &Context, raw: &str) -> Result<()> {

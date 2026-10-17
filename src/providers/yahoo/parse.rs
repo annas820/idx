@@ -4,7 +4,10 @@
 use serde_json::Value;
 
 use crate::error::{IdxError, Result};
-use crate::model::{wib_from_unix, Candle, History, Interval, Period, Quote, Symbol};
+use crate::model::{
+    wib_from_unix, Candle, DividendEvent, DividendHistory, History, Interval, Period, Quote,
+    SplitEvent, Symbol,
+};
 
 use super::NAME;
 
@@ -144,6 +147,66 @@ pub fn parse_chart(body: &str, period: Period, interval: Interval) -> Result<His
         summary: History::summarise(&candles),
         candles,
     })
+}
+
+/// Parses the `events` block of a chart response (`events=div,splits`) into
+/// the raw dividend history; computed fields stay empty.
+pub fn parse_events(body: &str) -> Result<DividendHistory> {
+    let r = chart_result(body)?;
+    let meta = r.get("meta").cloned().unwrap_or(Value::Null);
+    let m = J(&meta);
+    let symbol = Symbol::from_yahoo(&m.str("symbol").unwrap_or_default());
+    let day = |secs: Option<i64>| secs.and_then(wib_from_unix).map(|t| t.date_naive());
+
+    let mut dividends: Vec<DividendEvent> = r
+        .pointer("/events/dividends")
+        .and_then(Value::as_object)
+        .map(|o| {
+            o.values()
+                .filter_map(|e| {
+                    let e = J(e);
+                    Some(DividendEvent {
+                        date: day(e.i64("date"))?,
+                        amount: e.f64("amount")?,
+                    })
+                })
+                .collect()
+        })
+        .unwrap_or_default();
+    dividends.sort_by_key(|d| d.date);
+
+    let mut splits: Vec<SplitEvent> = r
+        .pointer("/events/splits")
+        .and_then(Value::as_object)
+        .map(|o| {
+            o.values()
+                .filter_map(|e| {
+                    let e = J(e);
+                    let numerator = e.f64("numerator")?;
+                    let denominator = e.f64("denominator")?;
+                    Some(SplitEvent {
+                        date: day(e.i64("date"))?,
+                        numerator,
+                        denominator,
+                        ratio: e
+                            .str("splitRatio")
+                            .unwrap_or_else(|| format!("{numerator}:{denominator}")),
+                    })
+                })
+                .collect()
+        })
+        .unwrap_or_default();
+    splits.sort_by_key(|s| s.date);
+
+    Ok(DividendHistory::raw(
+        symbol,
+        m.str("longName").or_else(|| m.str("shortName")),
+        m.str("currency"),
+        m.f64("regularMarketPrice"),
+        day(m.i64("regularMarketTime")),
+        dividends,
+        splits,
+    ))
 }
 
 /// Builds a reduced quote from a short (`range=5d`) chart response.
@@ -381,5 +444,30 @@ mod tests {
         let e = parse_v7_quotes(V7_401).unwrap_err();
         assert_eq!(e.exit_code(), 3);
         assert!(e.to_string().contains("Invalid Crumb"));
+    }
+
+    #[test]
+    fn events_parse_dividends_and_splits() {
+        let body = include_str!("../../../tests/fixtures/yahoo/chart_events_bbca_max.json");
+        let h = parse_events(body).unwrap();
+        assert_eq!(h.symbol.as_str(), "BBCA");
+        assert_eq!(h.name.as_deref(), Some("PT Bank Central Asia Tbk"));
+        assert_eq!(h.currency.as_deref(), Some("IDR"));
+        assert_eq!(h.price, Some(5175.0));
+        assert_eq!(h.dividends.len(), 47);
+        assert_eq!(h.splits.len(), 2);
+        let last = h.dividends.last().unwrap();
+        assert_eq!(
+            (last.date.to_string().as_str(), last.amount),
+            ("2026-08-31", 25.0)
+        );
+        assert_eq!(h.dividends[0].date.to_string(), "2004-07-01");
+        assert_eq!(h.splits[1].ratio, "5:1");
+        assert_eq!(h.splits[1].date.to_string(), "2021-10-13");
+        assert!(h.years.is_empty(), "computed fields are filled by analysis");
+        assert!(parse_events(include_str!(
+            "../../../tests/fixtures/yahoo/chart_not_found.json"
+        ))
+        .is_err());
     }
 }

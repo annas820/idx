@@ -6,8 +6,8 @@ use comfy_table::{Attribute, Cell, Color, Table};
 
 use crate::analysis::fundamental::summary_line;
 use crate::model::{
-    Earnings, FinancialPeriod, Financials, Fundamentals, Profile, SignalLabel, StatementPeriod,
-    Technical, Trend, VerdictLabel,
+    DividendHistory, Earnings, FinancialPeriod, Financials, Fundamentals, Profile, SignalLabel,
+    StatementPeriod, Technical, Trend, VerdictLabel,
 };
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
@@ -590,6 +590,71 @@ pub fn earnings(e: &Earnings, color: bool) -> String {
         ));
     }
     out.push_str(&format!("Source: {}\n", e.source));
+    out
+}
+
+pub fn dividends(h: &DividendHistory, limit: usize, color: bool) -> String {
+    let mut out = format!(
+        "{}{} · {} · price {}{} · TTM dividends {} ({} payment{}) · TTM yield {} · {} consecutive year{}{}\n",
+        h.symbol,
+        h.name.as_ref().map(|n| format!(" · {n}")).unwrap_or_default(),
+        h.currency.as_deref().unwrap_or("IDR"),
+        f::price(h.price),
+        h.price_date.map(|d| format!(" ({d})")).unwrap_or_default(),
+        h.ttm_total.map(|v| f::num(v, 2)).unwrap_or_else(|| f::DASH.into()),
+        h.ttm_payments,
+        if h.ttm_payments == 1 { "" } else { "s" },
+        pct_opt(h.ttm_yield_pct),
+        h.consecutive_years,
+        if h.consecutive_years == 1 { "" } else { "s" },
+        h.last
+            .as_ref()
+            .map(|d| format!(" · last {} {}", d.date, f::num(d.amount, 2)))
+            .unwrap_or_default(),
+    );
+    if h.dividends.is_empty() {
+        out.push_str("No dividend events reported by the source.\n");
+        return out;
+    }
+    out.push_str("Yearly totals (ex-date basis, per share)\n");
+    let mut t = base_table(color);
+    t.set_header(header(&["Year", "Payments", "Total", "vs prev"]));
+    let years: Vec<_> = h.years.iter().rev().take(10).collect();
+    for y in years.into_iter().rev() {
+        t.add_row(vec![
+            Cell::new(y.year).add_attribute(Attribute::Bold),
+            right(y.payments.to_string()),
+            right(f::num(y.total, 2)),
+            signed(f::pct(y.change_pct), y.change_pct, color),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+    let shown = limit.min(h.dividends.len());
+    out.push_str(&format!(
+        "Payments · last {shown} of {}\n",
+        h.dividends.len()
+    ));
+    let mut t = base_table(color);
+    t.set_header(header(&["Ex-date", "Amount"]));
+    for d in h.dividends.iter().rev().take(shown) {
+        t.add_row(vec![Cell::new(d.date), right(f::num(d.amount, 2))]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+    if !h.splits.is_empty() {
+        out.push_str(&format!(
+            "Splits · {}\n",
+            h.splits
+                .iter()
+                .map(|s| format!("{} {}", s.date, s.ratio))
+                .collect::<Vec<_>>()
+                .join(" · ")
+        ));
+    }
+    out.push_str(
+        "Amounts as reported by the source (split-adjusted on Yahoo). TTM yield = TTM total / last price, computed by idx.\n",
+    );
     out
 }
 
