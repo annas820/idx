@@ -873,6 +873,26 @@ async fn latest_broker_day(
     Ok(s)
 }
 
+/// One ticker: the given range, or its latest session with trades.
+async fn broker_one(
+    fetcher: &Arc<Fetcher>,
+    symbol: Symbol,
+    range: Option<(NaiveDate, NaiveDate)>,
+    q: BrokerQuery,
+    today: NaiveDate,
+) -> Result<Sourced<BrokerSummary>> {
+    let Some((from, to)) = range else {
+        return latest_broker_day(fetcher, &symbol, q, today).await;
+    };
+    let mut s =
+        ipot::broker_summary(fetcher, &symbol, from, to, q.investor, q.board, today).await?;
+    if s.data.is_empty() {
+        s.warnings
+            .push(format!("{symbol}: no trades from {from} to {to}"));
+    }
+    Ok(s)
+}
+
 /// Which brokers bought and sold each ticker (IPOT broker summary), with
 /// broker names from the bundled IDX member list. Tickers that fail become
 /// warnings; the call fails only when all of them do.
@@ -904,22 +924,8 @@ pub async fn broker(
             )));
         }
     }
-    let results: Vec<Result<Sourced<BrokerSummary>>> = stream::iter(symbols.iter())
-        .map(|s| async move {
-            match range {
-                Some((f, t)) => {
-                    let r =
-                        ipot::broker_summary(fetcher, s, f, t, q.investor, q.board, today).await;
-                    r.map(|mut v| {
-                        if v.data.is_empty() {
-                            v.warnings.push(format!("{s}: no trades from {f} to {t}"));
-                        }
-                        v
-                    })
-                }
-                None => latest_broker_day(fetcher, s, q, today).await,
-            }
-        })
+    let results: Vec<Result<Sourced<BrokerSummary>>> = stream::iter(symbols.to_vec())
+        .map(|s| broker_one(fetcher, s, range, q, today))
         .buffered(3)
         .collect()
         .await;
