@@ -1,0 +1,57 @@
+name: ownership data
+
+# Mirrors IDX's monthly "Pemegang Saham di Atas 1%" register to the
+# `ownership-data` prerelease. The web terminal's Worker pulls it from there on
+# its minute cron and `idx ownership import --latest` falls back to it, so
+# nobody imports anything by hand. See scripts/ownership_mirror.py.
+
+on:
+  schedule:
+    - cron: "17 1,7,13 * * *" # 08:17, 14:17 and 20:17 WIB
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build and parse everything but upload nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # create/update the ownership-data release
+
+concurrency:
+  group: ownership-data
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: ownership
+
+      - name: Build idx
+        run: cargo build --locked
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install curl_cffi
+        run: python -m pip install --disable-pip-version-check "curl_cffi>=0.16,<0.17"
+
+      - name: Mirror the register
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          python scripts/ownership_mirror.py
+          --idx target/debug/idx
+          --repo "$GITHUB_REPOSITORY"
+          --tag ownership-data
+          --work build/ownership
+          ${{ inputs.dry_run && '--dry-run' || '' }}
