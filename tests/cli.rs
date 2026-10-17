@@ -246,7 +246,10 @@ fn screen_news_sentiment_surface() {
     for (args, needle) in [
         (vec!["stocks", "screen", "--help"], "Keys: pe fpe pb"),
         (vec!["stocks", "news", "--help"], "Sources: kontan"),
-        (vec!["stocks", "sentiment", "--help"], "Indonesian and English"),
+        (
+            vec!["stocks", "sentiment", "--help"],
+            "Indonesian and English",
+        ),
     ] {
         idx(&sb.cache, &sb.config)
             .args(&args)
