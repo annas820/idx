@@ -6,13 +6,15 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
   plain HTML/CSS/ES modules, no build step.
 - `src/worker.js` entry: host check, security headers, `/api/*`, cron.
 - `src/api.js` endpoints returning the CLI's JSON envelopes; D1-backed cache.
+- `src/ipot.js` the IPOT broker summary (port of `src/providers/ipot`, names
+  from `src/brokers.json`, generated from `data/brokers.csv`).
 - `src/yahoo.js` the Yahoo endpoints and parsers; `src/analysis.js` ports of
   the Rust indicators, verdict, screener DSL and sentiment lexicon;
   `src/extras.js` ports of returns, dividends, news ordering and the
   ownership changes summary.
 - Endpoints under `/api`: `market`, `quote`, `history`, `profile`,
   `fundamental`, `earnings`, `financials`, `dividends`, `returns`, `technical`,
-  `brief`, `compare`, `screen`, `news`, `sentiment`, `ownership/ticker`,
+  `brief`, `compare`, `screen`, `news`, `sentiment`, `broker`, `ownership/ticker`,
   `ownership/entity`, `ownership/changes`, `ownership/foreign`,
   `ownership/releases`, `universe`.
 - `migrations/` D1 schema. `test/` runs with `node --test web/test/*.mjs`.

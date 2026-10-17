@@ -150,6 +150,7 @@ p { margin: 0; }
 .notes p::before { counter-increment: note; content: counter(note) "."; position: absolute; left: 0; top: 0.5rem; font-weight: 800; font-variation-settings: "wdth" 75; font-stretch: 75%; }
 .notes p b { font-weight: 800; }
 .three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 2rem; }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem; }
 .stmt { min-width: 0; }
 .stmt-title { font-size: 0.8rem; font-weight: 800; padding: 0.5rem 0 0.35rem; border-bottom: 1px solid var(--rule); }
 .stmt-title small { display: block; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--ink-3); font-size: 0.8rem; }
@@ -180,7 +181,7 @@ p { margin: 0; }
 @media (max-width: 64rem) {
   .lead { grid-template-columns: 1fr; }
   .ket { margin-top: 2rem; }
-  .three, .movers { grid-template-columns: 1fr; }
+  .two, .three, .movers { grid-template-columns: 1fr; }
   .notes { columns: 1; }
 }
 @media (max-width: 46rem) {

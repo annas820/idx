@@ -136,7 +136,7 @@
   <section class="section" aria-labelledby="notes-h">
     <h2 id="notes-h" class="strip"><span class="cond">Catatan</span><small>Notes to the statements · what this tool does and does not do</small></h2>
     <div class="notes">
-      <p><b>Scope.</b> <code>stocks quote · history · profile · financials · earnings · dividends · returns · fundamental · technical · brief · compare · screen · news · sentiment</code>, <code>market overview</code>, <code>ownership import · ticker · entity · changes · foreign</code> and <code>watch</code>, plus <code>mcp</code>, <code>schema</code>, <code>config</code>, <code>cache</code>. Output as a table, <code>-o json</code> or <code>-o csv</code>. Every command works on IDX tickers such as <code>BBCA</code>; <code>^JKSE</code> is IHSG.</p>
+      <p><b>Scope.</b> <code>stocks quote · history · profile · financials · earnings · dividends · returns · fundamental · technical · brief · compare · screen · news · sentiment</code>, <code>market overview</code>, <code>broker</code>, <code>ownership import · ticker · entity · changes · foreign</code> and <code>watch</code>, plus <code>mcp</code>, <code>schema</code>, <code>config</code>, <code>cache</code>. Output as a table, <code>-o json</code> or <code>-o csv</code>. Every command works on IDX tickers such as <code>BBCA</code>; <code>^JKSE</code> is IHSG.</p>
       <p><b>Sources.</b> Yahoo Finance for prices, history, profiles, ratios, earnings and statements; MSN Money for a second opinion on ratios and analyst targets; IDX's monthly KSEI file for holders above 1 %; Kontan and CNBC Indonesia feeds for news. Every response names its <code>provider</code>, <code>fetched_at</code>, and whether it came from cache.</p>
       <p><b>Provenance over polish.</b> When two sources disagree they are never averaged: the first answers, the second fills blanks, and <code>sources</code> lists who contributed. Yahoo publishes gross margin as 0 for banks; idx publishes <code>null</code>, because it means not applicable.</p>
       <p><b>Ownership.</b> Since March 2026 KSEI compiles, and IDX publishes monthly, every holder above 1 % of a listed company. The CLI imports the XLSX (or the earlier PDF) into local SQLite with normalised entity names, so <em>who holds more than 1 % of BBCA</em> and <em>what did this fund change last month</em> are one command each. idx.co.id sits behind Cloudflare; the import explains the manual path when a download is refused.</p>
@@ -172,7 +172,7 @@ Last trade 2026-10-16 16:14 WIB · market closed</pre>
 }</pre>
       </div>
       <div class="stmt">
-        <h3 class="stmt-title">For agents<small>idx mcp · 20 tools · stdio or HTTP</small></h3>
+        <h3 class="stmt-title">For agents<small>idx mcp · 21 tools · stdio or HTTP</small></h3>
         <table class="tbl tbl-mcp" aria-label="MCP tools">
           <tbody>
             <tr><td>idx_brief</td><td>one call, every section</td></tr>
@@ -181,6 +181,7 @@ Last trade 2026-10-16 16:14 WIB · market closed</pre>
             <tr><td>idx_fundamental · idx_technical</td><td>verdict, signal</td></tr>
             <tr><td>idx_returns · idx_dividends</td><td>vs IHSG, TTM yield</td></tr>
             <tr><td>idx_screen · idx_news · idx_sentiment</td><td>filter, headlines, lexicon</td></tr>
+            <tr><td>idx_broker</td><td>who bought and sold</td></tr>
             <tr><td>idx_ownership_*</td><td>holders, changes, foreign flow</td></tr>
           </tbody>
         </table>

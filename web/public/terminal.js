@@ -23,6 +23,7 @@ const COMMANDS = [
   { name: "returns", usage: "returns <SYMBOLS> [--benchmark ^JKSE|none]", help: "1w..5y returns, CAGR, volatility, drawdown, excess over IHSG" },
   { name: "brief", usage: "brief <SYMBOL>", help: "one page: quote, verdict, signal, returns, dividends, holders, headlines" },
   { name: "sentiment", usage: "sentiment <SYMBOL>", help: "lexicon sentiment over matching headlines" },
+  { name: "broker", usage: "broker <SYMBOLS> [--date D | --from D --to D] [--investor foreign|domestic] [--board regular|cash|negotiated]", help: "which brokers bought and sold it: top 10 per side by value (IPOT), latest session by default" },
   { name: "market", usage: "market", help: "IHSG, breadth, gainers, losers, most traded" },
   { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] [--offset N] | foreign [SYMBOL] | releases", help: "KSEI holders above 1 %, synced monthly from IDX: holders, entities, monthly changes with a summary, foreign vs local" },
   { name: "json", usage: "json <command…>", help: "print the raw JSON envelope of any command" },
@@ -266,6 +267,33 @@ const R = {
     frag.append(el("p", { class: "warn", text: "Sums over holders above 1 % only (KSEI L/A flag); holders below 1 % are not published." }));
     return frag;
   },
+  broker(list) {
+    const frag = document.createDocumentFragment();
+    const KIND = { local: "local", foreign: "foreign", state_owned: "BUMN" };
+    const cols = [
+      { h: "#", k: "rank" },
+      { h: "Code", k: "code", l: true, cls: "sym" },
+      { h: "Broker", f: (r) => r.name, l: true, cls: "name" },
+      { h: "Class", f: (r) => KIND[r.kind] || "—", l: true },
+      { h: "Lots", f: (r) => fmt.compact(r.lots) },
+      { h: "Value", f: (r) => fmt.compact(r.value) },
+      { h: "Avg", f: (r) => fmt.price(r.average_price) },
+    ];
+    for (const s of list) {
+      const range = s.from === s.to ? s.from : `${s.from} to ${s.to}`;
+      frag.append(el("p", { class: "prose", html: `<b>${s.symbol}</b>${s.name ? ` · ${s.name}` : ""} · ${range} · ${s.investor} investors · ${s.board === "all" ? "all boards" : `${s.board} board`}` }));
+      if (!s.buyers.length && !s.sellers.length) { frag.append(el("p", { class: "warn", text: `No trades from ${s.from} to ${s.to}.` })); continue; }
+      frag.append(el("p", { class: "prose", html: `Value ${fmt.compact(s.total_value)} · lots ${fmt.compact(s.total_lots)} · avg ${fmt.price(s.average_price)} · foreign net <span class="${signClass(s.foreign_net_value)}">${fmt.compact(s.foreign_net_value)}</span>` }));
+      const grid = el("div", { class: "two" });
+      grid.append(
+        el("div", { class: "stmt" }, [el("h3", { class: "stmt-title", text: "Top buyers" }), wrapScroll(table(cols, s.buyers))]),
+        el("div", { class: "stmt" }, [el("h3", { class: "stmt-title", text: "Top sellers" }), wrapScroll(table(cols, s.sellers))]),
+      );
+      frag.append(grid);
+    }
+    frag.append(el("p", { class: "warn", text: `Source: IPOT broker summary, top 10 buyers and sellers by value. One lot = 100 shares.${list.some((s) => s.rounded) ? " The source rounds figures of a million and more to one decimal." : ""}` }));
+    return frag;
+  },
   sentiment(s) {
     const frag = document.createDocumentFragment();
     const cls = s.label === "positive" ? "up" : s.label === "negative" ? "dn" : "";
@@ -351,6 +379,7 @@ async function run(line) {
     case "returns": need(pos, 1, cmd.usage); env = await api(`returns?${qs({ symbols: pos.join(","), benchmark: opt.benchmark })}`); render = R.returns; break;
     case "brief": need(pos, 1, cmd.usage); env = await api(`brief?symbol=${encodeURIComponent(sym())}`); render = R.brief; break;
     case "sentiment": need(pos, 1, cmd.usage); env = await api(`sentiment?symbol=${encodeURIComponent(sym())}`); render = R.sentiment; break;
+    case "broker": need(pos, 1, cmd.usage); env = await api(`broker?${qs({ symbols: pos.join(","), date: opt.date, from: opt.from, to: opt.to, investor: opt.investor, board: opt.board })}`); render = R.broker; break;
     case "market": env = await api("market"); render = R.market; break;
     case "ownership": {
       const sub = (pos[0] || "").toLowerCase();
@@ -427,7 +456,7 @@ input.addEventListener("keydown", (ev) => {
 });
 
 // hints + deep links (?cmd=)
-const SAMPLE = ["market", "brief BBCA", "quote BBCA,BBRI,TLKM", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
+const SAMPLE = ["market", "brief BBCA", "quote BBCA,BBRI,TLKM", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
 document.getElementById("hints").append(...SAMPLE.map((s) => el("button", { type: "button", text: s, onclick: () => { hist.push(s); hIdx = hist.length; execute(s); } })));
 
 api("market").then((m) => { dateline.textContent = `${fmt.wib(m.data.as_of || m.data.refreshed_at)} · ${m.data.market_open ? "market open" : "market closed"} · ${m.data.quoted} quoted`; }).catch(() => { dateline.textContent = "snapshot unavailable"; });

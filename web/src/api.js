@@ -5,8 +5,10 @@
 import * as y from "./yahoo.js";
 import * as an from "./analysis.js";
 import * as ex from "./extras.js";
+import * as ipot from "./ipot.js";
 import { syncStatus } from "./ownership-sync.js";
 import UNIVERSE from "./universe.json" with { type: "json" };
+import BROKERS from "./brokers.json" with { type: "json" };
 
 const NAME_BY_SYMBOL = new Map(UNIVERSE.map(([s, n]) => [s, n]));
 const SYMBOLS = UNIVERSE.map(([s]) => s);
@@ -404,6 +406,81 @@ export async function sentiment(env, symbolRaw) {
   return envelope("idx.sentiment.v1", rep, { provider: "news", cached: n.env.cached, stale: n.env.stale, fetched_at: Date.parse(n.env.fetched_at) / 1000, warnings: n.env.warnings || [] });
 }
 
+// ---- broker summary (IPOT) ---------------------------------------------
+
+const BROKER_MAX_SYMBOLS = 10;
+const BROKER_LOOKBACK_DAYS = 10;
+const wibToday = () => new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10);
+const addDays = (iso, n) => new Date(Date.parse(`${iso}T00:00:00Z`) + n * 86400e3).toISOString().slice(0, 10);
+function isoDate(raw, what) {
+  if (raw == null || raw === "") return null;
+  const s = String(raw).trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s) || Number.isNaN(Date.parse(`${s}T00:00:00Z`))) throw usage(`invalid ${what} "${raw}"; use YYYY-MM-DD`);
+  return s;
+}
+
+async function brokerRange(env, symbol, from, to, investor, board, today) {
+  // A range that ended before today no longer changes; today's moves with every trade.
+  const ttl = to < today ? 7 * 86400 : 5 * 60;
+  const r = await cached(env, `ipot:${symbol}:${from}:${to}:${investor}:${board}`, ttl, async () => {
+    let html;
+    try { html = await ipot.fetchPage(ipot.url(symbol, from, to, investor, board)); } catch (e) { throw provider(`ipot: broker summary for ${symbol}: ${e.message}`); }
+    const p = ipot.parse(html);
+    if (p.invalid) throw notFound(`${symbol} is not a stock code IPOT knows`);
+    return p;
+  });
+  const p = r.value;
+  const flow = (f) => ({ ...f, name: BROKERS[f.code] ?? null });
+  const data = {
+    symbol, name: NAME_BY_SYMBOL.get(symbol) || null, from: p.from || from, to: p.to || to, investor, board,
+    buyers: p.buyers.map(flow), sellers: p.sellers.map(flow),
+    total_value: p.total_value, total_lots: p.total_lots, foreign_net_value: p.foreign_net_value, average_price: p.average_price, rounded: p.rounded,
+  };
+  return { data, cached: r.cached, stale: r.stale, fetched_at: r.fetched_at, warnings: r.warning ? [r.warning] : [] };
+}
+
+async function brokerLatest(env, symbol, investor, board, today) {
+  let last = null;
+  for (let back = 0; back < BROKER_LOOKBACK_DAYS; back++) {
+    const day = addDays(today, -back);
+    const dow = new Date(`${day}T00:00:00Z`).getUTCDay();
+    if (dow === 0 || dow === 6) continue;
+    const s = await brokerRange(env, symbol, day, day, investor, board, today);
+    if (s.data.buyers.length || s.data.sellers.length) return s;
+    last = s;
+  }
+  last.warnings.push(`${symbol}: no trades in the ${BROKER_LOOKBACK_DAYS} days to ${today}`);
+  return last;
+}
+
+export async function broker(env, symbolsRaw, dateRaw, fromRaw, toRaw, investor = "all", board = "all") {
+  const symbols = parseSymbols(symbolsRaw);
+  if (symbols.length > BROKER_MAX_SYMBOLS) throw usage(`broker takes at most ${BROKER_MAX_SYMBOLS} tickers per call`);
+  investor = String(investor || "all").toLowerCase(); board = String(board || "all").toLowerCase();
+  if (!ipot.INVESTORS.includes(investor)) throw usage(`invalid investor "${investor}"; use all, foreign or domestic`);
+  if (!ipot.BOARDS.includes(board)) throw usage(`invalid board "${board}"; use all, regular, cash or negotiated`);
+  const date = isoDate(dateRaw, "date");
+  let from = isoDate(fromRaw, "from"), to = isoDate(toRaw, "to");
+  if (date && (from || to)) throw usage("use date or from/to, not both");
+  const today = wibToday();
+  if (date) from = to = date;
+  else if (from && !to) to = today;
+  else if (to && !from) from = to;
+  if (from && from > to) throw usage(`the range starts (${from}) after it ends (${to})`);
+  const results = await Promise.all(symbols.map((s) => (from ? brokerRange(env, s, from, to, investor, board, today).then((r) => {
+    if (!r.data.buyers.length && !r.data.sellers.length) r.warnings.push(`${s}: no trades from ${from} to ${to}`);
+    return r;
+  }) : brokerLatest(env, s, investor, board, today)).then((ok) => ({ ok })).catch((err) => ({ err, s }))));
+  const data = [], warnings = [];
+  let cachedAll = true, stale = false, fetched = Math.floor(Date.now() / 1000);
+  for (const r of results) {
+    if (r.ok) { data.push(r.ok.data); cachedAll &&= r.ok.cached; stale ||= r.ok.stale; fetched = Math.min(fetched, r.ok.fetched_at); warnings.push(...r.ok.warnings); }
+    else warnings.push(r.err.code === "not_found" ? `no broker summary for ${r.s}` : `${r.s}: ${r.err.message}`);
+  }
+  if (!data.length) throw results[0].err;
+  return envelope("idx.broker.v1", data, { provider: ipot.NAME, cached: cachedAll, stale, fetched_at: fetched, warnings });
+}
+
 // ---- ownership (synced register) --------------------------------------
 
 async function emptyRegisterMessage(env) {
@@ -574,6 +651,7 @@ export async function route(env, url) {
     case "/brief": return brief(env, q.get("symbol"));
     case "/ownership/foreign": return ownershipForeign(env, q.get("symbol"), q.get("from"), q.get("to"), num(q.get("limit"), 25));
     case "/sentiment": return sentiment(env, q.get("symbol"));
+    case "/broker": return broker(env, q.get("symbols") || q.get("symbol"), q.get("date"), q.get("from"), q.get("to"), q.get("investor") || "all", q.get("board") || "all");
     case "/ownership/ticker": return ownershipTicker(env, q.get("symbol"), q.get("as_of"));
     case "/ownership/entity": return ownershipEntity(env, q.get("name"), q.get("as_of"));
     case "/ownership/changes": return ownershipChanges(env, q.get("from"), q.get("to"), q.get("symbol"), num(q.get("min_change"), 0), num(q.get("limit"), 50), num(q.get("offset"), 0));
