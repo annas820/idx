@@ -1,0 +1,25 @@
+name = "idx-web"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+account_id = "dc0fe1ceb2528b6e2318010e82a9505a"
+
+# Only answer on the custom domain: no *.workers.dev URL, no preview URLs.
+# The Worker also rejects any other Host header (see src/worker.js).
+workers_dev = false
+preview_urls = false
+
+routes = [
+  { pattern = "ihsg.midoriresearch.com", custom_domain = true },
+]
+
+[assets]
+directory = "public"
+binding = "ASSETS"
+not_found_handling = "404-page"
+run_worker_first = true
+
+[vars]
+PUBLIC_HOST = "ihsg.midoriresearch.com"
+
+[observability]
+enabled = true

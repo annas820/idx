@@ -1,0 +1,12 @@
+{
+  "name": "idx-web",
+  "private": true,
+  "description": "ihsg.midoriresearch.com: landing page and hosted terminal for idx",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.147.0"
+  }
+}

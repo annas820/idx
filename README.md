@@ -122,11 +122,12 @@ or Microsoft.
 
 ## Web terminal
 
-A hosted terminal at **https://ihsg.midoriresearch.com** runs the same
-analysis on a Cloudflare Worker with a D1-backed snapshot refreshed every
-minute, so you can try everything without installing anything. It ships with
-the release milestone; screenshots of the terminal and the CLI will land here
-at the same time.
+**https://ihsg.midoriresearch.com** is live as a landing page today. The
+hosted terminal lands there with the release milestone: the same analysis on a
+Cloudflare Worker with a D1-backed snapshot refreshed every minute, so you can
+try everything without installing anything. The Worker lives in [`web/`](web/)
+and answers on the custom domain only (`workers_dev = false`, Host check in
+the Worker). Screenshots of the terminal and the CLI land here at the same time.
 
 ## Development
 

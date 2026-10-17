@@ -36,11 +36,12 @@ tests/
   fixtures/<provider>/  recorded raw responses used by unit tests
 scripts/smoke.sh     hits live providers; run manually, never in CI's test job
 docs/                json-output.md, configuration.md
+web/                 Cloudflare Worker for ihsg.midoriresearch.com (holding page now; D1 terminal in milestone 6)
 ```
 
 Planned (later milestones): `src/analysis/{technical,fundamental,screen}`,
 `src/ownership/{ingest,db,query}`, `src/mcp/`, `src/providers/{msn,idx,news}`,
-`web/` (Cloudflare Worker + D1 for the hosted terminal).
+and the D1-backed terminal inside `web/`.
 
 ## Rules that keep the tool trustworthy
 

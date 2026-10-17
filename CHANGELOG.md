@@ -18,6 +18,8 @@ All notable changes to this project are documented here. The format follows
 - `idx schema <name>`: JSON Schema for every JSON shape.
 - Local response cache with per-endpoint TTL, `--offline`, `--no-cache`, and
   `idx cache stats|clear|path`.
+- `web/`: Cloudflare Worker serving the landing page at
+  https://ihsg.midoriresearch.com, reachable on the custom domain only.
 - Config file with `idx config init|set|get|path`; precedence flags > env > file > defaults.
 - Shell completions for bash, zsh, fish, PowerShell and elvish.
 - Stable exit codes (0 ok, 2 usage, 3 network/provider, 4 not found,
