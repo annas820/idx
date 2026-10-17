@@ -15,6 +15,10 @@
 
 ---
 
+<p align="center">
+  <a href="https://ihsg.midoriresearch.com"><img src="docs/screenshots/landing.png" alt="ihsg.midoriresearch.com: the live board, published every minute" width="100%"></a>
+</p>
+
 ```sh
 idx stocks quote BBCA,BBRI,TLKM
 ```
@@ -38,6 +42,10 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
 { "price": 5175.0, "change_pct": -14.814815, "pe_trailing": 10.963983, "dividend_yield_pct": 6.27 }
 ```
 
+<p align="center">
+  <img src="docs/screenshots/cli.png" alt="idx stocks quote and idx stocks compare in a terminal" width="100%">
+</p>
+
 - **Free data, no keys.** Yahoo Finance and MSN Money for prices and
   fundamentals, IDX's monthly KSEI register for ownership, Kontan and CNBC
   Indonesia feeds for news. Every source sits behind a `Provider` trait, so
@@ -56,12 +64,23 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
 
 ## Install
 
-Pre-built binaries, an `install.sh` with checksum verification and an npm
-wrapper arrive with the first tagged release. Until then:
+One line, Linux and macOS (x64 and arm64), verifies the SHA-256 against the
+release's `SHA256SUMS`:
 
 ```sh
-cargo install --git https://github.com/fzn0x/idx
+curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh
 ```
+
+Other ways:
+
+```sh
+cargo install --git https://github.com/fzn0x/idx          # from source (Rust 1.88+)
+npx @midoriresearch/idx stocks quote BBCA                 # npm wrapper, downloads the matching release
+```
+
+Windows: download `idx-<version>-x86_64-pc-windows-msvc.zip` from the
+[releases page](https://github.com/fzn0x/idx/releases). Static Linux
+binaries are musl builds and run on any distribution.
 
 Shell completions:
 
@@ -157,12 +176,18 @@ or Microsoft.
 
 ## Web terminal
 
-**https://ihsg.midoriresearch.com** is live as a landing page today. The
-hosted terminal lands there with the release milestone: the same analysis on a
-Cloudflare Worker with a D1-backed snapshot refreshed every minute, so you can
-try everything without installing anything. The Worker lives in [`web/`](web/)
-and answers on the custom domain only (`workers_dev = false`, Host check in
-the Worker). Screenshots of the terminal and the CLI land here at the same time.
+**https://ihsg.midoriresearch.com/terminal** runs the same commands in a
+browser, no install: `quote BBCA,BBRI`, `fundamental TLKM`,
+`screen pe<10,div>5,mcap>5T --sort div`, `news ASII`, `ownership ticker BBCA`.
+A Cloudflare Worker refreshes a D1 snapshot of the whole IDX board every
+minute in trading hours and serves `/api/*` with the exact JSON envelopes the
+CLI prints; everything else is fetched on demand and cached. The Worker lives
+in [`web/`](web/) and answers on the custom domain only (`workers_dev = false`,
+Host check in the Worker).
+
+<p align="center">
+  <a href="https://ihsg.midoriresearch.com/terminal"><img src="docs/screenshots/terminal.png" alt="The idx web terminal showing technical BBRI" width="100%"></a>
+</p>
 
 ## Development
 

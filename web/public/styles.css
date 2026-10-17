@@ -41,11 +41,13 @@ a:hover { color: var(--ink); }
 code, kbd, pre { font-family: var(--mono); }
 pre { margin: 0; font-size: 0.78rem; line-height: 1.45; overflow-x: auto; scrollbar-width: thin; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.wrap { width: min(var(--maxw), 100% - 2 * var(--gutter)); margin: 0 auto; }
+.wrap { width: min(var(--maxw), 100% - 2 * var(--gutter)); margin: 0 auto; min-width: 0; }
+.lead > *, .three > *, .movers > *, .masthead .wrap > * { min-width: 0; }
+.masthead-title { overflow-wrap: anywhere; }
 
 /* ---- type ---------------------------------------------------------------- */
 .cond { font-variation-settings: "wdth" 75; font-stretch: 75%; }
-.masthead-title, .strip, .stmt-title, .stamp, .tbl th { text-transform: uppercase; letter-spacing: 0.04em; }
+.masthead-title b, .strip > span:first-child, .stmt-title, .stamp, .tbl th { text-transform: uppercase; letter-spacing: 0.04em; }
 h1, h2, h3 { margin: 0; font-weight: 800; line-height: 1.05; }
 p { margin: 0; }
 
@@ -65,8 +67,8 @@ p { margin: 0; }
 .brand { display: inline-flex; align-items: center; gap: 0.55rem; color: #fff; text-decoration: none; }
 .brand img { width: 34px; height: 34px; display: block; border-radius: 7px; border: 1px solid rgba(255,255,255,0.35); }
 .brand span { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.02em; }
-.masthead-title { font-size: clamp(0.78rem, 1.3vw, 0.95rem); font-weight: 700; text-align: center; color: #e9f6ee; }
-.masthead-title b { color: #fff; font-weight: 900; }
+.masthead-title { font-size: clamp(0.85rem, 1.2vw, 0.95rem); font-weight: 500; text-align: center; color: #e9f6ee; line-height: 1.2; }
+.masthead-title b { display: inline-block; color: #fff; font-weight: 900; font-size: clamp(1.3rem, 2.2vw, 1.6rem); margin-right: 0.5rem; vertical-align: -0.06em; }
 .dateline { text-align: right; font-size: 0.82rem; color: #e9f6ee; white-space: nowrap; }
 .dateline strong { color: #fff; font-weight: 700; }
 .masthead nav a { color: #fff; margin-left: 1rem; font-size: 0.88rem; }
@@ -79,8 +81,9 @@ p { margin: 0; }
   border-top: 3px solid var(--rule);
   border-bottom: 1px solid var(--rule);
   padding: 0.35rem 0;
-  font-size: 0.82rem; font-weight: 800;
+  font-size: 1rem; font-weight: 800;
 }
+.strip > span:first-child { font-size: 1.05rem; }
 .strip small { font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--ink-3); font-size: 0.8rem; }
 .strip.green { background: var(--green-deep); color: #fff; border-top-color: var(--green-deep); padding: 0.4rem 0.6rem; }
 .strip.green small { color: #d7eedf; }
@@ -114,7 +117,7 @@ p { margin: 0; }
 .tape { width: 100%; height: 44px; display: block; margin-top: 0.25rem; }
 
 /* ---- keterangan / action --------------------------------------------------- */
-.ket p { font-size: 0.95rem; padding: 0.55rem 0; border-bottom: 1px solid var(--rule-soft); }
+.ket p { font-size: 0.95rem; overflow-wrap: anywhere; padding: 0.55rem 0; border-bottom: 1px solid var(--rule-soft); }
 .ket p b { font-weight: 800; }
 .action { padding: 1.25rem 0 0.75rem; display: grid; gap: 0.9rem; }
 .stamp {
@@ -140,7 +143,7 @@ p { margin: 0; }
 /* ---- notes & statements ------------------------------------------------------ */
 .section { margin-top: 2.5rem; }
 .notes { columns: 2; column-gap: 2.5rem; counter-reset: note; padding-top: 0.5rem; }
-.notes p { break-inside: avoid; padding: 0.5rem 0 0.5rem 2.1rem; position: relative; font-size: 0.95rem; border-bottom: 1px solid var(--rule-soft); }
+.notes p { break-inside: avoid; overflow-wrap: anywhere; padding: 0.5rem 0 0.5rem 2.1rem; position: relative; font-size: 0.95rem; border-bottom: 1px solid var(--rule-soft); }
 .notes p::before { counter-increment: note; content: counter(note) "."; position: absolute; left: 0; top: 0.5rem; font-weight: 800; font-variation-settings: "wdth" 75; font-stretch: 75%; }
 .notes p b { font-weight: 800; }
 .three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 2rem; }
@@ -182,9 +185,9 @@ p { margin: 0; }
   .notes { columns: 1; }
 }
 @media (max-width: 46rem) {
-  .masthead .wrap { grid-template-columns: 1fr auto; }
+  .masthead .wrap { grid-template-columns: auto minmax(0, 1fr); gap: 0.5rem 1rem; }
   .masthead-title { grid-column: 1 / -1; text-align: left; order: 3; }
-  .dateline { white-space: normal; }
+  .dateline { white-space: normal; font-size: 0.78rem; overflow-wrap: anywhere; line-height: 1.3; }
   .tbl { font-size: 0.84rem; }
   .sign { grid-template-columns: 1fr; }
 }

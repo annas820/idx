@@ -20,7 +20,7 @@
 <header class="masthead">
   <div class="wrap">
     <a class="brand" href="/" aria-label="idx home"><img src="/mark.svg" alt="" width="34" height="34"><span>idx</span></a>
-    <p class="masthead-title cond"><b>Laporan Pasar</b> · Indonesian stock market CLI, MCP server and web terminal</p>
+    <h1 class="masthead-title"><b class="cond">Laporan Pasar</b> <span>Indonesian stock market CLI, MCP server and web terminal</span></h1>
     <p class="dateline">Published every minute · <strong id="dateline">loading board…</strong></p>
   </div>
 </header>
@@ -28,7 +28,7 @@
 <main class="sheet wrap">
   <div class="lead">
     <section aria-labelledby="board-h">
-      <h2 id="board-h" class="strip cond"><span>Papan Harga · Live board</span><small>Heavyweights by market cap · IDR · delayed as published</small></h2>
+      <h2 id="board-h" class="strip"><span class="cond">Papan Harga</span><small>Live board · heavyweights by market cap · IDR · delayed as published</small></h2>
       <div class="index-line" id="index-line">
         <span class="ix">IHSG composite</span>
         <span class="px" id="ix-px">—</span>
@@ -52,7 +52,7 @@
     </section>
 
     <aside class="ket" aria-labelledby="ket-h">
-      <h2 id="ket-h" class="strip cond"><span>Keterangan</span><small>Notes</small></h2>
+      <h2 id="ket-h" class="strip"><span class="cond">Keterangan</span><small>Notes</small></h2>
       <p><b>idx</b> is one open-source binary for the Indonesia Stock Exchange: quotes, history, fundamentals, technicals, the KSEI register of holders above 1 %, news.</p>
       <p><b>Three faces, one answer.</b> A table for people, <code>-o json</code> for scripts, and <code>idx mcp</code> for Claude Code and other agents return the same fields.</p>
       <p><b>Free, no keys.</b> Yahoo Finance, MSN Money, IDX and public feeds. Nothing is estimated; a field the source lacks is <code>null</code>.</p>
@@ -74,7 +74,7 @@
   </div>
 
   <section class="section" aria-labelledby="movers-h">
-    <h2 id="movers-h" class="strip cond"><span>Saham Teraktif · Movers</span><small>Liquid names only (market cap above 1 T) · from the same snapshot</small></h2>
+    <h2 id="movers-h" class="strip"><span class="cond">Saham Teraktif</span><small>Movers · liquid names only (market cap above 1 T) · same snapshot</small></h2>
     <div class="movers" id="movers">
       <div class="stmt"><h3 class="stmt-title">Gainers</h3><p class="muted" style="padding:.5rem 0">Loading…</p></div>
       <div class="stmt"><h3 class="stmt-title">Losers</h3><p class="muted" style="padding:.5rem 0">Loading…</p></div>
@@ -83,7 +83,7 @@
   </section>
 
   <section class="section" aria-labelledby="notes-h">
-    <h2 id="notes-h" class="strip cond"><span>Catatan atas Laporan · Notes</span><small>What this tool does and does not do</small></h2>
+    <h2 id="notes-h" class="strip"><span class="cond">Catatan</span><small>Notes to the statements · what this tool does and does not do</small></h2>
     <div class="notes">
       <p><b>Scope.</b> <code>stocks quote · history · profile · financials · earnings · fundamental · technical · compare · screen · news · sentiment</code> and <code>ownership import · ticker · entity · changes</code>, plus <code>mcp</code>, <code>schema</code>, <code>config</code>, <code>cache</code>. Every command works on IDX tickers such as <code>BBCA</code>; the <code>.JK</code> suffix is optional.</p>
       <p><b>Sources.</b> Yahoo Finance for prices, history, profiles, ratios, earnings and statements; MSN Money for a second opinion on ratios and analyst targets; IDX's monthly KSEI file for holders above 1 %; Kontan and CNBC Indonesia feeds for news. Every response names its <code>provider</code>, <code>fetched_at</code>, and whether it came from cache.</p>
@@ -95,7 +95,7 @@
   </section>
 
   <section class="section" aria-labelledby="ikh-h">
-    <h2 id="ikh-h" class="strip cond"><span>Ikhtisar · The same answer in three forms</span><small>Real output, 16 October 2026</small></h2>
+    <h2 id="ikh-h" class="strip"><span class="cond">Ikhtisar</span><small>The same answer in three forms · real output, 16 October 2026</small></h2>
     <div class="three">
       <div class="stmt">
         <h3 class="stmt-title">For people<small>idx stocks quote BBCA,BBRI,TLKM</small></h3>

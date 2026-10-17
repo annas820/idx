@@ -125,4 +125,4 @@ Commits follow Conventional Commits (`feat:`, `fix:`, `docs:`, `test:`,
 3. ✅ MCP server over stdio wrapping 1–2 (verified from Claude Code)
 4. ✅ KSEI ownership ingest (XLSX + PDF text layer) into SQLite + queries
 5. ✅ Screener, news, sentiment
-6. Release pipeline (static binaries, install.sh, npm wrapper), web terminal
+6. ✅ Release pipeline (static binaries, install.sh, npm wrapper), web terminal + landing page
