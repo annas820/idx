@@ -7,6 +7,11 @@
 //!   Needs the `A3` cookie from `https://fc.yahoo.com` plus the crumb from
 //!   `https://query2.finance.yahoo.com/v1/test/getcrumb`. Returns the rich quote
 //!   row (previous close, market cap, P/E, dividend yield, ...).
+//! - `GET https://query2.finance.yahoo.com/v10/finance/quoteSummary/{SYM}.JK?modules=..&crumb=..`
+//!   Same session. `profile`, `fundamental` and `earnings` read it; the
+//!   statement modules are empty nowadays, so `financials` does not.
+//! - `GET https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/{SYM}.JK?type=..`
+//!   No auth. Annual, quarterly and trailing statement items.
 //!
 //! Recorded responses live in `tests/fixtures/yahoo/`.
 
@@ -17,19 +22,28 @@ use async_trait::async_trait;
 use futures::future::join_all;
 
 use crate::error::{IdxError, Result};
+use crate::http::Fetched;
 use crate::http::Fetcher;
-use crate::model::{History, Interval, Period, Quote, Symbol};
+use crate::model::{
+    Earnings, Financials, Fundamentals, History, Interval, Period, Profile, Quote, StatementPeriod,
+    Symbol,
+};
 
 use super::{Provider, Sourced, Ttls};
 
 mod parse;
 mod session;
+pub mod summary;
+pub mod timeseries;
 
 pub use parse::{parse_chart, parse_chart_quote, parse_v7_quotes};
 
 pub const NAME: &str = "yahoo";
 const CHART_BASE: &str = "https://query1.finance.yahoo.com/v8/finance/chart/";
 const QUOTE_URL: &str = "https://query1.finance.yahoo.com/v7/finance/quote";
+const SUMMARY_BASE: &str = "https://query2.finance.yahoo.com/v10/finance/quoteSummary/";
+const TIMESERIES_BASE: &str =
+    "https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/";
 /// Intraday candles move constantly; cache them briefly regardless of config.
 const INTRADAY_TTL: Duration = Duration::from_secs(120);
 
@@ -50,6 +64,80 @@ impl Yahoo {
             period.as_str(),
             interval.as_str()
         )
+    }
+
+    pub fn summary_key(symbol: &Symbol, modules: &str) -> String {
+        format!("{SUMMARY_BASE}{}?modules={modules}", symbol.yahoo())
+    }
+
+    /// GET through the cookie/crumb session. `key` is the URL without the
+    /// crumb and doubles as the cache key. A 401/403 refreshes the session once.
+    async fn get_with_session(
+        &self,
+        key: &str,
+        ttl: Duration,
+        what: &str,
+        symbol: &Symbol,
+    ) -> Result<Fetched> {
+        let mut session = session::get(&self.fetcher, false).await?;
+        for attempt in 0..2 {
+            let (url, headers) = match &session {
+                Some(s) => (format!("{key}&crumb={}", urlencode(&s.crumb)), s.headers()),
+                None => (key.to_string(), vec![]),
+            };
+            let fetched = match self.fetcher.get(&url, &headers, ttl, Some(key)).await {
+                Ok(f) => f,
+                Err(IdxError::OfflineMiss(_)) => {
+                    return Err(IdxError::OfflineMiss(format!(
+                        "no cached {what} for {symbol}"
+                    )))
+                }
+                Err(e) => return Err(e),
+            };
+            if (fetched.status == 401 || fetched.status == 403)
+                && attempt == 0
+                && !self.fetcher.is_offline()
+            {
+                tracing::info!("yahoo session rejected, refreshing crumb");
+                session = session::get(&self.fetcher, true).await?;
+                continue;
+            }
+            return Ok(fetched);
+        }
+        unreachable!("loop returns on the second attempt")
+    }
+
+    async fn quote_summary(&self, symbol: &Symbol, modules: &str, what: &str) -> Result<Fetched> {
+        let key = Self::summary_key(symbol, modules);
+        let f = self
+            .get_with_session(&key, self.ttls.fundamentals, what, symbol)
+            .await?;
+        match f.status {
+            200..=299 => Ok(f),
+            404 => Err(IdxError::NotFound(format!(
+                "{symbol}: {}",
+                parse::chart_error(&f.body)
+            ))),
+            401 | 403 => Err(IdxError::provider(
+                NAME,
+                "quoteSummary endpoint rejected the session",
+            )),
+            s => Err(IdxError::provider(
+                NAME,
+                format!("quoteSummary HTTP {s}: {}", parse::chart_error(&f.body)),
+            )),
+        }
+    }
+
+    fn sourced<T>(data: T, f: &Fetched) -> Sourced<T> {
+        Sourced {
+            data,
+            provider: NAME,
+            cached: f.cached,
+            stale: f.stale,
+            fetched_at: f.fetched_at,
+            warnings: vec![],
+        }
     }
 
     fn quote_cache_key(symbols: &[Symbol]) -> String {
@@ -247,6 +335,74 @@ impl Provider for Yahoo {
             warnings: vec![],
         })
     }
+
+    async fn profile(&self, symbol: &Symbol) -> Result<Sourced<Profile>> {
+        let f = self
+            .quote_summary(symbol, summary::FUNDAMENTAL_MODULES, "company profile")
+            .await?;
+        Ok(Self::sourced(summary::parse_profile(&f.body, symbol)?, &f))
+    }
+
+    async fn fundamentals(&self, symbol: &Symbol) -> Result<Sourced<Fundamentals>> {
+        let f = self
+            .quote_summary(symbol, summary::FUNDAMENTAL_MODULES, "fundamentals")
+            .await?;
+        Ok(Self::sourced(
+            summary::parse_fundamentals(&f.body, symbol)?,
+            &f,
+        ))
+    }
+
+    async fn earnings(&self, symbol: &Symbol) -> Result<Sourced<Earnings>> {
+        let f = self
+            .quote_summary(symbol, summary::EARNINGS_MODULES, "earnings")
+            .await?;
+        Ok(Self::sourced(summary::parse_earnings(&f.body, symbol)?, &f))
+    }
+
+    async fn financials(
+        &self,
+        symbol: &Symbol,
+        period: StatementPeriod,
+    ) -> Result<Sourced<Financials>> {
+        let key = format!(
+            "{TIMESERIES_BASE}{}?type={}",
+            symbol.yahoo(),
+            timeseries::types_param(period)
+        );
+        let now = chrono::Utc::now().timestamp();
+        let url = format!(
+            "{key}&period1={}&period2={}&merge=false&padTimeSeries=false",
+            now - 6 * 365 * 86_400,
+            now + 86_400
+        );
+        let f = match self
+            .fetcher
+            .get(&url, &[], self.ttls.financials, Some(&key))
+            .await
+        {
+            Ok(f) => f,
+            Err(IdxError::OfflineMiss(_)) => {
+                return Err(IdxError::OfflineMiss(format!(
+                    "no cached {period} financials for {symbol}"
+                )))
+            }
+            Err(e) => return Err(e),
+        };
+        if f.status == 404 {
+            return Err(IdxError::NotFound(format!("no financials for {symbol}")));
+        }
+        if !f.is_success() {
+            return Err(IdxError::provider(
+                NAME,
+                format!("timeseries endpoint HTTP {}", f.status),
+            ));
+        }
+        Ok(Self::sourced(
+            timeseries::parse_timeseries(&f.body, symbol, period)?,
+            &f,
+        ))
+    }
 }
 
 fn urlencode(s: &str) -> String {
@@ -397,6 +553,49 @@ mod tests {
         let (y, _be, _d) = yahoo(FixtureBackend::new(), CacheMode::Offline);
         let err = y.quotes(&syms(&["BBCA"])).await.unwrap_err();
         assert_eq!(err.exit_code(), 5, "{err}");
+    }
+
+    const QS_BBCA: &str =
+        include_str!("../../../tests/fixtures/yahoo/quote_summary_fundamentals_bbca.json");
+    const QS_404: &str = include_str!("../../../tests/fixtures/yahoo/quote_summary_not_found.json");
+    const TS_BBCA: &str = include_str!("../../../tests/fixtures/yahoo/timeseries_bbca.json");
+
+    #[tokio::test]
+    async fn fundamentals_and_profile_share_one_request() {
+        let be = session_routes(FixtureBackend::new())
+            .route("quoteSummary/BBCA.JK", 200, QS_BBCA)
+            .route("quoteSummary/ZZZZ.JK", 404, QS_404);
+        let (y, be, _d) = yahoo(be, CacheMode::Normal);
+        let f = y
+            .fundamentals(&Symbol::parse("BBCA").unwrap())
+            .await
+            .unwrap();
+        assert_eq!(f.provider, "yahoo");
+        assert!((f.data.valuation.pe_trailing.unwrap() - 12.870893).abs() < 1e-6);
+        let n = be.call_count();
+        let p = y.profile(&Symbol::parse("BBCA").unwrap()).await.unwrap();
+        assert_eq!(p.data.sector.as_deref(), Some("Financial Services"));
+        assert_eq!(be.call_count(), n, "profile served from the cached summary");
+        let err = y
+            .profile(&Symbol::parse("ZZZZ").unwrap())
+            .await
+            .unwrap_err();
+        assert_eq!(err.exit_code(), 4, "{err}");
+    }
+
+    #[tokio::test]
+    async fn financials_via_timeseries_without_session() {
+        let be = FixtureBackend::new().route("fundamentals-timeseries", 200, TS_BBCA);
+        let (y, be, _d) = yahoo(be, CacheMode::Normal);
+        let f = y
+            .financials(&Symbol::parse("BBCA").unwrap(), StatementPeriod::Annual)
+            .await
+            .unwrap();
+        assert_eq!(f.data.periods.len(), 4);
+        let calls = be.calls.lock().unwrap();
+        assert_eq!(calls.len(), 1);
+        assert!(calls[0].contains("type=annualTotalRevenue"), "{}", calls[0]);
+        assert!(!calls[0].contains("crumb"));
     }
 
     #[test]

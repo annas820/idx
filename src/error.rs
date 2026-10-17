@@ -31,6 +31,12 @@ pub enum IdxError {
     NotFound(String),
     #[error("offline: {0}")]
     OfflineMiss(String),
+    /// The selected provider cannot serve this command (another one may).
+    #[error("{provider} does not provide {what}; use --provider auto")]
+    Unsupported {
+        provider: &'static str,
+        what: &'static str,
+    },
     #[error("io: {0}")]
     Io(#[from] std::io::Error),
     #[error("{0}")]
@@ -44,7 +50,7 @@ impl IdxError {
             IdxError::Network(_) | IdxError::Provider { .. } => 3,
             IdxError::NotFound(_) => 4,
             IdxError::OfflineMiss(_) => 5,
-            IdxError::Config(_) => 6,
+            IdxError::Config(_) | IdxError::Unsupported { .. } => 6,
             IdxError::Io(_) | IdxError::Other(_) => 1,
         }
     }
@@ -58,9 +64,14 @@ impl IdxError {
             IdxError::Provider { .. } => "provider",
             IdxError::NotFound(_) => "not_found",
             IdxError::OfflineMiss(_) => "offline_miss",
+            IdxError::Unsupported { .. } => "unsupported",
             IdxError::Io(_) => "io",
             IdxError::Other(_) => "internal",
         }
+    }
+
+    pub fn unsupported(provider: &'static str, what: &'static str) -> Self {
+        IdxError::Unsupported { provider, what }
     }
 
     pub fn provider(provider: &'static str, message: impl fmt::Display) -> Self {

@@ -12,6 +12,7 @@
 //! - [`cache`]     content-addressed file cache
 //! - [`config`]    flags > env > file > defaults
 
+pub mod analysis;
 pub mod cache;
 pub mod cli;
 pub mod config;

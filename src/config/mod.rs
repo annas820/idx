@@ -33,6 +33,14 @@ pub struct FileConfig {
     /// Per-request timeout.
     pub timeout_secs: Option<u64>,
     pub cache: CacheSection,
+    pub msn: MsnSection,
+}
+
+#[derive(Debug, Default, Clone, Serialize, Deserialize, PartialEq)]
+#[serde(default, deny_unknown_fields)]
+pub struct MsnSection {
+    /// Overrides MSN's built-in public web key.
+    pub api_key: Option<String>,
 }
 
 #[derive(Debug, Default, Clone, Serialize, Deserialize, PartialEq)]
@@ -41,6 +49,8 @@ pub struct CacheSection {
     pub dir: Option<PathBuf>,
     pub quote_ttl_secs: Option<u64>,
     pub history_ttl_secs: Option<u64>,
+    pub fundamentals_ttl_secs: Option<u64>,
+    pub financials_ttl_secs: Option<u64>,
 }
 
 impl FileConfig {
@@ -87,6 +97,13 @@ impl FileConfig {
             "cache.history_ttl_secs" => {
                 self.cache.history_ttl_secs = Some(value.parse().map_err(|_| bad())?)
             }
+            "cache.fundamentals_ttl_secs" => {
+                self.cache.fundamentals_ttl_secs = Some(value.parse().map_err(|_| bad())?)
+            }
+            "cache.financials_ttl_secs" => {
+                self.cache.financials_ttl_secs = Some(value.parse().map_err(|_| bad())?)
+            }
+            "msn.api_key" => self.msn.api_key = Some(value.to_string()),
             _ => {
                 return Err(IdxError::Config(format!(
                     "unknown key {key:?}; valid keys: {}",
@@ -107,6 +124,11 @@ impl FileConfig {
             "cache.dir" => self.cache.dir.as_ref().map(|p| p.display().to_string()),
             "cache.quote_ttl_secs" => self.cache.quote_ttl_secs.map(|v| v.to_string()),
             "cache.history_ttl_secs" => self.cache.history_ttl_secs.map(|v| v.to_string()),
+            "cache.fundamentals_ttl_secs" => {
+                self.cache.fundamentals_ttl_secs.map(|v| v.to_string())
+            }
+            "cache.financials_ttl_secs" => self.cache.financials_ttl_secs.map(|v| v.to_string()),
+            "msn.api_key" => self.msn.api_key.clone(),
             _ => {
                 return Err(IdxError::Config(format!(
                     "unknown key {key:?}; valid keys: {}",
@@ -125,6 +147,9 @@ pub const KEYS: &[&str] = &[
     "cache.dir",
     "cache.quote_ttl_secs",
     "cache.history_ttl_secs",
+    "cache.fundamentals_ttl_secs",
+    "cache.financials_ttl_secs",
+    "msn.api_key",
 ];
 
 /// Template written by `idx config init`.
@@ -147,6 +172,13 @@ pub const TEMPLATE: &str = r#"# idx configuration. Every key is optional.
 # dir = "/path/to/cache"     # (env: IDX_CACHE_DIR)
 # quote_ttl_secs = 60        # (env: IDX_QUOTE_TTL_SECS)
 # history_ttl_secs = 3600    # (env: IDX_HISTORY_TTL_SECS)
+# fundamentals_ttl_secs = 21600  # profile, ratios, earnings (env: IDX_FUNDAMENTALS_TTL_SECS)
+# financials_ttl_secs = 86400    # statements (env: IDX_FINANCIALS_TTL_SECS)
+
+[msn]
+# MSN Money needs its own public web-client key, which idx ships with.
+# Only set this if MSN rotates the key.
+# api_key = ""               # (env: IDX_MSN_API_KEY)
 "#;
 
 /// Values coming from the command line. `None`/`false` means "not given".
@@ -173,6 +205,11 @@ pub struct Settings {
     pub cache_mode: CacheMode,
     pub quote_ttl_secs: u64,
     pub history_ttl_secs: u64,
+    pub fundamentals_ttl_secs: u64,
+    pub financials_ttl_secs: u64,
+    /// Not serialised; `config get` reports whether it is set.
+    #[serde(skip)]
+    pub msn_api_key: Option<String>,
     pub config_path: PathBuf,
 }
 
@@ -197,11 +234,19 @@ impl Settings {
     pub fn history_ttl(&self) -> Duration {
         Duration::from_secs(self.history_ttl_secs)
     }
+    pub fn fundamentals_ttl(&self) -> Duration {
+        Duration::from_secs(self.fundamentals_ttl_secs)
+    }
+    pub fn financials_ttl(&self) -> Duration {
+        Duration::from_secs(self.financials_ttl_secs)
+    }
 }
 
 pub const DEFAULT_TIMEOUT_SECS: u64 = 15;
 pub const DEFAULT_QUOTE_TTL_SECS: u64 = 60;
 pub const DEFAULT_HISTORY_TTL_SECS: u64 = 3600;
+pub const DEFAULT_FUNDAMENTALS_TTL_SECS: u64 = 6 * 3600;
+pub const DEFAULT_FINANCIALS_TTL_SECS: u64 = 24 * 3600;
 
 fn home() -> PathBuf {
     dirs::home_dir().unwrap_or_else(|| PathBuf::from("."))
@@ -321,6 +366,20 @@ pub fn resolve(
         (None, Some(f)) => f,
         _ => DEFAULT_HISTORY_TTL_SECS,
     };
+    let fundamentals_ttl_secs = match (
+        env_s("FUNDAMENTALS_TTL_SECS"),
+        file.cache.fundamentals_ttl_secs,
+    ) {
+        (Some(e), _) => parse_u64("FUNDAMENTALS_TTL_SECS", e)?,
+        (None, Some(f)) => f,
+        _ => DEFAULT_FUNDAMENTALS_TTL_SECS,
+    };
+    let financials_ttl_secs = match (env_s("FINANCIALS_TTL_SECS"), file.cache.financials_ttl_secs) {
+        (Some(e), _) => parse_u64("FINANCIALS_TTL_SECS", e)?,
+        (None, Some(f)) => f,
+        _ => DEFAULT_FINANCIALS_TTL_SECS,
+    };
+    let msn_api_key = env_s("MSN_API_KEY").or_else(|| file.msn.api_key.clone());
 
     Ok(Settings {
         provider,
@@ -331,6 +390,9 @@ pub fn resolve(
         cache_mode,
         quote_ttl_secs,
         history_ttl_secs,
+        fundamentals_ttl_secs,
+        financials_ttl_secs,
+        msn_api_key,
         config_path,
     })
 }

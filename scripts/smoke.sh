@@ -54,4 +54,38 @@ expect "$TMP/off.json" '"cached": true' "offline served from cache"
 "$IDX" -o json stocks quote BBCA,ZZZZ >"$TMP/p.json" || fail "partial quote"
 expect "$TMP/p.json" 'no data for ZZZZ' "partial quote lists the unknown symbol in warnings"
 
+echo "fundamentals"
+"$IDX" stocks fundamental BBCA >"$TMP/f.txt" || fail "fundamental table"
+expect "$TMP/f.txt" "VALUATION" "fundamental table has sections"
+expect "$TMP/f.txt" "Heuristic" "fundamental table has the verdict line"
+"$IDX" -o json stocks fundamental TLKM >"$TMP/f.json" || fail "fundamental json"
+expect "$TMP/f.json" '"schema": "idx.fundamentals.v1"' "fundamental json schema"
+expect "$TMP/f.json" '"yahoo:quoteSummary"' "fundamental json came from Yahoo"
+grep -q '"pe_trailing": null' "$TMP/f.json" && fail "TLKM P/E is null" || pass "fundamental json has P/E"
+
+"$IDX" -o json stocks profile BBCA >"$TMP/pr.json" || fail "profile json"
+expect "$TMP/pr.json" '"sector": "Financial Services"' "profile sector"
+
+"$IDX" -o json stocks financials BBCA --period quarterly >"$TMP/fin.json" || fail "financials json"
+expect "$TMP/fin.json" '"period": "quarterly"' "financials quarterly"
+expect "$TMP/fin.json" '"net_income":' "financials have net income"
+
+"$IDX" -o json stocks earnings BBCA >"$TMP/e.json" || fail "earnings json"
+expect "$TMP/e.json" '"eps_actual":' "earnings have reported EPS"
+
+"$IDX" stocks technical BBRI >"$TMP/t.txt" || fail "technical table"
+expect "$TMP/t.txt" "RSI (14)" "technical table has RSI"
+expect "$TMP/t.txt" "Why:" "technical table explains the signal"
+
+"$IDX" stocks compare BBCA,BBRI,TLKM >"$TMP/c.txt" || fail "compare table"
+expect "$TMP/c.txt" "Verdict" "compare table has verdict row"
+
+echo "msn"
+"$IDX" --provider msn -o json stocks quote BBCA,TLKM >"$TMP/mq.json" || fail "msn quote"
+expect "$TMP/mq.json" '"provider": "msn"' "msn quote provider"
+expect "$TMP/mq.json" '"source": "msn:quotes"' "msn quote source"
+"$IDX" --provider msn -o json stocks fundamental BBCA >"$TMP/mf.json" || fail "msn fundamental"
+expect "$TMP/mf.json" '"msn:equities"' "msn fundamental source"
+expect "$TMP/mf.json" '"recommendation":' "msn fundamental has analyst block"
+
 echo "all live checks passed"

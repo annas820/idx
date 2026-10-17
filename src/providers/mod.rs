@@ -3,6 +3,9 @@
 //! builds a [`Chain`] that tries providers in order so one broken source does
 //! not take the tool down.
 //!
+//! A provider that cannot serve a capability returns
+//! [`IdxError::Unsupported`]; the chain skips it and moves on.
+//!
 //! Adding a provider: see `AGENTS.md`.
 
 use std::sync::Arc;
@@ -15,8 +18,12 @@ use serde::{Deserialize, Serialize};
 
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
-use crate::model::{History, Interval, Period, Quote, Symbol};
+use crate::model::{
+    Earnings, Financials, Fundamentals, History, Interval, Period, Profile, Quote, StatementPeriod,
+    Symbol,
+};
 
+pub mod msn;
 pub mod yahoo;
 
 /// Data plus provenance. Renderers put this in the JSON envelope.
@@ -52,6 +59,19 @@ impl<T> Sourced<T> {
             warnings: self.warnings,
         }
     }
+
+    /// Folds another response's provenance into this one (earliest fetch,
+    /// cached only if both were, stale if either was).
+    pub fn absorb<U>(&mut self, other: &Sourced<U>) {
+        self.cached &= other.cached;
+        self.stale |= other.stale;
+        self.fetched_at = self.fetched_at.min(other.fetched_at);
+        for w in &other.warnings {
+            if !self.warnings.contains(w) {
+                self.warnings.push(w.clone());
+            }
+        }
+    }
 }
 
 /// Per-endpoint cache lifetimes.
@@ -59,6 +79,12 @@ impl<T> Sourced<T> {
 pub struct Ttls {
     pub quote: Duration,
     pub history: Duration,
+    /// Profile, ratios, earnings.
+    pub fundamentals: Duration,
+    /// Financial statements.
+    pub financials: Duration,
+    /// Symbol-to-provider-id lookups.
+    pub lookup: Duration,
 }
 
 impl Default for Ttls {
@@ -66,8 +92,19 @@ impl Default for Ttls {
         Ttls {
             quote: Duration::from_secs(60),
             history: Duration::from_secs(3600),
+            fundamentals: Duration::from_secs(6 * 3600),
+            financials: Duration::from_secs(24 * 3600),
+            lookup: Duration::from_secs(30 * 24 * 3600),
         }
     }
+}
+
+/// Everything `build` needs besides the fetcher.
+#[derive(Debug, Clone, Default)]
+pub struct ProviderOptions {
+    pub ttls: Ttls,
+    /// Overrides MSN's built-in public web key (`IDX_MSN_API_KEY`).
+    pub msn_api_key: Option<String>,
 }
 
 #[async_trait]
@@ -85,6 +122,27 @@ pub trait Provider: Send + Sync {
         period: Period,
         interval: Interval,
     ) -> Result<Sourced<History>>;
+
+    async fn profile(&self, _symbol: &Symbol) -> Result<Sourced<Profile>> {
+        Err(IdxError::unsupported(self.name(), "company profiles"))
+    }
+
+    /// Ratios without the verdict; `analysis::fundamental::verdict` adds it.
+    async fn fundamentals(&self, _symbol: &Symbol) -> Result<Sourced<Fundamentals>> {
+        Err(IdxError::unsupported(self.name(), "fundamentals"))
+    }
+
+    async fn financials(
+        &self,
+        _symbol: &Symbol,
+        _period: StatementPeriod,
+    ) -> Result<Sourced<Financials>> {
+        Err(IdxError::unsupported(self.name(), "financial statements"))
+    }
+
+    async fn earnings(&self, _symbol: &Symbol) -> Result<Sourced<Earnings>> {
+        Err(IdxError::unsupported(self.name(), "earnings"))
+    }
 }
 
 #[derive(
@@ -94,9 +152,9 @@ pub trait Provider: Send + Sync {
 pub enum ProviderKind {
     /// Try each provider in order; fall back when one fails.
     Auto,
-    /// Yahoo Finance (chart + quote endpoints).
+    /// Yahoo Finance (chart, quote, quoteSummary, fundamentals timeseries).
     Yahoo,
-    /// MSN Money (arrives in a later release).
+    /// MSN Money (quotes, profile, fundamentals).
     Msn,
 }
 
@@ -127,7 +185,7 @@ impl std::fmt::Display for ProviderKind {
 
 /// Tries providers in order. Returns the first success. If every provider
 /// fails, surfaces a `NotFound` if any provider said so (the symbol is probably
-/// wrong), otherwise the first error.
+/// wrong), otherwise the first real error, otherwise `Unsupported`.
 pub struct Chain {
     providers: Vec<Box<dyn Provider>>,
 }
@@ -145,11 +203,37 @@ impl Chain {
         {
             return errors.swap_remove(pos);
         }
+        if let Some(pos) = errors
+            .iter()
+            .position(|e| !matches!(e, IdxError::Unsupported { .. }))
+        {
+            return errors.swap_remove(pos);
+        }
         errors
             .into_iter()
             .next()
             .unwrap_or_else(|| IdxError::Other("no providers configured".into()))
     }
+}
+
+macro_rules! first_ok {
+    ($self:ident, $p:ident => $call:expr) => {{
+        let mut errors = Vec::new();
+        for $p in &$self.providers {
+            match $call.await {
+                Ok(v) => return Ok(v),
+                Err(e @ IdxError::Unsupported { .. }) => {
+                    tracing::debug!(provider = $p.name(), %e, "skipping provider");
+                    errors.push(e);
+                }
+                Err(e) => {
+                    tracing::info!(provider = $p.name(), error = %e, "provider failed, trying next");
+                    errors.push(e);
+                }
+            }
+        }
+        Err(Self::pick(errors))
+    }};
 }
 
 #[async_trait]
@@ -159,17 +243,7 @@ impl Provider for Chain {
     }
 
     async fn quotes(&self, symbols: &[Symbol]) -> Result<Sourced<Vec<Quote>>> {
-        let mut errors = Vec::new();
-        for p in &self.providers {
-            match p.quotes(symbols).await {
-                Ok(v) => return Ok(v),
-                Err(e) => {
-                    tracing::info!(provider = p.name(), error = %e, "provider failed, trying next");
-                    errors.push(e);
-                }
-            }
-        }
-        Err(Self::pick(errors))
+        first_ok!(self, p => p.quotes(symbols))
     }
 
     async fn history(
@@ -178,31 +252,79 @@ impl Provider for Chain {
         period: Period,
         interval: Interval,
     ) -> Result<Sourced<History>> {
+        first_ok!(self, p => p.history(symbol, period, interval))
+    }
+
+    async fn profile(&self, symbol: &Symbol) -> Result<Sourced<Profile>> {
+        first_ok!(self, p => p.profile(symbol))
+    }
+
+    /// Takes the first provider's report and fills gaps from the others, so a
+    /// bank's missing EV/EBITDA on one source can still come from another.
+    async fn fundamentals(&self, symbol: &Symbol) -> Result<Sourced<Fundamentals>> {
         let mut errors = Vec::new();
+        let mut base: Option<Sourced<Fundamentals>> = None;
         for p in &self.providers {
-            match p.history(symbol, period, interval).await {
-                Ok(v) => return Ok(v),
+            if let Some(b) = &base {
+                if b.data.missing_key_fields() == 0 {
+                    break;
+                }
+            }
+            match p.fundamentals(symbol).await {
+                Ok(v) => match &mut base {
+                    None => base = Some(v),
+                    Some(b) => {
+                        b.data.fill_from(&v.data);
+                        b.absorb(&v);
+                    }
+                },
+                Err(e @ IdxError::Unsupported { .. }) => errors.push(e),
                 Err(e) => {
-                    tracing::info!(provider = p.name(), error = %e, "provider failed, trying next");
+                    if base.is_none() {
+                        tracing::info!(provider = p.name(), error = %e, "provider failed, trying next");
+                    } else {
+                        tracing::debug!(provider = p.name(), error = %e, "secondary provider failed");
+                    }
                     errors.push(e);
                 }
             }
         }
-        Err(Self::pick(errors))
+        base.ok_or_else(|| Self::pick(errors))
+    }
+
+    async fn financials(
+        &self,
+        symbol: &Symbol,
+        period: StatementPeriod,
+    ) -> Result<Sourced<Financials>> {
+        first_ok!(self, p => p.financials(symbol, period))
+    }
+
+    async fn earnings(&self, symbol: &Symbol) -> Result<Sourced<Earnings>> {
+        first_ok!(self, p => p.earnings(symbol))
     }
 }
 
+/// Names of the providers `auto` tries, in order.
+pub const AUTO_ORDER: &[&str] = &[yahoo::NAME, msn::NAME];
+
 /// Builds the provider for `kind`.
-pub fn build(kind: ProviderKind, fetcher: Arc<Fetcher>, ttls: Ttls) -> Result<Box<dyn Provider>> {
+pub fn build(
+    kind: ProviderKind,
+    fetcher: Arc<Fetcher>,
+    opts: ProviderOptions,
+) -> Result<Box<dyn Provider>> {
     match kind {
-        ProviderKind::Yahoo => Ok(Box::new(yahoo::Yahoo::new(fetcher, ttls))),
-        ProviderKind::Msn => Err(IdxError::Config(
-            "provider \"msn\" is not available in this release yet; use --provider yahoo or auto"
-                .into(),
-        )),
-        ProviderKind::Auto => Ok(Box::new(Chain::new(vec![Box::new(yahoo::Yahoo::new(
-            fetcher, ttls,
-        ))]))),
+        ProviderKind::Yahoo => Ok(Box::new(yahoo::Yahoo::new(fetcher, opts.ttls))),
+        ProviderKind::Msn => Ok(Box::new(msn::Msn::new(
+            fetcher,
+            opts.ttls,
+            opts.msn_api_key,
+        ))),
+        ProviderKind::Auto => Ok(Box::new(Chain::new(vec![
+            Box::new(yahoo::Yahoo::new(fetcher.clone(), opts.ttls)),
+            Box::new(msn::Msn::new(fetcher, opts.ttls, opts.msn_api_key)),
+        ]))),
     }
 }
 
@@ -224,6 +346,9 @@ mod tests {
         async fn history(&self, _: &Symbol, _: Period, _: Interval) -> Result<Sourced<History>> {
             Err((self.1)())
         }
+        async fn fundamentals(&self, _: &Symbol) -> Result<Sourced<Fundamentals>> {
+            Err((self.1)())
+        }
     }
 
     #[async_trait]
@@ -237,6 +362,35 @@ mod tests {
         async fn history(&self, _: &Symbol, _: Period, _: Interval) -> Result<Sourced<History>> {
             unimplemented!()
         }
+        async fn fundamentals(&self, s: &Symbol) -> Result<Sourced<Fundamentals>> {
+            let mut f = Fundamentals::empty(s.clone(), "ok");
+            f.valuation.pe_trailing = Some(9.0);
+            Ok(Sourced::fresh(f, "ok"))
+        }
+    }
+
+    struct Ok2;
+    #[async_trait]
+    impl Provider for Ok2 {
+        fn name(&self) -> &'static str {
+            "ok2"
+        }
+        async fn quotes(&self, _: &[Symbol]) -> Result<Sourced<Vec<Quote>>> {
+            unimplemented!()
+        }
+        async fn history(&self, _: &Symbol, _: Period, _: Interval) -> Result<Sourced<History>> {
+            unimplemented!()
+        }
+        async fn fundamentals(&self, s: &Symbol) -> Result<Sourced<Fundamentals>> {
+            let mut f = Fundamentals::empty(s.clone(), "ok2");
+            f.valuation.pe_trailing = Some(99.0);
+            f.valuation.price_to_book = Some(2.0);
+            Ok(Sourced::fresh(f, "ok2"))
+        }
+    }
+
+    fn sym() -> Symbol {
+        Symbol::parse("BBCA").unwrap()
     }
 
     #[tokio::test]
@@ -245,10 +399,7 @@ mod tests {
             Box::new(Failing("a", || IdxError::Network("down".into()))),
             Box::new(Ok1),
         ]);
-        let got = chain
-            .quotes(&[Symbol::parse("BBCA").unwrap()])
-            .await
-            .unwrap();
+        let got = chain.quotes(&[sym()]).await.unwrap();
         assert_eq!(got.provider, "ok");
     }
 
@@ -258,11 +409,34 @@ mod tests {
             Box::new(Failing("a", || IdxError::Network("down".into()))),
             Box::new(Failing("b", || IdxError::NotFound("ZZZZ".into()))),
         ]);
-        let err = chain
-            .quotes(&[Symbol::parse("ZZZZ").unwrap()])
-            .await
-            .unwrap_err();
+        let err = chain.quotes(&[sym()]).await.unwrap_err();
         assert_eq!(err.exit_code(), 4);
+    }
+
+    #[tokio::test]
+    async fn chain_skips_unsupported_and_reports_real_error() {
+        let chain = Chain::new(vec![
+            Box::new(Failing("a", || IdxError::unsupported("a", "x"))),
+            Box::new(Failing("b", || IdxError::Network("down".into()))),
+        ]);
+        let err = chain.quotes(&[sym()]).await.unwrap_err();
+        assert_eq!(err.exit_code(), 3);
+        // Only unsupported providers -> exit 6.
+        let chain = Chain::new(vec![Box::new(Failing("a", || {
+            IdxError::unsupported("a", "profiles")
+        }))]);
+        let err = chain.profile(&sym()).await.unwrap_err();
+        assert_eq!(err.exit_code(), 6);
+    }
+
+    #[tokio::test]
+    async fn fundamentals_merge_fills_gaps_only() {
+        let chain = Chain::new(vec![Box::new(Ok1), Box::new(Ok2)]);
+        let got = chain.fundamentals(&sym()).await.unwrap();
+        assert_eq!(got.provider, "ok");
+        assert_eq!(got.data.valuation.pe_trailing, Some(9.0));
+        assert_eq!(got.data.valuation.price_to_book, Some(2.0));
+        assert_eq!(got.data.sources, vec!["ok".to_string(), "ok2".to_string()]);
     }
 
     #[test]

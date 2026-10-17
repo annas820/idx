@@ -24,7 +24,9 @@ src/
   lib.rs             module map
   cli/               clap definitions + handlers (mod.rs builds Context; one file per group)
   providers/         Provider trait, Chain fallback, ProviderKind; one subdir per source
-    yahoo/           chart (history, quote fallback) + v7 quote (needs cookie/crumb session)
+    yahoo/           chart, v7 quote (cookie/crumb session), quoteSummary (summary.rs), timeseries.rs
+    msn/             autosuggest lookup -> Quotes / Equities (public web key)
+  analysis/          technical.rs (indicators + signal), fundamental.rs (verdict); no network
   model/             provider-agnostic domain types = the JSON contract (Quote, Candle, History)
   output/            table.rs (comfy-table), json.rs (Envelope + JSON Schema), format.rs (numbers)
   http/              Fetcher: cache in front of a Backend (reqwest live / FixtureBackend tests)
@@ -39,8 +41,8 @@ docs/                json-output.md, configuration.md
 web/                 Cloudflare Worker for ihsg.midoriresearch.com (holding page now; D1 terminal in milestone 6)
 ```
 
-Planned (later milestones): `src/analysis/{technical,fundamental,screen}`,
-`src/ownership/{ingest,db,query}`, `src/mcp/`, `src/providers/{msn,idx,news}`,
+Planned (later milestones): `src/analysis/screen`,
+`src/ownership/{ingest,db,query}`, `src/mcp/`, `src/providers/{idx,news}`,
 and the D1-backed terminal inside `web/`.
 
 ## Rules that keep the tool trustworthy
@@ -72,7 +74,8 @@ and the D1-backed terminal inside `web/`.
    parsers in `parse.rs` and test them against the fixtures.
 3. Fetch through `self.fetcher.get(url, headers, ttl, cache_key)`. Map HTTP 404
    or a "not found" body to `IdxError::NotFound`; other failures to
-   `IdxError::provider(NAME, ..)`.
+   `IdxError::provider(NAME, ..)`. Leave the default `Unsupported` for
+   capabilities the source lacks; `Chain` skips those.
 4. Add a `ProviderKind` variant, wire it in `providers::build`, and decide its
    place in the `Auto` chain order.
 5. Document the endpoints at the top of the module and in `README.md`'s data
@@ -106,7 +109,7 @@ Commits follow Conventional Commits (`feat:`, `fix:`, `docs:`, `test:`,
 ## Milestones
 
 1. ✅ Scaffold, `stocks quote`, `stocks history` via Yahoo, table + JSON, cache
-2. MSN provider, `fundamental`, `technical`, `compare`
+2. ✅ MSN provider, `profile`, `financials`, `earnings`, `fundamental`, `technical`, `compare`
 3. MCP server over stdio wrapping 1–2
 4. KSEI ownership ingest (XLSX, then PDF) into SQLite + queries
 5. Screener, news, sentiment

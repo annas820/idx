@@ -11,7 +11,7 @@ use crate::config::{self, CliOverrides, FileConfig, Settings};
 use crate::error::{IdxError, Result};
 use crate::http::{Fetcher, ReqwestBackend};
 use crate::output::{self, ColorMode, OutputFormat};
-use crate::providers::{self, Provider, ProviderKind, Ttls};
+use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Ttls};
 
 pub mod cache_cmd;
 pub mod config_cmd;
@@ -27,13 +27,16 @@ meaningful exit code. Data comes from free public endpoints, cached locally.
 Examples:
   idx stocks quote BBCA,BBRI,TLKM
   idx stocks history TLKM --period 1y --interval 1wk
+  idx stocks fundamental BBCA              # ratios plus a plain-language verdict
+  idx stocks technical BBRI                # RSI, MACD, moving averages, signal
+  idx stocks compare BBCA BBRI BMRI        # side-by-side fundamentals
   idx -o json stocks quote BBCA | jq '.data[0].price'
   idx --offline stocks quote BBCA        # serve from cache, never touch the network
   idx schema quotes                      # JSON Schema of the quote envelope";
 
 const AFTER_HELP: &str = "\
 Exit codes: 0 ok · 1 internal · 2 usage · 3 network/provider · 4 not found · 5 offline cache miss · 6 config
-Env: IDX_PROVIDER, IDX_OUTPUT, IDX_COLOR / NO_COLOR, IDX_TIMEOUT_SECS, IDX_CACHE_DIR, IDX_OFFLINE, IDX_NO_CACHE, IDX_CONFIG
+Env: IDX_PROVIDER, IDX_OUTPUT, IDX_COLOR / NO_COLOR, IDX_TIMEOUT_SECS, IDX_CACHE_DIR, IDX_OFFLINE, IDX_NO_CACHE, IDX_CONFIG, IDX_MSN_API_KEY
 Docs: https://github.com/fzn0x/idx";
 
 #[derive(Debug, Parser)]
@@ -94,7 +97,7 @@ pub struct GlobalOpts {
 
 #[derive(Debug, Subcommand)]
 pub enum Command {
-    /// Quotes, price history and (soon) fundamentals for IDX tickers.
+    /// Quotes, history, profile, financials, earnings, fundamentals, technicals, compare.
     #[command(subcommand)]
     Stocks(stocks::StocksCmd),
 
@@ -108,7 +111,7 @@ pub enum Command {
 
     /// Print the JSON Schema for a JSON output shape (run without a name to list them).
     Schema {
-        /// quotes | history | error | quote | candle
+        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | error | quote | candle
         name: Option<String>,
     },
 
@@ -161,11 +164,17 @@ fn build_context(global: &GlobalOpts) -> Result<Context> {
         Cache::new(&settings.cache_dir),
         settings.cache_mode,
     ));
-    let ttls = Ttls {
-        quote: settings.quote_ttl(),
-        history: settings.history_ttl(),
+    let opts = ProviderOptions {
+        ttls: Ttls {
+            quote: settings.quote_ttl(),
+            history: settings.history_ttl(),
+            fundamentals: settings.fundamentals_ttl(),
+            financials: settings.financials_ttl(),
+            ..Ttls::default()
+        },
+        msn_api_key: settings.msn_api_key.clone(),
     };
-    let provider = providers::build(settings.provider, fetcher, ttls)?;
+    let provider = providers::build(settings.provider, fetcher, opts)?;
     let color = settings
         .color
         .enabled(std::io::IsTerminal::is_terminal(&std::io::stdout()));
@@ -250,7 +259,7 @@ impl VersionInfo {
             } else {
                 "release"
             },
-            providers: vec!["yahoo"],
+            providers: providers::AUTO_ORDER.to_vec(),
         }
     }
 }

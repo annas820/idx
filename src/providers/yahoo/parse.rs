@@ -37,7 +37,8 @@ pub fn chart_error(body: &str) -> String {
     let err = v
         .pointer("/chart/error")
         .or_else(|| v.pointer("/finance/error"))
-        .or_else(|| v.pointer("/quoteResponse/error"));
+        .or_else(|| v.pointer("/quoteResponse/error"))
+        .or_else(|| v.pointer("/quoteSummary/error"));
     match err {
         Some(e) if !e.is_null() => {
             let code = e.get("code").and_then(Value::as_str).unwrap_or("error");

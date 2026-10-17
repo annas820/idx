@@ -38,9 +38,10 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
 { "price": 5175.0, "change_pct": -14.814815, "pe_trailing": 10.963983, "dividend_yield_pct": 6.27 }
 ```
 
-- **Free data, no keys.** Yahoo Finance today; MSN Money, idx.co.id and
+- **Free data, no keys.** Yahoo Finance and MSN Money today; idx.co.id and
   Indonesian finance news in upcoming releases. Every source sits behind a
-  `Provider` trait, so one breaking does not take the tool down.
+  `Provider` trait, so one breaking does not take the tool down, and `auto`
+  fills gaps in one source's fundamentals from the other.
 - **Built for agents.** `-o json` emits a stable, schema-documented envelope
   (`idx schema quotes`). Exit codes mean something. `idx mcp` (next release)
   exposes every command as a typed MCP tool.
@@ -72,14 +73,19 @@ idx completions powershell | Out-String | Invoke-Expression
 | --- | --- |
 | `stocks quote <SYMBOLS>` | Delayed quote for one or many tickers (`BBCA,BBRI` or `BBCA BBRI`; `.JK` optional) |
 | `stocks history <SYMBOL> [--period 1y] [--interval 1d] [--limit 30]` | OHLCV candles with a summary line. Periods `1d 5d 1mo 3mo 6mo 1y 2y 5y 10y ytd max`, intervals `5m 15m 30m 1h 1d 1wk 1mo` |
-| `schema [name]` | JSON Schema for `quotes`, `history`, `error`, `quote`, `candle` |
+| `stocks profile <SYMBOL>` | Sector, industry, description, size, headquarters, management |
+| `stocks financials <SYMBOL> [--period annual\|quarterly\|ttm] [--statement all\|income\|balance\|cash]` | Income statement, balance sheet, cash flow |
+| `stocks earnings <SYMBOL>` | Quarterly EPS vs estimates with surprise, yearly revenue/earnings, next earnings date and consensus |
+| `stocks fundamental <SYMBOL>` | P/E, P/B, PEG, EV/EBITDA, ROE, ROA, margins, leverage, growth, dividend, analyst targets, plus a plain-language verdict that lists every rule it applied |
+| `stocks technical <SYMBOL> [--period 1y]` | RSI, MACD, SMA/EMA 20/50/200, Bollinger, ATR, volume, support/resistance, trend, buy/sell/neutral signal with reasons |
+| `stocks compare <SYMBOLS>` | Side-by-side fundamentals for two or more tickers |
+| `schema [name]` | JSON Schema for every payload (`quotes`, `history`, `profile`, `fundamentals`, `compare`, `financials`, `earnings`, `technical`, `error`, ...) |
 | `config init\|set\|get\|path` | Config file management |
 | `cache stats\|clear\|path` | Response cache management |
 | `completions <shell>` | bash, zsh, fish, powershell, elvish |
 | `version` | Version, build and default paths |
 
-Coming next, in order: `stocks profile · financials · earnings · fundamental ·
-technical · compare`, `mcp`, `ownership ticker · entity · changes · import`,
+Coming next, in order: `mcp`, `ownership ticker · entity · changes · import`,
 `stocks screen · news · sentiment`.
 
 Global flags work anywhere on the line:
@@ -87,7 +93,7 @@ Global flags work anywhere on the line:
 | flag | env | meaning |
 | --- | --- | --- |
 | `-o, --output table\|json` | `IDX_OUTPUT` | Output format |
-| `--provider auto\|yahoo\|msn` | `IDX_PROVIDER` | Data source (`auto` falls back across sources) |
+| `--provider auto\|yahoo\|msn` | `IDX_PROVIDER` | Data source (`auto` tries Yahoo, then MSN, and merges fundamentals) |
 | `--offline` | `IDX_OFFLINE=1` | Never touch the network |
 | `--no-cache` | `IDX_NO_CACHE=1` | Ignore cached responses |
 | `--timeout SECS` | `IDX_TIMEOUT_SECS` | Per-request timeout (default 15) |
@@ -115,6 +121,9 @@ Configuration and cache: [docs/configuration.md](docs/configuration.md).
 | --- | --- | --- | --- |
 | Yahoo Finance `v8/finance/chart` | history, quote fallback | none | IDX tickers carry the `.JK` suffix |
 | Yahoo Finance `v7/finance/quote` | quotes | anonymous cookie + crumb, cached 6 h | Falls back to the chart endpoint (fewer fields) if rejected |
+| Yahoo Finance `v10/finance/quoteSummary` | profile, fundamentals, earnings | same session | Statement modules are empty at the source, so they are not used |
+| Yahoo Finance `fundamentals-timeseries` | financials | none | Annual, quarterly and TTM statement items |
+| MSN Money `Finance/Quotes`, `Finance/Equities` | quotes, profile, fundamentals, analyst targets | MSN's own public web key (shipped; override with `IDX_MSN_API_KEY`) | Tickers resolve to MSN ids through its autosuggest service, filtered to exchange `XIDX` |
 
 Prices are delayed as published by the source. This tool is for research and
 tooling; it is not investment advice and not affiliated with IDX, KSEI, Yahoo

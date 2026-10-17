@@ -18,6 +18,14 @@ All notable changes to this project are documented here. The format follows
 - `idx schema <name>`: JSON Schema for every JSON shape.
 - Local response cache with per-endpoint TTL, `--offline`, `--no-cache`, and
   `idx cache stats|clear|path`.
+- `stocks profile`, `stocks financials` (annual / quarterly / TTM), `stocks
+  earnings`, `stocks fundamental` (ratios plus a transparent rule-based
+  verdict), `stocks technical` (RSI, MACD, SMA/EMA, Bollinger, ATR, levels,
+  trend, signal) and `stocks compare`.
+- MSN Money provider (`--provider msn`): quotes, profile, fundamentals and
+  analyst targets. `auto` now tries Yahoo then MSN and merges fundamentals
+  field by field, never averaging.
+- Yahoo quoteSummary and fundamentals-timeseries endpoints.
 - `web/`: Cloudflare Worker serving the landing page at
   https://ihsg.midoriresearch.com, reachable on the custom domain only.
 - Config file with `idx config init|set|get|path`; precedence flags > env > file > defaults.

@@ -5,8 +5,9 @@ and every command prints one JSON document to stdout. Errors go to stderr as
 JSON too. Nothing else is ever written to stdout in JSON mode, so
 `idx -o json ... | jq` is safe.
 
-Machine-readable schemas: `idx schema quotes`, `idx schema history`,
-`idx schema error`, `idx schema quote`, `idx schema candle`.
+Machine-readable schemas: `idx schema <name>` with `quotes`, `history`,
+`profile`, `fundamentals`, `compare`, `financials`, `earnings`, `technical`,
+`error`, `quote`, `candle`.
 
 ## Envelope
 
@@ -91,6 +92,106 @@ and average-volume fields to be `null`.
   closes.
 - `summary` is `null` when there are no candles.
 
+## `idx.profile.v1` (`stocks profile`)
+
+`data` is one object: `symbol`, `name`, `sector`, `industry`, `summary`,
+`employees`, `founded_year`, `website`, `city`, `country`, `exchange`,
+`currency`, `market_cap`, `shares_outstanding`, `directors[]` (`name`,
+`title`; populated by MSN, empty from Yahoo) and `source`.
+
+## `idx.fundamentals.v1` (`stocks fundamental`)
+
+`data` is one object grouped by theme. Percent fields end in `_pct` and are
+already percentages (`21.8` = 21.8 %). Ratios are plain multiples
+(`debt_to_equity: 0.6` = 60 % of equity).
+
+```json
+{
+  "symbol": "BBCA", "name": "PT Bank Central Asia Tbk", "currency": "IDR",
+  "sector": "Financial Services", "industry": "Banks - Regional",
+  "price": 5175.0, "beta": -0.017, "week52_high": 8750.0, "week52_low": 4820.0,
+  "valuation": { "market_cap": 6.357e14, "enterprise_value": 6.099e14, "pe_trailing": 12.87,
+                 "pe_forward": 10.73, "peg": 1.52, "price_to_book": 2.35, "price_to_sales": 5.82,
+                 "ev_to_ebitda": null, "ev_to_revenue": 5.58 },
+  "profitability": { "roe_pct": 21.82, "roa_pct": 3.67, "gross_margin_pct": null,
+                     "operating_margin_pct": 66.75, "net_margin_pct": 53.12 },
+  "health": { "debt_to_equity": null, "current_ratio": null, "quick_ratio": null,
+              "total_debt": 5.2e13, "total_cash": 7.8e13 },
+  "growth": { "revenue_growth_pct": 2.5, "earnings_growth_pct": 0.4,
+              "revenue_cagr_5y_pct": 8.63, "eps_growth_3y_pct": 12.21 },
+  "dividend": { "yield_pct": 6.27, "payout_ratio_pct": 75.42, "ex_dividend_date": "2026-08-31" },
+  "per_share": { "eps_ttm": 402.07, "eps_forward": 482.48, "book_value": 2201.5, "revenue": 888.2 },
+  "analyst": { "recommendation": "strong_buy", "target_mean": 8197.5, "target_high": 10100.0,
+               "target_low": 5900.0, "analysts": 24 },
+  "fiscal_year_end": "2025-12-31", "most_recent_quarter": "2026-06-30",
+  "verdict": { "label": "fair", "score": 2, "reasons": ["trailing P/E 12.9 is moderate (10 to 15)", "..."],
+               "inputs_available": 7 },
+  "sources": ["yahoo:quoteSummary", "msn:equities", "msn:quotes"]
+}
+```
+
+- `auto` asks Yahoo first and fills remaining `null`s from MSN; `sources`
+  lists who contributed. Values are never averaged across sources.
+- Yahoo reports gross and EBITDA margins as `0` for banks; that is published
+  as `null` because it means "not applicable", not 0 %.
+- `verdict.label` is `undervalued` | `fair` | `overvalued` |
+  `insufficient_data` (fewer than three rule inputs). Every rule that fired is
+  in `reasons`. It is a heuristic, not advice.
+
+## `idx.compare.v1` (`stocks compare`)
+
+`data` is an array of `idx.fundamentals.v1` objects in the order requested.
+Symbols that failed are listed in `warnings`.
+
+## `idx.financials.v1` (`stocks financials`)
+
+```json
+{
+  "symbol": "BBCA", "currency": "IDR", "period": "annual",
+  "periods": [
+    { "end_date": "2025-12-31", "period": "annual",
+      "income": { "total_revenue": 1.14e14, "gross_profit": null, "operating_income": null,
+                  "ebitda": null, "ebit": null, "interest_income": 9.8e13, "interest_expense": 1.0e13,
+                  "net_interest_income": 8.8e13, "pretax_income": 7.1e13, "tax_provision": 1.4e13,
+                  "net_income": 5.75e13, "net_income_common": 5.75e13, "eps_basic": 467.0, "eps_diluted": 467.0 },
+      "balance": { "total_assets": 1.59e15, "total_liabilities": 1.31e15, "stockholders_equity": 2.81e14,
+                   "cash_and_equivalents": 9.1e13, "total_debt": 2.4e12, "net_debt": null, "shares_outstanding": 1.23e11 },
+      "cash_flow": { "operating": 7.75e13, "investing": -3.4e13, "financing": -4.2e13,
+                     "capital_expenditure": -2.45e12, "free_cash_flow": 7.5e13, "dividends_paid": -3.76e13 } }
+  ],
+  "source": "yahoo:timeseries"
+}
+```
+
+- `period` is `annual` (about four fiscal years), `quarterly` (about five
+  quarters) or `ttm` (trailing twelve months; `balance` fields are `null`).
+- `periods` is oldest first. Amounts are in `currency` units as reported;
+  outflows are negative.
+- Banks have no EBITDA, gross profit or operating income series at the source,
+  so those are `null`.
+
+## `idx.earnings.v1` (`stocks earnings`)
+
+`data`: `quarters[]` (`period` like `3Q2025`, `end_date`, `reported_date`,
+`eps_actual`, `eps_estimate`, `surprise_pct`), `yearly[]` and `quarterly[]`
+(`period`, `revenue`, `earnings`, `profit_margin_pct`), `next` (`date`,
+`date_is_estimate`, `eps_avg`/`eps_low`/`eps_high`, `eps_growth_pct`,
+`revenue_avg`/`revenue_low`/`revenue_high`, `analysts`), `ex_dividend_date`,
+`dividend_date`, `source`.
+
+## `idx.technical.v1` (`stocks technical`)
+
+Computed locally from daily candles (`provider` names where the candles came
+from). `data`: `as_of`, `period`, `candles_used`, `price`,
+`change_pct_1d|1w|1m|3m`, `high_52w`, `low_52w`,
+`moving_averages` (`sma20|50|200`, `ema20|50|200`), `rsi14`,
+`macd` (`line`, `signal`, `histogram`), `bollinger` (`upper`, `middle`,
+`lower`, `percent_b`, `bandwidth_pct`), `atr14`, `volume` (`last`, `avg20`,
+`ratio`), `levels` (`support[]`, `resistance[]`, nearest first),
+`trend` (`uptrend` | `downtrend` | `sideways` | `unknown`) and
+`signal` (`label` `buy` | `sell` | `neutral`, `score`, `reasons[]`).
+Indicators that need more history than was available are `null`.
+
 ## Errors
 
 Written to stderr, exit code non-zero:
@@ -106,7 +207,7 @@ Written to stderr, exit code non-zero:
 | 3 | `network`, `provider` | network failure or the source returned an error |
 | 4 | `not_found` | symbol or record does not exist |
 | 5 | `offline_miss` | `--offline` and nothing cached |
-| 6 | `config` | bad config file, env value, or unavailable provider |
+| 6 | `config`, `unsupported` | bad config file or env value; or the selected provider cannot serve this command (`--provider auto` can) |
 
 ## Compatibility promise
 

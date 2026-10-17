@@ -195,13 +195,66 @@ fn config_init_set_get_roundtrip() {
 }
 
 #[test]
-fn msn_provider_is_not_available_yet() {
+fn new_stock_commands_have_help_and_fail_offline_cleanly() {
     let sb = sandbox();
+    for (cmd, needle) in [
+        ("profile", "Company profile"),
+        ("financials", "--period"),
+        ("earnings", "EPS"),
+        ("fundamental", "verdict"),
+        ("technical", "RSI"),
+        ("compare", "Side-by-side"),
+    ] {
+        idx(&sb.cache, &sb.config)
+            .args(["stocks", cmd, "--help"])
+            .assert()
+            .success()
+            .stdout(predicate::str::contains(needle));
+    }
+    // Offline with an empty cache: every command exits 5 with a clear message.
+    for cmd in [
+        "profile",
+        "financials",
+        "earnings",
+        "fundamental",
+        "technical",
+    ] {
+        idx(&sb.cache, &sb.config)
+            .args(["--offline", "stocks", cmd, "BBCA"])
+            .assert()
+            .code(5)
+            .stderr(predicate::str::contains("BBCA"));
+    }
     idx(&sb.cache, &sb.config)
-        .args(["--provider", "msn", "stocks", "quote", "BBCA"])
+        .args(["--offline", "stocks", "compare", "BBCA", "BBRI"])
+        .assert()
+        .code(5);
+    idx(&sb.cache, &sb.config)
+        .args(["stocks", "compare", "BBCA"])
+        .assert()
+        .code(2)
+        .stderr(predicate::str::contains("at least two"));
+    idx(&sb.cache, &sb.config)
+        .args(["stocks", "financials", "BBCA", "--period", "weekly"])
+        .assert()
+        .code(2);
+}
+
+#[test]
+fn msn_provider_is_selectable() {
+    let sb = sandbox();
+    // --provider msn is accepted; offline with no cache -> exit 5 like Yahoo.
+    idx(&sb.cache, &sb.config)
+        .args(["--provider", "msn", "--offline", "stocks", "quote", "BBCA"])
+        .assert()
+        .code(5)
+        .stderr(predicate::str::contains("BBCA"));
+    // MSN does not serve history: explicit provider gets exit 6 with a hint.
+    idx(&sb.cache, &sb.config)
+        .args(["--provider", "msn", "stocks", "history", "BBCA"])
         .assert()
         .code(6)
-        .stderr(predicate::str::contains("msn"));
+        .stderr(predicate::str::contains("--provider auto"));
 }
 
 #[test]

@@ -6,7 +6,7 @@ use comfy_table::{Attribute, Cell, CellAlignment, Color, ContentArrangement, Tab
 use crate::model::{History, Quote};
 use crate::output::format as f;
 
-fn base_table(color: bool) -> Table {
+pub(crate) fn base_table(color: bool) -> Table {
     let mut t = Table::new();
     t.load_preset(comfy_table::presets::UTF8_FULL_CONDENSED)
         .apply_modifier(comfy_table::modifiers::UTF8_ROUND_CORNERS)
@@ -19,11 +19,11 @@ fn base_table(color: bool) -> Table {
     t
 }
 
-fn right(s: String) -> Cell {
+pub(crate) fn right(s: String) -> Cell {
     Cell::new(s).set_alignment(CellAlignment::Right)
 }
 
-fn signed(s: String, v: Option<f64>, color: bool) -> Cell {
+pub(crate) fn signed(s: String, v: Option<f64>, color: bool) -> Cell {
     let mut c = right(s);
     if color {
         match v {
@@ -35,7 +35,7 @@ fn signed(s: String, v: Option<f64>, color: bool) -> Cell {
     c
 }
 
-fn header(cols: &[&str]) -> Vec<Cell> {
+pub(crate) fn header(cols: &[&str]) -> Vec<Cell> {
     cols.iter()
         .map(|c| Cell::new(c).add_attribute(Attribute::Bold))
         .collect()
