@@ -23,6 +23,7 @@ use crate::model::{
     StatementPeriod, Symbol,
 };
 
+pub mod ipot;
 pub mod msn;
 pub mod news;
 pub mod yahoo;
