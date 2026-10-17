@@ -6,10 +6,10 @@ use serde::Serialize;
 
 use crate::error::{IdxError, Result};
 use crate::model::{
-    Brief, BrokerSummary, ChangesReport, DiscoveredFile, DividendHistory, Earnings, EntityReport,
-    Financials, ForeignFlowReport, ForeignReport, Fundamentals, History, HoldersReport,
-    ImportReport, MarketOverview, NewsReport, Performance, Profile, Quote, Release, ScreenReport,
-    SentimentReport, Technical, Watchlist,
+    BandarReport, BandarScreen, Brief, BrokerSummary, ChangesReport, DiscoveredFile,
+    DividendHistory, Earnings, EntityReport, Financials, ForeignFlowReport, ForeignReport,
+    Fundamentals, History, HoldersReport, ImportReport, MarketOverview, NewsReport, Performance,
+    Profile, Quote, Release, ScreenReport, SentimentReport, Technical, Watchlist,
 };
 use crate::providers::Sourced;
 
@@ -59,6 +59,8 @@ pub const SCHEMA_RETURNS: &str = "idx.returns.v1";
 pub const SCHEMA_MARKET: &str = "idx.market.v1";
 pub const SCHEMA_BRIEF: &str = "idx.brief.v1";
 pub const SCHEMA_BROKER: &str = "idx.broker.v1";
+pub const SCHEMA_BANDAR: &str = "idx.bandar.v1";
+pub const SCHEMA_BANDAR_SCREEN: &str = "idx.bandar.screen.v1";
 pub const SCHEMA_WATCHLIST: &str = "idx.watchlist.v1";
 pub const SCHEMA_TECHNICAL: &str = "idx.technical.v1";
 pub const SCHEMA_SCREEN: &str = "idx.screen.v1";
@@ -85,6 +87,8 @@ pub type ReturnsEnvelope = Envelope<Vec<Performance>>;
 pub type MarketEnvelope = Envelope<MarketOverview>;
 pub type BriefEnvelope = Envelope<Brief>;
 pub type BrokerEnvelope = Envelope<Vec<BrokerSummary>>;
+pub type BandarEnvelope = Envelope<Vec<BandarReport>>;
+pub type BandarScreenEnvelope = Envelope<BandarScreen>;
 pub type WatchlistEnvelope = Envelope<Watchlist>;
 pub type TechnicalEnvelope = Envelope<Technical>;
 pub type ScreenEnvelope = Envelope<ScreenReport>;
@@ -146,6 +150,8 @@ pub fn schema_names() -> &'static [&'static str] {
         "market",
         "brief",
         "broker",
+        "bandar",
+        "bandar-screen",
         "watchlist",
         "technical",
         "screen",
@@ -179,6 +185,8 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "market" => schemars::schema_for!(MarketEnvelope),
         "brief" => schemars::schema_for!(BriefEnvelope),
         "broker" => schemars::schema_for!(BrokerEnvelope),
+        "bandar" => schemars::schema_for!(BandarEnvelope),
+        "bandar-screen" => schemars::schema_for!(BandarScreenEnvelope),
         "watchlist" => schemars::schema_for!(WatchlistEnvelope),
         "technical" => schemars::schema_for!(TechnicalEnvelope),
         "screen" => schemars::schema_for!(ScreenEnvelope),

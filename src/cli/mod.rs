@@ -13,6 +13,7 @@ use crate::http::{Fetcher, ReqwestBackend};
 use crate::output::{self, ColorMode, OutputFormat};
 use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Sourced, Ttls};
 
+pub mod bandar;
 pub mod broker;
 pub mod cache_cmd;
 pub mod config_cmd;
@@ -38,6 +39,8 @@ Examples:
   idx stocks screen -f 'pe<10,div>5,mcap>5T' # screener over ~950 IDX tickers
   idx stocks news BBCA                     # Kontan + CNBC Indonesia headlines
   idx broker BBCA                          # which brokers bought and sold it
+  idx bandar detect BBCA                   # top brokers accumulating or distributing?
+  idx bandar screen --preset big-accumulation  # bandarmology screener
   idx ownership import --latest            # KSEI >1% holders into local SQLite
   idx ownership ticker BBCA                # who holds more than 1%
   idx mcp                                  # MCP server over stdio for agents
@@ -136,6 +139,10 @@ the IDX member list bundled with idx. The source rounds figures of a million and
 decimal (1.6 M); JSON marks those summaries with rounded=true.")]
     Broker(broker::BrokerArgs),
 
+    /// Bandarmology: are the top brokers accumulating or distributing? `detect` per ticker, `screen` across the most traded.
+    #[command(subcommand)]
+    Bandar(bandar::BandarCmd),
+
     /// Quote your watchlist, or manage it (add, remove, list, clear, returns).
     #[command(
         after_help = "Examples:\n  idx watch add BBCA BBRI TLKM\n  idx watch                 # quotes for the list\n  idx watch returns         # 1w..5y returns vs IHSG\n  idx watch rm TLKM\n\nStored as plain text next to the config file (or $IDX_WATCHLIST)."
@@ -158,7 +165,7 @@ decimal (1.6 M); JSON marks those summaries with rounded=true.")]
 
     /// Print the JSON Schema for a JSON output shape (run without a name to list them).
     Schema {
-        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | screen | news | sentiment | broker | ownership-* | error | quote | candle
+        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | screen | news | sentiment | broker | bandar | bandar-screen | ownership-* | error | quote | candle
         name: Option<String>,
     },
 
@@ -293,6 +300,10 @@ pub async fn run(cli: Cli) -> Result<()> {
         Command::Broker(args) => {
             let ctx = build_context(&cli.global)?;
             broker::run(&ctx, args).await
+        }
+        Command::Bandar(cmd) => {
+            let ctx = build_context(&cli.global)?;
+            bandar::run(&ctx, cmd).await
         }
         Command::Watch(args) => {
             let ctx = build_context(&cli.global)?;

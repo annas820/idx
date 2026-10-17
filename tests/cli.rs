@@ -342,6 +342,73 @@ fn broker_command_surface() {
 }
 
 #[test]
+fn bandar_command_surface() {
+    let sb = sandbox();
+    idx(&sb.cache, &sb.config)
+        .args(["bandar", "detect", "--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("idx bandar detect BBCA --daily"))
+        .stdout(predicate::str::contains("big accumulation"));
+    idx(&sb.cache, &sb.config)
+        .args(["bandar", "screen", "--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("quiet-accumulation"))
+        .stdout(predicate::str::contains("below-bandar"));
+    for name in ["bandar", "bandar-screen"] {
+        let out = idx(&sb.cache, &sb.config)
+            .args(["schema", name])
+            .output()
+            .unwrap();
+        assert!(out.status.success(), "{name}");
+        let v: serde_json::Value = serde_json::from_slice(&out.stdout).unwrap();
+        assert!(v.to_string().contains("net_pct"), "{name}");
+    }
+    // Offline with an empty cache: exit 5.
+    idx(&sb.cache, &sb.config)
+        .args(["bandar", "detect", "BBCA"])
+        .assert()
+        .code(5);
+    idx(&sb.cache, &sb.config)
+        .args([
+            "-o",
+            "json",
+            "bandar",
+            "screen",
+            "--preset",
+            "big-accumulation",
+        ])
+        .assert()
+        .code(5)
+        .stderr(predicate::str::contains("\"offline_miss\""));
+    for args in [
+        vec!["bandar"],
+        vec!["bandar", "detect"],
+        vec!["bandar", "detect", "BBCA", "--period", "2w"],
+        vec!["bandar", "detect", "BBCA", "--top", "4"],
+        vec![
+            "bandar", "detect", "BBCA", "BBRI", "BMRI", "BBNI", "--daily",
+        ],
+        vec![
+            "bandar",
+            "detect",
+            "BBCA",
+            "--date",
+            "2026-10-16",
+            "--from",
+            "2026-10-01",
+        ],
+        vec!["bandar", "screen", "--preset", "everything"],
+        vec!["bandar", "screen", "-f", "pe<10"],
+        vec!["bandar", "screen", "--sort", "phase"],
+        vec!["bandar", "screen", "--asc", "--desc"],
+    ] {
+        idx(&sb.cache, &sb.config).args(&args).assert().code(2);
+    }
+}
+
+#[test]
 fn msn_provider_is_selectable() {
     let sb = sandbox();
     // --provider msn is accepted; offline with no cache -> exit 5 like Yahoo.
