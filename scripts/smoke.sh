@@ -115,6 +115,19 @@ expect "$TMP/mk.json" '"advancing":' "market json has breadth"
 "$IDX" -o json stocks brief BBCA >"$TMP/br.json" || fail "brief"
 expect "$TMP/br.json" '"key_points":' "brief json has key points"
 
+echo "broker (ipot)"
+"$IDX" -o json broker BBCA >"$TMP/bk.json" || fail "broker json"
+expect "$TMP/bk.json" '"schema": "idx.broker.v1"' "broker json schema"
+expect "$TMP/bk.json" '"provider": "ipot"' "broker json came from ipot"
+expect "$TMP/bk.json" '"code":' "broker json has broker rows"
+expect "$TMP/bk.json" '"name": "MANDIRI SEKURITAS"' "broker codes are named from the IDX member list"
+"$IDX" broker BBRI --investor foreign -n 3 >"$TMP/bk.txt" || fail "broker table"
+expect "$TMP/bk.txt" "Top sellers" "broker table has both sides"
+set +e
+"$IDX" broker ZZZZ --date 2026-10-16 >/dev/null 2>"$TMP/bke.txt"; code=$?
+set -e
+[ "$code" = 4 ] && pass "unknown broker ticker exits 4" || fail "unknown broker ticker exit $code"
+
 echo "ownership (local fixture)"
 export IDX_OWNERSHIP_DB="$TMP/own.sqlite"
 "$IDX" ownership import --file tests/fixtures/ownership/above1_20260831_excerpt.xlsx >"$TMP/oi.txt" || fail "ownership import"
