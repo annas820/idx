@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T00:00:00Z",
+  "title": "Design System: idx web surface",
+  "scope": "web/public only (landing page, browser terminal, renderers). The CLI's shell tables and the README logo are not governed by this system.",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#f1f1ee", "tonalRamp": ["oklch(15% 0.004 110)", "oklch(26% 0.004 110)", "oklch(38% 0.004 110)", "oklch(49% 0.004 110)", "oklch(61% 0.004 110)", "oklch(72% 0.004 110)", "oklch(84% 0.004 110)", "oklch(95% 0.004 110)"] },
+      "paper-deep": { "role": "neutral", "displayName": "Paper Deep", "canonical": "#e6e6e1", "tonalRamp": ["oklch(15% 0.006 110)", "oklch(26% 0.006 110)", "oklch(38% 0.006 110)", "oklch(49% 0.006 110)", "oklch(61% 0.006 110)", "oklch(72% 0.006 110)", "oklch(84% 0.006 110)", "oklch(95% 0.006 110)"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#111312", "tonalRamp": ["oklch(15% 0.004 160)", "oklch(26% 0.004 160)", "oklch(38% 0.004 160)", "oklch(49% 0.004 160)", "oklch(61% 0.004 160)", "oklch(72% 0.004 160)", "oklch(84% 0.004 160)", "oklch(95% 0.004 160)"] },
+      "ink-2": { "role": "neutral", "displayName": "Ink 2 (halftone)", "canonical": "#3b413d", "tonalRamp": ["oklch(15% 0.01 160)", "oklch(26% 0.01 160)", "oklch(38% 0.01 160)", "oklch(49% 0.01 160)", "oklch(61% 0.01 160)", "oklch(72% 0.01 160)", "oklch(84% 0.01 160)", "oklch(95% 0.01 160)"] },
+      "ink-3": { "role": "neutral", "displayName": "Ink 3 (caption)", "canonical": "#5e665f", "tonalRamp": ["oklch(15% 0.012 160)", "oklch(26% 0.012 160)", "oklch(38% 0.012 160)", "oklch(49% 0.012 160)", "oklch(61% 0.012 160)", "oklch(72% 0.012 160)", "oklch(84% 0.012 160)", "oklch(95% 0.012 160)"] },
+      "rule": { "role": "neutral", "displayName": "Rule", "canonical": "#1b1e1c", "tonalRamp": ["oklch(15% 0.005 160)", "oklch(26% 0.005 160)", "oklch(38% 0.005 160)", "oklch(49% 0.005 160)", "oklch(61% 0.005 160)", "oklch(72% 0.005 160)", "oklch(84% 0.005 160)", "oklch(95% 0.005 160)"] },
+      "rule-soft": { "role": "neutral", "displayName": "Rule Soft", "canonical": "#b9bcb5", "tonalRamp": ["oklch(15% 0.008 120)", "oklch(26% 0.008 120)", "oklch(38% 0.008 120)", "oklch(49% 0.008 120)", "oklch(61% 0.008 120)", "oklch(72% 0.008 120)", "oklch(84% 0.008 120)", "oklch(95% 0.008 120)"] },
+      "green-deep": { "role": "primary", "displayName": "Deep idx Green", "canonical": "#0f6b31", "tonalRamp": ["oklch(15% 0.13 150)", "oklch(26% 0.13 150)", "oklch(38% 0.13 150)", "oklch(49% 0.13 150)", "oklch(61% 0.13 150)", "oklch(72% 0.13 150)", "oklch(84% 0.13 150)", "oklch(95% 0.13 150)"] },
+      "green-ink": { "role": "primary", "displayName": "Green Ink", "canonical": "#0b4d24", "tonalRamp": ["oklch(15% 0.11 150)", "oklch(26% 0.11 150)", "oklch(38% 0.11 150)", "oklch(49% 0.11 150)", "oklch(61% 0.11 150)", "oklch(72% 0.11 150)", "oklch(84% 0.11 150)", "oklch(95% 0.11 150)"] },
+      "green": { "role": "primary", "displayName": "idx Green (brand, selection only)", "canonical": "#16a34a", "tonalRamp": ["oklch(15% 0.19 148)", "oklch(26% 0.19 148)", "oklch(38% 0.19 148)", "oklch(49% 0.19 148)", "oklch(61% 0.19 148)", "oklch(72% 0.19 148)", "oklch(84% 0.19 148)", "oklch(95% 0.19 148)"] },
+      "green-tint": { "role": "primary", "displayName": "Green Tint (re-ink flash)", "canonical": "#dcefe2", "tonalRamp": ["oklch(15% 0.03 150)", "oklch(26% 0.03 150)", "oklch(38% 0.03 150)", "oklch(49% 0.03 150)", "oklch(61% 0.03 150)", "oklch(72% 0.03 150)", "oklch(84% 0.03 150)", "oklch(95% 0.03 150)"] },
+      "red": { "role": "semantic", "displayName": "Loss Red", "canonical": "#b3122f", "tonalRamp": ["oklch(15% 0.19 20)", "oklch(26% 0.19 20)", "oklch(38% 0.19 20)", "oklch(49% 0.19 20)", "oklch(61% 0.19 20)", "oklch(72% 0.19 20)", "oklch(84% 0.19 20)", "oklch(95% 0.19 20)"] },
+      "band-text": { "role": "neutral", "displayName": "Band Text", "canonical": "#ffffff", "tonalRamp": ["oklch(15% 0 0)", "oklch(26% 0 0)", "oklch(38% 0 0)", "oklch(49% 0 0)", "oklch(61% 0 0)", "oklch(72% 0 0)", "oklch(84% 0 0)", "oklch(95% 0 0)"] },
+      "band-text-soft": { "role": "neutral", "displayName": "Band Text Soft", "canonical": "#e9f6ee", "tonalRamp": ["oklch(15% 0.02 150)", "oklch(26% 0.02 150)", "oklch(38% 0.02 150)", "oklch(49% 0.02 150)", "oklch(61% 0.02 150)", "oklch(72% 0.02 150)", "oklch(84% 0.02 150)", "oklch(95% 0.02 150)"] }
+    },
+    "typographyMeta": {
+      "masthead": { "displayName": "Masthead", "purpose": "Statement title in the green band; condensed 900 uppercase." },
+      "strip": { "displayName": "Strip", "purpose": "Section heads on the 3px/1px ruled strip; condensed 800 uppercase." },
+      "figure-display": { "displayName": "Figure Display", "purpose": "The composite index price; the only large number on the page." },
+      "symbol": { "displayName": "Symbol", "purpose": "Four-letter ticker leading each table row." },
+      "body": { "displayName": "Body", "purpose": "Keterangan lines, notes, terminal prose (max 72ch)." },
+      "table": { "displayName": "Table", "purpose": "Board cells, tabular lining figures, right-aligned." },
+      "label": { "displayName": "Label", "purpose": "Column headers, box labels, prompt label, Copy/Run buttons; uppercase." },
+      "caption": { "displayName": "Caption", "purpose": "Strip subtitles, provenance footers, datelines, disclaimer." },
+      "mono": { "displayName": "Mono", "purpose": "Literal commands, tool names, JSON, the prompt input. Nothing else." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "invert", "value": "background 120ms ease-out, color 120ms ease-out", "purpose": "Ink/paper inversion on stamp hover and focus." },
+      { "name": "wipe", "value": "900ms cubic-bezier(0.16, 1, 0.3, 1) both", "purpose": "One-time left-to-right draw of strip rules on load (body.draw); gated on prefers-reduced-motion: no-preference." },
+      { "name": "reink", "value": "1.4s ease-out", "purpose": "Changed board cells darken to #000 with a green-tint background that fades, after each 60s refetch." }
+    ],
+    "breakpoints": [
+      { "name": "one-column", "value": "64rem", "purpose": "Lead, three-up grids and notes collapse to one column." },
+      { "name": "narrow", "value": "46rem", "purpose": "Board drops Name and Volume columns; masthead reflows; table 0.84rem; prompt label on its own row." }
+    ],
+    "fontLoading": "Google Fonts: Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900 with display=swap; fallback Helvetica Neue, Arial."
+  },
+  "components": [
+    {
+      "name": "Stamp (primary action)",
+      "kind": "button",
+      "refersTo": "stamp",
+      "description": "The one stamped action per page; ink-bordered, rotated -1.5deg, inverts on hover, green-deep on press.",
+      "html": "<a class=\"ds-stamp\" href=\"#\">Open the terminal →</a>",
+      "css": ".ds-stamp { display: inline-block; padding: 0.7rem 1.1rem; border: 3px solid var(--ink, #111312); background: transparent; color: var(--ink, #111312); font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); font-variation-settings: 'wdth' 75; font-stretch: 75%; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transform: rotate(-1.5deg); transition: background 120ms ease-out, color 120ms ease-out; } .ds-stamp:hover, .ds-stamp:focus-visible { background: var(--ink, #111312); color: var(--paper, #f1f1ee); } .ds-stamp:focus-visible { outline: 2px solid var(--focus, #0f6b31); outline-offset: 2px; } .ds-stamp:active { background: var(--green-deep, #0f6b31); border-color: var(--green-deep, #0f6b31); color: #fff; }"
+    },
+    {
+      "name": "Run button",
+      "kind": "button",
+      "refersTo": "button-run",
+      "description": "Terminal submit: ink block, paper label, green-deep on hover.",
+      "html": "<button class=\"ds-run\" type=\"button\">Run</button>",
+      "css": ".ds-run { font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; background: var(--ink, #111312); color: var(--paper, #f1f1ee); border: 0; border-radius: 0; padding: 0.45rem 0.8rem; cursor: pointer; } .ds-run:hover { background: var(--green-deep, #0f6b31); } .ds-run:focus-visible { outline: 2px solid var(--focus, #0f6b31); outline-offset: 2px; }"
+    },
+    {
+      "name": "Copy button",
+      "kind": "button",
+      "refersTo": "button-copy",
+      "description": "Small ruled button inside install boxes; inverts on hover.",
+      "html": "<button class=\"ds-copy\" type=\"button\">Copy</button>",
+      "css": ".ds-copy { font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; background: none; border: 1px solid var(--rule, #1b1e1c); border-radius: 0; padding: 0.2rem 0.5rem; cursor: pointer; color: var(--ink, #111312); } .ds-copy:hover { background: var(--ink, #111312); color: var(--paper, #f1f1ee); } .ds-copy:focus-visible { outline: 2px solid var(--focus, #0f6b31); outline-offset: 2px; }"
+    },
+    {
+      "name": "Hint chip",
+      "kind": "chip",
+      "refersTo": "hint-chip",
+      "description": "Clickable example command in the terminal welcome entry; mono, soft rule border.",
+      "html": "<button class=\"ds-hint\" type=\"button\">quote BBCA,BBRI,TLKM</button>",
+      "css": ".ds-hint { font-family: var(--mono, ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace); font-size: 0.8rem; background: transparent; border: 1px solid var(--rule-soft, #b9bcb5); border-radius: 0; padding: 0.15rem 0.5rem; cursor: pointer; color: var(--ink-2, #3b413d); } .ds-hint:hover { border-color: var(--ink, #111312); color: var(--ink, #111312); } .ds-hint:focus-visible { outline: 2px solid var(--focus, #0f6b31); outline-offset: 2px; }"
+    },
+    {
+      "name": "Prompt",
+      "kind": "input",
+      "refersTo": "prompt-input",
+      "description": "The terminal command line: uppercase label, underlined mono input with green caret, Run button; sticky with a 3px rule above.",
+      "html": "<form class=\"ds-prompt\"><label class=\"ds-prompt-label\" for=\"ds-cmd\">Perintah · command</label><input class=\"ds-prompt-input\" id=\"ds-cmd\" type=\"text\" placeholder=\"quote BBCA,BBRI,TLKM\" spellcheck=\"false\"><button class=\"ds-prompt-run\" type=\"button\">Run</button></form>",
+      "css": ".ds-prompt { background: var(--paper, #f1f1ee); border-top: 3px solid var(--rule, #1b1e1c); border-bottom: 1px solid var(--rule, #1b1e1c); padding: 0.6rem 0 0.7rem; display: grid; grid-template-columns: auto 1fr auto; gap: 0.6rem; align-items: center; font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); } .ds-prompt-label { font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink, #111312); } .ds-prompt-input { font-family: var(--mono, ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace); font-size: 1rem; color: var(--ink, #111312); background: transparent; border: 0; border-bottom: 1px solid var(--rule-soft, #b9bcb5); padding: 0.3rem 0; outline: none; min-width: 0; caret-color: var(--green-deep, #0f6b31); } .ds-prompt-input:focus { border-bottom-color: var(--ink, #111312); } .ds-prompt-run { font: inherit; font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; background: var(--ink, #111312); color: var(--paper, #f1f1ee); border: 0; padding: 0.45rem 0.8rem; cursor: pointer; } .ds-prompt-run:hover { background: var(--green-deep, #0f6b31); }"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "masthead-band",
+      "description": "The green band: brand mark and wordmark left, condensed statement title centre, dateline right; 3px ink rule beneath.",
+      "html": "<header class=\"ds-masthead\"><a class=\"ds-brand\" href=\"#\"><svg width=\"34\" height=\"34\" viewBox=\"0 0 128 128\" aria-hidden=\"true\"><rect width=\"128\" height=\"128\" rx=\"28\" fill=\"#0b0f14\"/><g stroke=\"#1f2937\" stroke-width=\"1\"><line x1=\"16\" y1=\"40\" x2=\"112\" y2=\"40\"/><line x1=\"16\" y1=\"64\" x2=\"112\" y2=\"64\"/><line x1=\"16\" y1=\"88\" x2=\"112\" y2=\"88\"/></g><line x1=\"36\" y1=\"24\" x2=\"36\" y2=\"108\" stroke=\"#f43f5e\" stroke-width=\"3\"/><rect x=\"28\" y=\"50\" width=\"16\" height=\"42\" rx=\"3\" fill=\"#be123c\"/><line x1=\"64\" y1=\"18\" x2=\"64\" y2=\"96\" stroke=\"#4ade80\" stroke-width=\"3\"/><rect x=\"56\" y=\"28\" width=\"16\" height=\"52\" rx=\"3\" fill=\"#16a34a\"/><line x1=\"92\" y1=\"32\" x2=\"92\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"3\"/><rect x=\"84\" y=\"42\" width=\"16\" height=\"30\" rx=\"3\" fill=\"#16a34a\"/><circle cx=\"36\" cy=\"14\" r=\"4\" fill=\"#f8fafc\"/></svg><span>idx</span></a><h1 class=\"ds-masthead-title\"><b>Laporan Pasar</b> <span>Indonesian stock market CLI, MCP server and web terminal</span></h1><p class=\"ds-dateline\">Published every minute · <strong>2026-10-16 16:14 WIB</strong></p></header>",
+      "css": ".ds-masthead { background: var(--green-deep, #0f6b31); color: #fff; border-bottom: 3px solid var(--ink, #111312); display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem 1.5rem; padding: 0.7rem 1.5rem; font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); } .ds-brand { display: inline-flex; align-items: center; gap: 0.55rem; color: #fff; text-decoration: none; } .ds-brand svg { display: block; border-radius: 7px; border: 1px solid rgba(255,255,255,0.35); } .ds-brand span { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.02em; } .ds-masthead-title { margin: 0; font-size: clamp(1.3rem, 2.2vw, 1.6rem); font-weight: 900; text-align: center; line-height: 1.35; } .ds-masthead-title b { font-variation-settings: 'wdth' 75; font-stretch: 75%; text-transform: uppercase; letter-spacing: 0.04em; } .ds-masthead-title span { font-size: clamp(0.85rem, 1.2vw, 0.95rem); font-weight: 500; color: #e9f6ee; margin-left: 0.35rem; } .ds-dateline { margin: 0; text-align: right; font-size: 0.82rem; color: #e9f6ee; white-space: nowrap; } .ds-dateline strong { color: #fff; font-weight: 700; }"
+    },
+    {
+      "name": "Strip",
+      "kind": "custom",
+      "refersTo": "strip",
+      "description": "Section head on a 3px-over-1px ruled strip; condensed uppercase title left, caption right, baseline aligned.",
+      "html": "<h2 class=\"ds-strip\"><span>Papan Harga</span><small>Live board · heavyweights by market cap · IDR</small></h2>",
+      "css": ".ds-strip { margin: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-top: 3px solid var(--rule, #1b1e1c); border-bottom: 1px solid var(--rule, #1b1e1c); padding: 0.35rem 0; font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); font-size: 1rem; font-weight: 800; line-height: 1.05; color: var(--ink, #111312); } .ds-strip > span { font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.04em; font-variation-settings: 'wdth' 75; font-stretch: 75%; } .ds-strip small { font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--ink-3, #5e665f); font-size: 0.8rem; }"
+    },
+    {
+      "name": "Ruled table",
+      "kind": "card",
+      "refersTo": "table-cell",
+      "description": "The page's unit: double rule under the header, soft hairlines between rows, heavy rule to close; tickers lead at 1.02rem 800; gains green ink, losses red.",
+      "html": "<table class=\"ds-tbl\"><thead><tr><th class=\"l\">Symbol</th><th class=\"l\">Name</th><th>Price</th><th>Chg</th><th>Chg %</th></tr></thead><tbody><tr><td class=\"l sym\">BBCA</td><td class=\"l name\">PT Bank Central Asia Tbk</td><td>5,175</td><td class=\"dn\">-900</td><td class=\"dn\">-14.81%</td></tr><tr><td class=\"l sym\">BYAN</td><td class=\"l name\">PT Bayan Resources Tbk.</td><td>11,150</td><td class=\"up\">+50</td><td class=\"up\">+0.45%</td></tr><tr><td class=\"l sym\">TLKM</td><td class=\"l name\">Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk</td><td>1,900</td><td class=\"dn\">-330</td><td class=\"dn\">-14.80%</td></tr></tbody></table>",
+      "css": ".ds-tbl { width: 100%; border-collapse: collapse; font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); font-size: 0.9rem; font-variant-numeric: tabular-nums lining-nums; color: var(--ink, #111312); } .ds-tbl th { font-size: 0.76rem; font-weight: 700; color: var(--ink-2, #3b413d); text-align: right; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.45rem 0.4rem 0.3rem; border-bottom: 3px double var(--rule, #1b1e1c); white-space: nowrap; } .ds-tbl td { padding: 0.34rem 0.4rem; border-bottom: 1px solid var(--rule-soft, #b9bcb5); text-align: right; white-space: nowrap; } .ds-tbl tbody tr:last-child td { border-bottom: 2px solid var(--rule, #1b1e1c); } .ds-tbl .l { text-align: left; } .ds-tbl .sym { font-weight: 800; font-size: 1.02rem; letter-spacing: -0.01em; } .ds-tbl .name { color: var(--ink-2, #3b413d); max-width: 16rem; overflow: hidden; text-overflow: ellipsis; } .ds-tbl .up { color: var(--green-ink, #0b4d24); } .ds-tbl .dn { color: var(--red, #b3122f); }"
+    },
+    {
+      "name": "Ruled box",
+      "kind": "card",
+      "refersTo": "ruled-box",
+      "description": "The only container: 1px ink border, uppercase label, mono command, Copy button at the right.",
+      "html": "<div class=\"ds-box\"><span class=\"ds-box-lbl\">Install · Linux, macOS</span><pre class=\"ds-box-pre\">curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh</pre><button class=\"ds-box-copy\" type=\"button\">Copy</button></div>",
+      "css": ".ds-box { border: 1px solid var(--rule, #1b1e1c); padding: 0.6rem 0.75rem; display: grid; gap: 0.45rem; font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); color: var(--ink, #111312); } .ds-box-lbl { font-size: 0.76rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2, #3b413d); } .ds-box-pre { margin: 0; font-family: var(--mono, ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace); font-size: 0.78rem; line-height: 1.45; white-space: pre-wrap; word-break: break-all; } .ds-box-copy { justify-self: end; font: inherit; font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; background: none; border: 1px solid var(--rule, #1b1e1c); padding: 0.2rem 0.5rem; cursor: pointer; color: var(--ink, #111312); } .ds-box-copy:hover { background: var(--ink, #111312); color: var(--paper, #f1f1ee); }"
+    },
+    {
+      "name": "Terminal entry",
+      "kind": "custom",
+      "refersTo": "table-cell",
+      "description": "One result printed as its own ruled statement: 3px rule, mono command caption with meta pushed right, then the body (here a key/value grid and a verdict pill).",
+      "html": "<section class=\"ds-entry\"><div class=\"ds-entry-caption\"><span class=\"ds-entry-cmd\">fundamental BBCA</span><span class=\"ds-entry-meta\">yahoo · cached 04:45 WIB</span></div><dl class=\"ds-entry-kv\"><dt>Verdict</dt><dd><span class=\"ds-pill up\">undervalued</span></dd><dt>Trailing P/E</dt><dd>12.9</dd><dt>ROE</dt><dd>21.8%</dd><dt>Dividend yield</dt><dd>6.3%</dd></dl></section>",
+      "css": ".ds-entry { margin: 0; border-top: 3px solid var(--rule, #1b1e1c); padding-top: 0.75rem; font-family: var(--sans, Archivo, 'Helvetica Neue', Arial, sans-serif); color: var(--ink, #111312); font-variant-numeric: tabular-nums lining-nums; } .ds-entry-caption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; font-size: 0.82rem; } .ds-entry-cmd { font-family: var(--mono, ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace); font-weight: 700; font-size: 0.85rem; } .ds-entry-meta { color: var(--ink-3, #5e665f); margin-left: auto; font-size: 0.8rem; } .ds-entry-kv { margin: 0.5rem 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 0.15rem 1.5rem; font-size: 0.9rem; } .ds-entry-kv dt { color: var(--ink-2, #3b413d); } .ds-entry-kv dd { margin: 0; font-weight: 600; } .ds-pill { display: inline-block; border: 2px solid currentColor; padding: 0.05rem 0.45rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; transform: rotate(-1deg); } .ds-pill.up { color: var(--green-ink, #0b4d24); } .ds-pill.dn { color: var(--red, #b3122f); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Laporan Keuangan Publikasi",
+    "overview": "The page is the full-page audited statement that Indonesian Tbk companies print in the newspaper. The product's own tables are the page: ruled black ink on cool newsprint, a double rule under every column header, a heavy rule closing every statement, numbered \"Catatan\" notes, and a signature block with a stamped action. One corporate band of idx green owns the masthead; everything below it is ink. There are no cards, no shadows, no rounded surfaces, no hero copy beside a screenshot. With the content removed the sheet still reads as a printed statement: rules, bands, column grid.\n\nDensity is newspaper density. Rows pack at 0.34rem vertical padding with no card padding around them; ticker symbols are set heavier and slightly larger than the row they lead so the board scans like a listings column. Everything is set in one variable face, Archivo: condensed black weights for mastheads and section strips in uppercase, regular weights with tabular lining figures for numbers and prose. Monospace appears only where the content is a literal command, tool name, JSON or the terminal prompt.\n\nThe one authored motion is the page coming off the press: on load the strip rules wipe in left to right once, and every minute the board refetches and cells whose value changed darken as if freshly inked, then settle. Both are disabled or absent under reduced motion. Visual rejections confirmed by the build: no cream paper, no serif, no gradient, no drop shadow, no border radius on any surface, no feature cards, no icon set.",
+    "keyCharacteristics": [
+      "Cool newsprint ground (`paper`) with near-black ink; rules carry the structure, not boxes",
+      "One committed band of deep idx green at page scale (masthead, optional green strip); green ink for links and positive figures",
+      "Red is reserved for negative figures and errors",
+      "Archivo throughout: condensed 900/800 uppercase for mastheads and strips, tabular lining figures everywhere",
+      "Ruled tables: 3px double rule under the header, 1px soft rules between rows, 2px heavy rule closing the statement",
+      "Zero radius, zero shadow; the only rotation on the page is the stamp",
+      "Motion is print, not UI: a one-time rule wipe and a 1.4s re-ink of changed cells"
+    ],
+    "rules": [
+      { "name": "The One Band Rule", "body": "Deep green is applied at page scale exactly once per page, as the masthead band; a second green strip is permitted for a section head but never for a card, a button fill at rest, or a background tint. Below the band, green is ink only (links, gains).", "section": "colors" },
+      { "name": "The Red Means Down Rule", "body": "Red appears on figures that fell and on errors. It is never a highlight, a brand colour, or a call to action.", "section": "colors" },
+      { "name": "The Ink On Paper Rule", "body": "Interactive emphasis is inversion, not tinting: hover prints paper on ink (`stamp-hover`, `button-copy-hover`); there are no translucent, pastel or alpha-blended hover fills.", "section": "colors" },
+      { "name": "The Literal Mono Rule", "body": "Monospace is used only for text a user could type or paste: commands, tool names, JSON, the prompt. Never for labels, headings or numbers in tables.", "section": "typography" },
+      { "name": "The Tabular Rule", "body": "`font-variant-numeric: tabular-nums lining-nums` is set on `body` and inherited; every figure in every column aligns without per-cell styling.", "section": "typography" },
+      { "name": "The Condensed Head Rule", "body": "The condensed axis (`wdth` 75) is reserved for uppercase heads, the stamp and note numerals. Body, table and figure text stay at normal width.", "section": "typography" },
+      { "name": "The Rule Weight Rule", "body": "Hierarchy is 3 / 3-double / 2 / 1px in `rule` and `rule-soft`. Add a rule before adding a border, and a border before adding a background.", "section": "elevation" },
+      { "name": "The No Shadow Rule", "body": "Nothing casts a shadow. Overlap is not part of the vocabulary; the page is one sheet.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do start every statement, section or terminal entry with a 3px `rule` and close tables with a 2px `rule`; keep 1px `rule-soft` for rows.",
+      "Do set numbers in Archivo with tabular lining figures, right-aligned, and lead each row with the ticker at 1.02rem 800.",
+      "Do keep the green band to the masthead (and at most one `.strip.green`); use `green-ink` for links and gains below it.",
+      "Do use `red` only for negative figures and errors.",
+      "Do make hover and press states by inverting ink and paper within 120ms; keep `:focus-visible` as the 2px `green-deep` outline.",
+      "Do set uppercase heads in the condensed axis (`wdth` 75) at 800–900 with +0.04em to +0.08em tracking.",
+      "Do reserve monospace for literal commands, tool names, JSON and the prompt.",
+      "Do honour `prefers-reduced-motion`: the rule wipe is gated on `no-preference`; nothing else moves except the 1.4s re-ink of changed cells.",
+      "Do collapse to one column at 64rem and drop the Name and Volume columns at 46rem instead of forcing a horizontal scroll on the board."
+    ],
+    "donts": [
+      "Don't add `box-shadow`, gradients, translucent fills or a border radius to any surface; only the 34px brand mark is rounded.",
+      "Don't introduce cards, feature grids, hero screenshots or an icon set; the table is the component.",
+      "Don't use cream, warm grey or pure white as the page ground; paper is `paper` and the only white is text on the green band.",
+      "Don't use bright `green` as a fill or text colour on the sheet; it exists only in the brand mark and the selection highlight.",
+      "Don't colour a figure or label red for emphasis, warning badges or branding.",
+      "Don't add a second typeface, a serif, or a mono label style; Archivo carries every role.",
+      "Don't add a second rotated or stamped element to a page that already has its primary stamp.",
+      "Don't restyle the CLI's shell tables or the README logo to match this file; they are out of scope."
+    ]
+  }
+}
