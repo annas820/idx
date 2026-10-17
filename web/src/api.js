@@ -6,6 +6,8 @@ import * as y from "./yahoo.js";
 import * as an from "./analysis.js";
 import * as ex from "./extras.js";
 import * as ipot from "./ipot.js";
+import * as bd from "./bandar.js";
+import { scanRows, scanStatus } from "./bandar-scan.js";
 import { syncStatus } from "./ownership-sync.js";
 import UNIVERSE from "./universe.json" with { type: "json" };
 import BROKERS from "./brokers.json" with { type: "json" };
@@ -481,6 +483,139 @@ export async function broker(env, symbolsRaw, dateRaw, fromRaw, toRaw, investor 
   return envelope("idx.broker.v1", data, { provider: ipot.NAME, cached: cachedAll, stale, fetched_at: fetched, warnings });
 }
 
+// ---- bandarmology ------------------------------------------------------
+
+const BANDAR_WEB_MAX_SYMBOLS = 5;
+/** Sessions the web reads for one daily series (a month); the CLI goes further. */
+const BANDAR_DAILY_MAX_SESSIONS = 23;
+
+async function boardQuotes(env) {
+  const b = await kvGet(env, "board");
+  return new Map((b?.value?.quotes || []).map((q) => [q.symbol, q]));
+}
+
+/** Every weekday's summary of the range as one cached row (one D1 read, one write). */
+async function bandarSessions(env, symbol, from, to, investor, mboard, today) {
+  const ttl = to < today ? 7 * 86400 : 5 * 60;
+  return cached(env, `bandar_daily:${symbol}:${from}:${to}:${investor}:${mboard}`, ttl, async () => {
+    const days = bd.weekdays(from, to), out = [];
+    for (let i = 0; i < days.length; i += 3) {
+      const pages = await Promise.all(days.slice(i, i + 3).map(async (d) => [d, ipot.parse(await ipot.fetchPage(ipot.url(symbol, d, d, investor, mboard)))]));
+      for (const [d, p] of pages) if (!p.invalid) out.push({ ...p, from: p.from || d, to: p.to || d });
+    }
+    return out;
+  });
+}
+
+async function bandarOne(env, s, q) {
+  const { period, from, to, top, investor, mboard, daily, today, quotes } = q;
+  let sum;
+  if (from) {
+    sum = await brokerRange(env, s, from, to, investor, mboard, today);
+  } else {
+    const latest = await brokerLatest(env, s, investor, mboard, today);
+    const empty = !latest.data.buyers.length && !latest.data.sellers.length;
+    if (period === "1d" || empty) sum = latest;
+    else {
+      sum = await brokerRange(env, s, bd.periodStart(period, latest.data.to), latest.data.to, investor, mboard, today);
+      sum.warnings.push(...latest.warnings);
+      sum.cached &&= latest.cached;
+    }
+  }
+  const d = sum.data, warnings = [...sum.warnings];
+  const empty = !d.buyers.length && !d.sellers.length;
+  if (from && empty) warnings.push(`${s}: no trades from ${from} to ${to}`);
+  const quote = quotes.get(s);
+  let move = { price: quote?.price ?? null, chg: null };
+  if (!empty) {
+    move = bd.quoteMove(quote, d.from, d.to);
+    if (!move) {
+      try {
+        const h = await history(env, s, bd.historyPeriod(d.from, today), "1d", 0);
+        move = bd.priceMove(h.data.candles, d.from, d.to, quote);
+      } catch (e) {
+        warnings.push(`${s}: no price move for the range (${e.message})`);
+        move = { price: quote?.price ?? null, chg: null };
+      }
+    }
+  }
+  const rep = bd.report(d, from ? "custom" : period, top, move.price ?? quote?.price ?? null, move.chg);
+  if (daily && !empty) {
+    try {
+      const r = await bandarSessions(env, s, d.from, d.to, investor, mboard, today);
+      rep.daily = bd.daily(r.value, top);
+    } catch (e) {
+      warnings.push(`${s}: the daily series failed (${e.message})`);
+    }
+  }
+  return { rep, warnings, cached: sum.cached, stale: sum.stale, fetched_at: sum.fetched_at };
+}
+
+/** /api/bandar: the CLI's `idx bandar detect` (idx.bandar.v1), live through the D1 cache. */
+export async function bandar(env, symbolsRaw, periodRaw, dateRaw, fromRaw, toRaw, topRaw, investor = "all", mboard = "all", dailyRaw = null) {
+  const symbols = parseSymbols(symbolsRaw);
+  if (symbols.length > BANDAR_WEB_MAX_SYMBOLS) throw usage(`the web terminal reads at most ${BANDAR_WEB_MAX_SYMBOLS} tickers per bandar call; the CLI takes 10`);
+  investor = String(investor || "all").toLowerCase(); mboard = String(mboard || "all").toLowerCase();
+  if (!ipot.INVESTORS.includes(investor)) throw usage(`invalid investor "${investor}"; use all, foreign or domestic`);
+  if (!ipot.BOARDS.includes(mboard)) throw usage(`invalid board "${mboard}"; use all, regular, cash or negotiated`);
+  const period = bd.checkPeriod(periodRaw || "1w");
+  const top = topRaw == null || topRaw === "" ? bd.DEFAULT_TOP : bd.checkTop(topRaw);
+  const daily = dailyRaw === true || dailyRaw === "1" || dailyRaw === "true";
+  const date = isoDate(dateRaw, "date");
+  let from = isoDate(fromRaw, "from"), to = isoDate(toRaw, "to");
+  if (date && (from || to)) throw usage("use date or from/to, not both");
+  const today = wibToday();
+  if (date) from = to = date;
+  else if (from && !to) to = today;
+  else if (to && !from) from = to;
+  if (from && from > to) throw usage(`the range starts (${from}) after it ends (${to})`);
+  if (daily && symbols.length > 1) throw usage("the daily series on the web takes one ticker; the CLI takes three");
+  if (daily && ((!from && period === "3m") || (from && bd.weekdays(from, to).length > BANDAR_DAILY_MAX_SESSIONS))) {
+    throw usage(`the daily series on the web covers at most ${BANDAR_DAILY_MAX_SESSIONS} sessions (1m); the CLI goes further`);
+  }
+  const quotes = await boardQuotes(env);
+  const q = { period, from, to, top, investor, mboard, daily, today, quotes };
+  const results = await Promise.all(symbols.map((s) => bandarOne(env, s, q).then((ok) => ({ ok })).catch((err) => ({ err, s }))));
+  const data = [], warnings = [];
+  let cachedAll = true, stale = false, fetched = Math.floor(Date.now() / 1000);
+  for (const r of results) {
+    if (r.ok) { data.push(r.ok.rep); cachedAll &&= r.ok.cached; stale ||= r.ok.stale; fetched = Math.min(fetched, r.ok.fetched_at); warnings.push(...r.ok.warnings); }
+    else warnings.push(r.err.code === "not_found" ? `no broker summary for ${r.s}` : `${r.s}: ${r.err.message}`);
+  }
+  if (!data.length) throw results[0].err;
+  return envelope("idx.bandar.v1", data, { provider: ipot.NAME, cached: cachedAll, stale, fetched_at: fetched, warnings });
+}
+
+/** /api/bandar/screen: `idx bandar screen` over the nightly scan in D1 (idx.bandar.screen.v1). */
+export async function bandarScreen(env, presetRaw, filterRaw, periodRaw, topRaw, sortRaw, ascRaw, limitRaw) {
+  const pr = bd.preset(presetRaw);
+  const filters = [...(pr ? bd.parseFilters(pr.filter) : []), ...bd.parseFilters(filterRaw || "")];
+  const period = bd.checkPeriod(periodRaw || "1w");
+  const top = topRaw == null || topRaw === "" ? bd.DEFAULT_TOP : bd.checkTop(topRaw);
+  const sort = bd.parseSort(sortRaw) || "acc";
+  const descending = ascRaw == null || ascRaw === "" ? !pr?.ascending : !(ascRaw === "1" || ascRaw === "true");
+  const limit = num(limitRaw, 25);
+  const scan = await scanRows(env, period);
+  if (!scan.session) throw notFound("the bandar scan has not run yet: after the close (from 16:45 WIB) the minute cron reads the 100 most traded stocks; the CLI scans live meanwhile");
+  const st = scan.state || {};
+  const warnings = [];
+  if (scan.partial) warnings.push(`the scan of ${scan.session} is still running: ${scan.rows.length} of ${new Set(st.symbols || []).size} stocks so far`);
+  else if (!st.done && st.session !== scan.session) warnings.push(`the scan of ${st.session} is running (${Math.min(st.next || 0, (st.symbols || []).length)} of ${(st.symbols || []).length}); showing ${scan.session}`);
+  const failed = st.session === scan.session ? (st.failed || []).length : 0;
+  if (failed) warnings.push(`${failed} of ${scan.rows.length + failed} scanned stocks had no broker summary`);
+  const traded = scan.rows.filter((r) => r.summary.buyers.length || r.summary.sellers.length);
+  let rows = traded.map((r) => bd.screenRow(bd.report(r.summary, period, top, r.price, r.chg))).filter((r) => bd.matches(r, filters));
+  bd.sortRows(rows, sort, descending);
+  const total = rows.length;
+  if (limit > 0) rows = rows.slice(0, limit);
+  const data = {
+    period, from: traded[0]?.summary.from || bd.periodStart(period, scan.session), to: scan.session, top, preset: pr?.name ?? null,
+    filters: filters.map((f) => f.raw), sort, descending, scanned: scan.rows.length + failed, checked: traded.length, total_matches: total, rows,
+  };
+  const at = Date.parse(st.done_at || st.started_at || "") / 1000;
+  return envelope("idx.bandar.screen.v1", data, { provider: ipot.NAME, cached: true, fetched_at: Number.isFinite(at) ? at : new Date(), warnings });
+}
+
 // ---- ownership (synced register) --------------------------------------
 
 async function emptyRegisterMessage(env) {
@@ -652,6 +787,9 @@ export async function route(env, url) {
     case "/ownership/foreign": return ownershipForeign(env, q.get("symbol"), q.get("from"), q.get("to"), num(q.get("limit"), 25));
     case "/sentiment": return sentiment(env, q.get("symbol"));
     case "/broker": return broker(env, q.get("symbols") || q.get("symbol"), q.get("date"), q.get("from"), q.get("to"), q.get("investor") || "all", q.get("board") || "all");
+    case "/bandar": return bandar(env, q.get("symbols") || q.get("symbol"), q.get("period"), q.get("date"), q.get("from"), q.get("to"), q.get("top"), q.get("investor") || "all", q.get("board") || "all", q.get("daily"));
+    case "/bandar/screen": return bandarScreen(env, q.get("preset"), q.get("filter"), q.get("period"), q.get("top"), q.get("sort"), q.get("asc"), q.get("limit"));
+    case "/bandar/status": return envelope("idx.bandar.scan.v1", await scanStatus(env), { provider: ipot.NAME, cached: true });
     case "/ownership/ticker": return ownershipTicker(env, q.get("symbol"), q.get("as_of"));
     case "/ownership/entity": return ownershipEntity(env, q.get("name"), q.get("as_of"));
     case "/ownership/changes": return ownershipChanges(env, q.get("from"), q.get("to"), q.get("symbol"), num(q.get("min_change"), 0), num(q.get("limit"), 50), num(q.get("offset"), 0));

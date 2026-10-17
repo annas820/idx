@@ -8,6 +8,7 @@
 
 import { route, ApiError, refreshSnapshot } from "./api.js";
 import { ownershipSync } from "./ownership-sync.js";
+import { bandarScanStep } from "./bandar-scan.js";
 
 // Constant-time comparison for the maintainer token.
 function tokenOk(env, given) {
@@ -60,6 +61,7 @@ export default {
         if (!tokenOk(env, url.searchParams.get("token"))) return json({ error: { code: "usage", message: "forbidden" }, exit_code: 2 }, 403);
         try {
           if (url.searchParams.get("what") === "ownership") return json(await ownershipSync(env, { force: true }));
+          if (url.searchParams.get("what") === "bandar") return json(await bandarScanStep(env, { force: true }));
           return json(await refreshSnapshot(env, { force: true }));
         } catch (e) { return errorResponse(e); }
       }
@@ -88,6 +90,12 @@ export default {
       ownershipSync(env)
         .then((r) => { if (!r.idle) console.log("ownership", JSON.stringify(r)); })
         .catch((e) => console.error("ownership sync failed", e)),
+    );
+    // Bandarmology scan of the session's most traded stocks, after the close.
+    ctx.waitUntil(
+      bandarScanStep(env)
+        .then((r) => { if (!r.idle) console.log("bandar", JSON.stringify(r)); })
+        .catch((e) => console.error("bandar scan failed", e)),
     );
   },
 };
