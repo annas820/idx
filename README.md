@@ -234,7 +234,9 @@ or Microsoft.
 **https://ihsg.midoriresearch.com/terminal** runs the same commands in a
 browser, no install: `brief BBCA`, `quote BBCA,BBRI`, `returns BBCA BBRI`,
 `screen pe<10,div>5,mcap>5T --sort div`, `news ASII`, `ownership ticker BBCA`,
-`ownership foreign`. A Cloudflare Worker refreshes a D1 snapshot of the whole
+`ownership foreign`. `quote` with one symbol also draws a price chart (1D, 5D,
+1M, 6M, YTD, 1Y, 5Y) with volume, the previous close and a crosshair readout.
+A Cloudflare Worker refreshes a D1 snapshot of the whole
 IDX board every minute in trading hours and serves `/api/*` with the exact JSON
 envelopes the CLI prints; everything else is fetched on demand and cached. The
 Worker lives in [`web/`](web/) and answers on the custom domain only

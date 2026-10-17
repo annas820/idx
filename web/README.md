@@ -8,6 +8,10 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
 - `src/api.js` endpoints returning the CLI's JSON envelopes; D1-backed cache.
 - `src/ipot.js` the IPOT broker summary (port of `src/providers/ipot`, names
   from `src/brokers.json`, generated from `data/brokers.csv`).
+- `public/chart.js` the price chart under a single-symbol `quote`: ranges 1D
+  to 5Y from `/api/history`, closes over volume, a dashed previous close on
+  1D, a crosshair readout (pointer, touch or arrow keys). Its layout
+  functions are tested in `test/chart.test.mjs` on the recorded Yahoo charts.
 - `src/yahoo.js` the Yahoo endpoints and parsers; `src/analysis.js` ports of
   the Rust indicators, verdict, screener DSL and sentiment lexicon;
   `src/extras.js` ports of returns, dividends, news ordering and the

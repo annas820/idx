@@ -6,6 +6,13 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Web terminal: `quote` with a single symbol draws a price chart under the
+  table, with ranges 1D, 5D, 1M, 6M, YTD, 1Y and 5Y, a volume strip, the
+  previous close on 1D and a crosshair readout of each candle (pointer, touch
+  or arrow keys).
+
 ## [0.5.0] - 2026-10-17
 
 ### Added
