@@ -6,6 +6,33 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-10-17
+
+### Added
+
+- `idx broker <SYMBOLS>`: which brokers bought and sold a ticker. The top 10
+  buyers and top 10 sellers by value from Indo Premier's (IPOT) public broker
+  summary, each with the broker code, name, class (local, foreign, BUMN),
+  lots, value and average price, plus the range's total value, lots, average
+  price and foreign net value. `--date`, `--from/--to`, `--investor
+  all|foreign|domestic`, `--board all|regular|cash|negotiated`, up to 10
+  tickers per call; without dates each ticker gets its latest session with
+  trades. JSON schema `idx.broker.v1`; `-o csv` writes one row per broker.
+  The source rounds figures of a million and more to one decimal, so those
+  summaries carry `rounded: true`.
+- `data/brokers.csv`: IDX's exchange-member list (89 brokers), bundled to
+  name the codes.
+- MCP tool `idx_broker` (21 tools now), `/api/broker` and a `broker` command
+  in the web terminal.
+- Web: Open Graph / Twitter share card, canonical URLs, JSON-LD,
+  `robots.txt`, `sitemap.xml` and an apple-touch icon on
+  ihsg.midoriresearch.com; API responses are `noindex`.
+
+### Changed
+
+- Package metadata and the licence credit Midori Research
+  (desk@midoriresearch.com) instead of a personal name and address.
+
 ## [0.4.0] - 2026-10-17
 
 ### Added
