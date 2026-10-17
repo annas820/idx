@@ -140,9 +140,9 @@ pub enum StocksCmd {
         universe: Option<std::path::PathBuf>,
     },
 
-    /// Latest headlines from Kontan and CNBC Indonesia, optionally filtered to one ticker.
+    /// Latest headlines from Kontan and CNBC Indonesia; with a ticker, the company's headlines first, then market context.
     #[command(
-        after_help = "Examples:\n  idx stocks news                # market headlines\n  idx stocks news BBCA           # mentions of BBCA or Bank Central Asia\n  idx stocks news TLKM --source kontan --limit 40\n\nSources: kontan, cnbcindonesia (defaults), bisnis (blocked for non-browser clients; tried on request), all."
+        after_help = "Examples:\n  idx stocks news                # market headlines\n  idx stocks news BBCA           # BBCA / Bank Central Asia first, then market headlines\n  idx stocks news BBCA --company-only\n  idx stocks news TLKM --source kontan --limit 40\n\nSources: kontan, cnbcindonesia (defaults), bisnis (blocked for non-browser clients; tried on request), all."
     )]
     News {
         #[arg(value_name = "SYMBOL")]
@@ -153,6 +153,9 @@ pub enum StocksCmd {
         /// Headlines shown; 0 for all.
         #[arg(long, short = 'n', default_value_t = 20)]
         limit: usize,
+        /// Only headlines that mention the ticker; no market context.
+        #[arg(long, requires = "symbol")]
+        company_only: bool,
     },
 
     /// Lexicon sentiment over the headlines that mention one ticker.
@@ -237,10 +240,19 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
             symbol,
             source,
             limit,
+            company_only,
         } => {
             let sym = symbol.map(|s| Symbol::parse(&s)).transpose()?;
             let list = universe::load(None).unwrap_or_default();
-            let result = service::news(&ctx.fetcher, &list, sym.as_ref(), &source, limit).await?;
+            let result = service::news(
+                &ctx.fetcher,
+                &list,
+                sym.as_ref(),
+                &source,
+                limit,
+                company_only,
+            )
+            .await?;
             if ctx.json() {
                 let env = Envelope::from_sourced(SCHEMA_NEWS, result);
                 return output::print_stdout(&output::json::to_pretty(&env)?);

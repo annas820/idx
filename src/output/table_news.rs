@@ -108,7 +108,7 @@ fn sentiment_cell(v: f64, color: bool) -> Cell {
     }
 }
 
-fn item_rows(t: &mut comfy_table::Table, items: &[NewsItem], color: bool) {
+fn item_rows(t: &mut comfy_table::Table, items: &[&NewsItem], color: bool) {
     for it in items {
         t.add_row(vec![
             Cell::new(
@@ -124,16 +124,28 @@ fn item_rows(t: &mut comfy_table::Table, items: &[NewsItem], color: bool) {
 }
 
 pub fn news(r: &NewsReport, color: bool) -> String {
+    let company: Vec<&NewsItem> = r.items.iter().filter(|i| i.scope == "company").collect();
+    let market: Vec<&NewsItem> = r.items.iter().filter(|i| i.scope != "company").collect();
     let mut out = match &r.symbol {
         Some(s) => format!(
-            "News for {}{} · {} of {} scanned headlines matched · sources: {}\n",
+            "News for {}{} · {} of {} scanned headlines mention the company{}{} · sources: {}\n",
             s,
             r.matched_name
                 .as_ref()
                 .map(|n| format!(" ({n})"))
                 .unwrap_or_default(),
-            r.items.len(),
+            r.company_matches,
             r.scanned,
+            if company.len() < r.company_matches {
+                format!(" (showing {})", company.len())
+            } else {
+                String::new()
+            },
+            if r.company_only {
+                " · market context omitted"
+            } else {
+                ""
+            },
             r.sources.join(", ")
         ),
         None => format!(
@@ -143,12 +155,33 @@ pub fn news(r: &NewsReport, color: bool) -> String {
             r.sources.join(", ")
         ),
     };
-    let mut t = base_table(color);
-    t.set_header(header(&["WIB", "Source", "±", "Headline"]));
-    item_rows(&mut t, &r.items, color);
-    out.push_str(&t.to_string());
-    out.push('\n');
-    for it in &r.items {
+    let cols = ["WIB", "Source", "±", "Headline"];
+    if r.symbol.is_some() {
+        if company.is_empty() {
+            out.push_str("No headline mentions the company in the current feeds.\n");
+        } else {
+            let mut t = base_table(color);
+            t.set_header(header(&cols));
+            item_rows(&mut t, &company, color);
+            out.push_str(&t.to_string());
+            out.push('\n');
+        }
+        if !market.is_empty() {
+            out.push_str(&format!("Market context · {} headlines\n", market.len()));
+            let mut t = base_table(color);
+            t.set_header(header(&cols));
+            item_rows(&mut t, &market, color);
+            out.push_str(&t.to_string());
+            out.push('\n');
+        }
+    } else {
+        let mut t = base_table(color);
+        t.set_header(header(&cols));
+        item_rows(&mut t, &market, color);
+        out.push_str(&t.to_string());
+        out.push('\n');
+    }
+    for it in company.iter().chain(market.iter()) {
         out.push_str(&format!("  {}\n", it.url));
     }
     out.push_str(
@@ -210,7 +243,8 @@ pub fn sentiment(r: &SentimentReport, color: bool) -> String {
     if !r.headlines.is_empty() {
         let mut t = base_table(color);
         t.set_header(header(&["WIB", "Source", "±", "Headline"]));
-        item_rows(&mut t, &r.headlines, color);
+        let heads: Vec<&NewsItem> = r.headlines.iter().collect();
+        item_rows(&mut t, &heads, color);
         out.push_str(&t.to_string());
         out.push('\n');
     } else {

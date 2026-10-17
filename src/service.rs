@@ -250,16 +250,20 @@ fn item_matches(item: &NewsItem, ticker: &str, name: Option<&str>) -> Option<&'s
     None
 }
 
-/// Headlines from the selected feeds, optionally filtered to one ticker.
+/// Headlines from the selected feeds. With a symbol, the company's own
+/// headlines come first (newest first) and the rest of `limit` is filled
+/// with general market headlines so a reader always gets context; pass
+/// `company_only` to leave those out.
 pub async fn news(
     fetcher: &Arc<Fetcher>,
     universe: &[Issuer],
     symbol: Option<&Symbol>,
     sources: &[String],
     limit: usize,
+    company_only: bool,
 ) -> Result<Sourced<NewsReport>> {
     let feeds = newsfeed::select(sources)?;
-    let (mut items, warnings, cached, stale) = newsfeed::fetch(fetcher, &feeds).await?;
+    let (items, warnings, cached, stale) = newsfeed::fetch(fetcher, &feeds).await?;
     let scanned = items.len();
     let matched_name = symbol.and_then(|s| {
         universe
@@ -269,22 +273,10 @@ pub async fn news(
             .map(match_name)
             .filter(|n| !n.is_empty())
     });
-    if let Some(sym) = symbol {
-        items.retain_mut(
-            |it| match item_matches(it, sym.as_str(), matched_name.as_deref()) {
-                Some(how) => {
-                    it.matched_by = how.into();
-                    true
-                }
-                None => false,
-            },
-        );
-    }
+    let (mut items, company_matches) =
+        arrange(items, symbol, matched_name.as_deref(), limit, company_only);
     for it in &mut items {
         analysis::sentiment::score_item(it);
-    }
-    if limit > 0 {
-        items.truncate(limit);
     }
     let mut s = Sourced::fresh(
         NewsReport {
@@ -292,6 +284,8 @@ pub async fn news(
             matched_name,
             sources: feeds.iter().map(|f| f.id.to_string()).collect(),
             scanned,
+            company_matches,
+            company_only: symbol.is_some() && company_only,
             items,
         },
         newsfeed::NAME,
@@ -302,7 +296,59 @@ pub async fn news(
     Ok(s)
 }
 
-/// Lexicon sentiment over every matching headline.
+/// Splits scanned items into company and market scope and orders them:
+/// company headlines first, then market context up to `limit` (0 = all).
+/// Returns the arranged items and the number of company matches.
+pub fn arrange(
+    items: Vec<NewsItem>,
+    symbol: Option<&Symbol>,
+    matched_name: Option<&str>,
+    limit: usize,
+    company_only: bool,
+) -> (Vec<NewsItem>, usize) {
+    let Some(sym) = symbol else {
+        let mut items = items;
+        for it in &mut items {
+            it.scope = "market".into();
+        }
+        if limit > 0 {
+            items.truncate(limit);
+        }
+        return (items, 0);
+    };
+    let mut company = Vec::new();
+    let mut market = Vec::new();
+    for mut it in items {
+        match item_matches(&it, sym.as_str(), matched_name) {
+            Some(how) => {
+                it.matched_by = how.into();
+                it.scope = "company".into();
+                company.push(it);
+            }
+            None => {
+                it.matched_by = "all".into();
+                it.scope = "market".into();
+                market.push(it);
+            }
+        }
+    }
+    let company_matches = company.len();
+    let mut out = company;
+    if limit > 0 {
+        out.truncate(limit);
+    }
+    if !company_only {
+        let room = if limit > 0 {
+            limit.saturating_sub(out.len())
+        } else {
+            market.len()
+        };
+        out.extend(market.into_iter().take(room));
+    }
+    (out, company_matches)
+}
+
+/// Lexicon sentiment over the headlines that mention the company only.
 pub async fn sentiment(
     fetcher: &Arc<Fetcher>,
     universe: &[Issuer],
@@ -310,7 +356,7 @@ pub async fn sentiment(
     sources: &[String],
     headline_limit: usize,
 ) -> Result<Sourced<SentimentReport>> {
-    let n = news(fetcher, universe, Some(symbol), sources, 0).await?;
+    let n = news(fetcher, universe, Some(symbol), sources, 0, true).await?;
     let report = analysis::sentiment::aggregate(
         symbol,
         n.data.matched_name.clone(),
@@ -339,6 +385,7 @@ mod tests {
             published: None,
             summary: String::new(),
             matched_by: String::new(),
+            scope: String::new(),
             sentiment: 0.0,
             positive_terms: vec![],
             negative_terms: vec![],
@@ -347,6 +394,35 @@ mod tests {
             item_matches(&mk("Saham BBCA naik"), "BBCA", None),
             Some("ticker")
         );
+        // Company headlines first, then market context fills the limit.
+        let bbca = Symbol::parse("BBCA").unwrap();
+        let feed = vec![
+            mk("IHSG menguat"),
+            mk("BBCA bagi dividen"),
+            mk("Rupiah melemah"),
+            mk("Laba BBCA naik"),
+            mk("Harga emas"),
+        ];
+        let (items, matches) = arrange(feed.clone(), Some(&bbca), None, 3, false);
+        assert_eq!(matches, 2);
+        let got: Vec<(&str, &str)> = items
+            .iter()
+            .map(|i| (i.title.as_str(), i.scope.as_str()))
+            .collect();
+        assert_eq!(
+            got,
+            [
+                ("BBCA bagi dividen", "company"),
+                ("Laba BBCA naik", "company"),
+                ("IHSG menguat", "market"),
+            ]
+        );
+        let (items, _) = arrange(feed.clone(), Some(&bbca), None, 3, true);
+        assert_eq!(items.len(), 2);
+        assert!(items.iter().all(|i| i.scope == "company"));
+        let (items, matches) = arrange(feed, None, None, 0, false);
+        assert_eq!((items.len(), matches), (5, 0));
+        assert!(items.iter().all(|i| i.scope == "market"));
         assert_eq!(
             item_matches(&mk("Laba (BBCA) naik"), "BBCA", None),
             Some("ticker")

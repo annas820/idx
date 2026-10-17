@@ -280,6 +280,7 @@ mod tests {
             published: None,
             summary: String::new(),
             matched_by: "ticker".into(),
+            scope: "company".into(),
             sentiment: 0.0,
             positive_terms: vec![],
             negative_terms: vec![],

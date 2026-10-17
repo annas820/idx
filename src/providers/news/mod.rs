@@ -160,6 +160,7 @@ pub fn parse_feed(xml: &str, source: &str) -> Result<Vec<NewsItem>> {
                 published,
                 summary: it.description().map(strip_html).unwrap_or_default(),
                 matched_by: "all".into(),
+                scope: "market".into(),
                 sentiment: 0.0,
                 positive_terms: vec![],
                 negative_terms: vec![],

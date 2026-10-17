@@ -87,6 +87,23 @@ fn mcp_server_speaks_json_rpc_over_stdio() {
         .as_array()
         .unwrap()
         .contains(&serde_json::json!("symbols")));
+    // Portable schemas: no nullable type arrays, formats or $schema keys,
+    // which Gemini and OpenAI-strict harnesses reject.
+    for t in tools {
+        let text = t["inputSchema"].to_string();
+        assert!(!text.contains("\"null\""), "{}: {text}", t["name"]);
+        assert!(!text.contains("\"format\""), "{}: {text}", t["name"]);
+        assert!(!text.contains("$schema"), "{}: {text}", t["name"]);
+    }
+    let news = tools.iter().find(|t| t["name"] == "idx_news").unwrap();
+    assert_eq!(
+        news["inputSchema"]["properties"]["limit"]["type"],
+        "integer"
+    );
+    assert_eq!(
+        news["inputSchema"]["properties"]["company_only"]["type"],
+        "boolean"
+    );
 
     // Offline with an empty cache: a structured tool error, not a crash.
     let call = serde_json::json!({
