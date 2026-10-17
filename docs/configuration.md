@@ -23,7 +23,7 @@ idx config path
 
 ```toml
 provider = "auto"      # auto | yahoo | msn
-output = "table"       # table | json
+output = "table"       # table | json | csv
 color = "auto"         # auto | always | never
 timeout_secs = 15
 

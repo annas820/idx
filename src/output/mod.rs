@@ -11,6 +11,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::error::{IdxError, Result};
 
+pub mod csv;
 pub mod format;
 pub mod json;
 pub mod table;
@@ -27,13 +28,17 @@ pub enum OutputFormat {
     Table,
     /// Machine-readable JSON envelope.
     Json,
+    /// The main list in the payload as comma-separated rows (spreadsheets, shell pipelines).
+    Csv,
 }
 
 impl std::str::FromStr for OutputFormat {
     type Err = IdxError;
     fn from_str(s: &str) -> Result<Self> {
         <OutputFormat as clap::ValueEnum>::from_str(s, true).map_err(|_| {
-            IdxError::Config(format!("unknown output format {s:?}; use table or json"))
+            IdxError::Config(format!(
+                "unknown output format {s:?}; use table, json or csv"
+            ))
         })
     }
 }
@@ -43,6 +48,7 @@ impl std::fmt::Display for OutputFormat {
         f.write_str(match self {
             OutputFormat::Table => "table",
             OutputFormat::Json => "json",
+            OutputFormat::Csv => "csv",
         })
     }
 }

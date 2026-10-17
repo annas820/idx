@@ -418,6 +418,20 @@ fn ownership_import_and_queries_work_offline() {
             "\"schema\": \"idx.ownership.foreign-flow.v1\"",
         ))
         .stdout(predicate::str::contains("\"from\": \"2026-07-31\""));
+    // CSV: the main list of the payload, header first.
+    own(&sb)
+        .args(["-o", "csv", "ownership", "ticker", "AADI"])
+        .assert()
+        .success()
+        .stdout(predicate::str::starts_with(
+            "as_of,symbol,issuer_name,holder,",
+        ))
+        .stdout(predicate::str::contains("2026-08-31,AADI,"));
+    own(&sb)
+        .args(["-o", "csv", "ownership", "releases"])
+        .assert()
+        .success()
+        .stdout(predicate::str::starts_with("as_of,format,source,"));
     own(&sb)
         .args(["ownership", "releases"])
         .assert()

@@ -8,7 +8,7 @@ use clap::{Args, Subcommand};
 use crate::error::{IdxError, Result};
 use crate::model::Symbol;
 use crate::output::json::{
-    Envelope, SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_DISCOVER, SCHEMA_OWNERSHIP_ENTITY,
+    SCHEMA_OWNERSHIP_CHANGES, SCHEMA_OWNERSHIP_DISCOVER, SCHEMA_OWNERSHIP_ENTITY,
     SCHEMA_OWNERSHIP_FOREIGN, SCHEMA_OWNERSHIP_FOREIGN_FLOW, SCHEMA_OWNERSHIP_HOLDERS,
     SCHEMA_OWNERSHIP_IMPORT, SCHEMA_OWNERSHIP_RELEASES,
 };
@@ -16,7 +16,7 @@ use crate::output::{self, table_ownership as tbl};
 use crate::ownership::{self, OwnershipDb};
 use crate::providers::Sourced;
 
-use super::Context;
+use super::{emit, Context};
 
 pub const LOCAL: &str = "local-db";
 
@@ -128,22 +128,6 @@ fn open(ctx: &Context) -> Result<OwnershipDb> {
 
 fn local<T>(data: T) -> Sourced<T> {
     Sourced::fresh(data, LOCAL)
-}
-
-fn emit<T: serde::Serialize>(
-    ctx: &Context,
-    schema: &str,
-    s: Sourced<T>,
-    table: impl FnOnce(&T) -> String,
-) -> Result<()> {
-    if ctx.json() {
-        let env = Envelope::from_sourced(schema, s);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    for w in &s.warnings {
-        output::print_stderr(&format!("warning: {w}"));
-    }
-    output::print_stdout(&table(&s.data))
 }
 
 pub async fn run(ctx: &Context, cmd: OwnershipCmd) -> Result<()> {

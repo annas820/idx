@@ -7,18 +7,17 @@ use crate::error::IdxError;
 use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
-    Envelope, SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
+    SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
     SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES,
     SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT, SCHEMA_TECHNICAL,
 };
+use crate::output::table;
 use crate::output::table_news as newstbl;
 use crate::output::table_reports::{self as reports, StatementFlags};
-use crate::output::{self, table};
-use crate::providers::Sourced;
 use crate::service::{self, ScreenOptions};
 use crate::universe;
 
-use super::Context;
+use super::{emit, Context};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, clap::ValueEnum)]
 pub enum Statement {
@@ -273,12 +272,9 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
                 with_fundamentals: fundamentals,
             };
             let result = service::screen(ctx.provider.as_ref(), &list, &opts).await?;
-            if ctx.json() {
-                let env = Envelope::from_sourced(SCHEMA_SCREEN, result);
-                return output::print_stdout(&output::json::to_pretty(&env)?);
-            }
-            notices(ctx, &result);
-            output::print_stdout(&newstbl::screen(&result.data, ctx.color))
+            emit(ctx, SCHEMA_SCREEN, result, |d| {
+                newstbl::screen(d, ctx.color)
+            })
         }
         StocksCmd::News {
             symbol,
@@ -297,12 +293,7 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
                 company_only,
             )
             .await?;
-            if ctx.json() {
-                let env = Envelope::from_sourced(SCHEMA_NEWS, result);
-                return output::print_stdout(&output::json::to_pretty(&env)?);
-            }
-            notices(ctx, &result);
-            output::print_stdout(&newstbl::news(&result.data, ctx.color))
+            emit(ctx, SCHEMA_NEWS, result, |d| newstbl::news(d, ctx.color))
         }
         StocksCmd::Sentiment {
             symbol,
@@ -312,38 +303,17 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
             let sym = Symbol::parse(&symbol)?;
             let list = universe::load(None).unwrap_or_default();
             let result = service::sentiment(&ctx.fetcher, &list, &sym, &source, limit).await?;
-            if ctx.json() {
-                let env = Envelope::from_sourced(SCHEMA_SENTIMENT, result);
-                return output::print_stdout(&output::json::to_pretty(&env)?);
-            }
-            notices(ctx, &result);
-            output::print_stdout(&newstbl::sentiment(&result.data, ctx.color))
+            emit(ctx, SCHEMA_SENTIMENT, result, |d| {
+                newstbl::sentiment(d, ctx.color)
+            })
         }
-    }
-}
-
-/// Prints warnings and the stale notice in table mode.
-fn notices<T>(ctx: &Context, s: &Sourced<T>) {
-    if ctx.json() {
-        return;
-    }
-    for w in &s.warnings {
-        output::print_stderr(&format!("warning: {w}"));
-    }
-    if s.stale {
-        output::print_stderr("warning: showing stale cached data");
     }
 }
 
 async fn quote(ctx: &Context, raw: &[String]) -> Result<()> {
     let symbols = Symbol::parse_list(raw)?;
     let result = ctx.provider.quotes(&symbols).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_QUOTES, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&table::quotes(&result.data, ctx.color))
+    emit(ctx, SCHEMA_QUOTES, result, |d| table::quotes(d, ctx.color))
 }
 
 async fn history(
@@ -355,24 +325,18 @@ async fn history(
 ) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
     let result = ctx.provider.history(&symbol, period, interval).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_HISTORY, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
     let limit = if limit == 0 { None } else { Some(limit) };
-    output::print_stdout(&table::history(&result.data, limit, ctx.color))
+    emit(ctx, SCHEMA_HISTORY, result, |d| {
+        table::history(d, limit, ctx.color)
+    })
 }
 
 async fn profile(ctx: &Context, raw: &str) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
     let result = ctx.provider.profile(&symbol).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_PROFILE, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&reports::profile(&result.data, ctx.color))
+    emit(ctx, SCHEMA_PROFILE, result, |d| {
+        reports::profile(d, ctx.color)
+    })
 }
 
 async fn financials(
@@ -383,39 +347,30 @@ async fn financials(
 ) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
     let result = ctx.provider.financials(&symbol, period).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_FINANCIALS, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
     let flags = StatementFlags {
         income: matches!(statement, Statement::All | Statement::Income),
         balance: matches!(statement, Statement::All | Statement::Balance),
         cash_flow: matches!(statement, Statement::All | Statement::Cash),
     };
-    output::print_stdout(&reports::financials(&result.data, &flags, ctx.color))
+    emit(ctx, SCHEMA_FINANCIALS, result, |d| {
+        reports::financials(d, &flags, ctx.color)
+    })
 }
 
 async fn earnings(ctx: &Context, raw: &str) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
     let result = ctx.provider.earnings(&symbol).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_EARNINGS, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&reports::earnings(&result.data, ctx.color))
+    emit(ctx, SCHEMA_EARNINGS, result, |d| {
+        reports::earnings(d, ctx.color)
+    })
 }
 
 async fn dividends(ctx: &Context, raw: &str, limit: usize) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
     let result = service::dividends(ctx.provider.as_ref(), &symbol).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_DIVIDENDS, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&reports::dividends(&result.data, limit, ctx.color))
+    emit(ctx, SCHEMA_DIVIDENDS, result, |d| {
+        reports::dividends(d, limit, ctx.color)
+    })
 }
 
 async fn returns(ctx: &Context, raw: &[String], benchmark: &str, none: bool) -> Result<()> {
@@ -426,12 +381,9 @@ async fn returns(ctx: &Context, raw: &[String], benchmark: &str, none: bool) -> 
         Some(Symbol::parse(benchmark)?)
     };
     let result = service::returns(ctx.provider.as_ref(), &symbols, bench.as_ref()).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_RETURNS, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&reports::returns(&result.data, ctx.color))
+    emit(ctx, SCHEMA_RETURNS, result, |d| {
+        reports::returns(d, ctx.color)
+    })
 }
 
 async fn brief(ctx: &Context, raw: &str) -> Result<()> {
@@ -445,43 +397,29 @@ async fn brief(ctx: &Context, raw: &str) -> Result<()> {
         &symbol,
     )
     .await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_BRIEF, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&reports::brief(&result.data, ctx.color))
+    emit(ctx, SCHEMA_BRIEF, result, |d| reports::brief(d, ctx.color))
 }
 
 async fn fundamental(ctx: &Context, raw: &str) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
     let result = service::fundamentals(ctx.provider.as_ref(), &symbol).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_FUNDAMENTALS, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&reports::fundamentals(&result.data, ctx.color))
+    emit(ctx, SCHEMA_FUNDAMENTALS, result, |d| {
+        reports::fundamentals(d, ctx.color)
+    })
 }
 
 async fn technical(ctx: &Context, raw: &str, period: Period) -> Result<()> {
     let symbol = Symbol::parse(raw)?;
     let result = service::technical(ctx.provider.as_ref(), &symbol, period).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_TECHNICAL, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&reports::technical(&result.data, ctx.color))
+    emit(ctx, SCHEMA_TECHNICAL, result, |d| {
+        reports::technical(d, ctx.color)
+    })
 }
 
 async fn compare(ctx: &Context, raw: &[String]) -> Result<()> {
     let symbols = Symbol::parse_list(raw)?;
     let result = service::compare(ctx.provider.as_ref(), &symbols).await?;
-    if ctx.json() {
-        let env = Envelope::from_sourced(SCHEMA_COMPARE, result);
-        return output::print_stdout(&output::json::to_pretty(&env)?);
-    }
-    notices(ctx, &result);
-    output::print_stdout(&reports::compare(&result.data, ctx.color))
+    emit(ctx, SCHEMA_COMPARE, result, |d| {
+        reports::compare(d, ctx.color)
+    })
 }

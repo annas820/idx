@@ -171,7 +171,7 @@ pub const TEMPLATE: &str = r#"# idx configuration. Every key is optional.
 # provider = "auto"          # auto | yahoo | msn      (env: IDX_PROVIDER)
 
 # Default output format.
-# output = "table"           # table | json            (env: IDX_OUTPUT)
+# output = "table"           # table | json | csv      (env: IDX_OUTPUT)
 
 # ANSI colours in tables.
 # color = "auto"             # auto | always | never   (env: IDX_COLOR, NO_COLOR)

@@ -11,7 +11,7 @@ use crate::config::{self, CliOverrides, FileConfig, Settings};
 use crate::error::{IdxError, Result};
 use crate::http::{Fetcher, ReqwestBackend};
 use crate::output::{self, ColorMode, OutputFormat};
-use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Ttls};
+use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Sourced, Ttls};
 
 pub mod cache_cmd;
 pub mod config_cmd;
@@ -65,7 +65,7 @@ pub struct Cli {
 
 #[derive(Debug, Clone, clap::Args)]
 pub struct GlobalOpts {
-    /// Output format (table for humans, json for scripts and agents).
+    /// Output format: table for people, json for scripts and agents, csv for spreadsheets.
     #[arg(short = 'o', long, global = true, value_enum, value_name = "FORMAT")]
     pub output: Option<OutputFormat>,
 
@@ -157,6 +157,45 @@ pub struct Context {
 impl Context {
     pub fn json(&self) -> bool {
         self.settings.output == OutputFormat::Json
+    }
+}
+
+/// Prints warnings and the stale notice to stderr (table and csv modes;
+/// JSON carries them in the envelope).
+pub fn notices<T>(ctx: &Context, s: &Sourced<T>) {
+    if ctx.json() {
+        return;
+    }
+    for w in &s.warnings {
+        output::print_stderr(&format!("warning: {w}"));
+    }
+    if s.stale {
+        output::print_stderr("warning: showing stale cached data");
+    }
+}
+
+/// Writes a result in the chosen format: the JSON envelope, CSV rows of the
+/// payload's main list, or the given table.
+pub fn emit<T: serde::Serialize>(
+    ctx: &Context,
+    schema: &str,
+    s: Sourced<T>,
+    table: impl FnOnce(&T) -> String,
+) -> Result<()> {
+    match ctx.settings.output {
+        OutputFormat::Json => {
+            let env = output::json::Envelope::from_sourced(schema, s);
+            output::print_stdout(&output::json::to_pretty(&env)?)
+        }
+        OutputFormat::Csv => {
+            notices(ctx, &s);
+            let v = serde_json::to_value(&s.data)?;
+            output::print_stdout(&output::csv::render(&v))
+        }
+        OutputFormat::Table => {
+            notices(ctx, &s);
+            output::print_stdout(&table(&s.data))
+        }
     }
 }
 

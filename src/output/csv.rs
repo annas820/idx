@@ -26,11 +26,7 @@ fn flatten(prefix: &str, v: &Value, out: &mut Vec<(String, String)>) {
             }
         }
         Value::Array(a) if a.iter().all(|x| !x.is_object() && !x.is_array()) => {
-            let joined = a
-                .iter()
-                .map(scalar)
-                .collect::<Vec<_>>()
-                .join("|");
+            let joined = a.iter().map(scalar).collect::<Vec<_>>().join("|");
             out.push((prefix.to_string(), joined));
         }
         Value::Array(_) => out.push((prefix.to_string(), v.to_string())),
@@ -141,7 +137,8 @@ mod tests {
             "splits": [{"date": "d"}]
         });
         assert_eq!(render(&v), "time,close\nt1,1.0\nt2,2.0\n");
-        let scalar_only = json!({"symbol": "BBCA", "verdict": {"label": "fair", "reasons": ["r1", "r2"]}});
+        let scalar_only =
+            json!({"symbol": "BBCA", "verdict": {"label": "fair", "reasons": ["r1", "r2"]}});
         assert_eq!(
             render(&scalar_only),
             "symbol,verdict.label,verdict.reasons\nBBCA,fair,r1|r2\n"

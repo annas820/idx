@@ -4,12 +4,12 @@ use clap::Subcommand;
 
 use crate::error::Result;
 use crate::model::Symbol;
-use crate::output::json::{Envelope, SCHEMA_MARKET};
-use crate::output::{self, table_reports as reports};
+use crate::output::json::SCHEMA_MARKET;
+use crate::output::table_reports as reports;
 use crate::service;
 use crate::universe;
 
-use super::Context;
+use super::{emit, Context};
 
 #[derive(Debug, Subcommand)]
 pub enum MarketCmd {
@@ -51,17 +51,9 @@ pub async fn run(ctx: &Context, cmd: MarketCmd) -> Result<()> {
             universe::extend_from_ownership(&mut list, &ctx.settings.ownership_db);
             let result =
                 service::market_overview(ctx.provider.as_ref(), &list, &index, top, floor).await?;
-            if ctx.json() {
-                let env = Envelope::from_sourced(SCHEMA_MARKET, result);
-                return output::print_stdout(&output::json::to_pretty(&env)?);
-            }
-            for w in &result.warnings {
-                output::print_stderr(&format!("warning: {w}"));
-            }
-            if result.stale {
-                output::print_stderr("warning: showing stale cached data");
-            }
-            output::print_stdout(&reports::market(&result.data, ctx.color))
+            emit(ctx, SCHEMA_MARKET, result, |d| {
+                reports::market(d, ctx.color)
+            })
         }
     }
 }
