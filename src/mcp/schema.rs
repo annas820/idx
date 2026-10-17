@@ -1,7 +1,7 @@
 //! Makes the generated tool input schemas portable across MCP harnesses.
 //!
-//! schemars emits draft 2020-12 with `"$schema"`, `"format": "uint32"` and
-//! nullable types as `"type": ["string", "null"]`. Claude accepts all of
+//! schemars emits draft 2020-12 with `"$schema"`, `"format": "uint32"`,
+//! `"default": null` and nullable types as `"type": ["string", "null"]`. Claude accepts all of
 //! that, but Gemini's function declarations and OpenAI's strict tool mode
 //! reject type arrays and unknown `format`s, and some clients choke on a
 //! `$schema` key. Every tool is already optional-by-omission (the field is
@@ -22,6 +22,9 @@ pub fn portable(schema: &mut Value) {
     };
     map.remove("$schema");
     map.remove("format");
+    // `default: null` on optional fields: OpenAI strict mode rejects `default`
+    // outright and a literal null trips Gemini. Descriptions state defaults.
+    map.remove("default");
     if let Some(Value::Array(types)) = map.get("type") {
         let kept: Vec<Value> = types
             .iter()
@@ -51,7 +54,7 @@ mod tests {
             "$schema": "https://json-schema.org/draft/2020-12/schema",
             "type": "object",
             "properties": {
-                "limit": {"type": ["integer", "null"], "format": "uint32", "minimum": 0},
+                "limit": {"type": ["integer", "null"], "format": "uint32", "default": null, "minimum": 0},
                 "symbol": {"type": "string"},
                 "sources": {"type": ["array", "null"], "items": {"type": "string"}},
                 "nested": {"type": "object", "properties": {"x": {"type": ["number", "null"], "format": "double"}}}

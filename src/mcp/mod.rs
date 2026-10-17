@@ -924,13 +924,30 @@ mod tests {
                 "{} has no typed input",
                 t.name
             );
-            let text = serde_json::to_string(&*t.input_schema).unwrap();
-            assert!(!text.contains("\"$schema\""), "{}: $schema key", t.name);
-            assert!(!text.contains("\"format\""), "{}: format keyword", t.name);
-            assert!(
-                !text.contains("\"null\""),
-                "{}: nullable type array breaks Gemini/OpenAI harnesses",
-                t.name
+            // Structural check: no null values, no default/format/$schema keys,
+            // no type arrays anywhere in the schema (descriptions may say "null").
+            fn walk(name: &str, v: &serde_json::Value) {
+                match v {
+                    serde_json::Value::Null => panic!("{name}: null value in schema"),
+                    serde_json::Value::Object(m) => {
+                        for (k, v) in m {
+                            assert!(
+                                !matches!(k.as_str(), "default" | "format" | "$schema"),
+                                "{name}: {k} keyword breaks Gemini/OpenAI harnesses"
+                            );
+                            if k == "type" {
+                                assert!(!v.is_array(), "{name}: type array");
+                            }
+                            walk(name, v);
+                        }
+                    }
+                    serde_json::Value::Array(a) => a.iter().for_each(|v| walk(name, v)),
+                    _ => {}
+                }
+            }
+            walk(
+                &t.name,
+                &serde_json::Value::Object((*t.input_schema).clone()),
             );
         }
     }

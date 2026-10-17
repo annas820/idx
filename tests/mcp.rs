@@ -89,11 +89,27 @@ fn mcp_server_speaks_json_rpc_over_stdio() {
         .contains(&serde_json::json!("symbols")));
     // Portable schemas: no nullable type arrays, formats or $schema keys,
     // which Gemini and OpenAI-strict harnesses reject.
+    fn walk(name: &str, v: &serde_json::Value) {
+        match v {
+            serde_json::Value::Null => panic!("{name}: null value in schema"),
+            serde_json::Value::Object(m) => {
+                for (k, v) in m {
+                    assert!(
+                        !matches!(k.as_str(), "default" | "format" | "$schema"),
+                        "{name}: {k} keyword"
+                    );
+                    if k == "type" {
+                        assert!(!v.is_array(), "{name}: type array");
+                    }
+                    walk(name, v);
+                }
+            }
+            serde_json::Value::Array(a) => a.iter().for_each(|v| walk(name, v)),
+            _ => {}
+        }
+    }
     for t in tools {
-        let text = t["inputSchema"].to_string();
-        assert!(!text.contains("\"null\""), "{}: {text}", t["name"]);
-        assert!(!text.contains("\"format\""), "{}: {text}", t["name"]);
-        assert!(!text.contains("$schema"), "{}: {text}", t["name"]);
+        walk(t["name"].as_str().unwrap(), &t["inputSchema"]);
     }
     let news = tools.iter().find(|t| t["name"] == "idx_news").unwrap();
     assert_eq!(
