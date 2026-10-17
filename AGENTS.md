@@ -32,10 +32,12 @@ src/
   providers/         Provider trait, Chain fallback, ProviderKind; one subdir per source
     yahoo/           chart, v7 quote (cookie/crumb session), quoteSummary (summary.rs), timeseries.rs
     msn/             autosuggest lookup -> Quotes / Equities (public web key)
+    ipot/            Indo Premier broker summary (HTML fragment, parse.rs; spurious 404s retried)
   analysis/          technical.rs (indicators + signal), fundamental.rs (verdict), screen.rs (filter DSL),
                      sentiment.rs (lexicon), returns.rs (windows, CAGR, drawdown, volatility),
                      dividends.rs (totals, TTM yield, streak); no network
   universe.rs        bundled data/universe.csv (IDX issuers) + ownership-db issuers; IDX_UNIVERSE override
+  brokers.rs         bundled data/brokers.csv (IDX exchange members: code -> name)
     news/            Kontan + CNBC Indonesia RSS feeds through the Fetcher (rss crate)
   service.rs         provider call + analysis, shared by cli/ and mcp/ (fundamentals, technical, compare,
                      screen, news ordering, returns, dividends, market_overview, brief)
@@ -71,7 +73,7 @@ scripts/ownership_mirror.py  CI scraper behind .github/workflows/ownership.yml: 
 CLI groups: `stocks` (quote, history, profile, financials, earnings, dividends, returns,
 fundamental, technical, brief, compare, screen, news, sentiment), `market overview`,
 `ownership` (import, ticker, entity, changes, foreign, releases, discover, path),
-`watch`, `mcp`, `schema`, `config`, `cache`, `completions`, `version`.
+`broker`, `watch`, `mcp`, `schema`, `config`, `cache`, `completions`, `version`.
 
 ## Rules that keep the tool trustworthy
 

@@ -136,6 +136,23 @@ and documented as such: `years[]` (`year`, `payments`, `total`, `change_pct`),
 `last`, `ttm_total`, `ttm_payments`, `ttm_yield_pct` (= TTM total / price),
 `consecutive_years`, `as_of`.
 
+## `idx.broker.v1` (`broker`)
+
+Array, one summary per requested ticker, as Indo Premier (IPOT) publishes it:
+`symbol`, `name` (bundled universe), `from` and `to` (the range the source
+applied, WIB dates), `investor` (`all` | `foreign` | `domestic`), `board`
+(`all` | `regular` | `cash` | `negotiated`), `buyers[]` and `sellers[]` (top 10
+by value, largest first: `rank`, `code`, `name` from the bundled IDX member
+list or `null`, `kind` = `local` | `foreign` | `state_owned` or `null`, `lots`
+(1 lot = 100 shares), `value` in IDR, `average_price`), and the range totals
+`total_value`, `total_lots`, `foreign_net_value` (foreign buy minus sell),
+`average_price` (`null` when nothing traded). The source abbreviates figures
+of a million and more to one decimal (`1.6 M`); those arrive as plain numbers
+at that precision and the summary carries `rounded: true`. Nothing is netted
+per broker or estimated. A range without trades has empty lists and a warning.
+With `-o csv` the rows are one broker per side: `symbol, from, to, investor,
+board, side (buy|sell), rank, code, name, kind, lots, value, average_price`.
+
 ## `idx.returns.v1` (`stocks returns`)
 
 Array, one `Performance` per requested ticker: `as_of`, `price`, `start`,
