@@ -125,11 +125,18 @@ jobs:
         run: |
           tag="${{ github.event.inputs.tag || github.ref_name }}"
           ver="${tag#v}"
-          awk -v ver="$ver" '
-            /^## \[/ { if (found) exit; if (index($0, "[" ver "]") || index($0, "[Unreleased]")) { found=1; next } }
-            found { print }
-          ' CHANGELOG.md > notes.md
-          [ -s notes.md ] || echo "Release $tag" > notes.md
+          # The version's own section; [Unreleased] only when there is none
+          # (an empty [Unreleased] heading sits above the version after a release).
+          section() {
+            awk -v want="[$1]" '
+              /^## \[/ { if (found) exit; if (index($0, want)) { found=1; next } }
+              found { print }
+            ' CHANGELOG.md
+          }
+          blank() { [ -z "$(tr -d '[:space:]' < notes.md)" ]; }
+          section "$ver" > notes.md
+          if blank; then section "Unreleased" > notes.md; fi
+          if blank; then echo "Release $tag" > notes.md; fi
           echo "Install: \`curl -fsSL https://raw.githubusercontent.com/${{ github.repository }}/main/install.sh | sh\`" >> notes.md
 
       - uses: softprops/action-gh-release@v2
