@@ -89,8 +89,27 @@ impl From<serde_json::Error> for IdxError {
 }
 
 impl From<reqwest::Error> for IdxError {
+    /// reqwest's own message ("error sending request for url (...)") hides
+    /// the cause; name a timeout as such and append the innermost cause.
     fn from(e: reqwest::Error) -> Self {
-        IdxError::Network(e.to_string())
+        let url = e.url().map(|u| u.as_str().to_string());
+        if e.is_timeout() {
+            return IdxError::Network(match url {
+                Some(u) => format!("timed out waiting for {u}"),
+                None => "timed out".into(),
+            });
+        }
+        let mut cause: &dyn std::error::Error = &e;
+        while let Some(next) = cause.source() {
+            cause = next;
+        }
+        let msg = e.to_string();
+        let root = cause.to_string();
+        if msg.contains(&root) {
+            IdxError::Network(msg)
+        } else {
+            IdxError::Network(format!("{msg}: {root}"))
+        }
     }
 }
 
