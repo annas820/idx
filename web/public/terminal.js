@@ -448,7 +448,7 @@ const R = {
   },
   tools() {
     const frag = document.createDocumentFragment();
-    frag.append(el("p", { class: "prose", text: `${TOOLS.length} MCP tools (idx mcp). ${TOOLS.filter((t) => t.web).length} run here; the ${TOOLS.filter((t) => !t.web).length} idx.co.id tools run in the CLI and MCP only. Click a tool to run it, or to see its CLI command.` }));
+    frag.append(el("p", { class: "prose", text: `${TOOLS.length} MCP tools (idx mcp). ${TOOLS.filter((t) => t.web).length} run here; the other ${TOOLS.filter((t) => !t.web).length} (the idx.co.id exchange tools and the Stockbit realtime tools) run in the CLI and MCP only. Click a tool to run it, or to see its CLI command.` }));
     frag.append(wrapScroll(table([
       { h: "Tool", k: "tool", l: true, cls: "sym" }, { h: "CLI", k: "cli", l: true },
       { h: "Web terminal", f: (t) => t.web || "CLI and MCP only", l: true }, { h: "What", k: "what", l: true, cls: "name" },
@@ -460,7 +460,11 @@ const R = {
     const frag = document.createDocumentFragment();
     frag.append(el("p", { class: "prose", html: `<b>${t.tool}</b> · ${t.what}` }));
     frag.append(el("pre", { text: `${t.cli}\n${t.cli.replace(/^idx /, "idx -o json ")}` }));
-    frag.append(el("p", { class: "warn", text: `${CLI_ONLY_REASON} Install: npm install -g ihsg-cli, or the binaries on GitHub (fzn0x/idx).` }));
+    const stockbit = t.tool === "idx_orderbook" || t.tool.startsWith("idx_stockbit");
+    const reason = stockbit
+      ? "Stockbit realtime carries your own account session (captured once by `idx stockbit login`), so it runs in the CLI and the MCP server only, never this public page."
+      : CLI_ONLY_REASON;
+    frag.append(el("p", { class: "warn", text: `${reason} Install: npm install -g ihsg-cli, or the binaries on GitHub (fzn0x/idx).` }));
     return frag;
   },
   holidays(h) {
@@ -580,7 +584,7 @@ async function run(line) {
     case "list": env = await api(`instruments?${qs({ search: opt.search || pos.join(" ") || null })}`); render = R.instruments; break;
     case "members": env = await api(`members?${qs({ search: opt.search || pos.join(" ") || null })}`); render = R.members; break;
     case "tools": {
-      if (!pos[0]) return { local: "33 MCP tools", node: R.tools() };
+      if (!pos[0]) return { local: `${TOOLS.length} MCP tools`, node: R.tools() };
       const t = byName(pos[0]);
       if (!t) throw Object.assign(new Error(`no tool "${pos[0]}"; type tools for the list`), { code: "usage" });
       if (t.web) return run(rawJson ? `json ${t.web}` : t.web);
