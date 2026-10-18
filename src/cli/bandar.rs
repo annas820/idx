@@ -5,9 +5,9 @@ use chrono::NaiveDate;
 use crate::analysis::bandar::{self as bd, Preset};
 use crate::error::Result;
 use crate::model::{BandarPeriod, BrokerBoard, BrokerInvestor, Symbol};
-use crate::output::json::{SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN};
+use crate::output::json::{SCHEMA_BANDAR, SCHEMA_BANDAR_BROKER, SCHEMA_BANDAR_SCREEN};
 use crate::output::table_bandar as tb;
-use crate::service::{self, BandarQuery, BandarScreenOptions};
+use crate::service::{self, BandarQuery, BandarScreenOptions, BrokerActivityOptions};
 use crate::universe;
 
 use super::{emit, Context};
@@ -49,6 +49,20 @@ Operators < <= > >= = !=; numbers accept K/M/B/T and %.
 One broker-summary request per scanned stock (cached; closed sessions for a week), and on
 1w/1m/3m one history request per row the other filters leave.";
 
+const BROKER_HELP: &str = "Examples:
+  idx bandar broker YP                       # last week, the 100 most traded stocks
+  idx bandar broker CC --period 1m --scan 200
+  idx bandar broker AK --symbols BBCA,BBRI,BMRI,TLKM
+  idx -o json bandar broker ZP | jq '.data.bought[] | {symbol, value, share_pct}'
+
+Where one exchange member sits among the top ten buyers or sellers (IPOT broker summary) of the
+scanned stocks over the period ending on the latest session: rank, lots, value, average price
+and its share of the stock's value. Only the top ten per side are published, so a stock where
+the broker traded below tenth place does not show, and net is given only where both sides are
+visible. Codes: `idx market members`; each member's whole-day totals: `idx market brokers`.
+
+One broker-summary request per scanned stock, shared with `idx bandar screen` (cached).";
+
 #[derive(Debug, clap::Subcommand)]
 pub enum BandarCmd {
     /// Bandar detector: accumulation or distribution by the top brokers, per ticker.
@@ -57,6 +71,28 @@ pub enum BandarCmd {
     /// Bandarmology screener: the most traded stocks the top brokers accumulate or distribute.
     #[command(after_help = SCREEN_HELP)]
     Screen(ScreenArgs),
+    /// Broker activity: which of the most traded stocks one broker is a top buyer or seller of.
+    #[command(after_help = BROKER_HELP)]
+    Broker(BrokerArgs),
+}
+
+#[derive(Debug, clap::Args)]
+pub struct BrokerArgs {
+    /// Exchange-member code, e.g. YP or CC.
+    #[arg(value_name = "CODE")]
+    pub code: String,
+    /// Look-back ending at the latest session with trades.
+    #[arg(long, short = 'p', value_enum, default_value_t = BandarPeriod::Week1)]
+    pub period: BandarPeriod,
+    /// Rows per side; 0 = all.
+    #[arg(long, short = 'l', default_value_t = 20)]
+    pub limit: usize,
+    /// How many of the most traded stocks (by value, latest session) to scan.
+    #[arg(long, default_value_t = service::BANDAR_SCAN_DEFAULT)]
+    pub scan: usize,
+    /// Scan these tickers instead of the most traded.
+    #[arg(long, value_name = "SYMBOLS", value_delimiter = ',')]
+    pub symbols: Vec<String>,
 }
 
 #[derive(Debug, clap::Args)]
@@ -181,6 +217,25 @@ pub async fn run(ctx: &Context, cmd: BandarCmd) -> Result<()> {
                     .await?;
             emit(ctx, SCHEMA_BANDAR_SCREEN, result, |d| {
                 tb::screen(d, ctx.color)
+            })
+        }
+        BandarCmd::Broker(a) => {
+            let opts = BrokerActivityOptions {
+                code: a.code,
+                period: a.period,
+                scan: a.scan,
+                symbols: if a.symbols.is_empty() {
+                    Vec::new()
+                } else {
+                    Symbol::parse_list(&a.symbols)?
+                },
+                limit: a.limit,
+            };
+            let result =
+                service::bandar_broker(ctx.provider.as_ref(), &ctx.fetcher, &list, &opts, today)
+                    .await?;
+            emit(ctx, SCHEMA_BANDAR_BROKER, result, |d| {
+                tb::broker_activity(d, ctx.color)
             })
         }
     }

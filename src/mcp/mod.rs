@@ -38,8 +38,8 @@ use crate::output::json::{
     SCHEMA_MARKET_BROKERS, SCHEMA_MARKET_FOREIGN, SCHEMA_MEMBERS,
 };
 use crate::output::json::{
-    SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS, SCHEMA_NEWS,
-    SCHEMA_SCREEN, SCHEMA_SENTIMENT,
+    SCHEMA_BANDAR, SCHEMA_BANDAR_BROKER, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS,
+    SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT,
 };
 use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
@@ -374,6 +374,24 @@ pub struct BandarArgs {
     /// Add the session-by-session movement (default false; one request per session).
     #[serde(default)]
     pub daily: Option<bool>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct BandarBrokerArgs {
+    /// Exchange-member code, e.g. "YP" or "CC" (see idx_members).
+    pub code: String,
+    /// Look-back ending at the latest session: 1d, 1w (default), 1m or 3m.
+    #[serde(default)]
+    pub period: Option<String>,
+    /// Rows per side (default 20; 0 for all).
+    #[serde(default)]
+    pub limit: Option<u32>,
+    /// How many of the most traded stocks to scan (default 100, at most 300).
+    #[serde(default)]
+    pub scan: Option<u32>,
+    /// Scan these tickers instead of the most traded, comma or space separated.
+    #[serde(default)]
+    pub symbols: Option<String>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -1116,6 +1134,51 @@ impl IdxServer {
     }
 
     #[tool(
+        name = "idx_bandar_broker",
+        description = "Broker activity: where one IDX exchange member (e.g. YP, CC, AK) sits among the top ten buyers or sellers of the most traded stocks (default 100, or the given symbols) over a period ending at the latest session, from the IPOT broker summary. For each stock: the broker's rank on that side, lots, value, average price, share of the stock's value traded, and its value on the other side and the net (buy minus sell) when it is also top ten there. Only the top ten per side are published, so stocks where the broker traded below tenth place do not show. Totals of the visible buying and selling. One broker-summary request per scanned stock, shared with idx_bandar_screen (cached). Returns the idx.bandar.broker.v1 envelope."
+    )]
+    async fn bandar_broker(
+        &self,
+        Parameters(a): Parameters<BandarBrokerArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let period = parse_opt(&a.period, BandarPeriod::Week1)?;
+                let symbols = match a
+                    .symbols
+                    .as_deref()
+                    .map(str::trim)
+                    .filter(|s| !s.is_empty())
+                {
+                    None => Vec::new(),
+                    Some(s) => Symbol::parse_list([s])?,
+                };
+                let opts = service::BrokerActivityOptions {
+                    code: a.code,
+                    period,
+                    scan: a.scan.unwrap_or(service::BANDAR_SCAN_DEFAULT as u32) as usize,
+                    symbols,
+                    limit: a.limit.unwrap_or(20) as usize,
+                };
+                let mut list = universe::load(None)?;
+                universe::extend_from_ownership(&mut list, &self.ownership_db);
+                ok(
+                    SCHEMA_BANDAR_BROKER,
+                    service::bandar_broker(
+                        self.provider.as_ref(),
+                        &self.fetcher,
+                        &list,
+                        &opts,
+                        service::today_wib(),
+                    )
+                    .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
         name = "idx_bandar_screen",
         description = "Bandarmology screener: scans the most traded IDX stocks by value (default 100, or the given symbols) over a period ending at the latest session and returns the ones whose top brokers accumulate or distribute, as defined by idx_bandar. Presets: big-accumulation (acc>=15), accumulation (acc>=5), distribution (acc<=-5), big-distribution (acc<=-15), quiet-accumulation (top brokers buying while the price is flat or down), quiet-distribution, foreign-accumulation (acc>=5 and foreign net >=5% of value), below-bandar (accumulation with the price under the top buyers' average). filter adds clauses on acc, net, lots, fnet, fpct, gain, chg, turnover, conc, price, signal, phase. Rows carry signal, phase, net_pct, net_value, price move, foreign flow, bandar average and gain, and the top buyer codes. One broker-summary request per scanned stock (cached). Heuristic, not advice. Returns the idx.bandar.screen.v1 envelope."
     )]
@@ -1465,6 +1528,7 @@ mod tests {
             names,
             [
                 "idx_bandar",
+                "idx_bandar_broker",
                 "idx_bandar_screen",
                 "idx_brief",
                 "idx_broker",

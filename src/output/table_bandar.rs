@@ -9,6 +9,7 @@ use crate::model::{
     BandarDaily, BandarPhase, BandarReport, BandarScreen, BandarSignal, BrokerBoard, BrokerFlow,
     BrokerInvestor,
 };
+use crate::model::{BrokerActivity, BrokerStockRow};
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
 
@@ -256,6 +257,78 @@ pub fn bandar(list: &[BandarReport], color: bool) -> String {
     }
     out.push_str(&rule_note());
     out.push('\n');
+    out
+}
+
+fn activity_side(out: &mut String, title: &str, rows: &[BrokerStockRow], buy: bool, color: bool) {
+    out.push_str(title);
+    out.push('\n');
+    if rows.is_empty() {
+        out.push_str("Not among the top ten in any scanned stock.\n");
+        return;
+    }
+    let mut t = base_table(color);
+    t.set_header(header(&[
+        "Symbol",
+        "Name",
+        "Rank",
+        "Lots",
+        "Value",
+        "Avg",
+        "Share",
+        "Other side",
+        "Net",
+    ]));
+    for r in rows {
+        let mut sym = Cell::new(r.symbol.as_str()).add_attribute(Attribute::Bold);
+        if color {
+            sym = sym.fg(if buy { Color::Green } else { Color::Red });
+        }
+        t.add_row(vec![
+            sym,
+            Cell::new(f::clip(r.name.as_deref().unwrap_or(f::DASH), 26)),
+            right(r.rank.to_string()),
+            right(f::compact(r.lots)),
+            right(f::compact(r.value)),
+            right(f::price(r.average_price)),
+            right(
+                r.share_pct
+                    .map(|p| format!("{}%", f::num(p, 1)))
+                    .unwrap_or_else(|| f::DASH.to_string()),
+            ),
+            right(f::compact(r.opposite_value)),
+            signed(f::compact(r.net_value), r.net_value, color),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+}
+
+/// One broker's appearances across the scanned stocks.
+pub fn broker_activity(a: &BrokerActivity, color: bool) -> String {
+    let mut out = format!(
+        "{}{} · {} ({} to {}) · {} scanned, {} with trades\n",
+        a.code,
+        a.name
+            .as_ref()
+            .map(|n| format!(" · {n}"))
+            .unwrap_or_default(),
+        a.period,
+        a.from,
+        a.to,
+        a.scanned,
+        a.checked,
+    );
+    out.push_str(&format!(
+        "Visible buying {} in {} stocks · visible selling {} in {} stocks\n",
+        f::compact(Some(a.bought_value)),
+        a.bought.len(),
+        f::compact(Some(a.sold_value)),
+        a.sold.len(),
+    ));
+    activity_side(&mut out, "Top-ten buyer of", &a.bought, true, color);
+    activity_side(&mut out, "Top-ten seller of", &a.sold, false, color);
+    out.push_str("Only the top ten buyers and sellers per stock are published; net shows where both sides are visible. Source: IPOT.\n");
     out
 }
 

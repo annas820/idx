@@ -668,6 +668,37 @@ fn market_brokers_rank_the_members() {
 }
 
 #[test]
+fn bandar_broker_surface() {
+    let sb = sandbox();
+    idx(&sb.cache, &sb.config)
+        .args(["bandar", "broker", "--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "idx bandar broker CC --period 1m --scan 200",
+        ))
+        .stdout(predicate::str::contains("top ten"));
+    let out = idx(&sb.cache, &sb.config)
+        .args(["schema", "bandar-broker"])
+        .output()
+        .unwrap();
+    assert!(out.status.success());
+    assert!(String::from_utf8_lossy(&out.stdout).contains("opposite_value"));
+    // Offline with an empty cache: the latest-session probe misses first.
+    idx(&sb.cache, &sb.config)
+        .args(["bandar", "broker", "YP", "--symbols", "BBCA,BBRI"])
+        .assert()
+        .code(5);
+    for args in [
+        vec!["bandar", "broker"],
+        vec!["bandar", "broker", "MIRAE", "--symbols", "BBCA"],
+        vec!["bandar", "broker", "YP", "--period", "2w"],
+    ] {
+        idx(&sb.cache, &sb.config).args(&args).assert().code(2);
+    }
+}
+
+#[test]
 fn bandar_command_surface() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

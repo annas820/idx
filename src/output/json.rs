@@ -12,7 +12,7 @@ use crate::model::{
     InstrumentList, MarketOverview, MemberList, NewsReport, Performance, Profile, Quote, Release,
     ScreenReport, SentimentReport, Technical, Watchlist,
 };
-use crate::model::{BrokerRanking, ForeignFlow, MarketForeign};
+use crate::model::{BrokerActivity, BrokerRanking, ForeignFlow, MarketForeign};
 use crate::providers::Sourced;
 
 /// Stable wrapper. `schema` names the payload shape and is versioned
@@ -63,6 +63,7 @@ pub const SCHEMA_BRIEF: &str = "idx.brief.v1";
 pub const SCHEMA_BROKER: &str = "idx.broker.v1";
 pub const SCHEMA_BANDAR: &str = "idx.bandar.v1";
 pub const SCHEMA_BANDAR_SCREEN: &str = "idx.bandar.screen.v1";
+pub const SCHEMA_BANDAR_BROKER: &str = "idx.bandar.broker.v1";
 pub const SCHEMA_WATCHLIST: &str = "idx.watchlist.v1";
 pub const SCHEMA_HOLIDAYS: &str = "idx.holidays.v1";
 pub const SCHEMA_INSTRUMENTS: &str = "idx.instruments.v1";
@@ -100,6 +101,7 @@ pub type BriefEnvelope = Envelope<Brief>;
 pub type BrokerEnvelope = Envelope<Vec<BrokerSummary>>;
 pub type BandarEnvelope = Envelope<Vec<BandarReport>>;
 pub type BandarScreenEnvelope = Envelope<BandarScreen>;
+pub type BandarBrokerEnvelope = Envelope<BrokerActivity>;
 pub type WatchlistEnvelope = Envelope<Watchlist>;
 pub type HolidaysEnvelope = Envelope<Holidays>;
 pub type InstrumentsEnvelope = Envelope<InstrumentList>;
@@ -172,6 +174,7 @@ pub fn schema_names() -> &'static [&'static str] {
         "broker",
         "bandar",
         "bandar-screen",
+        "bandar-broker",
         "watchlist",
         "holidays",
         "instruments",
@@ -216,6 +219,7 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "broker" => schemars::schema_for!(BrokerEnvelope),
         "bandar" => schemars::schema_for!(BandarEnvelope),
         "bandar-screen" => schemars::schema_for!(BandarScreenEnvelope),
+        "bandar-broker" => schemars::schema_for!(BandarBrokerEnvelope),
         "watchlist" => schemars::schema_for!(WatchlistEnvelope),
         "holidays" => schemars::schema_for!(HolidaysEnvelope),
         "instruments" => schemars::schema_for!(InstrumentsEnvelope),

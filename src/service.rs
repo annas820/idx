@@ -15,10 +15,11 @@ use crate::brokers;
 use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::model::{
-    BandarPeriod, BandarReport, BandarScreen, BenchmarkReturns, Brief, BrokerBoard, BrokerInvestor,
-    BrokerSummary, DividendHistory, DividendSummary, Fundamentals, History, Interval,
-    MarketOverview, MarketRow, NewsItem, NewsReport, NewsSummary, OwnershipSummary, Performance,
-    Period, Quote, ScreenReport, ScreenRow, SentimentReport, Symbol, Technical,
+    BandarPeriod, BandarReport, BandarScreen, BenchmarkReturns, Brief, BrokerActivity, BrokerBoard,
+    BrokerInvestor, BrokerStockRow, BrokerSummary, DividendHistory, DividendSummary, Fundamentals,
+    History, Interval, MarketOverview, MarketRow, NewsItem, NewsReport, NewsSummary,
+    OwnershipSummary, Performance, Period, Quote, ScreenReport, ScreenRow, SentimentReport, Symbol,
+    Technical,
 };
 use crate::providers::ipot;
 use crate::providers::news as newsfeed;
@@ -1290,6 +1291,112 @@ async fn screen_move(
     )
 }
 
+/// Tickers to scan and their quotes: the `scan` most traded by value from
+/// one batch quote of the universe, or the given `symbols` (quoted when
+/// possible).
+async fn scan_candidates(
+    p: &dyn Provider,
+    universe: &[Issuer],
+    symbols: &[Symbol],
+    scan: usize,
+) -> Result<(Vec<Symbol>, Sourced<Vec<Quote>>)> {
+    let (candidates, q) = if symbols.is_empty() {
+        if universe.is_empty() {
+            return Err(IdxError::Usage("the ticker universe is empty".into()));
+        }
+        let all: Vec<Symbol> = universe.iter().map(|i| i.symbol.clone()).collect();
+        let q = quotes_all(p, &all).await?;
+        let traded = |x: &Quote| x.price.unwrap_or(0.0) * x.volume.unwrap_or(0) as f64;
+        let mut by_value: Vec<&Quote> = q.data.iter().filter(|x| traded(x) > 0.0).collect();
+        by_value.sort_by(|a, b| {
+            traded(b)
+                .partial_cmp(&traded(a))
+                .unwrap_or(std::cmp::Ordering::Equal)
+        });
+        let n = scan.clamp(1, BANDAR_SCAN_MAX);
+        let picked: Vec<Symbol> = by_value.iter().take(n).map(|x| x.symbol.clone()).collect();
+        (picked, q)
+    } else {
+        if symbols.len() > BANDAR_SCAN_MAX {
+            return Err(IdxError::Usage(format!(
+                "a bandar screen scans at most {BANDAR_SCAN_MAX} tickers"
+            )));
+        }
+        let q = quotes_all(p, symbols)
+            .await
+            .unwrap_or_else(|_| Sourced::fresh(Vec::new(), p.name()));
+        (symbols.to_vec(), q)
+    };
+    if candidates.is_empty() {
+        return Err(IdxError::NotFound("no traded tickers to scan".into()));
+    }
+    Ok((candidates, q))
+}
+
+/// The latest session with trades, read from the first candidates. When
+/// every probe was an offline cache miss, that is the error.
+async fn scan_end(
+    fetcher: &Arc<Fetcher>,
+    candidates: &[Symbol],
+    today: NaiveDate,
+) -> Result<NaiveDate> {
+    let bq = BrokerQuery {
+        from: None,
+        to: None,
+        investor: BrokerInvestor::All,
+        board: BrokerBoard::All,
+    };
+    let mut offline = None;
+    let mut all_offline = true;
+    for sym in candidates.iter().take(3) {
+        match latest_broker_day(fetcher, sym, bq, today).await {
+            Ok(s) if !s.data.is_empty() => return Ok(s.data.to),
+            Err(e @ IdxError::OfflineMiss(_)) => {
+                offline.get_or_insert(e);
+            }
+            _ => all_offline = false,
+        }
+    }
+    if let (Some(e), true) = (offline, all_offline) {
+        return Err(e);
+    }
+    Err(IdxError::NotFound(format!(
+        "no session with trades in the {BROKER_LOOKBACK_DAYS} days to {today}"
+    )))
+}
+
+/// Every candidate's summary over `from..=end`, three at a time, then one
+/// sequential pass over provider failures (not unknown codes).
+async fn scan_summaries(
+    fetcher: &Arc<Fetcher>,
+    candidates: &[Symbol],
+    from: NaiveDate,
+    end: NaiveDate,
+    today: NaiveDate,
+) -> Vec<(Symbol, Result<Sourced<BrokerSummary>>)> {
+    let mut fetched: Vec<(Symbol, Result<Sourced<BrokerSummary>>)> =
+        stream::iter(candidates.to_vec())
+            .map(|s| screen_summary(fetcher, s, from, end, today))
+            .buffer_unordered(3)
+            .collect()
+            .await;
+    let retry: Vec<Symbol> = fetched
+        .iter()
+        .filter(|(_, r)| matches!(r, Err(e) if !matches!(e, IdxError::NotFound(_))))
+        .map(|(s, _)| s.clone())
+        .collect();
+    if !retry.is_empty() {
+        tokio::time::sleep(ipot::RECOVER_PAUSE).await;
+        for sym in retry {
+            let again = screen_summary(fetcher, sym.clone(), from, end, today).await;
+            if let Some(slot) = fetched.iter_mut().find(|(s, _)| *s == sym) {
+                *slot = again;
+            }
+        }
+    }
+    fetched
+}
+
 /// Bandarmology screener: reads the most traded stocks (or the given ones)
 /// over the period ending on the latest session and keeps those matching
 /// the preset and filters. One broker-summary request per scanned ticker;
@@ -1310,84 +1417,13 @@ pub async fn bandar_screen(
     filters.extend(opts.filters.iter().cloned());
 
     // Candidates and their quotes.
-    let (candidates, mut out) = if opts.symbols.is_empty() {
-        if universe.is_empty() {
-            return Err(IdxError::Usage("the ticker universe is empty".into()));
-        }
-        let all: Vec<Symbol> = universe.iter().map(|i| i.symbol.clone()).collect();
-        let q = quotes_all(p, &all).await?;
-        let traded = |x: &Quote| x.price.unwrap_or(0.0) * x.volume.unwrap_or(0) as f64;
-        let mut by_value: Vec<&Quote> = q.data.iter().filter(|x| traded(x) > 0.0).collect();
-        by_value.sort_by(|a, b| {
-            traded(b)
-                .partial_cmp(&traded(a))
-                .unwrap_or(std::cmp::Ordering::Equal)
-        });
-        let n = opts.scan.clamp(1, BANDAR_SCAN_MAX);
-        let picked: Vec<Symbol> = by_value.iter().take(n).map(|x| x.symbol.clone()).collect();
-        (picked, q)
-    } else {
-        if opts.symbols.len() > BANDAR_SCAN_MAX {
-            return Err(IdxError::Usage(format!(
-                "a bandar screen scans at most {BANDAR_SCAN_MAX} tickers"
-            )));
-        }
-        let q = quotes_all(p, &opts.symbols)
-            .await
-            .unwrap_or_else(|_| Sourced::fresh(Vec::new(), p.name()));
-        (opts.symbols.clone(), q)
-    };
-    if candidates.is_empty() {
-        return Err(IdxError::NotFound("no traded tickers to scan".into()));
-    }
+    let (candidates, mut out) = scan_candidates(p, universe, &opts.symbols, opts.scan).await?;
     let quotes = std::mem::take(&mut out.data);
     out.warnings.retain(|w| !w.contains("returned no quote"));
-
-    // The latest session with trades, from the first candidates.
-    let bq = BrokerQuery {
-        from: None,
-        to: None,
-        investor: BrokerInvestor::All,
-        board: BrokerBoard::All,
-    };
-    let mut end = None;
-    for sym in candidates.iter().take(3) {
-        if let Ok(s) = latest_broker_day(fetcher, sym, bq, today).await {
-            if !s.data.is_empty() {
-                end = Some(s.data.to);
-                break;
-            }
-        }
-    }
-    let end = end.ok_or_else(|| {
-        IdxError::NotFound(format!(
-            "no session with trades in the {BROKER_LOOKBACK_DAYS} days to {today}"
-        ))
-    })?;
+    let end = scan_end(fetcher, &candidates, today).await?;
     let from = opts.period.start(end);
     let period = opts.period.as_str();
-
-    let mut fetched: Vec<(Symbol, Result<Sourced<BrokerSummary>>)> =
-        stream::iter(candidates.clone())
-            .map(|s| screen_summary(fetcher, s, from, end, today))
-            .buffer_unordered(3)
-            .collect()
-            .await;
-    // A second, sequential pass over provider failures (not unknown codes).
-    let retry: Vec<Symbol> = fetched
-        .iter()
-        .filter(|(_, r)| matches!(r, Err(e) if !matches!(e, IdxError::NotFound(_))))
-        .map(|(s, _)| s.clone())
-        .collect();
-    if !retry.is_empty() {
-        tokio::time::sleep(ipot::RECOVER_PAUSE).await;
-        for sym in retry {
-            let again = screen_summary(fetcher, sym.clone(), from, end, today).await;
-            if let Some(slot) = fetched.iter_mut().find(|(s, _)| *s == sym) {
-                *slot = again;
-            }
-        }
-    }
+    let fetched = scan_summaries(fetcher, &candidates, from, end, today).await;
     let quote_of = |sym: &Symbol| quotes.iter().find(|x| &x.symbol == sym);
     let mut failed = 0usize;
     let mut reports: Vec<BandarReport> = Vec::new();
@@ -1478,6 +1514,147 @@ pub async fn bandar_screen(
         checked,
         total_matches: total,
         rows,
+    });
+    out.provider = ipot::NAME;
+    Ok(out)
+}
+
+/// What [`bandar_broker`] scans.
+#[derive(Debug, Clone)]
+pub struct BrokerActivityOptions {
+    /// Exchange-member code, e.g. `YP`.
+    pub code: String,
+    pub period: BandarPeriod,
+    /// How many of the most traded tickers to scan when `symbols` is empty.
+    pub scan: usize,
+    /// Scan these instead of the most traded.
+    pub symbols: Vec<Symbol>,
+    /// Rows per side; 0 = all.
+    pub limit: usize,
+}
+
+fn stock_row(
+    s: &BrokerSummary,
+    this: &crate::model::BrokerFlow,
+    other: Option<&crate::model::BrokerFlow>,
+    buying: bool,
+) -> BrokerStockRow {
+    let opposite = other.and_then(|o| o.value);
+    let net = match (this.value, opposite) {
+        (Some(v), Some(o)) if buying => Some(v - o),
+        (Some(v), Some(o)) => Some(o - v),
+        _ => None,
+    };
+    BrokerStockRow {
+        symbol: s.symbol.clone(),
+        name: s.name.clone(),
+        rank: this.rank,
+        lots: this.lots,
+        value: this.value,
+        average_price: this.average_price,
+        share_pct: match (this.value, s.total_value) {
+            (Some(v), Some(t)) if t > 0.0 => Some(v / t * 100.0),
+            _ => None,
+        },
+        opposite_value: opposite,
+        net_value: net,
+    }
+}
+
+/// Broker activity: where one exchange member shows up among the top ten
+/// buyers and sellers of the most traded stocks (or the given ones) over
+/// the period ending on the latest session. One broker-summary request per
+/// scanned ticker, shared with the bandar screen's cache.
+pub async fn bandar_broker(
+    p: &dyn Provider,
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    opts: &BrokerActivityOptions,
+    today: NaiveDate,
+) -> Result<Sourced<BrokerActivity>> {
+    let code = opts.code.trim().to_ascii_uppercase();
+    if code.len() != 2 || !code.chars().all(|c| c.is_ascii_alphanumeric()) {
+        return Err(IdxError::Usage(format!(
+            "{:?} is not a broker code; codes are two characters such as YP or CC (see `idx market members`)",
+            opts.code
+        )));
+    }
+    let (candidates, mut out) = scan_candidates(p, universe, &opts.symbols, opts.scan).await?;
+    let quotes = std::mem::take(&mut out.data);
+    out.warnings.retain(|w| !w.contains("returned no quote"));
+    let name = brokers::name(&code);
+    if name.is_none() {
+        out.warnings
+            .push(format!("{code} is not on the bundled exchange-member list"));
+    }
+    let end = scan_end(fetcher, &candidates, today).await?;
+    let from = opts.period.start(end);
+    let fetched = scan_summaries(fetcher, &candidates, from, end, today).await;
+
+    let mut failed = 0usize;
+    let mut checked = 0usize;
+    let mut bought = Vec::new();
+    let mut sold = Vec::new();
+    for (sym, r) in fetched {
+        match r {
+            Ok(mut s) if !s.data.is_empty() => {
+                out.absorb(&s);
+                checked += 1;
+                fill_names(&mut s.data, universe);
+                if s.data.name.is_none() {
+                    s.data.name = quotes
+                        .iter()
+                        .find(|x| x.symbol == sym)
+                        .and_then(|x| x.name.clone());
+                }
+                let buy = s.data.buyers.iter().find(|f| f.code == code);
+                let sell = s.data.sellers.iter().find(|f| f.code == code);
+                if let Some(b) = buy {
+                    bought.push(stock_row(&s.data, b, sell, true));
+                }
+                if let Some(x) = sell {
+                    sold.push(stock_row(&s.data, x, buy, false));
+                }
+            }
+            Ok(_) => {}
+            Err(e) => {
+                tracing::debug!(symbol = %sym, error = %e, "no broker summary");
+                failed += 1;
+            }
+        }
+    }
+    let by_value = |a: &BrokerStockRow, b: &BrokerStockRow| {
+        b.value
+            .partial_cmp(&a.value)
+            .unwrap_or(std::cmp::Ordering::Equal)
+    };
+    bought.sort_by(by_value);
+    sold.sort_by(by_value);
+    let bought_value = bought.iter().filter_map(|r| r.value).sum();
+    let sold_value = sold.iter().filter_map(|r| r.value).sum();
+    if opts.limit > 0 {
+        bought.truncate(opts.limit);
+        sold.truncate(opts.limit);
+    }
+    if failed > 0 {
+        out.warnings.push(format!(
+            "{failed} of {} scanned tickers had no broker summary",
+            candidates.len()
+        ));
+    }
+    let mut out = out.map(|_| BrokerActivity {
+        code,
+        name,
+        period: opts.period.as_str().to_string(),
+        from,
+        to: end,
+        scanned: candidates.len(),
+        checked,
+        failed,
+        bought_value,
+        sold_value,
+        bought,
+        sold,
     });
     out.provider = ipot::NAME;
     Ok(out)
@@ -2041,6 +2218,82 @@ mod tests {
             .await
             .unwrap_err();
             assert_eq!(err.exit_code(), 2);
+        }
+
+        #[tokio::test]
+        async fn broker_activity_finds_one_member_across_the_scan() {
+            let be = days()
+                .route("code=BRPT&start=10/12/2026&end=10/16/2026", 200, BRPT)
+                .route("code=TLKM&start=10/12/2026&end=10/16/2026", 200, TLKM);
+            let (f, _be, _d) = fetcher(be);
+            let opts = BrokerActivityOptions {
+                code: " yp ".into(),
+                period: BandarPeriod::Week1,
+                scan: 100,
+                symbols: syms(&["BBCA", "BRPT", "TLKM"]),
+                limit: 0,
+            };
+            let got = bandar_broker(&Prices, &f, &[], &opts, d(10, 18))
+                .await
+                .unwrap();
+            assert_eq!(got.provider, "ipot");
+            let a = &got.data;
+            assert_eq!(a.code, "YP");
+            assert_eq!(a.name.as_deref(), Some("MIRAE ASSET SEKURITAS INDONESIA"));
+            assert_eq!((a.from, a.to), (d(10, 12), d(10, 16)));
+            assert_eq!((a.scanned, a.checked, a.failed), (3, 3, 0));
+            // YP: a top-ten buyer of BBCA and TLKM, a top-ten seller of BRPT and TLKM.
+            let mut bought: Vec<&str> = a.bought.iter().map(|r| r.symbol.as_str()).collect();
+            bought.sort();
+            assert_eq!(bought, ["BBCA", "TLKM"]);
+            let mut sold: Vec<&str> = a.sold.iter().map(|r| r.symbol.as_str()).collect();
+            sold.sort();
+            assert_eq!(sold, ["BRPT", "TLKM"]);
+            let v = |r: &BrokerStockRow| r.value.unwrap();
+            assert!(a.bought.windows(2).all(|w| v(&w[0]) >= v(&w[1])));
+            let bbca = a
+                .bought
+                .iter()
+                .find(|r| r.symbol.as_str() == "BBCA")
+                .unwrap();
+            assert_eq!(bbca.rank, 9);
+            assert_eq!((bbca.opposite_value, bbca.net_value), (None, None));
+            assert!(bbca.share_pct.unwrap() > 0.0 && bbca.share_pct.unwrap() < 100.0);
+            let tb = a
+                .bought
+                .iter()
+                .find(|r| r.symbol.as_str() == "TLKM")
+                .unwrap();
+            let ts = a.sold.iter().find(|r| r.symbol.as_str() == "TLKM").unwrap();
+            assert_eq!(tb.opposite_value, ts.value);
+            assert_eq!(
+                tb.net_value, ts.net_value,
+                "net is buy minus sell on both sides"
+            );
+            assert_eq!(tb.net_value, Some(v(tb) - v(ts)));
+            let total: f64 = a.bought.iter().map(v).sum();
+            assert!((a.bought_value - total).abs() < 1e-6);
+
+            let bad = BrokerActivityOptions {
+                code: "MIRAE".into(),
+                ..opts.clone()
+            };
+            assert_eq!(
+                bandar_broker(&Prices, &f, &[], &bad, d(10, 18))
+                    .await
+                    .unwrap_err()
+                    .exit_code(),
+                2
+            );
+            let limited = BrokerActivityOptions { limit: 1, ..opts };
+            let got = bandar_broker(&Prices, &f, &[], &limited, d(10, 18))
+                .await
+                .unwrap();
+            assert_eq!((got.data.bought.len(), got.data.sold.len()), (1, 1));
+            assert!(
+                (got.data.bought_value - total).abs() < 1e-6,
+                "sums cover every row"
+            );
         }
     }
 }
