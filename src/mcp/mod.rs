@@ -35,7 +35,7 @@ use crate::output::json::{
 };
 use crate::output::json::{
     SCHEMA_ACTIONS, SCHEMA_CALENDAR, SCHEMA_FOREIGN, SCHEMA_INDICES, SCHEMA_INSTRUMENTS,
-    SCHEMA_MARKET_FOREIGN, SCHEMA_MEMBERS,
+    SCHEMA_MARKET_BROKERS, SCHEMA_MARKET_FOREIGN, SCHEMA_MEMBERS,
 };
 use crate::output::json::{
     SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS, SCHEMA_NEWS,
@@ -239,6 +239,19 @@ pub struct ForeignArgs {
     /// Latest sessions to return, 1-250 (default 20).
     #[serde(default)]
     pub days: Option<u32>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct MarketBrokersArgs {
+    /// Trading day, YYYY-MM-DD. Default: the latest session published.
+    #[serde(default)]
+    pub date: Option<String>,
+    /// Rows (default 20; 0 for every member).
+    #[serde(default)]
+    pub top: Option<u32>,
+    /// Ranking figure: "value" (default), "volume" or "frequency".
+    #[serde(default)]
+    pub sort: Option<String>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -744,6 +757,32 @@ impl IdxServer {
                 ok(
                     SCHEMA_FOREIGN,
                     service::foreign_flow(&self.fetcher, &list, &symbol, days).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_market_brokers",
+        description = "Top brokers: every IDX exchange member's trading for one session from idx.co.id's daily broker summary (default: the latest published), ranked by value (default), volume or frequency, each with code, member name, value (IDR), volume (shares), frequency and its share of all members' value. A member's buying and selling count together, so all members' value is twice the market's. For which stocks one broker traded use idx_bandar_broker; for one stock's brokers idx_broker. Returns the idx.market.brokers.v1 envelope."
+    )]
+    async fn market_brokers(
+        &self,
+        Parameters(a): Parameters<MarketBrokersArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                ok(
+                    SCHEMA_MARKET_BROKERS,
+                    service::market_brokers(
+                        &self.fetcher,
+                        parse_date(&a.date)?,
+                        a.top.unwrap_or(20) as usize,
+                        parse_opt(&a.sort, crate::model::BrokerSort::Value)?,
+                        service::today_wib(),
+                    )
+                    .await?,
                 )
             }
             .await,
@@ -1442,6 +1481,7 @@ mod tests {
                 "idx_indices",
                 "idx_instruments",
                 "idx_market",
+                "idx_market_brokers",
                 "idx_market_foreign",
                 "idx_members",
                 "idx_news",

@@ -12,7 +12,7 @@ use crate::model::{
     InstrumentList, MarketOverview, MemberList, NewsReport, Performance, Profile, Quote, Release,
     ScreenReport, SentimentReport, Technical, Watchlist,
 };
-use crate::model::{ForeignFlow, MarketForeign};
+use crate::model::{BrokerRanking, ForeignFlow, MarketForeign};
 use crate::providers::Sourced;
 
 /// Stable wrapper. `schema` names the payload shape and is versioned
@@ -72,6 +72,7 @@ pub const SCHEMA_CALENDAR: &str = "idx.calendar.v1";
 pub const SCHEMA_ACTIONS: &str = "idx.actions.v1";
 pub const SCHEMA_FOREIGN: &str = "idx.foreign.v1";
 pub const SCHEMA_MARKET_FOREIGN: &str = "idx.market.foreign.v1";
+pub const SCHEMA_MARKET_BROKERS: &str = "idx.market.brokers.v1";
 pub const SCHEMA_TECHNICAL: &str = "idx.technical.v1";
 pub const SCHEMA_SCREEN: &str = "idx.screen.v1";
 pub const SCHEMA_NEWS: &str = "idx.news.v1";
@@ -108,6 +109,7 @@ pub type CalendarEnvelope = Envelope<Calendar>;
 pub type ActionsEnvelope = Envelope<CorporateActions>;
 pub type ForeignEnvelope = Envelope<ForeignFlow>;
 pub type MarketForeignEnvelope = Envelope<MarketForeign>;
+pub type MarketBrokersEnvelope = Envelope<BrokerRanking>;
 pub type TechnicalEnvelope = Envelope<Technical>;
 pub type ScreenEnvelope = Envelope<ScreenReport>;
 pub type NewsEnvelope = Envelope<NewsReport>;
@@ -179,6 +181,7 @@ pub fn schema_names() -> &'static [&'static str] {
         "actions",
         "foreign",
         "market-foreign",
+        "market-brokers",
         "technical",
         "screen",
         "news",
@@ -222,6 +225,7 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "actions" => schemars::schema_for!(ActionsEnvelope),
         "foreign" => schemars::schema_for!(ForeignEnvelope),
         "market-foreign" => schemars::schema_for!(MarketForeignEnvelope),
+        "market-brokers" => schemars::schema_for!(MarketBrokersEnvelope),
         "technical" => schemars::schema_for!(TechnicalEnvelope),
         "screen" => schemars::schema_for!(ScreenEnvelope),
         "news" => schemars::schema_for!(NewsEnvelope),

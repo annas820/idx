@@ -4,10 +4,10 @@ use chrono::Datelike;
 use clap::Subcommand;
 
 use crate::error::Result;
-use crate::model::{CalendarCategory, ForeignSort, Symbol};
+use crate::model::{BrokerSort, CalendarCategory, ForeignSort, Symbol};
 use crate::output::json::{
-    SCHEMA_CALENDAR, SCHEMA_HOLIDAYS, SCHEMA_INDICES, SCHEMA_MARKET, SCHEMA_MARKET_FOREIGN,
-    SCHEMA_MEMBERS,
+    SCHEMA_CALENDAR, SCHEMA_HOLIDAYS, SCHEMA_INDICES, SCHEMA_MARKET, SCHEMA_MARKET_BROKERS,
+    SCHEMA_MARKET_FOREIGN, SCHEMA_MEMBERS,
 };
 use crate::output::table_exchange as tx;
 use crate::output::table_reports as reports;
@@ -62,6 +62,21 @@ pub enum MarketCmd {
         /// Ranking figure.
         #[arg(long, value_enum, default_value_t = ForeignSort::Value)]
         sort: ForeignSort,
+    },
+    /// Exchange members ranked by the day's value, volume or frequency (top brokers).
+    #[command(
+        after_help = "Examples:\n  idx market brokers\n  idx market brokers --top 20 --sort frequency\n  idx market brokers --date 2026-10-16 --top 0\n  idx -o json market brokers | jq '.data.brokers[:3]'\n\nFrom idx.co.id's daily broker summary, latest session by default. Each member's buying and\nselling count together, so all members' value is twice the market's. Which stocks a broker\ntraded: `idx bandar broker CODE`; one stock's brokers: `idx broker SYMBOL`."
+    )]
+    Brokers {
+        /// Trading day, YYYY-MM-DD. Default: the latest session.
+        #[arg(long, short = 'd', value_name = "DATE")]
+        date: Option<chrono::NaiveDate>,
+        /// Rows; 0 for every member.
+        #[arg(long, short = 'n', default_value_t = 20)]
+        top: usize,
+        /// Ranking figure.
+        #[arg(long, value_enum, default_value_t = BrokerSort::Value)]
+        sort: BrokerSort,
     },
     /// Exchange members (Anggota Bursa): broker codes, names and licences.
     #[command(
@@ -150,6 +165,14 @@ pub async fn run(ctx: &Context, cmd: MarketCmd) -> Result<()> {
                     .await?;
             emit(ctx, SCHEMA_MARKET_FOREIGN, result, |d| {
                 tx::market_foreign(d, ctx.color)
+            })
+        }
+        MarketCmd::Brokers { date, top, sort } => {
+            let result =
+                service::market_brokers(&ctx.fetcher, date, top, sort, service::today_wib())
+                    .await?;
+            emit(ctx, SCHEMA_MARKET_BROKERS, result, |d| {
+                tx::market_brokers(d, ctx.color)
             })
         }
         MarketCmd::Members { search } => {

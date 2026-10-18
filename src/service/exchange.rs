@@ -11,6 +11,7 @@ use crate::brokers;
 use crate::error::{IdxError, Result};
 use crate::holidays;
 use crate::http::Fetcher;
+use crate::model::{BrokerDayRow, BrokerRanking, BrokerSort};
 use crate::model::{
     Calendar, CalendarCategory, CalendarEvent, Holidays, IndexBoard, Instrument, InstrumentList,
     Member, MemberList,
@@ -574,6 +575,72 @@ pub async fn market_foreign(
     Ok(s.map(|_| out))
 }
 
+/// Every exchange member's trading for one session (default: the latest
+/// published), ranked by value, volume or frequency; the `top` first (0 =
+/// all). Each member's figures count both its buying and its selling.
+pub async fn market_brokers(
+    fetcher: &Arc<Fetcher>,
+    date: Option<NaiveDate>,
+    top: usize,
+    sort: BrokerSort,
+    today: NaiveDate,
+) -> Result<Sourced<BrokerRanking>> {
+    let (day, mut s) = session(date, today, |d| idx::broker_summary(fetcher, d, today)).await?;
+    let raw = std::mem::take(&mut s.data);
+    let total_value: f64 = raw.iter().filter_map(|r| r.value).sum();
+    let total_volume: f64 = raw.iter().filter_map(|r| r.volume).sum();
+    let total_frequency: f64 = raw.iter().filter_map(|r| r.frequency).sum();
+    let mut rows: Vec<BrokerDayRow> = raw
+        .into_iter()
+        .map(|r| BrokerDayRow {
+            rank: 0,
+            code: r.code.trim().to_ascii_uppercase(),
+            name: r
+                .name
+                .map(|n| n.trim().to_string())
+                .filter(|n| !n.is_empty()),
+            volume: r.volume,
+            value: r.value,
+            frequency: r.frequency,
+            value_share_pct: r
+                .value
+                .filter(|_| total_value > 0.0)
+                .map(|v| v / total_value * 100.0),
+        })
+        .collect();
+    let key = |r: &BrokerDayRow| {
+        match sort {
+            BrokerSort::Value => r.value,
+            BrokerSort::Volume => r.volume,
+            BrokerSort::Frequency => r.frequency,
+        }
+        .unwrap_or(f64::NEG_INFINITY)
+    };
+    rows.sort_by(|a, b| {
+        key(b)
+            .partial_cmp(&key(a))
+            .unwrap_or(std::cmp::Ordering::Equal)
+            .then_with(|| a.code.cmp(&b.code))
+    });
+    for (i, r) in rows.iter_mut().enumerate() {
+        r.rank = i as u32 + 1;
+    }
+    let members = rows.len();
+    if top > 0 {
+        rows.truncate(top);
+    }
+    let out = BrokerRanking {
+        date: day,
+        members,
+        total_volume,
+        total_value,
+        total_frequency,
+        sort,
+        brokers: rows,
+    };
+    Ok(s.map(|_| out))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -933,5 +1000,52 @@ mod tests {
             .windows(2)
             .all(|w| n(&w[0]) >= n(&w[1])));
         assert_eq!(by_shares.data.sort, ForeignSort::Shares);
+    }
+
+    const BROKERS: &str = include_str!("../../tests/fixtures/idx/brokersummary_20261016.json");
+
+    #[tokio::test]
+    async fn market_brokers_rank_members_with_value_shares() {
+        let (f, _be, _d) =
+            fetcher(FixtureBackend::new().route("GetBrokerSummary?date=20261016", 200, BROKERS));
+        let s = market_brokers(
+            &f,
+            Some(d(2026, 10, 16)),
+            5,
+            BrokerSort::Value,
+            d(2026, 10, 18),
+        )
+        .await
+        .unwrap();
+        let r = &s.data;
+        assert_eq!(r.members, 88);
+        assert_eq!(r.brokers.len(), 5);
+        assert_eq!(r.brokers[0].rank, 1);
+        let v = |x: &BrokerDayRow| x.value.unwrap();
+        assert!(r.brokers.windows(2).all(|w| v(&w[0]) >= v(&w[1])));
+        assert!((r.total_value - 64_027_626_516_936.0).abs() < 1.0);
+        let pct = r.brokers[0].value_share_pct.unwrap();
+        assert!((pct - v(&r.brokers[0]) / r.total_value * 100.0).abs() < 1e-9);
+
+        let all = market_brokers(
+            &f,
+            Some(d(2026, 10, 16)),
+            0,
+            BrokerSort::Frequency,
+            d(2026, 10, 18),
+        )
+        .await
+        .unwrap();
+        assert_eq!(all.data.brokers.len(), 88);
+        let share: f64 = all
+            .data
+            .brokers
+            .iter()
+            .filter_map(|b| b.value_share_pct)
+            .sum();
+        assert!((share - 100.0).abs() < 1e-6);
+        let fr = |x: &BrokerDayRow| x.frequency.unwrap();
+        assert!(all.data.brokers.windows(2).all(|w| fr(&w[0]) >= fr(&w[1])));
+        assert_eq!(all.data.brokers.last().unwrap().rank, 88);
     }
 }

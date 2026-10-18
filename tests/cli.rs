@@ -623,6 +623,51 @@ fn foreign_commands_read_the_exchange_summaries() {
 }
 
 #[test]
+fn market_brokers_rank_the_members() {
+    let sb = sandbox();
+    seed(
+        &sb.cache,
+        "https://www.idx.co.id/primary/TradingSummary/GetBrokerSummary?date=20261016&start=0&length=9999",
+        "idx/brokersummary_20261016.json",
+    );
+    idx(&sb.cache, &sb.config)
+        .args(["market", "brokers", "--date", "2026-10-16", "--top", "5"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("88 active · by value"))
+        .stdout(predicate::str::contains("twice the market's"));
+    let out = idx(&sb.cache, &sb.config)
+        .args([
+            "-o",
+            "json",
+            "market",
+            "brokers",
+            "--date",
+            "2026-10-16",
+            "--top",
+            "0",
+            "--sort",
+            "volume",
+        ])
+        .output()
+        .unwrap();
+    assert!(out.status.success());
+    let v: serde_json::Value = serde_json::from_slice(&out.stdout).unwrap();
+    assert_eq!(v["schema"], "idx.market.brokers.v1");
+    assert_eq!(v["data"]["sort"], "volume");
+    assert_eq!(v["data"]["brokers"].as_array().unwrap().len(), 88);
+    assert_eq!(v["data"]["brokers"][0]["rank"], 1);
+    idx(&sb.cache, &sb.config)
+        .args(["market", "brokers", "--sort", "lots"])
+        .assert()
+        .code(2);
+    idx(&sb.cache, &sb.config)
+        .args(["market", "brokers", "--date", "2026-10-18"])
+        .assert()
+        .code(5);
+}
+
+#[test]
 fn bandar_command_surface() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

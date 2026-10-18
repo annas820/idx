@@ -6,10 +6,55 @@
 use comfy_table::{Attribute, Cell};
 
 use crate::model::{ActionKind, CorporateActions};
+use crate::model::{BrokerRanking, BrokerSort};
 use crate::model::{Calendar, CalendarCategory, Holidays, IndexBoard, InstrumentList, MemberList};
 use crate::model::{ForeignFlow, ForeignRow, ForeignSort, MarketForeign};
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
+
+/// Exchange members ranked for one session.
+pub fn market_brokers(r: &BrokerRanking, _color: bool) -> String {
+    let by = match r.sort {
+        BrokerSort::Value => "value",
+        BrokerSort::Volume => "volume",
+        BrokerSort::Frequency => "frequency",
+    };
+    let mut out = format!(
+        "Exchange members · {} · {} active · by {by} · all members' value {} (both sides)\n",
+        r.date,
+        r.members,
+        f::compact(Some(r.total_value)),
+    );
+    let mut t = base_table(false);
+    t.set_header(header(&[
+        "#",
+        "Code",
+        "Member",
+        "Value",
+        "Share",
+        "Volume",
+        "Frequency",
+    ]));
+    for b in &r.brokers {
+        t.add_row(vec![
+            right(b.rank.to_string()),
+            Cell::new(&b.code).add_attribute(Attribute::Bold),
+            Cell::new(f::clip(b.name.as_deref().unwrap_or(f::DASH), 34)),
+            right(f::compact(b.value)),
+            right(
+                b.value_share_pct
+                    .map(|p| format!("{}%", f::num(p, 2)))
+                    .unwrap_or_else(|| f::DASH.to_string()),
+            ),
+            right(f::compact(b.volume)),
+            right(f::compact(b.frequency)),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+    out.push_str("Each member's buying and selling together, as idx.co.id publishes them; shares sum to 100% of all members' value, which is twice the market's.\n");
+    out
+}
 
 /// One stock's foreign buying and selling, newest session first.
 pub fn foreign_flow(fl: &ForeignFlow, color: bool) -> String {
