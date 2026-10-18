@@ -7,6 +7,7 @@ import * as an from "./analysis.js";
 import * as ex from "./extras.js";
 import * as ipot from "./ipot.js";
 import * as bd from "./bandar.js";
+import * as hol from "./holidays.js";
 import { fetchWithin } from "./net.js";
 import { scanRows, scanStatus } from "./bandar-scan.js";
 import { syncStatus } from "./ownership-sync.js";
@@ -507,6 +508,40 @@ export async function broker(env, symbolsRaw, dateRaw, fromRaw, toRaw, investor 
   return envelope("idx.broker.v1", data, { provider: ipot.NAME, cached: cachedAll, stale, fetched_at: fetched, warnings });
 }
 
+// ---- corporate actions and holidays ------------------------------------
+
+/** Days `actions` reaches back without `since`, like the CLI. */
+const ACTIONS_DEFAULT_DAYS = 365;
+
+export async function actions(env, symbolRaw, sinceRaw) {
+  const symbol = parseSymbol(symbolRaw);
+  if (symbol.startsWith("^")) throw usage(`${symbol} is an index; corporate actions belong to stocks`);
+  const since = isoDate(sinceRaw, "since") || addDays(wibToday(), -ACTIONS_DEFAULT_DAYS);
+  // Announcements are added and confirmed through the day.
+  const r = await cached(env, `ipotca:${symbol}:${since}`, 6 * 3600, async () => {
+    let html;
+    try { html = await ipot.fetchPage(ipot.actionsUrl(symbol, since)); } catch (e) { throw provider(`ipot: corporate actions for ${symbol}: ${e.message}`); }
+    const p = ipot.parseActions(html);
+    if (p.invalid) throw notFound(`${symbol} is not a stock code IPOT knows`);
+    return p;
+  });
+  const p = r.value;
+  const data = { symbol, name: NAME_BY_SYMBOL.get(symbol) || null, since, actions: p.actions, meetings: p.meetings, warrants_rights: p.warrants_rights };
+  return envelope("idx.actions.v1", data, { provider: ipot.NAME, cached: r.cached, stale: r.stale, fetched_at: r.fetched_at, warnings: r.warning ? [r.warning] : [] });
+}
+
+export function holidays(yearRaw, allRaw, upcomingRaw) {
+  const truthy = (v) => v === "1" || v === "true" || v === true;
+  const today = wibToday();
+  let year = null;
+  if (!truthy(allRaw)) {
+    year = yearRaw == null || yearRaw === "" ? Number(today.slice(0, 4)) : Number(yearRaw);
+    if (!Number.isInteger(year) || year < 1990 || year > 2100) throw usage(`year ${yearRaw} is out of range`);
+  }
+  const { data, warnings } = hol.holidays(year, truthy(upcomingRaw), today);
+  return envelope("idx.holidays.v1", data, { provider: "bundled", cached: true, warnings });
+}
+
 // ---- bandarmology ------------------------------------------------------
 
 const BANDAR_WEB_MAX_SYMBOLS = 5;
@@ -814,6 +849,8 @@ export async function route(env, url) {
     case "/bandar": return bandar(env, q.get("symbols") || q.get("symbol"), q.get("period"), q.get("date"), q.get("from"), q.get("to"), q.get("top"), q.get("investor") || "all", q.get("board") || "all", q.get("daily"));
     case "/bandar/screen": return bandarScreen(env, q.get("preset"), q.get("filter"), q.get("period"), q.get("top"), q.get("sort"), q.get("asc"), q.get("limit"));
     case "/bandar/status": return envelope("idx.bandar.scan.v1", await scanStatus(env), { provider: ipot.NAME, cached: true });
+    case "/actions": return actions(env, q.get("symbol"), q.get("since"));
+    case "/holidays": return holidays(q.get("year"), q.get("all"), q.get("upcoming"));
     case "/ownership/ticker": return ownershipTicker(env, q.get("symbol"), q.get("as_of"));
     case "/ownership/entity": return ownershipEntity(env, q.get("name"), q.get("as_of"));
     case "/ownership/changes": return ownershipChanges(env, q.get("from"), q.get("to"), q.get("symbol"), num(q.get("min_change"), 0), num(q.get("limit"), 50), num(q.get("offset"), 0));

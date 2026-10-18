@@ -285,7 +285,9 @@ or Microsoft.
 browser, no install: `brief BBCA`, `quote BBCA,BBRI`, `returns BBCA BBRI`,
 `screen pe<10,div>5,mcap>5T --sort div`, `news ASII`, `ownership ticker BBCA`,
 `ownership foreign`, `bandar BBCA --daily`, `bandar screen --preset
-big-accumulation`. `quote` with one symbol also draws a price chart (1D, 5D,
+big-accumulation`, `actions BBCA`, `holidays --upcoming`. The idx.co.id
+commands (foreign flow, top brokers, the calendar, indices) are CLI and MCP
+only, because idx.co.id refuses requests from Cloudflare Workers. `quote` with one symbol also draws a price chart (1D, 5D,
 1M, 6M, YTD, 1Y, 5Y) with volume, the previous close and a crosshair readout.
 The web `bandar screen` reads a scan the Worker runs after each close over the
 session's 100 most traded stocks; the CLI scans live.

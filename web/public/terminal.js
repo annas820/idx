@@ -26,7 +26,9 @@ const COMMANDS = [
   { name: "sentiment", usage: "sentiment <SYMBOL>", help: "lexicon sentiment over matching headlines" },
   { name: "broker", usage: "broker <SYMBOLS> [--date D | --from D --to D] [--investor foreign|domestic] [--board regular|cash|negotiated]", help: "which brokers bought and sold it: top 10 per side ranked by lots (IPOT), latest session by default" },
   { name: "bandar", usage: "bandar <SYMBOLS> [--period 1d|1w|1m|3m] [--top 1|3|5|10] [--daily] [--date D | --from D --to D] | bandar screen [--preset P] [--filter F] [--period P] [--sort KEY] [--limit N]", help: "bandarmology: are the top brokers accumulating or distributing? screen presets: big-accumulation, accumulation, distribution, big-distribution, quiet-accumulation, quiet-distribution, foreign-accumulation, below-bandar" },
+  { name: "actions", usage: "actions <SYMBOL> [--since YYYY-MM-DD]", help: "corporate actions (dividends, splits, bonus, rights with ratio and cum/ex/payment dates), RUPS, warrants and rights; upcoming included (IPOT)" },
   { name: "market", usage: "market", help: "IHSG, breadth, gainers, losers, most traded" },
+  { name: "holidays", usage: "holidays [YEAR] [--all] [--upcoming]", help: "IDX trading holidays, the year's trading days, whether today is a trading day and the next one" },
   { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] [--offset N] | foreign [SYMBOL] | releases", help: "KSEI holders above 1 %, synced monthly from IDX: holders, entities, monthly changes with a summary, foreign vs local" },
   { name: "json", usage: "json <command…>", help: "print the raw JSON envelope of any command" },
   { name: "help", usage: "help [command]", help: "this list" },
@@ -374,6 +376,49 @@ const R = {
     frag.append(el("p", { class: "warn", text: `Source: IPOT broker summary, top 10 buyers and sellers ranked by lots. One lot = 100 shares.${list.some((s) => s.rounded) ? " The source rounds figures of a million and more to one decimal." : ""}` }));
     return frag;
   },
+  actions(c) {
+    const frag = document.createDocumentFragment();
+    const KIND = { cash_dividend: "cash dividend", stock_dividend: "stock dividend", stock_split: "stock split", reverse_split: "reverse split", bonus: "bonus shares", rights_issue: "rights issue", warrant: "warrant", other: "other" };
+    frag.append(el("p", { class: "prose", html: `<b>${c.symbol}</b>${c.name ? ` · ${c.name}` : ""} · since ${c.since}` }));
+    frag.append(el("h3", { class: "stmt-title", text: "Corporate actions" }));
+    if (!c.actions.length) frag.append(el("p", { class: "warn", text: "None in this period." }));
+    else frag.append(wrapScroll(table([
+      { h: "Action", f: (a) => KIND[a.kind] || a.label, l: true, cls: "sym" },
+      { h: "Amount", f: (a) => fmt.price(a.amount) },
+      { h: "Ratio", f: (a) => (a.ratio_old != null && a.ratio_new != null ? `${fmt.price(a.ratio_old)}:${fmt.price(a.ratio_new)}` : "—") },
+      { h: "Cum", f: (a) => a.cum_date || "—", l: true }, { h: "Ex", f: (a) => a.ex_date || "—", l: true },
+      { h: "Recording", f: (a) => a.recording_date || "—", l: true }, { h: "Payment", f: (a) => a.distribution_date || "—", l: true },
+      { h: "Status", f: (a) => a.status || "—", l: true },
+    ], c.actions)));
+    frag.append(el("h3", { class: "stmt-title", text: "Shareholders' meetings (RUPS)" }));
+    if (!c.meetings.length) frag.append(el("p", { class: "warn", text: "None in this period." }));
+    else frag.append(wrapScroll(table([
+      { h: "Date", f: (m) => m.date || "—", l: true, cls: "sym" }, { h: "Time", f: (m) => m.time || "—", l: true },
+      { h: "Status", f: (m) => m.status || "—", l: true }, { h: "Venue", f: (m) => m.venue || "—", l: true, cls: "name" },
+    ], c.meetings)));
+    if (c.warrants_rights.length) {
+      frag.append(el("h3", { class: "stmt-title", text: "Warrants and rights" }));
+      frag.append(wrapScroll(table([
+        { h: "Code", k: "code", l: true, cls: "sym" }, { h: "Type", k: "kind", l: true },
+        { h: "Exercise", f: (w) => fmt.price(w.exercise_price) }, { h: "Issued", f: (w) => fmt.compact(w.shares) },
+        { h: "Listing", f: (w) => w.listing_date || "—", l: true }, { h: "Maturity", f: (w) => w.maturity_date || "—", l: true },
+        { h: "Status", f: (w) => w.status || "—", l: true },
+      ], c.warrants_rights)));
+    }
+    frag.append(el("p", { class: "warn", text: "Amount: IDR per share (the dividend, or a rights issue's exercise price). Ratio: old:new. Source: IPOT; json actions … carries each announcement and RUPS agenda." }));
+    return frag;
+  },
+  holidays(h) {
+    const frag = document.createDocumentFragment();
+    frag.append(el("p", { class: "prose", html: `<b>IDX trading holidays${h.year != null ? ` ${h.year}` : ""}</b>${h.trading_days != null ? ` · ${h.trading_days} trading days` : ""} · today ${h.today} is ${h.today_is_trading_day ? "a trading day" : "not a trading day"} · next trading day ${h.next_trading_day}` }));
+    if (!h.holidays.length) frag.append(el("p", { class: "warn", text: "No holidays listed." }));
+    else frag.append(wrapScroll(table([
+      { h: "Date", k: "date", l: true, cls: "sym" }, { h: "Day", k: "weekday", l: true },
+      { h: "Holiday", k: "name", l: true, cls: "name" }, { h: "English", f: (d) => d.name_en || "—", l: true },
+    ], h.holidays)));
+    frag.append(el("p", { class: "warn", text: `Covers ${h.years_covered.join(", ")}, from the calendar idx.co.id publishes. Weekend holidays are not listed; IDX can add a holiday later.` }));
+    return frag;
+  },
   sentiment(s) {
     const frag = document.createDocumentFragment();
     const cls = s.label === "positive" ? "up" : s.label === "negative" ? "dn" : "";
@@ -473,6 +518,14 @@ async function run(line) {
       break;
     }
     case "market": env = await api("market"); render = R.market; break;
+    case "actions": need(pos, 1, cmd.usage); env = await api(`actions?${qs({ symbol: sym(), since: opt.since })}`); render = R.actions; break;
+    case "holidays": {
+      // `holidays --upcoming 2027`: the flag parser hands the year to the flag.
+      const year = pos[0] || [opt.upcoming, opt.all].find((v) => typeof v === "string" && /^\d{4}$/.test(v)) || opt.year;
+      env = await api(`holidays?${qs({ year, all: opt.all ? "1" : null, upcoming: opt.upcoming ? "1" : null })}`);
+      render = R.holidays;
+      break;
+    }
     case "ownership": {
       const sub = (pos[0] || "").toLowerCase();
       if (sub === "ticker") { need(pos, 2, cmd.usage); env = await api(`ownership/ticker?${qs({ symbol: pos[1], as_of: opt["as-of"] })}`); render = R.holders; }
@@ -548,7 +601,7 @@ input.addEventListener("keydown", (ev) => {
 });
 
 // hints + deep links (?cmd=)
-const SAMPLE = ["market", "brief BBCA", "quote BBCA", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "bandar BBCA --daily", "bandar screen --preset big-accumulation", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
+const SAMPLE = ["market", "brief BBCA", "quote BBCA", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "bandar BBCA --daily", "bandar screen --preset big-accumulation", "actions BBCA", "holidays --upcoming", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
 document.getElementById("hints").append(...SAMPLE.map((s) => el("button", { type: "button", text: s, onclick: () => { hist.push(s); hIdx = hist.length; execute(s); } })));
 
 api("market").then((m) => { dateline.textContent = `${fmt.wib(m.data.as_of || m.data.refreshed_at)} · ${m.data.market_open ? "market open" : "market closed"} · ${m.data.quoted} quoted`; }).catch(() => { dateline.textContent = "snapshot unavailable"; });

@@ -6,8 +6,14 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
   plain HTML/CSS/ES modules, no build step.
 - `src/worker.js` entry: host check, security headers, `/api/*`, cron.
 - `src/api.js` endpoints returning the CLI's JSON envelopes; D1-backed cache.
-- `src/ipot.js` the IPOT broker summary (port of `src/providers/ipot`, names
-  from `src/brokers.json`, generated from `data/brokers.csv`).
+- `src/ipot.js` the IPOT broker summary and corporate actions (port of
+  `src/providers/ipot`, names from `src/brokers.json`, generated from
+  `data/brokers.csv`).
+- `src/holidays.js` the trading holidays (port of `src/holidays.rs`;
+  `src/holidays.json` is `data/holidays.csv`, kept equal by a test).
+  The idx.co.id commands (foreign flow, market brokers, calendar, indices,
+  stock list, members) stay CLI and MCP only: idx.co.id refuses requests from
+  Cloudflare Workers.
 - `src/bandar.js` the bandarmology rules (port of `src/analysis/bandar.rs`,
   the same reasons text pinned in both test suites); `src/bandar-scan.js` the
   nightly scan behind `bandar screen`: from 16:45 WIB on a session day the
@@ -31,7 +37,7 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
 - Endpoints under `/api`: `market`, `quote`, `history`, `profile`,
   `fundamental`, `earnings`, `financials`, `dividends`, `returns`, `technical`,
   `brief`, `compare`, `screen`, `news`, `sentiment`, `broker`, `bandar`,
-  `bandar/screen`, `bandar/status`, `ownership/ticker`,
+  `bandar/screen`, `bandar/status`, `actions`, `holidays`, `ownership/ticker`,
   `ownership/entity`, `ownership/changes`, `ownership/foreign`,
   `ownership/releases`, `universe`.
 - `migrations/` D1 schema. `test/` runs with `node --test web/test/*.mjs`.

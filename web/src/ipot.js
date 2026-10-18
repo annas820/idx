@@ -1,12 +1,14 @@
-// Indo Premier (IPOT) broker summary: the web twin of src/providers/ipot.
-// Same endpoint and parsing rules, tested on the same tests/fixtures/ipot pages.
-// Figures of a million and more arrive abbreviated to one decimal (1.6 M);
-// they keep that precision and set `rounded`. A spurious nginx 404 is retried.
+// Indo Premier (IPOT) broker summary and corporate actions: the web twin of
+// src/providers/ipot. Same endpoints and parsing rules, tested on the same
+// tests/fixtures/ipot pages. Figures of a million and more arrive abbreviated
+// to one decimal (1.6 M); they keep that precision and set `rounded`. A
+// spurious nginx 404 is retried.
 
 import { fetchWithin } from "./net.js";
 
 export const NAME = "ipot";
 const ENDPOINT = "https://www.indopremier.com/module/saham/include/data-brokersummary.php";
+const ACTIONS_ENDPOINT = "https://www.indopremier.com/module/saham/include/corporateaction.php";
 const FD = { all: "all", foreign: "F", domestic: "D" };
 const BOARD = { all: "all", regular: "RG", cash: "TN", negotiated: "NG" };
 const KIND = { local: "local", foreign: "foreign", bumn: "state_owned" };
@@ -72,4 +74,123 @@ export async function fetchPage(u, { attempts = 5, pauseMs = 250, fetchFn = fetc
   }
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.text();
+}
+
+// ---- corporate actions (corporateaction.php) ----------------------------
+
+export function actionsUrl(symbol, since) {
+  return `${ACTIONS_ENDPOINT}?code=${symbol}&start=${mdy(since)}`;
+}
+
+const decode = (s) => s.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+
+/** Tags removed; paragraphs, list items and breaks become line breaks; spaces collapsed; empty lines dropped. */
+function plain(html) {
+  const marked = String(html)
+    .replace(/<(\/p|br|li|\/tr|\/li)\b[^>]*>/gi, "\n")
+    .replace(/<\/(td|th)\b[^>]*>/gi, " ")
+    .replace(/<[^>]*>/g, "");
+  return decode(marked).split("\n").map((l) => l.split(/\s+/).filter(Boolean).join(" ")).filter(Boolean).join("\n");
+}
+
+/** Inner HTML of each top-level <tag> in `html`; nested ones stay inside their parent. */
+function elements(html, tag) {
+  const lower = html.toLowerCase();
+  const open = new RegExp(`<${tag}[\\s>]`, "g");
+  const close = `</${tag}>`;
+  const nextOpen = (from) => { open.lastIndex = from; const m = open.exec(lower); return m ? m.index : -1; };
+  const out = [];
+  let pos = 0;
+  for (;;) {
+    const start = nextOpen(pos);
+    if (start < 0) break;
+    const gt = lower.indexOf(">", start);
+    if (gt < 0) break;
+    const inner = gt + 1;
+    let depth = 1, cur = inner;
+    for (;;) {
+      const o = nextOpen(cur), c = lower.indexOf(close, cur);
+      if (c < 0) return out;
+      if (o >= 0 && o < c) { depth++; cur = o + tag.length + 1; continue; }
+      depth--; cur = c + close.length;
+      if (depth === 0) { out.push(html.slice(inner, c)); break; }
+    }
+    pos = cur;
+  }
+  return out;
+}
+
+function sectionRows(html, heading) {
+  const h = html.indexOf(heading);
+  if (h < 0) return [];
+  const section = html.slice(h);
+  const b = section.indexOf("<tbody>");
+  if (b < 0) return [];
+  let body = section.slice(b + "<tbody>".length);
+  const e = body.indexOf("</tbody>");
+  if (e >= 0) body = body.slice(0, e);
+  return elements(body, "tr");
+}
+
+const cellText = (c) => { if (c == null) return null; const t = plain(c).trim(); return t === "" || t === "-" ? null : t; };
+const cellDate = (c) => { const t = cellText(c); return t && /^\d{4}-\d{2}-\d{2}$/.test(t) ? t : null; };
+const cellNum = (c) => { const t = cellText(c); if (!t) return null; const v = Number(t.replace(/,/g, "")); return Number.isFinite(v) ? v : null; };
+const nonzero = (v) => (v == null || v === 0 ? null : v);
+
+/** The source's label to a kind; it spells "Deviden" as often as "Dividend". */
+export function actionKind(label) {
+  const l = String(label).toLowerCase().replace(/deviden/g, "dividen");
+  if (l.includes("reverse")) return "reverse_split";
+  if (l.includes("split")) return "stock_split";
+  if (l.includes("bonus")) return "bonus";
+  if (l.includes("right") || l.includes("hmetd")) return "rights_issue";
+  if (l.includes("warrant") || l.includes("waran")) return "warrant";
+  const dividend = l.includes("dividen") || l.includes("dividend");
+  if (dividend && l.includes("stock")) return "stock_dividend";
+  if (dividend) return "cash_dividend";
+  return "other";
+}
+
+const dedup = (rows) => { const seen = new Set(); return rows.filter((r) => { const k = JSON.stringify(r); if (seen.has(k)) return false; seen.add(k); return true; }); };
+const newestFirst = (key) => (a, b) => (a[key] === b[key] ? 0 : a[key] == null ? 1 : b[key] == null ? -1 : a[key] < b[key] ? 1 : -1);
+
+/** Parses the "Corporate Action & RUPS" fragment: { invalid: true } or { actions, meetings, warrants_rights }. */
+export function parseActions(html) {
+  html = String(html);
+  if (/^\s*invalid stock code/i.test(html)) return { invalid: true };
+  const cut = html.indexOf('id="detail_ca"');
+  if (cut >= 0) html = html.slice(0, cut);
+  const actions = dedup(sectionRows(html, ">Corporate Actions</h5>").map((row) => {
+    // hidden code, #, type, amount, R1, R2, cum, status, ex, rec, dist, end, text
+    const c = elements(row, "td");
+    if (c.length < 8) return null;
+    const label = cellText(c[2]);
+    if (!label) return null;
+    const kind = actionKind(label), cash = kind === "cash_dividend";
+    return {
+      kind, label, amount: nonzero(cellNum(c[3])),
+      ratio_old: cash ? null : nonzero(cellNum(c[4])), ratio_new: cash ? null : nonzero(cellNum(c[5])),
+      cum_date: cellDate(c[6]), ex_date: cellDate(c[8]), recording_date: cellDate(c[9]), distribution_date: cellDate(c[10]),
+      end_date: cellDate(c[11]), status: cellText(c[7]), details: cellText(c[12]),
+    };
+  }).filter(Boolean)).sort(newestFirst("cum_date"));
+  const meetings = dedup(sectionRows(html, ">RUPS</h5>").map((row) => {
+    // hidden code, #, date, time, status, venue, notice
+    const c = elements(row, "td");
+    if (c.length < 5) return null;
+    return { date: cellDate(c[2]), time: cellText(c[3]), status: cellText(c[4]), venue: cellText(c[5]), agenda: cellText(c[6]) };
+  }).filter(Boolean)).sort(newestFirst("date"));
+  const wr = [...sectionRows(html, ">Warrant &amp; Right</h5>"), ...sectionRows(html, ">Warrant & Right</h5>")];
+  const warrants_rights = dedup(wr.map((row) => {
+    // #, code, W/R, exercise, shares, listing, maturity, status, text
+    const c = elements(row, "td");
+    if (c.length < 8) return null;
+    const code = cellText(c[1]), kind = cellText(c[2]);
+    if (!code || !kind) return null;
+    return {
+      code, kind, exercise_price: nonzero(cellNum(c[3])), shares: nonzero(cellNum(c[4])),
+      listing_date: cellDate(c[5]), maturity_date: cellDate(c[6]), status: cellText(c[7]), details: cellText(c[8]),
+    };
+  }).filter(Boolean)).sort(newestFirst("listing_date"));
+  return { actions, meetings, warrants_rights };
 }
