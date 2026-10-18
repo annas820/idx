@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-10-18
+
 ### Added
 
 - idx.co.id provider (`src/providers/idx/`): the JSON endpoints behind the
@@ -31,6 +33,12 @@ All notable changes to this project are documented here. The format follows
   listed stocks and exchange members from idx.co.id; the last two fall back to
   the bundled lists. MCP `idx_indices`, `idx_instruments`, `idx_members`.
 - 33 MCP tools.
+- Web terminal: `actions`, `holidays`, `bandar broker` (from the nightly scan),
+  `list` and `members` (bundled lists) and `tools`. `help` ends with a button
+  for each of the 33 MCP tools; the five idx.co.id tools show their CLI
+  command, since idx.co.id refuses requests from the Worker.
+- Landing page: a Daftar Perintah table with every MCP tool, its CLI command
+  and a link that runs it in the terminal.
 
 ### Fixed
 
