@@ -8,10 +8,11 @@ use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
-    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES,
-    SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT, SCHEMA_TECHNICAL,
+    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_INSTRUMENTS, SCHEMA_NEWS, SCHEMA_PROFILE,
+    SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT, SCHEMA_TECHNICAL,
 };
 use crate::output::table;
+use crate::output::table_exchange as tx;
 use crate::output::table_news as newstbl;
 use crate::output::table_reports::{self as reports, StatementFlags};
 use crate::service::{self, ScreenOptions};
@@ -208,6 +209,19 @@ pub enum StocksCmd {
         limit: usize,
     },
 
+    /// Listed stocks from idx.co.id: code, name, listing board, listing date and shares.
+    #[command(
+        after_help = "Examples:\n  idx stocks list\n  idx stocks list --search bank\n  idx stocks list --board akselerasi\n  idx -o csv stocks list > stocks.csv\n\nBoards: Utama, Pengembangan, Akselerasi, Ekonomi Baru, Pemantauan Khusus. Without idx.co.id\n(and nothing cached) the bundled universe is listed instead, codes and names only."
+    )]
+    List {
+        /// Listing board, case-insensitive substring (e.g. utama, pengembangan).
+        #[arg(long, value_name = "BOARD")]
+        board: Option<String>,
+        /// Code or name, case-insensitive substring.
+        #[arg(long, short = 's', value_name = "TEXT")]
+        search: Option<String>,
+    },
+
     /// Side-by-side fundamentals for two or more tickers.
     #[command(
         after_help = "Examples:\n  idx stocks compare BBCA BBRI BMRI BBNI\n  idx -o json stocks compare TLKM,ISAT,EXCL | jq '.data[].valuation.pe_trailing'"
@@ -245,6 +259,13 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
         StocksCmd::Fundamental { symbol } => fundamental(ctx, &symbol).await,
         StocksCmd::Technical { symbol, period } => technical(ctx, &symbol, period).await,
         StocksCmd::Compare { symbols } => compare(ctx, &symbols).await,
+        StocksCmd::List { board, search } => {
+            let result =
+                service::instruments(&ctx.fetcher, board.as_deref(), search.as_deref()).await?;
+            emit(ctx, SCHEMA_INSTRUMENTS, result, |d| {
+                tx::instruments(d, ctx.color)
+            })
+        }
         StocksCmd::Screen {
             filter,
             sort,

@@ -37,6 +37,7 @@ use crate::output::json::{
     SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS, SCHEMA_NEWS,
     SCHEMA_SCREEN, SCHEMA_SENTIMENT,
 };
+use crate::output::json::{SCHEMA_INDICES, SCHEMA_INSTRUMENTS, SCHEMA_MEMBERS};
 use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
 use crate::service;
@@ -199,6 +200,33 @@ pub struct MarketArgs {
     /// Market-cap floor in IDR for gainers/losers (default 1e12 = 1T).
     #[serde(default)]
     pub min_market_cap: Option<f64>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct InstrumentsArgs {
+    /// Listing board, case-insensitive substring: utama, pengembangan, akselerasi, ekonomi baru, pemantauan khusus.
+    #[serde(default)]
+    pub board: Option<String>,
+    /// Code or company name, case-insensitive substring, e.g. "bank".
+    #[serde(default)]
+    pub search: Option<String>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct MembersArgs {
+    /// Broker code or name, case-insensitive substring, e.g. "mandiri" or "YP".
+    #[serde(default)]
+    pub search: Option<String>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct IndicesArgs {
+    /// Index codes to keep, comma or space separated, e.g. "LQ45,IDX30" (IHSG means COMPOSITE). Default: every index.
+    #[serde(default)]
+    pub codes: Option<String>,
+    /// Trading day, YYYY-MM-DD. Default: the latest session published.
+    #[serde(default)]
+    pub date: Option<String>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -571,6 +599,71 @@ impl IdxServer {
                         &index,
                         a.top.unwrap_or(10) as usize,
                         a.min_market_cap.unwrap_or(1e12),
+                    )
+                    .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_instruments",
+        description = "Listed stocks from idx.co.id: code, name (IDX cuts long names at 30 characters), listing board (Utama, Pengembangan, Akselerasi, Ekonomi Baru, Pemantauan Khusus), first listing date and listed shares, sorted by code. Filter by board or by a code/name substring. When idx.co.id cannot be reached and nothing is cached, the bundled universe stands in (codes and names only) and a warning says so. Returns the idx.instruments.v1 envelope."
+    )]
+    async fn instruments(
+        &self,
+        Parameters(a): Parameters<InstrumentsArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                ok(
+                    SCHEMA_INSTRUMENTS,
+                    service::instruments(&self.fetcher, a.board.as_deref(), a.search.as_deref())
+                        .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_members",
+        description = "IDX exchange members (Anggota Bursa): the broker codes idx_broker and idx_bandar report (e.g. CC, YP, ZP) with the member name and licences (Perantara Pedagang Efek = broker-dealer, Penjamin Emisi Efek = underwriter). Filter by a code or name substring. From idx.co.id; the bundled member list stands in when it cannot be reached. Returns the idx.members.v1 envelope."
+    )]
+    async fn members(
+        &self,
+        Parameters(a): Parameters<MembersArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                ok(
+                    SCHEMA_MEMBERS,
+                    service::members(&self.fetcher, a.search.as_deref()).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_indices",
+        description = "Every IDX index for one trading day from idx.co.id's index summary: COMPOSITE (IHSG), LQ45, IDX30, IDX80, sector and thematic indices, each with previous close, high, low, close, change and change percent, number of constituents, value traded and market capitalisation (IDR). Default: the latest session published (weekends and trading holidays skipped); pass codes to keep only some. Returns the idx.indices.v1 envelope."
+    )]
+    async fn indices(
+        &self,
+        Parameters(a): Parameters<IndicesArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let codes: Vec<String> = a.codes.into_iter().collect();
+                ok(
+                    SCHEMA_INDICES,
+                    service::indices(
+                        &self.fetcher,
+                        parse_date(&a.date)?,
+                        &codes,
+                        service::today_wib(),
                     )
                     .await?,
                 )
@@ -1178,7 +1271,10 @@ mod tests {
                 "idx_fundamental",
                 "idx_history",
                 "idx_holidays",
+                "idx_indices",
+                "idx_instruments",
                 "idx_market",
+                "idx_members",
                 "idx_news",
                 "idx_ownership_changes",
                 "idx_ownership_entity",

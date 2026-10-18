@@ -28,6 +28,14 @@ pub fn name(code: &str) -> Option<String> {
     directory().get(&code.trim().to_ascii_uppercase()).cloned()
 }
 
+/// Every member on the bundled list as `(code, name)`, sorted by code.
+pub fn all() -> Vec<(String, String)> {
+    directory()
+        .iter()
+        .map(|(c, n)| (c.clone(), n.clone()))
+        .collect()
+}
+
 /// Number of members on the bundled list.
 pub fn count() -> usize {
     directory().len()

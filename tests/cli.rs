@@ -374,6 +374,74 @@ fn holidays_work_offline_from_the_bundled_list() {
 }
 
 #[test]
+fn directory_commands_fall_back_offline_and_indices_need_the_cache() {
+    let sb = sandbox();
+    for (args, text) in [
+        (
+            vec!["stocks", "list", "--help"],
+            "idx stocks list --board akselerasi",
+        ),
+        (
+            vec!["market", "members", "--help"],
+            "idx market members --search mandiri",
+        ),
+        (
+            vec!["market", "indices", "--help"],
+            "idx market indices LQ45 IDX30 IDX80",
+        ),
+    ] {
+        idx(&sb.cache, &sb.config)
+            .args(&args)
+            .assert()
+            .success()
+            .stdout(predicate::str::contains(text));
+    }
+    for (name, field) in [
+        ("instruments", "listing_date"),
+        ("members", "licenses"),
+        ("indices", "market_cap"),
+    ] {
+        let out = idx(&sb.cache, &sb.config)
+            .args(["schema", name])
+            .output()
+            .unwrap();
+        assert!(out.status.success(), "{name}");
+        assert!(
+            String::from_utf8_lossy(&out.stdout).contains(field),
+            "{name}"
+        );
+    }
+    // Offline with nothing cached: the bundled lists stand in, with a warning.
+    let out = idx(&sb.cache, &sb.config)
+        .args(["-o", "json", "stocks", "list", "--search", "BBCA"])
+        .output()
+        .unwrap();
+    assert!(out.status.success());
+    let v: serde_json::Value = serde_json::from_slice(&out.stdout).unwrap();
+    assert_eq!(v["schema"], "idx.instruments.v1");
+    assert_eq!(v["provider"], "bundled");
+    assert_eq!(v["data"]["instruments"][0]["symbol"], "BBCA");
+    assert!(v["warnings"][0]
+        .as_str()
+        .unwrap()
+        .contains("bundled universe"));
+    idx(&sb.cache, &sb.config)
+        .args(["market", "members", "-s", "YP"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("MIRAE ASSET"))
+        .stderr(predicate::str::contains("bundled member list"));
+    idx(&sb.cache, &sb.config)
+        .args(["market", "indices"])
+        .assert()
+        .code(5);
+    idx(&sb.cache, &sb.config)
+        .args(["market", "indices", "--date", "16-10-2026"])
+        .assert()
+        .code(2);
+}
+
+#[test]
 fn bandar_command_surface() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

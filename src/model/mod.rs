@@ -14,6 +14,7 @@ pub mod broker;
 pub mod calendar;
 pub mod dividends;
 pub mod fundamentals;
+pub mod instruments;
 pub mod market;
 pub mod news;
 pub mod ownership;
@@ -28,7 +29,7 @@ pub use bandar::{
 };
 pub use brief::{Brief, DividendSummary, NewsSummary, OwnershipSummary};
 pub use broker::{BrokerBoard, BrokerFlow, BrokerInvestor, BrokerKind, BrokerSummary};
-pub use calendar::{Holiday, Holidays};
+pub use calendar::{Calendar, CalendarCategory, CalendarEvent, Holiday, Holidays};
 pub use dividends::{DividendEvent, DividendHistory, DividendYear, SplitEvent};
 pub use fundamentals::{
     Analyst, BalanceSheet, CashFlow, Director, Dividend, Earnings, EarningsQuarter,
@@ -36,6 +37,7 @@ pub use fundamentals::{
     PerShare, Profile, Profitability, RevenueEarnings, StatementPeriod, Valuation, Verdict,
     VerdictLabel,
 };
+pub use instruments::{IndexBoard, IndexRow, Instrument, InstrumentList, Member, MemberList};
 pub use market::{MarketOverview, MarketRow};
 pub use news::{NewsItem, NewsReport, SentimentLabel, SentimentReport};
 pub use ownership::{

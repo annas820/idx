@@ -5,7 +5,7 @@ use clap::Subcommand;
 
 use crate::error::Result;
 use crate::model::Symbol;
-use crate::output::json::{SCHEMA_HOLIDAYS, SCHEMA_MARKET};
+use crate::output::json::{SCHEMA_HOLIDAYS, SCHEMA_INDICES, SCHEMA_MARKET, SCHEMA_MEMBERS};
 use crate::output::table_exchange as tx;
 use crate::output::table_reports as reports;
 use crate::service;
@@ -32,6 +32,27 @@ pub enum MarketCmd {
         /// CSV of symbol,name to walk instead of the bundled universe.
         #[arg(long, value_name = "PATH")]
         universe: Option<std::path::PathBuf>,
+    },
+    /// Every IDX index for one trading day: close, change, range, constituents, value, market cap.
+    #[command(
+        after_help = "Examples:\n  idx market indices\n  idx market indices LQ45 IDX30 IDX80\n  idx market indices --date 2026-10-16\n  idx -o json market indices IHSG | jq '.data.indices[0].close'\n\nFrom idx.co.id's daily index summary (COMPOSITE is IHSG, ^JKSE on Yahoo). Without --date: the\nlatest session published; weekends and holidays are skipped."
+    )]
+    Indices {
+        /// Index codes to keep (LQ45, IDX30, ...; IHSG means COMPOSITE). Default: all.
+        #[arg(value_name = "CODE")]
+        codes: Vec<String>,
+        /// Trading day, YYYY-MM-DD. Default: the latest session.
+        #[arg(long, short = 'd', value_name = "DATE")]
+        date: Option<chrono::NaiveDate>,
+    },
+    /// Exchange members (Anggota Bursa): broker codes, names and licences.
+    #[command(
+        after_help = "Examples:\n  idx market members\n  idx market members --search mandiri\n  idx -o json market members | jq '.data.members[] | select(.code==\"YP\")'\n\nFrom idx.co.id's member list; the bundled list (data/brokers.csv) stands in when it cannot\nbe reached. The codes are the ones `idx broker` and `idx bandar` report."
+    )]
+    Members {
+        /// Code or name, case-insensitive substring.
+        #[arg(long, short = 's', value_name = "TEXT")]
+        search: Option<String>,
     },
     /// Trading holidays (Kalender Libur Bursa), whether today is a trading day, and the next one.
     #[command(
@@ -71,6 +92,14 @@ pub async fn run(ctx: &Context, cmd: MarketCmd) -> Result<()> {
             emit(ctx, SCHEMA_MARKET, result, |d| {
                 reports::market(d, ctx.color)
             })
+        }
+        MarketCmd::Indices { codes, date } => {
+            let result = service::indices(&ctx.fetcher, date, &codes, service::today_wib()).await?;
+            emit(ctx, SCHEMA_INDICES, result, |d| tx::indices(d, ctx.color))
+        }
+        MarketCmd::Members { search } => {
+            let result = service::members(&ctx.fetcher, search.as_deref()).await?;
+            emit(ctx, SCHEMA_MEMBERS, result, |d| tx::members(d, ctx.color))
         }
         MarketCmd::Holidays {
             year,
