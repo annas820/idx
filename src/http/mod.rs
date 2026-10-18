@@ -188,6 +188,8 @@ pub struct Fetched {
     pub cached: bool,
     pub stale: bool,
     pub fetched_at: DateTime<Utc>,
+    /// Why the live fetch failed when a stale copy is served instead.
+    pub failure: Option<String>,
 }
 
 impl Fetched {
@@ -245,6 +247,34 @@ impl Fetcher {
         ttl: Duration,
         cache_key: Option<&str>,
     ) -> Result<Fetched> {
+        self.fetch(url, headers, ttl, cache_key, None).await
+    }
+
+    /// Like [`get`](Self::get), but a network failure is remembered for
+    /// `retry_after`: until then the source is not asked again and the call
+    /// serves the stale copy, or fails, at once. For optional sources that can
+    /// go silent, such as one news feed among several, where every caller
+    /// would otherwise wait out the timeout.
+    pub async fn get_with_backoff(
+        &self,
+        url: &str,
+        headers: &[(String, String)],
+        ttl: Duration,
+        cache_key: Option<&str>,
+        retry_after: Duration,
+    ) -> Result<Fetched> {
+        self.fetch(url, headers, ttl, cache_key, Some(retry_after))
+            .await
+    }
+
+    async fn fetch(
+        &self,
+        url: &str,
+        headers: &[(String, String)],
+        ttl: Duration,
+        cache_key: Option<&str>,
+        retry_after: Option<Duration>,
+    ) -> Result<Fetched> {
         let key = cache_key.unwrap_or(url);
         let hit = if self.mode == CacheMode::Bypass {
             None
@@ -273,6 +303,29 @@ impl Fetcher {
             };
         }
 
+        // `--no-cache` asks for the network, so only the normal mode skips.
+        let mark = retry_after
+            .filter(|_| self.mode == CacheMode::Normal)
+            .map(|r| (format!("failed:{key}"), r));
+        if let Some((mark, retry)) = &mark {
+            if let Some(m) = self.cache.get(mark, *retry).filter(|m| m.fresh) {
+                let why = format!(
+                    "{}; next try in {}s",
+                    m.stored.body,
+                    retry.saturating_sub(m.age).as_secs()
+                );
+                return match hit {
+                    Some(h) => {
+                        tracing::info!(key, %why, "source failed recently: serving stale cache");
+                        let mut f = from_hit(&h, true);
+                        f.failure = Some(why);
+                        Ok(f)
+                    }
+                    None => Err(IdxError::Network(why)),
+                };
+            }
+        }
+
         match self.backend.get(url, headers).await {
             Ok(resp) => {
                 if (200..300).contains(&resp.status) {
@@ -287,15 +340,30 @@ impl Fetcher {
                     cached: false,
                     stale: false,
                     fetched_at: Utc::now(),
+                    failure: None,
                 })
             }
-            Err(e) => match hit {
-                Some(h) => {
-                    tracing::warn!(error = %e, key, "network failed: serving stale cache");
-                    Ok(from_hit(&h, true))
+            Err(e) => {
+                // The bare message: it is wrapped again when replayed.
+                let why = match &e {
+                    IdxError::Network(m) => m.clone(),
+                    other => other.to_string(),
+                };
+                if let Some((mark, _)) = &mark {
+                    if let Err(w) = self.cache.put(mark, 0, &why) {
+                        tracing::warn!(error = %w, "could not write cache");
+                    }
                 }
-                None => Err(e),
-            },
+                match hit {
+                    Some(h) => {
+                        tracing::warn!(error = %e, key, "network failed: serving stale cache");
+                        let mut f = from_hit(&h, true);
+                        f.failure = Some(why);
+                        Ok(f)
+                    }
+                    None => Err(e),
+                }
+            }
         }
     }
 }
@@ -308,6 +376,7 @@ fn from_hit(h: &crate::cache::Hit, stale: bool) -> Fetched {
         cached: true,
         stale,
         fetched_at: h.stored.fetched_at,
+        failure: None,
     }
 }
 
@@ -411,6 +480,62 @@ mod tests {
             .await
             .unwrap();
         assert!(got.stale);
+    }
+
+    #[tokio::test]
+    async fn backoff_remembers_a_network_failure() {
+        let dir = tempfile::tempdir().unwrap();
+        let backend = Arc::new(FixtureBackend::new());
+        let f = Fetcher::new(backend.clone(), Cache::new(dir.path()), CacheMode::Normal);
+        let (url, ttl, retry) = (
+            "https://silent.test/rss",
+            Duration::from_secs(60),
+            Duration::from_secs(300),
+        );
+        let first = f
+            .get_with_backoff(url, &[], ttl, None, retry)
+            .await
+            .unwrap_err();
+        assert!(first.to_string().contains("no route"), "{first}");
+        let second = f
+            .get_with_backoff(url, &[], ttl, None, retry)
+            .await
+            .unwrap_err();
+        assert!(second.to_string().contains("next try in"), "{second}");
+        assert_eq!(
+            second.to_string().matches("network:").count(),
+            1,
+            "{second}"
+        );
+        assert_eq!(backend.call_count(), 1);
+        // Plain get never skips.
+        let _ = f.get(url, &[], ttl, None).await;
+        assert_eq!(backend.call_count(), 2);
+    }
+
+    #[tokio::test]
+    async fn backoff_serves_stale_with_the_reason() {
+        let dir = tempfile::tempdir().unwrap();
+        let cache = Cache::new(dir.path());
+        cache.put("https://silent.test/rss", 200, "old").unwrap();
+        let backend = Arc::new(FixtureBackend::new());
+        let f = Fetcher::new(backend.clone(), cache, CacheMode::Normal);
+        for _ in 0..2 {
+            let got = f
+                .get_with_backoff(
+                    "https://silent.test/rss",
+                    &[],
+                    Duration::ZERO,
+                    None,
+                    Duration::from_secs(300),
+                )
+                .await
+                .unwrap();
+            assert!(got.stale);
+            assert_eq!(got.body, "old");
+            assert!(got.failure.unwrap().contains("no route"));
+        }
+        assert_eq!(backend.call_count(), 1);
     }
 
     #[tokio::test]

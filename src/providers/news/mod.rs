@@ -10,6 +10,10 @@
 //!
 //! Items are fetched through the normal cache (15 min TTL) and parsed with
 //! the `rss` crate. Matching a ticker is done by the caller (`service::news`).
+//!
+//! A feed can accept the connection and never answer (Kontan, Oct 2026). Its
+//! failure is remembered for [`RETRY`], so later calls serve the cached copy
+//! or a warning at once instead of each waiting out the request timeout.
 
 use std::sync::Arc;
 use std::time::Duration;
@@ -23,6 +27,7 @@ use crate::model::{wib, NewsItem};
 
 pub const NAME: &str = "news";
 pub const TTL: Duration = Duration::from_secs(15 * 60);
+pub const RETRY: Duration = Duration::from_secs(5 * 60);
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Feed {
@@ -177,7 +182,7 @@ pub async fn fetch(
 ) -> Result<(Vec<NewsItem>, Vec<String>, bool, bool)> {
     let futs = feeds.iter().map(|f| async move {
         let r = fetcher
-            .get(
+            .get_with_backoff(
                 f.url,
                 &[(
                     "Accept".into(),
@@ -185,6 +190,7 @@ pub async fn fetch(
                 )],
                 TTL,
                 None,
+                RETRY,
             )
             .await;
         (f, r)
@@ -198,6 +204,12 @@ pub async fn fetch(
         match r {
             Ok(f) if f.is_success() => match parse_feed(&f.body, feed.id) {
                 Ok(list) => {
+                    if let Some(why) = &f.failure {
+                        warnings.push(format!(
+                            "{}: live fetch failed ({why}); showing cached copy",
+                            feed.id
+                        ));
+                    }
                     ok += 1;
                     cached &= f.cached;
                     stale |= f.stale;
@@ -227,8 +239,33 @@ pub async fn fetch(
 mod tests {
     use super::*;
 
+    use crate::cache::Cache;
+    use crate::http::{CacheMode, FixtureBackend};
+
     const KONTAN: &str = include_str!("../../../tests/fixtures/news/kontan_investasi.xml");
     const CNBC: &str = include_str!("../../../tests/fixtures/news/cnbc_market_excerpt.xml");
+
+    #[tokio::test]
+    async fn a_failing_feed_is_skipped_within_the_retry_window() {
+        let dir = tempfile::tempdir().unwrap();
+        // CNBC answers; Kontan has no route, a network error like a timeout.
+        let backend = Arc::new(FixtureBackend::new().route("cnbcindonesia.com", 200, CNBC));
+        let fetcher = Arc::new(Fetcher::new(
+            backend.clone(),
+            Cache::new(dir.path()),
+            CacheMode::Normal,
+        ));
+        let feeds = select(&[]).unwrap();
+        let (items, warnings, _, _) = fetch(&fetcher, &feeds).await.unwrap();
+        assert!(!items.is_empty());
+        assert_eq!(warnings.len(), 3, "{warnings:?}");
+        assert_eq!(backend.calls_matching("kontan.co.id"), 3);
+
+        let (_, again, _, _) = fetch(&fetcher, &feeds).await.unwrap();
+        assert_eq!(backend.calls_matching("kontan.co.id"), 3);
+        assert_eq!(again.len(), 3);
+        assert!(again.iter().all(|w| w.contains("next try in")), "{again:?}");
+    }
 
     #[test]
     fn parses_kontan() {

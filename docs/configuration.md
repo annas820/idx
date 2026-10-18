@@ -65,6 +65,11 @@ a TTL applies immediately.
 - `--no-cache`: always fetch; the result is still written for later.
 - Network failure with a stale entry present: the stale entry is served and
   `stale: true` is set (table mode prints a warning to stderr).
+- News feeds: a feed that times out or refuses the connection is not asked
+  again for five minutes. Until then its cached copy is served with a warning
+  naming the failure, or the warning alone when nothing is cached, so one
+  silent feed does not make every call wait out `--timeout`. `--no-cache`
+  asks anyway.
 
 ```sh
 idx cache stats
