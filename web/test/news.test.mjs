@@ -54,15 +54,15 @@ test("a silent feed becomes a warning and the other feeds still answer", async (
     assert.ok(out.env.data.items.length > 0);
     assert.ok(out.env.data.items.every((i) => i.source.startsWith("cnbcindonesia/")));
     assert.deepEqual(out.env.warnings, [
-      "kontan/investasi: no answer within 8s",
-      "kontan/keuangan: no answer within 8s",
-      "kontan/industri: no answer within 8s",
+      "kontan/investasi: no answer within 8s from investasi.kontan.co.id",
+      "kontan/keuangan: no answer within 8s from keuangan.kontan.co.id",
+      "kontan/industri: no answer within 8s from industri.kontan.co.id",
     ]);
 
     // Within the retry window Kontan is not asked again.
     const again = await news(env, "TLKM", 20);
     assert.equal(calls.kontan, 3);
-    assert.match(again.env.warnings[0], /^kontan\/investasi: no answer within 8s; next try in \d+s$/);
+    assert.match(again.env.warnings[0], /^kontan\/investasi: no answer within 8s from investasi\.kontan\.co\.id; next try in \d+s$/);
   } finally {
     globalThis.fetch = realFetch;
   }
@@ -86,7 +86,7 @@ test("a feed that goes down serves its cached copy, marked stale", async () => {
     assert.equal(calls.kontan, 6);
     assert.equal(down.env.stale, true);
     assert.ok(down.env.data.items.some((i) => i.source === "kontan/investasi"));
-    assert.ok(down.env.warnings.includes("kontan/investasi: live fetch failed (no answer within 8s); showing cached copy"));
+    assert.ok(down.env.warnings.includes("kontan/investasi: live fetch failed (no answer within 8s from investasi.kontan.co.id); showing cached copy"));
 
     const later = await news(env, null, 0);
     assert.equal(calls.kontan, 6);

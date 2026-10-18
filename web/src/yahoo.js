@@ -1,6 +1,8 @@
 // Yahoo Finance access for the Worker: the same endpoints the Rust CLI uses
 // (see src/providers/yahoo/mod.rs), with the cookie/crumb session kept in D1.
 
+import { fetchWithin } from "./net.js";
+
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36";
 const CHART = "https://query1.finance.yahoo.com/v8/finance/chart/";
@@ -23,12 +25,12 @@ export function plainSymbol(s) {
 // ---- session -------------------------------------------------------------
 
 async function newSession() {
-  const r = await fetch("https://fc.yahoo.com", { headers: { "User-Agent": UA }, redirect: "manual" });
+  const r = await fetchWithin("https://fc.yahoo.com", { headers: { "User-Agent": UA }, redirect: "manual" });
   const setCookie = r.headers.get("set-cookie") || "";
   const m = setCookie.match(/A3=[^;]+/);
   if (!m) throw new Error("yahoo: no A3 cookie");
   const cookie = m[0];
-  const c = await fetch("https://query2.finance.yahoo.com/v1/test/getcrumb", {
+  const c = await fetchWithin("https://query2.finance.yahoo.com/v1/test/getcrumb", {
     headers: { "User-Agent": UA, Cookie: cookie },
   });
   const crumb = (await c.text()).trim();
@@ -52,7 +54,7 @@ export async function session(env, force = false) {
 async function getWithSession(env, url) {
   let s = await session(env);
   for (let attempt = 0; attempt < 2; attempt++) {
-    const r = await fetch(`${url}&crumb=${encodeURIComponent(s.crumb)}`, {
+    const r = await fetchWithin(`${url}&crumb=${encodeURIComponent(s.crumb)}`, {
       headers: { "User-Agent": UA, Cookie: s.cookie, Accept: "application/json" },
     });
     if ((r.status === 401 || r.status === 403) && attempt === 0) {
@@ -68,7 +70,7 @@ async function getWithSession(env, url) {
 
 export async function fetchChart(symbol, period = "1y", interval = "1d") {
   const url = `${CHART}${yahooSymbol(symbol)}?range=${period}&interval=${interval}&includePrePost=false`;
-  const r = await fetch(url, { headers: { "User-Agent": UA } });
+  const r = await fetchWithin(url, { headers: { "User-Agent": UA } });
   const body = await r.json().catch(() => null);
   if (r.status === 404 || body?.chart?.error?.code === "Not Found") {
     return { notFound: true, message: body?.chart?.error?.description || "not found" };
@@ -80,7 +82,7 @@ export async function fetchChart(symbol, period = "1y", interval = "1d") {
 /** Full-history chart call carrying dividend and split events (no session needed). */
 export async function fetchEvents(symbol) {
   const url = `${CHART}${yahooSymbol(symbol)}?range=max&interval=1mo&events=div%2Csplits`;
-  const r = await fetch(url, { headers: { "User-Agent": UA } });
+  const r = await fetchWithin(url, { headers: { "User-Agent": UA } });
   const body = await r.json().catch(() => null);
   if (r.status === 404 || body?.chart?.error?.code === "Not Found") {
     return { notFound: true, message: body?.chart?.error?.description || "not found" };
@@ -127,7 +129,7 @@ export async function fetchTimeseries(symbol, period = "annual") {
   const types = items.map((i) => prefix + i).join(",");
   const now = Math.floor(Date.now() / 1000);
   const url = `${TIMESERIES}${yahooSymbol(symbol)}?type=${types}&period1=${now - 6 * 365 * 86400}&period2=${now + 86400}&merge=false&padTimeSeries=false`;
-  const r = await fetch(url, { headers: { "User-Agent": UA } });
+  const r = await fetchWithin(url, { headers: { "User-Agent": UA } });
   if (!r.ok) throw new Error(`yahoo timeseries HTTP ${r.status}`);
   return r.json();
 }

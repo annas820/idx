@@ -3,6 +3,8 @@
 // Figures of a million and more arrive abbreviated to one decimal (1.6 M);
 // they keep that precision and set `rounded`. A spurious nginx 404 is retried.
 
+import { fetchWithin } from "./net.js";
+
 export const NAME = "ipot";
 const ENDPOINT = "https://www.indopremier.com/module/saham/include/data-brokersummary.php";
 const FD = { all: "all", foreign: "F", domestic: "D" };
@@ -60,12 +62,12 @@ export function parse(html) {
   };
 }
 
-/** GET with the source's spurious 404 retried (up to 5 tries, doubling pauses). */
-export async function fetchPage(u, { attempts = 5, pauseMs = 250, fetchFn = fetch } = {}) {
+/** GET with the source's spurious 404 retried (up to 5 tries, doubling pauses); each try has a deadline. */
+export async function fetchPage(u, { attempts = 5, pauseMs = 250, fetchFn = fetch, ms } = {}) {
   let r;
   for (let i = 0; i < attempts; i++) {
     if (i) await new Promise((res) => setTimeout(res, pauseMs * 2 ** (i - 1)));
-    r = await fetchFn(u, { headers: { "User-Agent": "Mozilla/5.0 (idx web terminal)", Accept: "text/html" } });
+    r = await fetchWithin(u, { headers: { "User-Agent": "Mozilla/5.0 (idx web terminal)", Accept: "text/html" } }, { fetchFn, ms });
     if (r.status !== 404) break;
   }
   if (!r.ok) throw new Error(`HTTP ${r.status}`);

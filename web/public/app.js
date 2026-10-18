@@ -2,9 +2,20 @@
 // Plain ES module, no build step. Served with script-src 'self'.
 
 export const API = "/api";
+// The API gives up on a slow source well before this; past it the terminal
+// reports the request instead of leaving it pending.
+const API_TIMEOUT_MS = 60_000;
 
 export async function api(path) {
-  const r = await fetch(`${API}/${path}`, { headers: { Accept: "application/json" } });
+  let r;
+  try {
+    r = await fetch(`${API}/${path}`, { headers: { Accept: "application/json" }, signal: AbortSignal.timeout?.(API_TIMEOUT_MS) });
+  } catch (err) {
+    const e = new Error(err?.name === "TimeoutError" ? `no answer within ${API_TIMEOUT_MS / 1000}s; try again` : `network error: ${err?.message || err}`);
+    e.code = "network";
+    e.exit = 3;
+    throw e;
+  }
   const body = await r.json().catch(() => ({ error: { code: "provider", message: `HTTP ${r.status}` }, exit_code: 3 }));
   if (!r.ok || body.error) {
     const e = new Error(body.error?.message || `HTTP ${r.status}`);

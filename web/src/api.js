@@ -7,6 +7,7 @@ import * as an from "./analysis.js";
 import * as ex from "./extras.js";
 import * as ipot from "./ipot.js";
 import * as bd from "./bandar.js";
+import { fetchWithin } from "./net.js";
 import { scanRows, scanStatus } from "./bandar-scan.js";
 import { syncStatus } from "./ownership-sync.js";
 import UNIVERSE from "./universe.json" with { type: "json" };
@@ -390,19 +391,14 @@ function itemMatches(item, ticker, name) {
   if (name && name.length >= 4 && text.includes(name.toUpperCase())) return "name";
   return null;
 }
-// A feed can accept the connection and never answer (Kontan, Oct 2026); the
-// deadline covers the body too, so one silent source cannot hold the request.
+// A feed can accept the connection and never answer (Kontan, Oct 2026): one
+// silent source must not hold the request, nor make every reader wait.
 const FEED_TIMEOUT_MS = 8000;
 const FEED_RETRY_SECS = 5 * 60;
 async function fetchFeed(f) {
-  try {
-    const r = await fetch(f.url, { headers: { "User-Agent": "Mozilla/5.0 (idx web terminal)", Accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8" }, signal: AbortSignal.timeout(FEED_TIMEOUT_MS) });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    return parseRss(await r.text(), f.id);
-  } catch (e) {
-    if (e?.name === "TimeoutError" || e?.name === "AbortError") throw new Error(`no answer within ${FEED_TIMEOUT_MS / 1000}s`);
-    throw e;
-  }
+  const r = await fetchWithin(f.url, { headers: { "User-Agent": "Mozilla/5.0 (idx web terminal)", Accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8" } }, { ms: FEED_TIMEOUT_MS });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return parseRss(await r.text(), f.id);
 }
 export async function news(env, symbolRaw, limit = 20, companyOnly = false) {
   const symbol = symbolRaw ? parseSymbol(symbolRaw) : null;

@@ -11,7 +11,11 @@
 // rows-written budget (D1 free tier allows 100k/day; every holding is three
 // writes with its two indexes), and the newest OWN_KEEP_RELEASES months.
 
+import { fetchWithin } from "./net.js";
+
 const DEFAULT_MIRROR = "https://github.com/fzn0x/idx/releases/download/ownership-data";
+// Parts are a few MB at most; a stalled mirror gives up and the next tick retries.
+const FETCH_TIMEOUT_MS = 30_000;
 const SCHEMA = "idx.ownership.mirror.v1";
 const CHECK_EVERY_SECS = 30 * 60;
 const WRITES_PER_ROW = 3;
@@ -34,7 +38,7 @@ async function kvDel(env, k) {
 }
 
 async function fetchText(url) {
-  const r = await fetch(url, { headers: { "User-Agent": UA, Accept: "application/json, */*" }, cf: { cacheTtl: 0, cacheEverything: false } });
+  const r = await fetchWithin(url, { headers: { "User-Agent": UA, Accept: "application/json, */*" }, cf: { cacheTtl: 0, cacheEverything: false } }, { ms: FETCH_TIMEOUT_MS });
   if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
   return r.text();
 }
