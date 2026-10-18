@@ -6,6 +6,16 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-10-18
+
+### Fixed
+
+- Release notes: the release workflow stopped at the empty `[Unreleased]`
+  heading above the version, so GitHub releases v0.2.0 to v0.7.0 carried
+  only the install line. It now takes the version's own changelog section
+  (falling back to `[Unreleased]` only when there is none), and the notes of
+  every earlier release have been filled in from this changelog.
+
 ## [0.7.0] - 2026-10-18
 
 ### Added
