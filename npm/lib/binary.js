@@ -46,24 +46,39 @@ function target() {
   throw new Error(`unsupported platform ${plat}/${arch}`);
 }
 
+// A download that stops sending (connection open, no bytes) fails after this
+// long instead of hanging the install or the first run of `idx`. Our own
+// timer, restarted per chunk: Node's socket timeout fires up to twice as late.
+const IDLE_TIMEOUT_MS = 30000;
+
 function get(url, redirects = 0) {
   return new Promise((resolve, reject) => {
-    https
+    let timer;
+    const done = (fn) => (v) => { clearTimeout(timer); fn(v); };
+    const fail = done(reject);
+    const idle = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => req.destroy(new Error(`${url}: no data for ${IDLE_TIMEOUT_MS / 1000}s`)), IDLE_TIMEOUT_MS);
+    };
+    const req = https
       .get(url, { headers: { "User-Agent": "idx-npm-installer" } }, (res) => {
         if ([301, 302, 303, 307, 308].includes(res.statusCode) && res.headers.location && redirects < 5) {
           res.resume();
-          return resolve(get(res.headers.location, redirects + 1));
+          return done(resolve)(get(res.headers.location, redirects + 1));
         }
         if (res.statusCode !== 200) {
           res.resume();
-          return reject(new Error(`${url}: HTTP ${res.statusCode}`));
+          return fail(new Error(`${url}: HTTP ${res.statusCode}`));
         }
         const chunks = [];
-        res.on("data", (c) => chunks.push(c));
-        res.on("end", () => resolve(Buffer.concat(chunks)));
-        res.on("error", reject);
+        idle();
+        res.on("data", (c) => { chunks.push(c); idle(); });
+        res.on("end", () => done(resolve)(Buffer.concat(chunks)));
+        res.on("error", fail);
+        res.on("close", () => { if (!res.complete) fail(new Error(`${url}: download interrupted`)); });
       })
-      .on("error", reject);
+      .on("error", fail);
+    idle();
   });
 }
 
