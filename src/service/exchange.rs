@@ -15,9 +15,38 @@ use crate::model::{
     Calendar, CalendarCategory, CalendarEvent, Holidays, IndexBoard, Instrument, InstrumentList,
     Member, MemberList,
 };
+use crate::model::{CorporateActions, Symbol};
 use crate::providers::idx::{self, CalendarRange};
+use crate::providers::ipot;
 use crate::providers::Sourced;
-use crate::universe;
+use crate::universe::{self, Issuer};
+
+/// How far back `corporate_actions` reaches when no date is given.
+pub const ACTIONS_DEFAULT_DAYS: u64 = 365;
+
+/// One company's corporate actions, shareholders' meetings and listed
+/// warrants and rights (IPOT) from `since` on (default: a year back),
+/// upcoming events included.
+pub async fn corporate_actions(
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    symbol: &Symbol,
+    since: Option<NaiveDate>,
+    today: NaiveDate,
+) -> Result<Sourced<CorporateActions>> {
+    if symbol.is_index() {
+        return Err(IdxError::Usage(format!(
+            "{symbol} is an index; corporate actions belong to stocks"
+        )));
+    }
+    let since = since.unwrap_or(today - chrono::Days::new(ACTIONS_DEFAULT_DAYS));
+    let mut s = ipot::corporate_actions(fetcher, symbol, since).await?;
+    s.data.name = universe
+        .iter()
+        .find(|i| &i.symbol == symbol)
+        .and_then(|i| i.name.clone());
+    Ok(s)
+}
 
 /// Provider name for data that ships inside the binary.
 pub const BUNDLED: &str = "bundled";
@@ -612,5 +641,26 @@ mod tests {
             ..Default::default()
         };
         assert!(calendar(&f, &backwards, d(2026, 10, 18)).await.is_err());
+    }
+
+    const ACTIONS: &str =
+        include_str!("../../tests/fixtures/ipot/corporateaction_enrg_20250101.html");
+
+    #[tokio::test]
+    async fn corporate_actions_default_to_a_year_back_and_fill_the_name() {
+        let (f, be, _d) = fetcher(FixtureBackend::new().route("corporateaction.php", 200, ACTIONS));
+        let list = universe::load(None).unwrap();
+        let sym = Symbol::parse("ENRG").unwrap();
+        let s = corporate_actions(&f, &list, &sym, None, d(2026, 10, 18))
+            .await
+            .unwrap();
+        assert_eq!(s.data.since, d(2025, 10, 18));
+        assert!(be.calls.lock().unwrap()[0].ends_with("start=10/18/2025"));
+        assert!(s.data.name.as_deref().unwrap().contains("ENERGI MEGA"));
+        assert_eq!(s.data.warrants_rights[0].code, "ENRG-R");
+        let idx = Symbol::parse("^JKSE").unwrap();
+        assert!(corporate_actions(&f, &list, &idx, None, d(2026, 10, 18))
+            .await
+            .is_err());
     }
 }

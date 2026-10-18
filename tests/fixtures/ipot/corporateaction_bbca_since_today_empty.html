@@ -1,0 +1,225 @@
+
+<!--Corporate Action-->
+<div class="pa5">
+	<div class="row mincol-3">
+		<div class="col col-xs-2 col-sm-1">
+			<label class="pt3 nm">Since :</label>
+		</div>
+		<div class="col col-xs-5 col-sm-3">
+			<input class="form-control input-xs text-center" id="startDateCorporateAction" name="startDate" value="10/18/2026" type="text">
+		</div>
+		<div class="col col-xs-2 col-sm-1">
+			<button type="button" class="btn btn-default btn-block btn-xs-input" onClick="popinfo_corporateaction ($('#stockInfoCode').val(),$('#startDateCorporateAction').val());">GO</button>
+		</div>
+	</div>		
+</div>
+<hr class="mt0">
+
+<div id="ca_allcontainer" class="mb10">
+	<h5 class="pl5 mb0">Corporate Actions</h5>
+	<div class="table-responsive">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm">
+			<thead>
+				<tr>
+					<th align="left">#</th>
+					<th align="left">Action Type</th>
+					<th align="right">Amount</th>
+					<th align="right">R1</th>
+					<th align="right">R2</th>
+					<th align="center">Cum. Date</th>
+					<th align="center">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+
+				</tbody>
+		</table>
+	</div>
+	
+	<h5 class="pl5 mb0">RUPS</h5>
+	<div class="table-responsive">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm">
+			<thead>
+				<tr>
+					<th align="left">#</th>
+					<th align="center">Date</th>
+					<th align="center">Time</th>
+					<th align="center">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+			</tbody>
+		</table>
+	</div>
+	
+	<h5 class="pl5 mb0">Warrant & Right</h5>
+	<div class="table-responsive">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm">
+			<thead>
+				<tr>
+					<th align="left">#</th>
+					<th align="left">Stock</th>
+					<th align="center">W/R</th>
+					<th align="right">Exercise</th>
+					<th align="right">Share</th>
+					<th align="center">Listing Date</th>
+					<th align="center">Maturity Date</th>
+					<th align="center">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+			</tbody>
+		</table>
+	</div>	
+</div>
+
+<div class="pa10" id="detail_ca" style="display:none">
+	<button type="button" class="btn btn-default btn-sm pull-right" onClick="backto_corporateaction();"><i class="fa fa-arrow-left"></i> Back</button>
+	<div class="label label-primary mb10">Corporate Action</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm valign-top">
+		<tbody>
+			<tr>
+				<td colspan="3" align="left" nowrap="nowrap"><h4 class="nm semibold" data-ca="1">AAAA</h4></td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Action Type</td>
+				<td width="10" align="left">:</td>
+				<td width="80%" align="left" data-ca="2">Cash Dividend</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Cum. Date</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="3">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Ex. Date</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="5">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Rec. Date</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="6">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Dist. Date</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="7">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Right End</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="8">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Status</td>
+				<td align="left">: </td>
+				<td align="left" data-ca="4">Tentative</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left"><hr class="mt5 mb5"></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left" data-ca="9">
+					<p>Jadwal Pelaksanaan HMETD atas Penawaran Umum Terbatas T dalam rangka Penerbitan Hak Memesan Efek Terlebih dahulu (HMETD) Berlina Tbk, PT (BRNA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan Penawaran Umum Terbatas T dalam rangka Penerbitan Hak Memesan Efek Terlebih Dahulu (HMETD) dengan rasio pembagian HMETD adalah setiap 35 saham lama yang dimiliki akan mendapatkan 13 HMETD, dengan harga pelaksanaan Rp. 585 per saham </p><p>Adapun jadwal kegiatan HMETD tersebut adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat HMETD (Cum HMETD) di Pasar Reguler dan Pasar Negosiasi : 8 Sep 15</li><li>Tanggal perdagangan bursa tidak memuat HMETD (Ex HMETD) di Pasar Reguler dan Pasar Negosiasi : 9 Sep 15</li><li>Tanggal perdagangan bursa yang memuat HMETD (Cum HMETD) di Pasar Tunai : 11 Sep 15</li><li>Tanggal perdagangan bursa tidak memuat HMETD (Ex HMETD) di Pasar Tunai : 14 Sep 15</li><li>Tanggal Penentuan Pemegang Rekening yang berhak menerima HMETD di dalam rekening Efek (Recording Date) : 11 Sep 15</li><li>Periode Perdagangan HMETD : 15 Sep 15 - 21 Sep 15</li></ul></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="pa10" id="detail_rups" style="display:none">
+	<button type="button" class="btn btn-default btn-sm pull-right" onClick="backto_corporateaction();"><i class="fa fa-arrow-left"></i> Back</button>
+	<div class="label label-primary mb10">RUPS</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm valign-top">
+		<tbody>
+			<tr>
+				<td colspan="3" align="left" nowrap="nowrap"><h4 class="nm semibold" data-ca="1">AAAA</h4></td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Date</td>
+				<td width="10" align="left">:</td>
+				<td width="80%" align="left" data-ca="2">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Venue</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="4">Ruang Seminar Bursa Efek Indonesia Gedung Bursa Efek Indonesia Tower 2 lt.1 Jl. Jend. Sudirman Kav. 52-53 Jakarta 12190</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Status</td>
+				<td align="left">: </td>
+				<td align="left" data-ca="3">Tentative</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left"><hr class="mt5 mb5"></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left" data-ca="5">
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="pa10" id="detail_warrant" style="display:none">
+	<button type="button" class="btn btn-default btn-sm pull-right" onClick="backto_corporateaction();"><i class="fa fa-arrow-left"></i> Back</button>
+	<div class="label label-primary mb10">Warrant & Right</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm valign-top">
+		<tbody>
+			<tr>
+				<td colspan="3" align="left" nowrap="nowrap" data-ca="1"><h4 class="nm semibold" data-ca="1">AAAA</h4></td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Type</td>
+				<td width="10" align="left">:</td>
+				<td width="80%" align="left" data-ca="2">Warrant</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Listing Date</td>
+				<td align="left">:</td>
+				<td align="left" data-ca="5">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Maturity Date</td>
+				<td align="left">:</td>
+				<td align="left" data-ca="6">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Share</td>
+				<td align="left">:</td>
+				<td align="left" data-ca="4">1,123,456,789</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Exercise Cost</td>
+				<td align="left">:</td>
+				<td align="left" data-ca="3">558</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left"><hr class="mt5 mb5"></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left" data-ca="8">
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+ 
+ 
+<!-- =======================
+======SCRIPT MODULE=========
+============================-->
+<script src="../../../../module/saham/include/js/corporateaction.js"></script>

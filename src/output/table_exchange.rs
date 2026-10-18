@@ -5,9 +5,114 @@
 
 use comfy_table::{Attribute, Cell};
 
+use crate::model::{ActionKind, CorporateActions};
 use crate::model::{Calendar, CalendarCategory, Holidays, IndexBoard, InstrumentList, MemberList};
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
+
+fn day(d: Option<chrono::NaiveDate>) -> String {
+    d.map(|x| x.to_string())
+        .unwrap_or_else(|| f::DASH.to_string())
+}
+
+fn action_label(k: ActionKind) -> &'static str {
+    match k {
+        ActionKind::CashDividend => "cash dividend",
+        ActionKind::StockDividend => "stock dividend",
+        ActionKind::StockSplit => "stock split",
+        ActionKind::ReverseSplit => "reverse split",
+        ActionKind::Bonus => "bonus shares",
+        ActionKind::RightsIssue => "rights issue",
+        ActionKind::Warrant => "warrant",
+        ActionKind::Other => "other",
+    }
+}
+
+/// Corporate actions, meetings and warrants/rights of one company.
+pub fn corporate_actions(c: &CorporateActions, _color: bool) -> String {
+    let mut out = format!(
+        "{}{} · since {}\n",
+        c.symbol,
+        c.name
+            .as_ref()
+            .map(|n| format!(" · {n}"))
+            .unwrap_or_default(),
+        c.since
+    );
+    out.push_str("Corporate actions\n");
+    if c.actions.is_empty() {
+        out.push_str("None in this period.\n");
+    } else {
+        let mut t = base_table(false);
+        t.set_header(header(&[
+            "Action",
+            "Amount",
+            "Ratio",
+            "Cum",
+            "Ex",
+            "Recording",
+            "Payment",
+            "Status",
+        ]));
+        for a in &c.actions {
+            let ratio = match (a.ratio_old, a.ratio_new) {
+                (Some(o), Some(n)) => format!("{}:{}", f::price(Some(o)), f::price(Some(n))),
+                _ => f::DASH.to_string(),
+            };
+            t.add_row(vec![
+                Cell::new(action_label(a.kind)).add_attribute(Attribute::Bold),
+                right(f::price(a.amount)),
+                right(ratio),
+                Cell::new(day(a.cum_date)),
+                Cell::new(day(a.ex_date)),
+                Cell::new(day(a.recording_date)),
+                Cell::new(day(a.distribution_date)),
+                Cell::new(a.status.as_deref().unwrap_or(f::DASH)),
+            ]);
+        }
+        out.push_str(&t.to_string());
+        out.push('\n');
+    }
+    out.push_str("Shareholders' meetings (RUPS)\n");
+    if c.meetings.is_empty() {
+        out.push_str("None in this period.\n");
+    } else {
+        let mut t = base_table(false);
+        t.set_header(header(&["Date", "Time", "Status", "Venue"]));
+        for m in &c.meetings {
+            t.add_row(vec![
+                Cell::new(day(m.date)),
+                Cell::new(m.time.as_deref().unwrap_or(f::DASH)),
+                Cell::new(m.status.as_deref().unwrap_or(f::DASH)),
+                Cell::new(f::clip(m.venue.as_deref().unwrap_or(f::DASH), 60)),
+            ]);
+        }
+        out.push_str(&t.to_string());
+        out.push('\n');
+    }
+    if !c.warrants_rights.is_empty() {
+        out.push_str("Warrants and rights\n");
+        let mut t = base_table(false);
+        t.set_header(header(&[
+            "Code", "Type", "Exercise", "Issued", "Listing", "Maturity", "Status",
+        ]));
+        for w in &c.warrants_rights {
+            t.add_row(vec![
+                Cell::new(&w.code).add_attribute(Attribute::Bold),
+                Cell::new(&w.kind),
+                right(f::price(w.exercise_price)),
+                right(f::compact(w.shares)),
+                Cell::new(day(w.listing_date)),
+                Cell::new(day(w.maturity_date)),
+                Cell::new(w.status.as_deref().unwrap_or(f::DASH)),
+            ]);
+        }
+        out.push_str(&t.to_string());
+        out.push('\n');
+    }
+    out.push_str("Amount: IDR per share (dividend, or a rights issue's exercise price). Ratio: old:new. Source: IPOT. JSON carries each announcement.\n");
+    out
+}
 
 fn category_label(c: CalendarCategory) -> &'static str {
     match c {

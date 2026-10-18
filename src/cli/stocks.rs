@@ -7,9 +7,10 @@ use crate::error::IdxError;
 use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
-    SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS, SCHEMA_FINANCIALS,
-    SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_INSTRUMENTS, SCHEMA_NEWS, SCHEMA_PROFILE,
-    SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT, SCHEMA_TECHNICAL,
+    SCHEMA_ACTIONS, SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
+    SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_INSTRUMENTS, SCHEMA_NEWS,
+    SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT,
+    SCHEMA_TECHNICAL,
 };
 use crate::output::table;
 use crate::output::table_exchange as tx;
@@ -222,6 +223,18 @@ pub enum StocksCmd {
         search: Option<String>,
     },
 
+    /// Corporate actions (dividends, splits, bonus shares, rights), shareholders' meetings (RUPS), warrants and rights.
+    #[command(
+        after_help = "Examples:\n  idx stocks actions BBCA\n  idx stocks actions ENRG --since 2025-01-01\n  idx -o json stocks actions BBRI | jq '.data.actions[] | {label, amount, cum_date, ex_date}'\n\nFrom IPOT's corporate-action page: each action with its amount (IDR per share: the dividend,\nor a rights issue's exercise price), ratio (old:new), cum, ex, recording and payment dates and\nstatus; each RUPS with date, time and venue (JSON carries the agenda); listed warrants and rights.\nUpcoming events are included. For the market-wide schedule see `idx market calendar`."
+    )]
+    Actions {
+        /// IDX ticker, e.g. BBCA.
+        symbol: String,
+        /// Events from this date on, YYYY-MM-DD. Default: one year ago.
+        #[arg(long, value_name = "DATE")]
+        since: Option<chrono::NaiveDate>,
+    },
+
     /// Side-by-side fundamentals for two or more tickers.
     #[command(
         after_help = "Examples:\n  idx stocks compare BBCA BBRI BMRI BBNI\n  idx -o json stocks compare TLKM,ISAT,EXCL | jq '.data[].valuation.pe_trailing'"
@@ -259,6 +272,16 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
         StocksCmd::Fundamental { symbol } => fundamental(ctx, &symbol).await,
         StocksCmd::Technical { symbol, period } => technical(ctx, &symbol, period).await,
         StocksCmd::Compare { symbols } => compare(ctx, &symbols).await,
+        StocksCmd::Actions { symbol, since } => {
+            let sym = Symbol::parse(&symbol)?;
+            let list = universe::load(None).unwrap_or_default();
+            let result =
+                service::corporate_actions(&ctx.fetcher, &list, &sym, since, service::today_wib())
+                    .await?;
+            emit(ctx, SCHEMA_ACTIONS, result, |d| {
+                tx::corporate_actions(d, ctx.color)
+            })
+        }
         StocksCmd::List { board, search } => {
             let result =
                 service::instruments(&ctx.fetcher, board.as_deref(), search.as_deref()).await?;

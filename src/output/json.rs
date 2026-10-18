@@ -6,11 +6,11 @@ use serde::Serialize;
 
 use crate::error::{IdxError, Result};
 use crate::model::{
-    BandarReport, BandarScreen, Brief, BrokerSummary, Calendar, ChangesReport, DiscoveredFile,
-    DividendHistory, Earnings, EntityReport, Financials, ForeignFlowReport, ForeignReport,
-    Fundamentals, History, HoldersReport, Holidays, ImportReport, IndexBoard, InstrumentList,
-    MarketOverview, MemberList, NewsReport, Performance, Profile, Quote, Release, ScreenReport,
-    SentimentReport, Technical, Watchlist,
+    BandarReport, BandarScreen, Brief, BrokerSummary, Calendar, ChangesReport, CorporateActions,
+    DiscoveredFile, DividendHistory, Earnings, EntityReport, Financials, ForeignFlowReport,
+    ForeignReport, Fundamentals, History, HoldersReport, Holidays, ImportReport, IndexBoard,
+    InstrumentList, MarketOverview, MemberList, NewsReport, Performance, Profile, Quote, Release,
+    ScreenReport, SentimentReport, Technical, Watchlist,
 };
 use crate::providers::Sourced;
 
@@ -68,6 +68,7 @@ pub const SCHEMA_INSTRUMENTS: &str = "idx.instruments.v1";
 pub const SCHEMA_MEMBERS: &str = "idx.members.v1";
 pub const SCHEMA_INDICES: &str = "idx.indices.v1";
 pub const SCHEMA_CALENDAR: &str = "idx.calendar.v1";
+pub const SCHEMA_ACTIONS: &str = "idx.actions.v1";
 pub const SCHEMA_TECHNICAL: &str = "idx.technical.v1";
 pub const SCHEMA_SCREEN: &str = "idx.screen.v1";
 pub const SCHEMA_NEWS: &str = "idx.news.v1";
@@ -101,6 +102,7 @@ pub type InstrumentsEnvelope = Envelope<InstrumentList>;
 pub type MembersEnvelope = Envelope<MemberList>;
 pub type IndicesEnvelope = Envelope<IndexBoard>;
 pub type CalendarEnvelope = Envelope<Calendar>;
+pub type ActionsEnvelope = Envelope<CorporateActions>;
 pub type TechnicalEnvelope = Envelope<Technical>;
 pub type ScreenEnvelope = Envelope<ScreenReport>;
 pub type NewsEnvelope = Envelope<NewsReport>;
@@ -169,6 +171,7 @@ pub fn schema_names() -> &'static [&'static str] {
         "members",
         "indices",
         "calendar",
+        "actions",
         "technical",
         "screen",
         "news",
@@ -209,6 +212,7 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "members" => schemars::schema_for!(MembersEnvelope),
         "indices" => schemars::schema_for!(IndicesEnvelope),
         "calendar" => schemars::schema_for!(CalendarEnvelope),
+        "actions" => schemars::schema_for!(ActionsEnvelope),
         "technical" => schemars::schema_for!(TechnicalEnvelope),
         "screen" => schemars::schema_for!(ScreenEnvelope),
         "news" => schemars::schema_for!(NewsEnvelope),

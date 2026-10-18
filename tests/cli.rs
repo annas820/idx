@@ -486,6 +486,45 @@ fn calendar_command_surface() {
 }
 
 #[test]
+fn actions_command_surface() {
+    let sb = sandbox();
+    idx(&sb.cache, &sb.config)
+        .args(["stocks", "actions", "--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "idx stocks actions ENRG --since 2025-01-01",
+        ));
+    let out = idx(&sb.cache, &sb.config)
+        .args(["schema", "actions"])
+        .output()
+        .unwrap();
+    assert!(out.status.success());
+    let schema = String::from_utf8_lossy(&out.stdout);
+    assert!(schema.contains("ratio_old") && schema.contains("warrants_rights"));
+    idx(&sb.cache, &sb.config)
+        .args([
+            "-o",
+            "json",
+            "stocks",
+            "actions",
+            "BBCA",
+            "--since",
+            "2025-01-01",
+        ])
+        .assert()
+        .code(5)
+        .stderr(predicate::str::contains("\"offline_miss\""));
+    for args in [
+        vec!["stocks", "actions"],
+        vec!["stocks", "actions", "BBCA", "--since", "2025/01/01"],
+        vec!["stocks", "actions", "^JKSE"],
+    ] {
+        idx(&sb.cache, &sb.config).args(&args).assert().code(2);
+    }
+}
+
+#[test]
 fn bandar_command_surface() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

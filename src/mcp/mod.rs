@@ -34,10 +34,12 @@ use crate::output::json::{
     SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
 };
 use crate::output::json::{
+    SCHEMA_ACTIONS, SCHEMA_CALENDAR, SCHEMA_INDICES, SCHEMA_INSTRUMENTS, SCHEMA_MEMBERS,
+};
+use crate::output::json::{
     SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS, SCHEMA_NEWS,
     SCHEMA_SCREEN, SCHEMA_SENTIMENT,
 };
-use crate::output::json::{SCHEMA_CALENDAR, SCHEMA_INDICES, SCHEMA_INSTRUMENTS, SCHEMA_MEMBERS};
 use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
 use crate::service;
@@ -227,6 +229,15 @@ pub struct IndicesArgs {
     /// Trading day, YYYY-MM-DD. Default: the latest session published.
     #[serde(default)]
     pub date: Option<String>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct ActionsArgs {
+    /// One IDX ticker, e.g. "BBCA".
+    pub symbol: String,
+    /// Events from this date on, YYYY-MM-DD (upcoming ones included). Default: one year ago.
+    #[serde(default)]
+    pub since: Option<String>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -685,6 +696,34 @@ impl IdxServer {
                         &self.fetcher,
                         parse_date(&a.date)?,
                         &codes,
+                        service::today_wib(),
+                    )
+                    .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_corporate_actions",
+        description = "One IDX stock's corporate actions from IPOT, upcoming ones included: cash and stock dividends, stock splits and reverse splits, bonus shares and rights issues, each with kind, the source's label, amount (IDR per share: the dividend, or a rights issue's exercise price), ratio old:new (1:5 split, 2:1 rights), cum, ex, recording and payment dates, status (Final, Tentative, ...) and the announcement text; plus shareholders' meetings (RUPS: date, time, venue, agenda) and listed warrants and rights (code, exercise price, issued, listing and maturity dates). Default: events from one year ago on. Returns the idx.actions.v1 envelope."
+    )]
+    async fn corporate_actions(
+        &self,
+        Parameters(a): Parameters<ActionsArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbol = Symbol::parse(&a.symbol)?;
+                let list = universe::load(None).unwrap_or_default();
+                ok(
+                    SCHEMA_ACTIONS,
+                    service::corporate_actions(
+                        &self.fetcher,
+                        &list,
+                        &symbol,
+                        parse_date(&a.since)?,
                         service::today_wib(),
                     )
                     .await?,
@@ -1321,6 +1360,7 @@ mod tests {
                 "idx_broker",
                 "idx_calendar",
                 "idx_compare",
+                "idx_corporate_actions",
                 "idx_dividends",
                 "idx_earnings",
                 "idx_financials",

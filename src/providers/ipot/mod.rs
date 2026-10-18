@@ -19,6 +19,11 @@
 //!
 //! Broker names come from the bundled IDX member list (`crate::brokers`),
 //! filled in by `service::broker`.
+//!
+//! Corporate actions, verified 2026-10-18, same module and quirks:
+//! `.../corporateaction.php?code=BBCA&start=MM/DD/YYYY` answers the
+//! "Corporate Action & RUPS" fragment with events from `start` on (upcoming
+//! ones included); see `actions.rs`.
 
 use std::sync::Arc;
 use std::time::Duration;
@@ -26,15 +31,20 @@ use std::time::Duration;
 use chrono::NaiveDate;
 
 use crate::error::{IdxError, Result};
-use crate::http::Fetcher;
+use crate::http::{Fetched, Fetcher};
 use crate::model::{BrokerBoard, BrokerInvestor, BrokerSummary, Symbol};
 
 use super::Sourced;
 
+pub mod actions;
 pub mod parse;
 
 pub const NAME: &str = "ipot";
 const ENDPOINT: &str = "https://www.indopremier.com/module/saham/include/data-brokersummary.php";
+const ACTIONS_ENDPOINT: &str =
+    "https://www.indopremier.com/module/saham/include/corporateaction.php";
+/// Announcements are added and confirmed through the day.
+const TTL_ACTIONS: Duration = Duration::from_secs(6 * 3600);
 
 /// A range that ended before today no longer changes.
 const TTL_CLOSED: Duration = Duration::from_secs(7 * 24 * 3600);
@@ -86,22 +96,7 @@ pub async fn broker_summary(
 ) -> Result<Sourced<BrokerSummary>> {
     let url = url(symbol, from, to, investor, board);
     let ttl = if to < today { TTL_CLOSED } else { TTL_TODAY };
-    let headers = [("Accept".to_string(), "text/html".to_string())];
-    let mut f = fetcher.get(&url, &headers, ttl, None).await?;
-    for attempt in 1..ATTEMPTS {
-        if f.status != 404 {
-            break;
-        }
-        tracing::debug!(%symbol, attempt, "ipot answered 404, retrying");
-        tokio::time::sleep(RETRY_PAUSE * (1 << (attempt - 1))).await;
-        f = fetcher.get(&url, &headers, ttl, None).await?;
-    }
-    if !f.is_success() {
-        return Err(IdxError::provider(
-            NAME,
-            format!("broker summary for {symbol}: HTTP {}", f.status),
-        ));
-    }
+    let f = page(fetcher, &url, ttl, "broker summary", symbol).await?;
     let p = match parse::parse(&f.body)? {
         parse::Page::Invalid => {
             return Err(IdxError::NotFound(format!(
@@ -112,6 +107,82 @@ pub async fn broker_summary(
     };
     let mut s = Sourced::fresh(
         p.into_summary(symbol.clone(), from, to, investor, board),
+        NAME,
+    );
+    s.cached = f.cached;
+    s.stale = f.stale;
+    s.fetched_at = f.fetched_at;
+    Ok(s)
+}
+
+/// One HTML fragment, retrying the spurious 404 stretches; any other
+/// failure is a provider error naming `what`.
+async fn page(
+    fetcher: &Arc<Fetcher>,
+    url: &str,
+    ttl: Duration,
+    what: &str,
+    symbol: &Symbol,
+) -> Result<Fetched> {
+    let headers = [("Accept".to_string(), "text/html".to_string())];
+    let mut f = fetcher.get(url, &headers, ttl, None).await?;
+    for attempt in 1..ATTEMPTS {
+        if f.status != 404 {
+            break;
+        }
+        tracing::debug!(%symbol, attempt, "ipot answered 404, retrying");
+        tokio::time::sleep(RETRY_PAUSE * (1 << (attempt - 1))).await;
+        f = fetcher.get(url, &headers, ttl, None).await?;
+    }
+    if !f.is_success() {
+        return Err(IdxError::provider(
+            NAME,
+            format!("{what} for {symbol}: HTTP {}", f.status),
+        ));
+    }
+    Ok(f)
+}
+
+pub fn actions_url(symbol: &Symbol, since: NaiveDate) -> String {
+    format!(
+        "{ACTIONS_ENDPOINT}?code={}&start={}",
+        symbol.as_str(),
+        since.format("%m/%d/%Y")
+    )
+}
+
+/// Corporate actions, shareholders' meetings and listed warrants and rights
+/// of `symbol` from `since` on. The company name is left for the caller.
+pub async fn corporate_actions(
+    fetcher: &Arc<Fetcher>,
+    symbol: &Symbol,
+    since: NaiveDate,
+) -> Result<Sourced<crate::model::CorporateActions>> {
+    let f = page(
+        fetcher,
+        &actions_url(symbol, since),
+        TTL_ACTIONS,
+        "corporate actions",
+        symbol,
+    )
+    .await?;
+    let p = match actions::parse(&f.body) {
+        actions::Page::Invalid => {
+            return Err(IdxError::NotFound(format!(
+                "{symbol} is not a stock code IPOT knows"
+            )))
+        }
+        actions::Page::Actions(p) => p,
+    };
+    let mut s = Sourced::fresh(
+        crate::model::CorporateActions {
+            symbol: symbol.clone(),
+            name: None,
+            since,
+            actions: p.actions,
+            meetings: p.meetings,
+            warrants_rights: p.warrants_rights,
+        },
         NAME,
     );
     s.cached = f.cached;
@@ -246,5 +317,35 @@ mod tests {
         assert_eq!(err.exit_code(), 3);
         assert!(err.to_string().contains("HTTP 404"), "{err}");
         assert_eq!(be.call_count(), 2 + ATTEMPTS);
+    }
+
+    const ACTIONS_MEGA: &str =
+        include_str!("../../../tests/fixtures/ipot/corporateaction_mega_20250101.html");
+    const ACTIONS_INVALID: &str =
+        include_str!("../../../tests/fixtures/ipot/corporateaction_zzzz_invalid.html");
+
+    #[tokio::test]
+    async fn corporate_actions_url_parse_and_unknown_code() {
+        let s = Symbol::parse("mega").unwrap();
+        assert_eq!(
+            actions_url(&s, d(2025, 1, 1)),
+            "https://www.indopremier.com/module/saham/include/corporateaction.php?code=MEGA&start=01/01/2025"
+        );
+        let (f, be, _d) = fetcher(
+            FixtureBackend::new()
+                .route("corporateaction.php?code=MEGA", 200, ACTIONS_MEGA)
+                .route("corporateaction.php?code=ZZZZ", 200, ACTIONS_INVALID),
+        );
+        let got = corporate_actions(&f, &s, d(2025, 1, 1)).await.unwrap();
+        assert_eq!(got.provider, "ipot");
+        assert_eq!(got.data.symbol.as_str(), "MEGA");
+        assert_eq!(got.data.since, d(2025, 1, 1));
+        assert!(got.data.actions.len() >= 3);
+        assert_eq!(got.data.meetings.len(), 2);
+        let err = corporate_actions(&f, &Symbol::parse("ZZZZ").unwrap(), d(2025, 1, 1))
+            .await
+            .unwrap_err();
+        assert_eq!(err.exit_code(), 4);
+        assert_eq!(be.call_count(), 2);
     }
 }

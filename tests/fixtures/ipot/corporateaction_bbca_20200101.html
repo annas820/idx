@@ -1,0 +1,720 @@
+
+<!--Corporate Action-->
+<div class="pa5">
+	<div class="row mincol-3">
+		<div class="col col-xs-2 col-sm-1">
+			<label class="pt3 nm">Since :</label>
+		</div>
+		<div class="col col-xs-5 col-sm-3">
+			<input class="form-control input-xs text-center" id="startDateCorporateAction" name="startDate" value="01/01/2020" type="text">
+		</div>
+		<div class="col col-xs-2 col-sm-1">
+			<button type="button" class="btn btn-default btn-block btn-xs-input" onClick="popinfo_corporateaction ($('#stockInfoCode').val(),$('#startDateCorporateAction').val());">GO</button>
+		</div>
+	</div>		
+</div>
+<hr class="mt0">
+
+<div id="ca_allcontainer" class="mb10">
+	<h5 class="pl5 mb0">Corporate Actions</h5>
+	<div class="table-responsive">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm">
+			<thead>
+				<tr>
+					<th align="left">#</th>
+					<th align="left">Action Type</th>
+					<th align="right">Amount</th>
+					<th align="right">R1</th>
+					<th align="right">R2</th>
+					<th align="center">Cum. Date</th>
+					<th align="center">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">1</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">432.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2021-04-07</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2021-04-08</td>
+					<td hidden style="display:none" data-ca="6">2021-04-09</td>
+					<td hidden style="display:none" data-ca="7">2021-04-28</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 432</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 7 Apr 21</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 8 Apr 21</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 9 Apr 21</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 12 Apr 21</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 9 Apr 21</li><li>Tanggal Pembayaran dividen tunai : 28 Apr 21</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">2</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">455.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2020-04-20</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2020-04-21</td>
+					<td hidden style="display:none" data-ca="6">2020-04-22</td>
+					<td hidden style="display:none" data-ca="7">2020-05-11</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas BANK CENTRAL ASIA Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 455,- (Empat Ratus Lima Puluh Lima Rupiah)</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 20 April 2020</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 21 April 2020</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 22 April 2020</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 23 April 2020</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 22 April 2020</li><li>Tanggal Pembayaran dividen tunai : 11 Mei 2020</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">3</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">42.50</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2023-12-01</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2023-12-04</td>
+					<td hidden style="display:none" data-ca="6">2023-12-05</td>
+					<td hidden style="display:none" data-ca="7">2023-12-20</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 42,5</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 1 Dec 23</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 4 Dec 23</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 5 Dec 23</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 6 Dec 23</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 5 Dec 23</li><li>Tanggal Pembayaran dividen interim : 20 Dec 23</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">4</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">98.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2020-12-07</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2020-12-08</td>
+					<td hidden style="display:none" data-ca="6">2020-12-10</td>
+					<td hidden style="display:none" data-ca="7">2020-12-22</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 98</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 7 Dec 20</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 8 Dec 20</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 10 Dec 20</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 11 Dec 20</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 10 Dec 20</li><li>Tanggal Pembayaran dividen interim : 22 Dec 20</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">5</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">432.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2021-04-07</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2021-04-08</td>
+					<td hidden style="display:none" data-ca="6">2021-04-09</td>
+					<td hidden style="display:none" data-ca="7">2021-04-28</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 432</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 7 Apr 21</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 8 Apr 21</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 9 Apr 21</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 12 Apr 21</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 9 Apr 21</li><li>Tanggal Pembayaran dividen tunai : 28 Apr 21</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">6</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">50.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2024-11-20</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2024-11-21</td>
+					<td hidden style="display:none" data-ca="6">2024-11-22</td>
+					<td hidden style="display:none" data-ca="7">2024-12-11</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 50</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 20 Nov 24</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 21 Nov 24</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 22 Nov 24</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 25 Nov 24</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 22 Nov 24</li><li>Tanggal Pembayaran dividen interim : 11 Dec 24</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">7</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">25.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2021-11-16</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2021-11-17</td>
+					<td hidden style="display:none" data-ca="6">2021-11-18</td>
+					<td hidden style="display:none" data-ca="7">2021-12-07</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 25</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 16 Nov 21</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 17 Nov 21</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 18 Nov 21</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 19 Nov 21</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 18 Nov 21</li><li>Tanggal Pembayaran dividen interim : 7 Dec 21</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">8</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">120.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2022-03-25</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2022-03-28</td>
+					<td hidden style="display:none" data-ca="6">2022-03-29</td>
+					<td hidden style="display:none" data-ca="7">2022-04-19</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 120</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 25 Mar 22</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 28 Mar 22</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 29 Mar 22</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 30 Mar 22</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 29 Mar 22</li><li>Tanggal Pembayaran dividen tunai : 19 Apr 22</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">9</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">455.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2020-04-20</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2020-04-21</td>
+					<td hidden style="display:none" data-ca="6">2020-04-22</td>
+					<td hidden style="display:none" data-ca="7">2020-05-11</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas BANK CENTRAL ASIA Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 455,- (Empat Ratus Lima Puluh Lima Rupiah)</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 20 April 2020</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 21 April 2020</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 22 April 2020</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 23 April 2020</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 22 April 2020</li><li>Tanggal Pembayaran dividen tunai : 11 Mei 2020</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">10</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Stock Split</a></td>
+					<td align="right">0.00</td>
+					<td align="right">1</td>
+					<td align="right">5</td>
+					<td align="center" data-ca="3">2021-10-12</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2021-10-13</td>
+					<td hidden style="display:none" data-ca="6">2021-10-14</td>
+					<td hidden style="display:none" data-ca="7">2021-10-15</td>
+					<td hidden style="display:none" data-ca="8">2021-10-15</td>
+					<td hidden style="display:none" data-ca="9"><p>Dengan ini kami beritahukan bahwa PT Bank Central Aisa Tbk (BBCA) bermaksud untuk melakukan Pemecahan Nilai Nominal Saham (Stock Split) dengan ketentuan sebagai berikut : </p><p>Rasio Pemecahan Nilai Nominal Saham (Stock Split) dengan Nilai Nominal Lama Rp 62.5,- per saham menjadi Nominal Baru Rp 12.5,- per saham. Rasio Pemecahan Unit Saham = 1 : 5</p><p>Adapun jadwal Pelaksanaan Pemecahan Saham (Stock Split) adalah sebagai berikut :</p><p><table border="1"><tr><th><b>No.</b></th><th><b>Kegiatan</b></th><th><b>Tanggal</b></th></tr><tr><td> 1.</td><td> Akhir Perdagangan Saham dengan Nilai Nominal Lama Di Seluruh Pasar</td><td>12 Oktober2021</td></tr><tr><td>2.</td><td>Mulai Perdagangan Saham dengan Nilai Nominal Baru Di Pasar Reguler dan Negosiasi</td><td>13 Oktober 2021</td></tr><tr><td>3.</td><td>Mulai Perdagangan Saham dengan Nilai Nominal Baru Di Pasar Tunai</li></td><td>15 Oktober 2021</td></tr></table></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">11</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">25.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2021-11-16</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2021-11-17</td>
+					<td hidden style="display:none" data-ca="6">2021-11-18</td>
+					<td hidden style="display:none" data-ca="7">2021-12-07</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 25</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 16 Nov 21</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 17 Nov 21</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 18 Nov 21</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 19 Nov 21</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 18 Nov 21</li><li>Tanggal Pembayaran dividen interim : 7 Dec 21</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">12</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">120.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2022-03-25</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2022-03-28</td>
+					<td hidden style="display:none" data-ca="6">2022-03-29</td>
+					<td hidden style="display:none" data-ca="7">2022-04-19</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 120</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 25 Mar 22</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 28 Mar 22</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 29 Mar 22</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 30 Mar 22</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 29 Mar 22</li><li>Tanggal Pembayaran dividen tunai : 19 Apr 22</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">13</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">35.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2022-12-01</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2022-12-02</td>
+					<td hidden style="display:none" data-ca="6">2022-12-05</td>
+					<td hidden style="display:none" data-ca="7">2022-12-20</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 35</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 1 Dec 22</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 2 Dec 22</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 5 Dec 22</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 6 Dec 22</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 5 Dec 22</li><li>Tanggal Pembayaran dividen interim : 20 Dec 22</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">14</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">25.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2026-08-28</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2026-08-31</td>
+					<td hidden style="display:none" data-ca="6">2026-09-01</td>
+					<td hidden style="display:none" data-ca="7">2026-09-16</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 25</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 28 Aug 26</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 31 Aug 26</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 1 Sep 26</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 2 Sep 26</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 1 Sep 26</li><li>Tanggal Pembayaran dividen interim : 16 Sep 26</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">15</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">170.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2023-03-28</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2023-03-29</td>
+					<td hidden style="display:none" data-ca="6">2023-03-30</td>
+					<td hidden style="display:none" data-ca="7">2023-04-14</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai PT Bank Central Asia Tbk (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (Satu) saham akan memperoleh Rp 170,- (Seratus Tujuh Puluh Rupiah)<p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 28 Mar 23</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 29 Mar 23</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 30 Mar 23</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 31 Mar 23</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 30 Mar 23</li><li>Tanggal Pembayaran dividen tunai : 14 Apr 23</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">16</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">42.50</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2023-12-01</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2023-12-04</td>
+					<td hidden style="display:none" data-ca="6">2023-12-05</td>
+					<td hidden style="display:none" data-ca="7">2023-12-20</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 42,5</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 1 Dec 23</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 4 Dec 23</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 5 Dec 23</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 6 Dec 23</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 5 Dec 23</li><li>Tanggal Pembayaran dividen interim : 20 Dec 23</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">17</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">98.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2020-12-07</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2020-12-08</td>
+					<td hidden style="display:none" data-ca="6">2020-12-10</td>
+					<td hidden style="display:none" data-ca="7">2020-12-22</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 98</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 7 Dec 20</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 8 Dec 20</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 10 Dec 20</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 11 Dec 20</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 10 Dec 20</li><li>Tanggal Pembayaran dividen interim : 22 Dec 20</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">18</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">227.50</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2024-03-22</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2024-03-25</td>
+					<td hidden style="display:none" data-ca="6">2024-03-26</td>
+					<td hidden style="display:none" data-ca="7">2024-04-04</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 227,5</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 22 Mar 24</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 25 Mar 24</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 26 Mar 24</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 27 Mar 24</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 26 Mar 24</li><li>Tanggal Pembayaran dividen tunai : 4 Apr 24</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">19</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">250.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2025-03-20</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2025-03-21</td>
+					<td hidden style="display:none" data-ca="6">2025-03-24</td>
+					<td hidden style="display:none" data-ca="7">2025-04-11</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 250</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 20 Mar 25</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 21 Mar 25</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 24 Mar 25</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 25 Mar 25</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 24 Mar 25</li><li>Tanggal Pembayaran dividen tunai : 11 Apr 25</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">20</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">50.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2024-11-20</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2024-11-21</td>
+					<td hidden style="display:none" data-ca="6">2024-11-22</td>
+					<td hidden style="display:none" data-ca="7">2024-12-11</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 50</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 20 Nov 24</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 21 Nov 24</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 22 Nov 24</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 25 Nov 24</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 22 Nov 24</li><li>Tanggal Pembayaran dividen interim : 11 Dec 24</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">21</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">227.50</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2024-03-22</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2024-03-25</td>
+					<td hidden style="display:none" data-ca="6">2024-03-26</td>
+					<td hidden style="display:none" data-ca="7">2024-04-04</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 227,5</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 22 Mar 24</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 25 Mar 24</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 26 Mar 24</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 27 Mar 24</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 26 Mar 24</li><li>Tanggal Pembayaran dividen tunai : 4 Apr 24</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">22</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">170.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2023-03-28</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2023-03-29</td>
+					<td hidden style="display:none" data-ca="6">2023-03-30</td>
+					<td hidden style="display:none" data-ca="7">2023-04-14</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai PT Bank Central Asia Tbk (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (Satu) saham akan memperoleh Rp 170,- (Seratus Tujuh Puluh Rupiah)<p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 28 Mar 23</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 29 Mar 23</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 30 Mar 23</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 31 Mar 23</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 30 Mar 23</li><li>Tanggal Pembayaran dividen tunai : 14 Apr 23</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">23</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">35.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2022-12-01</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2022-12-02</td>
+					<td hidden style="display:none" data-ca="6">2022-12-05</td>
+					<td hidden style="display:none" data-ca="7">2022-12-20</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 35</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 1 Dec 22</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 2 Dec 22</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 5 Dec 22</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 6 Dec 22</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 5 Dec 22</li><li>Tanggal Pembayaran dividen interim : 20 Dec 22</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">24</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Stock Split</a></td>
+					<td align="right">0.00</td>
+					<td align="right">1</td>
+					<td align="right">5</td>
+					<td align="center" data-ca="3">2021-10-12</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2021-10-13</td>
+					<td hidden style="display:none" data-ca="6">2021-10-14</td>
+					<td hidden style="display:none" data-ca="7">2021-10-15</td>
+					<td hidden style="display:none" data-ca="8">2021-10-15</td>
+					<td hidden style="display:none" data-ca="9"><p>Dengan ini kami beritahukan bahwa PT Bank Central Aisa Tbk (BBCA) bermaksud untuk melakukan Pemecahan Nilai Nominal Saham (Stock Split) dengan ketentuan sebagai berikut : </p><p>Rasio Pemecahan Nilai Nominal Saham (Stock Split) dengan Nilai Nominal Lama Rp 62.5,- per saham menjadi Nominal Baru Rp 12.5,- per saham. Rasio Pemecahan Unit Saham = 1 : 5</p><p>Adapun jadwal Pelaksanaan Pemecahan Saham (Stock Split) adalah sebagai berikut :</p><p><table border="1"><tr><th><b>No.</b></th><th><b>Kegiatan</b></th><th><b>Tanggal</b></th></tr><tr><td> 1.</td><td> Akhir Perdagangan Saham dengan Nilai Nominal Lama Di Seluruh Pasar</td><td>12 Oktober2021</td></tr><tr><td>2.</td><td>Mulai Perdagangan Saham dengan Nilai Nominal Baru Di Pasar Reguler dan Negosiasi</td><td>13 Oktober 2021</td></tr><tr><td>3.</td><td>Mulai Perdagangan Saham dengan Nilai Nominal Baru Di Pasar Tunai</li></td><td>15 Oktober 2021</td></tr></table></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">25</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">55.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2025-12-02</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2025-12-03</td>
+					<td hidden style="display:none" data-ca="6">2025-12-04</td>
+					<td hidden style="display:none" data-ca="7">2025-12-22</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 55</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 2 Dec 25</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 3 Dec 25</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 4 Dec 25</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 5 Dec 25</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 4 Dec 25</li><li>Tanggal Pembayaran dividen interim : 22 Dec 25</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">26</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">281.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2026-03-27</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2026-03-30</td>
+					<td hidden style="display:none" data-ca="6">2026-03-31</td>
+					<td hidden style="display:none" data-ca="7">2026-04-08</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen tunai atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 281</p><p>Adapun jadwal pembagian dividen tunai adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 27 Mar 26</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 30 Mar 26</li><li>Tanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 31 Mar 26</li><li>Tanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 1 Apr 26</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 31 Mar 26</li><li>Tanggal Pembayaran dividen tunai : 8 Apr 26</li></ul></p></td>
+				</tr>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">27</td>
+					<td align="left"><a href="javascript:void(0);" onClick="showdetail_ca($(this).parents().eq(1));" data-ca="2">Cash Deviden</a></td>
+					<td align="right">20.00</td>
+					<td align="right">0</td>
+					<td align="right">0</td>
+					<td align="center" data-ca="3">2026-06-15</td>
+					<td align="center" data-ca="4">Final</td>
+					<td hidden style="display:none" data-ca="5">2026-06-17</td>
+					<td hidden style="display:none" data-ca="6">2026-06-18</td>
+					<td hidden style="display:none" data-ca="7">2026-06-26</td>
+					<td hidden style="display:none" data-ca="8">-</td>
+					<td hidden style="display:none" data-ca="9"><p>Jadwal Pelaksanaan Pembagian dividen interim atas saham Bank Central Asia Tbk, PT (BBCA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 20</p><p>Adapun jadwal pembagian dividen interim adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 15 Jun 26</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 17 Jun 26</li><li>Tanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 18 Jun 26</li><li>Tanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 19 Jun 26</li><li>Tanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 18 Jun 26</li><li>Tanggal Pembayaran dividen interim : 26 Jun 26</li></ul></p></td>
+				</tr>
+	
+
+				</tbody>
+		</table>
+	</div>
+	
+	<h5 class="pl5 mb0">RUPS</h5>
+	<div class="table-responsive">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm">
+			<thead>
+				<tr>
+					<th align="left">#</th>
+					<th align="center">Date</th>
+					<th align="center">Time</th>
+					<th align="center">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">1</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2026-03-12</a></td>
+					<td align="center">14:00:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">Menara BCA, Grand Indonesia Jl. M.H. Thamrin No. 1 Jakarta 10310</td>
+					<td hidden style="display:none" data-ca="5"><li><b><u><i>RUPS akan dilaksanakan pada pukul 14:00 WIB</i></b></u><br></br>PT Bank Central Asia Tbk (BBCA)<p></p><li><b>Recording Date : 11 February 2026 Waktu : 16:00 WIB</li></b><p></p><li><b>Agenda RUPS Tahunan :<li></b></li><ol><li>Persetujuan Laporan Tahunan dan Laporan Keuangan Tahunan</li><li>Persetujuan Penggunaan Laba Bersih</li><li>Penetapan gaji atau honorarium dan tunjangan untuk tahun buku 2026 serta tantiem untuk tahun buku 2025 kepada anggota Direksi dan Dewan Komisaris Perseroan</li><li>Penunjukan Kantor Akuntan Publik Terdaftar (termasuk Akuntan Publik Terdaftar yang tergabung dalam Kantor Akuntan Publik Terdaftar) untuk mengaudit/memeriksa buku-buku Perseroan untuk tahun buku yang berakhir pada tanggal 31 Desember 2026</li><li>Persetujuan atas rencana pembelian kembali saham yang dikeluarkan oleh Perseroan (Buyback)</li><li>Perubahan Anggaran Dasar Perseroan</li><li>Penegasan berakhirnya masa jabatan, serta pengangkatan anggota Dewan Komisaris dan Direksi Perseroan</ol></li><p><i><b>Agenda RUPS Luar Biasa:</p></b></ol></li></td>
+				</tr>
+
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">2</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2023-03-16</a></td>
+					<td align="center">09:30:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">MENARA BCA GRAND INDONESIA, JL. M.H. THAMRIN NO. 1 KOTA ADM. JAKARTA PUSAT DKI. JAKARTA Indonesia</td>
+					<td hidden style="display:none" data-ca="5"><li><b><u><i>RUPS akan dilaksanakan pada pukul 09:30 WIB</i></b></u><br></br>PT Bank Central Asia Tbk (BBCA)<p></p><li><b>Recording Date: 15 February 2023 Waktu : 16:00 WIB</li></b><p></p><li><b>Agenda RUPS Tahunan :<li></b></li><ol><li>Persetujuan atas Laporan Tahunan termasuk Laporan Keuangan Perseroan dan Laporan Tugas Pengawasan Dewan Komisaris Perseroan untuk tahun buku yang berakhir pada tanggal 31 Desember 2022 serta memberikan pelunasan dan pembebasan tanggung jawab (acquit et decharge) kepada anggota Direksi atas tindakan pengurusan dan kepada anggota Dewan Komisaris Perseroan atas tindakan pengawasan yang dilakukan selama tahun buku yang berakhir pada tanggal 31 Desember 2022</li><li>Penetapan penggunaan Laba Bersih Perseroan untuk tahun buku yang berakhir pada tanggal 31 Desember 2022</li><li>Penetapan gaji atau honorarium dan tunjangan untuk tahun buku 2023 serta tantiem untuk tahun buku 2022 kepada anggota Direksi dan Dewan Komisaris Perseroan</li><li>Penunjukan Kantor Akuntan Publik Terdaftar (termasuk Akuntan Publik Terdaftar yang tergabung dalam Kantor Akuntan Publik Terdaftar) untuk mengaudit/memeriksa buku-buku Perseroan untuk tahun buku yang berakhir pada tanggal 31 Desember 2023</li><li>Pemberian kuasa dan wewenang kepada Direksi untuk membayar dividen interim/sementara untuk tahun buku yang berakhir pada tanggal 31 Desember 2023</li><li>Persetujuan atas perubahan Recovery Plan Perseroan</li><li>Persetujuan atas Resolution Plan Perseroan</ol></li><p><i><b>Agenda RUPS Luar Biasa:</p></b></ol></li></td>
+				</tr>
+
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">3</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2025-03-12</a></td>
+					<td align="center">09:30:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">Menara BCA, Grand Indonesia, Jl. M.H. Thamrin No. 1, Jakarta, 10310</td>
+					<td hidden style="display:none" data-ca="5"><li><b><u><i>RUPS akan dilaksanakan pada pukul 09:30 WIB</i></b></u><br></br>PT Bank Central Asia Tbk (BBCA)<p></p><li><b>Recording Date : 11 February 2025 Waktu : 16:00 WIB</li></b><p></p><li><b>Agenda RUPS Tahunan :<li></b></li><ol><li>Persetujuan Laporan Tahunan dan Laporan Keuangan Tahunan</li><li>Persetujuan Penggunaan Laba Bersih</li><li>Perubahan susunan anggota Dewan Komisaris dan Direksi Perseroan</li><li>Penetapan gaji atau honorarium dan tunjangan untuk tahun buku 2025 serta tantiem untuk tahun buku 2024 kepada anggota Direksi dan Dewan Komisaris Perseroan</li><li>Penunjukan Kantor Akuntan Publik Terdaftar (termasuk Akuntan Publik Terdaftar yang tergabung dalam Kantor Akuntan Publik Terdaftar) untuk mengaudit/memeriksa buku-buku Perseroan untuk tahun buku yang berakhir pada tanggal 31 Desember 2025</li><li>Pemberian kuasa dan wewenang kepada Direksi untuk membayar dividen interim/sementara untuk tahun buku yang berakhir pada tanggal 31 Desember 2025</li><li>Persetujuan atas perubahan Recovery Plan Perseroan</ol></li><p><i><b>Agenda RUPS Luar Biasa:</p></b></ol></li></td>
+				</tr>
+
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">4</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2024-03-14</a></td>
+					<td align="center">09:30:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">Menara BCA</td>
+					<td hidden style="display:none" data-ca="5"><li><b><u><i>RUPS akan dilaksanakan pada pukul 09:30 WIB</i></b></u><br></br>PT Bank Central Asia Tbk (BBCA)<p></p><li><b>Recording Date : 13 February 2024 Waktu : 16:00 WIB</li></b><p></p><li><b>Agenda RUPS Tahunan :<li></b></li><ol><li>Persetujuan Laporan Tahunan dan Laporan Keuangan Tahunan</li><li>Persetujuan Penggunaan Laba Bersih</li><li>Penetapan gaji atau honorarium dan tunjangan untuk tahun buku 2024 serta tantiem untuk tahun buku 2023 kepada anggota Direksi dan Dewan Komisaris Perseroan</li><li>Persetujuan Penunjukkan Akuntan Publik dan/atau Kantor Akuntan Publik</li><li>Pemberian kuasa dan wewenang kepada Direksi untuk membayar dividen interim/sementara untuk tahun buku yang berakhir pada tanggal 31 Desember 2024</li><li>Persetujuan atas perubahan Recovery Plan Perseroan</ol></li><p><i><b>Agenda RUPS Luar Biasa:</p></b></ol></li></td>
+				</tr>
+
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">5</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2022-03-17</a></td>
+					<td align="center">09:00:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">Menara BCA</td>
+					<td hidden style="display:none" data-ca="5"><p><li><b><u><i>RUPS akan dilaksanakan pada pukul 09:00 WIB</i></b></u><br></br>PT Bank Central Asia Tbk (BBCA)<p></p><li><b>Recording Date : 16 Februari 2022</li></b><p></p><li><b>Agenda RUPS Tahunan  : <li></b></li><p><ol><li> Persetujuan Laporan Tahunan dan Laporan Keuangan Tahunan</li><li> Persetujuan Penggunaan Laba Bersih</li><li> Persetujuan Pengangkatan Kembali / Perubahan Susunan Direksi</li><li> Penetapan gaji atau honorarium dan tunjangan untuk tahun buku 2022 serta tantiem untuk tahun buku 2021 kepada anggota Direksi dan Dewan Komisaris Perseroan</li><li> Persetujuan Penunjukkan Akuntan Publik dan / atau Kantor Akuntan Publik</li><li> Pemberian kuasa dan wewenang kepada Direksi untuk membayar dividen interim / sementara untuk tahun buku yang berakhir pada tanggal 31 Desember 2022 </li><li> Persetujuan atas perubahan Recovery Plan Perseroan</ol></li><li><p><b></td>
+				</tr>
+
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">6</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2021-09-23</a></td>
+					<td align="center">10:00:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">Menara BCA</td>
+					<td hidden style="display:none" data-ca="5"><li><b><u><i>RUPS akan dilaksanakan pada pukul 10:00 WIB</i></b></u><br></br>PT Bank Central Asia Tbk (BBCA),<p></p><li><b>Recording Date: 31 August 2021 Waktu : 16:00 WIB</li></b><p></p><li><b>Agenda RUPS Tahunan :<li></b></li></ol></li><p><i><b>Agenda RUPS Luar Biasa:</p></b><ol><li>Persetujuan Pemecahan Nilai Nominal Saham (Stock Split)</ol></li></td>
+				</tr>
+
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">7</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2021-03-29</a></td>
+					<td align="center">09:00:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">MENARA BCA GRAND INDONESIA, LANTAI 19, JL. M.H. THAMRIN NO. 1 JAKARTA 10310, DKI. JAKARTA, KOTA ADM. JAKARTA PUSAT, INDONESIA</td>
+					<td hidden style="display:none" data-ca="5"><li><b><u><i>RUPS akan dilaksanakan pada pukul 09:00 WIB</i></b></u><br></br>PT Bank Central Asia Tbk (BBCA),<p></p><li><b>Recording Date: 26 Februari 2021 Waktu : 16:00 WIB</li></b><p></p><li><b>Agenda RUPS Tahunan :<li></b></li><ol><li>Persetujuan Laporan Tahunan dan Laporan Keuangan Tahunan</li><li>Persetujuan Penggunaan Laba Bersih</li><li>Penegasan berakhirnya masa jabatan, serta pengangkatan anggota Dewan Komisaris dan Direksi Perseroan</li><li>Penetapan gaji atau honorarium dan tunjangan untuk tahun buku 2021 serta tantiem untuk tahun buku 2020 kepada anggota Direksi dan Dewan Komisaris Perseroan</li><li>Persetujuan Penunjukkan Akuntan Publik dan/atau Kantor Akuntan Publik</li><li>Pemberian kuasa dan wewenang kepada Direksi untuk membayar dividen interim/sementara untuk tahun buku yang berakhir pada tanggal 31 Desember 2021</li><li>Persetujuan atas perubahan Recovery Plan Perseroan</ol></li><p><i><b>Agenda RUPS Luar Biasa:</p></b></ol></li></td>
+				</tr>
+
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">8</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2020-07-30</a></td>
+					<td align="center">10:00:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">MENARA BCA GRAND INDONESIA, LANTAI 19, JL. M.H. THAMRIN NO. 1 JAKARTA 10310,DKI. JAKARTA,KOTA ADM. JAKARTA PUSAT,INDONESIA</td>
+					<td hidden style="display:none" data-ca="5"><li><b><u><i>RUPS akan dilaksanakan pada pukul 10:00 WIB</i></b></u><br></br>PT BANK CENTRAL ASIA Tbk (BBCA),<p></p><li><b>Recording Date: 7 Juli 2020 Waktu : 16:00 WIB</li></b><p></p><li><b>Agenda RUPS Tahunan :<li></b></li></ol></li><p><i><b>Agenda RUPS Luar Biasa :</p></b><ol><li>Persetujuan atas rancangan akuisisi saham pada PT Bank Rabobank Internasional Indonesia oleh Perseroan</li><li>Persetujuan Perubahan Anggaran Dasar</li></ol></td>
+				</tr>
+
+				<tr>
+					<td hidden style="display:none" data-ca="1">BBCA</td>
+					<td align="left">9</td>
+					<td align="center"><a href="javascript:void(0);" onClick="showdetail_rups($(this).parents().eq(1));" data-ca="2">2020-04-09</a></td>
+					<td align="center">10:00:00</td>
+					<td align="center" data-ca="3">Final</td>
+					<td hidden style="display:none" data-ca="4">Menara BCA Grand Indonesia, Lantai 19 Jl. M.H. Thamrin No. 1, Jakarta 10310</td>
+					<td hidden style="display:none" data-ca="5"><li><b><u><i>RUPS akan dilaksanakan pada pukul 10:00 WIB</i></b></u><br></br>PT Bank Central Asia Tbk (BBCA),<p></p><li><b>Recording Date: 10 Maret 2020 Waktu : 16:00 WIB</li></b><p></p><li><b>Agenda RUPS Tahunan :<li></b></li><ol><li>Persetujuan Laporan Tahunan dan Laporan Keuangan Tahunan</li><li>Persetujuan Penggunaan Laba Bersih</li><li>Persetujuan Pengangkatan Kembali / Perubahan Susunan Direksi</li><li>Penetapan gaji atau honorarium dan tunjangan untuk tahun buku 2020 serta tantiem untuk tahun buku 2019 kepada anggota Direksi dan Dewan Komisaris Perseroan</li><li>Persetujuan Penunjukkan Akuntan Publik dan/atau Kantor Akuntan Publik</li><li>Pemberian kuasa dan wewenang kepada Direksi untuk membayar dividen interim/sementara untuk tahun buku yang berakhir pada tanggal 31 Desember 2020</li><li>Persetujuan atas perubahan Recovery Plan Perseroan</ol></li><p><i><b>Agenda RUPS Luar Biasa:</p></b></ol></li></td>
+				</tr>
+
+	
+			</tbody>
+		</table>
+	</div>
+	
+	<h5 class="pl5 mb0">Warrant & Right</h5>
+	<div class="table-responsive">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm">
+			<thead>
+				<tr>
+					<th align="left">#</th>
+					<th align="left">Stock</th>
+					<th align="center">W/R</th>
+					<th align="right">Exercise</th>
+					<th align="right">Share</th>
+					<th align="center">Listing Date</th>
+					<th align="center">Maturity Date</th>
+					<th align="center">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+			</tbody>
+		</table>
+	</div>	
+</div>
+
+<div class="pa10" id="detail_ca" style="display:none">
+	<button type="button" class="btn btn-default btn-sm pull-right" onClick="backto_corporateaction();"><i class="fa fa-arrow-left"></i> Back</button>
+	<div class="label label-primary mb10">Corporate Action</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm valign-top">
+		<tbody>
+			<tr>
+				<td colspan="3" align="left" nowrap="nowrap"><h4 class="nm semibold" data-ca="1">AAAA</h4></td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Action Type</td>
+				<td width="10" align="left">:</td>
+				<td width="80%" align="left" data-ca="2">Cash Dividend</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Cum. Date</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="3">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Ex. Date</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="5">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Rec. Date</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="6">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Dist. Date</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="7">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Right End</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="8">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Status</td>
+				<td align="left">: </td>
+				<td align="left" data-ca="4">Tentative</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left"><hr class="mt5 mb5"></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left" data-ca="9">
+					<p>Jadwal Pelaksanaan HMETD atas Penawaran Umum Terbatas T dalam rangka Penerbitan Hak Memesan Efek Terlebih dahulu (HMETD) Berlina Tbk, PT (BRNA)</p><p>Dengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan Penawaran Umum Terbatas T dalam rangka Penerbitan Hak Memesan Efek Terlebih Dahulu (HMETD) dengan rasio pembagian HMETD adalah setiap 35 saham lama yang dimiliki akan mendapatkan 13 HMETD, dengan harga pelaksanaan Rp. 585 per saham </p><p>Adapun jadwal kegiatan HMETD tersebut adalah sebagai berikut :<ul><li>Tanggal perdagangan bursa yang memuat HMETD (Cum HMETD) di Pasar Reguler dan Pasar Negosiasi : 8 Sep 15</li><li>Tanggal perdagangan bursa tidak memuat HMETD (Ex HMETD) di Pasar Reguler dan Pasar Negosiasi : 9 Sep 15</li><li>Tanggal perdagangan bursa yang memuat HMETD (Cum HMETD) di Pasar Tunai : 11 Sep 15</li><li>Tanggal perdagangan bursa tidak memuat HMETD (Ex HMETD) di Pasar Tunai : 14 Sep 15</li><li>Tanggal Penentuan Pemegang Rekening yang berhak menerima HMETD di dalam rekening Efek (Recording Date) : 11 Sep 15</li><li>Periode Perdagangan HMETD : 15 Sep 15 - 21 Sep 15</li></ul></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="pa10" id="detail_rups" style="display:none">
+	<button type="button" class="btn btn-default btn-sm pull-right" onClick="backto_corporateaction();"><i class="fa fa-arrow-left"></i> Back</button>
+	<div class="label label-primary mb10">RUPS</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm valign-top">
+		<tbody>
+			<tr>
+				<td colspan="3" align="left" nowrap="nowrap"><h4 class="nm semibold" data-ca="1">AAAA</h4></td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Date</td>
+				<td width="10" align="left">:</td>
+				<td width="80%" align="left" data-ca="2">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Venue</td>
+				<td align="left">:</td>
+				<td width="80%" align="left" data-ca="4">Ruang Seminar Bursa Efek Indonesia Gedung Bursa Efek Indonesia Tower 2 lt.1 Jl. Jend. Sudirman Kav. 52-53 Jakarta 12190</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Status</td>
+				<td align="left">: </td>
+				<td align="left" data-ca="3">Tentative</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left"><hr class="mt5 mb5"></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left" data-ca="5">
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="pa10" id="detail_warrant" style="display:none">
+	<button type="button" class="btn btn-default btn-sm pull-right" onClick="backto_corporateaction();"><i class="fa fa-arrow-left"></i> Back</button>
+	<div class="label label-primary mb10">Warrant & Right</div>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-condensed noborder nm valign-top">
+		<tbody>
+			<tr>
+				<td colspan="3" align="left" nowrap="nowrap" data-ca="1"><h4 class="nm semibold" data-ca="1">AAAA</h4></td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Type</td>
+				<td width="10" align="left">:</td>
+				<td width="80%" align="left" data-ca="2">Warrant</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Listing Date</td>
+				<td align="left">:</td>
+				<td align="left" data-ca="5">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Maturity Date</td>
+				<td align="left">:</td>
+				<td align="left" data-ca="6">2015-09-09</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Share</td>
+				<td align="left">:</td>
+				<td align="left" data-ca="4">1,123,456,789</td>
+			</tr>
+			<tr>
+				<td align="left" nowrap="nowrap">Exercise Cost</td>
+				<td align="left">:</td>
+				<td align="left" data-ca="3">558</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left"><hr class="mt5 mb5"></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left" data-ca="8">
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+ 
+ 
+<!-- =======================
+======SCRIPT MODULE=========
+============================-->
+<script src="../../../../module/saham/include/js/corporateaction.js"></script>
