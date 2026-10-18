@@ -6,6 +6,30 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.7.2] - 2026-10-18
+
+### Added
+
+- CLI loading line: while a command waits on the network, one line on
+  stderr shows the elapsed time and the hosts still pending, longest wait
+  first (`⠹ 6s · waiting on investasi.kontan.co.id 6s, www.cnbcindonesia.com
+  1s · 3 answered`), and IPOT's 404 retries as `www.indopremier.com retry 2`.
+  It appears only after 300 ms, so cache hits print nothing, only when stderr
+  is a terminal and without `-v`, so scripts, agents and `idx mcp` never see
+  it. `IDX_PROGRESS=never` turns it off; `IDX_PROGRESS=always` shows it where
+  stderr does not report a terminal (mintty). Ownership downloads report too.
+- Web terminal loading state: a green stretch runs along the entry's rule
+  and a line says what the command waits on (`waiting on the Kontan and CNBC
+  Indonesia feeds · 6s`). Past 5 s, sources with known stalls say how the API
+  bounds them: news, sentiment and brief name the 8 s feed deadline, broker,
+  bandar and actions IPOT's 404 retries. The caption adds `took 7.5s` to any
+  answer slower than a second.
+
+### Fixed
+
+- Web terminal: a revealed entry's last lines no longer sit under the sticky
+  command prompt.
+
 ## [0.7.1] - 2026-10-18
 
 ### Fixed
