@@ -4,8 +4,10 @@ use chrono::Datelike;
 use clap::Subcommand;
 
 use crate::error::Result;
-use crate::model::Symbol;
-use crate::output::json::{SCHEMA_HOLIDAYS, SCHEMA_INDICES, SCHEMA_MARKET, SCHEMA_MEMBERS};
+use crate::model::{CalendarCategory, Symbol};
+use crate::output::json::{
+    SCHEMA_CALENDAR, SCHEMA_HOLIDAYS, SCHEMA_INDICES, SCHEMA_MARKET, SCHEMA_MEMBERS,
+};
 use crate::output::table_exchange as tx;
 use crate::output::table_reports as reports;
 use crate::service;
@@ -54,6 +56,35 @@ pub enum MarketCmd {
         #[arg(long, short = 's', value_name = "TEXT")]
         search: Option<String>,
     },
+    /// Exchange calendar: dividend and rights dates, RUPS, public exposes, listings (idx.co.id).
+    #[command(
+        after_help = "Examples:\n  idx market calendar                          # the next 14 days\n  idx market calendar --days 30 --type dividend,rights\n  idx market calendar --symbol BBCA --from 2026-01-01 --to 2026-03-31\n  idx market calendar --date 2026-10-19 --type all\n  idx -o json market calendar | jq '.data.events[] | select(.milestone==\"cum\")'\n\nTypes: dividend, rights, bonus, split, warrant, rups, public_expose (expose), buyback, listing,\nbond, other; `all` or `default` (everything but bond events and buyback reports). Type and\nstep (cum, ex, recording, payment, plan, notice, result, ...) are classified by idx from each\nentry's wording. Ranges cover at most 92 days."
+    )]
+    Calendar {
+        /// One day, YYYY-MM-DD (instead of a range).
+        #[arg(long, short = 'd', value_name = "DATE", conflicts_with_all = ["from", "to", "days"])]
+        date: Option<chrono::NaiveDate>,
+        /// Start of the range, YYYY-MM-DD. Default: today.
+        #[arg(long, value_name = "DATE")]
+        from: Option<chrono::NaiveDate>,
+        /// End of the range, YYYY-MM-DD. Default: --from plus --days.
+        #[arg(long, value_name = "DATE", conflicts_with = "days")]
+        to: Option<chrono::NaiveDate>,
+        /// Days to look ahead when --to is not given.
+        #[arg(long, value_name = "N", default_value_t = service::CALENDAR_DEFAULT_DAYS)]
+        days: u32,
+        /// One issuer, e.g. BBCA.
+        #[arg(long, short = 's', value_name = "SYMBOL")]
+        symbol: Option<String>,
+        /// Comma-separated types, `all` or `default`.
+        #[arg(
+            long = "type",
+            short = 't',
+            value_name = "TYPES",
+            default_value = "default"
+        )]
+        types: String,
+    },
     /// Trading holidays (Kalender Libur Bursa), whether today is a trading day, and the next one.
     #[command(
         after_help = "Examples:\n  idx market holidays\n  idx market holidays --year 2027\n  idx market holidays --upcoming\n  idx -o json market holidays | jq '.data.next_trading_day'\n\nBundled from the yearly calendar idx.co.id publishes (weekend holidays are not listed);\nIDX can add a holiday later. Override the list with IDX_HOLIDAYS=/path/to.csv (date,name,name_en)."
@@ -100,6 +131,25 @@ pub async fn run(ctx: &Context, cmd: MarketCmd) -> Result<()> {
         MarketCmd::Members { search } => {
             let result = service::members(&ctx.fetcher, search.as_deref()).await?;
             emit(ctx, SCHEMA_MEMBERS, result, |d| tx::members(d, ctx.color))
+        }
+        MarketCmd::Calendar {
+            date,
+            from,
+            to,
+            days,
+            symbol,
+            types,
+        } => {
+            let q = service::CalendarQuery {
+                date,
+                from,
+                to,
+                days: Some(days),
+                symbol,
+                categories: CalendarCategory::parse_list(&types)?,
+            };
+            let result = service::calendar(&ctx.fetcher, &q, service::today_wib()).await?;
+            emit(ctx, SCHEMA_CALENDAR, result, |d| tx::calendar(d, ctx.color))
         }
         MarketCmd::Holidays {
             year,

@@ -37,7 +37,7 @@ use crate::output::json::{
     SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS, SCHEMA_NEWS,
     SCHEMA_SCREEN, SCHEMA_SENTIMENT,
 };
-use crate::output::json::{SCHEMA_INDICES, SCHEMA_INSTRUMENTS, SCHEMA_MEMBERS};
+use crate::output::json::{SCHEMA_CALENDAR, SCHEMA_INDICES, SCHEMA_INSTRUMENTS, SCHEMA_MEMBERS};
 use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
 use crate::service;
@@ -227,6 +227,28 @@ pub struct IndicesArgs {
     /// Trading day, YYYY-MM-DD. Default: the latest session published.
     #[serde(default)]
     pub date: Option<String>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct CalendarArgs {
+    /// One day, YYYY-MM-DD. Not with from/to.
+    #[serde(default)]
+    pub date: Option<String>,
+    /// Start of the range, YYYY-MM-DD. Default: today.
+    #[serde(default)]
+    pub from: Option<String>,
+    /// End of the range, YYYY-MM-DD. Default: from plus days. At most 92 days in all.
+    #[serde(default)]
+    pub to: Option<String>,
+    /// Days to look ahead when to is not given (default 14).
+    #[serde(default)]
+    pub days: Option<u32>,
+    /// One issuer code, e.g. "BBCA".
+    #[serde(default)]
+    pub symbol: Option<String>,
+    /// Comma-separated types: dividend, rights, bonus, split, warrant, rups, public_expose, buyback, listing, bond, other; or "all". Default: everything but bond and buyback.
+    #[serde(default)]
+    pub types: Option<String>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -666,6 +688,39 @@ impl IdxServer {
                         service::today_wib(),
                     )
                     .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_calendar",
+        description = "The IDX exchange calendar from idx.co.id over a day or a range (default: the next 14 days; at most 92): dividend dates (cum, ex, recording, payment), rights issue (HMETD) dates, bonus, split, warrant, shareholders' meetings (RUPS: plan, notice, result, with the meeting time and venue), public exposes, listings, and on request bond events and buyback reports. Each entry has the date, issuer code, category and milestone (classified by idx from the entry's wording), the text as published and the source's own type fields. Filter by symbol and types. Returns the idx.calendar.v1 envelope."
+    )]
+    async fn calendar(
+        &self,
+        Parameters(a): Parameters<CalendarArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let date = parse_date(&a.date)?;
+                if date.is_some() && (a.from.is_some() || a.to.is_some()) {
+                    return Err(IdxError::Usage("use date or from/to, not both".into()));
+                }
+                let q = service::CalendarQuery {
+                    date,
+                    from: parse_date(&a.from)?,
+                    to: parse_date(&a.to)?,
+                    days: a.days,
+                    symbol: a.symbol,
+                    categories: crate::model::CalendarCategory::parse_list(
+                        a.types.as_deref().unwrap_or("default"),
+                    )?,
+                };
+                ok(
+                    SCHEMA_CALENDAR,
+                    service::calendar(&self.fetcher, &q, service::today_wib()).await?,
                 )
             }
             .await,
@@ -1264,6 +1319,7 @@ mod tests {
                 "idx_bandar_screen",
                 "idx_brief",
                 "idx_broker",
+                "idx_calendar",
                 "idx_compare",
                 "idx_dividends",
                 "idx_earnings",

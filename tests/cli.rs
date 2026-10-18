@@ -442,6 +442,50 @@ fn directory_commands_fall_back_offline_and_indices_need_the_cache() {
 }
 
 #[test]
+fn calendar_command_surface() {
+    let sb = sandbox();
+    idx(&sb.cache, &sb.config)
+        .args(["market", "calendar", "--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "idx market calendar --symbol BBCA",
+        ));
+    let out = idx(&sb.cache, &sb.config)
+        .args(["schema", "calendar"])
+        .output()
+        .unwrap();
+    assert!(out.status.success());
+    assert!(String::from_utf8_lossy(&out.stdout).contains("milestone"));
+    idx(&sb.cache, &sb.config)
+        .args(["market", "calendar"])
+        .assert()
+        .code(5);
+    for args in [
+        vec!["market", "calendar", "--type", "concerts"],
+        vec![
+            "market",
+            "calendar",
+            "--date",
+            "2026-10-19",
+            "--from",
+            "2026-10-01",
+        ],
+        vec![
+            "market",
+            "calendar",
+            "--from",
+            "2026-01-01",
+            "--to",
+            "2026-12-31",
+        ],
+        vec!["market", "calendar", "--symbol", "not a ticker"],
+    ] {
+        idx(&sb.cache, &sb.config).args(&args).assert().code(2);
+    }
+}
+
+#[test]
 fn bandar_command_surface() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

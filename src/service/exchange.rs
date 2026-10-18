@@ -11,8 +11,11 @@ use crate::brokers;
 use crate::error::{IdxError, Result};
 use crate::holidays;
 use crate::http::Fetcher;
-use crate::model::{Holidays, IndexBoard, Instrument, InstrumentList, Member, MemberList};
-use crate::providers::idx;
+use crate::model::{
+    Calendar, CalendarCategory, CalendarEvent, Holidays, IndexBoard, Instrument, InstrumentList,
+    Member, MemberList,
+};
+use crate::providers::idx::{self, CalendarRange};
 use crate::providers::Sourced;
 use crate::universe;
 
@@ -254,6 +257,118 @@ pub async fn indices(
     }))
 }
 
+/// Longest range `calendar` covers in one call.
+pub const CALENDAR_MAX_DAYS: i64 = 92;
+/// Days `calendar` looks ahead when no end is given.
+pub const CALENDAR_DEFAULT_DAYS: u32 = 14;
+
+/// Which part of the exchange calendar to show.
+#[derive(Debug, Clone, Default)]
+pub struct CalendarQuery {
+    /// One day; wins over `from`/`to`.
+    pub date: Option<NaiveDate>,
+    /// Start of the range; default today.
+    pub from: Option<NaiveDate>,
+    /// End of the range; default `from` plus `days`.
+    pub to: Option<NaiveDate>,
+    /// Look-ahead when `to` is not given; default [`CALENDAR_DEFAULT_DAYS`].
+    pub days: Option<u32>,
+    /// One issuer code (`BBCA`).
+    pub symbol: Option<String>,
+    /// Categories to keep; empty means [`CalendarCategory::DEFAULT`].
+    pub categories: Vec<CalendarCategory>,
+}
+
+/// First day of every month that `from..=to` touches.
+fn months(from: NaiveDate, to: NaiveDate) -> Vec<NaiveDate> {
+    let mut out = Vec::new();
+    let mut m = from.with_day(1).expect("day 1 exists");
+    while m <= to {
+        out.push(m);
+        m = m
+            .checked_add_months(chrono::Months::new(1))
+            .expect("date in range");
+    }
+    out
+}
+
+/// Exchange calendar entries (dividend and rights dates, shareholders'
+/// meetings, public exposes, ...) over a day or a range, oldest first.
+/// One request per day asked for, or per month the range touches.
+pub async fn calendar(
+    fetcher: &Arc<Fetcher>,
+    q: &CalendarQuery,
+    today: NaiveDate,
+) -> Result<Sourced<Calendar>> {
+    let (from, to) = match q.date {
+        Some(d) => (d, d),
+        None => {
+            let from = q.from.unwrap_or(today);
+            let days = q.days.unwrap_or(CALENDAR_DEFAULT_DAYS);
+            let to =
+                q.to.unwrap_or_else(|| from + chrono::Days::new(u64::from(days)));
+            (from, to)
+        }
+    };
+    if from > to {
+        return Err(IdxError::Usage(format!(
+            "the range starts ({from}) after it ends ({to})"
+        )));
+    }
+    if (to - from).num_days() > CALENDAR_MAX_DAYS {
+        return Err(IdxError::Usage(format!(
+            "a calendar range covers at most {CALENDAR_MAX_DAYS} days"
+        )));
+    }
+    let symbol = match q.symbol.as_deref().map(str::trim).filter(|s| !s.is_empty()) {
+        Some(s) => Some(crate::model::Symbol::parse(s)?.as_str().to_string()),
+        None => None,
+    };
+    let ranges: Vec<CalendarRange> = if from == to {
+        vec![CalendarRange::Day(from)]
+    } else {
+        months(from, to)
+            .into_iter()
+            .map(CalendarRange::Month)
+            .collect()
+    };
+    let mut out: Option<Sourced<Vec<CalendarEvent>>> = None;
+    for r in ranges {
+        let s = idx::calendar(fetcher, r, symbol.as_deref()).await?;
+        match &mut out {
+            None => out = Some(s),
+            Some(acc) => {
+                acc.absorb(&s);
+                acc.data.extend(s.data);
+            }
+        }
+    }
+    let mut s = out.expect("at least one range");
+    let mut events: Vec<CalendarEvent> = std::mem::take(&mut s.data)
+        .into_iter()
+        .filter(|e| e.date >= from && e.date <= to)
+        .collect();
+    events.sort_by(|a, b| a.date.cmp(&b.date).then(a.id.cmp(&b.id)));
+    // The source sometimes lists the same entry twice under two ids.
+    let mut seen = std::collections::HashSet::new();
+    events.retain(|e| seen.insert((e.date, e.code.clone(), e.description.clone())));
+    let total = events.len();
+    let categories = if q.categories.is_empty() {
+        CalendarCategory::DEFAULT.to_vec()
+    } else {
+        q.categories.clone()
+    };
+    events.retain(|e| categories.contains(&e.category));
+    Ok(s.map(|_| Calendar {
+        from,
+        to,
+        symbol,
+        categories,
+        total,
+        events,
+    }))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -402,5 +517,100 @@ mod tests {
             .await
             .unwrap_err();
         assert_eq!(err.exit_code(), 2);
+    }
+
+    const MONTH: &str = include_str!("../../tests/fixtures/idx/calendar_m_20261001_excerpt.json");
+    const DAY: &str = include_str!("../../tests/fixtures/idx/calendar_d_20261019.json");
+
+    #[tokio::test]
+    async fn calendar_ranges_filter_by_date_and_default_categories() {
+        let (f, be, _d) = fetcher(
+            FixtureBackend::new()
+                .route("range=m&date=20261001", 200, MONTH)
+                .route("range=m&date=20261101", 200, "{\"Results\":[]}")
+                .route("range=d&date=20261019", 200, DAY),
+        );
+        let q = CalendarQuery {
+            from: Some(d(2026, 10, 15)),
+            to: Some(d(2026, 10, 31)),
+            ..Default::default()
+        };
+        let s = calendar(&f, &q, d(2026, 10, 18)).await.unwrap();
+        assert_eq!(s.provider, "idx");
+        assert_eq!(be.call_count(), 1, "one month");
+        assert!(
+            s.data.total > s.data.events.len(),
+            "bonds and buybacks hidden"
+        );
+        assert!(s
+            .data
+            .events
+            .iter()
+            .all(|e| e.date >= d(2026, 10, 15) && e.date <= d(2026, 10, 31)));
+        assert!(s.data.events.iter().all(|e| !matches!(
+            e.category,
+            CalendarCategory::Bond | CalendarCategory::Buyback
+        )));
+        assert!(s.data.events.windows(2).all(|w| w[0].date <= w[1].date));
+
+        // Every category, across two months: one request per month.
+        let q = CalendarQuery {
+            from: Some(d(2026, 10, 20)),
+            days: Some(20),
+            categories: vec![CalendarCategory::Bond],
+            ..Default::default()
+        };
+        let s = calendar(&f, &q, d(2026, 10, 18)).await.unwrap();
+        assert_eq!(s.data.to, d(2026, 11, 9));
+        assert!(!s.data.events.is_empty());
+        assert!(s
+            .data
+            .events
+            .iter()
+            .all(|e| e.category == CalendarCategory::Bond));
+        assert_eq!(be.calls_matching("date=20261101"), 1);
+
+        // One day asks for the day.
+        let q = CalendarQuery {
+            date: Some(d(2026, 10, 19)),
+            categories: CalendarCategory::ALL.to_vec(),
+            ..Default::default()
+        };
+        let s = calendar(&f, &q, d(2026, 10, 18)).await.unwrap();
+        assert_eq!(s.data.events.len(), 8);
+        assert_eq!((s.data.from, s.data.to), (d(2026, 10, 19), d(2026, 10, 19)));
+    }
+
+    #[tokio::test]
+    async fn calendar_passes_the_symbol_and_checks_the_range() {
+        let (f, be, _d) =
+            fetcher(FixtureBackend::new().route("GetCalendar", 200, "{\"Results\":[]}"));
+        let q = CalendarQuery {
+            symbol: Some("bbca".into()),
+            ..Default::default()
+        };
+        let s = calendar(&f, &q, d(2026, 10, 18)).await.unwrap();
+        assert_eq!(s.data.symbol.as_deref(), Some("BBCA"));
+        assert!(s.data.events.is_empty());
+        assert!(be.calls.lock().unwrap()[0].ends_with("&code=BBCA"));
+
+        let too_long = CalendarQuery {
+            from: Some(d(2026, 1, 1)),
+            to: Some(d(2026, 6, 1)),
+            ..Default::default()
+        };
+        assert_eq!(
+            calendar(&f, &too_long, d(2026, 10, 18))
+                .await
+                .unwrap_err()
+                .exit_code(),
+            2
+        );
+        let backwards = CalendarQuery {
+            from: Some(d(2026, 10, 20)),
+            to: Some(d(2026, 10, 1)),
+            ..Default::default()
+        };
+        assert!(calendar(&f, &backwards, d(2026, 10, 18)).await.is_err());
     }
 }

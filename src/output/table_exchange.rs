@@ -5,9 +5,72 @@
 
 use comfy_table::{Attribute, Cell};
 
-use crate::model::{Holidays, IndexBoard, InstrumentList, MemberList};
+use crate::model::{Calendar, CalendarCategory, Holidays, IndexBoard, InstrumentList, MemberList};
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
+
+fn category_label(c: CalendarCategory) -> &'static str {
+    match c {
+        CalendarCategory::Dividend => "dividend",
+        CalendarCategory::Rights => "rights",
+        CalendarCategory::Bonus => "bonus",
+        CalendarCategory::Split => "split",
+        CalendarCategory::Warrant => "warrant",
+        CalendarCategory::Rups => "RUPS",
+        CalendarCategory::PublicExpose => "expose",
+        CalendarCategory::Buyback => "buyback",
+        CalendarCategory::Listing => "listing",
+        CalendarCategory::Bond => "bond",
+        CalendarCategory::Other => "other",
+    }
+}
+
+/// Exchange calendar entries, one row each.
+pub fn calendar(c: &Calendar, _color: bool) -> String {
+    let mut out = if c.from == c.to {
+        format!("IDX calendar · {}", c.from)
+    } else {
+        format!("IDX calendar · {} to {}", c.from, c.to)
+    };
+    if let Some(s) = &c.symbol {
+        out.push_str(&format!(" · {s}"));
+    }
+    out.push_str(&format!(
+        " · {} of {} entries ({})\n",
+        c.events.len(),
+        c.total,
+        c.categories
+            .iter()
+            .map(|x| x.as_str())
+            .collect::<Vec<_>>()
+            .join(", ")
+    ));
+    if c.events.is_empty() {
+        out.push_str("No entries.\n");
+        return out;
+    }
+    let mut t = base_table(false);
+    t.set_header(header(&["Date", "Code", "Type", "Step", "When", "Entry"]));
+    for e in &c.events {
+        let when = match (e.meeting_at, e.expose_date) {
+            (Some(m), _) => m.format("%Y-%m-%d %H:%M").to_string(),
+            (None, Some(x)) => x.to_string(),
+            (None, None) => f::DASH.to_string(),
+        };
+        t.add_row(vec![
+            Cell::new(e.date.to_string()),
+            Cell::new(&e.code).add_attribute(Attribute::Bold),
+            Cell::new(category_label(e.category)),
+            Cell::new(e.milestone.as_deref().unwrap_or(f::DASH)),
+            Cell::new(when),
+            Cell::new(f::clip(&e.description, 64)),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+    out.push_str("Type and step are classified by idx from the entry's wording; --type all adds bonds and buyback reports.\n");
+    out
+}
 
 /// Holiday list plus today's trading status.
 pub fn holidays(h: &Holidays, _color: bool) -> String {

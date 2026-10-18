@@ -314,6 +314,11 @@ pub fn classify(
     if d.contains("rups") {
         return (C::Rups, stage(&d, &s));
     }
+    // Unitholders' meetings of DIRE and other funds: not a shareholders'
+    // meeting, but the stage still reads.
+    if k == "rupup" {
+        return (C::Other, stage(&d, &s));
+    }
     if d.contains("pembelian kembali") || d.contains("buyback") {
         return (C::Buyback, Some("report"));
     }

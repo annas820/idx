@@ -6,7 +6,7 @@ use serde::Serialize;
 
 use crate::error::{IdxError, Result};
 use crate::model::{
-    BandarReport, BandarScreen, Brief, BrokerSummary, ChangesReport, DiscoveredFile,
+    BandarReport, BandarScreen, Brief, BrokerSummary, Calendar, ChangesReport, DiscoveredFile,
     DividendHistory, Earnings, EntityReport, Financials, ForeignFlowReport, ForeignReport,
     Fundamentals, History, HoldersReport, Holidays, ImportReport, IndexBoard, InstrumentList,
     MarketOverview, MemberList, NewsReport, Performance, Profile, Quote, Release, ScreenReport,
@@ -67,6 +67,7 @@ pub const SCHEMA_HOLIDAYS: &str = "idx.holidays.v1";
 pub const SCHEMA_INSTRUMENTS: &str = "idx.instruments.v1";
 pub const SCHEMA_MEMBERS: &str = "idx.members.v1";
 pub const SCHEMA_INDICES: &str = "idx.indices.v1";
+pub const SCHEMA_CALENDAR: &str = "idx.calendar.v1";
 pub const SCHEMA_TECHNICAL: &str = "idx.technical.v1";
 pub const SCHEMA_SCREEN: &str = "idx.screen.v1";
 pub const SCHEMA_NEWS: &str = "idx.news.v1";
@@ -99,6 +100,7 @@ pub type HolidaysEnvelope = Envelope<Holidays>;
 pub type InstrumentsEnvelope = Envelope<InstrumentList>;
 pub type MembersEnvelope = Envelope<MemberList>;
 pub type IndicesEnvelope = Envelope<IndexBoard>;
+pub type CalendarEnvelope = Envelope<Calendar>;
 pub type TechnicalEnvelope = Envelope<Technical>;
 pub type ScreenEnvelope = Envelope<ScreenReport>;
 pub type NewsEnvelope = Envelope<NewsReport>;
@@ -166,6 +168,7 @@ pub fn schema_names() -> &'static [&'static str] {
         "instruments",
         "members",
         "indices",
+        "calendar",
         "technical",
         "screen",
         "news",
@@ -205,6 +208,7 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "instruments" => schemars::schema_for!(InstrumentsEnvelope),
         "members" => schemars::schema_for!(MembersEnvelope),
         "indices" => schemars::schema_for!(IndicesEnvelope),
+        "calendar" => schemars::schema_for!(CalendarEnvelope),
         "technical" => schemars::schema_for!(TechnicalEnvelope),
         "screen" => schemars::schema_for!(ScreenEnvelope),
         "news" => schemars::schema_for!(NewsEnvelope),
