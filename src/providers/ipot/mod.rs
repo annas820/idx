@@ -131,7 +131,10 @@ async fn page(
             break;
         }
         tracing::debug!(%symbol, attempt, "ipot answered 404, retrying");
-        tokio::time::sleep(RETRY_PAUSE * (1 << (attempt - 1))).await;
+        {
+            let _pause = crate::progress::retrying(url, attempt);
+            tokio::time::sleep(RETRY_PAUSE * (1 << (attempt - 1))).await;
+        }
         f = fetcher.get(url, &headers, ttl, None).await?;
     }
     if !f.is_success() {

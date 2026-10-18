@@ -67,6 +67,7 @@ async fn get(url: &str, timeout: Duration) -> Result<Vec<u8>> {
         return std::fs::read(path)
             .map_err(|e| IdxError::Usage(format!("cannot read {path}: {e}")));
     }
+    let _wait = crate::progress::request(url);
     let client = reqwest::Client::builder()
         .user_agent(concat!(
             "idx/",

@@ -154,6 +154,7 @@ fn looks_like_challenge(status: u16, body: &[u8]) -> bool {
 }
 
 async fn fetch_plain(url: &str, timeout: Duration) -> Result<(u16, Vec<u8>)> {
+    let _wait = crate::progress::request(url);
     let client = reqwest::Client::builder()
         .user_agent(UA)
         .timeout(timeout)
@@ -245,6 +246,7 @@ pub async fn fetch_browser(url: &str, timeout: Duration) -> Result<Vec<u8>> {
         return Ok(body);
     }
     tracing::info!(status, "plain request was blocked, trying curl-impersonate");
+    let _wait = crate::progress::request(url);
     match fetch_impersonated(url, timeout) {
         Some(Ok((code, body))) if (200..300).contains(&code) && !looks_like_challenge(code, &body) => {
             Ok(body)

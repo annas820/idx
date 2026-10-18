@@ -12,7 +12,7 @@ fn init_tracing(verbosity: u8) {
     let filter = EnvFilter::try_from_env("IDX_LOG").unwrap_or_else(|_| EnvFilter::new(default));
     tracing_subscriber::fmt()
         .with_env_filter(filter)
-        .with_writer(std::io::stderr)
+        .with_writer(|| idx::progress::Stderr)
         .with_ansi(std::io::IsTerminal::is_terminal(&std::io::stderr()))
         .with_target(verbosity >= 2)
         .without_time()

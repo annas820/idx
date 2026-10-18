@@ -160,6 +160,7 @@ Global flags work anywhere on the line:
 | `--timeout SECS` | `IDX_TIMEOUT_SECS` | Per-request timeout (default 15) |
 | `--no-color` | `NO_COLOR` | Plain tables |
 | `-v, -vv, -vvv` | `IDX_LOG` | Diagnostics on stderr, including every URL requested |
+| | `IDX_PROGRESS=never\|always` | The loading line on stderr (`⠹ 6s · waiting on investasi.kontan.co.id 6s`) shows on a terminal only; `never` hides it, `always` forces it |
 
 ## For scripts and agents
 

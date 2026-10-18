@@ -11,6 +11,7 @@ use crate::config::{self, CliOverrides, FileConfig, Settings};
 use crate::error::{IdxError, Result};
 use crate::http::{Fetcher, ReqwestBackend};
 use crate::output::{self, ColorMode, OutputFormat};
+use crate::progress;
 use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Sourced, Ttls};
 
 pub mod bandar;
@@ -53,7 +54,7 @@ Examples:
 
 const AFTER_HELP: &str = "\
 Exit codes: 0 ok · 1 internal · 2 usage · 3 network/provider · 4 not found · 5 offline cache miss · 6 config
-Env: IDX_PROVIDER, IDX_OUTPUT, IDX_COLOR / NO_COLOR, IDX_TIMEOUT_SECS, IDX_CACHE_DIR, IDX_OFFLINE, IDX_NO_CACHE, IDX_CONFIG, IDX_MSN_API_KEY, IDX_OWNERSHIP_DB, IDX_HOLIDAYS
+Env: IDX_PROVIDER, IDX_OUTPUT, IDX_COLOR / NO_COLOR, IDX_PROGRESS, IDX_TIMEOUT_SECS, IDX_CACHE_DIR, IDX_OFFLINE, IDX_NO_CACHE, IDX_CONFIG, IDX_MSN_API_KEY, IDX_OWNERSHIP_DB, IDX_HOLIDAYS
 Docs: https://github.com/fzn0x/idx";
 
 #[derive(Debug, Parser)]
@@ -284,32 +285,51 @@ pub fn build_context(global: &GlobalOpts) -> Result<Context> {
     })
 }
 
+/// The loading line on stderr while a network command waits; see
+/// [`progress`](crate::progress). Never offline, never under `-v`, never when
+/// stderr is not a terminal (scripts, agents).
+fn spinner(ctx: &Context, global: &GlobalOpts) -> Option<progress::Spinner> {
+    let terminal = std::io::IsTerminal::is_terminal(&std::io::stderr());
+    if ctx.fetcher.is_offline()
+        || !progress::wanted(terminal, global.verbose, &|k| std::env::var(k).ok())
+    {
+        return None;
+    }
+    progress::start()
+}
+
 /// Entry point used by `main`. Returns the error for `main` to print and map
 /// to an exit code.
 pub async fn run(cli: Cli) -> Result<()> {
     match cli.command {
         Command::Stocks(cmd) => {
             let ctx = build_context(&cli.global)?;
+            let _spinner = spinner(&ctx, &cli.global);
             stocks::run(&ctx, cmd).await
         }
         Command::Ownership(cmd) => {
             let ctx = build_context(&cli.global)?;
+            let _spinner = spinner(&ctx, &cli.global);
             ownership::run(&ctx, cmd).await
         }
         Command::Market(cmd) => {
             let ctx = build_context(&cli.global)?;
+            let _spinner = spinner(&ctx, &cli.global);
             market::run(&ctx, cmd).await
         }
         Command::Broker(args) => {
             let ctx = build_context(&cli.global)?;
+            let _spinner = spinner(&ctx, &cli.global);
             broker::run(&ctx, args).await
         }
         Command::Bandar(cmd) => {
             let ctx = build_context(&cli.global)?;
+            let _spinner = spinner(&ctx, &cli.global);
             bandar::run(&ctx, cmd).await
         }
         Command::Watch(args) => {
             let ctx = build_context(&cli.global)?;
+            let _spinner = spinner(&ctx, &cli.global);
             watch::run(&ctx, args).await
         }
         Command::Mcp(args) => mcp_cmd::run(&cli.global, args).await,

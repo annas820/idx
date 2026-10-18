@@ -342,6 +342,17 @@ fn broker_command_surface() {
 }
 
 #[test]
+fn no_loading_line_offline_even_when_forced() {
+    let sb = sandbox();
+    idx(&sb.cache, &sb.config)
+        .env("IDX_PROGRESS", "always")
+        .args(["-o", "json", "market", "holidays", "--year", "2026"])
+        .assert()
+        .success()
+        .stderr(predicate::str::is_empty());
+}
+
+#[test]
 fn holidays_work_offline_from_the_bundled_list() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

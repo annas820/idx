@@ -41,6 +41,7 @@ history_ttl_secs = 3600
 | `IDX_OUTPUT` | `-o, --output` | `table`, `json` |
 | `IDX_COLOR` | | `auto`, `always`, `never` |
 | `NO_COLOR` | `--no-color` | any non-empty value disables colour |
+| `IDX_PROGRESS` | | `auto` (default): a loading line on stderr while a command waits on the network, naming the hosts it waits on; only when stderr is a terminal and without `-v`. `never` turns it off, `always` shows it where stderr does not report a terminal (mintty, some IDE consoles) |
 | `IDX_TIMEOUT_SECS` | `--timeout` | per-request timeout |
 | `IDX_CACHE_DIR` | `--cache-dir` | cache location |
 | `IDX_OFFLINE` | `--offline` | `1`/`true`: never touch the network |

@@ -62,6 +62,8 @@ src/
   output/            table*.rs (comfy-table), json.rs (Envelope + JSON Schema), csv.rs (-o csv),
                      format.rs (numbers); cli/mod.rs emit() picks the format for every handler
   http/              Fetcher: cache in front of a Backend (reqwest live / FixtureBackend tests)
+  progress.rs        the CLI's loading line on stderr: hosts in flight and their wait; fetcher and
+                     IPOT retries report to it, only the CLI turns it on (stderr a terminal, no -v)
   cache/             content-addressed file cache, TTL decided by the caller at read time
   config/            flags > IDX_* env > config.toml > defaults
   error.rs           IdxError with stable exit codes

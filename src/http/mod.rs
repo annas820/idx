@@ -234,6 +234,7 @@ impl Fetcher {
         if self.is_offline() {
             return Err(IdxError::OfflineMiss(format!("{url} is not cached")));
         }
+        let _wait = crate::progress::request(url);
         self.backend.get(url, headers).await
     }
 
@@ -326,7 +327,11 @@ impl Fetcher {
             }
         }
 
-        match self.backend.get(url, headers).await {
+        let live = {
+            let _wait = crate::progress::request(url);
+            self.backend.get(url, headers).await
+        };
+        match live {
             Ok(resp) => {
                 if (200..300).contains(&resp.status) {
                     if let Err(e) = self.cache.put(key, resp.status, &resp.body) {

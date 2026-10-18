@@ -100,6 +100,7 @@ impl std::fmt::Display for ColorMode {
 
 /// Writes to stdout, treating a closed pipe (`idx ... | head`) as success.
 pub fn print_stdout(text: &str) -> Result<()> {
+    crate::progress::finish();
     let stdout = std::io::stdout();
     let mut lock = stdout.lock();
     match lock.write_all(text.as_bytes()).and_then(|_| lock.flush()) {
@@ -110,5 +111,7 @@ pub fn print_stdout(text: &str) -> Result<()> {
 }
 
 pub fn print_stderr(text: &str) {
-    let _ = writeln!(std::io::stderr(), "{text}");
+    crate::progress::suspend(|| {
+        let _ = writeln!(std::io::stderr(), "{text}");
+    });
 }

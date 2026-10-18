@@ -14,6 +14,7 @@
 //! - [`model`]     provider-agnostic domain types (the JSON contract)
 //! - [`output`]    table and JSON renderers
 //! - [`http`]      fetcher that puts the cache in front of the network
+//! - [`progress`]  the CLI's loading line on stderr while requests are in flight
 //! - [`cache`]     content-addressed file cache
 //! - [`config`]    flags > env > file > defaults
 
@@ -29,6 +30,7 @@ pub mod mcp;
 pub mod model;
 pub mod output;
 pub mod ownership;
+pub mod progress;
 pub mod providers;
 pub mod service;
 pub mod universe;
