@@ -6,6 +6,18 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.8.1] - 2026-10-18
+
+### Fixed
+
+- Landing page and web terminal: the Stockbit tools (`idx_orderbook`,
+  `idx_stockbit_status`, `idx_stockbit_login`) are now listed in the one
+  shared tools source (`web/public/tools.js`) and `docs/mcp.md`, not only
+  the landing-page table, so the three stay in step. The terminal's
+  tool-list wording and count no longer call the CLI-only tools
+  "idx.co.id" now that the Stockbit tools are among them. No change to the
+  `idx` binary.
+
 ## [0.8.0] - 2026-10-18
 
 ### Added
