@@ -25,6 +25,9 @@ use crate::providers::news as newsfeed;
 use crate::providers::{Provider, Sourced};
 use crate::universe::Issuer;
 
+mod exchange;
+pub use exchange::*;
+
 /// Ratios plus the rule-based verdict.
 pub async fn fundamentals(p: &dyn Provider, symbol: &Symbol) -> Result<Sourced<Fundamentals>> {
     let mut result = p.fundamentals(symbol).await?;

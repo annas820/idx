@@ -34,8 +34,8 @@ use crate::output::json::{
     SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
 };
 use crate::output::json::{
-    SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_NEWS, SCHEMA_SCREEN,
-    SCHEMA_SENTIMENT,
+    SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS, SCHEMA_NEWS,
+    SCHEMA_SCREEN, SCHEMA_SENTIMENT,
 };
 use crate::ownership::OwnershipDb;
 use crate::providers::{Provider, Sourced};
@@ -199,6 +199,16 @@ pub struct MarketArgs {
     /// Market-cap floor in IDR for gainers/losers (default 1e12 = 1T).
     #[serde(default)]
     pub min_market_cap: Option<f64>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct HolidaysArgs {
+    /// Calendar year, e.g. 2027. Default: the current year; 0 lists every year on the list.
+    #[serde(default)]
+    pub year: Option<u32>,
+    /// Only holidays from today on (default false).
+    #[serde(default)]
+    pub upcoming: Option<bool>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -563,6 +573,34 @@ impl IdxServer {
                         a.min_market_cap.unwrap_or(1e12),
                     )
                     .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_holidays",
+        description = "IDX trading holidays (Kalender Libur Bursa) for a year: each closed weekday with its Indonesian and English name, the year's trading-day count, whether today (Jakarta) is a trading day and the next trading day. Weekend holidays are not listed, as IDX publishes them; IDX can add a holiday later. Bundled from the yearly calendar idx.co.id publishes, so it works offline. Returns the idx.holidays.v1 envelope."
+    )]
+    async fn holidays(
+        &self,
+        Parameters(a): Parameters<HolidaysArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let today = service::today_wib();
+                let year = match a.year {
+                    Some(0) => None,
+                    Some(y) => Some(
+                        i32::try_from(y)
+                            .map_err(|_| IdxError::Usage(format!("year {y} is out of range")))?,
+                    ),
+                    None => Some(chrono::Datelike::year(&today)),
+                };
+                ok(
+                    SCHEMA_HOLIDAYS,
+                    service::holidays(year, a.upcoming.unwrap_or(false), today)?,
                 )
             }
             .await,
@@ -1139,6 +1177,7 @@ mod tests {
                 "idx_financials",
                 "idx_fundamental",
                 "idx_history",
+                "idx_holidays",
                 "idx_market",
                 "idx_news",
                 "idx_ownership_changes",

@@ -10,6 +10,7 @@
 //! - [`mcp`]       the same capabilities as MCP tools over stdio
 //! - [`ownership`] KSEI monthly holder register: download, parse, SQLite, queries
 //! - [`brokers`]   IDX exchange-member directory (broker code to name)
+//! - [`holidays`]  IDX trading holidays (bundled) and trading-day arithmetic
 //! - [`model`]     provider-agnostic domain types (the JSON contract)
 //! - [`output`]    table and JSON renderers
 //! - [`http`]      fetcher that puts the cache in front of the network
@@ -22,6 +23,7 @@ pub mod cache;
 pub mod cli;
 pub mod config;
 pub mod error;
+pub mod holidays;
 pub mod http;
 pub mod mcp;
 pub mod model;

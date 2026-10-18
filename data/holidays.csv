@@ -1,0 +1,48 @@
+# IDX trading holidays (Kalender Libur Bursa) as published by idx.co.id
+# (primary/AboutUs/GetTradingHolidays: one image per year, Indonesian and English),
+# transcribed 2026-10-18. Weekend holidays are left out, as IDX lists them.
+# IDX may add a holiday later (Bank Indonesia closes clearing, or a government
+# announcement); edit this file or override it with IDX_HOLIDAYS=/path/to.csv.
+date,name,name_en
+2026-01-01,Tahun Baru 2026 Masehi,New Year 2026
+2026-01-16,Isra Mikraj Nabi Muhammad SAW,Isra Mikraj of Prophet Muhammad SAW
+2026-02-16,Cuti Bersama Tahun Baru Imlek 2577 Kongzili,Commemoration of Chinese New Year 2577 Kongzili
+2026-02-17,Tahun Baru Imlek 2577 Kongzili,Chinese New Year 2577 Kongzili
+2026-03-18,Cuti Bersama Hari Suci Nyepi Tahun Baru Saka 1948,Commemoration Hindu Saka New Year 1948
+2026-03-19,Hari Suci Nyepi Tahun Baru Saka 1948,Hindu Saka New Year 1948
+2026-03-20,Cuti Bersama Idul Fitri 1447 Hijriah,Commemoration of Eid al-Fitr 1447 Hijriah
+2026-03-23,Cuti Bersama Idul Fitri 1447 Hijriah,Commemoration of Eid al-Fitr 1447 Hijriah
+2026-03-24,Cuti Bersama Idul Fitri 1447 Hijriah,Commemoration of Eid al-Fitr 1447 Hijriah
+2026-04-03,Wafat Yesus Kristus,Good Friday
+2026-05-01,Hari Buruh Internasional,Labor Day
+2026-05-14,Kenaikan Yesus Kristus,Ascension Day of Jesus Christ
+2026-05-15,Cuti Bersama Kenaikan Yesus Kristus,Commemoration of Ascension Day of Jesus Christ
+2026-05-27,Idul Adha 1447 Hijriah,Eid al-Adha 1447 Hijriah
+2026-05-28,Cuti Bersama Hari Raya Idul Adha 1447 Hijriah,Commemoration of Eid al-Adha 1447 Hijriah
+2026-06-01,Hari Lahir Pancasila,Pancasila Day
+2026-06-16,1 Muharam Tahun Baru Islam 1448 Hijriah,Islamic New Year 1448 Hijriah
+2026-08-17,Proklamasi Kemerdekaan,Independence Day of Indonesia
+2026-08-25,Maulid Nabi Muhammad SAW,Birth of Prophet Muhammad SAW
+2026-12-24,Cuti Bersama Kelahiran Yesus Kristus,Commemoration of Christmas Day
+2026-12-25,Kelahiran Yesus Kristus,Christmas Day
+2026-12-31,Libur Bursa,Trading Holiday
+2027-01-01,Tahun Baru 2027 Masehi,New Year 2027
+2027-01-05,Isra Mikraj Nabi Muhammad S.A.W. 1448 Hijriah,Isra Mikraj of Prophet Muhammad S.A.W. 1448 Hijriah
+2027-02-05,Cuti Bersama Tahun Baru Imlek 2578 Kongzili,Commemoration of Chinese New Year 2578 Kongzili
+2027-03-08,Hari Suci Nyepi (Tahun Baru Saka 1949),Hindu Saka New Year 1949
+2027-03-09,Cuti Bersama Idul Fitri 1448 Hijriah,Commemoration of Eid al-Fitr 1448 Hijriah
+2027-03-10,Idul Fitri 1448 Hijriah,Eid al-Fitr 1448 Hijriah
+2027-03-11,Idul Fitri 1448 Hijriah,Eid al-Fitr 1448 Hijriah
+2027-03-12,Cuti Bersama Idul Fitri 1448 Hijriah,Commemoration of Eid al-Fitr 1448 Hijriah
+2027-03-15,Cuti Bersama Idul Fitri 1448 Hijriah,Commemoration of Eid al-Fitr 1448 Hijriah
+2027-03-25,Cuti Bersama Wafat Yesus Kristus,Commemoration of Good Friday
+2027-03-26,Wafat Yesus Kristus,Good Friday
+2027-05-06,Kenaikan Yesus Kristus,Ascension Day of Jesus Christ
+2027-05-17,Idul Adha 1448 Hijriah,Eid al-Adha 1448 Hijriah
+2027-05-18,Cuti Bersama Idul Adha 1448 Hijriah,Commemoration of Eid al-Adha 1448 Hijriah
+2027-05-19,Cuti Bersama Hari Raya Waisak 2571 BE,Commemoration of Vesak Day 2571 BE
+2027-05-20,Hari Raya Waisak 2571 BE,Vesak Day 2571 BE
+2027-06-01,Hari Lahir Pancasila,Pancasila Day
+2027-08-17,Proklamasi Kemerdekaan,Independence Day of Indonesia
+2027-12-24,Cuti Bersama Kelahiran Yesus Kristus,Commemoration of Christmas Day
+2027-12-31,Libur Bursa,Trading Holiday

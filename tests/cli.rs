@@ -342,6 +342,38 @@ fn broker_command_surface() {
 }
 
 #[test]
+fn holidays_work_offline_from_the_bundled_list() {
+    let sb = sandbox();
+    idx(&sb.cache, &sb.config)
+        .args(["market", "holidays", "--year", "2026"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("239 trading days"))
+        .stdout(predicate::str::contains("Proklamasi Kemerdekaan"));
+    let out = idx(&sb.cache, &sb.config)
+        .args(["-o", "json", "market", "holidays", "--year", "2027"])
+        .output()
+        .unwrap();
+    assert!(out.status.success());
+    let v: serde_json::Value = serde_json::from_slice(&out.stdout).unwrap();
+    assert_eq!(v["schema"], "idx.holidays.v1");
+    assert_eq!(v["provider"], "bundled");
+    assert_eq!(v["data"]["trading_days"], 241);
+    assert_eq!(v["data"]["holidays"][0]["date"], "2027-01-01");
+    let out = idx(&sb.cache, &sb.config)
+        .args(["-o", "csv", "market", "holidays", "--year", "2026"])
+        .output()
+        .unwrap();
+    let csv = String::from_utf8(out.stdout).unwrap();
+    assert!(csv.starts_with("date,weekday,name,name_en\n"), "{csv}");
+    assert_eq!(csv.lines().count(), 23);
+    idx(&sb.cache, &sb.config)
+        .args(["market", "holidays", "--year", "2026", "--all"])
+        .assert()
+        .code(2);
+}
+
+#[test]
 fn bandar_command_surface() {
     let sb = sandbox();
     idx(&sb.cache, &sb.config)

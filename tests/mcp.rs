@@ -76,11 +76,12 @@ fn mcp_server_speaks_json_rpc_over_stdio() {
     let names: Vec<&str> = tools.iter().map(|t| t["name"].as_str().unwrap()).collect();
     assert!(names.contains(&"idx_quote"), "{names:?}");
     assert!(names.contains(&"idx_fundamental"), "{names:?}");
-    assert_eq!(names.len(), 23, "{names:?}");
+    assert_eq!(names.len(), 24, "{names:?}");
     assert!(names.contains(&"idx_broker"), "{names:?}");
     assert!(names.contains(&"idx_bandar"), "{names:?}");
     assert!(names.contains(&"idx_bandar_screen"), "{names:?}");
     assert!(names.contains(&"idx_ownership_ticker"), "{names:?}");
+    assert!(names.contains(&"idx_holidays"), "{names:?}");
     let quote = tools.iter().find(|t| t["name"] == "idx_quote").unwrap();
     assert_eq!(
         quote["inputSchema"]["properties"]["symbols"]["type"],

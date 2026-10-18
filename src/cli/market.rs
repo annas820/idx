@@ -1,10 +1,12 @@
 //! `idx market ...`: the whole board in one call.
 
+use chrono::Datelike;
 use clap::Subcommand;
 
 use crate::error::Result;
 use crate::model::Symbol;
-use crate::output::json::SCHEMA_MARKET;
+use crate::output::json::{SCHEMA_HOLIDAYS, SCHEMA_MARKET};
+use crate::output::table_exchange as tx;
 use crate::output::table_reports as reports;
 use crate::service;
 use crate::universe;
@@ -31,6 +33,21 @@ pub enum MarketCmd {
         #[arg(long, value_name = "PATH")]
         universe: Option<std::path::PathBuf>,
     },
+    /// Trading holidays (Kalender Libur Bursa), whether today is a trading day, and the next one.
+    #[command(
+        after_help = "Examples:\n  idx market holidays\n  idx market holidays --year 2027\n  idx market holidays --upcoming\n  idx -o json market holidays | jq '.data.next_trading_day'\n\nBundled from the yearly calendar idx.co.id publishes (weekend holidays are not listed);\nIDX can add a holiday later. Override the list with IDX_HOLIDAYS=/path/to.csv (date,name,name_en)."
+    )]
+    Holidays {
+        /// Calendar year; default: the current year.
+        #[arg(long, value_name = "YEAR", conflicts_with = "all")]
+        year: Option<i32>,
+        /// Every year on the list.
+        #[arg(long)]
+        all: bool,
+        /// Only holidays from today on.
+        #[arg(long)]
+        upcoming: bool,
+    },
 }
 
 pub async fn run(ctx: &Context, cmd: MarketCmd) -> Result<()> {
@@ -54,6 +71,20 @@ pub async fn run(ctx: &Context, cmd: MarketCmd) -> Result<()> {
             emit(ctx, SCHEMA_MARKET, result, |d| {
                 reports::market(d, ctx.color)
             })
+        }
+        MarketCmd::Holidays {
+            year,
+            all,
+            upcoming,
+        } => {
+            let today = service::today_wib();
+            let year = if all {
+                None
+            } else {
+                Some(year.unwrap_or(today.year()))
+            };
+            let result = service::holidays(year, upcoming, today)?;
+            emit(ctx, SCHEMA_HOLIDAYS, result, |d| tx::holidays(d, ctx.color))
         }
     }
 }

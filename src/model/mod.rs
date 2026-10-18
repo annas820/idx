@@ -11,6 +11,7 @@ use crate::error::{IdxError, Result};
 pub mod bandar;
 pub mod brief;
 pub mod broker;
+pub mod calendar;
 pub mod dividends;
 pub mod fundamentals;
 pub mod market;
@@ -27,6 +28,7 @@ pub use bandar::{
 };
 pub use brief::{Brief, DividendSummary, NewsSummary, OwnershipSummary};
 pub use broker::{BrokerBoard, BrokerFlow, BrokerInvestor, BrokerKind, BrokerSummary};
+pub use calendar::{Holiday, Holidays};
 pub use dividends::{DividendEvent, DividendHistory, DividendYear, SplitEvent};
 pub use fundamentals::{
     Analyst, BalanceSheet, CashFlow, Director, Dividend, Earnings, EarningsQuarter,
