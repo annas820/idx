@@ -41,6 +41,9 @@ Examples:
   idx broker BBCA                          # which brokers bought and sold it
   idx bandar detect BBCA                   # top brokers accumulating or distributing?
   idx bandar screen --preset big-accumulation  # bandarmology screener
+  idx stocks actions BBCA                  # dividends, splits, rights, RUPS
+  idx market foreign                       # top foreign net buying and selling
+  idx market calendar --type dividend      # cum, ex and payment dates ahead
   idx ownership import --latest            # KSEI >1% holders into local SQLite
   idx ownership ticker BBCA                # who holds more than 1%
   idx mcp                                  # MCP server over stdio for agents
@@ -50,7 +53,7 @@ Examples:
 
 const AFTER_HELP: &str = "\
 Exit codes: 0 ok · 1 internal · 2 usage · 3 network/provider · 4 not found · 5 offline cache miss · 6 config
-Env: IDX_PROVIDER, IDX_OUTPUT, IDX_COLOR / NO_COLOR, IDX_TIMEOUT_SECS, IDX_CACHE_DIR, IDX_OFFLINE, IDX_NO_CACHE, IDX_CONFIG, IDX_MSN_API_KEY, IDX_OWNERSHIP_DB
+Env: IDX_PROVIDER, IDX_OUTPUT, IDX_COLOR / NO_COLOR, IDX_TIMEOUT_SECS, IDX_CACHE_DIR, IDX_OFFLINE, IDX_NO_CACHE, IDX_CONFIG, IDX_MSN_API_KEY, IDX_OWNERSHIP_DB, IDX_HOLIDAYS
 Docs: https://github.com/fzn0x/idx";
 
 #[derive(Debug, Parser)]
@@ -111,7 +114,7 @@ pub struct GlobalOpts {
 
 #[derive(Debug, Subcommand)]
 pub enum Command {
-    /// Quotes, history, profile, financials, earnings, fundamentals, technicals, compare.
+    /// Quotes, history, profile, financials, earnings, fundamentals, technicals, compare, corporate actions, foreign flow.
     #[command(subcommand)]
     Stocks(stocks::StocksCmd),
 
@@ -119,7 +122,7 @@ pub enum Command {
     #[command(subcommand)]
     Ownership(ownership::OwnershipCmd),
 
-    /// Whole-market view: IHSG, breadth, gainers, losers, most traded.
+    /// Whole market: overview, indices, foreign flow, top brokers, the exchange calendar, holidays, members.
     #[command(subcommand)]
     Market(market::MarketCmd),
 
@@ -139,7 +142,7 @@ the IDX member list bundled with idx. The source rounds figures of a million and
 decimal (1.6 M); JSON marks those summaries with rounded=true.")]
     Broker(broker::BrokerArgs),
 
-    /// Bandarmology: are the top brokers accumulating or distributing? `detect` per ticker, `screen` across the most traded.
+    /// Bandarmology: are the top brokers accumulating or distributing? `detect` per ticker, `screen` across the most traded, `broker` for one broker.
     #[command(subcommand)]
     Bandar(bandar::BandarCmd),
 
@@ -159,13 +162,13 @@ decimal (1.6 M); JSON marks those summaries with rounded=true.")]
 
     /// MCP server over stdio (default) or HTTP; `mcp setup <client>` prints the registration recipe for any agent.
     #[command(
-        after_help = "Serve:\n  idx mcp                                   # stdio, what every local agent launches\n  idx mcp --http 127.0.0.1:8765 --token T   # streamable HTTP at /mcp for URL-only clients\n\nRegister (prints the exact command or snippet, with this binary's absolute path):\n  idx mcp setup --list\n  idx mcp setup claude-code | codex | muse | antigravity | gemini | copilot-cli | vscode | cursor | windsurf |\n                kiro | jetbrains | zed | cline | continue | opencode | goose | warp | droid | vibe | qwen |\n                crush | trae | augment | chatgpt\n\n23 tools returning the same JSON as -o json: idx_brief (start here), idx_market, idx_quote, idx_history,\nidx_profile, idx_financials, idx_earnings, idx_dividends, idx_returns, idx_fundamental, idx_technical,\nidx_compare, idx_screen, idx_news, idx_sentiment, idx_broker, idx_bandar, idx_bandar_screen,\nidx_ownership_ticker|entity|changes|foreign|releases.\nLogs go to stderr; stdout carries only the protocol."
+        after_help = "Serve:\n  idx mcp                                   # stdio, what every local agent launches\n  idx mcp --http 127.0.0.1:8765 --token T   # streamable HTTP at /mcp for URL-only clients\n\nRegister (prints the exact command or snippet, with this binary's absolute path):\n  idx mcp setup --list\n  idx mcp setup claude-code | codex | muse | antigravity | gemini | copilot-cli | vscode | cursor | windsurf |\n                kiro | jetbrains | zed | cline | continue | opencode | goose | warp | droid | vibe | qwen |\n                crush | trae | augment | chatgpt\n\n33 tools returning the same JSON as -o json: idx_brief (start here), idx_market, idx_quote, idx_history,\nidx_profile, idx_financials, idx_earnings, idx_dividends, idx_returns, idx_fundamental, idx_technical,\nidx_compare, idx_screen, idx_news, idx_sentiment, idx_corporate_actions, idx_foreign, idx_instruments,\nidx_market_foreign, idx_market_brokers, idx_indices, idx_calendar, idx_holidays, idx_members, idx_broker,\nidx_bandar, idx_bandar_screen, idx_bandar_broker, idx_ownership_ticker|entity|changes|foreign|releases.\nLogs go to stderr; stdout carries only the protocol."
     )]
     Mcp(mcp_cmd::McpArgs),
 
     /// Print the JSON Schema for a JSON output shape (run without a name to list them).
     Schema {
-        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | screen | news | sentiment | broker | bandar | bandar-screen | ownership-* | error | quote | candle
+        /// quotes | history | profile | fundamentals | compare | financials | earnings | technical | screen | news | sentiment | actions | foreign | instruments | market-foreign | market-brokers | indices | calendar | holidays | members | broker | bandar | bandar-screen | bandar-broker | ownership-* | error | quote | candle
         name: Option<String>,
     },
 

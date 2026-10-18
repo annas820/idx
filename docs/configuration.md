@@ -49,6 +49,7 @@ history_ttl_secs = 3600
 | `IDX_HISTORY_TTL_SECS` | | cache lifetime for history (intraday bars are capped at 120 s) |
 | `IDX_CONFIG` | `--config` | config file path |
 | `IDX_LOG` | `-v` | tracing filter, e.g. `idx=debug` |
+| `IDX_HOLIDAYS` | | CSV (`date,name,name_en`) replacing the bundled trading-holiday list (`data/holidays.csv`) |
 
 ## Cache
 

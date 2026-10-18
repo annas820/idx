@@ -279,7 +279,7 @@ per agent (`-e IDX_PROVIDER=yahoo` in the CLI forms, `env` in the files).
 ## HTTP transport
 
 `idx mcp --http ADDR` serves MCP streamable HTTP at `http://ADDR/mcp` and a
-plain `GET /healthz`. It is the same server and the same 23 tools; several
+plain `GET /healthz`. It is the same server and the same 33 tools; several
 local agents can share one process and one cache this way.
 
 - `--token T` (or `IDX_MCP_TOKEN`) requires `Authorization: Bearer T` on
@@ -297,6 +297,12 @@ local agents can share one process and one cache this way.
 | --- | --- | --- |
 | `idx_brief` | `symbol` | `idx.brief.v1`: quote, fundamentals + verdict, technicals + signal, returns vs IHSG, dividend facts, top holders, headlines + sentiment, `key_points`, `sections_failed`. Start here. |
 | `idx_market` | `top?`, `min_market_cap?` | `idx.market.v1`: IHSG quote, breadth, turnover, gainers, losers, most traded, heavyweights |
+| `idx_market_foreign` | `date?`, `top?` (default 10), `sort?` (`value` \| `shares`) | `idx.market.foreign.v1`: top foreign net buying and selling across every stock for one session |
+| `idx_market_brokers` | `date?`, `top?` (default 20, 0 = all), `sort?` (`value` \| `volume` \| `frequency`) | `idx.market.brokers.v1`: every exchange member's day, ranked, with its share of all members' value |
+| `idx_indices` | `codes?` ("LQ45,IDX30"), `date?` | `idx.indices.v1`: every IDX index for one session |
+| `idx_calendar` | `date?` or `from?`/`to?`, `days?` (default 14), `symbol?`, `types?` (`all`, or `dividend,rights,...`) | `idx.calendar.v1`: dividend and rights dates, RUPS, public exposes, listings (bonds and buybacks with `all`) |
+| `idx_holidays` | `year?` (0 = every year), `upcoming?` | `idx.holidays.v1`: trading holidays, trading days, today and the next trading day (bundled, offline) |
+| `idx_members` | `search?` | `idx.members.v1`: exchange members (broker codes) with licences |
 | `idx_quote` | `symbols` ("BBCA,BBRI"; `^JKSE` is IHSG) | `idx.quotes.v1` |
 | `idx_history` | `symbol`, `period?`, `interval?`, `limit?` (default 60 most recent candles, 0 = all) | `idx.history.v1` |
 | `idx_profile` | `symbol` | `idx.profile.v1` |
@@ -310,9 +316,13 @@ local agents can share one process and one cache this way.
 | `idx_screen` | `filter`, `sort?`, `limit?`, `max_fundamentals?` | `idx.screen.v1` |
 | `idx_news` | `symbol?`, `sources?`, `limit?`, `company_only?` | `idx.news.v1`: company items first (`scope=company`), then market context |
 | `idx_sentiment` | `symbol`, `sources?` | `idx.sentiment.v1` |
+| `idx_corporate_actions` | `symbol`, `since?` (default a year ago) | `idx.actions.v1`: dividends, splits, bonus, rights (amount, ratio, cum/ex/recording/payment dates, status), RUPS, warrants and rights, upcoming included (IPOT) |
+| `idx_foreign` | `symbol`, `days?` (default 20, at most 250) | `idx.foreign.v1`: foreign buy, sell and net per session (shares), net × close, totals and streak (idx.co.id) |
+| `idx_instruments` | `board?`, `search?` | `idx.instruments.v1`: listed stocks with board, listing date and shares |
 | `idx_broker` | `symbols`, `date?` or `from?`/`to?`, `investor?` (`all` \| `foreign` \| `domestic`), `board?` (`all` \| `regular` \| `cash` \| `negotiated`) | `idx.broker.v1`: top 10 buyers and sellers (ranked by lots) with broker names and class, totals, foreign net; latest session with trades when no dates are given |
 | `idx_bandar` | `symbols`, `period?` (`1d` \| `1w` default \| `1m` \| `3m`), `date?` or `from?`/`to?`, `top?` (1, 3, 5 default, 10), `investor?`, `board?`, `daily?` | `idx.bandar.v1`: bandarmology per ticker: top-N net as a share of value, signal and phase, tiers, the top buyers' average against the price, foreign flow, reasons; `daily` adds the session series |
 | `idx_bandar_screen` | `preset?`, `filter?`, `period?`, `top?`, `sort?`, `ascending?`, `limit?`, `scan?` (default 100), `symbols?` | `idx.bandar.screen.v1`: the most traded stocks the top brokers accumulate or distribute |
+| `idx_bandar_broker` | `code`, `period?`, `limit?` (default 20), `scan?` (default 100), `symbols?` | `idx.bandar.broker.v1`: where one broker is a top-10 buyer or seller across the scanned stocks, with net where both sides are visible |
 | `idx_ownership_ticker` | `symbol`, `as_of?` | `idx.ownership.holders.v1` |
 | `idx_ownership_entity` | `name`, `as_of?` | `idx.ownership.entity.v1` |
 | `idx_ownership_changes` | `from`, `to`, `symbol?`, `min_pct_change?`, `limit?`, `offset?` | `idx.ownership.changes.v1`: `summary` over every match, one page of rows |

@@ -194,6 +194,101 @@ given), `checked` (those with trades), `total_matches` and `rows[]`: `symbol`,
 (`buy_share_pct`), `price`, `signal=`, `phase=`. With `-o csv` the rows are
 the screen rows.
 
+## `idx.bandar.broker.v1` (`bandar broker`)
+
+An object: `code`, `name` (bundled member list), `period`, `from`, `to`,
+`scanned`, `checked` (scanned stocks with trades), `failed`, `bought_value`
+and `sold_value` (sums of `value` over every row, before `--limit`), then
+`bought[]` (stocks where the broker is a top-10 buyer) and `sold[]` (top-10
+seller), largest value first: `symbol`, `name`, `rank` on that side, `lots`,
+`value`, `average_price`, `share_pct` (of all value traded in the stock),
+`opposite_value` (the broker's value on the other side when it is also top 10
+there, else `null`) and `net_value` (buy minus sell, in both lists, when both
+sides are visible). Only the top 10 per side are published, so a broker below
+tenth place in a stock is absent; nothing is estimated for it.
+
+## `idx.actions.v1` (`stocks actions`)
+
+An object, from IPOT: `symbol`, `name`, `since` (the source's filter;
+upcoming events are included), `actions[]` newest cum date first (`kind` =
+`cash_dividend` | `stock_dividend` | `stock_split` | `reverse_split` | `bonus`
+| `rights_issue` | `warrant` | `other`, `label` as published, `amount` (IDR
+per share: the dividend, or a rights issue's exercise price; `null` where the
+source shows 0), `ratio_old` and `ratio_new` (old : new, `null` for cash
+dividends), `cum_date`, `ex_date`, `recording_date`, `distribution_date`,
+`end_date` (end of a rights trading period, or the last step of a split or
+bonus), `status`, `details`), `meetings[]` (RUPS: `date`, `time`, `status`,
+`venue`, `agenda`) and `warrants_rights[]` (`code`, `kind`, `exercise_price`,
+`shares`, `listing_date`, `maturity_date`, `status`, `details`).
+
+## `idx.foreign.v1` (`stocks foreign`)
+
+An object, from idx.co.id's daily stock summary: `symbol`, `name`, `from`,
+`to`, `days[]` oldest first (`date`, `close`, `change`, `volume`, `value`,
+`foreign_buy`, `foreign_sell`, `foreign_net` in shares, and
+`foreign_net_value_at_close`) and `totals` (`sessions`, `foreign_buy`,
+`foreign_sell`, `foreign_net`, `foreign_net_value_at_close`,
+`net_buy_sessions`, `net_sell_sessions`, `streak`: +3 = three net-buy
+sessions in a row, -2 = two net-sell sessions, 0 when the latest was flat).
+IDX publishes foreign trading in shares only; `foreign_net_value_at_close` is
+net shares × close, a rupiah scale for comparing stocks, not the value
+foreigners traded at. `volume` and `value` exclude non-regular (negotiated)
+trades, as the source reports them.
+
+## `idx.market.foreign.v1` (`market foreign`)
+
+An object for one session: `date`, `stocks`, the market sums `foreign_buy`,
+`foreign_sell`, `foreign_net` (shares) and `foreign_net_value_at_close`,
+`sort` (`value` | `shares`), and `net_buy[]` / `net_sell[]` (largest first):
+`symbol`, `name`, `close`, `change`, `change_pct`, `volume`, `value`,
+`foreign_buy`, `foreign_sell`, `foreign_net`, `foreign_net_value_at_close`.
+
+## `idx.market.brokers.v1` (`market brokers`)
+
+An object for one session: `date`, `members` (with trades), `total_volume`,
+`total_value`, `total_frequency`, `sort` (`value` | `volume` | `frequency`)
+and `brokers[]`: `rank`, `code`, `name` (as idx.co.id publishes it),
+`volume`, `value`, `frequency`, `value_share_pct`. A member's buying and
+selling count together, so `total_value` is twice the market's value.
+
+## `idx.indices.v1` (`market indices`)
+
+`date` and `indices[]` in the source's order (IHSG first): `code`
+(`COMPOSITE` is IHSG), `previous`, `high`, `low`, `close`, `change`,
+`change_pct` (computed), `constituents`, `volume`, `value`, `frequency`,
+`market_cap`.
+
+## `idx.calendar.v1` (`market calendar`)
+
+`from`, `to`, `symbol` (filter or `null`), `categories` (shown), `total`
+(entries in the range before the category filter) and `events[]` oldest
+first: `date`, `code` (a ticker, or an issuer such as `DJPU` for government
+bonds), `category` (`dividend` | `rights` | `bonus` | `split` | `warrant` |
+`rups` | `public_expose` | `buyback` | `listing` | `bond` | `other`),
+`milestone` (`cum`, `ex`, `recording`, `payment`, `distribution`, `listing`,
+`trading_start`, `trading_end`, `plan`, `notice`, `result`, `material`,
+`coupon`, `principal`, `maturity`, `report`, or `null`), `description` as
+published, `location`, `meeting_at` (RUPS date and time, WIB), `expose_date`,
+`source_type` and `source_step` (the source's own fields) and `id`. Category
+and milestone are classified by idx from the wording; entries the source
+lists twice are shown once.
+
+## `idx.holidays.v1` (`market holidays`)
+
+`year` (or `null` for every year), `years_covered`, `trading_days` (weekdays
+minus holidays in `year`), `today`, `today_is_trading_day`,
+`next_trading_day` and `holidays[]` (`date`, `weekday`, `name`, `name_en`).
+Bundled; `provider` is `bundled`.
+
+## `idx.instruments.v1` (`stocks list`) and `idx.members.v1` (`market members`)
+
+`idx.instruments.v1`: `total`, `board` and `search` (filters or `null`) and
+`instruments[]` (`symbol`, `name`, `listing_date`, `shares`, `board`).
+`idx.members.v1`: `total`, `search` and `members[]` (`code`, `name`,
+`licenses[]`). When idx.co.id cannot be reached and nothing is cached, the
+bundled lists stand in (`provider: bundled`, a warning, and `null` for what
+they lack).
+
 ## `idx.returns.v1` (`stocks returns`)
 
 Array, one `Performance` per requested ticker: `as_of`, `price`, `start`,

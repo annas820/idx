@@ -6,6 +6,37 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- idx.co.id provider (`src/providers/idx/`): the JSON endpoints behind the
+  exchange's own pages, no key. A Cloudflare refusal is a provider error that
+  says so; fixtures in `tests/fixtures/idx/`.
+- `stocks foreign SYMBOL` and `market foreign`: foreign buying and selling per
+  session and across the market (shares, as IDX publishes them, plus net ×
+  close as a rupiah scale). MCP `idx_foreign`, `idx_market_foreign`.
+- `market brokers`: every exchange member's day ranked by value, volume or
+  frequency. MCP `idx_market_brokers`.
+- `bandar broker CODE`: where one broker is a top-10 buyer or seller across
+  the most traded stocks (IPOT). MCP `idx_bandar_broker`.
+- `stocks actions SYMBOL`: corporate actions from IPOT (dividends, splits,
+  bonus shares, rights with ratio and dates), RUPS, warrants and rights.
+  MCP `idx_corporate_actions`.
+- `market calendar`: the exchange calendar (dividend and rights dates, RUPS,
+  public exposes, listings; bonds and buybacks on request), each entry
+  classified. MCP `idx_calendar`.
+- `market holidays`: bundled trading holidays for 2026 and 2027 (checked
+  against IDX's trading-day counts), today's status and the next trading day.
+  `IDX_HOLIDAYS` overrides the list. MCP `idx_holidays`.
+- `market indices`, `stocks list`, `market members`: the daily index board,
+  listed stocks and exchange members from idx.co.id; the last two fall back to
+  the bundled lists. MCP `idx_indices`, `idx_instruments`, `idx_members`.
+- 33 MCP tools.
+
+### Fixed
+
+- `bandar screen --symbols` offline with nothing cached exits 5 (offline miss)
+  instead of 4.
+
 ## [0.6.1] - 2026-10-18
 
 ### Fixed

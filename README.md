@@ -51,9 +51,11 @@ idx -o json stocks quote BBCA | jq '.data[0] | {price, change_pct, pe_trailing, 
 </p>
 
 - **Free data, no keys.** Yahoo Finance and MSN Money for prices and
-  fundamentals, IDX's monthly KSEI register for ownership, Indo Premier's
-  broker summary for who bought and sold (read as bandarmology by `idx bandar`),
-  Kontan and CNBC Indonesia feeds for news. Every source sits behind a `Provider` trait, so
+  fundamentals, the exchange's own idx.co.id summaries for foreign flow,
+  member activity, indices and the corporate-action calendar, IDX's monthly
+  KSEI register for ownership, Indo Premier's broker summary for who bought
+  and sold (read as bandarmology by `idx bandar`) and its corporate-action
+  pages, Kontan and CNBC Indonesia feeds for news. Every source sits behind a `Provider` trait, so
   one breaking does not take the tool down, and `auto` fills gaps in one
   source's fundamentals from the other.
 - **Built for agents.** `-o json` emits a stable, schema-documented envelope
@@ -119,19 +121,29 @@ idx completions powershell | Out-String | Invoke-Expression
 | `stocks screen -f "pe<15,roe>15,sector=financial"` | Screener over ~950 IDX tickers: one batch quote for valuation/size/dividend keys, per-company fundamentals for the rest (capped, largest first) |
 | `stocks news [SYMBOL] [--company-only] [--source kontan\|cnbcindonesia\|all]` | Headlines from Kontan and CNBC Indonesia RSS. With a ticker, the company's headlines come first, then market context fills the limit |
 | `stocks sentiment <SYMBOL>` | Aggregate lexicon sentiment over the matching headlines, with counts, terms and the strongest headlines |
+| `stocks actions <SYMBOL> [--since D]` | Corporate actions from IPOT, upcoming ones included: cash and stock dividends, splits, bonus shares, rights issues (amount, ratio old:new, cum, ex, recording and payment dates, status, announcement), shareholders' meetings (RUPS: time, venue, agenda), listed warrants and rights |
+| `stocks foreign <SYMBOL> [--days 20]` | Foreign buying and selling per session from idx.co.id (shares, as IDX publishes them), net, net × close, totals and the net-buy/net-sell streak |
+| `stocks list [--board B] [--search S]` | Listed stocks from idx.co.id with listing board, listing date and shares; the bundled universe stands in offline |
 | `ownership import --latest\|--all\|--file F\|--url U` | Import KSEI's monthly ">1 % holders" register (XLSX or PDF) into local SQLite. `--latest`/`--all` read idx.co.id and fall back to the CI-maintained GitHub mirror |
 | `ownership ticker <SYMBOL> [--as-of D]` | Holders above 1 % of a ticker |
 | `ownership entity "<NAME>" [--as-of D]` | Every position of a person or institution, spelling variants grouped |
 | `broker <SYMBOLS> [--date D \| --from D --to D] [--investor all\|foreign\|domestic] [--board all\|regular\|cash\|negotiated]` | Broker summary: the top 10 buyers and sellers of a ticker (ranked by lots), with broker name, class (local, foreign, BUMN), lots, value and average price, plus total value and foreign net. Latest session with trades by default; `-o csv` gives one row per broker |
 | `bandar detect <SYMBOLS> [--period 1d\|1w\|1m\|3m] [--top 1\|3\|5\|10] [--daily]` | Bandarmology: are the top brokers accumulating or distributing? The top 1/3/5/10 buyers against as many sellers (bandar value and volume), net as a share of the value traded, the phase against the price move, the top buyers' average against the price, foreign flow; `--daily` adds the bandar movement session by session. See [Bandarmology](#bandarmology) |
 | `bandar screen [--preset P] [-f FILTER] [--period P] [--scan N]` | Bandarmology screener over the 100 most traded stocks by value: presets `big-accumulation`, `accumulation`, `distribution`, `big-distribution`, `quiet-accumulation`, `quiet-distribution`, `foreign-accumulation`, `below-bandar`, or filters on `acc`, `net`, `fnet`, `fpct`, `gain`, `chg`, `turnover`, `conc`, `signal`, `phase` |
+| `bandar broker <CODE> [--period P] [--scan N \| --symbols S]` | Broker activity: where one broker (e.g. `YP`) sits among the top 10 buyers or sellers of the 100 most traded stocks, with rank, lots, value, average, share of the stock's value and net where both sides are visible |
 | `market overview [--top 10]` | IHSG, breadth, turnover, gainers, losers, most traded, heavyweights from one pass over the universe |
+| `market foreign [--date D] [--top 10] [--sort value\|shares]` | Top foreign net buying and net selling across every stock for one session (idx.co.id), with the market's foreign totals |
+| `market brokers [--date D] [--top 20] [--sort value\|volume\|frequency]` | Every exchange member's trading for one session, ranked, with each member's share of all members' value |
+| `market indices [CODE...] [--date D]` | Every IDX index (IHSG, LQ45, IDX30, sector and thematic) for one session: close, change, range, constituents, value, market cap |
+| `market calendar [--from D --to D \| --date D] [--symbol S] [--type T]` | The exchange calendar: dividend and rights dates (cum, ex, recording, payment), RUPS, public exposes, listings; bonds and buyback reports with `--type all`. Default: the next 14 days |
+| `market holidays [--year Y \| --all] [--upcoming]` | Trading holidays (Kalender Libur Bursa, bundled), the year's trading days, whether today is a trading day and the next one |
+| `market members [--search S]` | Exchange members (broker codes) with names and licences |
 | `ownership changes --from D --to D [--symbol S] [--min-change PP] [--limit N --offset N]` | New holders, exits and position changes between two months, paged, with a summary (counts, foreign vs local net, by investor type, issuer flow, top moves) over every match |
 | `ownership foreign [SYMBOL] [--from D --to D]` | Disclosed foreign (KSEI `A`) vs local stake: one issuer month by month, or every issuer's change between two months |
 | `watch [add\|rm\|list\|clear\|returns]` | Plain-text watchlist next to the config; `idx watch` quotes it |
 | `ownership releases\|discover\|path` | Imported months, files published on idx.co.id, database path |
-| `mcp [--http ADDR --token T]` · `mcp setup <client>` | MCP server over stdio or streamable HTTP, and the registration recipe for 25 agent harnesses. 23 tools: `idx_brief`, `idx_market`, `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_dividends`, `idx_returns`, `idx_fundamental`, `idx_technical`, `idx_compare`, `idx_screen`, `idx_news`, `idx_sentiment`, `idx_broker`, `idx_bandar`, `idx_bandar_screen`, `idx_ownership_ticker`, `idx_ownership_entity`, `idx_ownership_changes`, `idx_ownership_foreign`, `idx_ownership_releases` |
-| `schema [name]` | JSON Schema for every payload (`quotes`, `history`, `profile`, `fundamentals`, `compare`, `financials`, `earnings`, `dividends`, `returns`, `market`, `brief`, `technical`, `screen`, `news`, `sentiment`, `broker`, `bandar`, `bandar-screen`, `ownership-*`, `watchlist`, `error`, ...) |
+| `mcp [--http ADDR --token T]` · `mcp setup <client>` | MCP server over stdio or streamable HTTP, and the registration recipe for 25 agent harnesses. 33 tools: `idx_brief`, `idx_market`, `idx_quote`, `idx_history`, `idx_profile`, `idx_financials`, `idx_earnings`, `idx_dividends`, `idx_returns`, `idx_fundamental`, `idx_technical`, `idx_compare`, `idx_screen`, `idx_news`, `idx_sentiment`, `idx_corporate_actions`, `idx_foreign`, `idx_instruments`, `idx_market_foreign`, `idx_market_brokers`, `idx_indices`, `idx_calendar`, `idx_holidays`, `idx_members`, `idx_broker`, `idx_bandar`, `idx_bandar_screen`, `idx_bandar_broker`, `idx_ownership_ticker`, `idx_ownership_entity`, `idx_ownership_changes`, `idx_ownership_foreign`, `idx_ownership_releases` |
+| `schema [name]` | JSON Schema for every payload (`quotes`, `history`, `profile`, `fundamentals`, `compare`, `financials`, `earnings`, `dividends`, `returns`, `market`, `brief`, `technical`, `screen`, `news`, `sentiment`, `actions`, `foreign`, `instruments`, `market-foreign`, `market-brokers`, `indices`, `calendar`, `holidays`, `members`, `broker`, `bandar`, `bandar-screen`, `bandar-broker`, `ownership-*`, `watchlist`, `error`, ...) |
 | `config init\|set\|get\|path` | Config file management |
 | `cache stats\|clear\|path` | Response cache management |
 | `completions <shell>` | bash, zsh, fish, powershell, elvish |
@@ -207,7 +219,7 @@ substitutes the absolute path, and `--npx` swaps in
 `npx -y github:fzn0x/idx mcp`). Each entry's remote (HTTP) form and the
 config file locations are in [docs/mcp.md](docs/mcp.md).
 
-The server lists 23 tools with typed input schemas kept to the subset every
+The server lists 33 tools with typed input schemas kept to the subset every
 harness accepts (no nullable type arrays, no `format` or `default` keywords)
 and one-paragraph descriptions. `idx_brief` is the one-call starting point;
 each tool returns the same envelope as `-o json`, so an agent that learned the
@@ -257,6 +269,9 @@ idx bandar screen -f 'acc>=5,fpct>=5,gain<0'   # with foreigners, under the band
 | Yahoo Finance `fundamentals-timeseries` | financials | none | Annual, quarterly and TTM statement items |
 | idx.co.id "Data Kepemilikan Saham" page + `Media/*.xlsx` | ownership (KSEI monthly register) | none, but Cloudflare bot protection | Mirrored three times a day by GitHub Actions to the [`ownership-data`](https://github.com/fzn0x/idx/releases/tag/ownership-data) release (byte-identical files, SHA-256 in `index.json`). The CLI tries idx.co.id first, then the mirror. See [docs/ownership.md](docs/ownership.md) |
 | Indo Premier (IPOT) `module/saham/include/data-brokersummary.php` | broker summary | none | Top 10 buyers and sellers per range, ranked by lots; figures of a million and more are rounded to one decimal by the source (`rounded: true`). Its nginx answers spurious 404s in bursts, so a 404 is retried with backoff. Broker names come from IDX's member list, bundled as `data/brokers.csv`; `bandar` computes its readings from these summaries |
+| idx.co.id JSON endpoints behind its pages (`primary/TradingSummary/GetStockSummary`, `GetBrokerSummary`, `GetIndexSummary`, `ListedCompany/GetTradingInfoSS`, `Home/GetCalendar`, `StockData/GetSecuritiesStock`, `ExchangeMember/GetBrokerSearch`) | foreign flow, member activity, indices, the exchange calendar, listed stocks, members | none, but Cloudflare bot protection | Foreign trading is published in shares only; `foreign_net_value_at_close` (net shares × close) is a rupiah scale, not the traded value. Ordinary connections pass; data centres and CI runners are often refused, and the error says so. Closed sessions are cached for 30 days |
+| Indo Premier (IPOT) `module/saham/include/corporateaction.php` | corporate actions, RUPS, warrants and rights | none | Same module and spurious-404 retry as the broker summary; repeated rows are dropped |
+| idx.co.id trading-holiday calendar (published as an image per year) | trading holidays | none | Transcribed into `data/holidays.csv` (2026, 2027) and checked against IDX's monthly trading-day counts; `IDX_HOLIDAYS` overrides it |
 | Kontan RSS (`investasi`, `keuangan`, `industri`, `insight`) and CNBC Indonesia RSS (`market`, `research`, `news`) | news, sentiment | none | Bisnis.com refuses non-browser clients; listed as an opt-in source |
 | MSN Money `Finance/Quotes`, `Finance/Equities` | quotes, profile, fundamentals, analyst targets | MSN's own public web key (shipped; override with `IDX_MSN_API_KEY`) | Tickers resolve to MSN ids through its autosuggest service, filtered to exchange `XIDX` |
 
