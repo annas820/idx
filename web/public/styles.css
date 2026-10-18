@@ -209,6 +209,17 @@ p { margin: 0; }
 .entry .body { margin-top: 0.5rem; }
 .entry .err { color: var(--red); font-weight: 700; padding: 0.4rem 0; }
 .entry .warn { color: var(--ink-2); font-size: 0.84rem; padding: 0.3rem 0; }
+/* loading: a green stretch runs along the entry's rule while its request is out.
+   scroll-margin keeps a revealed entry's last line above the sticky prompt. */
+.entry { position: relative; scroll-margin-bottom: 6.5rem; }
+.entry.busy::before { content: ""; position: absolute; left: 0; top: -3px; height: 3px; width: 28%; background: var(--green); }
+@media (prefers-reduced-motion: no-preference) {
+  .entry.busy::before { animation: run 1.2s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate; }
+  @keyframes run { from { transform: translateX(0); } to { transform: translateX(257%); } }
+}
+.entry .loading { color: var(--ink-2); font-size: 0.84rem; padding: 0.3rem 0; }
+.entry .loading .clock { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.entry .loading .slow { color: var(--ink-3); }
 .entry .kv { display: grid; grid-template-columns: max-content 1fr; gap: 0.15rem 1.5rem; font-size: 0.9rem; }
 .entry .kv dt { color: var(--ink-2); }
 .entry .kv dd { margin: 0; font-weight: 600; }

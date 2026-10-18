@@ -2,6 +2,7 @@
 import { api, fmt, table, wrapScroll, el, sparkline, signClass } from "/app.js";
 import { priceChart } from "/chart.js";
 import { TOOLS, CLI_ONLY_REASON, byName } from "/tools.js";
+import { SHOW_MS, SLOW_MS, waitFor } from "/waits.js";
 
 const out = document.getElementById("out");
 const form = document.getElementById("prompt");
@@ -618,6 +619,48 @@ function entry(cmdLine) {
   return { sec, cap, body, meta: cap.lastChild };
 }
 
+function reveal(sec) {
+  sec.scrollIntoView({ block: "end", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+}
+
+/** What a typed line waits on (public/waits.js). */
+function waitsOf(line) {
+  const toks = tokenize(line);
+  if (toks[0]?.toLowerCase() === "json") toks.shift();
+  const name = (toks[0] || "").toLowerCase();
+  return waitFor(ALIASES[name] || name, toks[1]);
+}
+
+/**
+ * The loading state of an entry while its request is out: the entry's rule
+ * runs and a line says what it waits on, with a clock. Returns a stop
+ * function that takes both down and gives the elapsed milliseconds.
+ */
+function pending(e, line) {
+  const w = waitsOf(line);
+  const t0 = performance.now();
+  const clock = el("span", { class: "clock", "aria-hidden": "true" });
+  const status = el("p", { class: "loading", role: "status" }, [el("span", { text: `waiting on ${w.on || "the source"}` }), clock]);
+  let slow = false, every = 0;
+  const tick = () => {
+    const ms = performance.now() - t0;
+    clock.textContent = ` · ${Math.floor(ms / 1000)}s`;
+    if (!slow && ms >= SLOW_MS) {
+      slow = true;
+      status.append(el("span", { class: "slow", text: ` · ${w.slow || "slower than usual; the source may be busy"}` }));
+      reveal(e.sec);
+    }
+  };
+  const show = setTimeout(() => { e.sec.classList.add("busy"); e.body.append(status); tick(); every = setInterval(tick, 1000); reveal(e.sec); }, SHOW_MS);
+  return () => {
+    clearTimeout(show);
+    clearInterval(every);
+    status.remove();
+    e.sec.classList.remove("busy");
+    return performance.now() - t0;
+  };
+}
+
 /** Runs a line as if typed: kept in the history. */
 function runLine(s) { hist.push(s); hIdx = hist.length; execute(s); }
 
@@ -648,22 +691,26 @@ function renderHelp(which) {
 async function execute(line) {
   const e = entry(line);
   input.value = "";
+  const stop = pending(e, line);
+  const took = (ms) => (ms >= 1000 ? ` · took ${(ms / 1000).toFixed(1)}s` : "");
   try {
     const r = await run(line);
+    const ms = stop();
     if (!r) { e.sec.remove(); return; }
     if (r.clear) { out.replaceChildren(); return; }
     if ("help" in r) { e.meta.textContent = ""; e.body.append(renderHelp(r.help)); return; }
     if (r.local) { e.meta.textContent = r.local; e.body.append(r.node); return; }
     const env = r.env;
-    e.meta.textContent = `${env.provider} · ${env.cached ? "cached" : "live"}${env.stale ? " · stale" : ""} · fetched ${fmt.wib(env.fetched_at.replace("Z", "+00:00")).replace(" WIB", " UTC")}`;
+    e.meta.textContent = `${env.provider} · ${env.cached ? "cached" : "live"}${env.stale ? " · stale" : ""} · fetched ${fmt.wib(env.fetched_at.replace("Z", "+00:00")).replace(" WIB", " UTC")}${took(ms)}`;
     for (const w of env.warnings || []) e.body.append(el("p", { class: "warn", text: w }));
     e.body.append(r.render(env.data, env));
   } catch (err) {
-    e.meta.textContent = err.code ? `error · ${err.code}` : "error";
+    const ms = stop();
+    e.meta.textContent = `${err.code ? `error · ${err.code}` : "error"}${took(ms)}`;
     e.body.append(el("p", { class: "err", text: err.message }));
     if (err.code === "usage") e.body.append(el("p", { class: "warn", text: "Type help for the command list." }));
   }
-  e.sec.scrollIntoView({ block: "end", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  reveal(e.sec);
   input.focus();
 }
 
