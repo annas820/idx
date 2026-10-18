@@ -47,17 +47,33 @@ export function parseSymbols(raw) {
 
 // ---- D1 cache ----------------------------------------------------------
 
-async function cached(env, key, ttlSecs, producer) {
+// With `retryAfter`, a failure is remembered for that many seconds (row
+// `fail:<key>`), so readers get the stale copy or the error at once instead
+// of each waiting on a source that is down.
+async function cached(env, key, ttlSecs, producer, { retryAfter = 0 } = {}) {
   const now = Math.floor(Date.now() / 1000);
   const row = await env.DB.prepare("SELECT v, fetched_at, expires_at FROM cache WHERE k = ?1").bind(key).first();
   if (row && row.expires_at > now) return { value: JSON.parse(row.v), cached: true, stale: false, fetched_at: row.fetched_at };
+  const staleCopy = (why) => ({ value: JSON.parse(row.v), cached: true, stale: true, fetched_at: row.fetched_at, warning: `live fetch failed (${why}); showing cached copy` });
+  if (retryAfter) {
+    const fail = await env.DB.prepare("SELECT v, fetched_at, expires_at FROM cache WHERE k = ?1").bind(`fail:${key}`).first();
+    if (fail && fail.expires_at > now) {
+      const why = `${JSON.parse(fail.v)}; next try in ${fail.expires_at - now}s`;
+      if (row) return staleCopy(why);
+      throw new Error(why);
+    }
+  }
   try {
     const value = await producer();
     await env.DB.prepare("INSERT OR REPLACE INTO cache (k, v, expires_at, fetched_at) VALUES (?1, ?2, ?3, ?4)")
       .bind(key, JSON.stringify(value), now + ttlSecs, now).run();
     return { value, cached: false, stale: false, fetched_at: now };
   } catch (e) {
-    if (row) return { value: JSON.parse(row.v), cached: true, stale: true, fetched_at: row.fetched_at, warning: `live fetch failed (${e.message}); showing cached copy` };
+    if (retryAfter) {
+      await env.DB.prepare("INSERT OR REPLACE INTO cache (k, v, expires_at, fetched_at) VALUES (?1, ?2, ?3, ?4)")
+        .bind(`fail:${key}`, JSON.stringify(e.message), now + retryAfter, now).run();
+    }
+    if (row) return staleCopy(e.message);
     throw e;
   }
 }
@@ -374,18 +390,30 @@ function itemMatches(item, ticker, name) {
   if (name && name.length >= 4 && text.includes(name.toUpperCase())) return "name";
   return null;
 }
-export async function news(env, symbolRaw, limit = 20, companyOnly = false) {
-  const symbol = symbolRaw ? parseSymbol(symbolRaw) : null;
-  const results = await Promise.all(FEEDS.map((f) => cached(env, `feed:${f.id}`, 15 * 60, async () => {
-    const r = await fetch(f.url, { headers: { "User-Agent": "Mozilla/5.0 (idx web terminal)", Accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8" } });
+// A feed can accept the connection and never answer (Kontan, Oct 2026); the
+// deadline covers the body too, so one silent source cannot hold the request.
+const FEED_TIMEOUT_MS = 8000;
+const FEED_RETRY_SECS = 5 * 60;
+async function fetchFeed(f) {
+  try {
+    const r = await fetch(f.url, { headers: { "User-Agent": "Mozilla/5.0 (idx web terminal)", Accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8" }, signal: AbortSignal.timeout(FEED_TIMEOUT_MS) });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     return parseRss(await r.text(), f.id);
-  }).then((r) => ({ f, r })).catch((e) => ({ f, e }))));
+  } catch (e) {
+    if (e?.name === "TimeoutError" || e?.name === "AbortError") throw new Error(`no answer within ${FEED_TIMEOUT_MS / 1000}s`);
+    throw e;
+  }
+}
+export async function news(env, symbolRaw, limit = 20, companyOnly = false) {
+  const symbol = symbolRaw ? parseSymbol(symbolRaw) : null;
+  const results = await Promise.all(FEEDS.map((f) => cached(env, `feed:${f.id}`, 15 * 60, () => fetchFeed(f), { retryAfter: FEED_RETRY_SECS })
+    .then((r) => ({ f, r })).catch((e) => ({ f, e }))));
   let items = [], cachedAll = true, stale = false;
   const warnings = [];
   let okCount = 0, fetched = Math.floor(Date.now() / 1000);
   for (const x of results) {
     if (x.e) { warnings.push(`${x.f.id}: ${x.e.message}`); continue; }
+    if (x.r.warning) warnings.push(`${x.f.id}: ${x.r.warning}`);
     okCount++; cachedAll &&= x.r.cached; stale ||= x.r.stale; fetched = Math.min(fetched, x.r.fetched_at);
     items.push(...x.r.value);
   }
