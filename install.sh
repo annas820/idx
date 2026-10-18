@@ -16,6 +16,9 @@ BIN=idx
 say() { printf '%s\n' "$*" >&2; }
 die() { say "install.sh: $*"; exit 1; }
 need() { command -v "$1" >/dev/null 2>&1 || die "需要 $1 (missing dependency: $1)"; }
+# A server that accepts the connection and then sends nothing fails after a
+# minute instead of hanging the install.
+dl() { curl -fsSL --connect-timeout 20 --speed-limit 1 --speed-time 60 "$@"; }
 
 need curl
 need tar
@@ -38,7 +41,7 @@ target="${arch_part}-${os_part}"
 if [ -n "${IDX_VERSION:-}" ]; then
   tag="$IDX_VERSION"
 else
-  tag="$(curl -fsSL "https://api.github.com/repos/$REPO/releases/latest" \
+  tag="$(dl "https://api.github.com/repos/$REPO/releases/latest" \
     | sed -n 's/.*"tag_name": *"\([^"]*\)".*/\1/p' | head -n1)"
   [ -n "$tag" ] || die "could not determine the latest release of $REPO"
 fi
@@ -50,8 +53,8 @@ tmp="$(mktemp -d 2>/dev/null || mktemp -d -t idx)"
 trap 'rm -rf "$tmp"' EXIT
 
 say "Downloading $asset ($tag)"
-curl -fsSL -o "$tmp/$asset" "$base/$asset" || die "no release asset $asset at $base (release may not include $target)"
-curl -fsSL -o "$tmp/SHA256SUMS" "$base/SHA256SUMS" || die "no SHA256SUMS in release $tag"
+dl -o "$tmp/$asset" "$base/$asset" || die "no release asset $asset at $base (release may not include $target)"
+dl -o "$tmp/SHA256SUMS" "$base/SHA256SUMS" || die "no SHA256SUMS in release $tag"
 
 expected="$(grep " $asset\$" "$tmp/SHA256SUMS" | awk '{print $1}')"
 [ -n "$expected" ] || die "$asset is not listed in SHA256SUMS"
