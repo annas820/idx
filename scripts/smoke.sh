@@ -142,6 +142,43 @@ expect "$TMP/bs.json" '"scanned": 20' "bandar screen scanned the 20 most traded"
 "$IDX" bandar screen --preset big-distribution --period 1d --symbols BBCA,BBRI,TLKM >"$TMP/bs.txt" || fail "bandar screen table"
 expect "$TMP/bs.txt" "Bandar screen · big-distribution" "bandar screen table header"
 
+echo "corporate actions, broker activity (ipot)"
+"$IDX" -o json stocks actions ENRG --since 2025-01-01 >"$TMP/ca.json" || fail "actions json"
+expect "$TMP/ca.json" '"schema": "idx.actions.v1"' "actions json schema"
+expect "$TMP/ca.json" '"kind": "rights_issue"' "ENRG's rights issue is read"
+expect "$TMP/ca.json" '"code": "ENRG-R"' "the listed right is read"
+"$IDX" stocks actions BBCA --since 2021-01-01 >"$TMP/ca.txt" || fail "actions table"
+expect "$TMP/ca.txt" "stock split" "BBCA's 2021 split is listed"
+"$IDX" bandar broker YP --scan 10 >"$TMP/bb.txt" || fail "bandar broker table"
+expect "$TMP/bb.txt" "Top-ten buyer of" "bandar broker table has both sides"
+
+echo "holidays (bundled)"
+"$IDX" market holidays --year 2026 >"$TMP/hd.txt" || fail "holidays"
+expect "$TMP/hd.txt" "239 trading days" "2026 has IDX's 239 trading days"
+
+echo "idx.co.id (needs a connection Cloudflare lets through)"
+set +e
+"$IDX" -o json market indices LQ45 >"$TMP/ix.json" 2>"$TMP/ix.err"; code=$?
+set -e
+if [ "$code" = 0 ]; then
+  expect "$TMP/ix.json" '"schema": "idx.indices.v1"' "indices json schema"
+  expect "$TMP/ix.json" '"code": "LQ45"' "indices kept LQ45"
+  "$IDX" -o json stocks foreign BBCA --days 5 >"$TMP/sf.json" || fail "stocks foreign"
+  expect "$TMP/sf.json" '"foreign_net_value_at_close":' "stocks foreign has net x close"
+  "$IDX" market foreign --top 3 >"$TMP/mf.txt" || fail "market foreign"
+  expect "$TMP/mf.txt" "Foreign net selling" "market foreign has both lists"
+  "$IDX" -o json market brokers --top 3 >"$TMP/mb.json" || fail "market brokers"
+  expect "$TMP/mb.json" '"value_share_pct":' "market brokers has shares"
+  "$IDX" -o json market calendar --days 30 >"$TMP/mc.json" || fail "market calendar"
+  expect "$TMP/mc.json" '"schema": "idx.calendar.v1"' "calendar json schema"
+  "$IDX" -o json stocks list --search BBCA >"$TMP/sl.json" || fail "stocks list"
+  expect "$TMP/sl.json" '"provider": "idx"' "stocks list came from idx.co.id"
+  "$IDX" market members --search mandiri >"$TMP/mm.txt" || fail "market members"
+  expect "$TMP/mm.txt" "Perantara Pedagang Efek" "members carry licences"
+else
+  echo "  skip idx.co.id checks (exit $code): $(head -c 160 "$TMP/ix.err")"
+fi
+
 echo "ownership (local fixture)"
 export IDX_OWNERSHIP_DB="$TMP/own.sqlite"
 "$IDX" ownership import --file tests/fixtures/ownership/above1_20260831_excerpt.xlsx >"$TMP/oi.txt" || fail "ownership import"
