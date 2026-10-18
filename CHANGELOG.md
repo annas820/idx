@@ -6,6 +6,28 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-10-18
+
+### Fixed
+
+- Web terminal: `news`, `sentiment` and `brief` no longer hang when a feed
+  accepts the connection and never answers, as Kontan's RSS hosts did. Every
+  outbound call of the Worker (Yahoo, IPOT, the news feeds, the ownership
+  mirror) now has a deadline that covers the body; a silent news feed is
+  skipped for five minutes in favour of its cached copy; and the browser
+  reports a request with no answer after 60 s instead of leaving it pending.
+- `stocks news`, `stocks sentiment`, `stocks brief` and the matching MCP
+  tools: a feed that times out is remembered for five minutes, so later calls
+  serve its cached copy (with a warning saying why) at once instead of each
+  waiting out `--timeout`.
+- Network errors name a timeout as such ("timed out waiting for <url>") and
+  carry their underlying cause instead of reqwest's bare "error sending
+  request for url".
+- npm launcher: a binary download that stops sending fails after 30 s
+  instead of hanging the install or the first run.
+- `install.sh`: downloads give up after 20 s without a connection or 60 s
+  without data.
+
 ## [0.6.0] - 2026-10-18
 
 ### Fixed
