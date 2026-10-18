@@ -158,6 +158,9 @@ p { margin: 0; }
 .stmt pre { border-bottom: 2px solid var(--rule); padding-bottom: 0.6rem; }
 .stmt .tbl td, .stmt .tbl th { text-align: left; white-space: normal; }
 .tbl-mcp td:first-child { font-family: var(--mono); font-size: 0.8rem; white-space: nowrap; }
+.tbl-tools td { text-align: left; white-space: normal; vertical-align: top; }
+.tbl-tools td:first-child, .tbl-tools code { font-family: var(--mono); font-size: 0.8rem; white-space: nowrap; }
+.tbl-tools td a { font-family: var(--mono); font-size: 0.8rem; white-space: nowrap; }
 .movers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 2rem; }
 
 /* ---- signature ------------------------------------------------------------- */
@@ -232,6 +235,8 @@ p { margin: 0; }
 .hints { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; padding: 0.5rem 0 0; }
 .hints button { font: inherit; font-family: var(--mono); font-size: 0.8rem; background: transparent; border: 1px solid var(--rule-soft); padding: 0.15rem 0.5rem; cursor: pointer; color: var(--ink-2); }
 .hints button:hover { border-color: var(--ink); color: var(--ink); }
+.hints button.cli-only { border-style: dashed; }
+.hints.tools { padding-top: 0.25rem; }
 .spark { height: 36px; width: 100%; display: block; }
 
 /* single-quote chart: range buttons print ink on paper when pressed, the line is green-ink or red */

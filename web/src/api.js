@@ -675,6 +675,76 @@ export async function bandarScreen(env, presetRaw, filterRaw, periodRaw, topRaw,
   return envelope("idx.bandar.screen.v1", data, { provider: ipot.NAME, cached: true, fetched_at: Number.isFinite(at) ? at : new Date(), warnings });
 }
 
+/** One stock where the broker is top ten on a side, like service::stock_row. */
+function brokerStockRow(s, flow, other, buying) {
+  const opposite = other?.value ?? null;
+  const net = flow.value == null || opposite == null ? null : buying ? flow.value - opposite : opposite - flow.value;
+  return {
+    symbol: s.symbol, name: s.name ?? null, rank: flow.rank, lots: flow.lots, value: flow.value, average_price: flow.average_price,
+    share_pct: flow.value != null && s.total_value > 0 ? (flow.value / s.total_value) * 100 : null,
+    opposite_value: opposite, net_value: net,
+  };
+}
+
+/** Broker activity from the nightly scan: where one broker is a top-ten buyer or seller of the scanned stocks. */
+export async function bandarBroker(env, codeRaw, periodRaw, limitRaw) {
+  const code = String(codeRaw || "").trim().toUpperCase();
+  if (!/^[A-Z0-9]{2}$/.test(code)) throw usage(`"${codeRaw ?? ""}" is not a broker code; codes are two characters such as YP or CC (see members)`);
+  const period = bd.checkPeriod(periodRaw || "1w");
+  const limit = num(limitRaw, 20);
+  const scan = await scanRows(env, period);
+  if (!scan.session) throw notFound("the bandar scan has not run yet: after the close (from 16:45 WIB) the minute cron reads the 100 most traded stocks; the CLI scans live meanwhile");
+  const st = scan.state || {};
+  const warnings = [];
+  if (!BROKERS[code]) warnings.push(`${code} is not on the bundled exchange-member list`);
+  if (scan.partial) warnings.push(`the scan of ${scan.session} is still running: ${scan.rows.length} of ${new Set(st.symbols || []).size} stocks so far`);
+  const failed = st.session === scan.session ? (st.failed || []).length : 0;
+  if (failed) warnings.push(`${failed} of ${scan.rows.length + failed} scanned stocks had no broker summary`);
+  const traded = scan.rows.filter((r) => r.summary.buyers.length || r.summary.sellers.length);
+  const bought = [], sold = [];
+  for (const { summary: s } of traded) {
+    const buy = s.buyers.find((f) => f.code === code), sell = s.sellers.find((f) => f.code === code);
+    if (buy) bought.push(brokerStockRow(s, buy, sell, true));
+    if (sell) sold.push(brokerStockRow(s, sell, buy, false));
+  }
+  const byValue = (a, b) => (b.value ?? -Infinity) - (a.value ?? -Infinity);
+  bought.sort(byValue); sold.sort(byValue);
+  const sum = (rows) => rows.reduce((t, r) => t + (r.value ?? 0), 0);
+  const data = {
+    code, name: BROKERS[code] ?? null, period, from: traded[0]?.summary.from || bd.periodStart(period, scan.session), to: scan.session,
+    scanned: scan.rows.length + failed, checked: traded.length, failed, bought_value: sum(bought), sold_value: sum(sold),
+    bought: limit > 0 ? bought.slice(0, limit) : bought, sold: limit > 0 ? sold.slice(0, limit) : sold,
+  };
+  const at = Date.parse(st.done_at || st.started_at || "") / 1000;
+  return envelope("idx.bandar.broker.v1", data, { provider: ipot.NAME, cached: true, fetched_at: Number.isFinite(at) ? at : new Date(), warnings });
+}
+
+// ---- directories (bundled) ---------------------------------------------
+
+const matchesSearch = (q, code, name) => {
+  const s = String(q ?? "").trim().toLowerCase();
+  return !s || code.toLowerCase().includes(s) || String(name ?? "").toLowerCase().includes(s);
+};
+
+/** Listed stocks: the bundled universe (codes and names); the CLI reads boards, listing dates and shares from idx.co.id. */
+export function instruments(searchRaw, boardRaw) {
+  const search = String(searchRaw ?? "").trim() || null, board = String(boardRaw ?? "").trim() || null;
+  const warnings = ["the web terminal lists the bundled universe (codes and names); `idx stocks list` reads listing boards, dates and shares from idx.co.id"];
+  let list = UNIVERSE.map(([symbol, name]) => ({ symbol, name: name || null, listing_date: null, shares: null, board: null }));
+  const total = list.length;
+  if (board) { warnings.push("the bundled list has no boards, so a board filter matches nothing here"); list = []; }
+  list = list.filter((i) => matchesSearch(search, i.symbol, i.name)).sort((a, b) => (a.symbol < b.symbol ? -1 : 1));
+  return envelope("idx.instruments.v1", { total, board, search, instruments: list }, { provider: "bundled", cached: true, warnings });
+}
+
+/** Exchange members from the bundled list (codes and names); the CLI adds licences from idx.co.id. */
+export function members(searchRaw) {
+  const search = String(searchRaw ?? "").trim() || null;
+  const all = Object.entries(BROKERS).map(([code, name]) => ({ code, name, licenses: null })).sort((a, b) => (a.code < b.code ? -1 : 1));
+  const list = all.filter((m) => matchesSearch(search, m.code, m.name));
+  return envelope("idx.members.v1", { total: all.length, search, members: list }, { provider: "bundled", cached: true, warnings: ["the web terminal lists the bundled member list (codes and names); `idx market members` adds licences from idx.co.id"] });
+}
+
 // ---- ownership (synced register) --------------------------------------
 
 async function emptyRegisterMessage(env) {
@@ -849,8 +919,11 @@ export async function route(env, url) {
     case "/bandar": return bandar(env, q.get("symbols") || q.get("symbol"), q.get("period"), q.get("date"), q.get("from"), q.get("to"), q.get("top"), q.get("investor") || "all", q.get("board") || "all", q.get("daily"));
     case "/bandar/screen": return bandarScreen(env, q.get("preset"), q.get("filter"), q.get("period"), q.get("top"), q.get("sort"), q.get("asc"), q.get("limit"));
     case "/bandar/status": return envelope("idx.bandar.scan.v1", await scanStatus(env), { provider: ipot.NAME, cached: true });
+    case "/bandar/broker": return bandarBroker(env, q.get("code"), q.get("period"), q.get("limit"));
     case "/actions": return actions(env, q.get("symbol"), q.get("since"));
     case "/holidays": return holidays(q.get("year"), q.get("all"), q.get("upcoming"));
+    case "/instruments": return instruments(q.get("search"), q.get("board"));
+    case "/members": return members(q.get("search"));
     case "/ownership/ticker": return ownershipTicker(env, q.get("symbol"), q.get("as_of"));
     case "/ownership/entity": return ownershipEntity(env, q.get("name"), q.get("as_of"));
     case "/ownership/changes": return ownershipChanges(env, q.get("from"), q.get("to"), q.get("symbol"), num(q.get("min_change"), 0), num(q.get("limit"), 50), num(q.get("offset"), 0));

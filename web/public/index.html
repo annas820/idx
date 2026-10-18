@@ -190,8 +190,54 @@ Last trade 2026-10-16 16:14 WIB · market closed</pre>
             <tr><td>idx_ownership_*</td><td>holders, changes, foreign flow</td></tr>
           </tbody>
         </table>
+        <p class="foot"><a href="#cmd-h">All 33 tools with their CLI and web commands ↓</a></p>
       </div>
     </div>
+  </section>
+
+  <section class="section" aria-labelledby="cmd-h">
+    <h2 id="cmd-h" class="strip"><span class="cond">Daftar Perintah</span><small>Commands and tools · 33 MCP tools, the CLI command behind each, and 28 that run in the web terminal</small></h2>
+    <div class="tbl-wrap">
+      <table class="tbl tbl-tools" aria-label="MCP tools, CLI commands and web terminal commands">
+        <thead><tr><th class="l">MCP tool</th><th class="l">CLI</th><th class="l">Web terminal</th><th class="l">What</th></tr></thead>
+        <tbody>
+            <tr><td>idx_brief</td><td><code>idx stocks brief BBCA</code></td><td><a href="/terminal?cmd=brief%20BBCA">brief BBCA</a></td><td class="muted">one page: quote, verdict, signal, returns, dividends, holders, headlines</td></tr>
+            <tr><td>idx_market</td><td><code>idx market overview</code></td><td><a href="/terminal?cmd=market">market</a></td><td class="muted">IHSG, breadth, gainers, losers, most traded</td></tr>
+            <tr><td>idx_quote</td><td><code>idx stocks quote BBCA,BBRI</code></td><td><a href="/terminal?cmd=quote%20BBCA">quote BBCA</a></td><td class="muted">delayed quotes; one symbol adds a price chart</td></tr>
+            <tr><td>idx_history</td><td><code>idx stocks history BBCA --period 3mo</code></td><td><a href="/terminal?cmd=history%20BBCA%203mo">history BBCA 3mo</a></td><td class="muted">OHLCV candles</td></tr>
+            <tr><td>idx_profile</td><td><code>idx stocks profile TLKM</code></td><td><a href="/terminal?cmd=profile%20TLKM">profile TLKM</a></td><td class="muted">sector, industry, description, management</td></tr>
+            <tr><td>idx_financials</td><td><code>idx stocks financials ASII</code></td><td><a href="/terminal?cmd=financials%20ASII">financials ASII</a></td><td class="muted">income statement, balance sheet, cash flow</td></tr>
+            <tr><td>idx_earnings</td><td><code>idx stocks earnings TLKM</code></td><td><a href="/terminal?cmd=earnings%20TLKM">earnings TLKM</a></td><td class="muted">EPS vs estimates, next earnings date</td></tr>
+            <tr><td>idx_dividends</td><td><code>idx stocks dividends TLKM</code></td><td><a href="/terminal?cmd=dividends%20TLKM">dividends TLKM</a></td><td class="muted">payments, yearly totals, TTM yield, streak</td></tr>
+            <tr><td>idx_returns</td><td><code>idx stocks returns BBCA BBRI BMRI</code></td><td><a href="/terminal?cmd=returns%20BBCA%20BBRI%20BMRI">returns BBCA BBRI BMRI</a></td><td class="muted">1w..5y returns, CAGR, drawdown, excess over IHSG</td></tr>
+            <tr><td>idx_fundamental</td><td><code>idx stocks fundamental BBCA</code></td><td><a href="/terminal?cmd=fundamental%20BBCA">fundamental BBCA</a></td><td class="muted">ratios with a plain-language verdict</td></tr>
+            <tr><td>idx_technical</td><td><code>idx stocks technical BBRI</code></td><td><a href="/terminal?cmd=technical%20BBRI">technical BBRI</a></td><td class="muted">RSI, MACD, averages, levels, signal</td></tr>
+            <tr><td>idx_compare</td><td><code>idx stocks compare BBCA BBRI BMRI</code></td><td><a href="/terminal?cmd=compare%20BBCA%20BBRI%20BMRI">compare BBCA BBRI BMRI</a></td><td class="muted">side-by-side fundamentals</td></tr>
+            <tr><td>idx_screen</td><td><code>idx stocks screen -f 'pe&lt;10,div&gt;5,mcap&gt;5T'</code></td><td><a href="/terminal?cmd=screen%20pe%3C10%2Cdiv%3E5%2Cmcap%3E5T%20--sort%20div">screen pe&lt;10,div&gt;5,mcap&gt;5T --sort div</a></td><td class="muted">screener over ~950 tickers</td></tr>
+            <tr><td>idx_news</td><td><code>idx stocks news TLKM</code></td><td><a href="/terminal?cmd=news%20TLKM">news TLKM</a></td><td class="muted">Kontan and CNBC Indonesia headlines</td></tr>
+            <tr><td>idx_sentiment</td><td><code>idx stocks sentiment BBRI</code></td><td><a href="/terminal?cmd=sentiment%20BBRI">sentiment BBRI</a></td><td class="muted">lexicon sentiment over the headlines</td></tr>
+            <tr><td>idx_corporate_actions</td><td><code>idx stocks actions BBCA</code></td><td><a href="/terminal?cmd=actions%20BBCA">actions BBCA</a></td><td class="muted">dividends, splits, bonus, rights, RUPS, warrants</td></tr>
+            <tr><td>idx_foreign</td><td><code>idx stocks foreign BBCA</code></td><td><span class="muted">CLI and MCP only</span></td><td class="muted">foreign buying and selling per session</td></tr>
+            <tr><td>idx_instruments</td><td><code>idx stocks list --search bank</code></td><td><a href="/terminal?cmd=list%20--search%20bank">list --search bank</a></td><td class="muted">listed stocks (the web lists codes and names)</td></tr>
+            <tr><td>idx_market_foreign</td><td><code>idx market foreign</code></td><td><span class="muted">CLI and MCP only</span></td><td class="muted">top foreign net buying and selling</td></tr>
+            <tr><td>idx_market_brokers</td><td><code>idx market brokers</code></td><td><span class="muted">CLI and MCP only</span></td><td class="muted">exchange members ranked by the day's value</td></tr>
+            <tr><td>idx_indices</td><td><code>idx market indices</code></td><td><span class="muted">CLI and MCP only</span></td><td class="muted">every IDX index for one session</td></tr>
+            <tr><td>idx_calendar</td><td><code>idx market calendar</code></td><td><span class="muted">CLI and MCP only</span></td><td class="muted">dividend and rights dates, RUPS, public exposes</td></tr>
+            <tr><td>idx_holidays</td><td><code>idx market holidays --upcoming</code></td><td><a href="/terminal?cmd=holidays%20--upcoming">holidays --upcoming</a></td><td class="muted">trading holidays and the next trading day</td></tr>
+            <tr><td>idx_members</td><td><code>idx market members</code></td><td><a href="/terminal?cmd=members">members</a></td><td class="muted">exchange members: broker codes and names</td></tr>
+            <tr><td>idx_broker</td><td><code>idx broker BBCA</code></td><td><a href="/terminal?cmd=broker%20BBCA">broker BBCA</a></td><td class="muted">top 10 buyers and sellers of a stock</td></tr>
+            <tr><td>idx_bandar</td><td><code>idx bandar detect BBCA --daily</code></td><td><a href="/terminal?cmd=bandar%20BBCA%20--daily">bandar BBCA --daily</a></td><td class="muted">bandarmology: accumulation or distribution</td></tr>
+            <tr><td>idx_bandar_screen</td><td><code>idx bandar screen --preset big-accumulation</code></td><td><a href="/terminal?cmd=bandar%20screen%20--preset%20big-accumulation">bandar screen --preset big-accumulation</a></td><td class="muted">the most traded stocks the top brokers accumulate</td></tr>
+            <tr><td>idx_bandar_broker</td><td><code>idx bandar broker YP</code></td><td><a href="/terminal?cmd=bandar%20broker%20YP">bandar broker YP</a></td><td class="muted">where one broker is a top buyer or seller</td></tr>
+            <tr><td>idx_ownership_ticker</td><td><code>idx ownership ticker BBCA</code></td><td><a href="/terminal?cmd=ownership%20ticker%20BBCA">ownership ticker BBCA</a></td><td class="muted">holders above 1 %</td></tr>
+            <tr><td>idx_ownership_entity</td><td><code>idx ownership entity &quot;Dwimuria Investama&quot;</code></td><td><a href="/terminal?cmd=ownership%20entity%20%22Dwimuria%20Investama%22">ownership entity &quot;Dwimuria Investama&quot;</a></td><td class="muted">every position of a holder</td></tr>
+            <tr><td>idx_ownership_changes</td><td><code>idx ownership changes --from 2026-08-31 --to 2026-09-30</code></td><td><a href="/terminal?cmd=ownership%20changes%202026-08-31%202026-09-30">ownership changes 2026-08-31 2026-09-30</a></td><td class="muted">monthly changes with a summary</td></tr>
+            <tr><td>idx_ownership_foreign</td><td><code>idx ownership foreign</code></td><td><a href="/terminal?cmd=ownership%20foreign">ownership foreign</a></td><td class="muted">disclosed foreign vs local stakes</td></tr>
+            <tr><td>idx_ownership_releases</td><td><code>idx ownership releases</code></td><td><a href="/terminal?cmd=ownership%20releases">ownership releases</a></td><td class="muted">imported monthly registers</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="foot"><span>The 5 idx.co.id tools (foreign flow, top brokers, indices, the exchange calendar) run in the CLI and the MCP server only: idx.co.id refuses requests from this site's host.</span> <a href="/terminal?cmd=tools">All tools in the terminal →</a></p>
   </section>
 
   <footer class="sign">

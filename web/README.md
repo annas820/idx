@@ -37,9 +37,15 @@ Cloudflare Worker behind **https://ihsg.midoriresearch.com**.
 - Endpoints under `/api`: `market`, `quote`, `history`, `profile`,
   `fundamental`, `earnings`, `financials`, `dividends`, `returns`, `technical`,
   `brief`, `compare`, `screen`, `news`, `sentiment`, `broker`, `bandar`,
-  `bandar/screen`, `bandar/status`, `actions`, `holidays`, `ownership/ticker`,
+  `bandar/screen`, `bandar/status`, `bandar/broker`, `actions`, `holidays`,
+  `instruments`, `members`, `ownership/ticker`,
   `ownership/entity`, `ownership/changes`, `ownership/foreign`,
   `ownership/releases`, `universe`.
+- `public/tools.js` the 33 MCP tools with their CLI and web commands: the
+  terminal's `tools` command and help buttons and the landing page's Daftar
+  Perintah table use it; `test/tools.test.mjs` checks it against docs/mcp.md.
+  `bandar/broker` reads the nightly scan; `instruments` and `members` serve the
+  bundled lists.
 - `migrations/` D1 schema. `test/` runs with `node --test web/test/*.mjs`.
 - Search and sharing: canonical, Open Graph and Twitter tags on both pages,
   JSON-LD on the landing page, `public/robots.txt` and `public/sitemap.xml`;

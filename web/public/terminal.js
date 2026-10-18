@@ -1,6 +1,7 @@
 // The web terminal: parses CLI-shaped commands, calls /api, prints statements.
 import { api, fmt, table, wrapScroll, el, sparkline, signClass } from "/app.js";
 import { priceChart } from "/chart.js";
+import { TOOLS, CLI_ONLY_REASON, byName } from "/tools.js";
 
 const out = document.getElementById("out");
 const form = document.getElementById("prompt");
@@ -25,10 +26,13 @@ const COMMANDS = [
   { name: "brief", usage: "brief <SYMBOL>", help: "one page: quote, verdict, signal, returns, dividends, holders, headlines" },
   { name: "sentiment", usage: "sentiment <SYMBOL>", help: "lexicon sentiment over matching headlines" },
   { name: "broker", usage: "broker <SYMBOLS> [--date D | --from D --to D] [--investor foreign|domestic] [--board regular|cash|negotiated]", help: "which brokers bought and sold it: top 10 per side ranked by lots (IPOT), latest session by default" },
-  { name: "bandar", usage: "bandar <SYMBOLS> [--period 1d|1w|1m|3m] [--top 1|3|5|10] [--daily] [--date D | --from D --to D] | bandar screen [--preset P] [--filter F] [--period P] [--sort KEY] [--limit N]", help: "bandarmology: are the top brokers accumulating or distributing? screen presets: big-accumulation, accumulation, distribution, big-distribution, quiet-accumulation, quiet-distribution, foreign-accumulation, below-bandar" },
+  { name: "bandar", usage: "bandar <SYMBOLS> [--period 1d|1w|1m|3m] [--top 1|3|5|10] [--daily] [--date D | --from D --to D] | bandar screen [--preset P] [--filter F] [--period P] [--sort KEY] [--limit N] | bandar broker <CODE> [--period P] [--limit N]", help: "bandarmology: are the top brokers accumulating or distributing? screen presets: big-accumulation, accumulation, distribution, big-distribution, quiet-accumulation, quiet-distribution, foreign-accumulation, below-bandar; broker: where one broker (YP, CC, ...) is a top-10 buyer or seller of the session's 100 most traded stocks" },
   { name: "actions", usage: "actions <SYMBOL> [--since YYYY-MM-DD]", help: "corporate actions (dividends, splits, bonus, rights with ratio and cum/ex/payment dates), RUPS, warrants and rights; upcoming included (IPOT)" },
   { name: "market", usage: "market", help: "IHSG, breadth, gainers, losers, most traded" },
   { name: "holidays", usage: "holidays [YEAR] [--all] [--upcoming]", help: "IDX trading holidays, the year's trading days, whether today is a trading day and the next one" },
+  { name: "list", usage: "list [--search TEXT]", help: "listed stocks: codes and names (bundled; the CLI adds boards, listing dates and shares from idx.co.id)" },
+  { name: "members", usage: "members [--search TEXT]", help: "exchange members: the broker codes broker and bandar report, with names" },
+  { name: "tools", usage: "tools [idx_TOOL]", help: "the 33 MCP tools with their CLI and web commands; tools idx_quote runs one" },
   { name: "ownership", usage: "ownership ticker <SYMBOL> | entity <NAME> | changes <FROM> <TO> [SYMBOL] [--offset N] | foreign [SYMBOL] | releases", help: "KSEI holders above 1 %, synced monthly from IDX: holders, entities, monthly changes with a summary, foreign vs local" },
   { name: "json", usage: "json <command…>", help: "print the raw JSON envelope of any command" },
   { name: "help", usage: "help [command]", help: "this list" },
@@ -408,6 +412,56 @@ const R = {
     frag.append(el("p", { class: "warn", text: "Amount: IDR per share (the dividend, or a rights issue's exercise price). Ratio: old:new. Source: IPOT; json actions … carries each announcement and RUPS agenda." }));
     return frag;
   },
+  instruments(l) {
+    const frag = document.createDocumentFragment();
+    const shown = l.instruments.slice(0, 200);
+    frag.append(el("p", { class: "prose", text: `${l.instruments.length} of ${l.total} listed stocks${l.search ? ` · matching "${l.search}"` : ""}` }));
+    if (shown.length) frag.append(wrapScroll(table([{ h: "Symbol", k: "symbol", l: true, cls: "sym" }, { h: "Name", f: (i) => i.name || "—", l: true, cls: "name" }], shown)));
+    if (l.instruments.length > shown.length) frag.append(el("p", { class: "warn", text: `Showing the first ${shown.length}; narrow with --search or use json list for all.` }));
+    return frag;
+  },
+  members(l) {
+    const frag = document.createDocumentFragment();
+    frag.append(el("p", { class: "prose", text: `${l.members.length} of ${l.total} exchange members${l.search ? ` · matching "${l.search}"` : ""}` }));
+    if (l.members.length) frag.append(wrapScroll(table([{ h: "Code", k: "code", l: true, cls: "sym" }, { h: "Member", f: (m) => m.name || "—", l: true, cls: "name" }], l.members)));
+    return frag;
+  },
+  bandarBroker(a) {
+    const frag = document.createDocumentFragment();
+    frag.append(el("p", { class: "prose", html: `<b>${a.code}</b>${a.name ? ` · ${a.name}` : ""} · ${a.period} (${a.from} to ${a.to}) · ${a.scanned} scanned, ${a.checked} with trades` }));
+    frag.append(el("p", { class: "prose", text: `Visible buying ${fmt.compact(a.bought_value)} in ${a.bought.length} stocks · visible selling ${fmt.compact(a.sold_value)} in ${a.sold.length} stocks` }));
+    const cols = [
+      { h: "Symbol", k: "symbol", l: true, cls: "sym" }, { h: "Name", f: (r) => r.name || "—", l: true, cls: "name" },
+      { h: "Rank", k: "rank" }, { h: "Lots", f: (r) => fmt.compact(r.lots) }, { h: "Value", f: (r) => fmt.compact(r.value) },
+      { h: "Avg", f: (r) => fmt.price(r.average_price) }, { h: "Share", f: (r) => (r.share_pct == null ? "—" : `${fmt.num(r.share_pct, 1)}%`) },
+      { h: "Other side", f: (r) => fmt.compact(r.opposite_value) }, { h: "Net", f: (r) => fmt.compact(r.net_value), cls: (r) => `num ${signClass(r.net_value)}` },
+    ];
+    const grid = el("div", { class: "two" });
+    grid.append(
+      el("div", { class: "stmt" }, [el("h3", { class: "stmt-title", text: "Top-ten buyer of" }), a.bought.length ? wrapScroll(table(cols, a.bought)) : el("p", { class: "warn", text: "Not among the top ten buyers of any scanned stock." })]),
+      el("div", { class: "stmt" }, [el("h3", { class: "stmt-title", text: "Top-ten seller of" }), a.sold.length ? wrapScroll(table(cols, a.sold)) : el("p", { class: "warn", text: "Not among the top ten sellers of any scanned stock." })]),
+    );
+    frag.append(grid);
+    frag.append(el("p", { class: "warn", text: "From the nightly scan of the session's 100 most traded stocks (IPOT broker summary). Only the top ten per side are published; net shows where both sides are visible." }));
+    return frag;
+  },
+  tools() {
+    const frag = document.createDocumentFragment();
+    frag.append(el("p", { class: "prose", text: `${TOOLS.length} MCP tools (idx mcp). ${TOOLS.filter((t) => t.web).length} run here; the ${TOOLS.filter((t) => !t.web).length} idx.co.id tools run in the CLI and MCP only. Click a tool to run it, or to see its CLI command.` }));
+    frag.append(wrapScroll(table([
+      { h: "Tool", k: "tool", l: true, cls: "sym" }, { h: "CLI", k: "cli", l: true },
+      { h: "Web terminal", f: (t) => t.web || "CLI and MCP only", l: true }, { h: "What", k: "what", l: true, cls: "name" },
+    ], TOOLS)));
+    frag.append(toolButtons());
+    return frag;
+  },
+  cliOnly(t) {
+    const frag = document.createDocumentFragment();
+    frag.append(el("p", { class: "prose", html: `<b>${t.tool}</b> · ${t.what}` }));
+    frag.append(el("pre", { text: `${t.cli}\n${t.cli.replace(/^idx /, "idx -o json ")}` }));
+    frag.append(el("p", { class: "warn", text: `${CLI_ONLY_REASON} Install: npm install -g ihsg-cli, or the binaries on GitHub (fzn0x/idx).` }));
+    return frag;
+  },
   holidays(h) {
     const frag = document.createDocumentFragment();
     frag.append(el("p", { class: "prose", html: `<b>IDX trading holidays${h.year != null ? ` ${h.year}` : ""}</b>${h.trading_days != null ? ` · ${h.trading_days} trading days` : ""} · today ${h.today} is ${h.today_is_trading_day ? "a trading day" : "not a trading day"} · next trading day ${h.next_trading_day}` }));
@@ -509,6 +563,10 @@ async function run(line) {
       if ((pos[0] || "").toLowerCase() === "screen") {
         env = await api(`bandar/screen?${qs({ preset: opt.preset, filter: opt.filter, period: opt.period, top: opt.top, sort: opt.sort, asc: opt.asc ? "1" : opt.desc ? "0" : null, limit: opt.limit })}`);
         render = R.bandarScreen;
+      } else if ((pos[0] || "").toLowerCase() === "broker") {
+        need(pos, 2, "bandar broker <CODE> [--period 1d|1w|1m|3m] [--limit N]");
+        env = await api(`bandar/broker?${qs({ code: pos[1], period: opt.period, limit: opt.limit })}`);
+        render = R.bandarBroker;
       } else {
         const syms = (pos[0] || "").toLowerCase() === "detect" ? pos.slice(1) : pos;
         need(syms, 1, cmd.usage);
@@ -518,6 +576,15 @@ async function run(line) {
       break;
     }
     case "market": env = await api("market"); render = R.market; break;
+    case "list": env = await api(`instruments?${qs({ search: opt.search || pos.join(" ") || null })}`); render = R.instruments; break;
+    case "members": env = await api(`members?${qs({ search: opt.search || pos.join(" ") || null })}`); render = R.members; break;
+    case "tools": {
+      if (!pos[0]) return { local: "33 MCP tools", node: R.tools() };
+      const t = byName(pos[0]);
+      if (!t) throw Object.assign(new Error(`no tool "${pos[0]}"; type tools for the list`), { code: "usage" });
+      if (t.web) return run(rawJson ? `json ${t.web}` : t.web);
+      return { local: "CLI and MCP only", node: R.cliOnly(t) };
+    }
     case "actions": need(pos, 1, cmd.usage); env = await api(`actions?${qs({ symbol: sym(), since: opt.since })}`); render = R.actions; break;
     case "holidays": {
       // `holidays --upcoming 2027`: the flag parser hands the year to the flag.
@@ -551,12 +618,30 @@ function entry(cmdLine) {
   return { sec, cap, body, meta: cap.lastChild };
 }
 
+/** Runs a line as if typed: kept in the history. */
+function runLine(s) { hist.push(s); hIdx = hist.length; execute(s); }
+
+/** One button per MCP tool: a web tool runs its example, an idx.co.id tool shows its CLI command. */
+function toolButtons() {
+  const box = el("div", { class: "hints tools" });
+  box.append(...TOOLS.map((t) => el("button", {
+    type: "button", text: t.tool, class: t.web ? "" : "cli-only",
+    title: `${t.what} · ${t.web ? `runs: ${t.web}` : "CLI and MCP only"}`,
+    onclick: () => runLine(t.web || `tools ${t.tool}`),
+  })));
+  return box;
+}
+
 function renderHelp(which) {
   const frag = document.createDocumentFragment();
   const list = which ? COMMANDS.filter((c) => c.name === (ALIASES[which] || which)) : COMMANDS;
   if (!list.length) frag.append(el("p", { class: "err", text: `no command "${which}"` }));
   frag.append(wrapScroll(table([{ h: "Command", k: "usage", l: true, cls: "sym" }, { h: "What it does", k: "help", l: true }], list.map((c) => ({ usage: c.usage, help: c.help })))));
   frag.append(el("p", { class: "warn", text: "Aliases: q h f t n s c d r b own. Prefix any command with json for the raw envelope. Symbols accept BBCA or BBCA.JK; several symbols are comma or space separated." }));
+  if (!which) {
+    frag.append(el("h3", { class: "stmt-title", text: `MCP tools · ${TOOLS.length} · click to run (dashed: CLI and MCP only)` }));
+    frag.append(toolButtons());
+  }
   return frag;
 }
 
@@ -568,6 +653,7 @@ async function execute(line) {
     if (!r) { e.sec.remove(); return; }
     if (r.clear) { out.replaceChildren(); return; }
     if ("help" in r) { e.meta.textContent = ""; e.body.append(renderHelp(r.help)); return; }
+    if (r.local) { e.meta.textContent = r.local; e.body.append(r.node); return; }
     const env = r.env;
     e.meta.textContent = `${env.provider} · ${env.cached ? "cached" : "live"}${env.stale ? " · stale" : ""} · fetched ${fmt.wib(env.fetched_at.replace("Z", "+00:00")).replace(" WIB", " UTC")}`;
     for (const w of env.warnings || []) e.body.append(el("p", { class: "warn", text: w }));
@@ -601,8 +687,8 @@ input.addEventListener("keydown", (ev) => {
 });
 
 // hints + deep links (?cmd=)
-const SAMPLE = ["market", "brief BBCA", "quote BBCA", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "bandar BBCA --daily", "bandar screen --preset big-accumulation", "actions BBCA", "holidays --upcoming", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "help"];
-document.getElementById("hints").append(...SAMPLE.map((s) => el("button", { type: "button", text: s, onclick: () => { hist.push(s); hIdx = hist.length; execute(s); } })));
+const SAMPLE = ["market", "brief BBCA", "quote BBCA", "returns BBCA BBRI BMRI", "dividends TLKM", "fundamental BBCA", "technical BBRI", "screen pe<10,div>5,mcap>5T --sort div", "news TLKM", "broker BBCA", "bandar BBCA --daily", "bandar screen --preset big-accumulation", "bandar broker YP", "actions BBCA", "holidays --upcoming", "compare BBCA BBRI BMRI", "ownership ticker BBCA", "tools", "help"];
+document.getElementById("hints").append(...SAMPLE.map((s) => el("button", { type: "button", text: s, onclick: () => runLine(s) })));
 
 api("market").then((m) => { dateline.textContent = `${fmt.wib(m.data.as_of || m.data.refreshed_at)} · ${m.data.market_open ? "market open" : "market closed"} · ${m.data.quoted} quoted`; }).catch(() => { dateline.textContent = "snapshot unavailable"; });
 

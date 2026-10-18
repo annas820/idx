@@ -7,7 +7,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
-import { bandar, bandarScreen } from "../src/api.js";
+import { bandar, bandarScreen, bandarBroker } from "../src/api.js";
 import { targetSession, mostTraded, bandarScanStep, scanStatus } from "../src/bandar-scan.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -65,6 +65,37 @@ async function withFetch(fn, body) {
     globalThis.fetch = realFetch;
   }
 }
+
+test("bandar broker reads one broker across the scan like the CLI", async () => {
+  const env = memoryDb();
+  env.kv.set("board", JSON.stringify({ ts: 0, quotes: [quote("BBCA", 5175, 9e8), quote("TLKM", 2690, 3e8), quote("BRPT", 1210, 2e8), quote("ZZZZ", 50, 1e6)] }));
+  await withFetch(recordedFetch(), async () => {
+    await assert.rejects(bandarBroker(env, "YP"), (e) => e.code === "not_found");
+    await bandarScanStep(env, { now: new Date("2026-10-17T03:00:00Z") });
+    const out = await bandarBroker(env, " yp ", "1w");
+    assert.equal(out.schema, "idx.bandar.broker.v1");
+    assert.equal(out.provider, "ipot");
+    const a = out.data;
+    assert.deepEqual([a.code, a.name, a.from, a.to], ["YP", "MIRAE ASSET SEKURITAS INDONESIA", "2026-10-12", "2026-10-16"]);
+    assert.deepEqual([a.scanned, a.checked, a.failed], [4, 3, 1]);
+    // Same as the Rust test: a top-ten buyer of BBCA and TLKM, a top-ten seller of BRPT and TLKM.
+    assert.deepEqual(a.bought.map((r) => r.symbol).sort(), ["BBCA", "TLKM"]);
+    assert.deepEqual(a.sold.map((r) => r.symbol).sort(), ["BRPT", "TLKM"]);
+    const bbca = a.bought.find((r) => r.symbol === "BBCA");
+    assert.deepEqual([bbca.rank, bbca.opposite_value, bbca.net_value], [9, null, null]);
+    const tb = a.bought.find((r) => r.symbol === "TLKM"), ts = a.sold.find((r) => r.symbol === "TLKM");
+    assert.equal(tb.opposite_value, ts.value);
+    assert.equal(tb.net_value, ts.net_value);
+    assert.equal(tb.net_value, tb.value - ts.value);
+    assert.ok(a.bought[0].value >= a.bought[1].value);
+    assert.equal(a.bought_value, a.bought.reduce((t, r) => t + r.value, 0));
+    const one = await bandarBroker(env, "YP", "1w", "1");
+    assert.deepEqual([one.data.bought.length, one.data.sold.length], [1, 1]);
+    assert.equal(one.data.bought_value, a.bought_value, "sums cover every row");
+    await assert.rejects(bandarBroker(env, "MIRAE"), (e) => e.code === "usage");
+    await assert.rejects(bandarBroker(env, "YP", "2w"), (e) => e.code === "usage");
+  });
+});
 
 test("the scan targets the last finished session", () => {
   assert.equal(targetSession(new Date("2026-10-16T03:00:00Z")), "2026-10-15", "Friday 10:00 WIB: Thursday");
