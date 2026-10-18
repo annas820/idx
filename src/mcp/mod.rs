@@ -39,10 +39,11 @@ use crate::output::json::{
 };
 use crate::output::json::{
     SCHEMA_BANDAR, SCHEMA_BANDAR_BROKER, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS,
-    SCHEMA_NEWS, SCHEMA_SCREEN, SCHEMA_SENTIMENT,
+    SCHEMA_NEWS, SCHEMA_ORDERBOOK, SCHEMA_SCREEN, SCHEMA_SENTIMENT,
 };
 use crate::ownership::OwnershipDb;
-use crate::providers::{Provider, Sourced};
+use crate::providers::stockbit::{login, SessionStore, Stockbit};
+use crate::providers::{Provider, Sourced, StockbitOptions, Ttls};
 use crate::service;
 use crate::universe;
 
@@ -75,6 +76,13 @@ pub struct SymbolsArg {
 pub struct SymbolArg {
     /// One IDX ticker, e.g. "BBCA".
     pub symbol: String,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct StockbitLoginArgs {
+    /// Seconds to wait for the sign-in (default 300, clamped to 30..900).
+    #[serde(default)]
+    pub timeout: Option<u64>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -425,11 +433,20 @@ pub struct BandarScreenArgs {
     pub symbols: Option<String>,
 }
 
+/// What the Stockbit tools need: the session file + env seeds, and the TTLs for
+/// the Stockbit provider they build on demand.
+#[derive(Clone, Default)]
+pub struct StockbitConfig {
+    pub options: StockbitOptions,
+    pub ttls: Ttls,
+}
+
 #[derive(Clone)]
 pub struct IdxServer {
     provider: Arc<dyn Provider>,
     fetcher: Arc<Fetcher>,
     ownership_db: PathBuf,
+    stockbit: StockbitConfig,
     tool_router: ToolRouter<IdxServer>,
 }
 
@@ -469,17 +486,35 @@ fn parse_opt<T: std::str::FromStr<Err = IdxError>>(v: &Option<String>, default: 
 
 #[tool_router]
 impl IdxServer {
-    pub fn new(provider: Arc<dyn Provider>, fetcher: Arc<Fetcher>, ownership_db: PathBuf) -> Self {
+    pub fn new(
+        provider: Arc<dyn Provider>,
+        fetcher: Arc<Fetcher>,
+        ownership_db: PathBuf,
+        stockbit: StockbitConfig,
+    ) -> Self {
         IdxServer {
             provider,
             fetcher,
             ownership_db,
+            stockbit,
             tool_router: Self::tool_router(),
         }
     }
 
     fn db(&self) -> Result<OwnershipDb> {
         OwnershipDb::open(&self.ownership_db)
+    }
+
+    fn stockbit_store(&self) -> Arc<SessionStore> {
+        self.stockbit.options.store()
+    }
+
+    fn stockbit_provider(&self) -> Stockbit {
+        Stockbit::new(
+            self.fetcher.clone(),
+            self.stockbit.ttls,
+            self.stockbit_store(),
+        )
     }
 
     /// Names of the tools, for tests and docs.
@@ -1421,6 +1456,77 @@ impl IdxServer {
             .await,
         )
     }
+
+    #[tool(
+        name = "idx_orderbook",
+        description = "Realtime order book for one IDX ticker from the user's Stockbit session: the full depth ladder (bids and asks, sizes in shares), last/open/high/low, session volume and value, and foreign buy/sell/net. Returns the idx.orderbook.v1 envelope. Needs a Stockbit login (idx_stockbit_status says whether one exists); errors with 'no Stockbit session' otherwise."
+    )]
+    async fn orderbook(
+        &self,
+        Parameters(a): Parameters<SymbolArg>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbol = Symbol::parse(&a.symbol)?;
+                ok(
+                    SCHEMA_ORDERBOOK,
+                    self.stockbit_provider().orderbook(&symbol).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_stockbit_status",
+        description = "Whether a Stockbit session is stored and when its access and refresh tokens expire (never the token values). Call this before idx_orderbook or before using the stockbit provider. If logged_in is false, tell the user to run `idx stockbit login` in a terminal."
+    )]
+    async fn stockbit_status(&self) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let status = self.stockbit_store().status(chrono::Utc::now().timestamp());
+                Ok(CallToolResult::success(vec![ContentBlock::text(
+                    json::to_pretty(&status)?,
+                )]))
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_stockbit_login",
+        description = "Opens a browser ON THE MACHINE RUNNING THIS SERVER for the user to sign in to Stockbit, then captures and stores the session. Only useful for a local (stdio) server the user is sitting at; it cannot work for a remote HTTP server. Blocks until the user signs in or it times out. Prefer telling the user to run `idx stockbit login` themselves; use this only when they ask you to start it."
+    )]
+    async fn stockbit_login(
+        &self,
+        Parameters(a): Parameters<StockbitLoginArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let profile_dir = self
+                    .stockbit
+                    .options
+                    .session_path
+                    .parent()
+                    .map(|p| p.to_path_buf())
+                    .unwrap_or_else(|| std::path::PathBuf::from("."))
+                    .join("stockbit-chrome-profile");
+                let secs = a.timeout.unwrap_or(300).clamp(30, 900);
+                let opts = login::LoginOptions {
+                    browser: None,
+                    profile_dir,
+                    timeout: std::time::Duration::from_secs(secs),
+                };
+                let (session, _how) = login::capture(&opts).await?;
+                self.stockbit_store().save(&session)?;
+                let status = self.stockbit_store().status(chrono::Utc::now().timestamp());
+                Ok(CallToolResult::success(vec![ContentBlock::text(
+                    json::to_pretty(&status)?,
+                )]))
+            }
+            .await,
+        )
+    }
 }
 
 #[tool_handler]
@@ -1455,9 +1561,10 @@ pub async fn serve(
     provider: Arc<dyn Provider>,
     fetcher: Arc<Fetcher>,
     ownership_db: PathBuf,
+    stockbit: StockbitConfig,
 ) -> Result<()> {
     use rmcp::{transport::stdio, ServiceExt};
-    let server = IdxServer::new(provider, fetcher, ownership_db);
+    let server = IdxServer::new(provider, fetcher, ownership_db, stockbit);
     tracing::info!(tools = ?server.tool_names(), "idx mcp server starting on stdio");
     let running = server
         .serve(stdio())
@@ -1509,7 +1616,12 @@ mod tests {
             crate::cache::Cache::new(dir.join("cache")),
             crate::http::CacheMode::Offline,
         ));
-        IdxServer::new(Arc::new(Fake), fetcher, dir.join("ownership.sqlite"))
+        IdxServer::new(
+            Arc::new(Fake),
+            fetcher,
+            dir.join("ownership.sqlite"),
+            StockbitConfig::default(),
+        )
     }
 
     fn text(r: &CallToolResult) -> String {
@@ -1549,6 +1661,7 @@ mod tests {
                 "idx_market_foreign",
                 "idx_members",
                 "idx_news",
+                "idx_orderbook",
                 "idx_ownership_changes",
                 "idx_ownership_entity",
                 "idx_ownership_foreign",
@@ -1559,6 +1672,8 @@ mod tests {
                 "idx_returns",
                 "idx_screen",
                 "idx_sentiment",
+                "idx_stockbit_login",
+                "idx_stockbit_status",
                 "idx_technical",
             ]
         );

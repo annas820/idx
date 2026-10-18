@@ -8,6 +8,7 @@
 //!
 //! Adding a provider: see `AGENTS.md`.
 
+use std::path::PathBuf;
 use std::sync::Arc;
 use std::time::Duration;
 
@@ -27,6 +28,7 @@ pub mod idx;
 pub mod ipot;
 pub mod msn;
 pub mod news;
+pub mod stockbit;
 pub mod yahoo;
 
 /// Data plus provenance. Renderers put this in the JSON envelope.
@@ -108,6 +110,30 @@ pub struct ProviderOptions {
     pub ttls: Ttls,
     /// Overrides MSN's built-in public web key (`IDX_MSN_API_KEY`).
     pub msn_api_key: Option<String>,
+    /// Stockbit session file and env-seed tokens. The path is empty only in
+    /// tests that never select the Stockbit provider.
+    pub stockbit: StockbitOptions,
+}
+
+/// Where the Stockbit session lives and what seeds it. The file is authoritative;
+/// the seeds only fill an empty one (for the web deployment, which injects the
+/// tokens through the environment).
+#[derive(Debug, Clone, Default)]
+pub struct StockbitOptions {
+    pub session_path: PathBuf,
+    pub access_seed: Option<String>,
+    pub refresh_seed: Option<String>,
+}
+
+impl StockbitOptions {
+    /// Builds the shared session store this process will read and refresh.
+    pub fn store(&self) -> Arc<stockbit::SessionStore> {
+        Arc::new(stockbit::SessionStore::new(
+            self.session_path.clone(),
+            self.access_seed.clone(),
+            self.refresh_seed.clone(),
+        ))
+    }
 }
 
 #[async_trait]
@@ -165,6 +191,8 @@ pub enum ProviderKind {
     Yahoo,
     /// MSN Money (quotes, profile, fundamentals).
     Msn,
+    /// Stockbit realtime (your own session; `idx stockbit login` first).
+    Stockbit,
 }
 
 impl ProviderKind {
@@ -173,6 +201,7 @@ impl ProviderKind {
             ProviderKind::Auto => "auto",
             ProviderKind::Yahoo => "yahoo",
             ProviderKind::Msn => "msn",
+            ProviderKind::Stockbit => "stockbit",
         }
     }
 }
@@ -181,7 +210,9 @@ impl std::str::FromStr for ProviderKind {
     type Err = IdxError;
     fn from_str(s: &str) -> Result<Self> {
         <ProviderKind as clap::ValueEnum>::from_str(s, true).map_err(|_| {
-            IdxError::Config(format!("unknown provider {s:?}; use auto, yahoo or msn"))
+            IdxError::Config(format!(
+                "unknown provider {s:?}; use auto, yahoo, msn or stockbit"
+            ))
         })
     }
 }
@@ -356,6 +387,13 @@ pub fn build(
             fetcher,
             opts.ttls,
             opts.msn_api_key,
+        ))),
+        // Stockbit stands alone: it needs a credential and is never folded into
+        // the keyless `auto` chain.
+        ProviderKind::Stockbit => Ok(Box::new(stockbit::Stockbit::new(
+            fetcher,
+            opts.ttls,
+            opts.stockbit.store(),
         ))),
         ProviderKind::Auto => Ok(Box::new(Chain::new(vec![
             Box::new(yahoo::Yahoo::new(fetcher.clone(), opts.ttls)),

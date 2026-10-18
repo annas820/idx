@@ -12,7 +12,9 @@ use crate::error::{IdxError, Result};
 use crate::http::{Fetcher, ReqwestBackend};
 use crate::output::{self, ColorMode, OutputFormat};
 use crate::progress;
-use crate::providers::{self, Provider, ProviderKind, ProviderOptions, Sourced, Ttls};
+use crate::providers::{
+    self, Provider, ProviderKind, ProviderOptions, Sourced, StockbitOptions, Ttls,
+};
 
 pub mod bandar;
 pub mod broker;
@@ -21,6 +23,7 @@ pub mod config_cmd;
 pub mod market;
 pub mod mcp_cmd;
 pub mod ownership;
+pub mod stockbit;
 pub mod stocks;
 pub mod watch;
 
@@ -147,6 +150,13 @@ decimal (1.6 M); JSON marks those summaries with rounded=true.")]
     #[command(subcommand)]
     Bandar(bandar::BandarCmd),
 
+    /// Realtime via your own Stockbit session: `login` in the browser, `status`, `logout`, live `orderbook`.
+    #[command(
+        after_help = "Examples:\n  idx stockbit login                 # sign in once in your browser\n  idx stockbit status\n  idx stockbit orderbook BBCA        # live depth ladder + foreign flow\n  idx --provider stockbit stocks quote BBCA   # realtime quote\n  idx --provider stockbit stocks history BBCA --period 1mo\n\nOpt-in realtime from Stockbit's own backend, carrying your Stockbit session\n(the one exception to idx's free-public-data rule). Keep this session separate\nfrom any other tool's: a refresh rotates the token and retires the old one."
+    )]
+    #[command(subcommand)]
+    Stockbit(stockbit::StockbitCmd),
+
     /// Quote your watchlist, or manage it (add, remove, list, clear, returns).
     #[command(
         after_help = "Examples:\n  idx watch add BBCA BBRI TLKM\n  idx watch                 # quotes for the list\n  idx watch returns         # 1w..5y returns vs IHSG\n  idx watch rm TLKM\n\nStored as plain text next to the config file (or $IDX_WATCHLIST)."
@@ -163,7 +173,7 @@ decimal (1.6 M); JSON marks those summaries with rounded=true.")]
 
     /// MCP server over stdio (default) or HTTP; `mcp setup <client>` prints the registration recipe for any agent.
     #[command(
-        after_help = "Serve:\n  idx mcp                                   # stdio, what every local agent launches\n  idx mcp --http 127.0.0.1:8765 --token T   # streamable HTTP at /mcp for URL-only clients\n\nRegister (prints the exact command or snippet, with this binary's absolute path):\n  idx mcp setup --list\n  idx mcp setup claude-code | codex | muse | antigravity | gemini | copilot-cli | vscode | cursor | windsurf |\n                kiro | jetbrains | zed | cline | continue | opencode | goose | warp | droid | vibe | qwen |\n                crush | trae | augment | chatgpt\n\n33 tools returning the same JSON as -o json: idx_brief (start here), idx_market, idx_quote, idx_history,\nidx_profile, idx_financials, idx_earnings, idx_dividends, idx_returns, idx_fundamental, idx_technical,\nidx_compare, idx_screen, idx_news, idx_sentiment, idx_corporate_actions, idx_foreign, idx_instruments,\nidx_market_foreign, idx_market_brokers, idx_indices, idx_calendar, idx_holidays, idx_members, idx_broker,\nidx_bandar, idx_bandar_screen, idx_bandar_broker, idx_ownership_ticker|entity|changes|foreign|releases.\nLogs go to stderr; stdout carries only the protocol."
+        after_help = "Serve:\n  idx mcp                                   # stdio, what every local agent launches\n  idx mcp --http 127.0.0.1:8765 --token T   # streamable HTTP at /mcp for URL-only clients\n\nRegister (prints the exact command or snippet, with this binary's absolute path):\n  idx mcp setup --list\n  idx mcp setup claude-code | codex | muse | antigravity | gemini | copilot-cli | vscode | cursor | windsurf |\n                kiro | jetbrains | zed | cline | continue | opencode | goose | warp | droid | vibe | qwen |\n                crush | trae | augment | chatgpt\n\n36 tools returning the same JSON as -o json: idx_brief (start here), idx_market, idx_quote, idx_history,\nidx_profile, idx_financials, idx_earnings, idx_dividends, idx_returns, idx_fundamental, idx_technical,\nidx_compare, idx_screen, idx_news, idx_sentiment, idx_corporate_actions, idx_foreign, idx_instruments,\nidx_market_foreign, idx_market_brokers, idx_indices, idx_calendar, idx_holidays, idx_members, idx_broker,\nidx_bandar, idx_bandar_screen, idx_bandar_broker, idx_ownership_ticker|entity|changes|foreign|releases,\nand the realtime Stockbit tools idx_orderbook, idx_stockbit_status, idx_stockbit_login.\nLogs go to stderr; stdout carries only the protocol."
     )]
     Mcp(mcp_cmd::McpArgs),
 
@@ -271,6 +281,11 @@ pub fn build_context(global: &GlobalOpts) -> Result<Context> {
             ..Ttls::default()
         },
         msn_api_key: settings.msn_api_key.clone(),
+        stockbit: StockbitOptions {
+            session_path: settings.stockbit_session.clone(),
+            access_seed: settings.stockbit_access_seed.clone(),
+            refresh_seed: settings.stockbit_refresh_seed.clone(),
+        },
     };
     let provider: Arc<dyn Provider> =
         Arc::from(providers::build(settings.provider, fetcher.clone(), opts)?);
@@ -326,6 +341,11 @@ pub async fn run(cli: Cli) -> Result<()> {
             let ctx = build_context(&cli.global)?;
             let _spinner = spinner(&ctx, &cli.global);
             bandar::run(&ctx, cmd).await
+        }
+        Command::Stockbit(cmd) => {
+            // No spinner: `login` drives a browser and prints its own prompts.
+            let ctx = build_context(&cli.global)?;
+            stockbit::run(&ctx, cmd).await
         }
         Command::Watch(args) => {
             let ctx = build_context(&cli.global)?;

@@ -6,10 +6,19 @@ use predicates::prelude::*;
 
 fn idx(cache: &std::path::Path, config: &std::path::Path) -> Command {
     let mut cmd = Command::cargo_bin("idx").unwrap();
+    // Keep the Stockbit session inside the sandbox so a test never reads or
+    // writes the developer's real login.
+    let session = config
+        .parent()
+        .unwrap_or_else(|| std::path::Path::new("."))
+        .join("stockbit-session.json");
     cmd.env_clear()
         .env("IDX_CACHE_DIR", cache)
         .env("IDX_CONFIG", config)
+        .env("IDX_STOCKBIT_SESSION", session)
         .env("NO_COLOR", "1")
+        .env_remove("IDX_STOCKBIT_ACCESS_TOKEN")
+        .env_remove("IDX_STOCKBIT_REFRESH_TOKEN")
         // Safety net: these tests must never reach the network, whatever a
         // test does. A cache miss then fails with exit 5 instead of fetching.
         .env("IDX_OFFLINE", "1")
@@ -238,6 +247,64 @@ fn new_stock_commands_have_help_and_fail_offline_cleanly() {
         .args(["stocks", "financials", "BBCA", "--period", "weekly"])
         .assert()
         .code(2);
+}
+
+#[test]
+fn stockbit_surface_and_session_commands() {
+    let sb = sandbox();
+    // Help text for the group and the realtime-only command.
+    idx(&sb.cache, &sb.config)
+        .args(["stockbit", "--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("login"))
+        .stdout(predicate::str::contains("orderbook"));
+    idx(&sb.cache, &sb.config)
+        .args(["stockbit", "orderbook", "--help"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("depth"));
+
+    // No session yet: status says so, and reads error as a usage error (exit 2)
+    // before any network — even the realtime order book and the provider quote.
+    idx(&sb.cache, &sb.config)
+        .args(["stockbit", "status"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("logged in"))
+        .stdout(predicate::str::contains("no"));
+    idx(&sb.cache, &sb.config)
+        .args(["-o", "json", "stockbit", "status"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("\"logged_in\": false"));
+    idx(&sb.cache, &sb.config)
+        .args(["stockbit", "orderbook", "BBCA"])
+        .assert()
+        .code(2)
+        .stderr(predicate::str::contains("stockbit login"));
+    idx(&sb.cache, &sb.config)
+        .args(["--provider", "stockbit", "stocks", "quote", "BBCA"])
+        .assert()
+        .code(2)
+        .stderr(predicate::str::contains("stockbit login"));
+
+    // logout on an empty session is a clean no-op.
+    idx(&sb.cache, &sb.config)
+        .args(["stockbit", "logout"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("No stored"));
+
+    // A session file makes status report logged-in (presence of a refresh
+    // token, not its validity); the dummy token is never sent anywhere.
+    let session = sb.config.parent().unwrap().join("stockbit-session.json");
+    std::fs::write(&session, r#"{"access":"a.b.c","refresh":"d.e.f"}"#).unwrap();
+    idx(&sb.cache, &sb.config)
+        .args(["-o", "json", "stockbit", "status"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("\"logged_in\": true"));
 }
 
 #[test]

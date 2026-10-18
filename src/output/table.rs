@@ -3,7 +3,7 @@
 
 use comfy_table::{Attribute, Cell, CellAlignment, Color, ContentArrangement, Table};
 
-use crate::model::{History, Quote};
+use crate::model::{History, OrderBook, Quote};
 use crate::output::format as f;
 
 pub(crate) fn base_table(color: bool) -> Table {
@@ -182,6 +182,76 @@ pub fn history(h: &History, limit: Option<usize>, color: bool) -> String {
             h.candles.len()
         ));
     }
+    out
+}
+
+/// The order book: the depth ladder (bids left, asks right), a header line with
+/// the last price and change, and the session's foreign flow. `depth` caps how
+/// many levels per side are shown (0 shows all).
+pub fn orderbook(ob: &OrderBook, depth: usize, color: bool) -> String {
+    let mut out = String::new();
+    let name = ob
+        .name
+        .as_deref()
+        .map(|n| format!(" · {n}"))
+        .unwrap_or_default();
+    out.push_str(&format!(
+        "{}{} · last {} ({}) · prev {} · O {} H {} L {}\n",
+        ob.symbol,
+        name,
+        f::price(ob.last),
+        f::pct(ob.change_pct),
+        f::price(ob.previous_close),
+        f::price(ob.open),
+        f::price(ob.day_high),
+        f::price(ob.day_low),
+    ));
+
+    let n = ob.bids.len().max(ob.asks.len());
+    let n = if depth == 0 { n } else { n.min(depth) };
+    let mut t = base_table(color);
+    t.set_header(header(&[
+        "Bid Vol", "Bid Ord", "Bid", "Ask", "Ask Ord", "Ask Vol",
+    ]));
+    let cell = |s: String| right(s);
+    for i in 0..n {
+        let bid = ob.bids.get(i);
+        let ask = ob.asks.get(i);
+        let bid_price = bid.map(|l| l.price);
+        let ask_price = ask.map(|l| l.price);
+        t.add_row(vec![
+            cell(
+                bid.map(|l| f::int(Some(l.shares)))
+                    .unwrap_or_else(|| f::DASH.into()),
+            ),
+            cell(
+                bid.map(|l| f::int(Some(l.orders)))
+                    .unwrap_or_else(|| f::DASH.into()),
+            ),
+            signed(f::price(bid_price), bid_price.map(|_| 1.0), color),
+            signed(f::price(ask_price), ask_price.map(|_| -1.0), color),
+            cell(
+                ask.map(|l| f::int(Some(l.orders)))
+                    .unwrap_or_else(|| f::DASH.into()),
+            ),
+            cell(
+                ask.map(|l| f::int(Some(l.shares)))
+                    .unwrap_or_else(|| f::DASH.into()),
+            ),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+
+    out.push_str(&format!(
+        "Volume {} · value {} · foreign buy {} / sell {} / net {}\n",
+        f::int(ob.volume),
+        f::compact(ob.value),
+        f::compact(ob.foreign_buy),
+        f::compact(ob.foreign_sell),
+        f::compact(ob.foreign_net),
+    ));
+    out.push_str("Sizes in shares · values IDR · realtime via Stockbit\n");
     out
 }
 

@@ -179,6 +179,25 @@ else
   echo "  skip idx.co.id checks (exit $code): $(head -c 160 "$TMP/ix.err")"
 fi
 
+echo "stockbit (realtime, needs a login)"
+# Seeds an access token from the environment so this never spends (rotates) a
+# refresh token. Skipped unless IDX_STOCKBIT_ACCESS_TOKEN or a session exists.
+set +e
+"$IDX" -o json stockbit status >"$TMP/sbs.json" 2>/dev/null
+"$IDX" --provider stockbit --no-cache -o json stocks quote BBCA >"$TMP/sbq.json" 2>"$TMP/sbq.err"; code=$?
+set -e
+if [ "$code" = 0 ]; then
+  expect "$TMP/sbq.json" '"provider": "stockbit"' "stockbit quote provider"
+  expect "$TMP/sbq.json" '"source": "stockbit:orderbook"' "stockbit quote source"
+  "$IDX" --provider stockbit --no-cache -o json stocks history BBCA --period 1mo >"$TMP/sbh.json" || fail "stockbit history"
+  expect "$TMP/sbh.json" '"schema": "idx.history.v1"' "stockbit history schema"
+  "$IDX" --no-cache -o json stockbit orderbook BBCA >"$TMP/sbo.json" || fail "stockbit orderbook"
+  expect "$TMP/sbo.json" '"schema": "idx.orderbook.v1"' "stockbit orderbook schema"
+  expect "$TMP/sbo.json" '"foreign_net":' "stockbit orderbook has foreign flow"
+else
+  echo "  skip stockbit checks (no session; set IDX_STOCKBIT_ACCESS_TOKEN or run \`idx stockbit login\`)"
+fi
+
 echo "ownership (local fixture)"
 export IDX_OWNERSHIP_DB="$TMP/own.sqlite"
 "$IDX" ownership import --file tests/fixtures/ownership/above1_20260831_excerpt.xlsx >"$TMP/oi.txt" || fail "ownership import"

@@ -9,8 +9,8 @@ use crate::model::{
     BandarReport, BandarScreen, Brief, BrokerSummary, Calendar, ChangesReport, CorporateActions,
     DiscoveredFile, DividendHistory, Earnings, EntityReport, Financials, ForeignFlowReport,
     ForeignReport, Fundamentals, History, HoldersReport, Holidays, ImportReport, IndexBoard,
-    InstrumentList, MarketOverview, MemberList, NewsReport, Performance, Profile, Quote, Release,
-    ScreenReport, SentimentReport, Technical, Watchlist,
+    InstrumentList, MarketOverview, MemberList, NewsReport, OrderBook, Performance, Profile, Quote,
+    Release, ScreenReport, SentimentReport, Technical, Watchlist,
 };
 use crate::model::{BrokerActivity, BrokerRanking, ForeignFlow, MarketForeign};
 use crate::providers::Sourced;
@@ -75,6 +75,7 @@ pub const SCHEMA_FOREIGN: &str = "idx.foreign.v1";
 pub const SCHEMA_MARKET_FOREIGN: &str = "idx.market.foreign.v1";
 pub const SCHEMA_MARKET_BROKERS: &str = "idx.market.brokers.v1";
 pub const SCHEMA_TECHNICAL: &str = "idx.technical.v1";
+pub const SCHEMA_ORDERBOOK: &str = "idx.orderbook.v1";
 pub const SCHEMA_SCREEN: &str = "idx.screen.v1";
 pub const SCHEMA_NEWS: &str = "idx.news.v1";
 pub const SCHEMA_SENTIMENT: &str = "idx.sentiment.v1";
@@ -113,6 +114,7 @@ pub type ForeignEnvelope = Envelope<ForeignFlow>;
 pub type MarketForeignEnvelope = Envelope<MarketForeign>;
 pub type MarketBrokersEnvelope = Envelope<BrokerRanking>;
 pub type TechnicalEnvelope = Envelope<Technical>;
+pub type OrderBookEnvelope = Envelope<OrderBook>;
 pub type ScreenEnvelope = Envelope<ScreenReport>;
 pub type NewsEnvelope = Envelope<NewsReport>;
 pub type SentimentEnvelope = Envelope<SentimentReport>;
@@ -186,6 +188,7 @@ pub fn schema_names() -> &'static [&'static str] {
         "market-foreign",
         "market-brokers",
         "technical",
+        "orderbook",
         "screen",
         "news",
         "sentiment",
@@ -231,6 +234,7 @@ pub fn schema_for(name: &str) -> Result<serde_json::Value> {
         "market-foreign" => schemars::schema_for!(MarketForeignEnvelope),
         "market-brokers" => schemars::schema_for!(MarketBrokersEnvelope),
         "technical" => schemars::schema_for!(TechnicalEnvelope),
+        "orderbook" => schemars::schema_for!(OrderBookEnvelope),
         "screen" => schemars::schema_for!(ScreenEnvelope),
         "news" => schemars::schema_for!(NewsEnvelope),
         "sentiment" => schemars::schema_for!(SentimentEnvelope),

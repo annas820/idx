@@ -37,6 +37,11 @@ src/
     idx/             idx.co.id JSON endpoints: stock/broker/index daily summaries, per-stock history,
                      exchange calendar (parse.rs classifies entries), securities, members; Cloudflare
                      403 becomes a provider error
+    stockbit/        OPT-IN realtime (exodus.stockbit.com), the one provider that carries a credential
+                     (the user's own session) and the one not in the Auto chain: orderbook endpoint ->
+                     quote + full depth ladder (model/orderbook.rs), charts/daily -> candles; auth.rs is
+                     the rotating-token session store (file 0600 + env seed, POST /login/refresh), login.rs
+                     captures the token from a browser over the Chrome DevTools Protocol (ws, no TLS)
   analysis/          technical.rs (indicators + signal), fundamental.rs (verdict), screen.rs (filter DSL),
                      sentiment.rs (lexicon), returns.rs (windows, CAGR, drawdown, volatility),
                      dividends.rs (totals, TTM yield, streak), bandar.rs (bandarmology: tiers, signal,
@@ -86,7 +91,8 @@ CLI groups: `stocks` (quote, history, profile, financials, earnings, dividends, 
 fundamental, technical, brief, compare, screen, news, sentiment, actions, foreign, list),
 `market` (overview, indices, foreign, brokers, calendar, holidays, members),
 `ownership` (import, ticker, entity, changes, foreign, releases, discover, path),
-`broker`, `bandar` (detect, screen, broker), `watch`, `mcp`, `schema`, `config`, `cache`, `completions`, `version`.
+`broker`, `bandar` (detect, screen, broker), `stockbit` (login, status, logout, orderbook — opt-in
+realtime), `watch`, `mcp`, `schema`, `config`, `cache`, `completions`, `version`.
 
 ## Rules that keep the tool trustworthy
 

@@ -35,6 +35,14 @@ pub struct FileConfig {
     pub cache: CacheSection,
     pub msn: MsnSection,
     pub ownership: OwnershipSection,
+    pub stockbit: StockbitSection,
+}
+
+#[derive(Debug, Default, Clone, Serialize, Deserialize, PartialEq)]
+#[serde(default, deny_unknown_fields)]
+pub struct StockbitSection {
+    /// Session file holding the (rotating) Stockbit tokens.
+    pub session: Option<PathBuf>,
 }
 
 #[derive(Debug, Default, Clone, Serialize, Deserialize, PartialEq)]
@@ -113,6 +121,7 @@ impl FileConfig {
             }
             "msn.api_key" => self.msn.api_key = Some(value.to_string()),
             "ownership.db" => self.ownership.db = Some(PathBuf::from(value)),
+            "stockbit.session" => self.stockbit.session = Some(PathBuf::from(value)),
             _ => {
                 return Err(IdxError::Config(format!(
                     "unknown key {key:?}; valid keys: {}",
@@ -139,6 +148,11 @@ impl FileConfig {
             "cache.financials_ttl_secs" => self.cache.financials_ttl_secs.map(|v| v.to_string()),
             "msn.api_key" => self.msn.api_key.clone(),
             "ownership.db" => self.ownership.db.as_ref().map(|p| p.display().to_string()),
+            "stockbit.session" => self
+                .stockbit
+                .session
+                .as_ref()
+                .map(|p| p.display().to_string()),
             _ => {
                 return Err(IdxError::Config(format!(
                     "unknown key {key:?}; valid keys: {}",
@@ -161,6 +175,7 @@ pub const KEYS: &[&str] = &[
     "cache.financials_ttl_secs",
     "msn.api_key",
     "ownership.db",
+    "stockbit.session",
 ];
 
 /// Template written by `idx config init`.
@@ -194,6 +209,13 @@ pub const TEMPLATE: &str = r#"# idx configuration. Every key is optional.
 [ownership]
 # SQLite file for the imported KSEI shareholder registers.
 # db = "/path/to/ownership.sqlite"   # (env: IDX_OWNERSHIP_DB)
+
+[stockbit]
+# Opt-in realtime provider (--provider stockbit). Run `idx stockbit login` once;
+# the session file below holds your rotating tokens. Seed tokens through the
+# environment (IDX_STOCKBIT_REFRESH_TOKEN / IDX_STOCKBIT_ACCESS_TOKEN) for an
+# unattended deployment, never in this file.
+# session = "/path/to/stockbit-session.json"   # (env: IDX_STOCKBIT_SESSION)
 "#;
 
 /// Values coming from the command line. `None`/`false` means "not given".
@@ -226,6 +248,13 @@ pub struct Settings {
     #[serde(skip)]
     pub msn_api_key: Option<String>,
     pub ownership_db: PathBuf,
+    /// Stockbit session file (`idx stockbit login` writes it).
+    pub stockbit_session: PathBuf,
+    /// Env-seed tokens for the Stockbit session; not serialised.
+    #[serde(skip)]
+    pub stockbit_access_seed: Option<String>,
+    #[serde(skip)]
+    pub stockbit_refresh_seed: Option<String>,
     pub config_path: PathBuf,
 }
 
@@ -279,6 +308,15 @@ pub fn default_config_path() -> PathBuf {
     } else {
         home().join(".config").join("idx").join("config.toml")
     }
+}
+
+/// Default Stockbit session file, beside the config file.
+pub fn default_stockbit_session() -> PathBuf {
+    default_config_path()
+        .parent()
+        .map(|p| p.to_path_buf())
+        .unwrap_or_else(home)
+        .join("stockbit-session.json")
 }
 
 pub fn default_cache_dir() -> PathBuf {
@@ -400,6 +438,14 @@ pub fn resolve(
         .map(PathBuf::from)
         .or_else(|| file.ownership.db.clone())
         .unwrap_or_else(crate::ownership::default_db_path);
+    let stockbit_session = env_s("STOCKBIT_SESSION")
+        .map(PathBuf::from)
+        .or_else(|| file.stockbit.session.clone())
+        .unwrap_or_else(default_stockbit_session);
+    // Seed tokens live only in the environment (never the config file), for an
+    // unattended deployment such as the web worker.
+    let stockbit_access_seed = env_s("STOCKBIT_ACCESS_TOKEN");
+    let stockbit_refresh_seed = env_s("STOCKBIT_REFRESH_TOKEN");
 
     Ok(Settings {
         provider,
@@ -414,6 +460,9 @@ pub fn resolve(
         financials_ttl_secs,
         msn_api_key,
         ownership_db,
+        stockbit_session,
+        stockbit_access_seed,
+        stockbit_refresh_seed,
         config_path,
     })
 }

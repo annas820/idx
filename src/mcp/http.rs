@@ -25,7 +25,7 @@ use crate::error::{IdxError, Result};
 use crate::http::Fetcher;
 use crate::providers::Provider;
 
-use super::IdxServer;
+use super::{IdxServer, StockbitConfig};
 
 #[derive(Debug, Clone)]
 pub struct HttpOptions {
@@ -62,6 +62,7 @@ pub fn router(
     provider: Arc<dyn Provider>,
     fetcher: Arc<Fetcher>,
     ownership_db: PathBuf,
+    stockbit: StockbitConfig,
     token: Option<String>,
     allowed_hosts: Vec<String>,
 ) -> Router {
@@ -77,6 +78,7 @@ pub fn router(
                 provider.clone(),
                 fetcher.clone(),
                 ownership_db.clone(),
+                stockbit.clone(),
             ))
         },
         Arc::new(LocalSessionManager::default()),
@@ -96,6 +98,7 @@ pub async fn serve_http(
     provider: Arc<dyn Provider>,
     fetcher: Arc<Fetcher>,
     ownership_db: PathBuf,
+    stockbit: StockbitConfig,
     opts: HttpOptions,
 ) -> Result<()> {
     let listener = tokio::net::TcpListener::bind(&opts.bind)
@@ -113,7 +116,14 @@ pub async fn serve_http(
     if !addr.ip().is_loopback() {
         hosts.push(addr.to_string());
     }
-    let app = router(provider, fetcher, ownership_db, opts.token.clone(), hosts);
+    let app = router(
+        provider,
+        fetcher,
+        ownership_db,
+        stockbit,
+        opts.token.clone(),
+        hosts,
+    );
     eprintln!(
         "idx mcp: streamable HTTP listening on http://{addr}/mcp{}{}",
         if opts.token.is_some() {
@@ -174,6 +184,7 @@ mod tests {
             Arc::new(Fake),
             fetcher,
             dir.join("own.sqlite"),
+            StockbitConfig::default(),
             token.map(str::to_string),
             vec![],
         )

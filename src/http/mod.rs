@@ -40,6 +40,19 @@ impl RawResponse {
 #[async_trait]
 pub trait Backend: Send + Sync {
     async fn get(&self, url: &str, headers: &[(String, String)]) -> Result<RawResponse>;
+
+    /// POST with a JSON body. Only session endpoints use it (token refresh);
+    /// responses are never cached.
+    async fn post(
+        &self,
+        url: &str,
+        _headers: &[(String, String)],
+        _body: &str,
+    ) -> Result<RawResponse> {
+        Err(IdxError::Other(format!(
+            "this backend cannot POST to {url}"
+        )))
+    }
 }
 
 pub struct ReqwestBackend {
@@ -71,25 +84,49 @@ impl Backend for ReqwestBackend {
         }
         tracing::debug!(url, "GET");
         let resp = req.send().await?;
-        let status = resp.status().as_u16();
-        let headers = resp
-            .headers()
-            .iter()
-            .map(|(k, v)| {
-                (
-                    k.as_str().to_ascii_lowercase(),
-                    v.to_str().unwrap_or("").to_string(),
-                )
-            })
-            .collect();
-        let body = resp.text().await?;
-        tracing::debug!(url, status, bytes = body.len(), "response");
-        Ok(RawResponse {
-            status,
-            body,
-            headers,
-        })
+        read_response(url, resp).await
     }
+
+    async fn post(
+        &self,
+        url: &str,
+        headers: &[(String, String)],
+        body: &str,
+    ) -> Result<RawResponse> {
+        let mut req = self
+            .client
+            .post(url)
+            .header("Accept", "application/json, text/plain, */*")
+            .header("Content-Type", "application/json")
+            .body(body.to_string());
+        for (k, v) in headers {
+            req = req.header(k.as_str(), v.as_str());
+        }
+        tracing::debug!(url, "POST");
+        let resp = req.send().await?;
+        read_response(url, resp).await
+    }
+}
+
+async fn read_response(url: &str, resp: reqwest::Response) -> Result<RawResponse> {
+    let status = resp.status().as_u16();
+    let headers = resp
+        .headers()
+        .iter()
+        .map(|(k, v)| {
+            (
+                k.as_str().to_ascii_lowercase(),
+                v.to_str().unwrap_or("").to_string(),
+            )
+        })
+        .collect();
+    let body = resp.text().await?;
+    tracing::debug!(url, status, bytes = body.len(), "response");
+    Ok(RawResponse {
+        status,
+        body,
+        headers,
+    })
 }
 
 /// In-memory backend for tests: exact-URL matches first, then substring matches.
@@ -97,6 +134,8 @@ impl Backend for ReqwestBackend {
 pub struct FixtureBackend {
     routes: Mutex<Vec<(String, RawResponse)>>,
     pub calls: Mutex<Vec<String>>,
+    /// Request headers, one entry per call, in call order.
+    pub headers: Mutex<Vec<Vec<(String, String)>>>,
 }
 
 impl FixtureBackend {
@@ -152,10 +191,10 @@ impl FixtureBackend {
     }
 }
 
-#[async_trait]
-impl Backend for FixtureBackend {
-    async fn get(&self, url: &str, _headers: &[(String, String)]) -> Result<RawResponse> {
+impl FixtureBackend {
+    fn answer(&self, url: &str, headers: &[(String, String)]) -> Result<RawResponse> {
         self.calls.lock().unwrap().push(url.to_string());
+        self.headers.lock().unwrap().push(headers.to_vec());
         let routes = self.routes.lock().unwrap();
         if let Some((_, r)) = routes.iter().find(|(u, _)| u == url) {
             return Ok(r.clone());
@@ -166,6 +205,23 @@ impl Backend for FixtureBackend {
         Err(IdxError::Network(format!(
             "fixture backend has no route for {url}"
         )))
+    }
+}
+
+#[async_trait]
+impl Backend for FixtureBackend {
+    async fn get(&self, url: &str, headers: &[(String, String)]) -> Result<RawResponse> {
+        self.answer(url, headers)
+    }
+
+    /// Recorded as `POST <url>` so tests can tell it from a GET.
+    async fn post(
+        &self,
+        url: &str,
+        headers: &[(String, String)],
+        _body: &str,
+    ) -> Result<RawResponse> {
+        self.answer(&format!("POST {url}"), headers)
     }
 }
 
@@ -236,6 +292,20 @@ impl Fetcher {
         }
         let _wait = crate::progress::request(url);
         self.backend.get(url, headers).await
+    }
+
+    /// Uncached POST, for session endpoints. Errors immediately in offline mode.
+    pub async fn post_uncached(
+        &self,
+        url: &str,
+        headers: &[(String, String)],
+        body: &str,
+    ) -> Result<RawResponse> {
+        if self.is_offline() {
+            return Err(IdxError::OfflineMiss(format!("{url} needs the network")));
+        }
+        let _wait = crate::progress::request(url);
+        self.backend.post(url, headers, body).await
     }
 
     /// Cached GET. `cache_key` defaults to the URL; pass something else when

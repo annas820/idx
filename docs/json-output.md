@@ -427,6 +427,17 @@ from). `data`: `as_of`, `period`, `candles_used`, `price`,
 `signal` (`label` `buy` | `sell` | `neutral`, `score`, `reasons[]`).
 Indicators that need more history than was available are `null`.
 
+## `idx.orderbook.v1` (`stockbit orderbook`)
+
+Realtime via the Stockbit provider (your own session; see
+[stockbit.md](stockbit.md)). `provider` is `stockbit`. `data`: `symbol`,
+`name`, `last`, `change`, `change_pct`, `previous_close`, `open`, `day_high`,
+`day_low`, `volume` (shares), `value` (IDR), `bids[]` and `asks[]` (each a
+level `{price, shares, orders}`, best price first), and the session foreign
+flow `foreign_buy`, `foreign_sell`, `foreign_net` (IDR). Sizes are shares (one
+IDX lot is 100 shares). A level the book does not show, or a field the source
+omits, is absent/`null`.
+
 ## Errors
 
 Written to stderr, exit code non-zero:

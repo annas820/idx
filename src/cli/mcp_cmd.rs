@@ -98,12 +98,25 @@ pub async fn run(global: &GlobalOpts, args: McpArgs) -> Result<()> {
         }
         None => {
             let ctx = build_context(global)?;
+            let stockbit = crate::mcp::StockbitConfig {
+                options: crate::providers::StockbitOptions {
+                    session_path: ctx.settings.stockbit_session.clone(),
+                    access_seed: ctx.settings.stockbit_access_seed.clone(),
+                    refresh_seed: ctx.settings.stockbit_refresh_seed.clone(),
+                },
+                ttls: crate::providers::Ttls {
+                    quote: ctx.settings.quote_ttl(),
+                    history: ctx.settings.history_ttl(),
+                    ..crate::providers::Ttls::default()
+                },
+            };
             match args.http {
                 Some(bind) => {
                     crate::mcp::http::serve_http(
                         ctx.provider,
                         ctx.fetcher,
                         ctx.settings.ownership_db.clone(),
+                        stockbit,
                         crate::mcp::http::HttpOptions {
                             bind,
                             token: args.token,
@@ -113,8 +126,13 @@ pub async fn run(global: &GlobalOpts, args: McpArgs) -> Result<()> {
                     .await
                 }
                 None => {
-                    crate::mcp::serve(ctx.provider, ctx.fetcher, ctx.settings.ownership_db.clone())
-                        .await
+                    crate::mcp::serve(
+                        ctx.provider,
+                        ctx.fetcher,
+                        ctx.settings.ownership_db.clone(),
+                        stockbit,
+                    )
+                    .await
                 }
             }
         }

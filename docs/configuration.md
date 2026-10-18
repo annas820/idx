@@ -22,7 +22,7 @@ idx config path
 ```
 
 ```toml
-provider = "auto"      # auto | yahoo | msn
+provider = "auto"      # auto | yahoo | msn | stockbit
 output = "table"       # table | json | csv
 color = "auto"         # auto | always | never
 timeout_secs = 15
@@ -31,13 +31,16 @@ timeout_secs = 15
 dir = "/custom/cache/dir"
 quote_ttl_secs = 60
 history_ttl_secs = 3600
+
+[stockbit]
+# session = "/path/to/stockbit-session.json"   # `idx stockbit login` writes it
 ```
 
 ## Environment variables
 
 | variable | flag | meaning |
 | --- | --- | --- |
-| `IDX_PROVIDER` | `--provider` | `auto`, `yahoo`, `msn` |
+| `IDX_PROVIDER` | `--provider` | `auto`, `yahoo`, `msn`, `stockbit` |
 | `IDX_OUTPUT` | `-o, --output` | `table`, `json` |
 | `IDX_COLOR` | | `auto`, `always`, `never` |
 | `NO_COLOR` | `--no-color` | any non-empty value disables colour |
@@ -51,6 +54,10 @@ history_ttl_secs = 3600
 | `IDX_CONFIG` | `--config` | config file path |
 | `IDX_LOG` | `-v` | tracing filter, e.g. `idx=debug` |
 | `IDX_HOLIDAYS` | | CSV (`date,name,name_en`) replacing the bundled trading-holiday list (`data/holidays.csv`) |
+| `IDX_STOCKBIT_SESSION` | | Stockbit session file (`idx stockbit login` writes it); default beside the config file. See [stockbit.md](stockbit.md) |
+| `IDX_STOCKBIT_REFRESH_TOKEN` | | Seeds an unattended Stockbit session (the refresh token); the session file wins once it exists |
+| `IDX_STOCKBIT_ACCESS_TOKEN` | | Optional access token to seed alongside the refresh token |
+| `IDX_BROWSER` | | Browser executable `idx stockbit login` launches (default: the first Chrome/Edge/Brave found) |
 
 ## Cache
 
