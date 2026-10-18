@@ -524,6 +524,104 @@ fn actions_command_surface() {
     }
 }
 
+/// Puts a recorded response in the sandbox cache under its URL, so an
+/// offline run reads it as if it had been fetched.
+fn seed(cache: &std::path::Path, url: &str, fixture: &str) {
+    let body = std::fs::read_to_string(
+        std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("tests/fixtures")
+            .join(fixture),
+    )
+    .unwrap();
+    idx::cache::Cache::new(cache).put(url, 200, &body).unwrap();
+}
+
+#[test]
+fn foreign_commands_read_the_exchange_summaries() {
+    let sb = sandbox();
+    seed(
+        &sb.cache,
+        "https://www.idx.co.id/primary/TradingSummary/GetStockSummary?date=20261016&start=0&length=9999",
+        "idx/stocksummary_20261016_excerpt.json",
+    );
+    seed(
+        &sb.cache,
+        "https://www.idx.co.id/primary/ListedCompany/GetTradingInfoSS?code=BBCA&start=0&length=30",
+        "idx/tradinginfoss_bbca_excerpt.json",
+    );
+    idx(&sb.cache, &sb.config)
+        .args(["market", "foreign", "--date", "2026-10-16", "--top", "3"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "Foreign flow · 2026-10-16 · 28 stocks",
+        ))
+        .stdout(predicate::str::contains("Foreign net selling"));
+    let out = idx(&sb.cache, &sb.config)
+        .args([
+            "-o",
+            "json",
+            "market",
+            "foreign",
+            "--date",
+            "2026-10-16",
+            "--sort",
+            "shares",
+        ])
+        .output()
+        .unwrap();
+    assert!(out.status.success());
+    let v: serde_json::Value = serde_json::from_slice(&out.stdout).unwrap();
+    assert_eq!(v["schema"], "idx.market.foreign.v1");
+    assert_eq!(v["provider"], "idx");
+    assert_eq!(v["data"]["sort"], "shares");
+    assert_eq!(v["data"]["net_buy"].as_array().unwrap().len(), 10);
+
+    let out = idx(&sb.cache, &sb.config)
+        .args(["-o", "json", "stocks", "foreign", "BBCA", "--days", "30"])
+        .output()
+        .unwrap();
+    assert!(
+        out.status.success(),
+        "{}",
+        String::from_utf8_lossy(&out.stderr)
+    );
+    let v: serde_json::Value = serde_json::from_slice(&out.stdout).unwrap();
+    assert_eq!(v["schema"], "idx.foreign.v1");
+    assert_eq!(v["data"]["to"], "2026-10-16");
+    assert_eq!(v["data"]["days"].as_array().unwrap().len(), 30);
+    assert!(v["data"]["totals"]["streak"].as_i64().unwrap() < 0);
+    let out = idx(&sb.cache, &sb.config)
+        .args(["-o", "csv", "stocks", "foreign", "BBCA", "--days", "30"])
+        .output()
+        .unwrap();
+    let csv = String::from_utf8(out.stdout).unwrap();
+    assert!(
+        csv.starts_with("date,close,change,volume,value,foreign_buy"),
+        "{csv}"
+    );
+
+    // Nothing cached for these.
+    idx(&sb.cache, &sb.config)
+        .args(["stocks", "foreign", "BBRI"])
+        .assert()
+        .code(5);
+    for args in [
+        vec!["stocks", "foreign", "BBCA", "--days", "0"],
+        vec!["stocks", "foreign", "BBCA", "--days", "999"],
+        vec!["market", "foreign", "--sort", "lots"],
+    ] {
+        idx(&sb.cache, &sb.config).args(&args).assert().code(2);
+    }
+    for name in ["foreign", "market-foreign"] {
+        let out = idx(&sb.cache, &sb.config)
+            .args(["schema", name])
+            .output()
+            .unwrap();
+        assert!(String::from_utf8_lossy(&out.stdout).contains("foreign_net_value_at_close"));
+    }
+}
+
 #[test]
 fn bandar_command_surface() {
     let sb = sandbox();

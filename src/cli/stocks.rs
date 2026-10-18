@@ -8,8 +8,8 @@ use crate::error::Result;
 use crate::model::{Interval, Period, StatementPeriod, Symbol};
 use crate::output::json::{
     SCHEMA_ACTIONS, SCHEMA_BRIEF, SCHEMA_COMPARE, SCHEMA_DIVIDENDS, SCHEMA_EARNINGS,
-    SCHEMA_FINANCIALS, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_INSTRUMENTS, SCHEMA_NEWS,
-    SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT,
+    SCHEMA_FINANCIALS, SCHEMA_FOREIGN, SCHEMA_FUNDAMENTALS, SCHEMA_HISTORY, SCHEMA_INSTRUMENTS,
+    SCHEMA_NEWS, SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_SCREEN, SCHEMA_SENTIMENT,
     SCHEMA_TECHNICAL,
 };
 use crate::output::table;
@@ -235,6 +235,18 @@ pub enum StocksCmd {
         since: Option<chrono::NaiveDate>,
     },
 
+    /// Foreign buying and selling per session (idx.co.id), with totals and the net-buy/net-sell streak.
+    #[command(
+        after_help = "Examples:\n  idx stocks foreign BBCA\n  idx stocks foreign BBRI --days 60\n  idx -o json stocks foreign TLKM | jq '.data.totals'\n\nFrom idx.co.id's daily stock summary. IDX publishes foreign trading in shares only; the\nnet × close column multiplies the net shares by the close for a rupiah scale, which is not\nthe value foreigners traded at. For the whole market on one day see `idx market foreign`."
+    )]
+    Foreign {
+        /// IDX ticker, e.g. BBCA.
+        symbol: String,
+        /// Latest sessions to show (1-250).
+        #[arg(long, short = 'n', default_value_t = service::FOREIGN_DEFAULT_DAYS)]
+        days: usize,
+    },
+
     /// Side-by-side fundamentals for two or more tickers.
     #[command(
         after_help = "Examples:\n  idx stocks compare BBCA BBRI BMRI BBNI\n  idx -o json stocks compare TLKM,ISAT,EXCL | jq '.data[].valuation.pe_trailing'"
@@ -272,6 +284,14 @@ pub async fn run(ctx: &Context, cmd: StocksCmd) -> Result<()> {
         StocksCmd::Fundamental { symbol } => fundamental(ctx, &symbol).await,
         StocksCmd::Technical { symbol, period } => technical(ctx, &symbol, period).await,
         StocksCmd::Compare { symbols } => compare(ctx, &symbols).await,
+        StocksCmd::Foreign { symbol, days } => {
+            let sym = Symbol::parse(&symbol)?;
+            let list = universe::load(None).unwrap_or_default();
+            let result = service::foreign_flow(&ctx.fetcher, &list, &sym, days).await?;
+            emit(ctx, SCHEMA_FOREIGN, result, |d| {
+                tx::foreign_flow(d, ctx.color)
+            })
+        }
         StocksCmd::Actions { symbol, since } => {
             let sym = Symbol::parse(&symbol)?;
             let list = universe::load(None).unwrap_or_default();

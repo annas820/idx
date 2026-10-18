@@ -7,8 +7,141 @@ use comfy_table::{Attribute, Cell};
 
 use crate::model::{ActionKind, CorporateActions};
 use crate::model::{Calendar, CalendarCategory, Holidays, IndexBoard, InstrumentList, MemberList};
+use crate::model::{ForeignFlow, ForeignRow, ForeignSort, MarketForeign};
 use crate::output::format as f;
 use crate::output::table::{base_table, header, right, signed};
+
+/// One stock's foreign buying and selling, newest session first.
+pub fn foreign_flow(fl: &ForeignFlow, color: bool) -> String {
+    let mut out = format!(
+        "{}{} · foreign flow · {} to {} · {} sessions\n",
+        fl.symbol,
+        fl.name
+            .as_ref()
+            .map(|n| format!(" · {n}"))
+            .unwrap_or_default(),
+        fl.from,
+        fl.to,
+        fl.totals.sessions
+    );
+    let mut t = base_table(color);
+    t.set_header(header(&[
+        "Date",
+        "Close",
+        "Change",
+        "Volume",
+        "Foreign buy",
+        "Foreign sell",
+        "Net (shares)",
+        "Net × close",
+    ]));
+    for d in fl.days.iter().rev() {
+        t.add_row(vec![
+            Cell::new(d.date.to_string()),
+            right(f::price(d.close)),
+            signed(f::change(d.change), d.change, color),
+            right(f::compact(d.volume)),
+            right(f::compact(d.foreign_buy)),
+            right(f::compact(d.foreign_sell)),
+            signed(f::compact(d.foreign_net), d.foreign_net, color),
+            signed(
+                f::compact(d.foreign_net_value_at_close),
+                d.foreign_net_value_at_close,
+                color,
+            ),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+    let tt = &fl.totals;
+    let streak = match tt.streak {
+        0 => "flat last session".to_string(),
+        s if s > 0 => format!("{s} net-buy session(s) in a row"),
+        s => format!("{} net-sell session(s) in a row", -s),
+    };
+    out.push_str(&format!(
+        "Total · foreign buy {} · sell {} · net {} shares (≈ {} at close) · {} net-buy / {} net-sell sessions · {streak}\n",
+        f::compact(Some(tt.foreign_buy)),
+        f::compact(Some(tt.foreign_sell)),
+        f::compact(Some(tt.foreign_net)),
+        f::compact(Some(tt.foreign_net_value_at_close)),
+        tt.net_buy_sessions,
+        tt.net_sell_sessions,
+    ));
+    out.push_str("Foreign figures are shares as IDX publishes them; net × close gives a rupiah scale, not the traded value.\n");
+    out
+}
+
+fn foreign_list(out: &mut String, title: &str, rows: &[ForeignRow], color: bool) {
+    out.push_str(title);
+    out.push('\n');
+    if rows.is_empty() {
+        out.push_str("None.\n");
+        return;
+    }
+    let mut t = base_table(color);
+    t.set_header(header(&[
+        "#",
+        "Symbol",
+        "Name",
+        "Close",
+        "%",
+        "Foreign buy",
+        "Foreign sell",
+        "Net (shares)",
+        "Net × close",
+    ]));
+    for (i, r) in rows.iter().enumerate() {
+        t.add_row(vec![
+            right((i + 1).to_string()),
+            Cell::new(r.symbol.as_str()).add_attribute(Attribute::Bold),
+            Cell::new(f::clip(r.name.as_deref().unwrap_or(f::DASH), 26)),
+            right(f::price(r.close)),
+            signed(f::pct(r.change_pct), r.change_pct, color),
+            right(f::compact(r.foreign_buy)),
+            right(f::compact(r.foreign_sell)),
+            signed(f::compact(r.foreign_net), r.foreign_net, color),
+            signed(
+                f::compact(r.foreign_net_value_at_close),
+                r.foreign_net_value_at_close,
+                color,
+            ),
+        ]);
+    }
+    out.push_str(&t.to_string());
+    out.push('\n');
+}
+
+/// Market-wide foreign net buying and selling for one session.
+pub fn market_foreign(m: &MarketForeign, color: bool) -> String {
+    let mut out = format!(
+        "Foreign flow · {} · {} stocks · foreign buy {} · sell {} · net {} shares (≈ {} at close)\n",
+        m.date,
+        m.stocks,
+        f::compact(Some(m.foreign_buy)),
+        f::compact(Some(m.foreign_sell)),
+        f::compact(Some(m.foreign_net)),
+        f::compact(Some(m.foreign_net_value_at_close)),
+    );
+    let by = match m.sort {
+        ForeignSort::Value => "by net × close",
+        ForeignSort::Shares => "by net shares",
+    };
+    foreign_list(
+        &mut out,
+        &format!("Foreign net buying · {by}"),
+        &m.net_buy,
+        color,
+    );
+    foreign_list(
+        &mut out,
+        &format!("Foreign net selling · {by}"),
+        &m.net_sell,
+        color,
+    );
+    out.push_str("Foreign figures are shares as IDX publishes them; net × close gives a rupiah scale, not the traded value.\n");
+    out
+}
 
 fn day(d: Option<chrono::NaiveDate>) -> String {
     d.map(|x| x.to_string())

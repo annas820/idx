@@ -4,9 +4,10 @@ use chrono::Datelike;
 use clap::Subcommand;
 
 use crate::error::Result;
-use crate::model::{CalendarCategory, Symbol};
+use crate::model::{CalendarCategory, ForeignSort, Symbol};
 use crate::output::json::{
-    SCHEMA_CALENDAR, SCHEMA_HOLIDAYS, SCHEMA_INDICES, SCHEMA_MARKET, SCHEMA_MEMBERS,
+    SCHEMA_CALENDAR, SCHEMA_HOLIDAYS, SCHEMA_INDICES, SCHEMA_MARKET, SCHEMA_MARKET_FOREIGN,
+    SCHEMA_MEMBERS,
 };
 use crate::output::table_exchange as tx;
 use crate::output::table_reports as reports;
@@ -46,6 +47,21 @@ pub enum MarketCmd {
         /// Trading day, YYYY-MM-DD. Default: the latest session.
         #[arg(long, short = 'd', value_name = "DATE")]
         date: Option<chrono::NaiveDate>,
+    },
+    /// Foreign net buying and selling across every stock for one session (top foreign / top net).
+    #[command(
+        after_help = "Examples:\n  idx market foreign\n  idx market foreign --top 20 --date 2026-10-16\n  idx market foreign --sort shares\n  idx -o json market foreign | jq '.data.net_buy[0]'\n\nFrom idx.co.id's daily stock summary, latest session by default (weekends and holidays\nskipped). IDX publishes foreign trading in shares; lists are ranked by net shares × close\n(--sort value, a rupiah scale that is not the traded value) or by net shares."
+    )]
+    Foreign {
+        /// Trading day, YYYY-MM-DD. Default: the latest session.
+        #[arg(long, short = 'd', value_name = "DATE")]
+        date: Option<chrono::NaiveDate>,
+        /// Rows per list; 0 for all.
+        #[arg(long, short = 'n', default_value_t = 10)]
+        top: usize,
+        /// Ranking figure.
+        #[arg(long, value_enum, default_value_t = ForeignSort::Value)]
+        sort: ForeignSort,
     },
     /// Exchange members (Anggota Bursa): broker codes, names and licences.
     #[command(
@@ -127,6 +143,14 @@ pub async fn run(ctx: &Context, cmd: MarketCmd) -> Result<()> {
         MarketCmd::Indices { codes, date } => {
             let result = service::indices(&ctx.fetcher, date, &codes, service::today_wib()).await?;
             emit(ctx, SCHEMA_INDICES, result, |d| tx::indices(d, ctx.color))
+        }
+        MarketCmd::Foreign { date, top, sort } => {
+            let result =
+                service::market_foreign(&ctx.fetcher, date, top, sort, service::today_wib())
+                    .await?;
+            emit(ctx, SCHEMA_MARKET_FOREIGN, result, |d| {
+                tx::market_foreign(d, ctx.color)
+            })
         }
         MarketCmd::Members { search } => {
             let result = service::members(&ctx.fetcher, search.as_deref()).await?;

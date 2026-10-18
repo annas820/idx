@@ -14,6 +14,7 @@ pub mod brief;
 pub mod broker;
 pub mod calendar;
 pub mod dividends;
+pub mod flow;
 pub mod fundamentals;
 pub mod instruments;
 pub mod market;
@@ -35,6 +36,10 @@ pub use brief::{Brief, DividendSummary, NewsSummary, OwnershipSummary};
 pub use broker::{BrokerBoard, BrokerFlow, BrokerInvestor, BrokerKind, BrokerSummary};
 pub use calendar::{Calendar, CalendarCategory, CalendarEvent, Holiday, Holidays};
 pub use dividends::{DividendEvent, DividendHistory, DividendYear, SplitEvent};
+pub use flow::{
+    BrokerActivity, BrokerDayRow, BrokerRanking, BrokerSort, BrokerStockRow, ForeignDay,
+    ForeignFlow, ForeignRow, ForeignSort, ForeignTotals, MarketForeign,
+};
 pub use fundamentals::{
     Analyst, BalanceSheet, CashFlow, Director, Dividend, Earnings, EarningsQuarter,
     FinancialPeriod, Financials, Fundamentals, Growth, Health, IncomeStatement, NextEarnings,

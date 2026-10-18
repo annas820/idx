@@ -1,0 +1,250 @@
+//! Money flow from the exchange's daily summaries: foreign buying and
+//! selling per stock (`idx stocks foreign`, `idx market foreign`), member
+//! activity (`idx market brokers`) and one broker across the most traded
+//! stocks (`idx bandar broker`).
+//!
+//! IDX publishes foreign trading in shares only. `foreign_net_value_at_close`
+//! multiplies the net shares by the closing price to give a rupiah scale; it
+//! is not the value foreigners actually traded at, and is named so.
+
+use chrono::NaiveDate;
+use schemars::JsonSchema;
+use serde::{Deserialize, Serialize};
+
+use super::Symbol;
+
+/// One stock on one trading day.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ForeignDay {
+    pub date: NaiveDate,
+    pub close: Option<f64>,
+    pub change: Option<f64>,
+    /// Shares traded as IDX's daily stock summary reports them; non-regular
+    /// (negotiated) trades are reported apart and not included.
+    pub volume: Option<f64>,
+    /// Value traded on the same basis, IDR.
+    pub value: Option<f64>,
+    /// Shares bought by foreign investors.
+    pub foreign_buy: Option<f64>,
+    /// Shares sold by foreign investors.
+    pub foreign_sell: Option<f64>,
+    /// `foreign_buy - foreign_sell`, shares.
+    pub foreign_net: Option<f64>,
+    /// `foreign_net * close`, IDR: a rupiah scale, not the traded value.
+    pub foreign_net_value_at_close: Option<f64>,
+}
+
+/// Sums over the sessions shown.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ForeignTotals {
+    pub sessions: usize,
+    pub foreign_buy: f64,
+    pub foreign_sell: f64,
+    pub foreign_net: f64,
+    pub foreign_net_value_at_close: f64,
+    /// Sessions with more foreign buying than selling.
+    pub net_buy_sessions: usize,
+    /// Sessions with more foreign selling than buying.
+    pub net_sell_sessions: usize,
+    /// Consecutive sessions on the same side, ending with the latest:
+    /// `+3` three net-buy sessions in a row, `-2` two net-sell ones, `0` when
+    /// the latest session was flat.
+    pub streak: i32,
+}
+
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ForeignFlow {
+    pub symbol: Symbol,
+    pub name: Option<String>,
+    pub from: NaiveDate,
+    pub to: NaiveDate,
+    /// Oldest first.
+    pub days: Vec<ForeignDay>,
+    pub totals: ForeignTotals,
+}
+
+/// One stock in the market-wide foreign ranking.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct ForeignRow {
+    pub symbol: Symbol,
+    pub name: Option<String>,
+    pub close: Option<f64>,
+    pub change: Option<f64>,
+    /// `change / previous close * 100`, computed by idx.
+    pub change_pct: Option<f64>,
+    /// Shares traded, non-regular (negotiated) trades excluded, as published.
+    pub volume: Option<f64>,
+    /// Value traded on the same basis, IDR.
+    pub value: Option<f64>,
+    pub foreign_buy: Option<f64>,
+    pub foreign_sell: Option<f64>,
+    /// `foreign_buy - foreign_sell`, shares.
+    pub foreign_net: Option<f64>,
+    /// `foreign_net * close`, IDR: a rupiah scale, not the traded value.
+    pub foreign_net_value_at_close: Option<f64>,
+}
+
+/// Which figure ranks the foreign lists.
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, JsonSchema, clap::ValueEnum,
+)]
+#[serde(rename_all = "snake_case")]
+pub enum ForeignSort {
+    /// Net shares times the closing price (comparable across price levels).
+    Value,
+    /// Net shares.
+    Shares,
+}
+
+impl ForeignSort {
+    pub fn as_str(&self) -> &'static str {
+        match self {
+            ForeignSort::Value => "value",
+            ForeignSort::Shares => "shares",
+        }
+    }
+}
+
+impl std::str::FromStr for ForeignSort {
+    type Err = crate::error::IdxError;
+    fn from_str(s: &str) -> crate::error::Result<Self> {
+        <ForeignSort as clap::ValueEnum>::from_str(s, true).map_err(|_| {
+            crate::error::IdxError::Usage(format!("invalid sort {s:?}; use value or shares"))
+        })
+    }
+}
+
+/// Foreign net buying and selling across every stock on one trading day.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct MarketForeign {
+    pub date: NaiveDate,
+    /// Stocks in the day's summary.
+    pub stocks: usize,
+    /// Sums over every stock, shares.
+    pub foreign_buy: f64,
+    pub foreign_sell: f64,
+    pub foreign_net: f64,
+    /// Sum of the per-stock `foreign_net_value_at_close`, IDR.
+    pub foreign_net_value_at_close: f64,
+    pub sort: ForeignSort,
+    /// Largest foreign net buying first.
+    pub net_buy: Vec<ForeignRow>,
+    /// Largest foreign net selling first.
+    pub net_sell: Vec<ForeignRow>,
+}
+
+/// One exchange member's trading on one day, both sides together.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct BrokerDayRow {
+    /// Position by the sort key, 1 = most.
+    pub rank: u32,
+    pub code: String,
+    /// Member name as the source publishes it.
+    pub name: Option<String>,
+    /// Shares bought plus shares sold.
+    pub volume: Option<f64>,
+    /// Value bought plus value sold, IDR.
+    pub value: Option<f64>,
+    /// Trades on either side.
+    pub frequency: Option<f64>,
+    /// `value` as a percent of all members' value; across all members this
+    /// sums to 100, and all members' value is twice the market's (each trade
+    /// has a buying and a selling member).
+    pub value_share_pct: Option<f64>,
+}
+
+/// Which figure ranks the members.
+#[derive(
+    Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, JsonSchema, clap::ValueEnum,
+)]
+#[serde(rename_all = "snake_case")]
+pub enum BrokerSort {
+    Value,
+    Volume,
+    Frequency,
+}
+
+impl BrokerSort {
+    pub fn as_str(&self) -> &'static str {
+        match self {
+            BrokerSort::Value => "value",
+            BrokerSort::Volume => "volume",
+            BrokerSort::Frequency => "frequency",
+        }
+    }
+}
+
+impl std::str::FromStr for BrokerSort {
+    type Err = crate::error::IdxError;
+    fn from_str(s: &str) -> crate::error::Result<Self> {
+        <BrokerSort as clap::ValueEnum>::from_str(s, true).map_err(|_| {
+            crate::error::IdxError::Usage(format!(
+                "invalid sort {s:?}; use value, volume or frequency"
+            ))
+        })
+    }
+}
+
+/// Every exchange member's trading on one day.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct BrokerRanking {
+    pub date: NaiveDate,
+    /// Members with trades that day.
+    pub members: usize,
+    /// Sums over all members (each trade counted on both sides).
+    pub total_volume: f64,
+    pub total_value: f64,
+    pub total_frequency: f64,
+    pub sort: BrokerSort,
+    pub brokers: Vec<BrokerDayRow>,
+}
+
+/// One stock where the broker is among the top ten on a side.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct BrokerStockRow {
+    pub symbol: Symbol,
+    pub name: Option<String>,
+    /// The broker's place on this side, 1 = most lots, as the source ranks it.
+    pub rank: u32,
+    /// Lots bought (in `bought`) or sold (in `sold`); one lot is 100 shares.
+    pub lots: Option<f64>,
+    /// Value in IDR.
+    pub value: Option<f64>,
+    pub average_price: Option<f64>,
+    /// `value` as a percent of all value traded in the stock over the range.
+    pub share_pct: Option<f64>,
+    /// The broker's value on the other side when it is also among the top
+    /// ten there; `null` otherwise (it may still have traded, below tenth place).
+    pub opposite_value: Option<f64>,
+    /// `value - opposite_value` (in `sold`: `opposite_value - value`, so
+    /// positive is net buying) when both sides are visible; otherwise `null`.
+    pub net_value: Option<f64>,
+}
+
+/// Where one broker shows up among the top buyers and sellers of the most
+/// traded stocks. Only the top ten per side are published, so this is what
+/// is visible, not the broker's whole book.
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize, JsonSchema)]
+pub struct BrokerActivity {
+    pub code: String,
+    /// Member name from the IDX exchange-member list bundled with idx.
+    pub name: Option<String>,
+    /// `1d`, `1w`, `1m` or `3m`.
+    pub period: String,
+    pub from: NaiveDate,
+    pub to: NaiveDate,
+    /// Stocks scanned.
+    pub scanned: usize,
+    /// Scanned stocks with trades in the range.
+    pub checked: usize,
+    /// Scanned stocks whose summary could not be fetched.
+    pub failed: usize,
+    /// Sum of `value` over `bought`, IDR.
+    pub bought_value: f64,
+    /// Sum of `value` over `sold`, IDR.
+    pub sold_value: f64,
+    /// Stocks where the broker is a top-ten buyer, largest value first.
+    pub bought: Vec<BrokerStockRow>,
+    /// Stocks where the broker is a top-ten seller, largest value first.
+    pub sold: Vec<BrokerStockRow>,
+}

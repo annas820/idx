@@ -34,7 +34,8 @@ use crate::output::json::{
     SCHEMA_PROFILE, SCHEMA_QUOTES, SCHEMA_RETURNS, SCHEMA_TECHNICAL,
 };
 use crate::output::json::{
-    SCHEMA_ACTIONS, SCHEMA_CALENDAR, SCHEMA_INDICES, SCHEMA_INSTRUMENTS, SCHEMA_MEMBERS,
+    SCHEMA_ACTIONS, SCHEMA_CALENDAR, SCHEMA_FOREIGN, SCHEMA_INDICES, SCHEMA_INSTRUMENTS,
+    SCHEMA_MARKET_FOREIGN, SCHEMA_MEMBERS,
 };
 use crate::output::json::{
     SCHEMA_BANDAR, SCHEMA_BANDAR_SCREEN, SCHEMA_BROKER, SCHEMA_HOLIDAYS, SCHEMA_NEWS,
@@ -229,6 +230,28 @@ pub struct IndicesArgs {
     /// Trading day, YYYY-MM-DD. Default: the latest session published.
     #[serde(default)]
     pub date: Option<String>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct ForeignArgs {
+    /// One IDX ticker, e.g. "BBCA".
+    pub symbol: String,
+    /// Latest sessions to return, 1-250 (default 20).
+    #[serde(default)]
+    pub days: Option<u32>,
+}
+
+#[derive(Debug, Deserialize, schemars::JsonSchema)]
+pub struct MarketForeignArgs {
+    /// Trading day, YYYY-MM-DD. Default: the latest session published.
+    #[serde(default)]
+    pub date: Option<String>,
+    /// Rows per list (default 10; 0 for all).
+    #[serde(default)]
+    pub top: Option<u32>,
+    /// Ranking figure: "value" (net shares times close, default) or "shares".
+    #[serde(default)]
+    pub sort: Option<String>,
 }
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
@@ -696,6 +719,54 @@ impl IdxServer {
                         &self.fetcher,
                         parse_date(&a.date)?,
                         &codes,
+                        service::today_wib(),
+                    )
+                    .await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_foreign",
+        description = "Foreign investors' buying and selling of one IDX stock over its latest sessions (default 20, at most 250) from idx.co.id's daily stock summary, oldest first: close, change, volume, value, foreign buy and sell (shares), net shares and net shares times the close (a rupiah scale, not the traded value; IDX publishes foreign trading in shares only). Totals give the sums, how many sessions were net buying or net selling and the current streak (+3 = three net-buy sessions in a row). Returns the idx.foreign.v1 envelope."
+    )]
+    async fn foreign(
+        &self,
+        Parameters(a): Parameters<ForeignArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                let symbol = Symbol::parse(&a.symbol)?;
+                let list = universe::load(None).unwrap_or_default();
+                let days = a.days.unwrap_or(service::FOREIGN_DEFAULT_DAYS as u32) as usize;
+                ok(
+                    SCHEMA_FOREIGN,
+                    service::foreign_flow(&self.fetcher, &list, &symbol, days).await?,
+                )
+            }
+            .await,
+        )
+    }
+
+    #[tool(
+        name = "idx_market_foreign",
+        description = "Foreign net buying and selling across every IDX stock for one session from idx.co.id's daily stock summary (default: the latest published; weekends and holidays skipped): market totals of foreign buy, sell and net shares, then the top stocks foreigners net bought and net sold, each with close, change percent, foreign buy, sell, net shares and net shares times the close. Ranked by net shares times close (value, default; a rupiah scale, not the traded value) or by net shares. Returns the idx.market.foreign.v1 envelope."
+    )]
+    async fn market_foreign(
+        &self,
+        Parameters(a): Parameters<MarketForeignArgs>,
+    ) -> std::result::Result<CallToolResult, McpError> {
+        finish(
+            async {
+                ok(
+                    SCHEMA_MARKET_FOREIGN,
+                    service::market_foreign(
+                        &self.fetcher,
+                        parse_date(&a.date)?,
+                        a.top.unwrap_or(10) as usize,
+                        parse_opt(&a.sort, crate::model::ForeignSort::Value)?,
                         service::today_wib(),
                     )
                     .await?,
@@ -1364,12 +1435,14 @@ mod tests {
                 "idx_dividends",
                 "idx_earnings",
                 "idx_financials",
+                "idx_foreign",
                 "idx_fundamental",
                 "idx_history",
                 "idx_holidays",
                 "idx_indices",
                 "idx_instruments",
                 "idx_market",
+                "idx_market_foreign",
                 "idx_members",
                 "idx_news",
                 "idx_ownership_changes",

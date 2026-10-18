@@ -16,7 +16,10 @@ use crate::model::{
     Member, MemberList,
 };
 use crate::model::{CorporateActions, Symbol};
-use crate::providers::idx::{self, CalendarRange};
+use crate::model::{
+    ForeignDay, ForeignFlow, ForeignRow, ForeignSort, ForeignTotals, MarketForeign,
+};
+use crate::providers::idx::{self, CalendarRange, StockDay};
 use crate::providers::ipot;
 use crate::providers::Sourced;
 use crate::universe::{self, Issuer};
@@ -398,6 +401,179 @@ pub async fn calendar(
     }))
 }
 
+/// Sessions `foreign_flow` shows by default.
+pub const FOREIGN_DEFAULT_DAYS: usize = 20;
+/// Most sessions `foreign_flow` fetches in one call.
+pub const FOREIGN_MAX_DAYS: usize = 250;
+
+fn net(buy: Option<f64>, sell: Option<f64>) -> Option<f64> {
+    Some(buy? - sell?)
+}
+
+fn at_close(net: Option<f64>, close: Option<f64>) -> Option<f64> {
+    Some(net? * close?)
+}
+
+fn foreign_day(r: &StockDay) -> Option<ForeignDay> {
+    let foreign_net = net(r.foreign_buy, r.foreign_sell);
+    Some(ForeignDay {
+        date: r.date()?,
+        close: r.close,
+        change: r.change,
+        volume: r.volume,
+        value: r.value,
+        foreign_buy: r.foreign_buy,
+        foreign_sell: r.foreign_sell,
+        foreign_net,
+        foreign_net_value_at_close: at_close(foreign_net, r.close),
+    })
+}
+
+/// Sums and the same-side streak over `days` (oldest first).
+pub fn foreign_totals(days: &[ForeignDay]) -> ForeignTotals {
+    let sum = |f: fn(&ForeignDay) -> Option<f64>| days.iter().filter_map(f).sum::<f64>();
+    let sign = |d: &ForeignDay| match d.foreign_net {
+        Some(n) if n > 0.0 => 1,
+        Some(n) if n < 0.0 => -1,
+        _ => 0,
+    };
+    let mut streak = 0i32;
+    if let Some(last) = days.last().map(sign).filter(|s| *s != 0) {
+        streak = days.iter().rev().take_while(|d| sign(d) == last).count() as i32 * last;
+    }
+    ForeignTotals {
+        sessions: days.len(),
+        foreign_buy: sum(|d| d.foreign_buy),
+        foreign_sell: sum(|d| d.foreign_sell),
+        foreign_net: sum(|d| d.foreign_net),
+        foreign_net_value_at_close: sum(|d| d.foreign_net_value_at_close),
+        net_buy_sessions: days.iter().filter(|d| sign(d) > 0).count(),
+        net_sell_sessions: days.iter().filter(|d| sign(d) < 0).count(),
+        streak,
+    }
+}
+
+/// Foreign buying and selling of one stock over its latest `days`
+/// sessions (idx.co.id daily stock summary), oldest first.
+pub async fn foreign_flow(
+    fetcher: &Arc<Fetcher>,
+    universe: &[Issuer],
+    symbol: &Symbol,
+    days: usize,
+) -> Result<Sourced<ForeignFlow>> {
+    if symbol.is_index() {
+        return Err(IdxError::Usage(format!(
+            "{symbol} is an index; foreign flow is per stock (see `idx market foreign`)"
+        )));
+    }
+    if days == 0 || days > FOREIGN_MAX_DAYS {
+        return Err(IdxError::Usage(format!(
+            "days must be between 1 and {FOREIGN_MAX_DAYS}"
+        )));
+    }
+    let s = idx::trading_history(fetcher, symbol, days).await?;
+    let stock_name = s.data.iter().find_map(|r| r.stock_name.clone());
+    let mut list: Vec<ForeignDay> = s.data.iter().filter_map(foreign_day).collect();
+    list.sort_by_key(|d| d.date);
+    list.dedup_by_key(|d| d.date);
+    let (Some(from), Some(to)) = (list.first().map(|d| d.date), list.last().map(|d| d.date)) else {
+        return Err(IdxError::NotFound(format!(
+            "no dated sessions for {symbol}"
+        )));
+    };
+    let name = universe
+        .iter()
+        .find(|i| &i.symbol == symbol)
+        .and_then(|i| i.name.clone())
+        .or(stock_name);
+    let totals = foreign_totals(&list);
+    Ok(s.map(|_| ForeignFlow {
+        symbol: symbol.clone(),
+        name,
+        from,
+        to,
+        days: list,
+        totals,
+    }))
+}
+
+fn foreign_row(r: &StockDay) -> Option<ForeignRow> {
+    let foreign_net = net(r.foreign_buy, r.foreign_sell);
+    Some(ForeignRow {
+        symbol: Symbol::parse(&r.stock_code).ok()?,
+        name: r.stock_name.clone(),
+        close: r.close,
+        change: r.change,
+        change_pct: match (r.change, r.previous) {
+            (Some(c), Some(p)) if p != 0.0 => Some(c / p * 100.0),
+            _ => None,
+        },
+        volume: r.volume,
+        value: r.value,
+        foreign_buy: r.foreign_buy,
+        foreign_sell: r.foreign_sell,
+        foreign_net,
+        foreign_net_value_at_close: at_close(foreign_net, r.close),
+    })
+}
+
+/// Foreign net buying and selling across every stock for one session
+/// (default: the latest published), the `top` largest each way (0 = all).
+pub async fn market_foreign(
+    fetcher: &Arc<Fetcher>,
+    date: Option<NaiveDate>,
+    top: usize,
+    sort: ForeignSort,
+    today: NaiveDate,
+) -> Result<Sourced<MarketForeign>> {
+    let (day, mut s) = session(date, today, |d| idx::stock_summary(fetcher, d, today)).await?;
+    let rows: Vec<ForeignRow> = std::mem::take(&mut s.data)
+        .iter()
+        .filter_map(foreign_row)
+        .collect();
+    let key = |r: &ForeignRow| match sort {
+        ForeignSort::Value => r.foreign_net_value_at_close,
+        ForeignSort::Shares => r.foreign_net,
+    };
+    let sum = |f: fn(&ForeignRow) -> Option<f64>| rows.iter().filter_map(f).sum::<f64>();
+    let mut buy: Vec<ForeignRow> = rows
+        .iter()
+        .filter(|r| key(r).is_some_and(|k| k > 0.0))
+        .cloned()
+        .collect();
+    buy.sort_by(|a, b| {
+        key(b)
+            .partial_cmp(&key(a))
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
+    let mut sell: Vec<ForeignRow> = rows
+        .iter()
+        .filter(|r| key(r).is_some_and(|k| k < 0.0))
+        .cloned()
+        .collect();
+    sell.sort_by(|a, b| {
+        key(a)
+            .partial_cmp(&key(b))
+            .unwrap_or(std::cmp::Ordering::Equal)
+    });
+    if top > 0 {
+        buy.truncate(top);
+        sell.truncate(top);
+    }
+    let out = MarketForeign {
+        date: day,
+        stocks: rows.len(),
+        foreign_buy: sum(|r| r.foreign_buy),
+        foreign_sell: sum(|r| r.foreign_sell),
+        foreign_net: sum(|r| r.foreign_net),
+        foreign_net_value_at_close: sum(|r| r.foreign_net_value_at_close),
+        sort,
+        net_buy: buy,
+        net_sell: sell,
+    };
+    Ok(s.map(|_| out))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -662,5 +838,100 @@ mod tests {
         assert!(corporate_actions(&f, &list, &idx, None, d(2026, 10, 18))
             .await
             .is_err());
+    }
+
+    const HISTORY: &str = include_str!("../../tests/fixtures/idx/tradinginfoss_bbca_excerpt.json");
+    const STOCKS: &str =
+        include_str!("../../tests/fixtures/idx/stocksummary_20261016_excerpt.json");
+
+    #[tokio::test]
+    async fn foreign_flow_is_oldest_first_with_totals_and_streak() {
+        let (f, be, _d) = fetcher(FixtureBackend::new().route("GetTradingInfoSS", 200, HISTORY));
+        let list = universe::load(None).unwrap();
+        let sym = Symbol::parse("BBCA").unwrap();
+        let s = foreign_flow(&f, &list, &sym, 30).await.unwrap();
+        assert!(be.calls.lock().unwrap()[0].contains("code=BBCA&start=0&length=30"));
+        let flow = &s.data;
+        assert_eq!(flow.days.len(), 30);
+        assert_eq!(flow.to, d(2026, 10, 16));
+        assert_eq!(flow.from, d(2026, 9, 7));
+        assert!(flow.days.windows(2).all(|w| w[0].date < w[1].date));
+        let last = flow.days.last().unwrap();
+        assert_eq!(last.foreign_net, Some(309_392_800.0 - 757_227_900.0));
+        assert_eq!(
+            last.foreign_net_value_at_close,
+            Some((309_392_800.0 - 757_227_900.0) * 5175.0)
+        );
+        let t = &flow.totals;
+        assert_eq!(t.sessions, 30);
+        assert_eq!(t.net_buy_sessions + t.net_sell_sessions, 30);
+        let net: f64 = flow.days.iter().filter_map(|d| d.foreign_net).sum();
+        assert!((t.foreign_net - net).abs() < 1e-3);
+        assert!(t.streak < 0, "the last session was net selling");
+        assert!(flow.name.as_deref().unwrap().contains("CENTRAL ASIA"));
+
+        assert!(foreign_flow(&f, &list, &sym, 0).await.is_err());
+        assert!(foreign_flow(&f, &list, &Symbol::parse("^JKSE").unwrap(), 5)
+            .await
+            .is_err());
+    }
+
+    #[test]
+    fn streak_counts_the_latest_run_only() {
+        let day = |n: f64| ForeignDay {
+            date: d(2026, 10, 1),
+            close: None,
+            change: None,
+            volume: None,
+            value: None,
+            foreign_buy: None,
+            foreign_sell: None,
+            foreign_net: Some(n),
+            foreign_net_value_at_close: None,
+        };
+        let t = foreign_totals(&[day(-1.0), day(2.0), day(3.0), day(1.0)]);
+        assert_eq!(t.streak, 3);
+        assert_eq!((t.net_buy_sessions, t.net_sell_sessions), (3, 1));
+        assert_eq!(foreign_totals(&[day(2.0), day(0.0)]).streak, 0);
+        assert_eq!(foreign_totals(&[]).streak, 0);
+    }
+
+    #[tokio::test]
+    async fn market_foreign_ranks_both_ways() {
+        let (f, _be, _d) = fetcher(
+            FixtureBackend::new()
+                .route("GetStockSummary?date=20261016", 200, STOCKS)
+                .route("GetStockSummary", 200, NO_TRADING),
+        );
+        let s = market_foreign(&f, None, 5, ForeignSort::Value, d(2026, 10, 18))
+            .await
+            .unwrap();
+        let m = &s.data;
+        assert_eq!(m.date, d(2026, 10, 16));
+        assert_eq!(m.stocks, 28);
+        assert_eq!((m.net_buy.len(), m.net_sell.len()), (5, 5));
+        let v = |r: &ForeignRow| r.foreign_net_value_at_close.unwrap();
+        assert!(m.net_buy.windows(2).all(|w| v(&w[0]) >= v(&w[1])));
+        assert!(m.net_sell.windows(2).all(|w| v(&w[0]) <= v(&w[1])));
+        assert!(m.net_buy.iter().all(|r| v(r) > 0.0));
+        assert!(m.net_sell.iter().all(|r| v(r) < 0.0));
+        let bbca = m.net_sell.iter().find(|r| r.symbol.as_str() == "BBCA");
+        assert!(
+            bbca.is_some(),
+            "BBCA was among the heaviest foreign selling"
+        );
+        let pct = bbca.unwrap().change_pct.unwrap();
+        assert!((pct - (-900.0 / 6075.0 * 100.0)).abs() < 1e-9);
+
+        let by_shares = market_foreign(&f, None, 0, ForeignSort::Shares, d(2026, 10, 18))
+            .await
+            .unwrap();
+        let n = |r: &ForeignRow| r.foreign_net.unwrap();
+        assert!(by_shares
+            .data
+            .net_buy
+            .windows(2)
+            .all(|w| n(&w[0]) >= n(&w[1])));
+        assert_eq!(by_shares.data.sort, ForeignSort::Shares);
     }
 }
