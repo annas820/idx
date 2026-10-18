@@ -6,6 +6,43 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-10-18
+
+### Added
+
+- Stockbit realtime provider (opt-in, `--provider stockbit`): realtime
+  quotes, history and a live order book from `exodus.stockbit.com`,
+  carrying your own Stockbit session. It is the one source that needs a
+  credential and the one not in the `auto` chain. See
+  [docs/stockbit.md](docs/stockbit.md).
+- `idx stockbit login` signs in through your browser and captures the
+  session automatically over the Chrome DevTools Protocol (Chrome, Edge,
+  Brave; `IDX_BROWSER` chooses one), reusing an already-signed-in profile
+  when there is one. `--manual` pastes the `credentialStorage` cookie
+  instead. `idx stockbit status` and `idx stockbit logout` manage the
+  stored session; the tokens are written `0600`, refreshed automatically,
+  and never printed to a log, an error or a cache key.
+- `idx stockbit orderbook <SYMBOL>`: the full depth ladder (bids and asks,
+  sizes in shares) plus session volume, value and foreign buy/sell/net.
+  New `idx.orderbook.v1` JSON shape (`idx schema orderbook`).
+- Three MCP tools (36 in total): `idx_orderbook`, `idx_stockbit_status`
+  and `idx_stockbit_login`. Run the server with `--provider stockbit` for
+  realtime quotes and history through the existing tools.
+- Config `[stockbit] session` and the environment variables
+  `IDX_STOCKBIT_SESSION`, `IDX_STOCKBIT_REFRESH_TOKEN`,
+  `IDX_STOCKBIT_ACCESS_TOKEN` (seed an unattended session) and
+  `IDX_BROWSER`.
+- Landing page: the Stockbit tools are listed in the command table and the
+  agents card, marked CLI and MCP only.
+
+### Notes
+
+- Stockbit's `/login/refresh` rotates the refresh token, so one session
+  must have a single refresher: do not share one Stockbit login between
+  `idx` and another tool, or they will log each other out.
+- Realtime Stockbit data runs in the CLI and MCP only, not the web
+  terminal, which cannot carry a personal account session.
+
 ## [0.7.2] - 2026-10-18
 
 ### Added
