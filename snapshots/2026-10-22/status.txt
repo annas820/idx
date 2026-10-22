@@ -1,0 +1,21 @@
+OK   holidays
+OK   overview
+FAIL indices (exit 3)
+OK   quotes
+OK   returns
+OK   news
+FAIL foreign_mkt (exit 3)
+OK   bandar
+OK   hist_AADI
+OK   tech_AADI
+FAIL frgn_AADI (exit 3)
+OK   hist_INCO
+OK   tech_INCO
+FAIL frgn_INCO (exit 3)
+OK   hist_INDF
+OK   tech_INDF
+FAIL frgn_INDF (exit 3)
+OK   hist_ASII
+OK   tech_ASII
+FAIL frgn_ASII (exit 3)
+run at 2026-10-22 06:56:37 UTC

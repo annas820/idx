@@ -1,0 +1,185 @@
+{
+  "schema": "idx.bandar.screen.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-10-22T06:56:15Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "period": "1w",
+    "from": "2026-10-15",
+    "to": "2026-10-21",
+    "top": 5,
+    "preset": "foreign-accumulation",
+    "filters": [
+      "acc>=5",
+      "fpct>=5"
+    ],
+    "sort": "acc",
+    "descending": true,
+    "scanned": 100,
+    "checked": 100,
+    "total_matches": 5,
+    "rows": [
+      {
+        "symbol": "MDIA",
+        "name": "INTERMEDIA CAPITAL Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 12.268314210061783,
+        "net_value": 13900000000.0,
+        "net_lots": 1604367.0,
+        "price": 89.0,
+        "price_change_pct": -26.446280991735538,
+        "bandar_average": 90.1578022444359,
+        "bandar_gain_pct": -1.2841952838389625,
+        "buy_share_pct": 74.05119152691968,
+        "total_value": 113300000000.0,
+        "foreign_net_value": 15200000000.0,
+        "foreign_net_pct": 13.415710503089143,
+        "top_buyers": [
+          "MG",
+          "XL",
+          "KI",
+          "AK",
+          "CC"
+        ],
+        "top_sellers": [
+          "MG",
+          "XL",
+          "AK",
+          "LG",
+          "CC"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "JARR",
+        "name": "JHONLIN AGRO RAYA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 9.432672590567327,
+        "net_value": 13800000000.0,
+        "net_lots": 61053.0,
+        "price": 2360.0,
+        "price_change_pct": -18.620689655172416,
+        "bandar_average": 2323.7181518665384,
+        "bandar_gain_pct": 1.5613704314491939,
+        "buy_share_pct": 62.269309637730686,
+        "total_value": 146300000000.0,
+        "foreign_net_value": 8000000000.0,
+        "foreign_net_pct": 5.468215994531784,
+        "top_buyers": [
+          "CC",
+          "XL",
+          "AK",
+          "YJ",
+          "SQ"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "NI",
+          "YP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "BIPI",
+        "name": "ASTRINDO NUSANTARA INFRASTRUKTUR Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 7.827669902912622,
+        "net_value": 12900000000.0,
+        "net_lots": 1600000.0,
+        "price": 85.0,
+        "price_change_pct": -26.086956521739136,
+        "bandar_average": 86.80885072650179,
+        "bandar_gain_pct": -2.0837169382655674,
+        "buy_share_pct": 61.46844660194175,
+        "total_value": 164800000000.0,
+        "foreign_net_value": 12400000000.0,
+        "foreign_net_pct": 7.524271844660194,
+        "top_buyers": [
+          "XL",
+          "MG",
+          "CC",
+          "AK",
+          "YP"
+        ],
+        "top_sellers": [
+          "XL",
+          "MG",
+          "AK",
+          "CC",
+          "YP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "INKP",
+        "name": "INDAH KIAT PULP AND PAPER Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 6.827880512091039,
+        "net_value": 24000000000.0,
+        "net_lots": 33000.0,
+        "price": 7075.0,
+        "price_change_pct": -14.501510574018129,
+        "bandar_average": 6912.600566397134,
+        "bandar_gain_pct": 2.3493247156838093,
+        "buy_share_pct": 60.85348506401138,
+        "total_value": 351500000000.0,
+        "foreign_net_value": 65700000000.0,
+        "foreign_net_pct": 18.691322901849215,
+        "top_buyers": [
+          "DH",
+          "PP",
+          "CC",
+          "AK",
+          "ZP"
+        ],
+        "top_sellers": [
+          "PD",
+          "CC",
+          "ZP",
+          "AK",
+          "AZ"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "KIJA",
+        "name": "KAWASAN INDUSTRI JABABEKA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.970149253731343,
+        "net_value": 8400000000.0,
+        "net_lots": 650928.0,
+        "price": 125.0,
+        "price_change_pct": -16.666666666666664,
+        "bandar_average": 121.39397259769504,
+        "bandar_gain_pct": 2.9705160191564772,
+        "buy_share_pct": 52.02558635394456,
+        "total_value": 140700000000.0,
+        "foreign_net_value": 12700000000.0,
+        "foreign_net_pct": 9.026297085998578,
+        "top_buyers": [
+          "XL",
+          "CC",
+          "AK",
+          "YU",
+          "CP"
+        ],
+        "top_sellers": [
+          "XL",
+          "AK",
+          "CC",
+          "XC",
+          "CP"
+        ],
+        "rounded": true
+      }
+    ]
+  }
+}
