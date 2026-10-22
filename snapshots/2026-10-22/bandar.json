@@ -1,7 +1,7 @@
 {
   "schema": "idx.bandar.screen.v1",
   "provider": "ipot",
-  "fetched_at": "2026-10-22T06:56:15Z",
+  "fetched_at": "2026-10-22T09:06:10Z",
   "cached": false,
   "stale": false,
   "data": {
@@ -21,34 +21,34 @@
     "total_matches": 5,
     "rows": [
       {
-        "symbol": "MDIA",
-        "name": "INTERMEDIA CAPITAL Tbk",
-        "signal": "accumulation",
+        "symbol": "PWON",
+        "name": "PAKUWON JATI Tbk",
+        "signal": "big_accumulation",
         "phase": "quiet_accumulation",
-        "net_pct": 12.268314210061783,
-        "net_value": 13900000000.0,
-        "net_lots": 1604367.0,
-        "price": 89.0,
-        "price_change_pct": -26.446280991735538,
-        "bandar_average": 90.1578022444359,
-        "bandar_gain_pct": -1.2841952838389625,
-        "buy_share_pct": 74.05119152691968,
-        "total_value": 113300000000.0,
-        "foreign_net_value": 15200000000.0,
-        "foreign_net_pct": 13.415710503089143,
+        "net_pct": 16.249361267245785,
+        "net_value": 31800000000.0,
+        "net_lots": 1178840.0,
+        "price": 278.0,
+        "price_change_pct": -3.472222222222221,
+        "bandar_average": 264.09466462771655,
+        "bandar_gain_pct": 5.265284473612986,
+        "buy_share_pct": 79.10066428206439,
+        "total_value": 195700000000.0,
+        "foreign_net_value": 57400000000.0,
+        "foreign_net_pct": 29.330608073582017,
         "top_buyers": [
-          "MG",
-          "XL",
-          "KI",
+          "CC",
+          "KZ",
           "AK",
-          "CC"
+          "ZP",
+          "XL"
         ],
         "top_sellers": [
-          "MG",
+          "CC",
+          "YU",
           "XL",
           "AK",
-          "LG",
-          "CC"
+          "PD"
         ],
         "rounded": true
       },

@@ -1,7 +1,7 @@
 {
   "schema": "idx.news.v1",
   "provider": "news",
-  "fetched_at": "2026-10-22T06:56:17Z",
+  "fetched_at": "2026-10-22T09:06:11Z",
   "cached": false,
   "stale": false,
   "warnings": [
@@ -24,6 +24,84 @@
     "company_matches": 0,
     "company_only": false,
     "items": [
+      {
+        "title": "Bank Mandiri Targetkan 1.500 Kartu Kredit Indonesia Terbit Tahun Ini",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-targetkan-1500-kartu-kredit-indonesia-terbit-tahun-ini",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T15:44:54+07:00",
+        "summary": "Hingga akhir tahun 2026, Bank Mandiri menargetkan penerbitan 1.500 KKI. Sampai September sudah terealisasi 1000 kartu atau sekitar 75%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Sinar Mas Asuransi Syariah: Peran Agen Jadi Unsur Penting Dorong Kinerja Industri",
+        "url": "https://keuangan.kontan.co.id/news/sinar-mas-asuransi-syariah-peran-agen-jadi-unsur-penting-dorong-kinerja-industri",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T15:32:20+07:00",
+        "summary": "Sinar Mas Asuransi Syariah (SMAS) sebut peran agen menjadi unsur penting dalam mendorong pertumbuhan industri asuransi syariah. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Pengadilan Niaga Batalkan Putusan KPPU Soal Penetapan Bunga Pinjol",
+        "url": "https://keuangan.kontan.co.id/news/pengadilan-niaga-batalkan-putusan-kppu-soal-penetapan-bunga-pinjol",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T15:19:03+07:00",
+        "summary": "Pengadilan Niaga pada Pengadilan Negeri Jakarta Pusat memutuskan mengabulkan permohonan keberatan industri fintech peer to peer (P2P) lending",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Volatilitas Pasar Modal Bisa Ubah Pilihan Investasi Pemegang Polis Unitlink",
+        "url": "https://keuangan.kontan.co.id/news/volatilitas-pasar-modal-bisa-ubah-pilihan-investasi-pemegang-polis-unitlink",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T15:14:50+07:00",
+        "summary": "OJK mencatat premi unitlink tumbuh 18,34% menjadi Rp 31,82 triliun per Agustus 2026 di tengah volatilitas pasar keuangan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Atur Lebih Rinci Penyelenggaraan Program DKPK oleh DPLK di Perubahan POJK 27/2023",
+        "url": "https://keuangan.kontan.co.id/news/ojk-atur-lebih-rinci-penyelenggaraan-program-dkpk-oleh-dplk-di-perubahan-pojk-272023",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T15:00:39+07:00",
+        "summary": "OJK sedang menyusun rancangan perubahan Peraturan OJK (POJK) Nomor 27 Tahun 2023 tentang Penyelenggaraan Usaha Dana Pensiun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Transaksi Kartu Kredit Indonesia Tumbuh 1.067% pada September 2026",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-kartu-kredit-indonesia-tumbuh-1067-pada-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T13:56:04+07:00",
+        "summary": "Bank Indonesia (BI) mencatat, jumlah transaksi Kartu Kredit Indonesia mencapai 452.400 transaksi atau tumbuh 1.067% secara bulanan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
       {
         "title": "LPS Terima Rp 2,78 Miliar Hasil Lelang Kasus Korupsi BPR Karya Remaja Indramayu",
         "url": "https://keuangan.kontan.co.id/news/lps-terima-rp-278-miliar-hasil-lelang-kasus-korupsi-bpr-karya-remaja-indramayu",
@@ -208,85 +286,6 @@
         "scope": "market",
         "sentiment": 0.0,
         "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Bank Aladin Kucurkan Pembiayaan Rp 24,9 Miliar Lewat Ekosistem Alfa Group",
-        "url": "https://keuangan.kontan.co.id/news/bank-aladin-kucurkan-pembiayaan-rp-249-miliar-lewat-ekosistem-alfa-group",
-        "source": "kontan/keuangan",
-        "published": "2026-10-21T22:34:21+07:00",
-        "summary": "&#8203;Bank Aladin Syariah menyalurkan pembiayaan Rp 24,9 miliar kepada tiga perusahaan untuk modal kerja dan pembangunan gerai Alfamart serta Alfamidi",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Bank BSN Gandeng Kampus UINSU Perkuat SDM Syariah",
-        "url": "https://keuangan.kontan.co.id/news/bank-bsn-gandeng-kampus-uinsu-perkuat-sdm-syariah",
-        "source": "kontan/keuangan",
-        "published": "2026-10-21T22:30:18+07:00",
-        "summary": "&#8203;Pangsa pasar perbankan syariah RI baru 7,36%. Bank BSN menggandeng kampus untuk mencetak talentamuda dan mendongkrak daya saing industri",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "DPLK Batavia Bidik Dana Kelolaan di Bawah Rp 100 Miliar pada Tahun Pertama Beroperasi",
-        "url": "https://keuangan.kontan.co.id/news/dplk-batavia-bidik-dana-kelolaan-di-bawah-rp-100-miliar-pada-tahun-pertama-beroperasi",
-        "source": "kontan/keuangan",
-        "published": "2026-10-21T22:29:36+07:00",
-        "summary": "DPLK Batavia membidik dana kelolaan di bawah Rp100 miliar pada tahun pertama beroperasi. Saat ini baru terdapat satu nasabah institusi.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Pasar Saham Tertekan, Pengelola DPLK Pertimbangkan Rebalancing ke Instrumen Ini",
-        "url": "https://keuangan.kontan.co.id/news/pasar-saham-tertekan-pengelola-dplk-pertimbangkan-rebalancing-ke-instrumen-ini",
-        "source": "kontan/keuangan",
-        "published": "2026-10-21T21:34:40+07:00",
-        "summary": "Tekanan di pasar saham mendorong pengelola Dana Pensiun Lembaga Keuangan (DPLK) melakukan penyesuaian portofolio. &#8203;",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": -1.0,
-        "positive_terms": [],
-        "negative_terms": [
-          "tertekan"
-        ]
-      },
-      {
-        "title": "Simpanan Valas Perbankan Melonjak, Efek Bunga dan Pelemahan Rupiah",
-        "url": "https://keuangan.kontan.co.id/news/simpanan-valas-perbankan-melonjak-efek-bunga-dan-pelemahan-rupiah",
-        "source": "kontan/keuangan",
-        "published": "2026-10-21T21:15:00+07:00",
-        "summary": "Simpanan valas perbankan melonjak, efek bunga dan pelemahan rupiah. Data BI menunjukkan DPK valas perbankan tumbuh 20,4% per Agustus 2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "melonjak",
-          "tumbuh"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Di Tengah Volatilitas, Manajemen BSI Pertimbangkan Buyback Saham",
-        "url": "https://keuangan.kontan.co.id/news/di-tengah-volatilitas-manajemen-bsi-pertimbangkan-buyback-saham",
-        "source": "kontan/keuangan",
-        "published": "2026-10-21T20:07:52+07:00",
-        "summary": "PT Bank Syariah Indonesia Tbk (BSI) membuka peluang melakukan pembelian kembali saham di tengah dinamika pasar modal yang berfluktuasi.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "buyback"
-        ],
         "negative_terms": []
       }
     ]
