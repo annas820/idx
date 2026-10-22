@@ -1,31 +1,31 @@
 {
   "schema": "idx.market.v1",
   "provider": "yahoo",
-  "fetched_at": "2026-10-22T09:06:10Z",
+  "fetched_at": "2026-10-22T10:56:40Z",
   "cached": false,
   "stale": false,
   "warnings": [
     "42 of 955 tickers returned no quote and were skipped"
   ],
   "data": {
-    "as_of": "2026-10-22T15:50:00+07:00",
-    "market_state": "REGULAR",
+    "as_of": "2026-10-22T16:14:59+07:00",
+    "market_state": "POSTPOST",
     "index": {
       "symbol": "^JKSE",
       "name": "IDX COMPOSITE",
-      "price": 5387.327,
-      "change": 58.967285,
-      "change_pct": 1.1066686,
+      "price": 5387.905,
+      "change": 59.54492,
+      "change_pct": 1.1175094,
       "volume": null,
       "value": null,
       "market_cap": null
     },
     "universe": 955,
     "quoted": 913,
-    "advancing": 493,
-    "declining": 212,
-    "unchanged": 208,
-    "turnover": 14697938319400.0,
+    "advancing": 483,
+    "declining": 214,
+    "unchanged": 216,
+    "turnover": 15702194157900.0,
     "liquid_min_market_cap": 1000000000000.0,
     "gainers": [
       {
@@ -34,8 +34,8 @@
         "price": 1225.0,
         "change": 245.0,
         "change_pct": 25.0,
-        "volume": 2659500,
-        "value": 3257887500.0,
+        "volume": 2659800,
+        "value": 3258255000.0,
         "market_cap": 3234553921536.0
       },
       {
@@ -44,19 +44,9 @@
         "price": 5.0,
         "change": 1.0,
         "change_pct": 25.0,
-        "volume": 5973200,
-        "value": 29866000.0,
+        "volume": 11011700,
+        "value": 55058500.0,
         "market_cap": 5149949952000.0
-      },
-      {
-        "symbol": "RLCO",
-        "name": "PT Abadi Lestari Indonesia Tbk",
-        "price": 3320.0,
-        "change": 660.0,
-        "change_pct": 24.81203,
-        "volume": 3606200,
-        "value": 11972584000.0,
-        "market_cap": 10374999965696.0
       },
       {
         "symbol": "ARTA",
@@ -64,8 +54,8 @@
         "price": 2680.0,
         "change": 530.0,
         "change_pct": 24.651163,
-        "volume": 97300,
-        "value": 260764000.0,
+        "volume": 97800,
+        "value": 262104000.0,
         "market_cap": 1197086736384.0
       },
       {
@@ -74,8 +64,8 @@
         "price": 416.0,
         "change": 82.0,
         "change_pct": 24.550898,
-        "volume": 179226300,
-        "value": 74558140800.0,
+        "volume": 179427600,
+        "value": 74641881600.0,
         "market_cap": 3456783089664.0
       },
       {
@@ -84,19 +74,29 @@
         "price": 346.0,
         "change": 68.0,
         "change_pct": 24.460432,
-        "volume": 8224600,
-        "value": 2845711600.0,
+        "volume": 9511100,
+        "value": 3290840600.0,
         "market_cap": 1838762950656.0
       },
       {
         "symbol": "OASA",
         "name": "PT Maharaksa Biru Energi Tbk",
-        "price": 199.0,
-        "change": 39.0,
-        "change_pct": 24.375,
-        "volume": 57190500,
-        "value": 11380909500.0,
-        "market_cap": 1263096823808.0
+        "price": 198.0,
+        "change": 38.0,
+        "change_pct": 23.75,
+        "volume": 58798400,
+        "value": 11642083200.0,
+        "market_cap": 1256749531136.0
+      },
+      {
+        "symbol": "RLCO",
+        "name": "PT Abadi Lestari Indonesia Tbk",
+        "price": 3250.0,
+        "change": 590.0,
+        "change_pct": 22.180452,
+        "volume": 3664500,
+        "value": 11909625000.0,
+        "market_cap": 10156250234880.0
       },
       {
         "symbol": "MBSS",
@@ -104,49 +104,39 @@
         "price": 3950.0,
         "change": 690.0,
         "change_pct": 21.165644,
-        "volume": 5727100,
-        "value": 22622045000.0,
+        "volume": 5899900,
+        "value": 23304605000.0,
         "market_cap": 6912605159424.0
       },
       {
-        "symbol": "POLI",
-        "name": "PT Pollux Hotels Group Tbk",
-        "price": 750.0,
-        "change": 95.0,
-        "change_pct": 14.503817,
-        "volume": 176200,
-        "value": 132150000.0,
-        "market_cap": 1507894886400.0
+        "symbol": "SURE",
+        "name": "PT Super Energy Tbk",
+        "price": 3140.0,
+        "change": 360.0,
+        "change_pct": 12.949639,
+        "volume": 60800,
+        "value": 190912000.0,
+        "market_cap": 4702391500800.0
       },
       {
         "symbol": "ASLI",
         "name": "PT Asri Karya Lestari Tbk",
-        "price": 294.0,
-        "change": 36.0,
-        "change_pct": 13.953488,
-        "volume": 411992300,
-        "value": 121125736200.0,
-        "market_cap": 1837499940864.0
+        "price": 290.0,
+        "change": 32.0,
+        "change_pct": 12.403101,
+        "volume": 418965400,
+        "value": 121499966000.0,
+        "market_cap": 1812499922944.0
       },
       {
         "symbol": "TEBE",
         "name": "PT Dana Brata Luhur Tbk",
-        "price": 1935.0,
-        "change": 215.0,
-        "change_pct": 12.5,
-        "volume": 30901700,
-        "value": 59794789500.0,
-        "market_cap": 2486474899456.0
-      },
-      {
-        "symbol": "BULL",
-        "name": "PT Buana Lintas Lautan Tbk",
-        "price": 292.0,
-        "change": 30.0,
-        "change_pct": 11.450381,
-        "volume": 421658700,
-        "value": 123124340400.0,
-        "market_cap": 4524375801856.0
+        "price": 1920.0,
+        "change": 200.0,
+        "change_pct": 11.627908,
+        "volume": 31466200,
+        "value": 60415104000.0,
+        "market_cap": 2467199975424.0
       },
       {
         "symbol": "MAPI",
@@ -154,9 +144,29 @@
         "price": 1390.0,
         "change": 135.0,
         "change_pct": 10.756972,
-        "volume": 7945200,
-        "value": 11043828000.0,
+        "volume": 8000000,
+        "value": 11120000000.0,
         "market_cap": 23074000863232.0
+      },
+      {
+        "symbol": "BULL",
+        "name": "PT Buana Lintas Lautan Tbk",
+        "price": 290.0,
+        "change": 28.0,
+        "change_pct": 10.687022,
+        "volume": 430603300,
+        "value": 124874957000.0,
+        "market_cap": 4493386711040.0
+      },
+      {
+        "symbol": "POLI",
+        "name": "PT Pollux Hotels Group Tbk",
+        "price": 725.0,
+        "change": 70.0,
+        "change_pct": 10.687022,
+        "volume": 176700,
+        "value": 128107500.0,
+        "market_cap": 1457631657984.0
       },
       {
         "symbol": "PACK",
@@ -164,19 +174,9 @@
         "price": 368.0,
         "change": 32.0,
         "change_pct": 9.523809,
-        "volume": 143991900,
-        "value": 52989019200.0,
+        "volume": 144097100,
+        "value": 53027732800.0,
         "market_cap": 12555837767680.0
-      },
-      {
-        "symbol": "BIPI",
-        "name": "PT Astrindo Nusantara Infrastruktur Tbk",
-        "price": 93.0,
-        "change": 8.0,
-        "change_pct": 9.411765,
-        "volume": 1203487400,
-        "value": 111924328200.0,
-        "market_cap": 5925048418304.0
       }
     ],
     "losers": [
@@ -186,8 +186,8 @@
         "price": 1470.0,
         "change": -110.0,
         "change_pct": -6.962025,
-        "volume": 84000,
-        "value": 123480000.0,
+        "volume": 87400,
+        "value": 128478000.0,
         "market_cap": 3962007715840.0
       },
       {
@@ -196,8 +196,8 @@
         "price": 4700.0,
         "change": -350.0,
         "change_pct": -6.930693,
-        "volume": 466400,
-        "value": 2192080000.0,
+        "volume": 478300,
+        "value": 2248010000.0,
         "market_cap": 2386025775104.0
       },
       {
@@ -205,7 +205,7 @@
         "name": "PT Batulicin Nusantara Maritim Tbk",
         "price": 740.0,
         "change": -55.0,
-        "change_pct": -6.918239,
+        "change_pct": -6.9182386,
         "volume": 226200,
         "value": 167388000.0,
         "market_cap": 2545937022976.0
@@ -215,9 +215,9 @@
         "name": "PT Mora Telematika Indonesia Tbk",
         "price": 2960.0,
         "change": -220.0,
-        "change_pct": -6.918239,
-        "volume": 512100,
-        "value": 1515816000.0,
+        "change_pct": -6.9182386,
+        "volume": 550800,
+        "value": 1630368000.0,
         "market_cap": 141411613671424.0
       },
       {
@@ -225,19 +225,29 @@
         "name": "PT Ifishdeco Tbk",
         "price": 1315.0,
         "change": -95.0,
-        "change_pct": -6.737589,
+        "change_pct": -6.7375884,
         "volume": 219800,
         "value": 289037000.0,
         "market_cap": 2529136214016.0
+      },
+      {
+        "symbol": "COIN",
+        "name": "PT Indokripto Koin Semesta Tbk",
+        "price": 392.0,
+        "change": -28.0,
+        "change_pct": -6.666667,
+        "volume": 105759000,
+        "value": 41457528000.0,
+        "market_cap": 5764705943552.0
       },
       {
         "symbol": "MMIX",
         "name": "PT Multi Medika Internasional Tbk",
         "price": 630.0,
         "change": -45.0,
-        "change_pct": -6.6666665,
-        "volume": 25477500,
-        "value": 16050825000.0,
+        "change_pct": -6.666667,
+        "volume": 25546500,
+        "value": 16094295000.0,
         "market_cap": 3024268034048.0
       },
       {
@@ -245,40 +255,50 @@
         "name": "PT Habco Trans Maritima Tbk",
         "price": 580.0,
         "change": -40.0,
-        "change_pct": -6.451613,
-        "volume": 3694300,
-        "value": 2142694000.0,
+        "change_pct": -6.4516125,
+        "volume": 3744700,
+        "value": 2171926000.0,
         "market_cap": 5405599596544.0
       },
       {
-        "symbol": "MASB",
-        "name": "PT Bank Multiarta Sentosa Tbk",
-        "price": 2810.0,
-        "change": -190.0,
-        "change_pct": -6.3333335,
-        "volume": 2400,
-        "value": 6744000.0,
-        "market_cap": 3939650240512.0
+        "symbol": "APIC",
+        "name": "PT Pacific Strategic Financial Tbk",
+        "price": 410.0,
+        "change": -28.0,
+        "change_pct": -6.3926945,
+        "volume": 1487800,
+        "value": 609998000.0,
+        "market_cap": 4824188846080.0
       },
       {
-        "symbol": "COIN",
-        "name": "PT Indokripto Koin Semesta Tbk",
-        "price": 394.0,
-        "change": -26.0,
-        "change_pct": -6.1904764,
-        "volume": 102609500,
-        "value": 40428143000.0,
-        "market_cap": 5794117451776.0
+        "symbol": "TIFA",
+        "name": "PT KDB Tifa Finance Tbk",
+        "price": 324.0,
+        "change": -22.0,
+        "change_pct": -6.3583813,
+        "volume": 3524000,
+        "value": 1141776000.0,
+        "market_cap": 1150917017600.0
       },
       {
         "symbol": "ARKO",
         "name": "PT Arkora Hydro Tbk",
-        "price": 1410.0,
-        "change": -90.0,
-        "change_pct": -6.0,
-        "volume": 66308700,
-        "value": 93495267000.0,
-        "market_cap": 4129177993216.0
+        "price": 1405.0,
+        "change": -95.0,
+        "change_pct": -6.333333,
+        "volume": 66858600,
+        "value": 93936333000.0,
+        "market_cap": 4114535677952.0
+      },
+      {
+        "symbol": "RISE",
+        "name": "PT Jaya Sukses Makmur Sentosa Tbk",
+        "price": 540.0,
+        "change": -35.0,
+        "change_pct": -6.0869565,
+        "volume": 1295700,
+        "value": 699678000.0,
+        "market_cap": 8747244060672.0
       },
       {
         "symbol": "ROCK",
@@ -286,29 +306,19 @@
         "price": 2090.0,
         "change": -130.0,
         "change_pct": -5.855856,
-        "volume": 141200,
-        "value": 295108000.0,
+        "volume": 143700,
+        "value": 300333000.0,
         "market_cap": 2999536844800.0
       },
       {
-        "symbol": "APIC",
-        "name": "PT Pacific Strategic Financial Tbk",
-        "price": 414.0,
-        "change": -24.0,
-        "change_pct": -5.479452,
-        "volume": 1454500,
-        "value": 602163000.0,
-        "market_cap": 4871254179840.0
-      },
-      {
-        "symbol": "RISE",
-        "name": "PT Jaya Sukses Makmur Sentosa Tbk",
-        "price": 545.0,
-        "change": -30.0,
-        "change_pct": -5.2173915,
-        "volume": 1132900,
-        "value": 617430500.0,
-        "market_cap": 8828237119488.0
+        "symbol": "YUPI",
+        "name": "PT Yupi Indo Jelly Gum Tbk",
+        "price": 965.0,
+        "change": -55.0,
+        "change_pct": -5.392157,
+        "volume": 75000,
+        "value": 72375000.0,
+        "market_cap": 8245431238656.0
       },
       {
         "symbol": "VISI",
@@ -316,19 +326,9 @@
         "price": 750.0,
         "change": -40.0,
         "change_pct": -5.063291,
-        "volume": 501400,
-        "value": 376050000.0,
+        "volume": 520500,
+        "value": 390375000.0,
         "market_cap": 2306250113024.0
-      },
-      {
-        "symbol": "MSIN",
-        "name": "PT MNC Digital Entertainment Tbk",
-        "price": 113.0,
-        "change": -6.0,
-        "change_pct": -5.042017,
-        "volume": 75917200,
-        "value": 8578643600.0,
-        "market_cap": 6856408301568.0
       }
     ],
     "most_active": [
@@ -338,8 +338,8 @@
         "price": 2900.0,
         "change": 90.0,
         "change_pct": 3.202847,
-        "volume": 497024500,
-        "value": 1441371050000.0,
+        "volume": 530527600,
+        "value": 1538530040000.0,
         "market_cap": 436984132665344.0
       },
       {
@@ -347,60 +347,50 @@
         "name": "PT Bank Central Asia Tbk",
         "price": 5175.0,
         "change": -100.0,
-        "change_pct": -1.8957345,
-        "volume": 250254900,
-        "value": 1295069107500.0,
+        "change_pct": -1.8957347,
+        "volume": 286928500,
+        "value": 1484854987500.0,
         "market_cap": 635706095435776.0
       },
       {
         "symbol": "BMRI",
         "name": "PT Bank Mandiri (Persero) Tbk",
-        "price": 3810.0,
-        "change": 110.0,
-        "change_pct": 2.9729729,
-        "volume": 218582600,
-        "value": 832799706000.0,
-        "market_cap": 354228400816128.0
+        "price": 3850.0,
+        "change": 150.0,
+        "change_pct": 4.054054,
+        "volume": 244602000,
+        "value": 941717700000.0,
+        "market_cap": 357947339177984.0
       },
       {
         "symbol": "TLKM",
         "name": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
-        "price": 2180.0,
-        "change": 60.0,
-        "change_pct": 2.8301888,
-        "volume": 274035700,
-        "value": 597397826000.0,
-        "market_cap": 214906439729152.0
-      },
-      {
-        "symbol": "BUMI",
-        "name": "PT Bumi Resources Tbk",
-        "price": 140.0,
-        "change": 5.0,
-        "change_pct": 3.7037036,
-        "volume": 3230336900,
-        "value": 452247166000.0,
-        "market_cap": 51986955239424.0
+        "price": 2200.0,
+        "change": 80.0,
+        "change_pct": 3.7735848,
+        "volume": 354937200,
+        "value": 780861840000.0,
+        "market_cap": 216878064599040.0
       },
       {
         "symbol": "ASII",
         "name": "PT Astra International Tbk",
-        "price": 4480.0,
-        "change": -80.0,
-        "change_pct": -1.754386,
-        "volume": 95431300,
-        "value": 427532224000.0,
-        "market_cap": 178841884557312.0
+        "price": 4450.0,
+        "change": -110.0,
+        "change_pct": -2.4122806,
+        "volume": 105787900,
+        "value": 470756155000.0,
+        "market_cap": 177644276547584.0
       },
       {
-        "symbol": "SINI",
-        "name": "PT Singaraja Putra Tbk",
-        "price": 10000.0,
-        "change": 350.0,
-        "change_pct": 3.626943,
-        "volume": 33215700,
-        "value": 332157000000.0,
-        "market_cap": 12024999313408.0
+        "symbol": "BUMI",
+        "name": "PT Bumi Resources Tbk",
+        "price": 139.0,
+        "change": 4.0,
+        "change_pct": 2.9629629,
+        "volume": 3274030900,
+        "value": 455090295100.0,
+        "market_cap": 51615620923392.0
       },
       {
         "symbol": "ANTM",
@@ -408,79 +398,89 @@
         "price": 2840.0,
         "change": 120.0,
         "change_pct": 4.4117646,
-        "volume": 103508500,
-        "value": 293964140000.0,
+        "volume": 123756100,
+        "value": 351467324000.0,
         "market_cap": 68247374266368.0
       },
       {
         "symbol": "BBNI",
         "name": "PT Bank Negara Indonesia (Persero) Tbk",
-        "price": 3350.0,
-        "change": 100.0,
-        "change_pct": 3.0769231,
-        "volume": 83834800,
-        "value": 280846580000.0,
-        "market_cap": 124810273226752.0
+        "price": 3410.0,
+        "change": 160.0,
+        "change_pct": 4.923077,
+        "volume": 101169800,
+        "value": 344989018000.0,
+        "market_cap": 127045677875200.0
       },
       {
-        "symbol": "BUVA",
-        "name": "PT Bukit Uluwatu Villa Tbk",
-        "price": 318.0,
-        "change": -4.0,
-        "change_pct": -1.242236,
-        "volume": 843817200,
-        "value": 268333869600.0,
-        "market_cap": 8847992291328.0
+        "symbol": "SINI",
+        "name": "PT Singaraja Putra Tbk",
+        "price": 10000.0,
+        "change": 350.0,
+        "change_pct": 3.626943,
+        "volume": 33713400,
+        "value": 337134000000.0,
+        "market_cap": 12024999313408.0
       },
       {
         "symbol": "ENRG",
         "name": "PT Energi Mega Persada Tbk",
-        "price": 810.0,
-        "change": 0.0,
-        "change_pct": 0.0,
-        "volume": 324481500,
-        "value": 262830015000.0,
-        "market_cap": 28899916382208.0
+        "price": 815.0,
+        "change": 5.0,
+        "change_pct": 0.61728394,
+        "volume": 331185700,
+        "value": 269916345500.0,
+        "market_cap": 29078310617088.0
       },
       {
-        "symbol": "BRMS",
-        "name": "PT Bumi Resources Minerals Tbk",
-        "price": 430.0,
-        "change": -14.0,
-        "change_pct": -3.1531532,
-        "volume": 563557000,
-        "value": 242329510000.0,
-        "market_cap": 60967136264192.0
-      },
-      {
-        "symbol": "CUAN",
-        "name": "PT Petrindo Jaya Kreasi Tbk",
-        "price": 505.0,
-        "change": 0.0,
-        "change_pct": 0.0,
-        "volume": 478424500,
-        "value": 241604372500.0,
-        "market_cap": 56761595723776.0
+        "symbol": "BUVA",
+        "name": "PT Bukit Uluwatu Villa Tbk",
+        "price": 314.0,
+        "change": -8.0,
+        "change_pct": -2.484472,
+        "volume": 854759900,
+        "value": 268394608600.0,
+        "market_cap": 8736696434688.0
       },
       {
         "symbol": "TPIA",
         "name": "PT Chandra Asri Pacific Tbk",
-        "price": 1345.0,
-        "change": 5.0,
-        "change_pct": 0.37313432,
-        "volume": 178141300,
-        "value": 239600048500.0,
-        "market_cap": 116294745587712.0
+        "price": 1340.0,
+        "change": 0.0,
+        "change_pct": 0.0,
+        "volume": 192500500,
+        "value": 257950670000.0,
+        "market_cap": 115862421897216.0
+      },
+      {
+        "symbol": "BRMS",
+        "name": "PT Bumi Resources Minerals Tbk",
+        "price": 432.0,
+        "change": -12.0,
+        "change_pct": -2.7027028,
+        "volume": 586184300,
+        "value": 253231617600.0,
+        "market_cap": 61250704769024.0
       },
       {
         "symbol": "BRIS",
         "name": "PT Bank Syariah Indonesia Tbk",
-        "price": 1035.0,
-        "change": -5.0,
-        "change_pct": -0.48076922,
-        "volume": 229473200,
-        "value": 237504762000.0,
-        "market_cap": 47743783403520.0
+        "price": 1025.0,
+        "change": -15.0,
+        "change_pct": -1.4423077,
+        "volume": 243496600,
+        "value": 249584015000.0,
+        "market_cap": 47282489655296.0
+      },
+      {
+        "symbol": "AMMN",
+        "name": "PT Amman Mineral Internasional Tbk",
+        "price": 3950.0,
+        "change": 210.0,
+        "change_pct": 5.614973,
+        "volume": 61568400,
+        "value": 243195180000.0,
+        "market_cap": 286029051330560.0
       }
     ],
     "heavyweights": [
@@ -489,9 +489,9 @@
         "name": "PT Bank Central Asia Tbk",
         "price": 5175.0,
         "change": -100.0,
-        "change_pct": -1.8957345,
-        "volume": 250254900,
-        "value": 1295069107500.0,
+        "change_pct": -1.8957347,
+        "volume": 286928500,
+        "value": 1484854987500.0,
         "market_cap": 635706095435776.0
       },
       {
@@ -500,8 +500,8 @@
         "price": 2900.0,
         "change": 90.0,
         "change_pct": 3.202847,
-        "volume": 497024500,
-        "value": 1441371050000.0,
+        "volume": 530527600,
+        "value": 1538530040000.0,
         "market_cap": 436984132665344.0
       },
       {
@@ -515,24 +515,24 @@
         "market_cap": 436165874286592.0
       },
       {
-        "symbol": "BYAN",
-        "name": "PT Bayan Resources Tbk.",
-        "price": 10675.0,
-        "change": 400.0,
-        "change_pct": 3.892944,
-        "volume": 1958800,
-        "value": 20910190000.0,
-        "market_cap": 355833342853120.0
-      },
-      {
         "symbol": "BMRI",
         "name": "PT Bank Mandiri (Persero) Tbk",
-        "price": 3810.0,
-        "change": 110.0,
-        "change_pct": 2.9729729,
-        "volume": 218582600,
-        "value": 832799706000.0,
-        "market_cap": 354228400816128.0
+        "price": 3850.0,
+        "change": 150.0,
+        "change_pct": 4.054054,
+        "volume": 244602000,
+        "value": 941717700000.0,
+        "market_cap": 357947339177984.0
+      },
+      {
+        "symbol": "BYAN",
+        "name": "PT Bayan Resources Tbk.",
+        "price": 10600.0,
+        "change": 325.0,
+        "change_pct": 3.163017,
+        "volume": 1969900,
+        "value": 20880940000.0,
+        "market_cap": 353333336342528.0
       },
       {
         "symbol": "BREN",
@@ -540,8 +540,8 @@
         "price": 2320.0,
         "change": 160.0,
         "change_pct": 7.4074073,
-        "volume": 22835700,
-        "value": 52978824000.0,
+        "volume": 23389400,
+        "value": 54263408000.0,
         "market_cap": 310368496779264.0
       },
       {
@@ -550,38 +550,38 @@
         "price": 3950.0,
         "change": 210.0,
         "change_pct": 5.614973,
-        "volume": 58127300,
-        "value": 229602835000.0,
+        "volume": 61568400,
+        "value": 243195180000.0,
         "market_cap": 286029051330560.0
       },
       {
         "symbol": "TLKM",
         "name": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
-        "price": 2180.0,
-        "change": 60.0,
-        "change_pct": 2.8301888,
-        "volume": 274035700,
-        "value": 597397826000.0,
-        "market_cap": 214906439729152.0
+        "price": 2200.0,
+        "change": 80.0,
+        "change_pct": 3.7735848,
+        "volume": 354937200,
+        "value": 780861840000.0,
+        "market_cap": 216878064599040.0
       },
       {
         "symbol": "ASII",
         "name": "PT Astra International Tbk",
-        "price": 4480.0,
-        "change": -80.0,
-        "change_pct": -1.754386,
-        "volume": 95431300,
-        "value": 427532224000.0,
-        "market_cap": 178841884557312.0
+        "price": 4450.0,
+        "change": -110.0,
+        "change_pct": -2.4122806,
+        "volume": 105787900,
+        "value": 470756155000.0,
+        "market_cap": 177644276547584.0
       },
       {
         "symbol": "MORA",
         "name": "PT Mora Telematika Indonesia Tbk",
         "price": 2960.0,
         "change": -220.0,
-        "change_pct": -6.918239,
-        "volume": 512100,
-        "value": 1515816000.0,
+        "change_pct": -6.9182386,
+        "volume": 550800,
+        "value": 1630368000.0,
         "market_cap": 141411613671424.0
       },
       {
@@ -590,26 +590,26 @@
         "price": 9800.0,
         "change": 0.0,
         "change_pct": 0.0,
-        "volume": 1000,
-        "value": 9800000.0,
+        "volume": 2100,
+        "value": 20580000.0,
         "market_cap": 139003193982976.0
       },
       {
         "symbol": "BRPT",
         "name": "PT Barito Pacific Tbk",
-        "price": 1450.0,
-        "change": -35.0,
-        "change_pct": -2.3569024,
-        "volume": 107466500,
-        "value": 155826425000.0,
-        "market_cap": 135882027827200.0
+        "price": 1440.0,
+        "change": -45.0,
+        "change_pct": -3.030303,
+        "volume": 115064900,
+        "value": 165693456000.0,
+        "market_cap": 134944911261696.0
       },
       {
         "symbol": "SRAJ",
         "name": "PT Sejahteraraya Anugrahjaya Tbk",
         "price": 10950.0,
         "change": -25.0,
-        "change_pct": -0.22779043,
+        "change_pct": -0.22779045,
         "volume": 2700,
         "value": 29565000.0,
         "market_cap": 134016611123200.0
@@ -627,12 +627,12 @@
       {
         "symbol": "BBNI",
         "name": "PT Bank Negara Indonesia (Persero) Tbk",
-        "price": 3350.0,
-        "change": 100.0,
-        "change_pct": 3.0769231,
-        "volume": 83834800,
-        "value": 280846580000.0,
-        "market_cap": 124810273226752.0
+        "price": 3410.0,
+        "change": 160.0,
+        "change_pct": 4.923077,
+        "volume": 101169800,
+        "value": 344989018000.0,
+        "market_cap": 127045677875200.0
       }
     ]
   }

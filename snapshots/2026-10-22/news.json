@@ -1,7 +1,7 @@
 {
   "schema": "idx.news.v1",
   "provider": "news",
-  "fetched_at": "2026-10-22T09:06:11Z",
+  "fetched_at": "2026-10-22T10:56:42Z",
   "cached": false,
   "stale": false,
   "warnings": [
@@ -24,6 +24,183 @@
     "company_matches": 0,
     "company_only": false,
     "items": [
+      {
+        "title": "Premi Unitlink Tumbuh 18,34% per Agustus 2026, Ini Catatan OJK",
+        "url": "https://keuangan.kontan.co.id/news/premi-unitlink-tumbuh-1834-per-agustus-2026-ini-catatan-ojk",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T17:48:14+07:00",
+        "summary": "OJK mencatat premi unitlink mencapai Rp 31,82 triliun per Agustus 2026, tumbuh 18,34% secara tahunan di industri asuransi jiwa.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Berkoordinasi dengan DJP Terkait Ketentuan Perpajakan Seiring Penerapan PSAK 117",
+        "url": "https://keuangan.kontan.co.id/news/ojk-berkoordinasi-dengan-djp-terkait-ketentuan-perpajakan-seiring-penerapan-psak-117",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T17:40:57+07:00",
+        "summary": "OJK mewajibkan seluruh perusahaan asuransi dan reasuransi menerapkan laporan keuangan versi Pernyataan Standar Akuntansi Keuangan (PSAK) 117",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pengadilan Niaga Batalkan Putusan KPPU Soal Suku Bunga Pinjol, Ini Respons AFPI",
+        "url": "https://keuangan.kontan.co.id/news/pengadilan-niaga-batalkan-putusan-kppu-soal-suku-bunga-pinjol-ini-respons-afpi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T17:36:44+07:00",
+        "summary": "Pengadilan Niaga mengabulkan permohonan keberatan industri fintech P2P lending terhadap putusan KPPU mengenai perkara suku bunga pinjaman online.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Fintech Lending Akan Dikelompokkan Menjadi 4 Tier, Begini Respons Pindar UKU",
+        "url": "https://keuangan.kontan.co.id/news/fintech-lending-akan-dikelompokkan-menjadi-4-tier-begini-respons-pindar-uku",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T17:36:11+07:00",
+        "summary": "OJK akan mengelompokkan penyelenggara fintech lending atau pinjaman daring (pindar) ke dalam empat tier berdasarkan sejumlah indikator.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri Buyback 91,75 Juta Saham, Dividen yang Dibagikan Capai Rp 50,63 Triliun",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-buyback-9175-juta-saham-dividen-yang-dibagikan-capai-rp-5063-triliun",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T17:15:24+07:00",
+        "summary": "Bank Mandiri merealisasikan buyback 91,75 juta saham dan membagikan dividen Rp 50,63 triliun sepanjang kalender 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "dividen",
+          "buyback"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BRI Insurance Perkuat Literasi Keuangan di Daerah",
+        "url": "https://keuangan.kontan.co.id/news/bri-insurancce-perkuat-literasi-keuangan-di-daerah",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T17:08:44+07:00",
+        "summary": "Kegiatan ini mengintegrasikan upaya pelestarian lingkungan dengan edukasi keuangan agar masyarakat memiliki pengetahuan pengelolaan keuangan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "IFG Perkuat Talenta Muda Asuransi Lewat Program Magang Nasional",
+        "url": "https://keuangan.kontan.co.id/news/ifg-perkuat-talenta-muda-asuransi-lewat-program-magang-nasional",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T17:07:14+07:00",
+        "summary": "Program Magang Nasional menjadi langkah IFG menyiapkan talenta muda yang kompeten dan siap terjun ke industri asuransi",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Hasil Investasi Industri Membaik, Jasindo Syariah Makin Selektif Kelola Portofolio",
+        "url": "https://keuangan.kontan.co.id/news/hasil-investasi-industri-membaik-jasindo-syariah-makin-selektif-kelola-portofolio",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T17:03:59+07:00",
+        "summary": "Otoritas Jasa Keuangan (OJK) mencatat, hasil investasi industri asuransi syariah berbalik positif, mencapai Rp 1,2 triliun per Agustus 2026",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "positif",
+          "membaik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Klaim Asuransi Marine Cargo Masih Terkendali meski Tumbuh Lebih Cepat dari Premi",
+        "url": "https://keuangan.kontan.co.id/news/klaim-asuransi-marine-cargo-masih-terkendali-meski-tumbuh-lebih-cepat-dari-premi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T16:56:27+07:00",
+        "summary": "Otoritas Jasa Keuangan (OJK) mencatat klaim asuransi marine cargo naik 16,95% per Agustus 2026, jauh di atas kenaikan premi yang hanya 3,49%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "tumbuh",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Premi Lini Asuransi Engineering Mencapai Rp 4,43 triliun per Agustus 2026",
+        "url": "https://keuangan.kontan.co.id/news/premi-lini-asuransi-engineering-mencapai-rp-443-triliun-per-agustus-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T16:55:30+07:00",
+        "summary": "OJK catat pendapatan premi lini asuransi engineering di industri asuransi umum dan reasuransi tercatat sebesar Rp 4,43 triliun per Agustus 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Allo Bank (BBHI) Bidik NIM 10%&#8211;10,5% hingga Akhir 2026, Ini Strategi Jaga Profit",
+        "url": "https://keuangan.kontan.co.id/news/allo-bank-bbhi-bidik-nim-10105-hingga-akhir-2026-ini-strategi-jaga-profit",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T16:36:08+07:00",
+        "summary": "Allo Bank (BBHI) menargetkan NIM 10%&ndash;10,5% hingga akhir 2026 dengan perkuat dana murah, optimalkan kredit, dan meningkatkan pendapatan nonbunga.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "profit"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Catat Premi Asuransi Kendaraan Turun 1,57% Saat Penjualan Kendaraan Naik",
+        "url": "https://keuangan.kontan.co.id/news/ojk-catat-premi-asuransi-kendaraan-turun-157-saat-penjualan-kendaraan-naik",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T16:24:28+07:00",
+        "summary": "Penjualan mobil naik 21% hingga September 2026, tetapi premi asuransi kendaraan turun 1,57% akibat berbagai faktor, termasuk tarif & daya beli.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "naik",
+          "beli"
+        ],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "DPLK Avrist Optimistis Rasio Aset Dana Pensiun Capai 11,2% terhadap PDB pada 2029",
+        "url": "https://keuangan.kontan.co.id/news/dplk-avrist-optimistis-rasio-aset-dana-pensiun-capai-112-terhadap-pdb-pada-2029",
+        "source": "kontan/keuangan",
+        "published": "2026-10-22T16:15:54+07:00",
+        "summary": "DPLK Avrist optimistis target rasio aset dana pensiun terhadap PDB sebesar 11,2% pada 2029 &#8203;dapat tercapai.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "optimistis"
+        ],
+        "negative_terms": []
+      },
       {
         "title": "Bank Mandiri Targetkan 1.500 Kartu Kredit Indonesia Terbit Tahun Ini",
         "url": "https://keuangan.kontan.co.id/news/bank-mandiri-targetkan-1500-kartu-kredit-indonesia-terbit-tahun-ini",
@@ -115,178 +292,6 @@
         "negative_terms": [
           "korupsi"
         ]
-      },
-      {
-        "title": "Penempatan Investasi Asuransi Jiwa di SRBI Mencapai Rp 2,58 Triliun per Agustus 2026",
-        "url": "https://keuangan.kontan.co.id/news/penempatan-investasi-asuransi-jiwa-di-srbi-mencapai-rp-258-triliun-per-agustus-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T13:12:31+07:00",
-        "summary": "OJK mencatat penempatan investasi industri asuransi jiwa di instrumen SRBI mencapai Rp 2,58 triliun per Agustus 2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Eximbank Catat Potensi Transaksi Ekspor US$ 7,3 Juta di TEI 2026, Kopi Jadi Andalan",
-        "url": "https://keuangan.kontan.co.id/news/eximbank-catat-potensi-transaksi-ekspor-us-73-juta-di-tei-2026-kopi-jadi-andalan",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T12:45:35+07:00",
-        "summary": "Indonesia Eximbank mencatat potensi transaksi ekspor US$ 7,3 juta di TEI 2026, didominasi kopi untuk pasar Belanda dan Amerika Serikat.&#8203;",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "JTrust Bank Buka Suara soal Volatilitas Saham BCIC",
-        "url": "https://keuangan.kontan.co.id/news/jtrust-bank-buka-suara-soal-volatilitas-saham-bcic",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T12:34:28+07:00",
-        "summary": "BCIC menyatakan belum memiliki rencana aksi korporasi dalam waktu dekat, termasuk yang berpotensi berdampak terhadap pencatatan saham BEI",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Survei BI: Penyaluran Kredit Baru Diprediksi Meningkat pada Kuartal IV-2026",
-        "url": "https://keuangan.kontan.co.id/news/survei-bi-penyaluran-kredit-baru-diprediksi-meningkat-pada-kuartal-iv-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T11:45:55+07:00",
-        "summary": "BI proyeksi kredit perbankan tumbuh 8,20% pada 2026, didukung peningkatan penyaluran kredit baru dan pelonggaran standar pinjaman pada kuartal IV.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "tumbuh"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Raih Restu OJK, AIA Financial Siap Alihkan UUS ke AIA Syariah Insurance 1 November",
-        "url": "https://keuangan.kontan.co.id/news/raih-restu-ojk-aia-financial-siap-alihkan-uus-ke-aia-syariah-insurance-1-november",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T11:37:56+07:00",
-        "summary": "AIA Financial raih persetujuan OJK untuk alihkan portofolio syariah ke AIA Syariah mulai 1 November 2026, dengan manfaat polis nasabah terjaga.&#8203;",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "CIMB Group Bantah Kabar Delisting Saham CIMB Niaga (BNGA)",
-        "url": "https://keuangan.kontan.co.id/news/cimb-group-bantah-kabar-delisting-saham-cimb-niaga-bnga",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T10:43:25+07:00",
-        "summary": "CIMB Group bantah rencana privatisasi saham BNGA dan menegaskan belum mengambil keputusan, mengkaji pemenuhan aturan minimum free float BEI 15%.&#8203;",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": -1.0,
-        "positive_terms": [],
-        "negative_terms": [
-          "delisting"
-        ]
-      },
-      {
-        "title": "Premi Asuransi Kesehatan Industri Asuransi Jiwa Tumbuh 12,01% per Agustus 2026",
-        "url": "https://keuangan.kontan.co.id/news/premi-asuransi-kesehatan-industri-asuransi-jiwa-tumbuh-1201-per-agustus-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T09:25:18+07:00",
-        "summary": "Premi asuransi kesehatan jiwa tumbuh 12,01% menjadi Rp 27,16 triliun per Agustus 2026, melampaui pertumbuhan klaim yang mencapai 10,29%.&#8203;",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "tumbuh",
-          "pertumbuhan"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Pembiayaan Multiguna iB Hijrah Bank Muamalat Tumbuh 11,8% per September 2026",
-        "url": "https://keuangan.kontan.co.id/news/pembiayaan-multiguna-ib-hijrah-bank-muamalat-tumbuh-118-per-september-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T08:58:28+07:00",
-        "summary": "Bank Muamalat mencatat tren positif pada produk pembiayaan Multiguna iB Hijrah yang terus tumbuh sejalan dengan naiknya kebutuhan nasabah",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "tumbuh",
-          "positif"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "OJK Ungkap Peluang Industri Asuransi saat Tren Event Lari Menjamur",
-        "url": "https://keuangan.kontan.co.id/news/ojk-ungkap-peluang-industri-asuransi-saat-tren-event-lari-menjamur",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T08:40:19+07:00",
-        "summary": "OJK memandang positif keterlibatan industri asuransi dalam penyelenggaraan maupun sponsorship event lari.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "positif"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "OJK Lihat Spin Off UUS Perasuransian Dapat Meningkatkan Kebutuhan Aktuaris",
-        "url": "https://keuangan.kontan.co.id/news/ojk-lihat-spin-off-uus-perasuransian-dapat-meningkatkan-kebutuhan-aktuaris",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T08:17:28+07:00",
-        "summary": "OJK mewajibkan perusahaan perasuransian untuk melakukan pemisahan atau spin off UUS paling lambat akhir 2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Pembiayaan Multiguna Bank Muamalat Tumbuh 11,8%",
-        "url": "https://keuangan.kontan.co.id/news/pembiayaan-multiguna-bank-muamalat-tumbuh-118",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T07:22:36+07:00",
-        "summary": "Hingga September 2026, outstanding pembiayaan Multiguna iB Hijrah mencapai Rp 675 miliar tumbuh 11%.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "tumbuh"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Wacana Delisting Mengembang, Simak Penjelasan CIMB Niaga (BNGA)",
-        "url": "https://keuangan.kontan.co.id/news/wacana-delisting-mengembang-simak-penjelasan-cimb-niaga-bnga",
-        "source": "kontan/keuangan",
-        "published": "2026-10-22T05:57:30+07:00",
-        "summary": "&#8203;Presiden Direktur CIMB Niaga Lani Darmawan buka suara terkait isu delisting Bank CIMB Niaga (BNGA) dari pasar saham domestik",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": -1.0,
-        "positive_terms": [],
-        "negative_terms": [
-          "delisting"
-        ]
-      },
-      {
-        "title": "OJK Cabut Izin Usaha Koperasi LKM Bulu Makmur di Kabupaten Wonogiri",
-        "url": "https://keuangan.kontan.co.id/news/ojk-cabut-izin-usaha-koperasi-lkm-bulu-makmur-di-kabupaten-wonogiri",
-        "source": "kontan/keuangan",
-        "published": "2026-10-21T22:35:55+07:00",
-        "summary": "OJK mencabut izin usaha koperasi Lembaga Keuangan Mikro (LKM) Bulu Makmur di Kabupaten Wonogiri, Jawa Tengah.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
       }
     ]
   }
