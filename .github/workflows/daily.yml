@@ -1,0 +1,62 @@
+name: daily market snapshot
+
+on:
+  schedule:
+    - cron: "30 10 * * 1-5" # 17:30 WIB, Mon-Fri
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install idx
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Take snapshot
+        shell: bash
+        run: |
+          D=$(TZ=Asia/Jakarta date +%F)
+          OUT=snapshots/$D
+          mkdir -p "$OUT"
+          S="$OUT/status.txt"
+          : > "$S"
+          WATCH="AADI,INCO,INDF,ASII,BBCA,BBRI,BMRI,BBNI,TLKM,ANTM,PTBA,ADRO,UNVR,ICBP,AKRA,BBTN"
+
+          run() {
+            name=$1; file=$2; shift 2
+            if "$@" > "$OUT/$file" 2> "$OUT/$name.err"; then
+              echo "OK   $name" >> "$S"
+            else
+              echo "FAIL $name (exit $?)" >> "$S"
+            fi
+          }
+
+          run holidays   holidays.json   idx -o json market holidays --upcoming
+          run overview   overview.json   idx -o json market overview --top 15
+          run indices    indices.json    idx -o json market indices
+          run quotes     quotes.json     idx -o json stocks quote "$WATCH"
+          run returns    returns.json    idx -o json stocks returns "$WATCH"
+          run news       news.json       idx -o json stocks news
+          run foreign_mkt foreign_market.json idx -o json market foreign --top 15
+          run bandar     bandar.json     idx -o json bandar screen --preset foreign-accumulation
+          for T in AADI INCO INDF ASII; do
+            run "hist_$T"  "hist_$T.csv"  idx -o csv stocks history "$T" --period 1y --interval 1d --limit 300
+            run "tech_$T"  "tech_$T.json" idx -o json stocks technical "$T"
+            run "frgn_$T"  "frgn_$T.json" idx -o json stocks foreign "$T" --days 20
+          done
+          date -u +"run at %F %T UTC" >> "$S"
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "snapshot-bot"
+          git config user.email "snapshot-bot@users.noreply.github.com"
+          git add snapshots
+          git diff --cached --quiet || git commit -m "snapshot $(TZ=Asia/Jakarta date +%F)"
+          git push
