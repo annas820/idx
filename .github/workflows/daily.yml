@@ -46,10 +46,12 @@ jobs:
           run news       news.json       idx -o json stocks news
           run foreign_mkt foreign_market.json idx -o json market foreign --top 15
           run bandar     bandar.json     idx -o json bandar screen --preset foreign-accumulation
+          run fnet_1d    fnet_1d.json    idx -o json bandar screen --period 1d --sort fnet --desc --limit 0 --scan 100
+          run fnet_5d    fnet_5d.json    idx -o json bandar screen --period 1w --sort fnet --desc --limit 0 --scan 100
           for T in AADI INCO INDF ASII; do
-            run "hist_$T"  "hist_$T.csv"  idx -o csv stocks history "$T" --period 1y --interval 1d --limit 300
-            run "tech_$T"  "tech_$T.json" idx -o json stocks technical "$T"
-            run "frgn_$T"  "frgn_$T.json" idx -o json stocks foreign "$T" --days 20
+          run "hist_$T"  "hist_$T.csv"  idx -o csv stocks history "$T" --period 1y --interval 1d --limit 300
+          run "tech_$T"  "tech_$T.json" idx -o json stocks technical "$T"
+          run "frgn_$T"  "frgn_$T.json" idx -o json stocks foreign "$T" --days 20
           done
           date -u +"run at %F %T UTC" >> "$S"
 
