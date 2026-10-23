@@ -1,0 +1,304 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-10-23T10:55:26Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403",
+    "cnbcindonesia/market: HTTP 403",
+    "cnbcindonesia/research: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 25,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Transaksi Livin&#8217; by Mandiri Tumbuh 22%, Pengguna Tembus 42,6 Juta",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-livin-by-mandiri-tumbuh-22-pengguna-tembus-426-juta",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T17:34:29+07:00",
+        "summary": "Terus perluas layanan digital untuk penuhi kebutuhan transaksi nasabah, Livin&rsquo; by Mandiri memiliki 42,6 juta pengguna terdaftar per September 2026",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Pendapatan Bunga Bank Mandiri Tumbuh 7,08% Jadi Rp 97,3 Triliun pada Kuartal III-2026",
+        "url": "https://keuangan.kontan.co.id/news/pendapatan-bunga-bank-mandiri-tumbuh-708-jadi-rp-973-triliun-pada-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T17:26:22+07:00",
+        "summary": "PT Bank Mandiri Tbk membukukan pertumbuhan pendapatan bunga sebesar 7,08% secara tahunan menjadi Rp 97,3 triliun hingga September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BNI Sebut Pelonggaran GWM BI Dorong Penyaluran Kredit Perbankan",
+        "url": "https://keuangan.kontan.co.id/news/bni-sebut-pelonggaran-gwm-bi-dorong-penyaluran-kredit-perbankan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T17:21:22+07:00",
+        "summary": "BNI sebut pelonggaran Giro Wajib Minimum (GWM) oleh BI dapat memberikan ruang likuiditas lebih besar untuk penyaluran kredit ke sektor riil.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Biar Rasio Klaim Tetap Terkendali, Sinar Mas Asuransi Syariah Pakai Jurus Ini",
+        "url": "https://keuangan.kontan.co.id/news/biar-rasio-klaim-tetap-terkendali-sinar-mas-asuransi-syariah-pakai-jurus-ini",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T17:16:32+07:00",
+        "summary": "PT Sinar Mas Asuransi Syariah (SMAS) menerapkan sejumlah strategi guna menjaga rasio klaim tetap terkendali",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri Salurkan Kredit Korporasi Rp 700 Triliun Per September 2026",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-salurkan-kredit-korporasi-rp-700-triliun-per-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T17:13:20+07:00",
+        "summary": "Bank Mandiri menyalurkan kredit koporasi sebesar Rp 700 triliun per September 2026 atau tumbuh 22% secara tahunan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK: Asuransi Umum Konvensional Punya Kesempatan Ubah Jenis Usaha Jadi Syariah",
+        "url": "https://keuangan.kontan.co.id/news/ojk-asuransi-umum-konvensional-punya-kesempatan-ubah-jenis-usaha-jadi-syariah",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T17:09:59+07:00",
+        "summary": "OJK menyebut perusahaan asuransi umum konvensional memiliki kesempatan untuk mengubah jenis usaha menjadi perusahaan asuransi umum syariah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Sebut Asuransi Mikro Dapat Jadi Sumber Pertumbuhan Baru bagi Industri Asuransi",
+        "url": "https://keuangan.kontan.co.id/news/ojk-sebut-asuransi-mikro-dapat-jadi-sumber-pertumbuhan-baru-bagi-industri-asuransi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T17:08:15+07:00",
+        "summary": "OJK menyebut asuransi mikro dapat menjadi sumber pertumbuhan baru industri asuransi, khususnya menjangkau segmen yang belum terlayani.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri Catat Laba Rp 45,5 Triliun hingga Kuartal III 2026",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-catat-laba-rp-455-triliun-hingga-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T17:05:55+07:00",
+        "summary": "Bank Mandiri membukukan laba bersih secara bank only sebesar Rp 45,5 triliun hingga kuartal III 2026, tumbuh 20,7% secara tahunan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "ADPI: SBN dan Deposito Jadi Instrumen Aman Investasi DPLK di Tengah Volatilitas Pasar",
+        "url": "https://keuangan.kontan.co.id/news/adpi-sbn-dan-deposito-jadi-instrumen-aman-investasi-dplk-di-tengah-volatilitas-pasar",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T16:51:49+07:00",
+        "summary": "Di tengah volatilitas pasar, Asosiasi Dana Pensiun Indonesia (ADPI) menilai DPLK masih memiliki ruang diversifikasi portofolio investasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Soroti Keterbatasan Kapabilitas Reasuransi, Ketergantungan Asing Tinggi",
+        "url": "https://keuangan.kontan.co.id/news/ojk-soroti-keterbatasan-kapabilitas-reasuransi-ketergantungan-asing-tinggi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T16:42:20+07:00",
+        "summary": "Otoritas Jasa Keuangan (OJK) sempat menyampaikan industri reasuransi menghadapi isu terkait kapabilitas atau capability.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Allianz Life Catat Premi Asuransi Berbasis Valuta Asing Rp 4 Triliun per Agustus 2026",
+        "url": "https://keuangan.kontan.co.id/news/allianz-life-catat-premi-asuransi-berbasis-valuta-asing-rp-4-triliun-per-agustus-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T16:37:12+07:00",
+        "summary": "PT Asuransi Allianz Life Indonesia (Allianz Life) mencatat kinerja produk asuransi berbasis valuta asing tumbuh positif.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "positif"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Perjelas Aturan Dana Pesangon, Peluang DPLK Garap DKPK Terbuka",
+        "url": "https://keuangan.kontan.co.id/news/ojk-perjelas-aturan-dana-pesangon-peluang-dplk-garap-dkpk-terbuka",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T16:33:21+07:00",
+        "summary": "OJK merinci aturan dana kompensasi pascakerja untuk memberi kepastian hukum dan membuka peluang perluasan penyelenggara DPLK.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Usai Alami Tren Pertumbuhan, Laba Fintech Lending Tertekan per Agustus 2026",
+        "url": "https://keuangan.kontan.co.id/news/usai-alami-tren-pertumbuhan-laba-fintech-lending-tertekan-per-agustus-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T16:26:26+07:00",
+        "summary": "OJK mencatat, laba komprehensif industri fintech lending mencapai Rp 1,58 triliun per Agustus 2026, atau terkontraksi 2,99% YoY.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "laba",
+          "pertumbuhan"
+        ],
+        "negative_terms": [
+          "tertekan"
+        ]
+      },
+      {
+        "title": "Turunkan GWM, BI: Bukan Ketat, Likuiditas Perlu Diseimbangkan",
+        "url": "https://keuangan.kontan.co.id/news/turunkan-gwm-bi-bukan-ketat-likuiditas-perlu-diseimbangkan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T15:08:33+07:00",
+        "summary": "Pertumbuhan dana pihak ketiga (DPK) yang tertinggal dari kredit mendorong Bank Indonesia (BI) melakukan penyesuaian terhadap pada kebijakan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Klaim Bruto Marine Cargo Jasindo Naik 15,98 Miliar, Ini Pemicunya",
+        "url": "https://keuangan.kontan.co.id/news/klaim-bruto-marine-cargo-jasindo-naik-1598-miliar-ini-pemicunya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T15:04:02+07:00",
+        "summary": "Jasindo mencatat peningkatan klaim bruto lini marine cargo sebesar Rp 15,98 miliar hingga September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Woori Saudara (SDRA) Berpeluang Optimalkan Pendapatan dari Universal Banking",
+        "url": "https://keuangan.kontan.co.id/news/bank-woori-saudara-sdra-berpeluang-optimalkan-pendapatan-dari-universal-banking",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T13:52:11+07:00",
+        "summary": "PT Bank Woori Saudara Indonesia 1906 Tbk (SDRA) berpeluang mengoptimalkan pendapatan melalui pengembangan universal banking.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kasus Influenza A Naik, Klaim Asuransi Kesehatan dalam Jangka Pendek Ikut Terkerek",
+        "url": "https://keuangan.kontan.co.id/news/kasus-influenza-a-naik-klaim-asuransi-kesehatan-dalam-jangka-pendek-ikut-terkerek",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T13:45:15+07:00",
+        "summary": "OJK menilai kenaikan kasus influenza A berpotensi meningkatkan klaim asuransi kesehatan, dampak terhadap keuangan asuransi masih terkendali.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Berharap Kehadiran DPLK yang Didirikan MI Dapat Perluas Akses Program Pensiun",
+        "url": "https://keuangan.kontan.co.id/news/ojk-berharap-kehadiran-dplk-yang-didirikan-mi-dapat-perluas-akses-program-pensiun",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T13:44:30+07:00",
+        "summary": "OJK sudah memberikan izin pendirian DPLK kepada dua MI, yakni Batavia Prosperindo Aset Manajemen dan Sinarmas Asset Management.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kontribusi Industri Asuransi Syariah Turun 11,79% hingga Agustus 2026",
+        "url": "https://keuangan.kontan.co.id/news/kontribusi-industri-asuransi-syariah-turun-1179-hingga-agustus-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T13:36:14+07:00",
+        "summary": "Kontribusi asuransi syariah sebesar Rp 14,19 triliun per Juli 2026. Nilainya terkontraksi 12,67%, jika dibandingkan periode sama tahun lalu.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Saham Big Banks Naik, BBCA Justru Melemah di Sesi I Jumat (23/10) dan Catat Net Sell",
+        "url": "https://keuangan.kontan.co.id/news/saham-big-banks-naik-bbca-justru-melemah-di-sesi-i-jumat-2310-dan-catat-net-sell",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T13:05:05+07:00",
+        "summary": "Saham big banks menguat pada sesi I perdagangan 23 Oktober 2026, meski BBCA melemah dan investor asing mencatat net sell Rp 744,43 miliar.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "naik",
+          "menguat"
+        ],
+        "negative_terms": [
+          "melemah",
+          "sell"
+        ]
+      }
+    ]
+  }
+}

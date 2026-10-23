@@ -1,0 +1,249 @@
+{
+  "schema": "idx.bandar.screen.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-10-23T10:55:25Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "period": "1w",
+    "from": "2026-10-19",
+    "to": "2026-10-23",
+    "top": 5,
+    "preset": "foreign-accumulation",
+    "filters": [
+      "acc>=5",
+      "fpct>=5"
+    ],
+    "sort": "acc",
+    "descending": true,
+    "scanned": 100,
+    "checked": 100,
+    "total_matches": 7,
+    "rows": [
+      {
+        "symbol": "AALI",
+        "name": "ASTRA AGRO LESTARI Tbk",
+        "signal": "big_accumulation",
+        "phase": "markup",
+        "net_pct": 24.696356275303643,
+        "net_value": 79300000000.0,
+        "net_lots": 90638.0,
+        "price": 9625.0,
+        "price_change_pct": 23.003194888178925,
+        "bandar_average": 8663.978225260087,
+        "bandar_gain_pct": 11.092153624509638,
+        "buy_share_pct": 73.68421052631578,
+        "total_value": 321100000000.0,
+        "foreign_net_value": 71000000000.0,
+        "foreign_net_pct": 22.111491747119278,
+        "top_buyers": [
+          "SQ",
+          "AK",
+          "CC",
+          "CP",
+          "BK"
+        ],
+        "top_sellers": [
+          "CC",
+          "AK",
+          "TP",
+          "YP",
+          "KK"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "UNTR",
+        "name": "UNITED TRACTORS Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 13.989726027397259,
+        "net_value": 81700000000.0,
+        "net_lots": 34670.0,
+        "price": 25300.0,
+        "price_change_pct": 11.82320441988951,
+        "bandar_average": 23132.535179494236,
+        "bandar_gain_pct": 9.36976774783902,
+        "buy_share_pct": 74.38356164383562,
+        "total_value": 584000000000.0,
+        "foreign_net_value": 45900000000.0,
+        "foreign_net_pct": 7.859589041095891,
+        "top_buyers": [
+          "RX",
+          "CC",
+          "AK",
+          "BB",
+          "YU"
+        ],
+        "top_sellers": [
+          "CC",
+          "AK",
+          "ZP",
+          "KZ",
+          "BK"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "PWON",
+        "name": "PAKUWON JATI Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 9.144893111638956,
+        "net_value": 15400000000.0,
+        "net_lots": 561712.0,
+        "price": 282.0,
+        "price_change_pct": 6.818181818181812,
+        "bandar_average": 263.7255629966666,
+        "bandar_gain_pct": 6.929338512233785,
+        "buy_share_pct": 83.2541567695962,
+        "total_value": 168400000000.0,
+        "foreign_net_value": 43500000000.0,
+        "foreign_net_pct": 25.83135391923991,
+        "top_buyers": [
+          "CC",
+          "AK",
+          "KZ",
+          "XL",
+          "OD"
+        ],
+        "top_sellers": [
+          "CC",
+          "YU",
+          "PD",
+          "AK",
+          "XL"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "DSSA",
+        "name": "DIAN SWASTATIKA SENTOSA Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 7.6647058823529415,
+        "net_value": 130300000000.0,
+        "net_lots": 1900000.0,
+        "price": 775.0,
+        "price_change_pct": 8.391608391608397,
+        "bandar_average": 746.6289797346218,
+        "bandar_gain_pct": 3.7998820077225215,
+        "buy_share_pct": 63.02941176470588,
+        "total_value": 1700000000000.0,
+        "foreign_net_value": 88500000000.0,
+        "foreign_net_pct": 5.205882352941176,
+        "top_buyers": [
+          "DH",
+          "AK",
+          "XL",
+          "PO",
+          "CC"
+        ],
+        "top_sellers": [
+          "LG",
+          "XL",
+          "AK",
+          "CC",
+          "MG"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "MEDC",
+        "name": "MEDCO ENERGI INTERNASIONAL Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 6.104844061048441,
+        "net_value": 27600000000.0,
+        "net_lots": 184234.0,
+        "price": 1480.0,
+        "price_change_pct": 14.72868217054264,
+        "bandar_average": 1348.645600832041,
+        "bandar_gain_pct": 9.739726959174488,
+        "buy_share_pct": 62.79584162795842,
+        "total_value": 452100000000.0,
+        "foreign_net_value": 44200000000.0,
+        "foreign_net_pct": 9.776598097765982,
+        "top_buyers": [
+          "AK",
+          "CC",
+          "ZP",
+          "XL",
+          "YU"
+        ],
+        "top_sellers": [
+          "CC",
+          "AK",
+          "XL",
+          "DX",
+          "YU"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "DMAS",
+        "name": "PURADELTA LESTARI Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 5.688453569410435,
+        "net_value": 30200000000.0,
+        "net_lots": 1300000.0,
+        "price": 214.0,
+        "price_change_pct": 34.59119496855345,
+        "bandar_average": 202.18552904515846,
+        "bandar_gain_pct": 5.843381082037169,
+        "buy_share_pct": 67.45149745714824,
+        "total_value": 530900000000.0,
+        "foreign_net_value": 79400000000.0,
+        "foreign_net_pct": 14.95573554341684,
+        "top_buyers": [
+          "XL",
+          "AK",
+          "CC",
+          "YU",
+          "YP"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "YP",
+          "NI"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "PGEO",
+        "name": "PERTAMINA GEOTHERMAL ENERGY Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 5.029337803855825,
+        "net_value": 6000000000.0,
+        "net_lots": 50819.0,
+        "price": 1025.0,
+        "price_change_pct": 16.47727272727273,
+        "bandar_average": 928.0017110057452,
+        "bandar_gain_pct": 10.452382559632412,
+        "buy_share_pct": 57.33445096395641,
+        "total_value": 119300000000.0,
+        "foreign_net_value": 18900000000.0,
+        "foreign_net_pct": 15.84241408214585,
+        "top_buyers": [
+          "CC",
+          "PD",
+          "KZ",
+          "NI",
+          "XL"
+        ],
+        "top_sellers": [
+          "CC",
+          "PD",
+          "XL",
+          "NI",
+          "ZP"
+        ],
+        "rounded": true
+      }
+    ]
+  }
+}
