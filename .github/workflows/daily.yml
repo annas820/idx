@@ -18,11 +18,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install idx and pandas
+      - name: Install idx
         run: |
           curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
-          pip install pandas
+
+      - name: Install pandas (optional, only needed for signals)
+        continue-on-error: true
+        run: |
+          python3 -m pip install --break-system-packages pandas || python3 -m pip install pandas || sudo apt-get install -y python3-pandas
 
       - name: Take snapshot
         shell: bash
@@ -63,6 +67,7 @@ jobs:
           date -u +"run at %F %T UTC" >> "$S"
 
       - name: Refresh price history of the 100 most traded stocks
+        continue-on-error: true
         shell: bash
         run: |
           D=$(TZ=Asia/Jakarta date +%F)
@@ -75,6 +80,7 @@ jobs:
           fi
 
       - name: Generate CLO Forward Test v1.0 signals
+        continue-on-error: true
         shell: bash
         run: |
           D=$(TZ=Asia/Jakarta date +%F)
@@ -132,6 +138,7 @@ jobs:
         run: |
           git config user.name "snapshot-bot"
           git config user.email "snapshot-bot@users.noreply.github.com"
+          mkdir -p snapshots hist signals forward_test
           git add snapshots hist signals forward_test
           git diff --cached --quiet || git commit -m "snapshot $(TZ=Asia/Jakarta date +%F)"
           git push
