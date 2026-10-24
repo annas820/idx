@@ -1,0 +1,279 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-10-24T03:06:34Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403",
+    "cnbcindonesia/market: HTTP 403",
+    "cnbcindonesia/research: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 25,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Strategi BTN Menjaga Laba Semester Kedua di Tengah Mahalnya Dana",
+        "url": "https://keuangan.kontan.co.id/news/strategi-btn-menjaga-laba-semester-kedua-di-tengah-mahalnya-dana",
+        "source": "kontan/keuangan",
+        "published": "2026-10-24T08:17:46+07:00",
+        "summary": "Mahal&shy;nya biaya dana di tengah likuiditas ketat membayangi pertumbuhan laba PT Bank Tabungan Negara Tbk (BTN) pada semester II 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Jannah Firdaus Gandeng BSI Perluas Akses Program Haji",
+        "url": "https://keuangan.kontan.co.id/news/jannah-firdaus-gandeng-bsi-perluas-akses-program-haji",
+        "source": "kontan/keuangan",
+        "published": "2026-10-24T06:40:55+07:00",
+        "summary": "Jannah Firdaus dan BSImemperluas akses informasi dan membantu masyarakat merencanakan ibadah haji lewat program Haji",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Turunkan GWM, BI: Likuiditas Perlu Diseimbangkan",
+        "url": "https://keuangan.kontan.co.id/news/turunkan-gwm-bi-likuiditas-perlu-diseimbangkan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-24T06:30:31+07:00",
+        "summary": "BI memperkuat kecukupan likuiditas perbankan dengan menurunkan Giro Wajib Minimum (GWM) secara bertahap total 2% hingga akhir tahun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BRI Life Luncurkan Asuransi Corporate Eazy (Cozy), Ini Manfaatnya",
+        "url": "https://keuangan.kontan.co.id/news/bri-life-luncurkan-asuransi-corporate-eazy-cozy-ini-manfaatnya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-24T06:18:30+07:00",
+        "summary": "BRI Life meluncurkan asuransi Corporate Eazy (COZY) dengan premi mulai Rp 1.000 per hari dan pilihan perlindungan fleksibel bagi perusahaan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Optimalkan Potensi Pasar, Sompo Syariah Mulai Fokus Garap Asuransi Umrah Tahun Ini",
+        "url": "https://keuangan.kontan.co.id/news/optimalkan-potensi-pasar-sompo-syariah-mulai-fokus-garap-asuransi-umrah-tahun-ini",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T22:53:54+07:00",
+        "summary": "Optimalkan potensi pasar, PT Sompo Insurance Sharia (Sompo Syariah) mulai fokus untuk menggarap asuransi umrah tahun ini.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Perkuat Ketahanan Industri, OJK Dorong Pengembangan Lembaga Penjaminan Ulang",
+        "url": "https://keuangan.kontan.co.id/news/perkuat-ketahanan-industri-ojk-dorong-pengembangan-lembaga-penjaminan-ulang",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T22:46:33+07:00",
+        "summary": "Otoritas Jasa Keuangan (OJK) bersama asosiasi penjaminan dan kementerian atau lembaga akan mendorong berdirinya lembaga penjamin ulang.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Perkuat Transformasi dan Perluas Sumber Pertumbuhan",
+        "url": "https://keuangan.kontan.co.id/news/btn-perkuat-transformasi-dan-perluas-sumber-pertumbuhan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T22:25:11+07:00",
+        "summary": "BTN memperluas bisnis di luar KPR lewat penguatan ekosistem perumahan dan digitalisasi, sembari menjaga kualitas kredit dan profitabilitas",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BSI Bidik Transaksi International Expo 2026 Tembus Rp 5 Triliun",
+        "url": "https://keuangan.kontan.co.id/news/bsi-bidik-transaksi-international-expo-2026-tembus-rp-5-triliun",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T22:22:50+07:00",
+        "summary": "PT Bank Syariah Indonesia Tbk (BSI) menargetkan nilai transaksi BSI International Expo 2026 mencapai Rp 5 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "IFG Life Perkuat Layanan dan Perluas Akses Proteksi",
+        "url": "https://keuangan.kontan.co.id/news/ifg-life-perkuat-layanan-dan-perluas-akses-proteksi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T22:05:37+07:00",
+        "summary": "IFG Life memperkuat komitmen perlindungan melalui peningkatan layanan, perluasan kemitraan, inovasi digital, dan program sosial",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Inhealth Gandeng ARSKI Perkuat Layanan Kesehatan",
+        "url": "https://keuangan.kontan.co.id/news/inhealth-gandeng-arski-perkuat-layanan-kesehatan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T21:52:25+07:00",
+        "summary": "Inhealth menggandeng ARSKI untuk meningkatkan kualitas layanan kesehatan dan mendukung implementasi Koordinasi Antar Penyelenggara Jaminan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kartu Kredit Bukan Penghasilan Tambahan, Pengguna Perlu Pahami Limit",
+        "url": "https://keuangan.kontan.co.id/news/kartu-kredit-bukan-penghasilan-tambahan-pengguna-perlu-pahami-limit",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T21:19:00+07:00",
+        "summary": "Penggunaan kartu kredit untuk transaksi sehari-hari hingga belanja daring perlu diimbangi dengan pengelolaan keuangan yang baik.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Edukasi hingga Kemudahan Akses Jadi Kunci DPLK Perluas Kepesertaan",
+        "url": "https://keuangan.kontan.co.id/news/edukasi-hingga-kemudahan-akses-jadi-kunci-dplk-perluas-kepesertaan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T21:08:13+07:00",
+        "summary": "Edukasi hingga kemudahan akses menjadi kunci Dana Pensiun Lembaga Keuangan (DPLK) untuk memperluas kepesertaan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Inflasi Medis Tinggi, Allianz Life Soroti Pentingnya Perlindungan Penyakit Kritis",
+        "url": "https://keuangan.kontan.co.id/news/inflasi-medis-tinggi-allianz-life-soroti-pentingnya-perlindungan-penyakit-kritis",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T21:00:20+07:00",
+        "summary": "Inflasi medis tinggi, PT Asuransi Allianz Life Indonesia menyoroti pentingnya perlindungan penyakit kritis.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Asippindo Dorong Penerapan Tarif Berbasis Risiko untuk Tekan Rasio Klaim Penjaminan",
+        "url": "https://keuangan.kontan.co.id/news/asippindo-dorong-penerapan-tarif-berbasis-risiko-untuk-tekan-rasio-klaim-penjaminan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T20:52:29+07:00",
+        "summary": "Asippindo mendorong penerapan tarif berbasis risiko penguatan manajemen risiko untuk menekan rasio klaim penjaminan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Rasio Klaim Industri Penjaminan Tinggi, Jamkrida Sumbar Evaluasi Tarif IJP",
+        "url": "https://keuangan.kontan.co.id/news/rasio-klaim-industri-penjaminan-tinggi-jamkrida-sumbar-evaluasi-tarif-ijp",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T20:41:10+07:00",
+        "summary": "Industri penjaminan masih menghadapi tekanan dari tingginya klaim seiring memburuknya kualitas kredit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri Targetkan Rasio Kecukupan Modal 18%-19% hingga Akhir Tahun 2026",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-targetkan-rasio-kecukupan-modal-18-19-hingga-akhir-tahun-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T20:18:15+07:00",
+        "summary": "PT Bank Mandiri Tbk menargetkan rasio kecukupan modal atau capital adequacy ratio (CAR) berada di kisaran 18%-19% hingga akhir 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Laba Bank Mandiri (BMRI) Tumbuh 20,7% hingga Kuartal III 2026",
+        "url": "https://keuangan.kontan.co.id/news/laba-bank-mandiri-bmri-tumbuh-207-hingga-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T19:53:08+07:00",
+        "summary": "PT Bank Mandiri Tbk (BMRI) membukukan laba bersih secara bank only sebesar Rp 45,5 triliun hingga kuartal III-2026",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Evaluasi Faktor yang Jadi Pertimbangan Tarif Premi Asuransi Kendaraan Listrik",
+        "url": "https://keuangan.kontan.co.id/news/ojk-evaluasi-faktor-yang-jadi-pertimbangan-tarif-premi-asuransi-kendaraan-listrik",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T19:29:29+07:00",
+        "summary": "OJK terus mengevaluasi sejumlah faktor sebagai dasar penyempurnaan tarif premi asuransi kendaraan listrik di Indonesia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Tren Underconsumption Core Bayangi Kinerja Transaksi E-Wallet",
+        "url": "https://keuangan.kontan.co.id/news/tren-underconsumption-core-bayangi-kinerja-transaksi-e-wallet",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T19:10:43+07:00",
+        "summary": "Tren underconsumption core berpotensi mempengaruhi pertumbuhan transaksi dompet digital atau e-wallet.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Sebut Asuransi Gadget Dapat Jadi Peluang yang Bisa Dikembangkan Industri Asuransi",
+        "url": "https://keuangan.kontan.co.id/news/ojk-sebut-asuransi-gadget-dapat-jadi-peluang-yang-bisa-dikembangkan-industri-asuransi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-23T18:41:28+07:00",
+        "summary": "OJK menyebut asuransi gadget dapat menjadi peluang yang bisa dikembangkan industri asuransi, namun perlu merancang perlindungan sesuai kebutuhan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
