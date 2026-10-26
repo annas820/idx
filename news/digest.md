@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-26T22:28+07:00 WIB | jendela 36 jam | dipindai 182, lolos 73, dibuang sebagai noise 14.
+Berita terbaru: 2026-10-27T05:30+07:00 WIB | jendela 36 jam | dipindai 158, lolos 65, dibuang sebagai noise 14.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,7 +8,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-25 19:27 bloomberg_technoz: Grup Indofood Siapkan Anggaran Buyback Rp2,25 T [ICBP,INDF] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t>
 
 ## Teratas
-- **9** T3 10-25 15:31 kontan_keuangan: BI Sebut Sentimen MSCI Picu Outflow, Saham hingga SBN dan SRBI Terdampak (kebijakan/pasar/kurs) <https://keuangan.kontan.co.id/news/bi-sebut-sentimen-msci-picu-outflow-saham-hingga-sbn-dan-srbi-terdampak>
 - **8** T3 10-26 16:10 bloomberg_technoz: Menkeu: Penerbitan SBN Masih Sesuai Target Meski Defisit Melebar (kebijakan/kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125775/menkeu-penerbitan-sbn-masih-sesuai-target-meski-defisit-melebar>
 - **7** T3 10-26 19:38 kontan_keuangan: Astra Sedaya Finance Siapkan Rp 304,5 Miliar untuk Lunasi Obligasi Jatuh Tempo [ASII] (kurs/emiten; watchlist) <https://keuangan.kontan.co.id/news/astra-sedaya-finance-siapkan-rp-3045-miliar-untuk-lunasi-obligasi-jatuh-tempo>
 - **7** T3 10-26 19:10 kontan_keuangan: BSI (BRIS) Siapkan Buyback Saham dengan Anggaran Maksimal Rp 500 Miliar [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bsi-bris-siapkan-buyback-saham-dengan-anggaran-maksimal-rp-500-miliar>
@@ -25,6 +24,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-26 08:08 bloomberg_technoz: Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel>
 - **6** T3 10-25 20:00 bloomberg_technoz: Fitch Turunkan Rating Obligasi Pos Indonesia ke Default (kurs/kredit) <https://www.bloombergtechnoz.com/detail-news/125695/fitch-turunkan-rating-obligasi-pos-indonesia-ke-default>
 - **6** T3 10-25 19:27 bloomberg_technoz: Grup Indofood Siapkan Anggaran Buyback Rp2,25 T [ICBP,INDF] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t>
+- **5** T3 10-27 05:16 bloomberg_technoz: Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo>
 - **5** T3 10-26 20:13 kontan_keuangan: OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas (kebijakan/komoditas) <https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas>
 - **5** T3 10-26 18:40 bloomberg_technoz: Destry Beber Alasan Defisit Neraca Pembayaran & Pelemahan Rupiah (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125792/destry-beber-alasan-defisit-neraca-pembayaran-pelemahan-rupiah>
 - **5** T3 10-26 18:10 bloomberg_technoz: Bahlil Ungkap Dugaan Korporasi Asing Menambang di Lahan Sawit (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125788/bahlil-ungkap-dugaan-korporasi-asing-menambang-di-lahan-sawit>
