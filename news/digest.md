@@ -1,14 +1,17 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-26T18:40+07:00 WIB | jendela 36 jam | dipindai 167, lolos 70, dibuang sebagai noise 13.
+Berita terbaru: 2026-10-26T21:33+07:00 WIB | jendela 36 jam | dipindai 183, lolos 72, dibuang sebagai noise 14.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **7** T3 10-26 19:38 kontan_keuangan: Astra Sedaya Finance Siapkan Rp 304,5 Miliar untuk Lunasi Obligasi Jatuh Tempo [ASII] (kurs/emiten; watchlist) <https://keuangan.kontan.co.id/news/astra-sedaya-finance-siapkan-rp-3045-miliar-untuk-lunasi-obligasi-jatuh-tempo>
 - **6** T3 10-25 19:27 bloomberg_technoz: Grup Indofood Siapkan Anggaran Buyback Rp2,25 T [ICBP,INDF] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t>
 
 ## Teratas
 - **9** T3 10-25 15:31 kontan_keuangan: BI Sebut Sentimen MSCI Picu Outflow, Saham hingga SBN dan SRBI Terdampak (kebijakan/pasar/kurs) <https://keuangan.kontan.co.id/news/bi-sebut-sentimen-msci-picu-outflow-saham-hingga-sbn-dan-srbi-terdampak>
 - **8** T3 10-26 16:10 bloomberg_technoz: Menkeu: Penerbitan SBN Masih Sesuai Target Meski Defisit Melebar (kebijakan/kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125775/menkeu-penerbitan-sbn-masih-sesuai-target-meski-defisit-melebar>
+- **7** T3 10-26 19:38 kontan_keuangan: Astra Sedaya Finance Siapkan Rp 304,5 Miliar untuk Lunasi Obligasi Jatuh Tempo [ASII] (kurs/emiten; watchlist) <https://keuangan.kontan.co.id/news/astra-sedaya-finance-siapkan-rp-3045-miliar-untuk-lunasi-obligasi-jatuh-tempo>
+- **7** T3 10-26 19:10 kontan_keuangan: BSI (BRIS) Siapkan Buyback Saham dengan Anggaran Maksimal Rp 500 Miliar [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bsi-bris-siapkan-buyback-saham-dengan-anggaran-maksimal-rp-500-miliar>
 - **7** T3 10-26 13:04 bloomberg_technoz: Ulasan Terbaru Mesin Pertumbuhan Saham ANTM: Emas dan Nikel [ANTM] (pasar/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/125752/ulasan-terbaru-mesin-pertumbuhan-saham-antm-emas-dan-nikel>
 - **7** T3 10-25 18:30 bloomberg_technoz: ICBP Buyback Saham Rp750 M, Dimulai Besok [ICBP] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125689/icbp-buyback-saham-rp750-m-dimulai-besok>
 - **6** T3 10-26 14:42 kontan_keuangan: OJK Pantau 26 Emiten Bank yang Belum Penuhi Free Float 15%, Ini Daftarnya (kebijakan/pasar) <https://keuangan.kontan.co.id/news/ojk-pantau-26-emiten-bank-yang-belum-penuhi-free-float-15-ini-daftarnya>
@@ -22,7 +25,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-26 08:08 bloomberg_technoz: Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel>
 - **6** T3 10-25 20:00 bloomberg_technoz: Fitch Turunkan Rating Obligasi Pos Indonesia ke Default (kurs/kredit) <https://www.bloombergtechnoz.com/detail-news/125695/fitch-turunkan-rating-obligasi-pos-indonesia-ke-default>
 - **6** T3 10-25 19:27 bloomberg_technoz: Grup Indofood Siapkan Anggaran Buyback Rp2,25 T [ICBP,INDF] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t>
-- **6** T3 10-25 07:00 bloomberg_technoz: Dasco Respons MSCI: Indonesia Akan Tentukan Rating Bursa Sendiri (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/125660/dasco-respons-msci-indonesia-akan-tentukan-rating-bursa-sendiri>
+- **5** T3 10-26 20:13 kontan_keuangan: OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas (kebijakan/komoditas) <https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas>
 - **5** T3 10-26 18:40 bloomberg_technoz: Destry Beber Alasan Defisit Neraca Pembayaran & Pelemahan Rupiah (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125792/destry-beber-alasan-defisit-neraca-pembayaran-pelemahan-rupiah>
 - **5** T3 10-26 18:10 bloomberg_technoz: Bahlil Ungkap Dugaan Korporasi Asing Menambang di Lahan Sawit (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125788/bahlil-ungkap-dugaan-korporasi-asing-menambang-di-lahan-sawit>
 - **5** T3 10-26 17:55 kontan_keuangan: Saham SUPA Bergejolak, Superbank Sebut Belum Ada Rencana Aksi Korporasi [SUPA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-supa-bergejolak-superbank-sebut-belum-ada-rencana-aksi-korporasi>
@@ -30,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-26 17:32 kontan_keuangan: Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan [BNGA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan>
 - **5** T3 10-26 14:50 bloomberg_technoz: Impor BBM Singapura Tetap Lanjut Meski RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125765/impor-bbm-singapura-tetap-lanjut-meski-ri-pangkas-ekspor-gas>
 - **5** T3 10-26 11:51 kontan_keuangan: Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026 (kebijakan/makro) <https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026>
-- **5** T3 10-26 11:50 bloomberg_technoz: Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai>
-- **5** T3 10-26 11:10 bloomberg_technoz: OJK Perpanjang Buyback Tanpa RUPS hingga Juni 2027 (kebijakan/korporasi) <https://www.bloombergtechnoz.com/detail-news/125745/ojk-perpanjang-buyback-tanpa-rups-hingga-juni-2027>

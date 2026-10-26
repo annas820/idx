@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-26T18:40+07:00",
+ "generated_for": "2026-10-26T21:33+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 167,
- "kept": 70,
- "dropped_noise": 13,
+ "scanned": 183,
+ "kept": 72,
+ "dropped_noise": 14,
  "items": [
   {
    "published": "2026-10-25T15:31+07:00",
@@ -36,6 +36,43 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T19:38+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Astra Sedaya Finance Siapkan Rp 304,5 Miliar untuk Lunasi Obligasi Jatuh Tempo",
+   "link": "https://keuangan.kontan.co.id/news/astra-sedaya-finance-siapkan-rp-3045-miliar-untuk-lunasi-obligasi-jatuh-tempo",
+   "score": 7,
+   "categories": [
+    "kurs",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T19:10+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BSI (BRIS) Siapkan Buyback Saham dengan Anggaran Maksimal Rp 500 Miliar",
+   "link": "https://keuangan.kontan.co.id/news/bsi-bris-siapkan-buyback-saham-dengan-anggaran-maksimal-rp-500-miliar",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -251,15 +288,15 @@
    "also_in": []
   },
   {
-   "published": "2026-10-25T07:00+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-10-26T20:13+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Dasco Respons MSCI: Indonesia Akan Tentukan Rating Bursa Sendiri",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125660/dasco-respons-msci-indonesia-akan-tentukan-rating-bursa-sendiri",
-   "score": 6,
+   "title": "OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas",
+   "link": "https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas",
+   "score": 5,
    "categories": [
     "kebijakan",
-    "pasar"
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
@@ -375,39 +412,28 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-10-26T11:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T11:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Perpanjang Buyback Tanpa RUPS hingga Juni 2027",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125745/ojk-perpanjang-buyback-tanpa-rups-hingga-juni-2027",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-10-26T19:38+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Astra Sedaya Finance Siapkan Rp 304,5 Miliar untuk Lunasi Obligasi Jatuh Tempo",
+   "link": "https://keuangan.kontan.co.id/news/astra-sedaya-finance-siapkan-rp-3045-miliar-untuk-lunasi-obligasi-jatuh-tempo",
+   "score": 7,
+   "categories": [
+    "kurs",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-10-25T19:27+07:00",
    "source": "bloomberg_technoz",
