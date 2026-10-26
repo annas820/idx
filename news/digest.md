@@ -1,13 +1,15 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-26T11:30+07:00 WIB | jendela 36 jam | dipindai 85, lolos 33, dibuang sebagai noise 11.
+Berita terbaru: 2026-10-26T12:30+07:00 WIB | jendela 36 jam | dipindai 113, lolos 49, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **6** T3 10-25 19:27 bloomberg_technoz: Grup Indofood Siapkan Anggaran Buyback Rp2,25 T [ICBP,INDF] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t>
 
 ## Teratas
+- **9** T3 10-25 15:31 kontan_keuangan: BI Sebut Sentimen MSCI Picu Outflow, Saham hingga SBN dan SRBI Terdampak (kebijakan/pasar/kurs) <https://keuangan.kontan.co.id/news/bi-sebut-sentimen-msci-picu-outflow-saham-hingga-sbn-dan-srbi-terdampak>
 - **7** T3 10-25 18:30 bloomberg_technoz: ICBP Buyback Saham Rp750 M, Dimulai Besok [ICBP] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125689/icbp-buyback-saham-rp750-m-dimulai-besok>
+- **6** T3 10-26 11:02 kontan_keuangan: Bank Mandiri (BMRI) dapat Rekomendasi Saham Beli dari BRI Danareksa Sekuritas [BBRI,BMRI] (pasar/emiten; petunjuk) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-dapat-rekomendasi-saham-beli-dari-bri-danareksa-sekuritas>
 - **6** T3 10-26 11:00 bloomberg_technoz: Bukan Lagi Saham, Suspensi ke Depan Menyasar Rekening Efek (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/125744/bukan-lagi-saham-suspensi-ke-depan-menyasar-rekening-efek>
 - **6** T3 10-26 09:33 bloomberg_technoz: IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter>
 - **6** T3 10-26 08:10 bloomberg_technoz: Saham Asia Tertekan Jelang Laporan Keuangan, Minyak Terkoreksi (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125709/saham-asia-tertekan-jelang-laporan-keuangan-minyak-terkoreksi>
@@ -15,20 +17,18 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-25 20:00 bloomberg_technoz: Fitch Turunkan Rating Obligasi Pos Indonesia ke Default (kurs/kredit) <https://www.bloombergtechnoz.com/detail-news/125695/fitch-turunkan-rating-obligasi-pos-indonesia-ke-default>
 - **6** T3 10-25 19:27 bloomberg_technoz: Grup Indofood Siapkan Anggaran Buyback Rp2,25 T [ICBP,INDF] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t>
 - **6** T3 10-25 07:00 bloomberg_technoz: Dasco Respons MSCI: Indonesia Akan Tentukan Rating Bursa Sendiri (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/125660/dasco-respons-msci-indonesia-akan-tentukan-rating-bursa-sendiri>
+- **5** T3 10-26 11:51 kontan_keuangan: Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026 (kebijakan/makro) <https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026>
+- **5** T3 10-26 11:50 bloomberg_technoz: Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai>
 - **5** T3 10-26 11:10 bloomberg_technoz: OJK Perpanjang Buyback Tanpa RUPS hingga Juni 2027 (kebijakan/korporasi) <https://www.bloombergtechnoz.com/detail-news/125745/ojk-perpanjang-buyback-tanpa-rups-hingga-juni-2027>
 - **5** T3 10-26 10:10 bloomberg_technoz: RI Diingatkan Konsekuensi Langgar Kontrak Ekspor Gas ke Singapura (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125736/ri-diingatkan-konsekuensi-langgar-kontrak-ekspor-gas-ke-singapura>
 - **5** T3 10-26 09:45 bloomberg_technoz: Daftar HSC Terbaru, Saham Manoj Punjabi FILM Masuk [FILM] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125734/daftar-hsc-terbaru-saham-manoj-punjabi-film-masuk>
 - **5** T3 10-26 09:30 bloomberg_technoz: Singapura Diversifikasi Pasokan Energi Usai RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125733/singapura-diversifikasi-pasokan-energi-usai-ri-pangkas-ekspor-gas>
+- **5** T3 10-26 07:00 kontan_keuangan: Ekonom Puji Bauran Kebijakan BI untuk Jaga Rupiah dan Naikkan Likuiditas Bank (kurs/makro) <https://keuangan.kontan.co.id/news/ekonom-puji-bauran-kebijakan-bi-untuk-jaga-rupiah-dan-naikkan-likuiditas-bank>
+- **5** T3 10-26 05:50 kontan_keuangan: 26 Bank Belum Penuhi Free Float 15%, Rights Issue hingga Delisting Jadi Opsi (pasar/korporasi) <https://keuangan.kontan.co.id/news/26-bank-belum-penuhi-free-float-15-rights-issue-hingga-delisting-jadi-opsi>
 - **5** T3 10-25 16:30 bloomberg_technoz: Singapura Senggol RI, Minta Kontrak Ekspor Gas Dihormati (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125685/singapura-senggol-ri-minta-kontrak-ekspor-gas-dihormati>
 - **5** T3 10-25 15:30 bloomberg_technoz: Indonesia Pangkas Ekspor Gas, Singapura Serius Kaji Energi Nuklir (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125686/indonesia-pangkas-ekspor-gas-singapura-serius-kaji-energi-nuklir>
 - **5** T3 10-25 13:00 bloomberg_technoz: RI Pangkas Ekspor Gas, Singapura Minta Semua Pihak Patuhi Kontrak (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125672/ri-pangkas-ekspor-gas-singapura-minta-semua-pihak-patuhi-kontrak>
+- **4** T3 10-26 12:30 kontan_keuangan: NPL Bank Mandiri Turun Jadi 0,98% pada Kuartal III 2026 [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/npl-bank-mandiri-turun-jadi-098-pada-kuartal-iii-2026>
+- **4** T3 10-26 10:35 kontan_keuangan: Laba Bank Mandiri Tumbuh 20,7% per September 2026, Begini Kata Analis [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-207-per-september-2026-begini-kata-analis>
 - **4** T3 10-26 08:58 bloomberg_technoz: Rangkuman Rekomendasi Saham Hari Ini, 26 Oktober 2026 (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/125722/rangkuman-rekomendasi-saham-hari-ini-26-oktober-2026>
 - **4** T3 10-26 08:39 bloomberg_technoz: Rekomendasi Saham & Arah IHSG Hari Ini, Support 5.400 Jadi Kunci (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/125717/rekomendasi-saham-arah-ihsg-hari-ini-support-5-400-jadi-kunci>
-- **4** T3 10-26 06:30 bloomberg_technoz: Prediksi IHSG Minggu Ini Usai Pekan Lalu Naik Hampir 5% (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/125703/prediksi-ihsg-minggu-ini-usai-pekan-lalu-naik-hampir-5>
-- **4** T3 10-25 20:30 bloomberg_technoz: Dari Untung Hampir Rp3 T, Bukalapak (BUKA) Kini Rugi Rp881 M [BUKA] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125694/dari-untung-hampir-rp3-t-bukalapak-buka-kini-rugi-rp881-m>
-- **4** T3 10-25 09:00 bloomberg_technoz: Bank Mandiri Cetak Laba Rp45,5 Triliun hingga Kuartal III [BMRI] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125676/bank-mandiri-cetak-laba-rp45-5-triliun-hingga-kuartal-iii>
-- **3** T3 10-26 11:30 bloomberg_technoz: Morgan Stanley: Saham China Masih Bisa Turun 15% (pasar) <https://www.bloombergtechnoz.com/detail-news/125748/morgan-stanley-saham-china-masih-bisa-turun-15>
-- **3** T3 10-26 10:49 bloomberg_technoz: Pasar Surat Utang Tertekan Aksi Jual, Yield Naik (kurs) <https://www.bloombergtechnoz.com/detail-news/125742/pasar-surat-utang-tertekan-aksi-jual-yield-naik>
-- **3** T3 10-26 10:40 bloomberg_technoz: Penyebab IHSG Sempat Turun 1%: Saham Big Caps dan Profit Taking (pasar) <https://www.bloombergtechnoz.com/detail-news/125741/penyebab-ihsg-sempat-turun-1-saham-big-caps-dan-profit-taking>
-- **3** T3 10-26 10:30 bloomberg_technoz: Singapura Simpan Minyak Arab Saudi di Gua Bawah Tanah Mulai 2027 (global) <https://www.bloombergtechnoz.com/detail-news/125739/singapura-simpan-minyak-arab-saudi-di-gua-bawah-tanah-mulai-2027>
-- **3** T3 10-26 09:39 bloomberg_technoz: Investor Asing Masih Jual Saham Rp8 T Walau IHSG Hijau (pasar) <https://www.bloombergtechnoz.com/detail-news/125719/investor-asing-masih-jual-saham-rp8-t-walau-ihsg-hijau>

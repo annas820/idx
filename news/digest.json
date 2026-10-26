@@ -1,12 +1,28 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-26T11:30+07:00",
+ "generated_for": "2026-10-26T12:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 85,
- "kept": 33,
- "dropped_noise": 11,
+ "scanned": 113,
+ "kept": 49,
+ "dropped_noise": 12,
  "items": [
+  {
+   "published": "2026-10-25T15:31+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BI Sebut Sentimen MSCI Picu Outflow, Saham hingga SBN dan SRBI Terdampak",
+   "link": "https://keuangan.kontan.co.id/news/bi-sebut-sentimen-msci-picu-outflow-saham-hingga-sbn-dan-srbi-terdampak",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-10-25T18:30+07:00",
    "source": "bloomberg_technoz",
@@ -23,6 +39,26 @@
     "ICBP"
    ],
    "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T11:02+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Bank Mandiri (BMRI) dapat Rekomendasi Saham Beli dari BRI Danareksa Sekuritas",
+   "link": "https://keuangan.kontan.co.id/news/bank-mandiri-bmri-dapat-rekomendasi-saham-beli-dari-bri-danareksa-sekuritas",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI",
+    "BMRI"
+   ],
+   "flags": [
+    "petunjuk"
+   ],
    "also_in": []
   },
   {
@@ -136,6 +172,36 @@
    "also_in": []
   },
   {
+   "published": "2026-10-26T11:51+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026",
+   "link": "https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T11:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-26T11:10+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -198,6 +264,36 @@
    "also_in": []
   },
   {
+   "published": "2026-10-26T07:00+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Ekonom Puji Bauran Kebijakan BI untuk Jaga Rupiah dan Naikkan Likuiditas Bank",
+   "link": "https://keuangan.kontan.co.id/news/ekonom-puji-bauran-kebijakan-bi-untuk-jaga-rupiah-dan-naikkan-likuiditas-bank",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T05:50+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "26 Bank Belum Penuhi Free Float 15%, Rights Issue hingga Delisting Jadi Opsi",
+   "link": "https://keuangan.kontan.co.id/news/26-bank-belum-penuhi-free-float-15-rights-issue-hingga-delisting-jadi-opsi",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-25T16:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -243,6 +339,40 @@
    "also_in": []
   },
   {
+   "published": "2026-10-26T12:30+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "NPL Bank Mandiri Turun Jadi 0,98% pada Kuartal III 2026",
+   "link": "https://keuangan.kontan.co.id/news/npl-bank-mandiri-turun-jadi-098-pada-kuartal-iii-2026",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T10:35+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Laba Bank Mandiri Tumbuh 20,7% per September 2026, Begini Kata Analis",
+   "link": "https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-207-per-september-2026-begini-kata-analis",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-26T08:58+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -272,126 +402,6 @@
    "flags": [
     "petunjuk"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T06:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Prediksi IHSG Minggu Ini Usai Pekan Lalu Naik Hampir 5%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125703/prediksi-ihsg-minggu-ini-usai-pekan-lalu-naik-hampir-5",
-   "score": 4,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-25T20:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Dari Untung Hampir Rp3 T, Bukalapak (BUKA) Kini Rugi Rp881 M",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125694/dari-untung-hampir-rp3-t-bukalapak-buka-kini-rugi-rp881-m",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BUKA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-25T09:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bank Mandiri Cetak Laba Rp45,5 Triliun hingga Kuartal III",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125676/bank-mandiri-cetak-laba-rp45-5-triliun-hingga-kuartal-iii",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T11:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Morgan Stanley: Saham China Masih Bisa Turun 15%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125748/morgan-stanley-saham-china-masih-bisa-turun-15",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T10:49+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pasar Surat Utang Tertekan Aksi Jual, Yield Naik",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125742/pasar-surat-utang-tertekan-aksi-jual-yield-naik",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T10:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Penyebab IHSG Sempat Turun 1%: Saham Big Caps dan Profit Taking",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125741/penyebab-ihsg-sempat-turun-1-saham-big-caps-dan-profit-taking",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T10:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Singapura Simpan Minyak Arab Saudi di Gua Bawah Tanah Mulai 2027",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125739/singapura-simpan-minyak-arab-saudi-di-gua-bawah-tanah-mulai-2027",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T09:39+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Investor Asing Masih Jual Saham Rp8 T Walau IHSG Hijau",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125719/investor-asing-masih-jual-saham-rp8-t-walau-ihsg-hijau",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
    "also_in": []
   }
  ],
