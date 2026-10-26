@@ -1,0 +1,6 @@
+# Kode saham yang diberi bonus skor saat muncul di judul berita (satu per baris).
+# Pantauan awal dari daftar lama Bos; ubah sesuai posisi/kandidat terkini.
+AADI
+INCO
+INDF
+ASII

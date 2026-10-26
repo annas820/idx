@@ -2,9 +2,16 @@
 import csv, os, sys, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
+# Feed URLs other than bloomberg_technoz come from src/providers/news/ (already used by the Rust CLI).
+# A feed that fails on the runner is logged and skipped; it never stops the others. Tiers: see news_score.py.
 FEEDS = {
     'bloomberg_technoz': 'https://www.bloombergtechnoz.com/rss',
     'cnbc_indonesia_market': 'https://www.cnbcindonesia.com/market/rss',
+    'cnbc_indonesia_news': 'https://www.cnbcindonesia.com/news/rss',
+    'kontan_investasi': 'https://investasi.kontan.co.id/rss',
+    'kontan_keuangan': 'https://keuangan.kontan.co.id/rss',
+    'kontan_industri': 'https://industri.kontan.co.id/rss',
+    'bisnis_market': 'https://market.bisnis.com/rss',
 }
 if len(sys.argv) > 2: FEEDS = dict(a.split('=', 1) for a in sys.argv[2:])
 OUT = sys.argv[1]; WIB = timezone(timedelta(hours=7))

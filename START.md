@@ -38,5 +38,9 @@ Gambaran besar dulu, detail jika diminta. Jujur, beri peringatan dini.
 - Jangan pernah mengarang angka. Jika data tidak ada, katakan.
 
 ## Berita
-- Arsip: `news/YYYY-MM.csv` (fetched, published, source, title, link).
+- Arsip mentah: `news/YYYY-MM.csv` (fetched, published, source, title, link). Tidak pernah diubah.
+- **Baca `news/digest.md` dulu** (dibangun tiap jam oleh `forward_test/news_score.py`): hanya judul, disaring dan diberi skor (tier, kategori, kode saham, bonus watchlist, konfirmasi lintas sumber), noise gaya hidup dibuang. Isi berita tetap dicari sendiri lewat WebSearch.
+- Skor adalah aturan deterministik (bukan penilaian model) dan baru diuji pada contoh 26 Okt 2026; anggap itu penyaring kasar. Label `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan.
+- Watchlist bonus: `forward_test/watchlist.txt`. Feed ada di `forward_test/news_fetch.py`; feed yang gagal di runner dilewati (cek log workflow).
+- Tes: `python3 -m unittest forward_test.test_news_score`.
 - Berita menggerakkan pasar; indikator hanya untuk waktu masuk dan risiko.

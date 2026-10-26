@@ -1,0 +1,420 @@
+{
+ "schema": "clo.news.digest.v1",
+ "generated_for": "2026-10-26T11:30+07:00",
+ "window_hours": 36,
+ "min_score": 3,
+ "scanned": 85,
+ "kept": 33,
+ "dropped_noise": 11,
+ "items": [
+  {
+   "published": "2026-10-25T18:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "ICBP Buyback Saham Rp750 M, Dimulai Besok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125689/icbp-buyback-saham-rp750-m-dimulai-besok",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ICBP"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T11:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bukan Lagi Saham, Suspensi ke Depan Menyasar Rekening Efek",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125744/bukan-lagi-saham-suspensi-ke-depan-menyasar-rekening-efek",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T09:33+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T08:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham Asia Tertekan Jelang Laporan Keuangan, Minyak Terkoreksi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125709/saham-asia-tertekan-jelang-laporan-keuangan-minyak-terkoreksi",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T08:08+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-25T20:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Fitch Turunkan Rating Obligasi Pos Indonesia ke Default",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125695/fitch-turunkan-rating-obligasi-pos-indonesia-ke-default",
+   "score": 6,
+   "categories": [
+    "kurs",
+    "kredit"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-25T19:27+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Grup Indofood Siapkan Anggaran Buyback Rp2,25 T",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ICBP",
+    "INDF"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-25T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Dasco Respons MSCI: Indonesia Akan Tentukan Rating Bursa Sendiri",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125660/dasco-respons-msci-indonesia-akan-tentukan-rating-bursa-sendiri",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T11:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Perpanjang Buyback Tanpa RUPS hingga Juni 2027",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125745/ojk-perpanjang-buyback-tanpa-rups-hingga-juni-2027",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T10:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "RI Diingatkan Konsekuensi Langgar Kontrak Ekspor Gas ke Singapura",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125736/ri-diingatkan-konsekuensi-langgar-kontrak-ekspor-gas-ke-singapura",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T09:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Daftar HSC Terbaru, Saham Manoj Punjabi FILM Masuk",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125734/daftar-hsc-terbaru-saham-manoj-punjabi-film-masuk",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "FILM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T09:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Singapura Diversifikasi Pasokan Energi Usai RI Pangkas Ekspor Gas",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125733/singapura-diversifikasi-pasokan-energi-usai-ri-pangkas-ekspor-gas",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-25T16:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Singapura Senggol RI, Minta Kontrak Ekspor Gas Dihormati",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125685/singapura-senggol-ri-minta-kontrak-ekspor-gas-dihormati",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-25T15:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Indonesia Pangkas Ekspor Gas, Singapura Serius Kaji Energi Nuklir",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125686/indonesia-pangkas-ekspor-gas-singapura-serius-kaji-energi-nuklir",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-25T13:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "RI Pangkas Ekspor Gas, Singapura Minta Semua Pihak Patuhi Kontrak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125672/ri-pangkas-ekspor-gas-singapura-minta-semua-pihak-patuhi-kontrak",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T08:58+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rangkuman Rekomendasi Saham Hari Ini, 26 Oktober 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125722/rangkuman-rekomendasi-saham-hari-ini-26-oktober-2026",
+   "score": 4,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T08:39+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rekomendasi Saham & Arah IHSG Hari Ini, Support 5.400 Jadi Kunci",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125717/rekomendasi-saham-arah-ihsg-hari-ini-support-5-400-jadi-kunci",
+   "score": 4,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T06:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Prediksi IHSG Minggu Ini Usai Pekan Lalu Naik Hampir 5%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125703/prediksi-ihsg-minggu-ini-usai-pekan-lalu-naik-hampir-5",
+   "score": 4,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-25T20:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Dari Untung Hampir Rp3 T, Bukalapak (BUKA) Kini Rugi Rp881 M",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125694/dari-untung-hampir-rp3-t-bukalapak-buka-kini-rugi-rp881-m",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BUKA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-25T09:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bank Mandiri Cetak Laba Rp45,5 Triliun hingga Kuartal III",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125676/bank-mandiri-cetak-laba-rp45-5-triliun-hingga-kuartal-iii",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T11:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Morgan Stanley: Saham China Masih Bisa Turun 15%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125748/morgan-stanley-saham-china-masih-bisa-turun-15",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T10:49+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pasar Surat Utang Tertekan Aksi Jual, Yield Naik",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125742/pasar-surat-utang-tertekan-aksi-jual-yield-naik",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T10:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Penyebab IHSG Sempat Turun 1%: Saham Big Caps dan Profit Taking",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125741/penyebab-ihsg-sempat-turun-1-saham-big-caps-dan-profit-taking",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T10:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Singapura Simpan Minyak Arab Saudi di Gua Bawah Tanah Mulai 2027",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125739/singapura-simpan-minyak-arab-saudi-di-gua-bawah-tanah-mulai-2027",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T09:39+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Investor Asing Masih Jual Saham Rp8 T Walau IHSG Hijau",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125719/investor-asing-masih-jual-saham-rp8-t-walau-ihsg-hijau",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  }
+ ],
+ "watchlist_hits": [
+  {
+   "published": "2026-10-25T19:27+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Grup Indofood Siapkan Anggaran Buyback Rp2,25 T",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ICBP",
+    "INDF"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  }
+ ]
+}
