@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-27T05:30+07:00 WIB | jendela 36 jam | dipindai 158, lolos 65, dibuang sebagai noise 14.
+Berita terbaru: 2026-10-27T06:15+07:00 WIB | jendela 36 jam | dipindai 158, lolos 64, dibuang sebagai noise 14.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
