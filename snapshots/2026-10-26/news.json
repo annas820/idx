@@ -1,0 +1,295 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-10-26T11:03:11Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403",
+    "cnbcindonesia/market: HTTP 403",
+    "cnbcindonesia/research: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 25,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Saham SUPA Bergejolak, Superbank Sebut Belum Ada Rencana Aksi Korporasi",
+        "url": "https://keuangan.kontan.co.id/news/saham-supa-bergejolak-superbank-sebut-belum-ada-rencana-aksi-korporasi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T17:55:53+07:00",
+        "summary": "Saham PT Super Bank Indonesia Tbk (SUPA) bergejolak, Superbank menyebut belum ada rencana aksi korporasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Asing Net Sell Rp 2,03 Triliun di Awal Pekan Ini, BMRI Paling Banyak Dilepas",
+        "url": "https://keuangan.kontan.co.id/news/asing-net-sell-rp-203-triliun-di-awal-pekan-ini-bmri-paling-banyak-dilepas",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T17:41:03+07:00",
+        "summary": "Saham bank-bank Himpunan Bank Milik Negara (Himbara) kompak menguat pada penutupan perdagangan Senin (26/10/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": [
+          "sell"
+        ]
+      },
+      {
+        "title": "Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan",
+        "url": "https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T17:32:22+07:00",
+        "summary": "BNGA menegaskan belum ada keputusan perubahan kepemilikan saham maupun aksi korporasi dalam tiga bulan ke depan di tengah volatilitas saham.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Kasikorn (BMAS) Masih Cari Cara Penuhi Free Float 15%",
+        "url": "https://keuangan.kontan.co.id/news/bank-kasikorn-bmas-masih-cari-cara-penuhi-free-float-15",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T17:27:02+07:00",
+        "summary": "Bank Maspion menargetkan pertumbuhan kredit Rp 3,8 triliun pada 2027 melalui rights issue Rp 350 per saham dan penuhi free float 15%.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Pertumbuhan DPK Perbankan Melambat, Bank Berebut Dana Murah di Kuartal IV-2026",
+        "url": "https://keuangan.kontan.co.id/news/pertumbuhan-dpk-perbankan-melambat-bank-berebut-dana-murah-di-kuartal-iv-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T16:58:32+07:00",
+        "summary": "DPK bank diproyeksikan tumbuh hingga akhir 2026, ditopang tabungan dan giro, meski persaingan bunga dan tantangan likuiditas masih membayangi.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": [
+          "melambat"
+        ]
+      },
+      {
+        "title": "Transaksi BSI International Expo Tembus Rp 5,38 Triliun, Haji dan Umrah Mendominasi",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-bsi-international-expo-tembus-rp-538-triliun-haji-dan-umrah-mendominasi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T16:36:23+07:00",
+        "summary": "BSI dan Bank Jago Syariah catat pertumbuhan transaksi dan layanan keuangan haji umrah, seiring meningkatnya kebutuhan perencanaan ibadah.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BRI Salurkan KUR Rp 144 Triliun kepada 2,76 Juta Debitur hingga Agustus 2026",
+        "url": "https://keuangan.kontan.co.id/news/bri-salurkan-kur-rp-144-triliun-kepada-276-juta-debitur-hingga-agustus-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T16:27:51+07:00",
+        "summary": "Sepanjang Januari hingga Agustus 2026, BRI telah menyalurkan KUR sebesar Rp 144,59 triliun kepada 2,76 juta debitur.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Pantau 26 Emiten Bank yang Belum Penuhi Free Float 15%, Ini Daftarnya",
+        "url": "https://keuangan.kontan.co.id/news/ojk-pantau-26-emiten-bank-yang-belum-penuhi-free-float-15-ini-daftarnya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T14:42:59+07:00",
+        "summary": "OJK tengah memantau 26 emiten bank yang belum penuhi free float 15%, ini daftar emiten bank tersebut.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Salurkan KPR Rp 552 Triliun, Kuasai 69% Pasar KPR Subsidi",
+        "url": "https://keuangan.kontan.co.id/news/btn-salurkan-kpr-rp-552-triliun-kuasai-69-pasar-kpr-subsidi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T14:28:29+07:00",
+        "summary": "PT Bank Tabungan Negara (Persero) Tbk (BTN) mencatat total penyaluran kredit pemilikan rumah (KPR) mencapai Rp 552 triliun hingga September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BSI International Expo 2026 Catat Transaksi Rp5,38 Triliun",
+        "url": "https://keuangan.kontan.co.id/news/bsi-international-expo-2026-catat-transaksi-rp538-triliun",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T14:15:46+07:00",
+        "summary": "BSI International Expo 2026 mencatat transaksi sebesar Rp 5,38 triliun dengan 65.800 pengunjung selama 3 hari penyelenggaraan di JICC.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kontribusi Asuransi Syariah Diproyeksikan Akan Terus Membaik hingga Akhir Tahun 2026",
+        "url": "https://keuangan.kontan.co.id/news/kontribusi-asuransi-syariah-diproyeksikan-akan-terus-membaik-hingga-akhir-tahun-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T13:56:13+07:00",
+        "summary": "Kontribusi asuransi syariah diproyeksikan akan terus membaik hingga akhir tahun 2026. Data OJK menunjukkan nilai kontribusi terkoreksi 0,12%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "membaik"
+        ],
+        "negative_terms": [
+          "terkoreksi"
+        ]
+      },
+      {
+        "title": "Saham Big Banks Kompak Melemah pada Perdagangan Sesi I Senin (26/10/2026)",
+        "url": "https://keuangan.kontan.co.id/news/saham-big-banks-kompak-melemah-pada-perdagangan-sesi-i-senin-26102026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T12:43:08+07:00",
+        "summary": "Saham bank berkapitalisasi besar atau big banks kompak memerah pada penutupan perdagangan sesi I, Senin (26/10/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "melemah"
+        ]
+      },
+      {
+        "title": "IIF Kucurkan Rp 601,4 Miliar untuk Pusat Data dan Rumah Sakit Jantung",
+        "url": "https://keuangan.kontan.co.id/news/iif-kucurkan-rp-6014-miliar-untuk-pusat-data-dan-rumah-sakit-jantung",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T12:40:47+07:00",
+        "summary": "Pembiayaan tersebut dialokasikan untuk pembangunan pusat data hyperscale di Bekasi, Jawa Barat, serta Medan Heart Center di Medan, Sumatera Utara",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "NPL Bank Mandiri Turun Jadi 0,98% pada Kuartal III 2026",
+        "url": "https://keuangan.kontan.co.id/news/npl-bank-mandiri-turun-jadi-098-pada-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T12:30:06+07:00",
+        "summary": "PT Bank Mandiri Tbk mencatat rasio kredit bermasalah atau non-performing loan (NPL) bruto bank only turun menjadi 0,98% pada kuartal III 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026",
+        "url": "https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T11:51:11+07:00",
+        "summary": "OJK menargetkan rasio aset dana pensiun (dapen) terhadap Produk Domestik Bruto (PDB) sebesar 11,2% pada 2029",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri (BMRI) dapat Rekomendasi Saham Beli dari BRI Danareksa Sekuritas",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-bmri-dapat-rekomendasi-saham-beli-dari-bri-danareksa-sekuritas",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T11:02:22+07:00",
+        "summary": "BRI Danareksa Sekuritas memberikan rekomendasi saham beli untuk Bank Mandiri (BMRI) dengan target harga Rp 6.200-Rp 6.400 per saham",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "beli"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Livin&#8217; by Mandiri Catat 4,18 Miliar Transaksi hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/livin-by-mandiri-catat-418-miliar-transaksi-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T10:42:41+07:00",
+        "summary": "Livin&rsquo; by Mandiri memiliki 42,6 juta pengguna dengan volume transaksi 4,18 miliar transaksi dengan nilai transaksi mencapai Rp 3.863 triliun",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Laba Bank Mandiri Tumbuh 20,7% per September 2026, Begini Kata Analis",
+        "url": "https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-207-per-september-2026-begini-kata-analis",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T10:35:20+07:00",
+        "summary": "Bank Mandiri (BMRI) cetak laba bersih yang diatribusikan kepada pemilik entitas induk Rp 45,5 triliun per September 2026 atau tumbuh 20,7% YoY",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank INA Gandeng JAGADIRI, Debitur KPR Dapat Perlindungan Asuransi Jiwa Kredit",
+        "url": "https://keuangan.kontan.co.id/news/bank-ina-gandeng-jagadiri-debitur-kpr-dapat-perlindungan-asuransi-jiwa-kredit",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T07:45:04+07:00",
+        "summary": "Kolaborasi kedua perusahaan yang sama-sama berada dalam ekosistem Salim Group ini bertujuan memperkuat perlindungan finansial bagi debitur KPR",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ekonom Puji Bauran Kebijakan BI untuk Jaga Rupiah dan Naikkan Likuiditas Bank",
+        "url": "https://keuangan.kontan.co.id/news/ekonom-puji-bauran-kebijakan-bi-untuk-jaga-rupiah-dan-naikkan-likuiditas-bank",
+        "source": "kontan/keuangan",
+        "published": "2026-10-26T07:00:58+07:00",
+        "summary": "BI memutuskan untuk mempertahankan BI-Rate di level 5,75% serta suku bunga Lending Facility 6,50% pada Rapat Dewan Gubernur 21-22 Oktober 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}

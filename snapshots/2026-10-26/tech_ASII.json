@@ -1,0 +1,72 @@
+{
+  "schema": "idx.technical.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-10-26T11:03:20Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "ASII",
+    "name": "PT Astra International Tbk",
+    "currency": "IDR",
+    "as_of": "2026-10-26T09:00:00+07:00",
+    "period": "1y",
+    "candles_used": 239,
+    "price": 4560.0,
+    "change_pct_1d": 0.21978021978021978,
+    "change_pct_1w": 10.411622276029057,
+    "change_pct_1m": -2.771855010660981,
+    "change_pct_3m": -7.128309572301425,
+    "high_52w": 7475.0,
+    "low_52w": 3920.0,
+    "moving_averages": {
+      "sma20": 4625.0,
+      "sma50": 4748.6,
+      "sma200": 5563.15,
+      "ema20": 4608.61790899976,
+      "ema50": 4735.743308761895,
+      "ema200": 5521.297262602055
+    },
+    "rsi14": 46.710775436996954,
+    "macd": {
+      "line": -82.05512578873277,
+      "signal": -75.06407256627588,
+      "histogram": -6.991053222456884
+    },
+    "bollinger": {
+      "upper": 5017.045915678254,
+      "middle": 4625.0,
+      "lower": 4232.954084321746,
+      "percent_b": 0.4171015467824124,
+      "bandwidth_pct": 16.95333689419475
+    },
+    "atr14": 162.7270710918817,
+    "volume": {
+      "last": 35419700,
+      "avg20": 61342560,
+      "ratio": 0.5774082464116268
+    },
+    "levels": {
+      "support": [
+        4510.0,
+        4470.0,
+        4350.0
+      ],
+      "resistance": [
+        4920.0,
+        4950.0,
+        4980.0
+      ]
+    },
+    "trend": "downtrend",
+    "signal": {
+      "label": "sell",
+      "score": -3,
+      "reasons": [
+        "price below a falling 50-day average that sits below the 200-day: downtrend",
+        "RSI 47 is neutral",
+        "MACD below its signal line (bearish momentum)",
+        "price below the 200-day average"
+      ]
+    }
+  }
+}
