@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-26T15:40+07:00",
+ "generated_for": "2026-10-26T16:21+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 142,
- "kept": 62,
+ "scanned": 147,
+ "kept": 64,
  "dropped_noise": 12,
  "items": [
   {
@@ -18,6 +18,22 @@
     "kebijakan",
     "pasar",
     "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T16:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Menkeu: Penerbitan SBN Masih Sesuai Target Meski Defisit Melebar",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125775/menkeu-penerbitan-sbn-masih-sesuai-target-meski-defisit-melebar",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kurs",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
@@ -381,21 +397,6 @@
    "categories": [
     "pasar",
     "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-25T16:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Singapura Senggol RI, Minta Kontrak Ekspor Gas Dihormati",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125685/singapura-senggol-ri-minta-kontrak-ekspor-gas-dihormati",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
    ],
    "tickers": [],
    "flags": [],

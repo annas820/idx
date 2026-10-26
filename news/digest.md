@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-26T15:40+07:00 WIB | jendela 36 jam | dipindai 142, lolos 62, dibuang sebagai noise 12.
+Berita terbaru: 2026-10-26T16:21+07:00 WIB | jendela 36 jam | dipindai 147, lolos 64, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,6 +8,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **9** T3 10-25 15:31 kontan_keuangan: BI Sebut Sentimen MSCI Picu Outflow, Saham hingga SBN dan SRBI Terdampak (kebijakan/pasar/kurs) <https://keuangan.kontan.co.id/news/bi-sebut-sentimen-msci-picu-outflow-saham-hingga-sbn-dan-srbi-terdampak>
+- **8** T3 10-26 16:10 bloomberg_technoz: Menkeu: Penerbitan SBN Masih Sesuai Target Meski Defisit Melebar (kebijakan/kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125775/menkeu-penerbitan-sbn-masih-sesuai-target-meski-defisit-melebar>
 - **7** T3 10-26 13:04 bloomberg_technoz: Ulasan Terbaru Mesin Pertumbuhan Saham ANTM: Emas dan Nikel [ANTM] (pasar/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/125752/ulasan-terbaru-mesin-pertumbuhan-saham-antm-emas-dan-nikel>
 - **7** T3 10-25 18:30 bloomberg_technoz: ICBP Buyback Saham Rp750 M, Dimulai Besok [ICBP] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125689/icbp-buyback-saham-rp750-m-dimulai-besok>
 - **6** T3 10-26 14:42 kontan_keuangan: OJK Pantau 26 Emiten Bank yang Belum Penuhi Free Float 15%, Ini Daftarnya (kebijakan/pasar) <https://keuangan.kontan.co.id/news/ojk-pantau-26-emiten-bank-yang-belum-penuhi-free-float-15-ini-daftarnya>
@@ -31,4 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-26 09:30 bloomberg_technoz: Singapura Diversifikasi Pasokan Energi Usai RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125733/singapura-diversifikasi-pasokan-energi-usai-ri-pangkas-ekspor-gas>
 - **5** T3 10-26 07:00 kontan_keuangan: Ekonom Puji Bauran Kebijakan BI untuk Jaga Rupiah dan Naikkan Likuiditas Bank (kurs/makro) <https://keuangan.kontan.co.id/news/ekonom-puji-bauran-kebijakan-bi-untuk-jaga-rupiah-dan-naikkan-likuiditas-bank>
 - **5** T3 10-26 05:50 kontan_keuangan: 26 Bank Belum Penuhi Free Float 15%, Rights Issue hingga Delisting Jadi Opsi (pasar/korporasi) <https://keuangan.kontan.co.id/news/26-bank-belum-penuhi-free-float-15-rights-issue-hingga-delisting-jadi-opsi>
-- **5** T3 10-25 16:30 bloomberg_technoz: Singapura Senggol RI, Minta Kontrak Ekspor Gas Dihormati (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125685/singapura-senggol-ri-minta-kontrak-ekspor-gas-dihormati>
