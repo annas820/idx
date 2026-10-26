@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-26T13:33+07:00 WIB | jendela 36 jam | dipindai 121, lolos 53, dibuang sebagai noise 12.
+Berita terbaru: 2026-10-26T14:50+07:00 WIB | jendela 36 jam | dipindai 134, lolos 58, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,6 +10,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 10-25 15:31 kontan_keuangan: BI Sebut Sentimen MSCI Picu Outflow, Saham hingga SBN dan SRBI Terdampak (kebijakan/pasar/kurs) <https://keuangan.kontan.co.id/news/bi-sebut-sentimen-msci-picu-outflow-saham-hingga-sbn-dan-srbi-terdampak>
 - **7** T3 10-26 13:04 bloomberg_technoz: Ulasan Terbaru Mesin Pertumbuhan Saham ANTM: Emas dan Nikel [ANTM] (pasar/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/125752/ulasan-terbaru-mesin-pertumbuhan-saham-antm-emas-dan-nikel>
 - **7** T3 10-25 18:30 bloomberg_technoz: ICBP Buyback Saham Rp750 M, Dimulai Besok [ICBP] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125689/icbp-buyback-saham-rp750-m-dimulai-besok>
+- **6** T3 10-26 14:42 kontan_keuangan: OJK Pantau 26 Emiten Bank yang Belum Penuhi Free Float 15%, Ini Daftarnya (kebijakan/pasar) <https://keuangan.kontan.co.id/news/ojk-pantau-26-emiten-bank-yang-belum-penuhi-free-float-15-ini-daftarnya>
+- **6** T3 10-26 14:38 bloomberg_technoz: Harga Minyak Mentah Terus Tekan Rupiah dan Mata Uang Asia (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125766/harga-minyak-mentah-terus-tekan-rupiah-dan-mata-uang-asia>
 - **6** T3 10-26 13:33 bloomberg_technoz: Rupiah di atas Rp18.100/US$, IHSG Terpeleset 1% (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125756/rupiah-di-atas-rp18-100-us-ihsg-terpeleset-1>
 - **6** T3 10-26 13:00 bloomberg_technoz: IHSG Balik Melemah Dibayangi Depresiasi Rupiah (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125754/ihsg-balik-melemah-dibayangi-depresiasi-rupiah>
 - **6** T3 10-26 11:02 kontan_keuangan: Bank Mandiri (BMRI) dapat Rekomendasi Saham Beli dari BRI Danareksa Sekuritas [BBRI,BMRI] (pasar/emiten; petunjuk) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-dapat-rekomendasi-saham-beli-dari-bri-danareksa-sekuritas>
@@ -20,6 +22,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-25 20:00 bloomberg_technoz: Fitch Turunkan Rating Obligasi Pos Indonesia ke Default (kurs/kredit) <https://www.bloombergtechnoz.com/detail-news/125695/fitch-turunkan-rating-obligasi-pos-indonesia-ke-default>
 - **6** T3 10-25 19:27 bloomberg_technoz: Grup Indofood Siapkan Anggaran Buyback Rp2,25 T [ICBP,INDF] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t>
 - **6** T3 10-25 07:00 bloomberg_technoz: Dasco Respons MSCI: Indonesia Akan Tentukan Rating Bursa Sendiri (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/125660/dasco-respons-msci-indonesia-akan-tentukan-rating-bursa-sendiri>
+- **5** T3 10-26 14:50 bloomberg_technoz: Impor BBM Singapura Tetap Lanjut Meski RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125765/impor-bbm-singapura-tetap-lanjut-meski-ri-pangkas-ekspor-gas>
 - **5** T3 10-26 11:51 kontan_keuangan: Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026 (kebijakan/makro) <https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026>
 - **5** T3 10-26 11:50 bloomberg_technoz: Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai>
 - **5** T3 10-26 11:10 bloomberg_technoz: OJK Perpanjang Buyback Tanpa RUPS hingga Juni 2027 (kebijakan/korporasi) <https://www.bloombergtechnoz.com/detail-news/125745/ojk-perpanjang-buyback-tanpa-rups-hingga-juni-2027>
@@ -29,6 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-26 07:00 kontan_keuangan: Ekonom Puji Bauran Kebijakan BI untuk Jaga Rupiah dan Naikkan Likuiditas Bank (kurs/makro) <https://keuangan.kontan.co.id/news/ekonom-puji-bauran-kebijakan-bi-untuk-jaga-rupiah-dan-naikkan-likuiditas-bank>
 - **5** T3 10-26 05:50 kontan_keuangan: 26 Bank Belum Penuhi Free Float 15%, Rights Issue hingga Delisting Jadi Opsi (pasar/korporasi) <https://keuangan.kontan.co.id/news/26-bank-belum-penuhi-free-float-15-rights-issue-hingga-delisting-jadi-opsi>
 - **5** T3 10-25 16:30 bloomberg_technoz: Singapura Senggol RI, Minta Kontrak Ekspor Gas Dihormati (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125685/singapura-senggol-ri-minta-kontrak-ekspor-gas-dihormati>
-- **5** T3 10-25 15:30 bloomberg_technoz: Indonesia Pangkas Ekspor Gas, Singapura Serius Kaji Energi Nuklir (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125686/indonesia-pangkas-ekspor-gas-singapura-serius-kaji-energi-nuklir>
-- **5** T3 10-25 13:00 bloomberg_technoz: RI Pangkas Ekspor Gas, Singapura Minta Semua Pihak Patuhi Kontrak (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125672/ri-pangkas-ekspor-gas-singapura-minta-semua-pihak-patuhi-kontrak>
-- **4** T3 10-26 12:30 kontan_keuangan: NPL Bank Mandiri Turun Jadi 0,98% pada Kuartal III 2026 [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/npl-bank-mandiri-turun-jadi-098-pada-kuartal-iii-2026>

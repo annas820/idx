@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-26T13:33+07:00",
+ "generated_for": "2026-10-26T14:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 121,
- "kept": 53,
+ "scanned": 134,
+ "kept": 58,
  "dropped_noise": 12,
  "items": [
   {
@@ -56,6 +56,36 @@
    "tickers": [
     "ICBP"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T14:42+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Pantau 26 Emiten Bank yang Belum Penuhi Free Float 15%, Ini Daftarnya",
+   "link": "https://keuangan.kontan.co.id/news/ojk-pantau-26-emiten-bank-yang-belum-penuhi-free-float-15-ini-daftarnya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T14:38+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Minyak Mentah Terus Tekan Rupiah dan Mata Uang Asia",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125766/harga-minyak-mentah-terus-tekan-rupiah-dan-mata-uang-asia",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -220,6 +250,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-26T14:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Impor BBM Singapura Tetap Lanjut Meski RI Pangkas Ekspor Gas",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125765/impor-bbm-singapura-tetap-lanjut-meski-ri-pangkas-ekspor-gas",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-26T11:51+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -353,53 +398,6 @@
     "komoditas"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-25T15:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Indonesia Pangkas Ekspor Gas, Singapura Serius Kaji Energi Nuklir",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125686/indonesia-pangkas-ekspor-gas-singapura-serius-kaji-energi-nuklir",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-25T13:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "RI Pangkas Ekspor Gas, Singapura Minta Semua Pihak Patuhi Kontrak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125672/ri-pangkas-ekspor-gas-singapura-minta-semua-pihak-patuhi-kontrak",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T12:30+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "NPL Bank Mandiri Turun Jadi 0,98% pada Kuartal III 2026",
-   "link": "https://keuangan.kontan.co.id/news/npl-bank-mandiri-turun-jadi-098-pada-kuartal-iii-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
    "flags": [],
    "also_in": []
   }
