@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-26T12:30+07:00 WIB | jendela 36 jam | dipindai 113, lolos 49, dibuang sebagai noise 12.
+Berita terbaru: 2026-10-26T13:33+07:00 WIB | jendela 36 jam | dipindai 121, lolos 53, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,7 +8,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **9** T3 10-25 15:31 kontan_keuangan: BI Sebut Sentimen MSCI Picu Outflow, Saham hingga SBN dan SRBI Terdampak (kebijakan/pasar/kurs) <https://keuangan.kontan.co.id/news/bi-sebut-sentimen-msci-picu-outflow-saham-hingga-sbn-dan-srbi-terdampak>
+- **7** T3 10-26 13:04 bloomberg_technoz: Ulasan Terbaru Mesin Pertumbuhan Saham ANTM: Emas dan Nikel [ANTM] (pasar/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/125752/ulasan-terbaru-mesin-pertumbuhan-saham-antm-emas-dan-nikel>
 - **7** T3 10-25 18:30 bloomberg_technoz: ICBP Buyback Saham Rp750 M, Dimulai Besok [ICBP] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125689/icbp-buyback-saham-rp750-m-dimulai-besok>
+- **6** T3 10-26 13:33 bloomberg_technoz: Rupiah di atas Rp18.100/US$, IHSG Terpeleset 1% (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125756/rupiah-di-atas-rp18-100-us-ihsg-terpeleset-1>
+- **6** T3 10-26 13:00 bloomberg_technoz: IHSG Balik Melemah Dibayangi Depresiasi Rupiah (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125754/ihsg-balik-melemah-dibayangi-depresiasi-rupiah>
 - **6** T3 10-26 11:02 kontan_keuangan: Bank Mandiri (BMRI) dapat Rekomendasi Saham Beli dari BRI Danareksa Sekuritas [BBRI,BMRI] (pasar/emiten; petunjuk) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-dapat-rekomendasi-saham-beli-dari-bri-danareksa-sekuritas>
 - **6** T3 10-26 11:00 bloomberg_technoz: Bukan Lagi Saham, Suspensi ke Depan Menyasar Rekening Efek (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/125744/bukan-lagi-saham-suspensi-ke-depan-menyasar-rekening-efek>
 - **6** T3 10-26 09:33 bloomberg_technoz: IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter>
@@ -29,6 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-25 15:30 bloomberg_technoz: Indonesia Pangkas Ekspor Gas, Singapura Serius Kaji Energi Nuklir (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125686/indonesia-pangkas-ekspor-gas-singapura-serius-kaji-energi-nuklir>
 - **5** T3 10-25 13:00 bloomberg_technoz: RI Pangkas Ekspor Gas, Singapura Minta Semua Pihak Patuhi Kontrak (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125672/ri-pangkas-ekspor-gas-singapura-minta-semua-pihak-patuhi-kontrak>
 - **4** T3 10-26 12:30 kontan_keuangan: NPL Bank Mandiri Turun Jadi 0,98% pada Kuartal III 2026 [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/npl-bank-mandiri-turun-jadi-098-pada-kuartal-iii-2026>
-- **4** T3 10-26 10:35 kontan_keuangan: Laba Bank Mandiri Tumbuh 20,7% per September 2026, Begini Kata Analis [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-207-per-september-2026-begini-kata-analis>
-- **4** T3 10-26 08:58 bloomberg_technoz: Rangkuman Rekomendasi Saham Hari Ini, 26 Oktober 2026 (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/125722/rangkuman-rekomendasi-saham-hari-ini-26-oktober-2026>
-- **4** T3 10-26 08:39 bloomberg_technoz: Rekomendasi Saham & Arah IHSG Hari Ini, Support 5.400 Jadi Kunci (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/125717/rekomendasi-saham-arah-ihsg-hari-ini-support-5-400-jadi-kunci>

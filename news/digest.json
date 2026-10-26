@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-26T12:30+07:00",
+ "generated_for": "2026-10-26T13:33+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 113,
- "kept": 49,
+ "scanned": 121,
+ "kept": 53,
  "dropped_noise": 12,
  "items": [
   {
@@ -24,6 +24,24 @@
    "also_in": []
   },
   {
+   "published": "2026-10-26T13:04+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ulasan Terbaru Mesin Pertumbuhan Saham ANTM: Emas dan Nikel",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125752/ulasan-terbaru-mesin-pertumbuhan-saham-antm-emas-dan-nikel",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-25T18:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -38,6 +56,36 @@
    "tickers": [
     "ICBP"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T13:33+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah di atas Rp18.100/US$, IHSG Terpeleset 1%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125756/rupiah-di-atas-rp18-100-us-ihsg-terpeleset-1",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T13:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Balik Melemah Dibayangi Depresiasi Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125754/ihsg-balik-melemah-dibayangi-depresiasi-rupiah",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -353,55 +401,6 @@
     "BMRI"
    ],
    "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T10:35+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Laba Bank Mandiri Tumbuh 20,7% per September 2026, Begini Kata Analis",
-   "link": "https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-207-per-september-2026-begini-kata-analis",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T08:58+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rangkuman Rekomendasi Saham Hari Ini, 26 Oktober 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125722/rangkuman-rekomendasi-saham-hari-ini-26-oktober-2026",
-   "score": 4,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T08:39+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rekomendasi Saham & Arah IHSG Hari Ini, Support 5.400 Jadi Kunci",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125717/rekomendasi-saham-arah-ihsg-hari-ini-support-5-400-jadi-kunci",
-   "score": 4,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
    "also_in": []
   }
  ],
