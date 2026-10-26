@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-26T16:21+07:00 WIB | jendela 36 jam | dipindai 147, lolos 64, dibuang sebagai noise 12.
+Berita terbaru: 2026-10-26T17:32+07:00 WIB | jendela 36 jam | dipindai 157, lolos 66, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -23,6 +23,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-25 20:00 bloomberg_technoz: Fitch Turunkan Rating Obligasi Pos Indonesia ke Default (kurs/kredit) <https://www.bloombergtechnoz.com/detail-news/125695/fitch-turunkan-rating-obligasi-pos-indonesia-ke-default>
 - **6** T3 10-25 19:27 bloomberg_technoz: Grup Indofood Siapkan Anggaran Buyback Rp2,25 T [ICBP,INDF] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t>
 - **6** T3 10-25 07:00 bloomberg_technoz: Dasco Respons MSCI: Indonesia Akan Tentukan Rating Bursa Sendiri (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/125660/dasco-respons-msci-indonesia-akan-tentukan-rating-bursa-sendiri>
+- **5** T3 10-26 17:32 kontan_keuangan: Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan [BNGA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan>
 - **5** T3 10-26 14:50 bloomberg_technoz: Impor BBM Singapura Tetap Lanjut Meski RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125765/impor-bbm-singapura-tetap-lanjut-meski-ri-pangkas-ekspor-gas>
 - **5** T3 10-26 11:51 kontan_keuangan: Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026 (kebijakan/makro) <https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026>
 - **5** T3 10-26 11:50 bloomberg_technoz: Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai>
@@ -31,4 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-26 09:45 bloomberg_technoz: Daftar HSC Terbaru, Saham Manoj Punjabi FILM Masuk [FILM] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125734/daftar-hsc-terbaru-saham-manoj-punjabi-film-masuk>
 - **5** T3 10-26 09:30 bloomberg_technoz: Singapura Diversifikasi Pasokan Energi Usai RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125733/singapura-diversifikasi-pasokan-energi-usai-ri-pangkas-ekspor-gas>
 - **5** T3 10-26 07:00 kontan_keuangan: Ekonom Puji Bauran Kebijakan BI untuk Jaga Rupiah dan Naikkan Likuiditas Bank (kurs/makro) <https://keuangan.kontan.co.id/news/ekonom-puji-bauran-kebijakan-bi-untuk-jaga-rupiah-dan-naikkan-likuiditas-bank>
-- **5** T3 10-26 05:50 kontan_keuangan: 26 Bank Belum Penuhi Free Float 15%, Rights Issue hingga Delisting Jadi Opsi (pasar/korporasi) <https://keuangan.kontan.co.id/news/26-bank-belum-penuhi-free-float-15-rights-issue-hingga-delisting-jadi-opsi>

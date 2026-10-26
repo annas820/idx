@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-26T16:21+07:00",
+ "generated_for": "2026-10-26T17:32+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 147,
- "kept": 64,
- "dropped_noise": 12,
+ "scanned": 157,
+ "kept": 66,
+ "dropped_noise": 13,
  "items": [
   {
    "published": "2026-10-25T15:31+07:00",
@@ -266,6 +266,23 @@
    "also_in": []
   },
   {
+   "published": "2026-10-26T17:32+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan",
+   "link": "https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BNGA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-26T14:50+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -382,21 +399,6 @@
    "categories": [
     "kurs",
     "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T05:50+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "26 Bank Belum Penuhi Free Float 15%, Rights Issue hingga Delisting Jadi Opsi",
-   "link": "https://keuangan.kontan.co.id/news/26-bank-belum-penuhi-free-float-15-rights-issue-hingga-delisting-jadi-opsi",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],
