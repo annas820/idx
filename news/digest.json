@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-26T17:32+07:00",
+ "generated_for": "2026-10-26T18:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 157,
- "kept": 66,
+ "scanned": 167,
+ "kept": 70,
  "dropped_noise": 13,
  "items": [
   {
@@ -266,6 +266,70 @@
    "also_in": []
   },
   {
+   "published": "2026-10-26T18:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Destry Beber Alasan Defisit Neraca Pembayaran & Pelemahan Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125792/destry-beber-alasan-defisit-neraca-pembayaran-pelemahan-rupiah",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T18:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bahlil Ungkap Dugaan Korporasi Asing Menambang di Lahan Sawit",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125788/bahlil-ungkap-dugaan-korporasi-asing-menambang-di-lahan-sawit",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T17:55+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham SUPA Bergejolak, Superbank Sebut Belum Ada Rencana Aksi Korporasi",
+   "link": "https://keuangan.kontan.co.id/news/saham-supa-bergejolak-superbank-sebut-belum-ada-rencana-aksi-korporasi",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "SUPA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T17:41+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Asing Net Sell Rp 2,03 Triliun di Awal Pekan Ini, BMRI Paling Banyak Dilepas",
+   "link": "https://keuangan.kontan.co.id/news/asing-net-sell-rp-203-triliun-di-awal-pekan-ini-bmri-paling-banyak-dilepas",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-26T17:32+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -337,68 +401,6 @@
    "categories": [
     "kebijakan",
     "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T10:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "RI Diingatkan Konsekuensi Langgar Kontrak Ekspor Gas ke Singapura",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125736/ri-diingatkan-konsekuensi-langgar-kontrak-ekspor-gas-ke-singapura",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T09:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Daftar HSC Terbaru, Saham Manoj Punjabi FILM Masuk",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125734/daftar-hsc-terbaru-saham-manoj-punjabi-film-masuk",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "FILM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T09:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Singapura Diversifikasi Pasokan Energi Usai RI Pangkas Ekspor Gas",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125733/singapura-diversifikasi-pasokan-energi-usai-ri-pangkas-ekspor-gas",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T07:00+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Ekonom Puji Bauran Kebijakan BI untuk Jaga Rupiah dan Naikkan Likuiditas Bank",
-   "link": "https://keuangan.kontan.co.id/news/ekonom-puji-bauran-kebijakan-bi-untuk-jaga-rupiah-dan-naikkan-likuiditas-bank",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
    ],
    "tickers": [],
    "flags": [],
