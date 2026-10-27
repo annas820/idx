@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T14:40+07:00",
+ "generated_for": "2026-10-27T15:34+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 248,
- "kept": 94,
+ "scanned": 259,
+ "kept": 100,
  "dropped_noise": 19,
  "items": [
   {
@@ -255,6 +255,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T15:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "PLN EPI Salurkan Gas Hasil Pangkas Ekspor Singapura ke Batam",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125915/pln-epi-salurkan-gas-hasil-pangkas-ekspor-singapura-ke-batam",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T13:50+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -390,21 +405,6 @@
    "categories": [
     "kebijakan",
     "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T18:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Destry Beber Alasan Defisit Neraca Pembayaran & Pelemahan Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125792/destry-beber-alasan-defisit-neraca-pembayaran-pelemahan-rupiah",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
    ],
    "tickers": [],
    "flags": [],
