@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T06:15+07:00",
+ "generated_for": "2026-10-27T07:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 158,
- "kept": 64,
- "dropped_noise": 14,
+ "scanned": 160,
+ "kept": 65,
+ "dropped_noise": 13,
  "items": [
   {
    "published": "2026-10-26T16:10+07:00",
@@ -74,24 +74,6 @@
    ],
    "tickers": [
     "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-25T18:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "ICBP Buyback Saham Rp750 M, Dimulai Besok",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125689/icbp-buyback-saham-rp750-m-dimulai-besok",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ICBP"
    ],
    "flags": [],
    "also_in": []
@@ -252,23 +234,18 @@
    "also_in": []
   },
   {
-   "published": "2026-10-25T19:27+07:00",
+   "published": "2026-10-27T06:45+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Grup Indofood Siapkan Anggaran Buyback Rp2,25 T",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t",
-   "score": 6,
+   "title": "Bursa Asia Bersiap Menguat, IPO Anthropic Bangkitkan Gairah AI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125810/bursa-asia-bersiap-menguat-ipo-anthropic-bangkitkan-gairah-ai",
+   "score": 5,
    "categories": [
-    "korporasi",
-    "emiten"
+    "pasar",
+    "korporasi"
    ],
-   "tickers": [
-    "ICBP",
-    "INDF"
-   ],
-   "flags": [
-    "watchlist"
-   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -411,6 +388,21 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-10-26T11:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -427,26 +419,6 @@
    ],
    "tickers": [
     "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-25T19:27+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Grup Indofood Siapkan Anggaran Buyback Rp2,25 T",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125690/grup-indofood-siapkan-anggaran-buyback-rp2-25-t",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ICBP",
-    "INDF"
    ],
    "flags": [
     "watchlist"
