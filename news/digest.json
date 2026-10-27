@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T17:30+07:00",
+ "generated_for": "2026-10-27T18:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 288,
- "kept": 106,
+ "scanned": 291,
+ "kept": 104,
  "dropped_noise": 24,
  "items": [
   {
@@ -255,6 +255,23 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T18:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Depak CUAN dari Indeks Bergengsi LQ45 & IDX80",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125941/bei-depak-cuan-dari-indeks-bergengsi-lq45-idx80",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "CUAN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T17:10+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -386,21 +403,6 @@
    "tier": 3,
    "title": "Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027",
    "link": "https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T06:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bursa Asia Bersiap Menguat, IPO Anthropic Bangkitkan Gairah AI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125810/bursa-asia-bersiap-menguat-ipo-anthropic-bangkitkan-gairah-ai",
    "score": 5,
    "categories": [
     "pasar",
