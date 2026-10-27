@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-27T09:30+07:00 WIB | jendela 36 jam | dipindai 178, lolos 76, dibuang sebagai noise 13.
+Berita terbaru: 2026-10-27T10:30+07:00 WIB | jendela 36 jam | dipindai 194, lolos 79, dibuang sebagai noise 16.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,6 +8,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **8** T3 10-26 16:10 bloomberg_technoz: Menkeu: Penerbitan SBN Masih Sesuai Target Meski Defisit Melebar (kebijakan/kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125775/menkeu-penerbitan-sbn-masih-sesuai-target-meski-defisit-melebar>
+- **7** T3 10-27 10:30 bloomberg_technoz: BRIS Rancang Buyback Saham Rp500 Miliar [BRIS] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125844/bris-rancang-buyback-saham-rp500-miliar>
 - **7** T3 10-27 08:50 kontan_keuangan: Lanjutkan Buyback Saham, BRI Siapkan Dana Hingga Rp 1 Triliun [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/lanjutkan-buyback-saham-bri-siapkan-dana-hingga-rp-1-triliun>
 - **7** T3 10-26 19:38 kontan_keuangan: Astra Sedaya Finance Siapkan Rp 304,5 Miliar untuk Lunasi Obligasi Jatuh Tempo [ASII] (kurs/emiten; watchlist) <https://keuangan.kontan.co.id/news/astra-sedaya-finance-siapkan-rp-3045-miliar-untuk-lunasi-obligasi-jatuh-tempo>
 - **7** T3 10-26 19:10 kontan_keuangan: BSI (BRIS) Siapkan Buyback Saham dengan Anggaran Maksimal Rp 500 Miliar [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bsi-bris-siapkan-buyback-saham-dengan-anggaran-maksimal-rp-500-miliar>
@@ -31,4 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-26 17:41 kontan_keuangan: Asing Net Sell Rp 2,03 Triliun di Awal Pekan Ini, BMRI Paling Banyak Dilepas [BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-net-sell-rp-203-triliun-di-awal-pekan-ini-bmri-paling-banyak-dilepas>
 - **5** T3 10-26 17:32 kontan_keuangan: Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan [BNGA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan>
 - **5** T3 10-26 14:50 bloomberg_technoz: Impor BBM Singapura Tetap Lanjut Meski RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125765/impor-bbm-singapura-tetap-lanjut-meski-ri-pangkas-ekspor-gas>
-- **5** T3 10-26 11:51 kontan_keuangan: Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026 (kebijakan/makro) <https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026>

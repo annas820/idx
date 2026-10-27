@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T09:30+07:00",
+ "generated_for": "2026-10-27T10:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 178,
- "kept": 76,
- "dropped_noise": 13,
+ "scanned": 194,
+ "kept": 79,
+ "dropped_noise": 16,
  "items": [
   {
    "published": "2026-10-26T16:10+07:00",
@@ -20,6 +20,24 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T10:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BRIS Rancang Buyback Saham Rp500 Miliar",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125844/bris-rancang-buyback-saham-rp500-miliar",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -387,21 +405,6 @@
    "categories": [
     "kebijakan",
     "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T11:51+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026",
-   "link": "https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "makro"
    ],
    "tickers": [],
    "flags": [],
