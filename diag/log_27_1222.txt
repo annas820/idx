@@ -1,0 +1,54 @@
+run at 2026-10-27_12:22:11 WIB; runner IP: 4.154.27.64
+
+### curl -si -m 25 -A Mozilla/5.0 https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=BBCA&start=10/23/2026&end=10/23/2026&fd=all&board=all
+HTTP/1.1 502 Bad Gateway
+Server: nginx
+Date: Tue, 27 Oct 2026 05:22:12 GMT
+Content-Type: text/html
+Content-Length: 166
+Connection: keep-alive
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Content-Security-Policy: frame-ancestors 'self' https://ipotapp httpsipotapp://ipotapp https://ipc.ipot.id/;
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+exit=0
+
+### curl -sI -m 25 https://www.indopremier.com/
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 27 Oct 2026 05:22:13 GMT
+Content-Type: text/html
+Content-Length: 5576
+Last-Modified: Wed, 26 Aug 2026 05:38:23 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+ETag: "6a8e7bcf-15c8"
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Content-Security-Policy: frame-ancestors 'self' https://ipotapp httpsipotapp://ipotapp https://ipc.ipot.id/;
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Accept-Ranges: bytes
+
+exit=0
+
+### idx -o json broker BBCA --date 2026-10-23
+{"error":{"code":"provider","message":"ipot: broker summary for BBCA: HTTP 502"},"exit_code":3}
+exit=3
+
+### idx -o json broker TLKM --date 2026-10-22
+{"error":{"code":"provider","message":"ipot: broker summary for TLKM: HTTP 502"},"exit_code":3}
+exit=3
+
+### idx -o json stocks actions BBCA
+{"error":{"code":"provider","message":"ipot: corporate actions for BBCA: HTTP 502"},"exit_code":3}
+exit=3
