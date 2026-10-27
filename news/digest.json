@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-28T05:23+07:00",
+ "generated_for": "2026-10-28T06:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 220,
- "kept": 72,
- "dropped_noise": 15,
+ "scanned": 212,
+ "kept": 68,
+ "dropped_noise": 14,
  "items": [
   {
    "published": "2026-10-27T18:44+07:00",
@@ -353,67 +353,69 @@
    "also_in": []
   },
   {
-   "published": "2026-10-26T18:10+07:00",
+   "published": "2026-10-27T16:51+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BCA Catat Laba Bersih Rp 45,2 Triliun pada Kuartal III-2026",
+   "link": "https://keuangan.kontan.co.id/news/bca-catat-laba-bersih-rp-452-triliun-pada-kuartal-iii-2026",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T16:42+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Bahlil Ungkap Dugaan Korporasi Asing Menambang di Lahan Sawit",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125788/bahlil-ungkap-dugaan-korporasi-asing-menambang-di-lahan-sawit",
-   "score": 5,
+   "title": "Laba Bank BCA (BBCA) Tumbuh 4,2% Jadi Rp45,2 Triliun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125934/laba-bank-bca-bbca-tumbuh-4-2-jadi-rp45-2-triliun",
+   "score": 4,
    "categories": [
-    "pasar",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T17:55+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham SUPA Bergejolak, Superbank Sebut Belum Ada Rencana Aksi Korporasi",
-   "link": "https://keuangan.kontan.co.id/news/saham-supa-bergejolak-superbank-sebut-belum-ada-rencana-aksi-korporasi",
-   "score": 5,
-   "categories": [
-    "pasar",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "SUPA"
+    "BBCA"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-10-26T17:41+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-10-27T15:30+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Asing Net Sell Rp 2,03 Triliun di Awal Pekan Ini, BMRI Paling Banyak Dilepas",
-   "link": "https://keuangan.kontan.co.id/news/asing-net-sell-rp-203-triliun-di-awal-pekan-ini-bmri-paling-banyak-dilepas",
-   "score": 5,
+   "title": "Laba Produsen Rokok Sampoerna (HMSP) Lompat 44%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125919/laba-produsen-rokok-sampoerna-hmsp-lompat-44",
+   "score": 4,
    "categories": [
-    "pasar",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "BMRI"
+    "HMSP"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-10-26T17:32+07:00",
+   "published": "2026-10-27T11:46+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan",
-   "link": "https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan",
-   "score": 5,
+   "title": "Kredit BNI (BBNI) Melonjak 22,2%, Laba Tumbuh 6,6%, Mirae Tetap Rekomendasi Netral",
+   "link": "https://keuangan.kontan.co.id/news/kredit-bni-bbni-melonjak-222-laba-tumbuh-66-mirae-tetap-rekomendasi-netral",
+   "score": 4,
    "categories": [
-    "pasar",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "BNGA"
+    "BBNI"
    ],
    "flags": [],
    "also_in": []

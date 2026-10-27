@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-28T05:23+07:00 WIB | jendela 36 jam | dipindai 220, lolos 72, dibuang sebagai noise 15.
+Berita terbaru: 2026-10-28T06:30+07:00 WIB | jendela 36 jam | dipindai 212, lolos 68, dibuang sebagai noise 14.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -28,7 +28,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-27 05:16 bloomberg_technoz: Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo>
 - **5** T3 10-26 20:13 kontan_keuangan: OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas (kebijakan/komoditas) <https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas>
 - **5** T3 10-26 18:40 bloomberg_technoz: Destry Beber Alasan Defisit Neraca Pembayaran & Pelemahan Rupiah (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125792/destry-beber-alasan-defisit-neraca-pembayaran-pelemahan-rupiah>
-- **5** T3 10-26 18:10 bloomberg_technoz: Bahlil Ungkap Dugaan Korporasi Asing Menambang di Lahan Sawit (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125788/bahlil-ungkap-dugaan-korporasi-asing-menambang-di-lahan-sawit>
-- **5** T3 10-26 17:55 kontan_keuangan: Saham SUPA Bergejolak, Superbank Sebut Belum Ada Rencana Aksi Korporasi [SUPA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-supa-bergejolak-superbank-sebut-belum-ada-rencana-aksi-korporasi>
-- **5** T3 10-26 17:41 kontan_keuangan: Asing Net Sell Rp 2,03 Triliun di Awal Pekan Ini, BMRI Paling Banyak Dilepas [BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-net-sell-rp-203-triliun-di-awal-pekan-ini-bmri-paling-banyak-dilepas>
-- **5** T3 10-26 17:32 kontan_keuangan: Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan [BNGA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan>
+- **4** T3 10-27 16:51 kontan_keuangan: BCA Catat Laba Bersih Rp 45,2 Triliun pada Kuartal III-2026 [BBCA] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bca-catat-laba-bersih-rp-452-triliun-pada-kuartal-iii-2026>
+- **4** T3 10-27 16:42 bloomberg_technoz: Laba Bank BCA (BBCA) Tumbuh 4,2% Jadi Rp45,2 Triliun [BBCA] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125934/laba-bank-bca-bbca-tumbuh-4-2-jadi-rp45-2-triliun>
+- **4** T3 10-27 15:30 bloomberg_technoz: Laba Produsen Rokok Sampoerna (HMSP) Lompat 44% [HMSP] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125919/laba-produsen-rokok-sampoerna-hmsp-lompat-44>
+- **4** T3 10-27 11:46 kontan_keuangan: Kredit BNI (BBNI) Melonjak 22,2%, Laba Tumbuh 6,6%, Mirae Tetap Rekomendasi Netral [BBNI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/kredit-bni-bbni-melonjak-222-laba-tumbuh-66-mirae-tetap-rekomendasi-netral>
