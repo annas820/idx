@@ -1,0 +1,44 @@
+name: diagnose broker source
+
+# Manual only. Runs the broker call several ways with full request logging and publishes the log
+# as a file in diag/ so Clo can read exactly which request fails and why. Does not touch daily.yml.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install idx
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/fzn0x/idx/main/install.sh | sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Probe broker source
+        shell: bash
+        run: |
+          mkdir -p diag
+          L=diag/log.txt
+          : > "$L"
+          echo "run at $(date -u +%F_%T) UTC; runner IP: $(curl -s -m 10 https://api.ipify.org || echo unknown)" >> "$L"
+          t() { echo "" >> "$L"; echo "### $*" >> "$L"; out=$("$@" 2>&1); rc=$?; printf '%s' "$out" | head -c 4000 >> "$L"; echo "" >> "$L"; echo "exit=$rc" >> "$L"; }
+          t idx -vv -o json broker BBCA --date 2026-10-23
+          t idx -vv -o json broker BBCA --date 2026-10-26
+          t idx -vv -o json broker BBRI --date 2026-10-23
+          t idx -vv -o json broker TLKM --date 2026-10-22
+          t idx -vv -o json bandar screen --period 1w --sort fnet --desc --limit 3 --scan 10
+          t idx -vv -o json stocks actions BBCA
+
+      - name: Commit log
+        run: |
+          git config user.name "diag-bot"
+          git config user.email "diag-bot@users.noreply.github.com"
+          git add diag
+          git commit -m "diag log $(date -u +%F_%H%M)" || true
+          for i in 1 2 3; do git pull --rebase -q && git push && break || sleep 5; done
