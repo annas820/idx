@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T12:30+07:00",
+ "generated_for": "2026-10-27T13:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 222,
- "kept": 89,
+ "scanned": 234,
+ "kept": 93,
  "dropped_noise": 19,
  "items": [
   {
@@ -255,6 +255,24 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T13:25+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Diperberat Saham DCII dan BREN, IHSG Terpeleset ke Zona Merah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125890/diperberat-saham-dcii-dan-bren-ihsg-terpeleset-ke-zona-merah",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN",
+    "DCII"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T12:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -389,23 +407,6 @@
     "komoditas"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T17:55+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham SUPA Bergejolak, Superbank Sebut Belum Ada Rencana Aksi Korporasi",
-   "link": "https://keuangan.kontan.co.id/news/saham-supa-bergejolak-superbank-sebut-belum-ada-rencana-aksi-korporasi",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "SUPA"
-   ],
    "flags": [],
    "also_in": []
   }

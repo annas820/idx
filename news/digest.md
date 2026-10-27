@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-27T12:30+07:00 WIB | jendela 36 jam | dipindai 222, lolos 89, dibuang sebagai noise 19.
+Berita terbaru: 2026-10-27T13:30+07:00 WIB | jendela 36 jam | dipindai 234, lolos 93, dibuang sebagai noise 19.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -22,6 +22,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-26 09:33 bloomberg_technoz: IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter>
 - **6** T3 10-26 08:10 bloomberg_technoz: Saham Asia Tertekan Jelang Laporan Keuangan, Minyak Terkoreksi (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125709/saham-asia-tertekan-jelang-laporan-keuangan-minyak-terkoreksi>
 - **6** T3 10-26 08:08 bloomberg_technoz: Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel>
+- **5** T3 10-27 13:25 bloomberg_technoz: Diperberat Saham DCII dan BREN, IHSG Terpeleset ke Zona Merah [BREN,DCII] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125890/diperberat-saham-dcii-dan-bren-ihsg-terpeleset-ke-zona-merah>
 - **5** T3 10-27 12:00 bloomberg_technoz: RI Kukuh Pangkas Ekspor Gas ke Singapura, Apa Alasan & Dampaknya? (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125867/ri-kukuh-pangkas-ekspor-gas-ke-singapura-apa-alasan-dampaknya>
 - **5** T3 10-27 11:40 bloomberg_technoz: Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase>
 - **5** T3 10-27 11:33 kontan_keuangan: Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS [BBCA,BRIS] (pasar/emiten) <https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris>
@@ -31,4 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-26 20:13 kontan_keuangan: OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas (kebijakan/komoditas) <https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas>
 - **5** T3 10-26 18:40 bloomberg_technoz: Destry Beber Alasan Defisit Neraca Pembayaran & Pelemahan Rupiah (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125792/destry-beber-alasan-defisit-neraca-pembayaran-pelemahan-rupiah>
 - **5** T3 10-26 18:10 bloomberg_technoz: Bahlil Ungkap Dugaan Korporasi Asing Menambang di Lahan Sawit (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125788/bahlil-ungkap-dugaan-korporasi-asing-menambang-di-lahan-sawit>
-- **5** T3 10-26 17:55 kontan_keuangan: Saham SUPA Bergejolak, Superbank Sebut Belum Ada Rencana Aksi Korporasi [SUPA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-supa-bergejolak-superbank-sebut-belum-ada-rencana-aksi-korporasi>
