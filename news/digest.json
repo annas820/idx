@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T20:40+07:00",
+ "generated_for": "2026-10-27T21:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 295,
- "kept": 103,
- "dropped_noise": 22,
+ "scanned": 285,
+ "kept": 99,
+ "dropped_noise": 15,
  "items": [
   {
    "published": "2026-10-26T16:10+07:00",
@@ -228,21 +228,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-26T09:33+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-27T19:02+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -418,6 +403,21 @@
     "BBCA",
     "BRIS"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T08:58+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027",
+   "link": "https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }

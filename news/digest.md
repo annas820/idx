@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-27T20:40+07:00 WIB | jendela 36 jam | dipindai 295, lolos 103, dibuang sebagai noise 22.
+Berita terbaru: 2026-10-27T21:40+07:00 WIB | jendela 36 jam | dipindai 285, lolos 99, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -20,7 +20,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-26 13:00 bloomberg_technoz: IHSG Balik Melemah Dibayangi Depresiasi Rupiah (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125754/ihsg-balik-melemah-dibayangi-depresiasi-rupiah>
 - **6** T3 10-26 11:02 kontan_keuangan: Bank Mandiri (BMRI) dapat Rekomendasi Saham Beli dari BRI Danareksa Sekuritas [BBRI,BMRI] (pasar/emiten; petunjuk) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-dapat-rekomendasi-saham-beli-dari-bri-danareksa-sekuritas>
 - **6** T3 10-26 11:00 bloomberg_technoz: Bukan Lagi Saham, Suspensi ke Depan Menyasar Rekening Efek (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/125744/bukan-lagi-saham-suspensi-ke-depan-menyasar-rekening-efek>
-- **6** T3 10-26 09:33 bloomberg_technoz: IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter>
 - **5** T3 10-27 19:02 kontan_keuangan: Bank of India Indonesia (BSWD) Kaji Pemenuhan Free Float 15% [BSWD] (pasar/emiten) <https://keuangan.kontan.co.id/news/bank-of-india-indonesia-bswd-kaji-pemenuhan-free-float-15>
 - **5** T3 10-27 18:50 bloomberg_technoz: IHSG Turun 1,99%, Saham BREN, BRPT dan TPIA Jadi Laggard Terberat [BREN,BRPT,TPIA] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125946/ihsg-turun-1-99-saham-bren-brpt-dan-tpia-jadi-laggard-terberat>
 - **5** T3 10-27 18:10 bloomberg_technoz: BEI Depak CUAN dari Indeks Bergengsi LQ45 & IDX80 [CUAN] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/125941/bei-depak-cuan-dari-indeks-bergengsi-lq45-idx80>
@@ -32,3 +31,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-27 11:50 bloomberg_technoz: Kemenkeu Rilis Aturan Baru, Defisit APBD Dibatasi 2,5% (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/125863/kemenkeu-rilis-aturan-baru-defisit-apbd-dibatasi-2-5>
 - **5** T3 10-27 11:40 bloomberg_technoz: Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase>
 - **5** T3 10-27 11:33 kontan_keuangan: Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS [BBCA,BRIS] (pasar/emiten) <https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris>
+- **5** T3 10-27 08:58 kontan_keuangan: Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027 (pasar/korporasi) <https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027>
