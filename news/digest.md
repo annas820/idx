@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-27T19:40+07:00 WIB | jendela 36 jam | dipindai 297, lolos 106, dibuang sebagai noise 26.
+Berita terbaru: 2026-10-27T20:40+07:00 WIB | jendela 36 jam | dipindai 295, lolos 103, dibuang sebagai noise 22.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -21,8 +21,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-26 11:02 kontan_keuangan: Bank Mandiri (BMRI) dapat Rekomendasi Saham Beli dari BRI Danareksa Sekuritas [BBRI,BMRI] (pasar/emiten; petunjuk) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-dapat-rekomendasi-saham-beli-dari-bri-danareksa-sekuritas>
 - **6** T3 10-26 11:00 bloomberg_technoz: Bukan Lagi Saham, Suspensi ke Depan Menyasar Rekening Efek (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/125744/bukan-lagi-saham-suspensi-ke-depan-menyasar-rekening-efek>
 - **6** T3 10-26 09:33 bloomberg_technoz: IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter>
-- **6** T3 10-26 08:10 bloomberg_technoz: Saham Asia Tertekan Jelang Laporan Keuangan, Minyak Terkoreksi (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125709/saham-asia-tertekan-jelang-laporan-keuangan-minyak-terkoreksi>
-- **6** T3 10-26 08:08 bloomberg_technoz: Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel>
 - **5** T3 10-27 19:02 kontan_keuangan: Bank of India Indonesia (BSWD) Kaji Pemenuhan Free Float 15% [BSWD] (pasar/emiten) <https://keuangan.kontan.co.id/news/bank-of-india-indonesia-bswd-kaji-pemenuhan-free-float-15>
 - **5** T3 10-27 18:50 bloomberg_technoz: IHSG Turun 1,99%, Saham BREN, BRPT dan TPIA Jadi Laggard Terberat [BREN,BRPT,TPIA] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125946/ihsg-turun-1-99-saham-bren-brpt-dan-tpia-jadi-laggard-terberat>
 - **5** T3 10-27 18:10 bloomberg_technoz: BEI Depak CUAN dari Indeks Bergengsi LQ45 & IDX80 [CUAN] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/125941/bei-depak-cuan-dari-indeks-bergengsi-lq45-idx80>
@@ -32,3 +30,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-27 13:25 bloomberg_technoz: Diperberat Saham DCII dan BREN, IHSG Terpeleset ke Zona Merah [BREN,DCII] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125890/diperberat-saham-dcii-dan-bren-ihsg-terpeleset-ke-zona-merah>
 - **5** T3 10-27 12:00 bloomberg_technoz: RI Kukuh Pangkas Ekspor Gas ke Singapura, Apa Alasan & Dampaknya? (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125867/ri-kukuh-pangkas-ekspor-gas-ke-singapura-apa-alasan-dampaknya>
 - **5** T3 10-27 11:50 bloomberg_technoz: Kemenkeu Rilis Aturan Baru, Defisit APBD Dibatasi 2,5% (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/125863/kemenkeu-rilis-aturan-baru-defisit-apbd-dibatasi-2-5>
+- **5** T3 10-27 11:40 bloomberg_technoz: Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase>
+- **5** T3 10-27 11:33 kontan_keuangan: Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS [BBCA,BRIS] (pasar/emiten) <https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris>

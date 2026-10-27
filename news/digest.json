@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T19:40+07:00",
+ "generated_for": "2026-10-27T20:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 297,
- "kept": 106,
- "dropped_noise": 26,
+ "scanned": 295,
+ "kept": 103,
+ "dropped_noise": 22,
  "items": [
   {
    "published": "2026-10-26T16:10+07:00",
@@ -243,36 +243,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-26T08:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham Asia Tertekan Jelang Laporan Keuangan, Minyak Terkoreksi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125709/saham-asia-tertekan-jelang-laporan-keuangan-minyak-terkoreksi",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T08:08+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-27T19:02+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -415,6 +385,39 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T11:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T11:33+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS",
+   "link": "https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BRIS"
+   ],
    "flags": [],
    "also_in": []
   }
