@@ -1,0 +1,59 @@
+run at 2026-10-27_02:44:33 UTC; runner IP: 135.119.238.192
+
+### idx -vv -o json broker BBCA --date 2026-10-23
+DEBUG idx::http: GET url="https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=BBCA&start=10/23/2026&end=10/23/2026&fd=all&board=all"
+DEBUG idx::http: response url="https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=BBCA&start=10/23/2026&end=10/23/2026&fd=all&board=all" status=502 bytes=568
+{"error":{"code":"provider","message":"ipot: broker summary for BBCA: HTTP 502"},"exit_code":3}
+exit=3
+
+### idx -vv -o json broker BBCA --date 2026-10-26
+DEBUG idx::http: GET url="https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=BBCA&start=10/26/2026&end=10/26/2026&fd=all&board=all"
+DEBUG idx::http: response url="https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=BBCA&start=10/26/2026&end=10/26/2026&fd=all&board=all" status=502 bytes=568
+{"error":{"code":"provider","message":"ipot: broker summary for BBCA: HTTP 502"},"exit_code":3}
+exit=3
+
+### idx -vv -o json broker BBRI --date 2026-10-23
+DEBUG idx::http: GET url="https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=BBRI&start=10/23/2026&end=10/23/2026&fd=all&board=all"
+DEBUG idx::http: response url="https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=BBRI&start=10/23/2026&end=10/23/2026&fd=all&board=all" status=502 bytes=568
+{"error":{"code":"provider","message":"ipot: broker summary for BBRI: HTTP 502"},"exit_code":3}
+exit=3
+
+### idx -vv -o json broker TLKM --date 2026-10-22
+DEBUG idx::http: GET url="https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=TLKM&start=10/22/2026&end=10/22/2026&fd=all&board=all"
+DEBUG idx::http: response url="https://www.indopremier.com/module/saham/include/data-brokersummary.php?code=TLKM&start=10/22/2026&end=10/22/2026&fd=all&board=all" status=502 bytes=568
+{"error":{"code":"provider","message":"ipot: broker summary for TLKM: HTTP 502"},"exit_code":3}
+exit=3
+
+### idx -vv -o json bandar screen --period 1w --sort fnet --desc --limit 3 --scan 10
+DEBUG idx::http: GET url="https://fc.yahoo.com"
+DEBUG idx::http: GET url="https://fc.yahoo.com"
+DEBUG idx::http: GET url="https://fc.yahoo.com"
+DEBUG idx::http: GET url="https://fc.yahoo.com"
+DEBUG idx::http: GET url="https://fc.yahoo.com"
+DEBUG idx::http: GET url="https://fc.yahoo.com"
+DEBUG idx::http: GET url="https://fc.yahoo.com"
+DEBUG idx::http: response url="https://fc.yahoo.com" status=404 bytes=4580
+DEBUG idx::http: GET url="https://query2.finance.yahoo.com/v1/test/getcrumb"
+DEBUG idx::http: response url="https://fc.yahoo.com" status=404 bytes=4580
+DEBUG idx::http: GET url="https://query2.finance.yahoo.com/v1/test/getcrumb"
+DEBUG idx::http: response url="https://fc.yahoo.com" status=404 bytes=4580
+DEBUG idx::http: GET url="https://query2.finance.yahoo.com/v1/test/getcrumb"
+DEBUG idx::http: response url="https://fc.yahoo.com" status=404 bytes=4580
+DEBUG idx::http: GET url="https://query2.finance.yahoo.com/v1/test/getcrumb"
+DEBUG idx::http: response url="https://fc.yahoo.com" status=404 bytes=4580
+DEBUG idx::http: GET url="https://query2.finance.yahoo.com/v1/test/getcrumb"
+DEBUG idx::http: response url="https://fc.yahoo.com" status=404 bytes=4580
+DEBUG idx::http: GET url="https://query2.finance.yahoo.com/v1/test/getcrumb"
+DEBUG idx::http: response url="https://fc.yahoo.com" status=404 bytes=4580
+DEBUG idx::http: GET url="https://query2.finance.yahoo.com/v1/test/getcrumb"
+DEBUG idx::http: response url="https://query2.finance.yahoo.com/v1/test/getcrumb" status=200 bytes=11
+DEBUG idx::http: GET url="https://query1.finance.yahoo.com/v7/finance/quote?symbols=AADI.JK,AALI.JK,ABBA.JK,ABDA.JK,ABMM.JK,ACES.JK,ACRO.JK,ACST.JK,ADCP.JK,ADES.JK,ADHI.JK,ADMF.JK,ADMG.JK,ADMR.JK,ADRO.JK,AEGS.JK,AGAR.JK,AGII.JK,AGRO.JK,AGRS.JK,AHAP.JK,AIMS.JK,AISA.JK,AKKU.JK,AKPI.JK,AKRA.JK,AKSI.JK,ALDO.JK,ALII.JK,ALKA.JK,ALMI.JK,ALTO.JK,AMAG.JK,AMAN.JK,AMAR.JK,AMFG.JK,AMIN.JK,AMMN.JK,AMMS.JK,AMOR.JK,AMRT.JK,ANDI.JK,ANJT.JK,ANTM.JK,APEX.JK,APIC.JK,APII.JK,APLI.JK,APLN.JK,ARCI.JK,AREA.JK,ARGO.JK,ARII.JK,ARKA.JK,ARKO.JK,ARMY.JK,ARNA.JK,ARTA.JK,ARTI.JK,ARTO.JK,ASBI.JK,ASDM.JK,ASGR.JK,ASHA.JK,ASII.JK,ASJT.JK,ASLC.JK,ASLI.JK,ASMI.JK,ASPI.JK,ASPR.JK,ASRI.JK,ASRM.JK,ASSA.JK,ATAP.JK,ATIC.JK,ATLA.JK,AUTO.JK,AVIA.JK,AWAN.JK,AXIO.JK,AYAM.JK,AYLS.JK,BABP.JK,BABY.JK,BACA.JK,BAIK.JK,BAJA.JK,BALI.JK,BANK.JK,BAPA.JK,BAPI.JK,BATA.JK,BATR.JK,BAUT.JK,BAYU.JK,BBCA.JK,BBHI.JK,BBKP.JK,BBLD.JK,BBMD.JK,BBNI.JK,BBRI.JK,BBRM.JK,BBSI.JK,BBSS.JK,BBTN.JK,BBYB.JK,BCAP.JK,BCIC.JK,BCIP.JK,BDKR.JK,BDMN.JK,BEBS.JK,BEEF.JK,BEER.JK,BEKS.JK,BELI.JK,BELL.JK,BESS.JK,BEST.JK,BFIN.JK,BGTG.JK,BHAT.JK,BHIT.JK,BIKA.JK,BIKE.JK,BIMA.JK,BINA.JK,BINO.JK,BIPI.JK,BIPP.JK,BIRD.JK,BISI.JK,BJBR.JK,BJTM.JK,BKDP.JK,BKSL.JK,BKSW.JK,BLES.JK,BLOG.JK,BLTA.JK,BLTZ.JK,BLUE.JK,BMAS.JK,BMBL.JK,BMHS.JK,BMRI.JK,BMSR.JK,BMTR.JK&crumb=MNMPQLg45it"
+DEBUG idx::http: response url="https://query2.finance.yahoo.com/v1/test/getcrumb" status=200 bytes=11
+DEBUG idx::http: GET url="https://query1.finance.yahoo.com/v7/finance/quote?symbols=BNBA.JK,BNBR.JK,BNGA.JK,BNII.JK,BNLI.JK,BOAT.JK,BOBA.JK,BOGA.JK,BOLA.JK,BOLT.JK,BOSS.JK,BPFI.JK,BPII.JK,BPTR.JK,BRAM.JK,BREN.JK,BRIS.JK,BRMS.JK,BRNA.JK,BRPT.JK,BRRC.JK,BSBK.JK,BSDE.JK,BSIM.JK,BSML.JK,BSSR.JK,BSWD.JK,BTEK.JK,BTEL.JK,BTON.JK,BTPN.JK,BTPS.JK,BUAH.JK,BUDI.JK,BUKA.JK,BUKK.JK,BULL.JK,BUMI.JK,BUVA.JK,BVIC.JK,BWPT.JK,BYAN.JK,CAKK.JK,CAMP.JK,CANI.JK,CARE.JK,CARS.JK,CASA.JK,CASH.JK,CASS.JK,CBDK.JK,CBMF.JK,CBPE.JK,CBRE.JK,CBUT.JK,CCSI.JK,CDIA.JK,CEKA.JK,CENT.JK,CFIN.JK,CGAS.JK,CHEK.JK,CHEM.JK,CHIP.JK,CINT.JK,CITA.JK,CITY.JK,CLAY.JK,CLEO.JK,CLPI.JK,CMNP.JK,CMNT.JK,CMPP.JK,CMRY.JK,CNKO.JK,CNMA.JK,CNTX.JK,COAL.JK,COCO.JK,COIN.JK,COWL.JK,CPIN.JK,CPRI.JK,CPRO.JK,CRAB.JK,CRSN.JK,CSAP.JK,CSIS.JK,CSMI.JK,CSRA.JK,CTBN.JK,CTRA.JK,CTTH.JK,CUAN.JK,CYBR.JK,DAAZ.JK,DADA.JK,DART.JK,DATA.JK,DAYA.JK,DCII.JK,DEAL.JK,DEFI.JK,DEPO.JK,DEWA.JK,DEWI.JK,DFAM.JK,DGIK.JK,DGNS.JK,DGWG.JK,DIGI.JK,DILD.JK,DIVA.JK,DKFT.JK,DKHH.JK,DLTA.JK,DMAS.JK,DMMX.JK,DMND.JK,DNAR.JK,DNET.JK,DOID.JK,DOOH.JK,DOSS.JK,DPNS.JK,DPUM.JK,D
+exit=4
+
+### idx -vv -o json stocks actions BBCA
+DEBUG idx::http: GET url="https://www.indopremier.com/module/saham/include/corporateaction.php?code=BBCA&start=10/27/2025"
+DEBUG idx::http: response url="https://www.indopremier.com/module/saham/include/corporateaction.php?code=BBCA&start=10/27/2025" status=502 bytes=568
+{"error":{"code":"provider","message":"ipot: corporate actions for BBCA: HTTP 502"},"exit_code":3}
+exit=3
