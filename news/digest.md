@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-27T07:30+07:00 WIB | jendela 36 jam | dipindai 160, lolos 65, dibuang sebagai noise 13.
+Berita terbaru: 2026-10-27T08:40+07:00 WIB | jendela 36 jam | dipindai 166, lolos 67, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -20,7 +20,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-26 09:33 bloomberg_technoz: IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter>
 - **6** T3 10-26 08:10 bloomberg_technoz: Saham Asia Tertekan Jelang Laporan Keuangan, Minyak Terkoreksi (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125709/saham-asia-tertekan-jelang-laporan-keuangan-minyak-terkoreksi>
 - **6** T3 10-26 08:08 bloomberg_technoz: Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel>
-- **6** T3 10-25 20:00 bloomberg_technoz: Fitch Turunkan Rating Obligasi Pos Indonesia ke Default (kurs/kredit) <https://www.bloombergtechnoz.com/detail-news/125695/fitch-turunkan-rating-obligasi-pos-indonesia-ke-default>
 - **5** T3 10-27 06:45 bloomberg_technoz: Bursa Asia Bersiap Menguat, IPO Anthropic Bangkitkan Gairah AI (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125810/bursa-asia-bersiap-menguat-ipo-anthropic-bangkitkan-gairah-ai>
 - **5** T3 10-27 05:16 bloomberg_technoz: Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo>
 - **5** T3 10-26 20:13 kontan_keuangan: OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas (kebijakan/komoditas) <https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas>
@@ -32,3 +31,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-26 14:50 bloomberg_technoz: Impor BBM Singapura Tetap Lanjut Meski RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125765/impor-bbm-singapura-tetap-lanjut-meski-ri-pangkas-ekspor-gas>
 - **5** T3 10-26 11:51 kontan_keuangan: Masih Jauh dari Target, OJK Catat Rasio Aset Dapen ke PDB 7,86% per Agustus 2026 (kebijakan/makro) <https://keuangan.kontan.co.id/news/masih-jauh-dari-target-ojk-catat-rasio-aset-dapen-ke-pdb-786-per-agustus-2026>
 - **5** T3 10-26 11:50 bloomberg_technoz: Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai>
+- **5** T3 10-26 11:10 bloomberg_technoz: OJK Perpanjang Buyback Tanpa RUPS hingga Juni 2027 (kebijakan/korporasi) <https://www.bloombergtechnoz.com/detail-news/125745/ojk-perpanjang-buyback-tanpa-rups-hingga-juni-2027>

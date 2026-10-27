@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T07:30+07:00",
+ "generated_for": "2026-10-27T08:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 160,
- "kept": 65,
+ "scanned": 166,
+ "kept": 67,
  "dropped_noise": 13,
  "items": [
   {
@@ -219,21 +219,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-25T20:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Fitch Turunkan Rating Obligasi Pos Indonesia ke Default",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125695/fitch-turunkan-rating-obligasi-pos-indonesia-ke-default",
-   "score": 6,
-   "categories": [
-    "kurs",
-    "kredit"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-27T06:45+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -399,6 +384,21 @@
    "categories": [
     "pasar",
     "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-26T11:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Perpanjang Buyback Tanpa RUPS hingga Juni 2027",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125745/ojk-perpanjang-buyback-tanpa-rups-hingga-juni-2027",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
