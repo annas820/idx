@@ -1,0 +1,31 @@
+# STATUS — kondisi terakhir (Selasa 2026-10-27, ~15:50 WIB)
+Baca setelah START.md. Perbarui tiap ada perubahan besar.
+
+## Yang berjalan
+- Arsip berita per jam (`news/`, `news/digest.md`) jalan normal.
+- Robot harian (`daily.yml`, v3, cron 10:30 UTC hari kerja) jalan, tapi data broker IPOT gagal.
+- `diag.yml` (probe 05, 08, 11, 13 UTC; log di `diag/`) dipasang untuk mencari penyebab.
+
+## Masalah utama: data broker IPOT
+- Kamis 22 dan Jumat 23 Okt berhasil. Sabtu 24, Senin 26, Selasa 27 gagal.
+- Penyebab sebenarnya (dari log diag): HTTP 502 nginx di endpoint IPOT (brokersummary dan corporateaction) dari tiga IP runner. Beranda IPOT normal (200). Pesan "tidak ada sesi transaksi" dari `bandar screen` menyesatkan, itu error yang tertelan.
+- Berarti: sisi server IPOT atau blokir untuk cloud, bukan kode kita.
+- Akibat: tidak ada `fnet_5d`, `hist/`, `signals/`. Forward Test v1.0 BELUM bisa mulai. Jangan klaim sinyal.
+
+## Jalur yang sudah dicoba dan DITUTUP
+- Kurir skrip dari komputer lokal ke idx.co.id: 403 (Cloudflare). Jangan dilanjutkan.
+- Sectors.app API: hanya paket Insider ($59/bulan). Gratis = tanpa API. Jangan daftar quest.
+- daily v4 (retry + cron cadangan): ditarik atas permintaan Bos, tidak dipasang. Cari penyebab dulu, jangan asal ganti.
+
+## Keputusan yang masih menggantung
+1. Bila IPOT tetap 502: (a) tunggu pulih, (b) Bos unduh manual `stocksummary_YYYYMMDD.json` dari Chrome ke GitHub (~2 menit per hari; memberi net asing per saham; itu sinyal berbeda, jadi versi v1.1, jangan dicampur dengan v1.0), atau (c) jalan tanpa data per saham (harga, breadth, berita tersaring, arus asing level pasar).
+2. Batas rugi harian dan mingguan belum ditetapkan Bos (usulan awal: risiko 0,5% per transaksi, ~1,5% harian, ~3% mingguan).
+3. `forward_test/watchlist.txt` masih AADI/INCO/INDF; ganti dengan kandidat sinyal setelah data pulih.
+
+## Yang harus dibaca berikutnya
+- `diag/log_27_*.txt` (probe 15:00, 18:00, 20:00 WIB) dan `snapshots/2026-10-27/status.txt` (run 17:30 WIB).
+- Setelah penyebab jelas: hapus jadwal probe di `diag.yml`.
+
+## Catatan lain
+- Backtest lama: tidak ada strategi stabil positif; sinyal broker tidak bisa diuji ke belakang (tanpa riwayat). Katakan ini bila relevan.
+- 
