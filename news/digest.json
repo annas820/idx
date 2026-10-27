@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T13:30+07:00",
+ "generated_for": "2026-10-27T14:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 234,
- "kept": 93,
+ "scanned": 248,
+ "kept": 94,
  "dropped_noise": 19,
  "items": [
   {
@@ -255,6 +255,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T13:50+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham Big Bank Bergerak Variatif di Sesi Pertama, Buyback Jadi Sentimen Penopang",
+   "link": "https://keuangan.kontan.co.id/news/saham-big-bank-bergerak-variatif-di-sesi-pertama-buyback-jadi-sentimen-penopang",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T13:25+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -390,21 +405,6 @@
    "categories": [
     "kurs",
     "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T18:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bahlil Ungkap Dugaan Korporasi Asing Menambang di Lahan Sawit",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125788/bahlil-ungkap-dugaan-korporasi-asing-menambang-di-lahan-sawit",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "komoditas"
    ],
    "tickers": [],
    "flags": [],
