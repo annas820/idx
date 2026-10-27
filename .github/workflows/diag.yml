@@ -23,11 +23,12 @@ jobs:
       - name: Probe broker source
         shell: bash
         run: |
+          set +e
           mkdir -p diag
           L=diag/log.txt
           : > "$L"
           echo "run at $(date -u +%F_%T) UTC; runner IP: $(curl -s -m 10 https://api.ipify.org || echo unknown)" >> "$L"
-          t() { echo "" >> "$L"; echo "### $*" >> "$L"; out=$("$@" 2>&1); rc=$?; printf '%s' "$out" | head -c 4000 >> "$L"; echo "" >> "$L"; echo "exit=$rc" >> "$L"; }
+          t() { echo "" >> "$L"; echo "### $*" >> "$L"; rc=0; out=$("$@" 2>&1) || rc=$?; printf '%s' "$out" | head -c 4000 >> "$L"; echo "" >> "$L"; echo "exit=$rc" >> "$L"; }
           t idx -vv -o json broker BBCA --date 2026-10-23
           t idx -vv -o json broker BBCA --date 2026-10-26
           t idx -vv -o json broker BBRI --date 2026-10-23
@@ -36,6 +37,7 @@ jobs:
           t idx -vv -o json stocks actions BBCA
 
       - name: Commit log
+        if: always()
         run: |
           git config user.name "diag-bot"
           git config user.email "diag-bot@users.noreply.github.com"
