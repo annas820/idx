@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T16:30+07:00",
+ "generated_for": "2026-10-27T17:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 274,
- "kept": 103,
- "dropped_noise": 22,
+ "scanned": 288,
+ "kept": 106,
+ "dropped_noise": 24,
  "items": [
   {
    "published": "2026-10-26T16:10+07:00",
@@ -255,6 +255,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T17:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pemda Respons Aturan Baru Soal Defisit APBD 2027 Bisa Lewati 2,5%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125936/pemda-respons-aturan-baru-soal-defisit-apbd-2027-bisa-lewati-2-5",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T15:20+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -318,6 +333,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T11:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Kemenkeu Rilis Aturan Baru, Defisit APBD Dibatasi 2,5%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125863/kemenkeu-rilis-aturan-baru-defisit-apbd-dibatasi-2-5",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T11:40+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -375,36 +405,6 @@
    "categories": [
     "pasar",
     "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T05:16+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T20:13+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas",
-   "link": "https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
    ],
    "tickers": [],
    "flags": [],

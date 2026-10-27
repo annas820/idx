@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-27T16:30+07:00 WIB | jendela 36 jam | dipindai 274, lolos 103, dibuang sebagai noise 22.
+Berita terbaru: 2026-10-27T17:30+07:00 WIB | jendela 36 jam | dipindai 288, lolos 106, dibuang sebagai noise 24.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -22,13 +22,13 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-26 09:33 bloomberg_technoz: IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter>
 - **6** T3 10-26 08:10 bloomberg_technoz: Saham Asia Tertekan Jelang Laporan Keuangan, Minyak Terkoreksi (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125709/saham-asia-tertekan-jelang-laporan-keuangan-minyak-terkoreksi>
 - **6** T3 10-26 08:08 bloomberg_technoz: Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel>
+- **5** T3 10-27 17:10 bloomberg_technoz: Pemda Respons Aturan Baru Soal Defisit APBD 2027 Bisa Lewati 2,5% (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/125936/pemda-respons-aturan-baru-soal-defisit-apbd-2027-bisa-lewati-2-5>
 - **5** T3 10-27 15:20 bloomberg_technoz: PLN EPI Salurkan Gas Hasil Pangkas Ekspor Singapura ke Batam (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125915/pln-epi-salurkan-gas-hasil-pangkas-ekspor-singapura-ke-batam>
 - **5** T3 10-27 13:50 kontan_keuangan: Saham Big Bank Bergerak Variatif di Sesi Pertama, Buyback Jadi Sentimen Penopang (pasar/korporasi) <https://keuangan.kontan.co.id/news/saham-big-bank-bergerak-variatif-di-sesi-pertama-buyback-jadi-sentimen-penopang>
 - **5** T3 10-27 13:25 bloomberg_technoz: Diperberat Saham DCII dan BREN, IHSG Terpeleset ke Zona Merah [BREN,DCII] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125890/diperberat-saham-dcii-dan-bren-ihsg-terpeleset-ke-zona-merah>
 - **5** T3 10-27 12:00 bloomberg_technoz: RI Kukuh Pangkas Ekspor Gas ke Singapura, Apa Alasan & Dampaknya? (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125867/ri-kukuh-pangkas-ekspor-gas-ke-singapura-apa-alasan-dampaknya>
+- **5** T3 10-27 11:50 bloomberg_technoz: Kemenkeu Rilis Aturan Baru, Defisit APBD Dibatasi 2,5% (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/125863/kemenkeu-rilis-aturan-baru-defisit-apbd-dibatasi-2-5>
 - **5** T3 10-27 11:40 bloomberg_technoz: Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase>
 - **5** T3 10-27 11:33 kontan_keuangan: Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS [BBCA,BRIS] (pasar/emiten) <https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris>
 - **5** T3 10-27 08:58 kontan_keuangan: Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027 (pasar/korporasi) <https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027>
 - **5** T3 10-27 06:45 bloomberg_technoz: Bursa Asia Bersiap Menguat, IPO Anthropic Bangkitkan Gairah AI (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125810/bursa-asia-bersiap-menguat-ipo-anthropic-bangkitkan-gairah-ai>
-- **5** T3 10-27 05:16 bloomberg_technoz: Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo>
-- **5** T3 10-26 20:13 kontan_keuangan: OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas (kebijakan/komoditas) <https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas>
