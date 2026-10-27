@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T08:40+07:00",
+ "generated_for": "2026-10-27T09:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 166,
- "kept": 67,
+ "scanned": 178,
+ "kept": 76,
  "dropped_noise": 13,
  "items": [
   {
@@ -20,6 +20,24 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T08:50+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Lanjutkan Buyback Saham, BRI Siapkan Dana Hingga Rp 1 Triliun",
+   "link": "https://keuangan.kontan.co.id/news/lanjutkan-buyback-saham-bri-siapkan-dana-hingga-rp-1-triliun",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -219,6 +237,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T08:58+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027",
+   "link": "https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T06:45+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -369,36 +402,6 @@
    "categories": [
     "kebijakan",
     "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T11:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Tembaga Kembali Turun di Tengah Tekanan pada Saham AI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125749/harga-tembaga-kembali-turun-di-tengah-tekanan-pada-saham-ai",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T11:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Perpanjang Buyback Tanpa RUPS hingga Juni 2027",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125745/ojk-perpanjang-buyback-tanpa-rups-hingga-juni-2027",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],
