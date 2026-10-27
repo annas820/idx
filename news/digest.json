@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T18:30+07:00",
+ "generated_for": "2026-10-27T19:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 291,
- "kept": 104,
- "dropped_noise": 24,
+ "scanned": 297,
+ "kept": 106,
+ "dropped_noise": 26,
  "items": [
   {
    "published": "2026-10-26T16:10+07:00",
@@ -20,6 +20,24 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T18:44+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Bank Ina Perdana (BINA) Akan Gelar Private Placement, Terbitkan 80 Juta Saham",
+   "link": "https://keuangan.kontan.co.id/news/bank-ina-perdana-bina-akan-gelar-private-placement-terbitkan-80-juta-saham",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BINA"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -255,6 +273,42 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T19:02+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Bank of India Indonesia (BSWD) Kaji Pemenuhan Free Float 15%",
+   "link": "https://keuangan.kontan.co.id/news/bank-of-india-indonesia-bswd-kaji-pemenuhan-free-float-15",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BSWD"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T18:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Turun 1,99%, Saham BREN, BRPT dan TPIA Jadi Laggard Terberat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125946/ihsg-turun-1-99-saham-bren-brpt-dan-tpia-jadi-laggard-terberat",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN",
+    "BRPT",
+    "TPIA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T18:10+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -359,54 +413,6 @@
    "categories": [
     "kebijakan",
     "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T11:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T11:33+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS",
-   "link": "https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BRIS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T08:58+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027",
-   "link": "https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],
