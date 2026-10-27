@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-27T11:30+07:00 WIB | jendela 36 jam | dipindai 210, lolos 82, dibuang sebagai noise 19.
+Berita terbaru: 2026-10-27T12:30+07:00 WIB | jendela 36 jam | dipindai 222, lolos 89, dibuang sebagai noise 19.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -22,6 +22,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-26 09:33 bloomberg_technoz: IHSG Fluktuatif, Pasar Pantau Harga Minyak & Kebijakan Moneter (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125729/ihsg-fluktuatif-pasar-pantau-harga-minyak-kebijakan-moneter>
 - **6** T3 10-26 08:10 bloomberg_technoz: Saham Asia Tertekan Jelang Laporan Keuangan, Minyak Terkoreksi (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125709/saham-asia-tertekan-jelang-laporan-keuangan-minyak-terkoreksi>
 - **6** T3 10-26 08:08 bloomberg_technoz: Arah Rupiah Hari Ini Saat Harga Minyak Bertahan di US$115/Barel (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125708/arah-rupiah-hari-ini-saat-harga-minyak-bertahan-di-us-115-barel>
+- **5** T3 10-27 12:00 bloomberg_technoz: RI Kukuh Pangkas Ekspor Gas ke Singapura, Apa Alasan & Dampaknya? (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125867/ri-kukuh-pangkas-ekspor-gas-ke-singapura-apa-alasan-dampaknya>
+- **5** T3 10-27 11:40 bloomberg_technoz: Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase>
+- **5** T3 10-27 11:33 kontan_keuangan: Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS [BBCA,BRIS] (pasar/emiten) <https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris>
 - **5** T3 10-27 08:58 kontan_keuangan: Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027 (pasar/korporasi) <https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027>
 - **5** T3 10-27 06:45 bloomberg_technoz: Bursa Asia Bersiap Menguat, IPO Anthropic Bangkitkan Gairah AI (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125810/bursa-asia-bersiap-menguat-ipo-anthropic-bangkitkan-gairah-ai>
 - **5** T3 10-27 05:16 bloomberg_technoz: Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo>
@@ -29,6 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-26 18:40 bloomberg_technoz: Destry Beber Alasan Defisit Neraca Pembayaran & Pelemahan Rupiah (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/125792/destry-beber-alasan-defisit-neraca-pembayaran-pelemahan-rupiah>
 - **5** T3 10-26 18:10 bloomberg_technoz: Bahlil Ungkap Dugaan Korporasi Asing Menambang di Lahan Sawit (pasar/komoditas) <https://www.bloombergtechnoz.com/detail-news/125788/bahlil-ungkap-dugaan-korporasi-asing-menambang-di-lahan-sawit>
 - **5** T3 10-26 17:55 kontan_keuangan: Saham SUPA Bergejolak, Superbank Sebut Belum Ada Rencana Aksi Korporasi [SUPA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-supa-bergejolak-superbank-sebut-belum-ada-rencana-aksi-korporasi>
-- **5** T3 10-26 17:41 kontan_keuangan: Asing Net Sell Rp 2,03 Triliun di Awal Pekan Ini, BMRI Paling Banyak Dilepas [BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-net-sell-rp-203-triliun-di-awal-pekan-ini-bmri-paling-banyak-dilepas>
-- **5** T3 10-26 17:32 kontan_keuangan: Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan [BNGA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan>
-- **5** T3 10-26 14:50 bloomberg_technoz: Impor BBM Singapura Tetap Lanjut Meski RI Pangkas Ekspor Gas (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125765/impor-bbm-singapura-tetap-lanjut-meski-ri-pangkas-ekspor-gas>

@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-27T11:30+07:00",
+ "generated_for": "2026-10-27T12:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 210,
- "kept": 82,
+ "scanned": 222,
+ "kept": 89,
  "dropped_noise": 19,
  "items": [
   {
@@ -255,6 +255,54 @@
    "also_in": []
   },
   {
+   "published": "2026-10-27T12:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "RI Kukuh Pangkas Ekspor Gas ke Singapura, Apa Alasan & Dampaknya?",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125867/ri-kukuh-pangkas-ekspor-gas-ke-singapura-apa-alasan-dampaknya",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T11:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-27T11:33+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS",
+   "link": "https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BRIS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-27T08:58+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -358,55 +406,6 @@
    "tickers": [
     "SUPA"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T17:41+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Asing Net Sell Rp 2,03 Triliun di Awal Pekan Ini, BMRI Paling Banyak Dilepas",
-   "link": "https://keuangan.kontan.co.id/news/asing-net-sell-rp-203-triliun-di-awal-pekan-ini-bmri-paling-banyak-dilepas",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T17:32+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham BNGA Bergejolak, CIMB Niaga Buka Suara soal Perubahan Kepemilikan",
-   "link": "https://keuangan.kontan.co.id/news/saham-bnga-bergejolak-cimb-niaga-buka-suara-soal-perubahan-kepemilikan",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BNGA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-26T14:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Impor BBM Singapura Tetap Lanjut Meski RI Pangkas Ekspor Gas",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125765/impor-bbm-singapura-tetap-lanjut-meski-ri-pangkas-ekspor-gas",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }
