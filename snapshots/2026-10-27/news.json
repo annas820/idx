@@ -1,0 +1,301 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-10-27T11:00:49Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403",
+    "cnbcindonesia/market: HTTP 403",
+    "cnbcindonesia/research: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 25,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Penyaluran Kredit BCA Tembus Rp 1.063 Triliun, Ini Penopangnya",
+        "url": "https://keuangan.kontan.co.id/news/penyaluran-kredit-bca-tembus-rp-1063-triliun-ini-penopangnya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T17:17:23+07:00",
+        "summary": "Kredit BCA tumbuh 12,6% menjadi Rp 1.063,1 triliun hingga September 2026, ditopang pertumbuhan segmen korporasi dan UKM.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Transaksi Qlola BRI Tumbuh 32%, BRI Luncurkan Aplikasi Mobile",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-qlola-bri-tumbuh-32-bri-luncurkan-aplikasi-mobile",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T16:52:24+07:00",
+        "summary": "Transaksi Qlola BRI tumnbuh 32%, BRI meluncurkan aplikasi mobile guna memperkuat layanan wholesale banking sesuai kebutuhan nasabah bisnis.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BCA Catat Laba Bersih Rp 45,2 Triliun pada Kuartal III-2026",
+        "url": "https://keuangan.kontan.co.id/news/bca-catat-laba-bersih-rp-452-triliun-pada-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T16:51:49+07:00",
+        "summary": "PT Bank Central Asia Tbk (BBCA) bersama entitas anak mencatat laba bersih senilai Rp 45,2 triliun pada kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BSI Luncurkan BEWIZE Gold, Perusahaan Kini Bisa Transaksi Emas Secara Digital",
+        "url": "https://keuangan.kontan.co.id/news/bsi-luncurkan-bewize-gold-perusahaan-kini-bisa-transaksi-emas-secara-digital",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T16:44:08+07:00",
+        "summary": "Bank Syariah Indonesia (BSI) meluncurkan BEWIZE Gold, perusahaan kini bisa transaksi emas secara digital.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "AUM Reksadana Indeks BNP Paribas Turun Jadi Rp 5,14 Triliun, Ini Penyebabnya",
+        "url": "https://keuangan.kontan.co.id/news/aum-reksadana-indeks-bnp-paribas-turun-jadi-rp-514-triliun-ini-penyebabnya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T16:16:30+07:00",
+        "summary": "AUM reksa dana indeks BNP Paribas AM turun menjadi Rp 5,14 triliun per September 2026 akibat volatilitas pasar, strategi rebalancing diterapkan.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "DP 0% KPR Diperpanjang hingga 2027, Bagaimana Prospek Bisnis Asuransi Properti?",
+        "url": "https://keuangan.kontan.co.id/news/dp-0-kpr-diperpanjang-hingga-2027-bagaimana-prospek-bisnis-asuransi-properti",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T15:34:47+07:00",
+        "summary": "DP 0% KPR diperpanjang hingga 2027 membuka peluang bisnis asuransi properti, tetapi pertumbuhan premi masih menghadapi sejumlah tantangan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Perpanjang Kebijakan LTV/FTV 100%, Seberapa Kuat Dorong KPR?",
+        "url": "https://keuangan.kontan.co.id/news/bi-perpanjang-kebijakan-ltvftv-100-seberapa-kuat-dorong-kpr",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T14:29:06+07:00",
+        "summary": "BI tetapkan rasio kredit terhadap nilai loan to value (LTV) atau financing to value (FTV) 100% untuk kredit properti.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Saham Big Bank Bergerak Variatif di Sesi Pertama, Buyback Jadi Sentimen Penopang",
+        "url": "https://keuangan.kontan.co.id/news/saham-big-bank-bergerak-variatif-di-sesi-pertama-buyback-jadi-sentimen-penopang",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T13:50:03+07:00",
+        "summary": "Saham bank Himbara kompak melemah pada akhir sesi pertama hari ini (27/10/2026). Sedangkan saham BCA berhasil tipis 0,4%",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "buyback"
+        ],
+        "negative_terms": [
+          "melemah"
+        ]
+      },
+      {
+        "title": "OttoDigital Perkuat Layanan Kasir Digital Lewat HelloBill",
+        "url": "https://keuangan.kontan.co.id/news/ottodigital-perkuat-layanan-kasir-digital-lewat-hellobill",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T13:43:21+07:00",
+        "summary": "OttoDigital menghadirkan HelloBill, aplikasi kasir dengan fitur yang dirancang untuk mendukung efisiensi bisnis F&B, retail, hingga jasa",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Risiko Kebocoran Data Jadi Tantangan Utama Adopsi AI di Perbankan",
+        "url": "https://keuangan.kontan.co.id/news/risiko-kebocoran-data-jadi-tantangan-utama-adopsi-ai-di-perbankan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T13:26:35+07:00",
+        "summary": "Riset PERBANAS, IBM, dan K&A mengungkap 82% bankir menilai privasi data sebagai risiko utama, sementara tata kelola AI perbankan belum matang.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri (BMRI) Ungkap Skema Pembayaran Kredit Rp 40 Triliun ke Jhonlin",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-bmri-ungkap-skema-pembayaran-kredit-rp-40-triliun-ke-jhonlin",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T13:21:02+07:00",
+        "summary": "Dari plafon Rp 40 triliun, kredit Jhonlin baru terpakai Rp 17 triliun. Bank Mandiri andalkan arus kas bisnis batubara sebagai sumber pembayaran.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit BNI (BBNI) Melonjak 22,2%, Laba Tumbuh 6,6%, Mirae Tetap Rekomendasi Netral",
+        "url": "https://keuangan.kontan.co.id/news/kredit-bni-bbni-melonjak-222-laba-tumbuh-66-mirae-tetap-rekomendasi-netral",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T11:46:21+07:00",
+        "summary": "Pertumbuhan kredit BNI 22,2% pada September 2026, tetapi tekanan margin bunga dan risiko kredit membuat Mirae mempertahankan rekomendasi netral",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melonjak",
+          "laba",
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS",
+        "url": "https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T11:33:55+07:00",
+        "summary": "Pertumbuhan kredit perbankan melambat pada September 2026, sementara kenaikan biaya dana menekan margin, BBCA dan BRIS jadi pilihan Mirae Asset.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "pertumbuhan",
+          "kenaikan"
+        ],
+        "negative_terms": [
+          "melambat"
+        ]
+      },
+      {
+        "title": "BPJS Kesehatan Buka Suara soal Isu Penghapusan JKN",
+        "url": "https://keuangan.kontan.co.id/news/bpjs-kesehatan-buka-suara-soal-isu-penghapusan-jkn",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T10:53:00+07:00",
+        "summary": "BPJS Kesehatan angkat bicara terkait wacana penghapusan BPJS dan digantikan oleh klinik atau apotek Koperasi Desa Merah Putih (KDMP)",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ini Tantangan & Peluang yang Pengaruhi Kinerja RoI Dana Pensiun hingga Akhir Tahun",
+        "url": "https://keuangan.kontan.co.id/news/ini-tantangan-peluang-yang-pengaruhi-kinerja-roi-dana-pensiun-hingga-akhir-tahun",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T10:24:45+07:00",
+        "summary": "ADPI ungkap peluang dan tantangan yang pengaruhi kinerja RoI untuk dana pensiun hingga akhir tahun ini.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Bidik Peluang Bisnis dari Industri Fesyen Lewat JFW 2027",
+        "url": "https://keuangan.kontan.co.id/news/btn-bidik-peluang-bisnis-dari-industri-fesyen-lewat-jfw-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T10:11:06+07:00",
+        "summary": "Bank Tabungan Negara (BTN) membidik peluang bisnis dari industri fesyen dan ekonomi kreatif melalui ajang Jakarta Fashion Week (JFW) 2027.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Buana Finance Dapat Fasilitas Kredit Rp 500 Miliar dari Bank Danamon",
+        "url": "https://keuangan.kontan.co.id/news/buana-finance-dapat-fasilitas-kredit-rp-500-miliar-dari-bank-danamon",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T09:43:41+07:00",
+        "summary": "Buana Finance (BBLD) memperoleh tambahan fasilitas kredit sebesar Rp 500 miliar dari PT Bank Danamon Indonesia Tbk (BDMN)",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BNI Kantongi Laba Rp 16,11 Triliun Hingga Kuartal III-2026, Tumbuh 6,62%",
+        "url": "https://keuangan.kontan.co.id/news/bni-kantongi-laba-rp-1611-triliun-hingga-kuartal-iii-2026-tumbuh-662",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T09:32:00+07:00",
+        "summary": "BNI cetak laba bersih sebesar Rp 16,11 triliun untuk periode Januari-September 2026. Realisasi itu tumbuh 6,62% secara tahunan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027",
+        "url": "https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T08:58:40+07:00",
+        "summary": "Bank Syariah Indonesia (BRIS) menyiapkan dana maksimal Rp 500 miliar untuk melakukan pembelian kembali saham (buyback)",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "buyback"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Lanjutkan Buyback Saham, BRI Siapkan Dana Hingga Rp 1 Triliun",
+        "url": "https://keuangan.kontan.co.id/news/lanjutkan-buyback-saham-bri-siapkan-dana-hingga-rp-1-triliun",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T08:50:40+07:00",
+        "summary": "BRI kembali menggelar aksi pembelian kembali saham (buyback) dengan menyiapkan dana maksimal Rp 1 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "buyback"
+        ],
+        "negative_terms": []
+      }
+    ]
+  }
+}
