@@ -4,7 +4,9 @@ Baca setelah START.md. Perbarui tiap ada perubahan besar.
 ## Yang berjalan
 - Arsip berita per jam (`news/`, `news/digest.md`) jalan normal.
 - Robot harian (`daily.yml`, v3, cron 10:30 UTC hari kerja) jalan, tapi data broker IPOT gagal.
-- `diag.yml` (probe 05, 08, 11, 13 UTC; log di `diag/`) dipasang untuk mencari penyebab.
+- `diag.yml` kini manual saja (jadwal dihapus 28 Okt: probe 27 Okt menunjukkan IPOT 502 di semua jam). Log tetap di `diag/`.
+- Gerbang kesehatan data (`forward_test/health.py`) jalan di `daily.yml`, hasilnya `latest/health.md` dan `latest/health.json`. Hanya melaporkan; tidak mengubah aturan Forward Test v1.0.
+- Pengerasan (28 Okt): installer tidak lagi diunduh lewat `curl | sh` dari jaringan; dipakai `install.sh` milik repo ini dengan versi terkunci v0.8.1 (checksum diverifikasi). `actions/checkout` dikunci ke SHA. Ada batas waktu tiap job, `concurrency` di daily, dan push daily otomatis diulang bila bentrok dengan news-bot.
 
 ## Masalah utama: data broker IPOT
 - Kamis 22 dan Jumat 23 Okt berhasil. Sabtu 24, Senin 26, Selasa 27 gagal.
