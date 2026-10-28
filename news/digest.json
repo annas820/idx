@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-28T06:30+07:00",
+ "generated_for": "2026-10-28T07:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 212,
- "kept": 68,
+ "scanned": 209,
+ "kept": 70,
  "dropped_noise": 14,
  "items": [
   {
@@ -62,39 +62,32 @@
    "also_in": []
   },
   {
-   "published": "2026-10-26T19:38+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-10-28T07:25+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Astra Sedaya Finance Siapkan Rp 304,5 Miliar untuk Lunasi Obligasi Jatuh Tempo",
-   "link": "https://keuangan.kontan.co.id/news/astra-sedaya-finance-siapkan-rp-3045-miliar-untuk-lunasi-obligasi-jatuh-tempo",
-   "score": 7,
+   "title": "Depresiasi Rupiah Berujung Pada Net Sell hingga Kejatuhan IHSG",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125967/depresiasi-rupiah-berujung-pada-net-sell-hingga-kejatuhan-ihsg",
+   "score": 6,
    "categories": [
-    "kurs",
-    "emiten"
+    "pasar",
+    "kurs"
    ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-10-26T19:10+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-10-28T07:00+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "BSI (BRIS) Siapkan Buyback Saham dengan Anggaran Maksimal Rp 500 Miliar",
-   "link": "https://keuangan.kontan.co.id/news/bsi-bris-siapkan-buyback-saham-dengan-anggaran-maksimal-rp-500-miliar",
-   "score": 7,
+   "title": "Bursa Asia Siap Menguat, Mengekor Reli Wall Street & Sentimen AI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125962/bursa-asia-siap-menguat-mengekor-reli-wall-street-sentimen-ai",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
+    "global",
+    "pasar"
    ],
-   "tickers": [
-    "BRIS"
-   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -338,17 +331,19 @@
    "also_in": []
   },
   {
-   "published": "2026-10-26T18:40+07:00",
+   "published": "2026-10-28T07:40+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Destry Beber Alasan Defisit Neraca Pembayaran & Pelemahan Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125792/destry-beber-alasan-defisit-neraca-pembayaran-pelemahan-rupiah",
-   "score": 5,
+   "title": "Pemicu Lonjakan Laba ANTM 47% Jadi Rp8,8 T",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125968/pemicu-lonjakan-laba-antm-47-jadi-rp8-8-t",
+   "score": 4,
    "categories": [
-    "kurs",
-    "makro"
+    "korporasi",
+    "emiten"
    ],
-   "tickers": [],
+   "tickers": [
+    "ANTM"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -421,25 +416,5 @@
    "also_in": []
   }
  ],
- "watchlist_hits": [
-  {
-   "published": "2026-10-26T19:38+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Astra Sedaya Finance Siapkan Rp 304,5 Miliar untuk Lunasi Obligasi Jatuh Tempo",
-   "link": "https://keuangan.kontan.co.id/news/astra-sedaya-finance-siapkan-rp-3045-miliar-untuk-lunasi-obligasi-jatuh-tempo",
-   "score": 7,
-   "categories": [
-    "kurs",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  }
- ]
+ "watchlist_hits": []
 }
