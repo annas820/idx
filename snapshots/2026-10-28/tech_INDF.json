@@ -1,55 +1,54 @@
 {
   "schema": "idx.technical.v1",
   "provider": "yahoo",
-  "fetched_at": "2026-10-28T00:22:22Z",
+  "fetched_at": "2026-10-28T07:57:32Z",
   "cached": true,
   "stale": false,
   "data": {
     "symbol": "INDF",
     "name": "PT Indofood Sukses Makmur Tbk",
     "currency": "IDR",
-    "as_of": "2026-10-27T09:00:00+07:00",
+    "as_of": "2026-10-28T09:00:00+07:00",
     "period": "1y",
     "candles_used": 240,
-    "price": 6650.0,
-    "change_pct_1d": -0.37453183520599254,
-    "change_pct_1w": 1.1406844106463878,
-    "change_pct_1m": -1.4814814814814816,
-    "change_pct_3m": -2.9197080291970803,
+    "price": 6375.0,
+    "change_pct_1d": -4.135338345864661,
+    "change_pct_1w": -4.135338345864661,
+    "change_pct_1m": -4.135338345864661,
+    "change_pct_3m": -7.2727272727272725,
     "high_52w": 7600.0,
     "low_52w": 5850.0,
     "moving_averages": {
-      "sma20": 6783.75,
-      "sma50": 7029.0,
-      "sma200": 6792.5,
-      "ema20": 6778.027264256696,
-      "ema50": 6902.478639958038,
-      "ema200": 6857.896422755761
+      "sma20": 6766.25,
+      "sma50": 7009.5,
+      "sma200": 6790.125,
+      "ema20": 6739.643715272859,
+      "ema50": 6881.793369745089,
+      "ema200": 6849.821182708413
     },
-    "rsi14": 41.45682716538703,
+    "rsi14": 32.5968287873671,
     "macd": {
-      "line": -98.04546724996453,
-      "signal": -94.68357224130493,
-      "histogram": -3.3618950086596016
+      "line": -118.2248984602611,
+      "signal": -99.39183678469598,
+      "histogram": -18.83306167556512
     },
     "bollinger": {
-      "upper": 7085.939923723476,
-      "middle": 6783.75,
-      "lower": 6481.560076276524,
-      "percent_b": 0.2786987760015613,
-      "bandwidth_pct": 8.909229370878222
+      "upper": 7116.705061313145,
+      "middle": 6766.25,
+      "lower": 6415.794938686855,
+      "percent_b": -0.05820280998938564,
+      "bandwidth_pct": 10.358915538537449
     },
-    "atr14": 212.1382437492646,
+    "atr14": 221.98551200900707,
     "volume": {
-      "last": 14774600,
-      "avg20": 8121240,
-      "ratio": 1.8192542025602
+      "last": 5183500,
+      "avg20": 8067970,
+      "ratio": 0.6424788391627634
     },
     "levels": {
       "support": [
-        6600.0,
-        6525.0,
-        5925.0
+        5925.0,
+        5850.0
       ],
       "resistance": [
         6850.0,
@@ -59,13 +58,14 @@
     },
     "trend": "sideways",
     "signal": {
-      "label": "sell",
-      "score": -2,
+      "label": "neutral",
+      "score": -1,
       "reasons": [
         "moving averages disagree: no clear trend",
-        "RSI 41 is neutral",
+        "RSI 33 is neutral",
         "MACD below its signal line (bearish momentum)",
-        "price below the 200-day average"
+        "price below the 200-day average",
+        "close below the lower Bollinger band (stretched to the downside)"
       ]
     }
   }

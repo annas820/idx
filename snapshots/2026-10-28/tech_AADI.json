@@ -1,49 +1,49 @@
 {
   "schema": "idx.technical.v1",
   "provider": "yahoo",
-  "fetched_at": "2026-10-28T00:22:19Z",
+  "fetched_at": "2026-10-28T07:57:29Z",
   "cached": true,
   "stale": false,
   "data": {
     "symbol": "AADI",
     "name": "PT Adaro Andalan Indonesia Tbk",
     "currency": "IDR",
-    "as_of": "2026-10-27T09:00:00+07:00",
+    "as_of": "2026-10-28T09:00:00+07:00",
     "period": "1y",
     "candles_used": 240,
-    "price": 11700.0,
-    "change_pct_1d": 1.5184381778741864,
-    "change_pct_1w": 6.8493150684931505,
-    "change_pct_1m": 4.0,
-    "change_pct_3m": 32.577903682719544,
+    "price": 11675.0,
+    "change_pct_1d": -0.2136752136752137,
+    "change_pct_1w": 5.18018018018018,
+    "change_pct_1m": 0.43010752688172044,
+    "change_pct_3m": 31.92090395480226,
     "high_52w": 12925.0,
     "low_52w": 6750.0,
     "moving_averages": {
-      "sma20": 11376.25,
-      "sma50": 11256.0,
-      "sma200": 9522.75,
-      "ema20": 11317.523198174591,
-      "ema50": 11010.111246769036,
-      "ema200": 9687.672595369408
+      "sma20": 11412.5,
+      "sma50": 11295.0,
+      "sma200": 9545.875,
+      "ema20": 11351.568607885107,
+      "ema50": 11036.187231976895,
+      "ema200": 9704.01078489243
     },
-    "rsi14": 55.86184072926494,
+    "rsi14": 55.46624702236477,
     "macd": {
-      "line": 12.611914978138884,
-      "signal": -2.2615037288120394,
-      "histogram": 14.873418706950924
+      "line": 40.92592311942826,
+      "signal": 6.375979071637236,
+      "histogram": 34.54994404779103
     },
     "bollinger": {
-      "upper": 12488.171197747393,
-      "middle": 11376.25,
-      "lower": 10264.328802252607,
-      "percent_b": 0.6455813598373136,
-      "bandwidth_pct": 19.54811467306702
+      "upper": 12513.69253539061,
+      "middle": 11412.5,
+      "lower": 10311.30746460939,
+      "percent_b": 0.6191889663086425,
+      "bandwidth_pct": 19.298007191949353
     },
-    "atr14": 565.076712323206,
+    "atr14": 555.071232703336,
     "volume": {
-      "last": 36061600,
-      "avg20": 13934750,
-      "ratio": 2.5878899872620607
+      "last": 8739100,
+      "avg20": 14039205,
+      "ratio": 0.6224782671098541
     },
     "levels": {
       "support": [
@@ -62,10 +62,9 @@
       "score": 3,
       "reasons": [
         "price above a rising 50-day average that sits above the 200-day: uptrend",
-        "RSI 56 is neutral",
-        "MACD just crossed above its signal line",
-        "price above the 200-day average",
-        "volume 2.6x its 20-day average: the move has participation"
+        "RSI 55 is neutral",
+        "MACD above its signal line (bullish momentum)",
+        "price above the 200-day average"
       ]
     }
   }

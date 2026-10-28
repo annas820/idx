@@ -1,7 +1,7 @@
 {
   "schema": "idx.news.v1",
   "provider": "news",
-  "fetched_at": "2026-10-28T00:22:15Z",
+  "fetched_at": "2026-10-28T07:57:24Z",
   "cached": false,
   "stale": false,
   "warnings": [
@@ -24,6 +24,198 @@
     "company_matches": 0,
     "company_only": false,
     "items": [
+      {
+        "title": "AUM Reksadana Indeks Capai Rp 50 Miliar, Ini Cara Sinarmas AM Jaga Kinerja",
+        "url": "https://keuangan.kontan.co.id/news/aum-reksadana-indeks-capai-rp-50-miliar-ini-cara-sinarmas-am-jaga-kinerja",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T14:54:39+07:00",
+        "summary": "Asset Under Management (AUM) reksadana indeks mencapai Rp 50 miliar, ini cara PT Sinarmas Asset Management jaga kinerja di tengah dinamika pasar.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Perpanjang DP 0% Kredit Kendaraan, Danamon Optimistis KPM Prima Tumbuh Positif",
+        "url": "https://keuangan.kontan.co.id/news/bi-perpanjang-dp-0-kredit-kendaraan-danamon-optimistis-kpm-prima-tumbuh-positif",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T14:32:06+07:00",
+        "summary": "Bagi Danamon, perpanjangan kebijakan DP 0% menjadi peluang untuk memperluas pembiayaan kendaraan melalui Kredit Pemilikan Mobil (KPM) Prima.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "positif",
+          "optimistis"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit UMKM Tumbuh 2,7% yoy September 2026",
+        "url": "https://keuangan.kontan.co.id/news/kredit-umkm-tumbuh-27-yoy-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T14:29:19+07:00",
+        "summary": "Mengacu laporan terbaru analisis uang beredar Bank Indonesia (BI), kredit UMKM per September 2026 tumbuh 2,7%",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "DPK Perbankan Syariah Masih Ngebut, CIMB Niaga Syariah Berupaya Jaga Momentum",
+        "url": "https://keuangan.kontan.co.id/news/dpk-perbankan-syariah-masih-ngebut-cimb-niaga-syariah-berupaya-jaga-momentum",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T14:20:33+07:00",
+        "summary": "DPK perbakan syariah masih ngebut, CIMB Niaga Syariah berupaya menjaga momentum. Hal ini didukung oleh kebijakan regulator, ekosistem halal.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit Properti Tumbuh 16,4% yoy September 2026",
+        "url": "https://keuangan.kontan.co.id/news/kredit-properti-tumbuh-164-yoy-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T14:19:17+07:00",
+        "summary": "Penyaluran kredit ke sektor properti masih mencatatkan pertumbuhan positif di level double digit pada kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan",
+          "positif"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Turunkan Insentif KLM, Krom Bank Evaluasi Strategi Penyaluran Kredit",
+        "url": "https://keuangan.kontan.co.id/news/bi-turunkan-insentif-klm-krom-bank-evaluasi-strategi-penyaluran-kredit",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T14:10:38+07:00",
+        "summary": "Penyesuaian Kebijakan Insentif Likuiditas Makroprudensial BI menjadi pertimbangan bagi Krom Bank dalam mengevaluasi strategi penyaluran kredit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Jaga Margin Bunga Bersih, BCA Andalkan Kredit Produktif",
+        "url": "https://keuangan.kontan.co.id/news/jaga-margin-bunga-bersih-bca-andalkan-kredit-produktif",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T13:34:11+07:00",
+        "summary": "PT Bank Central Asia Tbk (BBCA) mencatatkan laba bersih konsolidasi sebesar Rp 45,2 triliun hingga kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Ini Strategi BCA Menjaga Permodalan Sampai Akhir 2026",
+        "url": "https://keuangan.kontan.co.id/news/ini-strategi-bca-menjaga-permodalan-sampai-akhir-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T13:25:15+07:00",
+        "summary": "Rasio kecukupan modal atau capital adequacy ratio (CAR) PT Bank Central Asia Tbk (BBCA) tercatat sebesar 27,5% pada kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Saham Bank Himbara Melemah pada Perdagangan Sesi I Rabu (28/10), BBCA Diincar Asing",
+        "url": "https://keuangan.kontan.co.id/news/saham-bank-himbara-melemah-pada-perdagangan-sesi-i-rabu-2810-bbca-diincar-asing",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T13:22:04+07:00",
+        "summary": "Saham bank Himpunan Bank Milik Negara (Himbara) kompak melemah pada perdagangan sesi I, Rabu (28/10/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "melemah"
+        ]
+      },
+      {
+        "title": "CIMB Niaga Catat Laba Bersih Rp 4,51 Triliun Pada September 2026",
+        "url": "https://keuangan.kontan.co.id/news/cimb-niaga-catat-laba-bersih-rp-451-triliun-pada-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T12:04:35+07:00",
+        "summary": "CIMB Niaga membukukan laba bersih konsolidasian sebesar Rp 4,5 triliun, turun 15,5% secara tahunan pada September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Kredit Permata Bank Tumbuh 10,1% hingga Kuartal III 2026",
+        "url": "https://keuangan.kontan.co.id/news/kredit-permata-bank-tumbuh-101-hingga-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T11:08:00+07:00",
+        "summary": "PT Bank Permata Tbk (BNLI) mencatatkan pertumbuhan kredit 10,1% secara tahunan menjadi Rp 172,9 triliun hingga kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Yellow Stone Asset Management Perluas Jaringan Bisnis Indonesia-Singapura",
+        "url": "https://keuangan.kontan.co.id/news/yellow-stone-asset-management-perluas-jaringan-bisnis-indonesia-singapura",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T10:34:47+07:00",
+        "summary": "Ellow Stone Asset Management Pte Ltd memperluas jaringan bisnis di Indonesia untuk menjajaki peluang kemitraan Indonesia - Singapura",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "DPK Bank Jago Tumbuh 21% Jadi Rp 28,9 Triliun pada Kuartal III 2026",
+        "url": "https://keuangan.kontan.co.id/news/dpk-bank-jago-tumbuh-21-jadi-rp-289-triliun-pada-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T10:31:13+07:00",
+        "summary": "PT Bank Jago Tbk (ARTO) mencatat pertumbuhan dana pihak ketiga (DPK) sebesar 21% secara tahunan menjadi Rp 28,9 triliun per September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Jamkrindo Perkuat Bisnis Penjaminan, Kaji Penataan Portofolio",
+        "url": "https://keuangan.kontan.co.id/news/jamkrindo-perkuat-bisnis-penjaminan-kaji-penataan-portofolio",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T10:24:51+07:00",
+        "summary": "Jamkrindo memperkuat kinerja dan memperluas akses pembiayaan UMKM melalui penguatan tata kelola, transformasi, dan penataan industri penjaminan&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
       {
         "title": "Ciputra Life Catat Premi Asuransi Kesehatan Korporasi Rp 110 M pada September 2026",
         "url": "https://keuangan.kontan.co.id/news/ciputra-life-catat-premi-asuransi-kesehatan-korporasi-rp-110-m-pada-september-2026",
@@ -103,187 +295,6 @@
         "negative_terms": [
           "turun"
         ]
-      },
-      {
-        "title": "Avrist Sebut Prospek Unitlink Kuartal IV-2026 Masih Dipengaruhi Kondisi Pasar",
-        "url": "https://keuangan.kontan.co.id/news/avrist-sebut-prospek-unitlink-kuartal-iv-2026-masih-dipengaruhi-kondisi-pasar",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T19:45:26+07:00",
-        "summary": "Avrist Assurance menyebut prospek unitlink kuartal IV-2026 masih dipengaruhi kondisi pasar keuangan, seperti volatilitas pasar saham dan oblogasi.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Rasio Permodalan Bank Besar Menyusut, Begini Prospeknya hingga Akhir 2026",
-        "url": "https://keuangan.kontan.co.id/news/rasio-permodalan-bank-besar-menyusut-begini-prospeknya-hingga-akhir-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T19:42:36+07:00",
-        "summary": "Sejumlah bank besar justru mencatatkan penurunan CAR secara tahunan pada kuartal III-2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": -1.0,
-        "positive_terms": [],
-        "negative_terms": [
-          "penurunan"
-        ]
-      },
-      {
-        "title": "MSIG Life Catatkan Pertumbuhan APE 7% Menjadi Rp 790 Miliar pada Semester I-2026",
-        "url": "https://keuangan.kontan.co.id/news/msig-life-catatkan-pertumbuhan-ape-7-menjadi-rp-790-miliar-pada-semester-i-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T19:31:06+07:00",
-        "summary": "MSIG Life mencatatkan pertumbuhan Annual Premium Equivalent (APE) 7% menjadi Rp 790 miliar pada semester I-2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "pertumbuhan"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Bank of India Indonesia (BSWD) Kaji Pemenuhan Free Float 15%",
-        "url": "https://keuangan.kontan.co.id/news/bank-of-india-indonesia-bswd-kaji-pemenuhan-free-float-15",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T19:02:17+07:00",
-        "summary": "&#8203;Bank of India Indonesia menargetkan kajian pemenuhan free float rampung sebelum 31 Maret 2027, dengan fokus pada penambahan pemegang saham publik",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Begini Upaya Industri untuk Perbaiki Laju Klaim Rasio Asuransi Kesehatan",
-        "url": "https://keuangan.kontan.co.id/news/begini-upaya-industri-untuk-perbaiki-laju-klaim-rasio-asuransi-kesehatan",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T18:53:12+07:00",
-        "summary": "Industri asuransi kesehatan masih dihadapkan pada tantangan rasio klaim yang masih relatif tinggi.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Bank Ina Perdana (BINA) Akan Gelar Private Placement, Terbitkan 80 Juta Saham",
-        "url": "https://keuangan.kontan.co.id/news/bank-ina-perdana-bina-akan-gelar-private-placement-terbitkan-80-juta-saham",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T18:44:08+07:00",
-        "summary": "PT Bank Ina Perdana Tbk (BINA) &#8203;akan menambah modal lewat private placement, terbitkan 80 juta saham baru.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Bank Victoria Bayar Kupon Obligasi Subordinasi Rp 4,22 Miliar pada November 2026",
-        "url": "https://keuangan.kontan.co.id/news/bank-victoria-bayar-kupon-obligasi-subordinasi-rp-422-miliar-pada-november-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T18:43:38+07:00",
-        "summary": "PT Bank Victoria Internasional Tbk (BVIC) memabayat kupon obligasi subordinasi Rp 4,22 miliar pada 9 November 2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Dapen BTN: Volatilitas Pasar Modal hingga BI Rate Dapat Pengaruhi Kinerja Investasi",
-        "url": "https://keuangan.kontan.co.id/news/dapen-btn-volatilitas-pasar-modal-hingga-bi-rate-dapat-pengaruhi-kinerja-investasi",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T18:37:21+07:00",
-        "summary": "Volatilitas pasar keuangan menjadi salah satu faktor yang perlu dicermati dalam pengelolaan investasi dana pensiun hingga akhir tahun.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "BCA Perluas Program Sertifikasi Halal Gratis, Sasar UMKM di Daerah",
-        "url": "https://keuangan.kontan.co.id/news/bca-perluas-program-sertifikasi-halal-gratis-sasar-umkm-di-daerah",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T18:23:58+07:00",
-        "summary": "BCA memperluas program sertifikasi halal gratis, sasar UMKM di daerah. Melalui kegiatan ini, BCA juga menawarkan layanan pembayaran QRIS.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Undisbursed Loan Tinggi, Prospek Kredit Perbankan Masih Tebal",
-        "url": "https://keuangan.kontan.co.id/news/undisbursed-loan-tinggi-prospek-kredit-perbankan-masih-tebal",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T18:22:11+07:00",
-        "summary": "Fasilitas kredit perbankan yang belum dicairkan atau undisbursed loan masih menyimpan potensi untuk mendorong pertumbuhan kredit.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "pertumbuhan"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Penyaluran Kredit BCA Tembus Rp 1.063 Triliun, Ini Penopangnya",
-        "url": "https://keuangan.kontan.co.id/news/penyaluran-kredit-bca-tembus-rp-1063-triliun-ini-penopangnya",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T17:17:23+07:00",
-        "summary": "Kredit BCA tumbuh 12,6% menjadi Rp 1.063,1 triliun hingga September 2026, ditopang pertumbuhan segmen korporasi dan UKM.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "tumbuh",
-          "pertumbuhan"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Transaksi Qlola BRI Tumbuh 32%, BRI Luncurkan Aplikasi Mobile",
-        "url": "https://keuangan.kontan.co.id/news/transaksi-qlola-bri-tumbuh-32-bri-luncurkan-aplikasi-mobile",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T16:52:24+07:00",
-        "summary": "Transaksi Qlola BRI tumnbuh 32%, BRI meluncurkan aplikasi mobile guna memperkuat layanan wholesale banking sesuai kebutuhan nasabah bisnis.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "tumbuh"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "BCA Catat Laba Bersih Rp 45,2 Triliun pada Kuartal III-2026",
-        "url": "https://keuangan.kontan.co.id/news/bca-catat-laba-bersih-rp-452-triliun-pada-kuartal-iii-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T16:51:49+07:00",
-        "summary": "PT Bank Central Asia Tbk (BBCA) bersama entitas anak mencatat laba bersih senilai Rp 45,2 triliun pada kuartal III-2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "laba"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "BSI Luncurkan BEWIZE Gold, Perusahaan Kini Bisa Transaksi Emas Secara Digital",
-        "url": "https://keuangan.kontan.co.id/news/bsi-luncurkan-bewize-gold-perusahaan-kini-bisa-transaksi-emas-secara-digital",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T16:44:08+07:00",
-        "summary": "Bank Syariah Indonesia (BSI) meluncurkan BEWIZE Gold, perusahaan kini bisa transaksi emas secara digital.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
       }
     ]
   }

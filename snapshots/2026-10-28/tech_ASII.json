@@ -1,49 +1,49 @@
 {
   "schema": "idx.technical.v1",
   "provider": "yahoo",
-  "fetched_at": "2026-10-28T00:22:23Z",
+  "fetched_at": "2026-10-28T07:57:34Z",
   "cached": true,
   "stale": false,
   "data": {
     "symbol": "ASII",
     "name": "PT Astra International Tbk",
     "currency": "IDR",
-    "as_of": "2026-10-27T09:00:00+07:00",
+    "as_of": "2026-10-28T09:00:00+07:00",
     "period": "1y",
     "candles_used": 240,
-    "price": 4630.0,
-    "change_pct_1d": 1.5350877192982455,
-    "change_pct_1w": 2.888888888888889,
-    "change_pct_1m": -1.279317697228145,
-    "change_pct_3m": -6.841046277665996,
+    "price": 4670.0,
+    "change_pct_1d": 0.8639308855291578,
+    "change_pct_1w": 2.4122807017543857,
+    "change_pct_1m": 0.0,
+    "change_pct_3m": -5.846774193548387,
     "high_52w": 7475.0,
     "low_52w": 3920.0,
     "moving_averages": {
-      "sma20": 4621.5,
-      "sma50": 4745.6,
-      "sma200": 5553.675,
-      "ema20": 4610.654298618831,
-      "ema50": 4731.59651233986,
-      "ema200": 5512.428633123427
+      "sma20": 4625.0,
+      "sma50": 4743.2,
+      "sma200": 5544.15,
+      "ema20": 4616.30627017498,
+      "ema50": 4729.177125027513,
+      "ema200": 5505.240825033229
     },
-    "rsi14": 49.469841658634365,
+    "rsi14": 51.03010776542406,
     "macd": {
-      "line": -70.20137346504362,
-      "signal": -74.09153274602943,
-      "histogram": 3.890159280985813
+      "line": -56.92334570839921,
+      "signal": -70.65789403639377,
+      "histogram": 13.73454832799456
     },
     "bollinger": {
-      "upper": 5012.052173211211,
-      "middle": 4621.5,
-      "lower": 4230.947826788789,
-      "percent_b": 0.5108820288082269,
-      "bandwidth_pct": 16.901532974627763
+      "upper": 5015.973144857802,
+      "middle": 4625.0,
+      "lower": 4234.026855142198,
+      "percent_b": 0.5575487096644024,
+      "bandwidth_pct": 16.906946804661718
     },
-    "atr14": 164.6751374424616,
+    "atr14": 163.626912754342,
     "volume": {
-      "last": 67374100,
-      "avg20": 62484810,
-      "ratio": 1.0782476573106328
+      "last": 37030300,
+      "avg20": 60598785,
+      "ratio": 0.6110733078229209
     },
     "levels": {
       "support": [
@@ -63,8 +63,8 @@
       "score": -1,
       "reasons": [
         "price below a falling 50-day average that sits below the 200-day: downtrend",
-        "RSI 49 is neutral",
-        "MACD just crossed above its signal line",
+        "RSI 51 is neutral",
+        "MACD above its signal line (bullish momentum)",
         "price below the 200-day average"
       ]
     }
