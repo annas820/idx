@@ -70,8 +70,28 @@ def last_good_broker(root):
     return None, None
 
 
+def manual_state(root, day):
+    """Newest hand-uploaded Ringkasan Saham (data/ringkasan/*.csv) and the v1.1 draft status next to it."""
+    top = os.path.dirname(os.path.abspath(root.rstrip(os.sep)))
+    ring = os.path.join(top, "data", "ringkasan")
+    try:
+        files = sorted(f for f in os.listdir(ring) if re.match(r"^\d{8}\.csv$", f))
+    except OSError:
+        files = []
+    latest = files[-1][:8] if files else None
+    fresh = bool(latest) and latest == day.replace("-", "")
+    v11 = None
+    try:
+        vs = sorted(f for f in os.listdir(os.path.join(top, "signals_v11")) if f.startswith("v11_"))
+        v11 = (read_json(os.path.join(top, "signals_v11", vs[-1])) or {}).get("status") if vs else None
+    except OSError:
+        pass
+    return {"latest": latest, "sessions": len(files), "fresh": fresh, "v11_status": v11}
+
+
 def build(snap_dir, root):
     day = os.path.basename(os.path.normpath(snap_dir))
+    manual = manual_state(root, day)
     status = parse_status(read_text(os.path.join(snap_dir, "status.txt")))
     pillars, failed = {}, []
     for name, steps in PILLARS.items():
@@ -88,12 +108,16 @@ def build(snap_dir, root):
     idx = ov.get("index") or {}
 
     note = None
+    pillars["asing_manual"] = "ok" if manual["fresh"] else ("basi" if manual["latest"] else "belum ada")
     if pillars["broker"] != "ok":
         errs = " ".join(read_text(os.path.join(snap_dir, f"{s}.err")) for s in PILLARS["broker"])
         if SWALLOWED_502 in errs:
             note = ("Pesan 'no session with trades' menyesatkan: dugaan error IPOT (HTTP 502) yang tertelan. "
                     "Lihat diag/ dan STATUS.md.")
-        reasons.append("data broker tidak tersedia: tidak ada sinyal yang bisa dihitung")
+        if not manual["fresh"]:
+            reasons.append("data broker tidak tersedia dan data asing manual belum terbarui: tidak ada sinyal yang bisa dihitung")
+        elif manual["v11_status"] != "ok":
+            reasons.append(f"sinyal v1.1 belum siap: {manual['v11_status']}")
     if pillars["harga"] != "ok":
         reasons.append("data harga tidak lengkap")
     if stale:
@@ -118,6 +142,7 @@ def build(snap_dir, root):
         "last_good_broker_snapshot": good_dir,
         "last_good_broker_data_to": good_to,
         "broker_note": note,
+        "manual": manual,
         "entries_allowed": not reasons,
         "reasons": reasons,
     }
@@ -132,6 +157,7 @@ def render_md(h):
         "- Pilar: " + ", ".join(f"{k}={v}" for k, v in h["pillars"].items()),
         f"- Breadth harga (proxy, bukan MA50): {'n/a' if b is None else f'{b:.1%}'} "
         f"({h['advancing']} naik dari {h['quoted']})",
+        f"- Data asing manual (Ringkasan Saham): terbaru {h['manual']['latest'] or 'tidak ada'}, {h['manual']['sessions']} sesi; sinyal v1.1: {h['manual']['v11_status'] or 'n/a'}",
         f"- Data broker terbaru: {h['last_good_broker_snapshot'] or 'tidak ada'}"
         f" (sampai {h['last_good_broker_data_to'] or 'n/a'})",
     ]

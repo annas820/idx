@@ -65,6 +65,33 @@ class HealthTest(unittest.TestCase):
             d = make_snapshot(r, "2026-10-27", ALL_OK, as_of="2026-10-26", fnet_rows=1)
             self.assertFalse(health.build(d, r)["entries_allowed"])
 
+    def test_manual_fresh_but_v11_not_ready_still_blocks(self):
+        status = ALL_OK.replace("OK   fnet_5d", "FAIL fnet_5d (exit 4)")
+        with tempfile.TemporaryDirectory() as top:
+            root = os.path.join(top, "snapshots")
+            os.makedirs(os.path.join(top, "data", "ringkasan"))
+            open(os.path.join(top, "data", "ringkasan", "20261027.csv"), "w").close()
+            os.makedirs(os.path.join(top, "signals_v11"))
+            with open(os.path.join(top, "signals_v11", "v11_20261027.json"), "w") as f:
+                json.dump({"status": "data_kurang (5/14 sesi untuk ATR)"}, f)
+            d = make_snapshot(root, "2026-10-27", status, fnet_rows=0)
+            h = health.build(d, root)
+            self.assertEqual(h["pillars"]["asing_manual"], "ok")
+            self.assertFalse(h["entries_allowed"])
+            self.assertTrue(any("v1.1" in x for x in h["reasons"]))
+
+    def test_manual_fresh_and_v11_ok_allows(self):
+        status = ALL_OK.replace("OK   fnet_5d", "FAIL fnet_5d (exit 4)")
+        with tempfile.TemporaryDirectory() as top:
+            root = os.path.join(top, "snapshots")
+            os.makedirs(os.path.join(top, "data", "ringkasan"))
+            open(os.path.join(top, "data", "ringkasan", "20261027.csv"), "w").close()
+            os.makedirs(os.path.join(top, "signals_v11"))
+            with open(os.path.join(top, "signals_v11", "v11_20261027.json"), "w") as f:
+                json.dump({"status": "ok"}, f)
+            d = make_snapshot(root, "2026-10-27", status, fnet_rows=0)
+            self.assertTrue(health.build(d, root)["entries_allowed"])
+
     def test_missing_snapshot_does_not_crash(self):
         with tempfile.TemporaryDirectory() as r:
             h = health.build(os.path.join(r, "2026-10-28"), r)

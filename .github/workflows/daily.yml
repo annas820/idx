@@ -142,6 +142,15 @@ jobs:
             echo "SKIP forward_test (no fnet_5d)" >> "snapshots/$D/status.txt"
           fi
 
+      - name: Ingest hand-uploaded Ringkasan Saham and write v1.1 DRAFT signals
+        continue-on-error: true
+        shell: bash
+        run: |
+          python3 -m pip install --break-system-packages openpyxl || python3 -m pip install openpyxl
+          python3 -m unittest forward_test.test_ft11
+          python3 forward_test/ringkasan_ingest.py manual data/ringkasan
+          python3 forward_test/ft11_signal.py data/ringkasan signals_v11
+
       - name: Data health gate (reporting only; never changes Forward Test rules)
         if: always()
         shell: bash
@@ -153,8 +162,8 @@ jobs:
         run: |
           git config user.name "snapshot-bot"
           git config user.email "snapshot-bot@users.noreply.github.com"
-          mkdir -p snapshots hist signals forward_test latest
-          git add snapshots hist signals forward_test latest
+          mkdir -p snapshots hist signals forward_test latest data/ringkasan signals_v11
+          git add snapshots hist signals forward_test latest data/ringkasan signals_v11
           git diff --cached --quiet && exit 0
           git commit -m "snapshot $(TZ=Asia/Jakarta date +%F)"
           # news-bot pushes hourly: rebase and retry instead of failing the whole run on a race.
