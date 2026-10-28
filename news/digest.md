@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-28T09:40+07:00 WIB | jendela 36 jam | dipindai 219, lolos 85, dibuang sebagai noise 13.
+Berita terbaru: 2026-10-28T10:34+07:00 WIB | jendela 36 jam | dipindai 229, lolos 88, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -12,6 +12,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-28 08:00 bloomberg_technoz: Arah Rupiah Dibayangi Keputusan The Fed dan Gejolak Domestik (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125965/arah-rupiah-dibayangi-keputusan-the-fed-dan-gejolak-domestik>
 - **6** T3 10-28 07:25 bloomberg_technoz: Depresiasi Rupiah Berujung Pada Net Sell hingga Kejatuhan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125967/depresiasi-rupiah-berujung-pada-net-sell-hingga-kejatuhan-ihsg>
 - **6** T3 10-28 07:00 bloomberg_technoz: Bursa Asia Siap Menguat, Mengekor Reli Wall Street & Sentimen AI (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125962/bursa-asia-siap-menguat-mengekor-reli-wall-street-sentimen-ai>
+- **5** T3 10-28 10:20 bloomberg_technoz: Airlangga Soal Rupiah Yang Melemah: Tambah Daya Saing Ekspor (kurs/komoditas) <https://www.bloombergtechnoz.com/detail-news/125994/airlangga-soal-rupiah-yang-melemah-tambah-daya-saing-ekspor>
+- **5** T3 10-28 10:03 bloomberg_technoz: Saham Keluarga Bakrie (BNBR) Balik ke Bawah Gocap [BNBR] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125999/saham-keluarga-bakrie-bnbr-balik-ke-bawah-gocap>
+- **5** T3 10-28 10:00 bloomberg_technoz: Pemangkasan Ekspor Gas ke Singapura Diproyeksi Lanjut hingga 2028 (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125993/pemangkasan-ekspor-gas-ke-singapura-diproyeksi-lanjut-hingga-2028>
+- **5** T3 10-28 09:50 bloomberg_technoz: Malaysia Kelebihan Stok Minyak Sawit, Rekor Sepanjang Masa (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/125988/malaysia-kelebihan-stok-minyak-sawit-rekor-sepanjang-masa>
 - **5** T3 10-28 09:40 bloomberg_technoz: Smelter Dicoret dari DMO, Isu Batu Bara PLN Belum Tentu Teratasi (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125987/smelter-dicoret-dari-dmo-isu-batu-bara-pln-belum-tentu-teratasi>
 - **5** T3 10-28 09:25 bloomberg_technoz: RUPSLB BEI, Bahas Dividen hingga Wacana Masuknya Danantara (kebijakan/korporasi) <https://www.bloombergtechnoz.com/detail-news/125992/rupslb-bei-bahas-dividen-hingga-wacana-masuknya-danantara>
 - **5** T3 10-28 09:20 bloomberg_technoz: Smelter Mau Dicoret dari DMO Batu Bara, Cuan Penambang Bisa Turun (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125983/smelter-mau-dicoret-dari-dmo-batu-bara-cuan-penambang-bisa-turun>
@@ -25,7 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-27 13:50 kontan_keuangan: Saham Big Bank Bergerak Variatif di Sesi Pertama, Buyback Jadi Sentimen Penopang (pasar/korporasi) <https://keuangan.kontan.co.id/news/saham-big-bank-bergerak-variatif-di-sesi-pertama-buyback-jadi-sentimen-penopang>
 - **5** T3 10-27 13:25 bloomberg_technoz: Diperberat Saham DCII dan BREN, IHSG Terpeleset ke Zona Merah [BREN,DCII] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125890/diperberat-saham-dcii-dan-bren-ihsg-terpeleset-ke-zona-merah>
 - **5** T3 10-27 12:00 bloomberg_technoz: RI Kukuh Pangkas Ekspor Gas ke Singapura, Apa Alasan & Dampaknya? (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125867/ri-kukuh-pangkas-ekspor-gas-ke-singapura-apa-alasan-dampaknya>
-- **5** T3 10-27 11:50 bloomberg_technoz: Kemenkeu Rilis Aturan Baru, Defisit APBD Dibatasi 2,5% (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/125863/kemenkeu-rilis-aturan-baru-defisit-apbd-dibatasi-2-5>
-- **5** T3 10-27 11:40 bloomberg_technoz: Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase>
-- **5** T3 10-27 11:33 kontan_keuangan: Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS [BBCA,BRIS] (pasar/emiten) <https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris>
-- **5** T3 10-27 08:58 kontan_keuangan: Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027 (pasar/korporasi) <https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027>

@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-28T09:40+07:00",
+ "generated_for": "2026-10-28T10:34+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 219,
- "kept": 85,
+ "scanned": 229,
+ "kept": 88,
  "dropped_noise": 13,
  "items": [
   {
@@ -134,6 +134,68 @@
    "categories": [
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T10:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Airlangga Soal Rupiah Yang Melemah: Tambah Daya Saing Ekspor",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125994/airlangga-soal-rupiah-yang-melemah-tambah-daya-saing-ekspor",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T10:03+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham Keluarga Bakrie (BNBR) Balik ke Bawah Gocap",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125999/saham-keluarga-bakrie-bnbr-balik-ke-bawah-gocap",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BNBR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T10:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pemangkasan Ekspor Gas ke Singapura Diproyeksi Lanjut hingga 2028",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125993/pemangkasan-ekspor-gas-ke-singapura-diproyeksi-lanjut-hingga-2028",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T09:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Malaysia Kelebihan Stok Minyak Sawit, Rekor Sepanjang Masa",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125988/malaysia-kelebihan-stok-minyak-sawit-rekor-sepanjang-masa",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
@@ -342,69 +404,6 @@
    "categories": [
     "kebijakan",
     "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T11:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Kemenkeu Rilis Aturan Baru, Defisit APBD Dibatasi 2,5%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125863/kemenkeu-rilis-aturan-baru-defisit-apbd-dibatasi-2-5",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T11:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T11:33+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS",
-   "link": "https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BRIS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T08:58+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027",
-   "link": "https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],
