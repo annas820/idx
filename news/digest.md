@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-28T08:50+07:00 WIB | jendela 36 jam | dipindai 211, lolos 77, dibuang sebagai noise 13.
+Berita terbaru: 2026-10-28T09:40+07:00 WIB | jendela 36 jam | dipindai 219, lolos 85, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -12,6 +12,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-28 08:00 bloomberg_technoz: Arah Rupiah Dibayangi Keputusan The Fed dan Gejolak Domestik (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125965/arah-rupiah-dibayangi-keputusan-the-fed-dan-gejolak-domestik>
 - **6** T3 10-28 07:25 bloomberg_technoz: Depresiasi Rupiah Berujung Pada Net Sell hingga Kejatuhan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125967/depresiasi-rupiah-berujung-pada-net-sell-hingga-kejatuhan-ihsg>
 - **6** T3 10-28 07:00 bloomberg_technoz: Bursa Asia Siap Menguat, Mengekor Reli Wall Street & Sentimen AI (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125962/bursa-asia-siap-menguat-mengekor-reli-wall-street-sentimen-ai>
+- **5** T3 10-28 09:40 bloomberg_technoz: Smelter Dicoret dari DMO, Isu Batu Bara PLN Belum Tentu Teratasi (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125987/smelter-dicoret-dari-dmo-isu-batu-bara-pln-belum-tentu-teratasi>
+- **5** T3 10-28 09:25 bloomberg_technoz: RUPSLB BEI, Bahas Dividen hingga Wacana Masuknya Danantara (kebijakan/korporasi) <https://www.bloombergtechnoz.com/detail-news/125992/rupslb-bei-bahas-dividen-hingga-wacana-masuknya-danantara>
+- **5** T3 10-28 09:20 bloomberg_technoz: Smelter Mau Dicoret dari DMO Batu Bara, Cuan Penambang Bisa Turun (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125983/smelter-mau-dicoret-dari-dmo-batu-bara-cuan-penambang-bisa-turun>
+- **5** T3 10-28 08:55 bloomberg_technoz: Deretan Broker Lepas Saham BREN: Mandiri Hingga UBS [BREN] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125982/deretan-broker-lepas-saham-bren-mandiri-hingga-ubs>
 - **5** T3 10-28 08:30 bloomberg_technoz: Data Serapan DMO Batu Bara Saat ESDM Mau Kecualikan PLTU Smelter (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125975/data-serapan-dmo-batu-bara-saat-esdm-mau-kecualikan-pltu-smelter>
 - **5** T3 10-27 19:02 kontan_keuangan: Bank of India Indonesia (BSWD) Kaji Pemenuhan Free Float 15% [BSWD] (pasar/emiten) <https://keuangan.kontan.co.id/news/bank-of-india-indonesia-bswd-kaji-pemenuhan-free-float-15>
 - **5** T3 10-27 18:50 bloomberg_technoz: IHSG Turun 1,99%, Saham BREN, BRPT dan TPIA Jadi Laggard Terberat [BREN,BRPT,TPIA] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125946/ihsg-turun-1-99-saham-bren-brpt-dan-tpia-jadi-laggard-terberat>
@@ -25,7 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-27 11:40 bloomberg_technoz: Ribut Ekspor Gas, RI Didesak Temui Singapura Hindari Arbitrase (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125864/ribut-ekspor-gas-ri-didesak-temui-singapura-hindari-arbitrase>
 - **5** T3 10-27 11:33 kontan_keuangan: Kredit Perbankan Melambat, Mirae Asset Jagokan Saham BBCA dan BRIS [BBCA,BRIS] (pasar/emiten) <https://keuangan.kontan.co.id/news/kredit-perbankan-melambat-mirae-asset-jagokan-saham-bbca-dan-bris>
 - **5** T3 10-27 08:58 kontan_keuangan: Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027 (pasar/korporasi) <https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027>
-- **5** T3 10-27 06:45 bloomberg_technoz: Bursa Asia Bersiap Menguat, IPO Anthropic Bangkitkan Gairah AI (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125810/bursa-asia-bersiap-menguat-ipo-anthropic-bangkitkan-gairah-ai>
-- **5** T3 10-27 05:16 bloomberg_technoz: Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo>
-- **4** T3 10-28 08:34 bloomberg_technoz: Alasan Mengapa Harga Emas Antam Hari Ini Naik Rp20.000 [ANTM] (komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/125979/alasan-mengapa-harga-emas-antam-hari-ini-naik-rp20-000>
-- **4** T3 10-28 08:25 bloomberg_technoz: Rangkuman Rekomendasi Saham Hari Ini, 28 Oktober 2026 (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/125976/rangkuman-rekomendasi-saham-hari-ini-28-oktober-2026>

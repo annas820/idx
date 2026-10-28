@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-28T08:50+07:00",
+ "generated_for": "2026-10-28T09:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 211,
- "kept": 77,
+ "scanned": 219,
+ "kept": 85,
  "dropped_noise": 13,
  "items": [
   {
@@ -136,6 +136,68 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T09:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Smelter Dicoret dari DMO, Isu Batu Bara PLN Belum Tentu Teratasi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125987/smelter-dicoret-dari-dmo-isu-batu-bara-pln-belum-tentu-teratasi",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T09:25+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "RUPSLB BEI, Bahas Dividen hingga Wacana Masuknya Danantara",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125992/rupslb-bei-bahas-dividen-hingga-wacana-masuknya-danantara",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T09:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Smelter Mau Dicoret dari DMO Batu Bara, Cuan Penambang Bisa Turun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125983/smelter-mau-dicoret-dari-dmo-batu-bara-cuan-penambang-bisa-turun",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T08:55+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Deretan Broker Lepas Saham BREN: Mandiri Hingga UBS",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125982/deretan-broker-lepas-saham-bren-mandiri-hingga-ubs",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -346,69 +408,6 @@
    ],
    "tickers": [],
    "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T06:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bursa Asia Bersiap Menguat, IPO Anthropic Bangkitkan Gairah AI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125810/bursa-asia-bersiap-menguat-ipo-anthropic-bangkitkan-gairah-ai",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T05:16+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T08:34+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Alasan Mengapa Harga Emas Antam Hari Ini Naik Rp20.000",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125979/alasan-mengapa-harga-emas-antam-hari-ini-naik-rp20-000",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T08:25+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rangkuman Rekomendasi Saham Hari Ini, 28 Oktober 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125976/rangkuman-rekomendasi-saham-hari-ini-28-oktober-2026",
-   "score": 4,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
    "also_in": []
   }
  ],
