@@ -1,13 +1,15 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-28T10:34+07:00 WIB | jendela 36 jam | dipindai 229, lolos 88, dibuang sebagai noise 13.
+Berita terbaru: 2026-10-28T11:40+07:00 WIB | jendela 36 jam | dipindai 238, lolos 90, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
+- **8** T3 10-28 11:10 bloomberg_technoz: The Fed Diproyeksi Tahan Suku Bunga di Tengah Tekanan Inflasi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/125998/the-fed-diproyeksi-tahan-suku-bunga-di-tengah-tekanan-inflasi>
 - **7** T3 10-28 08:45 bloomberg_technoz: UNTR Bagikan Dividen Saat Laba Tertekan, Yield 1,6% [UNTR] (kurs/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125980/untr-bagikan-dividen-saat-laba-tertekan-yield-1-6>
 - **7** T3 10-27 18:44 kontan_keuangan: Bank Ina Perdana (BINA) Akan Gelar Private Placement, Terbitkan 80 Juta Saham [BINA] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-ina-perdana-bina-akan-gelar-private-placement-terbitkan-80-juta-saham>
 - **7** T3 10-27 10:30 bloomberg_technoz: BRIS Rancang Buyback Saham Rp500 Miliar [BRIS] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125844/bris-rancang-buyback-saham-rp500-miliar>
 - **7** T3 10-27 08:50 kontan_keuangan: Lanjutkan Buyback Saham, BRI Siapkan Dana Hingga Rp 1 Triliun [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/lanjutkan-buyback-saham-bri-siapkan-dana-hingga-rp-1-triliun>
+- **6** T3 10-28 11:23 bloomberg_technoz: Emiten Raffi Ahmad (RANS) ARB, Jatuh 57% dari Puncaknya (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126005/emiten-raffi-ahmad-rans-arb-jatuh-57-dari-puncaknya>
 - **6** T3 10-28 08:10 bloomberg_technoz: Gerak IHSG Hari Ini: Tertekan Pelemahan Rupiah & Yield SBN (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125972/gerak-ihsg-hari-ini-tertekan-pelemahan-rupiah-yield-sbn>
 - **6** T3 10-28 08:00 bloomberg_technoz: Arah Rupiah Dibayangi Keputusan The Fed dan Gejolak Domestik (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125965/arah-rupiah-dibayangi-keputusan-the-fed-dan-gejolak-domestik>
 - **6** T3 10-28 07:25 bloomberg_technoz: Depresiasi Rupiah Berujung Pada Net Sell hingga Kejatuhan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125967/depresiasi-rupiah-berujung-pada-net-sell-hingga-kejatuhan-ihsg>
@@ -27,5 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-27 17:10 bloomberg_technoz: Pemda Respons Aturan Baru Soal Defisit APBD 2027 Bisa Lewati 2,5% (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/125936/pemda-respons-aturan-baru-soal-defisit-apbd-2027-bisa-lewati-2-5>
 - **5** T3 10-27 15:20 bloomberg_technoz: PLN EPI Salurkan Gas Hasil Pangkas Ekspor Singapura ke Batam (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125915/pln-epi-salurkan-gas-hasil-pangkas-ekspor-singapura-ke-batam>
 - **5** T3 10-27 13:50 kontan_keuangan: Saham Big Bank Bergerak Variatif di Sesi Pertama, Buyback Jadi Sentimen Penopang (pasar/korporasi) <https://keuangan.kontan.co.id/news/saham-big-bank-bergerak-variatif-di-sesi-pertama-buyback-jadi-sentimen-penopang>
-- **5** T3 10-27 13:25 bloomberg_technoz: Diperberat Saham DCII dan BREN, IHSG Terpeleset ke Zona Merah [BREN,DCII] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125890/diperberat-saham-dcii-dan-bren-ihsg-terpeleset-ke-zona-merah>
-- **5** T3 10-27 12:00 bloomberg_technoz: RI Kukuh Pangkas Ekspor Gas ke Singapura, Apa Alasan & Dampaknya? (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125867/ri-kukuh-pangkas-ekspor-gas-ke-singapura-apa-alasan-dampaknya>
