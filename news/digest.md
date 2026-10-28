@@ -1,14 +1,18 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-28T07:45+07:00 WIB | jendela 36 jam | dipindai 209, lolos 70, dibuang sebagai noise 14.
+Berita terbaru: 2026-10-28T08:50+07:00 WIB | jendela 36 jam | dipindai 211, lolos 77, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
+- **7** T3 10-28 08:45 bloomberg_technoz: UNTR Bagikan Dividen Saat Laba Tertekan, Yield 1,6% [UNTR] (kurs/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125980/untr-bagikan-dividen-saat-laba-tertekan-yield-1-6>
 - **7** T3 10-27 18:44 kontan_keuangan: Bank Ina Perdana (BINA) Akan Gelar Private Placement, Terbitkan 80 Juta Saham [BINA] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-ina-perdana-bina-akan-gelar-private-placement-terbitkan-80-juta-saham>
 - **7** T3 10-27 10:30 bloomberg_technoz: BRIS Rancang Buyback Saham Rp500 Miliar [BRIS] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125844/bris-rancang-buyback-saham-rp500-miliar>
 - **7** T3 10-27 08:50 kontan_keuangan: Lanjutkan Buyback Saham, BRI Siapkan Dana Hingga Rp 1 Triliun [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/lanjutkan-buyback-saham-bri-siapkan-dana-hingga-rp-1-triliun>
+- **6** T3 10-28 08:10 bloomberg_technoz: Gerak IHSG Hari Ini: Tertekan Pelemahan Rupiah & Yield SBN (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125972/gerak-ihsg-hari-ini-tertekan-pelemahan-rupiah-yield-sbn>
+- **6** T3 10-28 08:00 bloomberg_technoz: Arah Rupiah Dibayangi Keputusan The Fed dan Gejolak Domestik (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125965/arah-rupiah-dibayangi-keputusan-the-fed-dan-gejolak-domestik>
 - **6** T3 10-28 07:25 bloomberg_technoz: Depresiasi Rupiah Berujung Pada Net Sell hingga Kejatuhan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125967/depresiasi-rupiah-berujung-pada-net-sell-hingga-kejatuhan-ihsg>
 - **6** T3 10-28 07:00 bloomberg_technoz: Bursa Asia Siap Menguat, Mengekor Reli Wall Street & Sentimen AI (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125962/bursa-asia-siap-menguat-mengekor-reli-wall-street-sentimen-ai>
+- **5** T3 10-28 08:30 bloomberg_technoz: Data Serapan DMO Batu Bara Saat ESDM Mau Kecualikan PLTU Smelter (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/125975/data-serapan-dmo-batu-bara-saat-esdm-mau-kecualikan-pltu-smelter>
 - **5** T3 10-27 19:02 kontan_keuangan: Bank of India Indonesia (BSWD) Kaji Pemenuhan Free Float 15% [BSWD] (pasar/emiten) <https://keuangan.kontan.co.id/news/bank-of-india-indonesia-bswd-kaji-pemenuhan-free-float-15>
 - **5** T3 10-27 18:50 bloomberg_technoz: IHSG Turun 1,99%, Saham BREN, BRPT dan TPIA Jadi Laggard Terberat [BREN,BRPT,TPIA] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/125946/ihsg-turun-1-99-saham-bren-brpt-dan-tpia-jadi-laggard-terberat>
 - **5** T3 10-27 18:10 bloomberg_technoz: BEI Depak CUAN dari Indeks Bergengsi LQ45 & IDX80 [CUAN] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/125941/bei-depak-cuan-dari-indeks-bergengsi-lq45-idx80>
@@ -23,9 +27,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-27 08:58 kontan_keuangan: Dimulai Hari Ini, BSI Buyback Saham Rp 500 Miliar hingga Januari 2027 (pasar/korporasi) <https://keuangan.kontan.co.id/news/dimulai-hari-ini-bsi-buyback-saham-rp-500-miliar-hingga-januari-2027>
 - **5** T3 10-27 06:45 bloomberg_technoz: Bursa Asia Bersiap Menguat, IPO Anthropic Bangkitkan Gairah AI (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125810/bursa-asia-bersiap-menguat-ipo-anthropic-bangkitkan-gairah-ai>
 - **5** T3 10-27 05:16 bloomberg_technoz: Saham AS Menguat Ditopang Teknologi, Anthropic Ajukan IPO (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/125805/saham-as-menguat-ditopang-teknologi-anthropic-ajukan-ipo>
-- **5** T3 10-26 20:13 kontan_keuangan: OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas (kebijakan/komoditas) <https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas>
-- **4** T3 10-28 07:40 bloomberg_technoz: Pemicu Lonjakan Laba ANTM 47% Jadi Rp8,8 T [ANTM] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125968/pemicu-lonjakan-laba-antm-47-jadi-rp8-8-t>
-- **4** T3 10-27 16:51 kontan_keuangan: BCA Catat Laba Bersih Rp 45,2 Triliun pada Kuartal III-2026 [BBCA] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bca-catat-laba-bersih-rp-452-triliun-pada-kuartal-iii-2026>
-- **4** T3 10-27 16:42 bloomberg_technoz: Laba Bank BCA (BBCA) Tumbuh 4,2% Jadi Rp45,2 Triliun [BBCA] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125934/laba-bank-bca-bbca-tumbuh-4-2-jadi-rp45-2-triliun>
-- **4** T3 10-27 15:30 bloomberg_technoz: Laba Produsen Rokok Sampoerna (HMSP) Lompat 44% [HMSP] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/125919/laba-produsen-rokok-sampoerna-hmsp-lompat-44>
-- **4** T3 10-27 11:46 kontan_keuangan: Kredit BNI (BBNI) Melonjak 22,2%, Laba Tumbuh 6,6%, Mirae Tetap Rekomendasi Netral [BBNI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/kredit-bni-bbni-melonjak-222-laba-tumbuh-66-mirae-tetap-rekomendasi-netral>
+- **4** T3 10-28 08:34 bloomberg_technoz: Alasan Mengapa Harga Emas Antam Hari Ini Naik Rp20.000 [ANTM] (komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/125979/alasan-mengapa-harga-emas-antam-hari-ini-naik-rp20-000>
+- **4** T3 10-28 08:25 bloomberg_technoz: Rangkuman Rekomendasi Saham Hari Ini, 28 Oktober 2026 (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/125976/rangkuman-rekomendasi-saham-hari-ini-28-oktober-2026>

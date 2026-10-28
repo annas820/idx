@@ -1,12 +1,30 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-28T07:45+07:00",
+ "generated_for": "2026-10-28T08:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 209,
- "kept": 70,
- "dropped_noise": 14,
+ "scanned": 211,
+ "kept": 77,
+ "dropped_noise": 13,
  "items": [
+  {
+   "published": "2026-10-28T08:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "UNTR Bagikan Dividen Saat Laba Tertekan, Yield 1,6%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125980/untr-bagikan-dividen-saat-laba-tertekan-yield-1-6",
+   "score": 7,
+   "categories": [
+    "kurs",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "UNTR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-10-27T18:44+07:00",
    "source": "kontan_keuangan",
@@ -62,6 +80,36 @@
    "also_in": []
   },
   {
+   "published": "2026-10-28T08:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Gerak IHSG Hari Ini: Tertekan Pelemahan Rupiah & Yield SBN",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125972/gerak-ihsg-hari-ini-tertekan-pelemahan-rupiah-yield-sbn",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T08:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Arah Rupiah Dibayangi Keputusan The Fed dan Gejolak Domestik",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125965/arah-rupiah-dibayangi-keputusan-the-fed-dan-gejolak-domestik",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-28T07:25+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -86,6 +134,21 @@
    "categories": [
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-28T08:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Data Serapan DMO Batu Bara Saat ESDM Mau Kecualikan PLTU Smelter",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125975/data-serapan-dmo-batu-bara-saat-esdm-mau-kecualikan-pltu-smelter",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
@@ -316,29 +379,14 @@
    "also_in": []
   },
   {
-   "published": "2026-10-26T20:13+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Beri Izin Usaha kepada Perusahaan Gadai PT Hidup Unggul Gadai Emas",
-   "link": "https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-kepada-perusahaan-gadai-pt-hidup-unggul-gadai-emas",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T07:40+07:00",
+   "published": "2026-10-28T08:34+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Pemicu Lonjakan Laba ANTM 47% Jadi Rp8,8 T",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125968/pemicu-lonjakan-laba-antm-47-jadi-rp8-8-t",
+   "title": "Alasan Mengapa Harga Emas Antam Hari Ini Naik Rp20.000",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125979/alasan-mengapa-harga-emas-antam-hari-ini-naik-rp20-000",
    "score": 4,
    "categories": [
-    "korporasi",
+    "komoditas",
     "emiten"
    ],
    "tickers": [
@@ -348,71 +396,19 @@
    "also_in": []
   },
   {
-   "published": "2026-10-27T16:51+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BCA Catat Laba Bersih Rp 45,2 Triliun pada Kuartal III-2026",
-   "link": "https://keuangan.kontan.co.id/news/bca-catat-laba-bersih-rp-452-triliun-pada-kuartal-iii-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T16:42+07:00",
+   "published": "2026-10-28T08:25+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Laba Bank BCA (BBCA) Tumbuh 4,2% Jadi Rp45,2 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125934/laba-bank-bca-bbca-tumbuh-4-2-jadi-rp45-2-triliun",
+   "title": "Rangkuman Rekomendasi Saham Hari Ini, 28 Oktober 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/125976/rangkuman-rekomendasi-saham-hari-ini-28-oktober-2026",
    "score": 4,
    "categories": [
-    "korporasi",
-    "emiten"
+    "pasar"
    ],
-   "tickers": [
-    "BBCA"
+   "tickers": [],
+   "flags": [
+    "petunjuk"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T15:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Laba Produsen Rokok Sampoerna (HMSP) Lompat 44%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125919/laba-produsen-rokok-sampoerna-hmsp-lompat-44",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "HMSP"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T11:46+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Kredit BNI (BBNI) Melonjak 22,2%, Laba Tumbuh 6,6%, Mirae Tetap Rekomendasi Netral",
-   "link": "https://keuangan.kontan.co.id/news/kredit-bni-bbni-melonjak-222-laba-tumbuh-66-mirae-tetap-rekomendasi-netral",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBNI"
-   ],
-   "flags": [],
    "also_in": []
   }
  ],
