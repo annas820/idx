@@ -1,7 +1,7 @@
 {
   "schema": "idx.news.v1",
   "provider": "news",
-  "fetched_at": "2026-10-28T07:57:24Z",
+  "fetched_at": "2026-10-28T11:06:37Z",
   "cached": false,
   "stale": false,
   "warnings": [
@@ -24,6 +24,158 @@
     "company_matches": 0,
     "company_only": false,
     "items": [
+      {
+        "title": "Fintech Lending Disebut Perlu Perkuat Analisis untuk Dongkrak Pembiayaan Produktif",
+        "url": "https://keuangan.kontan.co.id/news/fintech-lending-disebut-perlu-perkuat-analisis-untuk-dongkrak-pembiayaan-produktif",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T18:04:43+07:00",
+        "summary": "Fintech lending disebut perlu untuk memperkuat analisis untuk mendongkrak pembiayaan produktif. Data OJK menunjukkan pembiayaan produktif 33,38%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Hadapi Dinamika Bisnis, BRI Insurance Perkuat Underwriting hingga Pengelolaan Klaim",
+        "url": "https://keuangan.kontan.co.id/news/hadapi-dinamika-bisnis-bri-insurance-perkuat-underwriting-hingga-pengelolaan-klaim",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T17:43:10+07:00",
+        "summary": "Penerapan Good Corporate Governance (GCG) perlu diintegrasikan dengan manajemen risiko dan kepatuhan dalam seluruh proses bisnis.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Saham Big Banks Kompak Menguat, BBCA Melonjak 7,65%",
+        "url": "https://keuangan.kontan.co.id/news/saham-big-banks-kompak-menguat-bbca-melonjak-765",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T17:35:18+07:00",
+        "summary": "Saham big banks mayoritas menguat pada 28 Oktober 2026. BBCA melonjak 7,65% dan mencatat net buy asing Rp 1,17 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat",
+          "melonjak",
+          "buy"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BRI Finance Proyeksikan Kinerja Pembiayaan pada 2027 Bisa Naik Dua Kali Lipat",
+        "url": "https://keuangan.kontan.co.id/news/bri-finance-proyeksikan-kinerja-pembiayaan-pada-2027-bisa-naik-dua-kali-lipat",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T16:48:37+07:00",
+        "summary": "BRI Finance memproyeksikan kinerja pembiayaan pada 2027 bisa naik dua kali lipat. Salah satu penopangnya adalah pembiayaan kendaraan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "MSIG Life Terapkan Teknologi AI pada Pengelolaan Klaim Asuransi Kesehatan",
+        "url": "https://keuangan.kontan.co.id/news/msig-life-terapkan-teknologi-ai-pada-pengelolaan-klaim-asuransi-kesehatan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T16:41:58+07:00",
+        "summary": "MSIG Life sudah diterapkan pada pengelolaan klaim asuransi kesehatan terutama untuk mengumpulkan seluruh informasi klaim dan melakukan analisis.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BRI Finance Perkuat Komitmen Bisnis Berkelanjutan lewat Pembiayaan Hijau",
+        "url": "https://keuangan.kontan.co.id/news/bri-finance-perkuat-komitmen-bisnis-berkelanjutan-lewat-pembiayaan-hijau",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T16:39:28+07:00",
+        "summary": "BRI Finance memperkuat komitmen bisnis berkelanjutan lewat pembiayaan hijau. Pembiayaan kendaraan listrik BRI Finance meningkat 12,3 kali lipat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "CIMB Niaga Catat Kredit Tumbuh 6,7% Menjadi Rp 242,6 Triliun per September 2026",
+        "url": "https://keuangan.kontan.co.id/news/cimb-niaga-catat-kredit-tumbuh-67-menjadi-rp-2426-triliun-per-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T16:24:25+07:00",
+        "summary": "CIMB Niaga mencatat kredit tumbuh 6,7% menjadi Rp 242,6 triliun per September 2026. Hal ini didorong segmen korporasi tumbuh 15,1% yoy.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit CIMB Niaga Tumbuh 6,7% yoy Menjadi Rp 242,6 Triliun, Ini Pendorongnya",
+        "url": "https://keuangan.kontan.co.id/news/kredit-cimb-niaga-tumbuh-67-yoy-menjadi-rp-2426-triliun-ini-pendorongnya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T16:07:54+07:00",
+        "summary": "Kredit CIMB Niaga tumbuh 6,7% yoy menjadi Rp 242,6 triliun. Hal ini didorong segmen perbankan korporasi catat pertumbuhan tertinggi 15,1% yoy.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan",
+          "tertinggi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Transaksi CIMB Niaga Kini 90% Dilayani Secara Digital, QRIS OCTO Tumbuh 69%",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-cimb-niaga-kini-90-dilayani-secara-digital-qris-octo-tumbuh-69",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T16:00:58+07:00",
+        "summary": "CIMB Niaga mencatat 90% transaksi nasabah dilakukan secara digital hingga September 2026, pertumbuhan transaksi QRIS dan investasi melalui OCTO.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Tabungan Haji dan Umrah BSI Tumbuh 24,4%, Didominasi Anak Muda",
+        "url": "https://keuangan.kontan.co.id/news/tabungan-haji-dan-umrah-bsi-tumbuh-244-didominasi-anak-muda",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T15:31:48+07:00",
+        "summary": "Tabungan haji dan umrah Bank Syariah Indonesia (BSI) tumbuh 24,4% secara tahunan hingga kuartal III-2026, didominasi anak muda.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Laba Woori Finance Indonesia (BPFI) Tumbuh Signfikan 88,79% per Kuartal III-2026",
+        "url": "https://keuangan.kontan.co.id/news/laba-woori-finance-indonesia-bpfi-tumbuh-signfikan-8879-per-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T14:58:59+07:00",
+        "summary": "Woori Finance Indonesia mencatatkan laba bersih sebesar Rp 97,81 miliar per kuartal III-2026. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
       {
         "title": "AUM Reksadana Indeks Capai Rp 50 Miliar, Ini Cara Sinarmas AM Jaga Kinerja",
         "url": "https://keuangan.kontan.co.id/news/aum-reksadana-indeks-capai-rp-50-miliar-ini-cara-sinarmas-am-jaga-kinerja",
@@ -144,156 +296,6 @@
         "positive_terms": [],
         "negative_terms": [
           "melemah"
-        ]
-      },
-      {
-        "title": "CIMB Niaga Catat Laba Bersih Rp 4,51 Triliun Pada September 2026",
-        "url": "https://keuangan.kontan.co.id/news/cimb-niaga-catat-laba-bersih-rp-451-triliun-pada-september-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-28T12:04:35+07:00",
-        "summary": "CIMB Niaga membukukan laba bersih konsolidasian sebesar Rp 4,5 triliun, turun 15,5% secara tahunan pada September 2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [
-          "laba"
-        ],
-        "negative_terms": [
-          "turun"
-        ]
-      },
-      {
-        "title": "Kredit Permata Bank Tumbuh 10,1% hingga Kuartal III 2026",
-        "url": "https://keuangan.kontan.co.id/news/kredit-permata-bank-tumbuh-101-hingga-kuartal-iii-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-28T11:08:00+07:00",
-        "summary": "PT Bank Permata Tbk (BNLI) mencatatkan pertumbuhan kredit 10,1% secara tahunan menjadi Rp 172,9 triliun hingga kuartal III-2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "tumbuh",
-          "pertumbuhan"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Yellow Stone Asset Management Perluas Jaringan Bisnis Indonesia-Singapura",
-        "url": "https://keuangan.kontan.co.id/news/yellow-stone-asset-management-perluas-jaringan-bisnis-indonesia-singapura",
-        "source": "kontan/keuangan",
-        "published": "2026-10-28T10:34:47+07:00",
-        "summary": "Ellow Stone Asset Management Pte Ltd memperluas jaringan bisnis di Indonesia untuk menjajaki peluang kemitraan Indonesia - Singapura",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "DPK Bank Jago Tumbuh 21% Jadi Rp 28,9 Triliun pada Kuartal III 2026",
-        "url": "https://keuangan.kontan.co.id/news/dpk-bank-jago-tumbuh-21-jadi-rp-289-triliun-pada-kuartal-iii-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-28T10:31:13+07:00",
-        "summary": "PT Bank Jago Tbk (ARTO) mencatat pertumbuhan dana pihak ketiga (DPK) sebesar 21% secara tahunan menjadi Rp 28,9 triliun per September 2026.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "tumbuh",
-          "pertumbuhan"
-        ],
-        "negative_terms": []
-      },
-      {
-        "title": "Jamkrindo Perkuat Bisnis Penjaminan, Kaji Penataan Portofolio",
-        "url": "https://keuangan.kontan.co.id/news/jamkrindo-perkuat-bisnis-penjaminan-kaji-penataan-portofolio",
-        "source": "kontan/keuangan",
-        "published": "2026-10-28T10:24:51+07:00",
-        "summary": "Jamkrindo memperkuat kinerja dan memperluas akses pembiayaan UMKM melalui penguatan tata kelola, transformasi, dan penataan industri penjaminan&#8203;",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Ciputra Life Catat Premi Asuransi Kesehatan Korporasi Rp 110 M pada September 2026",
-        "url": "https://keuangan.kontan.co.id/news/ciputra-life-catat-premi-asuransi-kesehatan-korporasi-rp-110-m-pada-september-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T21:40:47+07:00",
-        "summary": "Ciputra Life catat premi asuransi kesehatan korporasi Rp 110 miliar pada Sepember 2026. Hal ini didorong perkembangan bisnis baru lini korporasi.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Bank Mandiri (BMRI) Kucurkan Kredit ke Jhonlin Rp 40 Triliun, Ini Analisa Risikonya",
-        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-bmri-kucurkan-kredit-ke-jhonlin-rp-40-triliun-ini-analisa-risikonya",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T21:25:36+07:00",
-        "summary": "Risiko kredit Bank Mandiri kepada Jhonlin Group dinilai masih terkendali, dan rasio cakupan agunan 150% meski konsentrasi kredit perlu dicermati.&#8203;",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "MSIG Life Kerja Implementasikan Dewan Penasihat Medis, Ini Strateginya",
-        "url": "https://keuangan.kontan.co.id/news/msig-life-kerja-implementasikan-dewan-penasihat-medis-ini-strateginya",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T21:14:01+07:00",
-        "summary": "MSIG Life mengimplementasikan Dewan Penasihat Medis &#8203;dengan menggandeng Perhimpunan Dokter Pembiayaan Jaminan Sosial dan Perasuransian Indonesia.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "MSIG Life Mencari Opsi untuk Penuhi Ketentuan Free Float 15%",
-        "url": "https://keuangan.kontan.co.id/news/msig-life-mencari-opsi-untuk-penuhi-ketentuan-free-float-15",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T20:59:13+07:00",
-        "summary": "MSIG Life masih terus berdiskusi dengan pihak-pihak terkait untuk mencari alternatif maupun opsi guna memenuhi ketentuan pemenuhan free float.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Laba Bank Besar Hingga September 2026 Masih Tumbuh, Tapi Margin Bunga Mulai Tergerus",
-        "url": "https://keuangan.kontan.co.id/news/laba-bank-besar-hingga-september-2026-masih-tumbuh-tapi-margin-bunga-mulai-tergerus",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T20:24:10+07:00",
-        "summary": "Laba bank besar tumbuh hingga kuartal III-2026, tetapi kenaikan biaya dana dan penurunan NIM berpotensi menekan profitabilitas perbankan",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.5,
-        "positive_terms": [
-          "laba",
-          "tumbuh",
-          "kenaikan"
-        ],
-        "negative_terms": [
-          "penurunan"
-        ]
-      },
-      {
-        "title": "Ketidakpastian Ekonomi Tekan Kinerja Industri Reasuransi",
-        "url": "https://keuangan.kontan.co.id/news/ketidakpastian-ekonomi-tekan-kinerja-industri-reasuransi",
-        "source": "kontan/keuangan",
-        "published": "2026-10-27T19:59:36+07:00",
-        "summary": "Premi reasuransi turun 16,1% menjadi Rp 10,51 triliun pada semester I-2026, sementara klaim meningkat 26,4%.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": -1.0,
-        "positive_terms": [],
-        "negative_terms": [
-          "turun"
         ]
       }
     ]

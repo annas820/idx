@@ -28,5 +28,5 @@ OK   tech_ASII
 FAIL frgn_ASII (exit 3)
 OK   sent_ASII
 FAIL act_ASII (exit 3)
-run at 2026-10-28 07:57:35 UTC
+run at 2026-10-28 11:06:47 UTC
 SKIP forward_test (no fnet_5d)

@@ -1,7 +1,7 @@
 {
   "schema": "idx.technical.v1",
   "provider": "yahoo",
-  "fetched_at": "2026-10-28T07:57:32Z",
+  "fetched_at": "2026-10-28T11:06:45Z",
   "cached": true,
   "stale": false,
   "data": {
@@ -41,9 +41,9 @@
     },
     "atr14": 221.98551200900707,
     "volume": {
-      "last": 5183500,
-      "avg20": 8067970,
-      "ratio": 0.6424788391627634
+      "last": 7312400,
+      "avg20": 8174415,
+      "ratio": 0.8945471938970556
     },
     "levels": {
       "support": [

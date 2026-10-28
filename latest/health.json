@@ -1,7 +1,7 @@
 {
  "schema": "clo.health.v1",
  "snapshot_date": "2026-10-28",
- "run_at": "run at 2026-10-28 07:57:35 UTC",
+ "run_at": "run at 2026-10-28 11:06:47 UTC",
  "pillars": {
   "harga": "ok",
   "kalender": "ok",
@@ -16,10 +16,10 @@
   "fnet_1d",
   "bandar"
  ],
- "price_breadth_proxy": 0.262,
- "advancing": 239,
+ "price_breadth_proxy": 0.307,
+ "advancing": 280,
  "quoted": 913,
- "index_change_pct": -0.042670306,
+ "index_change_pct": 0.30728692,
  "last_good_broker_snapshot": "2026-10-23",
  "last_good_broker_data_to": "2026-10-23",
  "broker_note": "Pesan 'no session with trades' menyesatkan: dugaan error IPOT (HTTP 502) yang tertelan. Lihat diag/ dan STATUS.md.",
@@ -32,6 +32,6 @@
  "entries_allowed": false,
  "reasons": [
   "data broker tidak tersedia dan data asing manual belum terbarui: tidak ada sinyal yang bisa dihitung",
-  "breadth harga 26% < 40% (proxy)"
+  "breadth harga 31% < 40% (proxy)"
  ]
 }

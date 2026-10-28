@@ -1,7 +1,7 @@
 {
   "schema": "idx.technical.v1",
   "provider": "yahoo",
-  "fetched_at": "2026-10-28T07:57:34Z",
+  "fetched_at": "2026-10-28T11:06:46Z",
   "cached": true,
   "stale": false,
   "data": {
@@ -11,59 +11,57 @@
     "as_of": "2026-10-28T09:00:00+07:00",
     "period": "1y",
     "candles_used": 240,
-    "price": 4670.0,
-    "change_pct_1d": 0.8639308855291578,
-    "change_pct_1w": 2.4122807017543857,
-    "change_pct_1m": 0.0,
-    "change_pct_3m": -5.846774193548387,
+    "price": 5000.0,
+    "change_pct_1d": 7.991360691144708,
+    "change_pct_1w": 9.649122807017543,
+    "change_pct_1m": 7.066381156316917,
+    "change_pct_3m": 0.8064516129032258,
     "high_52w": 7475.0,
     "low_52w": 3920.0,
     "moving_averages": {
-      "sma20": 4625.0,
-      "sma50": 4743.2,
-      "sma200": 5544.15,
-      "ema20": 4616.30627017498,
-      "ema50": 4729.177125027513,
-      "ema200": 5505.240825033229
+      "sma20": 4641.5,
+      "sma50": 4749.8,
+      "sma200": 5545.8,
+      "ema20": 4647.734841603552,
+      "ema50": 4742.118301498102,
+      "ema200": 5508.524407122782
     },
-    "rsi14": 51.03010776542406,
+    "rsi14": 60.97216510417469,
     "macd": {
-      "line": -56.92334570839921,
-      "signal": -70.65789403639377,
-      "histogram": 13.73454832799456
+      "line": -30.598559383613065,
+      "signal": -65.39293677143655,
+      "histogram": 34.79437738782349
     },
     "bollinger": {
-      "upper": 5015.973144857802,
-      "middle": 4625.0,
-      "lower": 4234.026855142198,
-      "percent_b": 0.5575487096644024,
-      "bandwidth_pct": 16.906946804661718
+      "upper": 5065.163781789286,
+      "middle": 4641.5,
+      "lower": 4217.836218210714,
+      "percent_b": 0.9230949344854595,
+      "bandwidth_pct": 18.255468352441497
     },
-    "atr14": 163.626912754342,
+    "atr14": 186.48405561148485,
     "volume": {
-      "last": 37030300,
-      "avg20": 60598785,
-      "ratio": 0.6110733078229209
+      "last": 83377300,
+      "avg20": 62916135,
+      "ratio": 1.325213317696645
     },
     "levels": {
       "support": [
-        4510.0,
-        4470.0,
-        4350.0
+        4870.0,
+        4720.0,
+        4510.0
       ],
       "resistance": [
-        4920.0,
-        4950.0,
-        4980.0
+        5275.0
       ]
     },
-    "trend": "downtrend",
+    "trend": "sideways",
     "signal": {
       "label": "neutral",
-      "score": -1,
+      "score": 0,
       "reasons": [
-        "price below a falling 50-day average that sits below the 200-day: downtrend",
-        "RSI 51 is neutral",
+        "moving averages disagree: no clear trend",
+        "RSI 61 is neutral",
         "MACD above its signal line (bullish momentum)",
         "price below the 200-day average"
       ]
