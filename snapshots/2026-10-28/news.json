@@ -1,0 +1,290 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-10-28T00:22:15Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403",
+    "cnbcindonesia/market: HTTP 403",
+    "cnbcindonesia/research: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 25,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Ciputra Life Catat Premi Asuransi Kesehatan Korporasi Rp 110 M pada September 2026",
+        "url": "https://keuangan.kontan.co.id/news/ciputra-life-catat-premi-asuransi-kesehatan-korporasi-rp-110-m-pada-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T21:40:47+07:00",
+        "summary": "Ciputra Life catat premi asuransi kesehatan korporasi Rp 110 miliar pada Sepember 2026. Hal ini didorong perkembangan bisnis baru lini korporasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri (BMRI) Kucurkan Kredit ke Jhonlin Rp 40 Triliun, Ini Analisa Risikonya",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-bmri-kucurkan-kredit-ke-jhonlin-rp-40-triliun-ini-analisa-risikonya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T21:25:36+07:00",
+        "summary": "Risiko kredit Bank Mandiri kepada Jhonlin Group dinilai masih terkendali, dan rasio cakupan agunan 150% meski konsentrasi kredit perlu dicermati.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "MSIG Life Kerja Implementasikan Dewan Penasihat Medis, Ini Strateginya",
+        "url": "https://keuangan.kontan.co.id/news/msig-life-kerja-implementasikan-dewan-penasihat-medis-ini-strateginya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T21:14:01+07:00",
+        "summary": "MSIG Life mengimplementasikan Dewan Penasihat Medis &#8203;dengan menggandeng Perhimpunan Dokter Pembiayaan Jaminan Sosial dan Perasuransian Indonesia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "MSIG Life Mencari Opsi untuk Penuhi Ketentuan Free Float 15%",
+        "url": "https://keuangan.kontan.co.id/news/msig-life-mencari-opsi-untuk-penuhi-ketentuan-free-float-15",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T20:59:13+07:00",
+        "summary": "MSIG Life masih terus berdiskusi dengan pihak-pihak terkait untuk mencari alternatif maupun opsi guna memenuhi ketentuan pemenuhan free float.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Laba Bank Besar Hingga September 2026 Masih Tumbuh, Tapi Margin Bunga Mulai Tergerus",
+        "url": "https://keuangan.kontan.co.id/news/laba-bank-besar-hingga-september-2026-masih-tumbuh-tapi-margin-bunga-mulai-tergerus",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T20:24:10+07:00",
+        "summary": "Laba bank besar tumbuh hingga kuartal III-2026, tetapi kenaikan biaya dana dan penurunan NIM berpotensi menekan profitabilitas perbankan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.5,
+        "positive_terms": [
+          "laba",
+          "tumbuh",
+          "kenaikan"
+        ],
+        "negative_terms": [
+          "penurunan"
+        ]
+      },
+      {
+        "title": "Ketidakpastian Ekonomi Tekan Kinerja Industri Reasuransi",
+        "url": "https://keuangan.kontan.co.id/news/ketidakpastian-ekonomi-tekan-kinerja-industri-reasuransi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T19:59:36+07:00",
+        "summary": "Premi reasuransi turun 16,1% menjadi Rp 10,51 triliun pada semester I-2026, sementara klaim meningkat 26,4%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Avrist Sebut Prospek Unitlink Kuartal IV-2026 Masih Dipengaruhi Kondisi Pasar",
+        "url": "https://keuangan.kontan.co.id/news/avrist-sebut-prospek-unitlink-kuartal-iv-2026-masih-dipengaruhi-kondisi-pasar",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T19:45:26+07:00",
+        "summary": "Avrist Assurance menyebut prospek unitlink kuartal IV-2026 masih dipengaruhi kondisi pasar keuangan, seperti volatilitas pasar saham dan oblogasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Rasio Permodalan Bank Besar Menyusut, Begini Prospeknya hingga Akhir 2026",
+        "url": "https://keuangan.kontan.co.id/news/rasio-permodalan-bank-besar-menyusut-begini-prospeknya-hingga-akhir-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T19:42:36+07:00",
+        "summary": "Sejumlah bank besar justru mencatatkan penurunan CAR secara tahunan pada kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "penurunan"
+        ]
+      },
+      {
+        "title": "MSIG Life Catatkan Pertumbuhan APE 7% Menjadi Rp 790 Miliar pada Semester I-2026",
+        "url": "https://keuangan.kontan.co.id/news/msig-life-catatkan-pertumbuhan-ape-7-menjadi-rp-790-miliar-pada-semester-i-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T19:31:06+07:00",
+        "summary": "MSIG Life mencatatkan pertumbuhan Annual Premium Equivalent (APE) 7% menjadi Rp 790 miliar pada semester I-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank of India Indonesia (BSWD) Kaji Pemenuhan Free Float 15%",
+        "url": "https://keuangan.kontan.co.id/news/bank-of-india-indonesia-bswd-kaji-pemenuhan-free-float-15",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T19:02:17+07:00",
+        "summary": "&#8203;Bank of India Indonesia menargetkan kajian pemenuhan free float rampung sebelum 31 Maret 2027, dengan fokus pada penambahan pemegang saham publik",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Begini Upaya Industri untuk Perbaiki Laju Klaim Rasio Asuransi Kesehatan",
+        "url": "https://keuangan.kontan.co.id/news/begini-upaya-industri-untuk-perbaiki-laju-klaim-rasio-asuransi-kesehatan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T18:53:12+07:00",
+        "summary": "Industri asuransi kesehatan masih dihadapkan pada tantangan rasio klaim yang masih relatif tinggi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Ina Perdana (BINA) Akan Gelar Private Placement, Terbitkan 80 Juta Saham",
+        "url": "https://keuangan.kontan.co.id/news/bank-ina-perdana-bina-akan-gelar-private-placement-terbitkan-80-juta-saham",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T18:44:08+07:00",
+        "summary": "PT Bank Ina Perdana Tbk (BINA) &#8203;akan menambah modal lewat private placement, terbitkan 80 juta saham baru.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Victoria Bayar Kupon Obligasi Subordinasi Rp 4,22 Miliar pada November 2026",
+        "url": "https://keuangan.kontan.co.id/news/bank-victoria-bayar-kupon-obligasi-subordinasi-rp-422-miliar-pada-november-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T18:43:38+07:00",
+        "summary": "PT Bank Victoria Internasional Tbk (BVIC) memabayat kupon obligasi subordinasi Rp 4,22 miliar pada 9 November 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Dapen BTN: Volatilitas Pasar Modal hingga BI Rate Dapat Pengaruhi Kinerja Investasi",
+        "url": "https://keuangan.kontan.co.id/news/dapen-btn-volatilitas-pasar-modal-hingga-bi-rate-dapat-pengaruhi-kinerja-investasi",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T18:37:21+07:00",
+        "summary": "Volatilitas pasar keuangan menjadi salah satu faktor yang perlu dicermati dalam pengelolaan investasi dana pensiun hingga akhir tahun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BCA Perluas Program Sertifikasi Halal Gratis, Sasar UMKM di Daerah",
+        "url": "https://keuangan.kontan.co.id/news/bca-perluas-program-sertifikasi-halal-gratis-sasar-umkm-di-daerah",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T18:23:58+07:00",
+        "summary": "BCA memperluas program sertifikasi halal gratis, sasar UMKM di daerah. Melalui kegiatan ini, BCA juga menawarkan layanan pembayaran QRIS.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Undisbursed Loan Tinggi, Prospek Kredit Perbankan Masih Tebal",
+        "url": "https://keuangan.kontan.co.id/news/undisbursed-loan-tinggi-prospek-kredit-perbankan-masih-tebal",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T18:22:11+07:00",
+        "summary": "Fasilitas kredit perbankan yang belum dicairkan atau undisbursed loan masih menyimpan potensi untuk mendorong pertumbuhan kredit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Penyaluran Kredit BCA Tembus Rp 1.063 Triliun, Ini Penopangnya",
+        "url": "https://keuangan.kontan.co.id/news/penyaluran-kredit-bca-tembus-rp-1063-triliun-ini-penopangnya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T17:17:23+07:00",
+        "summary": "Kredit BCA tumbuh 12,6% menjadi Rp 1.063,1 triliun hingga September 2026, ditopang pertumbuhan segmen korporasi dan UKM.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Transaksi Qlola BRI Tumbuh 32%, BRI Luncurkan Aplikasi Mobile",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-qlola-bri-tumbuh-32-bri-luncurkan-aplikasi-mobile",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T16:52:24+07:00",
+        "summary": "Transaksi Qlola BRI tumnbuh 32%, BRI meluncurkan aplikasi mobile guna memperkuat layanan wholesale banking sesuai kebutuhan nasabah bisnis.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BCA Catat Laba Bersih Rp 45,2 Triliun pada Kuartal III-2026",
+        "url": "https://keuangan.kontan.co.id/news/bca-catat-laba-bersih-rp-452-triliun-pada-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T16:51:49+07:00",
+        "summary": "PT Bank Central Asia Tbk (BBCA) bersama entitas anak mencatat laba bersih senilai Rp 45,2 triliun pada kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BSI Luncurkan BEWIZE Gold, Perusahaan Kini Bisa Transaksi Emas Secara Digital",
+        "url": "https://keuangan.kontan.co.id/news/bsi-luncurkan-bewize-gold-perusahaan-kini-bisa-transaksi-emas-secara-digital",
+        "source": "kontan/keuangan",
+        "published": "2026-10-27T16:44:08+07:00",
+        "summary": "Bank Syariah Indonesia (BSI) meluncurkan BEWIZE Gold, perusahaan kini bisa transaksi emas secara digital.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
