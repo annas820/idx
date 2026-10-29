@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-29T19:40+07:00",
+ "generated_for": "2026-10-29T20:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 243,
- "kept": 94,
- "dropped_noise": 2,
+ "scanned": 242,
+ "kept": 88,
+ "dropped_noise": 3,
  "items": [
   {
    "published": "2026-10-29T05:00+07:00",
@@ -36,6 +36,24 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T20:05+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Mencermati Prospek Saham BBNI Usai Mencetak Kinerja Solid di Kuartal III",
+   "link": "https://keuangan.kontan.co.id/news/mencermati-prospek-saham-bbni-usai-mencetak-kinerja-solid-di-kuartal-iii",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBNI"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -71,24 +89,6 @@
    ],
    "tickers": [
     "TPIA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T08:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "UNTR Bagikan Dividen Saat Laba Tertekan, Yield 1,6%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125980/untr-bagikan-dividen-saat-laba-tertekan-yield-1-6",
-   "score": 7,
-   "categories": [
-    "kurs",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "UNTR"
    ],
    "flags": [],
    "also_in": []
@@ -290,36 +290,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-28T08:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Gerak IHSG Hari Ini: Tertekan Pelemahan Rupiah & Yield SBN",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125972/gerak-ihsg-hari-ini-tertekan-pelemahan-rupiah-yield-sbn",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T08:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Arah Rupiah Dibayangi Keputusan The Fed dan Gejolak Domestik",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125965/arah-rupiah-dibayangi-keputusan-the-fed-dan-gejolak-domestik",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-29T19:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -412,6 +382,40 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T13:05+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bosnya Dipanggil Pejabat Tinggi Singapura, Saham KEEN Koreksi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126149/bosnya-dipanggil-pejabat-tinggi-singapura-saham-keen-koreksi",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "KEEN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T10:35+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Bank Mandiri Akan Melepas 20% Saham Inhealth ke IFG Life, Nilainya Rp 570 Miliar",
+   "link": "https://keuangan.kontan.co.id/news/bank-mandiri-akan-melepas-20-saham-inhealth-ke-ifg-life-nilainya-rp-570-miliar",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
    "flags": [],
    "also_in": []
   }
