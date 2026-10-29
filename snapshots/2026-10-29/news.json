@@ -1,0 +1,308 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-10-29T11:08:09Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403",
+    "cnbcindonesia/market: HTTP 403",
+    "cnbcindonesia/research: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 25,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Laba Bersih Bank Danamon Tumbuh 19% Jadi Rp 3,5 Triliun, Ini Pendorongnya",
+        "url": "https://keuangan.kontan.co.id/news/laba-bersih-bank-danamon-tumbuh-19-jadi-rp-35-triliun-ini-pendorongnya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T17:57:04+07:00",
+        "summary": "Bank Danamon membukukan laba bersih Rp 3,5 triliun hingga September 2026, tumbuh 19% yoy, ditopang kredit dan simpanan nasabah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Survei HSBC: 84% Manajer Keuangan Indonesia Optimistis AI Dongkrak Treasury",
+        "url": "https://keuangan.kontan.co.id/news/survei-hsbc-84-manajer-keuangan-indonesia-optimistis-ai-dongkrak-treasury",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T17:53:41+07:00",
+        "summary": "Survei HSBC menunjukkan 84% manajer keuangan Indonesia optimistis AI meningkatkan efisiensi treasury, meski integrasi sistem dan keamanan siber",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "optimistis"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Neo Commerce Tunjuk Christian Lesmana Jadi Dirut Gantikan Eri Budiono",
+        "url": "https://keuangan.kontan.co.id/news/bank-neo-commerce-tunjuk-christian-lesmana-jadi-dirut-gantikan-eri-budiono",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T16:58:00+07:00",
+        "summary": "Bank Neo Commerce menunjuk Christian Lesmana menjadi Direktur Utama guna menggantikan Eri Budiono yang mengundurkan diri.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham",
+        "url": "https://keuangan.kontan.co.id/news/direksi-j-trust-bank-tambah-kepemilikan-saham-borong-4300-saham",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T16:37:41+07:00",
+        "summary": "Dua direksi Bank JTrust Indonesia (BCIC) membeli 94.800 saham senilai Rp10,43 juta untuk investasi, meski saham BCIC turun 2,91% pada Kamis.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "beli"
+        ],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Kredit Bank Besar Tumbuh Kencang di Kuartal III-2026, Korporasi Jadi Penopang Utama",
+        "url": "https://keuangan.kontan.co.id/news/kredit-bank-besar-tumbuh-kencang-di-kuartal-iii-2026-korporasi-jadi-penopang-utama",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T16:37:05+07:00",
+        "summary": "Penyaluran kredit sejumlah bank besar di Tanah Air masih mencatatkan pertumbuhan positif hingga September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan",
+          "positif"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Rasio Klaim yang Tinggi Membayangi Industri Asuransi Kesehatan",
+        "url": "https://keuangan.kontan.co.id/news/rasio-klaim-yang-tinggi-membayangi-industri-asuransi-kesehatan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T15:45:38+07:00",
+        "summary": "Industri asuransi kesehatan masih dihadapkan pada berbagai tantangan, di antaranya adalah inflasi medis dan rasio klaim yang masih tinggi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Menko Airlangga: Serapan Kredit UMKM Capai Rp 1.539,2 Triliun Hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/menko-airlangga-serapan-kredit-umkm-capai-rp-15392-triliun-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T14:24:29+07:00",
+        "summary": "Serapan kredit usaha mikro, kecil, dan menengah (UMKM) mencapai Rp 1.539,2 triliun dari Januari hingga September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Restui Akulaku Capital Indonesia Jadi Induk Konglomerasi Keuangan",
+        "url": "https://keuangan.kontan.co.id/news/ojk-restui-akulaku-capital-indonesia-jadi-induk-konglomerasi-keuangan",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T14:13:58+07:00",
+        "summary": "Akulaku Capital mengantongi restu OJK sebagai induk konglomerasi keuangan dan akan mengambil alih saham BNC serta tiga entitas jasa keuangan lain",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "DBS Bantah Rumor Pasar Soal Merger dengan BCA",
+        "url": "https://keuangan.kontan.co.id/news/dbs-bantah-rumor-pasar-soal-merger-dengan-bca",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T12:10:23+07:00",
+        "summary": "Bank DBS Indonesia angkat bicara soal beredarnya rumor merger dengan Bank Central Asia (BCA) yang ramai dibicarakan di media sosial.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Sarana Menara (TOWR) Perpanjang Fasilitas Kredit Rp 2 Triliun dari CIMB Niaga",
+        "url": "https://keuangan.kontan.co.id/news/sarana-menara-towr-perpanjang-fasilitas-kredit-rp-2-triliun-dari-cimb-niaga",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T10:47:57+07:00",
+        "summary": "Sarana Menara Nusantara (TOWR) memperpanjang jangka waktu fasilitas kredit senilai Rp 2 triliun dari Bank CIMB Niaga (BNGA) hingga 31 Oktober 2027",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BNI Siapkan Buyback Saham Rp 547 Miliar hingga Januari 2027",
+        "url": "https://keuangan.kontan.co.id/news/bni-siapkan-buyback-saham-rp-547-miliar-hingga-januari-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T10:43:45+07:00",
+        "summary": "PT Bank Negara Indonesia (Persero) Tbk (BBNI) berencana melakukan pembelian kembali atau buyback saham dengan nilai maksimal Rp 547 miliar.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "buyback"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri Akan Melepas 20% Saham Inhealth ke IFG Life, Nilainya Rp 570 Miliar",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-akan-melepas-20-saham-inhealth-ke-ifg-life-nilainya-rp-570-miliar",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T10:35:11+07:00",
+        "summary": "PT Bank Mandiri (Persero) Tbk (BMRI) berencana melepas 20% sahamnya di PT Asuransi Jiwa Inhealth Indonesia (Inhealth) kepada PT Asuransi Jiwa IFG.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit UMKM Mulai Meningkat, Target Pertumbuhan 7%&#8211;9% Masih Menantang",
+        "url": "https://keuangan.kontan.co.id/news/kredit-umkm-mulai-meningkat-target-pertumbuhan-79-masih-menantang",
+        "source": "kontan/keuangan",
+        "published": "2026-10-29T06:36:44+07:00",
+        "summary": "Kredit sektor UMKM mulai meningkat meski pertumbuhannya masih di bawah target yang berada di kisaran 7%&ndash;9% hingga akhir tahun ini.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Plafon Ditambah Rp 500 Triliun, Kredit UMKM Berpeluang Tumbuh Meski Selektif",
+        "url": "https://keuangan.kontan.co.id/news/plafon-ditambah-rp-500-triliun-kredit-umkm-berpeluang-tumbuh-meski-selektif",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T21:12:28+07:00",
+        "summary": "Kredit UMKM tumbuh 2,7% menjadi Rp 1.539,2 triliun pada September 2026. Pemerintah menargetkan tambahan plafon Rp 500 triliun pada 2027.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit Properti Tumbuh 16,4% pada September 2026",
+        "url": "https://keuangan.kontan.co.id/news/kredit-properti-tumbuh-164-pada-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T20:57:20+07:00",
+        "summary": "Kredit properti tumbuh 16,4% pada September 2026. KPR dan KPA menguat, sementara kredit konstruksi dan kredit konsumer melambat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "menguat",
+          "tumbuh"
+        ],
+        "negative_terms": [
+          "melambat"
+        ]
+      },
+      {
+        "title": "Kredit Tumbuh Dua Digit, Bank Besar Tetap Jaga Kualitas Aset hingga Kuartal III",
+        "url": "https://keuangan.kontan.co.id/news/kredit-tumbuh-dua-digit-bank-besar-tetap-jaga-kualitas-aset-hingga-kuartal-iii",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T20:00:19+07:00",
+        "summary": "BCA, BNI, dan CIMB Niaga berhasil menurunkan rasio LaR hingga September 2026, sementara Bank Mandiri catat kenaikan di tengah ekspansi kredit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "ekspansi",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BRI Finance Buka Peluang Kerja Sama dengan Pegadaian untuk Bisnis Emas",
+        "url": "https://keuangan.kontan.co.id/news/bri-finance-buka-peluang-kerja-sama-dengan-pegadaian-untuk-bisnis-emas",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T19:17:38+07:00",
+        "summary": "BRI Finance membuka peluang kolaborasi dengan Pegadaian untuk mengembangkan bisnis emas melalui pemasaran dan pemanfaatan jaringan kantor cabang.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Ganesha Resmi Tunjuk Setiawan Kumala sebagai Presiden Direktur",
+        "url": "https://keuangan.kontan.co.id/news/bank-ganesha-resmi-tunjuk-setiawan-kumala-sebagai-presiden-direktur",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T19:14:45+07:00",
+        "summary": "PT Bank Ganesha Tbk (BGTG) resmi menetapkan Setiawan Kumala sebagai Presiden Direktur setelah memperoleh persetujuan OJK.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Laba Sebelum Pajak Superbank Melonjak 376% Jadi Rp 385 Miliar hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/laba-sebelum-pajak-superbank-melonjak-376-jadi-rp-385-miliar-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T19:11:26+07:00",
+        "summary": "Laba sebelum pajak Superbank melonjak 376% menjadi Rp 385 miliatr hingga September 2026. Hal ini ditopang ekspansi bisnis peningkatan DPK & bunga.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melonjak",
+          "laba",
+          "ekspansi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Tumbuh 3,2%, PaninBank Raup Laba Rp 2,26 Triliun hingga Kuartal III 2026",
+        "url": "https://keuangan.kontan.co.id/news/tumbuh-32-paninbank-raup-laba-rp-226-triliun-hingga-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-28T18:49:13+07:00",
+        "summary": "PaninBank mencatat kenaikan laba ditopang penurunan beban bunga dan perbaikan NIM, di tengah pertumbuhan kredit yang masih terbatas.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.6,
+        "positive_terms": [
+          "laba",
+          "tumbuh",
+          "pertumbuhan",
+          "kenaikan"
+        ],
+        "negative_terms": [
+          "penurunan"
+        ]
+      }
+    ]
+  }
+}

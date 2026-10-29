@@ -1,0 +1,71 @@
+{
+  "schema": "idx.technical.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-10-29T11:08:14Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "AADI",
+    "name": "PT Adaro Andalan Indonesia Tbk",
+    "currency": "IDR",
+    "as_of": "2026-10-29T09:00:00+07:00",
+    "period": "1y",
+    "candles_used": 240,
+    "price": 11125.0,
+    "change_pct_1d": -4.506437768240343,
+    "change_pct_1w": -1.5486725663716814,
+    "change_pct_1m": 0.6787330316742082,
+    "change_pct_3m": 19.946091644204852,
+    "high_52w": 12925.0,
+    "low_52w": 6750.0,
+    "moving_averages": {
+      "sma20": 11410.0,
+      "sma50": 11322.5,
+      "sma200": 9566.25,
+      "ema20": 11327.83645022915,
+      "ema50": 11038.728983262821,
+      "ema200": 9712.228092439818
+    },
+    "rsi14": 47.51931923262489,
+    "macd": {
+      "line": 17.2284666787873,
+      "signal": 8.227386401997181,
+      "histogram": 9.001080276790118
+    },
+    "bollinger": {
+      "upper": 12511.294692623187,
+      "middle": 11410.0,
+      "lower": 10308.705307376813,
+      "percent_b": 0.3706068403357347,
+      "bandwidth_pct": 19.304026163421334
+    },
+    "atr14": 576.1375729246695,
+    "volume": {
+      "last": 13141800,
+      "avg20": 14220170,
+      "ratio": 0.9241661667898485
+    },
+    "levels": {
+      "support": [
+        10725.0,
+        9500.0,
+        7875.0
+      ],
+      "resistance": [
+        12375.0,
+        12925.0
+      ]
+    },
+    "trend": "sideways",
+    "signal": {
+      "label": "buy",
+      "score": 2,
+      "reasons": [
+        "moving averages disagree: no clear trend",
+        "RSI 48 is neutral",
+        "MACD above its signal line (bullish momentum)",
+        "price above the 200-day average"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+OK   holidays
+OK   overview
+FAIL indices (exit 3)
+OK   quotes
+OK   returns
+OK   news
+FAIL foreign_mkt (exit 3)
+FAIL bandar (exit 4)
+FAIL fnet_1d (exit 4)
+FAIL fnet_5d (exit 4)
+OK   hist_AADI
+OK   tech_AADI
+FAIL frgn_AADI (exit 3)
+OK   sent_AADI
+FAIL act_AADI (exit 3)
+OK   hist_INCO
+OK   tech_INCO
+FAIL frgn_INCO (exit 3)
+OK   sent_INCO
+FAIL act_INCO (exit 3)
+OK   hist_INDF
+OK   tech_INDF
+FAIL frgn_INDF (exit 3)
+OK   sent_INDF
+FAIL act_INDF (exit 3)
+OK   hist_ASII
+OK   tech_ASII
+FAIL frgn_ASII (exit 3)
+OK   sent_ASII
+FAIL act_ASII (exit 3)
+run at 2026-10-29 11:08:19 UTC
+SKIP forward_test (no fnet_5d)
