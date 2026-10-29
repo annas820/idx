@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-29T18:40+07:00 WIB | jendela 36 jam | dipindai 243, lolos 97, dibuang sebagai noise 2.
+Berita terbaru: 2026-10-29T19:40+07:00 WIB | jendela 36 jam | dipindai 243, lolos 94, dibuang sebagai noise 2.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -27,9 +27,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-28 11:23 bloomberg_technoz: Emiten Raffi Ahmad (RANS) ARB, Jatuh 57% dari Puncaknya (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126005/emiten-raffi-ahmad-rans-arb-jatuh-57-dari-puncaknya>
 - **6** T3 10-28 08:10 bloomberg_technoz: Gerak IHSG Hari Ini: Tertekan Pelemahan Rupiah & Yield SBN (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125972/gerak-ihsg-hari-ini-tertekan-pelemahan-rupiah-yield-sbn>
 - **6** T3 10-28 08:00 bloomberg_technoz: Arah Rupiah Dibayangi Keputusan The Fed dan Gejolak Domestik (global/kurs) <https://www.bloombergtechnoz.com/detail-news/125965/arah-rupiah-dibayangi-keputusan-the-fed-dan-gejolak-domestik>
-- **6** T3 10-28 07:25 bloomberg_technoz: Depresiasi Rupiah Berujung Pada Net Sell hingga Kejatuhan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/125967/depresiasi-rupiah-berujung-pada-net-sell-hingga-kejatuhan-ihsg>
-- **6** T3 10-28 07:00 bloomberg_technoz: Bursa Asia Siap Menguat, Mengekor Reli Wall Street & Sentimen AI (global/pasar) <https://www.bloombergtechnoz.com/detail-news/125962/bursa-asia-siap-menguat-mengekor-reli-wall-street-sentimen-ai>
+- **5** T3 10-29 19:00 bloomberg_technoz: Kata Bahlil Soal Potensi Pangkas Ekspor LNG Singapura Tahun Depan (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126205/kata-bahlil-soal-potensi-pangkas-ekspor-lng-singapura-tahun-depan>
 - **5** T3 10-29 18:14 kontan_keuangan: Saham Big Banks Kompak Melemah (29/10), Asing Ramai-ramai Jual Saham, BBCA Terparah [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-kompak-melemah-2910-asing-ramai-ramai-jual-saham-bbca-terparah>
 - **5** T3 10-29 16:37 kontan_keuangan: Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham [BCIC] (pasar/emiten) <https://keuangan.kontan.co.id/news/direksi-j-trust-bank-tambah-kepemilikan-saham-borong-4300-saham>
 - **5** T3 10-29 14:10 bloomberg_technoz: Saudi Ekspor Minyak 6,5 Juta Barel/Hari, Naik di Tengah Serangan (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126146/saudi-ekspor-minyak-6-5-juta-barel-hari-naik-di-tengah-serangan>
 - **5** T3 10-29 13:45 bloomberg_technoz: BRI Masuk Top 50 Emiten BigCap Berkat Tata Kelola [BBRI] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126159/bri-masuk-top-50-emiten-bigcap-berkat-tata-kelola>
+- **5** T3 10-29 13:40 bloomberg_technoz: Rupiah Terus Anjlok, Ekonom Ingatkan Beban APBN Bisa Membengkak (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126141/rupiah-terus-anjlok-ekonom-ingatkan-beban-apbn-bisa-membengkak>

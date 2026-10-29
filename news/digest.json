@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-29T18:40+07:00",
+ "generated_for": "2026-10-29T19:40+07:00",
  "window_hours": 36,
  "min_score": 3,
  "scanned": 243,
- "kept": 97,
+ "kept": 94,
  "dropped_noise": 2,
  "items": [
   {
@@ -320,30 +320,15 @@
    "also_in": []
   },
   {
-   "published": "2026-10-28T07:25+07:00",
+   "published": "2026-10-29T19:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Depresiasi Rupiah Berujung Pada Net Sell hingga Kejatuhan IHSG",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125967/depresiasi-rupiah-berujung-pada-net-sell-hingga-kejatuhan-ihsg",
-   "score": 6,
+   "title": "Kata Bahlil Soal Potensi Pangkas Ekspor LNG Singapura Tahun Depan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126205/kata-bahlil-soal-potensi-pangkas-ekspor-lng-singapura-tahun-depan",
+   "score": 5,
    "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bursa Asia Siap Menguat, Mengekor Reli Wall Street & Sentimen AI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125962/bursa-asia-siap-menguat-mengekor-reli-wall-street-sentimen-ai",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
+    "kebijakan",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
@@ -412,6 +397,21 @@
    "tickers": [
     "BBRI"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T13:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Terus Anjlok, Ekonom Ingatkan Beban APBN Bisa Membengkak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126141/rupiah-terus-anjlok-ekonom-ingatkan-beban-apbn-bisa-membengkak",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
