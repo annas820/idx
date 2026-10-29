@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-29T21:57+07:00",
+ "generated_for": "2026-10-30T05:34+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 235,
- "kept": 82,
- "dropped_noise": 3,
+ "scanned": 175,
+ "kept": 64,
+ "dropped_noise": 2,
  "items": [
   {
    "published": "2026-10-29T05:00+07:00",
@@ -13,22 +13,6 @@
    "tier": 3,
    "title": "The Fed Tahan Suku Bunga, Fokus Jinakkan Inflasi AS",
    "link": "https://www.bloombergtechnoz.com/detail-news/126087/the-fed-tahan-suku-bunga-fokus-jinakkan-inflasi-as",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T11:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "The Fed Diproyeksi Tahan Suku Bunga di Tengah Tekanan Inflasi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125998/the-fed-diproyeksi-tahan-suku-bunga-di-tengah-tekanan-inflasi",
    "score": 8,
    "categories": [
     "kebijakan",
@@ -90,6 +74,21 @@
    "tickers": [
     "TPIA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T05:34+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Keraguan Kinerja Saham Teknologi Muncul, Wall Street Terkoreksi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126212/keraguan-kinerja-saham-teknologi-muncul-wall-street-terkoreksi",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -218,72 +217,6 @@
    "categories": [
     "kebijakan",
     "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T13:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bursa Asia Hijau Susul Wall Street, IHSG Justru Tertekan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126025/bursa-asia-hijau-susul-wall-street-ihsg-justru-tertekan",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T13:11+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Dapat Restu Pemegang Saham Buat Demutualisasi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126023/bei-dapat-restu-pemegang-saham-buat-demutualisasi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T12:29+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Laba Bersih CIMB Niaga (BNGA) Susut 15,5% Jadi Rp4,5 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126016/laba-bersih-cimb-niaga-bnga-susut-15-5-jadi-rp4-5-triliun",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BNGA"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
-  },
-  {
-   "published": "2026-10-28T11:23+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Emiten Raffi Ahmad (RANS) ARB, Jatuh 57% dari Puncaknya",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126005/emiten-raffi-ahmad-rans-arb-jatuh-57-dari-puncaknya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
@@ -419,6 +352,68 @@
    "tickers": [
     "KEEN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T10:35+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Bank Mandiri Akan Melepas 20% Saham Inhealth ke IFG Life, Nilainya Rp 570 Miliar",
+   "link": "https://keuangan.kontan.co.id/news/bank-mandiri-akan-melepas-20-saham-inhealth-ke-ifg-life-nilainya-rp-570-miliar",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T10:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Skema Impor Baru Diduga Jadi Jalan RI Serap Minyak Sanksi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126117/skema-impor-baru-diduga-jadi-jalan-ri-serap-minyak-sanksi",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T09:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "RI Tekan Ekspor Gas Pipa, Singapura Terpaksa Beralih ke LNG Mahal",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126111/ri-tekan-ekspor-gas-pipa-singapura-terpaksa-beralih-ke-lng-mahal",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T08:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Meski Pangkas Ekspor Gas Pipa, RI Tak Akan Tekan LNG ke Singapura",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126102/meski-pangkas-ekspor-gas-pipa-ri-tak-akan-tekan-lng-ke-singapura",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
