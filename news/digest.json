@@ -1,12 +1,28 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-28T14:54+07:00",
+ "generated_for": "2026-10-29T16:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 277,
- "kept": 104,
- "dropped_noise": 14,
+ "scanned": 222,
+ "kept": 94,
+ "dropped_noise": 2,
  "items": [
+  {
+   "published": "2026-10-29T05:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "The Fed Tahan Suku Bunga, Fokus Jinakkan Inflasi AS",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126087/the-fed-tahan-suku-bunga-fokus-jinakkan-inflasi-as",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "global",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-10-28T11:10+07:00",
    "source": "bloomberg_technoz",
@@ -20,6 +36,42 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T10:43+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BNI Siapkan Buyback Saham Rp 547 Miliar hingga Januari 2027",
+   "link": "https://keuangan.kontan.co.id/news/bni-siapkan-buyback-saham-rp-547-miliar-hingga-januari-2027",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBNI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T10:25+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "TPIA Mulai Eksekusi Buyback Saham Rp2 T",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126122/tpia-mulai-eksekusi-buyback-saham-rp2-t",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "TPIA"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -42,56 +94,111 @@
    "also_in": []
   },
   {
-   "published": "2026-10-27T18:44+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Bank Ina Perdana (BINA) Akan Gelar Private Placement, Terbitkan 80 Juta Saham",
-   "link": "https://keuangan.kontan.co.id/news/bank-ina-perdana-bina-akan-gelar-private-placement-terbitkan-80-juta-saham",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BINA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-27T10:30+07:00",
+   "published": "2026-10-29T12:15+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "BRIS Rancang Buyback Saham Rp500 Miliar",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125844/bris-rancang-buyback-saham-rp500-miliar",
-   "score": 7,
+   "title": "Sekuritas Milik CIO Danantara Akumulasi Saham yang Disanksi OJK",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126138/sekuritas-milik-cio-danantara-akumulasi-saham-yang-disanksi-ojk",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
+    "kebijakan",
+    "pasar"
    ],
-   "tickers": [
-    "BRIS"
-   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-10-27T08:50+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-10-29T11:55+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Lanjutkan Buyback Saham, BRI Siapkan Dana Hingga Rp 1 Triliun",
-   "link": "https://keuangan.kontan.co.id/news/lanjutkan-buyback-saham-bri-siapkan-dana-hingga-rp-1-triliun",
-   "score": 7,
+   "title": "Rupiah Terlemah Sepanjang Sejarah, IHSG dan Saham Bank Tertekan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126132/rupiah-terlemah-sepanjang-sejarah-ihsg-dan-saham-bank-tertekan",
+   "score": 6,
    "categories": [
     "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T07:52+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Proyeksi Rupiah Setelah The Fed Tahan Bunga dengan Nada Hawkish",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126096/proyeksi-rupiah-setelah-the-fed-tahan-bunga-dengan-nada-hawkish",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T06:35+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Kinerja ASII Stabil, Laba Inti Rp24 T di Kuartal III-2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126093/kinerja-asii-stabil-laba-inti-rp24-t-di-kuartal-iii-2026",
+   "score": 6,
+   "categories": [
     "korporasi",
     "emiten"
    ],
    "tickers": [
-    "BBRI"
+    "ASII"
    ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T06:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Poin-poin Penting dalam Keputusan The Fed Tahan Suku Bunga",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126090/poin-poin-penting-dalam-keputusan-the-fed-tahan-suku-bunga",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T05:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Warsh: The Fed Kurangi Frekuensi Rapat Suku Bunga Mulai 2027",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126089/warsh-the-fed-kurangi-frekuensi-rapat-suku-bunga-mulai-2027",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T05:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Wall Street Menghijau usai The Fed Tahan Suku Bunga Acuan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126088/wall-street-menghijau-usai-the-fed-tahan-suku-bunga-acuan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -222,120 +329,28 @@
    "also_in": []
   },
   {
-   "published": "2026-10-28T13:28+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Tebar Dividen Perdana Rp1,56 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126027/bei-tebar-dividen-perdana-rp1-56-triliun",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T13:22+07:00",
+   "published": "2026-10-29T16:37+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Saham Bank Himbara Melemah pada Perdagangan Sesi I Rabu (28/10), BBCA Diincar Asing",
-   "link": "https://keuangan.kontan.co.id/news/saham-bank-himbara-melemah-pada-perdagangan-sesi-i-rabu-2810-bbca-diincar-asing",
+   "title": "Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham",
+   "link": "https://keuangan.kontan.co.id/news/direksi-j-trust-bank-tambah-kepemilikan-saham-borong-4300-saham",
    "score": 5,
    "categories": [
     "pasar",
     "emiten"
    ],
    "tickers": [
-    "BBCA"
+    "BCIC"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-10-28T13:00+07:00",
+   "published": "2026-10-29T14:10+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "GasCo Singapura Klaim Tak Butuh Tambah Gas Usai RI Pangkas Ekspor",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126017/gasco-singapura-klaim-tak-butuh-tambah-gas-usai-ri-pangkas-ekspor",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T12:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ekspor Gas ke Singapura Ditekan, PGN Beber Soal Beban Toll Fee",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126011/ekspor-gas-ke-singapura-ditekan-pgn-beber-soal-beban-toll-fee",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T10:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Airlangga Soal Rupiah Yang Melemah: Tambah Daya Saing Ekspor",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125994/airlangga-soal-rupiah-yang-melemah-tambah-daya-saing-ekspor",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T10:03+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham Keluarga Bakrie (BNBR) Balik ke Bawah Gocap",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125999/saham-keluarga-bakrie-bnbr-balik-ke-bawah-gocap",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BNBR"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T10:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pemangkasan Ekspor Gas ke Singapura Diproyeksi Lanjut hingga 2028",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125993/pemangkasan-ekspor-gas-ke-singapura-diproyeksi-lanjut-hingga-2028",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T09:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Malaysia Kelebihan Stok Minyak Sawit, Rekor Sepanjang Masa",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125988/malaysia-kelebihan-stok-minyak-sawit-rekor-sepanjang-masa",
+   "title": "Saudi Ekspor Minyak 6,5 Juta Barel/Hari, Naik di Tengah Serangan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126146/saudi-ekspor-minyak-6-5-juta-barel-hari-naik-di-tengah-serangan",
    "score": 5,
    "categories": [
     "global",
@@ -346,67 +361,93 @@
    "also_in": []
   },
   {
-   "published": "2026-10-28T09:40+07:00",
+   "published": "2026-10-29T13:45+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Smelter Dicoret dari DMO, Isu Batu Bara PLN Belum Tentu Teratasi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125987/smelter-dicoret-dari-dmo-isu-batu-bara-pln-belum-tentu-teratasi",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T09:25+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "RUPSLB BEI, Bahas Dividen hingga Wacana Masuknya Danantara",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125992/rupslb-bei-bahas-dividen-hingga-wacana-masuknya-danantara",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T09:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Smelter Mau Dicoret dari DMO Batu Bara, Cuan Penambang Bisa Turun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125983/smelter-mau-dicoret-dari-dmo-batu-bara-cuan-penambang-bisa-turun",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-28T08:55+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Deretan Broker Lepas Saham BREN: Mandiri Hingga UBS",
-   "link": "https://www.bloombergtechnoz.com/detail-news/125982/deretan-broker-lepas-saham-bren-mandiri-hingga-ubs",
+   "title": "BRI Masuk Top 50 Emiten BigCap Berkat Tata Kelola",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126159/bri-masuk-top-50-emiten-bigcap-berkat-tata-kelola",
    "score": 5,
    "categories": [
     "pasar",
     "emiten"
    ],
    "tickers": [
-    "BREN"
+    "BBRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T13:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Terus Anjlok, Ekonom Ingatkan Beban APBN Bisa Membengkak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126141/rupiah-terus-anjlok-ekonom-ingatkan-beban-apbn-bisa-membengkak",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T13:05+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bosnya Dipanggil Pejabat Tinggi Singapura, Saham KEEN Koreksi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126149/bosnya-dipanggil-pejabat-tinggi-singapura-saham-keen-koreksi",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "KEEN"
    ],
    "flags": [],
    "also_in": []
   }
  ],
- "watchlist_hits": []
+ "watchlist_hits": [
+  {
+   "published": "2026-10-29T06:35+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Kinerja ASII Stabil, Laba Inti Rp24 T di Kuartal III-2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126093/kinerja-asii-stabil-laba-inti-rp24-t-di-kuartal-iii-2026",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T16:37+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Astra Apresiasi Inovasi Anak Muda di SATU Indonesia Awards 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126184/astra-apresiasi-inovasi-anak-muda-di-satu-indonesia-awards-2026",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII",
+    "SATU"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  }
+ ]
 }
