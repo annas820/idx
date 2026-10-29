@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-29T17:40+07:00",
+ "generated_for": "2026-10-29T18:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 230,
- "kept": 94,
+ "scanned": 243,
+ "kept": 97,
  "dropped_noise": 2,
  "items": [
   {
@@ -92,6 +92,27 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-10-29T17:49+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "GOTO Cetak Laba Bersih Rp1,16 Triliun per September 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126197/goto-cetak-laba-bersih-rp1-16-triliun-per-september-2026",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "GOTO"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
+   ]
   },
   {
    "published": "2026-10-29T12:15+07:00",
@@ -329,6 +350,23 @@
    "also_in": []
   },
   {
+   "published": "2026-10-29T18:14+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham Big Banks Kompak Melemah (29/10), Asing Ramai-ramai Jual Saham, BBCA Terparah",
+   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-kompak-melemah-2910-asing-ramai-ramai-jual-saham-bbca-terparah",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-29T16:37+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -373,38 +411,6 @@
    ],
    "tickers": [
     "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T13:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Terus Anjlok, Ekonom Ingatkan Beban APBN Bisa Membengkak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126141/rupiah-terus-anjlok-ekonom-ingatkan-beban-apbn-bisa-membengkak",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T13:05+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bosnya Dipanggil Pejabat Tinggi Singapura, Saham KEEN Koreksi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126149/bosnya-dipanggil-pejabat-tinggi-singapura-saham-keen-koreksi",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "KEEN"
    ],
    "flags": [],
    "also_in": []
