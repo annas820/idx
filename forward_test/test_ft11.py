@@ -33,6 +33,13 @@ class IngestTest(unittest.TestCase):
         self.assertIsNone(ing.parse_idn_date("27 Oct 2026"))
         self.assertIsNone(ing.parse_idn_date(None))
 
+    def test_date_check_needs_90_percent(self):
+        from collections import Counter
+        self.assertIsNone(ing.date_error(Counter({"20261028": 95, None: 5}), "20261028", 100))
+        self.assertIn("hanya", ing.date_error(Counter({"20261028": 80, "20261027": 20}), "20261028", 100))
+        self.assertIn("berbeda", ing.date_error(Counter({"20261027": 100}), "20261028", 100))
+        self.assertIsNotNone(ing.date_error(Counter(), "20261028", 0))
+
     def test_num_never_guesses(self):
         self.assertEqual(ing.num("0"), 0.0)
         self.assertEqual(ing.num(None), 0.0)

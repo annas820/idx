@@ -38,6 +38,18 @@ def parse_idn_date(s):
     return f"{int(m.group(3)):04d}{MONTHS[m.group(2).title()]:02d}{int(m.group(1)):02d}"
 
 
+def date_error(seen, day, total):
+    """None if at least 90% of rows carry the trade date `day`; otherwise a message. `seen` counts parsed dates."""
+    if not seen:
+        return "tidak ada baris bertanggal"
+    top, count = seen.most_common(1)[0]
+    if top != day:
+        return f"tanggal di dalam file ({top}) berbeda dari nama file ({day})"
+    if count < 0.9 * total:
+        return f"hanya {count} dari {total} baris bertanggal {day}"
+    return None
+
+
 def read_rows(path):
     import openpyxl
     ws = openpyxl.load_workbook(path, read_only=True, data_only=True).worksheets[0]
@@ -55,9 +67,9 @@ def convert(path, day):
         return [], f"kolom hilang: {missing}"
     body = [r for r in body if r[ix["Kode Saham"]]]
     seen = Counter(parse_idn_date(r[ix["Tanggal Perdagangan Terakhir"]]) for r in body)
-    top = seen.most_common(1)[0][0] if seen else None
-    if top != day:
-        return [], f"tanggal di dalam file ({top}) berbeda dari nama file ({day})"
+    err = date_error(seen, day, len(body))
+    if err:
+        return [], err
     out = []
     for r in body:
         d = {"date": day, "code": str(r[ix["Kode Saham"]]).strip()}
