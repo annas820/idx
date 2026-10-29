@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-29T21:23+07:00",
+ "generated_for": "2026-10-29T21:57+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 240,
- "kept": 85,
+ "scanned": 235,
+ "kept": 82,
  "dropped_noise": 3,
  "items": [
   {
@@ -290,6 +290,26 @@
    "also_in": []
   },
   {
+   "published": "2026-10-29T21:57+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "IHSG Anjlok 3,49%, Saham BBCA, BBRI, BMRI, dan BBNI Kompak Merah",
+   "link": "https://keuangan.kontan.co.id/news/ihsg-anjlok-349-saham-bbca-bbri-bmri-dan-bbni-kompak-merah",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BBNI",
+    "BBRI",
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-29T19:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -398,23 +418,6 @@
    ],
    "tickers": [
     "KEEN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T10:35+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Bank Mandiri Akan Melepas 20% Saham Inhealth ke IFG Life, Nilainya Rp 570 Miliar",
-   "link": "https://keuangan.kontan.co.id/news/bank-mandiri-akan-melepas-20-saham-inhealth-ke-ifg-life-nilainya-rp-570-miliar",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
    ],
    "flags": [],
    "also_in": []
