@@ -1,0 +1,307 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-10-30T11:04:21Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403",
+    "cnbcindonesia/market: HTTP 403",
+    "cnbcindonesia/research: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 25,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "BSI Optimalkan Peran Agen",
+        "url": "https://keuangan.kontan.co.id/news/bsi-optimalkan-peran-agen",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T18:02:30+07:00",
+        "summary": "Agen BSI bukan sekadar perpanjangan layanan, tetapi juga ujung tombak dalam memperluas literasi keuangan syariah di tengah masyarakat",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Danamart Himpun Dana Rp 188 Miliar, Perketat Seleksi Penerbit Efek",
+        "url": "https://keuangan.kontan.co.id/news/danamart-himpun-dana-rp-188-miliar-perketat-seleksi-penerbit-efek",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T17:55:12+07:00",
+        "summary": "Danamart himpun pendanaan Rp188 miliar hingga Oktober 2026 dan perketat seleksi penerbit menjaga kualitas proyek serta meminimalkan risiko",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Ganesha Catat Pertumbuhan Kredit 8,6% hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/bank-ganesha-catat-pertumbuhan-kredit-86-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T17:48:38+07:00",
+        "summary": "Bank Ganesha mencatat pertumbuhan kredit 8,6% menjadi Rp 6,32 triliun hingga September 2026, dengan laba bersih Rp 175,19 miliar.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham",
+        "url": "https://keuangan.kontan.co.id/news/saham-bbca-bbni-bmri-dan-bbni-kompak-melemah-sepekan-asing-ramai-lepas-saham",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T17:44:23+07:00",
+        "summary": "Saham big banks tertekan aksi jual asing akibat sentimen MSCI dan suku bunga tinggi, meski fundamental perbankan tetap solid.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -0.5,
+        "positive_terms": [
+          "solid"
+        ],
+        "negative_terms": [
+          "melemah",
+          "tertekan",
+          "jual"
+        ]
+      },
+      {
+        "title": "Upaya Asabri Cegah Peserta Terjebak Kejahatan Digital",
+        "url": "https://keuangan.kontan.co.id/news/upaya-asabri-cegah-peserta-terjebak-kejahatan-digital",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T17:44:10+07:00",
+        "summary": "Asabri memperkuat literasi keuangan peserta lewat program PUNDI agar lebih bijak mengelola uang, cermat berinvestasi, dan waspada penipuan digital",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "penipuan"
+        ]
+      },
+      {
+        "title": "Laba OCBC NISP Naik 5% Jadi Rp 4,03 Triliun hingga Kuartal III-2026, Ini Penopangnya",
+        "url": "https://keuangan.kontan.co.id/news/laba-ocbc-nisp-naik-5-jadi-rp-403-triliun-hingga-kuartal-iii-2026-ini-penopangnya",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T17:38:02+07:00",
+        "summary": "OCBC catat laba bersih Rp 4,03 triliun hingga September 2026, tumbuh 5%, didukung ekspansi kredit, peningkatan aset, dan kualitas kredit terjaga.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "laba",
+          "tumbuh",
+          "ekspansi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Maybank Indonesia Kantongi Laba Sebelum Pajak Rp 1,43 Triliun hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/maybank-indonesia-kantongi-laba-sebelum-pajak-rp-143-triliun-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T17:23:17+07:00",
+        "summary": "Maybank Indonesia mengantongi laba sebelum pajak Rp 1,43 triliun hingga September 2026 yang didukung penurunan beban bunga &pembiayaan anak usaha.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": [
+          "penurunan"
+        ]
+      },
+      {
+        "title": "Hoax Bisa Sebabkan Rugi Finansial! Lindungi Diri dengan Verifikasi & Berpikir Kritis",
+        "url": "https://keuangan.kontan.co.id/news/hoax-bisa-sebabkan-rugi-finansial-lindungi-diri-dengan-verifikasi-berpikir-kritis",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T16:56:12+07:00",
+        "summary": "Sebagian masyarakat beranggapan hoaks hanyalah persoalan sepele. Setelah berita bohong diluruskan, masalah dianggap selesai.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "rugi"
+        ]
+      },
+      {
+        "title": "BCA Akhirnya Buka Suara, Tepis Rumor Merger dengan DBS",
+        "url": "https://keuangan.kontan.co.id/news/bca-akhirnya-buka-suara-tepis-rumor-merger-dengan-dbs",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T16:48:26+07:00",
+        "summary": "BCA akhirnya buka suara, tepis rumor merger dengan DBS. Rumor ini muncul di tengah penguatan harga saham BBCA hingga 7% dalam sehari.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Sebut Perlu Perluasan Perlindungan terhadap Harta Benda di Daerah Rawan Bencana",
+        "url": "https://keuangan.kontan.co.id/news/ojk-sebut-perlu-perluasan-perlindungan-terhadap-harta-benda-di-daerah-rawan-bencana",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T16:35:39+07:00",
+        "summary": "OJK menyebut perlunya perluasan perlindungan terhadap harta benda di daerah rawan bencana melalui perasuransian.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Laba Bersih Allo Bank Turun 11% hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/laba-bersih-allo-bank-turun-11-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T16:35:33+07:00",
+        "summary": "PT Allo Bank Indonesia Tbk (BBHI) mencatatkan penurunan laba bersih sepanjang sembilan bulan pertama 2026. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -0.3333333333333333,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": [
+          "turun",
+          "penurunan"
+        ]
+      },
+      {
+        "title": "Transaksi BSI Agen Melonjak 38,41%, Nilainya Capai Rp 52,8 Triliun",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-bsi-agen-melonjak-3841-nilainya-capai-rp-528-triliun",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T16:32:31+07:00",
+        "summary": "BSI perluas inklusi keuangan syariah melalui lebih dari 135.000 agen di Indonesia, dengan transaksi mencapai Rp 52,8 triliun hingga Agustus 2026.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melonjak"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Profitabilitas Tertekan, Bank Mayapada dan MNC Bank Hadapi Tantangan Fundamental",
+        "url": "https://keuangan.kontan.co.id/news/profitabilitas-tertekan-bank-mayapada-dan-mnc-bank-hadapi-tantangan-fundamental",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T16:30:06+07:00",
+        "summary": "Profitabilitas tertekan, kualitas aset dan permodalan, Bank Mayapada dan MNC Bank menghadapi tantangan fundamental.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "tertekan"
+        ]
+      },
+      {
+        "title": "Pasar Modal Indonesia Sedang Volatile, Begini Imbasnya ke MSIG Life",
+        "url": "https://keuangan.kontan.co.id/news/pasar-modal-indonesia-sedang-volatile-begini-imbasnya-ke-msig-life",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T16:12:08+07:00",
+        "summary": "PT MSIG Life Insurance Indonesia Tbk (MSIG Life) angkat bicara mengenai volatilitas pasar modal yang signifikan imbas sentimen MSCI.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit Korporasi KB Bank Tumbuh 8,8% hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/kredit-korporasi-kb-bank-tumbuh-88-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T15:10:25+07:00",
+        "summary": "PT Bank KB Indonesia Tbk (KB Bank) mencatatkan pertumbuhan kredit korporasi sebesar 8,8% secara year-to-date (YtD) hingga September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "AAJI Optimis Lini Asuransi Kesehatan Bisa Makin Membaik Seiring Adanya POJK 36/2025",
+        "url": "https://keuangan.kontan.co.id/news/aaji-optimis-lini-asuransi-kesehatan-bisa-makin-membaik-seiring-adanya-pojk-362025",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T14:57:39+07:00",
+        "summary": "AAJI optimistis lini asuransi kesehatan bisa makin membaik seiring adanya POJK 36/2025 mengenai Penguatan Ekosistem Asuransi Kesehatan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "optimis",
+          "optimistis",
+          "membaik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Citi Kantongi Restu Regulator China untuk Dirikan Perusahaan Sekuritas di China",
+        "url": "https://keuangan.kontan.co.id/news/citi-kantongi-restu-regulator-china-untuk-dirikan-perusahaan-sekuritas-di-china",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T14:35:33+07:00",
+        "summary": "Citi telah mengantongi restu regulator China untuk mendirikan perusahaan sekuritas di negeri tirai bambu.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Tetapkan 4 Target Makro dalam Peta Jalan Pengembangan Keuangan Berkelanjutan PPDP",
+        "url": "https://keuangan.kontan.co.id/news/ojk-tetapkan-4-target-makro-dalam-peta-jalan-pengembangan-keuangan-berkelanjutan-ppdp",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T13:40:18+07:00",
+        "summary": "OJK menetapakn 4 target makro dalam peta jalan pengembangan keuangan berkelanjutan PPDP 2026-2030 dan pelaksanaan dlakukan bertahap.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Beri Insentif bagi Asuransi hingga Dana Pensiun yang Investasi Pembiayaan Hijau",
+        "url": "https://keuangan.kontan.co.id/news/ojk-beri-insentif-bagi-asuransi-hingga-dana-pensiun-yang-investasi-pembiayaan-hijau",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T13:36:25+07:00",
+        "summary": "OJK meluncurkan Peta Jalan Pengembangan Keuangan Berkelanjutan Sektor Perasuransian, Penjaminan, dan Dana Pensiun (PPDP) 2026&ndash;2030",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pasar Modal Volatil, AAJI: Asuransi Jiwa Tak Serta-merta Alihkan Investasi dari Saham",
+        "url": "https://keuangan.kontan.co.id/news/pasar-modal-volatil-aaji-asuransi-jiwa-tak-serta-merta-alihkan-investasi-dari-saham",
+        "source": "kontan/keuangan",
+        "published": "2026-10-30T13:12:50+07:00",
+        "summary": "Gejolak pasar modal yang terjadi belakangan ini tak serta-merta langsung membuat asuransi jiwa mengalihkan investasi dari saham ke instrumen lain",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}

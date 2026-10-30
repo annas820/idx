@@ -1,0 +1,38 @@
+{
+  "schema": "idx.holidays.v1",
+  "provider": "bundled",
+  "fetched_at": "2026-10-30T11:04:19Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "year": 2026,
+    "years_covered": [
+      2026,
+      2027
+    ],
+    "trading_days": 239,
+    "today": "2026-10-30",
+    "today_is_trading_day": true,
+    "next_trading_day": "2026-11-02",
+    "holidays": [
+      {
+        "date": "2026-12-24",
+        "weekday": "Thursday",
+        "name": "Cuti Bersama Kelahiran Yesus Kristus",
+        "name_en": "Commemoration of Christmas Day"
+      },
+      {
+        "date": "2026-12-25",
+        "weekday": "Friday",
+        "name": "Kelahiran Yesus Kristus",
+        "name_en": "Christmas Day"
+      },
+      {
+        "date": "2026-12-31",
+        "weekday": "Thursday",
+        "name": "Libur Bursa",
+        "name_en": "Trading Holiday"
+      }
+    ]
+  }
+}

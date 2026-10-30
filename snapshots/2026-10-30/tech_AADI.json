@@ -1,0 +1,71 @@
+{
+  "schema": "idx.technical.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-10-30T11:04:27Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "AADI",
+    "name": "PT Adaro Andalan Indonesia Tbk",
+    "currency": "IDR",
+    "as_of": "2026-10-30T09:00:00+07:00",
+    "period": "1y",
+    "candles_used": 240,
+    "price": 11475.0,
+    "change_pct_1d": 3.146067415730337,
+    "change_pct_1w": 0.8791208791208791,
+    "change_pct_1m": 4.794520547945205,
+    "change_pct_3m": 24.390243902439025,
+    "high_52w": 12925.0,
+    "low_52w": 6750.0,
+    "moving_averages": {
+      "sma20": 11406.25,
+      "sma50": 11354.0,
+      "sma200": 9588.75,
+      "ema20": 11341.852026404615,
+      "ema50": 11055.833219705672,
+      "ema200": 9723.274199188436
+    },
+    "rsi14": 52.225503770723236,
+    "macd": {
+      "line": 27.94846309955392,
+      "signal": 12.171600458503587,
+      "histogram": 15.776862641050332
+    },
+    "bollinger": {
+      "upper": 12506.122151661273,
+      "middle": 11406.25,
+      "lower": 10306.377848338727,
+      "percent_b": 0.5312536324772649,
+      "bandwidth_pct": 19.285429508581228
+    },
+    "atr14": 577.8420315260961,
+    "volume": {
+      "last": 8550400,
+      "avg20": 14231660,
+      "ratio": 0.6008013120043622
+    },
+    "levels": {
+      "support": [
+        10725.0,
+        9500.0,
+        7875.0
+      ],
+      "resistance": [
+        12375.0,
+        12925.0
+      ]
+    },
+    "trend": "uptrend",
+    "signal": {
+      "label": "buy",
+      "score": 3,
+      "reasons": [
+        "price above a rising 50-day average that sits above the 200-day: uptrend",
+        "RSI 52 is neutral",
+        "MACD above its signal line (bullish momentum)",
+        "price above the 200-day average"
+      ]
+    }
+  }
+}

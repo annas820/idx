@@ -1,0 +1,49 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261029",
+ "sessions": 12,
+ "signals": [],
+ "controls": [],
+ "breadth": 0.12,
+ "breadth_1d": 0.03,
+ "regime_ok": false,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "SSMS",
+   "ratio_5d": 0.27,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "PWON",
+   "ratio_5d": 0.259,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "CPIN",
+   "ratio_5d": 0.148,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "EMAS",
+   "ratio_5d": 0.147,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "INTP",
+   "ratio_5d": 0.124,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "HRTA",
+   "ratio_5d": 0.124,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "MBMA",
+   "ratio_5d": 0.118,
+   "positive_sessions": 4
+  }
+ ],
+ "status": "data_kurang (12/14 sesi untuk ATR); tidak ada sinyal"
+}
