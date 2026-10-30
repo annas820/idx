@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-30T10:40+07:00 WIB | jendela 36 jam | dipindai 206, lolos 84, dibuang sebagai noise 7.
+Berita terbaru: 2026-10-30T11:44+07:00 WIB | jendela 36 jam | dipindai 216, lolos 89, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -14,6 +14,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 10-29 20:05 kontan_keuangan: Mencermati Prospek Saham BBNI Usai Mencetak Kinerja Solid di Kuartal III [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/mencermati-prospek-saham-bbni-usai-mencetak-kinerja-solid-di-kuartal-iii>
 - **7** T3 10-29 10:43 kontan_keuangan: BNI Siapkan Buyback Saham Rp 547 Miliar hingga Januari 2027 [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bni-siapkan-buyback-saham-rp-547-miliar-hingga-januari-2027>
 - **7** T3 10-29 10:25 bloomberg_technoz: TPIA Mulai Eksekusi Buyback Saham Rp2 T [TPIA] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126122/tpia-mulai-eksekusi-buyback-saham-rp2-t>
+- **6** T3 10-30 11:19 bloomberg_technoz: Rupiah Balik Arah, Ikuti IHSG ke Zona Merah (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126266/rupiah-balik-arah-ikuti-ihsg-ke-zona-merah>
 - **6** T3 10-30 09:00 bloomberg_technoz: Destry: Investor Asing Sayangkan Isu MSCI, Akui Ada Kekhawatiran (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126247/destry-investor-asing-sayangkan-isu-msci-akui-ada-kekhawatiran>
 - **6** T3 10-30 07:43 bloomberg_technoz: Apa Bedanya Saham, Obligasi, dan Reksa Dana? (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126230/apa-bedanya-saham-obligasi-dan-reksa-dana>
 - **6** T3 10-30 06:50 bloomberg_technoz: Bursa Saham Asia Tertekan, Permintaan Aset Aman Dorong Obligasi (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126218/bursa-saham-asia-tertekan-permintaan-aset-aman-dorong-obligasi>
@@ -26,10 +27,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-29 06:00 bloomberg_technoz: Poin-poin Penting dalam Keputusan The Fed Tahan Suku Bunga (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126090/poin-poin-penting-dalam-keputusan-the-fed-tahan-suku-bunga>
 - **6** T3 10-29 05:40 bloomberg_technoz: Warsh: The Fed Kurangi Frekuensi Rapat Suku Bunga Mulai 2027 (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126089/warsh-the-fed-kurangi-frekuensi-rapat-suku-bunga-mulai-2027>
 - **6** T3 10-29 05:20 bloomberg_technoz: Wall Street Menghijau usai The Fed Tahan Suku Bunga Acuan (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126088/wall-street-menghijau-usai-the-fed-tahan-suku-bunga-acuan>
+- **5** T3 10-30 11:40 bloomberg_technoz: Destry: Likuiditas Bank Tak Merata Alasan BI Pangkas GWM (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/126268/destry-likuiditas-bank-tak-merata-alasan-bi-pangkas-gwm>
 - **5** T3 10-30 08:50 bloomberg_technoz: ESDM Sinyalir Kuota Batu Bara DMO Smelter Akan Dialihkan ke PLN (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126246/esdm-sinyalir-kuota-batu-bara-dmo-smelter-akan-dialihkan-ke-pln>
 - **5** T3 10-30 07:50 bloomberg_technoz: BEI Pertanyakan Sumber Kas Valas Bukalapak (BUKA) Setara Rp12 T [BUKA] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126231/bei-pertanyakan-sumber-kas-valas-bukalapak-buka-setara-rp12-t>
 - **5** T3 10-29 21:57 kontan_keuangan: IHSG Anjlok 3,49%, Saham BBCA, BBRI, BMRI, dan BBNI Kompak Merah [BBCA,BBNI,BBRI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/ihsg-anjlok-349-saham-bbca-bbri-bmri-dan-bbni-kompak-merah>
 - **5** T3 10-29 19:00 bloomberg_technoz: Kata Bahlil Soal Potensi Pangkas Ekspor LNG Singapura Tahun Depan (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126205/kata-bahlil-soal-potensi-pangkas-ekspor-lng-singapura-tahun-depan>
 - **5** T3 10-29 18:14 kontan_keuangan: Saham Big Banks Kompak Melemah (29/10), Asing Ramai-ramai Jual Saham, BBCA Terparah [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-kompak-melemah-2910-asing-ramai-ramai-jual-saham-bbca-terparah>
-- **5** T3 10-29 16:37 kontan_keuangan: Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham [BCIC] (pasar/emiten) <https://keuangan.kontan.co.id/news/direksi-j-trust-bank-tambah-kepemilikan-saham-borong-4300-saham>
-- **5** T3 10-29 14:10 bloomberg_technoz: Saudi Ekspor Minyak 6,5 Juta Barel/Hari, Naik di Tengah Serangan (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126146/saudi-ekspor-minyak-6-5-juta-barel-hari-naik-di-tengah-serangan>

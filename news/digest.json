@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T10:40+07:00",
+ "generated_for": "2026-10-30T11:44+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 206,
- "kept": 84,
+ "scanned": 216,
+ "kept": 89,
  "dropped_noise": 7,
  "items": [
   {
@@ -106,6 +106,21 @@
    "tickers": [
     "TPIA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T11:19+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Balik Arah, Ikuti IHSG ke Zona Merah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126266/rupiah-balik-arah-ikuti-ihsg-ke-zona-merah",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -300,6 +315,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-30T11:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Destry: Likuiditas Bank Tak Merata Alasan BI Pangkas GWM",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126268/destry-likuiditas-bank-tak-merata-alasan-bi-pangkas-gwm",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-30T08:50+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -380,38 +410,6 @@
    "tickers": [
     "BBCA"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T16:37+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham",
-   "link": "https://keuangan.kontan.co.id/news/direksi-j-trust-bank-tambah-kepemilikan-saham-borong-4300-saham",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BCIC"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T14:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saudi Ekspor Minyak 6,5 Juta Barel/Hari, Naik di Tengah Serangan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126146/saudi-ekspor-minyak-6-5-juta-barel-hari-naik-di-tengah-serangan",
-   "score": 5,
-   "categories": [
-    "global",
-    "komoditas"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }
