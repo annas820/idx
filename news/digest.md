@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-30T12:30+07:00 WIB | jendela 36 jam | dipindai 222, lolos 91, dibuang sebagai noise 7.
+Berita terbaru: 2026-10-30T13:50+07:00 WIB | jendela 36 jam | dipindai 237, lolos 100, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -27,9 +27,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-29 06:00 bloomberg_technoz: Poin-poin Penting dalam Keputusan The Fed Tahan Suku Bunga (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126090/poin-poin-penting-dalam-keputusan-the-fed-tahan-suku-bunga>
 - **6** T3 10-29 05:40 bloomberg_technoz: Warsh: The Fed Kurangi Frekuensi Rapat Suku Bunga Mulai 2027 (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126089/warsh-the-fed-kurangi-frekuensi-rapat-suku-bunga-mulai-2027>
 - **6** T3 10-29 05:20 bloomberg_technoz: Wall Street Menghijau usai The Fed Tahan Suku Bunga Acuan (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126088/wall-street-menghijau-usai-the-fed-tahan-suku-bunga-acuan>
+- **5** T3 10-30 13:20 bloomberg_technoz: Koperasi Direncanakan Punya Pabrik CPO hingga Ada Kilang Minyak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126282/koperasi-direncanakan-punya-pabrik-cpo-hingga-ada-kilang-minyak>
 - **5** T3 10-30 12:30 bloomberg_technoz: Smelter RI Didorong Pakai EBT Usai Tak Lagi Terima Batu Bara DMO (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126275/smelter-ri-didorong-pakai-ebt-usai-tak-lagi-terima-batu-bara-dmo>
 - **5** T3 10-30 12:00 bloomberg_technoz: BEI Luncurkan Indeks IDX Commodity 20, Diisi AMMN Sampai ANTM [AMMN,ANTM] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126272/bei-luncurkan-indeks-idx-commodity-20-diisi-ammn-sampai-antm>
 - **5** T3 10-30 11:40 bloomberg_technoz: Destry: Likuiditas Bank Tak Merata Alasan BI Pangkas GWM (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/126268/destry-likuiditas-bank-tak-merata-alasan-bi-pangkas-gwm>
 - **5** T3 10-30 08:50 bloomberg_technoz: ESDM Sinyalir Kuota Batu Bara DMO Smelter Akan Dialihkan ke PLN (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126246/esdm-sinyalir-kuota-batu-bara-dmo-smelter-akan-dialihkan-ke-pln>
 - **5** T3 10-30 07:50 bloomberg_technoz: BEI Pertanyakan Sumber Kas Valas Bukalapak (BUKA) Setara Rp12 T [BUKA] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126231/bei-pertanyakan-sumber-kas-valas-bukalapak-buka-setara-rp12-t>
-- **5** T3 10-29 21:57 kontan_keuangan: IHSG Anjlok 3,49%, Saham BBCA, BBRI, BMRI, dan BBNI Kompak Merah [BBCA,BBNI,BBRI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/ihsg-anjlok-349-saham-bbca-bbri-bmri-dan-bbni-kompak-merah>

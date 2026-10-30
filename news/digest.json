@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T12:30+07:00",
+ "generated_for": "2026-10-30T13:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 222,
- "kept": 91,
+ "scanned": 237,
+ "kept": 100,
  "dropped_noise": 7,
  "items": [
   {
@@ -315,6 +315,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-30T13:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Koperasi Direncanakan Punya Pabrik CPO hingga Ada Kilang Minyak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126282/koperasi-direncanakan-punya-pabrik-cpo-hingga-ada-kilang-minyak",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-30T12:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -390,26 +405,6 @@
    ],
    "tickers": [
     "BUKA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T21:57+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "IHSG Anjlok 3,49%, Saham BBCA, BBRI, BMRI, dan BBNI Kompak Merah",
-   "link": "https://keuangan.kontan.co.id/news/ihsg-anjlok-349-saham-bbca-bbri-bmri-dan-bbni-kompak-merah",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BBNI",
-    "BBRI",
-    "BMRI"
    ],
    "flags": [],
    "also_in": []
