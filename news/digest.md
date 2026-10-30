@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-30T21:58+07:00 WIB | jendela 36 jam | dipindai 281, lolos 105, dibuang sebagai noise 7.
+Berita terbaru: 2026-10-30T22:50+07:00 WIB | jendela 36 jam | dipindai 273, lolos 100, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -12,8 +12,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 10-30 07:26 bloomberg_technoz: Rupiah Melemah, Minyak Melonjak, Defisit APBN Berisiko Tembus 3% (global/kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126165/rupiah-melemah-minyak-melonjak-defisit-apbn-berisiko-tembus-3>
 - **7** T3 10-30 17:40 bloomberg_technoz: Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII [ASII] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii>
 - **7** T3 10-29 20:05 kontan_keuangan: Mencermati Prospek Saham BBNI Usai Mencetak Kinerja Solid di Kuartal III [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/mencermati-prospek-saham-bbni-usai-mencetak-kinerja-solid-di-kuartal-iii>
-- **7** T3 10-29 10:43 kontan_keuangan: BNI Siapkan Buyback Saham Rp 547 Miliar hingga Januari 2027 [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bni-siapkan-buyback-saham-rp-547-miliar-hingga-januari-2027>
-- **7** T3 10-29 10:25 bloomberg_technoz: TPIA Mulai Eksekusi Buyback Saham Rp2 T [TPIA] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126122/tpia-mulai-eksekusi-buyback-saham-rp2-t>
 - **6** T3 10-30 17:40 bloomberg_technoz: IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing>
 - **6** T3 10-30 16:40 bloomberg_technoz: Timah (TINS) Cetak Laba Rp4,12 Triliun [TINS] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun>
 - **6** T3 10-30 16:30 bloomberg_technoz: Saham Kia Anjlok Dipicu Lonjakan Biaya Imbas Perang Iran (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126314/saham-kia-anjlok-dipicu-lonjakan-biaya-imbas-perang-iran>
@@ -33,3 +31,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-30 12:30 bloomberg_technoz: Smelter RI Didorong Pakai EBT Usai Tak Lagi Terima Batu Bara DMO (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126275/smelter-ri-didorong-pakai-ebt-usai-tak-lagi-terima-batu-bara-dmo>
 - **5** T3 10-30 12:00 bloomberg_technoz: BEI Luncurkan Indeks IDX Commodity 20, Diisi AMMN Sampai ANTM [AMMN,ANTM] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126272/bei-luncurkan-indeks-idx-commodity-20-diisi-ammn-sampai-antm>
 - **5** T3 10-30 11:40 bloomberg_technoz: Destry: Likuiditas Bank Tak Merata Alasan BI Pangkas GWM (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/126268/destry-likuiditas-bank-tak-merata-alasan-bi-pangkas-gwm>
+- **5** T3 10-30 08:50 bloomberg_technoz: ESDM Sinyalir Kuota Batu Bara DMO Smelter Akan Dialihkan ke PLN (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126246/esdm-sinyalir-kuota-batu-bara-dmo-smelter-akan-dialihkan-ke-pln>
+- **5** T3 10-30 07:50 bloomberg_technoz: BEI Pertanyakan Sumber Kas Valas Bukalapak (BUKA) Setara Rp12 T [BUKA] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126231/bei-pertanyakan-sumber-kas-valas-bukalapak-buka-setara-rp12-t>

@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T21:58+07:00",
+ "generated_for": "2026-10-30T22:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 281,
- "kept": 105,
+ "scanned": 273,
+ "kept": 100,
  "dropped_noise": 7,
  "items": [
   {
@@ -72,42 +72,6 @@
    ],
    "tickers": [
     "BBNI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T10:43+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BNI Siapkan Buyback Saham Rp 547 Miliar hingga Januari 2027",
-   "link": "https://keuangan.kontan.co.id/news/bni-siapkan-buyback-saham-rp-547-miliar-hingga-januari-2027",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBNI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T10:25+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "TPIA Mulai Eksekusi Buyback Saham Rp2 T",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126122/tpia-mulai-eksekusi-buyback-saham-rp2-t",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "TPIA"
    ],
    "flags": [],
    "also_in": []
@@ -412,6 +376,38 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T08:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "ESDM Sinyalir Kuota Batu Bara DMO Smelter Akan Dialihkan ke PLN",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126246/esdm-sinyalir-kuota-batu-bara-dmo-smelter-akan-dialihkan-ke-pln",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T07:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Pertanyakan Sumber Kas Valas Bukalapak (BUKA) Setara Rp12 T",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126231/bei-pertanyakan-sumber-kas-valas-bukalapak-buka-setara-rp12-t",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "BUKA"
+   ],
    "flags": [],
    "also_in": []
   }
