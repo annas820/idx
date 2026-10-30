@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-30T08:53+07:00 WIB | jendela 36 jam | dipindai 194, lolos 76, dibuang sebagai noise 8.
+Berita terbaru: 2026-10-30T09:40+07:00 WIB | jendela 36 jam | dipindai 199, lolos 82, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,11 +8,13 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 10-29 16:37 bloomberg_technoz: Astra Apresiasi Inovasi Anak Muda di SATU Indonesia Awards 2026 [ASII,SATU] (emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/126184/astra-apresiasi-inovasi-anak-muda-di-satu-indonesia-awards-2026>
 
 ## Teratas
+- **9** T3 10-30 09:20 bloomberg_technoz: Supra Sekuritas Tampung Transaksi Rp60 T di Saham Kena Sanksi OJK (kebijakan/global/pasar) <https://www.bloombergtechnoz.com/detail-news/126254/supra-sekuritas-tampung-transaksi-rp60-t-di-saham-kena-sanksi-ojk>
 - **8** T3 10-30 07:26 bloomberg_technoz: Rupiah Melemah, Minyak Melonjak, Defisit APBN Berisiko Tembus 3% (global/kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126165/rupiah-melemah-minyak-melonjak-defisit-apbn-berisiko-tembus-3>
 - **8** T3 10-29 05:00 bloomberg_technoz: The Fed Tahan Suku Bunga, Fokus Jinakkan Inflasi AS (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/126087/the-fed-tahan-suku-bunga-fokus-jinakkan-inflasi-as>
 - **7** T3 10-29 20:05 kontan_keuangan: Mencermati Prospek Saham BBNI Usai Mencetak Kinerja Solid di Kuartal III [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/mencermati-prospek-saham-bbni-usai-mencetak-kinerja-solid-di-kuartal-iii>
 - **7** T3 10-29 10:43 kontan_keuangan: BNI Siapkan Buyback Saham Rp 547 Miliar hingga Januari 2027 [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bni-siapkan-buyback-saham-rp-547-miliar-hingga-januari-2027>
 - **7** T3 10-29 10:25 bloomberg_technoz: TPIA Mulai Eksekusi Buyback Saham Rp2 T [TPIA] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126122/tpia-mulai-eksekusi-buyback-saham-rp2-t>
+- **6** T3 10-30 09:00 bloomberg_technoz: Destry: Investor Asing Sayangkan Isu MSCI, Akui Ada Kekhawatiran (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126247/destry-investor-asing-sayangkan-isu-msci-akui-ada-kekhawatiran>
 - **6** T3 10-30 07:43 bloomberg_technoz: Apa Bedanya Saham, Obligasi, dan Reksa Dana? (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126230/apa-bedanya-saham-obligasi-dan-reksa-dana>
 - **6** T3 10-30 06:50 bloomberg_technoz: Bursa Saham Asia Tertekan, Permintaan Aset Aman Dorong Obligasi (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126218/bursa-saham-asia-tertekan-permintaan-aset-aman-dorong-obligasi>
 - **6** T3 10-30 05:34 bloomberg_technoz: Keraguan Kinerja Saham Teknologi Muncul, Wall Street Terkoreksi (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126212/keraguan-kinerja-saham-teknologi-muncul-wall-street-terkoreksi>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-29 18:14 kontan_keuangan: Saham Big Banks Kompak Melemah (29/10), Asing Ramai-ramai Jual Saham, BBCA Terparah [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-kompak-melemah-2910-asing-ramai-ramai-jual-saham-bbca-terparah>
 - **5** T3 10-29 16:37 kontan_keuangan: Dua Direktur JTrust Bank Borong Saham BCIC, Beli di Harga Rp 110 per Saham [BCIC] (pasar/emiten) <https://keuangan.kontan.co.id/news/direksi-j-trust-bank-tambah-kepemilikan-saham-borong-4300-saham>
 - **5** T3 10-29 14:10 bloomberg_technoz: Saudi Ekspor Minyak 6,5 Juta Barel/Hari, Naik di Tengah Serangan (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126146/saudi-ekspor-minyak-6-5-juta-barel-hari-naik-di-tengah-serangan>
-- **5** T3 10-29 13:45 bloomberg_technoz: BRI Masuk Top 50 Emiten BigCap Berkat Tata Kelola [BBRI] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126159/bri-masuk-top-50-emiten-bigcap-berkat-tata-kelola>
-- **5** T3 10-29 13:40 bloomberg_technoz: Rupiah Terus Anjlok, Ekonom Ingatkan Beban APBN Bisa Membengkak (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126141/rupiah-terus-anjlok-ekonom-ingatkan-beban-apbn-bisa-membengkak>

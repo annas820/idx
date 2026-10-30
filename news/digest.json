@@ -1,12 +1,28 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T08:53+07:00",
+ "generated_for": "2026-10-30T09:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 194,
- "kept": 76,
- "dropped_noise": 8,
+ "scanned": 199,
+ "kept": 82,
+ "dropped_noise": 7,
  "items": [
+  {
+   "published": "2026-10-30T09:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Supra Sekuritas Tampung Transaksi Rp60 T di Saham Kena Sanksi OJK",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126254/supra-sekuritas-tampung-transaksi-rp60-t-di-saham-kena-sanksi-ojk",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-10-30T07:26+07:00",
    "source": "bloomberg_technoz",
@@ -90,6 +106,21 @@
    "tickers": [
     "TPIA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T09:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Destry: Investor Asing Sayangkan Isu MSCI, Akui Ada Kekhawatiran",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126247/destry-investor-asing-sayangkan-isu-msci-akui-ada-kekhawatiran",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -379,38 +410,6 @@
    "categories": [
     "global",
     "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T13:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BRI Masuk Top 50 Emiten BigCap Berkat Tata Kelola",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126159/bri-masuk-top-50-emiten-bigcap-berkat-tata-kelola",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T13:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Terus Anjlok, Ekonom Ingatkan Beban APBN Bisa Membengkak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126141/rupiah-terus-anjlok-ekonom-ingatkan-beban-apbn-bisa-membengkak",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
    ],
    "tickers": [],
    "flags": [],
