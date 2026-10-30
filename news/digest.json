@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T13:50+07:00",
+ "generated_for": "2026-10-30T14:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 237,
- "kept": 100,
+ "scanned": 250,
+ "kept": 103,
  "dropped_noise": 7,
  "items": [
   {
@@ -315,6 +315,23 @@
    "also_in": []
   },
   {
+   "published": "2026-10-30T14:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham Koreksi Lebar, Amman Mineral (AMMN) Mulai Intervensi Pasar",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126291/saham-koreksi-lebar-amman-mineral-ammn-mulai-intervensi-pasar",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "AMMN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-30T13:20+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -389,23 +406,6 @@
     "komoditas"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T07:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Pertanyakan Sumber Kas Valas Bukalapak (BUKA) Setara Rp12 T",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126231/bei-pertanyakan-sumber-kas-valas-bukalapak-buka-setara-rp12-t",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "BUKA"
-   ],
    "flags": [],
    "also_in": []
   }
