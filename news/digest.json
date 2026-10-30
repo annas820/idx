@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T16:48+07:00",
+ "generated_for": "2026-10-30T17:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 273,
- "kept": 113,
+ "scanned": 281,
+ "kept": 116,
  "dropped_noise": 7,
  "items": [
   {
@@ -40,19 +40,22 @@
    "also_in": []
   },
   {
-   "published": "2026-10-29T05:00+07:00",
+   "published": "2026-10-30T17:40+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "The Fed Tahan Suku Bunga, Fokus Jinakkan Inflasi AS",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126087/the-fed-tahan-suku-bunga-fokus-jinakkan-inflasi-as",
-   "score": 8,
+   "title": "Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii",
+   "score": 7,
    "categories": [
-    "kebijakan",
-    "global",
-    "makro"
+    "pasar",
+    "emiten"
    ],
-   "tickers": [],
-   "flags": [],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
    "also_in": []
   },
   {
@@ -106,6 +109,21 @@
    "tickers": [
     "TPIA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T17:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -348,21 +366,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-29T05:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Wall Street Menghijau usai The Fed Tahan Suku Bunga Acuan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126088/wall-street-menghijau-usai-the-fed-tahan-suku-bunga-acuan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-30T16:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -411,6 +414,25 @@
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-10-30T17:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-10-29T06:35+07:00",
    "source": "bloomberg_technoz",
