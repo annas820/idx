@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T11:44+07:00",
+ "generated_for": "2026-10-30T12:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 216,
- "kept": 89,
+ "scanned": 222,
+ "kept": 91,
  "dropped_noise": 7,
  "items": [
   {
@@ -315,6 +315,39 @@
    "also_in": []
   },
   {
+   "published": "2026-10-30T12:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Smelter RI Didorong Pakai EBT Usai Tak Lagi Terima Batu Bara DMO",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126275/smelter-ri-didorong-pakai-ebt-usai-tak-lagi-terima-batu-bara-dmo",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T12:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Luncurkan Indeks IDX Commodity 20, Diisi AMMN Sampai ANTM",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126272/bei-luncurkan-indeks-idx-commodity-20-diisi-ammn-sampai-antm",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "AMMN",
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-30T11:40+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -377,38 +410,6 @@
     "BBNI",
     "BBRI",
     "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T19:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Kata Bahlil Soal Potensi Pangkas Ekspor LNG Singapura Tahun Depan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126205/kata-bahlil-soal-potensi-pangkas-ekspor-lng-singapura-tahun-depan",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T18:14+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham Big Banks Kompak Melemah (29/10), Asing Ramai-ramai Jual Saham, BBCA Terparah",
-   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-kompak-melemah-2910-asing-ramai-ramai-jual-saham-bbca-terparah",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
    ],
    "flags": [],
    "also_in": []
