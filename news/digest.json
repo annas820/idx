@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T07:50+07:00",
+ "generated_for": "2026-10-30T08:53+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 185,
- "kept": 71,
- "dropped_noise": 5,
+ "scanned": 194,
+ "kept": 76,
+ "dropped_noise": 8,
  "items": [
   {
    "published": "2026-10-30T07:26+07:00",
@@ -269,6 +269,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-30T08:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "ESDM Sinyalir Kuota Batu Bara DMO Smelter Akan Dialihkan ke PLN",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126246/esdm-sinyalir-kuota-batu-bara-dmo-smelter-akan-dialihkan-ke-pln",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-30T07:50+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -398,23 +413,6 @@
     "makro"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T13:05+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bosnya Dipanggil Pejabat Tinggi Singapura, Saham KEEN Koreksi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126149/bosnya-dipanggil-pejabat-tinggi-singapura-saham-keen-koreksi",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "KEEN"
-   ],
    "flags": [],
    "also_in": []
   }
