@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T18:20+07:00",
+ "generated_for": "2026-10-30T19:44+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 287,
- "kept": 116,
+ "scanned": 289,
+ "kept": 114,
  "dropped_noise": 7,
  "items": [
   {
@@ -317,25 +317,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-29T06:35+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Kinerja ASII Stabil, Laba Inti Rp24 T di Kuartal III-2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126093/kinerja-asii-stabil-laba-inti-rp24-t-di-kuartal-iii-2026",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
    "published": "2026-10-30T17:44+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -415,6 +396,24 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-10-30T12:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Luncurkan Indeks IDX Commodity 20, Diisi AMMN Sampai ANTM",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126272/bei-luncurkan-indeks-idx-commodity-20-diisi-ammn-sampai-antm",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "AMMN",
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -427,25 +426,6 @@
    "score": 7,
    "categories": [
     "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T06:35+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Kinerja ASII Stabil, Laba Inti Rp24 T di Kuartal III-2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126093/kinerja-asii-stabil-laba-inti-rp24-t-di-kuartal-iii-2026",
-   "score": 6,
-   "categories": [
-    "korporasi",
     "emiten"
    ],
    "tickers": [
