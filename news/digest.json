@@ -1,12 +1,28 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T06:30+07:00",
+ "generated_for": "2026-10-30T07:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 175,
- "kept": 63,
- "dropped_noise": 2,
+ "scanned": 185,
+ "kept": 71,
+ "dropped_noise": 5,
  "items": [
+  {
+   "published": "2026-10-30T07:26+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Melemah, Minyak Melonjak, Defisit APBN Berisiko Tembus 3%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126165/rupiah-melemah-minyak-melonjak-defisit-apbn-berisiko-tembus-3",
+   "score": 8,
+   "categories": [
+    "global",
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-10-29T05:00+07:00",
    "source": "bloomberg_technoz",
@@ -74,6 +90,36 @@
    "tickers": [
     "TPIA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T07:43+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Apa Bedanya Saham, Obligasi, dan Reksa Dana?",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126230/apa-bedanya-saham-obligasi-dan-reksa-dana",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T06:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bursa Saham Asia Tertekan, Permintaan Aset Aman Dorong Obligasi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126218/bursa-saham-asia-tertekan-permintaan-aset-aman-dorong-obligasi",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -223,6 +269,23 @@
    "also_in": []
   },
   {
+   "published": "2026-10-30T07:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Pertanyakan Sumber Kas Valas Bukalapak (BUKA) Setara Rp12 T",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126231/bei-pertanyakan-sumber-kas-valas-bukalapak-buka-setara-rp12-t",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "BUKA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-29T21:57+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -352,68 +415,6 @@
    "tickers": [
     "KEEN"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T10:35+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Bank Mandiri Akan Melepas 20% Saham Inhealth ke IFG Life, Nilainya Rp 570 Miliar",
-   "link": "https://keuangan.kontan.co.id/news/bank-mandiri-akan-melepas-20-saham-inhealth-ke-ifg-life-nilainya-rp-570-miliar",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T10:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Skema Impor Baru Diduga Jadi Jalan RI Serap Minyak Sanksi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126117/skema-impor-baru-diduga-jadi-jalan-ri-serap-minyak-sanksi",
-   "score": 5,
-   "categories": [
-    "global",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T09:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "RI Tekan Ekspor Gas Pipa, Singapura Terpaksa Beralih ke LNG Mahal",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126111/ri-tekan-ekspor-gas-pipa-singapura-terpaksa-beralih-ke-lng-mahal",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T08:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Meski Pangkas Ekspor Gas Pipa, RI Tak Akan Tekan LNG ke Singapura",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126102/meski-pangkas-ekspor-gas-pipa-ri-tak-akan-tekan-lng-ke-singapura",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }
