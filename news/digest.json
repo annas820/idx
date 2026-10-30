@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T15:50+07:00",
+ "generated_for": "2026-10-30T16:48+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 261,
- "kept": 107,
+ "scanned": 273,
+ "kept": 113,
  "dropped_noise": 7,
  "items": [
   {
@@ -106,6 +106,39 @@
    "tickers": [
     "TPIA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T16:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Timah (TINS) Cetak Laba Rp4,12 Triliun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "TINS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T16:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham Kia Anjlok Dipicu Lonjakan Biaya Imbas Perang Iran",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126314/saham-kia-anjlok-dipicu-lonjakan-biaya-imbas-perang-iran",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -330,6 +363,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-30T16:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Alih Ekspor Gas Singapura Dinilai Minim Dampak bagi Industri RI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126313/alih-ekspor-gas-singapura-dinilai-minim-dampak-bagi-industri-ri",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-30T14:10+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -356,54 +404,6 @@
    "categories": [
     "global",
     "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T12:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Smelter RI Didorong Pakai EBT Usai Tak Lagi Terima Batu Bara DMO",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126275/smelter-ri-didorong-pakai-ebt-usai-tak-lagi-terima-batu-bara-dmo",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T12:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Luncurkan Indeks IDX Commodity 20, Diisi AMMN Sampai ANTM",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126272/bei-luncurkan-indeks-idx-commodity-20-diisi-ammn-sampai-antm",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "AMMN",
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T11:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Destry: Likuiditas Bank Tak Merata Alasan BI Pangkas GWM",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126268/destry-likuiditas-bank-tak-merata-alasan-bi-pangkas-gwm",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "makro"
    ],
    "tickers": [],
    "flags": [],

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-30T15:50+07:00 WIB | jendela 36 jam | dipindai 261, lolos 107, dibuang sebagai noise 7.
+Berita terbaru: 2026-10-30T16:48+07:00 WIB | jendela 36 jam | dipindai 273, lolos 113, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -14,6 +14,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 10-29 20:05 kontan_keuangan: Mencermati Prospek Saham BBNI Usai Mencetak Kinerja Solid di Kuartal III [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/mencermati-prospek-saham-bbni-usai-mencetak-kinerja-solid-di-kuartal-iii>
 - **7** T3 10-29 10:43 kontan_keuangan: BNI Siapkan Buyback Saham Rp 547 Miliar hingga Januari 2027 [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bni-siapkan-buyback-saham-rp-547-miliar-hingga-januari-2027>
 - **7** T3 10-29 10:25 bloomberg_technoz: TPIA Mulai Eksekusi Buyback Saham Rp2 T [TPIA] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126122/tpia-mulai-eksekusi-buyback-saham-rp2-t>
+- **6** T3 10-30 16:40 bloomberg_technoz: Timah (TINS) Cetak Laba Rp4,12 Triliun [TINS] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun>
+- **6** T3 10-30 16:30 bloomberg_technoz: Saham Kia Anjlok Dipicu Lonjakan Biaya Imbas Perang Iran (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126314/saham-kia-anjlok-dipicu-lonjakan-biaya-imbas-perang-iran>
 - **6** T3 10-30 15:00 bloomberg_technoz: Harga Pertamax November Bisa Naik 5%—8%, Efek Minyak dan Rupiah (global/kurs) <https://www.bloombergtechnoz.com/detail-news/126300/harga-pertamax-november-bisa-naik-5-8-efek-minyak-dan-rupiah>
 - **6** T3 10-30 11:19 bloomberg_technoz: Rupiah Balik Arah, Ikuti IHSG ke Zona Merah (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126266/rupiah-balik-arah-ikuti-ihsg-ke-zona-merah>
 - **6** T3 10-30 09:00 bloomberg_technoz: Destry: Investor Asing Sayangkan Isu MSCI, Akui Ada Kekhawatiran (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126247/destry-investor-asing-sayangkan-isu-msci-akui-ada-kekhawatiran>
@@ -28,8 +30,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-29 06:00 bloomberg_technoz: Poin-poin Penting dalam Keputusan The Fed Tahan Suku Bunga (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126090/poin-poin-penting-dalam-keputusan-the-fed-tahan-suku-bunga>
 - **6** T3 10-29 05:40 bloomberg_technoz: Warsh: The Fed Kurangi Frekuensi Rapat Suku Bunga Mulai 2027 (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126089/warsh-the-fed-kurangi-frekuensi-rapat-suku-bunga-mulai-2027>
 - **6** T3 10-29 05:20 bloomberg_technoz: Wall Street Menghijau usai The Fed Tahan Suku Bunga Acuan (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126088/wall-street-menghijau-usai-the-fed-tahan-suku-bunga-acuan>
+- **5** T3 10-30 16:00 bloomberg_technoz: Alih Ekspor Gas Singapura Dinilai Minim Dampak bagi Industri RI (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126313/alih-ekspor-gas-singapura-dinilai-minim-dampak-bagi-industri-ri>
 - **5** T3 10-30 14:10 bloomberg_technoz: Saham Koreksi Lebar, Amman Mineral (AMMN) Mulai Intervensi Pasar [AMMN] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126291/saham-koreksi-lebar-amman-mineral-ammn-mulai-intervensi-pasar>
 - **5** T3 10-30 13:20 bloomberg_technoz: Koperasi Direncanakan Punya Pabrik CPO hingga Ada Kilang Minyak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126282/koperasi-direncanakan-punya-pabrik-cpo-hingga-ada-kilang-minyak>
-- **5** T3 10-30 12:30 bloomberg_technoz: Smelter RI Didorong Pakai EBT Usai Tak Lagi Terima Batu Bara DMO (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126275/smelter-ri-didorong-pakai-ebt-usai-tak-lagi-terima-batu-bara-dmo>
-- **5** T3 10-30 12:00 bloomberg_technoz: BEI Luncurkan Indeks IDX Commodity 20, Diisi AMMN Sampai ANTM [AMMN,ANTM] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126272/bei-luncurkan-indeks-idx-commodity-20-diisi-ammn-sampai-antm>
-- **5** T3 10-30 11:40 bloomberg_technoz: Destry: Likuiditas Bank Tak Merata Alasan BI Pangkas GWM (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/126268/destry-likuiditas-bank-tak-merata-alasan-bi-pangkas-gwm>
