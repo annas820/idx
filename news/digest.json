@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T22:50+07:00",
+ "generated_for": "2026-10-31T06:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 273,
- "kept": 100,
+ "scanned": 195,
+ "kept": 76,
  "dropped_noise": 7,
  "items": [
   {
@@ -73,6 +73,21 @@
    "tickers": [
     "BBNI"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T06:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -209,57 +224,6 @@
    "categories": [
     "global",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T17:49+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "GOTO Cetak Laba Bersih Rp1,16 Triliun per September 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126197/goto-cetak-laba-bersih-rp1-16-triliun-per-september-2026",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "GOTO"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
-  },
-  {
-   "published": "2026-10-29T12:15+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Sekuritas Milik CIO Danantara Akumulasi Saham yang Disanksi OJK",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126138/sekuritas-milik-cio-danantara-akumulasi-saham-yang-disanksi-ojk",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T11:55+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Terlemah Sepanjang Sejarah, IHSG dan Saham Bank Tertekan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126132/rupiah-terlemah-sepanjang-sejarah-ihsg-dan-saham-bank-tertekan",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],
@@ -410,6 +374,41 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-10-29T21:57+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "IHSG Anjlok 3,49%, Saham BBCA, BBRI, BMRI, dan BBNI Kompak Merah",
+   "link": "https://keuangan.kontan.co.id/news/ihsg-anjlok-349-saham-bbca-bbri-bmri-dan-bbni-kompak-merah",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BBNI",
+    "BBRI",
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-29T19:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Kata Bahlil Soal Potensi Pangkas Ekspor LNG Singapura Tahun Depan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126205/kata-bahlil-soal-potensi-pangkas-ekspor-lng-singapura-tahun-depan",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -426,25 +425,6 @@
    ],
    "tickers": [
     "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T16:37+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Astra Apresiasi Inovasi Anak Muda di SATU Indonesia Awards 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126184/astra-apresiasi-inovasi-anak-muda-di-satu-indonesia-awards-2026",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ASII",
-    "SATU"
    ],
    "flags": [
     "watchlist"
