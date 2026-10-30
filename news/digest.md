@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-30T19:44+07:00 WIB | jendela 36 jam | dipindai 289, lolos 114, dibuang sebagai noise 7.
+Berita terbaru: 2026-10-30T20:40+07:00 WIB | jendela 36 jam | dipindai 286, lolos 109, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -26,10 +26,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-29 17:49 bloomberg_technoz: GOTO Cetak Laba Bersih Rp1,16 Triliun per September 2026 [GOTO] (korporasi/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.bloombergtechnoz.com/detail-news/126197/goto-cetak-laba-bersih-rp1-16-triliun-per-september-2026>
 - **6** T3 10-29 12:15 bloomberg_technoz: Sekuritas Milik CIO Danantara Akumulasi Saham yang Disanksi OJK (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126138/sekuritas-milik-cio-danantara-akumulasi-saham-yang-disanksi-ojk>
 - **6** T3 10-29 11:55 bloomberg_technoz: Rupiah Terlemah Sepanjang Sejarah, IHSG dan Saham Bank Tertekan (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126132/rupiah-terlemah-sepanjang-sejarah-ihsg-dan-saham-bank-tertekan>
-- **6** T3 10-29 07:52 bloomberg_technoz: Proyeksi Rupiah Setelah The Fed Tahan Bunga dengan Nada Hawkish (global/kurs) <https://www.bloombergtechnoz.com/detail-news/126096/proyeksi-rupiah-setelah-the-fed-tahan-bunga-dengan-nada-hawkish>
 - **5** T3 10-30 17:44 kontan_keuangan: Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham [BBCA,BBNI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-bbca-bbni-bmri-dan-bbni-kompak-melemah-sepekan-asing-ramai-lepas-saham>
 - **5** T3 10-30 16:00 bloomberg_technoz: Alih Ekspor Gas Singapura Dinilai Minim Dampak bagi Industri RI (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126313/alih-ekspor-gas-singapura-dinilai-minim-dampak-bagi-industri-ri>
 - **5** T3 10-30 14:10 bloomberg_technoz: Saham Koreksi Lebar, Amman Mineral (AMMN) Mulai Intervensi Pasar [AMMN] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126291/saham-koreksi-lebar-amman-mineral-ammn-mulai-intervensi-pasar>
 - **5** T3 10-30 13:20 bloomberg_technoz: Koperasi Direncanakan Punya Pabrik CPO hingga Ada Kilang Minyak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126282/koperasi-direncanakan-punya-pabrik-cpo-hingga-ada-kilang-minyak>
 - **5** T3 10-30 12:30 bloomberg_technoz: Smelter RI Didorong Pakai EBT Usai Tak Lagi Terima Batu Bara DMO (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126275/smelter-ri-didorong-pakai-ebt-usai-tak-lagi-terima-batu-bara-dmo>
 - **5** T3 10-30 12:00 bloomberg_technoz: BEI Luncurkan Indeks IDX Commodity 20, Diisi AMMN Sampai ANTM [AMMN,ANTM] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126272/bei-luncurkan-indeks-idx-commodity-20-diisi-ammn-sampai-antm>
+- **5** T3 10-30 11:40 bloomberg_technoz: Destry: Likuiditas Bank Tak Merata Alasan BI Pangkas GWM (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/126268/destry-likuiditas-bank-tak-merata-alasan-bi-pangkas-gwm>

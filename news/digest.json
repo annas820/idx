@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T19:44+07:00",
+ "generated_for": "2026-10-30T20:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 289,
- "kept": 114,
+ "scanned": 286,
+ "kept": 109,
  "dropped_noise": 7,
  "items": [
   {
@@ -302,21 +302,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-29T07:52+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Proyeksi Rupiah Setelah The Fed Tahan Bunga dengan Nada Hawkish",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126096/proyeksi-rupiah-setelah-the-fed-tahan-bunga-dengan-nada-hawkish",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-30T17:44+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -412,6 +397,21 @@
     "AMMN",
     "ANTM"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T11:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Destry: Likuiditas Bank Tak Merata Alasan BI Pangkas GWM",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126268/destry-likuiditas-bank-tak-merata-alasan-bi-pangkas-gwm",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
