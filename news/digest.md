@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-30T17:40+07:00 WIB | jendela 36 jam | dipindai 281, lolos 116, dibuang sebagai noise 7.
+Berita terbaru: 2026-10-30T18:20+07:00 WIB | jendela 36 jam | dipindai 287, lolos 116, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -29,8 +29,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-29 11:55 bloomberg_technoz: Rupiah Terlemah Sepanjang Sejarah, IHSG dan Saham Bank Tertekan (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126132/rupiah-terlemah-sepanjang-sejarah-ihsg-dan-saham-bank-tertekan>
 - **6** T3 10-29 07:52 bloomberg_technoz: Proyeksi Rupiah Setelah The Fed Tahan Bunga dengan Nada Hawkish (global/kurs) <https://www.bloombergtechnoz.com/detail-news/126096/proyeksi-rupiah-setelah-the-fed-tahan-bunga-dengan-nada-hawkish>
 - **6** T3 10-29 06:35 bloomberg_technoz: Kinerja ASII Stabil, Laba Inti Rp24 T di Kuartal III-2026 [ASII] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/126093/kinerja-asii-stabil-laba-inti-rp24-t-di-kuartal-iii-2026>
-- **6** T3 10-29 06:00 bloomberg_technoz: Poin-poin Penting dalam Keputusan The Fed Tahan Suku Bunga (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126090/poin-poin-penting-dalam-keputusan-the-fed-tahan-suku-bunga>
-- **6** T3 10-29 05:40 bloomberg_technoz: Warsh: The Fed Kurangi Frekuensi Rapat Suku Bunga Mulai 2027 (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126089/warsh-the-fed-kurangi-frekuensi-rapat-suku-bunga-mulai-2027>
+- **5** T3 10-30 17:44 kontan_keuangan: Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham [BBCA,BBNI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-bbca-bbni-bmri-dan-bbni-kompak-melemah-sepekan-asing-ramai-lepas-saham>
 - **5** T3 10-30 16:00 bloomberg_technoz: Alih Ekspor Gas Singapura Dinilai Minim Dampak bagi Industri RI (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126313/alih-ekspor-gas-singapura-dinilai-minim-dampak-bagi-industri-ri>
 - **5** T3 10-30 14:10 bloomberg_technoz: Saham Koreksi Lebar, Amman Mineral (AMMN) Mulai Intervensi Pasar [AMMN] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126291/saham-koreksi-lebar-amman-mineral-ammn-mulai-intervensi-pasar>
 - **5** T3 10-30 13:20 bloomberg_technoz: Koperasi Direncanakan Punya Pabrik CPO hingga Ada Kilang Minyak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126282/koperasi-direncanakan-punya-pabrik-cpo-hingga-ada-kilang-minyak>
+- **5** T3 10-30 12:30 bloomberg_technoz: Smelter RI Didorong Pakai EBT Usai Tak Lagi Terima Batu Bara DMO (kebijakan/komoditas) <https://www.bloombergtechnoz.com/detail-news/126275/smelter-ri-didorong-pakai-ebt-usai-tak-lagi-terima-batu-bara-dmo>

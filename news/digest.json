@@ -1,9 +1,9 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-30T17:40+07:00",
+ "generated_for": "2026-10-30T18:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 281,
+ "scanned": 287,
  "kept": 116,
  "dropped_noise": 7,
  "items": [
@@ -336,32 +336,21 @@
    "also_in": []
   },
   {
-   "published": "2026-10-29T06:00+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-10-30T17:44+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Poin-poin Penting dalam Keputusan The Fed Tahan Suku Bunga",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126090/poin-poin-penting-dalam-keputusan-the-fed-tahan-suku-bunga",
-   "score": 6,
+   "title": "Saham BBCA, BBNI, BMRI dan BBNI Kompak Melemah Sepekan, Asing Ramai Lepas Saham",
+   "link": "https://keuangan.kontan.co.id/news/saham-bbca-bbni-bmri-dan-bbni-kompak-melemah-sepekan-asing-ramai-lepas-saham",
+   "score": 5,
    "categories": [
-    "kebijakan",
-    "global"
+    "pasar",
+    "emiten"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T05:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Warsh: The Fed Kurangi Frekuensi Rapat Suku Bunga Mulai 2027",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126089/warsh-the-fed-kurangi-frekuensi-rapat-suku-bunga-mulai-2027",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
+   "tickers": [
+    "BBCA",
+    "BBNI",
+    "BMRI"
    ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -406,6 +395,21 @@
    "score": 5,
    "categories": [
     "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T12:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Smelter RI Didorong Pakai EBT Usai Tak Lagi Terima Batu Bara DMO",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126275/smelter-ri-didorong-pakai-ebt-usai-tak-lagi-terima-batu-bara-dmo",
+   "score": 5,
+   "categories": [
+    "kebijakan",
     "komoditas"
    ],
    "tickers": [],
