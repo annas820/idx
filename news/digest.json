@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T20:30+07:00",
+ "generated_for": "2026-10-31T21:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 378,
- "kept": 150,
+ "scanned": 368,
+ "kept": 143,
  "dropped_noise": 6,
  "items": [
   {
@@ -234,6 +234,21 @@
    "also_in": []
   },
   {
+   "published": "2026-10-31T21:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-31T18:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -410,21 +425,6 @@
    "score": 6,
    "categories": [
     "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T17:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing",
-   "score": 6,
-   "categories": [
-    "pasar",
     "kurs"
    ],
    "tickers": [],
