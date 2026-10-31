@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-31T16:35+07:00 WIB | jendela 36 jam | dipindai 409, lolos 164, dibuang sebagai noise 12.
+Berita terbaru: 2026-10-31T17:00+07:00 WIB | jendela 36 jam | dipindai 410, lolos 165, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,6 +10,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **9** T3 10-30 09:20 bloomberg_technoz: Supra Sekuritas Tampung Transaksi Rp60 T di Saham Kena Sanksi OJK (kebijakan/global/pasar) <https://www.bloombergtechnoz.com/detail-news/126254/supra-sekuritas-tampung-transaksi-rp60-t-di-saham-kena-sanksi-ojk>
+- **8** T3 10-31 17:00 bloomberg_technoz: Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM [FILM] (global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film>
 - **8** T3 10-30 20:32 kontan_investasi: Pendapatan INDF Naik 12% Jadi Rp 101,49 Triliun, Laba Naik 11% per Kuartal III-2026 [INDF] (korporasi/emiten; watchlist, terkonfirmasi, juga di kontan_keuangan) <https://investasi.kontan.co.id/news/pendapatan-indf-naik-12-jadi-rp-10149-triliun-laba-naik-11-per-kuartal-iii-2026>
 - **8** T3 10-30 17:55 cnbc_indonesia_market: Video: MSCI Ancam Bursa Saham, MI Perkuat Manajemen Risiko Likuiditas (kebijakan/pasar/makro) <https://www.cnbcindonesia.com/market/20261030171606-19-781024/video-msci-ancam-bursa-saham-mi-perkuat-manajemen-risiko-likuiditas>
 - **8** T3 10-30 16:40 bloomberg_technoz: Timah (TINS) Cetak Laba Rp4,12 Triliun [TINS] (korporasi/komoditas/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun>
@@ -33,4 +34,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-30 19:00 cnbc_indonesia_market: Yield SBN Tembus Rekor Tertinggi 7,7%, Ini Respons Menteri Keuangan (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261030172152-17-781027/yield-sbn-tembus-rekor-tertinggi-77-ini-respons-menteri-keuangan>
 - **6** T3 10-30 18:50 cnbc_indonesia_news: Menkeu Beri Sinyal Hati-hati soal Obligasi DKI Jakarta (kebijakan/kurs) <https://www.cnbcindonesia.com/news/20261030165054-4-781014/menkeu-beri-sinyal-hati-hati-soal-obligasi-dki-jakarta>
 - **6** T3 10-30 17:40 bloomberg_technoz: IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing>
-- **6** T3 10-30 17:38 kontan_keuangan: Laba OCBC NISP Naik 5% Jadi Rp 4,03 Triliun hingga Kuartal III-2026, Ini Penopangnya [NISP] (korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://keuangan.kontan.co.id/news/laba-ocbc-nisp-naik-5-jadi-rp-403-triliun-hingga-kuartal-iii-2026-ini-penopangnya>

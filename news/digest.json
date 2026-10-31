@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T16:35+07:00",
+ "generated_for": "2026-10-31T17:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 409,
- "kept": 164,
+ "scanned": 410,
+ "kept": 165,
  "dropped_noise": 12,
  "items": [
   {
@@ -20,6 +20,24 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T17:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film",
+   "score": 8,
+   "categories": [
+    "global",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "FILM"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -415,27 +433,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-10-30T17:38+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Laba OCBC NISP Naik 5% Jadi Rp 4,03 Triliun hingga Kuartal III-2026, Ini Penopangnya",
-   "link": "https://keuangan.kontan.co.id/news/laba-ocbc-nisp-naik-5-jadi-rp-403-triliun-hingga-kuartal-iii-2026-ini-penopangnya",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "NISP"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
   }
  ],
  "watchlist_hits": [
