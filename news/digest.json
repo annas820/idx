@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T07:50+07:00",
+ "generated_for": "2026-10-31T08:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 188,
- "kept": 78,
- "dropped_noise": 7,
+ "scanned": 182,
+ "kept": 77,
+ "dropped_noise": 6,
  "items": [
   {
    "published": "2026-10-30T09:20+07:00",
@@ -56,24 +56,6 @@
    "flags": [
     "watchlist"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-29T20:05+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Mencermati Prospek Saham BBNI Usai Mencetak Kinerja Solid di Kuartal III",
-   "link": "https://keuangan.kontan.co.id/news/mencermati-prospek-saham-bbni-usai-mencetak-kinerja-solid-di-kuartal-iii",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBNI"
-   ],
-   "flags": [],
    "also_in": []
   },
   {
@@ -408,6 +390,23 @@
    ],
    "tickers": [
     "BBCA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T06:36+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Penjualan WIKA Tumbuh 11,9%, Laba Usaha Melonjak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126337/penjualan-wika-tumbuh-11-9-laba-usaha-melonjak",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "WIKA"
    ],
    "flags": [],
    "also_in": []

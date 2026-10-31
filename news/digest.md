@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-31T07:50+07:00 WIB | jendela 36 jam | dipindai 188, lolos 78, dibuang sebagai noise 7.
+Berita terbaru: 2026-10-31T08:30+07:00 WIB | jendela 36 jam | dipindai 182, lolos 77, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,7 +10,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 10-30 09:20 bloomberg_technoz: Supra Sekuritas Tampung Transaksi Rp60 T di Saham Kena Sanksi OJK (kebijakan/global/pasar) <https://www.bloombergtechnoz.com/detail-news/126254/supra-sekuritas-tampung-transaksi-rp60-t-di-saham-kena-sanksi-ojk>
 - **8** T3 10-30 07:26 bloomberg_technoz: Rupiah Melemah, Minyak Melonjak, Defisit APBN Berisiko Tembus 3% (global/kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126165/rupiah-melemah-minyak-melonjak-defisit-apbn-berisiko-tembus-3>
 - **7** T3 10-30 17:40 bloomberg_technoz: Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII [ASII] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii>
-- **7** T3 10-29 20:05 kontan_keuangan: Mencermati Prospek Saham BBNI Usai Mencetak Kinerja Solid di Kuartal III [BBNI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/mencermati-prospek-saham-bbni-usai-mencetak-kinerja-solid-di-kuartal-iii>
 - **6** T3 10-31 06:30 bloomberg_technoz: OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah>
 - **6** T3 10-30 17:40 bloomberg_technoz: IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing>
 - **6** T3 10-30 16:40 bloomberg_technoz: Timah (TINS) Cetak Laba Rp4,12 Triliun [TINS] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun>
@@ -32,3 +31,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-30 07:50 bloomberg_technoz: BEI Pertanyakan Sumber Kas Valas Bukalapak (BUKA) Setara Rp12 T [BUKA] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126231/bei-pertanyakan-sumber-kas-valas-bukalapak-buka-setara-rp12-t>
 - **5** T3 10-29 21:57 kontan_keuangan: IHSG Anjlok 3,49%, Saham BBCA, BBRI, BMRI, dan BBNI Kompak Merah [BBCA,BBNI,BBRI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/ihsg-anjlok-349-saham-bbca-bbri-bmri-dan-bbni-kompak-merah>
 - **4** T3 10-31 06:58 kontan_keuangan: DBS dan BCA Bantah Rumor Merger [BBCA] (korporasi/emiten) <https://keuangan.kontan.co.id/news/dbs-dan-bca-bantah-rumor-merger>
+- **4** T3 10-31 06:36 bloomberg_technoz: Penjualan WIKA Tumbuh 11,9%, Laba Usaha Melonjak [WIKA] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126337/penjualan-wika-tumbuh-11-9-laba-usaha-melonjak>
