@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T18:30+07:00",
+ "generated_for": "2026-10-31T19:31+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 409,
- "kept": 165,
- "dropped_noise": 12,
+ "scanned": 397,
+ "kept": 157,
+ "dropped_noise": 11,
  "items": [
   {
    "published": "2026-10-30T09:20+07:00",
@@ -20,6 +20,25 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T19:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN",
+    "CUAN"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -124,22 +143,6 @@
    ]
   },
   {
-   "published": "2026-10-30T07:26+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Melemah, Minyak Melonjak, Defisit APBN Berisiko Tembus 3%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126165/rupiah-melemah-minyak-melonjak-defisit-apbn-berisiko-tembus-3",
-   "score": 8,
-   "categories": [
-    "global",
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-30T21:29+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -229,27 +232,6 @@
     "watchlist"
    ],
    "also_in": []
-  },
-  {
-   "published": "2026-10-30T06:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Emiten VICI Angkat Rahayu Saraswati Jadi Wakil Komisaris Utama",
-   "link": "https://www.cnbcindonesia.com/market/20261030052430-17-780775/emiten-vici-angkat-rahayu-saraswati-jadi-wakil-komisaris-utama",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "VICI"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   },
   {
    "published": "2026-10-31T18:30+07:00",
@@ -428,6 +410,21 @@
    "score": 6,
    "categories": [
     "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T17:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing",
+   "score": 6,
+   "categories": [
+    "pasar",
     "kurs"
    ],
    "tickers": [],

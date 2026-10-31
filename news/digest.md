@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-31T18:30+07:00 WIB | jendela 36 jam | dipindai 409, lolos 165, dibuang sebagai noise 12.
+Berita terbaru: 2026-10-31T19:31+07:00 WIB | jendela 36 jam | dipindai 397, lolos 157, dibuang sebagai noise 11.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,18 +10,17 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **9** T3 10-30 09:20 bloomberg_technoz: Supra Sekuritas Tampung Transaksi Rp60 T di Saham Kena Sanksi OJK (kebijakan/global/pasar) <https://www.bloombergtechnoz.com/detail-news/126254/supra-sekuritas-tampung-transaksi-rp60-t-di-saham-kena-sanksi-ojk>
+- **8** T3 10-31 19:00 bloomberg_technoz: OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN [BREN,CUAN] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan>
 - **8** T3 10-31 17:00 bloomberg_technoz: Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM [FILM] (global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film>
 - **8** T3 10-30 20:32 kontan_investasi: Pendapatan INDF Naik 12% Jadi Rp 101,49 Triliun, Laba Naik 11% per Kuartal III-2026 [INDF] (korporasi/emiten; watchlist, terkonfirmasi, juga di kontan_keuangan) <https://investasi.kontan.co.id/news/pendapatan-indf-naik-12-jadi-rp-10149-triliun-laba-naik-11-per-kuartal-iii-2026>
 - **8** T3 10-30 17:55 cnbc_indonesia_market: Video: MSCI Ancam Bursa Saham, MI Perkuat Manajemen Risiko Likuiditas (kebijakan/pasar/makro) <https://www.cnbcindonesia.com/market/20261030171606-19-781024/video-msci-ancam-bursa-saham-mi-perkuat-manajemen-risiko-likuiditas>
 - **8** T3 10-30 16:40 bloomberg_technoz: Timah (TINS) Cetak Laba Rp4,12 Triliun [TINS] (korporasi/komoditas/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun>
 - **8** T3 10-30 14:38 cnbc_indonesia_market: Harga Timah Melonjak, TINS Cetak Laba Rp4,12 Triliun [TINS] (korporasi/komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261030142540-17-780949/harga-timah-melonjak-tins-cetak-laba-rp412-triliun>
-- **8** T3 10-30 07:26 bloomberg_technoz: Rupiah Melemah, Minyak Melonjak, Defisit APBN Berisiko Tembus 3% (global/kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126165/rupiah-melemah-minyak-melonjak-defisit-apbn-berisiko-tembus-3>
 - **7** T3 10-30 21:29 kontan_investasi: Merdeka Battery (MBMA) Gelar Private Placement, Bakal Terbitkan 10,8 Miliar Saham [MBMA] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/merdeka-battery-mbma-gelar-private-placement-bakal-terbitkan-108-miliar-saham>
 - **7** T3 10-30 19:05 cnbc_indonesia_market: Pendapatan Melonjak 55,45%, Laba Bersih Emiten Bakrie (BNBR) Susut [BNBR] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261030183833-17-781045/pendapatan-melonjak-5545-laba-bersih-emiten-bakrie--bnbr--susut>
 - **7** T3 10-30 18:55 cnbc_indonesia_market: Laba Emiten Bus Listrik Bakrie (VKTR) Melonjak 47%, Ini Penopangnya [VKTR] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261030182032-17-781042/laba-emiten-bus-listrik-bakrie--vktr--melonjak-47-ini-penopangnya>
 - **7** T3 10-30 17:58 cnbc_indonesia_market: Laba Emiten Prajogo (BRPT) Anjlok 60,65% Ini Penyebabnya [BRPT] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261030174634-17-781034/laba-emiten-prajogo--brpt--anjlok-6065-ini-penyebabnya>
 - **7** T3 10-30 17:40 bloomberg_technoz: Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII [ASII] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii>
-- **7** T3 10-30 06:35 cnbc_indonesia_market: Emiten VICI Angkat Rahayu Saraswati Jadi Wakil Komisaris Utama [VICI] (pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261030052430-17-780775/emiten-vici-angkat-rahayu-saraswati-jadi-wakil-komisaris-utama>
 - **6** T3 10-31 18:30 bloomberg_technoz: BEI Akan Periksa Acak Laporan Free Float Emiten (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten>
 - **6** T3 10-31 15:57 bloomberg_technoz: OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa>
 - **6** T3 10-31 12:10 kontan_investasi: Tertekan Risiko Fiskal dan Harga Minyak, Yield SUN 10 Tahun Terancam Tembus 8% (global/kurs) <https://investasi.kontan.co.id/news/tertekan-risiko-fiskal-dan-harga-minyak-yield-sun-10-tahun-terancam-tembus-8>
@@ -34,3 +33,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-30 21:24 kontan_investasi: BEI Bakal Depak Saham HSC dari Indeks, Bagaimana Nasib Emiten? (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-bakal-depak-saham-hsc-dari-indeks-bagaimana-nasib-emiten>
 - **6** T3 10-30 19:00 cnbc_indonesia_market: Yield SBN Tembus Rekor Tertinggi 7,7%, Ini Respons Menteri Keuangan (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261030172152-17-781027/yield-sbn-tembus-rekor-tertinggi-77-ini-respons-menteri-keuangan>
 - **6** T3 10-30 18:50 cnbc_indonesia_news: Menkeu Beri Sinyal Hati-hati soal Obligasi DKI Jakarta (kebijakan/kurs) <https://www.cnbcindonesia.com/news/20261030165054-4-781014/menkeu-beri-sinyal-hati-hati-soal-obligasi-dki-jakarta>
+- **6** T3 10-30 17:40 bloomberg_technoz: IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing>
