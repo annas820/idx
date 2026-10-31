@@ -3,8 +3,8 @@
  "generated_for": "2026-10-31T21:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 368,
- "kept": 143,
+ "scanned": 493,
+ "kept": 192,
  "dropped_noise": 6,
  "items": [
   {
@@ -38,6 +38,43 @@
    "tickers": [
     "BREN",
     "CUAN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T19:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN",
+    "CUAN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T17:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film",
+   "score": 8,
+   "categories": [
+    "global",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "FILM"
    ],
    "flags": [],
    "also_in": []
@@ -97,6 +134,28 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-10-30T16:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Timah (TINS) Cetak Laba Rp4,12 Triliun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun",
+   "score": 8,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "TINS"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-10-30T16:40+07:00",
@@ -234,6 +293,40 @@
    "also_in": []
   },
   {
+   "published": "2026-10-30T17:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T21:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-31T21:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -254,6 +347,36 @@
    "tier": 3,
    "title": "BEI Akan Periksa Acak Laporan Free Float Emiten",
    "link": "https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T18:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Akan Periksa Acak Laporan Free Float Emiten",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T15:57+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa",
    "score": 6,
    "categories": [
     "kebijakan",
@@ -325,111 +448,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-10-31T06:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T05:06+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Wall Street Rontok Tertekan Aksi Jual Saham Teknologi",
-   "link": "https://investasi.kontan.co.id/news/wall-street-rontok-tertekan-aksi-jual-saham-teknologi",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T21:48+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Luncurkan Indeks IDX Commodity 20, Ini Saham Komoditas yang Jadi Pilihan Analis",
-   "link": "https://investasi.kontan.co.id/news/bei-luncurkan-indeks-idx-commodity-20-ini-saham-komoditas-yang-jadi-pilihan-analis",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T21:30+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Investor Asing Masih Percaya RI, Menkeu Suahasil Tunjukkan Buktinya!",
-   "link": "https://www.cnbcindonesia.com/news/20261030182800-4-781041/investor-asing-masih-percaya-ri-menkeu-suahasil-tunjukkan-buktinya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T21:24+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Bakal Depak Saham HSC dari Indeks, Bagaimana Nasib Emiten?",
-   "link": "https://investasi.kontan.co.id/news/bei-bakal-depak-saham-hsc-dari-indeks-bagaimana-nasib-emiten",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T19:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Yield SBN Tembus Rekor Tertinggi 7,7%, Ini Respons Menteri Keuangan",
-   "link": "https://www.cnbcindonesia.com/market/20261030172152-17-781027/yield-sbn-tembus-rekor-tertinggi-77-ini-respons-menteri-keuangan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T18:50+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Menkeu Beri Sinyal Hati-hati soal Obligasi DKI Jakarta",
-   "link": "https://www.cnbcindonesia.com/news/20261030165054-4-781014/menkeu-beri-sinyal-hati-hati-soal-obligasi-dki-jakarta",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -454,6 +472,25 @@
    "also_in": [
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-10-30T17:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
   },
   {
    "published": "2026-10-30T17:40+07:00",
