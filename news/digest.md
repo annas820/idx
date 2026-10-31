@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-31T17:00+07:00 WIB | jendela 36 jam | dipindai 410, lolos 165, dibuang sebagai noise 12.
+Berita terbaru: 2026-10-31T18:30+07:00 WIB | jendela 36 jam | dipindai 409, lolos 165, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -22,6 +22,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 10-30 17:58 cnbc_indonesia_market: Laba Emiten Prajogo (BRPT) Anjlok 60,65% Ini Penyebabnya [BRPT] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261030174634-17-781034/laba-emiten-prajogo--brpt--anjlok-6065-ini-penyebabnya>
 - **7** T3 10-30 17:40 bloomberg_technoz: Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII [ASII] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii>
 - **7** T3 10-30 06:35 cnbc_indonesia_market: Emiten VICI Angkat Rahayu Saraswati Jadi Wakil Komisaris Utama [VICI] (pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261030052430-17-780775/emiten-vici-angkat-rahayu-saraswati-jadi-wakil-komisaris-utama>
+- **6** T3 10-31 18:30 bloomberg_technoz: BEI Akan Periksa Acak Laporan Free Float Emiten (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten>
 - **6** T3 10-31 15:57 bloomberg_technoz: OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa>
 - **6** T3 10-31 12:10 kontan_investasi: Tertekan Risiko Fiskal dan Harga Minyak, Yield SUN 10 Tahun Terancam Tembus 8% (global/kurs) <https://investasi.kontan.co.id/news/tertekan-risiko-fiskal-dan-harga-minyak-yield-sun-10-tahun-terancam-tembus-8>
 - **6** T3 10-31 08:51 kontan_investasi: Harga Emas Antam, Sabtu (31/10), Turun Rp 20.000, Harga Buyback Anjlok Rp 65.000 [ANTM] (korporasi/komoditas/emiten) <https://investasi.kontan.co.id/news/harga-emas-antam-sabtu-3110-turun-rp-20000-harga-buyback-anjlok-rp-65000>
@@ -33,4 +34,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-30 21:24 kontan_investasi: BEI Bakal Depak Saham HSC dari Indeks, Bagaimana Nasib Emiten? (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-bakal-depak-saham-hsc-dari-indeks-bagaimana-nasib-emiten>
 - **6** T3 10-30 19:00 cnbc_indonesia_market: Yield SBN Tembus Rekor Tertinggi 7,7%, Ini Respons Menteri Keuangan (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261030172152-17-781027/yield-sbn-tembus-rekor-tertinggi-77-ini-respons-menteri-keuangan>
 - **6** T3 10-30 18:50 cnbc_indonesia_news: Menkeu Beri Sinyal Hati-hati soal Obligasi DKI Jakarta (kebijakan/kurs) <https://www.cnbcindonesia.com/news/20261030165054-4-781014/menkeu-beri-sinyal-hati-hati-soal-obligasi-dki-jakarta>
-- **6** T3 10-30 17:40 bloomberg_technoz: IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing>

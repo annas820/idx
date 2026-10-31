@@ -1,9 +1,9 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T17:00+07:00",
+ "generated_for": "2026-10-31T18:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 410,
+ "scanned": 409,
  "kept": 165,
  "dropped_noise": 12,
  "items": [
@@ -252,6 +252,21 @@
    ]
   },
   {
+   "published": "2026-10-31T18:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Akan Periksa Acak Laporan Free Float Emiten",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-31T15:57+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -413,21 +428,6 @@
    "score": 6,
    "categories": [
     "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T17:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing",
-   "score": 6,
-   "categories": [
-    "pasar",
     "kurs"
    ],
    "tickers": [],
