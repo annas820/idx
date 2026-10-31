@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T15:00+07:00",
+ "generated_for": "2026-10-31T16:35+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 404,
- "kept": 162,
+ "scanned": 409,
+ "kept": 164,
  "dropped_noise": 12,
  "items": [
   {
@@ -234,6 +234,21 @@
    ]
   },
   {
+   "published": "2026-10-31T15:57+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-31T12:10+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -421,21 +436,6 @@
    "also_in": [
     "kontan_investasi"
    ]
-  },
-  {
-   "published": "2026-10-30T16:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham Kia Anjlok Dipicu Lonjakan Biaya Imbas Perang Iran",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126314/saham-kia-anjlok-dipicu-lonjakan-biaya-imbas-perang-iran",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [

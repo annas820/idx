@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-10-31T15:00+07:00 WIB | jendela 36 jam | dipindai 404, lolos 162, dibuang sebagai noise 12.
+Berita terbaru: 2026-10-31T16:35+07:00 WIB | jendela 36 jam | dipindai 409, lolos 164, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -21,6 +21,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 10-30 17:58 cnbc_indonesia_market: Laba Emiten Prajogo (BRPT) Anjlok 60,65% Ini Penyebabnya [BRPT] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261030174634-17-781034/laba-emiten-prajogo--brpt--anjlok-6065-ini-penyebabnya>
 - **7** T3 10-30 17:40 bloomberg_technoz: Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII [ASII] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii>
 - **7** T3 10-30 06:35 cnbc_indonesia_market: Emiten VICI Angkat Rahayu Saraswati Jadi Wakil Komisaris Utama [VICI] (pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261030052430-17-780775/emiten-vici-angkat-rahayu-saraswati-jadi-wakil-komisaris-utama>
+- **6** T3 10-31 15:57 bloomberg_technoz: OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa>
 - **6** T3 10-31 12:10 kontan_investasi: Tertekan Risiko Fiskal dan Harga Minyak, Yield SUN 10 Tahun Terancam Tembus 8% (global/kurs) <https://investasi.kontan.co.id/news/tertekan-risiko-fiskal-dan-harga-minyak-yield-sun-10-tahun-terancam-tembus-8>
 - **6** T3 10-31 08:51 kontan_investasi: Harga Emas Antam, Sabtu (31/10), Turun Rp 20.000, Harga Buyback Anjlok Rp 65.000 [ANTM] (korporasi/komoditas/emiten) <https://investasi.kontan.co.id/news/harga-emas-antam-sabtu-3110-turun-rp-20000-harga-buyback-anjlok-rp-65000>
 - **6** T3 10-31 08:00 cnbc_indonesia_market: Video: MSCI Hantam Pasar SBN RI (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261030142300-19-780942/video-msci-hantam-pasar-sbn-ri>
@@ -33,4 +34,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-30 18:50 cnbc_indonesia_news: Menkeu Beri Sinyal Hati-hati soal Obligasi DKI Jakarta (kebijakan/kurs) <https://www.cnbcindonesia.com/news/20261030165054-4-781014/menkeu-beri-sinyal-hati-hati-soal-obligasi-dki-jakarta>
 - **6** T3 10-30 17:40 bloomberg_technoz: IHSG Mengekor Saham Bank, Sensitif Rupiah & Arus Modal Asing (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126322/ihsg-mengekor-saham-bank-sensitif-rupiah-arus-modal-asing>
 - **6** T3 10-30 17:38 kontan_keuangan: Laba OCBC NISP Naik 5% Jadi Rp 4,03 Triliun hingga Kuartal III-2026, Ini Penopangnya [NISP] (korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://keuangan.kontan.co.id/news/laba-ocbc-nisp-naik-5-jadi-rp-403-triliun-hingga-kuartal-iii-2026-ini-penopangnya>
-- **6** T3 10-30 16:30 bloomberg_technoz: Saham Kia Anjlok Dipicu Lonjakan Biaya Imbas Perang Iran (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126314/saham-kia-anjlok-dipicu-lonjakan-biaya-imbas-perang-iran>
