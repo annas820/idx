@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T06:30+07:00",
+ "generated_for": "2026-10-31T07:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 195,
- "kept": 76,
+ "scanned": 188,
+ "kept": 78,
  "dropped_noise": 7,
  "items": [
   {
@@ -396,17 +396,19 @@
    "also_in": []
   },
   {
-   "published": "2026-10-29T19:00+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-10-31T06:58+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Kata Bahlil Soal Potensi Pangkas Ekspor LNG Singapura Tahun Depan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126205/kata-bahlil-soal-potensi-pangkas-ekspor-lng-singapura-tahun-depan",
-   "score": 5,
+   "title": "DBS dan BCA Bantah Rumor Merger",
+   "link": "https://keuangan.kontan.co.id/news/dbs-dan-bca-bantah-rumor-merger",
+   "score": 4,
    "categories": [
-    "kebijakan",
-    "komoditas"
+    "korporasi",
+    "emiten"
    ],
-   "tickers": [],
+   "tickers": [
+    "BBCA"
+   ],
    "flags": [],
    "also_in": []
   }
