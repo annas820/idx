@@ -1,9 +1,9 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T09:30+07:00",
+ "generated_for": "2026-10-31T10:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 176,
+ "scanned": 177,
  "kept": 72,
  "dropped_noise": 6,
  "items": [
@@ -358,26 +358,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-29T21:57+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "IHSG Anjlok 3,49%, Saham BBCA, BBRI, BMRI, dan BBNI Kompak Merah",
-   "link": "https://keuangan.kontan.co.id/news/ihsg-anjlok-349-saham-bbca-bbri-bmri-dan-bbni-kompak-merah",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BBNI",
-    "BBRI",
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-31T06:58+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -407,6 +387,23 @@
    ],
    "tickers": [
     "WIKA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T17:38+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Laba OCBC NISP Naik 5% Jadi Rp 4,03 Triliun hingga Kuartal III-2026, Ini Penopangnya",
+   "link": "https://keuangan.kontan.co.id/news/laba-ocbc-nisp-naik-5-jadi-rp-403-triliun-hingga-kuartal-iii-2026-ini-penopangnya",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "NISP"
    ],
    "flags": [],
    "also_in": []
