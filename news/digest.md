@@ -1,13 +1,15 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-01T09:30+07:00 WIB | jendela 36 jam | dipindai 135, lolos 50, dibuang sebagai noise 1.
+Berita terbaru: 2026-11-01T10:30+07:00 WIB | jendela 36 jam | dipindai 122, lolos 46, dibuang sebagai noise 1.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
+- **9** T3 11-01 10:30 bloomberg_technoz: OJK Ungkap Investor Asing Alihkan Dana dari Saham ke SBN (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126375/ojk-ungkap-investor-asing-alihkan-dana-dari-saham-ke-sbn>
 - **8** T3 10-31 19:00 bloomberg_technoz: OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN [BREN,CUAN] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan>
 - **8** T3 10-31 19:00 bloomberg_technoz: OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN [BREN,CUAN] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan>
 - **8** T3 10-31 17:00 bloomberg_technoz: Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM [FILM] (global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film>
 - **8** T3 10-31 17:00 bloomberg_technoz: Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM [FILM] (global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film>
+- **6** T3 11-01 10:00 bloomberg_technoz: MSCI Tunggu Penegakan Hukum Saham Gorengan RI Sejak Januari (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126373/msci-tunggu-penegakan-hukum-saham-gorengan-ri-sejak-januari>
 - **6** T3 10-31 21:00 bloomberg_technoz: Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia>
 - **6** T3 10-31 21:00 bloomberg_technoz: Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia>
 - **6** T3 10-31 18:30 bloomberg_technoz: BEI Akan Periksa Acak Laporan Free Float Emiten (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten>
@@ -20,8 +22,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-31 06:30 bloomberg_technoz: OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah>
 - **6** T3 10-31 06:30 bloomberg_technoz: OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah>
 - **6** T3 10-31 05:06 kontan_investasi: Wall Street Rontok Tertekan Aksi Jual Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-rontok-tertekan-aksi-jual-saham-teknologi>
-- **6** T3 10-30 21:48 kontan_investasi: BEI Luncurkan Indeks IDX Commodity 20, Ini Saham Komoditas yang Jadi Pilihan Analis (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-luncurkan-indeks-idx-commodity-20-ini-saham-komoditas-yang-jadi-pilihan-analis>
-- **6** T3 10-30 21:30 cnbc_indonesia_news: Investor Asing Masih Percaya RI, Menkeu Suahasil Tunjukkan Buktinya! (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261030182800-4-781041/investor-asing-masih-percaya-ri-menkeu-suahasil-tunjukkan-buktinya>
 - **5** T3 10-31 16:30 bloomberg_technoz: Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang>
 - **5** T3 10-31 16:30 bloomberg_technoz: Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang>
 - **5** T3 10-31 12:27 kontan_industri: Penjualan Batubara ke Pembangkit Listrik Off Grid Tidak Lagi Masuk Hitungan DMO (kebijakan/komoditas) <https://industri.kontan.co.id/news/penjualan-batubara-ke-pembangkit-listrik-off-grid-tidak-lagi-masuk-hitungan-dmo>

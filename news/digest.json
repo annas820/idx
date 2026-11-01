@@ -1,13 +1,29 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T09:30+07:00",
+ "generated_for": "2026-11-01T10:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 135,
- "kept": 50,
+ "scanned": 122,
+ "kept": 46,
  "dropped_noise": 1,
  "items": [
   {
+   "published": "2026-11-01T10:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Ungkap Investor Asing Alihkan Dana dari Saham ke SBN",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126375/ojk-ungkap-investor-asing-alihkan-dana-dari-saham-ke-sbn",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-10-31T19:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -78,6 +94,21 @@
    "tickers": [
     "FILM"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T10:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "MSCI Tunggu Penegakan Hukum Saham Gorengan RI Sejak Januari",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126373/msci-tunggu-penegakan-hukum-saham-gorengan-ri-sejak-januari",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -258,36 +289,6 @@
    "score": 6,
    "categories": [
     "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T21:48+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Luncurkan Indeks IDX Commodity 20, Ini Saham Komoditas yang Jadi Pilihan Analis",
-   "link": "https://investasi.kontan.co.id/news/bei-luncurkan-indeks-idx-commodity-20-ini-saham-komoditas-yang-jadi-pilihan-analis",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T21:30+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Investor Asing Masih Percaya RI, Menkeu Suahasil Tunjukkan Buktinya!",
-   "link": "https://www.cnbcindonesia.com/news/20261030182800-4-781041/investor-asing-masih-percaya-ri-menkeu-suahasil-tunjukkan-buktinya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
     "pasar"
    ],
    "tickers": [],
