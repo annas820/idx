@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T10:30+07:00",
+ "generated_for": "2026-11-01T11:30+07:00",
  "window_hours": 36,
  "min_score": 3,
  "scanned": 122,
- "kept": 46,
+ "kept": 48,
  "dropped_noise": 1,
  "items": [
   {
@@ -94,6 +94,21 @@
    "tickers": [
     "FILM"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T11:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Uji Coba Penghapusan Saham HSC dari IHSG",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126377/bei-uji-coba-penghapusan-saham-hsc-dari-ihsg",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -389,23 +404,6 @@
    ],
    "tickers": [
     "VICI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T06:58+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "DBS dan BCA Bantah Rumor Merger",
-   "link": "https://keuangan.kontan.co.id/news/dbs-dan-bca-bantah-rumor-merger",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
    ],
    "flags": [],
    "also_in": []

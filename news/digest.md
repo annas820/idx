@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-01T10:30+07:00 WIB | jendela 36 jam | dipindai 122, lolos 46, dibuang sebagai noise 1.
+Berita terbaru: 2026-11-01T11:30+07:00 WIB | jendela 36 jam | dipindai 122, lolos 48, dibuang sebagai noise 1.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -9,6 +9,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 10-31 19:00 bloomberg_technoz: OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN [BREN,CUAN] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan>
 - **8** T3 10-31 17:00 bloomberg_technoz: Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM [FILM] (global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film>
 - **8** T3 10-31 17:00 bloomberg_technoz: Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM [FILM] (global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film>
+- **6** T3 11-01 11:30 bloomberg_technoz: BEI Uji Coba Penghapusan Saham HSC dari IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126377/bei-uji-coba-penghapusan-saham-hsc-dari-ihsg>
 - **6** T3 11-01 10:00 bloomberg_technoz: MSCI Tunggu Penegakan Hukum Saham Gorengan RI Sejak Januari (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126373/msci-tunggu-penegakan-hukum-saham-gorengan-ri-sejak-januari>
 - **6** T3 10-31 21:00 bloomberg_technoz: Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia>
 - **6** T3 10-31 21:00 bloomberg_technoz: Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-31 08:14 kontan_investasi: Daftar Saham PER Terendah & Tertinggi LQ45 (30 Oktober 2026), PGAS Melesat Tajam [PGAS] (pasar/emiten) <https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-30-oktober-2026-pgas-melesat-tajam>
 - **5** T3 10-31 06:00 kontan_investasi: IHSG Diprediksi Masih Tertekan Pekan Depan, Simak Rekomendasi EXCL, MEDC, dan TAPG [EXCL,MEDC,TAPG] (pasar/emiten) <https://investasi.kontan.co.id/news/ihsg-diprediksi-masih-tertekan-pekan-depan-simak-rekomendasi-excl-medc-dan-tapg>
 - **4** T3 10-31 07:30 kontan_investasi: Victoria Care Indonesia (VICI) Siap Perluas Pasar Ekspor [VICI] (komoditas/emiten) <https://investasi.kontan.co.id/news/victoria-care-indonesia-vici-siap-perluas-pasar-ekspor>
-- **4** T3 10-31 06:58 kontan_keuangan: DBS dan BCA Bantah Rumor Merger [BBCA] (korporasi/emiten) <https://keuangan.kontan.co.id/news/dbs-dan-bca-bantah-rumor-merger>
