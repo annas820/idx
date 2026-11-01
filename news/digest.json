@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T20:30+07:00",
+ "generated_for": "2026-11-01T21:03+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 121,
- "kept": 41,
+ "scanned": 113,
+ "kept": 40,
  "dropped_noise": 1,
  "items": [
   {
@@ -233,24 +233,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T08:51+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Harga Emas Antam, Sabtu (31/10), Turun Rp 20.000, Harga Buyback Anjlok Rp 65.000",
-   "link": "https://investasi.kontan.co.id/news/harga-emas-antam-sabtu-3110-turun-rp-20000-harga-buyback-anjlok-rp-65000",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-01T17:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -392,6 +374,20 @@
    "score": 3,
    "categories": [
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T13:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Limpahkan Kasus BPR DCN Malang, 2 Direksi Bank Rugikan Rp54 M",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126381/ojk-limpahkan-kasus-bpr-dcn-malang-2-direksi-bank-rugikan-rp54-m",
+   "score": 3,
+   "categories": [
+    "kebijakan"
    ],
    "tickers": [],
    "flags": [],

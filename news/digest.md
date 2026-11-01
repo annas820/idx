@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-01T20:30+07:00 WIB | jendela 36 jam | dipindai 121, lolos 41, dibuang sebagai noise 1.
+Berita terbaru: 2026-11-01T21:03+07:00 WIB | jendela 36 jam | dipindai 113, lolos 40, dibuang sebagai noise 1.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -18,7 +18,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-31 15:57 bloomberg_technoz: OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa>
 - **6** T3 10-31 15:57 bloomberg_technoz: OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa>
 - **6** T3 10-31 12:10 kontan_investasi: Tertekan Risiko Fiskal dan Harga Minyak, Yield SUN 10 Tahun Terancam Tembus 8% (global/kurs) <https://investasi.kontan.co.id/news/tertekan-risiko-fiskal-dan-harga-minyak-yield-sun-10-tahun-terancam-tembus-8>
-- **6** T3 10-31 08:51 kontan_investasi: Harga Emas Antam, Sabtu (31/10), Turun Rp 20.000, Harga Buyback Anjlok Rp 65.000 [ANTM] (korporasi/komoditas/emiten) <https://investasi.kontan.co.id/news/harga-emas-antam-sabtu-3110-turun-rp-20000-harga-buyback-anjlok-rp-65000>
 - **5** T3 11-01 17:00 bloomberg_technoz: Ekonomi Pekan Ini: Emas Rapuh, Rupiah-Neraca Dagang Jadi Sorotan (kurs/komoditas) <https://www.bloombergtechnoz.com/detail-news/126391/ekonomi-pekan-ini-emas-rapuh-rupiah-neraca-dagang-jadi-sorotan>
 - **5** T3 10-31 16:30 bloomberg_technoz: Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang>
 - **5** T3 10-31 16:30 bloomberg_technoz: Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang>
@@ -29,3 +28,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-01 18:06 kontan_keuangan: Volatilitas Pasar dan BI Rate Jadi Pertimbangan Ciputra Life Kelola Investasi (kebijakan) <https://keuangan.kontan.co.id/news/volatilitas-pasar-dan-bi-rate-jadi-pertimbangan-ciputra-life-kelola-investasi>
 - **3** T3 11-01 15:00 kontan_keuangan: Simpanan Valas Perbankan Berpotensi Meningkat di Tengah Pelemahan Rupiah (kurs) <https://keuangan.kontan.co.id/news/simpanan-valas-perbankan-berpotensi-meningkat-di-tengah-pelemahan-rupiah>
 - **3** T3 11-01 14:00 bloomberg_technoz: Pemilu AS Jadi Faktor Penentu bagi Investor Saham Asia (pasar) <https://www.bloombergtechnoz.com/detail-news/126383/pemilu-as-jadi-faktor-penentu-bagi-investor-saham-asia>
+- **3** T3 11-01 13:00 bloomberg_technoz: OJK Limpahkan Kasus BPR DCN Malang, 2 Direksi Bank Rugikan Rp54 M (kebijakan) <https://www.bloombergtechnoz.com/detail-news/126381/ojk-limpahkan-kasus-bpr-dcn-malang-2-direksi-bank-rugikan-rp54-m>
