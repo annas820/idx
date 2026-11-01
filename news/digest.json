@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T21:03+07:00",
+ "generated_for": "2026-11-02T05:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 113,
- "kept": 40,
- "dropped_noise": 1,
+ "scanned": 61,
+ "kept": 28,
+ "dropped_noise": 0,
  "items": [
   {
    "published": "2026-11-01T10:30+07:00",
@@ -57,42 +57,6 @@
    "tickers": [
     "BREN",
     "CUAN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T17:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film",
-   "score": 8,
-   "categories": [
-    "global",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "FILM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T17:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film",
-   "score": 8,
-   "categories": [
-    "global",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "FILM"
    ],
    "flags": [],
    "also_in": []
@@ -188,51 +152,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T15:57+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T15:57+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Ungkap Nama Pelaku Manipulasi Harga Saham di Bursa",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126359/ojk-ungkap-nama-pelaku-manipulasi-harga-saham-di-bursa",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T12:10+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Tertekan Risiko Fiskal dan Harga Minyak, Yield SUN 10 Tahun Terancam Tembus 8%",
-   "link": "https://investasi.kontan.co.id/news/tertekan-risiko-fiskal-dan-harga-minyak-yield-sun-10-tahun-terancam-tembus-8",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-01T17:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -241,51 +160,6 @@
    "score": 5,
    "categories": [
     "kurs",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T16:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T16:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T12:27+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Penjualan Batubara ke Pembangkit Listrik Off Grid Tidak Lagi Masuk Hitungan DMO",
-   "link": "https://industri.kontan.co.id/news/penjualan-batubara-ke-pembangkit-listrik-off-grid-tidak-lagi-masuk-hitungan-dmo",
-   "score": 5,
-   "categories": [
-    "kebijakan",
     "komoditas"
    ],
    "tickers": [],
@@ -306,6 +180,20 @@
    "tickers": [
     "BFIN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T05:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bursa Asia Bersiap Melemah usai Saham Teknologi Anjlok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126399/bursa-asia-bersiap-melemah-usai-saham-teknologi-anjlok",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -385,6 +273,104 @@
    "tier": 3,
    "title": "OJK Limpahkan Kasus BPR DCN Malang, 2 Direksi Bank Rugikan Rp54 M",
    "link": "https://www.bloombergtechnoz.com/detail-news/126381/ojk-limpahkan-kasus-bpr-dcn-malang-2-direksi-bank-rugikan-rp54-m",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T12:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Iran Bersiap Hadapi Serangan AS-Israel, Jalur Diplomasi Berlanjut",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126378/iran-bersiap-hadapi-serangan-as-israel-jalur-diplomasi-berlanjut",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T11:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Bakal Umumkan Pelaku Pidana Kejahatan Pasar Modal Pekan Depan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126379/ojk-bakal-umumkan-pelaku-pidana-kejahatan-pasar-modal-pekan-depan",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T20:05+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Serahkan 2 Direksi BPR DCN ke Kejaksaan Terkait Dugaan Kredit Fiktif Rp 15,6 M",
+   "link": "https://keuangan.kontan.co.id/news/ojk-serahkan-2-direksi-bpr-dcn-ke-kejaksaan-terkait-dugaan-kredit-fiktif-rp-156-m",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T20:05+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Serahkan 2 Direksi BPR DCN ke Kejaksaan Terkait Dugaan Kredit Fiktif Rp 15,6 M",
+   "link": "https://keuangan.kontan.co.id/news/ojk-serahkan-2-direksi-bpr-dcn-ke-kejaksaan-terkait-dugaan-kredit-fiktif-rp-156-m",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T20:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham AI Lesu, Target Pendanaan OpenAI Dipangkas Rp181 Triliun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126366/saham-ai-lesu-target-pendanaan-openai-dipangkas-rp181-triliun",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T20:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham AI Lesu, Target Pendanaan OpenAI Dipangkas Rp181 Triliun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126366/saham-ai-lesu-target-pendanaan-openai-dipangkas-rp181-triliun",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T19:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bos BEI Ungkap Dua Catatan Negatif MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126364/bos-bei-ungkap-dua-catatan-negatif-msci",
    "score": 3,
    "categories": [
     "kebijakan"
