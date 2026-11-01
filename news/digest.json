@@ -1,9 +1,9 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T17:30+07:00",
+ "generated_for": "2026-11-01T18:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 140,
+ "scanned": 142,
  "kept": 52,
  "dropped_noise": 1,
  "items": [
@@ -373,25 +373,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T06:00+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Diprediksi Masih Tertekan Pekan Depan, Simak Rekomendasi EXCL, MEDC, dan TAPG",
-   "link": "https://investasi.kontan.co.id/news/ihsg-diprediksi-masih-tertekan-pekan-depan-simak-rekomendasi-excl-medc-dan-tapg",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "EXCL",
-    "MEDC",
-    "TAPG"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-01T14:31+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -404,6 +385,23 @@
    ],
    "tickers": [
     "BFIN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T07:30+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Victoria Care Indonesia (VICI) Siap Perluas Pasar Ekspor",
+   "link": "https://investasi.kontan.co.id/news/victoria-care-indonesia-vici-siap-perluas-pasar-ekspor",
+   "score": 4,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "VICI"
    ],
    "flags": [],
    "also_in": []
