@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T16:34+07:00",
+ "generated_for": "2026-11-01T17:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 139,
- "kept": 53,
+ "scanned": 140,
+ "kept": 52,
  "dropped_noise": 1,
  "items": [
   {
@@ -296,15 +296,15 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T05:06+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-01T17:00+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Wall Street Rontok Tertekan Aksi Jual Saham Teknologi",
-   "link": "https://investasi.kontan.co.id/news/wall-street-rontok-tertekan-aksi-jual-saham-teknologi",
-   "score": 6,
+   "title": "Ekonomi Pekan Ini: Emas Rapuh, Rupiah-Neraca Dagang Jadi Sorotan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126391/ekonomi-pekan-ini-emas-rapuh-rupiah-neraca-dagang-jadi-sorotan",
+   "score": 5,
    "categories": [
-    "global",
-    "pasar"
+    "kurs",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],

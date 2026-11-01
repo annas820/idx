@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-01T16:34+07:00 WIB | jendela 36 jam | dipindai 139, lolos 53, dibuang sebagai noise 1.
+Berita terbaru: 2026-11-01T17:30+07:00 WIB | jendela 36 jam | dipindai 140, lolos 52, dibuang sebagai noise 1.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -22,7 +22,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-31 08:00 cnbc_indonesia_market: Video: MSCI Hantam Pasar SBN RI (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261030142300-19-780942/video-msci-hantam-pasar-sbn-ri>
 - **6** T3 10-31 06:30 bloomberg_technoz: OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah>
 - **6** T3 10-31 06:30 bloomberg_technoz: OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah>
-- **6** T3 10-31 05:06 kontan_investasi: Wall Street Rontok Tertekan Aksi Jual Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-rontok-tertekan-aksi-jual-saham-teknologi>
+- **5** T3 11-01 17:00 bloomberg_technoz: Ekonomi Pekan Ini: Emas Rapuh, Rupiah-Neraca Dagang Jadi Sorotan (kurs/komoditas) <https://www.bloombergtechnoz.com/detail-news/126391/ekonomi-pekan-ini-emas-rapuh-rupiah-neraca-dagang-jadi-sorotan>
 - **5** T3 10-31 16:30 bloomberg_technoz: Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang>
 - **5** T3 10-31 16:30 bloomberg_technoz: Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang>
 - **5** T3 10-31 12:27 kontan_industri: Penjualan Batubara ke Pembangkit Listrik Off Grid Tidak Lagi Masuk Hitungan DMO (kebijakan/komoditas) <https://industri.kontan.co.id/news/penjualan-batubara-ke-pembangkit-listrik-off-grid-tidak-lagi-masuk-hitungan-dmo>
