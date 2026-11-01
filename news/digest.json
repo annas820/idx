@@ -1,29 +1,13 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-10-31T21:00+07:00",
+ "generated_for": "2026-11-01T08:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 493,
- "kept": 192,
- "dropped_noise": 6,
+ "scanned": 156,
+ "kept": 60,
+ "dropped_noise": 1,
  "items": [
   {
-   "published": "2026-10-30T09:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Supra Sekuritas Tampung Transaksi Rp60 T di Saham Kena Sanksi OJK",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126254/supra-sekuritas-tampung-transaksi-rp60-t-di-saham-kena-sanksi-ojk",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-31T19:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -96,110 +80,6 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-10-30T20:32+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Pendapatan INDF Naik 12% Jadi Rp 101,49 Triliun, Laba Naik 11% per Kuartal III-2026",
-   "link": "https://investasi.kontan.co.id/news/pendapatan-indf-naik-12-jadi-rp-10149-triliun-laba-naik-11-per-kuartal-iii-2026",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INDF"
-   ],
-   "flags": [
-    "watchlist",
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
-  },
-  {
-   "published": "2026-10-30T17:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: MSCI Ancam Bursa Saham, MI Perkuat Manajemen Risiko Likuiditas",
-   "link": "https://www.cnbcindonesia.com/market/20261030171606-19-781024/video-msci-ancam-bursa-saham-mi-perkuat-manajemen-risiko-likuiditas",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T16:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Timah (TINS) Cetak Laba Rp4,12 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "TINS"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-10-30T16:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Timah (TINS) Cetak Laba Rp4,12 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126316/timah-tins-cetak-laba-rp4-12-triliun",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "TINS"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-10-30T14:38+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Harga Timah Melonjak, TINS Cetak Laba Rp4,12 Triliun",
-   "link": "https://www.cnbcindonesia.com/market/20261030142540-17-780949/harga-timah-melonjak-tins-cetak-laba-rp412-triliun",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "TINS"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   },
   {
    "published": "2026-10-30T21:29+07:00",
@@ -217,98 +97,6 @@
     "MBMA"
    ],
    "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T19:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Pendapatan Melonjak 55,45%, Laba Bersih Emiten Bakrie (BNBR) Susut",
-   "link": "https://www.cnbcindonesia.com/market/20261030183833-17-781045/pendapatan-melonjak-5545-laba-bersih-emiten-bakrie--bnbr--susut",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BNBR"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T18:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Laba Emiten Bus Listrik Bakrie (VKTR) Melonjak 47%, Ini Penopangnya",
-   "link": "https://www.cnbcindonesia.com/market/20261030182032-17-781042/laba-emiten-bus-listrik-bakrie--vktr--melonjak-47-ini-penopangnya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "VKTR"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T17:58+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Laba Emiten Prajogo (BRPT) Anjlok 60,65% Ini Penyebabnya",
-   "link": "https://www.cnbcindonesia.com/market/20261030174634-17-781034/laba-emiten-prajogo--brpt--anjlok-6065-ini-penyebabnya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BRPT"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T17:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T17:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
    "also_in": []
   },
   {
@@ -448,87 +236,178 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-10-31T06:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T06:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T05:06+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Wall Street Rontok Tertekan Aksi Jual Saham Teknologi",
+   "link": "https://investasi.kontan.co.id/news/wall-street-rontok-tertekan-aksi-jual-saham-teknologi",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T21:48+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BEI Luncurkan Indeks IDX Commodity 20, Ini Saham Komoditas yang Jadi Pilihan Analis",
+   "link": "https://investasi.kontan.co.id/news/bei-luncurkan-indeks-idx-commodity-20-ini-saham-komoditas-yang-jadi-pilihan-analis",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T21:30+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Investor Asing Masih Percaya RI, Menkeu Suahasil Tunjukkan Buktinya!",
+   "link": "https://www.cnbcindonesia.com/news/20261030182800-4-781041/investor-asing-masih-percaya-ri-menkeu-suahasil-tunjukkan-buktinya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-30T21:24+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BEI Bakal Depak Saham HSC dari Indeks, Bagaimana Nasib Emiten?",
+   "link": "https://investasi.kontan.co.id/news/bei-bakal-depak-saham-hsc-dari-indeks-bagaimana-nasib-emiten",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T16:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T16:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T12:27+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Penjualan Batubara ke Pembangkit Listrik Off Grid Tidak Lagi Masuk Hitungan DMO",
+   "link": "https://industri.kontan.co.id/news/penjualan-batubara-ke-pembangkit-listrik-off-grid-tidak-lagi-masuk-hitungan-dmo",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T08:14+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Daftar Saham PER Terendah & Tertinggi LQ45 (30 Oktober 2026), PGAS Melesat Tajam",
+   "link": "https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-30-oktober-2026-pgas-melesat-tajam",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "PGAS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T06:00+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Diprediksi Masih Tertekan Pekan Depan, Simak Rekomendasi EXCL, MEDC, dan TAPG",
+   "link": "https://investasi.kontan.co.id/news/ihsg-diprediksi-masih-tertekan-pekan-depan-simak-rekomendasi-excl-medc-dan-tapg",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "EXCL",
+    "MEDC",
+    "TAPG"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
- "watchlist_hits": [
-  {
-   "published": "2026-10-30T20:32+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Pendapatan INDF Naik 12% Jadi Rp 101,49 Triliun, Laba Naik 11% per Kuartal III-2026",
-   "link": "https://investasi.kontan.co.id/news/pendapatan-indf-naik-12-jadi-rp-10149-triliun-laba-naik-11-per-kuartal-iii-2026",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INDF"
-   ],
-   "flags": [
-    "watchlist",
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
-  },
-  {
-   "published": "2026-10-30T17:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T17:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pelemahan IHSG Menyusut Tersisa 0,8%, Berkat Saham ASII",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126321/pelemahan-ihsg-menyusut-tersisa-0-8-berkat-saham-asii",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T20:34+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Indofood CBP (ICBP) Raup Pendapatan Rp 64,45 Triliun per September 2026, Tumbuh 15%",
-   "link": "https://investasi.kontan.co.id/news/indofood-cbp-icbp-raup-pendapatan-rp-6445-triliun-per-september-2026-tumbuh-15",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ICBP",
-    "INDF"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  }
- ]
+ "watchlist_hits": []
 }
