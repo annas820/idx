@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-01T13:44+07:00 WIB | jendela 36 jam | dipindai 127, lolos 50, dibuang sebagai noise 1.
+Berita terbaru: 2026-11-01T14:36+07:00 WIB | jendela 36 jam | dipindai 131, lolos 52, dibuang sebagai noise 1.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -28,4 +28,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 10-31 12:27 kontan_industri: Penjualan Batubara ke Pembangkit Listrik Off Grid Tidak Lagi Masuk Hitungan DMO (kebijakan/komoditas) <https://industri.kontan.co.id/news/penjualan-batubara-ke-pembangkit-listrik-off-grid-tidak-lagi-masuk-hitungan-dmo>
 - **5** T3 10-31 08:14 kontan_investasi: Daftar Saham PER Terendah & Tertinggi LQ45 (30 Oktober 2026), PGAS Melesat Tajam [PGAS] (pasar/emiten) <https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-30-oktober-2026-pgas-melesat-tajam>
 - **5** T3 10-31 06:00 kontan_investasi: IHSG Diprediksi Masih Tertekan Pekan Depan, Simak Rekomendasi EXCL, MEDC, dan TAPG [EXCL,MEDC,TAPG] (pasar/emiten) <https://investasi.kontan.co.id/news/ihsg-diprediksi-masih-tertekan-pekan-depan-simak-rekomendasi-excl-medc-dan-tapg>
-- **4** T3 10-31 07:30 kontan_investasi: Victoria Care Indonesia (VICI) Siap Perluas Pasar Ekspor [VICI] (komoditas/emiten) <https://investasi.kontan.co.id/news/victoria-care-indonesia-vici-siap-perluas-pasar-ekspor>
+- **4** T3 11-01 14:31 kontan_keuangan: Laba BFI Finance (BFIN) Tumbuh 11,96% Jadi Rp 1,31 Triliun per Kuartal III-2026 [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bfi-finance-bfin-tumbuh-1196-jadi-rp-131-triliun-per-kuartal-iii-2026>

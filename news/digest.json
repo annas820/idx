@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T13:44+07:00",
+ "generated_for": "2026-11-01T14:36+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 127,
- "kept": 50,
+ "scanned": 131,
+ "kept": 52,
  "dropped_noise": 1,
  "items": [
   {
@@ -392,18 +392,18 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T07:30+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-01T14:31+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Victoria Care Indonesia (VICI) Siap Perluas Pasar Ekspor",
-   "link": "https://investasi.kontan.co.id/news/victoria-care-indonesia-vici-siap-perluas-pasar-ekspor",
+   "title": "Laba BFI Finance (BFIN) Tumbuh 11,96% Jadi Rp 1,31 Triliun per Kuartal III-2026",
+   "link": "https://keuangan.kontan.co.id/news/laba-bfi-finance-bfin-tumbuh-1196-jadi-rp-131-triliun-per-kuartal-iii-2026",
    "score": 4,
    "categories": [
-    "komoditas",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "VICI"
+    "BFIN"
    ],
    "flags": [],
    "also_in": []
