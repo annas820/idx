@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T19:30+07:00",
+ "generated_for": "2026-11-01T20:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 132,
- "kept": 44,
+ "scanned": 121,
+ "kept": 41,
  "dropped_noise": 1,
  "items": [
   {
@@ -251,21 +251,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T08:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: MSCI Hantam Pasar SBN RI",
-   "link": "https://www.cnbcindonesia.com/market/20261030142300-19-780942/video-msci-hantam-pasar-sbn-ri",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-01T17:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -326,23 +311,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T08:14+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Daftar Saham PER Terendah & Tertinggi LQ45 (30 Oktober 2026), PGAS Melesat Tajam",
-   "link": "https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-30-oktober-2026-pgas-melesat-tajam",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "PGAS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-01T14:31+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -360,19 +328,30 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T07:30+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-01T20:30+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Victoria Care Indonesia (VICI) Siap Perluas Pasar Ekspor",
-   "link": "https://investasi.kontan.co.id/news/victoria-care-indonesia-vici-siap-perluas-pasar-ekspor",
-   "score": 4,
+   "title": "OPEC+ Tetap Jalankan Kuota Produksi Minyak Stabil untuk Desember",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126397/opec-tetap-jalankan-kuota-produksi-minyak-stabil-untuk-desember",
+   "score": 3,
    "categories": [
-    "komoditas",
-    "emiten"
+    "global"
    ],
-   "tickers": [
-    "VICI"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T20:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ekonomi Arab Saudi Melambat Bahkan Sebelum Eskalasi dengan Houthi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126395/ekonomi-arab-saudi-melambat-bahkan-sebelum-eskalasi-dengan-houthi",
+   "score": 3,
+   "categories": [
+    "global"
    ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -399,6 +378,20 @@
    "score": 3,
    "categories": [
     "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T14:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pemilu AS Jadi Faktor Penentu bagi Investor Saham Asia",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126383/pemilu-as-jadi-faktor-penentu-bagi-investor-saham-asia",
+   "score": 3,
+   "categories": [
+    "pasar"
    ],
    "tickers": [],
    "flags": [],
