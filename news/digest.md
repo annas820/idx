@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-01T08:45+07:00 WIB | jendela 36 jam | dipindai 156, lolos 60, dibuang sebagai noise 1.
+Berita terbaru: 2026-11-01T09:30+07:00 WIB | jendela 36 jam | dipindai 135, lolos 50, dibuang sebagai noise 1.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -8,7 +8,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 10-31 19:00 bloomberg_technoz: OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN [BREN,CUAN] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan>
 - **8** T3 10-31 17:00 bloomberg_technoz: Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM [FILM] (global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film>
 - **8** T3 10-31 17:00 bloomberg_technoz: Bos Samuel Group Kena Sanksi Rp5 Miliar, Manipulasi Saham FILM [FILM] (global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126360/bos-samuel-group-kena-sanksi-rp5-miliar-manipulasi-saham-film>
-- **7** T3 10-30 21:29 kontan_investasi: Merdeka Battery (MBMA) Gelar Private Placement, Bakal Terbitkan 10,8 Miliar Saham [MBMA] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/merdeka-battery-mbma-gelar-private-placement-bakal-terbitkan-108-miliar-saham>
 - **6** T3 10-31 21:00 bloomberg_technoz: Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia>
 - **6** T3 10-31 21:00 bloomberg_technoz: Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia>
 - **6** T3 10-31 18:30 bloomberg_technoz: BEI Akan Periksa Acak Laporan Free Float Emiten (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten>
@@ -23,9 +22,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 10-31 05:06 kontan_investasi: Wall Street Rontok Tertekan Aksi Jual Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-rontok-tertekan-aksi-jual-saham-teknologi>
 - **6** T3 10-30 21:48 kontan_investasi: BEI Luncurkan Indeks IDX Commodity 20, Ini Saham Komoditas yang Jadi Pilihan Analis (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-luncurkan-indeks-idx-commodity-20-ini-saham-komoditas-yang-jadi-pilihan-analis>
 - **6** T3 10-30 21:30 cnbc_indonesia_news: Investor Asing Masih Percaya RI, Menkeu Suahasil Tunjukkan Buktinya! (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261030182800-4-781041/investor-asing-masih-percaya-ri-menkeu-suahasil-tunjukkan-buktinya>
-- **6** T3 10-30 21:24 kontan_investasi: BEI Bakal Depak Saham HSC dari Indeks, Bagaimana Nasib Emiten? (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-bakal-depak-saham-hsc-dari-indeks-bagaimana-nasib-emiten>
 - **5** T3 10-31 16:30 bloomberg_technoz: Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang>
 - **5** T3 10-31 16:30 bloomberg_technoz: Inflasi Dibayangi Pelemahan Rupiah & Susut Neraca Dagang (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126358/inflasi-dibayangi-pelemahan-rupiah-susut-neraca-dagang>
 - **5** T3 10-31 12:27 kontan_industri: Penjualan Batubara ke Pembangkit Listrik Off Grid Tidak Lagi Masuk Hitungan DMO (kebijakan/komoditas) <https://industri.kontan.co.id/news/penjualan-batubara-ke-pembangkit-listrik-off-grid-tidak-lagi-masuk-hitungan-dmo>
 - **5** T3 10-31 08:14 kontan_investasi: Daftar Saham PER Terendah & Tertinggi LQ45 (30 Oktober 2026), PGAS Melesat Tajam [PGAS] (pasar/emiten) <https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-30-oktober-2026-pgas-melesat-tajam>
 - **5** T3 10-31 06:00 kontan_investasi: IHSG Diprediksi Masih Tertekan Pekan Depan, Simak Rekomendasi EXCL, MEDC, dan TAPG [EXCL,MEDC,TAPG] (pasar/emiten) <https://investasi.kontan.co.id/news/ihsg-diprediksi-masih-tertekan-pekan-depan-simak-rekomendasi-excl-medc-dan-tapg>
+- **4** T3 10-31 07:30 kontan_investasi: Victoria Care Indonesia (VICI) Siap Perluas Pasar Ekspor [VICI] (komoditas/emiten) <https://investasi.kontan.co.id/news/victoria-care-indonesia-vici-siap-perluas-pasar-ekspor>
+- **4** T3 10-31 06:58 kontan_keuangan: DBS dan BCA Bantah Rumor Merger [BBCA] (korporasi/emiten) <https://keuangan.kontan.co.id/news/dbs-dan-bca-bantah-rumor-merger>

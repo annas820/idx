@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T08:45+07:00",
+ "generated_for": "2026-11-01T09:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 156,
- "kept": 60,
+ "scanned": 135,
+ "kept": 50,
  "dropped_noise": 1,
  "items": [
   {
@@ -77,24 +77,6 @@
    ],
    "tickers": [
     "FILM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-30T21:29+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Merdeka Battery (MBMA) Gelar Private Placement, Bakal Terbitkan 10,8 Miliar Saham",
-   "link": "https://investasi.kontan.co.id/news/merdeka-battery-mbma-gelar-private-placement-bakal-terbitkan-108-miliar-saham",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "MBMA"
    ],
    "flags": [],
    "also_in": []
@@ -313,21 +295,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-30T21:24+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Bakal Depak Saham HSC dari Indeks, Bagaimana Nasib Emiten?",
-   "link": "https://investasi.kontan.co.id/news/bei-bakal-depak-saham-hsc-dari-indeks-bagaimana-nasib-emiten",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-10-31T16:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -404,6 +371,40 @@
     "EXCL",
     "MEDC",
     "TAPG"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T07:30+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Victoria Care Indonesia (VICI) Siap Perluas Pasar Ekspor",
+   "link": "https://investasi.kontan.co.id/news/victoria-care-indonesia-vici-siap-perluas-pasar-ekspor",
+   "score": 4,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "VICI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-10-31T06:58+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "DBS dan BCA Bantah Rumor Merger",
+   "link": "https://keuangan.kontan.co.id/news/dbs-dan-bca-bantah-rumor-merger",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
    ],
    "flags": [],
    "also_in": []
