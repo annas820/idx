@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-01T18:30+07:00",
+ "generated_for": "2026-11-01T19:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 142,
- "kept": 52,
+ "scanned": 132,
+ "kept": 44,
  "dropped_noise": 1,
  "items": [
   {
@@ -266,36 +266,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T06:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T06:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Beri Sanksi Terberat dalam Sejarah, Tapi Masih Ada Celah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126336/ojk-beri-sanksi-terberat-dalam-sejarah-tapi-masih-ada-celah",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-01T17:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -403,6 +373,34 @@
    "tickers": [
     "VICI"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T18:06+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Volatilitas Pasar dan BI Rate Jadi Pertimbangan Ciputra Life Kelola Investasi",
+   "link": "https://keuangan.kontan.co.id/news/volatilitas-pasar-dan-bi-rate-jadi-pertimbangan-ciputra-life-kelola-investasi",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T15:00+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Simpanan Valas Perbankan Berpotensi Meningkat di Tengah Pelemahan Rupiah",
+   "link": "https://keuangan.kontan.co.id/news/simpanan-valas-perbankan-berpotensi-meningkat-di-tengah-pelemahan-rupiah",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
