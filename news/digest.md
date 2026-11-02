@@ -1,12 +1,14 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-02T14:15+07:00 WIB | jendela 36 jam | dipindai 292, lolos 102, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-02T15:57+07:00 WIB | jendela 36 jam | dipindai 347, lolos 124, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
+- **9** T3 11-02 15:15 cnbc_indonesia_market: Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG? (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg>
 - **9** T3 11-01 10:30 bloomberg_technoz: OJK Ungkap Investor Asing Alihkan Dana dari Saham ke SBN (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126375/ojk-ungkap-investor-asing-alihkan-dana-dari-saham-ke-sbn>
 - **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
 - **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
+- **6** T3 11-02 14:47 cnbc_indonesia_market: Video:IHSG Menguat Tapi Rupiah Nyaris Rp 18.200/USD, Ada Sentimen Apa? (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142233-19-781548/videoihsg-menguat-tapi-rupiah-nyaris-rp-18200-usd-ada-sentimen-apa>
 - **6** T3 11-02 13:40 cnbc_indonesia_news: India Tuntut Ketua KPU Mundur - BEI Keluarkan Saham HSC Dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261102114938-8-781479/india-tuntut-ketua-kpu-mundur--bei-keluarkan-saham-hsc-dari-ihsg>
 - **6** T3 11-02 12:50 cnbc_indonesia_market: Saham HSC Dikeluarkan, BEI Pastikan Tidak Ada Gejolak Signifikan (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102092603-19-781407/saham-hsc-dikeluarkan-bei-pastikan-tidak-ada-gejolak-signifikan>
 - **6** T3 11-02 12:40 cnbc_indonesia_market: Video: Investor Asing Sesalkan Wacana MSCI Turunkan Status RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102085544-19-781387/video-investor-asing-sesalkan-wacana-msci-turunkan-status-ri>
@@ -16,6 +18,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-01 18:40 cnbc_indonesia_market: Investor Asing Curhat ke Bos BI, Sesalkan Keputusan MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261101173233-17-781278/investor-asing-curhat-ke-bos-bi-sesalkan-keputusan-msci>
 - **6** T3 11-01 11:30 bloomberg_technoz: BEI Uji Coba Penghapusan Saham HSC dari IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126377/bei-uji-coba-penghapusan-saham-hsc-dari-ihsg>
 - **6** T3 11-01 10:00 bloomberg_technoz: MSCI Tunggu Penegakan Hukum Saham Gorengan RI Sejak Januari (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126373/msci-tunggu-penegakan-hukum-saham-gorengan-ri-sejak-januari>
+- **5** T3 11-02 15:19 bloomberg_technoz: Catatan atas Data Inflasi: Pangan, Energi, dan Pelemahan Rupiah (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126478/catatan-atas-data-inflasi-pangan-energi-dan-pelemahan-rupiah>
+- **5** T3 11-02 14:35 cnbc_indonesia_news: Bahlil Kaji Moratorium Smelter Untuk Produk Nikel Setengah Jadi (kebijakan/komoditas) <https://www.cnbcindonesia.com/news/20261102142355-4-781550/bahlil-kaji-moratorium-smelter-untuk-produk-nikel-setengah-jadi>
+- **5** T3 11-02 14:20 bloomberg_technoz: Rupiah Bergerak ke Rp18.158/US$ Siang Ini, Respons Data Inflasi (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126469/rupiah-bergerak-ke-rp18-158-us-siang-ini-respons-data-inflasi>
 - **5** T3 11-02 13:50 bloomberg_technoz: 23 Calon Emiten Mundur dari Rencana IPO 2026 (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/126472/23-calon-emiten-mundur-dari-rencana-ipo-2026>
 - **5** T3 11-02 13:18 kontan_keuangan: Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11) [BBCA,BBNI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211>
 - **5** T3 11-02 12:30 cnbc_indonesia_market: Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya>
@@ -24,8 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-02 11:02 cnbc_indonesia_market: Ini 10 Saham Paling Boncos sepanjang 2026, Ada DSSA dan BREN [BREN,DSSA] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102105155-17-781448/ini-10-saham-paling-boncos-sepanjang-2026-ada-dssa-dan-bren>
 - **5** T3 11-02 10:57 bloomberg_technoz: Daftar 82 Saham yang Dikeluarkan dari IHSG: DCII hingga BREN [BREN,DCII] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126433/daftar-82-saham-yang-dikeluarkan-dari-ihsg-dcii-hingga-bren>
 - **5** T3 11-02 10:43 cnbc_indonesia_market: Ada BREN, DSSA hingga BYAN, Ini Daftar Saham Terdepak Perhitungan IHSG [BREN,BYAN,DSSA] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102100526-17-781423/ada-bren-dssa-hingga-byan-ini-daftar-saham-terdepak-perhitungan-ihsg>
-- **5** T3 11-02 09:48 kontan_keuangan: OJK Setujui Merger Tiga BPR ke BPR Arthaguna Mandiri (kebijakan/korporasi) <https://keuangan.kontan.co.id/news/ojk-setujui-merger-tiga-bpr-ke-bpr-arthaguna-mandiri>
-- **5** T3 11-02 09:45 cnbc_indonesia_news: Produksi Minyak PHE Tembus 945 Ribu Barel di Kuartal-3 2026 (global/korporasi) <https://www.cnbcindonesia.com/news/20261102082036-4-781363/produksi-minyak-phe-tembus-945-ribu-barel-di-kuartal-3-2026>
-- **5** T3 11-02 09:39 cnbc_indonesia_market: OJK Resmi Gabungkan 4 Bank, Begini Nasibnya Pasca Merger (kebijakan/korporasi) <https://www.cnbcindonesia.com/market/20261102093650-17-781410/ojk-resmi-gabungkan-4-bank-begini-nasibnya-pasca-merger>
-- **5** T3 11-02 09:15 cnbc_indonesia_market: OJK Belum Pidanakan Kasus BREN, CUAN-DSSA, Ini Alasannya [BREN,CUAN,DSSA] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261102070412-17-781336/ojk-belum-pidanakan-kasus-bren-cuan-dssa-ini-alasannya>
-- **5** T3 11-02 08:56 cnbc_indonesia_market: Investor Cermati Saham Teknologi, Bursa Asia Bergerak Melemah (pasar; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261102085417-17-781386/investor-cermati-saham-teknologi-bursa-asia-bergerak-melemah>

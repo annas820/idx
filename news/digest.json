@@ -1,12 +1,28 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T14:15+07:00",
+ "generated_for": "2026-11-02T15:57+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 292,
- "kept": 102,
+ "scanned": 347,
+ "kept": 124,
  "dropped_noise": 6,
  "items": [
+  {
+   "published": "2026-11-02T15:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG?",
+   "link": "https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg",
+   "score": 9,
+   "categories": [
+    "global",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-01T10:30+07:00",
    "source": "bloomberg_technoz",
@@ -54,6 +70,21 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T14:47+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video:IHSG Menguat Tapi Rupiah Nyaris Rp 18.200/USD, Ada Sentimen Apa?",
+   "link": "https://www.cnbcindonesia.com/market/20261102142233-19-781548/videoihsg-menguat-tapi-rupiah-nyaris-rp-18200-usd-ada-sentimen-apa",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -196,6 +227,51 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T15:19+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Catatan atas Data Inflasi: Pangan, Energi, dan Pelemahan Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126478/catatan-atas-data-inflasi-pangan-energi-dan-pelemahan-rupiah",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T14:35+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bahlil Kaji Moratorium Smelter Untuk Produk Nikel Setengah Jadi",
+   "link": "https://www.cnbcindonesia.com/news/20261102142355-4-781550/bahlil-kaji-moratorium-smelter-untuk-produk-nikel-setengah-jadi",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T14:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Bergerak ke Rp18.158/US$ Siang Ini, Respons Data Inflasi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126469/rupiah-bergerak-ke-rp18-158-us-siang-ini-respons-data-inflasi",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-02T13:50+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -329,88 +405,6 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-02T09:48+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Setujui Merger Tiga BPR ke BPR Arthaguna Mandiri",
-   "link": "https://keuangan.kontan.co.id/news/ojk-setujui-merger-tiga-bpr-ke-bpr-arthaguna-mandiri",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T09:45+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Produksi Minyak PHE Tembus 945 Ribu Barel di Kuartal-3 2026",
-   "link": "https://www.cnbcindonesia.com/news/20261102082036-4-781363/produksi-minyak-phe-tembus-945-ribu-barel-di-kuartal-3-2026",
-   "score": 5,
-   "categories": [
-    "global",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T09:39+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Resmi Gabungkan 4 Bank, Begini Nasibnya Pasca Merger",
-   "link": "https://www.cnbcindonesia.com/market/20261102093650-17-781410/ojk-resmi-gabungkan-4-bank-begini-nasibnya-pasca-merger",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T09:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Belum Pidanakan Kasus BREN, CUAN-DSSA, Ini Alasannya",
-   "link": "https://www.cnbcindonesia.com/market/20261102070412-17-781336/ojk-belum-pidanakan-kasus-bren-cuan-dssa-ini-alasannya",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "BREN",
-    "CUAN",
-    "DSSA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T08:56+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Investor Cermati Saham Teknologi, Bursa Asia Bergerak Melemah",
-   "link": "https://www.cnbcindonesia.com/market/20261102085417-17-781386/investor-cermati-saham-teknologi-bursa-asia-bergerak-melemah",
-   "score": 5,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   }
  ],
  "watchlist_hits": []
