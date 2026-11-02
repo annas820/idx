@@ -1,11 +1,13 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-02T12:55+07:00 WIB | jendela 36 jam | dipindai 252, lolos 87, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-02T14:15+07:00 WIB | jendela 36 jam | dipindai 292, lolos 102, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **9** T3 11-01 10:30 bloomberg_technoz: OJK Ungkap Investor Asing Alihkan Dana dari Saham ke SBN (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126375/ojk-ungkap-investor-asing-alihkan-dana-dari-saham-ke-sbn>
+- **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
 - **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
+- **6** T3 11-02 13:40 cnbc_indonesia_news: India Tuntut Ketua KPU Mundur - BEI Keluarkan Saham HSC Dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261102114938-8-781479/india-tuntut-ketua-kpu-mundur--bei-keluarkan-saham-hsc-dari-ihsg>
 - **6** T3 11-02 12:50 cnbc_indonesia_market: Saham HSC Dikeluarkan, BEI Pastikan Tidak Ada Gejolak Signifikan (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102092603-19-781407/saham-hsc-dikeluarkan-bei-pastikan-tidak-ada-gejolak-signifikan>
 - **6** T3 11-02 12:40 cnbc_indonesia_market: Video: Investor Asing Sesalkan Wacana MSCI Turunkan Status RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102085544-19-781387/video-investor-asing-sesalkan-wacana-msci-turunkan-status-ri>
 - **6** T3 11-02 12:12 cnbc_indonesia_market: Saham HSC Resmi Keluar dari IHSG Hari Ini, Begini Penjelasan Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102114737-17-781475/saham-hsc-resmi-keluar-dari-ihsg-hari-ini-begini-penjelasan-bos-bei>
@@ -14,6 +16,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-01 18:40 cnbc_indonesia_market: Investor Asing Curhat ke Bos BI, Sesalkan Keputusan MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261101173233-17-781278/investor-asing-curhat-ke-bos-bi-sesalkan-keputusan-msci>
 - **6** T3 11-01 11:30 bloomberg_technoz: BEI Uji Coba Penghapusan Saham HSC dari IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126377/bei-uji-coba-penghapusan-saham-hsc-dari-ihsg>
 - **6** T3 11-01 10:00 bloomberg_technoz: MSCI Tunggu Penegakan Hukum Saham Gorengan RI Sejak Januari (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126373/msci-tunggu-penegakan-hukum-saham-gorengan-ri-sejak-januari>
+- **5** T3 11-02 13:50 bloomberg_technoz: 23 Calon Emiten Mundur dari Rencana IPO 2026 (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/126472/23-calon-emiten-mundur-dari-rencana-ipo-2026>
+- **5** T3 11-02 13:18 kontan_keuangan: Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11) [BBCA,BBNI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211>
 - **5** T3 11-02 12:30 cnbc_indonesia_market: Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya>
 - **5** T3 11-02 11:15 cnbc_indonesia_market: Free Float Saham Sisa 9,33%, Bos BSI (BRIS) Buka Suara [BRIS] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102091533-17-781402/free-float-saham-sisa-933-bos-bsi--bris--buka-suara>
 - **5** T3 11-02 11:12 bloomberg_technoz: Inflasi Oktober 0,22%, Tertekan Harga Pangan & Tarif Pesawat (global/makro) <https://www.bloombergtechnoz.com/detail-news/126438/inflasi-oktober-0-22-tertekan-harga-pangan-tarif-pesawat>
@@ -25,7 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-02 09:39 cnbc_indonesia_market: OJK Resmi Gabungkan 4 Bank, Begini Nasibnya Pasca Merger (kebijakan/korporasi) <https://www.cnbcindonesia.com/market/20261102093650-17-781410/ojk-resmi-gabungkan-4-bank-begini-nasibnya-pasca-merger>
 - **5** T3 11-02 09:15 cnbc_indonesia_market: OJK Belum Pidanakan Kasus BREN, CUAN-DSSA, Ini Alasannya [BREN,CUAN,DSSA] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261102070412-17-781336/ojk-belum-pidanakan-kasus-bren-cuan-dssa-ini-alasannya>
 - **5** T3 11-02 08:56 cnbc_indonesia_market: Investor Cermati Saham Teknologi, Bursa Asia Bergerak Melemah (pasar; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261102085417-17-781386/investor-cermati-saham-teknologi-bursa-asia-bergerak-melemah>
-- **5** T3 11-02 08:30 cnbc_indonesia_market: Emiten Terafiliasi Raffi Ahmad (VISI) Pinjam Rp45 M, Ada Syaratnya [VISI] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261101225049-17-781323/emiten-terafiliasi-raffi-ahmad--visi--pinjam-rp45-m-ada-syaratnya>
-- **5** T3 11-02 08:15 cnbc_indonesia_news: Surplus Dagang RI Diramal Susut di September, Minyak Jadi Beban (global; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/news/20261102070859-4-781337/surplus-dagang-ri-diramal-susut-di-september-minyak-jadi-beban>
-- **5** T3 11-02 06:25 cnbc_indonesia_market: Raffi Ahmad Borong Saham VISI, Rogoh Kantong Rp 72 Miliar [VISI] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261101223159-17-781311/raffi-ahmad-borong-saham-visi-rogoh-kantong-rp-72-miliar>
-- **5** T3 11-02 05:20 bloomberg_technoz: Bursa Asia Bersiap Melemah usai Saham Teknologi Anjlok (pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126399/bursa-asia-bersiap-melemah-usai-saham-teknologi-anjlok>

@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T12:55+07:00",
+ "generated_for": "2026-11-02T14:15+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 252,
- "kept": 87,
+ "scanned": 292,
+ "kept": 102,
  "dropped_noise": 6,
  "items": [
   {
@@ -18,6 +18,22 @@
     "kebijakan",
     "pasar",
     "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T13:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten",
+   "link": "https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
@@ -38,6 +54,21 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T13:40+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "India Tuntut Ketua KPU Mundur - BEI Keluarkan Saham HSC Dari IHSG",
+   "link": "https://www.cnbcindonesia.com/news/20261102114938-8-781479/india-tuntut-ketua-kpu-mundur--bei-keluarkan-saham-hsc-dari-ihsg",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -161,6 +192,39 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T13:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "23 Calon Emiten Mundur dari Rencana IPO 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126472/23-calon-emiten-mundur-dari-rencana-ipo-2026",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T13:18+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11)",
+   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BBNI"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -346,76 +410,6 @@
    ],
    "also_in": [
     "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-02T08:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Emiten Terafiliasi Raffi Ahmad (VISI) Pinjam Rp45 M, Ada Syaratnya",
-   "link": "https://www.cnbcindonesia.com/market/20261101225049-17-781323/emiten-terafiliasi-raffi-ahmad--visi--pinjam-rp45-m-ada-syaratnya",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "VISI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T08:15+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Surplus Dagang RI Diramal Susut di September, Minyak Jadi Beban",
-   "link": "https://www.cnbcindonesia.com/news/20261102070859-4-781337/surplus-dagang-ri-diramal-susut-di-september-minyak-jadi-beban",
-   "score": 5,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-02T06:25+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Raffi Ahmad Borong Saham VISI, Rogoh Kantong Rp 72 Miliar",
-   "link": "https://www.cnbcindonesia.com/market/20261101223159-17-781311/raffi-ahmad-borong-saham-visi-rogoh-kantong-rp-72-miliar",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "VISI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T05:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bursa Asia Bersiap Melemah usai Saham Teknologi Anjlok",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126399/bursa-asia-bersiap-melemah-usai-saham-teknologi-anjlok",
-   "score": 5,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
    ]
   }
  ],
