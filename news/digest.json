@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T07:50+07:00",
+ "generated_for": "2026-11-02T08:52+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 62,
- "kept": 23,
+ "scanned": 64,
+ "kept": 24,
  "dropped_noise": 1,
  "items": [
   {
@@ -20,6 +20,24 @@
     "kurs"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T08:42+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Hari Ini Naik Rp5.000, Buyback Lebih Tajam",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126417/harga-emas-antam-hari-ini-naik-rp5-000-buyback-lebih-tajam",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -99,6 +117,22 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T08:52+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rangkuman Rekomendasi Saham Hari Ini, 2 November 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126420/rangkuman-rekomendasi-saham-hari-ini-2-november-2026",
+   "score": 4,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
    "published": "2026-11-01T14:31+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -112,6 +146,48 @@
    "tickers": [
     "BFIN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T08:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Investor Asing Net Sell Rp4 Triliun, Saham-saham Ini Dilepas",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126416/investor-asing-net-sell-rp4-triliun-saham-saham-ini-dilepas",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T08:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Dua Pemicu Bursa Saham Jepang Rontok Senin Pagi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126413/dua-pemicu-bursa-saham-jepang-rontok-senin-pagi",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T08:06+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Prediksi Rupiah Hari Ini, Bisakah ke Bawah Rp18.000/US$?",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126412/prediksi-rupiah-hari-ini-bisakah-ke-bawah-rp18-000-us",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -278,62 +354,6 @@
    "score": 3,
    "categories": [
     "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T20:05+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Serahkan 2 Direksi BPR DCN ke Kejaksaan Terkait Dugaan Kredit Fiktif Rp 15,6 M",
-   "link": "https://keuangan.kontan.co.id/news/ojk-serahkan-2-direksi-bpr-dcn-ke-kejaksaan-terkait-dugaan-kredit-fiktif-rp-156-m",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T20:05+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Serahkan 2 Direksi BPR DCN ke Kejaksaan Terkait Dugaan Kredit Fiktif Rp 15,6 M",
-   "link": "https://keuangan.kontan.co.id/news/ojk-serahkan-2-direksi-bpr-dcn-ke-kejaksaan-terkait-dugaan-kredit-fiktif-rp-156-m",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T20:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham AI Lesu, Target Pendanaan OpenAI Dipangkas Rp181 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126366/saham-ai-lesu-target-pendanaan-openai-dipangkas-rp181-triliun",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T20:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham AI Lesu, Target Pendanaan OpenAI Dipangkas Rp181 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126366/saham-ai-lesu-target-pendanaan-openai-dipangkas-rp181-triliun",
-   "score": 3,
-   "categories": [
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
