@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-02T17:50+07:00 WIB | jendela 36 jam | dipindai 394, lolos 138, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-02T18:50+07:00 WIB | jendela 36 jam | dipindai 416, lolos 143, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -20,6 +20,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-01 18:40 cnbc_indonesia_market: Investor Asing Curhat ke Bos BI, Sesalkan Keputusan MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261101173233-17-781278/investor-asing-curhat-ke-bos-bi-sesalkan-keputusan-msci>
 - **6** T3 11-01 11:30 bloomberg_technoz: BEI Uji Coba Penghapusan Saham HSC dari IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126377/bei-uji-coba-penghapusan-saham-hsc-dari-ihsg>
 - **6** T3 11-01 10:00 bloomberg_technoz: MSCI Tunggu Penegakan Hukum Saham Gorengan RI Sejak Januari (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126373/msci-tunggu-penegakan-hukum-saham-gorengan-ri-sejak-januari>
+- **5** T3 11-02 18:37 cnbc_indonesia_market: Emtek (EMTK) Jual Saham Entitas Usaha PT Indopay Merchant Services [EMTK] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102173940-17-781656/emtek--emtk--jual-saham-entitas-usaha-pt-indopay-merchant-services>
+- **5** T3 11-02 18:23 kontan_keuangan: Bank Ina Perdana Terbitkan 13,81 Juta Saham Baru Lewat Private Placement (pasar/korporasi) <https://keuangan.kontan.co.id/news/bank-ina-perdana-terbitkan-1381-juta-saham-baru-lewat-private-placement>
 - **5** T3 11-02 15:19 bloomberg_technoz: Catatan atas Data Inflasi: Pangan, Energi, dan Pelemahan Rupiah (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126478/catatan-atas-data-inflasi-pangan-energi-dan-pelemahan-rupiah>
 - **5** T3 11-02 14:35 cnbc_indonesia_news: Bahlil Kaji Moratorium Smelter Untuk Produk Nikel Setengah Jadi (kebijakan/komoditas) <https://www.cnbcindonesia.com/news/20261102142355-4-781550/bahlil-kaji-moratorium-smelter-untuk-produk-nikel-setengah-jadi>
 - **5** T3 11-02 14:20 bloomberg_technoz: Rupiah Bergerak ke Rp18.158/US$ Siang Ini, Respons Data Inflasi (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126469/rupiah-bergerak-ke-rp18-158-us-siang-ini-respons-data-inflasi>
@@ -27,5 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-02 13:18 kontan_keuangan: Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11) [BBCA,BBNI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211>
 - **5** T3 11-02 12:30 cnbc_indonesia_market: Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya>
 - **5** T3 11-02 11:15 cnbc_indonesia_market: Free Float Saham Sisa 9,33%, Bos BSI (BRIS) Buka Suara [BRIS] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102091533-17-781402/free-float-saham-sisa-933-bos-bsi--bris--buka-suara>
-- **5** T3 11-02 11:12 bloomberg_technoz: Inflasi Oktober 0,22%, Tertekan Harga Pangan & Tarif Pesawat (global/makro) <https://www.bloombergtechnoz.com/detail-news/126438/inflasi-oktober-0-22-tertekan-harga-pangan-tarif-pesawat>
-- **5** T3 11-02 11:02 cnbc_indonesia_market: Ini 10 Saham Paling Boncos sepanjang 2026, Ada DSSA dan BREN [BREN,DSSA] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102105155-17-781448/ini-10-saham-paling-boncos-sepanjang-2026-ada-dssa-dan-bren>

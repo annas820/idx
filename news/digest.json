@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T17:50+07:00",
+ "generated_for": "2026-11-02T18:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 394,
- "kept": 138,
+ "scanned": 416,
+ "kept": 143,
  "dropped_noise": 6,
  "items": [
   {
@@ -257,6 +257,38 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T18:37+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Emtek (EMTK) Jual Saham Entitas Usaha PT Indopay Merchant Services",
+   "link": "https://www.cnbcindonesia.com/market/20261102173940-17-781656/emtek--emtk--jual-saham-entitas-usaha-pt-indopay-merchant-services",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "EMTK"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T18:23+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Bank Ina Perdana Terbitkan 13,81 Juta Saham Baru Lewat Private Placement",
+   "link": "https://keuangan.kontan.co.id/news/bank-ina-perdana-terbitkan-1381-juta-saham-baru-lewat-private-placement",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-02T15:19+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -362,39 +394,6 @@
    ],
    "tickers": [
     "BRIS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T11:12+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Inflasi Oktober 0,22%, Tertekan Harga Pangan & Tarif Pesawat",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126438/inflasi-oktober-0-22-tertekan-harga-pangan-tarif-pesawat",
-   "score": 5,
-   "categories": [
-    "global",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T11:02+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Ini 10 Saham Paling Boncos sepanjang 2026, Ada DSSA dan BREN",
-   "link": "https://www.cnbcindonesia.com/market/20261102105155-17-781448/ini-10-saham-paling-boncos-sepanjang-2026-ada-dssa-dan-bren",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BREN",
-    "DSSA"
    ],
    "flags": [],
    "also_in": []
