@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T06:20+07:00",
+ "generated_for": "2026-11-02T07:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 61,
- "kept": 26,
- "dropped_noise": 0,
+ "scanned": 62,
+ "kept": 23,
+ "dropped_noise": 1,
  "items": [
   {
    "published": "2026-11-01T10:30+07:00",
@@ -20,44 +20,6 @@
     "kurs"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T19:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BREN",
-    "CUAN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T19:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Ungkap Pelaku di Kasus Penjatahan Saham BREN & CUAN",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126365/ojk-ungkap-pelaku-di-kasus-penjatahan-saham-bren-cuan",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BREN",
-    "CUAN"
-   ],
    "flags": [],
    "also_in": []
   },
@@ -122,36 +84,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T18:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Akan Periksa Acak Laporan Free Float Emiten",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T18:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Akan Periksa Acak Laporan Free Float Emiten",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126363/bei-akan-periksa-acak-laporan-free-float-emiten",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-01T17:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -180,6 +112,48 @@
    "tickers": [
     "BFIN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T07:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Minyak Melemah Jelang Pemilu AS",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126410/harga-minyak-melemah-jelang-pemilu-as",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T06:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Putin Sepakat Hentikan Rekrutmen Warga Ghana untuk Perang Ukraina",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126405/putin-sepakat-hentikan-rekrutmen-warga-ghana-untuk-perang-ukraina",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T06:39+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OPEC+ Tak Ubah Target Produksi Minyak untuk Desember 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126403/opec-tak-ubah-target-produksi-minyak-untuk-desember-2026",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -360,20 +334,6 @@
    "score": 3,
    "categories": [
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T19:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bos BEI Ungkap Dua Catatan Negatif MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126364/bos-bei-ungkap-dua-catatan-negatif-msci",
-   "score": 3,
-   "categories": [
-    "kebijakan"
    ],
    "tickers": [],
    "flags": [],
