@@ -1,0 +1,473 @@
+{
+  "schema": "idx.bandar.screen.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-02T11:18:07Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "period": "1w",
+    "from": "2026-10-27",
+    "to": "2026-11-02",
+    "top": 5,
+    "preset": "foreign-accumulation",
+    "filters": [
+      "acc>=5",
+      "fpct>=5"
+    ],
+    "sort": "acc",
+    "descending": true,
+    "scanned": 100,
+    "checked": 100,
+    "total_matches": 14,
+    "rows": [
+      {
+        "symbol": "JSMR",
+        "name": "JASA MARGA (PERSERO) Tbk",
+        "signal": "big_accumulation",
+        "phase": "markup",
+        "net_pct": 20.411663807890225,
+        "net_value": 35700000000.0,
+        "net_lots": 126960.0,
+        "price": 2850.0,
+        "price_change_pct": 5.555555555555558,
+        "bandar_average": 2810.213838109862,
+        "bandar_gain_pct": 1.4157699087019582,
+        "buy_share_pct": 68.3247570040023,
+        "total_value": 174900000000.0,
+        "foreign_net_value": 12200000000.0,
+        "foreign_net_pct": 6.975414522584334,
+        "top_buyers": [
+          "AK",
+          "YU",
+          "PD",
+          "CC",
+          "ZP"
+        ],
+        "top_sellers": [
+          "CC",
+          "ZP",
+          "AK",
+          "YP",
+          "YU"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "IMPC",
+        "name": "IMPACK PRATAMA INDUSTRI Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 14.487300094073378,
+        "net_value": 15400000000.0,
+        "net_lots": 193113.0,
+        "price": 765.0,
+        "price_change_pct": -7.831325301204817,
+        "bandar_average": 781.5705909993167,
+        "bandar_gain_pct": -2.1201656242118228,
+        "buy_share_pct": 71.11947318908749,
+        "total_value": 106300000000.0,
+        "foreign_net_value": 10900000000.0,
+        "foreign_net_pct": 10.253998118532454,
+        "top_buyers": [
+          "AK",
+          "XL",
+          "BK",
+          "BB",
+          "CC"
+        ],
+        "top_sellers": [
+          "AK",
+          "XL",
+          "CC",
+          "LG",
+          "BK"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "RAJA",
+        "name": "RUKUN RAHARJA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 13.574982231698648,
+        "net_value": 19100000000.0,
+        "net_lots": 462819.0,
+        "price": 418.0,
+        "price_change_pct": -11.440677966101697,
+        "bandar_average": 423.99016566642746,
+        "bandar_gain_pct": -1.4128076902472753,
+        "buy_share_pct": 67.30632551528075,
+        "total_value": 140700000000.0,
+        "foreign_net_value": 27900000000.0,
+        "foreign_net_pct": 19.82942430703625,
+        "top_buyers": [
+          "CC",
+          "AK",
+          "XL",
+          "OD",
+          "BK"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "AI",
+          "YP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "CPIN",
+        "name": "CHAROEN POKPHAND INDONESIA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 11.995967741935484,
+        "net_value": 47600000000.0,
+        "net_lots": 171548.0,
+        "price": 2490.0,
+        "price_change_pct": -8.11808118081181,
+        "bandar_average": 2696.1883718290833,
+        "bandar_gain_pct": -7.647402309995344,
+        "buy_share_pct": 75.75604838709677,
+        "total_value": 396800000000.0,
+        "foreign_net_value": 55000000000.0,
+        "foreign_net_pct": 13.860887096774194,
+        "top_buyers": [
+          "AK",
+          "BK",
+          "CC",
+          "XL",
+          "YP"
+        ],
+        "top_sellers": [
+          "AK",
+          "CC",
+          "BK",
+          "PD",
+          "SQ"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "WIFI",
+        "name": "SOLUSI SINERGI DIGITAL Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 11.42014327855036,
+        "net_value": 27100000000.0,
+        "net_lots": 288018.0,
+        "price": 920.0,
+        "price_change_pct": -11.538461538461542,
+        "bandar_average": 943.8955174977967,
+        "bandar_gain_pct": -2.5315850170728793,
+        "buy_share_pct": 60.008428150021075,
+        "total_value": 237300000000.0,
+        "foreign_net_value": 47400000000.0,
+        "foreign_net_pct": 19.97471554993679,
+        "top_buyers": [
+          "CC",
+          "XL",
+          "MG",
+          "AK",
+          "BK"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "MG",
+          "XA",
+          "AK"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "MDKA",
+        "name": "MERDEKA COPPER GOLD Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 9.391622340425531,
+        "net_value": 56500000000.0,
+        "net_lots": 299792.0,
+        "price": 1970.0,
+        "price_change_pct": -4.3689320388349495,
+        "bandar_average": 1949.7210087341848,
+        "bandar_gain_pct": 1.0400970792729503,
+        "buy_share_pct": 60.37234042553191,
+        "total_value": 601600000000.0,
+        "foreign_net_value": 82100000000.0,
+        "foreign_net_pct": 13.646941489361703,
+        "top_buyers": [
+          "AK",
+          "CC",
+          "PD",
+          "XL",
+          "BK"
+        ],
+        "top_sellers": [
+          "AK",
+          "XL",
+          "CC",
+          "PD",
+          "YP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "UVCR",
+        "name": "TRIMEGAH KARYA PRATAMA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 9.246088193456615,
+        "net_value": 6500000000.0,
+        "net_lots": 368345.0,
+        "price": 169.0,
+        "price_change_pct": -23.18181818181818,
+        "bandar_average": 207.01352287933258,
+        "bandar_gain_pct": -18.362821109754524,
+        "buy_share_pct": 70.1280227596017,
+        "total_value": 70300000000.0,
+        "foreign_net_value": 3900000000.0,
+        "foreign_net_pct": 5.547652916073969,
+        "top_buyers": [
+          "CP",
+          "XL",
+          "CC",
+          "AK",
+          "MG"
+        ],
+        "top_sellers": [
+          "CP",
+          "XL",
+          "CC",
+          "OD",
+          "TP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "RATU",
+        "name": "RAHARJA ENERGI CEPU Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 8.938547486033519,
+        "net_value": 6400000000.0,
+        "net_lots": 28045.0,
+        "price": 1935.0,
+        "price_change_pct": -22.289156626506024,
+        "bandar_average": 2194.617133649755,
+        "bandar_gain_pct": -11.829723265579318,
+        "buy_share_pct": 66.34078212290503,
+        "total_value": 71600000000.0,
+        "foreign_net_value": 9600000000.0,
+        "foreign_net_pct": 13.40782122905028,
+        "top_buyers": [
+          "CC",
+          "XL",
+          "AK",
+          "OD",
+          "YP"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "XC",
+          "AK",
+          "YP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "ASII",
+        "name": "ASTRA INTERNATIONAL Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 8.48,
+        "net_value": 127200000000.0,
+        "net_lots": 312980.0,
+        "price": 4860.0,
+        "price_change_pct": 6.578947368421062,
+        "bandar_average": 4765.306511767967,
+        "bandar_gain_pct": 1.9871437020511973,
+        "buy_share_pct": 72.05333333333334,
+        "total_value": 1500000000000.0,
+        "foreign_net_value": 180700000000.0,
+        "foreign_net_pct": 12.046666666666667,
+        "top_buyers": [
+          "AK",
+          "ZP",
+          "CC",
+          "KZ",
+          "PD"
+        ],
+        "top_sellers": [
+          "AK",
+          "ZP",
+          "BK",
+          "CC",
+          "YU"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "ARCI",
+        "name": "ARCHI INDONESIA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 7.249190938511327,
+        "net_value": 11200000000.0,
+        "net_lots": 130904.0,
+        "price": 875.0,
+        "price_change_pct": -14.634146341463417,
+        "bandar_average": 928.1371148016085,
+        "bandar_gain_pct": -5.725136292277966,
+        "buy_share_pct": 55.14563106796116,
+        "total_value": 154500000000.0,
+        "foreign_net_value": 13900000000.0,
+        "foreign_net_pct": 8.996763754045308,
+        "top_buyers": [
+          "AK",
+          "XL",
+          "CC",
+          "PD",
+          "BB"
+        ],
+        "top_sellers": [
+          "YU",
+          "XL",
+          "AK",
+          "KZ",
+          "BB"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "INET",
+        "name": "SINERGI INTI ANDALAN PRIMA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 6.789312308366186,
+        "net_value": 15500000000.0,
+        "net_lots": 980849.0,
+        "price": 174.0,
+        "price_change_pct": -5.434782608695654,
+        "bandar_average": 166.10621525878284,
+        "bandar_gain_pct": 4.752251280254116,
+        "buy_share_pct": 66.66666666666666,
+        "total_value": 228300000000.0,
+        "foreign_net_value": 12200000000.0,
+        "foreign_net_pct": 5.343845816907578,
+        "top_buyers": [
+          "XL",
+          "CC",
+          "AK",
+          "YP",
+          "XC"
+        ],
+        "top_sellers": [
+          "XL",
+          "YP",
+          "CC",
+          "AK",
+          "XC"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "KLBF",
+        "name": "KALBE FARMA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 6.189111747851003,
+        "net_value": 10800000000.0,
+        "net_lots": 150723.0,
+        "price": 720.0,
+        "price_change_pct": -0.6896551724137945,
+        "bandar_average": 721.6418409113859,
+        "bandar_gain_pct": -0.22751465038561847,
+        "buy_share_pct": 74.38395415472779,
+        "total_value": 174500000000.0,
+        "foreign_net_value": 22300000000.0,
+        "foreign_net_pct": 12.779369627507165,
+        "top_buyers": [
+          "AK",
+          "NI",
+          "BK",
+          "CC",
+          "RX"
+        ],
+        "top_sellers": [
+          "AK",
+          "CC",
+          "ZP",
+          "BK",
+          "YU"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "DEWA",
+        "name": "DARMA HENWA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.948973242065962,
+        "net_value": 47800000000.0,
+        "net_lots": 1900000.0,
+        "price": 238.0,
+        "price_change_pct": -8.461538461538465,
+        "bandar_average": 231.48225640644958,
+        "bandar_gain_pct": 2.8156558065107973,
+        "buy_share_pct": 58.03360298693217,
+        "total_value": 803500000000.0,
+        "foreign_net_value": 119200000000.0,
+        "foreign_net_pct": 14.835096453018046,
+        "top_buyers": [
+          "CC",
+          "XL",
+          "AK",
+          "BK",
+          "MG"
+        ],
+        "top_sellers": [
+          "CC",
+          "XL",
+          "AK",
+          "MG",
+          "CP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "BULL",
+        "name": "BUANA LINTAS LAUTAN Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.6598407281001135,
+        "net_value": 19900000000.0,
+        "net_lots": 731470.0,
+        "price": 248.0,
+        "price_change_pct": -13.888888888888884,
+        "bandar_average": 252.11562729246648,
+        "bandar_gain_pct": -1.632436408907001,
+        "buy_share_pct": 58.19112627986348,
+        "total_value": 351600000000.0,
+        "foreign_net_value": 56500000000.0,
+        "foreign_net_pct": 16.06939704209329,
+        "top_buyers": [
+          "XL",
+          "AK",
+          "CC",
+          "MG",
+          "YP"
+        ],
+        "top_sellers": [
+          "XL",
+          "AK",
+          "CC",
+          "YP",
+          "DR"
+        ],
+        "rounded": true
+      }
+    ]
+  }
+}

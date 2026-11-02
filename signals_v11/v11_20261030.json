@@ -1,0 +1,69 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261030",
+ "sessions": 13,
+ "signals": [],
+ "controls": [],
+ "breadth": 0.12,
+ "breadth_1d": 0.33,
+ "regime_ok": false,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "PWON",
+   "ratio_5d": 0.258,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "SSMS",
+   "ratio_5d": 0.207,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "CPIN",
+   "ratio_5d": 0.202,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "MBMA",
+   "ratio_5d": 0.182,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "KLBF",
+   "ratio_5d": 0.174,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "DEWA",
+   "ratio_5d": 0.125,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "INTP",
+   "ratio_5d": 0.123,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "WIFI",
+   "ratio_5d": 0.113,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "MDKA",
+   "ratio_5d": 0.106,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "EMAS",
+   "ratio_5d": 0.104,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "MEDC",
+   "ratio_5d": 0.102,
+   "positive_sessions": 4
+  }
+ ],
+ "status": "data_kurang (13/14 sesi untuk ATR); tidak ada sinyal"
+}

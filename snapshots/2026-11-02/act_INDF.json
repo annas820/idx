@@ -1,0 +1,38 @@
+{
+  "schema": "idx.actions.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-02T11:18:39Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "symbol": "INDF",
+    "name": "INDOFOOD SUKSES MAKMUR Tbk",
+    "since": "2025-11-02",
+    "actions": [
+      {
+        "kind": "cash_dividend",
+        "label": "Cash Deviden",
+        "amount": 290.0,
+        "ratio_old": null,
+        "ratio_new": null,
+        "cum_date": "2026-07-06",
+        "ex_date": "2026-07-07",
+        "recording_date": "2026-07-08",
+        "distribution_date": "2026-07-29",
+        "end_date": null,
+        "status": "Final",
+        "details": "Jadwal Pelaksanaan Pembagian dividen tunai PT Indofood Sukses Makmur Tbk (INDF)\nDengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (Satu) saham akan memperoleh Rp 290 (Dua Ratus Sembilan Puluh Rupiah)Adapun jadwal pembagian dividen tunai adalah sebagai berikut :\nTanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 06 Jul 26\nTanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 07 Jul 26\nTanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 08 Jul 26\nTanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 09 Jul 26\nTanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 08 Jul 26\nTanggal Pembayaran dividen tunai : 29 Jul 26"
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-06-26",
+        "time": "14:00:00",
+        "status": "Final",
+        "venue": "Sudirman Plaza - Indofood Tower Lantai PH, Jalan Jenderal Sudirman Kav. 76-78, Jakarta 12910",
+        "agenda": "RUPS akan dilaksanakan pada pukul 14:00 WIB\nPT Indofood Sukses Makmur Tbk (INDF)\nRecording Date : 3 June 2026 Waktu : 16:00 WIB\nAgenda RUPS Tahunan :\nPenerimaan dan persetujuan Laporan Tahunan Direksi mengenai kegiatan usaha dan kinerja keuangan Perseroan untuk tahun buku yang berakhir pada tanggal 31 Desember 2025\nPengesahan Neraca serta perhitungan Laba-Rugi Perseroan untuk tahun buku yang berakhir pada tanggal 31 Desember 2025\nPenetapan penggunaan laba bersih Perseroan untuk tahun buku yang berakhir pada tanggal 31 Desember 2025\nPenetapan besarnya remunerasi untuk semua anggota Dewan Komisaris dan anggota Direksi Perseroan\nPenunjukan Akuntan Publik dan pemberian wewenang kepada Direksi Perseroan untuk menetapkan jumlah honorarium Akuntan Publik serta persyaratan lainnya\nAgenda RUPS Luar Biasa:"
+      }
+    ],
+    "warrants_rights": []
+  }
+}

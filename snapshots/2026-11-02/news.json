@@ -1,0 +1,320 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-02T11:18:09Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Penjualan Mobil Listrik Melonjak, Mengapa Asuransi Masih Berhati-hati?",
+        "url": "https://keuangan.kontan.co.id/news/penjualan-mobil-listrik-melonjak-mengapa-asuransi-masih-berhati-hati",
+        "source": "kontan/keuangan",
+        "published": "2026-11-02T18:16:21+07:00",
+        "summary": "AAUI menyoroti risiko klaim mobil listrik, mulai dari biaya baterai, ketersediaan suku cadang hingga depresiasi kendaraan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melonjak"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BUMA (DOID) Bikin Anak Usaha Baru di Luar Tambang, Ini Tujuannya",
+        "url": "https://www.cnbcindonesia.com/market/20261102175134-17-781660/buma--doid--bikin-anak-usaha-baru-di-luar-tambang-ini-tujuannya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T18:15:25+07:00",
+        "summary": "PT BUMA Internasional Grup Tbk. (DOID) mendirikan anak usaha baru, PT Bestari Mitra Talenta.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bikin Kaget! Ini Daftar Negara Paling Sulit Dapat Kerja",
+        "url": "https://www.cnbcindonesia.com/research/20261102170525-128-781645/bikin-kaget-ini-daftar-negara-paling-sulit-dapat-kerja",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-02T18:10:36+07:00",
+        "summary": "Pencarian kerja tak kunjung berujung, bukan sekadar sulit lagi bagi sebagian orang.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Saham HSC Keluar Dari IHSG hingga Rupiah Anjlok ke Rp18.140/USD",
+        "url": "https://www.cnbcindonesia.com/market/20261102170250-19-781631/video-saham-hsc-keluar-dari-ihsg-hingga-rupiah-anjlok-ke-rp18140-usd",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T17:30:01+07:00",
+        "summary": "Saham HSC Keluar Dari IHSG - Neraca Dagang Surplus, IHSG Menguat di 5.096",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "menguat",
+          "surplus"
+        ],
+        "negative_terms": [
+          "anjlok"
+        ]
+      },
+      {
+        "title": "Pil Pahit Trump! Kasus Pengajuan Kebangkrutan di AS Tembus 620.000",
+        "url": "https://www.cnbcindonesia.com/research/20261102155726-128-781618/pil-pahit-trump-kasus-pengajuan-kebangkrutan-di-as-tembus-620000",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-02T17:25:05+07:00",
+        "summary": "semakin banyak bisnis di Negeri Paman Sam yang justru mengajukan kebangkrutan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Fundamental Kuat, Laba Sebelum Pajak Superbank Melesat 376% di Q3-2026",
+        "url": "https://www.cnbcindonesia.com/market/20261102171115-17-781643/fundamental-kuat-laba-sebelum-pajak-superbank-melesat-376-di-q3-2026",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T17:22:55+07:00",
+        "summary": "Superbank mencatat laba Rp385 miliar di Kuartal III-2026, tumbuh 376% YoY. Dengan 8 juta nasabah, DPK meningkat 79,3% menjadi Rp17,6 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melesat",
+          "laba",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Pendapatan Anjlok, Pool Advista (POLA) Rugi Rp 1,68 Miliar hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/pendapatan-anjlok-pool-advista-pola-rugi-rp-168-miliar-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-02T17:22:09+07:00",
+        "summary": "Pool Advista Finance (POLA) membukukan rugi Rp 1,68 miliar pada kuartal III-2026 seiring pendapatan anjlok 50,58% secara tahunan.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "anjlok",
+          "rugi"
+        ]
+      },
+      {
+        "title": "LDR Industri Ketat, Bank INA Andalkan KPR dan Dana Murah Capai Target",
+        "url": "https://keuangan.kontan.co.id/news/ldr-industri-ketat-bank-ina-andalkan-kpr-dan-dana-murah-capai-target",
+        "source": "kontan/keuangan",
+        "published": "2026-11-02T17:18:18+07:00",
+        "summary": "Bank INA klaim kondisi likuiditas tetap aman dengan LDR per 30 September adalah 66,89%, naik 8,07% secara tahunan (yoy).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Ada Masalah Keuangan, 2 Saham Masuk ke Pemantauan Khusus BEI",
+        "url": "https://www.cnbcindonesia.com/market/20261102170442-17-781638/ada-masalah-keuangan-2-saham-masuk-ke-pemantauan-khusus-bei",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T17:17:42+07:00",
+        "summary": "Bursa Efek Indonesia mengumumkan dua saham dalam pemantauan khusus mulai 3 November 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "RoI Dana Pensiun Naik Jadi 2,12% per Agustus 2026, Ini Penyebabnya",
+        "url": "https://keuangan.kontan.co.id/news/roi-dana-pensiun-naik-jadi-212-per-agustus-2026-ini-penyebabnya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-02T17:04:15+07:00",
+        "summary": "Otoritas Jasa Keuangan (OJK) mencatat, return on Investment (RoI) industri dana pensiun mengalami kenaikan per Agustus 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Lelang Properti, Pintu Masuk Pemain Baru di Pasar",
+        "url": "https://keuangan.kontan.co.id/news/lelang-properti-pintu-masuk-pemain-baru-di-pasar",
+        "source": "kontan/keuangan",
+        "published": "2026-11-02T16:57:23+07:00",
+        "summary": "Lelang properti BTN membuka peluang bisnis bagi masyarakat bermodal Rp200 juta&ndash;Rp500 juta. Beli rumah, renovasi, lalu jual lagi untuk dapat untung",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "untung",
+          "beli"
+        ],
+        "negative_terms": [
+          "jual"
+        ]
+      },
+      {
+        "title": "Danantara Investment (DIM) Kantongi Laba Rp705,73 M hingga April 2026",
+        "url": "https://www.cnbcindonesia.com/market/20261102164503-17-781627/danantara-investment--dim--kantongi-laba-rp70573-m-hingga-april-2026",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T16:49:09+07:00",
+        "summary": "PT Danantara Investment Management mencatat laba bersih US$40,61 juta hingga April 2026, berbalik dari rugi tahun lalu. Pendapatan kuartal I naik 36,67%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "naik",
+          "laba"
+        ],
+        "negative_terms": [
+          "rugi"
+        ]
+      },
+      {
+        "title": "Adu Kuat Manufaktur ASEAN: RI Kini Kalahkan Vietnam dan Malaysia",
+        "url": "https://www.cnbcindonesia.com/research/20261102133310-128-781538/adu-kuat-manufaktur-asean-ri-kini-kalahkan-vietnam-malaysia",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-02T16:25:30+07:00",
+        "summary": "Persaingan manufaktur ASEAN semakin ketat. Indonesia mencatatkan kenaikan PMI tertinggi, sementara Thailand masih berada di posisi teratas.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan",
+          "tertinggi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Antam (ANTM) Mau Bagi Dividen, Potensi Cuannya di Atas 10%",
+        "url": "https://www.cnbcindonesia.com/market/20261102134542-17-781536/antam--antm--mau-bagi-dividen-potensi-cuannya-di-atas-10",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T16:20:42+07:00",
+        "summary": "Di tengah penurunan besar-besaran indeks harga saham gabungan (IHSG) Bursa Efek Indonesia (BEI), terdapat peluang besar memetik dividen besar.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "dividen"
+        ],
+        "negative_terms": [
+          "penurunan"
+        ]
+      },
+      {
+        "title": "ROE Asuransi Umum Turun ke 12,7%, Ini Strategi ASEI Menjaga Profitabilitas",
+        "url": "https://keuangan.kontan.co.id/news/roe-asuransi-umum-turun-ke-127-ini-strategi-asei-menjaga-profitabilitas",
+        "source": "kontan/keuangan",
+        "published": "2026-11-02T16:09:31+07:00",
+        "summary": "Profitabilitas asuransi umum tertekan pada semester I-2026, tercermin dari ROE turun jadi 12,7% efe klaim, perlambatan premi & volatilitas.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun",
+          "tertekan",
+          "perlambatan"
+        ]
+      },
+      {
+        "title": "Medco (MEDC) Mau Tebar Dividen Interim Rp544 M, Cek Jadwal Cairnya",
+        "url": "https://www.cnbcindonesia.com/market/20261102153435-17-781581/medco--medc--mau-tebar-dividen-interim-rp544-m-cek-jadwal-cairnya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T16:08:35+07:00",
+        "summary": "PT Medco Energi Internasional Tbk. akan membagikan dividen interim US$30 juta sebelum akhir 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "dividen"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "IHSG Ditutup Menguat 0,79% ke 5.096,83",
+        "url": "https://www.cnbcindonesia.com/market/20261102154020-17-781613/ihsg-ditutup-menguat-079-ke-509683",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T16:03:53+07:00",
+        "summary": "IHSG ditutup naik 0,79% di level 5.096,83. BEI mengeluarkan saham HSC dari perhitungan IHSG mulai hari ini.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "menguat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Hanya Bursa RI dan India yang Buka Data Pemegang Saham di Atas 1%",
+        "url": "https://www.cnbcindonesia.com/market/20261102160133-17-781612/hanya-bursa-ri-dan-india-yang-buka-data-pemegang-saham-di-atas-1",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T16:03:45+07:00",
+        "summary": "BEI tingkatkan transparansi pasar modal dengan mengungkap data pemegang saham dan mengeluarkan saham terkonsentrasi dari IHSG.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Asippindo Optimistis Prospek Kinerja Industri Penjaminan Masih Positif pada 2027",
+        "url": "https://keuangan.kontan.co.id/news/asippindo-optimistis-prospek-kinerja-industri-penjaminan-masih-positif-pada-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-11-02T15:57:29+07:00",
+        "summary": "Asippindo optimistis prospek kinerja industri penjaminan masih positif, sejalan dengan komitmen pemerintah dalam memperluas akses pembiayaan UMKM",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "positif",
+          "optimistis"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Laba Bersih GOTO Rp441 Miliar di Kuartal III-2026, Ini Penopangnya",
+        "url": "https://www.cnbcindonesia.com/market/20261102131220-17-781533/laba-bersih-goto-rp441-miliar-di-kuartal-iii-2026-ini-penopangnya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-02T15:55:07+07:00",
+        "summary": "PT GoTo Gojek Tokopedia Tbk (GOTO) membukukan laba bersih Rp441 miliar, berbalik untung dari posisi rugi kuartal yang sama tahun lalu sebesar Rp255 miliar.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "untung",
+          "laba"
+        ],
+        "negative_terms": [
+          "rugi"
+        ]
+      }
+    ]
+  }
+}

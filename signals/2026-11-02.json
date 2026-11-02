@@ -1,0 +1,70 @@
+{
+ "version": "CLO-FT-1.0",
+ "signal_date": "2026-11-02",
+ "breadth": 0.082,
+ "universe_with_data": 97,
+ "regime_ok": false,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "PTRO",
+   "signal_date": "2026-11-02",
+   "close": 2570.0,
+   "atr": 280.24,
+   "limit": 2429.88,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "ANTM",
+   "signal_date": "2026-11-02",
+   "close": 2580.0,
+   "atr": 140.42,
+   "limit": 2509.79,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "INCO",
+   "signal_date": "2026-11-02",
+   "close": 3330.0,
+   "atr": 213.51,
+   "limit": 3223.24,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SMIL",
+   "signal_date": "2026-11-02",
+   "close": 412.0,
+   "atr": 22.04,
+   "limit": 400.98,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SRSN",
+   "signal_date": "2026-11-02",
+   "close": 104.0,
+   "atr": 11.26,
+   "limit": 98.37,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ]
+}
