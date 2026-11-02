@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T05:30+07:00",
+ "generated_for": "2026-11-03T06:25+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 419,
- "kept": 146,
+ "scanned": 420,
+ "kept": 149,
  "dropped_noise": 5,
  "items": [
   {
@@ -54,6 +54,21 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T06:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "S&P 500 Melemah Saat Saham Cip Anjlok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126516/s-p-500-melemah-saat-saham-cip-anjlok",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -385,23 +400,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T11:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Free Float Saham Sisa 9,33%, Bos BSI (BRIS) Buka Suara",
-   "link": "https://www.cnbcindonesia.com/market/20261102091533-17-781402/free-float-saham-sisa-933-bos-bsi--bris--buka-suara",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
-   ],
    "flags": [],
    "also_in": []
   }
