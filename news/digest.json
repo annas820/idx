@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T18:50+07:00",
+ "generated_for": "2026-11-02T19:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 416,
- "kept": 143,
+ "scanned": 441,
+ "kept": 155,
  "dropped_noise": 6,
  "items": [
   {
@@ -257,6 +257,23 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T19:03+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bos Blue Bird (BIRD) Borong 675.800 Saham BIRD, Senilai Rp997,43 Juta",
+   "link": "https://www.cnbcindonesia.com/market/20261102175313-17-781661/bos-blue-bird--bird--borong-675800-saham-bird-senilai-rp99743-juta",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BIRD"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-02T18:37+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -378,23 +395,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T11:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Free Float Saham Sisa 9,33%, Bos BSI (BRIS) Buka Suara",
-   "link": "https://www.cnbcindonesia.com/market/20261102091533-17-781402/free-float-saham-sisa-933-bos-bsi--bris--buka-suara",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
-   ],
    "flags": [],
    "also_in": []
   }
