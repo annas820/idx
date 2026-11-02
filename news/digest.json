@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T21:11+07:00",
+ "generated_for": "2026-11-02T21:58+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 459,
- "kept": 159,
+ "scanned": 465,
+ "kept": 161,
  "dropped_noise": 5,
  "items": [
   {
@@ -257,6 +257,25 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T21:24+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham Big Banks Ditutup Variatif, Simak Rekomendasi BBCA, BBRI, dan BMRI",
+   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-ditutup-variatif-simak-rekomendasi-bbca-bbri-dan-bmri",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BBRI",
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-02T20:08+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -379,24 +398,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T13:18+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11)",
-   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BBNI"
-   ],
    "flags": [],
    "also_in": []
   }
