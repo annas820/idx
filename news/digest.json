@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T08:52+07:00",
+ "generated_for": "2026-11-02T09:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 64,
- "kept": 24,
+ "scanned": 70,
+ "kept": 25,
  "dropped_noise": 1,
  "items": [
   {
@@ -72,36 +72,6 @@
    "also_in": []
   },
   {
-   "published": "2026-10-31T21:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-10-31T21:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bos BEI: Bursa Saham Indonesia Paling Transparan di Dunia",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126368/bos-bei-bursa-saham-indonesia-paling-transparan-di-dunia",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-01T17:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -146,6 +116,48 @@
    "tickers": [
     "BFIN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T09:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Awali November, Rupiah Melemah ke Rp18.148/US$",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126424/awali-november-rupiah-melemah-ke-rp18-148-us",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T09:13+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Hari Pertama Saham HSC Didepak, IHSG Jatuh ke Bawah 5.000",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126422/hari-pertama-saham-hsc-didepak-ihsg-jatuh-ke-bawah-5-000",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T09:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "5 Big Oil Barat Kompak Tahan Aksi Korporasi Saat Windfall Minyak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126421/5-big-oil-barat-kompak-tahan-aksi-korporasi-saat-windfall-minyak",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
