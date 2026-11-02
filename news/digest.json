@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T21:58+07:00",
+ "generated_for": "2026-11-02T22:59+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 465,
- "kept": 161,
+ "scanned": 459,
+ "kept": 159,
  "dropped_noise": 5,
  "items": [
   {
@@ -16,22 +16,6 @@
    "score": 9,
    "categories": [
     "global",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-01T10:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Ungkap Investor Asing Alihkan Dana dari Saham ke SBN",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126375/ojk-ungkap-investor-asing-alihkan-dana-dari-saham-ke-sbn",
-   "score": 9,
-   "categories": [
-    "kebijakan",
     "pasar",
     "kurs"
    ],
@@ -242,21 +226,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-01T10:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "MSCI Tunggu Penegakan Hukum Saham Gorengan RI Sejak Januari",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126373/msci-tunggu-penegakan-hukum-saham-gorengan-ri-sejak-januari",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-02T21:24+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -392,6 +361,39 @@
    "tier": 3,
    "title": "23 Calon Emiten Mundur dari Rencana IPO 2026",
    "link": "https://www.bloombergtechnoz.com/detail-news/126472/23-calon-emiten-mundur-dari-rencana-ipo-2026",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T13:18+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11)",
+   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BBNI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T12:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya",
+   "link": "https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya",
    "score": 5,
    "categories": [
     "pasar",
