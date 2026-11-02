@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T19:55+07:00",
+ "generated_for": "2026-11-02T21:11+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 441,
- "kept": 155,
- "dropped_noise": 6,
+ "scanned": 459,
+ "kept": 159,
+ "dropped_noise": 5,
  "items": [
   {
    "published": "2026-11-02T15:15+07:00",
@@ -257,6 +257,23 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T20:08+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Bank Mandiri Siapkan Opsi Pelunasan Obligasi Perpetual Bond AT1, Ini Penjelasannya",
+   "link": "https://keuangan.kontan.co.id/news/bank-mandiri-siapkan-opsi-pelunasan-obligasi-perpetual-bond-at1-ini-penjelasannya",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-02T19:03+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -380,21 +397,6 @@
     "BBCA",
     "BBNI"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T12:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya",
-   "link": "https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }

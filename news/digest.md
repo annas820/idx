@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-02T19:55+07:00 WIB | jendela 36 jam | dipindai 441, lolos 155, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-02T21:11+07:00 WIB | jendela 36 jam | dipindai 459, lolos 159, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -20,6 +20,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-01 18:40 cnbc_indonesia_market: Investor Asing Curhat ke Bos BI, Sesalkan Keputusan MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261101173233-17-781278/investor-asing-curhat-ke-bos-bi-sesalkan-keputusan-msci>
 - **6** T3 11-01 11:30 bloomberg_technoz: BEI Uji Coba Penghapusan Saham HSC dari IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126377/bei-uji-coba-penghapusan-saham-hsc-dari-ihsg>
 - **6** T3 11-01 10:00 bloomberg_technoz: MSCI Tunggu Penegakan Hukum Saham Gorengan RI Sejak Januari (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126373/msci-tunggu-penegakan-hukum-saham-gorengan-ri-sejak-januari>
+- **5** T3 11-02 20:08 kontan_keuangan: Bank Mandiri Siapkan Opsi Pelunasan Obligasi Perpetual Bond AT1, Ini Penjelasannya [BMRI] (kurs/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-siapkan-opsi-pelunasan-obligasi-perpetual-bond-at1-ini-penjelasannya>
 - **5** T3 11-02 19:03 cnbc_indonesia_market: Bos Blue Bird (BIRD) Borong 675.800 Saham BIRD, Senilai Rp997,43 Juta [BIRD] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102175313-17-781661/bos-blue-bird--bird--borong-675800-saham-bird-senilai-rp99743-juta>
 - **5** T3 11-02 18:37 cnbc_indonesia_market: Emtek (EMTK) Jual Saham Entitas Usaha PT Indopay Merchant Services [EMTK] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102173940-17-781656/emtek--emtk--jual-saham-entitas-usaha-pt-indopay-merchant-services>
 - **5** T3 11-02 18:23 kontan_keuangan: Bank Ina Perdana Terbitkan 13,81 Juta Saham Baru Lewat Private Placement (pasar/korporasi) <https://keuangan.kontan.co.id/news/bank-ina-perdana-terbitkan-1381-juta-saham-baru-lewat-private-placement>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-02 14:20 bloomberg_technoz: Rupiah Bergerak ke Rp18.158/US$ Siang Ini, Respons Data Inflasi (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126469/rupiah-bergerak-ke-rp18-158-us-siang-ini-respons-data-inflasi>
 - **5** T3 11-02 13:50 bloomberg_technoz: 23 Calon Emiten Mundur dari Rencana IPO 2026 (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/126472/23-calon-emiten-mundur-dari-rencana-ipo-2026>
 - **5** T3 11-02 13:18 kontan_keuangan: Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11) [BBCA,BBNI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211>
-- **5** T3 11-02 12:30 cnbc_indonesia_market: Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya>
