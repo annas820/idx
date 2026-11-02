@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T11:51+07:00",
+ "generated_for": "2026-11-02T12:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 93,
- "kept": 31,
- "dropped_noise": 1,
+ "scanned": 252,
+ "kept": 87,
+ "dropped_noise": 6,
  "items": [
   {
    "published": "2026-11-01T10:30+07:00",
@@ -18,6 +18,69 @@
     "kebijakan",
     "pasar",
     "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T12:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya",
+   "link": "https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "RAJA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T12:50+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Saham HSC Dikeluarkan, BEI Pastikan Tidak Ada Gejolak Signifikan",
+   "link": "https://www.cnbcindonesia.com/market/20261102092603-19-781407/saham-hsc-dikeluarkan-bei-pastikan-tidak-ada-gejolak-signifikan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T12:40+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Investor Asing Sesalkan Wacana MSCI Turunkan Status RI",
+   "link": "https://www.cnbcindonesia.com/market/20261102085544-19-781387/video-investor-asing-sesalkan-wacana-msci-turunkan-status-ri",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T12:12+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Saham HSC Resmi Keluar dari IHSG Hari Ini, Begini Penjelasan Bos BEI",
+   "link": "https://www.cnbcindonesia.com/market/20261102114737-17-781475/saham-hsc-resmi-keluar-dari-ihsg-hari-ini-begini-penjelasan-bos-bei",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
    ],
    "tickers": [],
    "flags": [],
@@ -38,6 +101,36 @@
    "tickers": [
     "ANTM"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T06:22+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Keluarkan 81 Saham HSC dari IHSG Mulai Hari Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261102061551-17-781328/bei-keluarkan-81-saham-hsc-dari-ihsg-mulai-hari-ini",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-01T18:40+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Investor Asing Curhat ke Bos BI, Sesalkan Keputusan MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261101173233-17-781278/investor-asing-curhat-ke-bos-bi-sesalkan-keputusan-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -72,6 +165,38 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T12:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya",
+   "link": "https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T11:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Free Float Saham Sisa 9,33%, Bos BSI (BRIS) Buka Suara",
+   "link": "https://www.cnbcindonesia.com/market/20261102091533-17-781402/free-float-saham-sisa-933-bos-bsi--bris--buka-suara",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-02T11:12+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -83,6 +208,24 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T11:02+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Ini 10 Saham Paling Boncos sepanjang 2026, Ada DSSA dan BREN",
+   "link": "https://www.cnbcindonesia.com/market/20261102105155-17-781448/ini-10-saham-paling-boncos-sepanjang-2026-ada-dssa-dan-bren",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN",
+    "DSSA"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -105,6 +248,25 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T10:43+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Ada BREN, DSSA hingga BYAN, Ini Daftar Saham Terdepak Perhitungan IHSG",
+   "link": "https://www.cnbcindonesia.com/market/20261102100526-17-781423/ada-bren-dssa-hingga-byan-ini-daftar-saham-terdepak-perhitungan-ihsg",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN",
+    "BYAN",
+    "DSSA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-02T09:48+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -120,221 +282,121 @@
    "also_in": []
   },
   {
-   "published": "2026-11-01T17:00+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-02T09:45+07:00",
+   "source": "cnbc_indonesia_news",
    "tier": 3,
-   "title": "Ekonomi Pekan Ini: Emas Rapuh, Rupiah-Neraca Dagang Jadi Sorotan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126391/ekonomi-pekan-ini-emas-rapuh-rupiah-neraca-dagang-jadi-sorotan",
+   "title": "Produksi Minyak PHE Tembus 945 Ribu Barel di Kuartal-3 2026",
+   "link": "https://www.cnbcindonesia.com/news/20261102082036-4-781363/produksi-minyak-phe-tembus-945-ribu-barel-di-kuartal-3-2026",
    "score": 5,
    "categories": [
-    "kurs",
-    "komoditas"
+    "global",
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-02T11:51+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-02T09:39+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Cetak Laba Bersih Lagi di Kuartal III, Ekosistem GOTO Tangguh",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126448/cetak-laba-bersih-lagi-di-kuartal-iii-ekosistem-goto-tangguh",
-   "score": 4,
+   "title": "OJK Resmi Gabungkan 4 Bank, Begini Nasibnya Pasca Merger",
+   "link": "https://www.cnbcindonesia.com/market/20261102093650-17-781410/ojk-resmi-gabungkan-4-bank-begini-nasibnya-pasca-merger",
+   "score": 5,
    "categories": [
-    "korporasi",
+    "kebijakan",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T09:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Belum Pidanakan Kasus BREN, CUAN-DSSA, Ini Alasannya",
+   "link": "https://www.cnbcindonesia.com/market/20261102070412-17-781336/ojk-belum-pidanakan-kasus-bren-cuan-dssa-ini-alasannya",
+   "score": 5,
+   "categories": [
+    "kebijakan",
     "emiten"
    ],
    "tickers": [
-    "GOTO"
+    "BREN",
+    "CUAN",
+    "DSSA"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-02T08:52+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-02T08:56+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Rangkuman Rekomendasi Saham Hari Ini, 2 November 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126420/rangkuman-rekomendasi-saham-hari-ini-2-november-2026",
-   "score": 4,
+   "title": "Investor Cermati Saham Teknologi, Bursa Asia Bergerak Melemah",
+   "link": "https://www.cnbcindonesia.com/market/20261102085417-17-781386/investor-cermati-saham-teknologi-bursa-asia-bergerak-melemah",
+   "score": 5,
    "categories": [
     "pasar"
    ],
    "tickers": [],
    "flags": [
-    "petunjuk"
+    "terkonfirmasi"
    ],
-   "also_in": []
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   },
   {
-   "published": "2026-11-01T14:31+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-02T08:30+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Laba BFI Finance (BFIN) Tumbuh 11,96% Jadi Rp 1,31 Triliun per Kuartal III-2026",
-   "link": "https://keuangan.kontan.co.id/news/laba-bfi-finance-bfin-tumbuh-1196-jadi-rp-131-triliun-per-kuartal-iii-2026",
-   "score": 4,
+   "title": "Emiten Terafiliasi Raffi Ahmad (VISI) Pinjam Rp45 M, Ada Syaratnya",
+   "link": "https://www.cnbcindonesia.com/market/20261101225049-17-781323/emiten-terafiliasi-raffi-ahmad--visi--pinjam-rp45-m-ada-syaratnya",
+   "score": 5,
    "categories": [
-    "korporasi",
+    "pasar",
     "emiten"
    ],
    "tickers": [
-    "BFIN"
+    "VISI"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-02T10:53+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-02T08:15+07:00",
+   "source": "cnbc_indonesia_news",
    "tier": 3,
-   "title": "Ada Aksi Jual, Yield Surat Utang 10 Tahun Naik ke 7,77%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126430/ada-aksi-jual-yield-surat-utang-10-tahun-naik-ke-7-77",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T10:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Negara Teluk Takut Pembalasan Sengit Iran Jika AS Menyerang Lagi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126434/negara-teluk-takut-pembalasan-sengit-iran-jika-as-menyerang-lagi",
-   "score": 3,
+   "title": "Surplus Dagang RI Diramal Susut di September, Minyak Jadi Beban",
+   "link": "https://www.cnbcindonesia.com/news/20261102070859-4-781337/surplus-dagang-ri-diramal-susut-di-september-minyak-jadi-beban",
+   "score": 5,
    "categories": [
     "global"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   },
   {
-   "published": "2026-11-02T09:30+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-02T06:25+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Awali November, Rupiah Melemah ke Rp18.148/US$",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126424/awali-november-rupiah-melemah-ke-rp18-148-us",
-   "score": 3,
+   "title": "Raffi Ahmad Borong Saham VISI, Rogoh Kantong Rp 72 Miliar",
+   "link": "https://www.cnbcindonesia.com/market/20261101223159-17-781311/raffi-ahmad-borong-saham-visi-rogoh-kantong-rp-72-miliar",
+   "score": 5,
    "categories": [
-    "kurs"
+    "pasar",
+    "emiten"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T09:13+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Hari Pertama Saham HSC Didepak, IHSG Jatuh ke Bawah 5.000",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126422/hari-pertama-saham-hsc-didepak-ihsg-jatuh-ke-bawah-5-000",
-   "score": 3,
-   "categories": [
-    "pasar"
+   "tickers": [
+    "VISI"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T09:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "5 Big Oil Barat Kompak Tahan Aksi Korporasi Saat Windfall Minyak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126421/5-big-oil-barat-kompak-tahan-aksi-korporasi-saat-windfall-minyak",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T08:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Investor Asing Net Sell Rp4 Triliun, Saham-saham Ini Dilepas",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126416/investor-asing-net-sell-rp4-triliun-saham-saham-ini-dilepas",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T08:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Dua Pemicu Bursa Saham Jepang Rontok Senin Pagi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126413/dua-pemicu-bursa-saham-jepang-rontok-senin-pagi",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T08:06+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Prediksi Rupiah Hari Ini, Bisakah ke Bawah Rp18.000/US$?",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126412/prediksi-rupiah-hari-ini-bisakah-ke-bawah-rp18-000-us",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T07:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Minyak Melemah Jelang Pemilu AS",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126410/harga-minyak-melemah-jelang-pemilu-as",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T06:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Putin Sepakat Hentikan Rekrutmen Warga Ghana untuk Perang Ukraina",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126405/putin-sepakat-hentikan-rekrutmen-warga-ghana-untuk-perang-ukraina",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T06:39+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OPEC+ Tak Ubah Target Produksi Minyak untuk Desember 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126403/opec-tak-ubah-target-produksi-minyak-untuk-desember-2026",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -344,41 +406,17 @@
    "tier": 3,
    "title": "Bursa Asia Bersiap Melemah usai Saham Teknologi Anjlok",
    "link": "https://www.bloombergtechnoz.com/detail-news/126399/bursa-asia-bersiap-melemah-usai-saham-teknologi-anjlok",
-   "score": 3,
+   "score": 5,
    "categories": [
     "pasar"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-01T20:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OPEC+ Tetap Jalankan Kuota Produksi Minyak Stabil untuk Desember",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126397/opec-tetap-jalankan-kuota-produksi-minyak-stabil-untuk-desember",
-   "score": 3,
-   "categories": [
-    "global"
+   "flags": [
+    "terkonfirmasi"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-01T20:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ekonomi Arab Saudi Melambat Bahkan Sebelum Eskalasi dengan Houthi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126395/ekonomi-arab-saudi-melambat-bahkan-sebelum-eskalasi-dengan-houthi",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   }
  ],
  "watchlist_hits": []
