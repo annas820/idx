@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T22:59+07:00",
+ "generated_for": "2026-11-03T04:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 459,
- "kept": 159,
+ "scanned": 423,
+ "kept": 147,
  "dropped_noise": 5,
  "items": [
   {
@@ -211,21 +211,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-01T11:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Uji Coba Penghapusan Saham HSC dari IHSG",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126377/bei-uji-coba-penghapusan-saham-hsc-dari-ihsg",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-02T21:24+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -400,6 +385,23 @@
     "korporasi"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T11:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Free Float Saham Sisa 9,33%, Bos BSI (BRIS) Buka Suara",
+   "link": "https://www.cnbcindonesia.com/market/20261102091533-17-781402/free-float-saham-sisa-933-bos-bsi--bris--buka-suara",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
    "flags": [],
    "also_in": []
   }

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-02T22:59+07:00 WIB | jendela 36 jam | dipindai 459, lolos 159, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-03T04:30+07:00 WIB | jendela 36 jam | dipindai 423, lolos 147, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -17,7 +17,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-02 08:42 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp5.000, Buyback Lebih Tajam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126417/harga-emas-antam-hari-ini-naik-rp5-000-buyback-lebih-tajam>
 - **6** T3 11-02 06:22 cnbc_indonesia_market: BEI Keluarkan 81 Saham HSC dari IHSG Mulai Hari Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102061551-17-781328/bei-keluarkan-81-saham-hsc-dari-ihsg-mulai-hari-ini>
 - **6** T3 11-01 18:40 cnbc_indonesia_market: Investor Asing Curhat ke Bos BI, Sesalkan Keputusan MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261101173233-17-781278/investor-asing-curhat-ke-bos-bi-sesalkan-keputusan-msci>
-- **6** T3 11-01 11:30 bloomberg_technoz: BEI Uji Coba Penghapusan Saham HSC dari IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126377/bei-uji-coba-penghapusan-saham-hsc-dari-ihsg>
 - **5** T3 11-02 21:24 kontan_keuangan: Saham Big Banks Ditutup Variatif, Simak Rekomendasi BBCA, BBRI, dan BMRI [BBCA,BBRI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-ditutup-variatif-simak-rekomendasi-bbca-bbri-dan-bmri>
 - **5** T3 11-02 20:08 kontan_keuangan: Bank Mandiri Siapkan Opsi Pelunasan Obligasi Perpetual Bond AT1, Ini Penjelasannya [BMRI] (kurs/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-siapkan-opsi-pelunasan-obligasi-perpetual-bond-at1-ini-penjelasannya>
 - **5** T3 11-02 19:03 cnbc_indonesia_market: Bos Blue Bird (BIRD) Borong 675.800 Saham BIRD, Senilai Rp997,43 Juta [BIRD] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102175313-17-781661/bos-blue-bird--bird--borong-675800-saham-bird-senilai-rp99743-juta>
@@ -29,3 +28,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-02 13:50 bloomberg_technoz: 23 Calon Emiten Mundur dari Rencana IPO 2026 (pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/126472/23-calon-emiten-mundur-dari-rencana-ipo-2026>
 - **5** T3 11-02 13:18 kontan_keuangan: Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11) [BBCA,BBNI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211>
 - **5** T3 11-02 12:30 cnbc_indonesia_market: Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya>
+- **5** T3 11-02 11:15 cnbc_indonesia_market: Free Float Saham Sisa 9,33%, Bos BSI (BRIS) Buka Suara [BRIS] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102091533-17-781402/free-float-saham-sisa-933-bos-bsi--bris--buka-suara>
