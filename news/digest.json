@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T10:49+07:00",
+ "generated_for": "2026-11-02T11:51+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 80,
- "kept": 27,
+ "scanned": 93,
+ "kept": 31,
  "dropped_noise": 1,
  "items": [
   {
@@ -72,6 +72,39 @@
    "also_in": []
   },
   {
+   "published": "2026-11-02T11:12+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Inflasi Oktober 0,22%, Tertekan Harga Pangan & Tarif Pesawat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126438/inflasi-oktober-0-22-tertekan-harga-pangan-tarif-pesawat",
+   "score": 5,
+   "categories": [
+    "global",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T10:57+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Daftar 82 Saham yang Dikeluarkan dari IHSG: DCII hingga BREN",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126433/daftar-82-saham-yang-dikeluarkan-dari-ihsg-dcii-hingga-bren",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN",
+    "DCII"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-02T09:48+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -98,6 +131,23 @@
     "komoditas"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T11:51+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Cetak Laba Bersih Lagi di Kuartal III, Ekosistem GOTO Tangguh",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126448/cetak-laba-bersih-lagi-di-kuartal-iii-ekosistem-goto-tangguh",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "GOTO"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -131,6 +181,20 @@
    "tickers": [
     "BFIN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T10:53+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ada Aksi Jual, Yield Surat Utang 10 Tahun Naik ke 7,77%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126430/ada-aksi-jual-yield-surat-utang-10-tahun-naik-ke-7-77",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -311,62 +375,6 @@
    "score": 3,
    "categories": [
     "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-01T18:06+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Volatilitas Pasar dan BI Rate Jadi Pertimbangan Ciputra Life Kelola Investasi",
-   "link": "https://keuangan.kontan.co.id/news/volatilitas-pasar-dan-bi-rate-jadi-pertimbangan-ciputra-life-kelola-investasi",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-01T15:00+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Simpanan Valas Perbankan Berpotensi Meningkat di Tengah Pelemahan Rupiah",
-   "link": "https://keuangan.kontan.co.id/news/simpanan-valas-perbankan-berpotensi-meningkat-di-tengah-pelemahan-rupiah",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-01T14:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pemilu AS Jadi Faktor Penentu bagi Investor Saham Asia",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126383/pemilu-as-jadi-faktor-penentu-bagi-investor-saham-asia",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-01T13:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Limpahkan Kasus BPR DCN Malang, 2 Direksi Bank Rugikan Rp54 M",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126381/ojk-limpahkan-kasus-bpr-dcn-malang-2-direksi-bank-rugikan-rp54-m",
-   "score": 3,
-   "categories": [
-    "kebijakan"
    ],
    "tickers": [],
    "flags": [],
