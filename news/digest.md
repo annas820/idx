@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-02T16:57+07:00 WIB | jendela 36 jam | dipindai 369, lolos 132, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-02T17:50+07:00 WIB | jendela 36 jam | dipindai 394, lolos 138, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -8,6 +8,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-01 10:30 bloomberg_technoz: OJK Ungkap Investor Asing Alihkan Dana dari Saham ke SBN (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126375/ojk-ungkap-investor-asing-alihkan-dana-dari-saham-ke-sbn>
 - **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
 - **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
+- **6** T3 11-02 17:30 cnbc_indonesia_market: Video: Saham HSC Keluar Dari IHSG hingga Rupiah Anjlok ke Rp18.140/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102170250-19-781631/video-saham-hsc-keluar-dari-ihsg-hingga-rupiah-anjlok-ke-rp18140-usd>
+- **6** T3 11-02 17:17 cnbc_indonesia_market: Ada Masalah Keuangan, 2 Saham Masuk ke Pemantauan Khusus BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102170442-17-781638/ada-masalah-keuangan-2-saham-masuk-ke-pemantauan-khusus-bei>
 - **6** T3 11-02 14:47 cnbc_indonesia_market: Video:IHSG Menguat Tapi Rupiah Nyaris Rp 18.200/USD, Ada Sentimen Apa? (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142233-19-781548/videoihsg-menguat-tapi-rupiah-nyaris-rp-18200-usd-ada-sentimen-apa>
 - **6** T3 11-02 13:40 cnbc_indonesia_news: India Tuntut Ketua KPU Mundur - BEI Keluarkan Saham HSC Dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261102114938-8-781479/india-tuntut-ketua-kpu-mundur--bei-keluarkan-saham-hsc-dari-ihsg>
 - **6** T3 11-02 12:50 cnbc_indonesia_market: Saham HSC Dikeluarkan, BEI Pastikan Tidak Ada Gejolak Signifikan (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102092603-19-781407/saham-hsc-dikeluarkan-bei-pastikan-tidak-ada-gejolak-signifikan>
@@ -27,5 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-02 11:15 cnbc_indonesia_market: Free Float Saham Sisa 9,33%, Bos BSI (BRIS) Buka Suara [BRIS] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102091533-17-781402/free-float-saham-sisa-933-bos-bsi--bris--buka-suara>
 - **5** T3 11-02 11:12 bloomberg_technoz: Inflasi Oktober 0,22%, Tertekan Harga Pangan & Tarif Pesawat (global/makro) <https://www.bloombergtechnoz.com/detail-news/126438/inflasi-oktober-0-22-tertekan-harga-pangan-tarif-pesawat>
 - **5** T3 11-02 11:02 cnbc_indonesia_market: Ini 10 Saham Paling Boncos sepanjang 2026, Ada DSSA dan BREN [BREN,DSSA] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102105155-17-781448/ini-10-saham-paling-boncos-sepanjang-2026-ada-dssa-dan-bren>
-- **5** T3 11-02 10:57 bloomberg_technoz: Daftar 82 Saham yang Dikeluarkan dari IHSG: DCII hingga BREN [BREN,DCII] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126433/daftar-82-saham-yang-dikeluarkan-dari-ihsg-dcii-hingga-bren>
-- **5** T3 11-02 10:43 cnbc_indonesia_market: Ada BREN, DSSA hingga BYAN, Ini Daftar Saham Terdepak Perhitungan IHSG [BREN,BYAN,DSSA] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102100526-17-781423/ada-bren-dssa-hingga-byan-ini-daftar-saham-terdepak-perhitungan-ihsg>

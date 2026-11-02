@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-02T16:57+07:00",
+ "generated_for": "2026-11-02T17:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 369,
- "kept": 132,
+ "scanned": 394,
+ "kept": 138,
  "dropped_noise": 6,
  "items": [
   {
@@ -70,6 +70,36 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T17:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Saham HSC Keluar Dari IHSG hingga Rupiah Anjlok ke Rp18.140/USD",
+   "link": "https://www.cnbcindonesia.com/market/20261102170250-19-781631/video-saham-hsc-keluar-dari-ihsg-hingga-rupiah-anjlok-ke-rp18140-usd",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-02T17:17+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Ada Masalah Keuangan, 2 Saham Masuk ke Pemantauan Khusus BEI",
+   "link": "https://www.cnbcindonesia.com/market/20261102170442-17-781638/ada-masalah-keuangan-2-saham-masuk-ke-pemantauan-khusus-bei",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -364,43 +394,6 @@
    ],
    "tickers": [
     "BREN",
-    "DSSA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T10:57+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Daftar 82 Saham yang Dikeluarkan dari IHSG: DCII hingga BREN",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126433/daftar-82-saham-yang-dikeluarkan-dari-ihsg-dcii-hingga-bren",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BREN",
-    "DCII"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T10:43+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Ada BREN, DSSA hingga BYAN, Ini Daftar Saham Terdepak Perhitungan IHSG",
-   "link": "https://www.cnbcindonesia.com/market/20261102100526-17-781423/ada-bren-dssa-hingga-byan-ini-daftar-saham-terdepak-perhitungan-ihsg",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BREN",
-    "BYAN",
     "DSSA"
    ],
    "flags": [],
