@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T06:25+07:00",
+ "generated_for": "2026-11-03T07:54+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 420,
- "kept": 149,
- "dropped_noise": 5,
+ "scanned": 427,
+ "kept": 155,
+ "dropped_noise": 6,
  "items": [
   {
    "published": "2026-11-02T15:15+07:00",
@@ -58,6 +58,27 @@
    "also_in": []
   },
   {
+   "published": "2026-11-03T06:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Medco (MEDC) Akan Tebar Dividen Interim Rp544 Miliar",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126518/medco-medc-akan-tebar-dividen-interim-rp544-miliar",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "MEDC"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
    "published": "2026-11-03T06:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -101,6 +122,27 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-02T16:08+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Medco (MEDC) Mau Tebar Dividen Interim Rp544 M, Cek Jadwal Cairnya",
+   "link": "https://www.cnbcindonesia.com/market/20261102153435-17-781581/medco--medc--mau-tebar-dividen-interim-rp544-m-cek-jadwal-cairnya",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "MEDC"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   },
   {
    "published": "2026-11-02T14:47+07:00",
@@ -211,17 +253,53 @@
    "also_in": []
   },
   {
-   "published": "2026-11-01T18:40+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-03T07:25+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Investor Asing Curhat ke Bos BI, Sesalkan Keputusan MSCI",
-   "link": "https://www.cnbcindonesia.com/market/20261101173233-17-781278/investor-asing-curhat-ke-bos-bi-sesalkan-keputusan-msci",
-   "score": 6,
+   "title": "Tekanan Likuiditas MNC Bank Menguat, OJK Diminta Turun Tangan",
+   "link": "https://keuangan.kontan.co.id/news/tekanan-likuiditas-mnc-bank-menguat-ojk-diminta-turun-tangan",
+   "score": 5,
    "categories": [
     "kebijakan",
-    "pasar"
+    "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T06:45+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham BBCA, BMRI dan BBRI Berpeluang Pulih, Cermati Rekomendasi Analis",
+   "link": "https://keuangan.kontan.co.id/news/saham-bbca-bmri-dan-bbri-berpeluang-pulih-cermati-rekomendasi-analis",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BBRI",
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T06:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Induk Emiten Salim Grup Disorot Singapura soal Karhutla, Ini Kata SIMP",
+   "link": "https://www.cnbcindonesia.com/market/20261102224459-17-781714/induk-emiten-salim-grup-disorot-singapura-soal-karhutla-ini-kata-simp",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "SIMP"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -335,69 +413,6 @@
    "categories": [
     "kebijakan",
     "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T14:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Bergerak ke Rp18.158/US$ Siang Ini, Respons Data Inflasi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126469/rupiah-bergerak-ke-rp18-158-us-siang-ini-respons-data-inflasi",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T13:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "23 Calon Emiten Mundur dari Rencana IPO 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126472/23-calon-emiten-mundur-dari-rencana-ipo-2026",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T13:18+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham Big Banks Bergerak Bervariasi, BBCA dan BBNI Menguat di Sesi I Senin (2/11)",
-   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-bergerak-bervariasi-bbca-dan-bbni-menguat-di-sesi-i-senin-211",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BBNI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T12:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Laba Emiten Raffi Ahmad (RANS) Naik 27,3%, Ini Penyebabnya",
-   "link": "https://www.cnbcindonesia.com/market/20261102122203-17-781486/laba-emiten-raffi-ahmad--rans--naik-273-ini-penyebabnya",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],
