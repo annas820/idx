@@ -1,0 +1,217 @@
+{
+  "schema": "idx.bandar.screen.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-03T11:16:32Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "period": "1w",
+    "from": "2026-10-28",
+    "to": "2026-11-03",
+    "top": 5,
+    "preset": "foreign-accumulation",
+    "filters": [
+      "acc>=5",
+      "fpct>=5"
+    ],
+    "sort": "acc",
+    "descending": true,
+    "scanned": 100,
+    "checked": 100,
+    "total_matches": 6,
+    "rows": [
+      {
+        "symbol": "MARK",
+        "name": "MARK DYNAMICS INDONESIA Tbk",
+        "signal": "big_accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 16.397849462365592,
+        "net_value": 12200000000.0,
+        "net_lots": 107516.0,
+        "price": 1055.0,
+        "price_change_pct": -4.09090909090909,
+        "bandar_average": 1125.49664456179,
+        "bandar_gain_pct": -6.2636032637163215,
+        "buy_share_pct": 84.13978494623656,
+        "total_value": 74400000000.0,
+        "foreign_net_value": 28600000000.0,
+        "foreign_net_pct": 38.44086021505376,
+        "top_buyers": [
+          "CC",
+          "ZP",
+          "CP",
+          "RO",
+          "AG"
+        ],
+        "top_sellers": [
+          "YU",
+          "CC",
+          "ZP",
+          "AK",
+          "CP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "MPMX",
+        "name": "MITRA PINASTHIKA MUSTIKA Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 10.354223433242508,
+        "net_value": 3800000000.0,
+        "net_lots": 38724.0,
+        "price": 1040.0,
+        "price_change_pct": 2.970297029702973,
+        "bandar_average": 1031.0876385319982,
+        "bandar_gain_pct": 0.8643650777047984,
+        "buy_share_pct": 65.9400544959128,
+        "total_value": 36700000000.0,
+        "foreign_net_value": 6100000000.0,
+        "foreign_net_pct": 16.62125340599455,
+        "top_buyers": [
+          "XL",
+          "CC",
+          "AK",
+          "KK",
+          "PD"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "PD",
+          "AK",
+          "OD"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "WIFI",
+        "name": "SOLUSI SINERGI DIGITAL Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 9.595959595959595,
+        "net_value": 19000000000.0,
+        "net_lots": 198165.0,
+        "price": 860.0,
+        "price_change_pct": -11.340206185567014,
+        "bandar_average": 924.7932460749819,
+        "bandar_gain_pct": -7.006241270681645,
+        "buy_share_pct": 61.76767676767677,
+        "total_value": 198000000000.0,
+        "foreign_net_value": 13400000000.0,
+        "foreign_net_pct": 6.767676767676768,
+        "top_buyers": [
+          "CC",
+          "XL",
+          "MG",
+          "BK",
+          "AK"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "OD",
+          "MG"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "CDIA",
+        "name": "CHANDRA DAYA INVESTASI Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.776173285198556,
+        "net_value": 4800000000.0,
+        "net_lots": 139747.0,
+        "price": 356.0,
+        "price_change_pct": -10.552763819095478,
+        "bandar_average": 354.207707114886,
+        "bandar_gain_pct": 0.506000532770079,
+        "buy_share_pct": 60.64981949458483,
+        "total_value": 83100000000.0,
+        "foreign_net_value": 10200000000.0,
+        "foreign_net_pct": 12.274368231046932,
+        "top_buyers": [
+          "CC",
+          "XL",
+          "HP",
+          "AK",
+          "BK"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "YP",
+          "AK",
+          "XC"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "GOTO",
+        "name": "MVS GOTO GOJEK TOKOPEDIA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.221078134463961,
+        "net_value": 43100000000.0,
+        "net_lots": 17000000.0,
+        "price": 24.0,
+        "price_change_pct": 0.0,
+        "bandar_average": 24.0,
+        "bandar_gain_pct": 0.0,
+        "buy_share_pct": 68.8915808600848,
+        "total_value": 825500000000.0,
+        "foreign_net_value": 118900000000.0,
+        "foreign_net_pct": 14.403391883706846,
+        "top_buyers": [
+          "YU",
+          "AK",
+          "MG",
+          "XL",
+          "KI"
+        ],
+        "top_sellers": [
+          "AK",
+          "YU",
+          "MG",
+          "XL",
+          "SS"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "UNVR",
+        "name": "UNILEVER INDONESIA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.085574572127139,
+        "net_value": 10400000000.0,
+        "net_lots": 75323.0,
+        "price": 1380.0,
+        "price_change_pct": -1.0752688172043001,
+        "bandar_average": 1395.2036962951722,
+        "bandar_gain_pct": -1.0897115837310456,
+        "buy_share_pct": 77.21271393643032,
+        "total_value": 204500000000.0,
+        "foreign_net_value": 18000000000.0,
+        "foreign_net_pct": 8.80195599022005,
+        "top_buyers": [
+          "AK",
+          "DX",
+          "BK",
+          "ZP",
+          "CC"
+        ],
+        "top_sellers": [
+          "AK",
+          "RX",
+          "CC",
+          "PD",
+          "ZP"
+        ],
+        "rounded": true
+      }
+    ]
+  }
+}

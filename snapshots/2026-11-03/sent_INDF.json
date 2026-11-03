@@ -1,0 +1,40 @@
+{
+  "schema": "idx.sentiment.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-03T11:17:11Z",
+  "cached": true,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": "INDF",
+    "matched_name": "INDOFOOD SUKSES MAKMUR",
+    "label": "neutral",
+    "score": 0.0,
+    "items": 1,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 1,
+    "oldest": "2026-11-03T09:20:02+07:00",
+    "newest": "2026-11-03T09:20:02+07:00",
+    "top_positive_terms": [],
+    "top_negative_terms": [],
+    "headlines": [
+      {
+        "title": "Salim Group Terseret Isu Karhutla, Indofood (INDF) Ungkap Fakta Ini",
+        "url": "https://www.cnbcindonesia.com/market/20261103074746-17-781751/salim-group-terseret-isu-karhutla-indofood--indf--ungkap-fakta-ini",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T09:20:02+07:00",
+        "summary": "PT Indofood Sukses Makmur menjelaskan pemanggilan otoritas Singapura terkait Indofood Agri Resources.",
+        "matched_by": "ticker",
+        "scope": "company",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ],
+    "method": "lexicon: (positive - negative) / (positive + negative) per headline over title + summary, Indonesian and English finance terms; mean over matched items"
+  }
+}

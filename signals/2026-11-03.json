@@ -1,0 +1,70 @@
+{
+ "version": "CLO-FT-1.0",
+ "signal_date": "2026-11-03",
+ "breadth": 0.082,
+ "universe_with_data": 98,
+ "regime_ok": false,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "AYAM",
+   "signal_date": "2026-11-03",
+   "close": 484.0,
+   "atr": 20.67,
+   "limit": 473.67,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BMRI",
+   "signal_date": "2026-11-03",
+   "close": 3590.0,
+   "atr": 136.26,
+   "limit": 3521.87,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BRIS",
+   "signal_date": "2026-11-03",
+   "close": 1010.0,
+   "atr": 60.83,
+   "limit": 979.59,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BULL",
+   "signal_date": "2026-11-03",
+   "close": 232.0,
+   "atr": 24.79,
+   "limit": 219.6,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SGER",
+   "signal_date": "2026-11-03",
+   "close": 700.0,
+   "atr": 47.8,
+   "limit": 676.1,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ]
+}

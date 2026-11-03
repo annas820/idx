@@ -1,0 +1,295 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-03T11:16:34Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "BI Ungkap Beda Inflasi Produsen dan Konsumen, Ini Penjelasannya",
+        "url": "https://www.cnbcindonesia.com/market/20261103175920-17-782013/bi-ungkap-beda-inflasi-produsen-dan-konsumen-ini-penjelasannya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T18:11:55+07:00",
+        "summary": "BI menjelaskan bahwa kenaikan inflasi produsen 7% tidak otomatis berdampak pada inflasi konsumen, yang tercatat 3,23%. Respons kebijakan perlu disesuaikan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Seni Destry Jaga Rupiah: Bukan Cuma Intervensi Pasar!",
+        "url": "https://www.cnbcindonesia.com/market/20261103180951-17-782014/seni-destry-jaga-rupiah-bukan-cuma-intervensi-pasar",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T18:11:39+07:00",
+        "summary": "Gubernur BI Destry Damayanti memastikan, kebijakan bank sentral dalam menjaga stabilitas nilai tukar rupiah terhadap dolar AS banyak",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Saham Big Banks Berguguran Pada Perdagangan Hari Ini (3/11), BRI Turun Paling Dalam",
+        "url": "https://keuangan.kontan.co.id/news/saham-big-banks-berguguran-pada-perdagangan-hari-ini-311-bri-turun-paling-dalam",
+        "source": "kontan/keuangan",
+        "published": "2026-11-03T18:03:11+07:00",
+        "summary": "Saham big banks kompak melemah dengan saham BRI turun paling dalam hingga 5,67% pada perdagangan hari ini (3/11/2026)",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun",
+          "melemah"
+        ]
+      },
+      {
+        "title": "Aset Kripto Masih Menarik, Investor 23,48 Juta, Transaksi Rp 30,5 T",
+        "url": "https://www.cnbcindonesia.com/market/20261103175422-17-782009/aset-kripto-masih-menarik-investor-2348-juta-transaksi-rp-305-t",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:58:00+07:00",
+        "summary": "OJK melaporkan pertumbuhan ekosistem aset kripto di Indonesia, dengan 23,48 juta pengguna dan transaksi mencapai Rp30,56 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Sun Life Resmi Spin Off UUS dengan Mendirikan Sunlife Syariah, Ini Pertimbangannya",
+        "url": "https://keuangan.kontan.co.id/news/sun-life-resmi-spin-off-uus-dengan-mendirikan-sunlife-syariah-ini-pertimbangannya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-03T17:57:59+07:00",
+        "summary": "Sun Life Financial Indonesia resmi melakukan pemisahan atau spin off UUS menjadi Sunlife Syariah yang berdiri mandiri (full-fledged).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BI: Transaksi Tanpa Dolar RI US$52,6 M hingga September, Naik 2x Lipat",
+        "url": "https://www.cnbcindonesia.com/market/20261103175121-17-782006/bi-transaksi-tanpa-dolar-ri-us-526-m-hingga-september-naik-2x-lipat",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:53:37+07:00",
+        "summary": "Bank Indonesia mencatat transaksi Local Currency Transaction (LCT) mencapai US$52,6 miliar hingga September 2026, meningkat dua kali lipat dari tahun lalu.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Ekspor Satu Pintu, BP BUMN: DSI Tak Kuasai Barang, Hanya Verifikasi",
+        "url": "https://www.cnbcindonesia.com/market/20261103150829-17-781935/ekspor-satu-pintu-bp-bumn-dsi-tak-kuasai-barang-hanya-verifikasi",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:50:00+07:00",
+        "summary": "BP BUMN memastikan PT DSI tidak menguasai barang komoditas dalam proses ekspor sumber daya alam strategis.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kondisi Bank RI saat Global Bergejolak, Kredit Naik 13%, Modal Tebal",
+        "url": "https://www.cnbcindonesia.com/market/20261103174439-17-782003/kondisi-bank-ri-saat-global-bergejolak-kredit-naik-13-modal-tebal",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:46:34+07:00",
+        "summary": "OJK melaporkan pertumbuhan kredit perbankan 13,26% YoY hingga September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Belanja Negara Masih Rp990 T, Suahasil Ingatkan K/L Jangan Asal Ngegas",
+        "url": "https://www.cnbcindonesia.com/market/20261103174143-17-782002/belanja-negara-masih-rp990-t-suahasil-ingatkan-k-l-jangan-asal-ngegas",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:44:11+07:00",
+        "summary": "Menkeu Suahasil Nazara mengingatkan K/L untuk efisiensi belanja negara. Target belanja hingga 2026 mencapai Rp990 triliun dengan prinsip tata kelola baik.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Ungkap Bukti Pasar Modal Pulih Bertahap",
+        "url": "https://www.cnbcindonesia.com/market/20261103174120-17-782001/ojk-ungkap-bukti-pasar-modal-pulih-bertahap",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:42:45+07:00",
+        "summary": "Ketua OJK Friderica Widyasari Dewi mengungkapkan pemulihan pasar modal Indonesia. IHSG naik 7,83% di Q3 2026, meski ada tekanan di Oktober.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "pulih",
+          "pemulihan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Catat! BI Beri Insentif Bank yang Dukung Penciptaan Lapangan Kerja",
+        "url": "https://www.cnbcindonesia.com/market/20261103173758-17-781998/catat-bi-beri-insentif-bank-yang-dukung-penciptaan-lapangan-kerja",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:41:57+07:00",
+        "summary": "BI akan turut berkontribusi mendorong perluasan penciptaan lapangan kerja di Indonesia melalui insentif KLM",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Duit Asing Serbu RI, Total Tembus US$13,23 Miliar hingga Oktober",
+        "url": "https://www.cnbcindonesia.com/market/20261103173728-17-782000/duit-asing-serbu-ri-total-tembus-us-1323-miliar-hingga-oktober",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:40:56+07:00",
+        "summary": "Aliran modal asing ke Indonesia mencapai net inflow US$13,23 miliar hingga 23 Oktober 2026, didukung oleh investasi SBN dan SRBI.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Ekosistem Emas Dukung Ekonomi 8%, RI Majukan Hilirisasi Emas",
+        "url": "https://www.cnbcindonesia.com/market/20261103164415-19-781981/video-ekosistem-emas-dukung-ekonomi-8-ri-majukan-hilirisasi-emas",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:36:57+07:00",
+        "summary": "Perkuat Ekosistem Emas Dukung Ekonomi 8%, RI Majukan Industri dan Investasi Emas",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pendapatan Negara Tembus Rp2.341 T di Q3, Coretax Dongkrak Pajak!",
+        "url": "https://www.cnbcindonesia.com/market/20261103172713-17-781996/pendapatan-negara-tembus-rp2341-t-di-q3-coretax-dongkrak-pajak",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:31:46+07:00",
+        "summary": "Menteri Keuangan Suahasil Nazara ungkap realisasi APBN kuartal III-2026 dorong pertumbuhan ekonomi. Pendapatan negara tumbuh 25,5%, belanja negara optimal.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Perluas Ekosistem Pembiayaan, UMKM Didorong Perkuat Kapasitas dan Bisnis",
+        "url": "https://keuangan.kontan.co.id/news/perluas-ekosistem-pembiayaan-umkm-didorong-perkuat-kapasitas-dan-bisnis",
+        "source": "kontan/keuangan",
+        "published": "2026-11-03T17:28:21+07:00",
+        "summary": "Tantangan pengembangan UMKM tidak hanya berkaitan dengan ketersediaan modal, tetapi juga kemampuan mengelola keuangan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Tugure Bukukan Premi Bruto Rp 2,46 Triliun hingga Kuartal III-2026",
+        "url": "https://keuangan.kontan.co.id/news/tugure-bukukan-premi-bruto-rp-246-triliun-hingga-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-03T17:26:58+07:00",
+        "summary": "Ugu Reasuransi Indonesia (Tugure) mencatatkan kinerja hingga kuartal III-2026 tetap resilen, di tengah ketidakpastian kondisi ekonomi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Adu Kuat Manufaktur 8 Raksasa Dunia: AS Perkasa, China Mulai Loyo",
+        "url": "https://www.cnbcindonesia.com/research/20261103141900-128-781910/adu-kuat-manufaktur-8-raksasa-dunia-as-perkasa-china-mulai-loyo",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-03T17:25:14+07:00",
+        "summary": "Adu kuat PMI manufaktur delapan negara pada Oktober 2026 menunjukkan AS dan Taiwan memimpin, sementara China tertinggal.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Dolar Menguat ke Level Rp18.145/US$, Gubernur BI Tunjuk Masalahnya",
+        "url": "https://www.cnbcindonesia.com/market/20261103172344-17-781995/dolar-menguat-ke-level-rp18145-us--gubernur-bi-tunjuk-masalahnya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:24:47+07:00",
+        "summary": "Gubernur BI Destry Damayanti mengungkapkan penyebab nilai tukar rupiah terhadap dolar AS terus tertekan hingga saat ini.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": [
+          "tertekan"
+        ]
+      },
+      {
+        "title": "Kabar Baik! Asing Borong SBN RI Rp28,79 T di Tengah Gejolak Global",
+        "url": "https://www.cnbcindonesia.com/market/20261103171913-17-781993/kabar-baik-asing-borong-sbn-ri-rp2879-t-di-tengah-gejolak-global",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:21:08+07:00",
+        "summary": "Surat Berharga Negara Indonesia menunjukkan ketahanan di tengah volatilitas pasar global, dengan investor asing mencatat beli bersih Rp28,79 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "beli"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Tekanan Ekonomi Membesar, Pemerintah Pede Ekonomi RI Tetap Tumbuh 5,5%",
+        "url": "https://www.cnbcindonesia.com/market/20261103171707-17-781990/tekanan-ekonomi-membesar-pemerintah-pede-ekonomi-ri-tetap-tumbuh-55",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T17:18:22+07:00",
+        "summary": "Pemerintah meyakini, laju pertumbuhan ekonomi Indonesia masih akan mampu mencapai target dalam APBN 2026 sebesar 5,4%",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      }
+    ]
+  }
+}
