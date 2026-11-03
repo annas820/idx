@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-03T15:10+07:00 WIB | jendela 36 jam | dipindai 604, lolos 205, dibuang sebagai noise 16.
+Berita terbaru: 2026-11-03T16:50+07:00 WIB | jendela 36 jam | dipindai 641, lolos 214, dibuang sebagai noise 16.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -31,5 +31,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-02 12:12 cnbc_indonesia_market: Saham HSC Resmi Keluar dari IHSG Hari Ini, Begini Penjelasan Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102114737-17-781475/saham-hsc-resmi-keluar-dari-ihsg-hari-ini-begini-penjelasan-bos-bei>
 - **6** T3 11-02 08:42 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp5.000, Buyback Lebih Tajam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126417/harga-emas-antam-hari-ini-naik-rp5-000-buyback-lebih-tajam>
 - **6** T3 11-02 06:22 cnbc_indonesia_market: BEI Keluarkan 81 Saham HSC dari IHSG Mulai Hari Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102061551-17-781328/bei-keluarkan-81-saham-hsc-dari-ihsg-mulai-hari-ini>
-- **5** T3 11-03 13:50 bloomberg_technoz: Timteng Kembali Ekspor Minyak 15,53 Juta Barel, Level Praperang (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126585/timteng-kembali-ekspor-minyak-15-53-juta-barel-level-praperang>
-- **5** T3 11-03 13:02 cnbc_indonesia_market: Perang Arab Kian Panas, Laba Saudi Aramco Meroket 34,6% di Kuartal-III (global/korporasi) <https://www.cnbcindonesia.com/market/20261103130002-17-781865/perang-arab-kian-panas-laba-saudi-aramco-meroket-346-di-kuartal-iii>
+- **5** T3 11-03 16:17 cnbc_indonesia_market: Angkasa Pura Alihkan Seluruh Saham GMFI ke InJourney Senilai Rp 5,6 T [GMFI] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103160511-17-781954/angkasa-pura-alihkan-seluruh-saham-gmfi-ke-injourney-senilai-rp-56-t>
+- **5** T3 11-03 15:30 bloomberg_technoz: Harga Minyak Timteng Melemah Saat Ekspor via Hormuz Mulai Naik (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126597/harga-minyak-timteng-melemah-saat-ekspor-via-hormuz-mulai-naik>

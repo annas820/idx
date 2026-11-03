@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T15:10+07:00",
+ "generated_for": "2026-11-03T16:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 604,
- "kept": 205,
+ "scanned": 641,
+ "kept": 214,
  "dropped_noise": 16,
  "items": [
   {
@@ -386,30 +386,32 @@
    "also_in": []
   },
   {
-   "published": "2026-11-03T13:50+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-03T16:17+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Timteng Kembali Ekspor Minyak 15,53 Juta Barel, Level Praperang",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126585/timteng-kembali-ekspor-minyak-15-53-juta-barel-level-praperang",
+   "title": "Angkasa Pura Alihkan Seluruh Saham GMFI ke InJourney Senilai Rp 5,6 T",
+   "link": "https://www.cnbcindonesia.com/market/20261103160511-17-781954/angkasa-pura-alihkan-seluruh-saham-gmfi-ke-injourney-senilai-rp-56-t",
    "score": 5,
    "categories": [
-    "global",
-    "komoditas"
+    "pasar",
+    "emiten"
    ],
-   "tickers": [],
+   "tickers": [
+    "GMFI"
+   ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-03T13:02+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-03T15:30+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Perang Arab Kian Panas, Laba Saudi Aramco Meroket 34,6% di Kuartal-III",
-   "link": "https://www.cnbcindonesia.com/market/20261103130002-17-781865/perang-arab-kian-panas-laba-saudi-aramco-meroket-346-di-kuartal-iii",
+   "title": "Harga Minyak Timteng Melemah Saat Ekspor via Hormuz Mulai Naik",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126597/harga-minyak-timteng-melemah-saat-ekspor-via-hormuz-mulai-naik",
    "score": 5,
    "categories": [
     "global",
-    "korporasi"
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
