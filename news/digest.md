@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T05:30+07:00 WIB | jendela 36 jam | dipindai 502, lolos 140, dibuang sebagai noise 15.
+Berita terbaru: 2026-11-04T06:25+07:00 WIB | jendela 36 jam | dipindai 487, lolos 138, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -9,6 +9,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **10** T3 11-03 12:30 bloomberg_technoz: BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril>
+- **6** T3 11-04 06:20 bloomberg_technoz: Saham Teknologi Dorong S&P 500 Menguat Saat Pemilu Paruh Waktu AS (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126666/saham-teknologi-dorong-s-p-500-menguat-saat-pemilu-paruh-waktu-as>
 - **6** T3 11-03 20:40 bloomberg_technoz: Suahasil Beber Alasan Kemenkeu Tak Ambil Saham BEI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126653/suahasil-beber-alasan-kemenkeu-tak-ambil-saham-bei>
 - **6** T3 11-03 18:16 cnbc_indonesia_market: OJK: Reformasi Pasar Modal Ibarat "Detox", IHSG Merah jadi Konsekuensi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103181327-17-782016/ojk-reformasi-pasar-modal-ibarat-detox-ihsg-merah-jadi-konsekuensi>
 - **6** T3 11-03 17:45 bloomberg_technoz: Pasar Saham 'Kebakaran', Investor Lari ke SBN? (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn>
@@ -22,7 +23,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 08:07 bloomberg_technoz: Harga Minyak Ambruk, Rupiah Bisa Dapat Angin Segar (global/kurs) <https://www.bloombergtechnoz.com/detail-news/126524/harga-minyak-ambruk-rupiah-bisa-dapat-angin-segar>
 - **6** T3 11-03 06:40 bloomberg_technoz: Medco (MEDC) Akan Tebar Dividen Interim Rp544 Miliar [MEDC] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126518/medco-medc-akan-tebar-dividen-interim-rp544-miliar>
 - **6** T3 11-03 06:00 bloomberg_technoz: S&P 500 Melemah Saat Saham Cip Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126516/s-p-500-melemah-saat-saham-cip-anjlok>
-- **6** T3 11-02 17:30 cnbc_indonesia_market: Video: Saham HSC Keluar Dari IHSG hingga Rupiah Anjlok ke Rp18.140/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102170250-19-781631/video-saham-hsc-keluar-dari-ihsg-hingga-rupiah-anjlok-ke-rp18140-usd>
 - **5** T3 11-03 21:30 cnbc_indonesia_news: Inflasi Menggila, Suku Bunga Tetangga RI Rekor Tertinggi Sejak 2008 (kebijakan/makro) <https://www.cnbcindonesia.com/news/20261103130816-4-781869/inflasi-menggila-suku-bunga-tetangga-ri-rekor-tertinggi-sejak-2008>
 - **5** T3 11-03 20:20 bloomberg_technoz: OJK Dalami Keluhan Gangguan Transaksi Nasabah Bank MNC (kebijakan; terkonfirmasi, juga di kontan_keuangan) <https://www.bloombergtechnoz.com/detail-news/126651/ojk-dalami-keluhan-gangguan-transaksi-nasabah-bank-mnc>
 - **5** T3 11-03 19:26 kontan_keuangan: OJK Turun Tangan Dalami Isu Gangguan Transaksi di MNC Bank (kebijakan; terkonfirmasi, juga di bloomberg_technoz) <https://keuangan.kontan.co.id/news/ojk-turun-tangan-dalami-isu-gangguan-transaksi-di-mnc-bank>

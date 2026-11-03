@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T05:30+07:00",
+ "generated_for": "2026-11-04T06:25+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 502,
- "kept": 140,
+ "scanned": 487,
+ "kept": 138,
  "dropped_noise": 15,
  "items": [
   {
@@ -23,6 +23,21 @@
    "tickers": [
     "SRIL"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T06:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham Teknologi Dorong S&P 500 Menguat Saat Pemilu Paruh Waktu AS",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126666/saham-teknologi-dorong-s-p-500-menguat-saat-pemilu-paruh-waktu-as",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -231,21 +246,6 @@
    "categories": [
     "global",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T17:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Saham HSC Keluar Dari IHSG hingga Rupiah Anjlok ke Rp18.140/USD",
-   "link": "https://www.cnbcindonesia.com/market/20261102170250-19-781631/video-saham-hsc-keluar-dari-ihsg-hingga-rupiah-anjlok-ke-rp18140-usd",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],
