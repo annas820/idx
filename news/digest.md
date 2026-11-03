@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T01:28+07:00 WIB | jendela 36 jam | dipindai 608, lolos 179, dibuang sebagai noise 15.
+Berita terbaru: 2026-11-04T04:35+07:00 WIB | jendela 36 jam | dipindai 520, lolos 145, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -9,8 +9,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **10** T3 11-03 12:30 bloomberg_technoz: BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril>
-- **9** T3 11-02 15:15 cnbc_indonesia_market: Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG? (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg>
-- **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
 - **6** T3 11-03 20:40 bloomberg_technoz: Suahasil Beber Alasan Kemenkeu Tak Ambil Saham BEI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126653/suahasil-beber-alasan-kemenkeu-tak-ambil-saham-bei>
 - **6** T3 11-03 18:16 cnbc_indonesia_market: OJK: Reformasi Pasar Modal Ibarat "Detox", IHSG Merah jadi Konsekuensi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103181327-17-782016/ojk-reformasi-pasar-modal-ibarat-detox-ihsg-merah-jadi-konsekuensi>
 - **6** T3 11-03 17:45 bloomberg_technoz: Pasar Saham 'Kebakaran', Investor Lari ke SBN? (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn>
@@ -26,10 +24,12 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 06:00 bloomberg_technoz: S&P 500 Melemah Saat Saham Cip Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126516/s-p-500-melemah-saat-saham-cip-anjlok>
 - **6** T3 11-02 17:30 cnbc_indonesia_market: Video: Saham HSC Keluar Dari IHSG hingga Rupiah Anjlok ke Rp18.140/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102170250-19-781631/video-saham-hsc-keluar-dari-ihsg-hingga-rupiah-anjlok-ke-rp18140-usd>
 - **6** T3 11-02 17:17 cnbc_indonesia_market: Ada Masalah Keuangan, 2 Saham Masuk ke Pemantauan Khusus BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102170442-17-781638/ada-masalah-keuangan-2-saham-masuk-ke-pemantauan-khusus-bei>
-- **6** T3 11-02 16:08 cnbc_indonesia_market: Medco (MEDC) Mau Tebar Dividen Interim Rp544 M, Cek Jadwal Cairnya [MEDC] (korporasi/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261102153435-17-781581/medco--medc--mau-tebar-dividen-interim-rp544-m-cek-jadwal-cairnya>
-- **6** T3 11-02 14:47 cnbc_indonesia_market: Video:IHSG Menguat Tapi Rupiah Nyaris Rp 18.200/USD, Ada Sentimen Apa? (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142233-19-781548/videoihsg-menguat-tapi-rupiah-nyaris-rp-18200-usd-ada-sentimen-apa>
-- **6** T3 11-02 13:40 cnbc_indonesia_news: India Tuntut Ketua KPU Mundur - BEI Keluarkan Saham HSC Dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261102114938-8-781479/india-tuntut-ketua-kpu-mundur--bei-keluarkan-saham-hsc-dari-ihsg>
 - **5** T3 11-03 21:30 cnbc_indonesia_news: Inflasi Menggila, Suku Bunga Tetangga RI Rekor Tertinggi Sejak 2008 (kebijakan/makro) <https://www.cnbcindonesia.com/news/20261103130816-4-781869/inflasi-menggila-suku-bunga-tetangga-ri-rekor-tertinggi-sejak-2008>
 - **5** T3 11-03 20:20 bloomberg_technoz: OJK Dalami Keluhan Gangguan Transaksi Nasabah Bank MNC (kebijakan; terkonfirmasi, juga di kontan_keuangan) <https://www.bloombergtechnoz.com/detail-news/126651/ojk-dalami-keluhan-gangguan-transaksi-nasabah-bank-mnc>
 - **5** T3 11-03 19:26 kontan_keuangan: OJK Turun Tangan Dalami Isu Gangguan Transaksi di MNC Bank (kebijakan; terkonfirmasi, juga di bloomberg_technoz) <https://keuangan.kontan.co.id/news/ojk-turun-tangan-dalami-isu-gangguan-transaksi-di-mnc-bank>
 - **5** T3 11-03 18:50 bloomberg_technoz: Harga Emas Turun ke US$3.906, Terpengaruh Pergerakan Minyak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126643/harga-emas-turun-ke-us-3-906-terpengaruh-pergerakan-minyak>
+- **5** T3 11-03 18:40 bloomberg_technoz: Bos Aramco Bakal Maksimalkan Produksi Minyak Saat Ekspor Melonjak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126639/bos-aramco-bakal-maksimalkan-produksi-minyak-saat-ekspor-melonjak>
+- **5** T3 11-03 18:03 kontan_keuangan: Saham Big Banks Berguguran Pada Perdagangan Hari Ini (3/11), BRI Turun Paling Dalam [BBRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-berguguran-pada-perdagangan-hari-ini-311-bri-turun-paling-dalam>
+- **5** T3 11-03 16:17 cnbc_indonesia_market: Angkasa Pura Alihkan Seluruh Saham GMFI ke InJourney Senilai Rp 5,6 T [GMFI] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103160511-17-781954/angkasa-pura-alihkan-seluruh-saham-gmfi-ke-injourney-senilai-rp-56-t>
+- **5** T3 11-03 15:30 bloomberg_technoz: Harga Minyak Timteng Melemah Saat Ekspor via Hormuz Mulai Naik (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126597/harga-minyak-timteng-melemah-saat-ekspor-via-hormuz-mulai-naik>
+- **5** T3 11-03 13:50 bloomberg_technoz: Timteng Kembali Ekspor Minyak 15,53 Juta Barel, Level Praperang (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126585/timteng-kembali-ekspor-minyak-15-53-juta-barel-level-praperang>

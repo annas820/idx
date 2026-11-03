@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T01:28+07:00",
+ "generated_for": "2026-11-04T04:35+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 608,
- "kept": 179,
+ "scanned": 520,
+ "kept": 145,
  "dropped_noise": 15,
  "items": [
   {
@@ -23,38 +23,6 @@
    "tickers": [
     "SRIL"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T15:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG?",
-   "link": "https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg",
-   "score": 9,
-   "categories": [
-    "global",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T13:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten",
-   "link": "https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -299,57 +267,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-02T16:08+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Medco (MEDC) Mau Tebar Dividen Interim Rp544 M, Cek Jadwal Cairnya",
-   "link": "https://www.cnbcindonesia.com/market/20261102153435-17-781581/medco--medc--mau-tebar-dividen-interim-rp544-m-cek-jadwal-cairnya",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "MEDC"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-02T14:47+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video:IHSG Menguat Tapi Rupiah Nyaris Rp 18.200/USD, Ada Sentimen Apa?",
-   "link": "https://www.cnbcindonesia.com/market/20261102142233-19-781548/videoihsg-menguat-tapi-rupiah-nyaris-rp-18200-usd-ada-sentimen-apa",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T13:40+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "India Tuntut Ketua KPU Mundur - BEI Keluarkan Saham HSC Dari IHSG",
-   "link": "https://www.cnbcindonesia.com/news/20261102114938-8-781479/india-tuntut-ketua-kpu-mundur--bei-keluarkan-saham-hsc-dari-ihsg",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-03T21:30+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -406,6 +323,85 @@
    "tier": 3,
    "title": "Harga Emas Turun ke US$3.906, Terpengaruh Pergerakan Minyak",
    "link": "https://www.bloombergtechnoz.com/detail-news/126643/harga-emas-turun-ke-us-3-906-terpengaruh-pergerakan-minyak",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T18:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bos Aramco Bakal Maksimalkan Produksi Minyak Saat Ekspor Melonjak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126639/bos-aramco-bakal-maksimalkan-produksi-minyak-saat-ekspor-melonjak",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T18:03+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham Big Banks Berguguran Pada Perdagangan Hari Ini (3/11), BRI Turun Paling Dalam",
+   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-berguguran-pada-perdagangan-hari-ini-311-bri-turun-paling-dalam",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T16:17+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Angkasa Pura Alihkan Seluruh Saham GMFI ke InJourney Senilai Rp 5,6 T",
+   "link": "https://www.cnbcindonesia.com/market/20261103160511-17-781954/angkasa-pura-alihkan-seluruh-saham-gmfi-ke-injourney-senilai-rp-56-t",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "GMFI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T15:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Minyak Timteng Melemah Saat Ekspor via Hormuz Mulai Naik",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126597/harga-minyak-timteng-melemah-saat-ekspor-via-hormuz-mulai-naik",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T13:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Timteng Kembali Ekspor Minyak 15,53 Juta Barel, Level Praperang",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126585/timteng-kembali-ekspor-minyak-15-53-juta-barel-level-praperang",
    "score": 5,
    "categories": [
     "global",
