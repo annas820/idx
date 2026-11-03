@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-03T11:48+07:00 WIB | jendela 36 jam | dipindai 510, lolos 182, dibuang sebagai noise 14.
+Berita terbaru: 2026-11-03T12:50+07:00 WIB | jendela 36 jam | dipindai 541, lolos 188, dibuang sebagai noise 14.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,6 +8,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-03 09:20 cnbc_indonesia_market: Salim Group Terseret Isu Karhutla, Indofood (INDF) Ungkap Fakta Ini [ICBP,INDF] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261103074746-17-781751/salim-group-terseret-isu-karhutla-indofood--indf--ungkap-fakta-ini>
 
 ## Teratas
+- **10** T3 11-03 12:30 bloomberg_technoz: BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril>
 - **9** T3 11-02 15:15 cnbc_indonesia_market: Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG? (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg>
 - **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
 - **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
@@ -29,7 +30,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-02 12:12 cnbc_indonesia_market: Saham HSC Resmi Keluar dari IHSG Hari Ini, Begini Penjelasan Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102114737-17-781475/saham-hsc-resmi-keluar-dari-ihsg-hari-ini-begini-penjelasan-bos-bei>
 - **6** T3 11-02 08:42 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp5.000, Buyback Lebih Tajam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126417/harga-emas-antam-hari-ini-naik-rp5-000-buyback-lebih-tajam>
 - **6** T3 11-02 06:22 cnbc_indonesia_market: BEI Keluarkan 81 Saham HSC dari IHSG Mulai Hari Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102061551-17-781328/bei-keluarkan-81-saham-hsc-dari-ihsg-mulai-hari-ini>
+- **5** T3 11-03 12:25 cnbc_indonesia_news: Tekanan Inflasi Mengkhawatirkan, Ekonom Ramal BI Rate Naik Bulan Ini (kebijakan/makro) <https://www.cnbcindonesia.com/news/20261103104715-4-781813/tekanan-inflasi-mengkhawatirkan-ekonom-ramal-bi-rate-naik-bulan-ini>
+- **5** T3 11-03 11:56 cnbc_indonesia_market: 4 Emiten Prajogo Pangestu Buyback Saham, Sudah Gelontorkan Rp830 M (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261103114055-17-781837/4-emiten-prajogo-pangestu-buyback-saham-sudah-gelontorkan-rp830-m>
 - **5** T3 11-03 11:48 cnbc_indonesia_market: Timothy Ronald Jadi Pemegang Saham Baru 1,26% Tempo Inti Media (TMPO) [TMPO] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103113851-17-781836/timothy-ronald-jadi-pemegang-saham-baru-126-tempo-inti-media--tmpo->
-- **5** T3 11-03 11:03 cnbc_indonesia_market: Pekan Ini Banjir Dividen! 4 Emiten Ini Siap Tebar Cuan (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261103105004-17-781815/pekan-ini-banjir-dividen-4-emiten-ini-siap-tebar-cuan>
-- **5** T3 11-03 10:20 bloomberg_technoz: Inflasi Korsel Masih Tinggi, Suku Bunga Berpeluang Kembali Naik (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/126556/inflasi-korsel-masih-tinggi-suku-bunga-berpeluang-kembali-naik>
-- **5** T3 11-03 10:10 bloomberg_technoz: BEI Telusuri Jejaring Pengendali Akhir Grup Alamtri ADRO Cs [ADRO] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126554/bei-telusuri-jejaring-pengendali-akhir-grup-alamtri-adro-cs>

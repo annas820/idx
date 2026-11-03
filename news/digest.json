@@ -1,12 +1,31 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T11:48+07:00",
+ "generated_for": "2026-11-03T12:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 510,
- "kept": 182,
+ "scanned": 541,
+ "kept": 188,
  "dropped_noise": 14,
  "items": [
+  {
+   "published": "2026-11-03T12:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL)",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "SRIL"
+   ],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-02T15:15+07:00",
    "source": "cnbc_indonesia_market",
@@ -352,6 +371,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-03T12:25+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Tekanan Inflasi Mengkhawatirkan, Ekonom Ramal BI Rate Naik Bulan Ini",
+   "link": "https://www.cnbcindonesia.com/news/20261103104715-4-781813/tekanan-inflasi-mengkhawatirkan-ekonom-ramal-bi-rate-naik-bulan-ini",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T11:56+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "4 Emiten Prajogo Pangestu Buyback Saham, Sudah Gelontorkan Rp830 M",
+   "link": "https://www.cnbcindonesia.com/market/20261103114055-17-781837/4-emiten-prajogo-pangestu-buyback-saham-sudah-gelontorkan-rp830-m",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-03T11:48+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -364,53 +413,6 @@
    ],
    "tickers": [
     "TMPO"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T11:03+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Pekan Ini Banjir Dividen! 4 Emiten Ini Siap Tebar Cuan",
-   "link": "https://www.cnbcindonesia.com/market/20261103105004-17-781815/pekan-ini-banjir-dividen-4-emiten-ini-siap-tebar-cuan",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T10:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Inflasi Korsel Masih Tinggi, Suku Bunga Berpeluang Kembali Naik",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126556/inflasi-korsel-masih-tinggi-suku-bunga-berpeluang-kembali-naik",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T10:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Telusuri Jejaring Pengendali Akhir Grup Alamtri ADRO Cs",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126554/bei-telusuri-jejaring-pengendali-akhir-grup-alamtri-adro-cs",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "ADRO"
    ],
    "flags": [],
    "also_in": []
