@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T19:51+07:00",
+ "generated_for": "2026-11-03T21:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 712,
- "kept": 233,
+ "scanned": 723,
+ "kept": 228,
  "dropped_noise": 16,
  "items": [
   {
@@ -73,6 +73,21 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T20:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Suahasil Beber Alasan Kemenkeu Tak Ambil Saham BEI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126653/suahasil-beber-alasan-kemenkeu-tak-ambil-saham-bei",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -394,24 +409,6 @@
     "pasar"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T08:42+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Hari Ini Naik Rp5.000, Buyback Lebih Tajam",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126417/harga-emas-antam-hari-ini-naik-rp5-000-buyback-lebih-tajam",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
    "flags": [],
    "also_in": []
   }
