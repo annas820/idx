@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T10:45+07:00",
+ "generated_for": "2026-11-03T11:48+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 483,
- "kept": 174,
- "dropped_noise": 13,
+ "scanned": 510,
+ "kept": 182,
+ "dropped_noise": 14,
  "items": [
   {
    "published": "2026-11-02T15:15+07:00",
@@ -86,6 +86,27 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-03T09:31+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Laba Bank Neo (BBYB) Susut 7,12% Jadi Rp 430 Miliar pada Kuartal III-2026",
+   "link": "https://keuangan.kontan.co.id/news/laba-bank-neo-bbyb-susut-712-jadi-rp-430-miliar-pada-kuartal-iii-2026",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBYB"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-11-03T08:46+07:00",
@@ -331,6 +352,38 @@
    "also_in": []
   },
   {
+   "published": "2026-11-03T11:48+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Timothy Ronald Jadi Pemegang Saham Baru 1,26% Tempo Inti Media (TMPO)",
+   "link": "https://www.cnbcindonesia.com/market/20261103113851-17-781836/timothy-ronald-jadi-pemegang-saham-baru-126-tempo-inti-media--tmpo-",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "TMPO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T11:03+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Pekan Ini Banjir Dividen! 4 Emiten Ini Siap Tebar Cuan",
+   "link": "https://www.cnbcindonesia.com/market/20261103105004-17-781815/pekan-ini-banjir-dividen-4-emiten-ini-siap-tebar-cuan",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-03T10:20+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -359,53 +412,6 @@
    "tickers": [
     "ADRO"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T09:47+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Bos PGAS Diam-Diam Tambah Kepemilikan Saham, Rogoh Kocek Segini",
-   "link": "https://www.cnbcindonesia.com/market/20261103093550-17-781794/bos-pgas-diam-diam-tambah-kepemilikan-saham-rogoh-kocek-segini",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "PGAS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T07:25+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Tekanan Likuiditas MNC Bank Menguat, OJK Diminta Turun Tangan",
-   "link": "https://keuangan.kontan.co.id/news/tekanan-likuiditas-mnc-bank-menguat-ojk-diminta-turun-tangan",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T07:25+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Sejumlah Bank Hadapi Ancaman Tekanan Likuiditas, OJK Diminta Turun Tangan",
-   "link": "https://keuangan.kontan.co.id/news/sejumlah-bank-hadapi-ancaman-tekanan-likuiditas-ojk-diminta-turun-tangan",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "makro"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }

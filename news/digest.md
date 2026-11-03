@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-03T10:45+07:00 WIB | jendela 36 jam | dipindai 483, lolos 174, dibuang sebagai noise 13.
+Berita terbaru: 2026-11-03T11:48+07:00 WIB | jendela 36 jam | dipindai 510, lolos 182, dibuang sebagai noise 14.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -13,6 +13,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
 - **6** T3 11-03 10:11 cnbc_indonesia_market: Video: IHSG Masih Volatil dan Rupiah Tertahan di Level Rp18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103100203-19-781800/video-ihsg-masih-volatil-rupiah-tertahan-di-level-rp18100-per-usd>
 - **6** T3 11-03 09:45 cnbc_indonesia_market: BEI Siapkan Jurus Baru, Bidik Pelaku Manipulasi Saham (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103070227-17-781724/bei-siapkan-jurus-baru-bidik-pelaku-manipulasi-saham>
+- **6** T3 11-03 09:31 kontan_keuangan: Laba Bank Neo (BBYB) Susut 7,12% Jadi Rp 430 Miliar pada Kuartal III-2026 [BBYB] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/laba-bank-neo-bbyb-susut-712-jadi-rp-430-miliar-pada-kuartal-iii-2026>
 - **6** T3 11-03 08:46 bloomberg_technoz: Harga Emas Antam & Buyback Melambung, Ini Sebabnya [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126546/harga-emas-antam-buyback-melambung-ini-sebabnya>
 - **6** T3 11-03 08:30 cnbc_indonesia_market: BEI Akan Periksa Acak Laporan Emiten, Direksi Tak Bisa Lagi Main-Main (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103072408-17-781737/bei-akan-periksa-acak-laporan-emiten-direksi-tak-bisa-lagi-main-main>
 - **6** T3 11-03 08:07 bloomberg_technoz: Harga Minyak Ambruk, Rupiah Bisa Dapat Angin Segar (global/kurs) <https://www.bloombergtechnoz.com/detail-news/126524/harga-minyak-ambruk-rupiah-bisa-dapat-angin-segar>
@@ -28,8 +29,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-02 12:12 cnbc_indonesia_market: Saham HSC Resmi Keluar dari IHSG Hari Ini, Begini Penjelasan Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102114737-17-781475/saham-hsc-resmi-keluar-dari-ihsg-hari-ini-begini-penjelasan-bos-bei>
 - **6** T3 11-02 08:42 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp5.000, Buyback Lebih Tajam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126417/harga-emas-antam-hari-ini-naik-rp5-000-buyback-lebih-tajam>
 - **6** T3 11-02 06:22 cnbc_indonesia_market: BEI Keluarkan 81 Saham HSC dari IHSG Mulai Hari Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102061551-17-781328/bei-keluarkan-81-saham-hsc-dari-ihsg-mulai-hari-ini>
+- **5** T3 11-03 11:48 cnbc_indonesia_market: Timothy Ronald Jadi Pemegang Saham Baru 1,26% Tempo Inti Media (TMPO) [TMPO] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103113851-17-781836/timothy-ronald-jadi-pemegang-saham-baru-126-tempo-inti-media--tmpo->
+- **5** T3 11-03 11:03 cnbc_indonesia_market: Pekan Ini Banjir Dividen! 4 Emiten Ini Siap Tebar Cuan (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261103105004-17-781815/pekan-ini-banjir-dividen-4-emiten-ini-siap-tebar-cuan>
 - **5** T3 11-03 10:20 bloomberg_technoz: Inflasi Korsel Masih Tinggi, Suku Bunga Berpeluang Kembali Naik (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/126556/inflasi-korsel-masih-tinggi-suku-bunga-berpeluang-kembali-naik>
 - **5** T3 11-03 10:10 bloomberg_technoz: BEI Telusuri Jejaring Pengendali Akhir Grup Alamtri ADRO Cs [ADRO] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126554/bei-telusuri-jejaring-pengendali-akhir-grup-alamtri-adro-cs>
-- **5** T3 11-03 09:47 cnbc_indonesia_market: Bos PGAS Diam-Diam Tambah Kepemilikan Saham, Rogoh Kocek Segini [PGAS] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103093550-17-781794/bos-pgas-diam-diam-tambah-kepemilikan-saham-rogoh-kocek-segini>
-- **5** T3 11-03 07:25 kontan_keuangan: Tekanan Likuiditas MNC Bank Menguat, OJK Diminta Turun Tangan (kebijakan/makro) <https://keuangan.kontan.co.id/news/tekanan-likuiditas-mnc-bank-menguat-ojk-diminta-turun-tangan>
-- **5** T3 11-03 07:25 kontan_keuangan: Sejumlah Bank Hadapi Ancaman Tekanan Likuiditas, OJK Diminta Turun Tangan (kebijakan/makro) <https://keuangan.kontan.co.id/news/sejumlah-bank-hadapi-ancaman-tekanan-likuiditas-ojk-diminta-turun-tangan>
