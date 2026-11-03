@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-03T16:50+07:00 WIB | jendela 36 jam | dipindai 641, lolos 214, dibuang sebagai noise 16.
+Berita terbaru: 2026-11-03T17:50+07:00 WIB | jendela 36 jam | dipindai 673, lolos 224, dibuang sebagai noise 16.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -12,6 +12,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-02 15:15 cnbc_indonesia_market: Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG? (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg>
 - **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
 - **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
+- **6** T3 11-03 17:45 bloomberg_technoz: Pasar Saham 'Kebakaran', Investor Lari ke SBN? (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn>
+- **6** T3 11-03 17:21 cnbc_indonesia_market: Kabar Baik! Asing Borong SBN RI Rp28,79 T di Tengah Gejolak Global (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103171913-17-781993/kabar-baik-asing-borong-sbn-ri-rp2879-t-di-tengah-gejolak-global>
 - **6** T3 11-03 13:14 cnbc_indonesia_market: OJK Sanksi Aurora Asset Rp2,57 M, 5 Produk Reksa Dana Wajib Bubar (kebijakan/global) <https://www.cnbcindonesia.com/market/20261103130444-17-781868/ojk-sanksi-aurora-asset-rp257-m-5-produk-reksa-dana-wajib-bubar>
 - **6** T3 11-03 10:11 cnbc_indonesia_market: Video: IHSG Masih Volatil dan Rupiah Tertahan di Level Rp18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103100203-19-781800/video-ihsg-masih-volatil-rupiah-tertahan-di-level-rp18100-per-usd>
 - **6** T3 11-03 09:45 cnbc_indonesia_market: BEI Siapkan Jurus Baru, Bidik Pelaku Manipulasi Saham (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103070227-17-781724/bei-siapkan-jurus-baru-bidik-pelaku-manipulasi-saham>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-02 12:12 cnbc_indonesia_market: Saham HSC Resmi Keluar dari IHSG Hari Ini, Begini Penjelasan Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102114737-17-781475/saham-hsc-resmi-keluar-dari-ihsg-hari-ini-begini-penjelasan-bos-bei>
 - **6** T3 11-02 08:42 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp5.000, Buyback Lebih Tajam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126417/harga-emas-antam-hari-ini-naik-rp5-000-buyback-lebih-tajam>
 - **6** T3 11-02 06:22 cnbc_indonesia_market: BEI Keluarkan 81 Saham HSC dari IHSG Mulai Hari Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102061551-17-781328/bei-keluarkan-81-saham-hsc-dari-ihsg-mulai-hari-ini>
-- **5** T3 11-03 16:17 cnbc_indonesia_market: Angkasa Pura Alihkan Seluruh Saham GMFI ke InJourney Senilai Rp 5,6 T [GMFI] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103160511-17-781954/angkasa-pura-alihkan-seluruh-saham-gmfi-ke-injourney-senilai-rp-56-t>
-- **5** T3 11-03 15:30 bloomberg_technoz: Harga Minyak Timteng Melemah Saat Ekspor via Hormuz Mulai Naik (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126597/harga-minyak-timteng-melemah-saat-ekspor-via-hormuz-mulai-naik>

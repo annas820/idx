@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T16:50+07:00",
+ "generated_for": "2026-11-03T17:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 641,
- "kept": 214,
+ "scanned": 673,
+ "kept": 224,
  "dropped_noise": 16,
  "items": [
   {
@@ -73,6 +73,36 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T17:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pasar Saham 'Kebakaran', Investor Lari ke SBN?",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T17:21+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Kabar Baik! Asing Borong SBN RI Rp28,79 T di Tengah Gejolak Global",
+   "link": "https://www.cnbcindonesia.com/market/20261103171913-17-781993/kabar-baik-asing-borong-sbn-ri-rp2879-t-di-tengah-gejolak-global",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -380,38 +410,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T16:17+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Angkasa Pura Alihkan Seluruh Saham GMFI ke InJourney Senilai Rp 5,6 T",
-   "link": "https://www.cnbcindonesia.com/market/20261103160511-17-781954/angkasa-pura-alihkan-seluruh-saham-gmfi-ke-injourney-senilai-rp-56-t",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "GMFI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T15:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Minyak Timteng Melemah Saat Ekspor via Hormuz Mulai Naik",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126597/harga-minyak-timteng-melemah-saat-ekspor-via-hormuz-mulai-naik",
-   "score": 5,
-   "categories": [
-    "global",
-    "komoditas"
    ],
    "tickers": [],
    "flags": [],
