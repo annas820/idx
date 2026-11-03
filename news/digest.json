@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T09:45+07:00",
+ "generated_for": "2026-11-03T10:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 465,
- "kept": 167,
+ "scanned": 483,
+ "kept": 174,
  "dropped_noise": 13,
  "items": [
   {
@@ -54,6 +54,21 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T10:11+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: IHSG Masih Volatil dan Rupiah Tertahan di Level Rp18.100 per USD",
+   "link": "https://www.cnbcindonesia.com/market/20261103100203-19-781800/video-ihsg-masih-volatil-rupiah-tertahan-di-level-rp18100-per-usd",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -316,6 +331,55 @@
    "also_in": []
   },
   {
+   "published": "2026-11-03T10:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Inflasi Korsel Masih Tinggi, Suku Bunga Berpeluang Kembali Naik",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126556/inflasi-korsel-masih-tinggi-suku-bunga-berpeluang-kembali-naik",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T10:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Telusuri Jejaring Pengendali Akhir Grup Alamtri ADRO Cs",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126554/bei-telusuri-jejaring-pengendali-akhir-grup-alamtri-adro-cs",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "ADRO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T09:47+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bos PGAS Diam-Diam Tambah Kepemilikan Saham, Rogoh Kocek Segini",
+   "link": "https://www.cnbcindonesia.com/market/20261103093550-17-781794/bos-pgas-diam-diam-tambah-kepemilikan-saham-rogoh-kocek-segini",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "PGAS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-03T07:25+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -344,81 +408,28 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-03T06:45+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham BBCA, BMRI dan BBRI Berpeluang Pulih, Cermati Rekomendasi Analis",
-   "link": "https://keuangan.kontan.co.id/news/saham-bbca-bmri-dan-bbri-berpeluang-pulih-cermati-rekomendasi-analis",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BBRI",
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T06:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Induk Emiten Salim Grup Disorot Singapura soal Karhutla, Ini Kata SIMP",
-   "link": "https://www.cnbcindonesia.com/market/20261102224459-17-781714/induk-emiten-salim-grup-disorot-singapura-soal-karhutla-ini-kata-simp",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "SIMP"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T21:24+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham Big Banks Ditutup Variatif, Simak Rekomendasi BBCA, BBRI, dan BMRI",
-   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-ditutup-variatif-simak-rekomendasi-bbca-bbri-dan-bmri",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BBRI",
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T20:08+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Bank Mandiri Siapkan Opsi Pelunasan Obligasi Perpetual Bond AT1, Ini Penjelasannya",
-   "link": "https://keuangan.kontan.co.id/news/bank-mandiri-siapkan-opsi-pelunasan-obligasi-perpetual-bond-at1-ini-penjelasannya",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-03T09:55+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bukan Cuma Boy Thohir, Ini Deretan Pengendali di Balik Adaro (AADI)",
+   "link": "https://www.cnbcindonesia.com/market/20261103080802-17-781761/bukan-cuma-boy-thohir-ini-deretan-pengendali-di-balik-adaro--aadi-",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "AADI",
+    "ADRO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-03T09:20+07:00",
    "source": "cnbc_indonesia_market",

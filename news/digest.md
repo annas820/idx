@@ -1,15 +1,17 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-03T09:45+07:00 WIB | jendela 36 jam | dipindai 465, lolos 167, dibuang sebagai noise 13.
+Berita terbaru: 2026-11-03T10:45+07:00 WIB | jendela 36 jam | dipindai 483, lolos 174, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **4** T3 11-03 09:55 cnbc_indonesia_market: Bukan Cuma Boy Thohir, Ini Deretan Pengendali di Balik Adaro (AADI) [AADI,ADRO] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261103080802-17-781761/bukan-cuma-boy-thohir-ini-deretan-pengendali-di-balik-adaro--aadi->
 - **4** T3 11-03 09:20 cnbc_indonesia_market: Salim Group Terseret Isu Karhutla, Indofood (INDF) Ungkap Fakta Ini [ICBP,INDF] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261103074746-17-781751/salim-group-terseret-isu-karhutla-indofood--indf--ungkap-fakta-ini>
 
 ## Teratas
 - **9** T3 11-02 15:15 cnbc_indonesia_market: Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG? (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg>
 - **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
 - **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
+- **6** T3 11-03 10:11 cnbc_indonesia_market: Video: IHSG Masih Volatil dan Rupiah Tertahan di Level Rp18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103100203-19-781800/video-ihsg-masih-volatil-rupiah-tertahan-di-level-rp18100-per-usd>
 - **6** T3 11-03 09:45 cnbc_indonesia_market: BEI Siapkan Jurus Baru, Bidik Pelaku Manipulasi Saham (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103070227-17-781724/bei-siapkan-jurus-baru-bidik-pelaku-manipulasi-saham>
 - **6** T3 11-03 08:46 bloomberg_technoz: Harga Emas Antam & Buyback Melambung, Ini Sebabnya [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126546/harga-emas-antam-buyback-melambung-ini-sebabnya>
 - **6** T3 11-03 08:30 cnbc_indonesia_market: BEI Akan Periksa Acak Laporan Emiten, Direksi Tak Bisa Lagi Main-Main (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103072408-17-781737/bei-akan-periksa-acak-laporan-emiten-direksi-tak-bisa-lagi-main-main>
@@ -26,9 +28,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-02 12:12 cnbc_indonesia_market: Saham HSC Resmi Keluar dari IHSG Hari Ini, Begini Penjelasan Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102114737-17-781475/saham-hsc-resmi-keluar-dari-ihsg-hari-ini-begini-penjelasan-bos-bei>
 - **6** T3 11-02 08:42 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp5.000, Buyback Lebih Tajam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126417/harga-emas-antam-hari-ini-naik-rp5-000-buyback-lebih-tajam>
 - **6** T3 11-02 06:22 cnbc_indonesia_market: BEI Keluarkan 81 Saham HSC dari IHSG Mulai Hari Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102061551-17-781328/bei-keluarkan-81-saham-hsc-dari-ihsg-mulai-hari-ini>
+- **5** T3 11-03 10:20 bloomberg_technoz: Inflasi Korsel Masih Tinggi, Suku Bunga Berpeluang Kembali Naik (kebijakan/makro) <https://www.bloombergtechnoz.com/detail-news/126556/inflasi-korsel-masih-tinggi-suku-bunga-berpeluang-kembali-naik>
+- **5** T3 11-03 10:10 bloomberg_technoz: BEI Telusuri Jejaring Pengendali Akhir Grup Alamtri ADRO Cs [ADRO] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/126554/bei-telusuri-jejaring-pengendali-akhir-grup-alamtri-adro-cs>
+- **5** T3 11-03 09:47 cnbc_indonesia_market: Bos PGAS Diam-Diam Tambah Kepemilikan Saham, Rogoh Kocek Segini [PGAS] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103093550-17-781794/bos-pgas-diam-diam-tambah-kepemilikan-saham-rogoh-kocek-segini>
 - **5** T3 11-03 07:25 kontan_keuangan: Tekanan Likuiditas MNC Bank Menguat, OJK Diminta Turun Tangan (kebijakan/makro) <https://keuangan.kontan.co.id/news/tekanan-likuiditas-mnc-bank-menguat-ojk-diminta-turun-tangan>
 - **5** T3 11-03 07:25 kontan_keuangan: Sejumlah Bank Hadapi Ancaman Tekanan Likuiditas, OJK Diminta Turun Tangan (kebijakan/makro) <https://keuangan.kontan.co.id/news/sejumlah-bank-hadapi-ancaman-tekanan-likuiditas-ojk-diminta-turun-tangan>
-- **5** T3 11-03 06:45 kontan_keuangan: Saham BBCA, BMRI dan BBRI Berpeluang Pulih, Cermati Rekomendasi Analis [BBCA,BBRI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-bbca-bmri-dan-bbri-berpeluang-pulih-cermati-rekomendasi-analis>
-- **5** T3 11-03 06:35 cnbc_indonesia_market: Induk Emiten Salim Grup Disorot Singapura soal Karhutla, Ini Kata SIMP [SIMP] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102224459-17-781714/induk-emiten-salim-grup-disorot-singapura-soal-karhutla-ini-kata-simp>
-- **5** T3 11-02 21:24 kontan_keuangan: Saham Big Banks Ditutup Variatif, Simak Rekomendasi BBCA, BBRI, dan BMRI [BBCA,BBRI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-ditutup-variatif-simak-rekomendasi-bbca-bbri-dan-bmri>
-- **5** T3 11-02 20:08 kontan_keuangan: Bank Mandiri Siapkan Opsi Pelunasan Obligasi Perpetual Bond AT1, Ini Penjelasannya [BMRI] (kurs/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-siapkan-opsi-pelunasan-obligasi-perpetual-bond-at1-ini-penjelasannya>
