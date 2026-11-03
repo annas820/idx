@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T00:31+07:00 WIB | jendela 36 jam | dipindai 640, lolos 191, dibuang sebagai noise 15.
+Berita terbaru: 2026-11-04T01:28+07:00 WIB | jendela 36 jam | dipindai 608, lolos 179, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -29,7 +29,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-02 16:08 cnbc_indonesia_market: Medco (MEDC) Mau Tebar Dividen Interim Rp544 M, Cek Jadwal Cairnya [MEDC] (korporasi/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261102153435-17-781581/medco--medc--mau-tebar-dividen-interim-rp544-m-cek-jadwal-cairnya>
 - **6** T3 11-02 14:47 cnbc_indonesia_market: Video:IHSG Menguat Tapi Rupiah Nyaris Rp 18.200/USD, Ada Sentimen Apa? (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142233-19-781548/videoihsg-menguat-tapi-rupiah-nyaris-rp-18200-usd-ada-sentimen-apa>
 - **6** T3 11-02 13:40 cnbc_indonesia_news: India Tuntut Ketua KPU Mundur - BEI Keluarkan Saham HSC Dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261102114938-8-781479/india-tuntut-ketua-kpu-mundur--bei-keluarkan-saham-hsc-dari-ihsg>
-- **6** T3 11-02 12:50 cnbc_indonesia_market: Saham HSC Dikeluarkan, BEI Pastikan Tidak Ada Gejolak Signifikan (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102092603-19-781407/saham-hsc-dikeluarkan-bei-pastikan-tidak-ada-gejolak-signifikan>
-- **6** T3 11-02 12:40 cnbc_indonesia_market: Video: Investor Asing Sesalkan Wacana MSCI Turunkan Status RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102085544-19-781387/video-investor-asing-sesalkan-wacana-msci-turunkan-status-ri>
 - **5** T3 11-03 21:30 cnbc_indonesia_news: Inflasi Menggila, Suku Bunga Tetangga RI Rekor Tertinggi Sejak 2008 (kebijakan/makro) <https://www.cnbcindonesia.com/news/20261103130816-4-781869/inflasi-menggila-suku-bunga-tetangga-ri-rekor-tertinggi-sejak-2008>
 - **5** T3 11-03 20:20 bloomberg_technoz: OJK Dalami Keluhan Gangguan Transaksi Nasabah Bank MNC (kebijakan; terkonfirmasi, juga di kontan_keuangan) <https://www.bloombergtechnoz.com/detail-news/126651/ojk-dalami-keluhan-gangguan-transaksi-nasabah-bank-mnc>
+- **5** T3 11-03 19:26 kontan_keuangan: OJK Turun Tangan Dalami Isu Gangguan Transaksi di MNC Bank (kebijakan; terkonfirmasi, juga di bloomberg_technoz) <https://keuangan.kontan.co.id/news/ojk-turun-tangan-dalami-isu-gangguan-transaksi-di-mnc-bank>
+- **5** T3 11-03 18:50 bloomberg_technoz: Harga Emas Turun ke US$3.906, Terpengaruh Pergerakan Minyak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126643/harga-emas-turun-ke-us-3-906-terpengaruh-pergerakan-minyak>

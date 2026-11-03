@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T00:31+07:00",
+ "generated_for": "2026-11-04T01:28+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 640,
- "kept": 191,
+ "scanned": 608,
+ "kept": 179,
  "dropped_noise": 15,
  "items": [
   {
@@ -350,36 +350,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-02T12:50+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Saham HSC Dikeluarkan, BEI Pastikan Tidak Ada Gejolak Signifikan",
-   "link": "https://www.cnbcindonesia.com/market/20261102092603-19-781407/saham-hsc-dikeluarkan-bei-pastikan-tidak-ada-gejolak-signifikan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T12:40+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Investor Asing Sesalkan Wacana MSCI Turunkan Status RI",
-   "link": "https://www.cnbcindonesia.com/market/20261102085544-19-781387/video-investor-asing-sesalkan-wacana-msci-turunkan-status-ri",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-03T21:30+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -411,6 +381,39 @@
    "also_in": [
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-11-03T19:26+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Turun Tangan Dalami Isu Gangguan Transaksi di MNC Bank",
+   "link": "https://keuangan.kontan.co.id/news/ojk-turun-tangan-dalami-isu-gangguan-transaksi-di-mnc-bank",
+   "score": 5,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-03T18:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Turun ke US$3.906, Terpengaruh Pergerakan Minyak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126643/harga-emas-turun-ke-us-3-906-terpengaruh-pergerakan-minyak",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
