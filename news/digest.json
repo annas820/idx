@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T07:54+07:00",
+ "generated_for": "2026-11-03T08:47+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 427,
- "kept": 155,
- "dropped_noise": 6,
+ "scanned": 450,
+ "kept": 158,
+ "dropped_noise": 13,
  "items": [
   {
    "published": "2026-11-02T15:15+07:00",
@@ -54,6 +54,54 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T08:46+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam & Buyback Melambung, Ini Sebabnya",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126546/harga-emas-antam-buyback-melambung-ini-sebabnya",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T08:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Akan Periksa Acak Laporan Emiten, Direksi Tak Bisa Lagi Main-Main",
+   "link": "https://www.cnbcindonesia.com/market/20261103072408-17-781737/bei-akan-periksa-acak-laporan-emiten-direksi-tak-bisa-lagi-main-main",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T08:07+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Minyak Ambruk, Rupiah Bisa Dapat Angin Segar",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126524/harga-minyak-ambruk-rupiah-bisa-dapat-angin-segar",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -370,51 +418,6 @@
    "tickers": [
     "EMTK"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T18:23+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Bank Ina Perdana Terbitkan 13,81 Juta Saham Baru Lewat Private Placement",
-   "link": "https://keuangan.kontan.co.id/news/bank-ina-perdana-terbitkan-1381-juta-saham-baru-lewat-private-placement",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T15:19+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Catatan atas Data Inflasi: Pangan, Energi, dan Pelemahan Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126478/catatan-atas-data-inflasi-pangan-energi-dan-pelemahan-rupiah",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T14:35+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bahlil Kaji Moratorium Smelter Untuk Produk Nikel Setengah Jadi",
-   "link": "https://www.cnbcindonesia.com/news/20261102142355-4-781550/bahlil-kaji-moratorium-smelter-untuk-produk-nikel-setengah-jadi",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }

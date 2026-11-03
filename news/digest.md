@@ -1,12 +1,15 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-03T07:54+07:00 WIB | jendela 36 jam | dipindai 427, lolos 155, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-03T08:47+07:00 WIB | jendela 36 jam | dipindai 450, lolos 158, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **9** T3 11-02 15:15 cnbc_indonesia_market: Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG? (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg>
 - **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
 - **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
+- **6** T3 11-03 08:46 bloomberg_technoz: Harga Emas Antam & Buyback Melambung, Ini Sebabnya [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126546/harga-emas-antam-buyback-melambung-ini-sebabnya>
+- **6** T3 11-03 08:30 cnbc_indonesia_market: BEI Akan Periksa Acak Laporan Emiten, Direksi Tak Bisa Lagi Main-Main (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103072408-17-781737/bei-akan-periksa-acak-laporan-emiten-direksi-tak-bisa-lagi-main-main>
+- **6** T3 11-03 08:07 bloomberg_technoz: Harga Minyak Ambruk, Rupiah Bisa Dapat Angin Segar (global/kurs) <https://www.bloombergtechnoz.com/detail-news/126524/harga-minyak-ambruk-rupiah-bisa-dapat-angin-segar>
 - **6** T3 11-03 06:40 bloomberg_technoz: Medco (MEDC) Akan Tebar Dividen Interim Rp544 Miliar [MEDC] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126518/medco-medc-akan-tebar-dividen-interim-rp544-miliar>
 - **6** T3 11-03 06:00 bloomberg_technoz: S&P 500 Melemah Saat Saham Cip Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126516/s-p-500-melemah-saat-saham-cip-anjlok>
 - **6** T3 11-02 17:30 cnbc_indonesia_market: Video: Saham HSC Keluar Dari IHSG hingga Rupiah Anjlok ke Rp18.140/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102170250-19-781631/video-saham-hsc-keluar-dari-ihsg-hingga-rupiah-anjlok-ke-rp18140-usd>
@@ -26,6 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-02 20:08 kontan_keuangan: Bank Mandiri Siapkan Opsi Pelunasan Obligasi Perpetual Bond AT1, Ini Penjelasannya [BMRI] (kurs/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-siapkan-opsi-pelunasan-obligasi-perpetual-bond-at1-ini-penjelasannya>
 - **5** T3 11-02 19:03 cnbc_indonesia_market: Bos Blue Bird (BIRD) Borong 675.800 Saham BIRD, Senilai Rp997,43 Juta [BIRD] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102175313-17-781661/bos-blue-bird--bird--borong-675800-saham-bird-senilai-rp99743-juta>
 - **5** T3 11-02 18:37 cnbc_indonesia_market: Emtek (EMTK) Jual Saham Entitas Usaha PT Indopay Merchant Services [EMTK] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261102173940-17-781656/emtek--emtk--jual-saham-entitas-usaha-pt-indopay-merchant-services>
-- **5** T3 11-02 18:23 kontan_keuangan: Bank Ina Perdana Terbitkan 13,81 Juta Saham Baru Lewat Private Placement (pasar/korporasi) <https://keuangan.kontan.co.id/news/bank-ina-perdana-terbitkan-1381-juta-saham-baru-lewat-private-placement>
-- **5** T3 11-02 15:19 bloomberg_technoz: Catatan atas Data Inflasi: Pangan, Energi, dan Pelemahan Rupiah (kurs/makro) <https://www.bloombergtechnoz.com/detail-news/126478/catatan-atas-data-inflasi-pangan-energi-dan-pelemahan-rupiah>
-- **5** T3 11-02 14:35 cnbc_indonesia_news: Bahlil Kaji Moratorium Smelter Untuk Produk Nikel Setengah Jadi (kebijakan/komoditas) <https://www.cnbcindonesia.com/news/20261102142355-4-781550/bahlil-kaji-moratorium-smelter-untuk-produk-nikel-setengah-jadi>
