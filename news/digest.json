@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T08:47+07:00",
+ "generated_for": "2026-11-03T09:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 450,
- "kept": 158,
+ "scanned": 465,
+ "kept": 167,
  "dropped_noise": 13,
  "items": [
   {
@@ -54,6 +54,21 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T09:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Siapkan Jurus Baru, Bidik Pelaku Manipulasi Saham",
+   "link": "https://www.cnbcindonesia.com/market/20261103070227-17-781724/bei-siapkan-jurus-baru-bidik-pelaku-manipulasi-saham",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -316,6 +331,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-03T07:25+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Sejumlah Bank Hadapi Ancaman Tekanan Likuiditas, OJK Diminta Turun Tangan",
+   "link": "https://keuangan.kontan.co.id/news/sejumlah-bank-hadapi-ancaman-tekanan-likuiditas-ojk-diminta-turun-tangan",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-03T06:45+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -386,41 +416,27 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-02T19:03+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Bos Blue Bird (BIRD) Borong 675.800 Saham BIRD, Senilai Rp997,43 Juta",
-   "link": "https://www.cnbcindonesia.com/market/20261102175313-17-781661/bos-blue-bird--bird--borong-675800-saham-bird-senilai-rp99743-juta",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BIRD"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-02T18:37+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Emtek (EMTK) Jual Saham Entitas Usaha PT Indopay Merchant Services",
-   "link": "https://www.cnbcindonesia.com/market/20261102173940-17-781656/emtek--emtk--jual-saham-entitas-usaha-pt-indopay-merchant-services",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "EMTK"
-   ],
-   "flags": [],
-   "also_in": []
   }
  ],
- "watchlist_hits": []
+ "watchlist_hits": [
+  {
+   "published": "2026-11-03T09:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Salim Group Terseret Isu Karhutla, Indofood (INDF) Ungkap Fakta Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261103074746-17-781751/salim-group-terseret-isu-karhutla-indofood--indf--ungkap-fakta-ini",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ICBP",
+    "INDF"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  }
+ ]
 }
