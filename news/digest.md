@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T04:35+07:00 WIB | jendela 36 jam | dipindai 520, lolos 145, dibuang sebagai noise 15.
+Berita terbaru: 2026-11-04T05:30+07:00 WIB | jendela 36 jam | dipindai 502, lolos 140, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -23,7 +23,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 06:40 bloomberg_technoz: Medco (MEDC) Akan Tebar Dividen Interim Rp544 Miliar [MEDC] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126518/medco-medc-akan-tebar-dividen-interim-rp544-miliar>
 - **6** T3 11-03 06:00 bloomberg_technoz: S&P 500 Melemah Saat Saham Cip Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126516/s-p-500-melemah-saat-saham-cip-anjlok>
 - **6** T3 11-02 17:30 cnbc_indonesia_market: Video: Saham HSC Keluar Dari IHSG hingga Rupiah Anjlok ke Rp18.140/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261102170250-19-781631/video-saham-hsc-keluar-dari-ihsg-hingga-rupiah-anjlok-ke-rp18140-usd>
-- **6** T3 11-02 17:17 cnbc_indonesia_market: Ada Masalah Keuangan, 2 Saham Masuk ke Pemantauan Khusus BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102170442-17-781638/ada-masalah-keuangan-2-saham-masuk-ke-pemantauan-khusus-bei>
 - **5** T3 11-03 21:30 cnbc_indonesia_news: Inflasi Menggila, Suku Bunga Tetangga RI Rekor Tertinggi Sejak 2008 (kebijakan/makro) <https://www.cnbcindonesia.com/news/20261103130816-4-781869/inflasi-menggila-suku-bunga-tetangga-ri-rekor-tertinggi-sejak-2008>
 - **5** T3 11-03 20:20 bloomberg_technoz: OJK Dalami Keluhan Gangguan Transaksi Nasabah Bank MNC (kebijakan; terkonfirmasi, juga di kontan_keuangan) <https://www.bloombergtechnoz.com/detail-news/126651/ojk-dalami-keluhan-gangguan-transaksi-nasabah-bank-mnc>
 - **5** T3 11-03 19:26 kontan_keuangan: OJK Turun Tangan Dalami Isu Gangguan Transaksi di MNC Bank (kebijakan; terkonfirmasi, juga di bloomberg_technoz) <https://keuangan.kontan.co.id/news/ojk-turun-tangan-dalami-isu-gangguan-transaksi-di-mnc-bank>
@@ -33,3 +32,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-03 16:17 cnbc_indonesia_market: Angkasa Pura Alihkan Seluruh Saham GMFI ke InJourney Senilai Rp 5,6 T [GMFI] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103160511-17-781954/angkasa-pura-alihkan-seluruh-saham-gmfi-ke-injourney-senilai-rp-56-t>
 - **5** T3 11-03 15:30 bloomberg_technoz: Harga Minyak Timteng Melemah Saat Ekspor via Hormuz Mulai Naik (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126597/harga-minyak-timteng-melemah-saat-ekspor-via-hormuz-mulai-naik>
 - **5** T3 11-03 13:50 bloomberg_technoz: Timteng Kembali Ekspor Minyak 15,53 Juta Barel, Level Praperang (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126585/timteng-kembali-ekspor-minyak-15-53-juta-barel-level-praperang>
+- **5** T3 11-03 13:02 cnbc_indonesia_market: Perang Arab Kian Panas, Laba Saudi Aramco Meroket 34,6% di Kuartal-III (global/korporasi) <https://www.cnbcindonesia.com/market/20261103130002-17-781865/perang-arab-kian-panas-laba-saudi-aramco-meroket-346-di-kuartal-iii>

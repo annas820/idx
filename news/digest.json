@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T04:35+07:00",
+ "generated_for": "2026-11-04T05:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 520,
- "kept": 145,
+ "scanned": 502,
+ "kept": 140,
  "dropped_noise": 15,
  "items": [
   {
@@ -252,21 +252,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-02T17:17+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Ada Masalah Keuangan, 2 Saham Masuk ke Pemantauan Khusus BEI",
-   "link": "https://www.cnbcindonesia.com/market/20261102170442-17-781638/ada-masalah-keuangan-2-saham-masuk-ke-pemantauan-khusus-bei",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-03T21:30+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -406,6 +391,21 @@
    "categories": [
     "global",
     "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T13:02+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Perang Arab Kian Panas, Laba Saudi Aramco Meroket 34,6% di Kuartal-III",
+   "link": "https://www.cnbcindonesia.com/market/20261103130002-17-781865/perang-arab-kian-panas-laba-saudi-aramco-meroket-346-di-kuartal-iii",
+   "score": 5,
+   "categories": [
+    "global",
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
