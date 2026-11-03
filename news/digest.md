@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-03T22:16+07:00 WIB | jendela 36 jam | dipindai 710, lolos 218, dibuang sebagai noise 16.
+Berita terbaru: 2026-11-04T00:31+07:00 WIB | jendela 36 jam | dipindai 640, lolos 191, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -11,7 +11,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **10** T3 11-03 12:30 bloomberg_technoz: BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril>
 - **9** T3 11-02 15:15 cnbc_indonesia_market: Video: Jika Bunga The Fed Naik Akhir 2026, Apa Efeknya ke Rupiah-IHSG? (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261102142232-19-781547/video-jika-bunga-the-fed-naik-akhir-2026-apa-efeknya-ke-rupiah-ihsg>
 - **8** T3 11-02 13:30 cnbc_indonesia_market: Daya Tarik IPO, BEI Kaji Insentif Pajak PPh Badan 3% Buat Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261102130317-17-781514/daya-tarik-ipo-bei-kaji-insentif-pajak-pph-badan-3-buat-emiten>
-- **7** T3 11-02 12:15 cnbc_indonesia_market: Laba Emiten Hapsoro (RAJA) Naik 81,7% di Kuartal III, Ini Penyebabnya [RAJA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261102104311-17-781439/laba-emiten-hapsoro--raja--naik-817-di-kuartal-iii-ini-penyebabnya>
 - **6** T3 11-03 20:40 bloomberg_technoz: Suahasil Beber Alasan Kemenkeu Tak Ambil Saham BEI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126653/suahasil-beber-alasan-kemenkeu-tak-ambil-saham-bei>
 - **6** T3 11-03 18:16 cnbc_indonesia_market: OJK: Reformasi Pasar Modal Ibarat "Detox", IHSG Merah jadi Konsekuensi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103181327-17-782016/ojk-reformasi-pasar-modal-ibarat-detox-ihsg-merah-jadi-konsekuensi>
 - **6** T3 11-03 17:45 bloomberg_technoz: Pasar Saham 'Kebakaran', Investor Lari ke SBN? (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn>
@@ -32,4 +31,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-02 13:40 cnbc_indonesia_news: India Tuntut Ketua KPU Mundur - BEI Keluarkan Saham HSC Dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261102114938-8-781479/india-tuntut-ketua-kpu-mundur--bei-keluarkan-saham-hsc-dari-ihsg>
 - **6** T3 11-02 12:50 cnbc_indonesia_market: Saham HSC Dikeluarkan, BEI Pastikan Tidak Ada Gejolak Signifikan (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102092603-19-781407/saham-hsc-dikeluarkan-bei-pastikan-tidak-ada-gejolak-signifikan>
 - **6** T3 11-02 12:40 cnbc_indonesia_market: Video: Investor Asing Sesalkan Wacana MSCI Turunkan Status RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102085544-19-781387/video-investor-asing-sesalkan-wacana-msci-turunkan-status-ri>
-- **6** T3 11-02 12:12 cnbc_indonesia_market: Saham HSC Resmi Keluar dari IHSG Hari Ini, Begini Penjelasan Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261102114737-17-781475/saham-hsc-resmi-keluar-dari-ihsg-hari-ini-begini-penjelasan-bos-bei>
+- **5** T3 11-03 21:30 cnbc_indonesia_news: Inflasi Menggila, Suku Bunga Tetangga RI Rekor Tertinggi Sejak 2008 (kebijakan/makro) <https://www.cnbcindonesia.com/news/20261103130816-4-781869/inflasi-menggila-suku-bunga-tetangga-ri-rekor-tertinggi-sejak-2008>
+- **5** T3 11-03 20:20 bloomberg_technoz: OJK Dalami Keluhan Gangguan Transaksi Nasabah Bank MNC (kebijakan; terkonfirmasi, juga di kontan_keuangan) <https://www.bloombergtechnoz.com/detail-news/126651/ojk-dalami-keluhan-gangguan-transaksi-nasabah-bank-mnc>
