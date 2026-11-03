@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-03T12:50+07:00",
+ "generated_for": "2026-11-03T14:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 541,
- "kept": 188,
- "dropped_noise": 14,
+ "scanned": 575,
+ "kept": 200,
+ "dropped_noise": 15,
  "items": [
   {
    "published": "2026-11-03T12:30+07:00",
@@ -73,6 +73,21 @@
    "tickers": [
     "RAJA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-03T13:14+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Sanksi Aurora Asset Rp2,57 M, 5 Produk Reksa Dana Wajib Bubar",
+   "link": "https://www.cnbcindonesia.com/market/20261103130444-17-781868/ojk-sanksi-aurora-asset-rp257-m-5-produk-reksa-dana-wajib-bubar",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -371,49 +386,32 @@
    "also_in": []
   },
   {
-   "published": "2026-11-03T12:25+07:00",
-   "source": "cnbc_indonesia_news",
+   "published": "2026-11-03T13:50+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Tekanan Inflasi Mengkhawatirkan, Ekonom Ramal BI Rate Naik Bulan Ini",
-   "link": "https://www.cnbcindonesia.com/news/20261103104715-4-781813/tekanan-inflasi-mengkhawatirkan-ekonom-ramal-bi-rate-naik-bulan-ini",
+   "title": "Timteng Kembali Ekspor Minyak 15,53 Juta Barel, Level Praperang",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126585/timteng-kembali-ekspor-minyak-15-53-juta-barel-level-praperang",
    "score": 5,
    "categories": [
-    "kebijakan",
-    "makro"
+    "global",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-03T11:56+07:00",
+   "published": "2026-11-03T13:02+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "4 Emiten Prajogo Pangestu Buyback Saham, Sudah Gelontorkan Rp830 M",
-   "link": "https://www.cnbcindonesia.com/market/20261103114055-17-781837/4-emiten-prajogo-pangestu-buyback-saham-sudah-gelontorkan-rp830-m",
+   "title": "Perang Arab Kian Panas, Laba Saudi Aramco Meroket 34,6% di Kuartal-III",
+   "link": "https://www.cnbcindonesia.com/market/20261103130002-17-781865/perang-arab-kian-panas-laba-saudi-aramco-meroket-346-di-kuartal-iii",
    "score": 5,
    "categories": [
-    "pasar",
+    "global",
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T11:48+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Timothy Ronald Jadi Pemegang Saham Baru 1,26% Tempo Inti Media (TMPO)",
-   "link": "https://www.cnbcindonesia.com/market/20261103113851-17-781836/timothy-ronald-jadi-pemegang-saham-baru-126-tempo-inti-media--tmpo-",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "TMPO"
-   ],
    "flags": [],
    "also_in": []
   }
