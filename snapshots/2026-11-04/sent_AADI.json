@@ -1,0 +1,40 @@
+{
+  "schema": "idx.sentiment.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-04T11:29:15Z",
+  "cached": true,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": "AADI",
+    "matched_name": "ADARO ANDALAN INDONESIA",
+    "label": "neutral",
+    "score": 0.0,
+    "items": 1,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 1,
+    "oldest": "2026-11-03T09:55:02+07:00",
+    "newest": "2026-11-03T09:55:02+07:00",
+    "top_positive_terms": [],
+    "top_negative_terms": [],
+    "headlines": [
+      {
+        "title": "Bukan Cuma Boy Thohir, Ini Deretan Pengendali di Balik Adaro (AADI)",
+        "url": "https://www.cnbcindonesia.com/market/20261103080802-17-781761/bukan-cuma-boy-thohir-ini-deretan-pengendali-di-balik-adaro--aadi-",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-03T09:55:02+07:00",
+        "summary": "PT Adaro Andalan Indonesia (AADI) mengungkap pemilik manfaat perusahaan, termasuk keluarga Thohir dan Subianto.",
+        "matched_by": "ticker",
+        "scope": "company",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ],
+    "method": "lexicon: (positive - negative) / (positive + negative) per headline over title + summary, Indonesian and English finance terms; mean over matched items"
+  }
+}

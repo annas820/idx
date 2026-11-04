@@ -1,0 +1,70 @@
+{
+ "version": "CLO-FT-1.0",
+ "signal_date": "2026-11-04",
+ "breadth": 0.082,
+ "universe_with_data": 97,
+ "regime_ok": false,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "UNVR",
+   "signal_date": "2026-11-04",
+   "close": 1390.0,
+   "atr": 47.11,
+   "limit": 1366.44,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SGER",
+   "signal_date": "2026-11-04",
+   "close": 655.0,
+   "atr": 47.6,
+   "limit": 631.2,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BUVA",
+   "signal_date": "2026-11-04",
+   "close": 268.0,
+   "atr": 40.94,
+   "limit": 247.53,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "ENRG",
+   "signal_date": "2026-11-04",
+   "close": 550.0,
+   "atr": 69.05,
+   "limit": 515.47,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "GOTO",
+   "signal_date": "2026-11-04",
+   "close": 24.0,
+   "atr": 1.87,
+   "limit": 23.07,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "idx.technical.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-11-04T11:29:17Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "INDF",
+    "name": "PT Indofood Sukses Makmur Tbk",
+    "currency": "IDR",
+    "as_of": "2026-11-04T09:00:00+07:00",
+    "period": "1y",
+    "candles_used": 240,
+    "price": 6600.0,
+    "change_pct_1d": 1.5384615384615385,
+    "change_pct_1w": 3.5294117647058822,
+    "change_pct_1m": -3.64963503649635,
+    "change_pct_3m": -8.96551724137931,
+    "high_52w": 7600.0,
+    "low_52w": 5850.0,
+    "moving_averages": {
+      "sma20": 6671.25,
+      "sma50": 6923.0,
+      "sma200": 6782.625,
+      "ema20": 6637.29964407304,
+      "ema50": 6807.306433811387,
+      "ema200": 6812.972128137924
+    },
+    "rsi14": 46.24399073803115,
+    "macd": {
+      "line": -120.0800879322087,
+      "signal": -122.06385252274512,
+      "histogram": 1.983764590536424
+    },
+    "bollinger": {
+      "upper": 7096.183818376462,
+      "middle": 6671.25,
+      "lower": 6246.316181623538,
+      "percent_b": 0.41616341543228574,
+      "bandwidth_pct": 12.739256312578965
+    },
+    "atr14": 218.88604108516782,
+    "volume": {
+      "last": 6348000,
+      "avg20": 8783225,
+      "ratio": 0.7227413620851111
+    },
+    "levels": {
+      "support": [
+        6525.0,
+        5925.0,
+        5850.0
+      ],
+      "resistance": [
+        6850.0,
+        6975.0,
+        7050.0
+      ]
+    },
+    "trend": "sideways",
+    "signal": {
+      "label": "neutral",
+      "score": 0,
+      "reasons": [
+        "moving averages disagree: no clear trend",
+        "RSI 46 is neutral",
+        "MACD just crossed above its signal line",
+        "price below the 200-day average"
+      ]
+    }
+  }
+}

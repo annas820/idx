@@ -1,0 +1,285 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-04T11:28:47Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "PGEO Kaji Masuk Listrik Data Center, Ini Kabar Terbarunya",
+        "url": "https://www.cnbcindonesia.com/market/20261104173245-17-782365/pgeo-kaji-masuk-listrik-data-center-ini-kabar-terbarunya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T18:10:46+07:00",
+        "summary": "PT Pertamina Geothermal Energy Tbk. (PGEO) atau PGE terus mematangkan rencana pengembangan green data center alias pusat data berbasis energi panas bumi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Persaingan Furnitur Besi Lokal: Harga dan Durability Jadi Kunci",
+        "url": "https://www.cnbcindonesia.com/market/20261104173200-19-782364/video-persaingan-furnitur-besi-lokal-harga-durability-jadi-kunci",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T18:03:01+07:00",
+        "summary": "Persaingan Bisnis Furnitur Besi Lokal: Harga dan Durability Jadi Kunci",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Rupiah Melemah, CNAF Andalkan Strategi Hedging demi Amankan Pendanaan Valas",
+        "url": "https://keuangan.kontan.co.id/news/rupiah-melemah-cnaf-andalkan-strategi-hedging-demi-amankan-pendanaan-valas",
+        "source": "kontan/keuangan",
+        "published": "2026-11-04T18:00:45+07:00",
+        "summary": "CNAF mitigasi risiko pelemahan rupiah melalui hedging penuh dan mengutamakan pendanaan domestik untuk menjaga likuiditas serta biaya dana.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "melemah"
+        ]
+      },
+      {
+        "title": "Ini Negara dengan Lulusan Pendidikan Tinggi Terbanyak Dunia, RI Masuk?",
+        "url": "https://www.cnbcindonesia.com/research/20261104163028-128-782345/ini-negara-dengan-lulusan-pendidikan-tinggi-terbanyak-dunia-ri-masuk",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-04T18:00:39+07:00",
+        "summary": "kemampuan negara membangun sumber daya manusia berpendidikan tinggi ternyata masih timpang.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "MUF Tak Bedakan Bunga Kredit Mobil Listrik dan Konvensional, Ini Penjelasannya",
+        "url": "https://keuangan.kontan.co.id/news/muf-tak-bedakan-bunga-kredit-mobil-listrik-dan-konvensional-ini-penjelasannya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-04T17:52:43+07:00",
+        "summary": "MUF salurkan pembiayaan kendaraan listrik Rp 2,53 triliun hingga September 2026, tumbuh 66,3% dengan bunga berdasarkan profil risiko debitur.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Beri Izin Usaha Penyelenggara Agregasi Jasa Keuangan PT Sarana Pasar Digital",
+        "url": "https://keuangan.kontan.co.id/news/ojk-beri-izin-usaha-penyelenggara-agregasi-jasa-keuangan-pt-sarana-pasar-digital",
+        "source": "kontan/keuangan",
+        "published": "2026-11-04T17:43:37+07:00",
+        "summary": "OJK resmi memberikan izin usaha agregasi jasa keuangan PT Sarana Pasar Digital, pengelola aplikasi marketplace ArtaKu untuk layanan pembiayaan.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit Properti Melambat, Perbankan Perketat Seleksi Debitur & Jaga Kualitas Kredit",
+        "url": "https://keuangan.kontan.co.id/news/kredit-properti-melambat-perbankan-perketat-seleksi-debitur-jaga-kualitas-kredit",
+        "source": "kontan/keuangan",
+        "published": "2026-11-04T17:39:06+07:00",
+        "summary": "Kredit ruko dan rukan turun 1,67% menjadi Rp 29,88 triliun, mendorong perbankan memperketat seleksi debitur dan menjaga kualitas kredit.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun",
+          "melambat"
+        ]
+      },
+      {
+        "title": "Video: Review MSCI Membayangi, IHSG Berhasil Ditutup Menguat di 4.900",
+        "url": "https://www.cnbcindonesia.com/market/20261104172851-19-782361/video-review-msci-membayangi-ihsg-berhasil-ditutup-menguat-di-4900",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T17:36:52+07:00",
+        "summary": "Review MSCI Membayangi, IHSG Berhasil Ditutup Menguat di 4.900",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Ekonom: Biaya Dana dan Tekanan Margin Bayangi Efisiensi Bank Besar",
+        "url": "https://keuangan.kontan.co.id/news/ekonom-biaya-dana-dan-tekanan-margin-bayangi-efisiensi-bank-besar",
+        "source": "kontan/keuangan",
+        "published": "2026-11-04T17:34:09+07:00",
+        "summary": "Persaingan menghimpun DPK dan penyempitan NIM membayangi kinerja pendapatan bank, sementara biaya operasional terus meningkat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pemilik Mobil EV Catat! Asuransi Terima Sederet Kasus Klaim Ini",
+        "url": "https://www.cnbcindonesia.com/market/20261104170107-17-782356/pemilik-mobil-ev-catat-asuransi-terima-sederet-kasus-klaim-ini",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T17:27:07+07:00",
+        "summary": "Pertumbuhan asuransi mobil listrik meningkat seiring kepemilikan EV. Biaya perbaikan lebih tinggi, terutama untuk kerusakan baterai.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "14 Ladang Panas Bumi Dibuka, PGEO Mau Masuk?",
+        "url": "https://www.cnbcindonesia.com/market/20261104171831-17-782359/14-ladang-panas-bumi-dibuka-pgeo-mau-masuk",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T17:26:32+07:00",
+        "summary": "PT Pertamina Geothermal Energy (PGE) mengevaluasi peluang lelang 14 WKP panas bumi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Danantara Buka Peluang Payroll Pegawai BUMN ke Bank Syariah, BSI Siap Garap Pasar",
+        "url": "https://keuangan.kontan.co.id/news/danantara-buka-peluang-payroll-pegawai-bumn-ke-bank-syariah-bsi-siap-garap-pasar",
+        "source": "kontan/keuangan",
+        "published": "2026-11-04T17:23:21+07:00",
+        "summary": "Bank Syariah Indonesia Tbk (BSI) (BRIS) membidik peluang pengembangan bisnis payroll di lingkungan Badan Usaha Milik Negara (BUMN).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Siapkan 30.000 Rumah Lewat KPR Recycle, Begini Skemanya",
+        "url": "https://keuangan.kontan.co.id/news/btn-siapkan-30000-rumah-lewat-kpr-recycle-begini-skemanya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-04T17:21:29+07:00",
+        "summary": "BTN menyiapkan 30.000 rumah melalui KPR Recycle untuk memperluas akses hunian dan mendukung percepatan Program 3 Juta Rumah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Sejarah Kejahatan Siber, dari Virus Komputer hingga Ransomware",
+        "url": "https://www.cnbcindonesia.com/research/20261104155220-128-782321/sejarah-kejahatan-siber-dari-virus-komputer-hingga-ransomware",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-04T17:15:00+07:00",
+        "summary": "Pelajari sejarah kejahatan siber yang kini menjadi industri terorganisir dengan ancaman yang meluas, dari pencurian data hingga serangan infrastruktur.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback",
+        "url": "https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T17:07:33+07:00",
+        "summary": "PGEO tidak akan melakukan buyback saham untuk menjaga free float. PGEO tengah menyiapkan opsi untuk memenuhi ketentuan BEI.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "buyback"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Duit Habis Buat Makan: RI Masuk Negara dengan Belanja Pangan Terbesar",
+        "url": "https://www.cnbcindonesia.com/research/20261104141708-131-782271/duit-habis-buat-makan-ri-masuk-negara-dengan-belanja-pangan-terbesar",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-04T16:30:07+07:00",
+        "summary": "Di sejumlah negara, pangan mengambil lebih dari separuh pengeluaran konsumen, sementara di negara lain porsinya hanya sekitar 6%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Aliran Modal Asing Masuk Rp126 Triliun, SBN dan SRBI Jadi \"Primadona\"",
+        "url": "https://www.cnbcindonesia.com/market/20261104094209-19-782147/aliran-modal-asing-masuk-rp126-triliun-sbn-srbi-jadi-primadona",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T16:20:41+07:00",
+        "summary": "Aliran Modal Asing Masuk Rp126 Triliun, SBN dan SRBI Jadi \"Primadona\"",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "IHSG Ditutup Menguat 0,32% ke 4.919,77",
+        "url": "https://www.cnbcindonesia.com/market/20261104152116-17-782322/ihsg-ditutup-menguat-032-ke-491977",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T16:05:57+07:00",
+        "summary": "IHSG ditutup naik 15,48 poin di zona hijau pada akhir perdagangan Rabu (4/11/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "menguat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Produksi Cetak Rekor, PGEO Kebut Proyek Panas Bumi 105 MW",
+        "url": "https://www.cnbcindonesia.com/market/20261104153752-17-782309/produksi-cetak-rekor-pgeo-kebut-proyek-panas-bumi-105-mw",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-04T15:52:45+07:00",
+        "summary": "PT Pertamina Geothermal Energy (PGE) menargetkan kapasitas 1 GW pada 2028, dengan rekor produksi 4.114 GWh.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "rekor"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Di balik Dana Haji: Imbangkan Keuntungan, Manfaat dan Berkah",
+        "url": "https://www.cnbcindonesia.com/research/20261104153313-131-782300/di-balik-dana-haji-imbangkan-keuntungan-manfaat-berkah",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-04T15:51:50+07:00",
+        "summary": "Pengelolaan dana haji merupakan salah satu mandat keuangan publik yang memiliki tingkat sensitivitas tinggi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261103",
+ "sessions": 15,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "AYAM",
+   "signal_date": "20261103",
+   "close": 484.0,
+   "atr": 20.76,
+   "limit": 473.62,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BMRI",
+   "signal_date": "20261103",
+   "close": 3590.0,
+   "atr": 137.17,
+   "limit": 3521.42,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BOGA",
+   "signal_date": "20261103",
+   "close": 1860.0,
+   "atr": 224.47,
+   "limit": 1747.77,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BRPT",
+   "signal_date": "20261103",
+   "close": 1045.0,
+   "atr": 149.39,
+   "limit": 970.3,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "RATU",
+   "signal_date": "20261103",
+   "close": 1850.0,
+   "atr": 207.13,
+   "limit": 1746.43,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ],
+ "breadth": 0.09,
+ "breadth_1d": 0.05,
+ "regime_ok": false,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "BOGA",
+   "ratio_5d": 1.005,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "KOTA",
+   "ratio_5d": 0.207,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "KLBF",
+   "ratio_5d": 0.198,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "RATU",
+   "ratio_5d": 0.186,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "MBMA",
+   "ratio_5d": 0.161,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "EMAS",
+   "ratio_5d": 0.145,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "CDIA",
+   "ratio_5d": 0.132,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "BRMS",
+   "ratio_5d": 0.122,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "ASII",
+   "ratio_5d": 0.119,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "GOTO",
+   "ratio_5d": 0.117,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "DEWA",
+   "ratio_5d": 0.108,
+   "positive_sessions": 4
+  }
+ ],
+ "status": "breadth di bawah 40% (5 sesi atau 1 hari): tidak ada sinyal"
+}

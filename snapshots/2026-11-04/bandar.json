@@ -1,0 +1,313 @@
+{
+  "schema": "idx.bandar.screen.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-04T11:28:46Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "period": "1w",
+    "from": "2026-10-29",
+    "to": "2026-11-04",
+    "top": 5,
+    "preset": "foreign-accumulation",
+    "filters": [
+      "acc>=5",
+      "fpct>=5"
+    ],
+    "sort": "acc",
+    "descending": true,
+    "scanned": 100,
+    "checked": 100,
+    "total_matches": 9,
+    "rows": [
+      {
+        "symbol": "DKFT",
+        "name": "CENTRAL OMEGA RESOURCES Tbk",
+        "signal": "big_accumulation",
+        "phase": "markup",
+        "net_pct": 30.94736842105263,
+        "net_value": 14700000000.0,
+        "net_lots": 223245.0,
+        "price": 710.0,
+        "price_change_pct": 16.393442622950815,
+        "bandar_average": 664.2383585277028,
+        "bandar_gain_pct": 6.889340382830156,
+        "buy_share_pct": 85.68421052631578,
+        "total_value": 47500000000.0,
+        "foreign_net_value": 30100000000.0,
+        "foreign_net_pct": 63.368421052631575,
+        "top_buyers": [
+          "ZP",
+          "BQ",
+          "XL",
+          "CC",
+          "AI"
+        ],
+        "top_sellers": [
+          "XL",
+          "BQ",
+          "CC",
+          "AZ",
+          "YP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "AALI",
+        "name": "ASTRA AGRO LESTARI Tbk",
+        "signal": "big_accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 17.972350230414747,
+        "net_value": 23400000000.0,
+        "net_lots": 24460.0,
+        "price": 9525.0,
+        "price_change_pct": -2.3076923076923106,
+        "bandar_average": 9522.113050465989,
+        "bandar_gain_pct": 0.03031837070943677,
+        "buy_share_pct": 67.81874039938556,
+        "total_value": 130200000000.0,
+        "foreign_net_value": 9300000000.0,
+        "foreign_net_pct": 7.142857142857142,
+        "top_buyers": [
+          "SQ",
+          "AK",
+          "BB",
+          "CC",
+          "BK"
+        ],
+        "top_sellers": [
+          "AK",
+          "YU",
+          "BB",
+          "CC",
+          "XL"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "MAPA",
+        "name": "MAP AKTIF ADIPERKASA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 11.580594679186229,
+        "net_value": 7400000000.0,
+        "net_lots": 128916.0,
+        "price": 545.0,
+        "price_change_pct": -6.034482758620685,
+        "bandar_average": 565.482735444392,
+        "bandar_gain_pct": -3.6221681336204514,
+        "buy_share_pct": 86.3849765258216,
+        "total_value": 63900000000.0,
+        "foreign_net_value": 5300000000.0,
+        "foreign_net_pct": 8.294209702660407,
+        "top_buyers": [
+          "YU",
+          "ZP",
+          "KZ",
+          "AG",
+          "AK"
+        ],
+        "top_sellers": [
+          "YU",
+          "CC",
+          "BB",
+          "ZP",
+          "AZ"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "HRTA",
+        "name": "HARTADINATA ABADI Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 9.964093357271095,
+        "net_value": 11100000000.0,
+        "net_lots": 81551.0,
+        "price": 1370.0,
+        "price_change_pct": -14.10658307210031,
+        "bandar_average": 1377.4774943316781,
+        "bandar_gain_pct": -0.542839673421025,
+        "buy_share_pct": 63.46499102333932,
+        "total_value": 111400000000.0,
+        "foreign_net_value": 8700000000.0,
+        "foreign_net_pct": 7.809694793536805,
+        "top_buyers": [
+          "CC",
+          "AK",
+          "XL",
+          "BK",
+          "YP"
+        ],
+        "top_sellers": [
+          "AK",
+          "CC",
+          "AI",
+          "DX",
+          "XL"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "GOTO",
+        "name": "MVS GOTO GOJEK TOKOPEDIA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 9.503980404164116,
+        "net_value": 77600000000.0,
+        "net_lots": 31400000.0,
+        "price": 24.0,
+        "price_change_pct": 0.0,
+        "bandar_average": 24.0,
+        "bandar_gain_pct": 0.0,
+        "buy_share_pct": 69.5284751990202,
+        "total_value": 816500000000.0,
+        "foreign_net_value": 41800000000.0,
+        "foreign_net_pct": 5.119412124923453,
+        "top_buyers": [
+          "YU",
+          "MG",
+          "AK",
+          "KI",
+          "XL"
+        ],
+        "top_sellers": [
+          "AK",
+          "YU",
+          "MG",
+          "XL",
+          "SS"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "BREN",
+        "name": "BARITO RENEWABLES ENERGY Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 7.906712172923777,
+        "net_value": 13900000000.0,
+        "net_lots": 63316.0,
+        "price": 2240.0,
+        "price_change_pct": 8.212560386473422,
+        "bandar_average": 2061.1949417025608,
+        "bandar_gain_pct": 8.674825203565906,
+        "buy_share_pct": 65.69965870307168,
+        "total_value": 175800000000.0,
+        "foreign_net_value": 39600000000.0,
+        "foreign_net_pct": 22.525597269624573,
+        "top_buyers": [
+          "KZ",
+          "NI",
+          "XL",
+          "CC",
+          "BK"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "BK",
+          "ZP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "ASII",
+        "name": "ASTRA INTERNATIONAL Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.938461538461539,
+        "net_value": 77200000000.0,
+        "net_lots": 155182.0,
+        "price": 4900.0,
+        "price_change_pct": -2.0000000000000018,
+        "bandar_average": 4762.996816686077,
+        "bandar_gain_pct": 2.8764071988031326,
+        "buy_share_pct": 67.80000000000001,
+        "total_value": 1300000000000.0,
+        "foreign_net_value": 193000000000.0,
+        "foreign_net_pct": 14.846153846153845,
+        "top_buyers": [
+          "AK",
+          "CC",
+          "ZP",
+          "YU",
+          "PD"
+        ],
+        "top_sellers": [
+          "AK",
+          "ZP",
+          "CC",
+          "YU",
+          "BK"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "BUVA",
+        "name": "BUKIT ULUWATU VILLA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.620671283963772,
+        "net_value": 21100000000.0,
+        "net_lots": 824082.0,
+        "price": 268.0,
+        "price_change_pct": -25.555555555555554,
+        "bandar_average": 276.75576988528525,
+        "bandar_gain_pct": -3.1637171969041478,
+        "buy_share_pct": 60.468833244539155,
+        "total_value": 375400000000.0,
+        "foreign_net_value": 27400000000.0,
+        "foreign_net_pct": 7.298881193393713,
+        "top_buyers": [
+          "MG",
+          "XL",
+          "CC",
+          "AK",
+          "CP"
+        ],
+        "top_sellers": [
+          "MG",
+          "XL",
+          "IN",
+          "MU",
+          "AZ"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "RAJA",
+        "name": "RUKUN RAHARJA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.546075085324232,
+        "net_value": 6500000000.0,
+        "net_lots": 172442.0,
+        "price": 364.0,
+        "price_change_pct": -18.75,
+        "bandar_average": 394.76075852439635,
+        "bandar_gain_pct": -7.792253373759628,
+        "buy_share_pct": 62.45733788395904,
+        "total_value": 117200000000.0,
+        "foreign_net_value": 14300000000.0,
+        "foreign_net_pct": 12.20136518771331,
+        "top_buyers": [
+          "CC",
+          "XL",
+          "AK",
+          "OD",
+          "BK"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "YP",
+          "CP"
+        ],
+        "rounded": true
+      }
+    ]
+  }
+}

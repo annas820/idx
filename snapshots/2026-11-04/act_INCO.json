@@ -1,0 +1,45 @@
+{
+  "schema": "idx.actions.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-04T11:29:17Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "symbol": "INCO",
+    "name": "VALE INDONESIA Tbk",
+    "since": "2025-11-04",
+    "actions": [
+      {
+        "kind": "cash_dividend",
+        "label": "Cash Deviden",
+        "amount": 77.9,
+        "ratio_old": null,
+        "ratio_new": null,
+        "cum_date": "2026-06-10",
+        "ex_date": "2026-06-11",
+        "recording_date": "2026-06-12",
+        "distribution_date": "2026-06-26",
+        "end_date": null,
+        "status": "Final",
+        "details": "Jadwal Pelaksanaan Pembagian dividen tunai atas saham Vale Indonesia Tbk, PT (INCO)\nDengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 77,9\nAdapun jadwal pembagian dividen tunai adalah sebagai berikut :\nTanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 10 Jun 26\nTanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 11 Jun 26\nTanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 12 Jun 26\nTanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 15 Jun 26\nTanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 12 Jun 26\nTanggal Pembayaran dividen tunai : 26 Jun 26"
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-11-18",
+        "time": "09:00:00",
+        "status": "Final",
+        "venue": "Sudirman Hall, Sequis Tower, Level 2, Jl. Jend. Sudirman Kav. 71, Jakarta 12190, Indonesia",
+        "agenda": "RUPS akan dilaksanakan pada pukul 09:00 WIB\nPT Vale Indonesia Tbk (INCO)\nRecording Date : 26 October 2026 Waktu : 16:00 WIB\nAgenda RUPS Tahunan :\nAgenda RUPS Luar Biasa:\nPersetujuan atas perubahan susunan pengurus Perseroan\nPersetujuan Perubahan Pasal 3 Anggaran Dasar Perseroan untuk Penyesuaian Dengan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI) 2025"
+      },
+      {
+        "date": "2026-06-02",
+        "time": "09:00:00",
+        "status": "Final",
+        "venue": "Financial Hall, Graha CIMB Niaga, 2nd Floor, Jl. Jend. Sudirman Kav. 58, Jakarta 12190, Indonesia",
+        "agenda": "RUPS akan dilaksanakan pada pukul 09:00 WIB\nPT Vale Indonesia Tbk (INCO)\nRecording Date : 4 May 2026 Waktu : 16:00 WIB\nAgenda RUPS Tahunan :\nPersetujuan atas Laporan Tahunan termasuk laporan tugas pengawasan Dewan Komisaris dan pengesahan Laporan Keuangan Perseroan untuk tahun buku yang berakhir pada 31 Desember 2025, serta pemberian pelunasan dan pembebasan tanggung jawab sepenuhnya (volledig acquit et de charge) kepada Anggota Direksi dan Dewan Komisaris Perseroan atas tindakan pengurusan dan pengawasan yang dilaksanakan selama tahun buku 2025\nPersetujuan atas penggunaan keuntungan Perseroan untuk tahun buku yang berakhir pada 31 Desember 2025\nPersetujuan atas remunerasi bagi anggota Dewan Komisaris Perseroan serta gaji, tunjangan dan bonus bagi anggota Direksi Perseroan untuk tahun buku 2026\nPenunjukkan Akuntan Publik dan Kantor Akuntan Publik yang akan mengaudit laporan keuangan Perseroan untuk tahun buku yang berakhir pada 31 Desember 2026\nLaporan realisasi penggunaan dana hasil Penawaran Umum Terbatas Dalam Rangka Penambahan Modal Dengan Memberikan Hak Memesan Efek Terlebih Dahulu 2024\nPersetujuan atas perubahan susunan pengurus Perseroan\nAgenda RUPS Luar Biasa:"
+      }
+    ],
+    "warrants_rights": []
+  }
+}

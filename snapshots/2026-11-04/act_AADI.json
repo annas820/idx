@@ -1,0 +1,52 @@
+{
+  "schema": "idx.actions.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-04T11:29:16Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "symbol": "AADI",
+    "name": "ADARO ANDALAN INDONESIA Tbk",
+    "since": "2025-11-04",
+    "actions": [
+      {
+        "kind": "cash_dividend",
+        "label": "Cash Deviden",
+        "amount": 463.32,
+        "ratio_old": null,
+        "ratio_new": null,
+        "cum_date": "2026-06-04",
+        "ex_date": "2026-06-05",
+        "recording_date": "2026-06-08",
+        "distribution_date": "2026-06-18",
+        "end_date": null,
+        "status": "Final",
+        "details": "Jadwal Pelaksanaan Pembagian dividen tunai atas saham Adaro Andalan Indonesia Tbk, PT (AADI)\nDengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 463,32\nAdapun jadwal pembagian dividen tunai adalah sebagai berikut :\nTanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 4 Jun 26\nTanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 5 Jun 26\nTanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 8 Jun 26\nTanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 9 Jun 26\nTanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 8 Jun 26\nTanggal Pembayaran dividen tunai : 18 Jun 26"
+      },
+      {
+        "kind": "cash_dividend",
+        "label": "Cash Deviden",
+        "amount": 538.08,
+        "ratio_old": null,
+        "ratio_new": null,
+        "cum_date": "2025-11-17",
+        "ex_date": "2025-11-18",
+        "recording_date": "2025-11-19",
+        "distribution_date": "2025-11-27",
+        "end_date": null,
+        "status": "Final",
+        "details": "Jadwal Pelaksanaan Pembagian dividen interim atas saham Adaro Andalan Indonesia Tbk, PT (AADI)\nDengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 538,08 ( lima ratus tiga puluh delapan koma nol delapan Rupiah)\nAdapun jadwal pembagian dividen interim adalah sebagai berikut :\nTanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 17 Nov 25\nTanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 18 Nov 25\nTanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 19 Nov 25\nTanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 20 Nov 25\nTanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 19 Nov 25\nTanggal Pembayaran dividen interim : 27 Nov 25"
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-05-22",
+        "time": "14:00:00",
+        "status": "Final",
+        "venue": "Secara fisik di Cyber 2 Tower Lantai 26 dan secara elektronik melalui aplikasi KSEI",
+        "agenda": "RUPS akan dilaksanakan pada pukul 14:00 WIB\nPT Adaro Andalan Indonesia Tbk (AADI)\nRecording Date : 29 April 2026 Waktu : 16:00 WIB\nAgenda RUPS Tahunan :\nPersetujuan Laporan Tahunan dan Pengesahan Laporan Keuangan Konsolidasian Perseroan untuk Tahun Buku 2025\nPenetapan Penggunaan Laba Bersih Perseroan untuk Tahun Buku 2025\nPenunjukan Akuntan Publik dan/atau Kantor Akuntan Publik yang Akan Melakukan Audit Laporan Keuangan Konsolidasian Perseroan untuk Tahun Buku 2026\nPenetapan Honorarium atau Gaji dan Tunjangan bagi Dewan Komisaris dan Direksi Perseroan untuk Tahun Buku 2026\nPersetujuan atas Pembelian Kembali Saham yang Dikeluarkan oleh Perseroan sesuai dengan Ketentuan Peraturan Otoritas Jasa Keuangan Nomor 29 Tahun 2023 tentang Pembelian Kembali Saham yang Dikeluarkan oleh Perusahaan Terbuka\nPenyesuaian Pasal 3 Anggaran Dasar Perseroan dengan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI) 2025\nLaporan Realisasi Penggunaan Dana Hasil Penawaran Umum Perdana Saham\nAgenda RUPS Luar Biasa:"
+      }
+    ],
+    "warrants_rights": []
+  }
+}
