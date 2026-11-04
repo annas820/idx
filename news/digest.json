@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T14:00+07:00",
+ "generated_for": "2026-11-04T15:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 600,
- "kept": 181,
- "dropped_noise": 18,
+ "scanned": 642,
+ "kept": 189,
+ "dropped_noise": 25,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -140,6 +140,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-04T14:55+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "SRIL"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-04T11:20+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -157,6 +175,21 @@
     "cnbc_indonesia_market",
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-11-04T14:58+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Sanksi Supra Sekuritas, Pandu Sjahrir: Sudah Lepas Kepemilikan",
+   "link": "https://www.cnbcindonesia.com/market/20261104145349-17-782294/ojk-sanksi-supra-sekuritas-pandu-sjahrir-sudah-lepas-kepemilikan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-04T11:48+07:00",
@@ -391,39 +424,6 @@
    "also_in": [
     "cnbc_indonesia_market"
    ]
-  },
-  {
-   "published": "2026-11-03T08:46+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam & Buyback Melambung, Ini Sebabnya",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126546/harga-emas-antam-buyback-melambung-ini-sebabnya",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T08:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Akan Periksa Acak Laporan Emiten, Direksi Tak Bisa Lagi Main-Main",
-   "link": "https://www.cnbcindonesia.com/market/20261103072408-17-781737/bei-akan-periksa-acak-laporan-emiten-direksi-tak-bisa-lagi-main-main",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [

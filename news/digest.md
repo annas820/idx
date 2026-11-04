@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T14:00+07:00 WIB | jendela 36 jam | dipindai 600, lolos 181, dibuang sebagai noise 18.
+Berita terbaru: 2026-11-04T15:20+07:00 WIB | jendela 36 jam | dipindai 642, lolos 189, dibuang sebagai noise 25.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -15,7 +15,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-04 09:38 cnbc_indonesia_market: OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m>
 - **8** T3 11-04 10:26 cnbc_indonesia_market: Bursa RI Masih Dilirik, OJK Catat 25 Perusahaan Antre IPO (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261104102440-17-782156/bursa-ri-masih-dilirik-ojk-catat-25-perusahaan-antre-ipo>
 - **8** T3 11-04 09:57 cnbc_indonesia_market: Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M [BOGA] (kebijakan/global/emiten) <https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m>
+- **7** T3 11-04 14:55 bloomberg_technoz: Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026 [SRIL] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026>
 - **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
+- **6** T3 11-04 14:58 cnbc_indonesia_market: OJK Sanksi Supra Sekuritas, Pandu Sjahrir: Sudah Lepas Kepemilikan (kebijakan/global) <https://www.cnbcindonesia.com/market/20261104145349-17-782294/ojk-sanksi-supra-sekuritas-pandu-sjahrir-sudah-lepas-kepemilikan>
 - **6** T3 11-04 11:48 cnbc_indonesia_news: Video: IHSG Tak Berdaya Hingga Rupiah Tertahan di Rp 18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104112722-8-782190/video-ihsg-tak-berdaya-hingga-rupiah-tertahan-di-rp-18100-per-usd>
 - **6** T3 11-04 11:39 bloomberg_technoz: Prediksi Review MSCI: Dua Saham Konglomerat Mungkin Terdepak (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126715/prediksi-review-msci-dua-saham-konglomerat-mungkin-terdepak>
 - **6** T3 11-04 11:30 cnbc_indonesia_market: Video: OJK Tetapkan Sanksi di 3 Kasus Pelanggaran Pasar Modal (kebijakan/global) <https://www.cnbcindonesia.com/market/20261104094238-19-782148/video-ojk-tetapkan-sanksi-di-3-kasus-pelanggaran-pasar-modal>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 10:11 cnbc_indonesia_market: Video: IHSG Masih Volatil dan Rupiah Tertahan di Level Rp18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103100203-19-781800/video-ihsg-masih-volatil-rupiah-tertahan-di-level-rp18100-per-usd>
 - **6** T3 11-03 09:45 cnbc_indonesia_market: BEI Siapkan Jurus Baru, Bidik Pelaku Manipulasi Saham (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103070227-17-781724/bei-siapkan-jurus-baru-bidik-pelaku-manipulasi-saham>
 - **6** T3 11-03 09:31 kontan_keuangan: Laba Bank Neo (BBYB) Susut 7,12% Jadi Rp 430 Miliar pada Kuartal III-2026 [BBYB] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/laba-bank-neo-bbyb-susut-712-jadi-rp-430-miliar-pada-kuartal-iii-2026>
-- **6** T3 11-03 08:46 bloomberg_technoz: Harga Emas Antam & Buyback Melambung, Ini Sebabnya [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126546/harga-emas-antam-buyback-melambung-ini-sebabnya>
-- **6** T3 11-03 08:30 cnbc_indonesia_market: BEI Akan Periksa Acak Laporan Emiten, Direksi Tak Bisa Lagi Main-Main (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103072408-17-781737/bei-akan-periksa-acak-laporan-emiten-direksi-tak-bisa-lagi-main-main>
