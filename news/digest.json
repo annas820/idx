@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T21:00+07:00",
+ "generated_for": "2026-11-04T22:27+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 693,
- "kept": 194,
- "dropped_noise": 21,
+ "scanned": 673,
+ "kept": 181,
+ "dropped_noise": 19,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -426,44 +426,5 @@
    "also_in": []
   }
  ],
- "watchlist_hits": [
-  {
-   "published": "2026-11-03T09:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Bukan Cuma Boy Thohir, Ini Deretan Pengendali di Balik Adaro (AADI)",
-   "link": "https://www.cnbcindonesia.com/market/20261103080802-17-781761/bukan-cuma-boy-thohir-ini-deretan-pengendali-di-balik-adaro--aadi-",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "AADI",
-    "ADRO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T09:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Salim Group Terseret Isu Karhutla, Indofood (INDF) Ungkap Fakta Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261103074746-17-781751/salim-group-terseret-isu-karhutla-indofood--indf--ungkap-fakta-ini",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ICBP",
-    "INDF"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  }
- ]
+ "watchlist_hits": []
 }

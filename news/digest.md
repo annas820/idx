@@ -1,11 +1,7 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T21:00+07:00 WIB | jendela 36 jam | dipindai 693, lolos 194, dibuang sebagai noise 21.
+Berita terbaru: 2026-11-04T22:27+07:00 WIB | jendela 36 jam | dipindai 673, lolos 181, dibuang sebagai noise 19.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
-
-## Menyentuh watchlist
-- **4** T3 11-03 09:55 cnbc_indonesia_market: Bukan Cuma Boy Thohir, Ini Deretan Pengendali di Balik Adaro (AADI) [AADI,ADRO] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261103080802-17-781761/bukan-cuma-boy-thohir-ini-deretan-pengendali-di-balik-adaro--aadi->
-- **4** T3 11-03 09:20 cnbc_indonesia_market: Salim Group Terseret Isu Karhutla, Indofood (INDF) Ungkap Fakta Ini [ICBP,INDF] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261103074746-17-781751/salim-group-terseret-isu-karhutla-indofood--indf--ungkap-fakta-ini>
 
 ## Teratas
 - **10** T3 11-04 10:55 bloomberg_technoz: OJK Bongkar Gorengan Saham PANR, Keuntungan Ilegal Capai Rp5 M [PANR] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126712/ojk-bongkar-gorengan-saham-panr-keuntungan-ilegal-capai-rp5-m>
