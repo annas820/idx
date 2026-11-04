@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T06:25+07:00 WIB | jendela 36 jam | dipindai 487, lolos 138, dibuang sebagai noise 15.
+Berita terbaru: 2026-11-04T07:54+07:00 WIB | jendela 36 jam | dipindai 470, lolos 137, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -23,6 +23,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 08:07 bloomberg_technoz: Harga Minyak Ambruk, Rupiah Bisa Dapat Angin Segar (global/kurs) <https://www.bloombergtechnoz.com/detail-news/126524/harga-minyak-ambruk-rupiah-bisa-dapat-angin-segar>
 - **6** T3 11-03 06:40 bloomberg_technoz: Medco (MEDC) Akan Tebar Dividen Interim Rp544 Miliar [MEDC] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126518/medco-medc-akan-tebar-dividen-interim-rp544-miliar>
 - **6** T3 11-03 06:00 bloomberg_technoz: S&P 500 Melemah Saat Saham Cip Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126516/s-p-500-melemah-saat-saham-cip-anjlok>
+- **5** T3 11-04 07:25 cnbc_indonesia_news: Minyak Dunia Tembus US$114, Suahasil Pasang Strategi Amankan APBN (global/makro) <https://www.cnbcindonesia.com/news/20261104063209-4-782084/minyak-dunia-tembus-us-114-suahasil-pasang-strategi-amankan-apbn>
+- **5** T3 11-04 07:00 bloomberg_technoz: Barito Renewables (BREN) Bantah Gelembungkan Harga Saham [BREN] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126668/barito-renewables-bren-bantah-gelembungkan-harga-saham>
 - **5** T3 11-03 21:30 cnbc_indonesia_news: Inflasi Menggila, Suku Bunga Tetangga RI Rekor Tertinggi Sejak 2008 (kebijakan/makro) <https://www.cnbcindonesia.com/news/20261103130816-4-781869/inflasi-menggila-suku-bunga-tetangga-ri-rekor-tertinggi-sejak-2008>
 - **5** T3 11-03 20:20 bloomberg_technoz: OJK Dalami Keluhan Gangguan Transaksi Nasabah Bank MNC (kebijakan; terkonfirmasi, juga di kontan_keuangan) <https://www.bloombergtechnoz.com/detail-news/126651/ojk-dalami-keluhan-gangguan-transaksi-nasabah-bank-mnc>
 - **5** T3 11-03 19:26 kontan_keuangan: OJK Turun Tangan Dalami Isu Gangguan Transaksi di MNC Bank (kebijakan; terkonfirmasi, juga di bloomberg_technoz) <https://keuangan.kontan.co.id/news/ojk-turun-tangan-dalami-isu-gangguan-transaksi-di-mnc-bank>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-03 18:03 kontan_keuangan: Saham Big Banks Berguguran Pada Perdagangan Hari Ini (3/11), BRI Turun Paling Dalam [BBRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-berguguran-pada-perdagangan-hari-ini-311-bri-turun-paling-dalam>
 - **5** T3 11-03 16:17 cnbc_indonesia_market: Angkasa Pura Alihkan Seluruh Saham GMFI ke InJourney Senilai Rp 5,6 T [GMFI] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261103160511-17-781954/angkasa-pura-alihkan-seluruh-saham-gmfi-ke-injourney-senilai-rp-56-t>
 - **5** T3 11-03 15:30 bloomberg_technoz: Harga Minyak Timteng Melemah Saat Ekspor via Hormuz Mulai Naik (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126597/harga-minyak-timteng-melemah-saat-ekspor-via-hormuz-mulai-naik>
-- **5** T3 11-03 13:50 bloomberg_technoz: Timteng Kembali Ekspor Minyak 15,53 Juta Barel, Level Praperang (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126585/timteng-kembali-ekspor-minyak-15-53-juta-barel-level-praperang>
-- **5** T3 11-03 13:02 cnbc_indonesia_market: Perang Arab Kian Panas, Laba Saudi Aramco Meroket 34,6% di Kuartal-III (global/korporasi) <https://www.cnbcindonesia.com/market/20261103130002-17-781865/perang-arab-kian-panas-laba-saudi-aramco-meroket-346-di-kuartal-iii>

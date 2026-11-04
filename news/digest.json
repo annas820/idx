@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T06:25+07:00",
+ "generated_for": "2026-11-04T07:54+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 487,
- "kept": 138,
+ "scanned": 470,
+ "kept": 137,
  "dropped_noise": 15,
  "items": [
   {
@@ -252,6 +252,38 @@
    "also_in": []
   },
   {
+   "published": "2026-11-04T07:25+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Minyak Dunia Tembus US$114, Suahasil Pasang Strategi Amankan APBN",
+   "link": "https://www.cnbcindonesia.com/news/20261104063209-4-782084/minyak-dunia-tembus-us-114-suahasil-pasang-strategi-amankan-apbn",
+   "score": 5,
+   "categories": [
+    "global",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Barito Renewables (BREN) Bantah Gelembungkan Harga Saham",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126668/barito-renewables-bren-bantah-gelembungkan-harga-saham",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-03T21:30+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -376,36 +408,6 @@
    "categories": [
     "global",
     "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T13:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Timteng Kembali Ekspor Minyak 15,53 Juta Barel, Level Praperang",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126585/timteng-kembali-ekspor-minyak-15-53-juta-barel-level-praperang",
-   "score": 5,
-   "categories": [
-    "global",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T13:02+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Perang Arab Kian Panas, Laba Saudi Aramco Meroket 34,6% di Kuartal-III",
-   "link": "https://www.cnbcindonesia.com/market/20261103130002-17-781865/perang-arab-kian-panas-laba-saudi-aramco-meroket-346-di-kuartal-iii",
-   "score": 5,
-   "categories": [
-    "global",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],
