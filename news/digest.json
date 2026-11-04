@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T16:50+07:00",
+ "generated_for": "2026-11-04T18:03+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 681,
- "kept": 200,
+ "scanned": 704,
+ "kept": 203,
  "dropped_noise": 28,
  "items": [
   {
@@ -140,6 +140,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-04T17:07+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback",
+   "link": "https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "PGEO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-04T14:55+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -175,6 +193,21 @@
     "cnbc_indonesia_market",
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-11-04T17:36+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Review MSCI Membayangi, IHSG Berhasil Ditutup Menguat di 4.900",
+   "link": "https://www.cnbcindonesia.com/market/20261104172851-19-782361/video-review-msci-membayangi-ihsg-berhasil-ditutup-menguat-di-4900",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-04T16:20+07:00",
@@ -380,36 +413,6 @@
    "tier": 3,
    "title": "Kabar Baik! Asing Borong SBN RI Rp28,79 T di Tengah Gejolak Global",
    "link": "https://www.cnbcindonesia.com/market/20261103171913-17-781993/kabar-baik-asing-borong-sbn-ri-rp2879-t-di-tengah-gejolak-global",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T13:14+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Sanksi Aurora Asset Rp2,57 M, 5 Produk Reksa Dana Wajib Bubar",
-   "link": "https://www.cnbcindonesia.com/market/20261103130444-17-781868/ojk-sanksi-aurora-asset-rp257-m-5-produk-reksa-dana-wajib-bubar",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T10:11+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: IHSG Masih Volatil dan Rupiah Tertahan di Level Rp18.100 per USD",
-   "link": "https://www.cnbcindonesia.com/market/20261103100203-19-781800/video-ihsg-masih-volatil-rupiah-tertahan-di-level-rp18100-per-usd",
    "score": 6,
    "categories": [
     "pasar",

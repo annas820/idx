@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T16:50+07:00 WIB | jendela 36 jam | dipindai 681, lolos 200, dibuang sebagai noise 28.
+Berita terbaru: 2026-11-04T18:03+07:00 WIB | jendela 36 jam | dipindai 704, lolos 203, dibuang sebagai noise 28.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -15,8 +15,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-04 09:38 cnbc_indonesia_market: OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m>
 - **8** T3 11-04 10:26 cnbc_indonesia_market: Bursa RI Masih Dilirik, OJK Catat 25 Perusahaan Antre IPO (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261104102440-17-782156/bursa-ri-masih-dilirik-ojk-catat-25-perusahaan-antre-ipo>
 - **8** T3 11-04 09:57 cnbc_indonesia_market: Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M [BOGA] (kebijakan/global/emiten) <https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m>
+- **7** T3 11-04 17:07 cnbc_indonesia_market: Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback [PGEO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback>
 - **7** T3 11-04 14:55 bloomberg_technoz: Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026 [SRIL] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026>
 - **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
+- **6** T3 11-04 17:36 cnbc_indonesia_market: Video: Review MSCI Membayangi, IHSG Berhasil Ditutup Menguat di 4.900 (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261104172851-19-782361/video-review-msci-membayangi-ihsg-berhasil-ditutup-menguat-di-4900>
 - **6** T3 11-04 16:20 cnbc_indonesia_market: Aliran Modal Asing Masuk Rp126 Triliun, SBN dan SRBI Jadi "Primadona" (pasar/kurs) <https://www.cnbcindonesia.com/market/20261104094209-19-782147/aliran-modal-asing-masuk-rp126-triliun-sbn-srbi-jadi-primadona>
 - **6** T3 11-04 15:30 bloomberg_technoz: Aksi Jual di Pasar Saham Dorong Rupiah ke Zona Merah (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126771/aksi-jual-di-pasar-saham-dorong-rupiah-ke-zona-merah>
 - **6** T3 11-04 14:58 cnbc_indonesia_market: OJK Sanksi Supra Sekuritas, Pandu Sjahrir: Sudah Lepas Kepemilikan (kebijakan/global) <https://www.cnbcindonesia.com/market/20261104145349-17-782294/ojk-sanksi-supra-sekuritas-pandu-sjahrir-sudah-lepas-kepemilikan>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 18:16 cnbc_indonesia_market: OJK: Reformasi Pasar Modal Ibarat "Detox", IHSG Merah jadi Konsekuensi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103181327-17-782016/ojk-reformasi-pasar-modal-ibarat-detox-ihsg-merah-jadi-konsekuensi>
 - **6** T3 11-03 17:45 bloomberg_technoz: Pasar Saham 'Kebakaran', Investor Lari ke SBN? (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn>
 - **6** T3 11-03 17:21 cnbc_indonesia_market: Kabar Baik! Asing Borong SBN RI Rp28,79 T di Tengah Gejolak Global (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103171913-17-781993/kabar-baik-asing-borong-sbn-ri-rp2879-t-di-tengah-gejolak-global>
-- **6** T3 11-03 13:14 cnbc_indonesia_market: OJK Sanksi Aurora Asset Rp2,57 M, 5 Produk Reksa Dana Wajib Bubar (kebijakan/global) <https://www.cnbcindonesia.com/market/20261103130444-17-781868/ojk-sanksi-aurora-asset-rp257-m-5-produk-reksa-dana-wajib-bubar>
-- **6** T3 11-03 10:11 cnbc_indonesia_market: Video: IHSG Masih Volatil dan Rupiah Tertahan di Level Rp18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103100203-19-781800/video-ihsg-masih-volatil-rupiah-tertahan-di-level-rp18100-per-usd>
