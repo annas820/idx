@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T10:50+07:00 WIB | jendela 36 jam | dipindai 504, lolos 160, dibuang sebagai noise 16.
+Berita terbaru: 2026-11-04T11:50+07:00 WIB | jendela 36 jam | dipindai 546, lolos 171, dibuang sebagai noise 17.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,12 +8,17 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-03 09:20 cnbc_indonesia_market: Salim Group Terseret Isu Karhutla, Indofood (INDF) Ungkap Fakta Ini [ICBP,INDF] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261103074746-17-781751/salim-group-terseret-isu-karhutla-indofood--indf--ungkap-fakta-ini>
 
 ## Teratas
+- **10** T3 11-04 10:55 bloomberg_technoz: OJK Bongkar Gorengan Saham PANR, Keuntungan Ilegal Capai Rp5 M [PANR] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126712/ojk-bongkar-gorengan-saham-panr-keuntungan-ilegal-capai-rp5-m>
 - **10** T3 11-04 10:35 bloomberg_technoz: OJK Sanksi BOGA Atas Tindakan Pengaburan Dana Hasil IPO [BOGA] (kebijakan/global/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126707/ojk-sanksi-boga-atas-tindakan-pengaburan-dana-hasil-ipo>
+- **10** T3 11-04 09:48 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR, Keuntungan Ilegal Rp5,07 M [PANR] (kebijakan/pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261104093625-17-782144/ojk-bongkar-manipulasi-saham-panr-keuntungan-ilegal-rp507-m>
 - **10** T3 11-03 12:30 bloomberg_technoz: BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril>
 - **9** T3 11-04 09:38 cnbc_indonesia_market: OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m>
 - **8** T3 11-04 10:26 cnbc_indonesia_market: Bursa RI Masih Dilirik, OJK Catat 25 Perusahaan Antre IPO (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261104102440-17-782156/bursa-ri-masih-dilirik-ojk-catat-25-perusahaan-antre-ipo>
 - **8** T3 11-04 09:57 cnbc_indonesia_market: Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M [BOGA] (kebijakan/global/emiten) <https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m>
-- **8** T3 11-04 09:48 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR, Keuntungan Ilegal Rp5,07 M [PANR] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261104093625-17-782144/ojk-bongkar-manipulasi-saham-panr-keuntungan-ilegal-rp507-m>
+- **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
+- **6** T3 11-04 11:48 cnbc_indonesia_news: Video: IHSG Tak Berdaya Hingga Rupiah Tertahan di Rp 18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104112722-8-782190/video-ihsg-tak-berdaya-hingga-rupiah-tertahan-di-rp-18100-per-usd>
+- **6** T3 11-04 11:39 bloomberg_technoz: Prediksi Review MSCI: Dua Saham Konglomerat Mungkin Terdepak (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126715/prediksi-review-msci-dua-saham-konglomerat-mungkin-terdepak>
+- **6** T3 11-04 11:30 cnbc_indonesia_market: Video: OJK Tetapkan Sanksi di 3 Kasus Pelanggaran Pasar Modal (kebijakan/global) <https://www.cnbcindonesia.com/market/20261104094238-19-782148/video-ojk-tetapkan-sanksi-di-3-kasus-pelanggaran-pasar-modal>
 - **6** T3 11-04 10:16 cnbc_indonesia_market: Jual Saham Nasabah Diam-Diam, Eks Broker Disanksi OJK 10 Tahun (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261104095921-17-782151/jual-saham-nasabah-diam-diam-eks-broker-disanksi-ojk-10-tahun>
 - **6** T3 11-04 08:27 bloomberg_technoz: Harga Emas Antam & Buyback Kompak Turun Rp4.000 Hari Ini [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126679/harga-emas-antam-buyback-kompak-turun-rp4-000-hari-ini>
 - **6** T3 11-04 07:55 cnbc_indonesia_news: Rupiah Tertekan dan Saham Bergejolak, KSSK Ungkap Ekonomi Kondisi RI (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104065937-4-782091/rupiah-tertekan-saham-bergejolak-kssk-ungkap-ekonomi-kondisi-ri>
@@ -28,8 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 09:31 kontan_keuangan: Laba Bank Neo (BBYB) Susut 7,12% Jadi Rp 430 Miliar pada Kuartal III-2026 [BBYB] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/laba-bank-neo-bbyb-susut-712-jadi-rp-430-miliar-pada-kuartal-iii-2026>
 - **6** T3 11-03 08:46 bloomberg_technoz: Harga Emas Antam & Buyback Melambung, Ini Sebabnya [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126546/harga-emas-antam-buyback-melambung-ini-sebabnya>
 - **6** T3 11-03 08:30 cnbc_indonesia_market: BEI Akan Periksa Acak Laporan Emiten, Direksi Tak Bisa Lagi Main-Main (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103072408-17-781737/bei-akan-periksa-acak-laporan-emiten-direksi-tak-bisa-lagi-main-main>
-- **6** T3 11-03 08:07 bloomberg_technoz: Harga Minyak Ambruk, Rupiah Bisa Dapat Angin Segar (global/kurs) <https://www.bloombergtechnoz.com/detail-news/126524/harga-minyak-ambruk-rupiah-bisa-dapat-angin-segar>
-- **6** T3 11-03 06:40 bloomberg_technoz: Medco (MEDC) Akan Tebar Dividen Interim Rp544 Miliar [MEDC] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126518/medco-medc-akan-tebar-dividen-interim-rp544-miliar>
-- **6** T3 11-03 06:00 bloomberg_technoz: S&P 500 Melemah Saat Saham Cip Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126516/s-p-500-melemah-saat-saham-cip-anjlok>
-- **5** T3 11-04 10:47 bloomberg_technoz: Investasi Alamtri (ADMR) Ambles Rp168 Miliar di Saham CITA [ADMR,CITA] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126711/investasi-alamtri-admr-ambles-rp168-miliar-di-saham-cita>
-- **5** T3 11-04 10:45 cnbc_indonesia_market: Dalam 10 Bulan, Saham MNC Bank (BABP) Sudah Longsor 65% [BABP] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261104093053-17-782140/dalam-10-bulan-saham-mnc-bank--babp--sudah-longsor-65>

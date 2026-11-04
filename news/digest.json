@@ -1,12 +1,34 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T10:50+07:00",
+ "generated_for": "2026-11-04T11:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 504,
- "kept": 160,
- "dropped_noise": 16,
+ "scanned": 546,
+ "kept": 171,
+ "dropped_noise": 17,
  "items": [
+  {
+   "published": "2026-11-04T10:55+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Bongkar Gorengan Saham PANR, Keuntungan Ilegal Capai Rp5 M",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126712/ojk-bongkar-gorengan-saham-panr-keuntungan-ilegal-capai-rp5-m",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "PANR"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
   {
    "published": "2026-11-04T10:35+07:00",
    "source": "bloomberg_technoz",
@@ -25,6 +47,28 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-04T09:48+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Bongkar Manipulasi Saham PANR, Keuntungan Ilegal Rp5,07 M",
+   "link": "https://www.cnbcindonesia.com/market/20261104093625-17-782144/ojk-bongkar-manipulasi-saham-panr-keuntungan-ilegal-rp507-m",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "PANR"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   },
   {
    "published": "2026-11-03T12:30+07:00",
@@ -96,20 +140,66 @@
    "also_in": []
   },
   {
-   "published": "2026-11-04T09:48+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-04T11:20+07:00",
+   "source": "cnbc_indonesia_news",
    "tier": 3,
-   "title": "OJK Bongkar Manipulasi Saham PANR, Keuntungan Ilegal Rp5,07 M",
-   "link": "https://www.cnbcindonesia.com/market/20261104093625-17-782144/ojk-bongkar-manipulasi-saham-panr-keuntungan-ilegal-rp507-m",
-   "score": 8,
+   "title": "Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara",
+   "link": "https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara",
+   "score": 7,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market",
+    "kontan_keuangan"
+   ]
+  },
+  {
+   "published": "2026-11-04T11:48+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: IHSG Tak Berdaya Hingga Rupiah Tertahan di Rp 18.100 per USD",
+   "link": "https://www.cnbcindonesia.com/news/20261104112722-8-782190/video-ihsg-tak-berdaya-hingga-rupiah-tertahan-di-rp-18100-per-usd",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T11:39+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Prediksi Review MSCI: Dua Saham Konglomerat Mungkin Terdepak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126715/prediksi-review-msci-dua-saham-konglomerat-mungkin-terdepak",
+   "score": 6,
    "categories": [
     "kebijakan",
-    "pasar",
-    "emiten"
+    "pasar"
    ],
-   "tickers": [
-    "PANR"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T11:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: OJK Tetapkan Sanksi di 3 Kasus Pelanggaran Pasar Modal",
+   "link": "https://www.cnbcindonesia.com/market/20261104094238-19-782148/video-ojk-tetapkan-sanksi-di-3-kasus-pelanggaran-pasar-modal",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
    ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -332,92 +422,6 @@
     "pasar"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T08:07+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Minyak Ambruk, Rupiah Bisa Dapat Angin Segar",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126524/harga-minyak-ambruk-rupiah-bisa-dapat-angin-segar",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T06:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Medco (MEDC) Akan Tebar Dividen Interim Rp544 Miliar",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126518/medco-medc-akan-tebar-dividen-interim-rp544-miliar",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "MEDC"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-03T06:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "S&P 500 Melemah Saat Saham Cip Anjlok",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126516/s-p-500-melemah-saat-saham-cip-anjlok",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T10:47+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Investasi Alamtri (ADMR) Ambles Rp168 Miliar di Saham CITA",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126711/investasi-alamtri-admr-ambles-rp168-miliar-di-saham-cita",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ADMR",
-    "CITA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T10:45+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Dalam 10 Bulan, Saham MNC Bank (BABP) Sudah Longsor 65%",
-   "link": "https://www.cnbcindonesia.com/market/20261104093053-17-782140/dalam-10-bulan-saham-mnc-bank--babp--sudah-longsor-65",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BABP"
-   ],
    "flags": [],
    "also_in": []
   }
