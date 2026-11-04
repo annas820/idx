@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T15:20+07:00 WIB | jendela 36 jam | dipindai 642, lolos 189, dibuang sebagai noise 25.
+Berita terbaru: 2026-11-04T16:50+07:00 WIB | jendela 36 jam | dipindai 681, lolos 200, dibuang sebagai noise 28.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -17,6 +17,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-04 09:57 cnbc_indonesia_market: Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M [BOGA] (kebijakan/global/emiten) <https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m>
 - **7** T3 11-04 14:55 bloomberg_technoz: Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026 [SRIL] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026>
 - **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
+- **6** T3 11-04 16:20 cnbc_indonesia_market: Aliran Modal Asing Masuk Rp126 Triliun, SBN dan SRBI Jadi "Primadona" (pasar/kurs) <https://www.cnbcindonesia.com/market/20261104094209-19-782147/aliran-modal-asing-masuk-rp126-triliun-sbn-srbi-jadi-primadona>
+- **6** T3 11-04 15:30 bloomberg_technoz: Aksi Jual di Pasar Saham Dorong Rupiah ke Zona Merah (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126771/aksi-jual-di-pasar-saham-dorong-rupiah-ke-zona-merah>
 - **6** T3 11-04 14:58 cnbc_indonesia_market: OJK Sanksi Supra Sekuritas, Pandu Sjahrir: Sudah Lepas Kepemilikan (kebijakan/global) <https://www.cnbcindonesia.com/market/20261104145349-17-782294/ojk-sanksi-supra-sekuritas-pandu-sjahrir-sudah-lepas-kepemilikan>
 - **6** T3 11-04 11:48 cnbc_indonesia_news: Video: IHSG Tak Berdaya Hingga Rupiah Tertahan di Rp 18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104112722-8-782190/video-ihsg-tak-berdaya-hingga-rupiah-tertahan-di-rp-18100-per-usd>
 - **6** T3 11-04 11:39 bloomberg_technoz: Prediksi Review MSCI: Dua Saham Konglomerat Mungkin Terdepak (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126715/prediksi-review-msci-dua-saham-konglomerat-mungkin-terdepak>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 17:21 cnbc_indonesia_market: Kabar Baik! Asing Borong SBN RI Rp28,79 T di Tengah Gejolak Global (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103171913-17-781993/kabar-baik-asing-borong-sbn-ri-rp2879-t-di-tengah-gejolak-global>
 - **6** T3 11-03 13:14 cnbc_indonesia_market: OJK Sanksi Aurora Asset Rp2,57 M, 5 Produk Reksa Dana Wajib Bubar (kebijakan/global) <https://www.cnbcindonesia.com/market/20261103130444-17-781868/ojk-sanksi-aurora-asset-rp257-m-5-produk-reksa-dana-wajib-bubar>
 - **6** T3 11-03 10:11 cnbc_indonesia_market: Video: IHSG Masih Volatil dan Rupiah Tertahan di Level Rp18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261103100203-19-781800/video-ihsg-masih-volatil-rupiah-tertahan-di-level-rp18100-per-usd>
-- **6** T3 11-03 09:45 cnbc_indonesia_market: BEI Siapkan Jurus Baru, Bidik Pelaku Manipulasi Saham (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103070227-17-781724/bei-siapkan-jurus-baru-bidik-pelaku-manipulasi-saham>
-- **6** T3 11-03 09:31 kontan_keuangan: Laba Bank Neo (BBYB) Susut 7,12% Jadi Rp 430 Miliar pada Kuartal III-2026 [BBYB] (korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/laba-bank-neo-bbyb-susut-712-jadi-rp-430-miliar-pada-kuartal-iii-2026>

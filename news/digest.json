@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T15:20+07:00",
+ "generated_for": "2026-11-04T16:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 642,
- "kept": 189,
- "dropped_noise": 25,
+ "scanned": 681,
+ "kept": 200,
+ "dropped_noise": 28,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -175,6 +175,36 @@
     "cnbc_indonesia_market",
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-11-04T16:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Aliran Modal Asing Masuk Rp126 Triliun, SBN dan SRBI Jadi \"Primadona\"",
+   "link": "https://www.cnbcindonesia.com/market/20261104094209-19-782147/aliran-modal-asing-masuk-rp126-triliun-sbn-srbi-jadi-primadona",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T15:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Aksi Jual di Pasar Saham Dorong Rupiah ke Zona Merah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126771/aksi-jual-di-pasar-saham-dorong-rupiah-ke-zona-merah",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-04T14:58+07:00",
@@ -388,42 +418,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-03T09:45+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Siapkan Jurus Baru, Bidik Pelaku Manipulasi Saham",
-   "link": "https://www.cnbcindonesia.com/market/20261103070227-17-781724/bei-siapkan-jurus-baru-bidik-pelaku-manipulasi-saham",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T09:31+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Laba Bank Neo (BBYB) Susut 7,12% Jadi Rp 430 Miliar pada Kuartal III-2026",
-   "link": "https://keuangan.kontan.co.id/news/laba-bank-neo-bbyb-susut-712-jadi-rp-430-miliar-pada-kuartal-iii-2026",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBYB"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
   }
  ],
  "watchlist_hits": [
