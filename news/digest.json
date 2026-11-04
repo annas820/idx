@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T05:45+07:00",
+ "generated_for": "2026-11-05T06:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 481,
- "kept": 132,
+ "scanned": 449,
+ "kept": 127,
  "dropped_noise": 16,
  "items": [
   {
@@ -194,6 +194,21 @@
    ]
   },
   {
+   "published": "2026-11-05T06:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Demokrat Menang Pemilu AS, Bursa Asia Siap Ikuti Reli Wall Street",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126804/demokrat-menang-pemilu-as-bursa-asia-siap-ikuti-reli-wall-street",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-04T17:36+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -377,36 +392,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-03T18:16+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK: Reformasi Pasar Modal Ibarat \"Detox\", IHSG Merah jadi Konsekuensi",
-   "link": "https://www.cnbcindonesia.com/market/20261103181327-17-782016/ojk-reformasi-pasar-modal-ibarat-detox-ihsg-merah-jadi-konsekuensi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T17:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pasar Saham 'Kebakaran', Investor Lari ke SBN?",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-04T23:17+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -419,6 +404,23 @@
    ],
    "tickers": [
     "CASH"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T16:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "45 Ribu Investor 'Nyangkut' di Saham SRIL, Ada Lo Kheng Hong",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126784/45-ribu-investor-nyangkut-di-saham-sril-ada-lo-kheng-hong",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "SRIL"
    ],
    "flags": [],
    "also_in": []
