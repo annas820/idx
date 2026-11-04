@@ -1,13 +1,12 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T23:23+07:00 WIB | jendela 36 jam | dipindai 652, lolos 177, dibuang sebagai noise 19.
+Berita terbaru: 2026-11-05T05:45+07:00 WIB | jendela 36 jam | dipindai 481, lolos 132, dibuang sebagai noise 16.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **10** T3 11-04 10:55 bloomberg_technoz: OJK Bongkar Gorengan Saham PANR, Keuntungan Ilegal Capai Rp5 M [PANR] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126712/ojk-bongkar-gorengan-saham-panr-keuntungan-ilegal-capai-rp5-m>
 - **10** T3 11-04 10:35 bloomberg_technoz: OJK Sanksi BOGA Atas Tindakan Pengaburan Dana Hasil IPO [BOGA] (kebijakan/global/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126707/ojk-sanksi-boga-atas-tindakan-pengaburan-dana-hasil-ipo>
 - **10** T3 11-04 09:48 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR, Keuntungan Ilegal Rp5,07 M [PANR] (kebijakan/pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261104093625-17-782144/ojk-bongkar-manipulasi-saham-panr-keuntungan-ilegal-rp507-m>
-- **10** T3 11-03 12:30 bloomberg_technoz: BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril>
 - **9** T3 11-04 09:38 cnbc_indonesia_market: OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m>
 - **8** T3 11-04 10:26 cnbc_indonesia_market: Bursa RI Masih Dilirik, OJK Catat 25 Perusahaan Antre IPO (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261104102440-17-782156/bursa-ri-masih-dilirik-ojk-catat-25-perusahaan-antre-ipo>
 - **8** T3 11-04 09:57 cnbc_indonesia_market: Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M [BOGA] (kebijakan/global/emiten) <https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m>
@@ -29,3 +28,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-03 20:40 bloomberg_technoz: Suahasil Beber Alasan Kemenkeu Tak Ambil Saham BEI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126653/suahasil-beber-alasan-kemenkeu-tak-ambil-saham-bei>
 - **6** T3 11-03 18:16 cnbc_indonesia_market: OJK: Reformasi Pasar Modal Ibarat "Detox", IHSG Merah jadi Konsekuensi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261103181327-17-782016/ojk-reformasi-pasar-modal-ibarat-detox-ihsg-merah-jadi-konsekuensi>
 - **6** T3 11-03 17:45 bloomberg_technoz: Pasar Saham 'Kebakaran', Investor Lari ke SBN? (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn>
+- **5** T3 11-04 23:17 kontan_keuangan: Makmur Jadi APERD Pertama yang Komersialkan K-CASH KSEI, Permudah Transaksi Reksadana [CASH] (kebijakan/emiten) <https://keuangan.kontan.co.id/news/makmur-jadi-aperd-pertama-yang-komersialkan-k-cash-ksei-permudah-transaksi-reksadana>

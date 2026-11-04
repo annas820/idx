@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T23:23+07:00",
+ "generated_for": "2026-11-05T05:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 652,
- "kept": 177,
- "dropped_noise": 19,
+ "scanned": 481,
+ "kept": 132,
+ "dropped_noise": 16,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -69,25 +69,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-03T12:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL)",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "SRIL"
-   ],
-   "flags": [],
-   "also_in": []
   },
   {
    "published": "2026-11-04T09:38+07:00",
@@ -422,6 +403,23 @@
     "kurs"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T23:17+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Makmur Jadi APERD Pertama yang Komersialkan K-CASH KSEI, Permudah Transaksi Reksadana",
+   "link": "https://keuangan.kontan.co.id/news/makmur-jadi-aperd-pertama-yang-komersialkan-k-cash-ksei-permudah-transaksi-reksadana",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "CASH"
+   ],
    "flags": [],
    "also_in": []
   }
