@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T08:50+07:00",
+ "generated_for": "2026-11-04T09:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 472,
- "kept": 141,
+ "scanned": 479,
+ "kept": 149,
  "dropped_noise": 16,
  "items": [
   {
@@ -23,6 +23,22 @@
    "tickers": [
     "SRIL"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T09:38+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M",
+   "link": "https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -394,23 +410,6 @@
     "komoditas"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T18:03+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Saham Big Banks Berguguran Pada Perdagangan Hari Ini (3/11), BRI Turun Paling Dalam",
-   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-berguguran-pada-perdagangan-hari-ini-311-bri-turun-paling-dalam",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
    "flags": [],
    "also_in": []
   }

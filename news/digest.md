@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-04T08:50+07:00 WIB | jendela 36 jam | dipindai 472, lolos 141, dibuang sebagai noise 16.
+Berita terbaru: 2026-11-04T09:45+07:00 WIB | jendela 36 jam | dipindai 479, lolos 149, dibuang sebagai noise 16.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -9,6 +9,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **10** T3 11-03 12:30 bloomberg_technoz: BEI Akan Delisting 18 Saham Pekan Depan, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126577/bei-akan-delisting-18-saham-pekan-depan-ada-sritex-sril>
+- **9** T3 11-04 09:38 cnbc_indonesia_market: OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m>
 - **6** T3 11-04 08:27 bloomberg_technoz: Harga Emas Antam & Buyback Kompak Turun Rp4.000 Hari Ini [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126679/harga-emas-antam-buyback-kompak-turun-rp4-000-hari-ini>
 - **6** T3 11-04 07:55 cnbc_indonesia_news: Rupiah Tertekan dan Saham Bergejolak, KSSK Ungkap Ekonomi Kondisi RI (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104065937-4-782091/rupiah-tertekan-saham-bergejolak-kssk-ungkap-ekonomi-kondisi-ri>
 - **6** T3 11-04 06:20 bloomberg_technoz: Saham Teknologi Dorong S&P 500 Menguat Saat Pemilu Paruh Waktu AS (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126666/saham-teknologi-dorong-s-p-500-menguat-saat-pemilu-paruh-waktu-as>
@@ -32,4 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-03 19:26 kontan_keuangan: OJK Turun Tangan Dalami Isu Gangguan Transaksi di MNC Bank (kebijakan; terkonfirmasi, juga di bloomberg_technoz) <https://keuangan.kontan.co.id/news/ojk-turun-tangan-dalami-isu-gangguan-transaksi-di-mnc-bank>
 - **5** T3 11-03 18:50 bloomberg_technoz: Harga Emas Turun ke US$3.906, Terpengaruh Pergerakan Minyak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126643/harga-emas-turun-ke-us-3-906-terpengaruh-pergerakan-minyak>
 - **5** T3 11-03 18:40 bloomberg_technoz: Bos Aramco Bakal Maksimalkan Produksi Minyak Saat Ekspor Melonjak (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126639/bos-aramco-bakal-maksimalkan-produksi-minyak-saat-ekspor-melonjak>
-- **5** T3 11-03 18:03 kontan_keuangan: Saham Big Banks Berguguran Pada Perdagangan Hari Ini (3/11), BRI Turun Paling Dalam [BBRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-berguguran-pada-perdagangan-hari-ini-311-bri-turun-paling-dalam>
