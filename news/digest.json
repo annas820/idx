@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-04T18:03+07:00",
+ "generated_for": "2026-11-04T19:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 704,
- "kept": 203,
- "dropped_noise": 28,
+ "scanned": 707,
+ "kept": 198,
+ "dropped_noise": 27,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -135,6 +135,24 @@
    ],
    "tickers": [
     "BOGA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-04T18:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Urung Ikut Tren Buyback, PGEO Siapkan Opsi Tambah Free Float",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126790/urung-ikut-tren-buyback-pgeo-siapkan-opsi-tambah-free-float",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "PGEO"
    ],
    "flags": [],
    "also_in": []
@@ -398,21 +416,6 @@
    "tier": 3,
    "title": "Pasar Saham 'Kebakaran', Investor Lari ke SBN?",
    "link": "https://www.bloombergtechnoz.com/detail-news/126632/pasar-saham-kebakaran-investor-lari-ke-sbn",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-03T17:21+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Kabar Baik! Asing Borong SBN RI Rp28,79 T di Tengah Gejolak Global",
-   "link": "https://www.cnbcindonesia.com/market/20261103171913-17-781993/kabar-baik-asing-borong-sbn-ri-rp2879-t-di-tengah-gejolak-global",
    "score": 6,
    "categories": [
     "pasar",
