@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T12:50+07:00",
+ "generated_for": "2026-11-05T14:10+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 507,
- "kept": 152,
- "dropped_noise": 18,
+ "scanned": 589,
+ "kept": 190,
+ "dropped_noise": 19,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -71,6 +71,29 @@
    ]
   },
   {
+   "published": "2026-11-05T13:27+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Garuda Indonesia (GIAA) Siapkan Rights Issue III, Inbreng 65,77% Saham GMFI",
+   "link": "https://investasi.kontan.co.id/news/garuda-indonesia-giaa-siapkan-rights-issue-iii-inbreng-6577-saham-gmfi",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "GIAA",
+    "GMFI"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
    "published": "2026-11-05T11:53+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -85,6 +108,29 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-05T10:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI",
+   "link": "https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "GIAA",
+    "GMFI"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
   },
   {
    "published": "2026-11-04T09:38+07:00",
@@ -153,6 +199,45 @@
    "also_in": []
   },
   {
+   "published": "2026-11-05T13:18+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Steel Pipe Industry of Indonesia (ISSP) Buyback Saham, Cek Anggaran yang Disiapkan",
+   "link": "https://investasi.kontan.co.id/news/steel-pipe-industry-of-indonesia-issp-buyback-saham-cek-anggaran-yang-disiapkan",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ISSP"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T12:07+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Menguat 1,96% ke 5.016 di Sesi I Kamis (5/11), BRPT, AADI, EXCL Top Gainers LQ45",
+   "link": "https://investasi.kontan.co.id/news/ihsg-menguat-196-ke-5016-di-sesi-i-kamis-511-brpt-aadi-excl-top-gainers-lq45",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "AADI",
+    "BRPT",
+    "EXCL"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
    "published": "2026-11-05T11:11+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -173,11 +258,53 @@
    "also_in": []
   },
   {
-   "published": "2026-11-05T10:05+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-05T10:57+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI",
-   "link": "https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi",
+   "title": "Saham Tempo Inti Media (TMPO) Melesat Hingga Disuspensi, Ada Perubahan Pemegang Saham",
+   "link": "https://investasi.kontan.co.id/news/saham-tempo-inti-media-tmpo-melesat-hingga-disuspensi-ada-perubahan-pemegang-saham",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "TMPO"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
+   "published": "2026-11-05T09:15+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11)",
+   "link": "https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "HRTA",
+    "INCO",
+    "MDKA"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T06:23+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Indo Tambangraya (ITMG) Siapkan Buyback Saham Rp 2,31 Triliun hingga Februari 2027",
+   "link": "https://investasi.kontan.co.id/news/indo-tambangraya-itmg-siapkan-buyback-saham-rp-231-triliun-hingga-februari-2027",
    "score": 7,
    "categories": [
     "pasar",
@@ -185,8 +312,7 @@
     "emiten"
    ],
    "tickers": [
-    "GIAA",
-    "GMFI"
+    "ITMG"
    ],
    "flags": [],
    "also_in": []
@@ -280,6 +406,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-05T11:31+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BEI Tambah Informasi Status Investor di Data Pemegang Saham 1%, Ini Panduan Ceknya",
+   "link": "https://investasi.kontan.co.id/news/bei-tambah-informasi-status-investor-di-data-pemegang-saham-1-ini-panduan-ceknya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-05T10:30+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -313,125 +454,67 @@
    "also_in": []
   },
   {
-   "published": "2026-11-05T07:15+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-05T08:22+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi",
-   "link": "https://www.cnbcindonesia.com/market/20261105052114-17-782437/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T06:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Demokrat Menang Pemilu AS, Bursa Asia Siap Ikuti Reli Wall Street",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126804/demokrat-menang-pemilu-as-bursa-asia-siap-ikuti-reli-wall-street",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T17:36+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Review MSCI Membayangi, IHSG Berhasil Ditutup Menguat di 4.900",
-   "link": "https://www.cnbcindonesia.com/market/20261104172851-19-782361/video-review-msci-membayangi-ihsg-berhasil-ditutup-menguat-di-4900",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T16:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Aliran Modal Asing Masuk Rp126 Triliun, SBN dan SRBI Jadi \"Primadona\"",
-   "link": "https://www.cnbcindonesia.com/market/20261104094209-19-782147/aliran-modal-asing-masuk-rp126-triliun-sbn-srbi-jadi-primadona",
+   "title": "IHSG Berpotensi Melemah, Ini Rekomendasi Saham Pilihan BNI Sekuritas, Kamis (5/11)",
+   "link": "https://investasi.kontan.co.id/news/ihsg-berpotensi-melemah-ini-rekomendasi-saham-pilihan-bni-sekuritas-kamis-511",
    "score": 6,
    "categories": [
     "pasar",
-    "kurs"
+    "emiten"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T15:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Aksi Jual di Pasar Saham Dorong Rupiah ke Zona Merah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126771/aksi-jual-di-pasar-saham-dorong-rupiah-ke-zona-merah",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
+   "tickers": [
+    "BBNI"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T14:58+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Sanksi Supra Sekuritas, Pandu Sjahrir: Sudah Lepas Kepemilikan",
-   "link": "https://www.cnbcindonesia.com/market/20261104145349-17-782294/ojk-sanksi-supra-sekuritas-pandu-sjahrir-sudah-lepas-kepemilikan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
+   "flags": [
+    "petunjuk"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T11:48+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Video: IHSG Tak Berdaya Hingga Rupiah Tertahan di Rp 18.100 per USD",
-   "link": "https://www.cnbcindonesia.com/news/20261104112722-8-782190/video-ihsg-tak-berdaya-hingga-rupiah-tertahan-di-rp-18100-per-usd",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T11:39+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Prediksi Review MSCI: Dua Saham Konglomerat Mungkin Terdepak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126715/prediksi-review-msci-dua-saham-konglomerat-mungkin-terdepak",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
    "also_in": []
   }
  ],
- "watchlist_hits": []
+ "watchlist_hits": [
+  {
+   "published": "2026-11-05T12:07+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Menguat 1,96% ke 5.016 di Sesi I Kamis (5/11), BRPT, AADI, EXCL Top Gainers LQ45",
+   "link": "https://investasi.kontan.co.id/news/ihsg-menguat-196-ke-5016-di-sesi-i-kamis-511-brpt-aadi-excl-top-gainers-lq45",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "AADI",
+    "BRPT",
+    "EXCL"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T09:15+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11)",
+   "link": "https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "HRTA",
+    "INCO",
+    "MDKA"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  }
+ ]
 }
