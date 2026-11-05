@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T09:50+07:00",
+ "generated_for": "2026-11-05T10:48+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 429,
- "kept": 133,
- "dropped_noise": 17,
+ "scanned": 438,
+ "kept": 135,
+ "dropped_noise": 18,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -121,6 +121,25 @@
    "also_in": []
   },
   {
+   "published": "2026-11-05T10:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI",
+   "link": "https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "GIAA",
+    "GMFI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-04T18:20+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -192,6 +211,21 @@
     "cnbc_indonesia_market",
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-11-05T10:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Belum Umumkan Laporan Keuangan, BEI Gembok 2 Saham Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261105092649-17-782498/belum-umumkan-laporan-keuangan-bei-gembok-2-saham-ini",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-05T08:50+07:00",
@@ -393,39 +427,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-04T06:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham Teknologi Dorong S&P 500 Menguat Saat Pemilu Paruh Waktu AS",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126666/saham-teknologi-dorong-s-p-500-menguat-saat-pemilu-paruh-waktu-as",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T09:23+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Rupiah Dibuka Menguat 0,19% ke Rp18.120 per Dolar AS",
-   "link": "https://www.cnbcindonesia.com/market/20261105091641-17-782495/rupiah-dibuka-menguat-019-ke-rp18120-per-dolar-as",
-   "score": 5,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   }
  ],
  "watchlist_hits": []
