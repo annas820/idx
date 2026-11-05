@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T07:50+07:00",
+ "generated_for": "2026-11-05T09:03+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 436,
- "kept": 124,
- "dropped_noise": 15,
+ "scanned": 425,
+ "kept": 128,
+ "dropped_noise": 16,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -192,6 +192,24 @@
     "cnbc_indonesia_market",
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-11-05T08:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Hari Ini Naik, Buyback Nanjak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126819/harga-emas-antam-hari-ini-naik-buyback-nanjak",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-05T07:15+07:00",
@@ -392,33 +410,18 @@
    "also_in": []
   },
   {
-   "published": "2026-11-03T20:40+07:00",
+   "published": "2026-11-05T08:55+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Suahasil Beber Alasan Kemenkeu Tak Ambil Saham BEI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126653/suahasil-beber-alasan-kemenkeu-tak-ambil-saham-bei",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T07:39+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Saham ITMG Babak Belur! 6 Bulan Ambles 10,9%, Asing Lepas Rp 18,8 M",
-   "link": "https://www.cnbcindonesia.com/market/20261105073322-17-782455/saham-itmg-babak-belur-6-bulan-ambles-109-asing-lepas-rp-188-m",
+   "title": "Broker Asing Diam-diam Borong Saham BBCA",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126816/broker-asing-diam-diam-borong-saham-bbca",
    "score": 5,
    "categories": [
     "pasar",
     "emiten"
    ],
    "tickers": [
-    "ITMG"
+    "BBCA"
    ],
    "flags": [],
    "also_in": []
