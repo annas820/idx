@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T09:03+07:00",
+ "generated_for": "2026-11-05T09:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 425,
- "kept": 128,
- "dropped_noise": 16,
+ "scanned": 429,
+ "kept": 133,
+ "dropped_noise": 17,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -410,21 +410,22 @@
    "also_in": []
   },
   {
-   "published": "2026-11-05T08:55+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-05T09:23+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Broker Asing Diam-diam Borong Saham BBCA",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126816/broker-asing-diam-diam-borong-saham-bbca",
+   "title": "Rupiah Dibuka Menguat 0,19% ke Rp18.120 per Dolar AS",
+   "link": "https://www.cnbcindonesia.com/market/20261105091641-17-782495/rupiah-dibuka-menguat-019-ke-rp18120-per-dolar-as",
    "score": 5,
    "categories": [
-    "pasar",
-    "emiten"
+    "kurs"
    ],
-   "tickers": [
-    "BBCA"
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
    ],
-   "flags": [],
-   "also_in": []
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   }
  ],
  "watchlist_hits": []
