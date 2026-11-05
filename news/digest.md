@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-05T17:55+07:00 WIB | jendela 36 jam | dipindai 715, lolos 221, dibuang sebagai noise 29.
+Berita terbaru: 2026-11-05T18:50+07:00 WIB | jendela 36 jam | dipindai 729, lolos 219, dibuang sebagai noise 29.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -15,6 +15,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-05 11:53 cnbc_indonesia_market: Video: Harga Minyak Ambruk Lebih 8% hingga IHSG dan Rupiah Menguat (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261105114616-19-782570/video-harga-minyak-ambruk-lebih-8-hingga-ihsg-rupiah-menguat>
 - **9** T3 11-05 10:05 cnbc_indonesia_market: Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI [GIAA,GMFI] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi>
 - **9** T3 11-04 09:38 cnbc_indonesia_market: OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m>
+- **8** T3 11-05 18:16 cnbc_indonesia_market: Video: Dinamika Pemilu AS - Kabar Baik PDB RI, IHSG dan Rupiah Menghijau (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105173745-19-782728/video-dinamika-pemilu-as--kabar-baik-pdb-ri-ihsg-rupiah-menghijau>
 - **8** T3 11-05 11:04 cnbc_indonesia_market: Video: Pantau Pengumuman PDB RI Q3-2025, Nasib IHSG dan Rupiah Gimana? (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105102433-19-782524/video-pantau-pengumuman-pdb-ri-q3-2025-nasib-ihsg-rupiah-gimana>
 - **8** T3 11-04 10:26 cnbc_indonesia_market: Bursa RI Masih Dilirik, OJK Catat 25 Perusahaan Antre IPO (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261104102440-17-782156/bursa-ri-masih-dilirik-ojk-catat-25-perusahaan-antre-ipo>
 - **8** T3 11-04 09:57 cnbc_indonesia_market: Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M [BOGA] (kebijakan/global/emiten) <https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m>
@@ -32,4 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-05 17:20 bloomberg_technoz: OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham>
 - **6** T3 11-05 15:50 cnbc_indonesia_market: Pasar Saham RI Lagi 'Detox', OJK Ungkap Target di Balik Koreksi IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105154809-17-782677/pasar-saham-ri-lagi-detox-ojk-ungkap-target-di-balik-koreksi-ihsg>
 - **6** T3 11-05 14:34 cnbc_indonesia_market: MSCI Bikin IHSG Babak Belur 16,7%, Investor Asing Kabur Rp16,88 T (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105143322-17-782648/msci-bikin-ihsg-babak-belur-167-investor-asing-kabur-rp1688-t>
-- **6** T3 11-05 12:24 cnbc_indonesia_market: BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi>

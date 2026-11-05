@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T17:55+07:00",
+ "generated_for": "2026-11-05T18:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 715,
- "kept": 221,
+ "scanned": 729,
+ "kept": 219,
  "dropped_noise": 29,
  "items": [
   {
@@ -143,6 +143,22 @@
     "kebijakan",
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T18:16+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Dinamika Pemilu AS - Kabar Baik PDB RI, IHSG dan Rupiah Menghijau",
+   "link": "https://www.cnbcindonesia.com/market/20261105173745-19-782728/video-dinamika-pemilu-as--kabar-baik-pdb-ri-ihsg-rupiah-menghijau",
+   "score": 8,
+   "categories": [
+    "pasar",
+    "kurs",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
@@ -441,21 +457,6 @@
    "tier": 3,
    "title": "MSCI Bikin IHSG Babak Belur 16,7%, Investor Asing Kabur Rp16,88 T",
    "link": "https://www.cnbcindonesia.com/market/20261105143322-17-782648/msci-bikin-ihsg-babak-belur-167-investor-asing-kabur-rp1688-t",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T12:24+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi",
-   "link": "https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi",
    "score": 6,
    "categories": [
     "kebijakan",
