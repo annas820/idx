@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-06T05:35+07:00 WIB | jendela 36 jam | dipindai 525, lolos 155, dibuang sebagai noise 17.
+Berita terbaru: 2026-11-06T06:35+07:00 WIB | jendela 36 jam | dipindai 509, lolos 150, dibuang sebagai noise 18.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -20,7 +20,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-05 10:57 kontan_investasi: Saham Tempo Inti Media (TMPO) Melesat Hingga Disuspensi, Ada Perubahan Pemegang Saham [TMPO] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/saham-tempo-inti-media-tmpo-melesat-hingga-disuspensi-ada-perubahan-pemegang-saham>
 - **7** T3 11-05 09:15 kontan_investasi: IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11) [HRTA,INCO,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511>
 - **7** T3 11-05 06:23 kontan_investasi: Indo Tambangraya (ITMG) Siapkan Buyback Saham Rp 2,31 Triliun hingga Februari 2027 [ITMG] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/indo-tambangraya-itmg-siapkan-buyback-saham-rp-231-triliun-hingga-februari-2027>
-- **7** T3 11-04 18:20 bloomberg_technoz: Urung Ikut Tren Buyback, PGEO Siapkan Opsi Tambah Free Float [PGEO] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126790/urung-ikut-tren-buyback-pgeo-siapkan-opsi-tambah-free-float>
+- **6** T3 11-06 06:35 bloomberg_technoz: Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia>
 - **6** T3 11-05 19:30 kontan_keuangan: 11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026>
 - **6** T3 11-05 17:50 bloomberg_technoz: OJK Bisa Bawa Kasus Manipulasi Saham ke Ranah Pidana (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126908/ojk-bisa-bawa-kasus-manipulasi-saham-ke-ranah-pidana>
 - **6** T3 11-05 17:20 bloomberg_technoz: OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham>

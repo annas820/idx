@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T05:35+07:00",
+ "generated_for": "2026-11-06T06:35+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 525,
- "kept": 155,
- "dropped_noise": 17,
+ "scanned": 509,
+ "kept": 150,
+ "dropped_noise": 18,
  "items": [
   {
    "published": "2026-11-05T13:27+07:00",
@@ -239,20 +239,17 @@
    "also_in": []
   },
   {
-   "published": "2026-11-04T18:20+07:00",
+   "published": "2026-11-06T06:35+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Urung Ikut Tren Buyback, PGEO Siapkan Opsi Tambah Free Float",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126790/urung-ikut-tren-buyback-pgeo-siapkan-opsi-tambah-free-float",
-   "score": 7,
+   "title": "Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
+    "global",
+    "pasar"
    ],
-   "tickers": [
-    "PGEO"
-   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
