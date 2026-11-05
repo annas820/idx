@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T10:48+07:00",
+ "generated_for": "2026-11-05T11:53+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 438,
- "kept": 135,
+ "scanned": 476,
+ "kept": 147,
  "dropped_noise": 18,
  "items": [
   {
@@ -71,6 +71,22 @@
    ]
   },
   {
+   "published": "2026-11-05T11:53+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Harga Minyak Ambruk Lebih 8% hingga IHSG dan Rupiah Menguat",
+   "link": "https://www.cnbcindonesia.com/market/20261105114616-19-782570/video-harga-minyak-ambruk-lebih-8-hingga-ihsg-rupiah-menguat",
+   "score": 9,
+   "categories": [
+    "global",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-04T09:38+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -81,6 +97,22 @@
     "kebijakan",
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T11:04+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Pantau Pengumuman PDB RI Q3-2025, Nasib IHSG dan Rupiah Gimana?",
+   "link": "https://www.cnbcindonesia.com/market/20261105102433-19-782524/video-pantau-pengumuman-pdb-ri-q3-2025-nasib-ihsg-rupiah-gimana",
+   "score": 8,
+   "categories": [
+    "pasar",
+    "kurs",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
@@ -116,6 +148,26 @@
    ],
    "tickers": [
     "BOGA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T11:11+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Upayakan 'Ganti Rugi' Dana Investor DSSA, CUAN dan BREN",
+   "link": "https://www.cnbcindonesia.com/market/20261105110040-17-782540/ojk-upayakan-ganti-rugi-dana-investor-dssa-cuan-bren",
+   "score": 7,
+   "categories": [
+    "kebijakan",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BREN",
+    "CUAN",
+    "DSSA"
    ],
    "flags": [],
    "also_in": []
@@ -375,54 +427,6 @@
    "categories": [
     "kebijakan",
     "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T10:16+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Jual Saham Nasabah Diam-Diam, Eks Broker Disanksi OJK 10 Tahun",
-   "link": "https://www.cnbcindonesia.com/market/20261104095921-17-782151/jual-saham-nasabah-diam-diam-eks-broker-disanksi-ojk-10-tahun",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T08:27+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam & Buyback Kompak Turun Rp4.000 Hari Ini",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126679/harga-emas-antam-buyback-kompak-turun-rp4-000-hari-ini",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T07:55+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Rupiah Tertekan dan Saham Bergejolak, KSSK Ungkap Ekonomi Kondisi RI",
-   "link": "https://www.cnbcindonesia.com/news/20261104065937-4-782091/rupiah-tertekan-saham-bergejolak-kssk-ungkap-ekonomi-kondisi-ri",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],

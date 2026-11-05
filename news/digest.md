@@ -1,15 +1,18 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-05T10:48+07:00 WIB | jendela 36 jam | dipindai 438, lolos 135, dibuang sebagai noise 18.
+Berita terbaru: 2026-11-05T11:53+07:00 WIB | jendela 36 jam | dipindai 476, lolos 147, dibuang sebagai noise 18.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **10** T3 11-04 10:55 bloomberg_technoz: OJK Bongkar Gorengan Saham PANR, Keuntungan Ilegal Capai Rp5 M [PANR] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126712/ojk-bongkar-gorengan-saham-panr-keuntungan-ilegal-capai-rp5-m>
 - **10** T3 11-04 10:35 bloomberg_technoz: OJK Sanksi BOGA Atas Tindakan Pengaburan Dana Hasil IPO [BOGA] (kebijakan/global/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126707/ojk-sanksi-boga-atas-tindakan-pengaburan-dana-hasil-ipo>
 - **10** T3 11-04 09:48 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR, Keuntungan Ilegal Rp5,07 M [PANR] (kebijakan/pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261104093625-17-782144/ojk-bongkar-manipulasi-saham-panr-keuntungan-ilegal-rp507-m>
+- **9** T3 11-05 11:53 cnbc_indonesia_market: Video: Harga Minyak Ambruk Lebih 8% hingga IHSG dan Rupiah Menguat (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261105114616-19-782570/video-harga-minyak-ambruk-lebih-8-hingga-ihsg-rupiah-menguat>
 - **9** T3 11-04 09:38 cnbc_indonesia_market: OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m>
+- **8** T3 11-05 11:04 cnbc_indonesia_market: Video: Pantau Pengumuman PDB RI Q3-2025, Nasib IHSG dan Rupiah Gimana? (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105102433-19-782524/video-pantau-pengumuman-pdb-ri-q3-2025-nasib-ihsg-rupiah-gimana>
 - **8** T3 11-04 10:26 cnbc_indonesia_market: Bursa RI Masih Dilirik, OJK Catat 25 Perusahaan Antre IPO (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261104102440-17-782156/bursa-ri-masih-dilirik-ojk-catat-25-perusahaan-antre-ipo>
 - **8** T3 11-04 09:57 cnbc_indonesia_market: Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M [BOGA] (kebijakan/global/emiten) <https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m>
+- **7** T3 11-05 11:11 cnbc_indonesia_market: OJK Upayakan 'Ganti Rugi' Dana Investor DSSA, CUAN dan BREN [BREN,CUAN,DSSA] (kebijakan/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105110040-17-782540/ojk-upayakan-ganti-rugi-dana-investor-dssa-cuan-bren>
 - **7** T3 11-05 10:05 cnbc_indonesia_market: Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI [GIAA,GMFI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi>
 - **7** T3 11-04 18:20 bloomberg_technoz: Urung Ikut Tren Buyback, PGEO Siapkan Opsi Tambah Free Float [PGEO] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126790/urung-ikut-tren-buyback-pgeo-siapkan-opsi-tambah-free-float>
 - **7** T3 11-04 17:07 cnbc_indonesia_market: Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback [PGEO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback>
@@ -26,6 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-04 11:48 cnbc_indonesia_news: Video: IHSG Tak Berdaya Hingga Rupiah Tertahan di Rp 18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104112722-8-782190/video-ihsg-tak-berdaya-hingga-rupiah-tertahan-di-rp-18100-per-usd>
 - **6** T3 11-04 11:39 bloomberg_technoz: Prediksi Review MSCI: Dua Saham Konglomerat Mungkin Terdepak (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126715/prediksi-review-msci-dua-saham-konglomerat-mungkin-terdepak>
 - **6** T3 11-04 11:30 cnbc_indonesia_market: Video: OJK Tetapkan Sanksi di 3 Kasus Pelanggaran Pasar Modal (kebijakan/global) <https://www.cnbcindonesia.com/market/20261104094238-19-782148/video-ojk-tetapkan-sanksi-di-3-kasus-pelanggaran-pasar-modal>
-- **6** T3 11-04 10:16 cnbc_indonesia_market: Jual Saham Nasabah Diam-Diam, Eks Broker Disanksi OJK 10 Tahun (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261104095921-17-782151/jual-saham-nasabah-diam-diam-eks-broker-disanksi-ojk-10-tahun>
-- **6** T3 11-04 08:27 bloomberg_technoz: Harga Emas Antam & Buyback Kompak Turun Rp4.000 Hari Ini [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126679/harga-emas-antam-buyback-kompak-turun-rp4-000-hari-ini>
-- **6** T3 11-04 07:55 cnbc_indonesia_news: Rupiah Tertekan dan Saham Bergejolak, KSSK Ungkap Ekonomi Kondisi RI (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104065937-4-782091/rupiah-tertekan-saham-bergejolak-kssk-ungkap-ekonomi-kondisi-ri>
