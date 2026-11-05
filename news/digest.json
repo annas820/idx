@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T21:10+07:00",
+ "generated_for": "2026-11-05T22:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 746,
- "kept": 215,
+ "scanned": 718,
+ "kept": 198,
  "dropped_noise": 29,
  "items": [
   {
@@ -27,47 +27,6 @@
    ],
    "also_in": [
     "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-04T10:35+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Sanksi BOGA Atas Tindakan Pengaburan Dana Hasil IPO",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126707/ojk-sanksi-boga-atas-tindakan-pengaburan-dana-hasil-ipo",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "global",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BOGA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T09:48+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Bongkar Manipulasi Saham PANR, Keuntungan Ilegal Rp5,07 M",
-   "link": "https://www.cnbcindonesia.com/market/20261104093625-17-782144/ojk-bongkar-manipulasi-saham-panr-keuntungan-ilegal-rp507-m",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "PANR"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
    ]
   },
   {
@@ -133,22 +92,6 @@
    ]
   },
   {
-   "published": "2026-11-04T09:38+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Beri Sanksi 3 Kasus Pasar Modal, Ada Manipulasi Saham Rp 5,07 M",
-   "link": "https://www.cnbcindonesia.com/market/20261104093603-17-782143/ojk-beri-sanksi-3-kasus-pasar-modal-ada-manipulasi-saham-rp-507-m",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-05T18:16+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -177,40 +120,6 @@
     "makro"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T10:26+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Bursa RI Masih Dilirik, OJK Catat 25 Perusahaan Antre IPO",
-   "link": "https://www.cnbcindonesia.com/market/20261104102440-17-782156/bursa-ri-masih-dilirik-ojk-catat-25-perusahaan-antre-ipo",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T09:57+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M",
-   "link": "https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "emiten"
-   ],
-   "tickers": [
-    "BOGA"
-   ],
    "flags": [],
    "also_in": []
   },
@@ -460,6 +369,81 @@
    "tier": 3,
    "title": "OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham",
    "link": "https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T15:50+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Pasar Saham RI Lagi 'Detox', OJK Ungkap Target di Balik Koreksi IHSG",
+   "link": "https://www.cnbcindonesia.com/market/20261105154809-17-782677/pasar-saham-ri-lagi-detox-ojk-ungkap-target-di-balik-koreksi-ihsg",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T14:34+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "MSCI Bikin IHSG Babak Belur 16,7%, Investor Asing Kabur Rp16,88 T",
+   "link": "https://www.cnbcindonesia.com/market/20261105143322-17-782648/msci-bikin-ihsg-babak-belur-167-investor-asing-kabur-rp1688-t",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T12:24+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi",
+   "link": "https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T11:31+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BEI Tambah Informasi Status Investor di Data Pemegang Saham 1%, Ini Panduan Ceknya",
+   "link": "https://investasi.kontan.co.id/news/bei-tambah-informasi-status-investor-di-data-pemegang-saham-1-ini-panduan-ceknya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T10:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Belum Umumkan Laporan Keuangan, BEI Gembok 2 Saham Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261105092649-17-782498/belum-umumkan-laporan-keuangan-bei-gembok-2-saham-ini",
    "score": 6,
    "categories": [
     "kebijakan",
