@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-05T22:40+07:00 WIB | jendela 36 jam | dipindai 718, lolos 198, dibuang sebagai noise 29.
+Berita terbaru: 2026-11-06T05:35+07:00 WIB | jendela 36 jam | dipindai 525, lolos 155, dibuang sebagai noise 17.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,7 +8,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-05 09:15 kontan_investasi: IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11) [HRTA,INCO,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511>
 
 ## Teratas
-- **10** T3 11-04 10:55 bloomberg_technoz: OJK Bongkar Gorengan Saham PANR, Keuntungan Ilegal Capai Rp5 M [PANR] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126712/ojk-bongkar-gorengan-saham-panr-keuntungan-ilegal-capai-rp5-m>
 - **9** T3 11-05 13:27 kontan_investasi: Garuda Indonesia (GIAA) Siapkan Rights Issue III, Inbreng 65,77% Saham GMFI [GIAA,GMFI] (pasar/korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/garuda-indonesia-giaa-siapkan-rights-issue-iii-inbreng-6577-saham-gmfi>
 - **9** T3 11-05 11:53 cnbc_indonesia_market: Video: Harga Minyak Ambruk Lebih 8% hingga IHSG dan Rupiah Menguat (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261105114616-19-782570/video-harga-minyak-ambruk-lebih-8-hingga-ihsg-rupiah-menguat>
 - **9** T3 11-05 10:05 cnbc_indonesia_market: Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI [GIAA,GMFI] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi>
@@ -22,9 +21,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-05 09:15 kontan_investasi: IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11) [HRTA,INCO,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511>
 - **7** T3 11-05 06:23 kontan_investasi: Indo Tambangraya (ITMG) Siapkan Buyback Saham Rp 2,31 Triliun hingga Februari 2027 [ITMG] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/indo-tambangraya-itmg-siapkan-buyback-saham-rp-231-triliun-hingga-februari-2027>
 - **7** T3 11-04 18:20 bloomberg_technoz: Urung Ikut Tren Buyback, PGEO Siapkan Opsi Tambah Free Float [PGEO] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126790/urung-ikut-tren-buyback-pgeo-siapkan-opsi-tambah-free-float>
-- **7** T3 11-04 17:07 cnbc_indonesia_market: Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback [PGEO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback>
-- **7** T3 11-04 14:55 bloomberg_technoz: Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026 [SRIL] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026>
-- **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
 - **6** T3 11-05 19:30 kontan_keuangan: 11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026>
 - **6** T3 11-05 17:50 bloomberg_technoz: OJK Bisa Bawa Kasus Manipulasi Saham ke Ranah Pidana (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126908/ojk-bisa-bawa-kasus-manipulasi-saham-ke-ranah-pidana>
 - **6** T3 11-05 17:20 bloomberg_technoz: OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham>
@@ -33,3 +29,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-05 12:24 cnbc_indonesia_market: BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi>
 - **6** T3 11-05 11:31 kontan_investasi: BEI Tambah Informasi Status Investor di Data Pemegang Saham 1%, Ini Panduan Ceknya (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-tambah-informasi-status-investor-di-data-pemegang-saham-1-ini-panduan-ceknya>
 - **6** T3 11-05 10:30 cnbc_indonesia_market: Belum Umumkan Laporan Keuangan, BEI Gembok 2 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105092649-17-782498/belum-umumkan-laporan-keuangan-bei-gembok-2-saham-ini>
+- **6** T3 11-05 09:18 kontan_industri: Pertamina Ekspansi Bisnis Hulu Migas di Aljazair, Akuisisi Hak Partisipasi Moeve (korporasi; terkonfirmasi, juga di bloomberg_technoz/cnbc_indonesia_news) <https://industri.kontan.co.id/news/pertamina-ekspansi-bisnis-hulu-migas-di-aljazair-akuisisi-hak-partisipasi-moeve>
+- **6** T3 11-05 08:50 bloomberg_technoz: Harga Emas Antam Hari Ini Naik, Buyback Nanjak [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126819/harga-emas-antam-hari-ini-naik-buyback-nanjak>
+- **6** T3 11-05 08:22 kontan_investasi: IHSG Berpotensi Melemah, Ini Rekomendasi Saham Pilihan BNI Sekuritas, Kamis (5/11) [BBNI] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/ihsg-berpotensi-melemah-ini-rekomendasi-saham-pilihan-bni-sekuritas-kamis-511>
+- **6** T3 11-05 07:44 kontan_investasi: Kinerja Berpeluang Tumbuh Hingga Akhir 2026, Cermati Rekomendasi Saham CMRY [CMRY] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/kinerja-berpeluang-tumbuh-hingga-akhir-2026-cermati-rekomendasi-saham-cmry>

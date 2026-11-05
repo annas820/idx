@@ -1,34 +1,12 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T22:40+07:00",
+ "generated_for": "2026-11-06T05:35+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 718,
- "kept": 198,
- "dropped_noise": 29,
+ "scanned": 525,
+ "kept": 155,
+ "dropped_noise": 17,
  "items": [
-  {
-   "published": "2026-11-04T10:55+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Bongkar Gorengan Saham PANR, Keuntungan Ilegal Capai Rp5 M",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126712/ojk-bongkar-gorengan-saham-panr-keuntungan-ilegal-capai-rp5-m",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "PANR"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
   {
    "published": "2026-11-05T13:27+07:00",
    "source": "kontan_investasi",
@@ -279,61 +257,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-04T17:07+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback",
-   "link": "https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "PGEO"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T14:55+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "SRIL"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T11:20+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara",
-   "link": "https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara",
-   "score": 7,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market",
-    "kontan_keuangan"
-   ]
-  },
-  {
    "published": "2026-11-05T19:30+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -451,6 +374,81 @@
    ],
    "tickers": [],
    "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T09:18+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Pertamina Ekspansi Bisnis Hulu Migas di Aljazair, Akuisisi Hak Partisipasi Moeve",
+   "link": "https://industri.kontan.co.id/news/pertamina-ekspansi-bisnis-hulu-migas-di-aljazair-akuisisi-hak-partisipasi-moeve",
+   "score": 6,
+   "categories": [
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz",
+    "cnbc_indonesia_news"
+   ]
+  },
+  {
+   "published": "2026-11-05T08:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Hari Ini Naik, Buyback Nanjak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126819/harga-emas-antam-hari-ini-naik-buyback-nanjak",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T08:22+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Berpotensi Melemah, Ini Rekomendasi Saham Pilihan BNI Sekuritas, Kamis (5/11)",
+   "link": "https://investasi.kontan.co.id/news/ihsg-berpotensi-melemah-ini-rekomendasi-saham-pilihan-bni-sekuritas-kamis-511",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBNI"
+   ],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T07:44+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Kinerja Berpeluang Tumbuh Hingga Akhir 2026, Cermati Rekomendasi Saham CMRY",
+   "link": "https://investasi.kontan.co.id/news/kinerja-berpeluang-tumbuh-hingga-akhir-2026-cermati-rekomendasi-saham-cmry",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "CMRY"
+   ],
+   "flags": [
+    "petunjuk"
+   ],
    "also_in": []
   }
  ],
