@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-05T06:40+07:00 WIB | jendela 36 jam | dipindai 449, lolos 127, dibuang sebagai noise 16.
+Berita terbaru: 2026-11-05T07:50+07:00 WIB | jendela 36 jam | dipindai 436, lolos 124, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -14,6 +14,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-04 17:07 cnbc_indonesia_market: Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback [PGEO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback>
 - **7** T3 11-04 14:55 bloomberg_technoz: Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026 [SRIL] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026>
 - **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
+- **6** T3 11-05 07:15 cnbc_indonesia_market: BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105052114-17-782437/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi>
 - **6** T3 11-05 06:40 bloomberg_technoz: Demokrat Menang Pemilu AS, Bursa Asia Siap Ikuti Reli Wall Street (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126804/demokrat-menang-pemilu-as-bursa-asia-siap-ikuti-reli-wall-street>
 - **6** T3 11-04 17:36 cnbc_indonesia_market: Video: Review MSCI Membayangi, IHSG Berhasil Ditutup Menguat di 4.900 (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261104172851-19-782361/video-review-msci-membayangi-ihsg-berhasil-ditutup-menguat-di-4900>
 - **6** T3 11-04 16:20 cnbc_indonesia_market: Aliran Modal Asing Masuk Rp126 Triliun, SBN dan SRBI Jadi "Primadona" (pasar/kurs) <https://www.cnbcindonesia.com/market/20261104094209-19-782147/aliran-modal-asing-masuk-rp126-triliun-sbn-srbi-jadi-primadona>
@@ -27,5 +28,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-04 07:55 cnbc_indonesia_news: Rupiah Tertekan dan Saham Bergejolak, KSSK Ungkap Ekonomi Kondisi RI (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104065937-4-782091/rupiah-tertekan-saham-bergejolak-kssk-ungkap-ekonomi-kondisi-ri>
 - **6** T3 11-04 06:20 bloomberg_technoz: Saham Teknologi Dorong S&P 500 Menguat Saat Pemilu Paruh Waktu AS (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126666/saham-teknologi-dorong-s-p-500-menguat-saat-pemilu-paruh-waktu-as>
 - **6** T3 11-03 20:40 bloomberg_technoz: Suahasil Beber Alasan Kemenkeu Tak Ambil Saham BEI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126653/suahasil-beber-alasan-kemenkeu-tak-ambil-saham-bei>
-- **5** T3 11-04 23:17 kontan_keuangan: Makmur Jadi APERD Pertama yang Komersialkan K-CASH KSEI, Permudah Transaksi Reksadana [CASH] (kebijakan/emiten) <https://keuangan.kontan.co.id/news/makmur-jadi-aperd-pertama-yang-komersialkan-k-cash-ksei-permudah-transaksi-reksadana>
-- **5** T3 11-04 16:40 bloomberg_technoz: 45 Ribu Investor 'Nyangkut' di Saham SRIL, Ada Lo Kheng Hong [SRIL] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126784/45-ribu-investor-nyangkut-di-saham-sril-ada-lo-kheng-hong>
+- **5** T3 11-05 07:39 cnbc_indonesia_market: Saham ITMG Babak Belur! 6 Bulan Ambles 10,9%, Asing Lepas Rp 18,8 M [ITMG] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261105073322-17-782455/saham-itmg-babak-belur-6-bulan-ambles-109-asing-lepas-rp-188-m>

@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T06:40+07:00",
+ "generated_for": "2026-11-05T07:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 449,
- "kept": 127,
- "dropped_noise": 16,
+ "scanned": 436,
+ "kept": 124,
+ "dropped_noise": 15,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -192,6 +192,21 @@
     "cnbc_indonesia_market",
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-11-05T07:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi",
+   "link": "https://www.cnbcindonesia.com/market/20261105052114-17-782437/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-05T06:40+07:00",
@@ -392,35 +407,18 @@
    "also_in": []
   },
   {
-   "published": "2026-11-04T23:17+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-05T07:39+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Makmur Jadi APERD Pertama yang Komersialkan K-CASH KSEI, Permudah Transaksi Reksadana",
-   "link": "https://keuangan.kontan.co.id/news/makmur-jadi-aperd-pertama-yang-komersialkan-k-cash-ksei-permudah-transaksi-reksadana",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "CASH"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T16:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "45 Ribu Investor 'Nyangkut' di Saham SRIL, Ada Lo Kheng Hong",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126784/45-ribu-investor-nyangkut-di-saham-sril-ada-lo-kheng-hong",
+   "title": "Saham ITMG Babak Belur! 6 Bulan Ambles 10,9%, Asing Lepas Rp 18,8 M",
+   "link": "https://www.cnbcindonesia.com/market/20261105073322-17-782455/saham-itmg-babak-belur-6-bulan-ambles-109-asing-lepas-rp-188-m",
    "score": 5,
    "categories": [
     "pasar",
     "emiten"
    ],
    "tickers": [
-    "SRIL"
+    "ITMG"
    ],
    "flags": [],
    "also_in": []
