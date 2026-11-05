@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T18:50+07:00",
+ "generated_for": "2026-11-05T20:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 729,
+ "scanned": 749,
  "kept": 219,
- "dropped_noise": 29,
+ "dropped_noise": 30,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -215,6 +215,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-05T19:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "GOTO Batalkan Saham Tresuri dan Buyback, Ini Efeknya ke Investor",
+   "link": "https://www.cnbcindonesia.com/market/20261105170912-17-782719/goto-batalkan-saham-tresuri-dan-buyback-ini-efeknya-ke-investor",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "GOTO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-05T13:18+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -407,6 +425,21 @@
    ]
   },
   {
+   "published": "2026-11-05T19:30+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026",
+   "link": "https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-05T17:50+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -427,36 +460,6 @@
    "tier": 3,
    "title": "OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham",
    "link": "https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T15:50+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Pasar Saham RI Lagi 'Detox', OJK Ungkap Target di Balik Koreksi IHSG",
-   "link": "https://www.cnbcindonesia.com/market/20261105154809-17-782677/pasar-saham-ri-lagi-detox-ojk-ungkap-target-di-balik-koreksi-ihsg",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T14:34+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "MSCI Bikin IHSG Babak Belur 16,7%, Investor Asing Kabur Rp16,88 T",
-   "link": "https://www.cnbcindonesia.com/market/20261105143322-17-782648/msci-bikin-ihsg-babak-belur-167-investor-asing-kabur-rp1688-t",
    "score": 6,
    "categories": [
     "kebijakan",

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-05T18:50+07:00 WIB | jendela 36 jam | dipindai 729, lolos 219, dibuang sebagai noise 29.
+Berita terbaru: 2026-11-05T20:00+07:00 WIB | jendela 36 jam | dipindai 749, lolos 219, dibuang sebagai noise 30.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -19,6 +19,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-05 11:04 cnbc_indonesia_market: Video: Pantau Pengumuman PDB RI Q3-2025, Nasib IHSG dan Rupiah Gimana? (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105102433-19-782524/video-pantau-pengumuman-pdb-ri-q3-2025-nasib-ihsg-rupiah-gimana>
 - **8** T3 11-04 10:26 cnbc_indonesia_market: Bursa RI Masih Dilirik, OJK Catat 25 Perusahaan Antre IPO (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261104102440-17-782156/bursa-ri-masih-dilirik-ojk-catat-25-perusahaan-antre-ipo>
 - **8** T3 11-04 09:57 cnbc_indonesia_market: Ada Kejanggalan Laporan Keuangan BOGA, OJK Sanksi 3 Direksi Rp 2,47 M [BOGA] (kebijakan/global/emiten) <https://www.cnbcindonesia.com/market/20261104095439-17-782150/ada-kejanggalan-laporan-keuangan-boga-ojk-sanksi-3-direksi-rp-247-m>
+- **7** T3 11-05 19:20 cnbc_indonesia_market: GOTO Batalkan Saham Tresuri dan Buyback, Ini Efeknya ke Investor [GOTO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105170912-17-782719/goto-batalkan-saham-tresuri-dan-buyback-ini-efeknya-ke-investor>
 - **7** T3 11-05 13:18 kontan_investasi: Steel Pipe Industry of Indonesia (ISSP) Buyback Saham, Cek Anggaran yang Disiapkan [ISSP] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/steel-pipe-industry-of-indonesia-issp-buyback-saham-cek-anggaran-yang-disiapkan>
 - **7** T3 11-05 12:07 kontan_investasi: IHSG Menguat 1,96% ke 5.016 di Sesi I Kamis (5/11), BRPT, AADI, EXCL Top Gainers LQ45 [AADI,BRPT,EXCL] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-menguat-196-ke-5016-di-sesi-i-kamis-511-brpt-aadi-excl-top-gainers-lq45>
 - **7** T3 11-05 11:11 cnbc_indonesia_market: OJK Upayakan 'Ganti Rugi' Dana Investor DSSA, CUAN dan BREN [BREN,CUAN,DSSA] (kebijakan/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105110040-17-782540/ojk-upayakan-ganti-rugi-dana-investor-dssa-cuan-bren>
@@ -29,7 +30,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-04 17:07 cnbc_indonesia_market: Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback [PGEO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback>
 - **7** T3 11-04 14:55 bloomberg_technoz: Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026 [SRIL] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026>
 - **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
+- **6** T3 11-05 19:30 kontan_keuangan: 11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026>
 - **6** T3 11-05 17:50 bloomberg_technoz: OJK Bisa Bawa Kasus Manipulasi Saham ke Ranah Pidana (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126908/ojk-bisa-bawa-kasus-manipulasi-saham-ke-ranah-pidana>
 - **6** T3 11-05 17:20 bloomberg_technoz: OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham>
-- **6** T3 11-05 15:50 cnbc_indonesia_market: Pasar Saham RI Lagi 'Detox', OJK Ungkap Target di Balik Koreksi IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105154809-17-782677/pasar-saham-ri-lagi-detox-ojk-ungkap-target-di-balik-koreksi-ihsg>
-- **6** T3 11-05 14:34 cnbc_indonesia_market: MSCI Bikin IHSG Babak Belur 16,7%, Investor Asing Kabur Rp16,88 T (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105143322-17-782648/msci-bikin-ihsg-babak-belur-167-investor-asing-kabur-rp1688-t>
