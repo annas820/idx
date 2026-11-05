@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T16:50+07:00",
+ "generated_for": "2026-11-05T17:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 687,
- "kept": 214,
+ "scanned": 715,
+ "kept": 221,
  "dropped_noise": 29,
  "items": [
   {
@@ -391,6 +391,36 @@
    ]
   },
   {
+   "published": "2026-11-05T17:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Bisa Bawa Kasus Manipulasi Saham ke Ranah Pidana",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126908/ojk-bisa-bawa-kasus-manipulasi-saham-ke-ranah-pidana",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T17:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-05T15:50+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -426,36 +456,6 @@
    "tier": 3,
    "title": "BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi",
    "link": "https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T11:31+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Tambah Informasi Status Investor di Data Pemegang Saham 1%, Ini Panduan Ceknya",
-   "link": "https://investasi.kontan.co.id/news/bei-tambah-informasi-status-investor-di-data-pemegang-saham-1-ini-panduan-ceknya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T10:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Belum Umumkan Laporan Keuangan, BEI Gembok 2 Saham Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261105092649-17-782498/belum-umumkan-laporan-keuangan-bei-gembok-2-saham-ini",
    "score": 6,
    "categories": [
     "kebijakan",
