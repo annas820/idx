@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-05T14:10+07:00 WIB | jendela 36 jam | dipindai 589, lolos 190, dibuang sebagai noise 19.
+Berita terbaru: 2026-11-05T15:56+07:00 WIB | jendela 36 jam | dipindai 653, lolos 209, dibuang sebagai noise 26.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -28,8 +28,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-04 17:07 cnbc_indonesia_market: Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback [PGEO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback>
 - **7** T3 11-04 14:55 bloomberg_technoz: Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026 [SRIL] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026>
 - **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
+- **6** T3 11-05 15:50 cnbc_indonesia_market: Pasar Saham RI Lagi 'Detox', OJK Ungkap Target di Balik Koreksi IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105154809-17-782677/pasar-saham-ri-lagi-detox-ojk-ungkap-target-di-balik-koreksi-ihsg>
+- **6** T3 11-05 14:34 cnbc_indonesia_market: MSCI Bikin IHSG Babak Belur 16,7%, Investor Asing Kabur Rp16,88 T (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105143322-17-782648/msci-bikin-ihsg-babak-belur-167-investor-asing-kabur-rp1688-t>
 - **6** T3 11-05 12:24 cnbc_indonesia_market: BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi>
 - **6** T3 11-05 11:31 kontan_investasi: BEI Tambah Informasi Status Investor di Data Pemegang Saham 1%, Ini Panduan Ceknya (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-tambah-informasi-status-investor-di-data-pemegang-saham-1-ini-panduan-ceknya>
 - **6** T3 11-05 10:30 cnbc_indonesia_market: Belum Umumkan Laporan Keuangan, BEI Gembok 2 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105092649-17-782498/belum-umumkan-laporan-keuangan-bei-gembok-2-saham-ini>
-- **6** T3 11-05 08:50 bloomberg_technoz: Harga Emas Antam Hari Ini Naik, Buyback Nanjak [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126819/harga-emas-antam-hari-ini-naik-buyback-nanjak>
-- **6** T3 11-05 08:22 kontan_investasi: IHSG Berpotensi Melemah, Ini Rekomendasi Saham Pilihan BNI Sekuritas, Kamis (5/11) [BBNI] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/ihsg-berpotensi-melemah-ini-rekomendasi-saham-pilihan-bni-sekuritas-kamis-511>

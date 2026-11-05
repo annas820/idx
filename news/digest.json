@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T14:10+07:00",
+ "generated_for": "2026-11-05T15:56+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 589,
- "kept": 190,
- "dropped_noise": 19,
+ "scanned": 653,
+ "kept": 209,
+ "dropped_noise": 26,
  "items": [
   {
    "published": "2026-11-04T10:55+07:00",
@@ -391,6 +391,36 @@
    ]
   },
   {
+   "published": "2026-11-05T15:50+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Pasar Saham RI Lagi 'Detox', OJK Ungkap Target di Balik Koreksi IHSG",
+   "link": "https://www.cnbcindonesia.com/market/20261105154809-17-782677/pasar-saham-ri-lagi-detox-ojk-ungkap-target-di-balik-koreksi-ihsg",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T14:34+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "MSCI Bikin IHSG Babak Belur 16,7%, Investor Asing Kabur Rp16,88 T",
+   "link": "https://www.cnbcindonesia.com/market/20261105143322-17-782648/msci-bikin-ihsg-babak-belur-167-investor-asing-kabur-rp1688-t",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-05T12:24+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -433,43 +463,6 @@
    ],
    "tickers": [],
    "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T08:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Hari Ini Naik, Buyback Nanjak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126819/harga-emas-antam-hari-ini-naik-buyback-nanjak",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T08:22+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Berpotensi Melemah, Ini Rekomendasi Saham Pilihan BNI Sekuritas, Kamis (5/11)",
-   "link": "https://investasi.kontan.co.id/news/ihsg-berpotensi-melemah-ini-rekomendasi-saham-pilihan-bni-sekuritas-kamis-511",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBNI"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
    "also_in": []
   }
  ],
