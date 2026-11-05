@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-05T11:53+07:00",
+ "generated_for": "2026-11-05T12:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 476,
- "kept": 147,
+ "scanned": 507,
+ "kept": 152,
  "dropped_noise": 18,
  "items": [
   {
@@ -265,6 +265,21 @@
    ]
   },
   {
+   "published": "2026-11-05T12:24+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi",
+   "link": "https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-05T10:30+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -412,21 +427,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-04T11:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: OJK Tetapkan Sanksi di 3 Kasus Pelanggaran Pasar Modal",
-   "link": "https://www.cnbcindonesia.com/market/20261104094238-19-782148/video-ojk-tetapkan-sanksi-di-3-kasus-pelanggaran-pasar-modal",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
    ],
    "tickers": [],
    "flags": [],

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-05T11:53+07:00 WIB | jendela 36 jam | dipindai 476, lolos 147, dibuang sebagai noise 18.
+Berita terbaru: 2026-11-05T12:50+07:00 WIB | jendela 36 jam | dipindai 507, lolos 152, dibuang sebagai noise 18.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -18,6 +18,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-04 17:07 cnbc_indonesia_market: Kejar Target Free Float Saham 12,5% di 2027, PGEO Tak Mau Buyback [PGEO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261104165732-17-782353/kejar-target-free-float-saham-125-di-2027-pgeo-tak-mau-buyback>
 - **7** T3 11-04 14:55 bloomberg_technoz: Perjalanan Saham Sritex (SRIL) Hingga Delisting di 2026 [SRIL] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/126744/perjalanan-saham-sritex-sril-hingga-delisting-di-2026>
 - **7** T3 11-04 11:20 cnbc_indonesia_news: Nasabah Satu Bank Swasta Ramai-ramai Sulit Tarik Dana, OJK Buka Suara (kebijakan; terkonfirmasi, juga di cnbc_indonesia_market/kontan_keuangan) <https://www.cnbcindonesia.com/news/20261104094127-8-782146/nasabah-satu-bank-swasta-ramai-ramai-sulit-tarik-dana-ojk-buka-suara>
+- **6** T3 11-05 12:24 cnbc_indonesia_market: BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi>
 - **6** T3 11-05 10:30 cnbc_indonesia_market: Belum Umumkan Laporan Keuangan, BEI Gembok 2 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105092649-17-782498/belum-umumkan-laporan-keuangan-bei-gembok-2-saham-ini>
 - **6** T3 11-05 08:50 bloomberg_technoz: Harga Emas Antam Hari Ini Naik, Buyback Nanjak [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126819/harga-emas-antam-hari-ini-naik-buyback-nanjak>
 - **6** T3 11-05 07:15 cnbc_indonesia_market: BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105052114-17-782437/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-04 14:58 cnbc_indonesia_market: OJK Sanksi Supra Sekuritas, Pandu Sjahrir: Sudah Lepas Kepemilikan (kebijakan/global) <https://www.cnbcindonesia.com/market/20261104145349-17-782294/ojk-sanksi-supra-sekuritas-pandu-sjahrir-sudah-lepas-kepemilikan>
 - **6** T3 11-04 11:48 cnbc_indonesia_news: Video: IHSG Tak Berdaya Hingga Rupiah Tertahan di Rp 18.100 per USD (pasar/kurs) <https://www.cnbcindonesia.com/news/20261104112722-8-782190/video-ihsg-tak-berdaya-hingga-rupiah-tertahan-di-rp-18100-per-usd>
 - **6** T3 11-04 11:39 bloomberg_technoz: Prediksi Review MSCI: Dua Saham Konglomerat Mungkin Terdepak (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126715/prediksi-review-msci-dua-saham-konglomerat-mungkin-terdepak>
-- **6** T3 11-04 11:30 cnbc_indonesia_market: Video: OJK Tetapkan Sanksi di 3 Kasus Pelanggaran Pasar Modal (kebijakan/global) <https://www.cnbcindonesia.com/market/20261104094238-19-782148/video-ojk-tetapkan-sanksi-di-3-kasus-pelanggaran-pasar-modal>
