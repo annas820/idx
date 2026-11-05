@@ -1,0 +1,52 @@
+{
+  "schema": "idx.sentiment.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-05T11:22:18Z",
+  "cached": true,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": "ASII",
+    "matched_name": "ASTRA INTERNATIONAL",
+    "label": "positive",
+    "score": 1.0,
+    "items": 1,
+    "positive": 1,
+    "negative": 0,
+    "neutral": 0,
+    "oldest": "2026-11-05T08:55:17+07:00",
+    "newest": "2026-11-05T08:55:17+07:00",
+    "top_positive_terms": [
+      [
+        "buy",
+        1
+      ],
+      [
+        "menguat",
+        1
+      ]
+    ],
+    "top_negative_terms": [],
+    "headlines": [
+      {
+        "title": "IHSG Berakhir Menguat, Simak 5 Saham Pilihan Hari Ini",
+        "url": "https://www.cnbcindonesia.com/market/20261105081225-17-782470/ihsg-berakhir-menguat-simak-5-saham-pilihan-hari-ini",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-05T08:55:17+07:00",
+        "summary": "IHSG menguat 0,32% di level 4.919,77, didorong saham BBCA dan ASII. Investor asing catat net buy Rp264,64 miliar.",
+        "matched_by": "ticker",
+        "scope": "company",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat",
+          "buy"
+        ],
+        "negative_terms": []
+      }
+    ],
+    "method": "lexicon: (positive - negative) / (positive + negative) per headline over title + summary, Indonesian and English finance terms; mean over matched items"
+  }
+}

@@ -1,0 +1,70 @@
+{
+ "version": "CLO-FT-1.0",
+ "signal_date": "2026-11-05",
+ "breadth": 0.082,
+ "universe_with_data": 97,
+ "regime_ok": false,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "BIPI",
+   "signal_date": "2026-11-05",
+   "close": 77.0,
+   "atr": 8.16,
+   "limit": 72.92,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "TOBA",
+   "signal_date": "2026-11-05",
+   "close": 384.0,
+   "atr": 43.34,
+   "limit": 362.33,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BREN",
+   "signal_date": "2026-11-05",
+   "close": 2180.0,
+   "atr": 214.29,
+   "limit": 2072.85,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SINI",
+   "signal_date": "2026-11-05",
+   "close": 7650.0,
+   "atr": 1115.13,
+   "limit": 7092.44,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BBNI",
+   "signal_date": "2026-11-05",
+   "close": 3320.0,
+   "atr": 133.33,
+   "limit": 3253.33,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ]
+}

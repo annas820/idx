@@ -1,0 +1,284 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-05T11:21:42Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Danantara Mau Sulap 12 Wilayah RI Jadi Kota Modern, Ini Bocorannya",
+        "url": "https://www.cnbcindonesia.com/market/20261105180557-17-782751/danantara-mau-sulap-12-wilayah-ri-jadi-kota-modern-ini-bocorannya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-05T18:18:58+07:00",
+        "summary": "BP BUMN dan Danantara percepat pembangunan 12 smart city. Fokus pada master plan dan tim ahli untuk menciptakan kawasan modern.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Merger MI Danantara Jadi Momentum Peningkatan GCG dan Manajemen Risiko",
+        "url": "https://keuangan.kontan.co.id/news/merger-mi-danantara-jadi-momentum-peningkatan-gcg-dan-manajemen-risiko",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T18:17:22+07:00",
+        "summary": "Merger empat MI Danantara menjadi momentum penguatan daya saing, GCG, dan manajemen risiko demi menjaga kepercayaan investor",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Dinamika Pemilu AS - Kabar Baik PDB RI, IHSG dan Rupiah Menghijau",
+        "url": "https://www.cnbcindonesia.com/market/20261105173745-19-782728/video-dinamika-pemilu-as--kabar-baik-pdb-ri-ihsg-rupiah-menghijau",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-05T18:16:46+07:00",
+        "summary": "Dinamika Pemilu AS - Kabar Baik Ekonomi Ri, IHSG dan Rupiah Kompak Menghijau",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Lampaui Ambang Batas Aman, TWP90 Fintech Lending Jadi 5,36% per September 2026",
+        "url": "https://keuangan.kontan.co.id/news/lampaui-ambang-batas-aman-twp90-fintech-lending-jadi-536-per-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T18:11:37+07:00",
+        "summary": "Tingkat risiko kredit macet secara agregat atau TWP90 industri fintech P2P lending melampaui ambang batas aman sebesar 5%. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ancaman Baru Dunia: Hujan Lebih Singkat, tapi Makin Deras dan Ganas",
+        "url": "https://www.cnbcindonesia.com/research/20261105162606-128-782709/ancaman-baru-dunia-hujan-lebih-singkat-tapi-makin-deras-ganas",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-05T18:10:03+07:00",
+        "summary": "Hujan deras yang biasanya berlangsung berjam-jam kini berpotensi turun dalam periode lebih singkat dengan intensitas lebih tinggi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Bank Sampoerna Optimistis NPL UMKM Melandai, Ini Strateginya",
+        "url": "https://keuangan.kontan.co.id/news/bank-sampoerna-optimistis-npl-umkm-melandai-ini-strateginya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T18:06:03+07:00",
+        "summary": "Bank Sahabat Sampoerna mencatat rasio kredit bermasalah atau non-performing loan (NPL) gross 2,87% di kuartal III-2026",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "optimistis"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Penyaluran Pembiayaan Industri Pergadaian Tumbuh 34,93% per September 2026",
+        "url": "https://keuangan.kontan.co.id/news/penyaluran-pembiayaan-industri-pergadaian-tumbuh-3493-per-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:58:35+07:00",
+        "summary": "Penyaluran pembiayaan industri pergadaian melonjak 34,93% secara tahunan menjadi Rp 150,69 triliun per September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melonjak",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Berebut Dana Nasabah, Margin Bank Makin Ciut",
+        "url": "https://www.cnbcindonesia.com/market/20261105165654-17-782710/berebut-dana-nasabah-margin-bank-makin-ciut",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-05T17:55:40+07:00",
+        "summary": "Industri perbankan Indonesia menghadapi tekanan akibat kenaikan suku bunga simpanan, mempengaruhi margin pendapatan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Catat Nilai Aset Program Pensiun Wajib Tumbuh 7,02% pada September 2026",
+        "url": "https://keuangan.kontan.co.id/news/ojk-catat-nilai-aset-program-pensiun-wajib-tumbuh-702-pada-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:54:09+07:00",
+        "summary": "Total aset program pensiun wajib mencapai Rp 1.310,94 triliun atau tumbuh 7,02% secara tahunan pada September 2026",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Sebut Permintaan Special Rate Deposito Masih Tinggi, Beri Bunga di Atas 4%",
+        "url": "https://keuangan.kontan.co.id/news/btn-sebut-permintaan-special-rate-deposito-masih-tinggi-beri-bunga-di-atas-4",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:47:43+07:00",
+        "summary": "Permintaan special rate deposito di BTN masih tinggi dengan bunga di atas 4% seiring ketatnya persaingan antarbank menghimpun dana.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Jawab Tren Gaya Hidup Lewat Inovasi Pangan Krimer Kaya Serat",
+        "url": "https://www.cnbcindonesia.com/market/20261105165100-19-782721/video-jawab-tren-gaya-hidup-lewat-inovasi-pangan-krimer-kaya-serat",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-05T17:43:02+07:00",
+        "summary": "Jawab Tren Gaya Hidup Lewat Inovasi Pangan Krimer Kaya Serat",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Takjub Finansial Lepas 9% Saham Bank Bumi Arta, Kepemilikan Turun Jadi 24,45%",
+        "url": "https://keuangan.kontan.co.id/news/takjub-finansial-lepas-9-saham-bank-bumi-arta-kepemilikan-turun-jadi-2445",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:35:58+07:00",
+        "summary": "Takjub Finansial Teknologi melepas sebagian kepemilikan sahamnya di PT Bank Bumi Arta Tbk (BNBA). &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Danantara Bakal Investasi Jumbo, Garap Alutsista hingga Mobil Nasional",
+        "url": "https://www.cnbcindonesia.com/market/20261105173305-17-782725/danantara-bakal-investasi-jumbo-garap-alutsista-hingga-mobil-nasional",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-05T17:34:45+07:00",
+        "summary": "BP BUMN dan Danantara dorong pengembangan industri alutsista dan mobil nasional dengan teknologi terkini dan investasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ini 3 Sektor Ekonomi yang Dominasi Pembiayaan Industri Multifinance per September2026",
+        "url": "https://keuangan.kontan.co.id/news/ini-3-sektor-ekonomi-yang-dominasi-pembiayaan-industri-multifinance-per-september2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:33:26+07:00",
+        "summary": "Ini 3 sektor ekonomi yang mendominasi pembiayaan industri multifinance per September 2026 dengan nilai total piutang pembiayaan Rp 518,34 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "NPL UMKM Perbankan Mulai Turun, Namun Risiko Kredit Bermasalah Masih Membayangi",
+        "url": "https://keuangan.kontan.co.id/news/npl-umkm-perbankan-mulai-turun-namun-risiko-kredit-bermasalah-masih-membayangi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:28:37+07:00",
+        "summary": "NPL UMKM perbankan turun menjadi 4,53% pada Agustus 2026, dari 4,54% pada Juli 2026. Dengan penyaluran kredit UMKM mencapai Rp 1.532,19 triliun",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "BCA Salurkan Kredit UKM Rp149,2 Triliun hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/bca-salurkan-kredit-ukm-rp1492-triliun-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:23:30+07:00",
+        "summary": "Bank Central Asia (BCA) terus memperkuat penyaluran kredit ke segmen UKM dengan tetap mengedepankan prinsip kehati-hatian.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "CIMB Niaga Bidik NPL Segmen UMKM Turun ke Level 3,5% hingga Akhir 2026",
+        "url": "https://keuangan.kontan.co.id/news/cimb-niaga-bidik-npl-segmen-umkm-turun-ke-level-35-hingga-akhir-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:23:03+07:00",
+        "summary": "CIMB Niaga membidik Non Performing Loan (NPL) segmen UMKM turun ke level 3,5% hingga akhir 2026 dengan pemantauan kredit secara intensif.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Ada Insiden Siber Binance, OJK Buka Suara soal Keamanan Aset Kripto",
+        "url": "https://www.cnbcindonesia.com/market/20261105155128-17-782712/ada-insiden-siber-binance-ojk-buka-suara-soal-keamanan-aset-kripto",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-05T17:21:03+07:00",
+        "summary": "OJK menekankan pentingnya tata kelola dan keamanan siber setelah insiden Binance. Mereka mendorong penyelenggara AKD di Indonesia",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK: Aset Industri Asuransi Nonkomersial Rp 216,06 Triliun pada September 2026",
+        "url": "https://keuangan.kontan.co.id/news/ojk-aset-industri-asuransi-nonkomersial-rp-21606-triliun-pada-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:16:29+07:00",
+        "summary": "Otoritas Jasa Keuangan (OJK) mencatatkan aset industri asuransi nonkomersial kembali terkontraksi pada September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "NIM Perbankan Susut Lagi, OJK Minta Bank Waspadai Biaya Dana",
+        "url": "https://keuangan.kontan.co.id/news/nim-perbankan-susut-lagi-ojk-minta-bank-waspadai-biaya-dana",
+        "source": "kontan/keuangan",
+        "published": "2026-11-05T17:08:15+07:00",
+        "summary": "OJK mencermati peningkatan persaingan penghimpunan DPK di industri perbankan yang berpotensi makin ketat menjelang akhir tahun 2026. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}

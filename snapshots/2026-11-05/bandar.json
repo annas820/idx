@@ -1,0 +1,313 @@
+{
+  "schema": "idx.bandar.screen.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-05T11:21:41Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "period": "1w",
+    "from": "2026-10-30",
+    "to": "2026-11-05",
+    "top": 5,
+    "preset": "foreign-accumulation",
+    "filters": [
+      "acc>=5",
+      "fpct>=5"
+    ],
+    "sort": "acc",
+    "descending": true,
+    "scanned": 100,
+    "checked": 100,
+    "total_matches": 9,
+    "rows": [
+      {
+        "symbol": "IMPC",
+        "name": "IMPACK PRATAMA INDUSTRI Tbk",
+        "signal": "big_accumulation",
+        "phase": "markup",
+        "net_pct": 16.136114160263446,
+        "net_value": 14700000000.0,
+        "net_lots": 200484.0,
+        "price": 805.0,
+        "price_change_pct": 3.8709677419354938,
+        "bandar_average": 735.1635489722239,
+        "bandar_gain_pct": 9.499444188359064,
+        "buy_share_pct": 73.98463227222832,
+        "total_value": 91100000000.0,
+        "foreign_net_value": 11100000000.0,
+        "foreign_net_pct": 12.184412733260155,
+        "top_buyers": [
+          "AK",
+          "SQ",
+          "XL",
+          "CC",
+          "BK"
+        ],
+        "top_sellers": [
+          "AK",
+          "YU",
+          "XL",
+          "CC",
+          "LG"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "ASII",
+        "name": "ASTRA INTERNATIONAL Tbk",
+        "signal": "big_accumulation",
+        "phase": "markup",
+        "net_pct": 15.172727272727274,
+        "net_value": 166900000000.0,
+        "net_lots": 344872.0,
+        "price": 4930.0,
+        "price_change_pct": 5.117270788912576,
+        "bandar_average": 4790.464300615512,
+        "bandar_gain_pct": 2.9127802782406675,
+        "buy_share_pct": 79.0909090909091,
+        "total_value": 1100000000000.0,
+        "foreign_net_value": 307300000000.0,
+        "foreign_net_pct": 27.936363636363637,
+        "top_buyers": [
+          "AK",
+          "CC",
+          "YU",
+          "KZ",
+          "ZP"
+        ],
+        "top_sellers": [
+          "ZP",
+          "CC",
+          "AK",
+          "YU",
+          "XL"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "BBNI",
+        "name": "BANK NEGARA INDONESIA Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 13.09987029831388,
+        "net_value": 101000000000.0,
+        "net_lots": 308788.0,
+        "price": 3320.0,
+        "price_change_pct": 2.4691358024691468,
+        "bandar_average": 3269.1424372889965,
+        "bandar_gain_pct": 1.555685128029416,
+        "buy_share_pct": 62.970168612191955,
+        "total_value": 771000000000.0,
+        "foreign_net_value": 47600000000.0,
+        "foreign_net_pct": 6.1738002594033725,
+        "top_buyers": [
+          "YU",
+          "CC",
+          "AK",
+          "ZP",
+          "KZ"
+        ],
+        "top_sellers": [
+          "KZ",
+          "YU",
+          "AK",
+          "CC",
+          "ZP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "RAJA",
+        "name": "RUKUN RAHARJA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 12.761020881670534,
+        "net_value": 16500000000.0,
+        "net_lots": 429639.0,
+        "price": 386.0,
+        "price_change_pct": -7.655502392344493,
+        "bandar_average": 387.54640019895965,
+        "bandar_gain_pct": -0.3990232390665316,
+        "buy_share_pct": 66.51198762567671,
+        "total_value": 129300000000.0,
+        "foreign_net_value": 32600000000.0,
+        "foreign_net_pct": 25.212683681361174,
+        "top_buyers": [
+          "CC",
+          "AK",
+          "XL",
+          "BK",
+          "OD"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "YP",
+          "XC"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "EMTK",
+        "name": "ELANG MAHKOTA TEKNOLOGI Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 7.837445573294629,
+        "net_value": 5400000000.0,
+        "net_lots": 171632.0,
+        "price": 308.0,
+        "price_change_pct": 1.3157894736842035,
+        "bandar_average": 299.0266320431907,
+        "bandar_gain_pct": 3.0008591193018574,
+        "buy_share_pct": 60.81277213352685,
+        "total_value": 68900000000.0,
+        "foreign_net_value": 8600000000.0,
+        "foreign_net_pct": 12.481857764876633,
+        "top_buyers": [
+          "CC",
+          "KZ",
+          "AK",
+          "ZP",
+          "XL"
+        ],
+        "top_sellers": [
+          "KZ",
+          "CC",
+          "AK",
+          "BB",
+          "XL"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "MDKA",
+        "name": "MERDEKA COPPER GOLD Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 6.361323155216285,
+        "net_value": 42500000000.0,
+        "net_lots": 222985.0,
+        "price": 2130.0,
+        "price_change_pct": 10.9375,
+        "bandar_average": 1908.8777408084284,
+        "bandar_gain_pct": 11.583887981108942,
+        "buy_share_pct": 54.69241131567131,
+        "total_value": 668100000000.0,
+        "foreign_net_value": 107800000000.0,
+        "foreign_net_pct": 16.135309085466247,
+        "top_buyers": [
+          "AK",
+          "CC",
+          "PD",
+          "DH",
+          "XL"
+        ],
+        "top_sellers": [
+          "AK",
+          "CC",
+          "PD",
+          "XL",
+          "AZ"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "RATU",
+        "name": "RAHARJA ENERGI CEPU Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 6.239999999999999,
+        "net_value": 3900000000.0,
+        "net_lots": 21497.0,
+        "price": 2120.0,
+        "price_change_pct": 1.9230769230769162,
+        "bandar_average": 1948.3789364442473,
+        "bandar_gain_pct": 8.808402736531207,
+        "buy_share_pct": 68.64,
+        "total_value": 62500000000.0,
+        "foreign_net_value": 10300000000.0,
+        "foreign_net_pct": 16.48,
+        "top_buyers": [
+          "CC",
+          "AK",
+          "XL",
+          "OD",
+          "ZP"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "XC",
+          "YP"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "CDIA",
+        "name": "CHANDRA DAYA INVESTASI Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 6.104328523862375,
+        "net_value": 5500000000.0,
+        "net_lots": 151134.0,
+        "price": 334.0,
+        "price_change_pct": -7.734806629834257,
+        "bandar_average": 344.9778714601855,
+        "bandar_gain_pct": -3.1821958358429048,
+        "buy_share_pct": 63.59600443951165,
+        "total_value": 90100000000.0,
+        "foreign_net_value": 4600000000.0,
+        "foreign_net_pct": 5.105438401775805,
+        "top_buyers": [
+          "CC",
+          "XL",
+          "HP",
+          "AK",
+          "YP"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "YP",
+          "AK",
+          "XC"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "BNBR",
+        "name": "BAKRIE AND BROTHERS Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 5.63230605738576,
+        "net_value": 5300000000.0,
+        "net_lots": 1300000.0,
+        "price": 40.0,
+        "price_change_pct": -9.090909090909093,
+        "bandar_average": 41.86020328381548,
+        "bandar_gain_pct": -4.44384675153906,
+        "buy_share_pct": 49.734325185972374,
+        "total_value": 94100000000.0,
+        "foreign_net_value": 15200000000.0,
+        "foreign_net_pct": 16.153028692879914,
+        "top_buyers": [
+          "XL",
+          "CC",
+          "AK",
+          "MG",
+          "AG"
+        ],
+        "top_sellers": [
+          "XL",
+          "MG",
+          "CC",
+          "AG",
+          "YP"
+        ],
+        "rounded": true
+      }
+    ]
+  }
+}
