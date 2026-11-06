@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T21:05+07:00",
+ "generated_for": "2026-11-06T22:10+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 698,
- "kept": 210,
- "dropped_noise": 28,
+ "scanned": 684,
+ "kept": 202,
+ "dropped_noise": 27,
  "items": [
   {
    "published": "2026-11-05T13:27+07:00",
@@ -47,27 +47,22 @@
    "also_in": []
   },
   {
-   "published": "2026-11-05T10:05+07:00",
+   "published": "2026-11-06T21:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI",
-   "link": "https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi",
-   "score": 9,
+   "title": "OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan",
+   "link": "https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan",
+   "score": 8,
    "categories": [
+    "kebijakan",
     "pasar",
-    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "GIAA",
-    "GMFI"
+    "BMRI"
    ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-06T13:00+07:00",
@@ -350,24 +345,18 @@
    ]
   },
   {
-   "published": "2026-11-05T09:15+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-06T22:04+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11)",
-   "link": "https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511",
-   "score": 7,
+   "title": "Transaksi Dikuasi Segelintir Pihak, BEI Selidiki 3 Saham Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261106215925-17-783128/transaksi-dikuasi-segelintir-pihak-bei-selidiki-3-saham-ini",
+   "score": 6,
    "categories": [
-    "pasar",
-    "emiten"
+    "kebijakan",
+    "pasar"
    ],
-   "tickers": [
-    "HRTA",
-    "INCO",
-    "MDKA"
-   ],
-   "flags": [
-    "watchlist"
-   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -477,27 +466,6 @@
     "AADI",
     "BRPT",
     "EXCL"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T09:15+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11)",
-   "link": "https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "HRTA",
-    "INCO",
-    "MDKA"
    ],
    "flags": [
     "watchlist"

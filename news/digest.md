@@ -1,16 +1,15 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-06T21:05+07:00 WIB | jendela 36 jam | dipindai 698, lolos 210, dibuang sebagai noise 28.
+Berita terbaru: 2026-11-06T22:10+07:00 WIB | jendela 36 jam | dipindai 684, lolos 202, dibuang sebagai noise 27.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **7** T3 11-05 12:07 kontan_investasi: IHSG Menguat 1,96% ke 5.016 di Sesi I Kamis (5/11), BRPT, AADI, EXCL Top Gainers LQ45 [AADI,BRPT,EXCL] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-menguat-196-ke-5016-di-sesi-i-kamis-511-brpt-aadi-excl-top-gainers-lq45>
-- **7** T3 11-05 09:15 kontan_investasi: IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11) [HRTA,INCO,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511>
 
 ## Teratas
 - **9** T3 11-05 13:27 kontan_investasi: Garuda Indonesia (GIAA) Siapkan Rights Issue III, Inbreng 65,77% Saham GMFI [GIAA,GMFI] (pasar/korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/garuda-indonesia-giaa-siapkan-rights-issue-iii-inbreng-6577-saham-gmfi>
 - **9** T3 11-05 11:53 cnbc_indonesia_market: Video: Harga Minyak Ambruk Lebih 8% hingga IHSG dan Rupiah Menguat (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261105114616-19-782570/video-harga-minyak-ambruk-lebih-8-hingga-ihsg-rupiah-menguat>
-- **9** T3 11-05 10:05 cnbc_indonesia_market: Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI [GIAA,GMFI] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi>
+- **8** T3 11-06 21:20 cnbc_indonesia_market: OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan [BMRI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan>
 - **8** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MKNT, Terbang 3.100% Sebulan [MKNT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mknt-terbang-3-100-sebulan>
 - **8** T3 11-06 11:30 bloomberg_technoz: Tekan Inflasi, Hammack The Fed Dukung Suku Bunga Restriktif (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/126951/tekan-inflasi-hammack-the-fed-dukung-suku-bunga-restriktif>
 - **8** T3 11-06 08:52 cnbc_indonesia_market: Harga Saham Naik-Turun, TMPO dan ARKO Kena Suspensi Bursa [ARKO,TMPO] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106084212-17-782833/harga-saham-naik-turun-tmpo-arko-kena-suspensi-bursa>
@@ -26,7 +25,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-05 12:07 kontan_investasi: IHSG Menguat 1,96% ke 5.016 di Sesi I Kamis (5/11), BRPT, AADI, EXCL Top Gainers LQ45 [AADI,BRPT,EXCL] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-menguat-196-ke-5016-di-sesi-i-kamis-511-brpt-aadi-excl-top-gainers-lq45>
 - **7** T3 11-05 11:11 cnbc_indonesia_market: OJK Upayakan 'Ganti Rugi' Dana Investor DSSA, CUAN dan BREN [BREN,CUAN,DSSA] (kebijakan/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105110040-17-782540/ojk-upayakan-ganti-rugi-dana-investor-dssa-cuan-bren>
 - **7** T3 11-05 10:57 kontan_investasi: Saham Tempo Inti Media (TMPO) Melesat Hingga Disuspensi, Ada Perubahan Pemegang Saham [TMPO] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/saham-tempo-inti-media-tmpo-melesat-hingga-disuspensi-ada-perubahan-pemegang-saham>
-- **7** T3 11-05 09:15 kontan_investasi: IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11) [HRTA,INCO,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511>
+- **6** T3 11-06 22:04 cnbc_indonesia_market: Transaksi Dikuasi Segelintir Pihak, BEI Selidiki 3 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106215925-17-783128/transaksi-dikuasi-segelintir-pihak-bei-selidiki-3-saham-ini>
 - **6** T3 11-06 20:18 kontan_keuangan: OJK Jatuhkan 121 Sanksi ke Pelaku Jasa Keuangan, Denda Capai Rp 8,84 Miliar (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-jatuhkan-121-sanksi-ke-pelaku-jasa-keuangan-denda-capai-rp-884-miliar>
 - **6** T3 11-06 18:20 cnbc_indonesia_market: BEI dan PHEI Bikin Indeks Acuan Obligasi, Investor Wajib Tahu (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106162938-17-783055/bei-dan-phei-bikin-indeks-acuan-obligasi-investor-wajib-tahu>
 - **6** T3 11-06 18:10 cnbc_indonesia_news: Video: Demokrat Menang, Wall Street dan Saham AI Tertekan (global/pasar) <https://www.cnbcindonesia.com/news/20261106174018-8-783096/video-demokrat-menang-wall-street-dan-saham-ai-tertekan>
