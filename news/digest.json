@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T19:50+07:00",
+ "generated_for": "2026-11-06T21:05+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 704,
- "kept": 221,
- "dropped_noise": 29,
+ "scanned": 698,
+ "kept": 210,
+ "dropped_noise": 28,
  "items": [
   {
    "published": "2026-11-05T13:27+07:00",
@@ -371,25 +371,19 @@
    "also_in": []
   },
   {
-   "published": "2026-11-05T08:55+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-06T20:18+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Broker Asing Diam-diam Borong Saham BBCA",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126816/broker-asing-diam-diam-borong-saham-bbca",
-   "score": 7,
+   "title": "OJK Jatuhkan 121 Sanksi ke Pelaku Jasa Keuangan, Denda Capai Rp 8,84 Miliar",
+   "link": "https://keuangan.kontan.co.id/news/ojk-jatuhkan-121-sanksi-ke-pelaku-jasa-keuangan-denda-capai-rp-884-miliar",
+   "score": 6,
    "categories": [
-    "pasar",
-    "emiten"
+    "kebijakan",
+    "global"
    ],
-   "tickers": [
-    "BBCA"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-06T18:20+07:00",
