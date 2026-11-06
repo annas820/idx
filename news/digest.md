@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-06T17:55+07:00 WIB | jendela 36 jam | dipindai 682, lolos 224, dibuang sebagai noise 28.
+Berita terbaru: 2026-11-06T18:46+07:00 WIB | jendela 36 jam | dipindai 690, lolos 222, dibuang sebagai noise 29.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -26,10 +26,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-05 10:57 kontan_investasi: Saham Tempo Inti Media (TMPO) Melesat Hingga Disuspensi, Ada Perubahan Pemegang Saham [TMPO] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/saham-tempo-inti-media-tmpo-melesat-hingga-disuspensi-ada-perubahan-pemegang-saham>
 - **7** T3 11-05 09:15 kontan_investasi: IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11) [HRTA,INCO,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511>
 - **7** T3 11-05 08:55 bloomberg_technoz: Broker Asing Diam-diam Borong Saham BBCA [BBCA] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126816/broker-asing-diam-diam-borong-saham-bbca>
-- **7** T3 11-05 06:23 kontan_investasi: Indo Tambangraya (ITMG) Siapkan Buyback Saham Rp 2,31 Triliun hingga Februari 2027 [ITMG] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/indo-tambangraya-itmg-siapkan-buyback-saham-rp-231-triliun-hingga-februari-2027>
+- **6** T3 11-06 18:20 cnbc_indonesia_market: BEI dan PHEI Bikin Indeks Acuan Obligasi, Investor Wajib Tahu (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106162938-17-783055/bei-dan-phei-bikin-indeks-acuan-obligasi-investor-wajib-tahu>
+- **6** T3 11-06 18:10 cnbc_indonesia_news: Video: Demokrat Menang, Wall Street dan Saham AI Tertekan (global/pasar) <https://www.cnbcindonesia.com/news/20261106174018-8-783096/video-demokrat-menang-wall-street-dan-saham-ai-tertekan>
 - **6** T3 11-06 17:49 kontan_keuangan: Asing Serok Saham Big Banks Jelang Review MSCI, Ini Rekomendasinya (kebijakan/pasar) <https://keuangan.kontan.co.id/news/asing-serok-saham-big-banks-jelang-review-msci-ini-rekomendasinya>
 - **6** T3 11-06 17:20 cnbc_indonesia_news: BI Buka Suara Efek Aturan Baru DHE SDA, Rupiah Bisa Kian Perkasa? (kebijakan/kurs) <https://www.cnbcindonesia.com/news/20261106160236-4-783036/bi-buka-suara-efek-aturan-baru-dhe-sda-rupiah-bisa-kian-perkasa>
 - **6** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MNKT, Terbang 3.100% Sebulan (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mnkt-terbang-3-100-sebulan>
 - **6** T3 11-06 12:57 cnbc_indonesia_market: Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini>
 - **6** T3 11-06 09:55 cnbc_indonesia_market: Nasib Dana Asing di Bursa RI Menanti MSCI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093618-17-782871/nasib-dana-asing-di-bursa-ri-menanti-msci-ini-kata-bos-bei>
-- **6** T3 11-06 09:16 bloomberg_technoz: Susul Wall Street, IHSG Dibuka Merah (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126937/susul-wall-street-ihsg-dibuka-merah>

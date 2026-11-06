@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T17:55+07:00",
+ "generated_for": "2026-11-06T18:46+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 682,
- "kept": 224,
- "dropped_noise": 28,
+ "scanned": 690,
+ "kept": 222,
+ "dropped_noise": 29,
  "items": [
   {
    "published": "2026-11-05T13:27+07:00",
@@ -350,20 +350,32 @@
    ]
   },
   {
-   "published": "2026-11-05T06:23+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-06T18:20+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Indo Tambangraya (ITMG) Siapkan Buyback Saham Rp 2,31 Triliun hingga Februari 2027",
-   "link": "https://investasi.kontan.co.id/news/indo-tambangraya-itmg-siapkan-buyback-saham-rp-231-triliun-hingga-februari-2027",
-   "score": 7,
+   "title": "BEI dan PHEI Bikin Indeks Acuan Obligasi, Investor Wajib Tahu",
+   "link": "https://www.cnbcindonesia.com/market/20261106162938-17-783055/bei-dan-phei-bikin-indeks-acuan-obligasi-investor-wajib-tahu",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
+    "kebijakan",
+    "kurs"
    ],
-   "tickers": [
-    "ITMG"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T18:10+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: Demokrat Menang, Wall Street dan Saham AI Tertekan",
+   "link": "https://www.cnbcindonesia.com/news/20261106174018-8-783096/video-demokrat-menang-wall-street-dan-saham-ai-tertekan",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
    ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -436,21 +448,6 @@
    "score": 6,
    "categories": [
     "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T09:16+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Susul Wall Street, IHSG Dibuka Merah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126937/susul-wall-street-ihsg-dibuka-merah",
-   "score": 6,
-   "categories": [
-    "global",
     "pasar"
    ],
    "tickers": [],
