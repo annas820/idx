@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-06T18:46+07:00 WIB | jendela 36 jam | dipindai 690, lolos 222, dibuang sebagai noise 29.
+Berita terbaru: 2026-11-06T19:50+07:00 WIB | jendela 36 jam | dipindai 704, lolos 221, dibuang sebagai noise 29.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -16,6 +16,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-06 08:52 cnbc_indonesia_market: Harga Saham Naik-Turun, TMPO dan ARKO Kena Suspensi Bursa [ARKO,TMPO] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106084212-17-782833/harga-saham-naik-turun-tmpo-arko-kena-suspensi-bursa>
 - **8** T3 11-05 18:16 cnbc_indonesia_market: Video: Dinamika Pemilu AS - Kabar Baik PDB RI, IHSG dan Rupiah Menghijau (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105173745-19-782728/video-dinamika-pemilu-as--kabar-baik-pdb-ri-ihsg-rupiah-menghijau>
 - **8** T3 11-05 11:04 cnbc_indonesia_market: Video: Pantau Pengumuman PDB RI Q3-2025, Nasib IHSG dan Rupiah Gimana? (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105102433-19-782524/video-pantau-pengumuman-pdb-ri-q3-2025-nasib-ihsg-rupiah-gimana>
+- **7** T3 11-06 19:20 bloomberg_technoz: Saham MKNT Dikuasai Segelintir Orang, Masuk Daftar HSC [MKNT] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127005/saham-mknt-dikuasai-segelintir-orang-masuk-daftar-hsc>
+- **7** T3 11-06 18:46 cnbc_indonesia_market: MKNT Masuk HSC, 99,64% Saham Dikuasai Segelintir Investor [MKNT] (pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261106175439-17-783100/mknt-masuk-hsc-9964-saham-dikuasai-segelintir-investor>
 - **7** T3 11-06 14:10 bloomberg_technoz: Cadangan Devisa RI Oktober 2026 Naik Tipis Meski Rupiah Tertekan (kurs/makro; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126975/cadangan-devisa-ri-oktober-2026-naik-tipis-meski-rupiah-tertekan>
 - **7** T3 11-06 13:55 kontan_keuangan: Pemegang Saham Setujui Rights Issue BSI (BRIS), Perkuat Permodalan & Free Float [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/pemegang-saham-setujui-rights-issue-bsi-bris-perkuat-permodalan-free-float>
 - **7** T3 11-06 13:30 cnbc_indonesia_market: Tingkatkan Free Float Lewat Rights Issue, BRIS Bidik Investor Asing [BRIS] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261106131015-17-782972/tingkatkan-free-float-lewat-rights-issue-bris-bidik-investor-asing>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-06 17:49 kontan_keuangan: Asing Serok Saham Big Banks Jelang Review MSCI, Ini Rekomendasinya (kebijakan/pasar) <https://keuangan.kontan.co.id/news/asing-serok-saham-big-banks-jelang-review-msci-ini-rekomendasinya>
 - **6** T3 11-06 17:20 cnbc_indonesia_news: BI Buka Suara Efek Aturan Baru DHE SDA, Rupiah Bisa Kian Perkasa? (kebijakan/kurs) <https://www.cnbcindonesia.com/news/20261106160236-4-783036/bi-buka-suara-efek-aturan-baru-dhe-sda-rupiah-bisa-kian-perkasa>
 - **6** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MNKT, Terbang 3.100% Sebulan (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mnkt-terbang-3-100-sebulan>
-- **6** T3 11-06 12:57 cnbc_indonesia_market: Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini>
-- **6** T3 11-06 09:55 cnbc_indonesia_market: Nasib Dana Asing di Bursa RI Menanti MSCI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093618-17-782871/nasib-dana-asing-di-bursa-ri-menanti-msci-ini-kata-bos-bei>

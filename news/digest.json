@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T18:46+07:00",
+ "generated_for": "2026-11-06T19:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 690,
- "kept": 222,
+ "scanned": 704,
+ "kept": 221,
  "dropped_noise": 29,
  "items": [
   {
@@ -153,6 +153,48 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-06T19:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham MKNT Dikuasai Segelintir Orang, Masuk Daftar HSC",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127005/saham-mknt-dikuasai-segelintir-orang-masuk-daftar-hsc",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "MKNT"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
+   "published": "2026-11-06T18:46+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "MKNT Masuk HSC, 99,64% Saham Dikuasai Segelintir Investor",
+   "link": "https://www.cnbcindonesia.com/market/20261106175439-17-783100/mknt-masuk-hsc-9964-saham-dikuasai-segelintir-investor",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "MKNT"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   },
   {
    "published": "2026-11-06T14:10+07:00",
@@ -415,36 +457,6 @@
    "tier": 3,
    "title": "BEI Telusuri Gerak Liar Saham MNKT, Terbang 3.100% Sebulan",
    "link": "https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mnkt-terbang-3-100-sebulan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T12:57+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini",
-   "link": "https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T09:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Nasib Dana Asing di Bursa RI Menanti MSCI, Ini Kata Bos BEI",
-   "link": "https://www.cnbcindonesia.com/market/20261106093618-17-782871/nasib-dana-asing-di-bursa-ri-menanti-msci-ini-kata-bos-bei",
    "score": 6,
    "categories": [
     "kebijakan",
