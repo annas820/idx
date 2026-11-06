@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-06T07:55+07:00 WIB | jendela 36 jam | dipindai 499, lolos 152, dibuang sebagai noise 17.
+Berita terbaru: 2026-11-06T09:02+07:00 WIB | jendela 36 jam | dipindai 501, lolos 162, dibuang sebagai noise 16.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -11,6 +11,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-05 13:27 kontan_investasi: Garuda Indonesia (GIAA) Siapkan Rights Issue III, Inbreng 65,77% Saham GMFI [GIAA,GMFI] (pasar/korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/garuda-indonesia-giaa-siapkan-rights-issue-iii-inbreng-6577-saham-gmfi>
 - **9** T3 11-05 11:53 cnbc_indonesia_market: Video: Harga Minyak Ambruk Lebih 8% hingga IHSG dan Rupiah Menguat (global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261105114616-19-782570/video-harga-minyak-ambruk-lebih-8-hingga-ihsg-rupiah-menguat>
 - **9** T3 11-05 10:05 cnbc_indonesia_market: Garuda (GIAA) Rights Issue 248,7 M lembar, Danantara Setor Saham GMFI [GIAA,GMFI] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.cnbcindonesia.com/market/20261105095147-17-782515/garuda--giaa--rights-issue-2487-m-lembar-danantara-setor-saham-gmfi>
+- **8** T3 11-06 08:52 cnbc_indonesia_market: Harga Saham Naik-Turun, TMPO dan ARKO Kena Suspensi Bursa [ARKO,TMPO] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106084212-17-782833/harga-saham-naik-turun-tmpo-arko-kena-suspensi-bursa>
 - **8** T3 11-05 18:16 cnbc_indonesia_market: Video: Dinamika Pemilu AS - Kabar Baik PDB RI, IHSG dan Rupiah Menghijau (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105173745-19-782728/video-dinamika-pemilu-as--kabar-baik-pdb-ri-ihsg-rupiah-menghijau>
 - **8** T3 11-05 11:04 cnbc_indonesia_market: Video: Pantau Pengumuman PDB RI Q3-2025, Nasib IHSG dan Rupiah Gimana? (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105102433-19-782524/video-pantau-pengumuman-pdb-ri-q3-2025-nasib-ihsg-rupiah-gimana>
 - **7** T3 11-05 19:20 cnbc_indonesia_market: GOTO Batalkan Saham Tresuri dan Buyback, Ini Efeknya ke Investor [GOTO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105170912-17-782719/goto-batalkan-saham-tresuri-dan-buyback-ini-efeknya-ke-investor>
@@ -21,6 +22,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-05 09:15 kontan_investasi: IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11) [HRTA,INCO,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511>
 - **7** T3 11-05 08:55 bloomberg_technoz: Broker Asing Diam-diam Borong Saham BBCA [BBCA] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126816/broker-asing-diam-diam-borong-saham-bbca>
 - **7** T3 11-05 06:23 kontan_investasi: Indo Tambangraya (ITMG) Siapkan Buyback Saham Rp 2,31 Triliun hingga Februari 2027 [ITMG] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/indo-tambangraya-itmg-siapkan-buyback-saham-rp-231-triliun-hingga-februari-2027>
+- **6** T3 11-06 08:37 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp8.000, Buyback Lebih Drastis [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126934/harga-emas-antam-hari-ini-naik-rp8-000-buyback-lebih-drastis>
 - **6** T3 11-06 06:55 cnbc_indonesia_market: Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah>
 - **6** T3 11-06 06:45 cnbc_indonesia_market: BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time>
 - **6** T3 11-06 06:35 bloomberg_technoz: Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-05 14:34 cnbc_indonesia_market: MSCI Bikin IHSG Babak Belur 16,7%, Investor Asing Kabur Rp16,88 T (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105143322-17-782648/msci-bikin-ihsg-babak-belur-167-investor-asing-kabur-rp1688-t>
 - **6** T3 11-05 12:24 cnbc_indonesia_market: BEI Buka Data Pengendali Saham di Atas 1%, Bisa Ketahui Afiliasi (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105084350-19-782478/bei-buka-data-pengendali-saham-di-atas-1-bisa-ketahui-afiliasi>
 - **6** T3 11-05 11:31 kontan_investasi: BEI Tambah Informasi Status Investor di Data Pemegang Saham 1%, Ini Panduan Ceknya (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-tambah-informasi-status-investor-di-data-pemegang-saham-1-ini-panduan-ceknya>
-- **6** T3 11-05 10:30 cnbc_indonesia_market: Belum Umumkan Laporan Keuangan, BEI Gembok 2 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261105092649-17-782498/belum-umumkan-laporan-keuangan-bei-gembok-2-saham-ini>
-- **6** T3 11-05 09:18 kontan_industri: Pertamina Ekspansi Bisnis Hulu Migas di Aljazair, Akuisisi Hak Partisipasi Moeve (korporasi; terkonfirmasi, juga di bloomberg_technoz/cnbc_indonesia_news) <https://industri.kontan.co.id/news/pertamina-ekspansi-bisnis-hulu-migas-di-aljazair-akuisisi-hak-partisipasi-moeve>

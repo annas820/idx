@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T07:55+07:00",
+ "generated_for": "2026-11-06T09:02+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 499,
- "kept": 152,
- "dropped_noise": 17,
+ "scanned": 501,
+ "kept": 162,
+ "dropped_noise": 16,
  "items": [
   {
    "published": "2026-11-05T13:27+07:00",
@@ -68,6 +68,25 @@
    "also_in": [
     "kontan_investasi"
    ]
+  },
+  {
+   "published": "2026-11-06T08:52+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Harga Saham Naik-Turun, TMPO dan ARKO Kena Suspensi Bursa",
+   "link": "https://www.cnbcindonesia.com/market/20261106084212-17-782833/harga-saham-naik-turun-tmpo-arko-kena-suspensi-bursa",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ARKO",
+    "TMPO"
+   ],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-05T18:16+07:00",
@@ -260,6 +279,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-06T08:37+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Hari Ini Naik Rp8.000, Buyback Lebih Drastis",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126934/harga-emas-antam-hari-ini-naik-rp8-000-buyback-lebih-drastis",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-06T06:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -408,40 +445,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-05T10:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Belum Umumkan Laporan Keuangan, BEI Gembok 2 Saham Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261105092649-17-782498/belum-umumkan-laporan-keuangan-bei-gembok-2-saham-ini",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T09:18+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Pertamina Ekspansi Bisnis Hulu Migas di Aljazair, Akuisisi Hak Partisipasi Moeve",
-   "link": "https://industri.kontan.co.id/news/pertamina-ekspansi-bisnis-hulu-migas-di-aljazair-akuisisi-hak-partisipasi-moeve",
-   "score": 6,
-   "categories": [
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz",
-    "cnbc_indonesia_news"
-   ]
   }
  ],
  "watchlist_hits": [
