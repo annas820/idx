@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T16:57+07:00",
+ "generated_for": "2026-11-06T17:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 667,
- "kept": 218,
+ "scanned": 682,
+ "kept": 224,
  "dropped_noise": 28,
  "items": [
   {
@@ -68,6 +68,24 @@
    "also_in": [
     "kontan_investasi"
    ]
+  },
+  {
+   "published": "2026-11-06T13:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Telusuri Gerak Liar Saham MKNT, Terbang 3.100% Sebulan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mknt-terbang-3-100-sebulan",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "MKNT"
+   ],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-06T11:30+07:00",
@@ -350,6 +368,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-06T17:49+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Asing Serok Saham Big Banks Jelang Review MSCI, Ini Rekomendasinya",
+   "link": "https://keuangan.kontan.co.id/news/asing-serok-saham-big-banks-jelang-review-msci-ini-rekomendasinya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T17:20+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "BI Buka Suara Efek Aturan Baru DHE SDA, Rupiah Bisa Kian Perkasa?",
+   "link": "https://www.cnbcindonesia.com/news/20261106160236-4-783036/bi-buka-suara-efek-aturan-baru-dhe-sda-rupiah-bisa-kian-perkasa",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-06T13:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -404,54 +452,6 @@
    "categories": [
     "global",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T09:10+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Kemenkeu Tak Ambil Porsi Saham Bursa RI, Ini Kata Bos BEI",
-   "link": "https://www.cnbcindonesia.com/market/20261106075607-17-782825/kemenkeu-tak-ambil-porsi-saham-bursa-ri-ini-kata-bos-bei",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T08:37+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Hari Ini Naik Rp8.000, Buyback Lebih Drastis",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126934/harga-emas-antam-hari-ini-naik-rp8-000-buyback-lebih-drastis",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T06:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah",
-   "link": "https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],
