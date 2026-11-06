@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-06T14:07+07:00 WIB | jendela 36 jam | dipindai 602, lolos 200, dibuang sebagai noise 20.
+Berita terbaru: 2026-11-06T15:50+07:00 WIB | jendela 36 jam | dipindai 642, lolos 213, dibuang sebagai noise 28.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -15,6 +15,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-06 08:52 cnbc_indonesia_market: Harga Saham Naik-Turun, TMPO dan ARKO Kena Suspensi Bursa [ARKO,TMPO] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106084212-17-782833/harga-saham-naik-turun-tmpo-arko-kena-suspensi-bursa>
 - **8** T3 11-05 18:16 cnbc_indonesia_market: Video: Dinamika Pemilu AS - Kabar Baik PDB RI, IHSG dan Rupiah Menghijau (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105173745-19-782728/video-dinamika-pemilu-as--kabar-baik-pdb-ri-ihsg-rupiah-menghijau>
 - **8** T3 11-05 11:04 cnbc_indonesia_market: Video: Pantau Pengumuman PDB RI Q3-2025, Nasib IHSG dan Rupiah Gimana? (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105102433-19-782524/video-pantau-pengumuman-pdb-ri-q3-2025-nasib-ihsg-rupiah-gimana>
+- **7** T3 11-06 14:10 bloomberg_technoz: Cadangan Devisa RI Oktober 2026 Naik Tipis Meski Rupiah Tertekan (kurs/makro; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126975/cadangan-devisa-ri-oktober-2026-naik-tipis-meski-rupiah-tertekan>
 - **7** T3 11-06 13:55 kontan_keuangan: Pemegang Saham Setujui Rights Issue BSI (BRIS), Perkuat Permodalan & Free Float [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/pemegang-saham-setujui-rights-issue-bsi-bris-perkuat-permodalan-free-float>
 - **7** T3 11-06 13:30 cnbc_indonesia_market: Tingkatkan Free Float Lewat Rights Issue, BRIS Bidik Investor Asing [BRIS] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261106131015-17-782972/tingkatkan-free-float-lewat-rights-issue-bris-bidik-investor-asing>
 - **7** T3 11-05 19:20 cnbc_indonesia_market: GOTO Batalkan Saham Tresuri dan Buyback, Ini Efeknya ke Investor [GOTO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105170912-17-782719/goto-batalkan-saham-tresuri-dan-buyback-ini-efeknya-ke-investor>
@@ -32,4 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-06 09:10 cnbc_indonesia_market: Kemenkeu Tak Ambil Porsi Saham Bursa RI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106075607-17-782825/kemenkeu-tak-ambil-porsi-saham-bursa-ri-ini-kata-bos-bei>
 - **6** T3 11-06 08:37 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp8.000, Buyback Lebih Drastis [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126934/harga-emas-antam-hari-ini-naik-rp8-000-buyback-lebih-drastis>
 - **6** T3 11-06 06:55 cnbc_indonesia_market: Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah>
-- **6** T3 11-06 06:45 cnbc_indonesia_market: BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time>

@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T14:07+07:00",
+ "generated_for": "2026-11-06T15:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 602,
- "kept": 200,
- "dropped_noise": 20,
+ "scanned": 642,
+ "kept": 213,
+ "dropped_noise": 28,
  "items": [
   {
    "published": "2026-11-05T13:27+07:00",
@@ -135,6 +135,25 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-06T14:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Cadangan Devisa RI Oktober 2026 Naik Tipis Meski Rupiah Tertekan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126975/cadangan-devisa-ri-oktober-2026-naik-tipis-meski-rupiah-tertekan",
+   "score": 7,
+   "categories": [
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-11-06T13:55+07:00",
@@ -433,21 +452,6 @@
    "categories": [
     "kebijakan",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T06:45+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time",
-   "link": "https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
