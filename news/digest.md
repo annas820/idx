@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-06T12:50+07:00 WIB | jendela 36 jam | dipindai 567, lolos 188, dibuang sebagai noise 16.
+Berita terbaru: 2026-11-06T14:07+07:00 WIB | jendela 36 jam | dipindai 602, lolos 200, dibuang sebagai noise 20.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -15,6 +15,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-06 08:52 cnbc_indonesia_market: Harga Saham Naik-Turun, TMPO dan ARKO Kena Suspensi Bursa [ARKO,TMPO] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106084212-17-782833/harga-saham-naik-turun-tmpo-arko-kena-suspensi-bursa>
 - **8** T3 11-05 18:16 cnbc_indonesia_market: Video: Dinamika Pemilu AS - Kabar Baik PDB RI, IHSG dan Rupiah Menghijau (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105173745-19-782728/video-dinamika-pemilu-as--kabar-baik-pdb-ri-ihsg-rupiah-menghijau>
 - **8** T3 11-05 11:04 cnbc_indonesia_market: Video: Pantau Pengumuman PDB RI Q3-2025, Nasib IHSG dan Rupiah Gimana? (pasar/kurs/makro) <https://www.cnbcindonesia.com/market/20261105102433-19-782524/video-pantau-pengumuman-pdb-ri-q3-2025-nasib-ihsg-rupiah-gimana>
+- **7** T3 11-06 13:55 kontan_keuangan: Pemegang Saham Setujui Rights Issue BSI (BRIS), Perkuat Permodalan & Free Float [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/pemegang-saham-setujui-rights-issue-bsi-bris-perkuat-permodalan-free-float>
+- **7** T3 11-06 13:30 cnbc_indonesia_market: Tingkatkan Free Float Lewat Rights Issue, BRIS Bidik Investor Asing [BRIS] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261106131015-17-782972/tingkatkan-free-float-lewat-rights-issue-bris-bidik-investor-asing>
 - **7** T3 11-05 19:20 cnbc_indonesia_market: GOTO Batalkan Saham Tresuri dan Buyback, Ini Efeknya ke Investor [GOTO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105170912-17-782719/goto-batalkan-saham-tresuri-dan-buyback-ini-efeknya-ke-investor>
 - **7** T3 11-05 13:18 kontan_investasi: Steel Pipe Industry of Indonesia (ISSP) Buyback Saham, Cek Anggaran yang Disiapkan [ISSP] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/steel-pipe-industry-of-indonesia-issp-buyback-saham-cek-anggaran-yang-disiapkan>
 - **7** T3 11-05 12:07 kontan_investasi: IHSG Menguat 1,96% ke 5.016 di Sesi I Kamis (5/11), BRPT, AADI, EXCL Top Gainers LQ45 [AADI,BRPT,EXCL] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-menguat-196-ke-5016-di-sesi-i-kamis-511-brpt-aadi-excl-top-gainers-lq45>
@@ -23,13 +25,11 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-05 09:15 kontan_investasi: IHSG Dibuka Melonjak ke 5.056, Top Gainers LQ45: MDKA, INCO, HRTA, Kamis (5/11) [HRTA,INCO,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-dibuka-melonjak-ke-5056-top-gainers-lq45-mdka-inco-hrta-kamis-511>
 - **7** T3 11-05 08:55 bloomberg_technoz: Broker Asing Diam-diam Borong Saham BBCA [BBCA] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126816/broker-asing-diam-diam-borong-saham-bbca>
 - **7** T3 11-05 06:23 kontan_investasi: Indo Tambangraya (ITMG) Siapkan Buyback Saham Rp 2,31 Triliun hingga Februari 2027 [ITMG] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/indo-tambangraya-itmg-siapkan-buyback-saham-rp-231-triliun-hingga-februari-2027>
+- **6** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MNKT, Terbang 3.100% Sebulan (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mnkt-terbang-3-100-sebulan>
+- **6** T3 11-06 12:57 cnbc_indonesia_market: Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini>
 - **6** T3 11-06 09:55 cnbc_indonesia_market: Nasib Dana Asing di Bursa RI Menanti MSCI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093618-17-782871/nasib-dana-asing-di-bursa-ri-menanti-msci-ini-kata-bos-bei>
 - **6** T3 11-06 09:16 bloomberg_technoz: Susul Wall Street, IHSG Dibuka Merah (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126937/susul-wall-street-ihsg-dibuka-merah>
 - **6** T3 11-06 09:10 cnbc_indonesia_market: Kemenkeu Tak Ambil Porsi Saham Bursa RI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106075607-17-782825/kemenkeu-tak-ambil-porsi-saham-bursa-ri-ini-kata-bos-bei>
 - **6** T3 11-06 08:37 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp8.000, Buyback Lebih Drastis [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126934/harga-emas-antam-hari-ini-naik-rp8-000-buyback-lebih-drastis>
 - **6** T3 11-06 06:55 cnbc_indonesia_market: Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah>
 - **6** T3 11-06 06:45 cnbc_indonesia_market: BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time>
-- **6** T3 11-06 06:35 bloomberg_technoz: Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia>
-- **6** T3 11-05 19:30 kontan_keuangan: 11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026>
-- **6** T3 11-05 17:50 bloomberg_technoz: OJK Bisa Bawa Kasus Manipulasi Saham ke Ranah Pidana (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126908/ojk-bisa-bawa-kasus-manipulasi-saham-ke-ranah-pidana>
-- **6** T3 11-05 17:20 bloomberg_technoz: OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham>

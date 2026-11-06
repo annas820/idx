@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T12:50+07:00",
+ "generated_for": "2026-11-06T14:07+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 567,
- "kept": 188,
- "dropped_noise": 16,
+ "scanned": 602,
+ "kept": 200,
+ "dropped_noise": 20,
  "items": [
   {
    "published": "2026-11-05T13:27+07:00",
@@ -133,6 +133,42 @@
     "makro"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T13:55+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Pemegang Saham Setujui Rights Issue BSI (BRIS), Perkuat Permodalan & Free Float",
+   "link": "https://keuangan.kontan.co.id/news/pemegang-saham-setujui-rights-issue-bsi-bris-perkuat-permodalan-free-float",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T13:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Tingkatkan Free Float Lewat Rights Issue, BRIS Bidik Investor Asing",
+   "link": "https://www.cnbcindonesia.com/market/20261106131015-17-782972/tingkatkan-free-float-lewat-rights-issue-bris-bidik-investor-asing",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -295,6 +331,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-06T13:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Telusuri Gerak Liar Saham MNKT, Terbang 3.100% Sebulan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mnkt-terbang-3-100-sebulan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T12:57+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini",
+   "link": "https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-06T09:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -378,66 +444,6 @@
    "tier": 3,
    "title": "BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time",
    "link": "https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T06:35+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T19:30+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026",
-   "link": "https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T17:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Bisa Bawa Kasus Manipulasi Saham ke Ranah Pidana",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126908/ojk-bisa-bawa-kasus-manipulasi-saham-ke-ranah-pidana",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T17:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham",
    "score": 6,
    "categories": [
     "kebijakan",
