@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T06:35+07:00",
+ "generated_for": "2026-11-06T07:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 509,
- "kept": 150,
- "dropped_noise": 18,
+ "scanned": 499,
+ "kept": 152,
+ "dropped_noise": 17,
  "items": [
   {
    "published": "2026-11-05T13:27+07:00",
@@ -221,6 +221,27 @@
    "also_in": []
   },
   {
+   "published": "2026-11-05T08:55+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Broker Asing Diam-diam Borong Saham BBCA",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126816/broker-asing-diam-diam-borong-saham-bbca",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
    "published": "2026-11-05T06:23+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -235,6 +256,36 @@
    "tickers": [
     "ITMG"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T06:55+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah",
+   "link": "https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T06:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time",
+   "link": "https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -391,62 +442,6 @@
     "bloomberg_technoz",
     "cnbc_indonesia_news"
    ]
-  },
-  {
-   "published": "2026-11-05T08:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Hari Ini Naik, Buyback Nanjak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126819/harga-emas-antam-hari-ini-naik-buyback-nanjak",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T08:22+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Berpotensi Melemah, Ini Rekomendasi Saham Pilihan BNI Sekuritas, Kamis (5/11)",
-   "link": "https://investasi.kontan.co.id/news/ihsg-berpotensi-melemah-ini-rekomendasi-saham-pilihan-bni-sekuritas-kamis-511",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBNI"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T07:44+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Kinerja Berpeluang Tumbuh Hingga Akhir 2026, Cermati Rekomendasi Saham CMRY",
-   "link": "https://investasi.kontan.co.id/news/kinerja-berpeluang-tumbuh-hingga-akhir-2026-cermati-rekomendasi-saham-cmry",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "CMRY"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
