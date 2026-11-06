@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-06T10:50+07:00",
+ "generated_for": "2026-11-06T11:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 522,
- "kept": 177,
+ "scanned": 546,
+ "kept": 181,
  "dropped_noise": 16,
  "items": [
   {
@@ -68,6 +68,22 @@
    "also_in": [
     "kontan_investasi"
    ]
+  },
+  {
+   "published": "2026-11-06T11:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Tekan Inflasi, Hammack The Fed Dukung Suku Bunga Restriktif",
+   "link": "https://www.bloombergtechnoz.com/detail-news/126951/tekan-inflasi-hammack-the-fed-dukung-suku-bunga-restriktif",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "global",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-06T08:52+07:00",
@@ -422,21 +438,6 @@
    "tier": 3,
    "title": "OJK Kaji Opsi Pemulihan Kerugian Investor Imbas Manipulasi Saham",
    "link": "https://www.bloombergtechnoz.com/detail-news/126900/ojk-kaji-opsi-pemulihan-kerugian-investor-imbas-manipulasi-saham",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T15:50+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Pasar Saham RI Lagi 'Detox', OJK Ungkap Target di Balik Koreksi IHSG",
-   "link": "https://www.cnbcindonesia.com/market/20261105154809-17-782677/pasar-saham-ri-lagi-detox-ojk-ungkap-target-di-balik-koreksi-ihsg",
    "score": 6,
    "categories": [
     "kebijakan",
