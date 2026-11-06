@@ -1,0 +1,66 @@
+{
+  "schema": "idx.actions.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-06T11:19:57Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "symbol": "ASII",
+    "name": "ASTRA INTERNATIONAL Tbk",
+    "since": "2025-11-06",
+    "actions": [
+      {
+        "kind": "cash_dividend",
+        "label": "Cash Deviden",
+        "amount": 98.0,
+        "ratio_old": null,
+        "ratio_new": null,
+        "cum_date": "2026-10-12",
+        "ex_date": "2026-10-13",
+        "recording_date": "2026-10-14",
+        "distribution_date": "2026-10-30",
+        "end_date": null,
+        "status": "Final",
+        "details": "Jadwal Pelaksanaan Pembagian dividen interim atas saham Astra International Tbk, PT (ASII)\nDengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen interim dengan rasio dividen interim adalah setiap 1 (satu) saham akan memperoleh Rp. 98\nAdapun jadwal pembagian dividen interim adalah sebagai berikut :\nTanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 12 Oct 26\nTanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 13 Oct 26\nTanggal perdagangan bursa yang memuat dividen interim (Cum Dividen) di Pasar Tunai : 14 Oct 26\nTanggal perdagangan bursa tidak memuat dividen interim (Ex Dividen) di Pasar Tunai : 15 Oct 26\nTanggal Penentuan Pemegang Saham yang berhak mendapat dividen interim di dalam rekening Efek (Recording Date): 14 Oct 26\nTanggal Pembayaran dividen interim : 30 Oct 26"
+      },
+      {
+        "kind": "cash_dividend",
+        "label": "Cash Deviden",
+        "amount": 292.0,
+        "ratio_old": null,
+        "ratio_new": null,
+        "cum_date": "2026-05-04",
+        "ex_date": "2026-05-05",
+        "recording_date": "2026-05-06",
+        "distribution_date": "2026-05-25",
+        "end_date": null,
+        "status": "Final",
+        "details": "Jadwal Pelaksanaan Pembagian dividen tunai atas saham Astra International Tbk, PT (ASII)\nDengan ini kami beritahukan bahwa Emiten diatas bermaksud untuk melakukan pembagian dividen tunai dengan rasio dividen tunai adalah setiap 1 (satu) saham akan memperoleh Rp. 292\nAdapun jadwal pembagian dividen tunai adalah sebagai berikut :\nTanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Reguler dan Pasar Negosiasi : 4 May 26\nTanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Reguler dan Pasar Negosiasi : 5 May 26\nTanggal perdagangan bursa yang memuat dividen tunai (Cum Dividen) di Pasar Tunai : 6 May 26\nTanggal perdagangan bursa tidak memuat dividen tunai (Ex Dividen) di Pasar Tunai : 7 May 26\nTanggal Penentuan Pemegang Saham yang berhak mendapat dividen tunai di dalam rekening Efek (Recording Date): 6 May 26\nTanggal Pembayaran dividen tunai : 25 May 26"
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-07-17",
+        "time": "09:00:00",
+        "status": "Final",
+        "venue": "Catur Dharma Hall, Menara Astra, Lt. 5, Jl. Jenderal Sudirman Kav. 5-6, Jakarta 10220",
+        "agenda": "RUPS akan dilaksanakan pada pukul 09:00 WIB\nPT Astra International Tbk (ASII)\nRecording Date : 24 June 2026 Waktu : 16:00 WIB\nAgenda RUPS Tahunan :\nAgenda RUPS Luar Biasa:\nPersetujuan atas pengalihan saham hasil pembelian kembali (buyback) saham yang telah dijalankan oleh Perseroan, untuk pelaksanaan program kepemilikan saham oleh manajemen Perseroan\nPersetujuan atas rencana pembelian kembali (buyback) saham oleh Perseroan"
+      },
+      {
+        "date": "2026-04-23",
+        "time": "11:00:00",
+        "status": "Final",
+        "venue": "Catur Dharma Hall, Menara Astra, Lt. 5, Jl. Jenderal Sudirman Kav. 5-6, Jakarta 10220",
+        "agenda": "RUPS akan dilaksanakan pada pukul 11:00 WIB\nPT Astra International (ASII)\nRecording Date : 31 March 2026 Waktu : 16:00 WIB\nAgenda RUPS Tahunan :\nPersetujuan Laporan Tahunan 2025, termasuk pengesahan Laporan Tugas Pengawasan Dewan Komisaris Perseroan, serta pengesahan Laporan Keuangan Konsolidasian Perseroan untuk tahun buku 2025\nPenetapan penggunaan laba bersih Perseroan tahun buku 2025\nPengangkatan anggota Dewan Komisaris dan Direksi Perseroan\nPenetapan honorarium dan/atau tunjangan Dewan Komisaris Perseroan, serta gaji dan tunjangan Direksi Perseroan\nPenunjukan kantor akuntan publik dan akuntan publik untuk melakukan audit terhadap Laporan Keuangan Perseroan tahun buku 2026\nAgenda RUPS Luar Biasa:"
+      },
+      {
+        "date": "2025-11-19",
+        "time": "10:00:00",
+        "status": "Final",
+        "venue": "Catur Dharma Hall, Menara Astra, Lt. 5, Jl. Jenderal Sudirman Kav. 5-6, Jakarta 10220",
+        "agenda": "RUPS akan dilaksanakan pada pukul 10:00 WIB\nPT Astra International Tbk (ASII)\nRecording Date : 27 October 2025 Waktu : 16:00 WIB\nAgenda RUPS Tahunan :\nAgenda RUPS Luar Biasa:\nPerubahan susunan anggota Dewan Komisaris dan Direksi Perseroan"
+      }
+    ],
+    "warrants_rights": []
+  }
+}

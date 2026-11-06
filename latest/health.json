@@ -1,7 +1,7 @@
 {
  "schema": "clo.health.v1",
- "snapshot_date": "2026-11-05",
- "run_at": "run at 2026-11-05 11:22:20 UTC",
+ "snapshot_date": "2026-11-06",
+ "run_at": "run at 2026-11-06 11:19:57 UTC",
  "pillars": {
   "harga": "ok",
   "kalender": "ok",
@@ -13,19 +13,21 @@
  "failed_steps": [
   "foreign_mkt"
  ],
- "price_breadth_proxy": 0.55,
- "advancing": 502,
+ "price_breadth_proxy": 0.252,
+ "advancing": 230,
  "quoted": 913,
- "index_change_pct": 2.245922,
- "last_good_broker_snapshot": "2026-11-05",
- "last_good_broker_data_to": "2026-11-05",
+ "index_change_pct": 0.40093282,
+ "last_good_broker_snapshot": "2026-11-06",
+ "last_good_broker_data_to": "2026-11-06",
  "broker_note": null,
  "manual": {
-  "latest": "20261103",
-  "sessions": 15,
+  "latest": "20261105",
+  "sessions": 17,
   "fresh": false,
-  "v11_status": "breadth di bawah 40% (5 sesi atau 1 hari): tidak ada sinyal"
+  "v11_status": "ok"
  },
- "entries_allowed": true,
- "reasons": []
+ "entries_allowed": false,
+ "reasons": [
+  "breadth harga 25% < 40% (proxy)"
+ ]
 }

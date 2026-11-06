@@ -1,0 +1,70 @@
+{
+ "version": "CLO-FT-1.0",
+ "signal_date": "2026-11-06",
+ "breadth": 0.071,
+ "universe_with_data": 98,
+ "regime_ok": false,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "SRSN",
+   "signal_date": "2026-11-06",
+   "close": 98.0,
+   "atr": 10.78,
+   "limit": 92.61,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "AMMN",
+   "signal_date": "2026-11-06",
+   "close": 3620.0,
+   "atr": 266.87,
+   "limit": 3486.57,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "ASLI",
+   "signal_date": "2026-11-06",
+   "close": 188.0,
+   "atr": 38.58,
+   "limit": 168.71,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BBTN",
+   "signal_date": "2026-11-06",
+   "close": 920.0,
+   "atr": 42.44,
+   "limit": 898.78,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "CMNT",
+   "signal_date": "2026-11-06",
+   "close": 740.0,
+   "atr": 21.88,
+   "limit": 729.06,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-06T11:19:24Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Pendapatan Ngegas, Laba Blue Bird Turun Tipis di Kuartal III-2026",
+        "url": "https://www.cnbcindonesia.com/market/20261106170339-17-783073/pendapatan-ngegas-laba-blue-bird-turun-tipis-di-kuartal-iii-2026",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-06T18:15:39+07:00",
+        "summary": "Emiten taxi PT Blue Bird Tbk (BIRD) membukukan laba bersih sebesar Rp474 miliar hingga kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Israel Berebut Kekuasaan, Jejak Peradaban Islam Jadi Taruhan",
+        "url": "https://www.cnbcindonesia.com/research/20261106165800-128-783079/israel-berebut-kekuasaan-jejak-peradaban-islam-jadi-taruhan",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-06T18:00:03+07:00",
+        "summary": "Jejak peradaban Islam telah terukir selama berabad-abad di wilayah yang berada di Israel.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Krom Bank Bukukan Laba Bersih Rp 157,91 Miliar hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/krom-bank-bukukan-laba-bersih-rp-15791-miliar-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-06T17:55:14+07:00",
+        "summary": "Krom Bank bukukan laba bersih sebesar Rp 157,91 miliar hingga September 2026. Hal ini ditopang oleh peningkatan pendapatan bunga bersih & kredit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Asing Serok Saham Big Banks Jelang Review MSCI, Ini Rekomendasinya",
+        "url": "https://keuangan.kontan.co.id/news/asing-serok-saham-big-banks-jelang-review-msci-ini-rekomendasinya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-06T17:49:39+07:00",
+        "summary": "Investor asing kembali memborong saham big banks. Simak saham BBCA, BMRI, dan BBRI serta rekomendasi analis untuk pekan depan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "RI Sukses Terbitkan Surat Berharga Syariah Global, Raup Rp54,24 T",
+        "url": "https://www.cnbcindonesia.com/market/20261106173504-17-783083/ri-sukses-terbitkan-surat-berharga-syariah-global-raup-rp5424-t",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-06T17:36:50+07:00",
+        "summary": "Pemerintah Indonesia berhasil menerbitkan surat berharga syariah negara atau sukuk global senilai US$3 miliar, setara Rp54,24 triliun",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kisruh MSCI Belum Beres, Ini Risiko Bagi Pasar Keuangan RI",
+        "url": "https://www.cnbcindonesia.com/market/20261106155142-17-783034/kisruh-msci-belum-beres-ini-risiko-bagi-pasar-keuangan-ri",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-06T17:15:46+07:00",
+        "summary": "Investor asing diperkirakan akan menjual sahamnya secara masif jika MSCI menurunkan kelas pasar saham Indonesia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bongkar Kekuatan Ekonomi 6 Provinsi di Jawa, Siapa Raja Sebenarnya?",
+        "url": "https://www.cnbcindonesia.com/research/20261106104238-128-782924/bongkar-kekuatan-ekonomi-6-provinsi-di-jawa-siapa-raja-sebenarnya",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-06T17:05:27+07:00",
+        "summary": "Seluruh provinsi di Pulau Jawa tumbuh lebih cepat dari ekonomi nasional pada kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB",
+        "url": "https://keuangan.kontan.co.id/news/direksi-bank-multiarta-sentosa-tambah-kepemilikan-7200-saham-masb",
+        "source": "kontan/keuangan",
+        "published": "2026-11-06T16:57:00+07:00",
+        "summary": "Direksi PT Bank Multiarta Sentosa Tbk (MASB) menambah kepemilikan sebanyak 7.200 saham MASB melalui transaksi pembelian di pasar saham.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BSI Kembali Terbitkan Sukuk Berkelanjutan Senilai Rp 2 Triliun",
+        "url": "https://keuangan.kontan.co.id/news/bsi-kembali-terbitkan-sukuk-berkelanjutan-senilai-rp-2-triliun",
+        "source": "kontan/keuangan",
+        "published": "2026-11-06T16:49:23+07:00",
+        "summary": "BSI terbitkan Sukuk Mudharabah Berlandaskan Keberlanjutan Berkelanjutan I Bank BSI Tahap III Tahun 2026 dengan target Rp 2 triliun",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Jelajahi Pelosok Sulawesi: Desa Tanpa Kelaparan dan Mimpi Jadi Messi",
+        "url": "https://www.cnbcindonesia.com/research/20261029182646-128-780723/jelajahi-pelosok-sulawesi-desa-tanpa-kelaparan-mimpi-jadi-messi",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-06T16:20:05+07:00",
+        "summary": "Desa Harmoni di Sulawesi Tengah dilimpahi kekayaan alam di darat dan laut. Jaringan internet mengubah hidup masyarakat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Simpanan Jumbo di Atas Rp 5 Miliar Tumbuh Paling Kencang, Ini Data LPS",
+        "url": "https://keuangan.kontan.co.id/news/simpanan-jumbo-di-atas-rp-5-miliar-tumbuh-paling-kencang-ini-data-lps",
+        "source": "kontan/keuangan",
+        "published": "2026-11-06T16:12:35+07:00",
+        "summary": "LPS mencatat total simpanan perbankan mencapai Rp 10.513,65 triliun pada September 2026, dengan pertumbuhan tertinggi pada simpanan jumbo.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan",
+          "tertinggi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Lo Kheng Hong Lirik 3 Sektor Ini saat Pasar Saham Lesu",
+        "url": "https://www.cnbcindonesia.com/market/20261106152933-17-783030/lo-kheng-hong-lirik-3-sektor-ini-saat-pasar-saham-lesu",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-06T16:10:33+07:00",
+        "summary": "Investor saham Lo Kheng Hong merekomendasikan saham di sektor pilihan saat pasar modal tertekan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "tertekan",
+          "lesu"
+        ]
+      },
+      {
+        "title": "IHSG Ditutup di Zona Hijau, Menguat 0,40% ke 5.050,43",
+        "url": "https://www.cnbcindonesia.com/market/20261106151108-17-783037/ihsg-ditutup-di-zona-hijau-menguat-040-ke-505043",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-06T16:05:04+07:00",
+        "summary": "IHSG ditutup di zona hijau pada 5.050,43, naik 0,40% di perdagangan Jumat (6/11/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "menguat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "LPS Catat Jumlah Rekening Simpanan Valas Melonjak 115% yoy di Kuartal III 2026",
+        "url": "https://keuangan.kontan.co.id/news/lps-catat-jumlah-rekening-simpanan-valas-melonjak-115-yoy-di-kuartal-iii-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-06T16:02:40+07:00",
+        "summary": "Lembaga Penjamin Simpanan (LPS) mencatat pertumbuhan masif pada jumlah rekening valas dolar Amerika Serikat (AS) alias USD di perbankan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melonjak",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK: Kredit Bank Swasta Catat Kenaikan Tertinggi hingga September 2026, Tumbuh 16,9%",
+        "url": "https://keuangan.kontan.co.id/news/ojk-kredit-bank-swasta-catat-kenaikan-tertinggi-hingga-september-2026-tumbuh-169",
+        "source": "kontan/keuangan",
+        "published": "2026-11-06T15:58:37+07:00",
+        "summary": "OJK mencatat kredit di bank swasta tumbuh 16,9% per September 2026, sementara di bank BUMN tumbuh 14,78% yoy. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "kenaikan",
+          "tertinggi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Butuh Dana Topang Kredit, LPS Prediksi Suku Bunga Simpanan Bakal Naik",
+        "url": "https://keuangan.kontan.co.id/news/bank-butuh-dana-topang-kredit-lps-prediksi-suku-bunga-simpanan-bakal-naik",
+        "source": "kontan/keuangan",
+        "published": "2026-11-06T15:56:48+07:00",
+        "summary": "LPS memprediksi suku bunga simpanan perbankan masih berpotensi naik akibat persaingan likuiditas dan tingginya kebutuhan pendanaan kredit.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Indonesia Terbitkan Sukuk Global Senilai US$3 Miliar Jelang Akhir 2026",
+        "url": "https://www.cnbcindonesia.com/market/20261106155314-17-783032/indonesia-terbitkan-sukuk-global-senilai-us-3-miliar-jelang-akhir-2026",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-06T15:56:00+07:00",
+        "summary": "Pemerintah Indonesia tengah menawarkan rencana penerbitan surat berharga syariah alias sukuk dalam denominasi dolar Amerika Serikat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "DSI Siapkan Portal NADI Buat Ekspor 1 Pintu, Go Live 1 Januari 2027!",
+        "url": "https://www.cnbcindonesia.com/market/20261106151427-17-783017/dsi-siapkan-portal-nadi-buat-ekspor-1-pintu-go-live-1-januari-2027",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-06T15:55:29+07:00",
+        "summary": "Danantara Sumberdaya Indonesia meluncurkan portal NADI untuk bantu eksportir laporkan kontrak komersial. Uji coba dimulai dengan 100 perusahaan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bursa Asia Hancur: Taiwan Terburuk 25 Tahun-Rp44.000 T Lenyap di Korea",
+        "url": "https://www.cnbcindonesia.com/research/20261106151636-128-783019/bursa-asia-hancur-taiwan-terburuk-25-tahun-rp44000-t-lenyap-di-korea",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-06T15:35:01+07:00",
+        "summary": "Bursa saham Asia anjlok pada 6 November 2026, dipicu aksi jual di Wall Street. KOSPI, Nikkei, dan TAIEX",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "anjlok",
+          "jual"
+        ]
+      },
+      {
+        "title": "Begini Dukungan OJK dan Perbankan dalam Implementasi DHE SDA",
+        "url": "https://www.cnbcindonesia.com/market/20261106150443-17-783013/begini-dukungan-ojk-dan-perbankan-dalam-implementasi-dhe-sda",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-06T15:14:44+07:00",
+        "summary": "OJK mendukung implementasi program Dana Hasil Ekspor Sumber Daya Alam (DHE SDA).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
