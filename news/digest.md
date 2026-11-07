@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-07T06:30+07:00 WIB | jendela 36 jam | dipindai 411, lolos 134, dibuang sebagai noise 15.
+Berita terbaru: 2026-11-07T07:30+07:00 WIB | jendela 36 jam | dipindai 390, lolos 129, dibuang sebagai noise 15.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -13,7 +13,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-06 14:10 bloomberg_technoz: Cadangan Devisa RI Oktober 2026 Naik Tipis Meski Rupiah Tertekan (kurs/makro; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126975/cadangan-devisa-ri-oktober-2026-naik-tipis-meski-rupiah-tertekan>
 - **7** T3 11-06 13:55 kontan_keuangan: Pemegang Saham Setujui Rights Issue BSI (BRIS), Perkuat Permodalan & Free Float [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/pemegang-saham-setujui-rights-issue-bsi-bris-perkuat-permodalan-free-float>
 - **7** T3 11-06 13:30 cnbc_indonesia_market: Tingkatkan Free Float Lewat Rights Issue, BRIS Bidik Investor Asing [BRIS] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261106131015-17-782972/tingkatkan-free-float-lewat-rights-issue-bris-bidik-investor-asing>
-- **7** T3 11-05 19:20 cnbc_indonesia_market: GOTO Batalkan Saham Tresuri dan Buyback, Ini Efeknya ke Investor [GOTO] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261105170912-17-782719/goto-batalkan-saham-tresuri-dan-buyback-ini-efeknya-ke-investor>
 - **6** T3 11-06 22:04 cnbc_indonesia_market: Transaksi Dikuasi Segelintir Pihak, BEI Selidiki 3 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106215925-17-783128/transaksi-dikuasi-segelintir-pihak-bei-selidiki-3-saham-ini>
 - **6** T3 11-06 20:18 kontan_keuangan: OJK Jatuhkan 121 Sanksi ke Pelaku Jasa Keuangan, Denda Capai Rp 8,84 Miliar (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-jatuhkan-121-sanksi-ke-pelaku-jasa-keuangan-denda-capai-rp-884-miliar>
 - **6** T3 11-06 18:20 cnbc_indonesia_market: BEI dan PHEI Bikin Indeks Acuan Obligasi, Investor Wajib Tahu (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106162938-17-783055/bei-dan-phei-bikin-indeks-acuan-obligasi-investor-wajib-tahu>
@@ -29,3 +28,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-06 06:55 cnbc_indonesia_market: Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah>
 - **6** T3 11-06 06:45 cnbc_indonesia_market: BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time>
 - **6** T3 11-06 06:35 bloomberg_technoz: Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia>
+- **6** T3 11-05 19:30 kontan_keuangan: 11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026>

@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-07T06:30+07:00",
+ "generated_for": "2026-11-07T07:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 411,
- "kept": 134,
+ "scanned": 390,
+ "kept": 129,
  "dropped_noise": 15,
  "items": [
   {
@@ -171,24 +171,6 @@
    ],
    "tickers": [
     "BRIS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-05T19:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "GOTO Batalkan Saham Tresuri dan Buyback, Ini Efeknya ke Investor",
-   "link": "https://www.cnbcindonesia.com/market/20261105170912-17-782719/goto-batalkan-saham-tresuri-dan-buyback-ini-efeknya-ke-investor",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "GOTO"
    ],
    "flags": [],
    "also_in": []
@@ -416,6 +398,21 @@
    "categories": [
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-05T19:30+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026",
+   "link": "https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
    ],
    "tickers": [],
    "flags": [],
