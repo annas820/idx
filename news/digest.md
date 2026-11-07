@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-07T07:30+07:00 WIB | jendela 36 jam | dipindai 390, lolos 129, dibuang sebagai noise 15.
+Berita terbaru: 2026-11-07T08:30+07:00 WIB | jendela 36 jam | dipindai 365, lolos 123, dibuang sebagai noise 14.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -28,4 +28,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-06 06:55 cnbc_indonesia_market: Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah>
 - **6** T3 11-06 06:45 cnbc_indonesia_market: BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time>
 - **6** T3 11-06 06:35 bloomberg_technoz: Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia>
-- **6** T3 11-05 19:30 kontan_keuangan: 11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026>
+- **5** T3 11-06 18:30 bloomberg_technoz: ESDM Belum Berencana Siapkan Sanksi Larangan Transit Ekspor SDA (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/127009/esdm-belum-berencana-siapkan-sanksi-larangan-transit-ekspor-sda>

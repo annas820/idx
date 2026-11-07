@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-07T07:30+07:00",
+ "generated_for": "2026-11-07T08:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 390,
- "kept": 129,
- "dropped_noise": 15,
+ "scanned": 365,
+ "kept": 123,
+ "dropped_noise": 14,
  "items": [
   {
    "published": "2026-11-06T21:20+07:00",
@@ -404,15 +404,15 @@
    "also_in": []
   },
   {
-   "published": "2026-11-05T19:30+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-06T18:30+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "11 Multifinance dan 11 Fintech Lending dapat Sanksi OJK pada Oktober 2026",
-   "link": "https://keuangan.kontan.co.id/news/11-multifinance-dan-11-fintech-lending-dapat-sanksi-ojk-pada-oktober-2026",
-   "score": 6,
+   "title": "ESDM Belum Berencana Siapkan Sanksi Larangan Transit Ekspor SDA",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127009/esdm-belum-berencana-siapkan-sanksi-larangan-transit-ekspor-sda",
+   "score": 5,
    "categories": [
-    "kebijakan",
-    "global"
+    "global",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
