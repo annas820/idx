@@ -1,10 +1,11 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-07T15:47+07:00 WIB | jendela 36 jam | dipindai 393, lolos 127, dibuang sebagai noise 17.
+Berita terbaru: 2026-11-07T16:30+07:00 WIB | jendela 36 jam | dipindai 397, lolos 128, dibuang sebagai noise 17.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **11** T3 11-07 15:09 bloomberg_technoz: OJK Kembali Sanksi 7 Emiten dari ADHI Hingga KLBF, Denda Miliaran [ADHI,KLBF] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127047/ojk-kembali-sanksi-7-emiten-dari-adhi-hingga-klbf-denda-miliaran>
+- **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
 - **8** T3 11-06 21:20 cnbc_indonesia_market: OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan [BMRI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan>
 - **8** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MKNT, Terbang 3.100% Sebulan [MKNT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mknt-terbang-3-100-sebulan>
 - **8** T3 11-06 11:30 bloomberg_technoz: Tekan Inflasi, Hammack The Fed Dukung Suku Bunga Restriktif (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/126951/tekan-inflasi-hammack-the-fed-dukung-suku-bunga-restriktif>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-06 09:10 cnbc_indonesia_market: Kemenkeu Tak Ambil Porsi Saham Bursa RI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106075607-17-782825/kemenkeu-tak-ambil-porsi-saham-bursa-ri-ini-kata-bos-bei>
 - **6** T3 11-06 08:37 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp8.000, Buyback Lebih Drastis [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126934/harga-emas-antam-hari-ini-naik-rp8-000-buyback-lebih-drastis>
 - **6** T3 11-06 06:55 cnbc_indonesia_market: Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah>
-- **6** T3 11-06 06:45 cnbc_indonesia_market: BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time>

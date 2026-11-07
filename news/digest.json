@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-07T15:47+07:00",
+ "generated_for": "2026-11-07T16:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 393,
- "kept": 127,
+ "scanned": 397,
+ "kept": 128,
  "dropped_noise": 17,
  "items": [
   {
@@ -24,6 +24,22 @@
     "ADHI",
     "KLBF"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T16:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi",
+   "link": "https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi",
+   "score": 8,
+   "categories": [
+    "pasar",
+    "kurs",
+    "korporasi"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -403,21 +419,6 @@
    "categories": [
     "kebijakan",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T06:45+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time",
-   "link": "https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
