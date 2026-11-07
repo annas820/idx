@@ -1,13 +1,14 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-07T21:30+07:00 WIB | jendela 36 jam | dipindai 371, lolos 101, dibuang sebagai noise 18.
+Berita terbaru: 2026-11-07T21:59+07:00 WIB | jendela 36 jam | dipindai 365, lolos 97, dibuang sebagai noise 18.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **11** T3 11-07 15:09 bloomberg_technoz: OJK Kembali Sanksi 7 Emiten dari ADHI Hingga KLBF, Denda Miliaran [ADHI,KLBF] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127047/ojk-kembali-sanksi-7-emiten-dari-adhi-hingga-klbf-denda-miliaran>
+- **10** T3 11-07 21:57 kontan_keuangan: OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri [BMRI,JARR,PGUN] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri>
+- **10** T3 11-06 21:20 cnbc_indonesia_market: OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan [BMRI] (kebijakan/pasar/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan>
 - **9** T3 11-07 17:10 cnbc_indonesia_market: OJK Jatuhkan Sanksi ke 7 Emiten dan Pihak Terkait, Total Denda Miliaran (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261107163500-17-783204/ojk-jatuhkan-sanksi-ke-7-emiten-pihak-terkait-total-denda-miliaran>
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
-- **8** T3 11-06 21:20 cnbc_indonesia_market: OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan [BMRI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan>
 - **8** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MKNT, Terbang 3.100% Sebulan [MKNT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mknt-terbang-3-100-sebulan>
 - **8** T3 11-06 11:30 bloomberg_technoz: Tekan Inflasi, Hammack The Fed Dukung Suku Bunga Restriktif (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/126951/tekan-inflasi-hammack-the-fed-dukung-suku-bunga-restriktif>
 - **7** T3 11-06 19:20 bloomberg_technoz: Saham MKNT Dikuasai Segelintir Orang, Masuk Daftar HSC [MKNT] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127005/saham-mknt-dikuasai-segelintir-orang-masuk-daftar-hsc>
@@ -24,7 +25,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-06 17:20 cnbc_indonesia_news: BI Buka Suara Efek Aturan Baru DHE SDA, Rupiah Bisa Kian Perkasa? (kebijakan/kurs) <https://www.cnbcindonesia.com/news/20261106160236-4-783036/bi-buka-suara-efek-aturan-baru-dhe-sda-rupiah-bisa-kian-perkasa>
 - **6** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MNKT, Terbang 3.100% Sebulan (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mnkt-terbang-3-100-sebulan>
 - **6** T3 11-06 12:57 cnbc_indonesia_market: Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini>
-- **6** T3 11-06 09:55 cnbc_indonesia_market: Nasib Dana Asing di Bursa RI Menanti MSCI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093618-17-782871/nasib-dana-asing-di-bursa-ri-menanti-msci-ini-kata-bos-bei>
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **5** T3 11-06 18:30 bloomberg_technoz: ESDM Belum Berencana Siapkan Sanksi Larangan Transit Ekspor SDA (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/127009/esdm-belum-berencana-siapkan-sanksi-larangan-transit-ekspor-sda>
 - **5** T3 11-06 16:57 kontan_keuangan: Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB [MASB] (pasar/emiten) <https://keuangan.kontan.co.id/news/direksi-bank-multiarta-sentosa-tambah-kepemilikan-7200-saham-masb>

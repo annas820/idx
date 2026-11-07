@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-07T21:30+07:00",
+ "generated_for": "2026-11-07T21:59+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 371,
- "kept": 101,
+ "scanned": 365,
+ "kept": 97,
  "dropped_noise": 18,
  "items": [
   {
@@ -26,6 +26,52 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-07T21:57+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri",
+   "link": "https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI",
+    "JARR",
+    "PGUN"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
+   "published": "2026-11-06T21:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan",
+   "link": "https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
+   ]
   },
   {
    "published": "2026-11-07T17:10+07:00",
@@ -56,24 +102,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T21:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan",
-   "link": "https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
    "flags": [],
    "also_in": []
   },
@@ -334,21 +362,6 @@
    "tier": 3,
    "title": "Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini",
    "link": "https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T09:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Nasib Dana Asing di Bursa RI Menanti MSCI, Ini Kata Bos BEI",
-   "link": "https://www.cnbcindonesia.com/market/20261106093618-17-782871/nasib-dana-asing-di-bursa-ri-menanti-msci-ini-kata-bos-bei",
    "score": 6,
    "categories": [
     "kebijakan",
