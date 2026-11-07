@@ -1,9 +1,10 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-07T14:52+07:00 WIB | jendela 36 jam | dipindai 386, lolos 124, dibuang sebagai noise 17.
+Berita terbaru: 2026-11-07T15:47+07:00 WIB | jendela 36 jam | dipindai 393, lolos 127, dibuang sebagai noise 17.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
+- **11** T3 11-07 15:09 bloomberg_technoz: OJK Kembali Sanksi 7 Emiten dari ADHI Hingga KLBF, Denda Miliaran [ADHI,KLBF] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127047/ojk-kembali-sanksi-7-emiten-dari-adhi-hingga-klbf-denda-miliaran>
 - **8** T3 11-06 21:20 cnbc_indonesia_market: OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan [BMRI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan>
 - **8** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MKNT, Terbang 3.100% Sebulan [MKNT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mknt-terbang-3-100-sebulan>
 - **8** T3 11-06 11:30 bloomberg_technoz: Tekan Inflasi, Hammack The Fed Dukung Suku Bunga Restriktif (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/126951/tekan-inflasi-hammack-the-fed-dukung-suku-bunga-restriktif>
@@ -13,6 +14,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-06 14:10 bloomberg_technoz: Cadangan Devisa RI Oktober 2026 Naik Tipis Meski Rupiah Tertekan (kurs/makro; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126975/cadangan-devisa-ri-oktober-2026-naik-tipis-meski-rupiah-tertekan>
 - **7** T3 11-06 13:55 kontan_keuangan: Pemegang Saham Setujui Rights Issue BSI (BRIS), Perkuat Permodalan & Free Float [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/pemegang-saham-setujui-rights-issue-bsi-bris-perkuat-permodalan-free-float>
 - **7** T3 11-06 13:30 cnbc_indonesia_market: Tingkatkan Free Float Lewat Rights Issue, BRIS Bidik Investor Asing [BRIS] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261106131015-17-782972/tingkatkan-free-float-lewat-rights-issue-bris-bidik-investor-asing>
+- **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
 - **6** T3 11-06 22:04 cnbc_indonesia_market: Transaksi Dikuasi Segelintir Pihak, BEI Selidiki 3 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106215925-17-783128/transaksi-dikuasi-segelintir-pihak-bei-selidiki-3-saham-ini>
 - **6** T3 11-06 20:18 kontan_keuangan: OJK Jatuhkan 121 Sanksi ke Pelaku Jasa Keuangan, Denda Capai Rp 8,84 Miliar (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-jatuhkan-121-sanksi-ke-pelaku-jasa-keuangan-denda-capai-rp-884-miliar>
 - **6** T3 11-06 18:20 cnbc_indonesia_market: BEI dan PHEI Bikin Indeks Acuan Obligasi, Investor Wajib Tahu (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106162938-17-783055/bei-dan-phei-bikin-indeks-acuan-obligasi-investor-wajib-tahu>
@@ -27,5 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-06 08:37 bloomberg_technoz: Harga Emas Antam Hari Ini Naik Rp8.000, Buyback Lebih Drastis [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/126934/harga-emas-antam-hari-ini-naik-rp8-000-buyback-lebih-drastis>
 - **6** T3 11-06 06:55 cnbc_indonesia_market: Bukan MSCI, Ekonom Nilai Masalah Ini Lebih Berbahaya untuk Rupiah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261106065216-17-782809/bukan-msci-ekonom-nilai-masalah-ini-lebih-berbahaya-untuk-rupiah>
 - **6** T3 11-06 06:45 cnbc_indonesia_market: BEI Siapkan Sistem Baru, Manipulasi Saham Bakal Ketahuan Real-Time (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106055618-17-782805/bei-siapkan-sistem-baru-manipulasi-saham-bakal-ketahuan-real-time>
-- **6** T3 11-06 06:35 bloomberg_technoz: Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia>
-- **5** T3 11-06 18:30 bloomberg_technoz: ESDM Belum Berencana Siapkan Sanksi Larangan Transit Ekspor SDA (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/127009/esdm-belum-berencana-siapkan-sanksi-larangan-transit-ekspor-sda>

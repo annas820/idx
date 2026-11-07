@@ -1,12 +1,32 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-07T14:52+07:00",
+ "generated_for": "2026-11-07T15:47+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 386,
- "kept": 124,
+ "scanned": 393,
+ "kept": 127,
  "dropped_noise": 17,
  "items": [
+  {
+   "published": "2026-11-07T15:09+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Kembali Sanksi 7 Emiten dari ADHI Hingga KLBF, Denda Miliaran",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127047/ojk-kembali-sanksi-7-emiten-dari-adhi-hingga-klbf-denda-miliaran",
+   "score": 11,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ADHI",
+    "KLBF"
+   ],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-06T21:20+07:00",
    "source": "cnbc_indonesia_market",
@@ -172,6 +192,21 @@
    "tickers": [
     "BRIS"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T15:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah",
+   "link": "https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -383,36 +418,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T06:35+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Deretan Emiten Ini Diuntungkan Penurunan Harga Minyak Dunia",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126921/deretan-emiten-ini-diuntungkan-penurunan-harga-minyak-dunia",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T18:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "ESDM Belum Berencana Siapkan Sanksi Larangan Transit Ekspor SDA",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127009/esdm-belum-berencana-siapkan-sanksi-larangan-transit-ekspor-sda",
-   "score": 5,
-   "categories": [
-    "global",
-    "komoditas"
    ],
    "tickers": [],
    "flags": [],
