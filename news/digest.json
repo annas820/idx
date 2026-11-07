@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-07T21:59+07:00",
+ "generated_for": "2026-11-08T06:31+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 365,
- "kept": 97,
- "dropped_noise": 18,
+ "scanned": 167,
+ "kept": 40,
+ "dropped_noise": 5,
  "items": [
   {
    "published": "2026-11-07T15:09+07:00",
@@ -106,40 +106,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-06T13:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Telusuri Gerak Liar Saham MKNT, Terbang 3.100% Sebulan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mknt-terbang-3-100-sebulan",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "MKNT"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T11:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Tekan Inflasi, Hammack The Fed Dukung Suku Bunga Restriktif",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126951/tekan-inflasi-hammack-the-fed-dukung-suku-bunga-restriktif",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-06T19:20+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -180,61 +146,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-06T14:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Cadangan Devisa RI Oktober 2026 Naik Tipis Meski Rupiah Tertekan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126975/cadangan-devisa-ri-oktober-2026-naik-tipis-meski-rupiah-tertekan",
-   "score": 7,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-06T13:55+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Pemegang Saham Setujui Rights Issue BSI (BRIS), Perkuat Permodalan & Free Float",
-   "link": "https://keuangan.kontan.co.id/news/pemegang-saham-setujui-rights-issue-bsi-bris-perkuat-permodalan-free-float",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T13:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Tingkatkan Free Float Lewat Rights Issue, BRIS Bidik Investor Asing",
-   "link": "https://www.cnbcindonesia.com/market/20261106131015-17-782972/tingkatkan-free-float-lewat-rights-issue-bris-bidik-investor-asing",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
-   ],
-   "flags": [],
-   "also_in": []
   },
   {
    "published": "2026-11-07T15:45+07:00",
@@ -282,96 +193,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-06T18:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI dan PHEI Bikin Indeks Acuan Obligasi, Investor Wajib Tahu",
-   "link": "https://www.cnbcindonesia.com/market/20261106162938-17-783055/bei-dan-phei-bikin-indeks-acuan-obligasi-investor-wajib-tahu",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T18:10+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Video: Demokrat Menang, Wall Street dan Saham AI Tertekan",
-   "link": "https://www.cnbcindonesia.com/news/20261106174018-8-783096/video-demokrat-menang-wall-street-dan-saham-ai-tertekan",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T17:49+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Asing Serok Saham Big Banks Jelang Review MSCI, Ini Rekomendasinya",
-   "link": "https://keuangan.kontan.co.id/news/asing-serok-saham-big-banks-jelang-review-msci-ini-rekomendasinya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T17:20+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "BI Buka Suara Efek Aturan Baru DHE SDA, Rupiah Bisa Kian Perkasa?",
-   "link": "https://www.cnbcindonesia.com/news/20261106160236-4-783036/bi-buka-suara-efek-aturan-baru-dhe-sda-rupiah-bisa-kian-perkasa",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T13:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Telusuri Gerak Liar Saham MNKT, Terbang 3.100% Sebulan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mnkt-terbang-3-100-sebulan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T12:57+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini",
-   "link": "https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-07T16:45+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -391,47 +212,211 @@
    "also_in": []
   },
   {
-   "published": "2026-11-06T18:30+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-07T20:45+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "ESDM Belum Berencana Siapkan Sanksi Larangan Transit Ekspor SDA",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127009/esdm-belum-berencana-siapkan-sanksi-larangan-transit-ekspor-sda",
-   "score": 5,
+   "title": "Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70%",
+   "link": "https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70",
+   "score": 4,
    "categories": [
-    "global",
-    "komoditas"
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BFIN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T14:24+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy",
+   "link": "https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T21:55+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BMRI Catat Laba Rp 46,5 T, Kualitas Aset Sehat dan Bisnis Digital Kuat",
+   "link": "https://www.cnbcindonesia.com/market/20261106215051-17-783127/bmri-catat-laba-rp-465-t-kualitas-aset-sehat-dan-bisnis-digital-kuat",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T20:04+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Tugu Insurance (TUGU) Cetak Laba Rp 495 Miliar",
+   "link": "https://keuangan.kontan.co.id/news/tugu-insurance-tugu-cetak-laba-rp-495-miliar",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "TUGU"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T19:08+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Transaksi Kartu Kredit Bank Mandiri Tumbuh 15% di Kuartal III 2026, Ini Pendorongnya",
+   "link": "https://keuangan.kontan.co.id/news/transaksi-kartu-kredit-bank-mandiri-tumbuh-15-di-kuartal-iii-2026-ini-pendorongnya",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T21:10+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris",
+   "link": "https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris",
+   "score": 3,
+   "categories": [
+    "global"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-06T16:57+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-07T18:40+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB",
-   "link": "https://keuangan.kontan.co.id/news/direksi-bank-multiarta-sentosa-tambah-kepemilikan-7200-saham-masb",
-   "score": 5,
+   "title": "Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar",
+   "link": "https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar",
+   "score": 3,
    "categories": [
-    "pasar",
-    "emiten"
+    "pasar"
    ],
-   "tickers": [
-    "MASB"
-   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-06T16:10+07:00",
+   "published": "2026-11-07T18:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Ekspor Minyak Iran Nyaris Nol, tetapi Perang Belum Akan Berakhir",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126989/ekspor-minyak-iran-nyaris-nol-tetapi-perang-belum-akan-berakhir",
-   "score": 5,
+   "title": "Rudal Ukraina Hantam Kilang Minyak Rusia Saratov",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov",
+   "score": 3,
    "categories": [
-    "global",
-    "komoditas"
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T14:57+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bertambah! Ini Daftar 83 Saham HSC Terbaru",
+   "link": "https://www.cnbcindonesia.com/market/20261107114759-17-783164/bertambah-ini-daftar-83-saham-hsc-terbaru",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T14:30+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: Dorong Ekonomi Lewat Reindustrialisasi, Regulasi Dipermudah",
+   "link": "https://www.cnbcindonesia.com/news/20261106130150-8-782969/video-dorong-ekonomi-lewat-reindustrialisasi-regulasi-dipermudah",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T13:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Eropa Desak Rusia Akhiri Perang Sebelum Bahas Tuntutan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127036/eropa-desak-rusia-akhiri-perang-sebelum-bahas-tuntutan",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T12:00+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Penyaluran Kredit Bank Tumbuh, Tapi Yield Kian Tertekan",
+   "link": "https://keuangan.kontan.co.id/news/penyaluran-kredit-bank-tumbuh-tapi-yield-kian-tertekan",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T09:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video:Tarik Investor, Bursa Saham RI Harus Bersih Dari Praktik \"Kotor\"",
+   "link": "https://www.cnbcindonesia.com/market/20261106102250-19-782888/videotarik-investor-bursa-saham-ri-harus-bersih-dari-praktik-kotor",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T07:01+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Trump Bilang Israel-Timur Tengah Bisa Hilang Usai 2 Rudal Hantam Iran",
+   "link": "https://www.cnbcindonesia.com/news/20261107065201-4-783140/trump-bilang-israel-timur-tengah-bisa-hilang-usai-2-rudal-hantam-iran",
+   "score": 3,
+   "categories": [
+    "global"
    ],
    "tickers": [],
    "flags": [],
