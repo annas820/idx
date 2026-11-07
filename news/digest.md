@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-07T20:45+07:00 WIB | jendela 36 jam | dipindai 384, lolos 114, dibuang sebagai noise 18.
+Berita terbaru: 2026-11-07T21:30+07:00 WIB | jendela 36 jam | dipindai 371, lolos 101, dibuang sebagai noise 18.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -10,7 +10,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-06 21:20 cnbc_indonesia_market: OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan [BMRI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan>
 - **8** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MKNT, Terbang 3.100% Sebulan [MKNT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mknt-terbang-3-100-sebulan>
 - **8** T3 11-06 11:30 bloomberg_technoz: Tekan Inflasi, Hammack The Fed Dukung Suku Bunga Restriktif (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/126951/tekan-inflasi-hammack-the-fed-dukung-suku-bunga-restriktif>
-- **8** T3 11-06 08:52 cnbc_indonesia_market: Harga Saham Naik-Turun, TMPO dan ARKO Kena Suspensi Bursa [ARKO,TMPO] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261106084212-17-782833/harga-saham-naik-turun-tmpo-arko-kena-suspensi-bursa>
 - **7** T3 11-06 19:20 bloomberg_technoz: Saham MKNT Dikuasai Segelintir Orang, Masuk Daftar HSC [MKNT] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127005/saham-mknt-dikuasai-segelintir-orang-masuk-daftar-hsc>
 - **7** T3 11-06 18:46 cnbc_indonesia_market: MKNT Masuk HSC, 99,64% Saham Dikuasai Segelintir Investor [MKNT] (pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261106175439-17-783100/mknt-masuk-hsc-9964-saham-dikuasai-segelintir-investor>
 - **7** T3 11-06 14:10 bloomberg_technoz: Cadangan Devisa RI Oktober 2026 Naik Tipis Meski Rupiah Tertekan (kurs/makro; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/126975/cadangan-devisa-ri-oktober-2026-naik-tipis-meski-rupiah-tertekan>
@@ -26,6 +25,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-06 13:00 bloomberg_technoz: BEI Telusuri Gerak Liar Saham MNKT, Terbang 3.100% Sebulan (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/126965/bei-telusuri-gerak-liar-saham-mnkt-terbang-3-100-sebulan>
 - **6** T3 11-06 12:57 cnbc_indonesia_market: Video: Antisipasi Manipulasi Saham, BEI Siapkan Sistem Peringatan Dini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093146-19-782863/video-antisipasi-manipulasi-saham-bei-siapkan-sistem-peringatan-dini>
 - **6** T3 11-06 09:55 cnbc_indonesia_market: Nasib Dana Asing di Bursa RI Menanti MSCI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106093618-17-782871/nasib-dana-asing-di-bursa-ri-menanti-msci-ini-kata-bos-bei>
-- **6** T3 11-06 09:16 bloomberg_technoz: Susul Wall Street, IHSG Dibuka Merah (global/pasar) <https://www.bloombergtechnoz.com/detail-news/126937/susul-wall-street-ihsg-dibuka-merah>
-- **6** T3 11-06 09:10 cnbc_indonesia_market: Kemenkeu Tak Ambil Porsi Saham Bursa RI, Ini Kata Bos BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106075607-17-782825/kemenkeu-tak-ambil-porsi-saham-bursa-ri-ini-kata-bos-bei>
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
+- **5** T3 11-06 18:30 bloomberg_technoz: ESDM Belum Berencana Siapkan Sanksi Larangan Transit Ekspor SDA (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/127009/esdm-belum-berencana-siapkan-sanksi-larangan-transit-ekspor-sda>
+- **5** T3 11-06 16:57 kontan_keuangan: Direksi Bank Multiarta Sentosa Tambah Kepemilikan 7.200 Saham MASB [MASB] (pasar/emiten) <https://keuangan.kontan.co.id/news/direksi-bank-multiarta-sentosa-tambah-kepemilikan-7200-saham-masb>
+- **5** T3 11-06 16:10 bloomberg_technoz: Ekspor Minyak Iran Nyaris Nol, tetapi Perang Belum Akan Berakhir (global/komoditas) <https://www.bloombergtechnoz.com/detail-news/126989/ekspor-minyak-iran-nyaris-nol-tetapi-perang-belum-akan-berakhir>
