@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-07T19:30+07:00",
+ "generated_for": "2026-11-07T20:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 396,
- "kept": 124,
+ "scanned": 384,
+ "kept": 114,
  "dropped_noise": 18,
  "items": [
   {
@@ -408,19 +408,20 @@
    "also_in": []
   },
   {
-   "published": "2026-11-06T08:37+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-07T16:45+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Harga Emas Antam Hari Ini Naik Rp8.000, Buyback Lebih Drastis",
-   "link": "https://www.bloombergtechnoz.com/detail-news/126934/harga-emas-antam-hari-ini-naik-rp8-000-buyback-lebih-drastis",
-   "score": 6,
+   "title": "Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI",
+   "link": "https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei",
+   "score": 5,
    "categories": [
-    "korporasi",
-    "komoditas",
+    "kebijakan",
     "emiten"
    ],
    "tickers": [
-    "ANTM"
+    "CASA",
+    "FUJI",
+    "NSSS"
    ],
    "flags": [],
    "also_in": []
