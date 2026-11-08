@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T06:31+07:00",
+ "generated_for": "2026-11-08T07:47+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 167,
- "kept": 40,
+ "scanned": 140,
+ "kept": 32,
  "dropped_noise": 5,
  "items": [
   {
@@ -104,48 +104,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-06T19:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham MKNT Dikuasai Segelintir Orang, Masuk Daftar HSC",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127005/saham-mknt-dikuasai-segelintir-orang-masuk-daftar-hsc",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "MKNT"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-06T18:46+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "MKNT Masuk HSC, 99,64% Saham Dikuasai Segelintir Investor",
-   "link": "https://www.cnbcindonesia.com/market/20261106175439-17-783100/mknt-masuk-hsc-9964-saham-dikuasai-segelintir-investor",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "MKNT"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   },
   {
    "published": "2026-11-07T15:45+07:00",
@@ -280,23 +238,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-06T19:08+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Transaksi Kartu Kredit Bank Mandiri Tumbuh 15% di Kuartal III 2026, Ini Pendorongnya",
-   "link": "https://keuangan.kontan.co.id/news/transaksi-kartu-kredit-bank-mandiri-tumbuh-15-di-kuartal-iii-2026-ini-pendorongnya",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-07T21:10+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -414,6 +355,48 @@
    "tier": 3,
    "title": "Trump Bilang Israel-Timur Tengah Bisa Hilang Usai 2 Rudal Hantam Iran",
    "link": "https://www.cnbcindonesia.com/news/20261107065201-4-783140/trump-bilang-israel-timur-tengah-bisa-hilang-usai-2-rudal-hantam-iran",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-07T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Kesepakatan AS-Iran Kian Dekat, Isu Nuklir Kembali Dibahas",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127023/kesepakatan-as-iran-kian-dekat-isu-nuklir-kembali-dibahas",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T22:10+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Eks Menteri Resmi Ditahan, Korupsi Rp782 M dari Saham",
+   "link": "https://www.cnbcindonesia.com/news/20261106174242-4-783097/eks-menteri-resmi-ditahan-korupsi-rp782-m-dari-saham",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T22:00+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Selat Hormuz Membara, 2 Kapal Tanker Minyak Terbakar",
+   "link": "https://www.cnbcindonesia.com/news/20261106172831-4-783076/selat-hormuz-membara-2-kapal-tanker-minyak-terbakar",
    "score": 3,
    "categories": [
     "global"

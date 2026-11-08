@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T06:31+07:00 WIB | jendela 36 jam | dipindai 167, lolos 40, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-08T07:47+07:00 WIB | jendela 36 jam | dipindai 140, lolos 32, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -9,8 +9,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **10** T3 11-06 21:20 cnbc_indonesia_market: OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan [BMRI] (kebijakan/pasar/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan>
 - **9** T3 11-07 17:10 cnbc_indonesia_market: OJK Jatuhkan Sanksi ke 7 Emiten dan Pihak Terkait, Total Denda Miliaran (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261107163500-17-783204/ojk-jatuhkan-sanksi-ke-7-emiten-pihak-terkait-total-denda-miliaran>
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
-- **7** T3 11-06 19:20 bloomberg_technoz: Saham MKNT Dikuasai Segelintir Orang, Masuk Daftar HSC [MKNT] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127005/saham-mknt-dikuasai-segelintir-orang-masuk-daftar-hsc>
-- **7** T3 11-06 18:46 cnbc_indonesia_market: MKNT Masuk HSC, 99,64% Saham Dikuasai Segelintir Investor [MKNT] (pasar/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261106175439-17-783100/mknt-masuk-hsc-9964-saham-dikuasai-segelintir-investor>
 - **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
 - **6** T3 11-06 22:04 cnbc_indonesia_market: Transaksi Dikuasi Segelintir Pihak, BEI Selidiki 3 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106215925-17-783128/transaksi-dikuasi-segelintir-pihak-bei-selidiki-3-saham-ini>
 - **6** T3 11-06 20:18 kontan_keuangan: OJK Jatuhkan 121 Sanksi ke Pelaku Jasa Keuangan, Denda Capai Rp 8,84 Miliar (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-jatuhkan-121-sanksi-ke-pelaku-jasa-keuangan-denda-capai-rp-884-miliar>
@@ -19,7 +17,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-07 14:24 kontan_keuangan: Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy>
 - **4** T3 11-06 21:55 cnbc_indonesia_market: BMRI Catat Laba Rp 46,5 T, Kualitas Aset Sehat dan Bisnis Digital Kuat [BMRI] (korporasi/emiten) <https://www.cnbcindonesia.com/market/20261106215051-17-783127/bmri-catat-laba-rp-465-t-kualitas-aset-sehat-dan-bisnis-digital-kuat>
 - **4** T3 11-06 20:04 kontan_keuangan: Tugu Insurance (TUGU) Cetak Laba Rp 495 Miliar [TUGU] (korporasi/emiten) <https://keuangan.kontan.co.id/news/tugu-insurance-tugu-cetak-laba-rp-495-miliar>
-- **4** T3 11-06 19:08 kontan_keuangan: Transaksi Kartu Kredit Bank Mandiri Tumbuh 15% di Kuartal III 2026, Ini Pendorongnya [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/transaksi-kartu-kredit-bank-mandiri-tumbuh-15-di-kuartal-iii-2026-ini-pendorongnya>
 - **3** T3 11-07 21:10 cnbc_indonesia_news: Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris (global) <https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris>
 - **3** T3 11-07 18:40 cnbc_indonesia_market: Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar (pasar) <https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar>
 - **3** T3 11-07 18:00 bloomberg_technoz: Rudal Ukraina Hantam Kilang Minyak Rusia Saratov (global) <https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov>
@@ -29,3 +26,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-07 12:00 kontan_keuangan: Penyaluran Kredit Bank Tumbuh, Tapi Yield Kian Tertekan (kurs) <https://keuangan.kontan.co.id/news/penyaluran-kredit-bank-tumbuh-tapi-yield-kian-tertekan>
 - **3** T3 11-07 09:00 cnbc_indonesia_market: Video:Tarik Investor, Bursa Saham RI Harus Bersih Dari Praktik "Kotor" (pasar) <https://www.cnbcindonesia.com/market/20261106102250-19-782888/videotarik-investor-bursa-saham-ri-harus-bersih-dari-praktik-kotor>
 - **3** T3 11-07 07:01 cnbc_indonesia_news: Trump Bilang Israel-Timur Tengah Bisa Hilang Usai 2 Rudal Hantam Iran (global) <https://www.cnbcindonesia.com/news/20261107065201-4-783140/trump-bilang-israel-timur-tengah-bisa-hilang-usai-2-rudal-hantam-iran>
+- **3** T3 11-07 07:00 bloomberg_technoz: Kesepakatan AS-Iran Kian Dekat, Isu Nuklir Kembali Dibahas (global) <https://www.bloombergtechnoz.com/detail-news/127023/kesepakatan-as-iran-kian-dekat-isu-nuklir-kembali-dibahas>
+- **3** T3 11-06 22:10 cnbc_indonesia_news: Eks Menteri Resmi Ditahan, Korupsi Rp782 M dari Saham (pasar) <https://www.cnbcindonesia.com/news/20261106174242-4-783097/eks-menteri-resmi-ditahan-korupsi-rp782-m-dari-saham>
+- **3** T3 11-06 22:00 cnbc_indonesia_news: Selat Hormuz Membara, 2 Kapal Tanker Minyak Terbakar (global) <https://www.cnbcindonesia.com/news/20261106172831-4-783076/selat-hormuz-membara-2-kapal-tanker-minyak-terbakar>
