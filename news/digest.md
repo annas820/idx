@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T12:32+07:00 WIB | jendela 36 jam | dipindai 143, lolos 23, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-08T13:51+07:00 WIB | jendela 36 jam | dipindai 155, lolos 24, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -12,6 +12,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
 - **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
 - **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
+- **5** T3 11-08 13:00 cnbc_indonesia_market: Video: PDB RI Melesat - Trump Kalah Pemilu Sela, Apa Efeknya ke IHSG? (pasar/makro) <https://www.cnbcindonesia.com/market/20261105144843-19-782656/video-pdb-ri-melesat--trump-kalah-pemilu-sela-apa-efeknya-ke-ihsg>
 - **5** T3 11-08 10:09 kontan_keuangan: Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu>
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>

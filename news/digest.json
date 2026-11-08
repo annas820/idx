@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T12:32+07:00",
+ "generated_for": "2026-11-08T13:51+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 143,
- "kept": 23,
- "dropped_noise": 5,
+ "scanned": 155,
+ "kept": 24,
+ "dropped_noise": 7,
  "items": [
   {
    "published": "2026-11-07T15:09+07:00",
@@ -146,6 +146,21 @@
    "categories": [
     "kebijakan",
     "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T13:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: PDB RI Melesat - Trump Kalah Pemilu Sela, Apa Efeknya ke IHSG?",
+   "link": "https://www.cnbcindonesia.com/market/20261105144843-19-782656/video-pdb-ri-melesat--trump-kalah-pemilu-sela-apa-efeknya-ke-ihsg",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
