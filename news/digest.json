@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T13:51+07:00",
+ "generated_for": "2026-11-08T14:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 155,
- "kept": 24,
- "dropped_noise": 7,
+ "scanned": 172,
+ "kept": 28,
+ "dropped_noise": 8,
  "items": [
   {
    "published": "2026-11-07T15:09+07:00",
@@ -122,6 +122,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T14:06+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026",
+   "link": "https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T11:05+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -148,6 +163,23 @@
     "kurs"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T14:44+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BRI Finance Tak Bedakan Suku Bunga Kredit Kendaraan Konvensional dan Listrik",
+   "link": "https://keuangan.kontan.co.id/news/bri-finance-tak-bedakan-suku-bunga-kredit-kendaraan-konvensional-dan-listrik",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -233,6 +265,34 @@
    "tickers": [
     "BMRI"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T14:18+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Porsi Investasi Dana Pensiun di Instrumen Saham Masih Mini, Ini Penjelasan ADPI",
+   "link": "https://keuangan.kontan.co.id/news/porsi-investasi-dana-pensiun-di-instrumen-saham-masih-mini-ini-penjelasan-adpi",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T14:00+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Premi Asuransi Syariah Turun 10,19%, OJK Ungkap Kondisi Industri per September 2026",
+   "link": "https://keuangan.kontan.co.id/news/premi-asuransi-syariah-turun-1019-ojk-ungkap-kondisi-industri-per-september-2026",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -343,48 +403,6 @@
    "score": 3,
    "categories": [
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T09:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video:Tarik Investor, Bursa Saham RI Harus Bersih Dari Praktik \"Kotor\"",
-   "link": "https://www.cnbcindonesia.com/market/20261106102250-19-782888/videotarik-investor-bursa-saham-ri-harus-bersih-dari-praktik-kotor",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T07:01+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Trump Bilang Israel-Timur Tengah Bisa Hilang Usai 2 Rudal Hantam Iran",
-   "link": "https://www.cnbcindonesia.com/news/20261107065201-4-783140/trump-bilang-israel-timur-tengah-bisa-hilang-usai-2-rudal-hantam-iran",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Kesepakatan AS-Iran Kian Dekat, Isu Nuklir Kembali Dibahas",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127023/kesepakatan-as-iran-kian-dekat-isu-nuklir-kembali-dibahas",
-   "score": 3,
-   "categories": [
-    "global"
    ],
    "tickers": [],
    "flags": [],

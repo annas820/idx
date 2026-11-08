@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T13:51+07:00 WIB | jendela 36 jam | dipindai 155, lolos 24, dibuang sebagai noise 7.
+Berita terbaru: 2026-11-08T14:50+07:00 WIB | jendela 36 jam | dipindai 172, lolos 28, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -10,13 +10,17 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-07 17:10 cnbc_indonesia_market: OJK Jatuhkan Sanksi ke 7 Emiten dan Pihak Terkait, Total Denda Miliaran (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261107163500-17-783204/ojk-jatuhkan-sanksi-ke-7-emiten-pihak-terkait-total-denda-miliaran>
 - **8** T3 11-08 12:15 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya [PANR] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya>
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
+- **6** T3 11-08 14:06 kontan_keuangan: OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026>
 - **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
 - **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
+- **5** T3 11-08 14:44 kontan_keuangan: BRI Finance Tak Bedakan Suku Bunga Kredit Kendaraan Konvensional dan Listrik [BBRI] (kebijakan/emiten) <https://keuangan.kontan.co.id/news/bri-finance-tak-bedakan-suku-bunga-kredit-kendaraan-konvensional-dan-listrik>
 - **5** T3 11-08 13:00 cnbc_indonesia_market: Video: PDB RI Melesat - Trump Kalah Pemilu Sela, Apa Efeknya ke IHSG? (pasar/makro) <https://www.cnbcindonesia.com/market/20261105144843-19-782656/video-pdb-ri-melesat--trump-kalah-pemilu-sela-apa-efeknya-ke-ihsg>
 - **5** T3 11-08 10:09 kontan_keuangan: Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu>
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
 - **4** T3 11-07 14:24 kontan_keuangan: Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy>
+- **3** T3 11-08 14:18 kontan_keuangan: Porsi Investasi Dana Pensiun di Instrumen Saham Masih Mini, Ini Penjelasan ADPI (pasar) <https://keuangan.kontan.co.id/news/porsi-investasi-dana-pensiun-di-instrumen-saham-masih-mini-ini-penjelasan-adpi>
+- **3** T3 11-08 14:00 kontan_keuangan: Premi Asuransi Syariah Turun 10,19%, OJK Ungkap Kondisi Industri per September 2026 (kebijakan) <https://keuangan.kontan.co.id/news/premi-asuransi-syariah-turun-1019-ojk-ungkap-kondisi-industri-per-september-2026>
 - **3** T3 11-08 11:04 kontan_keuangan: OJK Dorong Bank Optimalkan DHE SDA sebagai Agunan Kredit (kebijakan) <https://keuangan.kontan.co.id/news/ojk-dorong-bank-optimalkan-dhe-sda-sebagai-agunan-kredit>
 - **3** T3 11-07 21:10 cnbc_indonesia_news: Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris (global) <https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris>
 - **3** T3 11-07 18:40 cnbc_indonesia_market: Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar (pasar) <https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar>
@@ -25,6 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-07 14:30 cnbc_indonesia_news: Video: Dorong Ekonomi Lewat Reindustrialisasi, Regulasi Dipermudah (kebijakan) <https://www.cnbcindonesia.com/news/20261106130150-8-782969/video-dorong-ekonomi-lewat-reindustrialisasi-regulasi-dipermudah>
 - **3** T3 11-07 13:30 bloomberg_technoz: Eropa Desak Rusia Akhiri Perang Sebelum Bahas Tuntutan (global) <https://www.bloombergtechnoz.com/detail-news/127036/eropa-desak-rusia-akhiri-perang-sebelum-bahas-tuntutan>
 - **3** T3 11-07 12:00 kontan_keuangan: Penyaluran Kredit Bank Tumbuh, Tapi Yield Kian Tertekan (kurs) <https://keuangan.kontan.co.id/news/penyaluran-kredit-bank-tumbuh-tapi-yield-kian-tertekan>
-- **3** T3 11-07 09:00 cnbc_indonesia_market: Video:Tarik Investor, Bursa Saham RI Harus Bersih Dari Praktik "Kotor" (pasar) <https://www.cnbcindonesia.com/market/20261106102250-19-782888/videotarik-investor-bursa-saham-ri-harus-bersih-dari-praktik-kotor>
-- **3** T3 11-07 07:01 cnbc_indonesia_news: Trump Bilang Israel-Timur Tengah Bisa Hilang Usai 2 Rudal Hantam Iran (global) <https://www.cnbcindonesia.com/news/20261107065201-4-783140/trump-bilang-israel-timur-tengah-bisa-hilang-usai-2-rudal-hantam-iran>
-- **3** T3 11-07 07:00 bloomberg_technoz: Kesepakatan AS-Iran Kian Dekat, Isu Nuklir Kembali Dibahas (global) <https://www.bloombergtechnoz.com/detail-news/127023/kesepakatan-as-iran-kian-dekat-isu-nuklir-kembali-dibahas>
