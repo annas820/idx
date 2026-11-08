@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T14:50+07:00",
+ "generated_for": "2026-11-08T15:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 172,
- "kept": 28,
+ "scanned": 176,
+ "kept": 29,
  "dropped_noise": 8,
  "items": [
   {
@@ -269,6 +269,20 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T15:15+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "250 Pasangan Palestina Ikut Pernikahan Massal di Tengah Perang Gaza",
+   "link": "https://www.cnbcindonesia.com/news/20261108064306-7-783243/250-pasangan-palestina-ikut-pernikahan-massal-di-tengah-perang-gaza",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T14:18+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -389,20 +403,6 @@
    "score": 3,
    "categories": [
     "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T12:00+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Penyaluran Kredit Bank Tumbuh, Tapi Yield Kian Tertekan",
-   "link": "https://keuangan.kontan.co.id/news/penyaluran-kredit-bank-tumbuh-tapi-yield-kian-tertekan",
-   "score": 3,
-   "categories": [
-    "kurs"
    ],
    "tickers": [],
    "flags": [],

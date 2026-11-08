@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T14:50+07:00 WIB | jendela 36 jam | dipindai 172, lolos 28, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-08T15:30+07:00 WIB | jendela 36 jam | dipindai 176, lolos 29, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -19,6 +19,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
 - **4** T3 11-07 14:24 kontan_keuangan: Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy>
+- **3** T3 11-08 15:15 cnbc_indonesia_news: 250 Pasangan Palestina Ikut Pernikahan Massal di Tengah Perang Gaza (global) <https://www.cnbcindonesia.com/news/20261108064306-7-783243/250-pasangan-palestina-ikut-pernikahan-massal-di-tengah-perang-gaza>
 - **3** T3 11-08 14:18 kontan_keuangan: Porsi Investasi Dana Pensiun di Instrumen Saham Masih Mini, Ini Penjelasan ADPI (pasar) <https://keuangan.kontan.co.id/news/porsi-investasi-dana-pensiun-di-instrumen-saham-masih-mini-ini-penjelasan-adpi>
 - **3** T3 11-08 14:00 kontan_keuangan: Premi Asuransi Syariah Turun 10,19%, OJK Ungkap Kondisi Industri per September 2026 (kebijakan) <https://keuangan.kontan.co.id/news/premi-asuransi-syariah-turun-1019-ojk-ungkap-kondisi-industri-per-september-2026>
 - **3** T3 11-08 11:04 kontan_keuangan: OJK Dorong Bank Optimalkan DHE SDA sebagai Agunan Kredit (kebijakan) <https://keuangan.kontan.co.id/news/ojk-dorong-bank-optimalkan-dhe-sda-sebagai-agunan-kredit>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-07 14:57 cnbc_indonesia_market: Bertambah! Ini Daftar 83 Saham HSC Terbaru (pasar) <https://www.cnbcindonesia.com/market/20261107114759-17-783164/bertambah-ini-daftar-83-saham-hsc-terbaru>
 - **3** T3 11-07 14:30 cnbc_indonesia_news: Video: Dorong Ekonomi Lewat Reindustrialisasi, Regulasi Dipermudah (kebijakan) <https://www.cnbcindonesia.com/news/20261106130150-8-782969/video-dorong-ekonomi-lewat-reindustrialisasi-regulasi-dipermudah>
 - **3** T3 11-07 13:30 bloomberg_technoz: Eropa Desak Rusia Akhiri Perang Sebelum Bahas Tuntutan (global) <https://www.bloombergtechnoz.com/detail-news/127036/eropa-desak-rusia-akhiri-perang-sebelum-bahas-tuntutan>
-- **3** T3 11-07 12:00 kontan_keuangan: Penyaluran Kredit Bank Tumbuh, Tapi Yield Kian Tertekan (kurs) <https://keuangan.kontan.co.id/news/penyaluran-kredit-bank-tumbuh-tapi-yield-kian-tertekan>
