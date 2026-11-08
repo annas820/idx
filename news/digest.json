@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T17:30+07:00",
+ "generated_for": "2026-11-08T18:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 192,
- "kept": 31,
+ "scanned": 196,
+ "kept": 32,
  "dropped_noise": 9,
  "items": [
   {
@@ -287,6 +287,20 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T18:00+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Cari Dana Rp30 T Akhir Tahun, Pemerintah Lelang 9 Surat Utang Lusa",
+   "link": "https://www.cnbcindonesia.com/news/20261108134039-4-783280/cari-dana-rp30-t-akhir-tahun-pemerintah-lelang-9-surat-utang-lusa",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T16:00+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -393,20 +407,6 @@
    "score": 3,
    "categories": [
     "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T14:57+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Bertambah! Ini Daftar 83 Saham HSC Terbaru",
-   "link": "https://www.cnbcindonesia.com/market/20261107114759-17-783164/bertambah-ini-daftar-83-saham-hsc-terbaru",
-   "score": 3,
-   "categories": [
-    "pasar"
    ],
    "tickers": [],
    "flags": [],

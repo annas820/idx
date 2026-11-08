@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T17:30+07:00 WIB | jendela 36 jam | dipindai 192, lolos 31, dibuang sebagai noise 9.
+Berita terbaru: 2026-11-08T18:30+07:00 WIB | jendela 36 jam | dipindai 196, lolos 32, dibuang sebagai noise 9.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -20,6 +20,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
 - **4** T3 11-07 14:24 kontan_keuangan: Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy>
+- **3** T3 11-08 18:00 cnbc_indonesia_news: Cari Dana Rp30 T Akhir Tahun, Pemerintah Lelang 9 Surat Utang Lusa (kurs) <https://www.cnbcindonesia.com/news/20261108134039-4-783280/cari-dana-rp30-t-akhir-tahun-pemerintah-lelang-9-surat-utang-lusa>
 - **3** T3 11-08 16:00 cnbc_indonesia_market: Video: Tekanan Jual Masih Tinggi, Gimana Prospek Saham Perbankan? (pasar) <https://www.cnbcindonesia.com/market/20261105104039-19-782527/video-tekanan-jual-masih-tinggi-gimana-prospek-saham-perbankan>
 - **3** T3 11-08 15:15 cnbc_indonesia_news: 250 Pasangan Palestina Ikut Pernikahan Massal di Tengah Perang Gaza (global) <https://www.cnbcindonesia.com/news/20261108064306-7-783243/250-pasangan-palestina-ikut-pernikahan-massal-di-tengah-perang-gaza>
 - **3** T3 11-08 14:18 kontan_keuangan: Porsi Investasi Dana Pensiun di Instrumen Saham Masih Mini, Ini Penjelasan ADPI (pasar) <https://keuangan.kontan.co.id/news/porsi-investasi-dana-pensiun-di-instrumen-saham-masih-mini-ini-penjelasan-adpi>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-07 21:10 cnbc_indonesia_news: Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris (global) <https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris>
 - **3** T3 11-07 18:40 cnbc_indonesia_market: Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar (pasar) <https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar>
 - **3** T3 11-07 18:00 bloomberg_technoz: Rudal Ukraina Hantam Kilang Minyak Rusia Saratov (global) <https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov>
-- **3** T3 11-07 14:57 cnbc_indonesia_market: Bertambah! Ini Daftar 83 Saham HSC Terbaru (pasar) <https://www.cnbcindonesia.com/market/20261107114759-17-783164/bertambah-ini-daftar-83-saham-hsc-terbaru>
