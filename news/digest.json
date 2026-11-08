@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T15:30+07:00",
+ "generated_for": "2026-11-08T16:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 176,
- "kept": 29,
- "dropped_noise": 8,
+ "scanned": 185,
+ "kept": 30,
+ "dropped_noise": 9,
  "items": [
   {
    "published": "2026-11-07T15:09+07:00",
@@ -269,6 +269,20 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T16:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Tekanan Jual Masih Tinggi, Gimana Prospek Saham Perbankan?",
+   "link": "https://www.cnbcindonesia.com/market/20261105104039-19-782527/video-tekanan-jual-masih-tinggi-gimana-prospek-saham-perbankan",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T15:15+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -389,20 +403,6 @@
    "score": 3,
    "categories": [
     "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T13:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Eropa Desak Rusia Akhiri Perang Sebelum Bahas Tuntutan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127036/eropa-desak-rusia-akhiri-perang-sebelum-bahas-tuntutan",
-   "score": 3,
-   "categories": [
-    "global"
    ],
    "tickers": [],
    "flags": [],
