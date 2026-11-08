@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T10:45+07:00",
+ "generated_for": "2026-11-08T11:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 124,
- "kept": 20,
+ "scanned": 136,
+ "kept": 22,
  "dropped_noise": 5,
  "items": [
   {
@@ -104,6 +104,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T11:05+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-07T15:45+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -185,6 +200,20 @@
    "tickers": [
     "BMRI"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T11:04+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Dorong Bank Optimalkan DHE SDA sebagai Agunan Kredit",
+   "link": "https://keuangan.kontan.co.id/news/ojk-dorong-bank-optimalkan-dhe-sda-sebagai-agunan-kredit",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },

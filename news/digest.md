@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T10:45+07:00 WIB | jendela 36 jam | dipindai 124, lolos 20, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-08T11:50+07:00 WIB | jendela 36 jam | dipindai 136, lolos 22, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -9,11 +9,13 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **10** T3 11-07 21:57 kontan_keuangan: OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri [BMRI,JARR,PGUN] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri>
 - **9** T3 11-07 17:10 cnbc_indonesia_market: OJK Jatuhkan Sanksi ke 7 Emiten dan Pihak Terkait, Total Denda Miliaran (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261107163500-17-783204/ojk-jatuhkan-sanksi-ke-7-emiten-pihak-terkait-total-denda-miliaran>
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
+- **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
 - **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
 - **5** T3 11-08 10:09 kontan_keuangan: Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu>
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
 - **4** T3 11-07 14:24 kontan_keuangan: Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy>
+- **3** T3 11-08 11:04 kontan_keuangan: OJK Dorong Bank Optimalkan DHE SDA sebagai Agunan Kredit (kebijakan) <https://keuangan.kontan.co.id/news/ojk-dorong-bank-optimalkan-dhe-sda-sebagai-agunan-kredit>
 - **3** T3 11-07 21:10 cnbc_indonesia_news: Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris (global) <https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris>
 - **3** T3 11-07 18:40 cnbc_indonesia_market: Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar (pasar) <https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar>
 - **3** T3 11-07 18:00 bloomberg_technoz: Rudal Ukraina Hantam Kilang Minyak Rusia Saratov (global) <https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov>
