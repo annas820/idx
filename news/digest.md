@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-09T05:30+07:00 WIB | jendela 36 jam | dipindai 152, lolos 25, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-09T06:30+07:00 WIB | jendela 36 jam | dipindai 154, lolos 27, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -15,6 +15,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-08 13:00 cnbc_indonesia_market: Video: PDB RI Melesat - Trump Kalah Pemilu Sela, Apa Efeknya ke IHSG? (pasar/makro) <https://www.cnbcindonesia.com/market/20261105144843-19-782656/video-pdb-ri-melesat--trump-kalah-pemilu-sela-apa-efeknya-ke-ihsg>
 - **5** T3 11-08 10:09 kontan_keuangan: Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
+- **3** T3 11-09 06:30 cnbc_indonesia_market: Hitung Mundur Review MSCI Pekan Ini, Ujian Pasar Modal RI (kebijakan) <https://www.cnbcindonesia.com/market/20261109051127-17-783342/hitung-mundur-review-msci-pekan-ini-ujian-pasar-modal-ri>
+- **3** T3 11-09 06:00 bloomberg_technoz: Kasus Spionase Nvidia Picu Kekhawatiran di Pasar Saham Asia (pasar) <https://www.bloombergtechnoz.com/detail-news/127095/kasus-spionase-nvidia-picu-kekhawatiran-di-pasar-saham-asia>
+- **3** T3 11-09 05:45 bloomberg_technoz: Trump Isyaratkan Tak Akan Serang Iran Lagi (global) <https://www.bloombergtechnoz.com/detail-news/127094/trump-isyaratkan-tak-akan-serang-iran-lagi>
 - **3** T3 11-08 22:45 kontan_keuangan: OJK Sebutkan Faktor yang Pengaruhi Pertumbuhan Aset Perasuransian hingga Akhir 2026 (kebijakan) <https://keuangan.kontan.co.id/news/ojk-sebutkan-faktor-yang-pengaruhi-pertumbuhan-aset-perasuransian-hingga-akhir-2026>
 - **3** T3 11-08 20:52 kontan_keuangan: OJK Susun Rancangan PADK Penilaian Tingkat Kesehatan Perusahaan Pembiayaan (kebijakan) <https://keuangan.kontan.co.id/news/ojk-susun-rancangan-padk-penilaian-tingkat-kesehatan-perusahaan-pembiayaan>
 - **3** T3 11-08 20:16 cnbc_indonesia_news: Houthi Gempur Ibu Kota Arab Saudi, Incar Gedung Aramco (global) <https://www.cnbcindonesia.com/news/20261108190448-4-783314/houthi-gempur-ibu-kota-arab-saudi-incar-gedung-aramco>
@@ -26,6 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-08 14:18 kontan_keuangan: Porsi Investasi Dana Pensiun di Instrumen Saham Masih Mini, Ini Penjelasan ADPI (pasar) <https://keuangan.kontan.co.id/news/porsi-investasi-dana-pensiun-di-instrumen-saham-masih-mini-ini-penjelasan-adpi>
 - **3** T3 11-08 14:00 kontan_keuangan: Premi Asuransi Syariah Turun 10,19%, OJK Ungkap Kondisi Industri per September 2026 (kebijakan) <https://keuangan.kontan.co.id/news/premi-asuransi-syariah-turun-1019-ojk-ungkap-kondisi-industri-per-september-2026>
 - **3** T3 11-08 11:04 kontan_keuangan: OJK Dorong Bank Optimalkan DHE SDA sebagai Agunan Kredit (kebijakan) <https://keuangan.kontan.co.id/news/ojk-dorong-bank-optimalkan-dhe-sda-sebagai-agunan-kredit>
-- **3** T3 11-07 21:10 cnbc_indonesia_news: Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris (global) <https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris>
-- **3** T3 11-07 18:40 cnbc_indonesia_market: Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar (pasar) <https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar>
-- **3** T3 11-07 18:00 bloomberg_technoz: Rudal Ukraina Hantam Kilang Minyak Rusia Saratov (global) <https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov>
