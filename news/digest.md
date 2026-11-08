@@ -1,19 +1,19 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T09:45+07:00 WIB | jendela 36 jam | dipindai 121, lolos 22, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-08T10:45+07:00 WIB | jendela 36 jam | dipindai 124, lolos 20, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **11** T3 11-07 15:09 bloomberg_technoz: OJK Kembali Sanksi 7 Emiten dari ADHI Hingga KLBF, Denda Miliaran [ADHI,KLBF] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127047/ojk-kembali-sanksi-7-emiten-dari-adhi-hingga-klbf-denda-miliaran>
+- **10** T3 11-08 10:32 bloomberg_technoz: Gadai Saham Isam ke Bank Mandiri untuk Akuisisi BYAN Menurut OJK [BMRI,BYAN] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127064/gadai-saham-isam-ke-bank-mandiri-untuk-akuisisi-byan-menurut-ojk>
 - **10** T3 11-07 21:57 kontan_keuangan: OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri [BMRI,JARR,PGUN] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri>
 - **9** T3 11-07 17:10 cnbc_indonesia_market: OJK Jatuhkan Sanksi ke 7 Emiten dan Pihak Terkait, Total Denda Miliaran (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261107163500-17-783204/ojk-jatuhkan-sanksi-ke-7-emiten-pihak-terkait-total-denda-miliaran>
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
 - **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
-- **6** T3 11-06 22:04 cnbc_indonesia_market: Transaksi Dikuasi Segelintir Pihak, BEI Selidiki 3 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106215925-17-783128/transaksi-dikuasi-segelintir-pihak-bei-selidiki-3-saham-ini>
+- **5** T3 11-08 10:09 kontan_keuangan: Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu>
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
 - **4** T3 11-07 14:24 kontan_keuangan: Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy>
-- **4** T3 11-06 21:55 cnbc_indonesia_market: BMRI Catat Laba Rp 46,5 T, Kualitas Aset Sehat dan Bisnis Digital Kuat [BMRI] (korporasi/emiten) <https://www.cnbcindonesia.com/market/20261106215051-17-783127/bmri-catat-laba-rp-465-t-kualitas-aset-sehat-dan-bisnis-digital-kuat>
 - **3** T3 11-07 21:10 cnbc_indonesia_news: Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris (global) <https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris>
 - **3** T3 11-07 18:40 cnbc_indonesia_market: Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar (pasar) <https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar>
 - **3** T3 11-07 18:00 bloomberg_technoz: Rudal Ukraina Hantam Kilang Minyak Rusia Saratov (global) <https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov>
@@ -24,5 +24,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-07 09:00 cnbc_indonesia_market: Video:Tarik Investor, Bursa Saham RI Harus Bersih Dari Praktik "Kotor" (pasar) <https://www.cnbcindonesia.com/market/20261106102250-19-782888/videotarik-investor-bursa-saham-ri-harus-bersih-dari-praktik-kotor>
 - **3** T3 11-07 07:01 cnbc_indonesia_news: Trump Bilang Israel-Timur Tengah Bisa Hilang Usai 2 Rudal Hantam Iran (global) <https://www.cnbcindonesia.com/news/20261107065201-4-783140/trump-bilang-israel-timur-tengah-bisa-hilang-usai-2-rudal-hantam-iran>
 - **3** T3 11-07 07:00 bloomberg_technoz: Kesepakatan AS-Iran Kian Dekat, Isu Nuklir Kembali Dibahas (global) <https://www.bloombergtechnoz.com/detail-news/127023/kesepakatan-as-iran-kian-dekat-isu-nuklir-kembali-dibahas>
-- **3** T3 11-06 22:10 cnbc_indonesia_news: Eks Menteri Resmi Ditahan, Korupsi Rp782 M dari Saham (pasar) <https://www.cnbcindonesia.com/news/20261106174242-4-783097/eks-menteri-resmi-ditahan-korupsi-rp782-m-dari-saham>
-- **3** T3 11-06 22:00 cnbc_indonesia_news: Selat Hormuz Membara, 2 Kapal Tanker Minyak Terbakar (global) <https://www.cnbcindonesia.com/news/20261106172831-4-783076/selat-hormuz-membara-2-kapal-tanker-minyak-terbakar>

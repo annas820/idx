@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T09:45+07:00",
+ "generated_for": "2026-11-08T10:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 121,
- "kept": 22,
+ "scanned": 124,
+ "kept": 20,
  "dropped_noise": 5,
  "items": [
   {
@@ -23,6 +23,26 @@
    "tickers": [
     "ADHI",
     "KLBF"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T10:32+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Gadai Saham Isam ke Bank Mandiri untuk Akuisisi BYAN Menurut OJK",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127064/gadai-saham-isam-ke-bank-mandiri-untuk-akuisisi-byan-menurut-ojk",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI",
+    "BYAN"
    ],
    "flags": [],
    "also_in": []
@@ -99,17 +119,19 @@
    "also_in": []
   },
   {
-   "published": "2026-11-06T22:04+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-08T10:09+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Transaksi Dikuasi Segelintir Pihak, BEI Selidiki 3 Saham Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261106215925-17-783128/transaksi-dikuasi-segelintir-pihak-bei-selidiki-3-saham-ini",
-   "score": 6,
+   "title": "Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu",
+   "link": "https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu",
+   "score": 5,
    "categories": [
-    "kebijakan",
-    "pasar"
+    "pasar",
+    "emiten"
    ],
-   "tickers": [],
+   "tickers": [
+    "BBCA"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -155,23 +177,6 @@
    "tier": 3,
    "title": "Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy",
    "link": "https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T21:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BMRI Catat Laba Rp 46,5 T, Kualitas Aset Sehat dan Bisnis Digital Kuat",
-   "link": "https://www.cnbcindonesia.com/market/20261106215051-17-783127/bmri-catat-laba-rp-465-t-kualitas-aset-sehat-dan-bisnis-digital-kuat",
    "score": 4,
    "categories": [
     "korporasi",
@@ -315,34 +320,6 @@
    "tier": 3,
    "title": "Kesepakatan AS-Iran Kian Dekat, Isu Nuklir Kembali Dibahas",
    "link": "https://www.bloombergtechnoz.com/detail-news/127023/kesepakatan-as-iran-kian-dekat-isu-nuklir-kembali-dibahas",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T22:10+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Eks Menteri Resmi Ditahan, Korupsi Rp782 M dari Saham",
-   "link": "https://www.cnbcindonesia.com/news/20261106174242-4-783097/eks-menteri-resmi-ditahan-korupsi-rp782-m-dari-saham",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T22:00+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Selat Hormuz Membara, 2 Kapal Tanker Minyak Terbakar",
-   "link": "https://www.cnbcindonesia.com/news/20261106172831-4-783076/selat-hormuz-membara-2-kapal-tanker-minyak-terbakar",
    "score": 3,
    "categories": [
     "global"
