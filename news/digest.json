@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T07:47+07:00",
+ "generated_for": "2026-11-08T08:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 140,
- "kept": 32,
+ "scanned": 126,
+ "kept": 26,
  "dropped_noise": 5,
  "items": [
   {
@@ -136,21 +136,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-06T20:18+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Jatuhkan 121 Sanksi ke Pelaku Jasa Keuangan, Denda Capai Rp 8,84 Miliar",
-   "link": "https://keuangan.kontan.co.id/news/ojk-jatuhkan-121-sanksi-ke-pelaku-jasa-keuangan-denda-capai-rp-884-miliar",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-07T16:45+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -216,23 +201,6 @@
    ],
    "tickers": [
     "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-06T20:04+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Tugu Insurance (TUGU) Cetak Laba Rp 495 Miliar",
-   "link": "https://keuangan.kontan.co.id/news/tugu-insurance-tugu-cetak-laba-rp-495-miliar",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "TUGU"
    ],
    "flags": [],
    "also_in": []
@@ -397,6 +365,34 @@
    "tier": 3,
    "title": "Selat Hormuz Membara, 2 Kapal Tanker Minyak Terbakar",
    "link": "https://www.cnbcindonesia.com/news/20261106172831-4-783076/selat-hormuz-membara-2-kapal-tanker-minyak-terbakar",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T21:33+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Kredit Perbankan Tumbuh, Yield Kredit Sejumlah Bank Justru Menurun",
+   "link": "https://keuangan.kontan.co.id/news/kredit-perbankan-tumbuh-yield-kredit-sejumlah-bank-justru-menurun",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-06T21:30+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Iran Diam-Diam Kirimkan Proposal ke AS, Ada Apa?",
+   "link": "https://www.cnbcindonesia.com/news/20261106134734-4-782987/iran-diam-diam-kirimkan-proposal-ke-as-ada-apa",
    "score": 3,
    "categories": [
     "global"

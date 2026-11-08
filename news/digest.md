@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T07:47+07:00 WIB | jendela 36 jam | dipindai 140, lolos 32, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-08T08:45+07:00 WIB | jendela 36 jam | dipindai 126, lolos 26, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -11,12 +11,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
 - **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
 - **6** T3 11-06 22:04 cnbc_indonesia_market: Transaksi Dikuasi Segelintir Pihak, BEI Selidiki 3 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261106215925-17-783128/transaksi-dikuasi-segelintir-pihak-bei-selidiki-3-saham-ini>
-- **6** T3 11-06 20:18 kontan_keuangan: OJK Jatuhkan 121 Sanksi ke Pelaku Jasa Keuangan, Denda Capai Rp 8,84 Miliar (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-jatuhkan-121-sanksi-ke-pelaku-jasa-keuangan-denda-capai-rp-884-miliar>
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
 - **4** T3 11-07 14:24 kontan_keuangan: Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy>
 - **4** T3 11-06 21:55 cnbc_indonesia_market: BMRI Catat Laba Rp 46,5 T, Kualitas Aset Sehat dan Bisnis Digital Kuat [BMRI] (korporasi/emiten) <https://www.cnbcindonesia.com/market/20261106215051-17-783127/bmri-catat-laba-rp-465-t-kualitas-aset-sehat-dan-bisnis-digital-kuat>
-- **4** T3 11-06 20:04 kontan_keuangan: Tugu Insurance (TUGU) Cetak Laba Rp 495 Miliar [TUGU] (korporasi/emiten) <https://keuangan.kontan.co.id/news/tugu-insurance-tugu-cetak-laba-rp-495-miliar>
 - **3** T3 11-07 21:10 cnbc_indonesia_news: Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris (global) <https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris>
 - **3** T3 11-07 18:40 cnbc_indonesia_market: Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar (pasar) <https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar>
 - **3** T3 11-07 18:00 bloomberg_technoz: Rudal Ukraina Hantam Kilang Minyak Rusia Saratov (global) <https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov>
@@ -29,3 +27,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-07 07:00 bloomberg_technoz: Kesepakatan AS-Iran Kian Dekat, Isu Nuklir Kembali Dibahas (global) <https://www.bloombergtechnoz.com/detail-news/127023/kesepakatan-as-iran-kian-dekat-isu-nuklir-kembali-dibahas>
 - **3** T3 11-06 22:10 cnbc_indonesia_news: Eks Menteri Resmi Ditahan, Korupsi Rp782 M dari Saham (pasar) <https://www.cnbcindonesia.com/news/20261106174242-4-783097/eks-menteri-resmi-ditahan-korupsi-rp782-m-dari-saham>
 - **3** T3 11-06 22:00 cnbc_indonesia_news: Selat Hormuz Membara, 2 Kapal Tanker Minyak Terbakar (global) <https://www.cnbcindonesia.com/news/20261106172831-4-783076/selat-hormuz-membara-2-kapal-tanker-minyak-terbakar>
+- **3** T3 11-06 21:33 kontan_keuangan: Kredit Perbankan Tumbuh, Yield Kredit Sejumlah Bank Justru Menurun (kurs) <https://keuangan.kontan.co.id/news/kredit-perbankan-tumbuh-yield-kredit-sejumlah-bank-justru-menurun>
+- **3** T3 11-06 21:30 cnbc_indonesia_news: Iran Diam-Diam Kirimkan Proposal ke AS, Ada Apa? (global) <https://www.cnbcindonesia.com/news/20261106134734-4-782987/iran-diam-diam-kirimkan-proposal-ke-as-ada-apa>
