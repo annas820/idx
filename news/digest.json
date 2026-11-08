@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T22:00+07:00",
+ "generated_for": "2026-11-08T22:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 203,
- "kept": 34,
+ "scanned": 201,
+ "kept": 35,
  "dropped_noise": 11,
  "items": [
   {
@@ -302,6 +302,20 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T22:45+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Sebutkan Faktor yang Pengaruhi Pertumbuhan Aset Perasuransian hingga Akhir 2026",
+   "link": "https://keuangan.kontan.co.id/news/ojk-sebutkan-faktor-yang-pengaruhi-pertumbuhan-aset-perasuransian-hingga-akhir-2026",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T20:52+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -394,20 +408,6 @@
    "score": 3,
    "categories": [
     "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T14:18+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Porsi Investasi Dana Pensiun di Instrumen Saham Masih Mini, Ini Penjelasan ADPI",
-   "link": "https://keuangan.kontan.co.id/news/porsi-investasi-dana-pensiun-di-instrumen-saham-masih-mini-ini-penjelasan-adpi",
-   "score": 3,
-   "categories": [
-    "pasar"
    ],
    "tickers": [],
    "flags": [],

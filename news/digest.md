@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T22:00+07:00 WIB | jendela 36 jam | dipindai 203, lolos 34, dibuang sebagai noise 11.
+Berita terbaru: 2026-11-08T22:45+07:00 WIB | jendela 36 jam | dipindai 201, lolos 35, dibuang sebagai noise 11.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -21,6 +21,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-07 16:45 cnbc_indonesia_market: Kejanggalan di Balik Transaksi CASA, FUJI, dan NSSS yang Diusut BEI [CASA,FUJI,NSSS] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261107121924-17-783171/kejanggalan-di-balik-transaksi-casa-fuji-nsss-yang-diusut-bei>
 - **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
 - **4** T3 11-07 14:24 kontan_keuangan: Bank Mandiri (BMRI) Raup Laba Rp 46,5 Triliun Oktober 2026, Tumbuh 19,6% yoy [BMRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bank-mandiri-bmri-raup-laba-rp-465-triliun-oktober-2026-tumbuh-196-yoy>
+- **3** T3 11-08 22:45 kontan_keuangan: OJK Sebutkan Faktor yang Pengaruhi Pertumbuhan Aset Perasuransian hingga Akhir 2026 (kebijakan) <https://keuangan.kontan.co.id/news/ojk-sebutkan-faktor-yang-pengaruhi-pertumbuhan-aset-perasuransian-hingga-akhir-2026>
 - **3** T3 11-08 20:52 kontan_keuangan: OJK Susun Rancangan PADK Penilaian Tingkat Kesehatan Perusahaan Pembiayaan (kebijakan) <https://keuangan.kontan.co.id/news/ojk-susun-rancangan-padk-penilaian-tingkat-kesehatan-perusahaan-pembiayaan>
 - **3** T3 11-08 20:16 cnbc_indonesia_news: Houthi Gempur Ibu Kota Arab Saudi, Incar Gedung Aramco (global) <https://www.cnbcindonesia.com/news/20261108190448-4-783314/houthi-gempur-ibu-kota-arab-saudi-incar-gedung-aramco>
 - **3** T3 11-08 19:45 cnbc_indonesia_market: Kronologi Nasabah MNC Bank Sulit Tarik Dana hingga Disorot OJK-BEI (kebijakan) <https://www.cnbcindonesia.com/market/20261108180830-17-783310/kronologi-nasabah-mnc-bank-sulit-tarik-dana-hingga-disorot-ojk-bei>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-08 18:00 cnbc_indonesia_news: Cari Dana Rp30 T Akhir Tahun, Pemerintah Lelang 9 Surat Utang Lusa (kurs) <https://www.cnbcindonesia.com/news/20261108134039-4-783280/cari-dana-rp30-t-akhir-tahun-pemerintah-lelang-9-surat-utang-lusa>
 - **3** T3 11-08 16:00 cnbc_indonesia_market: Video: Tekanan Jual Masih Tinggi, Gimana Prospek Saham Perbankan? (pasar) <https://www.cnbcindonesia.com/market/20261105104039-19-782527/video-tekanan-jual-masih-tinggi-gimana-prospek-saham-perbankan>
 - **3** T3 11-08 15:15 cnbc_indonesia_news: 250 Pasangan Palestina Ikut Pernikahan Massal di Tengah Perang Gaza (global) <https://www.cnbcindonesia.com/news/20261108064306-7-783243/250-pasangan-palestina-ikut-pernikahan-massal-di-tengah-perang-gaza>
-- **3** T3 11-08 14:18 kontan_keuangan: Porsi Investasi Dana Pensiun di Instrumen Saham Masih Mini, Ini Penjelasan ADPI (pasar) <https://keuangan.kontan.co.id/news/porsi-investasi-dana-pensiun-di-instrumen-saham-masih-mini-ini-penjelasan-adpi>
