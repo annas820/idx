@@ -1,12 +1,11 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T08:45+07:00 WIB | jendela 36 jam | dipindai 126, lolos 26, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-08T09:45+07:00 WIB | jendela 36 jam | dipindai 121, lolos 22, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **11** T3 11-07 15:09 bloomberg_technoz: OJK Kembali Sanksi 7 Emiten dari ADHI Hingga KLBF, Denda Miliaran [ADHI,KLBF] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127047/ojk-kembali-sanksi-7-emiten-dari-adhi-hingga-klbf-denda-miliaran>
 - **10** T3 11-07 21:57 kontan_keuangan: OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri [BMRI,JARR,PGUN] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri>
-- **10** T3 11-06 21:20 cnbc_indonesia_market: OJK Sebut Gadai Saham Emiten Haji Isam ke Bank Mandiri Sesuai Aturan [BMRI] (kebijakan/pasar/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.cnbcindonesia.com/market/20261106201237-17-783123/ojk-sebut-gadai-saham-emiten-haji-isam-ke-bank-mandiri-sesuai-aturan>
 - **9** T3 11-07 17:10 cnbc_indonesia_market: OJK Jatuhkan Sanksi ke 7 Emiten dan Pihak Terkait, Total Denda Miliaran (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261107163500-17-783204/ojk-jatuhkan-sanksi-ke-7-emiten-pihak-terkait-total-denda-miliaran>
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
 - **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
@@ -27,5 +26,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-07 07:00 bloomberg_technoz: Kesepakatan AS-Iran Kian Dekat, Isu Nuklir Kembali Dibahas (global) <https://www.bloombergtechnoz.com/detail-news/127023/kesepakatan-as-iran-kian-dekat-isu-nuklir-kembali-dibahas>
 - **3** T3 11-06 22:10 cnbc_indonesia_news: Eks Menteri Resmi Ditahan, Korupsi Rp782 M dari Saham (pasar) <https://www.cnbcindonesia.com/news/20261106174242-4-783097/eks-menteri-resmi-ditahan-korupsi-rp782-m-dari-saham>
 - **3** T3 11-06 22:00 cnbc_indonesia_news: Selat Hormuz Membara, 2 Kapal Tanker Minyak Terbakar (global) <https://www.cnbcindonesia.com/news/20261106172831-4-783076/selat-hormuz-membara-2-kapal-tanker-minyak-terbakar>
-- **3** T3 11-06 21:33 kontan_keuangan: Kredit Perbankan Tumbuh, Yield Kredit Sejumlah Bank Justru Menurun (kurs) <https://keuangan.kontan.co.id/news/kredit-perbankan-tumbuh-yield-kredit-sejumlah-bank-justru-menurun>
-- **3** T3 11-06 21:30 cnbc_indonesia_news: Iran Diam-Diam Kirimkan Proposal ke AS, Ada Apa? (global) <https://www.cnbcindonesia.com/news/20261106134734-4-782987/iran-diam-diam-kirimkan-proposal-ke-as-ada-apa>
