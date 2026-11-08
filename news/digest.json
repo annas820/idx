@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T20:36+07:00",
+ "generated_for": "2026-11-08T21:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 201,
+ "scanned": 202,
  "kept": 33,
- "dropped_noise": 9,
+ "dropped_noise": 10,
  "items": [
   {
    "published": "2026-11-07T15:09+07:00",
@@ -287,6 +287,20 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T20:52+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Susun Rancangan PADK Penilaian Tingkat Kesehatan Perusahaan Pembiayaan",
+   "link": "https://keuangan.kontan.co.id/news/ojk-susun-rancangan-padk-penilaian-tingkat-kesehatan-perusahaan-pembiayaan",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T20:16+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -390,20 +404,6 @@
    "tier": 3,
    "title": "Premi Asuransi Syariah Turun 10,19%, OJK Ungkap Kondisi Industri per September 2026",
    "link": "https://keuangan.kontan.co.id/news/premi-asuransi-syariah-turun-1019-ojk-ungkap-kondisi-industri-per-september-2026",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T11:04+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Dorong Bank Optimalkan DHE SDA sebagai Agunan Kredit",
-   "link": "https://keuangan.kontan.co.id/news/ojk-dorong-bank-optimalkan-dhe-sda-sebagai-agunan-kredit",
    "score": 3,
    "categories": [
     "kebijakan"
