@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T21:30+07:00",
+ "generated_for": "2026-11-08T22:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 202,
- "kept": 33,
- "dropped_noise": 10,
+ "scanned": 203,
+ "kept": 34,
+ "dropped_noise": 11,
  "items": [
   {
    "published": "2026-11-07T15:09+07:00",
@@ -179,6 +179,21 @@
    "categories": [
     "kebijakan",
     "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T22:00+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Sejumlah Emiten Multifinance Catatkan Pertumbuhan Laba per Kuartal III-2026",
+   "link": "https://keuangan.kontan.co.id/news/sejumlah-emiten-multifinance-catatkan-pertumbuhan-laba-per-kuartal-iii-2026",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
@@ -393,20 +408,6 @@
    "score": 3,
    "categories": [
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T14:00+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Premi Asuransi Syariah Turun 10,19%, OJK Ungkap Kondisi Industri per September 2026",
-   "link": "https://keuangan.kontan.co.id/news/premi-asuransi-syariah-turun-1019-ojk-ungkap-kondisi-industri-per-september-2026",
-   "score": 3,
-   "categories": [
-    "kebijakan"
    ],
    "tickers": [],
    "flags": [],
