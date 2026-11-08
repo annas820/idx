@@ -1,10 +1,11 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T16:30+07:00 WIB | jendela 36 jam | dipindai 185, lolos 30, dibuang sebagai noise 9.
+Berita terbaru: 2026-11-08T17:30+07:00 WIB | jendela 36 jam | dipindai 192, lolos 31, dibuang sebagai noise 9.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
 - **11** T3 11-07 15:09 bloomberg_technoz: OJK Kembali Sanksi 7 Emiten dari ADHI Hingga KLBF, Denda Miliaran [ADHI,KLBF] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127047/ojk-kembali-sanksi-7-emiten-dari-adhi-hingga-klbf-denda-miliaran>
+- **10** T3 11-08 17:00 cnbc_indonesia_market: Video: Reksa Dana dan Saham Pilihan MI Hadapi Sentimen MSCI - The Fed (kebijakan/global/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261106102251-19-782889/video-reksa-dana-saham-pilihan-mi-hadapi-sentimen-msci--the-fed>
 - **10** T3 11-08 10:32 bloomberg_technoz: Gadai Saham Isam ke Bank Mandiri untuk Akuisisi BYAN Menurut OJK [BMRI,BYAN] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127064/gadai-saham-isam-ke-bank-mandiri-untuk-akuisisi-byan-menurut-ojk>
 - **10** T3 11-07 21:57 kontan_keuangan: OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri [BMRI,JARR,PGUN] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri>
 - **9** T3 11-07 17:10 cnbc_indonesia_market: OJK Jatuhkan Sanksi ke 7 Emiten dan Pihak Terkait, Total Denda Miliaran (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261107163500-17-783204/ojk-jatuhkan-sanksi-ke-7-emiten-pihak-terkait-total-denda-miliaran>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **3** T3 11-07 18:40 cnbc_indonesia_market: Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar (pasar) <https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar>
 - **3** T3 11-07 18:00 bloomberg_technoz: Rudal Ukraina Hantam Kilang Minyak Rusia Saratov (global) <https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov>
 - **3** T3 11-07 14:57 cnbc_indonesia_market: Bertambah! Ini Daftar 83 Saham HSC Terbaru (pasar) <https://www.cnbcindonesia.com/market/20261107114759-17-783164/bertambah-ini-daftar-83-saham-hsc-terbaru>
-- **3** T3 11-07 14:30 cnbc_indonesia_news: Video: Dorong Ekonomi Lewat Reindustrialisasi, Regulasi Dipermudah (kebijakan) <https://www.cnbcindonesia.com/news/20261106130150-8-782969/video-dorong-ekonomi-lewat-reindustrialisasi-regulasi-dipermudah>

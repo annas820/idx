@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T16:30+07:00",
+ "generated_for": "2026-11-08T17:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 185,
- "kept": 30,
+ "scanned": 192,
+ "kept": 31,
  "dropped_noise": 9,
  "items": [
   {
@@ -25,6 +25,24 @@
     "KLBF"
    ],
    "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T17:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Reksa Dana dan Saham Pilihan MI Hadapi Sentimen MSCI - The Fed",
+   "link": "https://www.cnbcindonesia.com/market/20261106102251-19-782889/video-reksa-dana-saham-pilihan-mi-hadapi-sentimen-msci--the-fed",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
    "also_in": []
   },
   {
@@ -389,20 +407,6 @@
    "score": 3,
    "categories": [
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T14:30+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Video: Dorong Ekonomi Lewat Reindustrialisasi, Regulasi Dipermudah",
-   "link": "https://www.cnbcindonesia.com/news/20261106130150-8-782969/video-dorong-ekonomi-lewat-reindustrialisasi-regulasi-dipermudah",
-   "score": 3,
-   "categories": [
-    "kebijakan"
    ],
    "tickers": [],
    "flags": [],
