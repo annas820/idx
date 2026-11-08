@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T11:50+07:00",
+ "generated_for": "2026-11-08T12:32+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 136,
- "kept": 22,
+ "scanned": 143,
+ "kept": 23,
  "dropped_noise": 5,
  "items": [
   {
@@ -84,6 +84,24 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T12:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya",
+   "link": "https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "PANR"
+   ],
    "flags": [],
    "also_in": []
   },

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-08T11:50+07:00 WIB | jendela 36 jam | dipindai 136, lolos 22, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-08T12:32+07:00 WIB | jendela 36 jam | dipindai 143, lolos 23, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -8,6 +8,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **10** T3 11-08 10:32 bloomberg_technoz: Gadai Saham Isam ke Bank Mandiri untuk Akuisisi BYAN Menurut OJK [BMRI,BYAN] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127064/gadai-saham-isam-ke-bank-mandiri-untuk-akuisisi-byan-menurut-ojk>
 - **10** T3 11-07 21:57 kontan_keuangan: OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri [BMRI,JARR,PGUN] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri>
 - **9** T3 11-07 17:10 cnbc_indonesia_market: OJK Jatuhkan Sanksi ke 7 Emiten dan Pihak Terkait, Total Denda Miliaran (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261107163500-17-783204/ojk-jatuhkan-sanksi-ke-7-emiten-pihak-terkait-total-denda-miliaran>
+- **8** T3 11-08 12:15 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya [PANR] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya>
 - **8** T3 11-07 16:15 cnbc_indonesia_market: Siap-Siap! 9 Perusahaan Antre IPO, 19 Emiten Mau Terbitkan Obligasi (pasar/kurs/korporasi) <https://www.cnbcindonesia.com/market/20261107150743-17-783188/siap-siap-9-perusahaan-antre-ipo-19-emiten-mau-terbitkan-obligasi>
 - **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
 - **6** T3 11-07 15:45 cnbc_indonesia_market: Ternyata MSCI Tak Ngefek Banyak, Ini Musuh Utama Bikin Rupiah Melemah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261107131801-17-783178/ternyata-msci-tak-ngefek-banyak-ini-musuh-utama-bikin-rupiah-melemah>
