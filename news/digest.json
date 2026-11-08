@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T18:30+07:00",
+ "generated_for": "2026-11-08T19:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 196,
- "kept": 32,
+ "scanned": 198,
+ "kept": 31,
  "dropped_noise": 9,
  "items": [
   {
@@ -287,6 +287,20 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T18:55+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Asei Sebut Sejumlah Faktor yang Pengaruhi Alokasi Asuransi di Instrumen Saham",
+   "link": "https://keuangan.kontan.co.id/news/asei-sebut-sejumlah-faktor-yang-pengaruhi-alokasi-asuransi-di-instrumen-saham",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T18:00+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -393,20 +407,6 @@
    "score": 3,
    "categories": [
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T18:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rudal Ukraina Hantam Kilang Minyak Rusia Saratov",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127054/rudal-ukraina-hantam-kilang-minyak-rusia-saratov",
-   "score": 3,
-   "categories": [
-    "global"
    ],
    "tickers": [],
    "flags": [],
