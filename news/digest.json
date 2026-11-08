@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-08T19:30+07:00",
+ "generated_for": "2026-11-08T20:36+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 198,
- "kept": 31,
+ "scanned": 201,
+ "kept": 33,
  "dropped_noise": 9,
  "items": [
   {
@@ -287,6 +287,34 @@
    "also_in": []
   },
   {
+   "published": "2026-11-08T20:16+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Houthi Gempur Ibu Kota Arab Saudi, Incar Gedung Aramco",
+   "link": "https://www.cnbcindonesia.com/news/20261108190448-4-783314/houthi-gempur-ibu-kota-arab-saudi-incar-gedung-aramco",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-08T19:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Kronologi Nasabah MNC Bank Sulit Tarik Dana hingga Disorot OJK-BEI",
+   "link": "https://www.cnbcindonesia.com/market/20261108180830-17-783310/kronologi-nasabah-mnc-bank-sulit-tarik-dana-hingga-disorot-ojk-bei",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T18:55+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -379,34 +407,6 @@
    "score": 3,
    "categories": [
     "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T21:10+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Perang Makin Canggih, Bisnis Senjata Jadul Ternyata Masih Laris",
-   "link": "https://www.cnbcindonesia.com/news/20261107185047-4-783208/perang-makin-canggih-bisnis-senjata-jadul-ternyata-masih-laris",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-07T18:40+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Eks Pejabat Borong 100 Ribu Saham Wilmar, Nilainya Rp4,19 Miliar",
-   "link": "https://www.cnbcindonesia.com/market/20261107145732-17-783187/eks-pejabat-borong-100-ribu-saham-wilmar-nilainya-rp419-miliar",
-   "score": 3,
-   "categories": [
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
