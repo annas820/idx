@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T06:30+07:00",
+ "generated_for": "2026-11-09T07:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 154,
- "kept": 27,
+ "scanned": 161,
+ "kept": 35,
  "dropped_noise": 7,
  "items": [
   {
@@ -70,6 +70,22 @@
    ]
   },
   {
+   "published": "2026-11-09T06:40+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-08T12:15+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -84,6 +100,21 @@
    "tickers": [
     "PANR"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T07:15+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -182,6 +213,23 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T07:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Laba BRI (BBRI) Naik 16,8% di Kuartal III Jadi Rp48,16 Triliun",
+   "link": "https://www.cnbcindonesia.com/market/20261109060755-17-783346/laba-bri--bbri--naik-168-di-kuartal-iii-jadi-rp4816-triliun",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-07T20:45+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -195,6 +243,90 @@
    "tickers": [
     "BFIN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T07:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Asing Banyak Lepas 10 Saham Ini Sepanjang Pekan Lalu",
+   "link": "https://www.cnbcindonesia.com/market/20261109065214-17-783351/asing-banyak-lepas-10-saham-ini-sepanjang-pekan-lalu",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T07:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Minyak Perpanjang Penurunan Mingguan Terdalam Sejak 2020",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127107/harga-minyak-perpanjang-penurunan-mingguan-terdalam-sejak-2020",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T07:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "IHSG Menguat Tipis di Akhir Pekan, Asing Serbu 10 Saham Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261109064615-17-783349/ihsg-menguat-tipis-di-akhir-pekan-asing-serbu-10-saham-ini",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Prediksi & Target IHSG Hari Ini, Senin 9 November 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127105/prediksi-target-ihsg-hari-ini-senin-9-november-2026",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Marco Rubio Sebut Belum Ada Terobosan Perundingan dengan Iran",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127099/marco-rubio-sebut-belum-ada-terobosan-perundingan-dengan-iran",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T06:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Houthi Serang Menara Saudi Aramco di Pusat Keuangan Riyadh",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127098/houthi-serang-menara-saudi-aramco-di-pusat-keuangan-riyadh",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -260,132 +392,6 @@
    "tier": 3,
    "title": "OJK Susun Rancangan PADK Penilaian Tingkat Kesehatan Perusahaan Pembiayaan",
    "link": "https://keuangan.kontan.co.id/news/ojk-susun-rancangan-padk-penilaian-tingkat-kesehatan-perusahaan-pembiayaan",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T20:16+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Houthi Gempur Ibu Kota Arab Saudi, Incar Gedung Aramco",
-   "link": "https://www.cnbcindonesia.com/news/20261108190448-4-783314/houthi-gempur-ibu-kota-arab-saudi-incar-gedung-aramco",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T19:45+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Kronologi Nasabah MNC Bank Sulit Tarik Dana hingga Disorot OJK-BEI",
-   "link": "https://www.cnbcindonesia.com/market/20261108180830-17-783310/kronologi-nasabah-mnc-bank-sulit-tarik-dana-hingga-disorot-ojk-bei",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T18:55+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Asei Sebut Sejumlah Faktor yang Pengaruhi Alokasi Asuransi di Instrumen Saham",
-   "link": "https://keuangan.kontan.co.id/news/asei-sebut-sejumlah-faktor-yang-pengaruhi-alokasi-asuransi-di-instrumen-saham",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T18:00+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Cari Dana Rp30 T Akhir Tahun, Pemerintah Lelang 9 Surat Utang Lusa",
-   "link": "https://www.cnbcindonesia.com/news/20261108134039-4-783280/cari-dana-rp30-t-akhir-tahun-pemerintah-lelang-9-surat-utang-lusa",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T16:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Tekanan Jual Masih Tinggi, Gimana Prospek Saham Perbankan?",
-   "link": "https://www.cnbcindonesia.com/market/20261105104039-19-782527/video-tekanan-jual-masih-tinggi-gimana-prospek-saham-perbankan",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T15:15+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "250 Pasangan Palestina Ikut Pernikahan Massal di Tengah Perang Gaza",
-   "link": "https://www.cnbcindonesia.com/news/20261108064306-7-783243/250-pasangan-palestina-ikut-pernikahan-massal-di-tengah-perang-gaza",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T14:18+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Porsi Investasi Dana Pensiun di Instrumen Saham Masih Mini, Ini Penjelasan ADPI",
-   "link": "https://keuangan.kontan.co.id/news/porsi-investasi-dana-pensiun-di-instrumen-saham-masih-mini-ini-penjelasan-adpi",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T14:00+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Premi Asuransi Syariah Turun 10,19%, OJK Ungkap Kondisi Industri per September 2026",
-   "link": "https://keuangan.kontan.co.id/news/premi-asuransi-syariah-turun-1019-ojk-ungkap-kondisi-industri-per-september-2026",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T11:04+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Dorong Bank Optimalkan DHE SDA sebagai Agunan Kredit",
-   "link": "https://keuangan.kontan.co.id/news/ojk-dorong-bank-optimalkan-dhe-sda-sebagai-agunan-kredit",
    "score": 3,
    "categories": [
     "kebijakan"
