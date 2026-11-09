@@ -1,50 +1,12 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T22:00+07:00",
+ "generated_for": "2026-11-10T05:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 442,
- "kept": 123,
- "dropped_noise": 8,
+ "scanned": 375,
+ "kept": 111,
+ "dropped_noise": 4,
  "items": [
-  {
-   "published": "2026-11-08T17:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Reksa Dana dan Saham Pilihan MI Hadapi Sentimen MSCI - The Fed",
-   "link": "https://www.cnbcindonesia.com/market/20261106102251-19-782889/video-reksa-dana-saham-pilihan-mi-hadapi-sentimen-msci--the-fed",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T10:32+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Gadai Saham Isam ke Bank Mandiri untuk Akuisisi BYAN Menurut OJK",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127064/gadai-saham-isam-ke-bank-mandiri-untuk-akuisisi-byan-menurut-ojk",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI",
-    "BYAN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
   {
    "published": "2026-11-09T12:30+07:00",
    "source": "cnbc_indonesia_market",
@@ -92,24 +54,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T12:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya",
-   "link": "https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "PANR"
-   ],
    "flags": [],
    "also_in": []
   },
@@ -257,6 +201,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T05:11+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Wall Street Rebound, Saham Teknologi Menguat Meski Nvidia Anjlok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127201/wall-street-rebound-saham-teknologi-menguat-meski-nvidia-anjlok",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T15:02+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -398,34 +357,67 @@
    "also_in": []
   },
   {
-   "published": "2026-11-08T14:06+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-09T20:10+07:00",
+   "source": "cnbc_indonesia_news",
    "tier": 3,
-   "title": "OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026",
-   "link": "https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026",
-   "score": 6,
+   "title": "RI Kurangi Ekspor Gas Ke Singapura, Alihkan untuk Domestik",
+   "link": "https://www.cnbcindonesia.com/news/20261109182113-4-783670/ri-kurangi-ekspor-gas-ke-singapura-alihkan-untuk-domestik",
+   "score": 5,
    "categories": [
     "kebijakan",
-    "global"
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-08T11:05+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-09T19:28+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli",
-   "score": 6,
+   "title": "BSI Segera Gelar Rights Issue Maksimal 6,8 Miliar Saham, Ini Tujuan Penggunaannya",
+   "link": "https://keuangan.kontan.co.id/news/bsi-segera-gelar-rights-issue-maksimal-68-miliar-saham-ini-tujuan-penggunaannya",
+   "score": 5,
    "categories": [
-    "global",
-    "pasar"
+    "pasar",
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-09T19:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Samuel Sekuritas Buka Suara Tudingan Manipulasi Saham IPO Naik 5.000%",
+   "link": "https://www.cnbcindonesia.com/market/20261109190139-17-783677/samuel-sekuritas-buka-suara-tudingan-manipulasi-saham-ipo-naik-5000",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T17:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Penyebab IHSG Ditutup Menguat Hari Ini",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127186/penyebab-ihsg-ditutup-menguat-hari-ini",
+   "score": 5,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   }
  ],
  "watchlist_hits": [

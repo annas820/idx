@@ -1,18 +1,15 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-09T22:00+07:00 WIB | jendela 36 jam | dipindai 442, lolos 123, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-10T05:30+07:00 WIB | jendela 36 jam | dipindai 375, lolos 111, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **4** T3 11-09 19:38 cnbc_indonesia_news: Lewat Program Pengembangan Desa, Astra Sukses Raih Penghargaan Ini! [ASII] (emiten; watchlist) <https://www.cnbcindonesia.com/news/20261109193132-4-783695/lewat-program-pengembangan-desa-astra-sukses-raih-penghargaan-ini>
 
 ## Teratas
-- **10** T3 11-08 17:00 cnbc_indonesia_market: Video: Reksa Dana dan Saham Pilihan MI Hadapi Sentimen MSCI - The Fed (kebijakan/global/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261106102251-19-782889/video-reksa-dana-saham-pilihan-mi-hadapi-sentimen-msci--the-fed>
-- **10** T3 11-08 10:32 bloomberg_technoz: Gadai Saham Isam ke Bank Mandiri untuk Akuisisi BYAN Menurut OJK [BMRI,BYAN] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127064/gadai-saham-isam-ke-bank-mandiri-untuk-akuisisi-byan-menurut-ojk>
 - **8** T3 11-09 12:30 cnbc_indonesia_market: Video: Mulai 10 November 2026, BEI Delisting 18 Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109093644-19-783422/video-mulai-10-november-2026-bei-delisting-18-emiten>
 - **8** T3 11-09 09:30 cnbc_indonesia_market: Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI [TLKM] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci>
 - **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
-- **8** T3 11-08 12:15 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya [PANR] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya>
 - **7** T3 11-09 20:11 kontan_keuangan: BSI (BRIS) Kantongi Restu Rights Issue 6,8 Miliar Saham, Ini Rencana Penggunaannya [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bsi-bris-kantongi-restu-rights-issue-68-miliar-saham-ini-rencana-penggunaannya>
 - **7** T3 11-09 19:02 kontan_keuangan: Laba BRI Melonjak 16,8% Jadi Rp 48,16 Triliun, Ini Prospek Saham BBRI [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bri-melonjak-168-jadi-rp-4816-triliun-ini-prospek-saham-bbri>
 - **7** T3 11-09 18:45 cnbc_indonesia_market: YUPI Bagikan Dividen Interim Rp14,83 per Saham, Cek Jadwalnya [YUPI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109182138-17-783671/yupi-bagikan-dividen-interim-rp1483-per-saham-cek-jadwalnya>
@@ -21,6 +18,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-09 11:15 cnbc_indonesia_market: Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya [AVIA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya>
 - **7** T3 11-09 10:05 cnbc_indonesia_market: Entitas Rukun Raharja (RAJA) Caplok 90% Saham Perusahaan Kapal LNG [RAJA] (pasar/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261109085118-17-783413/entitas-rukun-raharja--raja--caplok-90-saham-perusahaan-kapal-lng>
 - **7** T3 11-09 08:45 cnbc_indonesia_market: Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-10 05:11 bloomberg_technoz: Wall Street Rebound, Saham Teknologi Menguat Meski Nvidia Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127201/wall-street-rebound-saham-teknologi-menguat-meski-nvidia-anjlok>
 - **6** T3 11-09 15:02 cnbc_indonesia_market: Video: Sentimen the Fed - DHE SDA, Rupiah Bisa ke Bawah Rp 18.000/USD? (global/kurs) <https://www.cnbcindonesia.com/market/20261109143012-19-783585/video-sentimen-the-fed--dhe-sda-rupiah-bisa-ke-bawah-rp-18000-usd>
 - **6** T3 11-09 15:01 bloomberg_technoz: Bank Borong Obligasi Saat BI & Investor Asing Mundur (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127175/bank-borong-obligasi-saat-bi-investor-asing-mundur>
 - **6** T3 11-09 14:59 cnbc_indonesia_market: Video: IHSG Menguat Tapi Rupiah Lesu, Sentimen Ini Jadi Penyebabnya! (pasar/kurs) <https://www.cnbcindonesia.com/market/20261109143009-19-783584/video-ihsg-menguat-tapi-rupiah-lesu-sentimen-ini-jadi-penyebabnya>
@@ -30,5 +28,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-09 11:35 cnbc_indonesia_market: 9 Perusahaan Siap Melantai di BEI, 3 Calon Emiten Punya Aset Jumbo (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261109105308-17-783465/9-perusahaan-siap-melantai-di-bei-3-calon-emiten-punya-aset-jumbo>
 - **6** T3 11-09 09:22 bloomberg_technoz: IHSG Fluktuatif Pagi Ini, Wait and See Pengumuman MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127120/ihsg-fluktuatif-pagi-ini-wait-and-see-pengumuman-msci>
 - **6** T3 11-09 07:15 bloomberg_technoz: Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci>
-- **6** T3 11-08 14:06 kontan_keuangan: OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026>
-- **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
+- **5** T3 11-09 20:10 cnbc_indonesia_news: RI Kurangi Ekspor Gas Ke Singapura, Alihkan untuk Domestik (kebijakan/komoditas) <https://www.cnbcindonesia.com/news/20261109182113-4-783670/ri-kurangi-ekspor-gas-ke-singapura-alihkan-untuk-domestik>
+- **5** T3 11-09 19:28 kontan_keuangan: BSI Segera Gelar Rights Issue Maksimal 6,8 Miliar Saham, Ini Tujuan Penggunaannya (pasar/korporasi) <https://keuangan.kontan.co.id/news/bsi-segera-gelar-rights-issue-maksimal-68-miliar-saham-ini-tujuan-penggunaannya>
+- **5** T3 11-09 19:15 cnbc_indonesia_market: Samuel Sekuritas Buka Suara Tudingan Manipulasi Saham IPO Naik 5.000% (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109190139-17-783677/samuel-sekuritas-buka-suara-tudingan-manipulasi-saham-ipo-naik-5000>
+- **5** T3 11-09 17:40 bloomberg_technoz: Penyebab IHSG Ditutup Menguat Hari Ini (pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127186/penyebab-ihsg-ditutup-menguat-hari-ini>
