@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T08:54+07:00",
+ "generated_for": "2026-11-09T09:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 175,
- "kept": 42,
+ "scanned": 189,
+ "kept": 49,
  "dropped_noise": 7,
  "items": [
   {
@@ -70,6 +70,24 @@
    ]
   },
   {
+   "published": "2026-11-09T09:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "TLKM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T06:40+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -121,6 +139,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T09:22+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Fluktuatif Pagi Ini, Wait and See Pengumuman MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127120/ihsg-fluktuatif-pagi-ini-wait-and-see-pengumuman-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T07:15+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -162,6 +195,40 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T09:26+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Amran Sulaiman Genggam Saham Bayan (BYAN) 2% Lewat Entitas Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261109092155-17-783418/amran-sulaiman-genggam-saham-bayan--byan--2-lewat-entitas-ini",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BYAN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T09:25+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Terungkap! Ini Alasan Low Tuck Kwong Jual Saham BYAN ke Haji Isam",
+   "link": "https://www.cnbcindonesia.com/market/20261109081903-17-783396/terungkap-ini-alasan-low-tuck-kwong-jual-saham-byan-ke-haji-isam",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BYAN"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -225,6 +292,23 @@
    ],
    "tickers": [
     "BBCA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T09:49+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BRI Catat Laba Rp 48,16 Triliun Pada Kuartal III-2026",
+   "link": "https://keuangan.kontan.co.id/news/bri-catat-laba-rp-4816-triliun-pada-kuartal-iii-2026",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
    ],
    "flags": [],
    "also_in": []
@@ -297,25 +381,25 @@
    "also_in": []
   },
   {
-   "published": "2026-11-09T08:54+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-09T09:35+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "IHSG Dibuka Menguat 0,63% ke Level 5.082",
-   "link": "https://www.cnbcindonesia.com/market/20261109085122-17-783411/ihsg-dibuka-menguat-063-ke-level-5082",
+   "title": "Bukti Penyusutan Kelas Menengah RI: Konsumsi Minyak Goreng Turun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127119/bukti-penyusutan-kelas-menengah-ri-konsumsi-minyak-goreng-turun",
    "score": 3,
    "categories": [
-    "pasar"
+    "global"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-09T08:52+07:00",
+   "published": "2026-11-09T09:28+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Arah Rupiah Saat Pasar Menanti Data Keyakinan Konsumen",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127111/arah-rupiah-saat-pasar-menanti-data-keyakinan-konsumen",
+   "title": "Rupiah Buka Perdagangan Menguat di Rp18.104/US$",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127122/rupiah-buka-perdagangan-menguat-di-rp18-104-us",
    "score": 3,
    "categories": [
     "kurs"
@@ -325,84 +409,14 @@
    "also_in": []
   },
   {
-   "published": "2026-11-09T08:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Minyak Bisa Terjun ke US$80-an Medio 2027, Ada Syaratnya",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127117/harga-minyak-bisa-terjun-ke-us-80-an-medio-2027-ada-syaratnya",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T08:22+07:00",
+   "published": "2026-11-09T09:09+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Bursa Asia Terbelah, Saham Korea Masih Tertekan, Jepang Melaju",
-   "link": "https://www.cnbcindonesia.com/market/20261109075610-17-783378/bursa-asia-terbelah-saham-korea-masih-tertekan-jepang-melaju",
+   "title": "Rupiah Menguat Tipis, Dolar AS Turun di Rp18.075",
+   "link": "https://www.cnbcindonesia.com/market/20261109085856-17-783410/rupiah-menguat-tipis-dolar-as-turun-di-rp18075",
    "score": 3,
    "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T07:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Asing Banyak Lepas 10 Saham Ini Sepanjang Pekan Lalu",
-   "link": "https://www.cnbcindonesia.com/market/20261109065214-17-783351/asing-banyak-lepas-10-saham-ini-sepanjang-pekan-lalu",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T07:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Minyak Perpanjang Penurunan Mingguan Terdalam Sejak 2020",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127107/harga-minyak-perpanjang-penurunan-mingguan-terdalam-sejak-2020",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T07:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "IHSG Menguat Tipis di Akhir Pekan, Asing Serbu 10 Saham Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261109064615-17-783349/ihsg-menguat-tipis-di-akhir-pekan-asing-serbu-10-saham-ini",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Prediksi & Target IHSG Hari Ini, Senin 9 November 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127105/prediksi-target-ihsg-hari-ini-senin-9-november-2026",
-   "score": 3,
-   "categories": [
-    "pasar"
+    "kurs"
    ],
    "tickers": [],
    "flags": [],
