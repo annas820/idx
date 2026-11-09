@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-09T17:51+07:00 WIB | jendela 36 jam | dipindai 401, lolos 107, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-09T18:50+07:00 WIB | jendela 36 jam | dipindai 410, lolos 109, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -10,6 +10,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-09 09:30 cnbc_indonesia_market: Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI [TLKM] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci>
 - **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
 - **8** T3 11-08 12:15 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya [PANR] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya>
+- **7** T3 11-09 18:45 cnbc_indonesia_market: YUPI Bagikan Dividen Interim Rp14,83 per Saham, Cek Jadwalnya [YUPI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109182138-17-783671/yupi-bagikan-dividen-interim-rp1483-per-saham-cek-jadwalnya>
 - **7** T3 11-09 15:26 bloomberg_technoz: Rekomendasi & Target Saham BBRI Usai Cetak Laba Rp48,16 Triliun [BBRI] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127176/rekomendasi-target-saham-bbri-usai-cetak-laba-rp48-16-triliun>
 - **7** T3 11-09 12:35 cnbc_indonesia_market: Siapkan Buyback Saham Rp1 Triliun, Bos BRI Ungkap Alasannya [BBRI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109105420-17-783463/siapkan-buyback-saham-rp1-triliun-bos-bri-ungkap-alasannya>
 - **7** T3 11-09 11:15 cnbc_indonesia_market: Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya [AVIA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya>
@@ -28,4 +29,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
 - **5** T3 11-09 17:40 bloomberg_technoz: Penyebab IHSG Ditutup Menguat Hari Ini (pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127186/penyebab-ihsg-ditutup-menguat-hari-ini>
 - **5** T3 11-09 17:16 kontan_keuangan: Victoria Investama Borong 749,63 Juta Saham BVIC, Kepemilikan Naik Jadi 64,23% [BVIC] (pasar/emiten) <https://keuangan.kontan.co.id/news/victoria-investama-borong-74963-juta-saham-bvic-kepemilikan-naik-jadi-6423>
-- **5** T3 11-09 16:15 bloomberg_technoz: BP Lepas Bisnis SPBU di RI, Saham Dicaplok AKRA US$14,22 Juta [AKRA] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127185/bp-lepas-bisnis-spbu-di-ri-saham-dicaplok-akra-us-14-22-juta>
