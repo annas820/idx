@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-09T17:00+07:00 WIB | jendela 36 jam | dipindai 389, lolos 105, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-09T17:51+07:00 WIB | jendela 36 jam | dipindai 401, lolos 107, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -26,6 +26,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-09 07:15 bloomberg_technoz: Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci>
 - **6** T3 11-08 14:06 kontan_keuangan: OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026>
 - **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
+- **5** T3 11-09 17:40 bloomberg_technoz: Penyebab IHSG Ditutup Menguat Hari Ini (pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127186/penyebab-ihsg-ditutup-menguat-hari-ini>
+- **5** T3 11-09 17:16 kontan_keuangan: Victoria Investama Borong 749,63 Juta Saham BVIC, Kepemilikan Naik Jadi 64,23% [BVIC] (pasar/emiten) <https://keuangan.kontan.co.id/news/victoria-investama-borong-74963-juta-saham-bvic-kepemilikan-naik-jadi-6423>
 - **5** T3 11-09 16:15 bloomberg_technoz: BP Lepas Bisnis SPBU di RI, Saham Dicaplok AKRA US$14,22 Juta [AKRA] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127185/bp-lepas-bisnis-spbu-di-ri-saham-dicaplok-akra-us-14-22-juta>
-- **5** T3 11-09 14:46 cnbc_indonesia_market: Profil Sophia Wattimena, Eks OJK Kini Jabat Dirkeu Garuda (GIAA) [GIAA] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261109144358-17-783588/profil-sophia-wattimena-eks-ojk-kini-jabat-dirkeu-garuda--giaa->
-- **5** T3 11-09 14:40 cnbc_indonesia_market: Low Tuck Kwong Buka Suara Soal Penjualan Saham BYAN ke Haji Isam [BYAN] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261109130346-19-783530/low-tuck-kwong-buka-suara-soal-penjualan-saham-byan-ke-haji-isam>

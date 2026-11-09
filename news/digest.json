@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T17:00+07:00",
+ "generated_for": "2026-11-09T17:51+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 389,
- "kept": 105,
+ "scanned": 401,
+ "kept": 107,
  "dropped_noise": 8,
  "items": [
   {
@@ -374,6 +374,41 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T17:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Penyebab IHSG Ditutup Menguat Hari Ini",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127186/penyebab-ihsg-ditutup-menguat-hari-ini",
+   "score": 5,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
+   "published": "2026-11-09T17:16+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Victoria Investama Borong 749,63 Juta Saham BVIC, Kepemilikan Naik Jadi 64,23%",
+   "link": "https://keuangan.kontan.co.id/news/victoria-investama-borong-74963-juta-saham-bvic-kepemilikan-naik-jadi-6423",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BVIC"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T16:15+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -386,40 +421,6 @@
    ],
    "tickers": [
     "AKRA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T14:46+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Profil Sophia Wattimena, Eks OJK Kini Jabat Dirkeu Garuda (GIAA)",
-   "link": "https://www.cnbcindonesia.com/market/20261109144358-17-783588/profil-sophia-wattimena-eks-ojk-kini-jabat-dirkeu-garuda--giaa-",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "GIAA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T14:40+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Low Tuck Kwong Buka Suara Soal Penjualan Saham BYAN ke Haji Isam",
-   "link": "https://www.cnbcindonesia.com/market/20261109130346-19-783530/low-tuck-kwong-buka-suara-soal-penjualan-saham-byan-ke-haji-isam",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BYAN"
    ],
    "flags": [],
    "also_in": []
