@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T05:30+07:00",
+ "generated_for": "2026-11-10T06:32+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 375,
- "kept": 111,
+ "scanned": 376,
+ "kept": 114,
  "dropped_noise": 4,
  "items": [
   {
@@ -201,6 +201,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T06:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Resmi Hapus 18 Saham Perusahaan Ini, Ini Daftarnya!",
+   "link": "https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-ini-daftarnya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T06:16+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham Teknologi Naik, Bursa Asia Siap Mengekor Reli Wall Street",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127205/saham-teknologi-naik-bursa-asia-siap-mengekor-reli-wall-street",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-10T05:11+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -385,39 +415,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-09T19:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Samuel Sekuritas Buka Suara Tudingan Manipulasi Saham IPO Naik 5.000%",
-   "link": "https://www.cnbcindonesia.com/market/20261109190139-17-783677/samuel-sekuritas-buka-suara-tudingan-manipulasi-saham-ipo-naik-5000",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T17:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Penyebab IHSG Ditutup Menguat Hari Ini",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127186/penyebab-ihsg-ditutup-menguat-hari-ini",
-   "score": 5,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
   }
  ],
  "watchlist_hits": [
