@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T16:00+07:00",
+ "generated_for": "2026-11-09T17:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 367,
- "kept": 102,
+ "scanned": 389,
+ "kept": 105,
  "dropped_noise": 8,
  "items": [
   {
@@ -374,6 +374,23 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T16:15+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BP Lepas Bisnis SPBU di RI, Saham Dicaplok AKRA US$14,22 Juta",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127185/bp-lepas-bisnis-spbu-di-ri-saham-dicaplok-akra-us-14-22-juta",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "AKRA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T14:46+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -403,23 +420,6 @@
    ],
    "tickers": [
     "BYAN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T14:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Garuda (GIAA) Angkat Hadiyan Jadi Wadirut dan Dirkeu Eks Pejabat OJK",
-   "link": "https://www.cnbcindonesia.com/market/20261109141240-17-783577/garuda--giaa--angkat-hadiyan-jadi-wadirut-dirkeu-eks-pejabat-ojk",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "GIAA"
    ],
    "flags": [],
    "also_in": []
