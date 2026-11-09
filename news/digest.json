@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T14:20+07:00",
+ "generated_for": "2026-11-09T16:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 319,
- "kept": 89,
+ "scanned": 367,
+ "kept": 102,
  "dropped_noise": 8,
  "items": [
   {
@@ -114,6 +114,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T15:26+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rekomendasi & Target Saham BBRI Usai Cetak Laba Rp48,16 Triliun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127176/rekomendasi-target-saham-bbri-usai-cetak-laba-rp48-16-triliun",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T12:35+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -183,6 +201,72 @@
     "petunjuk"
    ],
    "also_in": []
+  },
+  {
+   "published": "2026-11-09T15:02+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Sentimen the Fed - DHE SDA, Rupiah Bisa ke Bawah Rp 18.000/USD?",
+   "link": "https://www.cnbcindonesia.com/market/20261109143012-19-783585/video-sentimen-the-fed--dhe-sda-rupiah-bisa-ke-bawah-rp-18000-usd",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T15:01+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bank Borong Obligasi Saat BI & Investor Asing Mundur",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127175/bank-borong-obligasi-saat-bi-investor-asing-mundur",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T14:59+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: IHSG Menguat Tapi Rupiah Lesu, Sentimen Ini Jadi Penyebabnya!",
+   "link": "https://www.cnbcindonesia.com/market/20261109143009-19-783584/video-ihsg-menguat-tapi-rupiah-lesu-sentimen-ini-jadi-penyebabnya",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T14:23+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Laba Bank Mandiri (BMRI) Oktober 2026 Tembus Rp46,52 Triliun",
+   "link": "https://www.cnbcindonesia.com/market/20261109134348-17-783560/laba-bank-mandiri--bmri--oktober-2026-tembus-rp4652-triliun",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
+   ]
   },
   {
    "published": "2026-11-09T12:42+07:00",
@@ -290,6 +374,40 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T14:46+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Profil Sophia Wattimena, Eks OJK Kini Jabat Dirkeu Garuda (GIAA)",
+   "link": "https://www.cnbcindonesia.com/market/20261109144358-17-783588/profil-sophia-wattimena-eks-ojk-kini-jabat-dirkeu-garuda--giaa-",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "GIAA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T14:40+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Low Tuck Kwong Buka Suara Soal Penjualan Saham BYAN ke Haji Isam",
+   "link": "https://www.cnbcindonesia.com/market/20261109130346-19-783530/low-tuck-kwong-buka-suara-soal-penjualan-saham-byan-ke-haji-isam",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BYAN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T14:15+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -305,123 +423,6 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-09T13:02+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Asing Borong BBCA Pada Perdagangan Sesi I Senin (9/11), BMRI, BBRI dan BBNI Dilepas",
-   "link": "https://keuangan.kontan.co.id/news/asing-borong-bbca-pada-perdagangan-sesi-i-senin-911-bmri-bbri-dan-bbni-dilepas",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA",
-    "BBNI",
-    "BBRI",
-    "BMRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T13:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Pekan Ini Ada 5 Saham Bagi Dividen, Cek Jadwalnya!",
-   "link": "https://www.cnbcindonesia.com/market/20261109124734-17-783516/pekan-ini-ada-5-saham-bagi-dividen-cek-jadwalnya",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T12:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Harga Batu Bara dan Minyak Melemah - Emas Lampaui USD 4.100/Onz",
-   "link": "https://www.cnbcindonesia.com/market/20261109114021-19-783490/video-harga-batu-bara-minyak-melemah--emas-lampaui-usd-4100-onz",
-   "score": 5,
-   "categories": [
-    "global",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T12:19+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
-   "link": "https://keuangan.kontan.co.id/news/direktur-bank-multiarta-sentosa-tambah-kepemilikan-3100-saham-masb",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "MASB"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T12:18+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Menkeu Suahasil Kenalkan APBN Rp3.800 T ke Siswa Sekolah Rakyat",
-   "link": "https://www.cnbcindonesia.com/news/20261109120432-4-783501/menkeu-suahasil-kenalkan-apbn-rp3800-t-ke-siswa-sekolah-rakyat",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T12:10+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Intip Daftar Pemegang Saham Bayan (BYAN), dari Haji Isam hingga Amran",
-   "link": "https://www.cnbcindonesia.com/market/20261109104600-17-783455/intip-daftar-pemegang-saham-bayan--byan--dari-haji-isam-hingga-amran",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BYAN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T10:50+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Video: Houthi Serang Riyadh, Gedung Saudi Aramco Rusak",
-   "link": "https://www.cnbcindonesia.com/news/20261109075951-8-783377/video-houthi-serang-riyadh-gedung-saudi-aramco-rusak",
-   "score": 5,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   }
  ],
  "watchlist_hits": []
