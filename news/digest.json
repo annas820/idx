@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T18:50+07:00",
+ "generated_for": "2026-11-09T20:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 410,
- "kept": 109,
+ "scanned": 430,
+ "kept": 117,
  "dropped_noise": 8,
  "items": [
   {
@@ -109,6 +109,24 @@
    ],
    "tickers": [
     "PANR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T19:02+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Laba BRI Melonjak 16,8% Jadi Rp 48,16 Triliun, Ini Prospek Saham BBRI",
+   "link": "https://keuangan.kontan.co.id/news/laba-bri-melonjak-168-jadi-rp-4816-triliun-ini-prospek-saham-bbri",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
    ],
    "flags": [],
    "also_in": []
@@ -392,40 +410,39 @@
    "also_in": []
   },
   {
-   "published": "2026-11-09T17:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Penyebab IHSG Ditutup Menguat Hari Ini",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127186/penyebab-ihsg-ditutup-menguat-hari-ini",
-   "score": 5,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-09T17:16+07:00",
+   "published": "2026-11-09T19:28+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Victoria Investama Borong 749,63 Juta Saham BVIC, Kepemilikan Naik Jadi 64,23%",
-   "link": "https://keuangan.kontan.co.id/news/victoria-investama-borong-74963-juta-saham-bvic-kepemilikan-naik-jadi-6423",
+   "title": "BSI Segera Gelar Rights Issue Maksimal 6,8 Miliar Saham, Ini Tujuan Penggunaannya",
+   "link": "https://keuangan.kontan.co.id/news/bsi-segera-gelar-rights-issue-maksimal-68-miliar-saham-ini-tujuan-penggunaannya",
    "score": 5,
    "categories": [
     "pasar",
-    "emiten"
+    "korporasi"
    ],
-   "tickers": [
-    "BVIC"
-   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
  ],
- "watchlist_hits": []
+ "watchlist_hits": [
+  {
+   "published": "2026-11-09T19:38+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Lewat Program Pengembangan Desa, Astra Sukses Raih Penghargaan Ini!",
+   "link": "https://www.cnbcindonesia.com/news/20261109193132-4-783695/lewat-program-pengembangan-desa-astra-sukses-raih-penghargaan-ini",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  }
+ ]
 }
