@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T07:55+07:00",
+ "generated_for": "2026-11-09T08:54+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 161,
- "kept": 35,
+ "scanned": 175,
+ "kept": 42,
  "dropped_noise": 7,
  "items": [
   {
@@ -101,6 +101,23 @@
     "PANR"
    ],
    "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T08:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini",
+   "score": 7,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
    "also_in": []
   },
   {
@@ -213,6 +230,56 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T08:54+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rangkuman Rekomendasi Saham Hari Ini, 9 November 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127118/rangkuman-rekomendasi-saham-hari-ini-9-november-2026",
+   "score": 4,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T08:37+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Laba BBRI Tumbuh 16,8% Jadi Rp48,16 Triliun per September 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127115/laba-bbri-tumbuh-16-8-jadi-rp48-16-triliun-per-september-2026",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T08:34+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Stagnan di Awal Pekan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127114/harga-emas-antam-stagnan-di-awal-pekan",
+   "score": 4,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T07:05+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -230,19 +297,58 @@
    "also_in": []
   },
   {
-   "published": "2026-11-07T20:45+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-09T08:54+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70%",
-   "link": "https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70",
-   "score": 4,
+   "title": "IHSG Dibuka Menguat 0,63% ke Level 5.082",
+   "link": "https://www.cnbcindonesia.com/market/20261109085122-17-783411/ihsg-dibuka-menguat-063-ke-level-5082",
+   "score": 3,
    "categories": [
-    "korporasi",
-    "emiten"
+    "pasar"
    ],
-   "tickers": [
-    "BFIN"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T08:52+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Arah Rupiah Saat Pasar Menanti Data Keyakinan Konsumen",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127111/arah-rupiah-saat-pasar-menanti-data-keyakinan-konsumen",
+   "score": 3,
+   "categories": [
+    "kurs"
    ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T08:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Minyak Bisa Terjun ke US$80-an Medio 2027, Ada Syaratnya",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127117/harga-minyak-bisa-terjun-ke-us-80-an-medio-2027-ada-syaratnya",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T08:22+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bursa Asia Terbelah, Saham Korea Masih Tertekan, Jepang Melaju",
+   "link": "https://www.cnbcindonesia.com/market/20261109075610-17-783378/bursa-asia-terbelah-saham-korea-masih-tertekan-jepang-melaju",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -297,104 +403,6 @@
    "score": 3,
    "categories": [
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Marco Rubio Sebut Belum Ada Terobosan Perundingan dengan Iran",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127099/marco-rubio-sebut-belum-ada-terobosan-perundingan-dengan-iran",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T06:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Houthi Serang Menara Saudi Aramco di Pusat Keuangan Riyadh",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127098/houthi-serang-menara-saudi-aramco-di-pusat-keuangan-riyadh",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T06:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Hitung Mundur Review MSCI Pekan Ini, Ujian Pasar Modal RI",
-   "link": "https://www.cnbcindonesia.com/market/20261109051127-17-783342/hitung-mundur-review-msci-pekan-ini-ujian-pasar-modal-ri",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T06:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Kasus Spionase Nvidia Picu Kekhawatiran di Pasar Saham Asia",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127095/kasus-spionase-nvidia-picu-kekhawatiran-di-pasar-saham-asia",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T05:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Trump Isyaratkan Tak Akan Serang Iran Lagi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127094/trump-isyaratkan-tak-akan-serang-iran-lagi",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T22:45+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Sebutkan Faktor yang Pengaruhi Pertumbuhan Aset Perasuransian hingga Akhir 2026",
-   "link": "https://keuangan.kontan.co.id/news/ojk-sebutkan-faktor-yang-pengaruhi-pertumbuhan-aset-perasuransian-hingga-akhir-2026",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T20:52+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Susun Rancangan PADK Penilaian Tingkat Kesehatan Perusahaan Pembiayaan",
-   "link": "https://keuangan.kontan.co.id/news/ojk-susun-rancangan-padk-penilaian-tingkat-kesehatan-perusahaan-pembiayaan",
-   "score": 3,
-   "categories": [
-    "kebijakan"
    ],
    "tickers": [],
    "flags": [],

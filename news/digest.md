@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-09T07:55+07:00 WIB | jendela 36 jam | dipindai 161, lolos 35, dibuang sebagai noise 7.
+Berita terbaru: 2026-11-09T08:54+07:00 WIB | jendela 36 jam | dipindai 175, lolos 42, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -9,6 +9,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **10** T3 11-07 21:57 kontan_keuangan: OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri [BMRI,JARR,PGUN] (kebijakan/pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri>
 - **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
 - **8** T3 11-08 12:15 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya [PANR] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya>
+- **7** T3 11-09 08:45 cnbc_indonesia_market: Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini>
 - **6** T3 11-09 07:15 bloomberg_technoz: Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci>
 - **6** T3 11-08 14:06 kontan_keuangan: OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026>
 - **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
@@ -16,16 +17,15 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-08 14:44 kontan_keuangan: BRI Finance Tak Bedakan Suku Bunga Kredit Kendaraan Konvensional dan Listrik [BBRI] (kebijakan/emiten) <https://keuangan.kontan.co.id/news/bri-finance-tak-bedakan-suku-bunga-kredit-kendaraan-konvensional-dan-listrik>
 - **5** T3 11-08 13:00 cnbc_indonesia_market: Video: PDB RI Melesat - Trump Kalah Pemilu Sela, Apa Efeknya ke IHSG? (pasar/makro) <https://www.cnbcindonesia.com/market/20261105144843-19-782656/video-pdb-ri-melesat--trump-kalah-pemilu-sela-apa-efeknya-ke-ihsg>
 - **5** T3 11-08 10:09 kontan_keuangan: Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu>
+- **4** T3 11-09 08:54 bloomberg_technoz: Rangkuman Rekomendasi Saham Hari Ini, 9 November 2026 (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127118/rangkuman-rekomendasi-saham-hari-ini-9-november-2026>
+- **4** T3 11-09 08:37 bloomberg_technoz: Laba BBRI Tumbuh 16,8% Jadi Rp48,16 Triliun per September 2026 [BBRI] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127115/laba-bbri-tumbuh-16-8-jadi-rp48-16-triliun-per-september-2026>
+- **4** T3 11-09 08:34 bloomberg_technoz: Harga Emas Antam Stagnan di Awal Pekan [ANTM] (komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127114/harga-emas-antam-stagnan-di-awal-pekan>
 - **4** T3 11-09 07:05 cnbc_indonesia_market: Laba BRI (BBRI) Naik 16,8% di Kuartal III Jadi Rp48,16 Triliun [BBRI] (korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109060755-17-783346/laba-bri--bbri--naik-168-di-kuartal-iii-jadi-rp4816-triliun>
-- **4** T3 11-07 20:45 kontan_keuangan: Rasio Kredit Macet BFI Finance (BFIN) Turun Jadi 1,33%, Siapkan Dividen hingga 70% [BFIN] (korporasi/emiten) <https://keuangan.kontan.co.id/news/rasio-kredit-macet-bfi-finance-bfin-turun-jadi-133-siapkan-dividen-hingga-70>
+- **3** T3 11-09 08:54 cnbc_indonesia_market: IHSG Dibuka Menguat 0,63% ke Level 5.082 (pasar) <https://www.cnbcindonesia.com/market/20261109085122-17-783411/ihsg-dibuka-menguat-063-ke-level-5082>
+- **3** T3 11-09 08:52 bloomberg_technoz: Arah Rupiah Saat Pasar Menanti Data Keyakinan Konsumen (kurs) <https://www.bloombergtechnoz.com/detail-news/127111/arah-rupiah-saat-pasar-menanti-data-keyakinan-konsumen>
+- **3** T3 11-09 08:50 bloomberg_technoz: Harga Minyak Bisa Terjun ke US$80-an Medio 2027, Ada Syaratnya (global) <https://www.bloombergtechnoz.com/detail-news/127117/harga-minyak-bisa-terjun-ke-us-80-an-medio-2027-ada-syaratnya>
+- **3** T3 11-09 08:22 cnbc_indonesia_market: Bursa Asia Terbelah, Saham Korea Masih Tertekan, Jepang Melaju (pasar) <https://www.cnbcindonesia.com/market/20261109075610-17-783378/bursa-asia-terbelah-saham-korea-masih-tertekan-jepang-melaju>
 - **3** T3 11-09 07:35 cnbc_indonesia_market: Asing Banyak Lepas 10 Saham Ini Sepanjang Pekan Lalu (pasar) <https://www.cnbcindonesia.com/market/20261109065214-17-783351/asing-banyak-lepas-10-saham-ini-sepanjang-pekan-lalu>
 - **3** T3 11-09 07:30 bloomberg_technoz: Harga Minyak Perpanjang Penurunan Mingguan Terdalam Sejak 2020 (global) <https://www.bloombergtechnoz.com/detail-news/127107/harga-minyak-perpanjang-penurunan-mingguan-terdalam-sejak-2020>
 - **3** T3 11-09 07:20 cnbc_indonesia_market: IHSG Menguat Tipis di Akhir Pekan, Asing Serbu 10 Saham Ini (pasar) <https://www.cnbcindonesia.com/market/20261109064615-17-783349/ihsg-menguat-tipis-di-akhir-pekan-asing-serbu-10-saham-ini>
 - **3** T3 11-09 07:00 bloomberg_technoz: Prediksi & Target IHSG Hari Ini, Senin 9 November 2026 (pasar) <https://www.bloombergtechnoz.com/detail-news/127105/prediksi-target-ihsg-hari-ini-senin-9-november-2026>
-- **3** T3 11-09 07:00 bloomberg_technoz: Marco Rubio Sebut Belum Ada Terobosan Perundingan dengan Iran (global) <https://www.bloombergtechnoz.com/detail-news/127099/marco-rubio-sebut-belum-ada-terobosan-perundingan-dengan-iran>
-- **3** T3 11-09 06:45 bloomberg_technoz: Houthi Serang Menara Saudi Aramco di Pusat Keuangan Riyadh (global) <https://www.bloombergtechnoz.com/detail-news/127098/houthi-serang-menara-saudi-aramco-di-pusat-keuangan-riyadh>
-- **3** T3 11-09 06:30 cnbc_indonesia_market: Hitung Mundur Review MSCI Pekan Ini, Ujian Pasar Modal RI (kebijakan) <https://www.cnbcindonesia.com/market/20261109051127-17-783342/hitung-mundur-review-msci-pekan-ini-ujian-pasar-modal-ri>
-- **3** T3 11-09 06:00 bloomberg_technoz: Kasus Spionase Nvidia Picu Kekhawatiran di Pasar Saham Asia (pasar) <https://www.bloombergtechnoz.com/detail-news/127095/kasus-spionase-nvidia-picu-kekhawatiran-di-pasar-saham-asia>
-- **3** T3 11-09 05:45 bloomberg_technoz: Trump Isyaratkan Tak Akan Serang Iran Lagi (global) <https://www.bloombergtechnoz.com/detail-news/127094/trump-isyaratkan-tak-akan-serang-iran-lagi>
-- **3** T3 11-08 22:45 kontan_keuangan: OJK Sebutkan Faktor yang Pengaruhi Pertumbuhan Aset Perasuransian hingga Akhir 2026 (kebijakan) <https://keuangan.kontan.co.id/news/ojk-sebutkan-faktor-yang-pengaruhi-pertumbuhan-aset-perasuransian-hingga-akhir-2026>
-- **3** T3 11-08 20:52 kontan_keuangan: OJK Susun Rancangan PADK Penilaian Tingkat Kesehatan Perusahaan Pembiayaan (kebijakan) <https://keuangan.kontan.co.id/news/ojk-susun-rancangan-padk-penilaian-tingkat-kesehatan-perusahaan-pembiayaan>
