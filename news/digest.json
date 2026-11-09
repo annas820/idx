@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T20:00+07:00",
+ "generated_for": "2026-11-09T21:10+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 430,
- "kept": 117,
+ "scanned": 440,
+ "kept": 122,
  "dropped_noise": 8,
  "items": [
   {
@@ -109,6 +109,24 @@
    ],
    "tickers": [
     "PANR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T20:11+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BSI (BRIS) Kantongi Restu Rights Issue 6,8 Miliar Saham, Ini Rencana Penggunaannya",
+   "link": "https://keuangan.kontan.co.id/news/bsi-bris-kantongi-restu-rights-issue-68-miliar-saham-ini-rencana-penggunaannya",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
    ],
    "flags": [],
    "also_in": []
@@ -404,21 +422,6 @@
    "categories": [
     "global",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T19:28+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BSI Segera Gelar Rights Issue Maksimal 6,8 Miliar Saham, Ini Tujuan Penggunaannya",
-   "link": "https://keuangan.kontan.co.id/news/bsi-segera-gelar-rights-issue-maksimal-68-miliar-saham-ini-tujuan-penggunaannya",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],

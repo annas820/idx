@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-09T20:00+07:00 WIB | jendela 36 jam | dipindai 430, lolos 117, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-09T21:10+07:00 WIB | jendela 36 jam | dipindai 440, lolos 122, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -13,6 +13,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-09 09:30 cnbc_indonesia_market: Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI [TLKM] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci>
 - **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
 - **8** T3 11-08 12:15 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya [PANR] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya>
+- **7** T3 11-09 20:11 kontan_keuangan: BSI (BRIS) Kantongi Restu Rights Issue 6,8 Miliar Saham, Ini Rencana Penggunaannya [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bsi-bris-kantongi-restu-rights-issue-68-miliar-saham-ini-rencana-penggunaannya>
 - **7** T3 11-09 19:02 kontan_keuangan: Laba BRI Melonjak 16,8% Jadi Rp 48,16 Triliun, Ini Prospek Saham BBRI [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bri-melonjak-168-jadi-rp-4816-triliun-ini-prospek-saham-bbri>
 - **7** T3 11-09 18:45 cnbc_indonesia_market: YUPI Bagikan Dividen Interim Rp14,83 per Saham, Cek Jadwalnya [YUPI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109182138-17-783671/yupi-bagikan-dividen-interim-rp1483-per-saham-cek-jadwalnya>
 - **7** T3 11-09 15:26 bloomberg_technoz: Rekomendasi & Target Saham BBRI Usai Cetak Laba Rp48,16 Triliun [BBRI] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127176/rekomendasi-target-saham-bbri-usai-cetak-laba-rp48-16-triliun>
@@ -31,4 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-09 07:15 bloomberg_technoz: Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci>
 - **6** T3 11-08 14:06 kontan_keuangan: OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026>
 - **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
-- **5** T3 11-09 19:28 kontan_keuangan: BSI Segera Gelar Rights Issue Maksimal 6,8 Miliar Saham, Ini Tujuan Penggunaannya (pasar/korporasi) <https://keuangan.kontan.co.id/news/bsi-segera-gelar-rights-issue-maksimal-68-miliar-saham-ini-tujuan-penggunaannya>
