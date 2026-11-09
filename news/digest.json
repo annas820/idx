@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T09:50+07:00",
+ "generated_for": "2026-11-09T10:52+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 189,
- "kept": 49,
- "dropped_noise": 7,
+ "scanned": 212,
+ "kept": 55,
+ "dropped_noise": 8,
  "items": [
   {
    "published": "2026-11-08T17:00+07:00",
@@ -44,30 +44,6 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-07T21:57+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Ungkap Aturan Gadai Saham JARR dan PGUN Milik Haji Isam ke Bank Mandiri",
-   "link": "https://keuangan.kontan.co.id/news/ojk-ungkap-aturan-gadai-saham-jarr-dan-pgun-milik-haji-isam-ke-bank-mandiri",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI",
-    "JARR",
-    "PGUN"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
   },
   {
    "published": "2026-11-09T09:30+07:00",
@@ -117,6 +93,24 @@
    ],
    "tickers": [
     "PANR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T10:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Entitas Rukun Raharja (RAJA) Caplok 90% Saham Perusahaan Kapal LNG",
+   "link": "https://www.cnbcindonesia.com/market/20261109085118-17-783413/entitas-rukun-raharja--raja--caplok-90-saham-perusahaan-kapal-lng",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "RAJA"
    ],
    "flags": [],
    "also_in": []
@@ -199,6 +193,41 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T10:50+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: Houthi Serang Riyadh, Gedung Saudi Aramco Rusak",
+   "link": "https://www.cnbcindonesia.com/news/20261109075951-8-783377/video-houthi-serang-riyadh-gedung-saudi-aramco-rusak",
+   "score": 5,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-09T10:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Afiliasi Bisnis Mentan Amran Kuasai 2% Saham BYAN",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127126/afiliasi-bisnis-mentan-amran-kuasai-2-saham-byan",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BYAN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T09:26+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -231,6 +260,24 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-09T06:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Houthi Serang Menara Saudi Aramco di Pusat Keuangan Riyadh",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127098/houthi-serang-menara-saudi-aramco-di-pusat-keuangan-riyadh",
+   "score": 5,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_news"
+   ]
   },
   {
    "published": "2026-11-08T22:00+07:00",
@@ -292,6 +339,23 @@
    ],
    "tickers": [
     "BBCA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T09:53+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Tabungan BRI Cetak Rekor, Dana Murah Naik 15,9% di Kuartal III-2026",
+   "link": "https://www.cnbcindonesia.com/market/20261109094609-17-783427/tabungan-bri-cetak-rekor-dana-murah-naik-159-di-kuartal-iii-2026",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
    ],
    "flags": [],
    "also_in": []
@@ -360,65 +424,6 @@
    "tickers": [
     "ANTM"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T07:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Laba BRI (BBRI) Naik 16,8% di Kuartal III Jadi Rp48,16 Triliun",
-   "link": "https://www.cnbcindonesia.com/market/20261109060755-17-783346/laba-bri--bbri--naik-168-di-kuartal-iii-jadi-rp4816-triliun",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:35+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bukti Penyusutan Kelas Menengah RI: Konsumsi Minyak Goreng Turun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127119/bukti-penyusutan-kelas-menengah-ri-konsumsi-minyak-goreng-turun",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:28+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Buka Perdagangan Menguat di Rp18.104/US$",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127122/rupiah-buka-perdagangan-menguat-di-rp18-104-us",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:09+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Rupiah Menguat Tipis, Dolar AS Turun di Rp18.075",
-   "link": "https://www.cnbcindonesia.com/market/20261109085856-17-783410/rupiah-menguat-tipis-dolar-as-turun-di-rp18075",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }
