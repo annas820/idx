@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-09T12:59+07:00 WIB | jendela 36 jam | dipindai 279, lolos 77, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-09T14:20+07:00 WIB | jendela 36 jam | dipindai 319, lolos 89, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -21,11 +21,11 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-09 07:15 bloomberg_technoz: Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci>
 - **6** T3 11-08 14:06 kontan_keuangan: OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026>
 - **6** T3 11-08 11:05 bloomberg_technoz: Wall Street: Saham Amerika Anjlok, Kini Waktunya untuk Beli (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127063/wall-street-saham-amerika-anjlok-kini-waktunya-untuk-beli>
+- **5** T3 11-09 14:15 cnbc_indonesia_market: Garuda (GIAA) Angkat Hadiyan Jadi Wadirut dan Dirkeu Eks Pejabat OJK [GIAA] (kebijakan/emiten) <https://www.cnbcindonesia.com/market/20261109141240-17-783577/garuda--giaa--angkat-hadiyan-jadi-wadirut-dirkeu-eks-pejabat-ojk>
+- **5** T3 11-09 13:02 kontan_keuangan: Asing Borong BBCA Pada Perdagangan Sesi I Senin (9/11), BMRI, BBRI dan BBNI Dilepas [BBCA,BBNI,BBRI,BMRI] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-borong-bbca-pada-perdagangan-sesi-i-senin-911-bmri-bbri-dan-bbni-dilepas>
+- **5** T3 11-09 13:00 cnbc_indonesia_market: Pekan Ini Ada 5 Saham Bagi Dividen, Cek Jadwalnya! (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109124734-17-783516/pekan-ini-ada-5-saham-bagi-dividen-cek-jadwalnya>
 - **5** T3 11-09 12:55 cnbc_indonesia_market: Video: Harga Batu Bara dan Minyak Melemah - Emas Lampaui USD 4.100/Onz (global/komoditas) <https://www.cnbcindonesia.com/market/20261109114021-19-783490/video-harga-batu-bara-minyak-melemah--emas-lampaui-usd-4100-onz>
 - **5** T3 11-09 12:19 kontan_keuangan: Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB [MASB] (pasar/emiten) <https://keuangan.kontan.co.id/news/direktur-bank-multiarta-sentosa-tambah-kepemilikan-3100-saham-masb>
 - **5** T3 11-09 12:18 cnbc_indonesia_news: Menkeu Suahasil Kenalkan APBN Rp3.800 T ke Siswa Sekolah Rakyat (kebijakan/makro) <https://www.cnbcindonesia.com/news/20261109120432-4-783501/menkeu-suahasil-kenalkan-apbn-rp3800-t-ke-siswa-sekolah-rakyat>
 - **5** T3 11-09 12:10 cnbc_indonesia_market: Intip Daftar Pemegang Saham Bayan (BYAN), dari Haji Isam hingga Amran [BYAN] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261109104600-17-783455/intip-daftar-pemegang-saham-bayan--byan--dari-haji-isam-hingga-amran>
 - **5** T3 11-09 10:50 cnbc_indonesia_news: Video: Houthi Serang Riyadh, Gedung Saudi Aramco Rusak (global; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/news/20261109075951-8-783377/video-houthi-serang-riyadh-gedung-saudi-aramco-rusak>
-- **5** T3 11-09 10:10 bloomberg_technoz: Afiliasi Bisnis Mentan Amran Kuasai 2% Saham BYAN [BYAN] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127126/afiliasi-bisnis-mentan-amran-kuasai-2-saham-byan>
-- **5** T3 11-09 09:26 cnbc_indonesia_market: Amran Sulaiman Genggam Saham Bayan (BYAN) 2% Lewat Entitas Ini [BYAN] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261109092155-17-783418/amran-sulaiman-genggam-saham-bayan--byan--2-lewat-entitas-ini>
-- **5** T3 11-09 09:25 cnbc_indonesia_market: Terungkap! Ini Alasan Low Tuck Kwong Jual Saham BYAN ke Haji Isam [BYAN] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261109081903-17-783396/terungkap-ini-alasan-low-tuck-kwong-jual-saham-byan-ke-haji-isam>

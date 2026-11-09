@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T12:59+07:00",
+ "generated_for": "2026-11-09T14:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 279,
- "kept": 77,
+ "scanned": 319,
+ "kept": 89,
  "dropped_noise": 8,
  "items": [
   {
@@ -290,6 +290,58 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T14:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Garuda (GIAA) Angkat Hadiyan Jadi Wadirut dan Dirkeu Eks Pejabat OJK",
+   "link": "https://www.cnbcindonesia.com/market/20261109141240-17-783577/garuda--giaa--angkat-hadiyan-jadi-wadirut-dirkeu-eks-pejabat-ojk",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "GIAA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T13:02+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Asing Borong BBCA Pada Perdagangan Sesi I Senin (9/11), BMRI, BBRI dan BBNI Dilepas",
+   "link": "https://keuangan.kontan.co.id/news/asing-borong-bbca-pada-perdagangan-sesi-i-senin-911-bmri-bbri-dan-bbni-dilepas",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BBNI",
+    "BBRI",
+    "BMRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T13:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Pekan Ini Ada 5 Saham Bagi Dividen, Cek Jadwalnya!",
+   "link": "https://www.cnbcindonesia.com/market/20261109124734-17-783516/pekan-ini-ada-5-saham-bagi-dividen-cek-jadwalnya",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T12:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -370,57 +422,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-09T10:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Afiliasi Bisnis Mentan Amran Kuasai 2% Saham BYAN",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127126/afiliasi-bisnis-mentan-amran-kuasai-2-saham-byan",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BYAN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:26+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Amran Sulaiman Genggam Saham Bayan (BYAN) 2% Lewat Entitas Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261109092155-17-783418/amran-sulaiman-genggam-saham-bayan--byan--2-lewat-entitas-ini",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BYAN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:25+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Terungkap! Ini Alasan Low Tuck Kwong Jual Saham BYAN ke Haji Isam",
-   "link": "https://www.cnbcindonesia.com/market/20261109081903-17-783396/terungkap-ini-alasan-low-tuck-kwong-jual-saham-byan-ke-haji-isam",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BYAN"
-   ],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": []
