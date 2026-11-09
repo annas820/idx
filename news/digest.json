@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T12:00+07:00",
+ "generated_for": "2026-11-09T12:59+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 246,
- "kept": 60,
+ "scanned": 279,
+ "kept": 77,
  "dropped_noise": 8,
  "items": [
   {
@@ -42,6 +42,22 @@
     "BMRI",
     "BYAN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T12:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Mulai 10 November 2026, BEI Delisting 18 Emiten",
+   "link": "https://www.cnbcindonesia.com/market/20261109093644-19-783422/video-mulai-10-november-2026-bei-delisting-18-emiten",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -98,6 +114,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T12:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Siapkan Buyback Saham Rp1 Triliun, Bos BRI Ungkap Alasannya",
+   "link": "https://www.cnbcindonesia.com/market/20261109105420-17-783463/siapkan-buyback-saham-rp1-triliun-bos-bri-ungkap-alasannya",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T11:15+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -148,6 +182,36 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T12:42+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: \"Roller Coaster\" IHSG Awal Pekan - Rupiah Tembus Rp 18.100 /USD",
+   "link": "https://www.cnbcindonesia.com/market/20261109114023-19-783489/video-roller-coaster-ihsg-awal-pekan--rupiah-tembus-rp-18100--usd",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T12:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Pekan Ini, MSCI Umumkan Rebalancing Indeks",
+   "link": "https://www.cnbcindonesia.com/market/20261109093542-19-783421/video-pekan-ini-msci-umumkan-rebalancing-indeks",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -226,6 +290,70 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T12:55+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Harga Batu Bara dan Minyak Melemah - Emas Lampaui USD 4.100/Onz",
+   "link": "https://www.cnbcindonesia.com/market/20261109114021-19-783490/video-harga-batu-bara-minyak-melemah--emas-lampaui-usd-4100-onz",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T12:19+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Direktur Bank Multiarta Sentosa Tambah Kepemilikan 3.100 Saham MASB",
+   "link": "https://keuangan.kontan.co.id/news/direktur-bank-multiarta-sentosa-tambah-kepemilikan-3100-saham-masb",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "MASB"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T12:18+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Menkeu Suahasil Kenalkan APBN Rp3.800 T ke Siswa Sekolah Rakyat",
+   "link": "https://www.cnbcindonesia.com/news/20261109120432-4-783501/menkeu-suahasil-kenalkan-apbn-rp3800-t-ke-siswa-sekolah-rakyat",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T12:10+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Intip Daftar Pemegang Saham Bayan (BYAN), dari Haji Isam hingga Amran",
+   "link": "https://www.cnbcindonesia.com/market/20261109104600-17-783455/intip-daftar-pemegang-saham-bayan--byan--dari-haji-isam-hingga-amran",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BYAN"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T10:50+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -290,139 +418,6 @@
    ],
    "tickers": [
     "BYAN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T06:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Houthi Serang Menara Saudi Aramco di Pusat Keuangan Riyadh",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127098/houthi-serang-menara-saudi-aramco-di-pusat-keuangan-riyadh",
-   "score": 5,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_news"
-   ]
-  },
-  {
-   "published": "2026-11-08T22:00+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Sejumlah Emiten Multifinance Catatkan Pertumbuhan Laba per Kuartal III-2026",
-   "link": "https://keuangan.kontan.co.id/news/sejumlah-emiten-multifinance-catatkan-pertumbuhan-laba-per-kuartal-iii-2026",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T14:44+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BRI Finance Tak Bedakan Suku Bunga Kredit Kendaraan Konvensional dan Listrik",
-   "link": "https://keuangan.kontan.co.id/news/bri-finance-tak-bedakan-suku-bunga-kredit-kendaraan-konvensional-dan-listrik",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T13:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: PDB RI Melesat - Trump Kalah Pemilu Sela, Apa Efeknya ke IHSG?",
-   "link": "https://www.cnbcindonesia.com/market/20261105144843-19-782656/video-pdb-ri-melesat--trump-kalah-pemilu-sela-apa-efeknya-ke-ihsg",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-08T10:09+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu",
-   "link": "https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T11:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Kuartal III-2026, Anak Usaha BRI Sumbang Laba Rp11,8 Triliun",
-   "link": "https://www.cnbcindonesia.com/market/20261109101347-17-783439/kuartal-iii-2026-anak-usaha-bri-sumbang-laba-rp118-triliun",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:53+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Tabungan BRI Cetak Rekor, Dana Murah Naik 15,9% di Kuartal III-2026",
-   "link": "https://www.cnbcindonesia.com/market/20261109094609-17-783427/tabungan-bri-cetak-rekor-dana-murah-naik-159-di-kuartal-iii-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:49+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BRI Catat Laba Rp 48,16 Triliun Pada Kuartal III-2026",
-   "link": "https://keuangan.kontan.co.id/news/bri-catat-laba-rp-4816-triliun-pada-kuartal-iii-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
    ],
    "flags": [],
    "also_in": []
