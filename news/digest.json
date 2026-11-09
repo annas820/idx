@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-09T10:52+07:00",
+ "generated_for": "2026-11-09T12:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 212,
- "kept": 55,
+ "scanned": 246,
+ "kept": 60,
  "dropped_noise": 8,
  "items": [
   {
@@ -98,6 +98,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T11:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya",
+   "link": "https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "AVIA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T10:05+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -130,6 +148,21 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T11:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "9 Perusahaan Siap Melantai di BEI, 3 Calon Emiten Punya Aset Jumbo",
+   "link": "https://www.cnbcindonesia.com/market/20261109105308-17-783465/9-perusahaan-siap-melantai-di-bei-3-calon-emiten-punya-aset-jumbo",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -344,6 +377,23 @@
    "also_in": []
   },
   {
+   "published": "2026-11-09T11:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Kuartal III-2026, Anak Usaha BRI Sumbang Laba Rp11,8 Triliun",
+   "link": "https://www.cnbcindonesia.com/market/20261109101347-17-783439/kuartal-iii-2026-anak-usaha-bri-sumbang-laba-rp118-triliun",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-09T09:53+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -373,56 +423,6 @@
    ],
    "tickers": [
     "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T08:54+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rangkuman Rekomendasi Saham Hari Ini, 9 November 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127118/rangkuman-rekomendasi-saham-hari-ini-9-november-2026",
-   "score": 4,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T08:37+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Laba BBRI Tumbuh 16,8% Jadi Rp48,16 Triliun per September 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127115/laba-bbri-tumbuh-16-8-jadi-rp48-16-triliun-per-september-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T08:34+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Stagnan di Awal Pekan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127114/harga-emas-antam-stagnan-di-awal-pekan",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
    ],
    "flags": [],
    "also_in": []

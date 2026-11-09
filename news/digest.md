@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-09T10:52+07:00 WIB | jendela 36 jam | dipindai 212, lolos 55, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-09T12:00+07:00 WIB | jendela 36 jam | dipindai 246, lolos 60, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -9,8 +9,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-09 09:30 cnbc_indonesia_market: Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI [TLKM] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci>
 - **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
 - **8** T3 11-08 12:15 cnbc_indonesia_market: OJK Bongkar Manipulasi Saham PANR Sampai Untung Rp 5 M, Ini Modusnya [PANR] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261108061608-17-783232/ojk-bongkar-manipulasi-saham-panr-sampai-untung-rp-5-m-ini-modusnya>
+- **7** T3 11-09 11:15 cnbc_indonesia_market: Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya [AVIA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya>
 - **7** T3 11-09 10:05 cnbc_indonesia_market: Entitas Rukun Raharja (RAJA) Caplok 90% Saham Perusahaan Kapal LNG [RAJA] (pasar/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261109085118-17-783413/entitas-rukun-raharja--raja--caplok-90-saham-perusahaan-kapal-lng>
 - **7** T3 11-09 08:45 cnbc_indonesia_market: Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-09 11:35 cnbc_indonesia_market: 9 Perusahaan Siap Melantai di BEI, 3 Calon Emiten Punya Aset Jumbo (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261109105308-17-783465/9-perusahaan-siap-melantai-di-bei-3-calon-emiten-punya-aset-jumbo>
 - **6** T3 11-09 09:22 bloomberg_technoz: IHSG Fluktuatif Pagi Ini, Wait and See Pengumuman MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127120/ihsg-fluktuatif-pagi-ini-wait-and-see-pengumuman-msci>
 - **6** T3 11-09 07:15 bloomberg_technoz: Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci>
 - **6** T3 11-08 14:06 kontan_keuangan: OJK Beri 45 Sanksi Soal Kewajiban Pelaporan Kegiatan Literasi&Inklusi per Oktober2026 (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-beri-45-sanksi-soal-kewajiban-pelaporan-kegiatan-literasiinklusi-per-oktober2026>
@@ -24,8 +26,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-08 14:44 kontan_keuangan: BRI Finance Tak Bedakan Suku Bunga Kredit Kendaraan Konvensional dan Listrik [BBRI] (kebijakan/emiten) <https://keuangan.kontan.co.id/news/bri-finance-tak-bedakan-suku-bunga-kredit-kendaraan-konvensional-dan-listrik>
 - **5** T3 11-08 13:00 cnbc_indonesia_market: Video: PDB RI Melesat - Trump Kalah Pemilu Sela, Apa Efeknya ke IHSG? (pasar/makro) <https://www.cnbcindonesia.com/market/20261105144843-19-782656/video-pdb-ri-melesat--trump-kalah-pemilu-sela-apa-efeknya-ke-ihsg>
 - **5** T3 11-08 10:09 kontan_keuangan: Asing Borong Saham Big Banks, BBCA Paling Banyak Diburu [BBCA] (pasar/emiten) <https://keuangan.kontan.co.id/news/asing-borong-saham-big-banks-bbca-paling-banyak-diburu>
+- **4** T3 11-09 11:05 cnbc_indonesia_market: Kuartal III-2026, Anak Usaha BRI Sumbang Laba Rp11,8 Triliun [BBRI] (korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109101347-17-783439/kuartal-iii-2026-anak-usaha-bri-sumbang-laba-rp118-triliun>
 - **4** T3 11-09 09:53 cnbc_indonesia_market: Tabungan BRI Cetak Rekor, Dana Murah Naik 15,9% di Kuartal III-2026 [BBRI] (korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109094609-17-783427/tabungan-bri-cetak-rekor-dana-murah-naik-159-di-kuartal-iii-2026>
 - **4** T3 11-09 09:49 kontan_keuangan: BRI Catat Laba Rp 48,16 Triliun Pada Kuartal III-2026 [BBRI] (korporasi/emiten) <https://keuangan.kontan.co.id/news/bri-catat-laba-rp-4816-triliun-pada-kuartal-iii-2026>
-- **4** T3 11-09 08:54 bloomberg_technoz: Rangkuman Rekomendasi Saham Hari Ini, 9 November 2026 (pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127118/rangkuman-rekomendasi-saham-hari-ini-9-november-2026>
-- **4** T3 11-09 08:37 bloomberg_technoz: Laba BBRI Tumbuh 16,8% Jadi Rp48,16 Triliun per September 2026 [BBRI] (korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127115/laba-bbri-tumbuh-16-8-jadi-rp48-16-triliun-per-september-2026>
-- **4** T3 11-09 08:34 bloomberg_technoz: Harga Emas Antam Stagnan di Awal Pekan [ANTM] (komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127114/harga-emas-antam-stagnan-di-awal-pekan>
