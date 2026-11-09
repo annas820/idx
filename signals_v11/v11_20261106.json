@@ -1,0 +1,125 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261106",
+ "sessions": 18,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "SMIL",
+   "signal_date": "20261106",
+   "close": 408.0,
+   "atr": 17.69,
+   "limit": 399.15,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "AMRT",
+   "signal_date": "20261106",
+   "close": 975.0,
+   "atr": 63.5,
+   "limit": 943.25,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "AYAM",
+   "signal_date": "20261106",
+   "close": 486.0,
+   "atr": 19.91,
+   "limit": 476.04,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BIPI",
+   "signal_date": "20261106",
+   "close": 78.0,
+   "atr": 7.61,
+   "limit": 74.2,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "CTRA",
+   "signal_date": "20261106",
+   "close": 494.0,
+   "atr": 27.95,
+   "limit": 480.03,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ],
+ "breadth": 0.24,
+ "breadth_1d": 0.32,
+ "regime_ok": false,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "ASII",
+   "ratio_5d": 0.269,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "EXCL",
+   "ratio_5d": 0.254,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "KOTA",
+   "ratio_5d": 0.192,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "WIFI",
+   "ratio_5d": 0.148,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "TOWR",
+   "ratio_5d": 0.139,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "BNBR",
+   "ratio_5d": 0.139,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "IMPC",
+   "ratio_5d": 0.13,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "ENRG",
+   "ratio_5d": 0.129,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "RAJA",
+   "ratio_5d": 0.115,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "BRMS",
+   "ratio_5d": 0.109,
+   "positive_sessions": 4
+  }
+ ],
+ "status": "breadth di bawah 40% (5 sesi atau 1 hari): tidak ada sinyal"
+}

@@ -1,0 +1,185 @@
+{
+  "schema": "idx.bandar.screen.v1",
+  "provider": "ipot",
+  "fetched_at": "2026-11-09T11:18:58Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "period": "1w",
+    "from": "2026-11-03",
+    "to": "2026-11-09",
+    "top": 5,
+    "preset": "foreign-accumulation",
+    "filters": [
+      "acc>=5",
+      "fpct>=5"
+    ],
+    "sort": "acc",
+    "descending": true,
+    "scanned": 100,
+    "checked": 100,
+    "total_matches": 5,
+    "rows": [
+      {
+        "symbol": "DKFT",
+        "name": "CENTRAL OMEGA RESOURCES Tbk",
+        "signal": "big_accumulation",
+        "phase": "markup",
+        "net_pct": 28.000000000000004,
+        "net_value": 12600000000.0,
+        "net_lots": 185608.0,
+        "price": 705.0,
+        "price_change_pct": 6.015037593984962,
+        "bandar_average": 689.6591339025979,
+        "bandar_gain_pct": 2.2244128067429703,
+        "buy_share_pct": 79.33333333333333,
+        "total_value": 45000000000.0,
+        "foreign_net_value": 15900000000.0,
+        "foreign_net_pct": 35.333333333333336,
+        "top_buyers": [
+          "ZP",
+          "BQ",
+          "CC",
+          "XL",
+          "KK"
+        ],
+        "top_sellers": [
+          "XL",
+          "CC",
+          "AK",
+          "AZ",
+          "OD"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "ASII",
+        "name": "ASTRA INTERNATIONAL Tbk",
+        "signal": "big_accumulation",
+        "phase": "markup",
+        "net_pct": 23.03076923076923,
+        "net_value": 299400000000.0,
+        "net_lots": 587855.0,
+        "price": 5150.0,
+        "price_change_pct": 5.967078189300401,
+        "bandar_average": 4902.6068494425135,
+        "bandar_gain_pct": 5.04615520181102,
+        "buy_share_pct": 79.32307692307691,
+        "total_value": 1300000000000.0,
+        "foreign_net_value": 649300000000.0,
+        "foreign_net_pct": 49.94615384615385,
+        "top_buyers": [
+          "AK",
+          "KZ",
+          "CC",
+          "YU",
+          "ZP"
+        ],
+        "top_sellers": [
+          "CC",
+          "AK",
+          "ZP",
+          "YU",
+          "XL"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "SRTG",
+        "name": "SARATOGA INVESTAMA SEDAYA Tbk",
+        "signal": "big_accumulation",
+        "phase": "markup",
+        "net_pct": 19.12144702842377,
+        "net_value": 7400000000.0,
+        "net_lots": 44926.0,
+        "price": 1735.0,
+        "price_change_pct": 8.437500000000009,
+        "bandar_average": 1677.8947183317546,
+        "bandar_gain_pct": 3.403388844624433,
+        "buy_share_pct": 108.26873385012921,
+        "total_value": 38700000000.0,
+        "foreign_net_value": 6000000000.0,
+        "foreign_net_pct": 15.503875968992247,
+        "top_buyers": [
+          "YU",
+          "CC",
+          "XL",
+          "OD",
+          "AK"
+        ],
+        "top_sellers": [
+          "CC",
+          "YU",
+          "AK",
+          "OD",
+          "GR"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "BBCA",
+        "name": "BANK CENTRAL ASIA Tbk",
+        "signal": "accumulation",
+        "phase": "markup",
+        "net_pct": 14.556451612903226,
+        "net_value": 902500000000.0,
+        "net_lots": 1812423.0,
+        "price": 5325.0,
+        "price_change_pct": 6.927710843373491,
+        "bandar_average": 5062.173984971252,
+        "bandar_gain_pct": 5.191959340177443,
+        "buy_share_pct": 66.72741935483872,
+        "total_value": 6200000000000.0,
+        "foreign_net_value": 1700000000000.0,
+        "foreign_net_pct": 27.419354838709676,
+        "top_buyers": [
+          "AK",
+          "KZ",
+          "ZP",
+          "YU",
+          "CC"
+        ],
+        "top_sellers": [
+          "CC",
+          "AK",
+          "BK",
+          "ZP",
+          "KZ"
+        ],
+        "rounded": true
+      },
+      {
+        "symbol": "DOOH",
+        "name": "ERA MEDIA SEJAHTERA Tbk",
+        "signal": "accumulation",
+        "phase": "quiet_accumulation",
+        "net_pct": 6.264945002391201,
+        "net_value": 13100000000.0,
+        "net_lots": 697377.0,
+        "price": 212.0,
+        "price_change_pct": -0.9345794392523366,
+        "bandar_average": 197.32599541253208,
+        "bandar_gain_pct": 7.436427499980569,
+        "buy_share_pct": 65.90148254423721,
+        "total_value": 209100000000.0,
+        "foreign_net_value": 13200000000.0,
+        "foreign_net_pct": 6.312769010043041,
+        "top_buyers": [
+          "XL",
+          "YB",
+          "AK",
+          "CC",
+          "CP"
+        ],
+        "top_sellers": [
+          "XL",
+          "YB",
+          "CC",
+          "AK",
+          "YP"
+        ],
+        "rounded": true
+      }
+    ]
+  }
+}

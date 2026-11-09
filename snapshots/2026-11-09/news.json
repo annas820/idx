@@ -1,0 +1,295 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-09T11:18:59Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Ada Pengumuman Penting buat Nasabah BNI, Simak!",
+        "url": "https://www.cnbcindonesia.com/market/20261109164112-17-783650/ada-pengumuman-penting-buat-nasabah-bni-simak",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T18:15:12+07:00",
+        "summary": "Berikut pengumuman Bank Negara Indonesia (BNI) yang perlu nasabah tahu.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "IPOT X Hadirkan INAI dan IPOT X Studio, Revolusi Trading Desktop",
+        "url": "https://keuangan.kontan.co.id/news/ipot-x-hadirkan-inai-dan-ipot-x-studio-revolusi-trading-desktop",
+        "source": "kontan/keuangan",
+        "published": "2026-11-09T17:51:40+07:00",
+        "summary": "INAI merupakan terobosan trading dengan perintah lewat chat yang diposisikan perusahaan sebagai yang pertama di dunia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bikin Lidah Keseleo! Ini Daftar Nama Tempat Terpanjang di Dunia",
+        "url": "https://www.cnbcindonesia.com/research/20261109162135-128-783634/bikin-lidah-keseleo-ini-daftar-nama-tempat-terpanjang-di-dunia",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-09T17:50:03+07:00",
+        "summary": "Nama tempat di dunia ternyata bisa sangat panjang, bahkan ada yang mencapai puluhan huruf",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit BRI Tumbuh 14,5% Jadi Rp 1.647 Triliun, Ini Pendorongnya",
+        "url": "https://keuangan.kontan.co.id/news/kredit-bri-tumbuh-145-jadi-rp-1647-triliun-ini-pendorongnya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-09T17:49:31+07:00",
+        "summary": "BRI mencatatkan kredit Rp 1.647,1 triliun hingga kuartal III-2026, dengan segmen UMKM mendominasi 75,9% dari total portofolio kredit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bersiap Jadi Direktur Utama JTrust Bank, Abdullah Firman Mundur dari Komisaris",
+        "url": "https://keuangan.kontan.co.id/news/berisap-jadi-direktur-utama-jtrust-bank-abdullah-firman-mundur-dari-komisaris",
+        "source": "kontan/keuangan",
+        "published": "2026-11-09T17:18:14+07:00",
+        "summary": "Abdullah Firman Wibowo mengundurkan diri dari jabatan Komisaris Independen sebagai persiapan untuk menduduki posisi Direktur Utama JTrust Bank.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Victoria Investama Borong 749,63 Juta Saham BVIC, Kepemilikan Naik Jadi 64,23%",
+        "url": "https://keuangan.kontan.co.id/news/victoria-investama-borong-74963-juta-saham-bvic-kepemilikan-naik-jadi-6423",
+        "source": "kontan/keuangan",
+        "published": "2026-11-09T17:16:22+07:00",
+        "summary": "Victoria Investama menambah 749,63 juta saham BVIC dengan harga Rp 80 per saham. Kepemilikan naik menjadi 64,23%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Ngeri! Vietnam Pasang Target Gila Ekonomi Tumbuh 10% Tahun Depan",
+        "url": "https://www.cnbcindonesia.com/research/20261109112032-128-783504/ngeri-vietnam-pasang-target-gila-ekonomi-tumbuh-10-tahun-depan",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-09T16:55:19+07:00",
+        "summary": "Vietnam menargetkan pertumbuhan ekonomi minimal 10% pada 2027 melalui penguatan manufaktur, ekspor, investasi asing",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Rekap Laba Bank Jumbo Kuartal III-2026, Siapa Paling Cuan?",
+        "url": "https://www.cnbcindonesia.com/market/20261109150420-17-783604/rekap-laba-bank-jumbo-kuartal-iii-2026-siapa-paling-cuan",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T16:45:36+07:00",
+        "summary": "Bank besar Indonesia telah mengumumkan kinerja keuangan Q3/2026. Siapa bank dengan laba terbesar?",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "cuan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "KPK Sita Rp2 Miliar dari Bos KAI, Managemen Buka Suara",
+        "url": "https://www.cnbcindonesia.com/market/20261109154843-17-783618/kpk-sita-rp2-miliar-dari-bos-kai-managemen-buka-suara",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T16:25:07+07:00",
+        "summary": "PT KAI menanggapi penyitaan Rp 2 miliar oleh KPK dari Dirut terkait kasus digitalisasi SPBU. KAI menegaskan tak terlibat kegiatan itu.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Sustainability Sukuk BSI Laris Diserbu Publik, Oversubscribe 250%",
+        "url": "https://keuangan.kontan.co.id/news/sustainability-sukuk-bsi-laris-diserbu-publik-oversubscribe-250",
+        "source": "kontan/keuangan",
+        "published": "2026-11-09T16:13:22+07:00",
+        "summary": "BSI mencatat antusiasme tinggi investor terhadap penerbitan Sukuk Mudharabah Berlandaskan Keberlanjutan I Bank BSI Tahap III Tahun 2026. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ini Beda Gaji dan Tunjangan PPPK Paruh Waktu dan Penuh Waktu",
+        "url": "https://www.cnbcindonesia.com/research/20261109125855-128-783543/ini-beda-gaji-tunjangan-pppk-paruh-waktu-dan-penuh-waktu",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-09T16:05:22+07:00",
+        "summary": "Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) memiliki dua skema status kepegawaian, yakni paruh waktu dan penuh waktu.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "IHSG Ditutup Menguat 0,46% ke Level 5.073,77",
+        "url": "https://www.cnbcindonesia.com/market/20261109152121-17-783620/ihsg-ditutup-menguat-046-ke-level-507377",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T16:04:32+07:00",
+        "summary": "IHSG ditutup menguat 23,34 poin pada 5.073,77 di perdagangan 9 November 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Pendapatan Naik 13,2%, Rugi Garuda (GIAA) Jadi Susut 3%",
+        "url": "https://www.cnbcindonesia.com/market/20261109150303-17-783602/pendapatan-naik-132-rugi-garuda--giaa--jadi-susut-3",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T15:45:46+07:00",
+        "summary": "PT Garuda Indonesia mencatat kerugian US$179,3 juta hingga September 2026, namun menunjukkan perbaikan kinerja.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -0.3333333333333333,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": [
+          "rugi",
+          "kerugian"
+        ]
+      },
+      {
+        "title": "Mengukur Kontribusi dan Ketahanan Bank di Indonesia, Siapa yang Terbaik?",
+        "url": "https://www.cnbcindonesia.com/market/20261109152437-17-783612/mengukur-kontribusi-ketahanan-bank-di-indonesia-siapa-yang-terbaik",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T15:29:11+07:00",
+        "summary": "Industri perbankan Indonesia menunjukkan ketahanan di tengah volatilitas ekonomi. OJK mencatat pertumbuhan kredit dan DPK yang stabil.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Perang Pelanggan Makin Sengit, XLSmart Tebar HP 5G Murah-Kuota Gratis",
+        "url": "https://www.cnbcindonesia.com/research/20261105164531-128-782706/perang-pelanggan-makin-sengit-xlsmart-tebar-hp-5g-murah-kuota-gratis",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-09T15:25:35+07:00",
+        "summary": "PT XLSmart Telecom meluncurkan bundling Nubia A77 5G seharga Rp3,5 juta dengan paket internet 5G unlimited",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Dolar AS Loyo, Rupiah Ditutup Menguat ke Rp18.070/US$",
+        "url": "https://www.cnbcindonesia.com/market/20261109150828-17-783605/dolar-as-loyo-rupiah-ditutup-menguat-ke-rp18070-us-",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T15:11:14+07:00",
+        "summary": "Mata uang Garuda melanjutkan tren positif sejak pembukaan dan mengakhiri perdagangan Senin (9/11/2026) di zona hijau.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat",
+          "positif"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Sentimen the Fed - DHE SDA, Rupiah Bisa ke Bawah Rp 18.000/USD?",
+        "url": "https://www.cnbcindonesia.com/market/20261109143012-19-783585/video-sentimen-the-fed--dhe-sda-rupiah-bisa-ke-bawah-rp-18000-usd",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T15:02:23+07:00",
+        "summary": "Potensi Bunga the Fed Naik- Aturan DHE SDA, Rupiah Bisa ke Bawah Rp 18.000/USD?",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BNI Bakal Tutup Layanan BNI Mobile Banking 30 November dan 21 Desember 2026",
+        "url": "https://keuangan.kontan.co.id/news/bni-bakal-tutup-layanan-bni-mobile-banking-30-november-dan-21-desember-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-09T15:01:07+07:00",
+        "summary": "BNI bakal menutup layanan BNI Mobile Banking secara keseluruhan pada 21 Desember 2026 dan mulai penutupan akses pengguna mulai 30 November 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: IHSG Menguat Tapi Rupiah Lesu, Sentimen Ini Jadi Penyebabnya!",
+        "url": "https://www.cnbcindonesia.com/market/20261109143009-19-783584/video-ihsg-menguat-tapi-rupiah-lesu-sentimen-ini-jadi-penyebabnya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T14:59:58+07:00",
+        "summary": "IHSG Menguat Tapi Rupiah Lesu, Sentimen Ini Jadi Penyebabnya!",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": [
+          "lesu"
+        ]
+      },
+      {
+        "title": "Dirut hingga Komisaris Utama VTNY Kompak Mundur, Ada Apa?",
+        "url": "https://www.cnbcindonesia.com/market/20261109123754-17-783514/dirut-hingga-komisaris-utama-vtny-kompak-mundur-ada-apa",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-09T14:55:53+07:00",
+        "summary": "PT Venteny Fortuna International Tbk. (VTNY) umumkan perombakan direksi setelah tiga petinggi mengundurkan diri.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}

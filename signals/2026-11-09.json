@@ -1,0 +1,70 @@
+{
+ "version": "CLO-FT-1.0",
+ "signal_date": "2026-11-09",
+ "breadth": 0.093,
+ "universe_with_data": 97,
+ "regime_ok": false,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "BRMS",
+   "signal_date": "2026-11-09",
+   "close": 310.0,
+   "atr": 31.26,
+   "limit": 294.37,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "AMMN",
+   "signal_date": "2026-11-09",
+   "close": 3590.0,
+   "atr": 257.09,
+   "limit": 3461.45,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "KLBF",
+   "signal_date": "2026-11-09",
+   "close": 740.0,
+   "atr": 29.34,
+   "limit": 725.33,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "DMAS",
+   "signal_date": "2026-11-09",
+   "close": 163.0,
+   "atr": 10.57,
+   "limit": 157.71,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SGER",
+   "signal_date": "2026-11-09",
+   "close": 630.0,
+   "atr": 52.71,
+   "limit": 603.64,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ]
+}

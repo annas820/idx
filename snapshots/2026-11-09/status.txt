@@ -1,0 +1,33 @@
+OK   holidays
+OK   overview
+FAIL indices (exit 3)
+OK   quotes
+OK   returns
+OK   news
+FAIL foreign_mkt (exit 3)
+OK   bandar
+OK   fnet_1d
+OK   fnet_5d
+OK   hist_AADI
+OK   tech_AADI
+FAIL frgn_AADI (exit 3)
+OK   sent_AADI
+OK   act_AADI
+OK   hist_INCO
+OK   tech_INCO
+FAIL frgn_INCO (exit 3)
+OK   sent_INCO
+OK   act_INCO
+OK   hist_INDF
+OK   tech_INDF
+FAIL frgn_INDF (exit 3)
+OK   sent_INDF
+OK   act_INDF
+OK   hist_ASII
+OK   tech_ASII
+FAIL frgn_ASII (exit 3)
+OK   sent_ASII
+OK   act_ASII
+run at 2026-11-09 11:19:34 UTC
+hist files: 143
+2026-11-09 breadth 0.093 universe 97 signals 0 controls 5
