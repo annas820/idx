@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T06:32+07:00 WIB | jendela 36 jam | dipindai 376, lolos 114, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-10T07:45+07:00 WIB | jendela 36 jam | dipindai 386, lolos 120, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,6 +10,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-09 12:30 cnbc_indonesia_market: Video: Mulai 10 November 2026, BEI Delisting 18 Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109093644-19-783422/video-mulai-10-november-2026-bei-delisting-18-emiten>
 - **8** T3 11-09 09:30 cnbc_indonesia_market: Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI [TLKM] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci>
 - **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
+- **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
 - **7** T3 11-09 20:11 kontan_keuangan: BSI (BRIS) Kantongi Restu Rights Issue 6,8 Miliar Saham, Ini Rencana Penggunaannya [BRIS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/bsi-bris-kantongi-restu-rights-issue-68-miliar-saham-ini-rencana-penggunaannya>
 - **7** T3 11-09 19:02 kontan_keuangan: Laba BRI Melonjak 16,8% Jadi Rp 48,16 Triliun, Ini Prospek Saham BBRI [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bri-melonjak-168-jadi-rp-4816-triliun-ini-prospek-saham-bbri>
 - **7** T3 11-09 18:45 cnbc_indonesia_market: YUPI Bagikan Dividen Interim Rp14,83 per Saham, Cek Jadwalnya [YUPI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109182138-17-783671/yupi-bagikan-dividen-interim-rp1483-per-saham-cek-jadwalnya>
@@ -19,6 +20,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-09 10:05 cnbc_indonesia_market: Entitas Rukun Raharja (RAJA) Caplok 90% Saham Perusahaan Kapal LNG [RAJA] (pasar/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261109085118-17-783413/entitas-rukun-raharja--raja--caplok-90-saham-perusahaan-kapal-lng>
 - **7** T3 11-09 08:45 cnbc_indonesia_market: Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini>
 - **6** T3 11-10 06:20 cnbc_indonesia_market: BEI Resmi Hapus 18 Saham Perusahaan Ini, Ini Daftarnya! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-ini-daftarnya>
+- **6** T3 11-10 06:20 cnbc_indonesia_market: BEI Resmi Hapus 18 Saham Perusahaan, Ini Daftarnya! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-daftarnya>
 - **6** T3 11-10 06:16 bloomberg_technoz: Saham Teknologi Naik, Bursa Asia Siap Mengekor Reli Wall Street (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127205/saham-teknologi-naik-bursa-asia-siap-mengekor-reli-wall-street>
 - **6** T3 11-10 05:11 bloomberg_technoz: Wall Street Rebound, Saham Teknologi Menguat Meski Nvidia Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127201/wall-street-rebound-saham-teknologi-menguat-meski-nvidia-anjlok>
 - **6** T3 11-09 15:02 cnbc_indonesia_market: Video: Sentimen the Fed - DHE SDA, Rupiah Bisa ke Bawah Rp 18.000/USD? (global/kurs) <https://www.cnbcindonesia.com/market/20261109143012-19-783585/video-sentimen-the-fed--dhe-sda-rupiah-bisa-ke-bawah-rp-18000-usd>
@@ -30,5 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-09 11:35 cnbc_indonesia_market: 9 Perusahaan Siap Melantai di BEI, 3 Calon Emiten Punya Aset Jumbo (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261109105308-17-783465/9-perusahaan-siap-melantai-di-bei-3-calon-emiten-punya-aset-jumbo>
 - **6** T3 11-09 09:22 bloomberg_technoz: IHSG Fluktuatif Pagi Ini, Wait and See Pengumuman MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127120/ihsg-fluktuatif-pagi-ini-wait-and-see-pengumuman-msci>
 - **6** T3 11-09 07:15 bloomberg_technoz: Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci>
-- **5** T3 11-09 20:10 cnbc_indonesia_news: RI Kurangi Ekspor Gas Ke Singapura, Alihkan untuk Domestik (kebijakan/komoditas) <https://www.cnbcindonesia.com/news/20261109182113-4-783670/ri-kurangi-ekspor-gas-ke-singapura-alihkan-untuk-domestik>
-- **5** T3 11-09 19:28 kontan_keuangan: BSI Segera Gelar Rights Issue Maksimal 6,8 Miliar Saham, Ini Tujuan Penggunaannya (pasar/korporasi) <https://keuangan.kontan.co.id/news/bsi-segera-gelar-rights-issue-maksimal-68-miliar-saham-ini-tujuan-penggunaannya>

@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T06:32+07:00",
+ "generated_for": "2026-11-10T07:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 376,
- "kept": 114,
+ "scanned": 386,
+ "kept": 120,
  "dropped_noise": 4,
  "items": [
   {
@@ -54,6 +54,24 @@
     "korporasi"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T07:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara",
+   "link": "https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "SRIL"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -206,6 +224,21 @@
    "tier": 3,
    "title": "BEI Resmi Hapus 18 Saham Perusahaan Ini, Ini Daftarnya!",
    "link": "https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-ini-daftarnya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T06:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Resmi Hapus 18 Saham Perusahaan, Ini Daftarnya!",
+   "link": "https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-daftarnya",
    "score": 6,
    "categories": [
     "kebijakan",
@@ -381,36 +414,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T20:10+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "RI Kurangi Ekspor Gas Ke Singapura, Alihkan untuk Domestik",
-   "link": "https://www.cnbcindonesia.com/news/20261109182113-4-783670/ri-kurangi-ekspor-gas-ke-singapura-alihkan-untuk-domestik",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T19:28+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BSI Segera Gelar Rights Issue Maksimal 6,8 Miliar Saham, Ini Tujuan Penggunaannya",
-   "link": "https://keuangan.kontan.co.id/news/bsi-segera-gelar-rights-issue-maksimal-68-miliar-saham-ini-tujuan-penggunaannya",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],
