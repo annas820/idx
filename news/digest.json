@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T14:00+07:00",
+ "generated_for": "2026-11-10T15:10+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 518,
- "kept": 160,
+ "scanned": 544,
+ "kept": 166,
  "dropped_noise": 4,
  "items": [
   {
@@ -315,6 +315,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T15:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-10T11:57+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -420,21 +435,6 @@
    "categories": [
     "global",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T15:02+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Sentimen the Fed - DHE SDA, Rupiah Bisa ke Bawah Rp 18.000/USD?",
-   "link": "https://www.cnbcindonesia.com/market/20261109143012-19-783585/video-sentimen-the-fed--dhe-sda-rupiah-bisa-ke-bawah-rp-18000-usd",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T14:00+07:00 WIB | jendela 36 jam | dipindai 518, lolos 160, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-10T15:10+07:00 WIB | jendela 36 jam | dipindai 544, lolos 166, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -26,6 +26,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-09 11:15 cnbc_indonesia_market: Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya [AVIA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya>
 - **7** T3 11-09 10:05 cnbc_indonesia_market: Entitas Rukun Raharja (RAJA) Caplok 90% Saham Perusahaan Kapal LNG [RAJA] (pasar/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261109085118-17-783413/entitas-rukun-raharja--raja--caplok-90-saham-perusahaan-kapal-lng>
 - **7** T3 11-09 08:45 cnbc_indonesia_market: Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-10 15:10 bloomberg_technoz: BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa>
 - **6** T3 11-10 11:57 cnbc_indonesia_market: Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci>
 - **6** T3 11-10 11:42 cnbc_indonesia_market: Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main>
 - **6** T3 11-10 08:30 cnbc_indonesia_market: Rights Issue Dapat Restu, BRIS Ungkap Target Penggunaannya [BRIS] (korporasi/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.cnbcindonesia.com/market/20261110072727-17-783728/rights-issue-dapat-restu-bris-ungkap-target-penggunaannya>
@@ -33,4 +34,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 06:20 cnbc_indonesia_market: BEI Resmi Hapus 18 Saham Perusahaan, Ini Daftarnya! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-daftarnya>
 - **6** T3 11-10 06:16 bloomberg_technoz: Saham Teknologi Naik, Bursa Asia Siap Mengekor Reli Wall Street (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127205/saham-teknologi-naik-bursa-asia-siap-mengekor-reli-wall-street>
 - **6** T3 11-10 05:11 bloomberg_technoz: Wall Street Rebound, Saham Teknologi Menguat Meski Nvidia Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127201/wall-street-rebound-saham-teknologi-menguat-meski-nvidia-anjlok>
-- **6** T3 11-09 15:02 cnbc_indonesia_market: Video: Sentimen the Fed - DHE SDA, Rupiah Bisa ke Bawah Rp 18.000/USD? (global/kurs) <https://www.cnbcindonesia.com/market/20261109143012-19-783585/video-sentimen-the-fed--dhe-sda-rupiah-bisa-ke-bawah-rp-18000-usd>
