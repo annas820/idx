@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T15:10+07:00",
+ "generated_for": "2026-11-10T16:53+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 544,
- "kept": 166,
+ "scanned": 605,
+ "kept": 178,
  "dropped_noise": 4,
  "items": [
   {
@@ -315,6 +315,40 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T15:59+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Kinerja Makin Mentereng, Cek Rekomendasi Saham BBRI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127297/kinerja-makin-mentereng-cek-rekomendasi-saham-bbri",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T15:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Ungkap Investasi Bodong Bermodus AI, dari Saham hingga Kripto",
+   "link": "https://www.cnbcindonesia.com/market/20261110142707-17-783904/ojk-ungkap-investasi-bodong-bermodus-ai-dari-saham-hingga-kripto",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-10T15:10+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -404,36 +438,6 @@
    "score": 6,
    "categories": [
     "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T06:16+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham Teknologi Naik, Bursa Asia Siap Mengekor Reli Wall Street",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127205/saham-teknologi-naik-bursa-asia-siap-mengekor-reli-wall-street",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T05:11+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Wall Street Rebound, Saham Teknologi Menguat Meski Nvidia Anjlok",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127201/wall-street-rebound-saham-teknologi-menguat-meski-nvidia-anjlok",
-   "score": 6,
-   "categories": [
-    "global",
     "pasar"
    ],
    "tickers": [],
