@@ -1,9 +1,10 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T12:50+07:00 WIB | jendela 36 jam | dipindai 490, lolos 154, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-10T14:00+07:00 WIB | jendela 36 jam | dipindai 518, lolos 160, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **4** T3 11-09 19:38 cnbc_indonesia_news: Lewat Program Pengembangan Desa, Astra Sukses Raih Penghargaan Ini! [ASII] (emiten; watchlist) <https://www.cnbcindonesia.com/news/20261109193132-4-783695/lewat-program-pengembangan-desa-astra-sukses-raih-penghargaan-ini>
 
@@ -15,6 +16,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-09 12:30 cnbc_indonesia_market: Video: Mulai 10 November 2026, BEI Delisting 18 Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109093644-19-783422/video-mulai-10-november-2026-bei-delisting-18-emiten>
 - **8** T3 11-09 09:30 cnbc_indonesia_market: Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI [TLKM] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci>
 - **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
+- **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
 - **7** T3 11-09 19:02 kontan_keuangan: Laba BRI Melonjak 16,8% Jadi Rp 48,16 Triliun, Ini Prospek Saham BBRI [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bri-melonjak-168-jadi-rp-4816-triliun-ini-prospek-saham-bbri>
@@ -32,4 +34,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 06:16 bloomberg_technoz: Saham Teknologi Naik, Bursa Asia Siap Mengekor Reli Wall Street (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127205/saham-teknologi-naik-bursa-asia-siap-mengekor-reli-wall-street>
 - **6** T3 11-10 05:11 bloomberg_technoz: Wall Street Rebound, Saham Teknologi Menguat Meski Nvidia Anjlok (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127201/wall-street-rebound-saham-teknologi-menguat-meski-nvidia-anjlok>
 - **6** T3 11-09 15:02 cnbc_indonesia_market: Video: Sentimen the Fed - DHE SDA, Rupiah Bisa ke Bawah Rp 18.000/USD? (global/kurs) <https://www.cnbcindonesia.com/market/20261109143012-19-783585/video-sentimen-the-fed--dhe-sda-rupiah-bisa-ke-bawah-rp-18000-usd>
-- **6** T3 11-09 15:01 bloomberg_technoz: Bank Borong Obligasi Saat BI & Investor Asing Mundur (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127175/bank-borong-obligasi-saat-bi-investor-asing-mundur>
