@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T18:40+07:00 WIB | jendela 36 jam | dipindai 653, lolos 190, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-10T19:50+07:00 WIB | jendela 36 jam | dipindai 654, lolos 184, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -16,7 +16,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-10 08:20 bloomberg_technoz: Waspadai Inflasi, Barkin The Fed Isyaratkan Suku Bunga Naik Lagi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127216/waspadai-inflasi-barkin-the-fed-isyaratkan-suku-bunga-naik-lagi>
 - **8** T3 11-09 12:30 cnbc_indonesia_market: Video: Mulai 10 November 2026, BEI Delisting 18 Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109093644-19-783422/video-mulai-10-november-2026-bei-delisting-18-emiten>
 - **8** T3 11-09 09:30 cnbc_indonesia_market: Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI [TLKM] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci>
-- **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
@@ -27,6 +26,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-09 11:15 cnbc_indonesia_market: Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya [AVIA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya>
 - **7** T3 11-09 10:05 cnbc_indonesia_market: Entitas Rukun Raharja (RAJA) Caplok 90% Saham Perusahaan Kapal LNG [RAJA] (pasar/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261109085118-17-783413/entitas-rukun-raharja--raja--caplok-90-saham-perusahaan-kapal-lng>
 - **7** T3 11-09 08:45 cnbc_indonesia_market: Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-10 19:50 bloomberg_technoz: BEI: 300 Saham Baru Masuk HSC & Dikeluarkan dari Perhitungan IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127331/bei-300-saham-baru-masuk-hsc-dikeluarkan-dari-perhitungan-ihsg>
+- **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham HSC Jadi 383, Tambah 300 Emiten Baru (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-hsc-jadi-383-tambah-300-emiten-baru>
 - **6** T3 11-10 18:11 bloomberg_technoz: Saham Big Caps & Apresiasi Rupiah Jadi Pendorong Penguatan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127325/saham-big-caps-apresiasi-rupiah-jadi-pendorong-penguatan-ihsg>
 - **6** T3 11-10 18:11 cnbc_indonesia_market: Cegah Indikasi Manipulasi, BEI Awasi Ketat Saham Kecil hingga Jumbo (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110180827-17-784014/cegah-indikasi-manipulasi-bei-awasi-ketat-saham-kecil-hingga-jumbo>
 - **6** T3 11-10 15:59 bloomberg_technoz: Kinerja Makin Mentereng, Cek Rekomendasi Saham BBRI [BBRI] (pasar/emiten; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127297/kinerja-makin-mentereng-cek-rekomendasi-saham-bbri>
@@ -34,4 +35,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 15:10 bloomberg_technoz: BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa>
 - **6** T3 11-10 11:57 cnbc_indonesia_market: Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci>
 - **6** T3 11-10 11:42 cnbc_indonesia_market: Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main>
-- **6** T3 11-10 08:30 cnbc_indonesia_market: Rights Issue Dapat Restu, BRIS Ungkap Target Penggunaannya [BRIS] (korporasi/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.cnbcindonesia.com/market/20261110072727-17-783728/rights-issue-dapat-restu-bris-ungkap-target-penggunaannya>

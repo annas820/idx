@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T18:40+07:00",
+ "generated_for": "2026-11-10T19:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 653,
- "kept": 190,
+ "scanned": 654,
+ "kept": 184,
  "dropped_noise": 4,
  "items": [
   {
@@ -112,22 +112,6 @@
    "tickers": [
     "TLKM"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T06:40+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -315,6 +299,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T19:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI: 300 Saham Baru Masuk HSC & Dikeluarkan dari Perhitungan IHSG",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127331/bei-300-saham-baru-masuk-hsc-dikeluarkan-dari-perhitungan-ihsg",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T19:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Perluas Daftar Saham HSC Jadi 383, Tambah 300 Emiten Baru",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-hsc-jadi-383-tambah-300-emiten-baru",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-10T18:11+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -422,27 +436,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-10T08:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Rights Issue Dapat Restu, BRIS Ungkap Target Penggunaannya",
-   "link": "https://www.cnbcindonesia.com/market/20261110072727-17-783728/rights-issue-dapat-restu-bris-ungkap-target-penggunaannya",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
   }
  ],
  "watchlist_hits": [
