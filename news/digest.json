@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T16:53+07:00",
+ "generated_for": "2026-11-10T17:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 605,
- "kept": 178,
+ "scanned": 637,
+ "kept": 183,
  "dropped_noise": 4,
  "items": [
   {
@@ -480,6 +480,25 @@
    "tickers": [
     "ASII",
     "BBCA"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T17:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Ada Transaksi Jumbo Grup Adaro (ADRO-AADI) di Pasar Nego Rp 66 T",
+   "link": "https://www.cnbcindonesia.com/market/20261110171209-17-783989/ada-transaksi-jumbo-grup-adaro--adro-aadi--di-pasar-nego-rp-66-t",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "AADI",
+    "ADRO"
    ],
    "flags": [
     "watchlist"

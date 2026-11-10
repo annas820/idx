@@ -1,11 +1,12 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T16:53+07:00 WIB | jendela 36 jam | dipindai 605, lolos 178, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-10T17:50+07:00 WIB | jendela 36 jam | dipindai 637, lolos 183, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
+- **4** T3 11-10 17:15 cnbc_indonesia_market: Ada Transaksi Jumbo Grup Adaro (ADRO-AADI) di Pasar Nego Rp 66 T [AADI,ADRO] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261110171209-17-783989/ada-transaksi-jumbo-grup-adaro--adro-aadi--di-pasar-nego-rp-66-t>
 - **4** T3 11-09 19:38 cnbc_indonesia_news: Lewat Program Pengembangan Desa, Astra Sukses Raih Penghargaan Ini! [ASII] (emiten; watchlist) <https://www.cnbcindonesia.com/news/20261109193132-4-783695/lewat-program-pengembangan-desa-astra-sukses-raih-penghargaan-ini>
 
 ## Teratas
