@@ -1,9 +1,10 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T08:55+07:00 WIB | jendela 36 jam | dipindai 398, lolos 128, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-10T09:40+07:00 WIB | jendela 36 jam | dipindai 412, lolos 138, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **4** T3 11-09 19:38 cnbc_indonesia_news: Lewat Program Pengembangan Desa, Astra Sukses Raih Penghargaan Ini! [ASII] (emiten; watchlist) <https://www.cnbcindonesia.com/news/20261109193132-4-783695/lewat-program-pengembangan-desa-astra-sukses-raih-penghargaan-ini>
 
 ## Teratas
@@ -13,6 +14,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-09 12:30 cnbc_indonesia_market: Video: Mulai 10 November 2026, BEI Delisting 18 Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109093644-19-783422/video-mulai-10-november-2026-bei-delisting-18-emiten>
 - **8** T3 11-09 09:30 cnbc_indonesia_market: Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI [TLKM] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci>
 - **8** T3 11-09 06:40 cnbc_indonesia_market: BEI Delisting 18 Emiten, Batas Akhir Buyback Saham Berakhir Hari Ini (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109053453-17-783343/bei-delisting-18-emiten-batas-akhir-buyback-saham-berakhir-hari-ini>
+- **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
 - **7** T3 11-09 19:02 kontan_keuangan: Laba BRI Melonjak 16,8% Jadi Rp 48,16 Triliun, Ini Prospek Saham BBRI [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bri-melonjak-168-jadi-rp-4816-triliun-ini-prospek-saham-bbri>
 - **7** T3 11-09 18:45 cnbc_indonesia_market: YUPI Bagikan Dividen Interim Rp14,83 per Saham, Cek Jadwalnya [YUPI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109182138-17-783671/yupi-bagikan-dividen-interim-rp1483-per-saham-cek-jadwalnya>
@@ -31,4 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-09 14:59 cnbc_indonesia_market: Video: IHSG Menguat Tapi Rupiah Lesu, Sentimen Ini Jadi Penyebabnya! (pasar/kurs) <https://www.cnbcindonesia.com/market/20261109143009-19-783584/video-ihsg-menguat-tapi-rupiah-lesu-sentimen-ini-jadi-penyebabnya>
 - **6** T3 11-09 14:23 cnbc_indonesia_market: Laba Bank Mandiri (BMRI) Oktober 2026 Tembus Rp46,52 Triliun [BMRI] (korporasi/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.cnbcindonesia.com/market/20261109134348-17-783560/laba-bank-mandiri--bmri--oktober-2026-tembus-rp4652-triliun>
 - **6** T3 11-09 12:42 cnbc_indonesia_market: Video: "Roller Coaster" IHSG Awal Pekan - Rupiah Tembus Rp 18.100 /USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261109114023-19-783489/video-roller-coaster-ihsg-awal-pekan--rupiah-tembus-rp-18100--usd>
-- **6** T3 11-09 12:20 cnbc_indonesia_market: Video: Pekan Ini, MSCI Umumkan Rebalancing Indeks (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261109093542-19-783421/video-pekan-ini-msci-umumkan-rebalancing-indeks>

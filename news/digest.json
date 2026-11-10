@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T08:55+07:00",
+ "generated_for": "2026-11-10T09:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 398,
- "kept": 128,
+ "scanned": 412,
+ "kept": 138,
  "dropped_noise": 4,
  "items": [
   {
@@ -112,6 +112,26 @@
    ],
    "tickers": [],
    "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T09:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII",
+    "BBCA"
+   ],
+   "flags": [
+    "watchlist"
+   ],
    "also_in": []
   },
   {
@@ -418,24 +438,29 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-09T12:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Pekan Ini, MSCI Umumkan Rebalancing Indeks",
-   "link": "https://www.cnbcindonesia.com/market/20261109093542-19-783421/video-pekan-ini-msci-umumkan-rebalancing-indeks",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-10T09:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII",
+    "BBCA"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-09T19:38+07:00",
    "source": "cnbc_indonesia_news",
