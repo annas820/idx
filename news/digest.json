@@ -1,12 +1,29 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T10:42+07:00",
+ "generated_for": "2026-11-10T11:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 433,
- "kept": 144,
+ "scanned": 467,
+ "kept": 149,
  "dropped_noise": 3,
  "items": [
+  {
+   "published": "2026-11-10T11:38+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Diplomasi AS dan Iran, Rupiah Menguat dan IHSG Tancap Gas ke 5.100",
+   "link": "https://www.cnbcindonesia.com/market/20261110112409-19-783827/video-diplomasi-as-iran-rupiah-menguat-ihsg-tancap-gas-ke-5100",
+   "score": 11,
+   "categories": [
+    "global",
+    "pasar",
+    "kurs",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-10T08:10+07:00",
    "source": "bloomberg_technoz",
@@ -278,6 +295,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T11:42+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main!",
+   "link": "https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-10T08:30+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -394,42 +426,6 @@
    "tier": 3,
    "title": "Video: IHSG Menguat Tapi Rupiah Lesu, Sentimen Ini Jadi Penyebabnya!",
    "link": "https://www.cnbcindonesia.com/market/20261109143009-19-783584/video-ihsg-menguat-tapi-rupiah-lesu-sentimen-ini-jadi-penyebabnya",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T14:23+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Laba Bank Mandiri (BMRI) Oktober 2026 Tembus Rp46,52 Triliun",
-   "link": "https://www.cnbcindonesia.com/market/20261109134348-17-783560/laba-bank-mandiri--bmri--oktober-2026-tembus-rp4652-triliun",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
-  },
-  {
-   "published": "2026-11-09T12:42+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: \"Roller Coaster\" IHSG Awal Pekan - Rupiah Tembus Rp 18.100 /USD",
-   "link": "https://www.cnbcindonesia.com/market/20261109114023-19-783489/video-roller-coaster-ihsg-awal-pekan--rupiah-tembus-rp-18100--usd",
    "score": 6,
    "categories": [
     "pasar",
