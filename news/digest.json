@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T19:50+07:00",
+ "generated_for": "2026-11-10T21:05+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 654,
- "kept": 184,
- "dropped_noise": 4,
+ "scanned": 653,
+ "kept": 182,
+ "dropped_noise": 5,
  "items": [
   {
    "published": "2026-11-10T11:38+07:00",
@@ -282,20 +282,48 @@
    "also_in": []
   },
   {
-   "published": "2026-11-09T08:45+07:00",
+   "published": "2026-11-10T21:05+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini",
-   "score": 7,
+   "title": "Ramai Isu Emiten Raffi Ahmad (RANS), BEI Buka Suara",
+   "link": "https://www.cnbcindonesia.com/market/20261110201808-17-784057/ramai-isu-emiten-raffi-ahmad--rans--bei-buka-suara",
+   "score": 6,
    "categories": [
     "kebijakan",
     "pasar"
    ],
    "tickers": [],
-   "flags": [
-    "petunjuk"
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T20:55+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Langgar Aturan Baru Harga Beras-Minyak-Telur Bisa Dipenjara 7 Tahun",
+   "link": "https://www.cnbcindonesia.com/news/20261110201021-4-784056/langgar-aturan-baru-harga-beras-minyak-telur-bisa-dipenjara-7-tahun",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
    ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T20:05+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Ubah Metodologi HSC, Tak Lagi Tunggu Pergerakan Harga Saham",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127334/bei-ubah-metodologi-hsc-tak-lagi-tunggu-pergerakan-harga-saham",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -398,36 +426,6 @@
    "tier": 3,
    "title": "BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa",
    "link": "https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T11:57+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI",
-   "link": "https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T11:42+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main!",
-   "link": "https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main",
    "score": 6,
    "categories": [
     "kebijakan",

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T19:50+07:00 WIB | jendela 36 jam | dipindai 654, lolos 184, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-10T21:05+07:00 WIB | jendela 36 jam | dipindai 653, lolos 182, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -25,7 +25,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-09 12:35 cnbc_indonesia_market: Siapkan Buyback Saham Rp1 Triliun, Bos BRI Ungkap Alasannya [BBRI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109105420-17-783463/siapkan-buyback-saham-rp1-triliun-bos-bri-ungkap-alasannya>
 - **7** T3 11-09 11:15 cnbc_indonesia_market: Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya [AVIA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya>
 - **7** T3 11-09 10:05 cnbc_indonesia_market: Entitas Rukun Raharja (RAJA) Caplok 90% Saham Perusahaan Kapal LNG [RAJA] (pasar/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261109085118-17-783413/entitas-rukun-raharja--raja--caplok-90-saham-perusahaan-kapal-lng>
-- **7** T3 11-09 08:45 cnbc_indonesia_market: Jelang Pengumuman MSCI Pekan Ini, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261109081303-17-783393/jelang-pengumuman-msci-pekan-ini-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-10 21:05 cnbc_indonesia_market: Ramai Isu Emiten Raffi Ahmad (RANS), BEI Buka Suara (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110201808-17-784057/ramai-isu-emiten-raffi-ahmad--rans--bei-buka-suara>
+- **6** T3 11-10 20:55 cnbc_indonesia_news: Langgar Aturan Baru Harga Beras-Minyak-Telur Bisa Dipenjara 7 Tahun (kebijakan/global) <https://www.cnbcindonesia.com/news/20261110201021-4-784056/langgar-aturan-baru-harga-beras-minyak-telur-bisa-dipenjara-7-tahun>
+- **6** T3 11-10 20:05 bloomberg_technoz: BEI Ubah Metodologi HSC, Tak Lagi Tunggu Pergerakan Harga Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127334/bei-ubah-metodologi-hsc-tak-lagi-tunggu-pergerakan-harga-saham>
 - **6** T3 11-10 19:50 bloomberg_technoz: BEI: 300 Saham Baru Masuk HSC & Dikeluarkan dari Perhitungan IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127331/bei-300-saham-baru-masuk-hsc-dikeluarkan-dari-perhitungan-ihsg>
 - **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham HSC Jadi 383, Tambah 300 Emiten Baru (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-hsc-jadi-383-tambah-300-emiten-baru>
 - **6** T3 11-10 18:11 bloomberg_technoz: Saham Big Caps & Apresiasi Rupiah Jadi Pendorong Penguatan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127325/saham-big-caps-apresiasi-rupiah-jadi-pendorong-penguatan-ihsg>
@@ -33,5 +35,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 15:59 bloomberg_technoz: Kinerja Makin Mentereng, Cek Rekomendasi Saham BBRI [BBRI] (pasar/emiten; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127297/kinerja-makin-mentereng-cek-rekomendasi-saham-bbri>
 - **6** T3 11-10 15:30 cnbc_indonesia_market: OJK Ungkap Investasi Bodong Bermodus AI, dari Saham hingga Kripto (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110142707-17-783904/ojk-ungkap-investasi-bodong-bermodus-ai-dari-saham-hingga-kripto>
 - **6** T3 11-10 15:10 bloomberg_technoz: BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa>
-- **6** T3 11-10 11:57 cnbc_indonesia_market: Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci>
-- **6** T3 11-10 11:42 cnbc_indonesia_market: Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main>
