@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T17:50+07:00",
+ "generated_for": "2026-11-10T18:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 637,
- "kept": 183,
+ "scanned": 653,
+ "kept": 190,
  "dropped_noise": 4,
  "items": [
   {
@@ -315,6 +315,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T18:11+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham Big Caps & Apresiasi Rupiah Jadi Pendorong Penguatan IHSG",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127325/saham-big-caps-apresiasi-rupiah-jadi-pendorong-penguatan-ihsg",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T18:11+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Cegah Indikasi Manipulasi, BEI Awasi Ketat Saham Kecil hingga Jumbo",
+   "link": "https://www.cnbcindonesia.com/market/20261110180827-17-784014/cegah-indikasi-manipulasi-bei-awasi-ketat-saham-kecil-hingga-jumbo",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-10T15:59+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -413,36 +443,6 @@
    "also_in": [
     "kontan_keuangan"
    ]
-  },
-  {
-   "published": "2026-11-10T06:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Resmi Hapus 18 Saham Perusahaan Ini, Ini Daftarnya!",
-   "link": "https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-ini-daftarnya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T06:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Resmi Hapus 18 Saham Perusahaan, Ini Daftarnya!",
-   "link": "https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-daftarnya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
