@@ -1,0 +1,290 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-10T11:12:41Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "MSCI Bakal Umumkan Review Kamis: Seperti Apa Kisi-Kisi dan Skenarionya?",
+        "url": "https://www.cnbcindonesia.com/research/20261110144326-128-783923/msci-bakal-umumkan-review-kamis-seperti-apa-kisi-kisi-skenarionya",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-10T18:00:31+07:00",
+        "summary": "MSCI akan umumkan hasil review indeks pada 12 November 2026. Tiga saham Indonesia di Small Cap jadi sorotan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "CIMB Niaga Suntik Modal Rp 365,3 Miliar ke Anak Usaha SL Capital",
+        "url": "https://keuangan.kontan.co.id/news/cimb-niaga-suntik-modal-rp-3653-miliar-ke-anak-usaha-sl-capital",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:56:04+07:00",
+        "summary": "Bank CIMB Niaga (BNGA) meningkatkan modal dan penyertaan modal non tunai kepada SL Capital, anak perusahaan yang didirikan grup bank tahun ini.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bakal Ada 300 Saham HSC Baru, 383 Emiten Keluar dari Perhitungan IHSG",
+        "url": "https://www.cnbcindonesia.com/market/20261110175335-17-784004/bakal-ada-300-saham-hsc-baru-383-emiten-keluar-dari-perhitungan-ihsg",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-10T17:55:53+07:00",
+        "summary": "Bursa Efek Indonesia umumkan penambahan 300 saham dalam kriteria Hidden Shareholder Concentration (HSC) untuk meningkatkan tata kelola.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Prudential Indonesia Pertimbangkan Sejumlah Aspek Ini dalam Mengelola Investasi",
+        "url": "https://keuangan.kontan.co.id/news/prudential-indonesia-pertimbangkan-sejumlah-aspek-ini-dalam-mengelola-investasi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:54:09+07:00",
+        "summary": "Prudential Indonesia mempertimbangkan sejumlah aspek ini dalam mengelola investasi secara prudent atau penuh kehati-hatian.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Kilau Bisnis Emas Prilly Latuconsina Yang Stylish dan Terjangkau",
+        "url": "https://www.cnbcindonesia.com/market/20261110165043-19-783996/video-kilau-bisnis-emas-prilly-latuconsina-yang-stylish-terjangkau",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-10T17:50:01+07:00",
+        "summary": "Prilly Latuconsina Garap Bisnis Emas Perhiasan Yang Stylish Namun Terjangkau",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Daftar 25 Negara Terbaik untuk Masa Pensiun di Tahun 2026",
+        "url": "https://www.cnbcindonesia.com/research/20261110143303-128-783909/daftar-25-negara-terbaik-untuk-masa-pensiun-di-tahun-2026",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-10T17:50:00+07:00",
+        "summary": "Masa pensiun memerlukan persiapan finansial matang. Laporan Natixis GRI 2026 mengungkap 25 negara terbaik untuk pensiun, dengan Norwegia di posisi teratas.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Aladin Syariah Seimbangkan Ekspansi Bisnis dan Aksi Sosial",
+        "url": "https://keuangan.kontan.co.id/news/bank-aladin-syariah-seimbangkan-ekspansi-bisnis-dan-aksi-sosial",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:44:18+07:00",
+        "summary": "Bank Aladin Syariah tak hanya menggenjot pertumbuhan bisnis, tetapi juga memperluas dampak sosial bagi masyarakat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan",
+          "ekspansi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "CIMB Niaga (BNGA) Suntik Modal Anak Usaha Kredit Macet Rp325,7 M",
+        "url": "https://www.cnbcindonesia.com/market/20261110172434-17-783994/cimb-niaga--bnga--suntik-modal-anak-usaha-kredit-macet-rp3257-m",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-10T17:37:36+07:00",
+        "summary": "Bank CIMB Niaga melakukan penyertaan modal non-tunai ke anak usaha SLCapital",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Gadai ValueMax Sebut Pertumbuhan Pembiayaan hingga Akhir 2026 Masih Terbuka",
+        "url": "https://keuangan.kontan.co.id/news/gadai-valuemax-sebut-pertumbuhan-pembiayaan-hingga-akhir-2026-masih-terbuka",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:30:54+07:00",
+        "summary": "PT Gadai ValueMax Indonesia menilai prospek pertumbuhan pembiayaan hingga akhir 2026 masih tetap terbuka.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Beri Insentif RBC untuk Asuransi Investasi di Green Financing, Ini Respons YOII",
+        "url": "https://keuangan.kontan.co.id/news/ojk-beri-insentif-rbc-untuk-asuransi-investasi-di-green-financing-ini-respons-yoii",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:30:14+07:00",
+        "summary": "OJK siapkan insentif keringanan RBC bagi asuransi yang berinvestasi di green financing. YOII menyambut baik kebijakan tersebut.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kepemilikan CIMB Niaga di SLCapital Naik Jadi 99,9998%",
+        "url": "https://keuangan.kontan.co.id/news/kepemilikan-cimb-niaga-di-slcapital-naik-jadi-999998",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:25:45+07:00",
+        "summary": "Kepemilikan CIMB Niaga di Satyaguna Langgeng Capital (SLCapital) naik menjadi 99,9998% melalui skema penyertaan modal non tunai (inbreng).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Kiwoom Sekuritas Pangkas Target Harga BBRI, Soroti Pelemahan Momentum Bisnis",
+        "url": "https://keuangan.kontan.co.id/news/kiwoom-sekuritas-pangkas-target-harga-bbri-soroti-pelemahan-momentum-bisnis",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:22:47+07:00",
+        "summary": "PT Bank Rakyat Indonesia Tbk (BRI) mencatatkan pertumbuhan laba yang solid hingga kuartal III-2026, cermati rekomendasi analis.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "pertumbuhan",
+          "solid"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "JTrust Bank (BCIC) Jadwalkan RUPSLB 17 Desember 2026, Ini Detailnya",
+        "url": "https://keuangan.kontan.co.id/news/jtrust-bank-bcic-jadwalkan-rupslb-17-desember-2026-ini-detailnya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:21:59+07:00",
+        "summary": "JTrust Bank (BCIC) akan menggelar RUPSLB pada 17 Desember 2026. Simak jadwal pemanggilan dan ketentuan bagi pemegang saham.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pertumbuhan Pembiayaan Multifinance Meningkat per September 2026, Ini Kata CNAF",
+        "url": "https://keuangan.kontan.co.id/news/pertumbuhan-pembiayaan-multifinance-meningkat-per-september-2026-ini-kata-cnaf",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:21:17+07:00",
+        "summary": "Pertumbuhan pembiayaan multifinance meningkat per September2026, ini kata CIMB Niaga Auto Finance (CNAF).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bisnis Emas Jadi Sumber Pertumbuhan Baru Perbankan",
+        "url": "https://keuangan.kontan.co.id/news/bisnis-emas-jadi-sumber-pertumbuhan-baru-perbankan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:16:04+07:00",
+        "summary": "Bisnis emas menjadi sumber pertumbuhan baru bagi industri perbankan. Sejumlah bank kembangkan layanan emas mulai pembiayaan, tabungan, cicilan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Ada Transaksi Jumbo Grup Adaro (ADRO-AADI) di Pasar Nego Rp 66 T",
+        "url": "https://www.cnbcindonesia.com/market/20261110171209-17-783989/ada-transaksi-jumbo-grup-adaro--adro-aadi--di-pasar-nego-rp-66-t",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-10T17:15:23+07:00",
+        "summary": "Transaksi crossing jumbo terjadi pada saham Adaro, ADRO dan AADI, dengan nilai mencapai puluhan triliun Rupiah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Jaga Kinerja, bank bjb Ungkap 4 tonggak Transformasi Jangka panjang",
+        "url": "https://www.cnbcindonesia.com/market/20261110170643-17-783987/jaga-kinerja-bank-bjb-ungkap-4-tonggak-transformasi-jangka-panjang",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-10T17:12:31+07:00",
+        "summary": "Direktur Keuangan Bank bjb Hana Dartiwan mengungkapkan strategi transformasi jangka panjang untuk pertumbuhan efisien, fokus pada dana murah dan ekspansi kredit",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan",
+          "ekspansi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Gibran Ajukan Mundur: Daftar Wapres Terlama dan Tersingkat dalam Sejarah",
+        "url": "https://www.cnbcindonesia.com/research/20261110155239-128-783955/gibran-ajukan-mundur-daftar-wapres-terlama-tersingkat-dalam-sejarah",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-10T17:10:24+07:00",
+        "summary": "Gibran mengajukan pengunduran diri setelah 2 tahun 21 hari menjabat",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bisnis Emas bjb Syariah Tumbuh 46,9%, Capai Rp 776,6 Miliar hingga Oktober 2026",
+        "url": "https://keuangan.kontan.co.id/news/bisnis-emas-bjb-syariah-tumbuh-469-capai-rp-7766-miliar-hingga-oktober-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T17:01:58+07:00",
+        "summary": "Bank BJB Syariah mencatatkan pertumbuhan bisnis emas sebesar 46,9% secara year to date (YtD) hingga Oktober 2026. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Pembiayaan Emas BCA Syariah Tumbuh 64,8%, Tembus Rp 576 Miliar hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/pembiayaan-emas-bca-syariah-tumbuh-648-tembus-rp-576-miliar-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-10T16:53:11+07:00",
+        "summary": "Pembiayaan emas iB BCA Syariah tumbuh 64,8% menjadi Rp 576 miliar hingga September 2026, dengan nasabah didominasi kalangan milenial.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      }
+    ]
+  }
+}

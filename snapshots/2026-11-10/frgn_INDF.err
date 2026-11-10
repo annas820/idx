@@ -1,0 +1,1 @@
+{"error":{"code":"provider","message":"idx: idx.co.id refused the request (Cloudflare bot protection). It usually passes from an ordinary home or office connection; data centres, VPNs and CI runners are often blocked. Cached copies are still served (try --offline)"},"exit_code":3}

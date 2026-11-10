@@ -1,0 +1,72 @@
+{
+  "schema": "idx.technical.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-11-10T11:12:46Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "AADI",
+    "name": "PT Adaro Andalan Indonesia Tbk",
+    "currency": "IDR",
+    "as_of": "2026-11-10T09:00:00+07:00",
+    "period": "1y",
+    "candles_used": 240,
+    "price": 10125.0,
+    "change_pct_1d": -1.2195121951219512,
+    "change_pct_1w": -2.877697841726619,
+    "change_pct_1m": -14.194915254237289,
+    "change_pct_3m": 9.75609756097561,
+    "high_52w": 12925.0,
+    "low_52w": 6750.0,
+    "moving_averages": {
+      "sma20": 10882.5,
+      "sma50": 11362.5,
+      "sma200": 9701.875,
+      "ema20": 10829.725470839267,
+      "ema50": 10882.462699990203,
+      "ema200": 9702.781493021892
+    },
+    "rsi14": 38.66361971612327,
+    "macd": {
+      "line": -281.5226667406678,
+      "signal": -158.43650632779986,
+      "histogram": -123.08616041286791
+    },
+    "bollinger": {
+      "upper": 12053.30100785744,
+      "middle": 10882.5,
+      "lower": 9711.69899214256,
+      "percent_b": 0.1765035241188335,
+      "bandwidth_pct": 21.517133156121123
+    },
+    "atr14": 506.26324678037406,
+    "volume": {
+      "last": 11754800,
+      "avg20": 18117175,
+      "ratio": 0.6488208012562665
+    },
+    "levels": {
+      "support": [
+        9500.0,
+        7875.0,
+        7725.0
+      ],
+      "resistance": [
+        12050.0,
+        12375.0,
+        12925.0
+      ]
+    },
+    "trend": "sideways",
+    "signal": {
+      "label": "neutral",
+      "score": 0,
+      "reasons": [
+        "moving averages disagree: no clear trend",
+        "RSI 39 is neutral",
+        "MACD below its signal line (bearish momentum)",
+        "price above the 200-day average"
+      ]
+    }
+  }
+}
