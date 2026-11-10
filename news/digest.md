@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T22:30+07:00 WIB | jendela 36 jam | dipindai 633, lolos 175, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-11T05:35+07:00 WIB | jendela 36 jam | dipindai 447, lolos 123, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,19 +10,16 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-09 19:38 cnbc_indonesia_news: Lewat Program Pengembangan Desa, Astra Sukses Raih Penghargaan Ini! [ASII] (emiten; watchlist) <https://www.cnbcindonesia.com/news/20261109193132-4-783695/lewat-program-pengembangan-desa-astra-sukses-raih-penghargaan-ini>
 
 ## Teratas
+- **12** T3 11-11 05:35 bloomberg_technoz: Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed (kebijakan/global/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed>
 - **11** T3 11-10 11:38 cnbc_indonesia_market: Video: Diplomasi AS dan Iran, Rupiah Menguat dan IHSG Tancap Gas ke 5.100 (global/pasar/kurs/komoditas) <https://www.cnbcindonesia.com/market/20261110112409-19-783827/video-diplomasi-as-iran-rupiah-menguat-ihsg-tancap-gas-ke-5100>
 - **10** T3 11-10 08:10 bloomberg_technoz: BEI Resmi Delisting 18 Saham Hari Ini, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127215/bei-resmi-delisting-18-saham-hari-ini-ada-sritex-sril>
 - **9** T3 11-09 20:11 kontan_keuangan: BSI (BRIS) Kantongi Restu Rights Issue 6,8 Miliar Saham, Ini Rencana Penggunaannya [BRIS] (pasar/korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://keuangan.kontan.co.id/news/bsi-bris-kantongi-restu-rights-issue-68-miliar-saham-ini-rencana-penggunaannya>
 - **8** T3 11-10 08:20 bloomberg_technoz: Waspadai Inflasi, Barkin The Fed Isyaratkan Suku Bunga Naik Lagi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127216/waspadai-inflasi-barkin-the-fed-isyaratkan-suku-bunga-naik-lagi>
-- **8** T3 11-09 12:30 cnbc_indonesia_market: Video: Mulai 10 November 2026, BEI Delisting 18 Emiten (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261109093644-19-783422/video-mulai-10-november-2026-bei-delisting-18-emiten>
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
 - **7** T3 11-09 19:02 kontan_keuangan: Laba BRI Melonjak 16,8% Jadi Rp 48,16 Triliun, Ini Prospek Saham BBRI [BBRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bri-melonjak-168-jadi-rp-4816-triliun-ini-prospek-saham-bbri>
 - **7** T3 11-09 18:45 cnbc_indonesia_market: YUPI Bagikan Dividen Interim Rp14,83 per Saham, Cek Jadwalnya [YUPI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109182138-17-783671/yupi-bagikan-dividen-interim-rp1483-per-saham-cek-jadwalnya>
-- **7** T3 11-09 15:26 bloomberg_technoz: Rekomendasi & Target Saham BBRI Usai Cetak Laba Rp48,16 Triliun [BBRI] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127176/rekomendasi-target-saham-bbri-usai-cetak-laba-rp48-16-triliun>
-- **7** T3 11-09 12:35 cnbc_indonesia_market: Siapkan Buyback Saham Rp1 Triliun, Bos BRI Ungkap Alasannya [BBRI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109105420-17-783463/siapkan-buyback-saham-rp1-triliun-bos-bri-ungkap-alasannya>
-- **7** T3 11-09 11:15 cnbc_indonesia_market: Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya [AVIA] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya>
 - **6** T3 11-10 21:05 cnbc_indonesia_market: Ramai Isu Emiten Raffi Ahmad (RANS), BEI Buka Suara (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110201808-17-784057/ramai-isu-emiten-raffi-ahmad--rans--bei-buka-suara>
 - **6** T3 11-10 20:55 cnbc_indonesia_news: Langgar Aturan Baru Harga Beras-Minyak-Telur Bisa Dipenjara 7 Tahun (kebijakan/global) <https://www.cnbcindonesia.com/news/20261110201021-4-784056/langgar-aturan-baru-harga-beras-minyak-telur-bisa-dipenjara-7-tahun>
 - **6** T3 11-10 20:05 bloomberg_technoz: BEI Ubah Metodologi HSC, Tak Lagi Tunggu Pergerakan Harga Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127334/bei-ubah-metodologi-hsc-tak-lagi-tunggu-pergerakan-harga-saham>
@@ -35,3 +32,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 15:30 cnbc_indonesia_market: OJK Ungkap Investasi Bodong Bermodus AI, dari Saham hingga Kripto (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110142707-17-783904/ojk-ungkap-investasi-bodong-bermodus-ai-dari-saham-hingga-kripto>
 - **6** T3 11-10 15:10 bloomberg_technoz: BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa>
 - **6** T3 11-10 11:57 cnbc_indonesia_market: Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci>
+- **6** T3 11-10 11:42 cnbc_indonesia_market: Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main>
+- **6** T3 11-10 08:30 cnbc_indonesia_market: Rights Issue Dapat Restu, BRIS Ungkap Target Penggunaannya [BRIS] (korporasi/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.cnbcindonesia.com/market/20261110072727-17-783728/rights-issue-dapat-restu-bris-ungkap-target-penggunaannya>
+- **6** T3 11-10 06:20 cnbc_indonesia_market: BEI Resmi Hapus 18 Saham Perusahaan Ini, Ini Daftarnya! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-ini-daftarnya>

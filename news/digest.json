@@ -1,12 +1,29 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T22:30+07:00",
+ "generated_for": "2026-11-11T05:35+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 633,
- "kept": 175,
+ "scanned": 447,
+ "kept": 123,
  "dropped_noise": 4,
  "items": [
+  {
+   "published": "2026-11-11T05:35+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed",
+   "score": 12,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-10T11:38+07:00",
    "source": "cnbc_indonesia_market",
@@ -76,22 +93,6 @@
     "kebijakan",
     "global",
     "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T12:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Mulai 10 November 2026, BEI Delisting 18 Emiten",
-   "link": "https://www.cnbcindonesia.com/market/20261109093644-19-783422/video-mulai-10-november-2026-bei-delisting-18-emiten",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],
@@ -187,60 +188,6 @@
    ],
    "tickers": [
     "YUPI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T15:26+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rekomendasi & Target Saham BBRI Usai Cetak Laba Rp48,16 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127176/rekomendasi-target-saham-bbri-usai-cetak-laba-rp48-16-triliun",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T12:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Siapkan Buyback Saham Rp1 Triliun, Bos BRI Ungkap Alasannya",
-   "link": "https://www.cnbcindonesia.com/market/20261109105420-17-783463/siapkan-buyback-saham-rp1-triliun-bos-bri-ungkap-alasannya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T11:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Emiten Cat Konglo Surabaya (AVIA) Bagi Dividen Rp700 M, Ini Jadwalnya",
-   "link": "https://www.cnbcindonesia.com/market/20261109100708-17-783437/emiten-cat-konglo-surabaya--avia--bagi-dividen-rp700-m-ini-jadwalnya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "AVIA"
    ],
    "flags": [],
    "also_in": []
@@ -420,6 +367,57 @@
    "tier": 3,
    "title": "Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI",
    "link": "https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T11:42+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main!",
+   "link": "https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T08:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Rights Issue Dapat Restu, BRIS Ungkap Target Penggunaannya",
+   "link": "https://www.cnbcindonesia.com/market/20261110072727-17-783728/rights-issue-dapat-restu-bris-ungkap-target-penggunaannya",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
+   ]
+  },
+  {
+   "published": "2026-11-10T06:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Resmi Hapus 18 Saham Perusahaan Ini, Ini Daftarnya!",
+   "link": "https://www.cnbcindonesia.com/market/20261110031656-17-783712/bei-resmi-hapus-18-saham-perusahaan-ini-ini-daftarnya",
    "score": 6,
    "categories": [
     "kebijakan",
