@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T11:50+07:00",
+ "generated_for": "2026-11-10T12:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 467,
- "kept": 149,
- "dropped_noise": 3,
+ "scanned": 490,
+ "kept": 154,
+ "dropped_noise": 4,
  "items": [
   {
    "published": "2026-11-10T11:38+07:00",
@@ -295,6 +295,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T11:57+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-10T11:42+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -411,21 +426,6 @@
    "tier": 3,
    "title": "Bank Borong Obligasi Saat BI & Investor Asing Mundur",
    "link": "https://www.bloombergtechnoz.com/detail-news/127175/bank-borong-obligasi-saat-bi-investor-asing-mundur",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T14:59+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: IHSG Menguat Tapi Rupiah Lesu, Sentimen Ini Jadi Penyebabnya!",
-   "link": "https://www.cnbcindonesia.com/market/20261109143009-19-783584/video-ihsg-menguat-tapi-rupiah-lesu-sentimen-ini-jadi-penyebabnya",
    "score": 6,
    "categories": [
     "pasar",
