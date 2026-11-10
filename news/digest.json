@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T21:05+07:00",
+ "generated_for": "2026-11-10T22:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 653,
- "kept": 182,
- "dropped_noise": 5,
+ "scanned": 631,
+ "kept": 173,
+ "dropped_noise": 4,
  "items": [
   {
    "published": "2026-11-10T11:38+07:00",
@@ -94,24 +94,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Diam-Diam Anggota DPR AS Lego Saham Telkom saat Heboh MSCI",
-   "link": "https://www.cnbcindonesia.com/market/20261109084738-17-783406/diam-diam-anggota-dpr-as-lego-saham-telkom-saat-heboh-msci",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "TLKM"
-   ],
    "flags": [],
    "also_in": []
   },
@@ -264,24 +246,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-09T10:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Entitas Rukun Raharja (RAJA) Caplok 90% Saham Perusahaan Kapal LNG",
-   "link": "https://www.cnbcindonesia.com/market/20261109085118-17-783413/entitas-rukun-raharja--raja--caplok-90-saham-perusahaan-kapal-lng",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "RAJA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-10T21:05+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -426,6 +390,36 @@
    "tier": 3,
    "title": "BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa",
    "link": "https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T11:57+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-10T11:42+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main!",
+   "link": "https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main",
    "score": 6,
    "categories": [
     "kebijakan",
