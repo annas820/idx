@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-10T22:30+07:00 WIB | jendela 36 jam | dipindai 632, lolos 174, dibuang sebagai noise 4.
+Berita terbaru: 2026-11-10T22:30+07:00 WIB | jendela 36 jam | dipindai 633, lolos 175, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -28,10 +28,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 20:05 bloomberg_technoz: BEI Ubah Metodologi HSC, Tak Lagi Tunggu Pergerakan Harga Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127334/bei-ubah-metodologi-hsc-tak-lagi-tunggu-pergerakan-harga-saham>
 - **6** T3 11-10 19:50 bloomberg_technoz: BEI: 300 Saham Baru Masuk HSC & Dikeluarkan dari Perhitungan IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127331/bei-300-saham-baru-masuk-hsc-dikeluarkan-dari-perhitungan-ihsg>
 - **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham HSC Jadi 383, Tambah 300 Emiten Baru (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-hsc-jadi-383-tambah-300-emiten-baru>
+- **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham Jadi 383, HSC Bertambah 300 (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-jadi-383-hsc-bertambah-300>
 - **6** T3 11-10 18:11 bloomberg_technoz: Saham Big Caps & Apresiasi Rupiah Jadi Pendorong Penguatan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127325/saham-big-caps-apresiasi-rupiah-jadi-pendorong-penguatan-ihsg>
 - **6** T3 11-10 18:11 cnbc_indonesia_market: Cegah Indikasi Manipulasi, BEI Awasi Ketat Saham Kecil hingga Jumbo (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110180827-17-784014/cegah-indikasi-manipulasi-bei-awasi-ketat-saham-kecil-hingga-jumbo>
 - **6** T3 11-10 15:59 bloomberg_technoz: Kinerja Makin Mentereng, Cek Rekomendasi Saham BBRI [BBRI] (pasar/emiten; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127297/kinerja-makin-mentereng-cek-rekomendasi-saham-bbri>
 - **6** T3 11-10 15:30 cnbc_indonesia_market: OJK Ungkap Investasi Bodong Bermodus AI, dari Saham hingga Kripto (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110142707-17-783904/ojk-ungkap-investasi-bodong-bermodus-ai-dari-saham-hingga-kripto>
 - **6** T3 11-10 15:10 bloomberg_technoz: BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa>
 - **6** T3 11-10 11:57 cnbc_indonesia_market: Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci>
-- **6** T3 11-10 11:42 cnbc_indonesia_market: Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main! (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main>

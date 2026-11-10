@@ -3,8 +3,8 @@
  "generated_for": "2026-11-10T22:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 632,
- "kept": 174,
+ "scanned": 633,
+ "kept": 175,
  "dropped_noise": 4,
  "items": [
   {
@@ -321,6 +321,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-10T19:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Perluas Daftar Saham Jadi 383, HSC Bertambah 300",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-jadi-383-hsc-bertambah-300",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-10T18:11+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -405,21 +420,6 @@
    "tier": 3,
    "title": "Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI",
    "link": "https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T11:42+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main!",
-   "link": "https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main",
    "score": 6,
    "categories": [
     "kebijakan",
