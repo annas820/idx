@@ -1,12 +1,69 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-10T07:45+07:00",
+ "generated_for": "2026-11-10T08:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 386,
- "kept": 120,
+ "scanned": 398,
+ "kept": 128,
  "dropped_noise": 4,
  "items": [
+  {
+   "published": "2026-11-10T08:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Resmi Delisting 18 Saham Hari Ini, Ada Sritex (SRIL)",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127215/bei-resmi-delisting-18-saham-hari-ini-ada-sritex-sril",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "SRIL"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-09T20:11+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BSI (BRIS) Kantongi Restu Rights Issue 6,8 Miliar Saham, Ini Rencana Penggunaannya",
+   "link": "https://keuangan.kontan.co.id/news/bsi-bris-kantongi-restu-rights-issue-68-miliar-saham-ini-rencana-penggunaannya",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
+   "published": "2026-11-10T08:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Waspadai Inflasi, Barkin The Fed Isyaratkan Suku Bunga Naik Lagi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127216/waspadai-inflasi-barkin-the-fed-isyaratkan-suku-bunga-naik-lagi",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "global",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-09T12:30+07:00",
    "source": "cnbc_indonesia_market",
@@ -71,24 +128,6 @@
    ],
    "tickers": [
     "SRIL"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T20:11+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BSI (BRIS) Kantongi Restu Rights Issue 6,8 Miliar Saham, Ini Rencana Penggunaannya",
-   "link": "https://keuangan.kontan.co.id/news/bsi-bris-kantongi-restu-rights-issue-68-miliar-saham-ini-rencana-penggunaannya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
    ],
    "flags": [],
    "also_in": []
@@ -217,6 +256,27 @@
     "petunjuk"
    ],
    "also_in": []
+  },
+  {
+   "published": "2026-11-10T08:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Rights Issue Dapat Restu, BRIS Ungkap Target Penggunaannya",
+   "link": "https://www.cnbcindonesia.com/market/20261110072727-17-783728/rights-issue-dapat-restu-bris-ungkap-target-penggunaannya",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BRIS"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
+   ]
   },
   {
    "published": "2026-11-10T06:20+07:00",
@@ -365,51 +425,6 @@
    "tier": 3,
    "title": "Video: Pekan Ini, MSCI Umumkan Rebalancing Indeks",
    "link": "https://www.cnbcindonesia.com/market/20261109093542-19-783421/video-pekan-ini-msci-umumkan-rebalancing-indeks",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T11:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "9 Perusahaan Siap Melantai di BEI, 3 Calon Emiten Punya Aset Jumbo",
-   "link": "https://www.cnbcindonesia.com/market/20261109105308-17-783465/9-perusahaan-siap-melantai-di-bei-3-calon-emiten-punya-aset-jumbo",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T09:22+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Fluktuatif Pagi Ini, Wait and See Pengumuman MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127120/ihsg-fluktuatif-pagi-ini-wait-and-see-pengumuman-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-09T07:15+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Arah Pemulihan IHSG Masih Rapuh Dibayangi Review MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127106/arah-pemulihan-ihsg-masih-rapuh-dibayangi-review-msci",
    "score": 6,
    "categories": [
     "kebijakan",
