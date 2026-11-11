@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T05:47+07:00",
+ "generated_for": "2026-11-12T06:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 470,
- "kept": 120,
+ "scanned": 457,
+ "kept": 116,
  "dropped_noise": 6,
  "items": [
   {
@@ -72,6 +72,25 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T06:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir",
+   "link": "https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BRMS",
+    "BRPT"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -391,21 +410,6 @@
    "categories": [
     "kebijakan",
     "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T06:40+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "IHSG Hijau, Investor Asing Borong Surat Utang RI Rp10,6 Triliun",
-   "link": "https://www.cnbcindonesia.com/market/20261110210251-17-784061/ihsg-hijau-investor-asing-borong-surat-utang-ri-rp106-triliun",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],
