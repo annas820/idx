@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T15:20+07:00",
+ "generated_for": "2026-11-11T16:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 614,
- "kept": 177,
- "dropped_noise": 6,
+ "scanned": 664,
+ "kept": 187,
+ "dropped_noise": 7,
  "items": [
   {
    "published": "2026-11-11T05:35+07:00",
@@ -257,6 +257,51 @@
    "also_in": []
   },
   {
+   "published": "2026-11-11T16:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T16:10+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten",
+   "link": "https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T16:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "IHSG Ditutup Melemah 0,21% ke 5.115,04 jelang Pengumuman MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261111153604-17-784340/ihsg-ditutup-melemah-021-ke-511504-jelang-pengumuman-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-11T15:05+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -374,51 +419,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T07:59+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T07:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T06:40+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "IHSG Hijau, Investor Asing Borong Surat Utang RI Rp10,6 Triliun",
-   "link": "https://www.cnbcindonesia.com/market/20261110210251-17-784061/ihsg-hijau-investor-asing-borong-surat-utang-ri-rp106-triliun",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],
