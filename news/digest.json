@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T10:50+07:00",
+ "generated_for": "2026-11-11T11:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 485,
- "kept": 145,
+ "scanned": 515,
+ "kept": 154,
  "dropped_noise": 6,
  "items": [
   {
@@ -206,6 +206,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-11T11:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: BEI Akan Periksa Seluruh Saham Tanpa Batasan Kapitalisasi Pasar",
+   "link": "https://www.cnbcindonesia.com/market/20261111084313-19-784105/video-bei-akan-periksa-seluruh-saham-tanpa-batasan-kapitalisasi-pasar",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-11T09:35+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -398,21 +413,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T18:11+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham Big Caps & Apresiasi Rupiah Jadi Pendorong Penguatan IHSG",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127325/saham-big-caps-apresiasi-rupiah-jadi-pendorong-penguatan-ihsg",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],

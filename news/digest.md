@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-11T10:50+07:00 WIB | jendela 36 jam | dipindai 485, lolos 145, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-11T11:50+07:00 WIB | jendela 36 jam | dipindai 515, lolos 154, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -22,6 +22,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
+- **6** T3 11-11 11:20 cnbc_indonesia_market: Video: BEI Akan Periksa Seluruh Saham Tanpa Batasan Kapitalisasi Pasar (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261111084313-19-784105/video-bei-akan-periksa-seluruh-saham-tanpa-batasan-kapitalisasi-pasar>
 - **6** T3 11-11 09:35 bloomberg_technoz: Antisipasi Review MSCI, IHSG Fluktuatif Pagi Ini (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127367/antisipasi-review-msci-ihsg-fluktuatif-pagi-ini>
 - **6** T3 11-11 08:58 cnbc_indonesia_market: Bursa Asia Bergerak Bervariasi Imbas Sentimen Wall Street (global/pasar) <https://www.cnbcindonesia.com/market/20261111085655-17-784117/bursa-asia-bergerak-bervariasi-imbas-sentimen-wall-street>
 - **6** T3 11-11 08:51 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam>
@@ -35,4 +36,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 19:50 bloomberg_technoz: BEI: 300 Saham Baru Masuk HSC & Dikeluarkan dari Perhitungan IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127331/bei-300-saham-baru-masuk-hsc-dikeluarkan-dari-perhitungan-ihsg>
 - **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham HSC Jadi 383, Tambah 300 Emiten Baru (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-hsc-jadi-383-tambah-300-emiten-baru>
 - **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham Jadi 383, HSC Bertambah 300 (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-jadi-383-hsc-bertambah-300>
-- **6** T3 11-10 18:11 bloomberg_technoz: Saham Big Caps & Apresiasi Rupiah Jadi Pendorong Penguatan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127325/saham-big-caps-apresiasi-rupiah-jadi-pendorong-penguatan-ihsg>
