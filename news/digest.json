@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T22:30+07:00",
+ "generated_for": "2026-11-12T01:43+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 674,
- "kept": 164,
- "dropped_noise": 7,
+ "scanned": 593,
+ "kept": 146,
+ "dropped_noise": 6,
  "items": [
   {
    "published": "2026-11-11T05:35+07:00",
@@ -40,23 +40,6 @@
    "tickers": [
     "FILM"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T11:38+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Diplomasi AS dan Iran, Rupiah Menguat dan IHSG Tancap Gas ke 5.100",
-   "link": "https://www.cnbcindonesia.com/market/20261110112409-19-783827/video-diplomasi-as-iran-rupiah-menguat-ihsg-tancap-gas-ke-5100",
-   "score": 11,
-   "categories": [
-    "global",
-    "pasar",
-    "kurs",
-    "komoditas"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -194,26 +177,6 @@
    "tickers": [
     "ASII",
     "BRPT"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T13:18+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "AADI",
-    "ADRO"
    ],
    "flags": [
     "watchlist"
@@ -417,6 +380,36 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-11T07:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T06:40+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "IHSG Hijau, Investor Asing Borong Surat Utang RI Rp10,6 Triliun",
+   "link": "https://www.cnbcindonesia.com/market/20261110210251-17-784061/ihsg-hijau-investor-asing-borong-surat-utang-ri-rp106-triliun",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -453,26 +446,6 @@
    "tickers": [
     "ASII",
     "BRPT"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T13:18+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "AADI",
-    "ADRO"
    ],
    "flags": [
     "watchlist"

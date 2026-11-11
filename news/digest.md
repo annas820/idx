@@ -1,18 +1,16 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-11T22:30+07:00 WIB | jendela 36 jam | dipindai 674, lolos 164, dibuang sebagai noise 7.
+Berita terbaru: 2026-11-12T01:43+07:00 WIB | jendela 36 jam | dipindai 593, lolos 146, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **7** T3 11-11 09:00 bloomberg_technoz: Distribusi Saham AADI ke Empat Keluarga Konglomerat [AADI] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat>
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
-- **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **4** T3 11-10 17:15 cnbc_indonesia_market: Ada Transaksi Jumbo Grup Adaro (ADRO-AADI) di Pasar Nego Rp 66 T [AADI,ADRO] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261110171209-17-783989/ada-transaksi-jumbo-grup-adaro--adro-aadi--di-pasar-nego-rp-66-t>
 
 ## Teratas
 - **12** T3 11-11 05:35 bloomberg_technoz: Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed (kebijakan/global/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed>
 - **11** T3 11-11 18:17 bloomberg_technoz: Hak Jawab Eunice M. Satyono Terkait Sanksi OJK Saham FILM [FILM] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127439/hak-jawab-eunice-m-satyono-terkait-sanksi-ojk-saham-film>
-- **11** T3 11-10 11:38 cnbc_indonesia_market: Video: Diplomasi AS dan Iran, Rupiah Menguat dan IHSG Tancap Gas ke 5.100 (global/pasar/kurs/komoditas) <https://www.cnbcindonesia.com/market/20261110112409-19-783827/video-diplomasi-as-iran-rupiah-menguat-ihsg-tancap-gas-ke-5100>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 3 Saham yang Diinvestigasi BEI (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-3-saham-yang-diinvestigasi-bei>
 - **8** T3 11-11 17:18 cnbc_indonesia_market: Masuk HSC Disorot BEI, Bos DGWG Kurangi Kepemilikan Saham [DGWG] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261111231435-17-784455/masuk-hsc-disorot-bei-bos-dgwg-kurangi-kepemilikan-saham>
@@ -21,7 +19,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-11 06:35 bloomberg_technoz: Inflasi AS Lampaui Proyeksi, Dukung Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127343/inflasi-as-lampaui-proyeksi-dukung-kenaikan-suku-bunga-the-fed>
 - **7** T3 11-11 09:00 bloomberg_technoz: Distribusi Saham AADI ke Empat Keluarga Konglomerat [AADI] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat>
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
-- **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **6** T3 11-11 17:00 bloomberg_technoz: Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian>
 - **6** T3 11-11 16:10 bloomberg_technoz: Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci>
 - **6** T3 11-11 16:10 cnbc_indonesia_news: Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten>
@@ -35,3 +32,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-11 08:51 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam>
 - **6** T3 11-11 08:10 bloomberg_technoz: IHSG Dibayangi Sikap Wait & See Jelang Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127352/ihsg-dibayangi-sikap-wait-see-jelang-review-msci>
 - **6** T3 11-11 07:59 bloomberg_technoz: Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed>
+- **6** T3 11-11 07:40 bloomberg_technoz: Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat>
+- **6** T3 11-11 06:40 cnbc_indonesia_market: IHSG Hijau, Investor Asing Borong Surat Utang RI Rp10,6 Triliun (pasar/kurs) <https://www.cnbcindonesia.com/market/20261110210251-17-784061/ihsg-hijau-investor-asing-borong-surat-utang-ri-rp106-triliun>
