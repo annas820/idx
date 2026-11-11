@@ -3,8 +3,8 @@
  "generated_for": "2026-11-11T22:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 670,
- "kept": 163,
+ "scanned": 674,
+ "kept": 164,
  "dropped_noise": 7,
  "items": [
   {
@@ -89,6 +89,24 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T17:18+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Masuk HSC Disorot BEI, Bos DGWG Kurangi Kepemilikan Saham",
+   "link": "https://www.cnbcindonesia.com/market/20261111231435-17-784455/masuk-hsc-disorot-bei-bos-dgwg-kurangi-kepemilikan-saham",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "DGWG"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -395,21 +413,6 @@
    "categories": [
     "global",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T07:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
    ],
    "tickers": [],
    "flags": [],

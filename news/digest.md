@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-11T22:30+07:00 WIB | jendela 36 jam | dipindai 670, lolos 163, dibuang sebagai noise 7.
+Berita terbaru: 2026-11-11T22:30+07:00 WIB | jendela 36 jam | dipindai 674, lolos 164, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -15,6 +15,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **11** T3 11-10 11:38 cnbc_indonesia_market: Video: Diplomasi AS dan Iran, Rupiah Menguat dan IHSG Tancap Gas ke 5.100 (global/pasar/kurs/komoditas) <https://www.cnbcindonesia.com/market/20261110112409-19-783827/video-diplomasi-as-iran-rupiah-menguat-ihsg-tancap-gas-ke-5100>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 3 Saham yang Diinvestigasi BEI (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-3-saham-yang-diinvestigasi-bei>
+- **8** T3 11-11 17:18 cnbc_indonesia_market: Masuk HSC Disorot BEI, Bos DGWG Kurangi Kepemilikan Saham [DGWG] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261111231435-17-784455/masuk-hsc-disorot-bei-bos-dgwg-kurangi-kepemilikan-saham>
 - **8** T3 11-11 13:57 bloomberg_technoz: Gelagat Investor Asing di Saham BRPT & BRMS Jelang Review MSCI [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127399/gelagat-investor-asing-di-saham-brpt-brms-jelang-review-msci>
 - **8** T3 11-11 07:00 bloomberg_technoz: Inflasi AS Melonjak, Bursa Asia Tertekan Sinyal The Fed (global/pasar/makro) <https://www.bloombergtechnoz.com/detail-news/127345/inflasi-as-melonjak-bursa-asia-tertekan-sinyal-the-fed>
 - **8** T3 11-11 06:35 bloomberg_technoz: Inflasi AS Lampaui Proyeksi, Dukung Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127343/inflasi-as-lampaui-proyeksi-dukung-kenaikan-suku-bunga-the-fed>
@@ -34,4 +35,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-11 08:51 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam>
 - **6** T3 11-11 08:10 bloomberg_technoz: IHSG Dibayangi Sikap Wait & See Jelang Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127352/ihsg-dibayangi-sikap-wait-see-jelang-review-msci>
 - **6** T3 11-11 07:59 bloomberg_technoz: Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed>
-- **6** T3 11-11 07:40 bloomberg_technoz: Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat>
