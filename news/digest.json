@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T18:50+07:00",
+ "generated_for": "2026-11-11T20:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 696,
- "kept": 186,
- "dropped_noise": 7,
+ "scanned": 701,
+ "kept": 183,
+ "dropped_noise": 8,
  "items": [
   {
    "published": "2026-11-11T05:35+07:00",
@@ -258,24 +258,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-10T07:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara",
-   "link": "https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "SRIL"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-11T17:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -422,6 +404,24 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T08:51+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
    "flags": [],
    "also_in": []
   }
