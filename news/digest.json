@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T12:55+07:00",
+ "generated_for": "2026-11-11T14:01+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 547,
- "kept": 165,
+ "scanned": 583,
+ "kept": 171,
  "dropped_noise": 6,
  "items": [
   {
@@ -73,6 +73,41 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T12:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Sanksi Mengintai 3 Saham yang Diinvestigasi BEI",
+   "link": "https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-3-saham-yang-diinvestigasi-bei",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T13:57+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Gelagat Investor Asing di Saham BRPT & BRMS Jelang Review MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127399/gelagat-investor-asing-di-saham-brpt-brms-jelang-review-msci",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BRMS",
+    "BRPT"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -380,36 +415,6 @@
    "tier": 3,
    "title": "Ramai Isu Emiten Raffi Ahmad (RANS), BEI Buka Suara",
    "link": "https://www.cnbcindonesia.com/market/20261110201808-17-784057/ramai-isu-emiten-raffi-ahmad--rans--bei-buka-suara",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T20:55+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Langgar Aturan Baru Harga Beras-Minyak-Telur Bisa Dipenjara 7 Tahun",
-   "link": "https://www.cnbcindonesia.com/news/20261110201021-4-784056/langgar-aturan-baru-harga-beras-minyak-telur-bisa-dipenjara-7-tahun",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T20:05+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Ubah Metodologi HSC, Tak Lagi Tunggu Pergerakan Harga Saham",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127334/bei-ubah-metodologi-hsc-tak-lagi-tunggu-pergerakan-harga-saham",
    "score": 6,
    "categories": [
     "kebijakan",
