@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T08:55+07:00",
+ "generated_for": "2026-11-11T09:43+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 445,
- "kept": 131,
+ "scanned": 460,
+ "kept": 138,
  "dropped_noise": 5,
  "items": [
   {
@@ -109,6 +109,25 @@
    "also_in": []
   },
   {
+   "published": "2026-11-11T09:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Distribusi Saham AADI ke Empat Keluarga Konglomerat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "AADI"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
    "published": "2026-11-11T08:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -183,6 +202,36 @@
    "tickers": [
     "SRIL"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T09:35+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Antisipasi Review MSCI, IHSG Fluktuatif Pagi Ini",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127367/antisipasi-review-msci-ihsg-fluktuatif-pagi-ini",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T08:58+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bursa Asia Bergerak Bervariasi Imbas Sentimen Wall Street",
+   "link": "https://www.cnbcindonesia.com/market/20261111085655-17-784117/bursa-asia-bergerak-bervariasi-imbas-sentimen-wall-street",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -368,58 +417,28 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
+  }
+ ],
+ "watchlist_hits": [
   {
-   "published": "2026-11-10T18:11+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Cegah Indikasi Manipulasi, BEI Awasi Ketat Saham Kecil hingga Jumbo",
-   "link": "https://www.cnbcindonesia.com/market/20261110180827-17-784014/cegah-indikasi-manipulasi-bei-awasi-ketat-saham-kecil-hingga-jumbo",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T15:59+07:00",
+   "published": "2026-11-11T09:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Kinerja Makin Mentereng, Cek Rekomendasi Saham BBRI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127297/kinerja-makin-mentereng-cek-rekomendasi-saham-bbri",
-   "score": 6,
+   "title": "Distribusi Saham AADI ke Empat Keluarga Konglomerat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat",
+   "score": 7,
    "categories": [
     "pasar",
     "emiten"
    ],
    "tickers": [
-    "BBRI"
+    "AADI"
    ],
    "flags": [
-    "petunjuk"
+    "watchlist"
    ],
    "also_in": []
   },
-  {
-   "published": "2026-11-10T15:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Ungkap Investasi Bodong Bermodus AI, dari Saham hingga Kripto",
-   "link": "https://www.cnbcindonesia.com/market/20261110142707-17-783904/ojk-ungkap-investasi-bodong-bermodus-ai-dari-saham-hingga-kripto",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  }
- ],
- "watchlist_hits": [
   {
    "published": "2026-11-11T08:30+07:00",
    "source": "bloomberg_technoz",

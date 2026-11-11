@@ -1,9 +1,10 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-11T08:55+07:00 WIB | jendela 36 jam | dipindai 445, lolos 131, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-11T09:43+07:00 WIB | jendela 36 jam | dipindai 460, lolos 138, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **7** T3 11-11 09:00 bloomberg_technoz: Distribusi Saham AADI ke Empat Keluarga Konglomerat [AADI] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat>
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
@@ -16,10 +17,13 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-11 07:00 bloomberg_technoz: Inflasi AS Melonjak, Bursa Asia Tertekan Sinyal The Fed (global/pasar/makro) <https://www.bloombergtechnoz.com/detail-news/127345/inflasi-as-melonjak-bursa-asia-tertekan-sinyal-the-fed>
 - **8** T3 11-11 06:35 bloomberg_technoz: Inflasi AS Lampaui Proyeksi, Dukung Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127343/inflasi-as-lampaui-proyeksi-dukung-kenaikan-suku-bunga-the-fed>
 - **8** T3 11-10 08:20 bloomberg_technoz: Waspadai Inflasi, Barkin The Fed Isyaratkan Suku Bunga Naik Lagi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127216/waspadai-inflasi-barkin-the-fed-isyaratkan-suku-bunga-naik-lagi>
+- **7** T3 11-11 09:00 bloomberg_technoz: Distribusi Saham AADI ke Empat Keluarga Konglomerat [AADI] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat>
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
+- **6** T3 11-11 09:35 bloomberg_technoz: Antisipasi Review MSCI, IHSG Fluktuatif Pagi Ini (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127367/antisipasi-review-msci-ihsg-fluktuatif-pagi-ini>
+- **6** T3 11-11 08:58 cnbc_indonesia_market: Bursa Asia Bergerak Bervariasi Imbas Sentimen Wall Street (global/pasar) <https://www.cnbcindonesia.com/market/20261111085655-17-784117/bursa-asia-bergerak-bervariasi-imbas-sentimen-wall-street>
 - **6** T3 11-11 08:51 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam>
 - **6** T3 11-11 08:10 bloomberg_technoz: IHSG Dibayangi Sikap Wait & See Jelang Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127352/ihsg-dibayangi-sikap-wait-see-jelang-review-msci>
 - **6** T3 11-11 07:59 bloomberg_technoz: Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed>
@@ -32,6 +36,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham HSC Jadi 383, Tambah 300 Emiten Baru (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-hsc-jadi-383-tambah-300-emiten-baru>
 - **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham Jadi 383, HSC Bertambah 300 (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-jadi-383-hsc-bertambah-300>
 - **6** T3 11-10 18:11 bloomberg_technoz: Saham Big Caps & Apresiasi Rupiah Jadi Pendorong Penguatan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127325/saham-big-caps-apresiasi-rupiah-jadi-pendorong-penguatan-ihsg>
-- **6** T3 11-10 18:11 cnbc_indonesia_market: Cegah Indikasi Manipulasi, BEI Awasi Ketat Saham Kecil hingga Jumbo (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110180827-17-784014/cegah-indikasi-manipulasi-bei-awasi-ketat-saham-kecil-hingga-jumbo>
-- **6** T3 11-10 15:59 bloomberg_technoz: Kinerja Makin Mentereng, Cek Rekomendasi Saham BBRI [BBRI] (pasar/emiten; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127297/kinerja-makin-mentereng-cek-rekomendasi-saham-bbri>
-- **6** T3 11-10 15:30 cnbc_indonesia_market: OJK Ungkap Investasi Bodong Bermodus AI, dari Saham hingga Kripto (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110142707-17-783904/ojk-ungkap-investasi-bodong-bermodus-ai-dari-saham-hingga-kripto>
