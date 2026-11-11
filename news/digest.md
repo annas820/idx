@@ -1,12 +1,11 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-12T01:43+07:00 WIB | jendela 36 jam | dipindai 593, lolos 146, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-12T05:47+07:00 WIB | jendela 36 jam | dipindai 470, lolos 120, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **7** T3 11-11 09:00 bloomberg_technoz: Distribusi Saham AADI ke Empat Keluarga Konglomerat [AADI] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat>
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
-- **4** T3 11-10 17:15 cnbc_indonesia_market: Ada Transaksi Jumbo Grup Adaro (ADRO-AADI) di Pasar Nego Rp 66 T [AADI,ADRO] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261110171209-17-783989/ada-transaksi-jumbo-grup-adaro--adro-aadi--di-pasar-nego-rp-66-t>
 
 ## Teratas
 - **12** T3 11-11 05:35 bloomberg_technoz: Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed (kebijakan/global/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed>
