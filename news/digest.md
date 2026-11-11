@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-11T14:01+07:00 WIB | jendela 36 jam | dipindai 583, lolos 171, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-11T15:20+07:00 WIB | jendela 36 jam | dipindai 614, lolos 177, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -25,6 +25,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
+- **6** T3 11-11 15:05 cnbc_indonesia_market: Video: Sentimen Eksternal Bikin Investor Kabu, IHSG - Rupiah Lesu (pasar/kurs) <https://www.cnbcindonesia.com/market/20261111141200-19-784282/video-sentimen-eksternal-bikin-investor-kabu-ihsg--rupiah-lesu>
 - **6** T3 11-11 12:55 bloomberg_technoz: IHSG Balik Arah Jadi Merah, Terbeban Sentimen MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127388/ihsg-balik-arah-jadi-merah-terbeban-sentimen-msci>
 - **6** T3 11-11 12:26 cnbc_indonesia_market: Video: IHSG Masuk Zona Merah dan Rupiah Tembus Rp 18.150 per Dolar AS (pasar/kurs) <https://www.cnbcindonesia.com/market/20261111121545-19-784224/video-ihsg-masuk-zona-merah-rupiah-tembus-rp-18150-per-dolar-as>
 - **6** T3 11-11 11:20 cnbc_indonesia_market: Video: BEI Akan Periksa Seluruh Saham Tanpa Batasan Kapitalisasi Pasar (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261111084313-19-784105/video-bei-akan-periksa-seluruh-saham-tanpa-batasan-kapitalisasi-pasar>
@@ -35,4 +36,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-11 07:59 bloomberg_technoz: Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed>
 - **6** T3 11-11 07:40 bloomberg_technoz: Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat>
 - **6** T3 11-11 06:40 cnbc_indonesia_market: IHSG Hijau, Investor Asing Borong Surat Utang RI Rp10,6 Triliun (pasar/kurs) <https://www.cnbcindonesia.com/market/20261110210251-17-784061/ihsg-hijau-investor-asing-borong-surat-utang-ri-rp106-triliun>
-- **6** T3 11-10 21:05 cnbc_indonesia_market: Ramai Isu Emiten Raffi Ahmad (RANS), BEI Buka Suara (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110201808-17-784057/ramai-isu-emiten-raffi-ahmad--rans--bei-buka-suara>

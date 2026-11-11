@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T14:01+07:00",
+ "generated_for": "2026-11-11T15:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 583,
- "kept": 171,
+ "scanned": 614,
+ "kept": 177,
  "dropped_noise": 6,
  "items": [
   {
@@ -257,6 +257,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-11T15:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Sentimen Eksternal Bikin Investor Kabu, IHSG - Rupiah Lesu",
+   "link": "https://www.cnbcindonesia.com/market/20261111141200-19-784282/video-sentimen-eksternal-bikin-investor-kabu-ihsg--rupiah-lesu",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-11T12:55+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -404,21 +419,6 @@
    "categories": [
     "pasar",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T21:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Ramai Isu Emiten Raffi Ahmad (RANS), BEI Buka Suara",
-   "link": "https://www.cnbcindonesia.com/market/20261110201808-17-784057/ramai-isu-emiten-raffi-ahmad--rans--bei-buka-suara",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
