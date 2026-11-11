@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T07:52+07:00",
+ "generated_for": "2026-11-11T08:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 435,
- "kept": 125,
+ "scanned": 445,
+ "kept": 131,
  "dropped_noise": 5,
  "items": [
   {
@@ -61,28 +61,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-09T20:11+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BSI (BRIS) Kantongi Restu Rights Issue 6,8 Miliar Saham, Ini Rencana Penggunaannya",
-   "link": "https://keuangan.kontan.co.id/news/bsi-bris-kantongi-restu-rights-issue-68-miliar-saham-ini-rencana-penggunaannya",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
    "published": "2026-11-11T07:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -128,6 +106,26 @@
    ],
    "tickers": [],
    "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T08:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII",
+    "BRPT"
+   ],
+   "flags": [
+    "watchlist"
+   ],
    "also_in": []
   },
   {
@@ -185,6 +183,54 @@
    "tickers": [
     "SRIL"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T08:51+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T08:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Dibayangi Sikap Wait & See Jelang Review MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127352/ihsg-dibayangi-sikap-wait-see-jelang-review-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T07:59+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -371,54 +417,29 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-10T15:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Akan Bertemu MSCI Pekan Ini, Lanjut Bahas Reformasi Bursa",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127280/bei-akan-bertemu-msci-pekan-ini-lanjut-bahas-reformasi-bursa",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T11:57+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Pengumuman Nasib Saham RI Pekan Ini, BEI Bakal Temui MSCI",
-   "link": "https://www.cnbcindonesia.com/market/20261110114636-17-783847/pengumuman-nasib-saham-ri-pekan-ini-bei-bakal-temui-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T11:42+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Peringatan Keras OJK ke Oknum Manipulasi Saham: Jangan Main-Main!",
-   "link": "https://www.cnbcindonesia.com/market/20261110113037-17-783838/peringatan-keras-ojk-ke-oknum-manipulasi-saham-jangan-main-main",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-11T08:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII",
+    "BRPT"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-10T13:18+07:00",
    "source": "bloomberg_technoz",
