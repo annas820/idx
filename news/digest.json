@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T21:11+07:00",
+ "generated_for": "2026-11-11T22:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 694,
- "kept": 175,
- "dropped_noise": 8,
+ "scanned": 670,
+ "kept": 163,
+ "dropped_noise": 7,
  "items": [
   {
    "published": "2026-11-11T05:35+07:00",
@@ -196,26 +196,6 @@
    "tickers": [
     "AADI",
     "ADRO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T09:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII",
-    "BBCA"
    ],
    "flags": [
     "watchlist"
@@ -419,6 +399,21 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-11T07:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -475,26 +470,6 @@
    "tickers": [
     "AADI",
     "ADRO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T09:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII",
-    "BBCA"
    ],
    "flags": [
     "watchlist"
