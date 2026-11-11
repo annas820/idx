@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T17:52+07:00",
+ "generated_for": "2026-11-11T18:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 686,
- "kept": 189,
+ "scanned": 696,
+ "kept": 186,
  "dropped_noise": 7,
  "items": [
   {
@@ -21,6 +21,25 @@
     "kurs"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T18:17+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Hak Jawab Eunice M. Satyono Terkait Sanksi OJK Saham FILM",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127439/hak-jawab-eunice-m-satyono-terkait-sanksi-ojk-saham-film",
+   "score": 11,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "FILM"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -403,24 +422,6 @@
     "pasar"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T08:51+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
    "flags": [],
    "also_in": []
   }
