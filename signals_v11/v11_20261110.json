@@ -1,0 +1,388 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261110",
+ "sessions": 20,
+ "signals": [
+  {
+   "symbol": "BBCA",
+   "signal_date": "20261110",
+   "close": 5300.0,
+   "atr": 213.27,
+   "limit": 5193.37,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.249,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "ASII",
+   "signal_date": "20261110",
+   "close": 5350.0,
+   "atr": 196.78,
+   "limit": 5251.61,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.443,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "DEWA",
+   "signal_date": "20261110",
+   "close": 234.0,
+   "atr": 19.2,
+   "limit": 224.4,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.101,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "PTRO",
+   "signal_date": "20261110",
+   "close": 2410.0,
+   "atr": 282.96,
+   "limit": 2268.52,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.133,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "SINI",
+   "signal_date": "20261110",
+   "close": 8675.0,
+   "atr": 1053.49,
+   "limit": 8148.26,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.132,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "INKP",
+   "signal_date": "20261110",
+   "close": 6425.0,
+   "atr": 329.23,
+   "limit": 6260.39,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.241,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "EXCL",
+   "signal_date": "20261110",
+   "close": 1520.0,
+   "atr": 94.01,
+   "limit": 1473.0,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.294,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "SMGR",
+   "signal_date": "20261110",
+   "close": 1495.0,
+   "atr": 80.84,
+   "limit": 1454.58,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.158,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "BNBR",
+   "signal_date": "20261110",
+   "close": 40.0,
+   "atr": 3.85,
+   "limit": 38.07,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.165,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "LSIP",
+   "signal_date": "20261110",
+   "close": 1505.0,
+   "atr": 56.4,
+   "limit": 1476.8,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.164,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "BFIN",
+   "signal_date": "20261110",
+   "close": 725.0,
+   "atr": 35.32,
+   "limit": 707.34,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.226,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "MAPA",
+   "signal_date": "20261110",
+   "close": 600.0,
+   "atr": 28.62,
+   "limit": 585.69,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.147,
+   "positive_sessions": 4
+  }
+ ],
+ "controls": [
+  {
+   "symbol": "ELSA",
+   "signal_date": "20261110",
+   "close": 560.0,
+   "atr": 32.31,
+   "limit": 543.84,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SINI",
+   "signal_date": "20261110",
+   "close": 8675.0,
+   "atr": 1053.49,
+   "limit": 8148.26,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BREN",
+   "signal_date": "20261110",
+   "close": 2060.0,
+   "atr": 222.99,
+   "limit": 1948.51,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "PACK",
+   "signal_date": "20261110",
+   "close": 302.0,
+   "atr": 38.56,
+   "limit": 282.72,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "TOBA",
+   "signal_date": "20261110",
+   "close": 352.0,
+   "atr": 37.68,
+   "limit": 333.16,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "TOWR",
+   "signal_date": "20261110",
+   "close": 362.0,
+   "atr": 22.98,
+   "limit": 350.51,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "KETR",
+   "signal_date": "20261110",
+   "close": 492.0,
+   "atr": 48.79,
+   "limit": 467.61,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "TPIA",
+   "signal_date": "20261110",
+   "close": 1265.0,
+   "atr": 117.89,
+   "limit": 1206.05,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SMIL",
+   "signal_date": "20261110",
+   "close": 418.0,
+   "atr": 17.87,
+   "limit": 409.07,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "GOTO",
+   "signal_date": "20261110",
+   "close": 25.0,
+   "atr": 2.1,
+   "limit": 23.95,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "EMTK",
+   "signal_date": "20261110",
+   "close": 294.0,
+   "atr": 17.68,
+   "limit": 285.16,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BRIS",
+   "signal_date": "20261110",
+   "close": 1130.0,
+   "atr": 60.51,
+   "limit": 1099.74,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ],
+ "breadth": 0.69,
+ "breadth_1d": 0.61,
+ "regime_ok": true,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "ASII",
+   "ratio_5d": 0.443,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "EXCL",
+   "ratio_5d": 0.294,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "BBCA",
+   "ratio_5d": 0.249,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "INKP",
+   "ratio_5d": 0.241,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "BFIN",
+   "ratio_5d": 0.226,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "BNBR",
+   "ratio_5d": 0.165,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "LSIP",
+   "ratio_5d": 0.164,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "SMGR",
+   "ratio_5d": 0.158,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "MAPA",
+   "ratio_5d": 0.147,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "PTRO",
+   "ratio_5d": 0.133,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "SINI",
+   "ratio_5d": 0.132,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "DEWA",
+   "ratio_5d": 0.101,
+   "positive_sessions": 4
+  }
+ ],
+ "status": "ok"
+}

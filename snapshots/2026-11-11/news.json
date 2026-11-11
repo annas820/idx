@@ -1,0 +1,289 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-11T11:18:42Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Targetkan AUM Rp200 T di 2027, Danareksa IM Garap Investor Global",
+        "url": "https://www.cnbcindonesia.com/market/20261111181103-17-784392/targetkan-aum-rp200-t-di-2027-danareksa-im-garap-investor-global",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-11T18:13:48+07:00",
+        "summary": "PT Danareksa Investment Management targetkan AUM Rp192-200 triliun pada 2027, fokus investor global melalui anak usaha di Singapura.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Jual ST017, Perbankan Incar Peluang Cross Selling dan Kerek Fee Based Income",
+        "url": "https://keuangan.kontan.co.id/news/jual-st017-perbankan-incar-peluang-cross-selling-dan-kerek-fee-based-income",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T18:12:17+07:00",
+        "summary": "Jual ST017, perbankan mengincar cross selling ke produk welath management lainnya dan kerek fee based income.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "jual"
+        ]
+      },
+      {
+        "title": "Menakar Untung Rugi KB Bank Kembali ke Asuhan Koperasi",
+        "url": "https://keuangan.kontan.co.id/news/menakar-untung-rugi-kb-bank-kembali-ke-asuhan-koperasi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T18:05:46+07:00",
+        "summary": "Menteri Koperasi mengaku sedang menyiapkan konsorsium antar koperasi untuk membeli aset dan turut andil dalam mengelola KB Bank",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "untung"
+        ],
+        "negative_terms": [
+          "rugi"
+        ]
+      },
+      {
+        "title": "Ini yang Perlu Dibenahi agar Asuransi Meningkatkan Investasi di Pasar Saham",
+        "url": "https://keuangan.kontan.co.id/news/ini-yang-perlu-dibenahi-agar-asuransi-meningkatkan-investasi-di-pasar-saham",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T17:52:34+07:00",
+        "summary": "Asuransi Asei menilai peningkatan investasi saham perlu didukung kualitas pasar modal, tata kelola, dan kepastian regulasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Resmi Meluncur, Danareksa Investment Kelola AUM Jumbo Rp172 T",
+        "url": "https://www.cnbcindonesia.com/market/20261111174605-17-784379/resmi-meluncur-danareksa-investment-kelola-aum-jumbo-rp172-t",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-11T17:48:24+07:00",
+        "summary": "PT Danareksa Investments resmi diluncurkan dengan AUM terbesar di Indonesia senilai Rp172 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "AAJI: Target Pertumbuhan Aset Asuransi 2026 Sebesar 2%-4% Realistis",
+        "url": "https://keuangan.kontan.co.id/news/aaji-target-pertumbuhan-aset-asuransi-2026-sebesar-2-4-realistis",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T17:36:34+07:00",
+        "summary": "AAJI menilai target pertumbuhan aset asuransi 2026 sebesar 2%-4% realistis di tengah tekanan pasar keuangan dan investasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Hardiyanto Pilia Jadi Plt Dirut, Ini Manajemen Danareksa Investment",
+        "url": "https://www.cnbcindonesia.com/market/20261111172957-17-784373/hardiyanto-pilia-jadi-plt-dirut-ini-manajemen-danareksa-investment",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-11T17:31:26+07:00",
+        "summary": "PT Danareksa resmi berganti nama menjadi PT Kawasan Industri Indonesia. Fokus baru pada pengelolaan kawasan industri.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Keliling Setengah Bumi Tak Transit, Ini Rute Pesawat Terpanjang Dunia",
+        "url": "https://www.cnbcindonesia.com/research/20261111150411-128-784312/keliling-setengah-bumi-tak-transit-ini-rute-pesawat-terpanjang-dunia",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-11T17:20:28+07:00",
+        "summary": "Perkembangan teknologi penerbangan telah mengubah cara manusia menjelajahi dunia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "2 Bank di Sumut Merger, Intip Bocoran Kondisi usai Bergabung",
+        "url": "https://www.cnbcindonesia.com/market/20261111170602-17-784369/2-bank-di-sumut-merger-intip-bocoran-kondisi-usai-bergabung",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-11T17:18:03+07:00",
+        "summary": "OJK menyetujui penggabungan PT BPR Syariah Sindanglaya ke PT BPR Syariah Amanah Insan Cita.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BRI Catat Rekor Tabungan Tertinggi Sepanjang Sejarah, Tembus Rp 637,7 Triliun",
+        "url": "https://keuangan.kontan.co.id/news/bri-catat-rekor-tabungan-tertinggi-sepanjang-sejarah-tembus-rp-6377-triliun",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T17:02:15+07:00",
+        "summary": "BRI mencatat rekor tabungan tertinggi sepanjang sejarah, tembus Rp 637,7 triliun hingga akhir September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "rekor",
+          "tertinggi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "IFG Perkuat Tata Kelola Arsip",
+        "url": "https://keuangan.kontan.co.id/news/ifg-perkuat-tata-kelola-arsip",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T16:56:52+07:00",
+        "summary": "IFG perkuat tata kelola arsip untuk mendukung proses streamlining perusahaan yang transparan dan akuntabel.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "El Ni&#241;o Bayangi Bisnis, Jasindo Dorong Penguatan Manajemen Risiko",
+        "url": "https://keuangan.kontan.co.id/news/el-niño-bayangi-bisnis-jasindo-dorong-penguatan-manajemen-risiko",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T16:38:20+07:00",
+        "summary": "Setiap sektor usaha memiliki tingkat kerentanan berbeda terhadap perubahan iklim. Karena itu, perusahaan perlu mengidentifikasi potensi risiko.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Menteri Ara: Realisasi KUR Perumahan Capai Rp29,6T per 10 November",
+        "url": "https://www.cnbcindonesia.com/market/20261111151659-17-784311/menteri-ara-realisasi-kur-perumahan-capai-rp296t-per-10-november",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-11T16:25:01+07:00",
+        "summary": "Menteri PKP Maruarar Sirait ungkap penyaluran kredit perumahan mencapai Rp29,6 triliun. Dukungan untuk pengembang dan masyarakat dalam akses hunian layak.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bancassurance Tumbuh 17,9%, AAJI Andalkan Kanal Distribusi hingga Akhir 2026",
+        "url": "https://keuangan.kontan.co.id/news/bancassurance-tumbuh-179-aaji-andalkan-kanal-distribusi-hingga-akhir-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T16:22:14+07:00",
+        "summary": "AAJI mengandalkan optimalisasi kanal distribusi untuk menjaga momentum pertumbuhan industri asuransi jiwa hingga akhir 2026",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: RI Terbitkan Panda Bond Lagi, Pesanan Tembus Rp 46 Triliun",
+        "url": "https://www.cnbcindonesia.com/market/20261111134926-19-784266/video-ri-terbitkan-panda-bond-lagi-pesanan-tembus-rp-46-triliun",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-11T16:20:29+07:00",
+        "summary": "RI Terbitkan Panda Bond Lagi, Pesanan Tembus Rp 46 Triliun",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "7 Indikator Ekonomi RI Bicara, Masih Sehat atau Mulai Sakit?",
+        "url": "https://www.cnbcindonesia.com/research/20261111115509-128-784210/7-indikator-ekonomi-ri-bicara-masih-sehat-atau-mulai-sakit",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-11T16:20:28+07:00",
+        "summary": "Ekonomi tumbuh lebih cepat, keyakinan konsumen naik, dan perdagangan surplus",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "tumbuh",
+          "surplus"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Luncurkan Pedoman Keamanan dan Ketahanan Siber Industri Fintech Lending",
+        "url": "https://keuangan.kontan.co.id/news/ojk-luncurkan-pedoman-keamanan-dan-ketahanan-siber-industri-fintech-lending",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T16:19:42+07:00",
+        "summary": "OJK meluncurkan pedoman keamanan dan ketahanan siber industri fintech lending. Hal ini untuk memperkuat tata kelola dan perlindungan konsumen.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bos OJK Buka Suara Alasan Metodologi HSC Diubah",
+        "url": "https://www.cnbcindonesia.com/market/20261111160641-17-784344/bos-ojk-buka-suara-alasan-metodologi-hsc-diubah",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-11T16:16:43+07:00",
+        "summary": "Ketua OJK Friderica Widyasari Dewi menjelaskan perubahan metodologi saham HSC, memperluas cakupan hingga 383 saham.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ekspektasi Kegiatan Usaha Naik, Asei Bidik Bisnis Asuransi Properti pada 2027",
+        "url": "https://keuangan.kontan.co.id/news/ekspektasi-kegiatan-usaha-naik-asei-bidik-bisnis-asuransi-properti-pada-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-11-11T16:12:50+07:00",
+        "summary": "Asuransi Asei Indonesia (Asuransi Asei) pun membidik sejumlah sektor produktif untuk memperkuat bisnis tersebut pada 2027.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "IHSG Ditutup Melemah 0,21% ke 5.115,04 jelang Pengumuman MSCI",
+        "url": "https://www.cnbcindonesia.com/market/20261111153604-17-784340/ihsg-ditutup-melemah-021-ke-511504-jelang-pengumuman-msci",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-11T16:05:07+07:00",
+        "summary": "IHSG ditutup melemah di level 5.115,04 pada perdagangan hari ini, Rabu 11 November 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "melemah"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "idx.sentiment.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-11T11:18:53Z",
+  "cached": true,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": "AADI",
+    "matched_name": "ADARO ANDALAN INDONESIA",
+    "label": "neutral",
+    "score": 0.0,
+    "items": 1,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 1,
+    "oldest": "2026-11-10T17:15:23+07:00",
+    "newest": "2026-11-10T17:15:23+07:00",
+    "top_positive_terms": [],
+    "top_negative_terms": [],
+    "headlines": [
+      {
+        "title": "Ada Transaksi Jumbo Grup Adaro (ADRO-AADI) di Pasar Nego Rp 66 T",
+        "url": "https://www.cnbcindonesia.com/market/20261110171209-17-783989/ada-transaksi-jumbo-grup-adaro--adro-aadi--di-pasar-nego-rp-66-t",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-10T17:15:23+07:00",
+        "summary": "Transaksi crossing jumbo terjadi pada saham Adaro, ADRO dan AADI, dengan nilai mencapai puluhan triliun Rupiah.",
+        "matched_by": "ticker",
+        "scope": "company",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ],
+    "method": "lexicon: (positive - negative) / (positive + negative) per headline over title + summary, Indonesian and English finance terms; mean over matched items"
+  }
+}
