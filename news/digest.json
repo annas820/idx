@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T16:55+07:00",
+ "generated_for": "2026-11-11T17:52+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 664,
- "kept": 187,
+ "scanned": 686,
+ "kept": 189,
  "dropped_noise": 7,
  "items": [
   {
@@ -257,6 +257,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-11T17:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-11T16:10+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -406,21 +421,6 @@
    "tickers": [
     "ANTM"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T08:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Dibayangi Sikap Wait & See Jelang Review MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127352/ihsg-dibayangi-sikap-wait-see-jelang-review-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }

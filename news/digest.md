@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-11T16:55+07:00 WIB | jendela 36 jam | dipindai 664, lolos 187, dibuang sebagai noise 7.
+Berita terbaru: 2026-11-11T17:52+07:00 WIB | jendela 36 jam | dipindai 686, lolos 189, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -25,6 +25,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
+- **6** T3 11-11 17:00 bloomberg_technoz: Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian>
 - **6** T3 11-11 16:10 bloomberg_technoz: Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci>
 - **6** T3 11-11 16:10 cnbc_indonesia_news: Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten>
 - **6** T3 11-11 16:05 cnbc_indonesia_market: IHSG Ditutup Melemah 0,21% ke 5.115,04 jelang Pengumuman MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261111153604-17-784340/ihsg-ditutup-melemah-021-ke-511504-jelang-pengumuman-msci>
@@ -35,4 +36,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-11 09:35 bloomberg_technoz: Antisipasi Review MSCI, IHSG Fluktuatif Pagi Ini (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127367/antisipasi-review-msci-ihsg-fluktuatif-pagi-ini>
 - **6** T3 11-11 08:58 cnbc_indonesia_market: Bursa Asia Bergerak Bervariasi Imbas Sentimen Wall Street (global/pasar) <https://www.cnbcindonesia.com/market/20261111085655-17-784117/bursa-asia-bergerak-bervariasi-imbas-sentimen-wall-street>
 - **6** T3 11-11 08:51 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam>
-- **6** T3 11-11 08:10 bloomberg_technoz: IHSG Dibayangi Sikap Wait & See Jelang Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127352/ihsg-dibayangi-sikap-wait-see-jelang-review-msci>
