@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-11T11:50+07:00",
+ "generated_for": "2026-11-11T12:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 515,
- "kept": 154,
+ "scanned": 547,
+ "kept": 165,
  "dropped_noise": 6,
  "items": [
   {
@@ -57,6 +57,22 @@
    "tickers": [
     "SRIL"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T12:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK",
+   "link": "https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -202,6 +218,36 @@
    "tickers": [
     "SRIL"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T12:55+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Balik Arah Jadi Merah, Terbeban Sentimen MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127388/ihsg-balik-arah-jadi-merah-terbeban-sentimen-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T12:26+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: IHSG Masuk Zona Merah dan Rupiah Tembus Rp 18.150 per Dolar AS",
+   "link": "https://www.cnbcindonesia.com/market/20261111121545-19-784224/video-ihsg-masuk-zona-merah-rupiah-tembus-rp-18150-per-dolar-as",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -364,51 +410,6 @@
    "tier": 3,
    "title": "BEI Ubah Metodologi HSC, Tak Lagi Tunggu Pergerakan Harga Saham",
    "link": "https://www.bloombergtechnoz.com/detail-news/127334/bei-ubah-metodologi-hsc-tak-lagi-tunggu-pergerakan-harga-saham",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T19:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI: 300 Saham Baru Masuk HSC & Dikeluarkan dari Perhitungan IHSG",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127331/bei-300-saham-baru-masuk-hsc-dikeluarkan-dari-perhitungan-ihsg",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T19:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Perluas Daftar Saham HSC Jadi 383, Tambah 300 Emiten Baru",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-hsc-jadi-383-tambah-300-emiten-baru",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-10T19:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Perluas Daftar Saham Jadi 383, HSC Bertambah 300",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-jadi-383-hsc-bertambah-300",
    "score": 6,
    "categories": [
     "kebijakan",

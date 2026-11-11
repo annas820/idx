@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-11T11:50+07:00 WIB | jendela 36 jam | dipindai 515, lolos 154, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-11T12:55+07:00 WIB | jendela 36 jam | dipindai 547, lolos 165, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -14,6 +14,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **12** T3 11-11 05:35 bloomberg_technoz: Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed (kebijakan/global/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed>
 - **11** T3 11-10 11:38 cnbc_indonesia_market: Video: Diplomasi AS dan Iran, Rupiah Menguat dan IHSG Tancap Gas ke 5.100 (global/pasar/kurs/komoditas) <https://www.cnbcindonesia.com/market/20261110112409-19-783827/video-diplomasi-as-iran-rupiah-menguat-ihsg-tancap-gas-ke-5100>
 - **10** T3 11-10 08:10 bloomberg_technoz: BEI Resmi Delisting 18 Saham Hari Ini, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127215/bei-resmi-delisting-18-saham-hari-ini-ada-sritex-sril>
+- **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk>
 - **8** T3 11-11 07:00 bloomberg_technoz: Inflasi AS Melonjak, Bursa Asia Tertekan Sinyal The Fed (global/pasar/makro) <https://www.bloombergtechnoz.com/detail-news/127345/inflasi-as-melonjak-bursa-asia-tertekan-sinyal-the-fed>
 - **8** T3 11-11 06:35 bloomberg_technoz: Inflasi AS Lampaui Proyeksi, Dukung Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127343/inflasi-as-lampaui-proyeksi-dukung-kenaikan-suku-bunga-the-fed>
 - **8** T3 11-10 08:20 bloomberg_technoz: Waspadai Inflasi, Barkin The Fed Isyaratkan Suku Bunga Naik Lagi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127216/waspadai-inflasi-barkin-the-fed-isyaratkan-suku-bunga-naik-lagi>
@@ -22,6 +23,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
 - **7** T3 11-10 09:30 bloomberg_technoz: Investor Asing Borong Saham BBCA dan ASII Ratusan Miliar [ASII,BBCA] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127224/investor-asing-borong-saham-bbca-dan-asii-ratusan-miliar>
 - **7** T3 11-10 07:05 cnbc_indonesia_market: Sritex (SRIL) Delisting, Ada Saham Lo Kheng Hong dan Sinyal Danantara [SRIL] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261110054123-17-783715/sritex--sril--delisting-ada-saham-lo-kheng-hong-dan-sinyal-danantara>
+- **6** T3 11-11 12:55 bloomberg_technoz: IHSG Balik Arah Jadi Merah, Terbeban Sentimen MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127388/ihsg-balik-arah-jadi-merah-terbeban-sentimen-msci>
+- **6** T3 11-11 12:26 cnbc_indonesia_market: Video: IHSG Masuk Zona Merah dan Rupiah Tembus Rp 18.150 per Dolar AS (pasar/kurs) <https://www.cnbcindonesia.com/market/20261111121545-19-784224/video-ihsg-masuk-zona-merah-rupiah-tembus-rp-18150-per-dolar-as>
 - **6** T3 11-11 11:20 cnbc_indonesia_market: Video: BEI Akan Periksa Seluruh Saham Tanpa Batasan Kapitalisasi Pasar (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261111084313-19-784105/video-bei-akan-periksa-seluruh-saham-tanpa-batasan-kapitalisasi-pasar>
 - **6** T3 11-11 09:35 bloomberg_technoz: Antisipasi Review MSCI, IHSG Fluktuatif Pagi Ini (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127367/antisipasi-review-msci-ihsg-fluktuatif-pagi-ini>
 - **6** T3 11-11 08:58 cnbc_indonesia_market: Bursa Asia Bergerak Bervariasi Imbas Sentimen Wall Street (global/pasar) <https://www.cnbcindonesia.com/market/20261111085655-17-784117/bursa-asia-bergerak-bervariasi-imbas-sentimen-wall-street>
@@ -33,6 +36,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-10 21:05 cnbc_indonesia_market: Ramai Isu Emiten Raffi Ahmad (RANS), BEI Buka Suara (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261110201808-17-784057/ramai-isu-emiten-raffi-ahmad--rans--bei-buka-suara>
 - **6** T3 11-10 20:55 cnbc_indonesia_news: Langgar Aturan Baru Harga Beras-Minyak-Telur Bisa Dipenjara 7 Tahun (kebijakan/global) <https://www.cnbcindonesia.com/news/20261110201021-4-784056/langgar-aturan-baru-harga-beras-minyak-telur-bisa-dipenjara-7-tahun>
 - **6** T3 11-10 20:05 bloomberg_technoz: BEI Ubah Metodologi HSC, Tak Lagi Tunggu Pergerakan Harga Saham (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127334/bei-ubah-metodologi-hsc-tak-lagi-tunggu-pergerakan-harga-saham>
-- **6** T3 11-10 19:50 bloomberg_technoz: BEI: 300 Saham Baru Masuk HSC & Dikeluarkan dari Perhitungan IHSG (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127331/bei-300-saham-baru-masuk-hsc-dikeluarkan-dari-perhitungan-ihsg>
-- **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham HSC Jadi 383, Tambah 300 Emiten Baru (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-hsc-jadi-383-tambah-300-emiten-baru>
-- **6** T3 11-10 19:40 bloomberg_technoz: BEI Perluas Daftar Saham Jadi 383, HSC Bertambah 300 (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127329/bei-perluas-daftar-saham-jadi-383-hsc-bertambah-300>
