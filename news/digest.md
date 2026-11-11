@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-11T20:00+07:00 WIB | jendela 36 jam | dipindai 701, lolos 183, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-11T21:11+07:00 WIB | jendela 36 jam | dipindai 694, lolos 175, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -14,13 +14,11 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **12** T3 11-11 05:35 bloomberg_technoz: Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed (kebijakan/global/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed>
 - **11** T3 11-11 18:17 bloomberg_technoz: Hak Jawab Eunice M. Satyono Terkait Sanksi OJK Saham FILM [FILM] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127439/hak-jawab-eunice-m-satyono-terkait-sanksi-ojk-saham-film>
 - **11** T3 11-10 11:38 cnbc_indonesia_market: Video: Diplomasi AS dan Iran, Rupiah Menguat dan IHSG Tancap Gas ke 5.100 (global/pasar/kurs/komoditas) <https://www.cnbcindonesia.com/market/20261110112409-19-783827/video-diplomasi-as-iran-rupiah-menguat-ihsg-tancap-gas-ke-5100>
-- **10** T3 11-10 08:10 bloomberg_technoz: BEI Resmi Delisting 18 Saham Hari Ini, Ada Sritex (SRIL) [SRIL] (kebijakan/pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127215/bei-resmi-delisting-18-saham-hari-ini-ada-sritex-sril>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 3 Saham yang Diinvestigasi BEI (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-3-saham-yang-diinvestigasi-bei>
 - **8** T3 11-11 13:57 bloomberg_technoz: Gelagat Investor Asing di Saham BRPT & BRMS Jelang Review MSCI [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127399/gelagat-investor-asing-di-saham-brpt-brms-jelang-review-msci>
 - **8** T3 11-11 07:00 bloomberg_technoz: Inflasi AS Melonjak, Bursa Asia Tertekan Sinyal The Fed (global/pasar/makro) <https://www.bloombergtechnoz.com/detail-news/127345/inflasi-as-melonjak-bursa-asia-tertekan-sinyal-the-fed>
 - **8** T3 11-11 06:35 bloomberg_technoz: Inflasi AS Lampaui Proyeksi, Dukung Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127343/inflasi-as-lampaui-proyeksi-dukung-kenaikan-suku-bunga-the-fed>
-- **8** T3 11-10 08:20 bloomberg_technoz: Waspadai Inflasi, Barkin The Fed Isyaratkan Suku Bunga Naik Lagi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127216/waspadai-inflasi-barkin-the-fed-isyaratkan-suku-bunga-naik-lagi>
 - **7** T3 11-11 09:00 bloomberg_technoz: Distribusi Saham AADI ke Empat Keluarga Konglomerat [AADI] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat>
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
 - **7** T3 11-10 13:18 bloomberg_technoz: Ada Crossing Saham Grup Adaro Milik Boy Thohir Rp66 Triliun [AADI,ADRO] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127264/ada-crossing-saham-grup-adaro-milik-boy-thohir-rp66-triliun>
@@ -36,3 +34,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-11 09:35 bloomberg_technoz: Antisipasi Review MSCI, IHSG Fluktuatif Pagi Ini (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127367/antisipasi-review-msci-ihsg-fluktuatif-pagi-ini>
 - **6** T3 11-11 08:58 cnbc_indonesia_market: Bursa Asia Bergerak Bervariasi Imbas Sentimen Wall Street (global/pasar) <https://www.cnbcindonesia.com/market/20261111085655-17-784117/bursa-asia-bergerak-bervariasi-imbas-sentimen-wall-street>
 - **6** T3 11-11 08:51 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam>
+- **6** T3 11-11 08:10 bloomberg_technoz: IHSG Dibayangi Sikap Wait & See Jelang Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127352/ihsg-dibayangi-sikap-wait-see-jelang-review-msci>
+- **6** T3 11-11 07:59 bloomberg_technoz: Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed>
