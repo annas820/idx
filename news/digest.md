@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-12T06:40+07:00 WIB | jendela 36 jam | dipindai 457, lolos 116, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-12T08:00+07:00 WIB | jendela 36 jam | dipindai 455, lolos 117, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -19,6 +19,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-11 06:35 bloomberg_technoz: Inflasi AS Lampaui Proyeksi, Dukung Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127343/inflasi-as-lampaui-proyeksi-dukung-kenaikan-suku-bunga-the-fed>
 - **7** T3 11-11 09:00 bloomberg_technoz: Distribusi Saham AADI ke Empat Keluarga Konglomerat [AADI] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat>
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
+- **6** T3 11-12 08:00 bloomberg_technoz: IHSG Hadapi Tekanan, Rebalancing MSCI & Dinamika Politik Nasional (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127468/ihsg-hadapi-tekanan-rebalancing-msci-dinamika-politik-nasional>
+- **6** T3 11-12 07:42 bloomberg_technoz: Tersengat Rebalancing MSCI, Investor Asing di Posisi Net Sell (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127464/tersengat-rebalancing-msci-investor-asing-di-posisi-net-sell>
 - **6** T3 11-11 17:00 bloomberg_technoz: Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian>
 - **6** T3 11-11 16:10 bloomberg_technoz: Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci>
 - **6** T3 11-11 16:10 cnbc_indonesia_news: Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten>
@@ -31,5 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-11 08:58 cnbc_indonesia_market: Bursa Asia Bergerak Bervariasi Imbas Sentimen Wall Street (global/pasar) <https://www.cnbcindonesia.com/market/20261111085655-17-784117/bursa-asia-bergerak-bervariasi-imbas-sentimen-wall-street>
 - **6** T3 11-11 08:51 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp30.000, Buyback Lebih Dalam [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127361/harga-emas-antam-hari-ini-turun-rp30-000-buyback-lebih-dalam>
 - **6** T3 11-11 08:10 bloomberg_technoz: IHSG Dibayangi Sikap Wait & See Jelang Review MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127352/ihsg-dibayangi-sikap-wait-see-jelang-review-msci>
-- **6** T3 11-11 07:59 bloomberg_technoz: Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed>
-- **6** T3 11-11 07:40 bloomberg_technoz: Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat>

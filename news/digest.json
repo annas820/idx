@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T06:40+07:00",
+ "generated_for": "2026-11-12T08:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 457,
- "kept": 116,
+ "scanned": 455,
+ "kept": 117,
  "dropped_noise": 6,
  "items": [
   {
@@ -203,6 +203,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-12T08:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Hadapi Tekanan, Rebalancing MSCI & Dinamika Politik Nasional",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127468/ihsg-hadapi-tekanan-rebalancing-msci-dinamika-politik-nasional",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T07:42+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Tersengat Rebalancing MSCI, Investor Asing di Posisi Net Sell",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127464/tersengat-rebalancing-msci-investor-asing-di-posisi-net-sell",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-11T17:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -380,36 +410,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T07:59+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Arah Rupiah di Tengah Risiko Politik dan Sinyal Hawkish The Fed",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127348/arah-rupiah-di-tengah-risiko-politik-dan-sinyal-hawkish-the-fed",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T07:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Logan The Fed: Butuh 2 Kenaikan Suku Bunga Lagi, Laju Bisa Cepat",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127347/logan-the-fed-butuh-2-kenaikan-suku-bunga-lagi-laju-bisa-cepat",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
    ],
    "tickers": [],
    "flags": [],
