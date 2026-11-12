@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T10:50+07:00",
+ "generated_for": "2026-11-12T11:56+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 496,
- "kept": 140,
+ "scanned": 538,
+ "kept": 153,
  "dropped_noise": 4,
  "items": [
   {
@@ -72,6 +72,46 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T11:55+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BRPT",
+    "JSMR",
+    "MTEL",
+    "WIFI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T11:05+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BRMS",
+    "BRPT"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -220,6 +260,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-12T11:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Hasil Rebalancing MSCI: 1 Saham RI Turun Kelas, 8 Saham Didepak",
+   "link": "https://www.cnbcindonesia.com/market/20261112083811-19-784503/video-hasil-rebalancing-msci-1-saham-ri-turun-kelas-8-saham-didepak",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T11:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Rilis Daftar 383 Saham HSC, Ada Emiten Tambang hingga Perbankan",
+   "link": "https://www.cnbcindonesia.com/market/20261112083851-19-784504/bei-rilis-daftar-383-saham-hsc-ada-emiten-tambang-hingga-perbankan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-12T09:03+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -348,66 +418,6 @@
    "tier": 3,
    "title": "IHSG Ditutup Melemah 0,21% ke 5.115,04 jelang Pengumuman MSCI",
    "link": "https://www.cnbcindonesia.com/market/20261111153604-17-784340/ihsg-ditutup-melemah-021-ke-511504-jelang-pengumuman-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T15:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Sentimen Eksternal Bikin Investor Kabu, IHSG - Rupiah Lesu",
-   "link": "https://www.cnbcindonesia.com/market/20261111141200-19-784282/video-sentimen-eksternal-bikin-investor-kabu-ihsg--rupiah-lesu",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T12:55+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Balik Arah Jadi Merah, Terbeban Sentimen MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127388/ihsg-balik-arah-jadi-merah-terbeban-sentimen-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T12:26+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: IHSG Masuk Zona Merah dan Rupiah Tembus Rp 18.150 per Dolar AS",
-   "link": "https://www.cnbcindonesia.com/market/20261111121545-19-784224/video-ihsg-masuk-zona-merah-rupiah-tembus-rp-18150-per-dolar-as",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T11:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: BEI Akan Periksa Seluruh Saham Tanpa Batasan Kapitalisasi Pasar",
-   "link": "https://www.cnbcindonesia.com/market/20261111084313-19-784105/video-bei-akan-periksa-seluruh-saham-tanpa-batasan-kapitalisasi-pasar",
    "score": 6,
    "categories": [
     "kebijakan",
