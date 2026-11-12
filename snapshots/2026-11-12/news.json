@@ -1,0 +1,282 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-12T11:22:56Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Gibran Mundur, Ini Daftar Wapres Terlama dan Tersingkat dalam Sejarah RI",
+        "url": "https://www.cnbcindonesia.com/research/20261112170611-131-784743/gibran-mundur-ini-daftar-wapres-terlama-tersingkat-dalam-sejarah-ri",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-12T18:10:05+07:00",
+        "summary": "Gibran akan masuk dalam daftar wakil presiden (wapres) Indonesia dengan masa jabatan paling singkat sepanjang sejarah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Jatuh Tempo Besok, UOB Indonesia Siapkan Rp 665 Miliar untuk Bayar Obligasi",
+        "url": "https://keuangan.kontan.co.id/news/jatuh-tempo-besok-uob-indonesia-siapkan-rp-665-miliar-untuk-bayar-obligasi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T18:07:20+07:00",
+        "summary": "Bank UOB Indonesia menyiapkan dana Rp 665,03 miliar untuk melunasi pokok dan bunga obligasi subordinasi yang jatuh tempo pada 13 November 2026.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "jatuh"
+        ]
+      },
+      {
+        "title": "Bank Mandiri Tawarkan KPR Lelang dengan Bunga Fixed Mulai 2,7%",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-tawarkan-kpr-lelang-dengan-bunga-fixed-mulai-27",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T17:41:54+07:00",
+        "summary": "Bank Mandiri menawarkan KPR lelang dengan bunga fixed mulai 2,7% melalui program Mandiri Lelang 2026. Cek aset dan cara ikut lelang.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pelunasan Haji 2027 Dibuka, BSI Siapkan BYOND dan 135.000 Agen",
+        "url": "https://keuangan.kontan.co.id/news/pelunasan-haji-2027-dibuka-bsi-siapkan-byond-dan-135000-agen",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T17:39:26+07:00",
+        "summary": "BSI catat 162.712 nasabah berhak lunasi biaya haji reguler 2027 dan memperkuat layanan digital serta jaringan cabang untuk memudahkan pembayaran.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Terdepak dari Indeks MSCI, Begini Nasib Saham BRPT, RAJA, hingga WIFI",
+        "url": "https://www.cnbcindonesia.com/market/20261112172028-17-784750/terdepak-dari-indeks-msci-begini-nasib-saham-brpt-raja-hingga-wifi",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-12T17:32:28+07:00",
+        "summary": "MSCI merilis evaluasi indeks November 2026, berikut nasib saham yang terdampak.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "10 Fakta Menarik Gibran, No.7 Tak Banyak yang Tahu",
+        "url": "https://www.cnbcindonesia.com/research/20261112155702-128-784735/10-fakta-menarik-gibran-no7-tak-banyak-yang-tahu",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-12T17:25:10+07:00",
+        "summary": "Nama Gibran Rakabuming Raka kembali menjadi sorotan setelah menyerahkan surat pengunduran diri",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BSU Cair November, BSI Bidik Pertumbuhan Rekening Baru",
+        "url": "https://keuangan.kontan.co.id/news/bsu-cair-november-bsi-bidik-pertumbuhan-rekening-baru",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T17:17:49+07:00",
+        "summary": "BSI optimistis penyaluran BSU pada November 2026 dapat mendorong pertumbuhan jumlah rekening atau number of account (NoA) perseroan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan",
+          "optimistis"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri Siapkan Livin' untuk Dukung Penyaluran BSU",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-siapkan-livin-untuk-dukung-penyaluran-bsu",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T17:14:02+07:00",
+        "summary": "Bank Mandiri siapkan Livin' by Mandiri untuk dukung penyaluran BSU Rp 900.000 pada 13,3 juta pekerja sekaligus perluas inklusi keuangan digital",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Bidik Nasabah Baru dari Penyaluran BSU Rp 900.000, Ini Persiapannya",
+        "url": "https://keuangan.kontan.co.id/news/btn-bidik-nasabah-baru-dari-penyaluran-bsu-rp-900000-ini-persiapannya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T17:08:36+07:00",
+        "summary": "BTN menambah rekening baru melalui penyaluran BSU Rp 900.000 bagi pekerja, sekaligus perluas inklusi keuangan dan meningkatkan dana pihak ketiga.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pencairan BSU Rp 900.000 Berpotensi Dongkrak Pembukaan Rekening Baru di Bank Himbara",
+        "url": "https://keuangan.kontan.co.id/news/pencairan-bsu-rp-900000-berpotensi-dongkrak-pembukaan-rekening-baru-di-bank-himbara",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T17:05:50+07:00",
+        "summary": "Penyaluran Bantuan Subsidi Upah (BSU) pada November 2026 berpotensi menjadi katalis pertumbuhan rekening baru di perbankan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Penyaluran BSU Berpotensi Dongkrak Dana Pihak Ketiga BRI",
+        "url": "https://keuangan.kontan.co.id/news/penyaluran-bsu-berpotensi-dongkrak-dana-pihak-ketiga-bri",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T17:04:40+07:00",
+        "summary": "Penyaluran Bantuan Subsidi Upah (BSU) berpotensi mendongkrak dana pihak ketiga BRI lewat pembukaan rekening baru bagi penerima bantuan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Masuk Investigasi BEI, Fuji Finance (FUJI) Ungkap Sosok Pemegang Saham",
+        "url": "https://www.cnbcindonesia.com/market/20261112165052-17-784739/masuk-investigasi-bei-fuji-finance--fuji--ungkap-sosok-pemegang-saham",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-12T16:54:05+07:00",
+        "summary": "PT Fuji Finance Indonesia (FUJI) mengungkap komposisi pemegang saham dan manajemen setelah investigasi BEI. Indovalue Capital memegang 55% saham.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Merger, Danareksa Investment Management Bidik AUM 2027 Tembus Rp 200 T",
+        "url": "https://www.cnbcindonesia.com/market/20261112140131-19-784652/merger-danareksa-investment-management-bidik-aum-2027-tembus-rp-200-t",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-12T16:50:34+07:00",
+        "summary": "Merger, Danareksa Investment Management Bidik AUM 2027 Tembus Rp 200 T",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Catat! KB Bank Bakal Gelar Public Expose di 30 November 2026",
+        "url": "https://keuangan.kontan.co.id/news/catat-kb-bank-bakal-gelar-public-expose-di-30-november-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T16:48:17+07:00",
+        "summary": "Bank KB Indonesia (BBKP) atau KB Bank akan menggelar paparan publik tahunan atau annual public expose pada 30 November 2026",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Melihat Kinerja Tabungan 4 Bank Besar, BRI Pimpin Pertumbuhan!",
+        "url": "https://www.cnbcindonesia.com/market/20261112163029-20-784733/melihat-kinerja-tabungan-4-bank-besar-bri-pimpin-pertumbuhan",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-12T16:45:52+07:00",
+        "summary": "BRI mencatat nilai tabungan tertinggi sepanjang sejarah hingga September 2026, mengungguli bank besar lainnya di industri pada kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan",
+          "tertinggi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Garap Ekosistem Perumahan, Dorong Hunian Modern Bernuansa Lokal di Bali",
+        "url": "https://keuangan.kontan.co.id/news/btn-garap-ekosistem-perumahan-dorong-hunian-modern-bernuansa-lokal-di-bali",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T16:42:27+07:00",
+        "summary": "BTN menggarap ekosistem perumahan, mendorong hunian modern bernuansa lokal di Bali lewat program BTN Housingpreneur Batch 3.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Danareksa Investment Management Soal Status Mitra Kerja Sama dan Produk",
+        "url": "https://www.cnbcindonesia.com/market/20261112140347-19-784655/danareksa-investment-management-soal-status-mitra-kerja-sama-produk",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-12T16:40:56+07:00",
+        "summary": "Buka-Bukaan Danareksa Investment Management Soal Status Mitra Kerja Sama dan Produk",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Dana Kelolaan Wealth Management Bank Mega Syariah Tumbuh 52% Jadi Rp 167 Miliar",
+        "url": "https://keuangan.kontan.co.id/news/dana-kelolaan-wealth-management-bank-mega-syariah-tumbuh-52-jadi-rp-167-miliar",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T16:34:21+07:00",
+        "summary": "Dana kelolaan wealth management Bank Mega Syariah tumbuh 52% menjadi Rp 167 miliar per 31 Oktober 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Mandiri Taspen Perluas Layanan untuk Nasabah Pensiunan",
+        "url": "https://keuangan.kontan.co.id/news/bank-mandiri-taspen-perluas-layanan-untuk-nasabah-pensiunan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-12T16:32:14+07:00",
+        "summary": "Bank Mandiri Taspen terus mendorong agenda transformasi dalam memperluas layanan yang diberikan kepada nasabah",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Produksi Rokok RI Rekor Tertinggi 7 Tahun, Tembus 264 Miliar Batang",
+        "url": "https://www.cnbcindonesia.com/research/20261112161029-128-784729/produksi-rokok-ri-rekor-tertinggi-7-tahun-tembus-264-miliar-batang",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-12T16:30:02+07:00",
+        "summary": "Produksi rokok Indonesia pada Oktober 2026 menembus 28,6 miliar batang.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "rekor",
+          "tertinggi"
+        ],
+        "negative_terms": []
+      }
+    ]
+  }
+}

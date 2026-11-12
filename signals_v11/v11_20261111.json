@@ -1,0 +1,120 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261111",
+ "sessions": 21,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "IRSX",
+   "signal_date": "20261111",
+   "close": 165.0,
+   "atr": 20.18,
+   "limit": 154.91,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "DMAS",
+   "signal_date": "20261111",
+   "close": 166.0,
+   "atr": 9.34,
+   "limit": 161.33,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "FORU",
+   "signal_date": "20261111",
+   "close": 72.0,
+   "atr": 9.73,
+   "limit": 67.13,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BMRI",
+   "signal_date": "20261111",
+   "close": 3770.0,
+   "atr": 116.69,
+   "limit": 3711.66,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "ITMG",
+   "signal_date": "20261111",
+   "close": 23625.0,
+   "atr": 757.7,
+   "limit": 23246.15,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ],
+ "breadth": 0.59,
+ "breadth_1d": 0.39,
+ "regime_ok": false,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "ASII",
+   "ratio_5d": 0.387,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "BBCA",
+   "ratio_5d": 0.279,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "EXCL",
+   "ratio_5d": 0.276,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "INKP",
+   "ratio_5d": 0.268,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "BNBR",
+   "ratio_5d": 0.243,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "LSIP",
+   "ratio_5d": 0.198,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "SMGR",
+   "ratio_5d": 0.177,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "BFIN",
+   "ratio_5d": 0.153,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "MYOR",
+   "ratio_5d": 0.106,
+   "positive_sessions": 4
+  }
+ ],
+ "status": "breadth di bawah 40% (5 sesi atau 1 hari): tidak ada sinyal"
+}
