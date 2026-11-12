@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T15:56+07:00",
+ "generated_for": "2026-11-12T16:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 647,
- "kept": 179,
+ "scanned": 677,
+ "kept": 185,
  "dropped_noise": 6,
  "items": [
   {
@@ -44,6 +44,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-12T16:06+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG dan Rupiah?",
+   "link": "https://www.cnbcindonesia.com/market/20261112145648-19-784693/video-gibran-mundur--msci-depak-8-saham-kemana-arah-ihsg-rupiah",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
    "published": "2026-11-11T12:15+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -72,6 +90,24 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T16:54+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Masuk Investigasi BEI, Fuji Finance (FUJI) Ungkap Sosok Pemegang Saham",
+   "link": "https://www.cnbcindonesia.com/market/20261112165052-17-784739/masuk-investigasi-bei-fuji-finance--fuji--ungkap-sosok-pemegang-saham",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "FUJI"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -260,6 +296,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-12T16:06+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "IHSG Ditutup Naik 2,66% ke 5.250,90 usai Gibran Mundur dan Rilis MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261112152847-17-784722/ihsg-ditutup-naik-266-ke-525090-usai-gibran-mundur-rilis-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-12T14:56+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -373,51 +424,6 @@
    "tier": 3,
    "title": "Tersengat Rebalancing MSCI, Investor Asing di Posisi Net Sell",
    "link": "https://www.bloombergtechnoz.com/detail-news/127464/tersengat-rebalancing-msci-investor-asing-di-posisi-net-sell",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T17:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T16:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T16:10+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten",
-   "link": "https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten",
    "score": 6,
    "categories": [
     "kebijakan",

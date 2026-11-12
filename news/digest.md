@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-12T15:56+07:00 WIB | jendela 36 jam | dipindai 647, lolos 179, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-12T16:55+07:00 WIB | jendela 36 jam | dipindai 677, lolos 185, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,8 +10,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 ## Teratas
 - **12** T3 11-11 05:35 bloomberg_technoz: Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed (kebijakan/global/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed>
 - **11** T3 11-11 18:17 bloomberg_technoz: Hak Jawab Eunice M. Satyono Terkait Sanksi OJK Saham FILM [FILM] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127439/hak-jawab-eunice-m-satyono-terkait-sanksi-ojk-saham-film>
+- **10** T3 11-12 16:06 cnbc_indonesia_market: Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG dan Rupiah? (kebijakan/pasar/kurs; petunjuk) <https://www.cnbcindonesia.com/market/20261112145648-19-784693/video-gibran-mundur--msci-depak-8-saham-kemana-arah-ihsg-rupiah>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 3 Saham yang Diinvestigasi BEI (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-3-saham-yang-diinvestigasi-bei>
+- **8** T3 11-12 16:54 cnbc_indonesia_market: Masuk Investigasi BEI, Fuji Finance (FUJI) Ungkap Sosok Pemegang Saham [FUJI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112165052-17-784739/masuk-investigasi-bei-fuji-finance--fuji--ungkap-sosok-pemegang-saham>
 - **8** T3 11-12 11:55 bloomberg_technoz: Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah [BRPT,JSMR,MTEL,WIFI] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah>
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
 - **8** T3 11-12 06:20 cnbc_indonesia_market: MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir>
@@ -22,6 +24,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-12 08:55 cnbc_indonesia_market: Ada Penyesuaian Indeks MSCI, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261112082226-17-784496/ada-penyesuaian-indeks-msci-simak-5-saham-pilihan-hari-ini>
 - **7** T3 11-11 09:00 bloomberg_technoz: Distribusi Saham AADI ke Empat Keluarga Konglomerat [AADI] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127362/distribusi-saham-aadi-ke-empat-keluarga-konglomerat>
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
+- **6** T3 11-12 16:06 cnbc_indonesia_market: IHSG Ditutup Naik 2,66% ke 5.250,90 usai Gibran Mundur dan Rilis MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112152847-17-784722/ihsg-ditutup-naik-266-ke-525090-usai-gibran-mundur-rilis-msci>
 - **6** T3 11-12 14:56 cnbc_indonesia_market: Saham BUMN Masuk HSC, BEI Serahkan Mekanisme ke Masing-Masing Emiten (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112145248-17-784690/saham-bumn-masuk-hsc-bei-serahkan-mekanisme-ke-masing-masing-emiten>
 - **6** T3 11-12 11:30 cnbc_indonesia_market: Video: Hasil Rebalancing MSCI: 1 Saham RI Turun Kelas, 8 Saham Didepak (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112083811-19-784503/video-hasil-rebalancing-msci-1-saham-ri-turun-kelas-8-saham-didepak>
 - **6** T3 11-12 11:20 cnbc_indonesia_market: BEI Rilis Daftar 383 Saham HSC, Ada Emiten Tambang hingga Perbankan (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112083851-19-784504/bei-rilis-daftar-383-saham-hsc-ada-emiten-tambang-hingga-perbankan>
@@ -30,6 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-12 08:09 bloomberg_technoz: Rupiah Hadapi Tekanan, Dinamika Politik & Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127470/rupiah-hadapi-tekanan-dinamika-politik-sinyal-hawkish-the-fed>
 - **6** T3 11-12 08:00 bloomberg_technoz: IHSG Hadapi Tekanan, Rebalancing MSCI & Dinamika Politik Nasional (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127468/ihsg-hadapi-tekanan-rebalancing-msci-dinamika-politik-nasional>
 - **6** T3 11-12 07:42 bloomberg_technoz: Tersengat Rebalancing MSCI, Investor Asing di Posisi Net Sell (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127464/tersengat-rebalancing-msci-investor-asing-di-posisi-net-sell>
-- **6** T3 11-11 17:00 bloomberg_technoz: Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian>
-- **6** T3 11-11 16:10 bloomberg_technoz: Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci>
-- **6** T3 11-11 16:10 cnbc_indonesia_news: Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten>
