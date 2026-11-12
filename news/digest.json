@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T17:55+07:00",
+ "generated_for": "2026-11-12T18:52+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 696,
- "kept": 186,
+ "scanned": 707,
+ "kept": 184,
  "dropped_noise": 7,
  "items": [
   {
@@ -227,22 +227,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-11T06:35+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Inflasi AS Lampaui Proyeksi, Dukung Kenaikan Suku Bunga The Fed",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127343/inflasi-as-lampaui-proyeksi-dukung-kenaikan-suku-bunga-the-fed",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-12T08:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -430,6 +414,21 @@
    "score": 6,
    "categories": [
     "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T17:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian",
+   "score": 6,
+   "categories": [
+    "global",
     "pasar"
    ],
    "tickers": [],
