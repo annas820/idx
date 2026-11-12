@@ -1,9 +1,9 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T04:30+07:00",
+ "generated_for": "2026-11-13T05:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 542,
+ "scanned": 516,
  "kept": 139,
  "dropped_noise": 6,
  "items": [
@@ -142,24 +142,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-11T17:18+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Masuk HSC Disorot BEI, Bos DGWG Kurangi Kepemilikan Saham",
-   "link": "https://www.cnbcindonesia.com/market/20261111231435-17-784455/masuk-hsc-disorot-bei-bos-dgwg-kurangi-kepemilikan-saham",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "DGWG"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-12T08:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -174,6 +156,36 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T05:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bos Nvidia Lengser, Wall Street Lesu Terseret Saham AI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127581/bos-nvidia-lengser-wall-street-lesu-terseret-saham-ai",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T05:07+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Wall Street Melemah, Saham Nvidia Tertekan Usai Kepergian Jensen Huang",
+   "link": "https://investasi.kontan.co.id/news/wall-street-melemah-saham-nvidia-tertekan-usai-kepergian-jensen-huang",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -368,21 +380,6 @@
    "score": 6,
    "categories": [
     "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T17:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian",
-   "score": 6,
-   "categories": [
-    "global",
     "pasar"
    ],
    "tickers": [],

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-13T04:30+07:00 WIB | jendela 36 jam | dipindai 542, lolos 139, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-13T05:40+07:00 WIB | jendela 36 jam | dipindai 516, lolos 139, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -14,8 +14,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-12 11:55 bloomberg_technoz: Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah [BRPT,JSMR,MTEL,WIFI] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah>
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
 - **8** T3 11-12 06:20 cnbc_indonesia_market: MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir>
-- **8** T3 11-11 17:18 cnbc_indonesia_market: Masuk HSC Disorot BEI, Bos DGWG Kurangi Kepemilikan Saham [DGWG] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261111231435-17-784455/masuk-hsc-disorot-bei-bos-dgwg-kurangi-kepemilikan-saham>
 - **7** T3 11-12 08:55 cnbc_indonesia_market: Ada Penyesuaian Indeks MSCI, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261112082226-17-784496/ada-penyesuaian-indeks-msci-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-13 05:20 bloomberg_technoz: Bos Nvidia Lengser, Wall Street Lesu Terseret Saham AI (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127581/bos-nvidia-lengser-wall-street-lesu-terseret-saham-ai>
+- **6** T3 11-13 05:07 kontan_investasi: Wall Street Melemah, Saham Nvidia Tertekan Usai Kepergian Jensen Huang (global/pasar) <https://investasi.kontan.co.id/news/wall-street-melemah-saham-nvidia-tertekan-usai-kepergian-jensen-huang>
 - **6** T3 11-12 22:00 kontan_investasi: Wall Street Dibuka Melemah, Pengunduran Diri CEO Nvidia Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-dibuka-melemah-pengunduran-diri-ceo-nvidia-tekan-saham-teknologi>
 - **6** T3 11-12 19:00 kontan_investasi: IHSG Ditutup Rebound 2,66% Pasca Review MSCI November 2026, Tren Pemulihan Berlanjut? (kebijakan/pasar) <https://investasi.kontan.co.id/news/ihsg-ditutup-rebound-266-pasca-review-msci-november-2026-tren-pemulihan-berlanjut>
 - **6** T3 11-12 18:12 kontan_investasi: Sentimen MSCI Tekan Reksadana Saham, Volatilitas Diprediksi Berlanjut hingga 2027 (kebijakan/pasar) <https://investasi.kontan.co.id/news/sentimen-msci-tekan-reksadana-saham-volatilitas-diprediksi-berlanjut-hingga-2027>
@@ -29,6 +30,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-12 08:09 bloomberg_technoz: Rupiah Hadapi Tekanan, Dinamika Politik & Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127470/rupiah-hadapi-tekanan-dinamika-politik-sinyal-hawkish-the-fed>
 - **6** T3 11-12 08:00 bloomberg_technoz: IHSG Hadapi Tekanan, Rebalancing MSCI & Dinamika Politik Nasional (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127468/ihsg-hadapi-tekanan-rebalancing-msci-dinamika-politik-nasional>
 - **6** T3 11-12 07:42 bloomberg_technoz: Tersengat Rebalancing MSCI, Investor Asing di Posisi Net Sell (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127464/tersengat-rebalancing-msci-investor-asing-di-posisi-net-sell>
-- **6** T3 11-11 17:00 bloomberg_technoz: Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian>
 - **5** T3 11-13 04:30 kontan_investasi: Daftar 10 Saham LQ45 PER Terendah & Tertinggi (12 Nov 2026), DEWA dan ADRO Melesat [ADRO,DEWA] (pasar/emiten) <https://investasi.kontan.co.id/news/daftar-10-saham-lq45-per-terendah-tertinggi-12-nov-2026-dewa-dan-adro-melesat>
 - **5** T3 11-12 20:07 kontan_investasi: Ketidakpastian RKAB Batubara 2027 Tekan Emiten, Ini Saham yang Perlu Dicermati (pasar/komoditas) <https://investasi.kontan.co.id/news/ketidakpastian-rkab-batubara-2027-tekan-emiten-ini-saham-yang-perlu-dicermati>
