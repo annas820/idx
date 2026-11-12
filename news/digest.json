@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T20:00+07:00",
+ "generated_for": "2026-11-12T21:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 710,
- "kept": 179,
+ "scanned": 703,
+ "kept": 172,
  "dropped_noise": 7,
  "items": [
   {
@@ -247,26 +247,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-11T08:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII",
-    "BRPT"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
    "published": "2026-11-12T16:06+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -433,6 +413,21 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-11T16:10+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten",
+   "link": "https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -449,26 +444,6 @@
    ],
    "tickers": [
     "AADI"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T08:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII",
-    "BRPT"
    ],
    "flags": [
     "watchlist"
