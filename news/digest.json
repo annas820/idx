@@ -1,31 +1,12 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T05:40+07:00",
+ "generated_for": "2026-11-13T06:35+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 516,
- "kept": 139,
+ "scanned": 501,
+ "kept": 141,
  "dropped_noise": 6,
  "items": [
-  {
-   "published": "2026-11-11T18:17+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Hak Jawab Eunice M. Satyono Terkait Sanksi OJK Saham FILM",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127439/hak-jawab-eunice-m-satyono-terkait-sanksi-ojk-saham-film",
-   "score": 11,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "FILM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
   {
    "published": "2026-11-12T16:06+07:00",
    "source": "cnbc_indonesia_market",
@@ -156,6 +137,21 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T06:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "MSCI Bongkar Pasang Klasifikasi Saham Indeks 4 Negara",
+   "link": "https://www.cnbcindonesia.com/market/20261113060151-17-784837/msci-bongkar-pasang-klasifikasi-saham-indeks-4-negara",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {

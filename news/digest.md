@@ -1,13 +1,12 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-13T05:40+07:00 WIB | jendela 36 jam | dipindai 516, lolos 139, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-13T06:35+07:00 WIB | jendela 36 jam | dipindai 501, lolos 141, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **4** T3 11-12 17:15 kontan_industri: Astra Honda Motor (AHM) Optimistis Penjualan Motor Positif hingga Akhir 2026 [ASII] (emiten; watchlist) <https://industri.kontan.co.id/news/astra-honda-motor-ahm-optimistis-penjualan-motor-positif-hingga-akhir-2026>
 
 ## Teratas
-- **11** T3 11-11 18:17 bloomberg_technoz: Hak Jawab Eunice M. Satyono Terkait Sanksi OJK Saham FILM [FILM] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127439/hak-jawab-eunice-m-satyono-terkait-sanksi-ojk-saham-film>
 - **10** T3 11-12 16:06 cnbc_indonesia_market: Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG dan Rupiah? (kebijakan/pasar/kurs; petunjuk) <https://www.cnbcindonesia.com/market/20261112145648-19-784693/video-gibran-mundur--msci-depak-8-saham-kemana-arah-ihsg-rupiah>
 - **8** T3 11-12 17:32 cnbc_indonesia_market: Terdepak dari Indeks MSCI, Begini Nasib Saham BRPT, RAJA, hingga WIFI [BRPT,RAJA,WIFI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112172028-17-784750/terdepak-dari-indeks-msci-begini-nasib-saham-brpt-raja-hingga-wifi>
 - **8** T3 11-12 16:54 cnbc_indonesia_market: Masuk Investigasi BEI, Fuji Finance (FUJI) Ungkap Sosok Pemegang Saham [FUJI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112165052-17-784739/masuk-investigasi-bei-fuji-finance--fuji--ungkap-sosok-pemegang-saham>
@@ -15,6 +14,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
 - **8** T3 11-12 06:20 cnbc_indonesia_market: MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir>
 - **7** T3 11-12 08:55 cnbc_indonesia_market: Ada Penyesuaian Indeks MSCI, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261112082226-17-784496/ada-penyesuaian-indeks-msci-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-13 06:30 cnbc_indonesia_market: MSCI Bongkar Pasang Klasifikasi Saham Indeks 4 Negara (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113060151-17-784837/msci-bongkar-pasang-klasifikasi-saham-indeks-4-negara>
 - **6** T3 11-13 05:20 bloomberg_technoz: Bos Nvidia Lengser, Wall Street Lesu Terseret Saham AI (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127581/bos-nvidia-lengser-wall-street-lesu-terseret-saham-ai>
 - **6** T3 11-13 05:07 kontan_investasi: Wall Street Melemah, Saham Nvidia Tertekan Usai Kepergian Jensen Huang (global/pasar) <https://investasi.kontan.co.id/news/wall-street-melemah-saham-nvidia-tertekan-usai-kepergian-jensen-huang>
 - **6** T3 11-12 22:00 kontan_investasi: Wall Street Dibuka Melemah, Pengunduran Diri CEO Nvidia Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-dibuka-melemah-pengunduran-diri-ceo-nvidia-tekan-saham-teknologi>
