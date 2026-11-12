@@ -1,21 +1,25 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-12T23:49+07:00 WIB | jendela 36 jam | dipindai 631, lolos 147, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-13T04:30+07:00 WIB | jendela 36 jam | dipindai 542, lolos 139, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
+
+## Menyentuh watchlist
+- **4** T3 11-12 17:15 kontan_industri: Astra Honda Motor (AHM) Optimistis Penjualan Motor Positif hingga Akhir 2026 [ASII] (emiten; watchlist) <https://industri.kontan.co.id/news/astra-honda-motor-ahm-optimistis-penjualan-motor-positif-hingga-akhir-2026>
 
 ## Teratas
 - **11** T3 11-11 18:17 bloomberg_technoz: Hak Jawab Eunice M. Satyono Terkait Sanksi OJK Saham FILM [FILM] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127439/hak-jawab-eunice-m-satyono-terkait-sanksi-ojk-saham-film>
 - **10** T3 11-12 16:06 cnbc_indonesia_market: Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG dan Rupiah? (kebijakan/pasar/kurs; petunjuk) <https://www.cnbcindonesia.com/market/20261112145648-19-784693/video-gibran-mundur--msci-depak-8-saham-kemana-arah-ihsg-rupiah>
-- **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk>
-- **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 3 Saham yang Diinvestigasi BEI (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-3-saham-yang-diinvestigasi-bei>
 - **8** T3 11-12 17:32 cnbc_indonesia_market: Terdepak dari Indeks MSCI, Begini Nasib Saham BRPT, RAJA, hingga WIFI [BRPT,RAJA,WIFI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112172028-17-784750/terdepak-dari-indeks-msci-begini-nasib-saham-brpt-raja-hingga-wifi>
 - **8** T3 11-12 16:54 cnbc_indonesia_market: Masuk Investigasi BEI, Fuji Finance (FUJI) Ungkap Sosok Pemegang Saham [FUJI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112165052-17-784739/masuk-investigasi-bei-fuji-finance--fuji--ungkap-sosok-pemegang-saham>
 - **8** T3 11-12 11:55 bloomberg_technoz: Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah [BRPT,JSMR,MTEL,WIFI] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah>
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
 - **8** T3 11-12 06:20 cnbc_indonesia_market: MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir>
 - **8** T3 11-11 17:18 cnbc_indonesia_market: Masuk HSC Disorot BEI, Bos DGWG Kurangi Kepemilikan Saham [DGWG] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261111231435-17-784455/masuk-hsc-disorot-bei-bos-dgwg-kurangi-kepemilikan-saham>
-- **8** T3 11-11 13:57 bloomberg_technoz: Gelagat Investor Asing di Saham BRPT & BRMS Jelang Review MSCI [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127399/gelagat-investor-asing-di-saham-brpt-brms-jelang-review-msci>
 - **7** T3 11-12 08:55 cnbc_indonesia_market: Ada Penyesuaian Indeks MSCI, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261112082226-17-784496/ada-penyesuaian-indeks-msci-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-12 22:00 kontan_investasi: Wall Street Dibuka Melemah, Pengunduran Diri CEO Nvidia Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-dibuka-melemah-pengunduran-diri-ceo-nvidia-tekan-saham-teknologi>
+- **6** T3 11-12 19:00 kontan_investasi: IHSG Ditutup Rebound 2,66% Pasca Review MSCI November 2026, Tren Pemulihan Berlanjut? (kebijakan/pasar) <https://investasi.kontan.co.id/news/ihsg-ditutup-rebound-266-pasca-review-msci-november-2026-tren-pemulihan-berlanjut>
+- **6** T3 11-12 18:12 kontan_investasi: Sentimen MSCI Tekan Reksadana Saham, Volatilitas Diprediksi Berlanjut hingga 2027 (kebijakan/pasar) <https://investasi.kontan.co.id/news/sentimen-msci-tekan-reksadana-saham-volatilitas-diprediksi-berlanjut-hingga-2027>
+- **6** T3 11-12 17:53 kontan_investasi: BEI Rombak Konsituten LQ45 dan IDX80 Imbas Saham HSC, Ini Saham yang Diuntungkan (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-rombak-konsituten-lq45-dan-idx80-imbas-saham-hsc-ini-saham-yang-diuntungkan>
 - **6** T3 11-12 16:06 cnbc_indonesia_market: IHSG Ditutup Naik 2,66% ke 5.250,90 usai Gibran Mundur dan Rilis MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112152847-17-784722/ihsg-ditutup-naik-266-ke-525090-usai-gibran-mundur-rilis-msci>
 - **6** T3 11-12 14:56 cnbc_indonesia_market: Saham BUMN Masuk HSC, BEI Serahkan Mekanisme ke Masing-Masing Emiten (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112145248-17-784690/saham-bumn-masuk-hsc-bei-serahkan-mekanisme-ke-masing-masing-emiten>
 - **6** T3 11-12 11:30 cnbc_indonesia_market: Video: Hasil Rebalancing MSCI: 1 Saham RI Turun Kelas, 8 Saham Didepak (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112083811-19-784503/video-hasil-rebalancing-msci-1-saham-ri-turun-kelas-8-saham-didepak>
@@ -26,6 +30,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-12 08:00 bloomberg_technoz: IHSG Hadapi Tekanan, Rebalancing MSCI & Dinamika Politik Nasional (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127468/ihsg-hadapi-tekanan-rebalancing-msci-dinamika-politik-nasional>
 - **6** T3 11-12 07:42 bloomberg_technoz: Tersengat Rebalancing MSCI, Investor Asing di Posisi Net Sell (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127464/tersengat-rebalancing-msci-investor-asing-di-posisi-net-sell>
 - **6** T3 11-11 17:00 bloomberg_technoz: Bursa Asia Hijau Berkat Harga Minyak, IHSG Merah Sendirian (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127431/bursa-asia-hijau-berkat-harga-minyak-ihsg-merah-sendirian>
-- **6** T3 11-11 16:10 bloomberg_technoz: Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci>
-- **6** T3 11-11 16:10 cnbc_indonesia_news: Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten>
-- **6** T3 11-11 16:05 cnbc_indonesia_market: IHSG Ditutup Melemah 0,21% ke 5.115,04 jelang Pengumuman MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261111153604-17-784340/ihsg-ditutup-melemah-021-ke-511504-jelang-pengumuman-msci>
+- **5** T3 11-13 04:30 kontan_investasi: Daftar 10 Saham LQ45 PER Terendah & Tertinggi (12 Nov 2026), DEWA dan ADRO Melesat [ADRO,DEWA] (pasar/emiten) <https://investasi.kontan.co.id/news/daftar-10-saham-lq45-per-terendah-tertinggi-12-nov-2026-dewa-dan-adro-melesat>
+- **5** T3 11-12 20:07 kontan_investasi: Ketidakpastian RKAB Batubara 2027 Tekan Emiten, Ini Saham yang Perlu Dicermati (pasar/komoditas) <https://investasi.kontan.co.id/news/ketidakpastian-rkab-batubara-2027-tekan-emiten-ini-saham-yang-perlu-dicermati>

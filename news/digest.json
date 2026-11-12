@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T23:49+07:00",
+ "generated_for": "2026-11-13T04:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 631,
- "kept": 147,
+ "scanned": 542,
+ "kept": 139,
  "dropped_noise": 6,
  "items": [
   {
@@ -42,38 +42,6 @@
    "flags": [
     "petunjuk"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T12:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK",
-   "link": "https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T12:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Sanksi Mengintai 3 Saham yang Diinvestigasi BEI",
-   "link": "https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-3-saham-yang-diinvestigasi-bei",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
    "also_in": []
   },
   {
@@ -192,25 +160,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-11T13:57+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Gelagat Investor Asing di Saham BRPT & BRMS Jelang Review MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127399/gelagat-investor-asing-di-saham-brpt-brms-jelang-review-msci",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BRMS",
-    "BRPT"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-12T08:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -225,6 +174,66 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T22:00+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Wall Street Dibuka Melemah, Pengunduran Diri CEO Nvidia Tekan Saham Teknologi",
+   "link": "https://investasi.kontan.co.id/news/wall-street-dibuka-melemah-pengunduran-diri-ceo-nvidia-tekan-saham-teknologi",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T19:00+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Ditutup Rebound 2,66% Pasca Review MSCI November 2026, Tren Pemulihan Berlanjut?",
+   "link": "https://investasi.kontan.co.id/news/ihsg-ditutup-rebound-266-pasca-review-msci-november-2026-tren-pemulihan-berlanjut",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T18:12+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Sentimen MSCI Tekan Reksadana Saham, Volatilitas Diprediksi Berlanjut hingga 2027",
+   "link": "https://investasi.kontan.co.id/news/sentimen-msci-tekan-reksadana-saham-volatilitas-diprediksi-berlanjut-hingga-2027",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T17:53+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BEI Rombak Konsituten LQ45 dan IDX80 Imbas Saham HSC, Ini Saham yang Diuntungkan",
+   "link": "https://investasi.kontan.co.id/news/bei-rombak-konsituten-lq45-dan-idx80-imbas-saham-hsc-ini-saham-yang-diuntungkan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -381,50 +390,57 @@
    "also_in": []
   },
   {
-   "published": "2026-11-11T16:10+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-13T04:30+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci",
-   "score": 6,
+   "title": "Daftar 10 Saham LQ45 PER Terendah & Tertinggi (12 Nov 2026), DEWA dan ADRO Melesat",
+   "link": "https://investasi.kontan.co.id/news/daftar-10-saham-lq45-per-terendah-tertinggi-12-nov-2026-dewa-dan-adro-melesat",
+   "score": 5,
    "categories": [
-    "kebijakan",
-    "kurs"
+    "pasar",
+    "emiten"
    ],
-   "tickers": [],
+   "tickers": [
+    "ADRO",
+    "DEWA"
+   ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-11T16:10+07:00",
-   "source": "cnbc_indonesia_news",
+   "published": "2026-11-12T20:07+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "Video: BEI Tambah 300 Saham HSC, Total Ada 383 Emiten",
-   "link": "https://www.cnbcindonesia.com/news/20261111135913-8-784272/video-bei-tambah-300-saham-hsc-total-ada-383-emiten",
-   "score": 6,
+   "title": "Ketidakpastian RKAB Batubara 2027 Tekan Emiten, Ini Saham yang Perlu Dicermati",
+   "link": "https://investasi.kontan.co.id/news/ketidakpastian-rkab-batubara-2027-tekan-emiten-ini-saham-yang-perlu-dicermati",
+   "score": 5,
    "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T16:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "IHSG Ditutup Melemah 0,21% ke 5.115,04 jelang Pengumuman MSCI",
-   "link": "https://www.cnbcindonesia.com/market/20261111153604-17-784340/ihsg-ditutup-melemah-021-ke-511504-jelang-pengumuman-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
+    "pasar",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   }
  ],
- "watchlist_hits": []
+ "watchlist_hits": [
+  {
+   "published": "2026-11-12T17:15+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Astra Honda Motor (AHM) Optimistis Penjualan Motor Positif hingga Akhir 2026",
+   "link": "https://industri.kontan.co.id/news/astra-honda-motor-ahm-optimistis-penjualan-motor-positif-hingga-akhir-2026",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  }
+ ]
 }
