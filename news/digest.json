@@ -1,29 +1,12 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T16:55+07:00",
+ "generated_for": "2026-11-12T17:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 677,
- "kept": 185,
- "dropped_noise": 6,
+ "scanned": 696,
+ "kept": 186,
+ "dropped_noise": 7,
  "items": [
-  {
-   "published": "2026-11-11T05:35+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed",
-   "score": 12,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
   {
    "published": "2026-11-11T18:17+07:00",
    "source": "bloomberg_technoz",
@@ -90,6 +73,26 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-12T17:32+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Terdepak dari Indeks MSCI, Begini Nasib Saham BRPT, RAJA, hingga WIFI",
+   "link": "https://www.cnbcindonesia.com/market/20261112172028-17-784750/terdepak-dari-indeks-msci-begini-nasib-saham-brpt-raja-hingga-wifi",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BRPT",
+    "RAJA",
+    "WIFI"
+   ],
    "flags": [],
    "also_in": []
   },

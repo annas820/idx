@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-12T16:55+07:00 WIB | jendela 36 jam | dipindai 677, lolos 185, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-12T17:55+07:00 WIB | jendela 36 jam | dipindai 696, lolos 186, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,11 +8,11 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-11 08:30 bloomberg_technoz: Investor Asing Borong Saham ASII Dkk, Lepas BRPT Cs [ASII,BRPT] (pasar/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127357/investor-asing-borong-saham-asii-dkk-lepas-brpt-cs>
 
 ## Teratas
-- **12** T3 11-11 05:35 bloomberg_technoz: Saham-Obligasi Turun, Iringi Seruan Kenaikan Suku Bunga Fed (kebijakan/global/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127340/saham-obligasi-turun-iringi-seruan-kenaikan-suku-bunga-fed>
 - **11** T3 11-11 18:17 bloomberg_technoz: Hak Jawab Eunice M. Satyono Terkait Sanksi OJK Saham FILM [FILM] (kebijakan/global/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127439/hak-jawab-eunice-m-satyono-terkait-sanksi-ojk-saham-film>
 - **10** T3 11-12 16:06 cnbc_indonesia_market: Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG dan Rupiah? (kebijakan/pasar/kurs; petunjuk) <https://www.cnbcindonesia.com/market/20261112145648-19-784693/video-gibran-mundur--msci-depak-8-saham-kemana-arah-ihsg-rupiah>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 30 Saham yang Diinvestigasi BEI dan OJK (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-30-saham-yang-diinvestigasi-bei-dan-ojk>
 - **9** T3 11-11 12:15 cnbc_indonesia_market: Sanksi Mengintai 3 Saham yang Diinvestigasi BEI (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261111113742-17-784198/sanksi-mengintai-3-saham-yang-diinvestigasi-bei>
+- **8** T3 11-12 17:32 cnbc_indonesia_market: Terdepak dari Indeks MSCI, Begini Nasib Saham BRPT, RAJA, hingga WIFI [BRPT,RAJA,WIFI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112172028-17-784750/terdepak-dari-indeks-msci-begini-nasib-saham-brpt-raja-hingga-wifi>
 - **8** T3 11-12 16:54 cnbc_indonesia_market: Masuk Investigasi BEI, Fuji Finance (FUJI) Ungkap Sosok Pemegang Saham [FUJI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112165052-17-784739/masuk-investigasi-bei-fuji-finance--fuji--ungkap-sosok-pemegang-saham>
 - **8** T3 11-12 11:55 bloomberg_technoz: Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah [BRPT,JSMR,MTEL,WIFI] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah>
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
