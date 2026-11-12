@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-12T18:52+07:00",
+ "generated_for": "2026-11-12T20:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 707,
- "kept": 184,
+ "scanned": 710,
+ "kept": 179,
  "dropped_noise": 7,
  "items": [
   {
@@ -207,22 +207,6 @@
     "BRMS",
     "BRPT"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-11T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Inflasi AS Melonjak, Bursa Asia Tertekan Sinyal The Fed",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127345/inflasi-as-melonjak-bursa-asia-tertekan-sinyal-the-fed",
-   "score": 8,
-   "categories": [
-    "global",
-    "pasar",
-    "makro"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -430,6 +414,21 @@
    "categories": [
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-11T16:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Terjepit di Tengah Penguatan Dolar AS dan Risiko MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127425/rupiah-terjepit-di-tengah-penguatan-dolar-as-dan-risiko-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
    ],
    "tickers": [],
    "flags": [],
