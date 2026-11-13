@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T14:08+07:00",
+ "generated_for": "2026-11-13T15:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 614,
- "kept": 195,
- "dropped_noise": 8,
+ "scanned": 657,
+ "kept": 206,
+ "dropped_noise": 9,
  "items": [
   {
    "published": "2026-11-12T16:06+07:00",
@@ -40,6 +40,44 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-13T15:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Duit Asing Masuk Rp 127,6 T, Tapi Kabur Dari Saham Rp 97 T Akibat MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261113130129-19-784983/duit-asing-masuk-rp-1276-t-tapi-kabur-dari-saham-rp-97-t-akibat-msci",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_news"
+   ]
+  },
+  {
+   "published": "2026-11-13T10:06+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Duit Asing Masuk Rp127,6 T, tapi Kabur dari Saham Rp97 T Akibat MSCI",
+   "link": "https://www.cnbcindonesia.com/news/20261113100403-4-784908/duit-asing-masuk-rp1276-t-tapi-kabur-dari-saham-rp97-t-akibat-msci",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-11-13T07:00+07:00",
@@ -299,6 +337,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-13T14:50+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Gibran Mundur, IHSG Melesat Tapi Rupiah Masih di Rp 18.200/USD",
+   "link": "https://www.cnbcindonesia.com/market/20261113144611-19-785050/video-gibran-mundur-ihsg-melesat-tapi-rupiah-masih-di-rp-18200-usd",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-13T13:53+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -348,21 +401,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-13T10:06+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Duit Asing Masuk Rp127,6 T, tapi Kabur dari Saham Rp97 T Akibat MSCI",
-   "link": "https://www.cnbcindonesia.com/news/20261113100403-4-784908/duit-asing-masuk-rp1276-t-tapi-kabur-dari-saham-rp97-t-akibat-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-13T09:53+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -405,36 +443,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T07:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Asing Borong 10 Saham Ini di Hari MSCI Review dan Pengunduran Gibran",
-   "link": "https://www.cnbcindonesia.com/market/20261113064615-17-784841/asing-borong-10-saham-ini-di-hari-msci-review-dan-pengunduran-gibran",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T07:12+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Mengukur Nasib SBN di Tengah Lonjakan Yield US Treasury",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127587/mengukur-nasib-sbn-di-tengah-lonjakan-yield-us-treasury",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],
