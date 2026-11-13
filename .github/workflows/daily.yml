@@ -150,6 +150,8 @@ jobs:
           python3 -m unittest forward_test.test_ft11
           python3 forward_test/ringkasan_ingest.py manual data/ringkasan
           python3 forward_test/ft11_signal.py data/ringkasan signals_v11
+          python3 -m unittest forward_test.test_ft_eval
+          python3 forward_test/ft_eval.py data/ringkasan signals_v11 latest
 
       - name: Data health gate (reporting only; never changes Forward Test rules)
         if: always()

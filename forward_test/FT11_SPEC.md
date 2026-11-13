@@ -29,6 +29,14 @@ resmi IDX menyimpang sekitar 5–25% per hari), dipakai hanya untuk urutan dan r
 Limit beli = close − 0,5 × ATR(14), berlaku 3 sesi, terisi jika low <= limit. Stop 2 ATR, target 4 ATR, maks tahan 10 sesi,
 biaya 0,7% pulang-pergi. Kontrol: saham acak dari universe yang sama pada hari yang sama (seed tanggal), jumlah minimal 5.
 
+## Penilaian (ditambahkan 12 Nov sebelum kunci, disetujui Bos)
+- Stop dan target dihitung dari HARGA ISI (bukan dari close hari sinyal), supaya rugi maksimum tiap transaksi tetap 2 ATR
+  dari uang yang benar-benar tertanam. Uji 12 Nov pada data 5 Nov: kedua cara memberi hasil hampir sama (sinyal +5,0% vs +5,5%),
+  jadi ini keputusan prinsip, bukan hasil penyetelan.
+- Hari tanpa harga buka (open = 0) atau low = 0 pada data IDX tidak pernah dihitung sebagai isi.
+- Posisi yang belum selesai dinilai pada penutupan terakhir; habis masa tahan = penutupan hari tahan terakhir.
+- Pelaksana: `forward_test/ft_eval.py` (tes: `test_ft_eval.py`), laporan `latest/eval_v11.md`. Hanya melaporkan.
+
 ## Catatan kejujuran
 - Ambang 10%, 3 dari 5 sesi, dan 40% adalah titik awal yang ditetapkan tanpa bukti. Tidak disetel dari data.
 - Belum terbukti ada keunggulan. Filter yang tidak menambah nilai dibanding kontrol dibuang lewat v1.2.
