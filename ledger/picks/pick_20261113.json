@@ -1,0 +1,123 @@
+{
+ "schema": "clo.ledger.pick.v1",
+ "signal_date": "20261113",
+ "created_at": "2026-11-13T11:39:50+00:00",
+ "equity_at_close": 1000000,
+ "note": "ok",
+ "orders": [
+  {
+   "plan": {
+    "symbol": "EXCL",
+    "signal_date": "20261113",
+    "close": 1495.0,
+    "atr": 89.95,
+    "limit": 1450.03,
+    "valid_sessions": 3,
+    "stop_atr": 2.0,
+    "target_atr": 4.0,
+    "hold": 10,
+    "cost": 0.007,
+    "ratio_5d": 0.288,
+    "positive_sessions": 5
+   },
+   "lots": 1
+  },
+  {
+   "plan": {
+    "symbol": "MYOR",
+    "signal_date": "20261113",
+    "close": 1510.0,
+    "atr": 57.28,
+    "limit": 1481.36,
+    "valid_sessions": 3,
+    "stop_atr": 2.0,
+    "target_atr": 4.0,
+    "hold": 10,
+    "cost": 0.007,
+    "ratio_5d": 0.266,
+    "positive_sessions": 5
+   },
+   "lots": 1
+  },
+  {
+   "plan": {
+    "symbol": "DKFT",
+    "signal_date": "20261113",
+    "close": 795.0,
+    "atr": 33.78,
+    "limit": 778.11,
+    "valid_sessions": 3,
+    "stop_atr": 2.0,
+    "target_atr": 4.0,
+    "hold": 10,
+    "cost": 0.007,
+    "ratio_5d": 0.184,
+    "positive_sessions": 3
+   },
+   "lots": 1
+  },
+  {
+   "plan": {
+    "symbol": "ESSA",
+    "signal_date": "20261113",
+    "close": 545.0,
+    "atr": 24.36,
+    "limit": 532.82,
+    "valid_sessions": 3,
+    "stop_atr": 2.0,
+    "target_atr": 4.0,
+    "hold": 10,
+    "cost": 0.007,
+    "ratio_5d": 0.151,
+    "positive_sessions": 3
+   },
+   "lots": 2
+  }
+ ],
+ "skipped": [
+  {
+   "symbol": "ASII",
+   "alasan": "1 lot melebihi batas 15% modal"
+  },
+  {
+   "symbol": "INKP",
+   "alasan": "1 lot melebihi batas 15% modal"
+  },
+  {
+   "symbol": "SMGR",
+   "alasan": "1 lot melebihi batas 15% modal"
+  },
+  {
+   "symbol": "BBCA",
+   "alasan": "1 lot melebihi batas 15% modal"
+  },
+  {
+   "symbol": "PGEO",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "PGAS",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "SGER",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "SSIA",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "CDIA",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "KLBF",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "LSIP",
+   "alasan": "slot penuh"
+  }
+ ]
+}
