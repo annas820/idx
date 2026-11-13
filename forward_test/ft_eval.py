@@ -45,24 +45,27 @@ def evaluate(plan, days):
             entry, fill_i = lim, i
             break
     if entry is None:
-        return {"status": "tidak_terisi" if len(later) >= plan["valid_sessions"] else "menunggu_isi"}
+        n = plan["valid_sessions"]
+        return {"status": "tidak_terisi" if len(later) >= n else "menunggu_isi",
+                "expiry_date": later[n - 1] if len(later) >= n else None}
     risk = plan["stop_atr"] * atr
     stop, tgt = entry - risk, entry + plan["target_atr"] * atr
     window = later[fill_i: fill_i + plan["hold"]]
-    exit_p = why = None
+    exit_p = why = exit_d = None
     for j, d in enumerate(window):
         c = days[d][sym]
         if c["low"] > 0 and c["low"] <= stop:
-            exit_p, why = (min(c["open"], stop) if j > 0 and c["open"] > 0 else stop), "kena_stop"
+            exit_p, why, exit_d = (min(c["open"], stop) if j > 0 and c["open"] > 0 else stop), "kena_stop", d
             break
         if c["high"] >= tgt:
-            exit_p, why = tgt, "kena_target"
+            exit_p, why, exit_d = tgt, "kena_target", d
             break
     if exit_p is None:
         exit_p = days[window[-1]][sym]["close"]
         why = "tahan_habis" if len(window) >= plan["hold"] else "terbuka"
+        exit_d = window[-1]
     cost = plan["cost"]
-    return {"status": why, "entry": round(entry, 2), "exit": round(exit_p, 2),
+    return {"status": why, "fill_date": later[fill_i], "exit_date": exit_d, "entry": round(entry, 2), "exit": round(exit_p, 2),
             "net": round(exit_p / entry - 1 - cost, 4),
             "r": round((exit_p - entry - cost * entry) / risk, 2)}
 
