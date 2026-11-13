@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T22:01+07:00",
+ "generated_for": "2026-11-13T22:25+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 691,
- "kept": 190,
- "dropped_noise": 11,
+ "scanned": 730,
+ "kept": 206,
+ "dropped_noise": 12,
  "items": [
   {
    "published": "2026-11-12T16:06+07:00",
@@ -36,6 +36,22 @@
     "kebijakan",
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T21:59+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Wall Street Menguat, Inflasi AS Redakan Kekhawatiran Kenaikan Suku Bunga The Fed",
+   "link": "https://investasi.kontan.co.id/news/wall-street-menguat-inflasi-as-redakan-kekhawatiran-kenaikan-suku-bunga-the-fed",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "global",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
@@ -208,6 +224,42 @@
    "also_in": []
   },
   {
+   "published": "2026-11-13T17:29+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Medco Energi (MEDC) Bagikan Dividen Interim Rp 22,02 per Saham, Total US$ 30 Juta",
+   "link": "https://investasi.kontan.co.id/news/medco-energi-medc-bagikan-dividen-interim-rp-2202-per-saham-total-us-30-juta",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "MEDC"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T17:28+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "GMFI Siapkan Rights Issue 22 Miliar Saham, Bidik Dana US$ 59,41 Juta",
+   "link": "https://investasi.kontan.co.id/news/gmfi-siapkan-rights-issue-22-miliar-saham-bidik-dana-us-5941-juta",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "GMFI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-13T11:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -335,6 +387,21 @@
    ]
   },
   {
+   "published": "2026-11-13T18:20+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BEI Tegaskan Saham Masuk Daftar HSC Bukan Berarti Melanggar Aturan Pasar Modal",
+   "link": "https://investasi.kontan.co.id/news/bei-tegaskan-saham-masuk-daftar-hsc-bukan-berarti-melanggar-aturan-pasar-modal",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-13T14:50+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -374,69 +441,6 @@
    "tier": 3,
    "title": "BEI Ungkap Risiko Ini Jadi Alasan Saham HSC Terpisah dari IHSG",
    "link": "https://www.cnbcindonesia.com/market/20261113131818-17-785000/bei-ungkap-risiko-ini-jadi-alasan-saham-hsc-terpisah-dari-ihsg",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T11:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T",
-   "link": "https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T09:53+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Menkeu: Dana Asing Rp 479 T Keluar dari Negara Berkembang, Karena Ini",
-   "link": "https://www.cnbcindonesia.com/news/20261113095201-4-784903/menkeu-dana-asing-rp-479-t-keluar-dari-negara-berkembang-karena-ini",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T08:43+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Turun Rp9.000, Buyback Jauh Lebih Parah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127602/harga-emas-antam-turun-rp9-000-buyback-jauh-lebih-parah",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T07:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini",
    "score": 6,
    "categories": [
     "kebijakan",
