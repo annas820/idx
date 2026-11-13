@@ -1,34 +1,33 @@
-# STATUS — kondisi terakhir (Selasa 2026-10-27, ~15:50 WIB)
-Baca setelah START.md. Perbarui tiap ada perubahan besar.
+# STATUS — kondisi terakhir (Kamis 2026-11-12, ~13:00 WIB)
+Baca setelah START.md. Perbarui tiap ada perubahan besar. `latest/health.md` memperingatkan bila file ini lebih tua dari 3 hari.
 
 ## Yang berjalan
-- Arsip berita per jam (`news/`, `news/digest.md`) jalan normal.
-- Robot harian (`daily.yml`, v3, cron 10:30 UTC hari kerja) jalan, tapi data broker IPOT gagal.
-- `diag.yml` kini manual saja (jadwal dihapus 28 Okt: probe 27 Okt menunjukkan IPOT 502 di semua jam). Log tetap di `diag/`.
-- Jalur data manual (28 Okt): Bos mengunduh `Ringkasan Saham-YYYYMMDD.xlsx` dari idx.co.id tiap sore dan mengunggahnya ke `manual/` (cukup file itu; nama asli IDX). `forward_test/ringkasan_ingest.py` menormalkan ke `data/ringkasan/`, lalu `forward_test/ft11_signal.py` menulis `signals_v11/`. Aturan di `forward_test/FT11_SPEC.md` masih DRAF sampai Bos menulis "kunci v1.1"; sinyal ATR butuh 14 sesi (baru 5, isi mundur 9 hari lagi atau tunggu).
-- Gerbang kesehatan data (`forward_test/health.py`) jalan di `daily.yml`, hasilnya `latest/health.md` dan `latest/health.json`. Hanya melaporkan; tidak mengubah aturan Forward Test v1.0.
-- Pengerasan (28 Okt): installer tidak lagi diunduh lewat `curl | sh` dari jaringan; dipakai `install.sh` milik repo ini dengan versi terkunci v0.8.1 (checksum diverifikasi). `actions/checkout` dikunci ke SHA. Ada batas waktu tiap job, `concurrency` di daily, dan push daily otomatis diulang bila bentrok dengan news-bot.
+- Arsip berita per jam (`news/`, `news/digest.md`) jalan, dengan saringan deterministik (`forward_test/news_score.py`, ada tes). Hanya 4 dari 7 sumber hidup: `kontan_investasi`, `kontan_industri` (sejak 5 Nov) dan `bisnis_market` (selalu) dijawab HTTP 403 dari server GitHub. Job tetap melapor sukses; jumlah sumber hidup kini tampil di `latest/health.md`.
+- Robot harian (`daily.yml`, cron 17:30 WIB hari kerja): harga, kalender, berita jalan. Arus asing resmi dan daftar indeks tidak ada (idx.co.id memblokir jaringan cloud).
+- Data broker IPOT putus-sambung (HTTP 502 dari server GitHub): berhasil 22–23 Okt dan 2–9 Nov, gagal 24–30 Okt dan 10–11 Nov. Pesan "no session with trades" menyesatkan, itu 502 yang tertelan.
+- Forward Test v1.0 (BEKU): berjalan 6 hari sinyal dan menghasilkan 0 sinyal karena breadth MA50 hanya 7–9% (batas 40%). Gerbang sudah dihitung ulang dan benar, bukan bug.
+- Jalur manual: Bos mengunggah `Ringkasan Saham-YYYYMMDD.xlsx` ke `manual/` tiap sore. `ringkasan_ingest.py` -> `data/ringkasan/`, `ft11_signal.py` -> `signals_v11/`. v1.1 masih DRAF (`FT11_SPEC.md`) sampai Bos menulis "kunci v1.1"; hasilnya hanya latihan.
+- Penilai hasil (baru, 12 Nov): `forward_test/ft_eval.py` memutar ulang rencana v1.1 dan kontrolnya, tulis `latest/eval_v11.md`. Stop/target dari harga isi. Hanya melaporkan, di bawah 20 hari sinyal tanpa klaim.
+- Gerbang kesehatan (`forward_test/health.py`): `latest/health.md|json`, kini juga sumber berita hidup dan umur STATUS.md.
+- Pengerasan: installer terkunci v0.8.1, checkout dikunci ke SHA, batas waktu tiap job, push diulang bila bentrok.
 
-## Masalah utama: data broker IPOT
-- Kamis 22 dan Jumat 23 Okt berhasil. Sabtu 24, Senin 26, Selasa 27 gagal.
-- Penyebab sebenarnya (dari log diag): HTTP 502 nginx di endpoint IPOT (brokersummary dan corporateaction) dari tiga IP runner. Beranda IPOT normal (200). Pesan "tidak ada sesi transaksi" dari `bandar screen` menyesatkan, itu error yang tertelan.
-- Berarti: sisi server IPOT atau blokir untuk cloud, bukan kode kita.
-- Akibat: tidak ada `fnet_5d`, `hist/`, `signals/`. Forward Test v1.0 BELUM bisa mulai. Jangan klaim sinyal.
+## Tidak mengganggu briefing
+- Workflow `ownership data` gagal sejak 2 Nov. Rancangannya: cermin daftar KSEI >1% butuh runner sendiri (idx.co.id memblokir cloud) dan sengaja gagal bila data >45 hari.
+- `ft_signal.py` ditulis ulang tiap hari dari teks di dalam `daily.yml` (isi identik). Mengedit file di repo tidak ada gunanya; sumber aslinya di `daily.yml`.
 
 ## Jalur yang sudah dicoba dan DITUTUP
-- Kurir skrip dari komputer lokal ke idx.co.id: 403 (Cloudflare). Jangan dilanjutkan.
-- Sectors.app API: hanya paket Insider ($59/bulan). Gratis = tanpa API. Jangan daftar quest.
-- daily v4 (retry + cron cadangan): ditarik atas permintaan Bos, tidak dipasang. Cari penyebab dulu, jangan asal ganti.
+- Kurir skrip dari komputer lokal ke idx.co.id: 403 (Cloudflare).
+- Sectors.app API: berbayar.
+- daily v4 (retry + cron cadangan): ditarik atas permintaan Bos.
 
-## Keputusan yang masih menggantung
-1. Bila IPOT tetap 502: (a) tunggu pulih, (b) Bos unduh manual `stocksummary_YYYYMMDD.json` dari Chrome ke GitHub (~2 menit per hari; memberi net asing per saham; itu sinyal berbeda, jadi versi v1.1, jangan dicampur dengan v1.0), atau (c) jalan tanpa data per saham (harga, breadth, berita tersaring, arus asing level pasar).
-2. Batas rugi harian dan mingguan belum ditetapkan Bos (usulan awal: risiko 0,5% per transaksi, ~1,5% harian, ~3% mingguan).
-3. `forward_test/watchlist.txt` masih AADI/INCO/INDF; ganti dengan kandidat sinyal setelah data pulih.
+## Keputusan yang menunggu Bos
+1. "Kunci v1.1" (saran Clo: tunggu penilai punya beberapa hari sinyal yang bisa dinilai).
+2. Batas rugi harian dan mingguan belum ditetapkan (usulan awal: risiko 0,5% per transaksi, ~1,5% harian, ~3% mingguan). Kerangka risiko belum lengkap.
+3. `forward_test/watchlist.txt` (AADI, INCO, INDF, ASII) hanya memberi bonus skor pada berita; bukan daftar kandidat harian. Ganti dengan saham yang Bos pegang atau pantau.
+4. Bot Telegram: belum diputuskan.
 
-## Yang harus dibaca berikutnya
-- `diag/log_27_*.txt` (probe 15:00, 18:00, 20:00 WIB) dan `snapshots/2026-10-27/status.txt` (run 17:30 WIB).
-- Setelah penyebab jelas: hapus jadwal probe di `diag.yml`.
+## Belum terpecahkan
+- IPOT 502 dan blokir idx.co.id dari server GitHub. Tiga sumber berita 403 belum ada perbaikan yang teruji.
 
-## Catatan lain
-- Backtest lama: tidak ada strategi stabil positif; sinyal broker tidak bisa diuji ke belakang (tanpa riwayat). Katakan ini bila relevan.
-- 
+## Catatan
+- Backtest lama: tidak ada strategi stabil positif; sinyal broker tidak bisa diuji ke belakang. Katakan ini bila relevan.
