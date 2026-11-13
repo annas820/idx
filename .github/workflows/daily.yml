@@ -153,6 +153,13 @@ jobs:
           python3 -m unittest forward_test.test_ft_eval
           python3 forward_test/ft_eval.py data/ringkasan signals_v11 latest
 
+      - name: Paper ledger Rp1 juta (picks are written once, never overwritten)
+        continue-on-error: true
+        shell: bash
+        run: |
+          python3 -m unittest forward_test.test_ledger
+          python3 forward_test/ledger.py data/ringkasan signals_v11 ledger latest
+
       - name: Data health gate (reporting only; never changes Forward Test rules)
         if: always()
         shell: bash
@@ -164,8 +171,8 @@ jobs:
         run: |
           git config user.name "snapshot-bot"
           git config user.email "snapshot-bot@users.noreply.github.com"
-          mkdir -p snapshots hist signals forward_test latest data/ringkasan signals_v11
-          git add snapshots hist signals forward_test latest data/ringkasan signals_v11
+          mkdir -p snapshots hist signals forward_test latest data/ringkasan signals_v11 ledger
+          git add snapshots hist signals forward_test latest data/ringkasan signals_v11 ledger
           git diff --cached --quiet && exit 0
           git commit -m "snapshot $(TZ=Asia/Jakarta date +%F)"
           # news-bot pushes hourly: rebase and retry instead of failing the whole run on a race.
