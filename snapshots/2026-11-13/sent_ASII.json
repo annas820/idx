@@ -1,9 +1,13 @@
 {
   "schema": "idx.sentiment.v1",
   "provider": "news",
-  "fetched_at": "2026-11-13T05:10:30Z",
+  "fetched_at": "2026-11-13T11:19:06Z",
   "cached": true,
   "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
   "data": {
     "symbol": "ASII",
     "matched_name": "ASTRA INTERNATIONAL",

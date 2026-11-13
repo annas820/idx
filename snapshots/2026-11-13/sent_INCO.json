@@ -1,23 +1,52 @@
 {
   "schema": "idx.sentiment.v1",
   "provider": "news",
-  "fetched_at": "2026-11-13T05:10:29Z",
+  "fetched_at": "2026-11-13T11:19:03Z",
   "cached": true,
   "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
   "data": {
     "symbol": "INCO",
     "matched_name": "VALE INDONESIA",
-    "label": "no_coverage",
-    "score": 0.0,
-    "items": 0,
-    "positive": 0,
+    "label": "positive",
+    "score": 1.0,
+    "items": 1,
+    "positive": 1,
     "negative": 0,
     "neutral": 0,
-    "oldest": null,
-    "newest": null,
-    "top_positive_terms": [],
+    "oldest": "2026-11-13T13:53:29+07:00",
+    "newest": "2026-11-13T13:53:29+07:00",
+    "top_positive_terms": [
+      [
+        "laba",
+        1
+      ],
+      [
+        "naik",
+        1
+      ]
+    ],
     "top_negative_terms": [],
-    "headlines": [],
+    "headlines": [
+      {
+        "title": "Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya",
+        "url": "https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T13:53:29+07:00",
+        "summary": "PT Vale Indonesia mencatat laba bersih kuartal III-2026 naik 182% menjadi US$147 juta. Pendapatan meningkat berkat pengiriman nikel",
+        "matched_by": "ticker",
+        "scope": "company",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "laba"
+        ],
+        "negative_terms": []
+      }
+    ],
     "method": "lexicon: (positive - negative) / (positive + negative) per headline over title + summary, Indonesian and English finance terms; mean over matched items"
   }
 }

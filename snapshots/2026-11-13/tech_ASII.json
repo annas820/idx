@@ -1,7 +1,7 @@
 {
   "schema": "idx.technical.v1",
   "provider": "yahoo",
-  "fetched_at": "2026-11-13T05:10:30Z",
+  "fetched_at": "2026-11-13T11:19:06Z",
   "cached": true,
   "stale": false,
   "data": {
@@ -11,39 +11,39 @@
     "as_of": "2026-11-13T09:00:00+07:00",
     "period": "1y",
     "candles_used": 240,
-    "price": 5425.0,
-    "change_pct_1d": -0.45871559633027525,
-    "change_pct_1w": 8.5,
-    "change_pct_1m": 12.785862785862786,
-    "change_pct_3m": 13.493723849372385,
+    "price": 5500.0,
+    "change_pct_1d": 0.9174311926605505,
+    "change_pct_1w": 10.0,
+    "change_pct_1m": 14.345114345114347,
+    "change_pct_3m": 15.062761506276152,
     "high_52w": 7475.0,
     "low_52w": 3920.0,
     "moving_averages": {
-      "sma20": 4846.75,
-      "sma50": 4801.5,
-      "sma200": 5437.2,
-      "ema20": 4985.697032183275,
-      "ema50": 4871.142328111303,
-      "ema200": 5473.953769814062
+      "sma20": 4850.5,
+      "sma50": 4803.0,
+      "sma200": 5437.575,
+      "ema20": 4992.839889326132,
+      "ema50": 4874.083504581891,
+      "ema200": 5474.700038470778
     },
-    "rsi14": 65.96769332787092,
+    "rsi14": 67.93920702491961,
     "macd": {
-      "line": 175.07248765494296,
-      "signal": 96.55394786288434,
-      "histogram": 78.51853979205862
+      "line": 181.0553936378492,
+      "signal": 97.75052905946559,
+      "histogram": 83.3048645783836
     },
     "bollinger": {
-      "upper": 5538.12742948407,
-      "middle": 4846.75,
-      "lower": 4155.37257051593,
-      "percent_b": 0.9181869231915125,
-      "bandwidth_pct": 28.529527187664705
+      "upper": 5555.07008168102,
+      "middle": 4850.5,
+      "lower": 4145.92991831898,
+      "percent_b": 0.9609193725983726,
+      "bandwidth_pct": 29.051441364025166
     },
-    "atr14": 194.97799819454957,
+    "atr14": 196.76371248026385,
     "volume": {
-      "last": 17543000,
-      "avg20": 61329425,
-      "ratio": 0.28604540153441843
+      "last": 50911500,
+      "avg20": 62997850,
+      "ratio": 0.8081466272261673
     },
     "levels": {
       "support": [
@@ -55,13 +55,13 @@
     },
     "trend": "sideways",
     "signal": {
-      "label": "neutral",
-      "score": 0,
+      "label": "buy",
+      "score": 2,
       "reasons": [
         "moving averages disagree: no clear trend",
-        "RSI 66 is neutral",
+        "RSI 68 is neutral",
         "MACD above its signal line (bullish momentum)",
-        "price below the 200-day average"
+        "price above the 200-day average"
       ]
     }
   }

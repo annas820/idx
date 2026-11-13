@@ -1,9 +1,13 @@
 {
   "schema": "idx.news.v1",
   "provider": "news",
-  "fetched_at": "2026-11-13T05:09:59Z",
+  "fetched_at": "2026-11-13T11:18:46Z",
   "cached": false,
   "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
   "data": {
     "symbol": null,
     "matched_name": null,
@@ -14,121 +18,80 @@
       "cnbcindonesia/market",
       "cnbcindonesia/research"
     ],
-    "scanned": 275,
+    "scanned": 225,
     "company_matches": 0,
     "company_only": false,
     "items": [
       {
-        "title": "OJK Buka Suara Soal Wacana Kemenkop Ambil Alih KB Bank",
-        "url": "https://keuangan.kontan.co.id/news/ojk-buka-suara-soal-wacana-kemenkop-ambil-alih-kb-bank",
+        "title": "KB Bank Lepas 85% Saham KB Bukopin Finance, Perkuat Modal dan Likuiditas",
+        "url": "https://keuangan.kontan.co.id/news/kb-bank-tegaskan-tak-ada-rencana-divestasi-saham-oleh-kb-financial-group",
         "source": "kontan/keuangan",
-        "published": "2026-11-13T12:05:24+07:00",
-        "summary": "OJK merespons wacana pengambilalihan aset PT Bank KB Indonesia Tbk (KB Bank), yang sebelumnya merupakan Bank Bukopin, oleh Kementerian Koperasi. &#8203;",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Orang-Orang Superkaya Dunia Ramai-Ramai Masuk Investasi Alternatif Ini",
-        "url": "https://www.cnbcindonesia.com/market/20261113111342-17-784950/orang-orang-superkaya-dunia-ramai-ramai-masuk-investasi-alternatif-ini",
-        "source": "cnbcindonesia/market",
-        "published": "2026-11-13T12:05:00+07:00",
-        "summary": "Investor kaya kini beralih ke investasi alternatif seperti hedge fund dan ekuitas swasta, didorong oleh volatilitas pasar dan kebutuhan diversifikasi.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Ini 10 Saham dengan Bobot Terbesar di IHSG Usai 300 Saham HSC Dikeluarkan",
-        "url": "https://investasi.kontan.co.id/news/ini-10-saham-dengan-bobot-terbesar-di-ihsg-usai-300-saham-hsc-dikeluarkan",
-        "source": "kontan/investasi",
-        "published": "2026-11-13T12:01:12+07:00",
-        "summary": "BEI tetapkan penyesuaian komposisi saham dalam penghitungan IHSG setelah 300 saham tambahan berstatus HSC dikeluarkan dari perhitungan.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Digitalisasi Kampus Jadi Pasar Baru Layanan Ijazah dan Sistem Akademik",
-        "url": "https://industri.kontan.co.id/news/digitalisasi-kampus-jadi-pasar-baru-layanan-ijazah-dan-sistem-akademik",
-        "source": "kontan/industri",
-        "published": "2026-11-13T12:00:12+07:00",
-        "summary": "Kerja sama dengan Kemdiktisaintek buka peluang perluasan layanan digital untuk pengelolaan akademik, penerbitan ijazah, hingga pengamanan dokumen.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Traktor Nusantara Bidik Pasar Mekanisasi Perkebunan Sawit, Tawarkan Alat Berat",
-        "url": "https://industri.kontan.co.id/news/traktor-nusantara-bidik-pasar-mekanisasi-perkebunan-sawit-tawarkan-alat-berat",
-        "source": "kontan/industri",
-        "published": "2026-11-13T11:50:37+07:00",
-        "summary": "Traktor Nusantara hadirkan traktor, ekskavator, alat pemupuk hingga genset mendukung efisiensi operasional perkebunan dan pabrik kelapa sawit.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Akhiri Sesi I, IHSG Menguat 1,15% ke Level 5.311",
-        "url": "https://www.cnbcindonesia.com/market/20261113114425-17-784960/akhiri-sesi-i-ihsg-menguat-115-ke-level-5311",
-        "source": "cnbcindonesia/market",
-        "published": "2026-11-13T11:46:18+07:00",
-        "summary": "IHSG bergerak positif di level 5.311,36 dengan kenaikan 1,15%. Perhatian pasar tertuju pada pengunduran Gibran dan data ekonomi global hari ini.",
+        "published": "2026-11-13T18:09:55+07:00",
+        "summary": "KB Bank menyatakan pelepasan 85% saham KBBF kepada JB Woori Capital berdampak positif terhadap permodalan dan likuiditas perusahaan.",
         "matched_by": "all",
         "scope": "market",
         "sentiment": 1.0,
         "positive_terms": [
-          "menguat",
-          "positif",
-          "kenaikan"
+          "positif"
         ],
         "negative_terms": []
       },
       {
-        "title": "IHSG Naik 1,15% ke 5.311 Sesi I Jumat (13/11), Top Gainers LQ45: WIFI, ESSA, MBMA",
-        "url": "https://investasi.kontan.co.id/news/ihsg-naik-115-ke-5311-sesi-i-jumat-1311-top-gainers-lq45-wifi-essa-mbma",
-        "source": "kontan/investasi",
-        "published": "2026-11-13T11:41:48+07:00",
-        "summary": "Indeks Harga Saham Gabungan (IHSG) berbalik menguat 1,15% ke level 5.311,36 pada perdagangan sesi I, Jumat (13/11/2026).",
+        "title": "GMFI Rights Issue 22 Miliar Saham, Ini Alasan dan Penggunaan Dananya",
+        "url": "https://www.cnbcindonesia.com/market/20261113164308-17-785122/gmfi-rights-issue-22-miliar-saham-ini-alasan-dan-penggunaan-dananya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T18:05:34+07:00",
+        "summary": "Emiten bengkel pesawat PT Garuda Maintenance Facility Aero Asia Tbk (GMFI) berencana melakukan penambahan modal lewat rights issue.",
         "matched_by": "all",
         "scope": "market",
-        "sentiment": 1.0,
-        "positive_terms": [
-          "naik",
-          "menguat"
-        ],
+        "sentiment": 0.0,
+        "positive_terms": [],
         "negative_terms": []
       },
       {
-        "title": "Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T",
-        "url": "https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t",
+        "title": "OJK Serahkan 2 Tersangka Kasus BPRS Khasanah Ummat ke Kejari Banyumas",
+        "url": "https://www.cnbcindonesia.com/market/20261113174238-17-785146/ojk-serahkan-2-tersangka-kasus-bprs-khasanah-ummat-ke-kejari-banyumas",
         "source": "cnbcindonesia/market",
-        "published": "2026-11-13T11:35:21+07:00",
-        "summary": "Menteri Keuangan Suahasil Nazara telah menerbitkan SBN Rp586,1 triliun untuk menutup defisit Anggaran Pendapatan dan Belanja Negara (APBN) hingga Oktober 2026.",
+        "published": "2026-11-13T17:44:50+07:00",
+        "summary": "OJK selesaikan penyidikan dugaan tindak pidana perbankan syariah di BPRS Khasanah Ummat",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Harga Emas Berfluktuasi, Minat Gadai Emas di ValueMax Tetap Terjaga",
+        "url": "https://keuangan.kontan.co.id/news/harga-emas-berfluktuasi-minat-gadai-emas-di-valuemax-tetap-terjaga",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T17:27:52+07:00",
+        "summary": "Gadai ValueMax Indonesia mencatat portofolio pembiayaan yang masih didominasi gadai emas dengan komposisi mencapai 92%",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Harga Emas Melemah, Gadai Non-Emas Budi Gadai Masih Dominasi Pembiayaan",
+        "url": "https://keuangan.kontan.co.id/news/harga-emas-melemah-gadai-non-emas-budi-gadai-masih-dominasi-pembiayaan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T17:20:33+07:00",
+        "summary": "Budi Gadai ungkap komposisi gadai emas sekitar 45,88% dan gadai non-emas sekitar 54,12% dari total pembiayaan",
         "matched_by": "all",
         "scope": "market",
         "sentiment": -1.0,
         "positive_terms": [],
         "negative_terms": [
-          "defisit"
+          "melemah"
         ]
       },
       {
-        "title": "Penjualan Lini Bisnis Nikel Antam (ANTM) Meningkat 52% hingga September 2026",
-        "url": "https://industri.kontan.co.id/news/penjualan-lini-bisnis-nikel-antam-antm-meningkat-52-hingga-september-2026",
-        "source": "kontan/industri",
-        "published": "2026-11-13T11:21:40+07:00",
-        "summary": "PT Aneka Tambang Tbk (ANTM) atau Antam mencatatkan peningkatan kinerja penjualan lini bisnis nikel sepanjang Januari-September 2026.",
+        "title": "Pedoman Keamanan dan Ketahanan Siber Fintech Lending Diluncurkan, Ini Respons AFPI",
+        "url": "https://keuangan.kontan.co.id/news/pedoman-keamanan-dan-ketahanan-siber-fintech-lending-diluncurkan-ini-respons-afpi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T17:18:13+07:00",
+        "summary": "Pedoman keamanan dan ketahanan siber fintech lending diluncurkan oleh OJK guna perkuat tata kelola dan manajemen risiko fintech, ini respons AFPI.",
         "matched_by": "all",
         "scope": "market",
         "sentiment": 0.0,
@@ -136,137 +99,187 @@
         "negative_terms": []
       },
       {
-        "title": "PNS Bisa 'Sekolahkan' SK di Bank, Pahami Dulu Risikonya",
-        "url": "https://www.cnbcindonesia.com/market/20261113102854-17-784918/pns-bisa-sekolahkan-sk-di-bank-pahami-dulu-risikonya",
+        "title": "Anak Muda Dilarang FOMO Investasi, Jangan Silau Cuan Orang Lain",
+        "url": "https://www.cnbcindonesia.com/market/20261113163438-17-785111/anak-muda-dilarang-fomo-investasi-jangan-silau-cuan-orang-lain",
         "source": "cnbcindonesia/market",
-        "published": "2026-11-13T11:20:11+07:00",
-        "summary": "PNS dapat memanfaatkan SK Pengangkatan dan SK Pensiun sebagai jaminan untuk pinjaman bank.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Tri Swardana Utama (TSU) Luncurkan Excavator SEM 220",
-        "url": "https://industri.kontan.co.id/news/tri-swardana-utama-tsu-luncurkan-excavator-sem-220",
-        "source": "kontan/industri",
-        "published": "2026-11-13T11:14:43+07:00",
-        "summary": "TSU menghadirkan SEM 220, excavator 20 ton yang mengandalkan performa tangguh, efisiensi bahan bakar, dan biaya operasional kompetitif",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "PT Pukul Rata Kanan Kembali Akumulasi MMIX, Cek Profil Emiten dan Kinerja Terbaru",
-        "url": "https://investasi.kontan.co.id/news/pt-pukul-rata-kanan-kembali-akumulasi-mmix-cek-profil-emiten-dan-kinerja-terbaru",
-        "source": "kontan/investasi",
-        "published": "2026-11-13T11:13:47+07:00",
-        "summary": "Investor tengah ramai dengan kembalinya PT Pukul Rata Kanan mengakumulasi saham MMIX. Intip profil Emiten dan kinerja terbaru",
+        "published": "2026-11-13T17:02:38+07:00",
+        "summary": "OJK mengingatkan generasi muda untuk memahami risiko investasi dan tidak terjebak tren.",
         "matched_by": "all",
         "scope": "market",
         "sentiment": 1.0,
         "positive_terms": [
-          "akumulasi"
+          "cuan"
         ],
         "negative_terms": []
       },
       {
-        "title": "26 Saham \"Bangsawan\" Masuk HSC, Bagaimana Nasib LQ45?",
-        "url": "https://www.cnbcindonesia.com/research/20261112111521-128-784618/26-saham-bangsawan-masuk-hsc-bagaimana-nasib-lq45",
-        "source": "cnbcindonesia/research",
-        "published": "2026-11-13T11:10:06+07:00",
-        "summary": "Perluasan daftar saham HSC di BEI mencakup 383 emiten yang tadinya hanya 83",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Jasa Marga Integrasikan Sistem Informasi untuk Tingkatkan Layanan Jalan Tol",
-        "url": "https://industri.kontan.co.id/news/jasa-marga-integrasikan-sistem-informasi-untuk-tingkatkan-layanan-jalan-tol",
-        "source": "kontan/industri",
-        "published": "2026-11-13T11:01:51+07:00",
-        "summary": "PT Jasa Marga Tbk (JSMR) mengintegrasikan sistem informasi untuk meningkatkan layanan jalan tol yang dilalui sekitar 3,6 juta kendaraan per hari.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Kualitas Kredit Membaik, NPL BRI Turun ke 2,85% pada September 2026",
-        "url": "https://keuangan.kontan.co.id/news/kualitas-kredit-membaik-npl-bri-turun-ke-285-pada-september-2026",
+        "title": "Kredit Macet Multifinance Turun, CNAF dan Adira Finance Tetap Jaga Pencadangan",
+        "url": "https://keuangan.kontan.co.id/news/kredit-macet-multifinance-turun-cnaf-dan-adira-finance-tetap-jaga-pencadangan",
         "source": "kontan/keuangan",
-        "published": "2026-11-13T10:58:21+07:00",
-        "summary": "Kualitas kredit membaik, NPL BRI turun ke 2,85% pada September 2026. Perbaikan kualitas kredit ini juga diikuti perbaikan biaya kredit turun 2,8%.",
+        "published": "2026-11-13T16:48:08+07:00",
+        "summary": "Kredit multifinance turun, CNAF dan Adira Finance tetap jaga pencadangan untuk mengantisipasi risiko kredit bermasalah.",
         "matched_by": "all",
         "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [
-          "membaik"
-        ],
+        "sentiment": -1.0,
+        "positive_terms": [],
         "negative_terms": [
           "turun"
         ]
       },
       {
-        "title": "BNI Tawarkan Sukuk Tabungan ST017, dengan Imbal Hasil Minimal 7,05%",
-        "url": "https://keuangan.kontan.co.id/news/bni-tawarkan-sukuk-tabungan-st017-dengan-imbal-hasil-minimal-705",
-        "source": "kontan/keuangan",
-        "published": "2026-11-13T10:55:09+07:00",
-        "summary": "PT Bank Negara Indonesia (Persero) Tbk (BNI) menawarkan Sukuk Tabungan seri ST017 dengan imbal hasil minimal hingga 7,05% per tahun.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "BNI Perluas Jaringan, Jumlah Agen46 Tembus 234.897 hingga Seeptember 2026",
-        "url": "https://keuangan.kontan.co.id/news/bni-perluas-jaringan-jumlah-agen46-tembus-234897-hingga-seeptember-2026",
-        "source": "kontan/keuangan",
-        "published": "2026-11-13T10:45:55+07:00",
-        "summary": "PT Bank Negara Indonesia (Persero) Tbk (BNI) terus memperluas jaringan layanan perbankan melalui pengembangan agen laku pandai.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), di Ujung Tanduk",
-        "url": "https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--di-ujung-tanduk",
+        "title": "Dolar Tembus Rp18.200, Airlangga: Baru Sehari, Kita Lihat Saja",
+        "url": "https://www.cnbcindonesia.com/market/20261113162335-17-785102/dolar-tembus-rp18200-airlangga-baru-sehari-kita-lihat-saja",
         "source": "cnbcindonesia/market",
-        "published": "2026-11-13T10:43:51+07:00",
-        "summary": "PT Totalindo Eka Persada Tbk. dinyatakan pailit setelah pengadilan membatalkan perjanjian perdamaian. Manajemen kini menghadapi ketidakpastian.",
+        "published": "2026-11-13T16:39:10+07:00",
+        "summary": "Nilai tukar rupiah tertekan terhadap dolar AS, menembus Rp18.200. Menteri Airlangga menilai fluktuasi ini perlu dilihat dalam konteks jangka panjang.",
         "matched_by": "all",
         "scope": "market",
-        "sentiment": 0.0,
+        "sentiment": -1.0,
         "positive_terms": [],
-        "negative_terms": []
+        "negative_terms": [
+          "tertekan"
+        ]
       },
       {
-        "title": "SPBU BP-AKR Tegaskan Tetap Beroperasi dengan Merek bp",
-        "url": "https://industri.kontan.co.id/news/spbu-bp-akr-tegaskan-tetap-beroperasi-dengan-merek-bp",
-        "source": "kontan/industri",
-        "published": "2026-11-13T10:31:24+07:00",
-        "summary": "SPBU BP-AKR menegaskan tetap beroperasi dengan merek bp, meskipun kini kepemilikan sahamnya sepenuhnya di bawah Grup AKR.",
-        "matched_by": "all",
-        "scope": "market",
-        "sentiment": 0.0,
-        "positive_terms": [],
-        "negative_terms": []
-      },
-      {
-        "title": "Ikan Jadi Tabungan, Cara Nelayan Ketapang di KNMP Melawan Kemiskinan",
-        "url": "https://www.cnbcindonesia.com/research/20261104201608-128-782403/ikan-jadi-tabungan-cara-nelayan-ketapang-di-knmp-melawan-kemiskinan",
+        "title": "Tanpa Jensen Huang, Sanggupkah Nvidia Pertahankan Takhta Raja AI?",
+        "url": "https://www.cnbcindonesia.com/research/20261113133035-128-785064/tanpa-jensen-huang-sanggupkah-nvidia-pertahankan-takhta-raja-ai",
         "source": "cnbcindonesia/research",
-        "published": "2026-11-13T10:20:00+07:00",
-        "summary": "Kehadiran Bank Ikan di Kampung Nelayan Merah Putih Ketapang, Lampung Selatan, menjadi secercah harapan",
+        "published": "2026-11-13T16:25:31+07:00",
+        "summary": "Setelah 33 tahun membesarkan Nvidia hingga menjadi perusahaan dengan kapitalisasi pasar (market cap)",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BMAS Dapat Kredit Jumbo Rp6,21 T dari Induk di Thailand, Untuk Apa?",
+        "url": "https://www.cnbcindonesia.com/market/20261113140707-17-785041/bmas-dapat-kredit-jumbo-rp621-t-dari-induk-di-thailand-untuk-apa",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T16:20:01+07:00",
+        "summary": "Bank Kasikorn Indonesia meraih pinjaman bilateral US$341 juta dari induknya, KBank.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Data Historis Klaim Mobil Listrik Jadi Tantangan,Ini Cara Mega Insurance Menyikapinya",
+        "url": "https://keuangan.kontan.co.id/news/data-historis-klaim-mobil-listrik-jadi-tantanganini-cara-mega-insurance-menyikapinya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T16:18:49+07:00",
+        "summary": "Data historis klaim mobil listrik masih menjadi tantangan, ini upaya Mega Insurance menyikapi kondisi tersebut.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ciputra Life Beberkan Tantangan Berinvestasi di Instrumen Green Financing",
+        "url": "https://keuangan.kontan.co.id/news/ciputra-life-beberkan-tantangan-berinvestasi-di-instrumen-green-financing",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T16:14:00+07:00",
+        "summary": "Ciputra Life membeberkan tantangan berinvestasi di instrumen green financing. Salah satunya adalah ketersediaan instrumen yang memenuhi kebutuhan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Rating CGIF Pertahankan di AAA, Tapi Fitch Soroti Risiko Gagal Bayar Obligasi",
+        "url": "https://keuangan.kontan.co.id/news/rating-cgif-pertahankan-di-aaa-tapi-fitch-soroti-risiko-gagal-bayar-obligasi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T16:12:35+07:00",
+        "summary": "Fitch pertahankan peringkat AAA(idn) CGIF dengan outlook stabil, didukung permodalan kuat, kepemilikan strategis, dan manajemen risiko prudent.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "gagal bayar"
+        ]
+      },
+      {
+        "title": "IHSG Berakhir di Zona Hijau, Naik 1,78% ke 5.344,41",
+        "url": "https://www.cnbcindonesia.com/market/20261113152001-17-785087/ihsg-berakhir-di-zona-hijau-naik-178-ke-534441",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T16:04:22+07:00",
+        "summary": "IHSG ditutup naik 1,78% di level 5.344,41 pada Jumat (13/11/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Pembiayaan Fintech Lending Tumbuh 17,02% per September, Terendah Sepanjang 2026",
+        "url": "https://keuangan.kontan.co.id/news/pembiayaan-fintech-lending-tumbuh-1702-per-september-terendah-sepanjang-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T15:50:00+07:00",
+        "summary": "Outstanding pembiayaan industri fintech peer to peer (P2P) lending atau pinjaman daring (pindar) mengalami perlambatan pertumbuhan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan"
+        ],
+        "negative_terms": [
+          "terendah",
+          "perlambatan"
+        ]
+      },
+      {
+        "title": "Gejolak Politik Bisa Pengaruhi Rating Utang RI, Kemenkeu Buka Suara",
+        "url": "https://www.cnbcindonesia.com/market/20261113134652-17-785014/gejolak-politik-bisa-pengaruhi-rating-utang-ri-kemenkeu-buka-suara",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T15:45:00+07:00",
+        "summary": "Risiko ketidakpastian politik di Indonesia tengah meningkat akibat gejolak yang terjadi dalam kurun dua pekan terakhir",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Minat Menabung Haji Meningkat, Sejumlah Bank Syariah Catat Pertumbuhan Positif",
+        "url": "https://keuangan.kontan.co.id/news/minat-menabung-haji-meningkat-sejumlah-bank-syariah-catat-pertumbuhan-positif",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T15:38:11+07:00",
+        "summary": "Bank syariah mencatat pertumbuhan tabungan haji pada 2026, dengan BSI membidik 2 juta rekening baru pada 2027 melalui ekspansi layanan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan",
+          "ekspansi",
+          "positif"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "10 Wapres Dunia Tersandung Skandal, Ada yang Dicopot hingga Dipenjara",
+        "url": "https://www.cnbcindonesia.com/research/20261113135413-128-785028/10-wapres-dunia-tersandung-skandal-ada-yang-dicopot-hingga-dipenjara",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-13T15:30:00+07:00",
+        "summary": "Jabatan wakil presiden tak menjamin keamanan. Artikel ini membahas kasus pemakzulan wakil presiden di berbagai negara, termasuk Sara Duterte dan Kamala Harris.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Maybank Indonesia Perluas Layanan Premier, Gandeng Sunway Medical Centre",
+        "url": "https://keuangan.kontan.co.id/news/maybank-indonesia-perluas-layanan-premier-gandeng-sunway-medical-centre",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T15:25:23+07:00",
+        "summary": "Maybank Indonesia memperluas layanan Maybank premier dengan menggandeng Sunway Medical Centre di Malaysia.",
         "matched_by": "all",
         "scope": "market",
         "sentiment": 0.0,
