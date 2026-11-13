@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T06:35+07:00",
+ "generated_for": "2026-11-13T07:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 501,
- "kept": 141,
+ "scanned": 497,
+ "kept": 146,
  "dropped_noise": 6,
  "items": [
   {
@@ -23,6 +23,22 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Daly The Fed: Suku Bunga Perlu Naik demi Redam Inflasi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127588/daly-the-fed-suku-bunga-perlu-naik-demi-redam-inflasi",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "global",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -137,6 +153,51 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T07:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T07:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Asing Borong 10 Saham Ini di Hari MSCI Review dan Pengunduran Gibran",
+   "link": "https://www.cnbcindonesia.com/market/20261113064615-17-784841/asing-borong-10-saham-ini-di-hari-msci-review-dan-pengunduran-gibran",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T07:12+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Mengukur Nasib SBN di Tengah Lonjakan Yield US Treasury",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127587/mengukur-nasib-sbn-di-tengah-lonjakan-yield-us-treasury",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -347,69 +408,6 @@
    "categories": [
     "global",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T08:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Hadapi Tekanan, Rebalancing MSCI & Dinamika Politik Nasional",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127468/ihsg-hadapi-tekanan-rebalancing-msci-dinamika-politik-nasional",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T07:42+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Tersengat Rebalancing MSCI, Investor Asing di Posisi Net Sell",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127464/tersengat-rebalancing-msci-investor-asing-di-posisi-net-sell",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T04:30+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Daftar 10 Saham LQ45 PER Terendah & Tertinggi (12 Nov 2026), DEWA dan ADRO Melesat",
-   "link": "https://investasi.kontan.co.id/news/daftar-10-saham-lq45-per-terendah-tertinggi-12-nov-2026-dewa-dan-adro-melesat",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ADRO",
-    "DEWA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T20:07+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Ketidakpastian RKAB Batubara 2027 Tekan Emiten, Ini Saham yang Perlu Dicermati",
-   "link": "https://investasi.kontan.co.id/news/ketidakpastian-rkab-batubara-2027-tekan-emiten-ini-saham-yang-perlu-dicermati",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "komoditas"
    ],
    "tickers": [],
    "flags": [],

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-13T06:35+07:00 WIB | jendela 36 jam | dipindai 501, lolos 141, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-13T07:55+07:00 WIB | jendela 36 jam | dipindai 497, lolos 146, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,12 +8,16 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **10** T3 11-12 16:06 cnbc_indonesia_market: Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG dan Rupiah? (kebijakan/pasar/kurs; petunjuk) <https://www.cnbcindonesia.com/market/20261112145648-19-784693/video-gibran-mundur--msci-depak-8-saham-kemana-arah-ihsg-rupiah>
+- **8** T3 11-13 07:00 bloomberg_technoz: Daly The Fed: Suku Bunga Perlu Naik demi Redam Inflasi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127588/daly-the-fed-suku-bunga-perlu-naik-demi-redam-inflasi>
 - **8** T3 11-12 17:32 cnbc_indonesia_market: Terdepak dari Indeks MSCI, Begini Nasib Saham BRPT, RAJA, hingga WIFI [BRPT,RAJA,WIFI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112172028-17-784750/terdepak-dari-indeks-msci-begini-nasib-saham-brpt-raja-hingga-wifi>
 - **8** T3 11-12 16:54 cnbc_indonesia_market: Masuk Investigasi BEI, Fuji Finance (FUJI) Ungkap Sosok Pemegang Saham [FUJI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112165052-17-784739/masuk-investigasi-bei-fuji-finance--fuji--ungkap-sosok-pemegang-saham>
 - **8** T3 11-12 11:55 bloomberg_technoz: Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah [BRPT,JSMR,MTEL,WIFI] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah>
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
 - **8** T3 11-12 06:20 cnbc_indonesia_market: MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir>
 - **7** T3 11-12 08:55 cnbc_indonesia_market: Ada Penyesuaian Indeks MSCI, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261112082226-17-784496/ada-penyesuaian-indeks-msci-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-13 07:30 cnbc_indonesia_market: Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini>
+- **6** T3 11-13 07:20 cnbc_indonesia_market: Asing Borong 10 Saham Ini di Hari MSCI Review dan Pengunduran Gibran (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113064615-17-784841/asing-borong-10-saham-ini-di-hari-msci-review-dan-pengunduran-gibran>
+- **6** T3 11-13 07:12 bloomberg_technoz: Mengukur Nasib SBN di Tengah Lonjakan Yield US Treasury (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127587/mengukur-nasib-sbn-di-tengah-lonjakan-yield-us-treasury>
 - **6** T3 11-13 06:30 cnbc_indonesia_market: MSCI Bongkar Pasang Klasifikasi Saham Indeks 4 Negara (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113060151-17-784837/msci-bongkar-pasang-klasifikasi-saham-indeks-4-negara>
 - **6** T3 11-13 05:20 bloomberg_technoz: Bos Nvidia Lengser, Wall Street Lesu Terseret Saham AI (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127581/bos-nvidia-lengser-wall-street-lesu-terseret-saham-ai>
 - **6** T3 11-13 05:07 kontan_investasi: Wall Street Melemah, Saham Nvidia Tertekan Usai Kepergian Jensen Huang (global/pasar) <https://investasi.kontan.co.id/news/wall-street-melemah-saham-nvidia-tertekan-usai-kepergian-jensen-huang>
@@ -28,7 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-12 09:03 cnbc_indonesia_market: MSCI dan Isu Politik Tak Ganggu Pasar Saham, IHSG Dibuka Naik 0,09% (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112085638-17-784512/msci-dan-isu-politik-tak-ganggu-pasar-saham-ihsg-dibuka-naik-009>
 - **6** T3 11-12 08:10 bloomberg_technoz: Harga Emas Antam & Buyback Hari Ini Stagnan [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127471/harga-emas-antam-buyback-hari-ini-stagnan>
 - **6** T3 11-12 08:09 bloomberg_technoz: Rupiah Hadapi Tekanan, Dinamika Politik & Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127470/rupiah-hadapi-tekanan-dinamika-politik-sinyal-hawkish-the-fed>
-- **6** T3 11-12 08:00 bloomberg_technoz: IHSG Hadapi Tekanan, Rebalancing MSCI & Dinamika Politik Nasional (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127468/ihsg-hadapi-tekanan-rebalancing-msci-dinamika-politik-nasional>
-- **6** T3 11-12 07:42 bloomberg_technoz: Tersengat Rebalancing MSCI, Investor Asing di Posisi Net Sell (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127464/tersengat-rebalancing-msci-investor-asing-di-posisi-net-sell>
-- **5** T3 11-13 04:30 kontan_investasi: Daftar 10 Saham LQ45 PER Terendah & Tertinggi (12 Nov 2026), DEWA dan ADRO Melesat [ADRO,DEWA] (pasar/emiten) <https://investasi.kontan.co.id/news/daftar-10-saham-lq45-per-terendah-tertinggi-12-nov-2026-dewa-dan-adro-melesat>
-- **5** T3 11-12 20:07 kontan_investasi: Ketidakpastian RKAB Batubara 2027 Tekan Emiten, Ini Saham yang Perlu Dicermati (pasar/komoditas) <https://investasi.kontan.co.id/news/ketidakpastian-rkab-batubara-2027-tekan-emiten-ini-saham-yang-perlu-dicermati>
