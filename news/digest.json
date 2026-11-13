@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T12:55+07:00",
+ "generated_for": "2026-11-13T14:08+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 589,
- "kept": 185,
+ "scanned": 614,
+ "kept": 195,
  "dropped_noise": 8,
  "items": [
   {
@@ -23,6 +23,22 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T13:07+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bukan Sanksi, Ini Alasan Sebenarnya BEI Bikin Daftar Saham HSC",
+   "link": "https://www.cnbcindonesia.com/market/20261113124353-17-784974/bukan-sanksi-ini-alasan-sebenarnya-bei-bikin-daftar-saham-hsc",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -283,6 +299,40 @@
    "also_in": []
   },
   {
+   "published": "2026-11-13T13:53+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya",
+   "link": "https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T13:21+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Ungkap Risiko Ini Jadi Alasan Saham HSC Terpisah dari IHSG",
+   "link": "https://www.cnbcindonesia.com/market/20261113131818-17-785000/bei-ungkap-risiko-ini-jadi-alasan-saham-hsc-terpisah-dari-ihsg",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-13T11:35+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -389,54 +439,28 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-13T06:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "MSCI Bongkar Pasang Klasifikasi Saham Indeks 4 Negara",
-   "link": "https://www.cnbcindonesia.com/market/20261113060151-17-784837/msci-bongkar-pasang-klasifikasi-saham-indeks-4-negara",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T05:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bos Nvidia Lengser, Wall Street Lesu Terseret Saham AI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127581/bos-nvidia-lengser-wall-street-lesu-terseret-saham-ai",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T05:07+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Wall Street Melemah, Saham Nvidia Tertekan Usai Kepergian Jensen Huang",
-   "link": "https://investasi.kontan.co.id/news/wall-street-melemah-saham-nvidia-tertekan-usai-kepergian-jensen-huang",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-13T13:53+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya",
+   "link": "https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-12T17:15+07:00",
    "source": "kontan_industri",
