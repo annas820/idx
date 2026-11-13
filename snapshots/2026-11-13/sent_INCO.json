@@ -1,13 +1,9 @@
 {
   "schema": "idx.sentiment.v1",
   "provider": "news",
-  "fetched_at": "2026-11-13T04:29:52Z",
+  "fetched_at": "2026-11-13T05:10:29Z",
   "cached": true,
   "stale": false,
-  "warnings": [
-    "kontan/investasi: HTTP 403",
-    "kontan/industri: HTTP 403"
-  ],
   "data": {
     "symbol": "INCO",
     "matched_name": "VALE INDONESIA",

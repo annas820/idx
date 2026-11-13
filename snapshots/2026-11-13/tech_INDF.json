@@ -1,7 +1,7 @@
 {
   "schema": "idx.technical.v1",
   "provider": "yahoo",
-  "fetched_at": "2026-11-13T04:29:53Z",
+  "fetched_at": "2026-11-13T05:10:30Z",
   "cached": true,
   "stale": false,
   "data": {
@@ -11,39 +11,39 @@
     "as_of": "2026-11-13T09:00:00+07:00",
     "period": "1y",
     "candles_used": 240,
-    "price": 6975.0,
-    "change_pct_1d": 0.7220216606498195,
-    "change_pct_1w": 1.4545454545454546,
-    "change_pct_1m": -0.35714285714285715,
-    "change_pct_3m": -6.0606060606060606,
+    "price": 7000.0,
+    "change_pct_1d": 1.083032490974729,
+    "change_pct_1w": 1.8181818181818181,
+    "change_pct_1m": 0.0,
+    "change_pct_3m": -5.723905723905724,
     "high_52w": 7600.0,
     "low_52w": 5850.0,
     "moving_averages": {
-      "sma20": 6662.5,
-      "sma50": 6867.0,
-      "sma200": 6787.875,
-      "ema20": 6764.97542756923,
-      "ema50": 6825.9239131025715,
-      "ema200": 6802.275706031932
+      "sma20": 6663.75,
+      "sma50": 6867.5,
+      "sma200": 6788.0,
+      "ema20": 6767.3563799501835,
+      "ema50": 6826.904305259433,
+      "ema200": 6802.524462250838
     },
-    "rsi14": 60.16544874935698,
+    "rsi14": 61.07059563644625,
     "macd": {
-      "line": 25.061331195639468,
-      "signal": -35.89216988718088,
-      "histogram": 60.953501082820345
+      "line": 27.055633189942455,
+      "signal": -35.49330948832028,
+      "histogram": 62.54894267826273
     },
     "bollinger": {
-      "upper": 7052.211431702997,
-      "middle": 6662.5,
-      "lower": 6272.788568297003,
-      "percent_b": 0.9009376869372402,
-      "bandwidth_pct": 11.698654610221308
+      "upper": 7057.601177476976,
+      "middle": 6663.75,
+      "lower": 6269.898822523024,
+      "percent_b": 0.9268744378955892,
+      "bandwidth_pct": 11.820706883570837
     },
     "atr14": 203.22680464057134,
     "volume": {
-      "last": 2425300,
-      "avg20": 7353870,
-      "ratio": 0.3297991397726639
+      "last": 2509200,
+      "avg20": 7358065,
+      "ratio": 0.34101356810520156
     },
     "levels": {
       "support": [
@@ -52,7 +52,6 @@
         5925.0
       ],
       "resistance": [
-        7000.0,
         7600.0
       ]
     },
@@ -62,7 +61,7 @@
       "score": 2,
       "reasons": [
         "moving averages disagree: no clear trend",
-        "RSI 60 is neutral",
+        "RSI 61 is neutral",
         "MACD above its signal line (bullish momentum)",
         "price above the 200-day average"
       ]

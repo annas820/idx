@@ -1,0 +1,14 @@
+{
+ "schema": "clo.ledger.v1",
+ "as_of": "20261112",
+ "capital_start": 1000000,
+ "cash": 1000000,
+ "equity": 1000000,
+ "return_pct": 0.0,
+ "open_positions": 0,
+ "pending_orders": 0,
+ "closed_trades": 0,
+ "wins": 0,
+ "max_drawdown_pct": 0.0,
+ "late_picks": []
+}
