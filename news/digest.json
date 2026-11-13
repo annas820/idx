@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T17:50+07:00",
+ "generated_for": "2026-11-13T18:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 704,
+ "scanned": 714,
  "kept": 214,
- "dropped_noise": 10,
+ "dropped_noise": 11,
  "items": [
   {
    "published": "2026-11-12T16:06+07:00",
@@ -190,20 +190,19 @@
    "also_in": []
   },
   {
-   "published": "2026-11-12T06:20+07:00",
+   "published": "2026-11-13T18:05+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir",
-   "link": "https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir",
-   "score": 8,
+   "title": "GMFI Rights Issue 22 Miliar Saham, Ini Alasan dan Penggunaan Dananya",
+   "link": "https://www.cnbcindonesia.com/market/20261113164308-17-785122/gmfi-rights-issue-22-miliar-saham-ini-alasan-dan-penggunaan-dananya",
+   "score": 7,
    "categories": [
-    "kebijakan",
     "pasar",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "BRMS",
-    "BRPT"
+    "GMFI"
    ],
    "flags": [],
    "also_in": []

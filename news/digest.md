@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-13T17:50+07:00 WIB | jendela 36 jam | dipindai 704, lolos 214, dibuang sebagai noise 10.
+Berita terbaru: 2026-11-13T18:50+07:00 WIB | jendela 36 jam | dipindai 714, lolos 214, dibuang sebagai noise 11.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -18,7 +18,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-12 16:54 cnbc_indonesia_market: Masuk Investigasi BEI, Fuji Finance (FUJI) Ungkap Sosok Pemegang Saham [FUJI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112165052-17-784739/masuk-investigasi-bei-fuji-finance--fuji--ungkap-sosok-pemegang-saham>
 - **8** T3 11-12 11:55 bloomberg_technoz: Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah [BRPT,JSMR,MTEL,WIFI] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah>
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
-- **8** T3 11-12 06:20 cnbc_indonesia_market: MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir>
+- **7** T3 11-13 18:05 cnbc_indonesia_market: GMFI Rights Issue 22 Miliar Saham, Ini Alasan dan Penggunaan Dananya [GMFI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113164308-17-785122/gmfi-rights-issue-22-miliar-saham-ini-alasan-dan-penggunaan-dananya>
 - **7** T3 11-13 11:30 bloomberg_technoz: Totalindo Eka Persada (TOPS) Diputus Pailit [TOPS] (kredit/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127622/totalindo-eka-persada-tops-diputus-pailit>
 - **7** T3 11-13 10:43 cnbc_indonesia_market: Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), Diujung Tanduk [TOPS] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--diujung-tanduk>
 - **7** T3 11-13 10:43 cnbc_indonesia_market: Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), di Ujung Tanduk [TOPS] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--di-ujung-tanduk>
