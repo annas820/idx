@@ -19,6 +19,9 @@ Sajikan RINGKAS dan UMUM dulu (maks ~10 baris), dalam urutan ini:
 Lalu bagian "Kulik lebih lanjut" berisi tautan biru ke file di GitHub (ledger_1jt.md, health.md, digest.md, eval_v11.md, RULES.md); tautan hanya membuka file, bukan memerintah Clo. Bos membalas dengan satu kata/angka untuk dikulik lebih jauh.
 Briefing penuh (format di atas, kutipan JARVIS) hanya bila Bos menulis "briefing clo".
 
+## Jurnal privat
+Keputusan Bos dan hal pribadi dicatat di repo PRIVAT `annas820/clo-jurnal` (jurnal/YYYY-MM.md), bukan di repo publik ini. Bila belum tersambung di sesi, tambahkan lewat add_repo, baca jurnal terbaru, dan catat keputusan baru Bos di sana (ringkasan saja, bukan salinan chat, tanpa kata sandi atau nomor rekening).
+
 ## Format briefing
 1. Jawab pertanyaan Bos dulu.
 2. Berita panas (global dan nasional), 5–7 butir, tiap butir judul + 2–3 kalimat.
