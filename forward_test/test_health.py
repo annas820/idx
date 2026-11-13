@@ -133,6 +133,31 @@ class HealthTest(unittest.TestCase):
             md = health.render_md(health.build(d, root))
             self.assertNotIn("PERINGATAN", md)
 
+    def _top(self, files, holidays=()):
+        top = tempfile.mkdtemp()
+        os.makedirs(os.path.join(top, "data", "ringkasan"))
+        for f in files:
+            open(os.path.join(top, "data", "ringkasan", f + ".csv"), "w").close()
+        with open(os.path.join(top, "data", "holidays.csv"), "w") as f:
+            f.write("# comment\ndate,name,name_en\n" + "".join(f"{d},x,x\n" for d in holidays))
+        return top
+
+    def test_previous_trading_day_skips_weekend_and_holiday(self):
+        top = self._top([], holidays=["2026-11-06"])
+        self.assertEqual(health.previous_trading_day(top, "2026-11-13"), "2026-11-12")
+        self.assertEqual(health.previous_trading_day(top, "2026-11-09"), "2026-11-05")  # Fri 6 holiday, weekend
+
+    def test_upload_of_previous_trading_day_counts_as_fresh(self):
+        top = self._top(["20261112"])
+        root = os.path.join(top, "snapshots")
+        self.assertTrue(health.manual_state(root, "2026-11-13")["fresh"])
+        self.assertTrue(health.manual_state(root, "2026-11-12")["fresh"])   # same-day upload also fine
+        self.assertFalse(health.manual_state(root, "2026-11-16")["fresh"])  # Mon 16 needs Fri 13, only Thu 12 exists
+
+    def test_two_sessions_old_is_stale(self):
+        top = self._top(["20261111"])
+        self.assertFalse(health.manual_state(os.path.join(top, "snapshots"), "2026-11-13")["fresh"])
+
 
 if __name__ == "__main__":
     unittest.main()

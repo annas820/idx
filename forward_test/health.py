@@ -79,6 +79,31 @@ def last_good_broker(root):
     return None, None
 
 
+def holidays(top):
+    out = set()
+    try:
+        with open(os.path.join(top, "data", "holidays.csv"), encoding="utf-8") as f:
+            for line in f:
+                m = re.match(r"^\s*(\d{4}-\d{2}-\d{2})", line)
+                if m:
+                    out.add(m.group(1))
+    except OSError:
+        pass
+    return out
+
+
+def previous_trading_day(top, day):
+    """Last weekday before `day` that is not a listed IDX holiday (YYYY-MM-DD)."""
+    hol = holidays(top)
+    d = datetime.strptime(day, "%Y-%m-%d")
+    for _ in range(14):
+        d -= timedelta(days=1)
+        iso = d.strftime("%Y-%m-%d")
+        if d.weekday() < 5 and iso not in hol:
+            return iso
+    return iso
+
+
 def manual_state(root, day):
     """Newest hand-uploaded Ringkasan Saham (data/ringkasan/*.csv) and the v1.1 draft status next to it."""
     top = os.path.dirname(os.path.abspath(root.rstrip(os.sep)))
@@ -88,7 +113,9 @@ def manual_state(root, day):
     except OSError:
         files = []
     latest = files[-1][:8] if files else None
-    fresh = bool(latest) and latest == day.replace("-", "")
+    # The upload for day D arrives after the market closes (after the 17:30 run), so "fresh" means the upload
+    # covers the last trading day BEFORE `day` (or `day` itself). Older than that is stale.
+    fresh = bool(latest) and latest >= previous_trading_day(top, day).replace("-", "")
     v11 = None
     try:
         vs = sorted(f for f in os.listdir(os.path.join(top, "signals_v11")) if f.startswith("v11_"))
