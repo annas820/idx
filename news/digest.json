@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T09:42+07:00",
+ "generated_for": "2026-11-13T10:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 508,
- "kept": 159,
+ "scanned": 537,
+ "kept": 174,
  "dropped_noise": 8,
  "items": [
   {
@@ -139,6 +139,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-13T10:43+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), Diujung Tanduk",
+   "link": "https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--diujung-tanduk",
+   "score": 7,
+   "categories": [
+    "kredit",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "TOPS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-13T08:50+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -226,6 +244,36 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T10:06+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Duit Asing Masuk Rp127,6 T, tapi Kabur dari Saham Rp97 T Akibat MSCI",
+   "link": "https://www.cnbcindonesia.com/news/20261113100403-4-784908/duit-asing-masuk-rp1276-t-tapi-kabur-dari-saham-rp97-t-akibat-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T09:53+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Menkeu: Dana Asing Rp 479 T Keluar dari Negara Berkembang, Karena Ini",
+   "link": "https://www.cnbcindonesia.com/news/20261113095201-4-784903/menkeu-dana-asing-rp-479-t-keluar-dari-negara-berkembang-karena-ini",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -372,51 +420,6 @@
    "tier": 3,
    "title": "Sentimen MSCI Tekan Reksadana Saham, Volatilitas Diprediksi Berlanjut hingga 2027",
    "link": "https://investasi.kontan.co.id/news/sentimen-msci-tekan-reksadana-saham-volatilitas-diprediksi-berlanjut-hingga-2027",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T17:53+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Rombak Konsituten LQ45 dan IDX80 Imbas Saham HSC, Ini Saham yang Diuntungkan",
-   "link": "https://investasi.kontan.co.id/news/bei-rombak-konsituten-lq45-dan-idx80-imbas-saham-hsc-ini-saham-yang-diuntungkan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T16:06+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "IHSG Ditutup Naik 2,66% ke 5.250,90 usai Gibran Mundur dan Rilis MSCI",
-   "link": "https://www.cnbcindonesia.com/market/20261112152847-17-784722/ihsg-ditutup-naik-266-ke-525090-usai-gibran-mundur-rilis-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T14:56+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Saham BUMN Masuk HSC, BEI Serahkan Mekanisme ke Masing-Masing Emiten",
-   "link": "https://www.cnbcindonesia.com/market/20261112145248-17-784690/saham-bumn-masuk-hsc-bei-serahkan-mekanisme-ke-masing-masing-emiten",
    "score": 6,
    "categories": [
     "kebijakan",
