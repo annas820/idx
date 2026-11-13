@@ -1,0 +1,293 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-13T04:29:39Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "PNS Bisa 'Sekolahkan' SK di Bank, Pahami Dulu Risikonya",
+        "url": "https://www.cnbcindonesia.com/market/20261113102854-17-784918/pns-bisa-sekolahkan-sk-di-bank-pahami-dulu-risikonya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T11:20:11+07:00",
+        "summary": "PNS dapat memanfaatkan SK Pengangkatan dan SK Pensiun sebagai jaminan untuk pinjaman bank.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "26 Saham \"Bangsawan\" Masuk HSC, Bagaimana Nasib LQ45?",
+        "url": "https://www.cnbcindonesia.com/research/20261112111521-128-784618/26-saham-bangsawan-masuk-hsc-bagaimana-nasib-lq45",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-13T11:10:06+07:00",
+        "summary": "Perluasan daftar saham HSC di BEI mencakup 383 emiten yang tadinya hanya 83",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kualitas Kredit Membaik, NPL BRI Turun ke 2,85% pada September 2026",
+        "url": "https://keuangan.kontan.co.id/news/kualitas-kredit-membaik-npl-bri-turun-ke-285-pada-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T10:58:21+07:00",
+        "summary": "Kualitas kredit membaik, NPL BRI turun ke 2,85% pada September 2026. Perbaikan kualitas kredit ini juga diikuti perbaikan biaya kredit turun 2,8%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "membaik"
+        ],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "BNI Tawarkan Sukuk Tabungan ST017, dengan Imbal Hasil Minimal 7,05%",
+        "url": "https://keuangan.kontan.co.id/news/bni-tawarkan-sukuk-tabungan-st017-dengan-imbal-hasil-minimal-705",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T10:55:09+07:00",
+        "summary": "PT Bank Negara Indonesia (Persero) Tbk (BNI) menawarkan Sukuk Tabungan seri ST017 dengan imbal hasil minimal hingga 7,05% per tahun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BNI Perluas Jaringan, Jumlah Agen46 Tembus 234.897 hingga Seeptember 2026",
+        "url": "https://keuangan.kontan.co.id/news/bni-perluas-jaringan-jumlah-agen46-tembus-234897-hingga-seeptember-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T10:45:55+07:00",
+        "summary": "PT Bank Negara Indonesia (Persero) Tbk (BNI) terus memperluas jaringan layanan perbankan melalui pengembangan agen laku pandai.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), di Ujung Tanduk",
+        "url": "https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--di-ujung-tanduk",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T10:43:51+07:00",
+        "summary": "PT Totalindo Eka Persada Tbk. dinyatakan pailit setelah pengadilan membatalkan perjanjian perdamaian. Manajemen kini menghadapi ketidakpastian.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ikan Jadi Tabungan, Cara Nelayan Ketapang di KNMP Melawan Kemiskinan",
+        "url": "https://www.cnbcindonesia.com/research/20261104201608-128-782403/ikan-jadi-tabungan-cara-nelayan-ketapang-di-knmp-melawan-kemiskinan",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-13T10:20:00+07:00",
+        "summary": "Kehadiran Bank Ikan di Kampung Nelayan Merah Putih Ketapang, Lampung Selatan, menjadi secercah harapan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "PNS Bisa Dapat Kredit Sampai Rp1 M Pakai SK Pegawai, Simak Syaratnya!",
+        "url": "https://www.cnbcindonesia.com/market/20261113100540-17-784909/pns-bisa-dapat-kredit-sampai-rp1-m-pakai-sk-pegawai-simak-syaratnya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T10:15:03+07:00",
+        "summary": "Beberapa bank menawarkan kredit multiguna untuk pegawai tetap, termasuk PNS. Plafon hingga Rp1 miliar.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "FWD Insurance Perkuat Bancassurance, Bidik Pertumbuhan Premi dan Perluas Kemitraan",
+        "url": "https://keuangan.kontan.co.id/news/fwd-insurance-perkuat-bancassurance-bidik-pertumbuhan-premi-dan-perluas-kemitraan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-13T10:04:33+07:00",
+        "summary": "FWD Insurance memperkuat bancassurance guna membidik pertumbuhan premi dan memperluas kemitraan untuk menjangkau segmen nasabah lebih luas.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Penguatan IHSG Berlanjut, Saham BUMN Ini Jadi Penopang Indeks",
+        "url": "https://www.cnbcindonesia.com/market/20261113095258-17-784904/penguatan-ihsg-berlanjut-saham-bumn-ini-jadi-penopang-indeks",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T09:56:09+07:00",
+        "summary": "IHSG menguat 1,47% di tengah pengunduran diri Gibran Rakabuming Raka. Saham BUMN jadi pendorong utama.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Mata Uang Asia Beda Nasib: Rupiah-Ringgit Terpuruk, Yuan-Won Perkasa",
+        "url": "https://www.cnbcindonesia.com/research/20261113094409-128-784901/mata-uang-asia-beda-nasib-rupiah-ringgit-terpuruk-yuan-won-perkasa",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-13T09:55:10+07:00",
+        "summary": "Pergerakan mata uang Asia cenderung beragam pada perdagangan Jumat (13/11/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Efek Evaluasi HSC, Ini Daftar 10 Saham Penguasa IHSG",
+        "url": "https://www.cnbcindonesia.com/market/20261113091726-17-784896/efek-evaluasi-hsc-ini-daftar-10-saham-penguasa-ihsg",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T09:40:10+07:00",
+        "summary": "BEI merilis evaluasi insidental IHSG setelah penambahan emiten HSC.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Breaking! IHSG Melesat 1%, Ini Penyebabnya",
+        "url": "https://www.cnbcindonesia.com/market/20261113093109-17-784898/breaking-ihsg-melesat-1-ini-penyebabnya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T09:32:29+07:00",
+        "summary": "IHSG menguat signifikan di awal perdagangan, mencapai 5.303,71. Perhatian pasar tertuju pada pengunduran Gibran dan data ekonomi global",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat",
+          "melesat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Persaingan Bisnis e-Commerce, Platform Ini Bebaskan Biaya Admin",
+        "url": "https://www.cnbcindonesia.com/market/20261113085107-19-784885/video-persaingan-bisnis-e-commerce-platform-ini-bebaskan-biaya-admin",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T09:13:41+07:00",
+        "summary": "Persaingan Ketat Bisnis e-Commerce, Platform Ini Tawarkan Bebas Biaya Admin ke Pedagang dan UMKM",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pagi Ini Rupiah Dibuka Rp 18.225 per Dolar AS",
+        "url": "https://www.cnbcindonesia.com/market/20261113090901-17-784884/pagi-ini-rupiah-dibuka-rp-18225-per-dolar-as",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T09:11:56+07:00",
+        "summary": "Rupiah stagnan di Rp18.225/US$ pada 13 November 2026, setelah mencatatkan rekor terlemah. Dolar AS melemah, sementara politik domestik memengaruhi pasar.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "rekor"
+        ],
+        "negative_terms": [
+          "melemah"
+        ]
+      },
+      {
+        "title": "Harga Emas Antam Logam Mulia Hari Ini Turun Rp9.000, Dekati Rp2,4 Juta",
+        "url": "https://www.cnbcindonesia.com/research/20261113090631-128-784883/harga-emas-antam-logam-mulia-hari-ini-turun-rp9000-dekati-rp24-juta",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-13T09:10:47+07:00",
+        "summary": "- Harga emas batangan produksi PT Aneka Tambang (Antam) Logam Mulia semakin jatuh pada perdagangan hari ini, Jumat (13/11/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun",
+          "jatuh"
+        ]
+      },
+      {
+        "title": "IHSG Dibuka Menguat 0,28% ke 5.275",
+        "url": "https://www.cnbcindonesia.com/market/20261113085057-17-784882/ihsg-dibuka-menguat-028-ke-5275",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T09:02:14+07:00",
+        "summary": "IHSG dibuka di zona hijau dengan kenaikan 0,28%. Perhatian pasar tertuju pada pengunduran Gibran dan data inflasi dari Jepang dan AS.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Musim Dingin Tiba, Harga Batu Bara Membara: Jerman Bikin Kaget Dunia",
+        "url": "https://www.cnbcindonesia.com/research/20261113082135-128-784861/musim-dingin-tiba-harga-batu-bara-membara-jerman-bikin-kaget-dunia",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-13T08:45:35+07:00",
+        "summary": "Harga batu bara terus menanjak menjelang musim dingin.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menanjak"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Kursi Wapres RI Pernah Dikuasai Raja Jawa, Wartawan - Panglima TNI",
+        "url": "https://www.cnbcindonesia.com/research/20261113063131-128-784840/kursi-wapres-ri-pernah-dikuasai-raja-jawa-wartawan--panglima-tni",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-13T08:30:24+07:00",
+        "summary": "Sejak kemerdekaan, Indonesia telah memiliki 13 wakil presiden",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bursa Asia Kompak Menguat, Kospi Pimpin Kenaikan",
+        "url": "https://www.cnbcindonesia.com/market/20261113082555-17-784863/bursa-asia-kompak-menguat-kospi-pimpin-kenaikan",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-13T08:29:39+07:00",
+        "summary": "Bursa saham Asia-Pasifik menguat, dipimpin Kospi Korea Selatan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      }
+    ]
+  }
+}

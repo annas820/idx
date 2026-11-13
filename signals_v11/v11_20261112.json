@@ -1,0 +1,388 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261112",
+ "sessions": 22,
+ "signals": [
+  {
+   "symbol": "BBCA",
+   "signal_date": "20261112",
+   "close": 5475.0,
+   "atr": 204.81,
+   "limit": 5372.6,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.254,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "BBRI",
+   "signal_date": "20261112",
+   "close": 3030.0,
+   "atr": 111.77,
+   "limit": 2974.11,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.173,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "ASII",
+   "signal_date": "20261112",
+   "close": 5450.0,
+   "atr": 199.01,
+   "limit": 5350.49,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.386,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "PTBA",
+   "signal_date": "20261112",
+   "close": 3180.0,
+   "atr": 159.11,
+   "limit": 3100.45,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.134,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "EXCL",
+   "signal_date": "20261112",
+   "close": 1460.0,
+   "atr": 92.64,
+   "limit": 1413.68,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.263,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "SGER",
+   "signal_date": "20261112",
+   "close": 645.0,
+   "atr": 51.58,
+   "limit": 619.21,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.144,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "INKP",
+   "signal_date": "20261112",
+   "close": 6550.0,
+   "atr": 307.85,
+   "limit": 6396.07,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.316,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "PGEO",
+   "signal_date": "20261112",
+   "close": 925.0,
+   "atr": 44.56,
+   "limit": 902.72,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.144,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "SMGR",
+   "signal_date": "20261112",
+   "close": 1520.0,
+   "atr": 75.98,
+   "limit": 1482.01,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.252,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "LSIP",
+   "signal_date": "20261112",
+   "close": 1560.0,
+   "atr": 54.55,
+   "limit": 1532.72,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.163,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "MAPA",
+   "signal_date": "20261112",
+   "close": 595.0,
+   "atr": 26.77,
+   "limit": 581.62,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.114,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "MYOR",
+   "signal_date": "20261112",
+   "close": 1470.0,
+   "atr": 57.84,
+   "limit": 1441.08,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007,
+   "ratio_5d": 0.151,
+   "positive_sessions": 5
+  }
+ ],
+ "controls": [
+  {
+   "symbol": "BUMI",
+   "signal_date": "20261112",
+   "close": 127.0,
+   "atr": 8.75,
+   "limit": 122.62,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "MBMA",
+   "signal_date": "20261112",
+   "close": 314.0,
+   "atr": 21.81,
+   "limit": 303.1,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "IMPC",
+   "signal_date": "20261112",
+   "close": 775.0,
+   "atr": 81.91,
+   "limit": 734.04,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "TPIA",
+   "signal_date": "20261112",
+   "close": 1275.0,
+   "atr": 109.92,
+   "limit": 1220.04,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "CUAN",
+   "signal_date": "20261112",
+   "close": 390.0,
+   "atr": 46.47,
+   "limit": 366.76,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "PSKT",
+   "signal_date": "20261112",
+   "close": 232.0,
+   "atr": 22.51,
+   "limit": 220.74,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BBCA",
+   "signal_date": "20261112",
+   "close": 5475.0,
+   "atr": 204.81,
+   "limit": 5372.6,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "UVCR",
+   "signal_date": "20261112",
+   "close": 168.0,
+   "atr": 20.25,
+   "limit": 157.87,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "ISAT",
+   "signal_date": "20261112",
+   "close": 1435.0,
+   "atr": 92.01,
+   "limit": 1388.99,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "GOTO",
+   "signal_date": "20261112",
+   "close": 25.0,
+   "atr": 2.09,
+   "limit": 23.96,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BRIS",
+   "signal_date": "20261112",
+   "close": 1135.0,
+   "atr": 60.26,
+   "limit": 1104.87,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "KLBF",
+   "signal_date": "20261112",
+   "close": 765.0,
+   "atr": 30.13,
+   "limit": 749.93,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ],
+ "breadth": 0.78,
+ "breadth_1d": 0.75,
+ "regime_ok": true,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "ASII",
+   "ratio_5d": 0.386,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "INKP",
+   "ratio_5d": 0.316,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "EXCL",
+   "ratio_5d": 0.263,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "BBCA",
+   "ratio_5d": 0.254,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "SMGR",
+   "ratio_5d": 0.252,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "BBRI",
+   "ratio_5d": 0.173,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "LSIP",
+   "ratio_5d": 0.163,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "MYOR",
+   "ratio_5d": 0.151,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "SGER",
+   "ratio_5d": 0.144,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "PGEO",
+   "ratio_5d": 0.144,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "PTBA",
+   "ratio_5d": 0.134,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "MAPA",
+   "ratio_5d": 0.114,
+   "positive_sessions": 4
+  }
+ ],
+ "status": "ok"
+}
