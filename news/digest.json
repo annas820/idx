@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T20:00+07:00",
+ "generated_for": "2026-11-13T21:10+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 722,
- "kept": 214,
+ "scanned": 716,
+ "kept": 204,
  "dropped_noise": 11,
  "items": [
   {
@@ -335,23 +335,6 @@
    ]
   },
   {
-   "published": "2026-11-12T08:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Ada Penyesuaian Indeks MSCI, Simak 5 Saham Pilihan Hari Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261112082226-17-784496/ada-penyesuaian-indeks-msci-simak-5-saham-pilihan-hari-ini",
-   "score": 7,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
    "published": "2026-11-13T14:50+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -445,6 +428,21 @@
    "tickers": [
     "ANTM"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T07:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
