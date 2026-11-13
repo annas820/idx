@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-13T07:55+07:00 WIB | jendela 36 jam | dipindai 497, lolos 146, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-13T09:00+07:00 WIB | jendela 36 jam | dipindai 503, lolos 154, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -14,7 +14,12 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-12 11:55 bloomberg_technoz: Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah [BRPT,JSMR,MTEL,WIFI] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah>
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
 - **8** T3 11-12 06:20 cnbc_indonesia_market: MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir>
+- **7** T3 11-13 08:50 bloomberg_technoz: Fitch Pangkas Rating Afiliasi DOID, Risiko Gagal Bayar Meningkat [DOID] (kredit/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127604/fitch-pangkas-rating-afiliasi-doid-risiko-gagal-bayar-meningkat>
+- **7** T3 11-13 08:36 bloomberg_technoz: Prediksi IHSG Hari Ini: Reli Berlanjut atau Tertahan Rupiah? (pasar/kurs; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127600/prediksi-ihsg-hari-ini-reli-berlanjut-atau-tertahan-rupiah>
+- **7** T3 11-13 08:18 bloomberg_technoz: Rupiah Hari Ini: Akan Tembus Rekor Terlemah Baru? (kurs; terkonfirmasi, juga di cnbc_indonesia_market/cnbc_indonesia_news) <https://www.bloombergtechnoz.com/detail-news/127598/rupiah-hari-ini-akan-tembus-rekor-terlemah-baru>
+- **7** T3 11-12 10:30 cnbc_indonesia_market: Rupiah Tembus Rekor Terlemah, BI Buka Suara dan Ungkap Penyebabnya! (kurs; terkonfirmasi, juga di bloomberg_technoz/cnbc_indonesia_news) <https://www.cnbcindonesia.com/market/20261112102622-17-784542/rupiah-tembus-rekor-terlemah-bi-buka-suara-ungkap-penyebabnya>
 - **7** T3 11-12 08:55 cnbc_indonesia_market: Ada Penyesuaian Indeks MSCI, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261112082226-17-784496/ada-penyesuaian-indeks-msci-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-13 08:43 bloomberg_technoz: Harga Emas Antam Turun Rp9.000, Buyback Jauh Lebih Parah [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127602/harga-emas-antam-turun-rp9-000-buyback-jauh-lebih-parah>
 - **6** T3 11-13 07:30 cnbc_indonesia_market: Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini>
 - **6** T3 11-13 07:20 cnbc_indonesia_market: Asing Borong 10 Saham Ini di Hari MSCI Review dan Pengunduran Gibran (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113064615-17-784841/asing-borong-10-saham-ini-di-hari-msci-review-dan-pengunduran-gibran>
 - **6** T3 11-13 07:12 bloomberg_technoz: Mengukur Nasib SBN di Tengah Lonjakan Yield US Treasury (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127587/mengukur-nasib-sbn-di-tengah-lonjakan-yield-us-treasury>
@@ -27,8 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-12 17:53 kontan_investasi: BEI Rombak Konsituten LQ45 dan IDX80 Imbas Saham HSC, Ini Saham yang Diuntungkan (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-rombak-konsituten-lq45-dan-idx80-imbas-saham-hsc-ini-saham-yang-diuntungkan>
 - **6** T3 11-12 16:06 cnbc_indonesia_market: IHSG Ditutup Naik 2,66% ke 5.250,90 usai Gibran Mundur dan Rilis MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112152847-17-784722/ihsg-ditutup-naik-266-ke-525090-usai-gibran-mundur-rilis-msci>
 - **6** T3 11-12 14:56 cnbc_indonesia_market: Saham BUMN Masuk HSC, BEI Serahkan Mekanisme ke Masing-Masing Emiten (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112145248-17-784690/saham-bumn-masuk-hsc-bei-serahkan-mekanisme-ke-masing-masing-emiten>
-- **6** T3 11-12 11:30 cnbc_indonesia_market: Video: Hasil Rebalancing MSCI: 1 Saham RI Turun Kelas, 8 Saham Didepak (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112083811-19-784503/video-hasil-rebalancing-msci-1-saham-ri-turun-kelas-8-saham-didepak>
-- **6** T3 11-12 11:20 cnbc_indonesia_market: BEI Rilis Daftar 383 Saham HSC, Ada Emiten Tambang hingga Perbankan (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112083851-19-784504/bei-rilis-daftar-383-saham-hsc-ada-emiten-tambang-hingga-perbankan>
-- **6** T3 11-12 09:03 cnbc_indonesia_market: MSCI dan Isu Politik Tak Ganggu Pasar Saham, IHSG Dibuka Naik 0,09% (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261112085638-17-784512/msci-dan-isu-politik-tak-ganggu-pasar-saham-ihsg-dibuka-naik-009>
-- **6** T3 11-12 08:10 bloomberg_technoz: Harga Emas Antam & Buyback Hari Ini Stagnan [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127471/harga-emas-antam-buyback-hari-ini-stagnan>
-- **6** T3 11-12 08:09 bloomberg_technoz: Rupiah Hadapi Tekanan, Dinamika Politik & Sinyal Hawkish The Fed (global/kurs) <https://www.bloombergtechnoz.com/detail-news/127470/rupiah-hadapi-tekanan-dinamika-politik-sinyal-hawkish-the-fed>

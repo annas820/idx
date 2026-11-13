@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T07:55+07:00",
+ "generated_for": "2026-11-13T09:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 497,
- "kept": 146,
- "dropped_noise": 6,
+ "scanned": 503,
+ "kept": 154,
+ "dropped_noise": 7,
  "items": [
   {
    "published": "2026-11-12T16:06+07:00",
@@ -139,6 +139,79 @@
    "also_in": []
   },
   {
+   "published": "2026-11-13T08:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Fitch Pangkas Rating Afiliasi DOID, Risiko Gagal Bayar Meningkat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127604/fitch-pangkas-rating-afiliasi-doid-risiko-gagal-bayar-meningkat",
+   "score": 7,
+   "categories": [
+    "kredit",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "DOID"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T08:36+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Prediksi IHSG Hari Ini: Reli Berlanjut atau Tertahan Rupiah?",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127600/prediksi-ihsg-hari-ini-reli-berlanjut-atau-tertahan-rupiah",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T08:18+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Hari Ini: Akan Tembus Rekor Terlemah Baru?",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127598/rupiah-hari-ini-akan-tembus-rekor-terlemah-baru",
+   "score": 7,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market",
+    "cnbc_indonesia_news"
+   ]
+  },
+  {
+   "published": "2026-11-12T10:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Rupiah Tembus Rekor Terlemah, BI Buka Suara dan Ungkap Penyebabnya!",
+   "link": "https://www.cnbcindonesia.com/market/20261112102622-17-784542/rupiah-tembus-rekor-terlemah-bi-buka-suara-ungkap-penyebabnya",
+   "score": 7,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz",
+    "cnbc_indonesia_news"
+   ]
+  },
+  {
    "published": "2026-11-12T08:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -153,6 +226,24 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T08:43+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Turun Rp9.000, Buyback Jauh Lebih Parah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127602/harga-emas-antam-turun-rp9-000-buyback-jauh-lebih-parah",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
    "also_in": []
   },
   {
@@ -330,84 +421,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T11:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Hasil Rebalancing MSCI: 1 Saham RI Turun Kelas, 8 Saham Didepak",
-   "link": "https://www.cnbcindonesia.com/market/20261112083811-19-784503/video-hasil-rebalancing-msci-1-saham-ri-turun-kelas-8-saham-didepak",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T11:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Rilis Daftar 383 Saham HSC, Ada Emiten Tambang hingga Perbankan",
-   "link": "https://www.cnbcindonesia.com/market/20261112083851-19-784504/bei-rilis-daftar-383-saham-hsc-ada-emiten-tambang-hingga-perbankan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T09:03+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "MSCI dan Isu Politik Tak Ganggu Pasar Saham, IHSG Dibuka Naik 0,09%",
-   "link": "https://www.cnbcindonesia.com/market/20261112085638-17-784512/msci-dan-isu-politik-tak-ganggu-pasar-saham-ihsg-dibuka-naik-009",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T08:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam & Buyback Hari Ini Stagnan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127471/harga-emas-antam-buyback-hari-ini-stagnan",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T08:09+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Hadapi Tekanan, Dinamika Politik & Sinyal Hawkish The Fed",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127470/rupiah-hadapi-tekanan-dinamika-politik-sinyal-hawkish-the-fed",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],
