@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-13T10:50+07:00",
+ "generated_for": "2026-11-13T11:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 537,
- "kept": 174,
+ "scanned": 567,
+ "kept": 179,
  "dropped_noise": 8,
  "items": [
   {
@@ -139,11 +139,47 @@
    "also_in": []
   },
   {
+   "published": "2026-11-13T11:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Totalindo Eka Persada (TOPS) Diputus Pailit",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127622/totalindo-eka-persada-tops-diputus-pailit",
+   "score": 7,
+   "categories": [
+    "kredit",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "TOPS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-13T10:43+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
    "title": "Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), Diujung Tanduk",
    "link": "https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--diujung-tanduk",
+   "score": 7,
+   "categories": [
+    "kredit",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "TOPS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T10:43+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), di Ujung Tanduk",
+   "link": "https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--di-ujung-tanduk",
    "score": 7,
    "categories": [
     "kredit",
@@ -244,6 +280,21 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T11:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T",
+   "link": "https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -378,51 +429,6 @@
    "score": 6,
    "categories": [
     "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T22:00+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Wall Street Dibuka Melemah, Pengunduran Diri CEO Nvidia Tekan Saham Teknologi",
-   "link": "https://investasi.kontan.co.id/news/wall-street-dibuka-melemah-pengunduran-diri-ceo-nvidia-tekan-saham-teknologi",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T19:00+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Ditutup Rebound 2,66% Pasca Review MSCI November 2026, Tren Pemulihan Berlanjut?",
-   "link": "https://investasi.kontan.co.id/news/ihsg-ditutup-rebound-266-pasca-review-msci-november-2026-tren-pemulihan-berlanjut",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-12T18:12+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Sentimen MSCI Tekan Reksadana Saham, Volatilitas Diprediksi Berlanjut hingga 2027",
-   "link": "https://investasi.kontan.co.id/news/sentimen-msci-tekan-reksadana-saham-volatilitas-diprediksi-berlanjut-hingga-2027",
-   "score": 6,
-   "categories": [
-    "kebijakan",
     "pasar"
    ],
    "tickers": [],

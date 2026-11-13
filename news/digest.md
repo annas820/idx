@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-13T10:50+07:00 WIB | jendela 36 jam | dipindai 537, lolos 174, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-13T11:50+07:00 WIB | jendela 36 jam | dipindai 567, lolos 179, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -14,12 +14,15 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-12 11:55 bloomberg_technoz: Rebalancing MSCI: BRPT, MTEL, JSMR dan WIFI Kompak Melemah [BRPT,JSMR,MTEL,WIFI] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127500/rebalancing-msci-brpt-mtel-jsmr-dan-wifi-kompak-melemah>
 - **8** T3 11-12 11:05 bloomberg_technoz: Dua Saham Konglomerat Berguguran Usai Didepak MSCI: BRPT & BRMS [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127495/dua-saham-konglomerat-berguguran-usai-didepak-msci-brpt-brms>
 - **8** T3 11-12 06:20 cnbc_indonesia_market: MSCI Keluarkan BRPT dan BRMS, 7 Saham Ikut Tersingkir [BRMS,BRPT] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261112054523-17-784463/msci-keluarkan-brpt-brms-7-saham-ikut-tersingkir>
+- **7** T3 11-13 11:30 bloomberg_technoz: Totalindo Eka Persada (TOPS) Diputus Pailit [TOPS] (kredit/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127622/totalindo-eka-persada-tops-diputus-pailit>
 - **7** T3 11-13 10:43 cnbc_indonesia_market: Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), Diujung Tanduk [TOPS] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--diujung-tanduk>
+- **7** T3 11-13 10:43 cnbc_indonesia_market: Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), di Ujung Tanduk [TOPS] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--di-ujung-tanduk>
 - **7** T3 11-13 08:50 bloomberg_technoz: Fitch Pangkas Rating Afiliasi DOID, Risiko Gagal Bayar Meningkat [DOID] (kredit/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127604/fitch-pangkas-rating-afiliasi-doid-risiko-gagal-bayar-meningkat>
 - **7** T3 11-13 08:36 bloomberg_technoz: Prediksi IHSG Hari Ini: Reli Berlanjut atau Tertahan Rupiah? (pasar/kurs; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127600/prediksi-ihsg-hari-ini-reli-berlanjut-atau-tertahan-rupiah>
 - **7** T3 11-13 08:18 bloomberg_technoz: Rupiah Hari Ini: Akan Tembus Rekor Terlemah Baru? (kurs; terkonfirmasi, juga di cnbc_indonesia_market/cnbc_indonesia_news) <https://www.bloombergtechnoz.com/detail-news/127598/rupiah-hari-ini-akan-tembus-rekor-terlemah-baru>
 - **7** T3 11-12 10:30 cnbc_indonesia_market: Rupiah Tembus Rekor Terlemah, BI Buka Suara dan Ungkap Penyebabnya! (kurs; terkonfirmasi, juga di bloomberg_technoz/cnbc_indonesia_news) <https://www.cnbcindonesia.com/market/20261112102622-17-784542/rupiah-tembus-rekor-terlemah-bi-buka-suara-ungkap-penyebabnya>
 - **7** T3 11-12 08:55 cnbc_indonesia_market: Ada Penyesuaian Indeks MSCI, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261112082226-17-784496/ada-penyesuaian-indeks-msci-simak-5-saham-pilihan-hari-ini>
+- **6** T3 11-13 11:35 cnbc_indonesia_market: Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t>
 - **6** T3 11-13 10:06 cnbc_indonesia_news: Duit Asing Masuk Rp127,6 T, tapi Kabur dari Saham Rp97 T Akibat MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261113100403-4-784908/duit-asing-masuk-rp1276-t-tapi-kabur-dari-saham-rp97-t-akibat-msci>
 - **6** T3 11-13 09:53 cnbc_indonesia_news: Menkeu: Dana Asing Rp 479 T Keluar dari Negara Berkembang, Karena Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261113095201-4-784903/menkeu-dana-asing-rp-479-t-keluar-dari-negara-berkembang-karena-ini>
 - **6** T3 11-13 08:43 bloomberg_technoz: Harga Emas Antam Turun Rp9.000, Buyback Jauh Lebih Parah [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127602/harga-emas-antam-turun-rp9-000-buyback-jauh-lebih-parah>
@@ -29,6 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-13 06:30 cnbc_indonesia_market: MSCI Bongkar Pasang Klasifikasi Saham Indeks 4 Negara (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113060151-17-784837/msci-bongkar-pasang-klasifikasi-saham-indeks-4-negara>
 - **6** T3 11-13 05:20 bloomberg_technoz: Bos Nvidia Lengser, Wall Street Lesu Terseret Saham AI (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127581/bos-nvidia-lengser-wall-street-lesu-terseret-saham-ai>
 - **6** T3 11-13 05:07 kontan_investasi: Wall Street Melemah, Saham Nvidia Tertekan Usai Kepergian Jensen Huang (global/pasar) <https://investasi.kontan.co.id/news/wall-street-melemah-saham-nvidia-tertekan-usai-kepergian-jensen-huang>
-- **6** T3 11-12 22:00 kontan_investasi: Wall Street Dibuka Melemah, Pengunduran Diri CEO Nvidia Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-dibuka-melemah-pengunduran-diri-ceo-nvidia-tekan-saham-teknologi>
-- **6** T3 11-12 19:00 kontan_investasi: IHSG Ditutup Rebound 2,66% Pasca Review MSCI November 2026, Tren Pemulihan Berlanjut? (kebijakan/pasar) <https://investasi.kontan.co.id/news/ihsg-ditutup-rebound-266-pasca-review-msci-november-2026-tren-pemulihan-berlanjut>
-- **6** T3 11-12 18:12 kontan_investasi: Sentimen MSCI Tekan Reksadana Saham, Volatilitas Diprediksi Berlanjut hingga 2027 (kebijakan/pasar) <https://investasi.kontan.co.id/news/sentimen-msci-tekan-reksadana-saham-volatilitas-diprediksi-berlanjut-hingga-2027>
