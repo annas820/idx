@@ -98,6 +98,41 @@ class HealthTest(unittest.TestCase):
             self.assertFalse(h["entries_allowed"])
             self.assertIsNone(h["last_good_broker_snapshot"])
 
+    def test_feed_liveness_counts_recent_sources(self):
+        with tempfile.TemporaryDirectory() as top:
+            os.makedirs(os.path.join(top, "news"))
+            rows = ["fetched,published,source,title,link",
+                    "x,2026-11-11T10:00+07:00,bloomberg_technoz,t,l1",
+                    "x,2026-11-09T10:00+07:00,kontan_investasi,t,l2",   # older than 48h before end of 11 Nov
+                    "x,2026-11-12T10:00+07:00,cnbc_indonesia_news,t,l3"]  # after the snapshot day: ignored
+            with open(os.path.join(top, "news", "2026-11.csv"), "w") as f:
+                f.write("\n".join(rows) + "\n")
+            fs = health.feed_state(top, "2026-11-11")
+            self.assertEqual(fs["alive"], 1)
+            self.assertEqual(fs["expected"], 7)
+            self.assertIn("kontan_investasi", fs["dead"])
+            self.assertIn("cnbc_indonesia_news", fs["dead"])
+
+    def test_feed_liveness_unknown_without_archive(self):
+        with tempfile.TemporaryDirectory() as top:
+            self.assertIsNone(health.feed_state(top, "2026-11-11"))
+
+    def test_status_md_age_warns_when_stale(self):
+        with tempfile.TemporaryDirectory() as top:
+            with open(os.path.join(top, "STATUS.md"), "w") as f:
+                f.write("# STATUS — kondisi terakhir (Selasa 2026-10-27, ~15:50 WIB)\n")
+            st = health.status_md_state(top, "2026-11-12")
+            self.assertEqual((st["age_days"], st["stale"]), (16, True))
+            self.assertFalse(health.status_md_state(top, "2026-10-29")["stale"])
+
+    def test_status_md_missing_is_none_and_report_renders(self):
+        with tempfile.TemporaryDirectory() as top:
+            self.assertIsNone(health.status_md_state(top, "2026-11-12"))
+            root = os.path.join(top, "snapshots")
+            d = make_snapshot(root, "2026-11-12", ALL_OK, fnet_rows=3)
+            md = health.render_md(health.build(d, root))
+            self.assertNotIn("PERINGATAN", md)
+
 
 if __name__ == "__main__":
     unittest.main()

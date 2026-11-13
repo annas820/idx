@@ -13,10 +13,13 @@ Forward Test uses; the report labels it as such.
 Usage: health.py <snapshot_dir> <snapshots_root> <out_dir>   -> writes health.json and health.md
 Standard library only. Always exits 0 so a bad snapshot never blocks the commit step.
 """
+import csv
+import glob
 import json
 import os
 import re
 import sys
+from datetime import datetime, timedelta, timezone
 
 BREADTH_MIN = 0.40
 
@@ -28,6 +31,12 @@ PILLARS = {
     "broker": ["fnet_5d", "fnet_1d", "bandar"],
 }
 SWALLOWED_502 = "no session with trades"
+# Keep in step with FEEDS in news_fetch.py.
+EXPECTED_FEEDS = ["bloomberg_technoz", "cnbc_indonesia_market", "cnbc_indonesia_news", "kontan_investasi",
+                  "kontan_keuangan", "kontan_industri", "bisnis_market"]
+FEED_QUIET_HOURS = 48      # a feed with no item published in this window counts as not alive
+STATUS_MAX_AGE_DAYS = 3
+WIB = timezone(timedelta(hours=7))
 
 
 def read_json(path):
@@ -89,8 +98,49 @@ def manual_state(root, day):
     return {"latest": latest, "sessions": len(files), "fresh": fresh, "v11_status": v11}
 
 
+def feed_state(top, day):
+    """Feeds with at least one item published in the FEED_QUIET_HOURS before the end of `day` (WIB).
+    A quiet feed and a blocked feed look the same here; the job itself only prints FAIL and still succeeds."""
+    try:
+        end = datetime.strptime(day, "%Y-%m-%d").replace(hour=23, minute=59, tzinfo=WIB)
+    except ValueError:
+        return None
+    since = end - timedelta(hours=FEED_QUIET_HOURS)
+    newest = {}
+    for path in sorted(glob.glob(os.path.join(top, "news", "????-??.csv")))[-2:]:
+        try:
+            with open(path, newline="", encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    try:
+                        t = datetime.fromisoformat(r.get("published") or "")
+                    except ValueError:
+                        continue
+                    if t <= end and (r["source"] not in newest or t > newest[r["source"]]):
+                        newest[r["source"]] = t
+        except OSError:
+            continue
+    if not newest:
+        return None
+    alive = [f for f in EXPECTED_FEEDS if f in newest and newest[f] >= since]
+    return {"alive": len(alive), "expected": len(EXPECTED_FEEDS),
+            "dead": [f for f in EXPECTED_FEEDS if f not in alive]}
+
+
+def status_md_state(top, day):
+    """Age of the hand-written STATUS.md, read from the first date in its first line."""
+    m = re.search(r"\d{4}-\d{2}-\d{2}", read_text(os.path.join(top, "STATUS.md")).split("\n", 1)[0])
+    if not m:
+        return None
+    try:
+        age = (datetime.strptime(day, "%Y-%m-%d") - datetime.strptime(m.group(0), "%Y-%m-%d")).days
+    except ValueError:
+        return None
+    return {"date": m.group(0), "age_days": age, "stale": age > STATUS_MAX_AGE_DAYS}
+
+
 def build(snap_dir, root):
     day = os.path.basename(os.path.normpath(snap_dir))
+    top = os.path.dirname(os.path.abspath(root.rstrip(os.sep)))
     manual = manual_state(root, day)
     status = parse_status(read_text(os.path.join(snap_dir, "status.txt")))
     pillars, failed = {}, []
@@ -143,6 +193,8 @@ def build(snap_dir, root):
         "last_good_broker_data_to": good_to,
         "broker_note": note,
         "manual": manual,
+        "feeds": feed_state(top, day),
+        "status_md": status_md_state(top, day),
         "entries_allowed": not reasons,
         "reasons": reasons,
     }
@@ -161,6 +213,13 @@ def render_md(h):
         f"- Data broker terbaru: {h['last_good_broker_snapshot'] or 'tidak ada'}"
         f" (sampai {h['last_good_broker_data_to'] or 'n/a'})",
     ]
+    fd = h.get("feeds")
+    if fd:
+        dead = f" (mati/sepi {FEED_QUIET_HOURS} jam: {', '.join(fd['dead'])})" if fd["dead"] else ""
+        lines.append(f"- Sumber berita hidup: {fd['alive']} dari {fd['expected']}{dead}")
+    sm = h.get("status_md")
+    if sm and sm["stale"]:
+        lines.append(f"- PERINGATAN: STATUS.md bertanggal {sm['date']} ({sm['age_days']} hari lalu), jangan dipercaya sebelum diperbarui")
     if h["broker_note"]:
         lines.append(f"- Catatan: {h['broker_note']}")
     if h["failed_steps"]:
