@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-13T15:50+07:00 WIB | jendela 36 jam | dipindai 657, lolos 206, dibuang sebagai noise 9.
+Berita terbaru: 2026-11-13T16:50+07:00 WIB | jendela 36 jam | dipindai 686, lolos 209, dibuang sebagai noise 10.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,6 +10,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 ## Teratas
 - **10** T3 11-12 16:06 cnbc_indonesia_market: Video: Gibran Mundur - MSCI Depak 8 Saham, Kemana Arah IHSG dan Rupiah? (kebijakan/pasar/kurs; petunjuk) <https://www.cnbcindonesia.com/market/20261112145648-19-784693/video-gibran-mundur--msci-depak-8-saham-kemana-arah-ihsg-rupiah>
 - **9** T3 11-13 13:07 cnbc_indonesia_market: Bukan Sanksi, Ini Alasan Sebenarnya BEI Bikin Daftar Saham HSC (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261113124353-17-784974/bukan-sanksi-ini-alasan-sebenarnya-bei-bikin-daftar-saham-hsc>
+- **8** T3 11-13 16:12 kontan_keuangan: Rating CGIF Pertahankan di AAA, Tapi Fitch Soroti Risiko Gagal Bayar Obligasi (kurs/kredit/korporasi) <https://keuangan.kontan.co.id/news/rating-cgif-pertahankan-di-aaa-tapi-fitch-soroti-risiko-gagal-bayar-obligasi>
 - **8** T3 11-13 15:00 cnbc_indonesia_market: Duit Asing Masuk Rp 127,6 T, Tapi Kabur Dari Saham Rp 97 T Akibat MSCI (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_news) <https://www.cnbcindonesia.com/market/20261113130129-19-784983/duit-asing-masuk-rp-1276-t-tapi-kabur-dari-saham-rp-97-t-akibat-msci>
 - **8** T3 11-13 10:06 cnbc_indonesia_news: Duit Asing Masuk Rp127,6 T, tapi Kabur dari Saham Rp97 T Akibat MSCI (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.cnbcindonesia.com/news/20261113100403-4-784908/duit-asing-masuk-rp1276-t-tapi-kabur-dari-saham-rp97-t-akibat-msci>
 - **8** T3 11-13 07:00 bloomberg_technoz: Daly The Fed: Suku Bunga Perlu Naik demi Redam Inflasi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127588/daly-the-fed-suku-bunga-perlu-naik-demi-redam-inflasi>
@@ -32,4 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-13 11:35 cnbc_indonesia_market: Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t>
 - **6** T3 11-13 09:53 cnbc_indonesia_news: Menkeu: Dana Asing Rp 479 T Keluar dari Negara Berkembang, Karena Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261113095201-4-784903/menkeu-dana-asing-rp-479-t-keluar-dari-negara-berkembang-karena-ini>
 - **6** T3 11-13 08:43 bloomberg_technoz: Harga Emas Antam Turun Rp9.000, Buyback Jauh Lebih Parah [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127602/harga-emas-antam-turun-rp9-000-buyback-jauh-lebih-parah>
-- **6** T3 11-13 07:30 cnbc_indonesia_market: Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini>
