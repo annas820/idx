@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T14:50+07:00",
+ "generated_for": "2026-11-14T15:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 471,
- "kept": 138,
+ "scanned": 476,
+ "kept": 139,
  "dropped_noise": 8,
  "items": [
   {
@@ -20,6 +20,25 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T15:05+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "FTSE Depak 14 Saham Usai Masuk Radar HSC, Ada TBIG & MAPI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127716/ftse-depak-14-saham-usai-masuk-radar-hsc-ada-tbig-mapi",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "MAPI",
+    "TBIG"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -406,21 +425,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T11:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T",
-   "link": "https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
    ],
    "tickers": [],
    "flags": [],

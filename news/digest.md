@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-14T14:50+07:00 WIB | jendela 36 jam | dipindai 471, lolos 138, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-14T15:45+07:00 WIB | jendela 36 jam | dipindai 476, lolos 139, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,6 +8,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **9** T3 11-13 13:07 cnbc_indonesia_market: Bukan Sanksi, Ini Alasan Sebenarnya BEI Bikin Daftar Saham HSC (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261113124353-17-784974/bukan-sanksi-ini-alasan-sebenarnya-bei-bikin-daftar-saham-hsc>
+- **8** T3 11-14 15:05 bloomberg_technoz: FTSE Depak 14 Saham Usai Masuk Radar HSC, Ada TBIG & MAPI [MAPI,TBIG] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127716/ftse-depak-14-saham-usai-masuk-radar-hsc-ada-tbig-mapi>
 - **8** T3 11-14 14:00 cnbc_indonesia_market: Video: Efek MSCI - Gibran Mundur ke Prospek Investasi dan IPO Saham RI (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261112145645-19-784694/video-efek-msci--gibran-mundur-ke-prospek-investasi-ipo-saham-ri>
 - **8** T3 11-13 21:59 kontan_investasi: Wall Street Menguat, Inflasi AS Redakan Kekhawatiran Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://investasi.kontan.co.id/news/wall-street-menguat-inflasi-as-redakan-kekhawatiran-kenaikan-suku-bunga-the-fed>
 - **8** T3 11-13 16:12 kontan_keuangan: Rating CGIF Pertahankan di AAA, Tapi Fitch Soroti Risiko Gagal Bayar Obligasi (kurs/kredit/korporasi) <https://keuangan.kontan.co.id/news/rating-cgif-pertahankan-di-aaa-tapi-fitch-soroti-risiko-gagal-bayar-obligasi>
@@ -31,4 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-13 14:50 cnbc_indonesia_market: Video: Gibran Mundur, IHSG Melesat Tapi Rupiah Masih di Rp 18.200/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261113144611-19-785050/video-gibran-mundur-ihsg-melesat-tapi-rupiah-masih-di-rp-18200-usd>
 - **6** T3 11-13 13:53 cnbc_indonesia_market: Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya [INCO] (korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya>
 - **6** T3 11-13 13:21 cnbc_indonesia_market: BEI Ungkap Risiko Ini Jadi Alasan Saham HSC Terpisah dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113131818-17-785000/bei-ungkap-risiko-ini-jadi-alasan-saham-hsc-terpisah-dari-ihsg>
-- **6** T3 11-13 11:35 cnbc_indonesia_market: Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t>
