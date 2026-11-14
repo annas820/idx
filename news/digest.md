@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-14T13:40+07:00 WIB | jendela 36 jam | dipindai 462, lolos 133, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-14T14:50+07:00 WIB | jendela 36 jam | dipindai 471, lolos 138, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,6 +8,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **9** T3 11-13 13:07 cnbc_indonesia_market: Bukan Sanksi, Ini Alasan Sebenarnya BEI Bikin Daftar Saham HSC (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261113124353-17-784974/bukan-sanksi-ini-alasan-sebenarnya-bei-bikin-daftar-saham-hsc>
+- **8** T3 11-14 14:00 cnbc_indonesia_market: Video: Efek MSCI - Gibran Mundur ke Prospek Investasi dan IPO Saham RI (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261112145645-19-784694/video-efek-msci--gibran-mundur-ke-prospek-investasi-ipo-saham-ri>
 - **8** T3 11-13 21:59 kontan_investasi: Wall Street Menguat, Inflasi AS Redakan Kekhawatiran Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://investasi.kontan.co.id/news/wall-street-menguat-inflasi-as-redakan-kekhawatiran-kenaikan-suku-bunga-the-fed>
 - **8** T3 11-13 16:12 kontan_keuangan: Rating CGIF Pertahankan di AAA, Tapi Fitch Soroti Risiko Gagal Bayar Obligasi (kurs/kredit/korporasi) <https://keuangan.kontan.co.id/news/rating-cgif-pertahankan-di-aaa-tapi-fitch-soroti-risiko-gagal-bayar-obligasi>
 - **8** T3 11-13 15:00 cnbc_indonesia_market: Duit Asing Masuk Rp 127,6 T, Tapi Kabur Dari Saham Rp 97 T Akibat MSCI (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_news) <https://www.cnbcindonesia.com/market/20261113130129-19-784983/duit-asing-masuk-rp-1276-t-tapi-kabur-dari-saham-rp-97-t-akibat-msci>
@@ -23,12 +24,11 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-13 08:36 bloomberg_technoz: Prediksi IHSG Hari Ini: Reli Berlanjut atau Tertahan Rupiah? (pasar/kurs; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127600/prediksi-ihsg-hari-ini-reli-berlanjut-atau-tertahan-rupiah>
 - **7** T3 11-13 08:18 bloomberg_technoz: Rupiah Hari Ini: Akan Tembus Rekor Terlemah Baru? (kurs; terkonfirmasi, juga di cnbc_indonesia_market/cnbc_indonesia_news) <https://www.bloombergtechnoz.com/detail-news/127598/rupiah-hari-ini-akan-tembus-rekor-terlemah-baru>
 - **6** T3 11-14 13:20 cnbc_indonesia_market: FTSE Russell Coret 14 Saham RI dari Indeks Global, Ini Daftarnya (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114103044-17-785206/ftse-russell-coret-14-saham-ri-dari-indeks-global-ini-daftarnya>
+- **6** T3 11-14 12:46 kontan_investasi: FTSE Russell Hapus 14 Saham Indonesia yang Masuk Kategori HSC (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-hapus-14-saham-indonesia-yang-masuk-kategori-hsc>
+- **6** T3 11-14 10:52 kontan_investasi: Review Terbaru FTSE Russel: Saham Indonesia Tetap Masuk Emerging Market (kebijakan/pasar) <https://investasi.kontan.co.id/news/review-terbaru-ftse-russel-saham-indonesia-tetap-masuk-emerging-market>
 - **6** T3 11-14 05:14 kontan_investasi: Wall Street: S&P 500 dan Nasdaq Melemah, Kasus Nvidia Masih Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-sp-500-dan-nasdaq-melemah-kasus-nvidia-masih-tekan-saham-teknologi>
 - **6** T3 11-13 18:20 kontan_investasi: BEI Tegaskan Saham Masuk Daftar HSC Bukan Berarti Melanggar Aturan Pasar Modal (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-tegaskan-saham-masuk-daftar-hsc-bukan-berarti-melanggar-aturan-pasar-modal>
 - **6** T3 11-13 14:50 cnbc_indonesia_market: Video: Gibran Mundur, IHSG Melesat Tapi Rupiah Masih di Rp 18.200/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261113144611-19-785050/video-gibran-mundur-ihsg-melesat-tapi-rupiah-masih-di-rp-18200-usd>
 - **6** T3 11-13 13:53 cnbc_indonesia_market: Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya [INCO] (korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya>
 - **6** T3 11-13 13:21 cnbc_indonesia_market: BEI Ungkap Risiko Ini Jadi Alasan Saham HSC Terpisah dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113131818-17-785000/bei-ungkap-risiko-ini-jadi-alasan-saham-hsc-terpisah-dari-ihsg>
 - **6** T3 11-13 11:35 cnbc_indonesia_market: Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t>
-- **6** T3 11-13 09:53 cnbc_indonesia_news: Menkeu: Dana Asing Rp 479 T Keluar dari Negara Berkembang, Karena Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261113095201-4-784903/menkeu-dana-asing-rp-479-t-keluar-dari-negara-berkembang-karena-ini>
-- **6** T3 11-13 08:43 bloomberg_technoz: Harga Emas Antam Turun Rp9.000, Buyback Jauh Lebih Parah [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127602/harga-emas-antam-turun-rp9-000-buyback-jauh-lebih-parah>
-- **6** T3 11-13 07:30 cnbc_indonesia_market: Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini>

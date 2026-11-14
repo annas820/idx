@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T13:40+07:00",
+ "generated_for": "2026-11-14T14:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 462,
- "kept": 133,
+ "scanned": 471,
+ "kept": 138,
  "dropped_noise": 8,
  "items": [
   {
@@ -18,6 +18,22 @@
     "kebijakan",
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T14:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Efek MSCI - Gibran Mundur ke Prospek Investasi dan IPO Saham RI",
+   "link": "https://www.cnbcindonesia.com/market/20261112145645-19-784694/video-efek-msci--gibran-mundur-ke-prospek-investasi-ipo-saham-ri",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
@@ -287,6 +303,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-14T12:46+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "FTSE Russell Hapus 14 Saham Indonesia yang Masuk Kategori HSC",
+   "link": "https://investasi.kontan.co.id/news/ftse-russell-hapus-14-saham-indonesia-yang-masuk-kategori-hsc",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T10:52+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Review Terbaru FTSE Russel: Saham Indonesia Tetap Masuk Emerging Market",
+   "link": "https://investasi.kontan.co.id/news/review-terbaru-ftse-russel-saham-indonesia-tetap-masuk-emerging-market",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-14T05:14+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -375,54 +421,6 @@
    "categories": [
     "kebijakan",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T09:53+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Menkeu: Dana Asing Rp 479 T Keluar dari Negara Berkembang, Karena Ini",
-   "link": "https://www.cnbcindonesia.com/news/20261113095201-4-784903/menkeu-dana-asing-rp-479-t-keluar-dari-negara-berkembang-karena-ini",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T08:43+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Turun Rp9.000, Buyback Jauh Lebih Parah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127602/harga-emas-antam-turun-rp9-000-buyback-jauh-lebih-parah",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T07:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
