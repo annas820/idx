@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T17:37+07:00",
+ "generated_for": "2026-11-14T18:34+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 484,
- "kept": 139,
- "dropped_noise": 8,
+ "scanned": 492,
+ "kept": 137,
+ "dropped_noise": 9,
  "items": [
   {
    "published": "2026-11-13T13:07+07:00",
@@ -445,6 +445,24 @@
    ],
    "tickers": [
     "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T15:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Astra Raih Dua Penghargaan di Asia ESG Awards 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127725/astra-raih-dua-penghargaan-di-asia-esg-awards-2026",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
    ],
    "flags": [
     "watchlist"

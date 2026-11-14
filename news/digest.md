@@ -1,10 +1,11 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-14T17:37+07:00 WIB | jendela 36 jam | dipindai 484, lolos 139, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-14T18:34+07:00 WIB | jendela 36 jam | dipindai 492, lolos 137, dibuang sebagai noise 9.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **6** T3 11-13 13:53 cnbc_indonesia_market: Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya [INCO] (korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya>
+- **4** T3 11-14 15:00 bloomberg_technoz: Astra Raih Dua Penghargaan di Asia ESG Awards 2026 [ASII] (emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127725/astra-raih-dua-penghargaan-di-asia-esg-awards-2026>
 
 ## Teratas
 - **9** T3 11-13 13:07 cnbc_indonesia_market: Bukan Sanksi, Ini Alasan Sebenarnya BEI Bikin Daftar Saham HSC (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261113124353-17-784974/bukan-sanksi-ini-alasan-sebenarnya-bei-bikin-daftar-saham-hsc>
