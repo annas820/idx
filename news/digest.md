@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-14T18:34+07:00 WIB | jendela 36 jam | dipindai 492, lolos 137, dibuang sebagai noise 9.
+Berita terbaru: 2026-11-14T19:37+07:00 WIB | jendela 36 jam | dipindai 487, lolos 129, dibuang sebagai noise 10.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -16,7 +16,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-13 16:12 kontan_keuangan: Rating CGIF Pertahankan di AAA, Tapi Fitch Soroti Risiko Gagal Bayar Obligasi (kurs/kredit/korporasi) <https://keuangan.kontan.co.id/news/rating-cgif-pertahankan-di-aaa-tapi-fitch-soroti-risiko-gagal-bayar-obligasi>
 - **8** T3 11-13 15:00 cnbc_indonesia_market: Duit Asing Masuk Rp 127,6 T, Tapi Kabur Dari Saham Rp 97 T Akibat MSCI (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_news) <https://www.cnbcindonesia.com/market/20261113130129-19-784983/duit-asing-masuk-rp-1276-t-tapi-kabur-dari-saham-rp-97-t-akibat-msci>
 - **8** T3 11-13 10:06 cnbc_indonesia_news: Duit Asing Masuk Rp127,6 T, tapi Kabur dari Saham Rp97 T Akibat MSCI (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.cnbcindonesia.com/news/20261113100403-4-784908/duit-asing-masuk-rp1276-t-tapi-kabur-dari-saham-rp97-t-akibat-msci>
-- **8** T3 11-13 07:00 bloomberg_technoz: Daly The Fed: Suku Bunga Perlu Naik demi Redam Inflasi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127588/daly-the-fed-suku-bunga-perlu-naik-demi-redam-inflasi>
 - **7** T3 11-13 18:05 cnbc_indonesia_market: GMFI Rights Issue 22 Miliar Saham, Ini Alasan dan Penggunaan Dananya [GMFI] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113164308-17-785122/gmfi-rights-issue-22-miliar-saham-ini-alasan-dan-penggunaan-dananya>
 - **7** T3 11-13 17:29 kontan_investasi: Medco Energi (MEDC) Bagikan Dividen Interim Rp 22,02 per Saham, Total US$ 30 Juta [MEDC] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/medco-energi-medc-bagikan-dividen-interim-rp-2202-per-saham-total-us-30-juta>
 - **7** T3 11-13 17:28 kontan_investasi: GMFI Siapkan Rights Issue 22 Miliar Saham, Bidik Dana US$ 59,41 Juta [GMFI] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/gmfi-siapkan-rights-issue-22-miliar-saham-bidik-dana-us-5941-juta>
@@ -33,3 +32,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-14 05:14 kontan_investasi: Wall Street: S&P 500 dan Nasdaq Melemah, Kasus Nvidia Masih Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-sp-500-dan-nasdaq-melemah-kasus-nvidia-masih-tekan-saham-teknologi>
 - **6** T3 11-13 18:20 kontan_investasi: BEI Tegaskan Saham Masuk Daftar HSC Bukan Berarti Melanggar Aturan Pasar Modal (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-tegaskan-saham-masuk-daftar-hsc-bukan-berarti-melanggar-aturan-pasar-modal>
 - **6** T3 11-13 14:50 cnbc_indonesia_market: Video: Gibran Mundur, IHSG Melesat Tapi Rupiah Masih di Rp 18.200/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261113144611-19-785050/video-gibran-mundur-ihsg-melesat-tapi-rupiah-masih-di-rp-18200-usd>
+- **6** T3 11-13 13:53 cnbc_indonesia_market: Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya [INCO] (korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya>

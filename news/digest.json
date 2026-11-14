@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T18:34+07:00",
+ "generated_for": "2026-11-14T19:37+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 492,
- "kept": 137,
- "dropped_noise": 9,
+ "scanned": 487,
+ "kept": 129,
+ "dropped_noise": 10,
  "items": [
   {
    "published": "2026-11-13T13:07+07:00",
@@ -146,22 +146,6 @@
    "also_in": [
     "cnbc_indonesia_market"
    ]
-  },
-  {
-   "published": "2026-11-13T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Daly The Fed: Suku Bunga Perlu Naik demi Redam Inflasi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127588/daly-the-fed-suku-bunga-perlu-naik-demi-redam-inflasi",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   },
   {
    "published": "2026-11-13T18:05+07:00",
@@ -428,6 +412,25 @@
    ],
    "tickers": [],
    "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T13:53+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya",
+   "link": "https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
    "also_in": []
   }
  ],
