@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-14T20:45+07:00 WIB | jendela 36 jam | dipindai 473, lolos 118, dibuang sebagai noise 10.
+Berita terbaru: 2026-11-14T21:23+07:00 WIB | jendela 36 jam | dipindai 467, lolos 115, dibuang sebagai noise 9.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -9,6 +9,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **9** T3 11-13 13:07 cnbc_indonesia_market: Bukan Sanksi, Ini Alasan Sebenarnya BEI Bikin Daftar Saham HSC (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261113124353-17-784974/bukan-sanksi-ini-alasan-sebenarnya-bei-bikin-daftar-saham-hsc>
+- **8** T3 11-14 21:00 bloomberg_technoz: The Fed Sebut Inflasi Jadi Penentu Keputusan Suku Bunga (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127723/the-fed-sebut-inflasi-jadi-penentu-keputusan-suku-bunga>
 - **8** T3 11-14 15:05 bloomberg_technoz: FTSE Depak 14 Saham Usai Masuk Radar HSC, Ada TBIG & MAPI [MAPI,TBIG] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127716/ftse-depak-14-saham-usai-masuk-radar-hsc-ada-tbig-mapi>
 - **8** T3 11-14 14:00 cnbc_indonesia_market: Video: Efek MSCI - Gibran Mundur ke Prospek Investasi dan IPO Saham RI (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261112145645-19-784694/video-efek-msci--gibran-mundur-ke-prospek-investasi-ipo-saham-ri>
 - **8** T3 11-14 10:52 kontan_investasi: Review Terbaru FTSE Russel: Saham Indonesia Tetap Masuk Emerging Market (kebijakan/pasar; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/review-terbaru-ftse-russel-saham-indonesia-tetap-masuk-emerging-market>
@@ -22,7 +23,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-13 11:30 bloomberg_technoz: Totalindo Eka Persada (TOPS) Diputus Pailit [TOPS] (kredit/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127622/totalindo-eka-persada-tops-diputus-pailit>
 - **7** T3 11-13 10:43 cnbc_indonesia_market: Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), Diujung Tanduk [TOPS] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--diujung-tanduk>
 - **7** T3 11-13 10:43 cnbc_indonesia_market: Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), di Ujung Tanduk [TOPS] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--di-ujung-tanduk>
-- **7** T3 11-13 08:50 bloomberg_technoz: Fitch Pangkas Rating Afiliasi DOID, Risiko Gagal Bayar Meningkat [DOID] (kredit/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127604/fitch-pangkas-rating-afiliasi-doid-risiko-gagal-bayar-meningkat>
 - **6** T3 11-14 16:30 cnbc_indonesia_market: FTSE Russel Pertahankan Status Secondary Emerging Market Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russel-pertahankan-status-secondary-emerging-market-bursa-ri>
 - **6** T3 11-14 16:30 cnbc_indonesia_market: FTSE Russell Pertahankan Status Secondary Emerging Market Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russell-pertahankan-status-secondary-emerging-market-bursa-ri>
 - **6** T3 11-14 13:20 cnbc_indonesia_market: FTSE Russell Coret 14 Saham RI dari Indeks Global, Ini Daftarnya (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114103044-17-785206/ftse-russell-coret-14-saham-ri-dari-indeks-global-ini-daftarnya>

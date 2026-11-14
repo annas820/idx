@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T20:45+07:00",
+ "generated_for": "2026-11-14T21:23+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 473,
- "kept": 118,
- "dropped_noise": 10,
+ "scanned": 467,
+ "kept": 115,
+ "dropped_noise": 9,
  "items": [
   {
    "published": "2026-11-13T13:07+07:00",
@@ -18,6 +18,22 @@
     "kebijakan",
     "global",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T21:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "The Fed Sebut Inflasi Jadi Penentu Keputusan Suku Bunga",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127723/the-fed-sebut-inflasi-jadi-penentu-keputusan-suku-bunga",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "global",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
@@ -251,24 +267,6 @@
    ],
    "tickers": [
     "TOPS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T08:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Fitch Pangkas Rating Afiliasi DOID, Risiko Gagal Bayar Meningkat",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127604/fitch-pangkas-rating-afiliasi-doid-risiko-gagal-bayar-meningkat",
-   "score": 7,
-   "categories": [
-    "kredit",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "DOID"
    ],
    "flags": [],
    "also_in": []
