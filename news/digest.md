@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-14T19:37+07:00 WIB | jendela 36 jam | dipindai 487, lolos 129, dibuang sebagai noise 10.
+Berita terbaru: 2026-11-14T20:45+07:00 WIB | jendela 36 jam | dipindai 473, lolos 118, dibuang sebagai noise 10.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -23,8 +23,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-13 10:43 cnbc_indonesia_market: Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), Diujung Tanduk [TOPS] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--diujung-tanduk>
 - **7** T3 11-13 10:43 cnbc_indonesia_market: Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), di Ujung Tanduk [TOPS] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--di-ujung-tanduk>
 - **7** T3 11-13 08:50 bloomberg_technoz: Fitch Pangkas Rating Afiliasi DOID, Risiko Gagal Bayar Meningkat [DOID] (kredit/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127604/fitch-pangkas-rating-afiliasi-doid-risiko-gagal-bayar-meningkat>
-- **7** T3 11-13 08:36 bloomberg_technoz: Prediksi IHSG Hari Ini: Reli Berlanjut atau Tertahan Rupiah? (pasar/kurs; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127600/prediksi-ihsg-hari-ini-reli-berlanjut-atau-tertahan-rupiah>
-- **7** T3 11-13 08:18 bloomberg_technoz: Rupiah Hari Ini: Akan Tembus Rekor Terlemah Baru? (kurs; terkonfirmasi, juga di cnbc_indonesia_market/cnbc_indonesia_news) <https://www.bloombergtechnoz.com/detail-news/127598/rupiah-hari-ini-akan-tembus-rekor-terlemah-baru>
 - **6** T3 11-14 16:30 cnbc_indonesia_market: FTSE Russel Pertahankan Status Secondary Emerging Market Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russel-pertahankan-status-secondary-emerging-market-bursa-ri>
 - **6** T3 11-14 16:30 cnbc_indonesia_market: FTSE Russell Pertahankan Status Secondary Emerging Market Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russell-pertahankan-status-secondary-emerging-market-bursa-ri>
 - **6** T3 11-14 13:20 cnbc_indonesia_market: FTSE Russell Coret 14 Saham RI dari Indeks Global, Ini Daftarnya (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114103044-17-785206/ftse-russell-coret-14-saham-ri-dari-indeks-global-ini-daftarnya>
@@ -33,3 +31,5 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-13 18:20 kontan_investasi: BEI Tegaskan Saham Masuk Daftar HSC Bukan Berarti Melanggar Aturan Pasar Modal (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-tegaskan-saham-masuk-daftar-hsc-bukan-berarti-melanggar-aturan-pasar-modal>
 - **6** T3 11-13 14:50 cnbc_indonesia_market: Video: Gibran Mundur, IHSG Melesat Tapi Rupiah Masih di Rp 18.200/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261113144611-19-785050/video-gibran-mundur-ihsg-melesat-tapi-rupiah-masih-di-rp-18200-usd>
 - **6** T3 11-13 13:53 cnbc_indonesia_market: Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya [INCO] (korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya>
+- **6** T3 11-13 13:21 cnbc_indonesia_market: BEI Ungkap Risiko Ini Jadi Alasan Saham HSC Terpisah dari IHSG (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261113131818-17-785000/bei-ungkap-risiko-ini-jadi-alasan-saham-hsc-terpisah-dari-ihsg>
+- **6** T3 11-13 11:35 cnbc_indonesia_market: Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t>
