@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T16:36+07:00",
+ "generated_for": "2026-11-14T17:37+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 482,
- "kept": 141,
+ "scanned": 484,
+ "kept": 139,
  "dropped_noise": 8,
  "items": [
   {
@@ -341,6 +341,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-14T16:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "FTSE Russell Pertahankan Status Secondary Emerging Market Bursa RI",
+   "link": "https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russell-pertahankan-status-secondary-emerging-market-bursa-ri",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-14T13:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -413,25 +428,6 @@
    ],
    "tickers": [],
    "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T13:53+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya",
-   "link": "https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
    "also_in": []
   }
  ],

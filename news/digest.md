@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-14T16:36+07:00 WIB | jendela 36 jam | dipindai 482, lolos 141, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-14T17:37+07:00 WIB | jendela 36 jam | dipindai 484, lolos 139, dibuang sebagai noise 8.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -26,9 +26,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-13 08:36 bloomberg_technoz: Prediksi IHSG Hari Ini: Reli Berlanjut atau Tertahan Rupiah? (pasar/kurs; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127600/prediksi-ihsg-hari-ini-reli-berlanjut-atau-tertahan-rupiah>
 - **7** T3 11-13 08:18 bloomberg_technoz: Rupiah Hari Ini: Akan Tembus Rekor Terlemah Baru? (kurs; terkonfirmasi, juga di cnbc_indonesia_market/cnbc_indonesia_news) <https://www.bloombergtechnoz.com/detail-news/127598/rupiah-hari-ini-akan-tembus-rekor-terlemah-baru>
 - **6** T3 11-14 16:30 cnbc_indonesia_market: FTSE Russel Pertahankan Status Secondary Emerging Market Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russel-pertahankan-status-secondary-emerging-market-bursa-ri>
+- **6** T3 11-14 16:30 cnbc_indonesia_market: FTSE Russell Pertahankan Status Secondary Emerging Market Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russell-pertahankan-status-secondary-emerging-market-bursa-ri>
 - **6** T3 11-14 13:20 cnbc_indonesia_market: FTSE Russell Coret 14 Saham RI dari Indeks Global, Ini Daftarnya (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114103044-17-785206/ftse-russell-coret-14-saham-ri-dari-indeks-global-ini-daftarnya>
 - **6** T3 11-14 12:46 kontan_investasi: FTSE Russell Hapus 14 Saham Indonesia yang Masuk Kategori HSC (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-hapus-14-saham-indonesia-yang-masuk-kategori-hsc>
 - **6** T3 11-14 05:14 kontan_investasi: Wall Street: S&P 500 dan Nasdaq Melemah, Kasus Nvidia Masih Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-sp-500-dan-nasdaq-melemah-kasus-nvidia-masih-tekan-saham-teknologi>
 - **6** T3 11-13 18:20 kontan_investasi: BEI Tegaskan Saham Masuk Daftar HSC Bukan Berarti Melanggar Aturan Pasar Modal (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-tegaskan-saham-masuk-daftar-hsc-bukan-berarti-melanggar-aturan-pasar-modal>
 - **6** T3 11-13 14:50 cnbc_indonesia_market: Video: Gibran Mundur, IHSG Melesat Tapi Rupiah Masih di Rp 18.200/USD (pasar/kurs) <https://www.cnbcindonesia.com/market/20261113144611-19-785050/video-gibran-mundur-ihsg-melesat-tapi-rupiah-masih-di-rp-18200-usd>
-- **6** T3 11-13 13:53 cnbc_indonesia_market: Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya [INCO] (korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya>
