@@ -1,28 +1,12 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T21:23+07:00",
+ "generated_for": "2026-11-15T06:17+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 470,
- "kept": 115,
- "dropped_noise": 9,
+ "scanned": 226,
+ "kept": 45,
+ "dropped_noise": 6,
  "items": [
-  {
-   "published": "2026-11-13T13:07+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Bukan Sanksi, Ini Alasan Sebenarnya BEI Bikin Daftar Saham HSC",
-   "link": "https://www.cnbcindonesia.com/market/20261113124353-17-784974/bukan-sanksi-ini-alasan-sebenarnya-bei-bikin-daftar-saham-hsc",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
   {
    "published": "2026-11-14T21:00+07:00",
    "source": "bloomberg_technoz",
@@ -110,164 +94,17 @@
    "also_in": []
   },
   {
-   "published": "2026-11-13T16:12+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-15T06:17+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "Rating CGIF Pertahankan di AAA, Tapi Fitch Soroti Risiko Gagal Bayar Obligasi",
-   "link": "https://keuangan.kontan.co.id/news/rating-cgif-pertahankan-di-aaa-tapi-fitch-soroti-risiko-gagal-bayar-obligasi",
-   "score": 8,
-   "categories": [
-    "kurs",
-    "kredit",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T15:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Duit Asing Masuk Rp 127,6 T, Tapi Kabur Dari Saham Rp 97 T Akibat MSCI",
-   "link": "https://www.cnbcindonesia.com/market/20261113130129-19-784983/duit-asing-masuk-rp-1276-t-tapi-kabur-dari-saham-rp-97-t-akibat-msci",
-   "score": 8,
+   "title": "FTSE Russell Depak 14 Saham Indonesia, Status Perlakuan Khusus Dipertahankan",
+   "link": "https://investasi.kontan.co.id/news/ftse-russell-depak-14-saham-indonesia-status-perlakuan-khusus-dipertahankan",
+   "score": 6,
    "categories": [
     "kebijakan",
     "pasar"
    ],
    "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_news"
-   ]
-  },
-  {
-   "published": "2026-11-13T10:06+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Duit Asing Masuk Rp127,6 T, tapi Kabur dari Saham Rp97 T Akibat MSCI",
-   "link": "https://www.cnbcindonesia.com/news/20261113100403-4-784908/duit-asing-masuk-rp1276-t-tapi-kabur-dari-saham-rp97-t-akibat-msci",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-13T18:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "GMFI Rights Issue 22 Miliar Saham, Ini Alasan dan Penggunaan Dananya",
-   "link": "https://www.cnbcindonesia.com/market/20261113164308-17-785122/gmfi-rights-issue-22-miliar-saham-ini-alasan-dan-penggunaan-dananya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "GMFI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T17:29+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Medco Energi (MEDC) Bagikan Dividen Interim Rp 22,02 per Saham, Total US$ 30 Juta",
-   "link": "https://investasi.kontan.co.id/news/medco-energi-medc-bagikan-dividen-interim-rp-2202-per-saham-total-us-30-juta",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "MEDC"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T17:28+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "GMFI Siapkan Rights Issue 22 Miliar Saham, Bidik Dana US$ 59,41 Juta",
-   "link": "https://investasi.kontan.co.id/news/gmfi-siapkan-rights-issue-22-miliar-saham-bidik-dana-us-5941-juta",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "GMFI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T11:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Totalindo Eka Persada (TOPS) Diputus Pailit",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127622/totalindo-eka-persada-tops-diputus-pailit",
-   "score": 7,
-   "categories": [
-    "kredit",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "TOPS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T10:43+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), Diujung Tanduk",
-   "link": "https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--diujung-tanduk",
-   "score": 7,
-   "categories": [
-    "kredit",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "TOPS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T10:43+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Resmi Pailit! Nasib Totalindo Eka Persada (TOPS), di Ujung Tanduk",
-   "link": "https://www.cnbcindonesia.com/market/20261113103350-17-784928/resmi-pailit-nasib-totalindo-eka-persada--tops--di-ujung-tanduk",
-   "score": 7,
-   "categories": [
-    "kredit",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "TOPS"
-   ],
    "flags": [],
    "also_in": []
   },
@@ -362,33 +199,136 @@
    "also_in": []
   },
   {
-   "published": "2026-11-13T14:50+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-14T16:00+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Video: Gibran Mundur, IHSG Melesat Tapi Rupiah Masih di Rp 18.200/USD",
-   "link": "https://www.cnbcindonesia.com/market/20261113144611-19-785050/video-gibran-mundur-ihsg-melesat-tapi-rupiah-masih-di-rp-18200-usd",
-   "score": 6,
+   "title": "FTSE: Indonesia Tetap Secondary Emerging Market",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127717/ftse-indonesia-tetap-secondary-emerging-market",
+   "score": 5,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-14T13:05+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "PGEO Targetkan Free Float 12,5% pada Maret 2027",
+   "link": "https://investasi.kontan.co.id/news/pgeo-targetkan-free-float-125-pada-maret-2027",
+   "score": 5,
    "categories": [
     "pasar",
-    "kurs"
+    "emiten"
+   ],
+   "tickers": [
+    "PGEO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T10:05+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Ekspansi Minyak Kedelai AS-Brasil Ancam Daya Saing Sawit Indonesia",
+   "link": "https://industri.kontan.co.id/news/ekspansi-minyak-kedelai-as-brasil-ancam-daya-saing-sawit-indonesia",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-13T13:53+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-14T06:10+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya",
-   "link": "https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya",
-   "score": 6,
+   "title": "Saham Singaraja (SINI) Naik 43% Sepekan, Pengendali Tambah Koleksi Rp 10,75 Miliar",
+   "link": "https://investasi.kontan.co.id/news/saham-singaraja-sini-naik-43-sepekan-pengendali-tambah-koleksi-rp-1075-miliar",
+   "score": 5,
    "categories": [
-    "korporasi",
+    "pasar",
     "emiten"
    ],
    "tickers": [
-    "INCO"
+    "SINI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T05:00+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Daftar Saham PER Terendah & Tertinggi LQ45 (13 November 2026), INKP dan MBMA Melesat",
+   "link": "https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-13-november-2026-inkp-dan-mbma-melesat",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "INKP",
+    "MBMA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T20:01+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "PGEO Targetkan Penuhi Free Float 12,5% pada 2027, Ini Strategi dan Kinerjanya",
+   "link": "https://investasi.kontan.co.id/news/pgeo-targetkan-penuhi-free-float-125-pada-2027-ini-strategi-dan-kinerjanya",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "PGEO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T20:31+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Harga Emas Dunia dan Antam Pekan Depan Dibayangi Penguatan Dolar AS",
+   "link": "https://investasi.kontan.co.id/news/harga-emas-dunia-dan-antam-pekan-depan-dibayangi-penguatan-dolar-as",
+   "score": 4,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T15:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Astra Raih Dua Penghargaan di Asia ESG Awards 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127725/astra-raih-dua-penghargaan-di-asia-esg-awards-2026",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
    ],
    "flags": [
     "watchlist"
@@ -396,56 +336,88 @@
    "also_in": []
   },
   {
-   "published": "2026-11-13T13:21+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-14T13:00+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "BEI Ungkap Risiko Ini Jadi Alasan Saham HSC Terpisah dari IHSG",
-   "link": "https://www.cnbcindonesia.com/market/20261113131818-17-785000/bei-ungkap-risiko-ini-jadi-alasan-saham-hsc-terpisah-dari-ihsg",
-   "score": 6,
+   "title": "RKAB Nikel 2027 Mau Ditebas, Likuiditas Penambang Terancam Kandas",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127694/rkab-nikel-2027-mau-ditebas-likuiditas-penambang-terancam-kandas",
+   "score": 4,
    "categories": [
-    "kebijakan",
-    "pasar"
+    "makro",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-13T11:35+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-14T10:45+07:00",
+   "source": "cnbc_indonesia_news",
    "tier": 3,
-   "title": "Sempat Diganggu MSCI, Pemerintah Sudah Terbitkan SBN Rp586 T",
-   "link": "https://www.cnbcindonesia.com/market/20261113111420-17-784945/sempat-diganggu-msci-pemerintah-sudah-terbitkan-sbn-rp586-t",
-   "score": 6,
+   "title": "Ini Spesifikasi Rumah Pensiun Gibran Usai Mundur Jadi Wapres RI",
+   "link": "https://www.cnbcindonesia.com/news/20261114081343-4-785188/ini-spesifikasi-rumah-pensiun-gibran-usai-mundur-jadi-wapres-ri",
+   "score": 4,
+   "categories": [],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz",
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
+   "published": "2026-11-14T07:17+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Data Inflasi AS Sesuai Ekspektasi, Harga Emas Spot Naik di Akhir Pekan",
+   "link": "https://investasi.kontan.co.id/news/data-inflasi-as-sesuai-ekspektasi-harga-emas-spot-naik-di-akhir-pekan",
+   "score": 4,
    "categories": [
-    "kebijakan",
-    "kurs"
+    "makro",
+    "komoditas"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T06:16+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BUMA International (DOID) Catat Rugi US$ 43 Juta Per Kuartal III-2026",
+   "link": "https://investasi.kontan.co.id/news/buma-international-doid-catat-rugi-us-43-juta-per-kuartal-iii-2026",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "DOID"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-13T21:41+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Timah (TINS) Ungkap Strategi Ekspansi Hingga Perampingan Entitas Bisnis",
+   "link": "https://industri.kontan.co.id/news/timah-tins-ungkap-strategi-ekspansi-hingga-perampingan-entitas-bisnis",
+   "score": 4,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "TINS"
+   ],
    "flags": [],
    "also_in": []
   }
  ],
  "watchlist_hits": [
-  {
-   "published": "2026-11-13T13:53+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Laba Vale (INCO) Naik 182% Jadi US$147 Juta, Ini Penopangnya",
-   "link": "https://www.cnbcindonesia.com/market/20261113134750-17-785016/laba-vale--inco--naik-182-jadi-us-147-juta-ini-penopangnya",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
   {
    "published": "2026-11-14T15:00+07:00",
    "source": "bloomberg_technoz",
