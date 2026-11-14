@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T12:45+07:00",
+ "generated_for": "2026-11-14T13:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 453,
- "kept": 130,
+ "scanned": 462,
+ "kept": 133,
  "dropped_noise": 8,
  "items": [
   {
@@ -272,6 +272,21 @@
    ]
   },
   {
+   "published": "2026-11-14T13:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "FTSE Russell Coret 14 Saham RI dari Indeks Global, Ini Daftarnya",
+   "link": "https://www.cnbcindonesia.com/market/20261114103044-17-785206/ftse-russell-coret-14-saham-ri-dari-indeks-global-ini-daftarnya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-14T05:14+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -404,21 +419,6 @@
    "tier": 3,
    "title": "Wapres Gibran Mundur dan Pengumuman MSCI, Asing Lepas 10 Saham Ini",
    "link": "https://www.cnbcindonesia.com/market/20261113065239-17-784843/wapres-gibran-mundur-pengumuman-msci-asing-lepas-10-saham-ini",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T07:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Asing Borong 10 Saham Ini di Hari MSCI Review dan Pengunduran Gibran",
-   "link": "https://www.cnbcindonesia.com/market/20261113064615-17-784841/asing-borong-10-saham-ini-di-hari-msci-review-dan-pengunduran-gibran",
    "score": 6,
    "categories": [
     "kebijakan",
