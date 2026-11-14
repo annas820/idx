@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-14T15:45+07:00",
+ "generated_for": "2026-11-14T16:36+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 476,
- "kept": 139,
+ "scanned": 482,
+ "kept": 141,
  "dropped_noise": 8,
  "items": [
   {
@@ -57,6 +57,25 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-14T10:52+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Review Terbaru FTSE Russel: Saham Indonesia Tetap Masuk Emerging Market",
+   "link": "https://investasi.kontan.co.id/news/review-terbaru-ftse-russel-saham-indonesia-tetap-masuk-emerging-market",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   },
   {
    "published": "2026-11-13T21:59+07:00",
@@ -307,6 +326,21 @@
    ]
   },
   {
+   "published": "2026-11-14T16:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "FTSE Russel Pertahankan Status Secondary Emerging Market Bursa RI",
+   "link": "https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russel-pertahankan-status-secondary-emerging-market-bursa-ri",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-14T13:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -327,21 +361,6 @@
    "tier": 3,
    "title": "FTSE Russell Hapus 14 Saham Indonesia yang Masuk Kategori HSC",
    "link": "https://investasi.kontan.co.id/news/ftse-russell-hapus-14-saham-indonesia-yang-masuk-kategori-hsc",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T10:52+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Review Terbaru FTSE Russel: Saham Indonesia Tetap Masuk Emerging Market",
-   "link": "https://investasi.kontan.co.id/news/review-terbaru-ftse-russel-saham-indonesia-tetap-masuk-emerging-market",
    "score": 6,
    "categories": [
     "kebijakan",
@@ -413,21 +432,6 @@
    "flags": [
     "watchlist"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T13:21+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Ungkap Risiko Ini Jadi Alasan Saham HSC Terpisah dari IHSG",
-   "link": "https://www.cnbcindonesia.com/market/20261113131818-17-785000/bei-ungkap-risiko-ini-jadi-alasan-saham-hsc-terpisah-dari-ihsg",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
    "also_in": []
   }
  ],
