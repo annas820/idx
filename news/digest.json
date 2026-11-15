@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-15T13:53+07:00",
+ "generated_for": "2026-11-15T15:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 196,
- "kept": 41,
+ "scanned": 211,
+ "kept": 46,
  "dropped_noise": 6,
  "items": [
   {
@@ -89,6 +89,25 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T14:25+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Kerek Harga di Tengah Tekanan Biaya, Cek Rekomendasi Saham ICBP",
+   "link": "https://investasi.kontan.co.id/news/kerek-harga-di-tengah-tekanan-biaya-cek-rekomendasi-saham-icbp",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ICBP"
+   ],
    "flags": [
     "petunjuk"
    ],
@@ -336,6 +355,23 @@
    "also_in": []
   },
   {
+   "published": "2026-11-15T15:00+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Sawit Sumbermas Sarana (SSMS) Andalkan Produktivitas dan Hilirisasi Demi Jaga Kinerja",
+   "link": "https://industri.kontan.co.id/news/sawit-sumbermas-sarana-ssms-andalkan-produktivitas-dan-hilirisasi-demi-jaga-kinerja",
+   "score": 4,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "SSMS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-15T10:55+07:00",
    "source": "kontan_industri",
    "tier": 3,
@@ -383,39 +419,6 @@
    "tickers": [
     "ANTM"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T15:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Astra Raih Dua Penghargaan di Asia ESG Awards 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127725/astra-raih-dua-penghargaan-di-asia-esg-awards-2026",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T13:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "RKAB Nikel 2027 Mau Ditebas, Likuiditas Penambang Terancam Kandas",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127694/rkab-nikel-2027-mau-ditebas-likuiditas-penambang-terancam-kandas",
-   "score": 4,
-   "categories": [
-    "makro",
-    "komoditas"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }
