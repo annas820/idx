@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-15T09:30+07:00 WIB | jendela 36 jam | dipindai 174, lolos 37, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-15T10:40+07:00 WIB | jendela 36 jam | dipindai 167, lolos 35, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -11,7 +11,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-14 15:05 bloomberg_technoz: FTSE Depak 14 Saham Usai Masuk Radar HSC, Ada TBIG & MAPI [MAPI,TBIG] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127716/ftse-depak-14-saham-usai-masuk-radar-hsc-ada-tbig-mapi>
 - **8** T3 11-14 14:00 cnbc_indonesia_market: Video: Efek MSCI - Gibran Mundur ke Prospek Investasi dan IPO Saham RI (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261112145645-19-784694/video-efek-msci--gibran-mundur-ke-prospek-investasi-ipo-saham-ri>
 - **8** T3 11-14 10:52 kontan_investasi: Review Terbaru FTSE Russel: Saham Indonesia Tetap Masuk Emerging Market (kebijakan/pasar; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/review-terbaru-ftse-russel-saham-indonesia-tetap-masuk-emerging-market>
-- **8** T3 11-13 21:59 kontan_investasi: Wall Street Menguat, Inflasi AS Redakan Kekhawatiran Kenaikan Suku Bunga The Fed (kebijakan/global/makro) <https://investasi.kontan.co.id/news/wall-street-menguat-inflasi-as-redakan-kekhawatiran-kenaikan-suku-bunga-the-fed>
 - **6** T3 11-15 08:00 bloomberg_technoz: Alasan BEI Tidak Bisa Langsung Menghukum Saham HSC (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127739/alasan-bei-tidak-bisa-langsung-menghukum-saham-hsc>
 - **6** T3 11-15 06:17 kontan_investasi: FTSE Russell Depak 14 Saham Indonesia, Status Perlakuan Khusus Dipertahankan (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-depak-14-saham-indonesia-status-perlakuan-khusus-dipertahankan>
 - **6** T3 11-14 16:30 cnbc_indonesia_market: FTSE Russel Pertahankan Status Secondary Emerging Market Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russel-pertahankan-status-secondary-emerging-market-bursa-ri>
@@ -32,3 +31,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-14 13:00 bloomberg_technoz: RKAB Nikel 2027 Mau Ditebas, Likuiditas Penambang Terancam Kandas (makro/komoditas) <https://www.bloombergtechnoz.com/detail-news/127694/rkab-nikel-2027-mau-ditebas-likuiditas-penambang-terancam-kandas>
 - **4** T3 11-14 10:45 cnbc_indonesia_news: Ini Spesifikasi Rumah Pensiun Gibran Usai Mundur Jadi Wapres RI (; terkonfirmasi, juga di bloomberg_technoz/cnbc_indonesia_market) <https://www.cnbcindonesia.com/news/20261114081343-4-785188/ini-spesifikasi-rumah-pensiun-gibran-usai-mundur-jadi-wapres-ri>
 - **4** T3 11-14 07:17 kontan_investasi: Data Inflasi AS Sesuai Ekspektasi, Harga Emas Spot Naik di Akhir Pekan (makro/komoditas) <https://investasi.kontan.co.id/news/data-inflasi-as-sesuai-ekspektasi-harga-emas-spot-naik-di-akhir-pekan>
+- **4** T3 11-14 06:16 kontan_investasi: BUMA International (DOID) Catat Rugi US$ 43 Juta Per Kuartal III-2026 [DOID] (korporasi/emiten) <https://investasi.kontan.co.id/news/buma-international-doid-catat-rugi-us-43-juta-per-kuartal-iii-2026>

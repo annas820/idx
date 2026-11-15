@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-15T09:30+07:00",
+ "generated_for": "2026-11-15T10:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 174,
- "kept": 37,
+ "scanned": 167,
+ "kept": 35,
  "dropped_noise": 5,
  "items": [
   {
@@ -76,22 +76,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-13T21:59+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Wall Street Menguat, Inflasi AS Redakan Kekhawatiran Kenaikan Suku Bunga The Fed",
-   "link": "https://investasi.kontan.co.id/news/wall-street-menguat-inflasi-as-redakan-kekhawatiran-kenaikan-suku-bunga-the-fed",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   },
   {
    "published": "2026-11-15T08:00+07:00",
@@ -413,6 +397,23 @@
     "komoditas"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-14T06:16+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BUMA International (DOID) Catat Rugi US$ 43 Juta Per Kuartal III-2026",
+   "link": "https://investasi.kontan.co.id/news/buma-international-doid-catat-rugi-us-43-juta-per-kuartal-iii-2026",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "DOID"
+   ],
    "flags": [],
    "also_in": []
   }
