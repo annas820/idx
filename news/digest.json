@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T05:35+07:00",
+ "generated_for": "2026-11-16T06:42+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 175,
- "kept": 38,
- "dropped_noise": 8,
+ "scanned": 173,
+ "kept": 44,
+ "dropped_noise": 6,
  "items": [
   {
    "published": "2026-11-15T16:53+07:00",
@@ -70,6 +70,36 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T06:42+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Kalender Ekonomi: Sinyal The Fed, Perlambatan China & BI Rate",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127768/kalender-ekonomi-sinyal-the-fed-perlambatan-china-bi-rate",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T06:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "FTSE Russell Coret 14 Saham-Status Bursa RI Tetap, Begini Respons BEI",
+   "link": "https://www.cnbcindonesia.com/market/20261115222501-17-785409/ftse-russell-coret-14-saham-status-bursa-ri-tetap-begini-respons-bei",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -197,6 +227,21 @@
    "categories": [
     "kebijakan",
     "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T06:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Schmid The Fed: Tekanan Inflasi AS Masih Tinggi, Tugas Belum Usai",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127773/schmid-the-fed-tekanan-inflasi-as-masih-tinggi-tugas-belum-usai",
+   "score": 5,
+   "categories": [
+    "global",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
@@ -352,56 +397,14 @@
    "also_in": []
   },
   {
-   "published": "2026-11-15T18:23+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bahrain Cegat Serangan Drone Iran, Pangkalan Armada AS Jadi Target",
-   "link": "https://www.cnbcindonesia.com/news/20261115181509-4-785371/bahrain-cegat-serangan-drone-iran-pangkalan-armada-as-jadi-target",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T18:00+07:00",
+   "published": "2026-11-16T06:20+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Serang Pangkalan di Bahrain, Iran Masih Terbuka 'Damai' dengan AS",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127762/serang-pangkalan-di-bahrain-iran-masih-terbuka-damai-dengan-as",
+   "title": "Saham Asia Dibayangi Tekanan Isu AI dan Rilis Data Ekonomi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127772/saham-asia-dibayangi-tekanan-isu-ai-dan-rilis-data-ekonomi",
    "score": 3,
    "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T17:45+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "RI-Kanada Mulai Perjanjian Dagang 1 Desember 2026, 3.100 Tarif Dihapus",
-   "link": "https://www.cnbcindonesia.com/news/20261115144920-4-785356/ri-kanada-mulai-perjanjian-dagang-1-desember-2026-3100-tarif-dihapus",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T17:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "ICA-CEPA Berlaku 1 Desember, Hapus Bea Masuk 3.100 Pos Tarif",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127763/ica-cepa-berlaku-1-desember-hapus-bea-masuk-3-100-pos-tarif",
-   "score": 3,
-   "categories": [
-    "global"
+    "pasar"
    ],
    "tickers": [],
    "flags": [],

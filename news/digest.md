@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-16T05:35+07:00 WIB | jendela 36 jam | dipindai 175, lolos 38, dibuang sebagai noise 8.
+Berita terbaru: 2026-11-16T06:42+07:00 WIB | jendela 36 jam | dipindai 173, lolos 44, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
@@ -8,6 +8,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-15 16:00 bloomberg_technoz: Collins The Fed: Suku Bunga Naik Bertahap, Akan Dinginkan Inflasi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127755/collins-the-fed-suku-bunga-naik-bertahap-akan-dinginkan-inflasi>
 - **8** T3 11-14 21:00 bloomberg_technoz: The Fed Sebut Inflasi Jadi Penentu Keputusan Suku Bunga (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127723/the-fed-sebut-inflasi-jadi-penentu-keputusan-suku-bunga>
 - **7** T3 11-15 12:01 kontan_investasi: Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan>
+- **6** T3 11-16 06:42 bloomberg_technoz: Kalender Ekonomi: Sinyal The Fed, Perlambatan China & BI Rate (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127768/kalender-ekonomi-sinyal-the-fed-perlambatan-china-bi-rate>
+- **6** T3 11-16 06:20 cnbc_indonesia_market: FTSE Russell Coret 14 Saham-Status Bursa RI Tetap, Begini Respons BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261115222501-17-785409/ftse-russell-coret-14-saham-status-bursa-ri-tetap-begini-respons-bei>
 - **6** T3 11-15 17:16 kontan_investasi: Mirae Asset Sekuritas Prediksi BI Rate Ditahan di 5,75%, Cek Dampaknya ke IHSG (kebijakan/pasar) <https://investasi.kontan.co.id/news/mirae-asset-sekuritas-prediksi-bi-rate-ditahan-di-575-cek-dampaknya-ke-ihsg>
 - **6** T3 11-15 17:02 kontan_investasi: Rupiah Tembus Rp 18.200 per Dolar AS, Arus Modal Asing ke Bursa Berpotensi Tertahan (pasar/kurs) <https://investasi.kontan.co.id/news/rupiah-tembus-rp-18200-per-dolar-as-arus-modal-asing-ke-bursa-berpotensi-tertahan>
 - **6** T3 11-15 16:53 kontan_investasi: Rupiah Melemah, Ini Saham dan Sektor yang Paling Rentan Terdampak (pasar/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-ini-saham-dan-sektor-yang-paling-rentan-terdampak>
@@ -16,6 +18,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-15 14:25 kontan_investasi: Kerek Harga di Tengah Tekanan Biaya, Cek Rekomendasi Saham ICBP [ICBP] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/kerek-harga-di-tengah-tekanan-biaya-cek-rekomendasi-saham-icbp>
 - **6** T3 11-15 08:00 bloomberg_technoz: Alasan BEI Tidak Bisa Langsung Menghukum Saham HSC (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127739/alasan-bei-tidak-bisa-langsung-menghukum-saham-hsc>
 - **6** T3 11-15 06:17 kontan_investasi: FTSE Russell Depak 14 Saham Indonesia, Status Perlakuan Khusus Dipertahankan (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-depak-14-saham-indonesia-status-perlakuan-khusus-dipertahankan>
+- **5** T3 11-16 06:40 bloomberg_technoz: Schmid The Fed: Tekanan Inflasi AS Masih Tinggi, Tugas Belum Usai (global/makro) <https://www.bloombergtechnoz.com/detail-news/127773/schmid-the-fed-tekanan-inflasi-as-masih-tinggi-tugas-belum-usai>
 - **5** T3 11-16 05:23 kontan_keuangan: Rupiah Tertekan, Likuiditas Valas Perbankan Tetap Terjaga (kurs/makro) <https://keuangan.kontan.co.id/news/rupiah-tertekan-likuiditas-valas-perbankan-tetap-terjaga>
 - **5** T3 11-15 16:46 kontan_investasi: Defisit APBN 2027 dan Pelemahan Rupiah Bayangi Prospek Yield SBN (kurs/makro) <https://investasi.kontan.co.id/news/defisit-apbn-2027-dan-pelemahan-rupiah-bayangi-prospek-yield-sbn>
 - **5** T3 11-15 13:24 kontan_investasi: Indonesian Paradise (INPP) Jual Seluruh Saham Anak Usaha Rp 185,7 Miliar [INPP] (pasar/emiten) <https://investasi.kontan.co.id/news/indonesian-paradise-inpp-jual-seluruh-saham-anak-usaha-rp-1857-miliar>
@@ -25,7 +28,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-15 10:55 kontan_industri: HEAL Fokus Optimalisasi Aset dan Kembangkan Layanan Eksekutif di Kuartal IV-2026 [HEAL] (korporasi/emiten) <https://industri.kontan.co.id/news/heal-fokus-optimalisasi-aset-dan-kembangkan-layanan-eksekutif-di-kuartal-iv-2026>
 - **4** T3 11-15 08:31 kontan_investasi: Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram [ANTM] (komoditas/emiten) <https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram>
 - **4** T3 11-14 20:31 kontan_investasi: Harga Emas Dunia dan Antam Pekan Depan Dibayangi Penguatan Dolar AS [ANTM] (komoditas/emiten) <https://investasi.kontan.co.id/news/harga-emas-dunia-dan-antam-pekan-depan-dibayangi-penguatan-dolar-as>
-- **3** T3 11-15 18:23 cnbc_indonesia_news: Bahrain Cegat Serangan Drone Iran, Pangkalan Armada AS Jadi Target (global) <https://www.cnbcindonesia.com/news/20261115181509-4-785371/bahrain-cegat-serangan-drone-iran-pangkalan-armada-as-jadi-target>
-- **3** T3 11-15 18:00 bloomberg_technoz: Serang Pangkalan di Bahrain, Iran Masih Terbuka 'Damai' dengan AS (global) <https://www.bloombergtechnoz.com/detail-news/127762/serang-pangkalan-di-bahrain-iran-masih-terbuka-damai-dengan-as>
-- **3** T3 11-15 17:45 cnbc_indonesia_news: RI-Kanada Mulai Perjanjian Dagang 1 Desember 2026, 3.100 Tarif Dihapus (global) <https://www.cnbcindonesia.com/news/20261115144920-4-785356/ri-kanada-mulai-perjanjian-dagang-1-desember-2026-3100-tarif-dihapus>
-- **3** T3 11-15 17:30 bloomberg_technoz: ICA-CEPA Berlaku 1 Desember, Hapus Bea Masuk 3.100 Pos Tarif (global) <https://www.bloombergtechnoz.com/detail-news/127763/ica-cepa-berlaku-1-desember-hapus-bea-masuk-3-100-pos-tarif>
+- **3** T3 11-16 06:20 bloomberg_technoz: Saham Asia Dibayangi Tekanan Isu AI dan Rilis Data Ekonomi (pasar) <https://www.bloombergtechnoz.com/detail-news/127772/saham-asia-dibayangi-tekanan-isu-ai-dan-rilis-data-ekonomi>
