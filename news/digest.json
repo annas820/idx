@@ -1,12 +1,28 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-15T16:41+07:00",
+ "generated_for": "2026-11-15T17:34+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 229,
- "kept": 52,
- "dropped_noise": 7,
+ "scanned": 240,
+ "kept": 57,
+ "dropped_noise": 8,
  "items": [
+  {
+   "published": "2026-11-15T16:53+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Rupiah Melemah dan Efek MSCI Membayangi, Bagaimana Prospek Saham Poultry?",
+   "link": "https://investasi.kontan.co.id/news/rupiah-melemah-dan-efek-msci-membayangi-bagaimana-prospek-saham-poultry",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-15T16:00+07:00",
    "source": "bloomberg_technoz",
@@ -108,6 +124,51 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T17:16+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Mirae Asset Sekuritas Prediksi BI Rate Ditahan di 5,75%, Cek Dampaknya ke IHSG",
+   "link": "https://investasi.kontan.co.id/news/mirae-asset-sekuritas-prediksi-bi-rate-ditahan-di-575-cek-dampaknya-ke-ihsg",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T17:02+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Rupiah Tembus Rp 18.200 per Dolar AS, Arus Modal Asing ke Bursa Berpotensi Tertahan",
+   "link": "https://investasi.kontan.co.id/news/rupiah-tembus-rp-18200-per-dolar-as-arus-modal-asing-ke-bursa-berpotensi-tertahan",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T16:53+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Rupiah Melemah, Ini Saham dan Sektor yang Paling Rentan Terdampak",
+   "link": "https://investasi.kontan.co.id/news/rupiah-melemah-ini-saham-dan-sektor-yang-paling-rentan-terdampak",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -256,15 +317,15 @@
    "also_in": []
   },
   {
-   "published": "2026-11-14T05:14+07:00",
+   "published": "2026-11-15T16:46+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "Wall Street: S&P 500 dan Nasdaq Melemah, Kasus Nvidia Masih Tekan Saham Teknologi",
-   "link": "https://investasi.kontan.co.id/news/wall-street-sp-500-dan-nasdaq-melemah-kasus-nvidia-masih-tekan-saham-teknologi",
-   "score": 6,
+   "title": "Defisit APBN 2027 dan Pelemahan Rupiah Bayangi Prospek Yield SBN",
+   "link": "https://investasi.kontan.co.id/news/defisit-apbn-2027-dan-pelemahan-rupiah-bayangi-prospek-yield-sbn",
+   "score": 5,
    "categories": [
-    "global",
-    "pasar"
+    "kurs",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
@@ -352,73 +413,6 @@
    ],
    "tickers": [
     "PGEO"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T10:05+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Ekspansi Minyak Kedelai AS-Brasil Ancam Daya Saing Sawit Indonesia",
-   "link": "https://industri.kontan.co.id/news/ekspansi-minyak-kedelai-as-brasil-ancam-daya-saing-sawit-indonesia",
-   "score": 5,
-   "categories": [
-    "global",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T06:10+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Saham Singaraja (SINI) Naik 43% Sepekan, Pengendali Tambah Koleksi Rp 10,75 Miliar",
-   "link": "https://investasi.kontan.co.id/news/saham-singaraja-sini-naik-43-sepekan-pengendali-tambah-koleksi-rp-1075-miliar",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "SINI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T05:00+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Daftar Saham PER Terendah & Tertinggi LQ45 (13 November 2026), INKP dan MBMA Melesat",
-   "link": "https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-13-november-2026-inkp-dan-mbma-melesat",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "INKP",
-    "MBMA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T15:00+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Sawit Sumbermas Sarana (SSMS) Andalkan Produktivitas dan Hilirisasi Demi Jaga Kinerja",
-   "link": "https://industri.kontan.co.id/news/sawit-sumbermas-sarana-ssms-andalkan-produktivitas-dan-hilirisasi-demi-jaga-kinerja",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "SSMS"
    ],
    "flags": [],
    "also_in": []
