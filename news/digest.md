@@ -1,17 +1,20 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-15T15:45+07:00 WIB | jendela 36 jam | dipindai 216, lolos 46, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-15T16:41+07:00 WIB | jendela 36 jam | dipindai 229, lolos 52, dibuang sebagai noise 7.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **4** T3 11-14 15:00 bloomberg_technoz: Astra Raih Dua Penghargaan di Asia ESG Awards 2026 [ASII] (emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127725/astra-raih-dua-penghargaan-di-asia-esg-awards-2026>
 
 ## Teratas
+- **8** T3 11-15 16:00 bloomberg_technoz: Collins The Fed: Suku Bunga Naik Bertahap, Akan Dinginkan Inflasi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127755/collins-the-fed-suku-bunga-naik-bertahap-akan-dinginkan-inflasi>
 - **8** T3 11-14 21:00 bloomberg_technoz: The Fed Sebut Inflasi Jadi Penentu Keputusan Suku Bunga (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127723/the-fed-sebut-inflasi-jadi-penentu-keputusan-suku-bunga>
 - **8** T3 11-14 15:05 bloomberg_technoz: FTSE Depak 14 Saham Usai Masuk Radar HSC, Ada TBIG & MAPI [MAPI,TBIG] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127716/ftse-depak-14-saham-usai-masuk-radar-hsc-ada-tbig-mapi>
 - **8** T3 11-14 14:00 cnbc_indonesia_market: Video: Efek MSCI - Gibran Mundur ke Prospek Investasi dan IPO Saham RI (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261112145645-19-784694/video-efek-msci--gibran-mundur-ke-prospek-investasi-ipo-saham-ri>
 - **8** T3 11-14 10:52 kontan_investasi: Review Terbaru FTSE Russel: Saham Indonesia Tetap Masuk Emerging Market (kebijakan/pasar; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/review-terbaru-ftse-russel-saham-indonesia-tetap-masuk-emerging-market>
 - **7** T3 11-15 12:01 kontan_investasi: Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan>
+- **6** T3 11-15 16:25 kontan_investasi: Harga Ayam Menguat, Cermati Rekomendasi Saham CPIN, JPFA, MAIN [CPIN,JPFA,MAIN] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/harga-ayam-menguat-cermati-rekomendasi-saham-cpin-jpfa-main>
+- **6** T3 11-15 16:23 kontan_investasi: Pelemahan Rupiah Meningkatkan Risiko Arus Dana Asing Keluar dari Pasar Saham (pasar/kurs) <https://investasi.kontan.co.id/news/pelemahan-rupiah-meningkatkan-risiko-arus-dana-asing-keluar-dari-pasar-saham>
 - **6** T3 11-15 14:25 kontan_investasi: Kerek Harga di Tengah Tekanan Biaya, Cek Rekomendasi Saham ICBP [ICBP] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/kerek-harga-di-tengah-tekanan-biaya-cek-rekomendasi-saham-icbp>
 - **6** T3 11-15 08:00 bloomberg_technoz: Alasan BEI Tidak Bisa Langsung Menghukum Saham HSC (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127739/alasan-bei-tidak-bisa-langsung-menghukum-saham-hsc>
 - **6** T3 11-15 06:17 kontan_investasi: FTSE Russell Depak 14 Saham Indonesia, Status Perlakuan Khusus Dipertahankan (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-depak-14-saham-indonesia-status-perlakuan-khusus-dipertahankan>
@@ -29,6 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-14 06:10 kontan_investasi: Saham Singaraja (SINI) Naik 43% Sepekan, Pengendali Tambah Koleksi Rp 10,75 Miliar [SINI] (pasar/emiten) <https://investasi.kontan.co.id/news/saham-singaraja-sini-naik-43-sepekan-pengendali-tambah-koleksi-rp-1075-miliar>
 - **5** T3 11-14 05:00 kontan_investasi: Daftar Saham PER Terendah & Tertinggi LQ45 (13 November 2026), INKP dan MBMA Melesat [INKP,MBMA] (pasar/emiten) <https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-13-november-2026-inkp-dan-mbma-melesat>
 - **4** T3 11-15 15:00 kontan_industri: Sawit Sumbermas Sarana (SSMS) Andalkan Produktivitas dan Hilirisasi Demi Jaga Kinerja [SSMS] (komoditas/emiten) <https://industri.kontan.co.id/news/sawit-sumbermas-sarana-ssms-andalkan-produktivitas-dan-hilirisasi-demi-jaga-kinerja>
-- **4** T3 11-15 10:55 kontan_industri: HEAL Fokus Optimalisasi Aset dan Kembangkan Layanan Eksekutif di Kuartal IV-2026 [HEAL] (korporasi/emiten) <https://industri.kontan.co.id/news/heal-fokus-optimalisasi-aset-dan-kembangkan-layanan-eksekutif-di-kuartal-iv-2026>
-- **4** T3 11-15 08:31 kontan_investasi: Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram [ANTM] (komoditas/emiten) <https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram>
-- **4** T3 11-14 20:31 kontan_investasi: Harga Emas Dunia dan Antam Pekan Depan Dibayangi Penguatan Dolar AS [ANTM] (komoditas/emiten) <https://investasi.kontan.co.id/news/harga-emas-dunia-dan-antam-pekan-depan-dibayangi-penguatan-dolar-as>

@@ -1,12 +1,28 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-15T15:45+07:00",
+ "generated_for": "2026-11-15T16:41+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 216,
- "kept": 46,
- "dropped_noise": 6,
+ "scanned": 229,
+ "kept": 52,
+ "dropped_noise": 7,
  "items": [
+  {
+   "published": "2026-11-15T16:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Collins The Fed: Suku Bunga Naik Bertahap, Akan Dinginkan Inflasi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127755/collins-the-fed-suku-bunga-naik-bertahap-akan-dinginkan-inflasi",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "global",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-14T21:00+07:00",
    "source": "bloomberg_technoz",
@@ -92,6 +108,42 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T16:25+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Harga Ayam Menguat, Cermati Rekomendasi Saham CPIN, JPFA, MAIN",
+   "link": "https://investasi.kontan.co.id/news/harga-ayam-menguat-cermati-rekomendasi-saham-cpin-jpfa-main",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "CPIN",
+    "JPFA",
+    "MAIN"
+   ],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T16:23+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Pelemahan Rupiah Meningkatkan Risiko Arus Dana Asing Keluar dari Pasar Saham",
+   "link": "https://investasi.kontan.co.id/news/pelemahan-rupiah-meningkatkan-risiko-arus-dana-asing-keluar-dari-pasar-saham",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -367,57 +419,6 @@
    ],
    "tickers": [
     "SSMS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T10:55+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "HEAL Fokus Optimalisasi Aset dan Kembangkan Layanan Eksekutif di Kuartal IV-2026",
-   "link": "https://industri.kontan.co.id/news/heal-fokus-optimalisasi-aset-dan-kembangkan-layanan-eksekutif-di-kuartal-iv-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "HEAL"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T08:31+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram",
-   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T20:31+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Harga Emas Dunia dan Antam Pekan Depan Dibayangi Penguatan Dolar AS",
-   "link": "https://investasi.kontan.co.id/news/harga-emas-dunia-dan-antam-pekan-depan-dibayangi-penguatan-dolar-as",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
    ],
    "flags": [],
    "also_in": []
