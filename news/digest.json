@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-15T12:46+07:00",
+ "generated_for": "2026-11-15T13:53+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 187,
- "kept": 39,
- "dropped_noise": 5,
+ "scanned": 196,
+ "kept": 41,
+ "dropped_noise": 6,
  "items": [
   {
    "published": "2026-11-14T21:00+07:00",
@@ -196,6 +196,23 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T13:24+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Indonesian Paradise (INPP) Jual Seluruh Saham Anak Usaha Rp 185,7 Miliar",
+   "link": "https://investasi.kontan.co.id/news/indonesian-paradise-inpp-jual-seluruh-saham-anak-usaha-rp-1857-miliar",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "INPP"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -401,23 +418,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-14T10:45+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Ini Spesifikasi Rumah Pensiun Gibran Usai Mundur Jadi Wapres RI",
-   "link": "https://www.cnbcindonesia.com/news/20261114081343-4-785188/ini-spesifikasi-rumah-pensiun-gibran-usai-mundur-jadi-wapres-ri",
-   "score": 4,
-   "categories": [],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz",
-    "cnbc_indonesia_market"
-   ]
   }
  ],
  "watchlist_hits": [

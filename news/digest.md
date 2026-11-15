@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-15T12:46+07:00 WIB | jendela 36 jam | dipindai 187, lolos 39, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-15T13:53+07:00 WIB | jendela 36 jam | dipindai 196, lolos 41, dibuang sebagai noise 6.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -19,6 +19,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-14 13:20 cnbc_indonesia_market: FTSE Russell Coret 14 Saham RI dari Indeks Global, Ini Daftarnya (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114103044-17-785206/ftse-russell-coret-14-saham-ri-dari-indeks-global-ini-daftarnya>
 - **6** T3 11-14 12:46 kontan_investasi: FTSE Russell Hapus 14 Saham Indonesia yang Masuk Kategori HSC (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-hapus-14-saham-indonesia-yang-masuk-kategori-hsc>
 - **6** T3 11-14 05:14 kontan_investasi: Wall Street: S&P 500 dan Nasdaq Melemah, Kasus Nvidia Masih Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-sp-500-dan-nasdaq-melemah-kasus-nvidia-masih-tekan-saham-teknologi>
+- **5** T3 11-15 13:24 kontan_investasi: Indonesian Paradise (INPP) Jual Seluruh Saham Anak Usaha Rp 185,7 Miliar [INPP] (pasar/emiten) <https://investasi.kontan.co.id/news/indonesian-paradise-inpp-jual-seluruh-saham-anak-usaha-rp-1857-miliar>
 - **5** T3 11-15 07:48 kontan_investasi: Intip Prospek Saham Gudang Garam (GGRM) Usai Masuk Indeks LQ45 [GGRM] (pasar/emiten) <https://investasi.kontan.co.id/news/intip-prospek-saham-gudang-garam-ggrm-usai-masuk-indeks-lq45>
 - **5** T3 11-15 07:13 kontan_investasi: Pertamina Geothermal Energy (PGEO) Targetkan Free Float 12,5% pada Maret 2027 [PGEO] (pasar/emiten) <https://investasi.kontan.co.id/news/pertamina-geothermal-energy-pgeo-targetkan-free-float-125-pada-maret-2027>
 - **5** T3 11-14 16:00 bloomberg_technoz: FTSE: Indonesia Tetap Secondary Emerging Market (kebijakan; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/127717/ftse-indonesia-tetap-secondary-emerging-market>
@@ -31,4 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-14 20:31 kontan_investasi: Harga Emas Dunia dan Antam Pekan Depan Dibayangi Penguatan Dolar AS [ANTM] (komoditas/emiten) <https://investasi.kontan.co.id/news/harga-emas-dunia-dan-antam-pekan-depan-dibayangi-penguatan-dolar-as>
 - **4** T3 11-14 15:00 bloomberg_technoz: Astra Raih Dua Penghargaan di Asia ESG Awards 2026 [ASII] (emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127725/astra-raih-dua-penghargaan-di-asia-esg-awards-2026>
 - **4** T3 11-14 13:00 bloomberg_technoz: RKAB Nikel 2027 Mau Ditebas, Likuiditas Penambang Terancam Kandas (makro/komoditas) <https://www.bloombergtechnoz.com/detail-news/127694/rkab-nikel-2027-mau-ditebas-likuiditas-penambang-terancam-kandas>
-- **4** T3 11-14 10:45 cnbc_indonesia_news: Ini Spesifikasi Rumah Pensiun Gibran Usai Mundur Jadi Wapres RI (; terkonfirmasi, juga di bloomberg_technoz/cnbc_indonesia_market) <https://www.cnbcindonesia.com/news/20261114081343-4-785188/ini-spesifikasi-rumah-pensiun-gibran-usai-mundur-jadi-wapres-ri>
