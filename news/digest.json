@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-15T07:45+07:00",
+ "generated_for": "2026-11-15T09:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 190,
- "kept": 36,
+ "scanned": 175,
+ "kept": 37,
  "dropped_noise": 4,
  "items": [
   {
@@ -88,6 +88,21 @@
     "kebijakan",
     "global",
     "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T08:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Alasan BEI Tidak Bisa Langsung Menghukum Saham HSC",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127739/alasan-bei-tidak-bisa-langsung-menghukum-saham-hsc",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
    ],
    "tickers": [],
    "flags": [],
@@ -184,6 +199,40 @@
    "also_in": []
   },
   {
+   "published": "2026-11-15T07:48+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Intip Prospek Saham Gudang Garam (GGRM) Usai Masuk Indeks LQ45",
+   "link": "https://investasi.kontan.co.id/news/intip-prospek-saham-gudang-garam-ggrm-usai-masuk-indeks-lq45",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "GGRM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T07:13+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Pertamina Geothermal Energy (PGEO) Targetkan Free Float 12,5% pada Maret 2027",
+   "link": "https://investasi.kontan.co.id/news/pertamina-geothermal-energy-pgeo-targetkan-free-float-125-pada-maret-2027",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "PGEO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-14T16:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -269,18 +318,18 @@
    "also_in": []
   },
   {
-   "published": "2026-11-13T20:01+07:00",
+   "published": "2026-11-15T08:31+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "PGEO Targetkan Penuhi Free Float 12,5% pada 2027, Ini Strategi dan Kinerjanya",
-   "link": "https://investasi.kontan.co.id/news/pgeo-targetkan-penuhi-free-float-125-pada-2027-ini-strategi-dan-kinerjanya",
-   "score": 5,
+   "title": "Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram",
+   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram",
+   "score": 4,
    "categories": [
-    "pasar",
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "PGEO"
+    "ANTM"
    ],
    "flags": [],
    "also_in": []
@@ -362,54 +411,6 @@
    "categories": [
     "makro",
     "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T06:16+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BUMA International (DOID) Catat Rugi US$ 43 Juta Per Kuartal III-2026",
-   "link": "https://investasi.kontan.co.id/news/buma-international-doid-catat-rugi-us-43-juta-per-kuartal-iii-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "DOID"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T21:41+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Timah (TINS) Ungkap Strategi Ekspansi Hingga Perampingan Entitas Bisnis",
-   "link": "https://industri.kontan.co.id/news/timah-tins-ungkap-strategi-ekspansi-hingga-perampingan-entitas-bisnis",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "TINS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Penjelasan Kenapa Hanya 296 Saham HSC yang Tidak Masuk Bobot IHSG",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127738/penjelasan-kenapa-hanya-296-saham-hsc-yang-tidak-masuk-bobot-ihsg",
-   "score": 3,
-   "categories": [
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
