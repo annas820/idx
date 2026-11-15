@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-15T11:51+07:00",
+ "generated_for": "2026-11-15T12:46+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 172,
- "kept": 35,
+ "scanned": 187,
+ "kept": 39,
  "dropped_noise": 5,
  "items": [
   {
@@ -76,6 +76,23 @@
    "also_in": [
     "bloomberg_technoz"
    ]
+  },
+  {
+   "published": "2026-11-15T12:01+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan",
+   "link": "https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan",
+   "score": 7,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
   },
   {
    "published": "2026-11-15T08:00+07:00",
@@ -302,6 +319,23 @@
    "also_in": []
   },
   {
+   "published": "2026-11-15T10:55+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "HEAL Fokus Optimalisasi Aset dan Kembangkan Layanan Eksekutif di Kuartal IV-2026",
+   "link": "https://industri.kontan.co.id/news/heal-fokus-optimalisasi-aset-dan-kembangkan-layanan-eksekutif-di-kuartal-iv-2026",
+   "score": 4,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "HEAL"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-15T08:31+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -384,38 +418,6 @@
     "bloomberg_technoz",
     "cnbc_indonesia_market"
    ]
-  },
-  {
-   "published": "2026-11-14T07:17+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Data Inflasi AS Sesuai Ekspektasi, Harga Emas Spot Naik di Akhir Pekan",
-   "link": "https://investasi.kontan.co.id/news/data-inflasi-as-sesuai-ekspektasi-harga-emas-spot-naik-di-akhir-pekan",
-   "score": 4,
-   "categories": [
-    "makro",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T06:16+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BUMA International (DOID) Catat Rugi US$ 43 Juta Per Kuartal III-2026",
-   "link": "https://investasi.kontan.co.id/news/buma-international-doid-catat-rugi-us-43-juta-per-kuartal-iii-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "DOID"
-   ],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-15T11:51+07:00 WIB | jendela 36 jam | dipindai 172, lolos 35, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-15T12:46+07:00 WIB | jendela 36 jam | dipindai 187, lolos 39, dibuang sebagai noise 5.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -11,6 +11,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-14 15:05 bloomberg_technoz: FTSE Depak 14 Saham Usai Masuk Radar HSC, Ada TBIG & MAPI [MAPI,TBIG] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127716/ftse-depak-14-saham-usai-masuk-radar-hsc-ada-tbig-mapi>
 - **8** T3 11-14 14:00 cnbc_indonesia_market: Video: Efek MSCI - Gibran Mundur ke Prospek Investasi dan IPO Saham RI (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261112145645-19-784694/video-efek-msci--gibran-mundur-ke-prospek-investasi-ipo-saham-ri>
 - **8** T3 11-14 10:52 kontan_investasi: Review Terbaru FTSE Russel: Saham Indonesia Tetap Masuk Emerging Market (kebijakan/pasar; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/review-terbaru-ftse-russel-saham-indonesia-tetap-masuk-emerging-market>
+- **7** T3 11-15 12:01 kontan_investasi: Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan>
 - **6** T3 11-15 08:00 bloomberg_technoz: Alasan BEI Tidak Bisa Langsung Menghukum Saham HSC (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127739/alasan-bei-tidak-bisa-langsung-menghukum-saham-hsc>
 - **6** T3 11-15 06:17 kontan_investasi: FTSE Russell Depak 14 Saham Indonesia, Status Perlakuan Khusus Dipertahankan (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-depak-14-saham-indonesia-status-perlakuan-khusus-dipertahankan>
 - **6** T3 11-14 16:30 cnbc_indonesia_market: FTSE Russel Pertahankan Status Secondary Emerging Market Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114155503-17-785239/ftse-russel-pertahankan-status-secondary-emerging-market-bursa-ri>
@@ -25,10 +26,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **5** T3 11-14 10:05 kontan_industri: Ekspansi Minyak Kedelai AS-Brasil Ancam Daya Saing Sawit Indonesia (global/komoditas) <https://industri.kontan.co.id/news/ekspansi-minyak-kedelai-as-brasil-ancam-daya-saing-sawit-indonesia>
 - **5** T3 11-14 06:10 kontan_investasi: Saham Singaraja (SINI) Naik 43% Sepekan, Pengendali Tambah Koleksi Rp 10,75 Miliar [SINI] (pasar/emiten) <https://investasi.kontan.co.id/news/saham-singaraja-sini-naik-43-sepekan-pengendali-tambah-koleksi-rp-1075-miliar>
 - **5** T3 11-14 05:00 kontan_investasi: Daftar Saham PER Terendah & Tertinggi LQ45 (13 November 2026), INKP dan MBMA Melesat [INKP,MBMA] (pasar/emiten) <https://investasi.kontan.co.id/news/daftar-saham-per-terendah-tertinggi-lq45-13-november-2026-inkp-dan-mbma-melesat>
+- **4** T3 11-15 10:55 kontan_industri: HEAL Fokus Optimalisasi Aset dan Kembangkan Layanan Eksekutif di Kuartal IV-2026 [HEAL] (korporasi/emiten) <https://industri.kontan.co.id/news/heal-fokus-optimalisasi-aset-dan-kembangkan-layanan-eksekutif-di-kuartal-iv-2026>
 - **4** T3 11-15 08:31 kontan_investasi: Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram [ANTM] (komoditas/emiten) <https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram>
 - **4** T3 11-14 20:31 kontan_investasi: Harga Emas Dunia dan Antam Pekan Depan Dibayangi Penguatan Dolar AS [ANTM] (komoditas/emiten) <https://investasi.kontan.co.id/news/harga-emas-dunia-dan-antam-pekan-depan-dibayangi-penguatan-dolar-as>
 - **4** T3 11-14 15:00 bloomberg_technoz: Astra Raih Dua Penghargaan di Asia ESG Awards 2026 [ASII] (emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127725/astra-raih-dua-penghargaan-di-asia-esg-awards-2026>
 - **4** T3 11-14 13:00 bloomberg_technoz: RKAB Nikel 2027 Mau Ditebas, Likuiditas Penambang Terancam Kandas (makro/komoditas) <https://www.bloombergtechnoz.com/detail-news/127694/rkab-nikel-2027-mau-ditebas-likuiditas-penambang-terancam-kandas>
 - **4** T3 11-14 10:45 cnbc_indonesia_news: Ini Spesifikasi Rumah Pensiun Gibran Usai Mundur Jadi Wapres RI (; terkonfirmasi, juga di bloomberg_technoz/cnbc_indonesia_market) <https://www.cnbcindonesia.com/news/20261114081343-4-785188/ini-spesifikasi-rumah-pensiun-gibran-usai-mundur-jadi-wapres-ri>
-- **4** T3 11-14 07:17 kontan_investasi: Data Inflasi AS Sesuai Ekspektasi, Harga Emas Spot Naik di Akhir Pekan (makro/komoditas) <https://investasi.kontan.co.id/news/data-inflasi-as-sesuai-ekspektasi-harga-emas-spot-naik-di-akhir-pekan>
-- **4** T3 11-14 06:16 kontan_investasi: BUMA International (DOID) Catat Rugi US$ 43 Juta Per Kuartal III-2026 [DOID] (korporasi/emiten) <https://investasi.kontan.co.id/news/buma-international-doid-catat-rugi-us-43-juta-per-kuartal-iii-2026>
