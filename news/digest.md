@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-15T06:17+07:00 WIB | jendela 36 jam | dipindai 226, lolos 45, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-15T07:45+07:00 WIB | jendela 36 jam | dipindai 190, lolos 36, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -18,7 +18,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-14 13:20 cnbc_indonesia_market: FTSE Russell Coret 14 Saham RI dari Indeks Global, Ini Daftarnya (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261114103044-17-785206/ftse-russell-coret-14-saham-ri-dari-indeks-global-ini-daftarnya>
 - **6** T3 11-14 12:46 kontan_investasi: FTSE Russell Hapus 14 Saham Indonesia yang Masuk Kategori HSC (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-hapus-14-saham-indonesia-yang-masuk-kategori-hsc>
 - **6** T3 11-14 05:14 kontan_investasi: Wall Street: S&P 500 dan Nasdaq Melemah, Kasus Nvidia Masih Tekan Saham Teknologi (global/pasar) <https://investasi.kontan.co.id/news/wall-street-sp-500-dan-nasdaq-melemah-kasus-nvidia-masih-tekan-saham-teknologi>
-- **6** T3 11-13 18:20 kontan_investasi: BEI Tegaskan Saham Masuk Daftar HSC Bukan Berarti Melanggar Aturan Pasar Modal (kebijakan/pasar) <https://investasi.kontan.co.id/news/bei-tegaskan-saham-masuk-daftar-hsc-bukan-berarti-melanggar-aturan-pasar-modal>
 - **5** T3 11-14 16:00 bloomberg_technoz: FTSE: Indonesia Tetap Secondary Emerging Market (kebijakan; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/127717/ftse-indonesia-tetap-secondary-emerging-market>
 - **5** T3 11-14 13:05 kontan_investasi: PGEO Targetkan Free Float 12,5% pada Maret 2027 [PGEO] (pasar/emiten) <https://investasi.kontan.co.id/news/pgeo-targetkan-free-float-125-pada-maret-2027>
 - **5** T3 11-14 10:05 kontan_industri: Ekspansi Minyak Kedelai AS-Brasil Ancam Daya Saing Sawit Indonesia (global/komoditas) <https://industri.kontan.co.id/news/ekspansi-minyak-kedelai-as-brasil-ancam-daya-saing-sawit-indonesia>
@@ -32,3 +31,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-14 07:17 kontan_investasi: Data Inflasi AS Sesuai Ekspektasi, Harga Emas Spot Naik di Akhir Pekan (makro/komoditas) <https://investasi.kontan.co.id/news/data-inflasi-as-sesuai-ekspektasi-harga-emas-spot-naik-di-akhir-pekan>
 - **4** T3 11-14 06:16 kontan_investasi: BUMA International (DOID) Catat Rugi US$ 43 Juta Per Kuartal III-2026 [DOID] (korporasi/emiten) <https://investasi.kontan.co.id/news/buma-international-doid-catat-rugi-us-43-juta-per-kuartal-iii-2026>
 - **4** T3 11-13 21:41 kontan_industri: Timah (TINS) Ungkap Strategi Ekspansi Hingga Perampingan Entitas Bisnis [TINS] (komoditas/emiten) <https://industri.kontan.co.id/news/timah-tins-ungkap-strategi-ekspansi-hingga-perampingan-entitas-bisnis>
+- **3** T3 11-15 07:00 bloomberg_technoz: Penjelasan Kenapa Hanya 296 Saham HSC yang Tidak Masuk Bobot IHSG (pasar) <https://www.bloombergtechnoz.com/detail-news/127738/penjelasan-kenapa-hanya-296-saham-hsc-yang-tidak-masuk-bobot-ihsg>

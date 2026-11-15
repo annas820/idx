@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-15T06:17+07:00",
+ "generated_for": "2026-11-15T07:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 226,
- "kept": 45,
- "dropped_noise": 6,
+ "scanned": 190,
+ "kept": 36,
+ "dropped_noise": 4,
  "items": [
   {
    "published": "2026-11-14T21:00+07:00",
@@ -177,21 +177,6 @@
    "score": 6,
    "categories": [
     "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-13T18:20+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Tegaskan Saham Masuk Daftar HSC Bukan Berarti Melanggar Aturan Pasar Modal",
-   "link": "https://investasi.kontan.co.id/news/bei-tegaskan-saham-masuk-daftar-hsc-bukan-berarti-melanggar-aturan-pasar-modal",
-   "score": 6,
-   "categories": [
-    "kebijakan",
     "pasar"
    ],
    "tickers": [],
@@ -413,6 +398,20 @@
    "tickers": [
     "TINS"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-15T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Penjelasan Kenapa Hanya 296 Saham HSC yang Tidak Masuk Bobot IHSG",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127738/penjelasan-kenapa-hanya-296-saham-hsc-yang-tidak-masuk-bobot-ihsg",
+   "score": 3,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
