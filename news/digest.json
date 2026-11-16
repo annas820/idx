@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T08:15+07:00",
+ "generated_for": "2026-11-16T09:51+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 188,
- "kept": 61,
+ "scanned": 198,
+ "kept": 69,
  "dropped_noise": 5,
  "items": [
   {
@@ -24,27 +24,29 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T09:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Kena Denda OJK Rp 2,7 M, Ada Jejak Haji Isam di Emiten ASLI",
+   "link": "https://www.cnbcindonesia.com/market/20261116091335-17-785453/kena-denda-ojk-rp-27-m-ada-jejak-haji-isam-di-emiten-asli",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ASLI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-15T16:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
    "title": "Collins The Fed: Suku Bunga Naik Bertahap, Akan Dinginkan Inflasi",
    "link": "https://www.bloombergtechnoz.com/detail-news/127755/collins-the-fed-suku-bunga-naik-bertahap-akan-dinginkan-inflasi",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T21:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "The Fed Sebut Inflasi Jadi Penentu Keputusan Suku Bunga",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127723/the-fed-sebut-inflasi-jadi-penentu-keputusan-suku-bunga",
    "score": 8,
    "categories": [
     "kebijakan",
@@ -88,6 +90,42 @@
     "petunjuk"
    ],
    "also_in": []
+  },
+  {
+   "published": "2026-11-16T09:46+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Pasca Pengumuman FTSE Russell, 5 Saham RI Ini Bisa Dilirik",
+   "link": "https://www.cnbcindonesia.com/market/20261116082251-17-785427/pasca-pengumuman-ftse-russell-5-saham-ri-ini-bisa-dilirik",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T08:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Naik Rp 5.000/Gram",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127783/harga-emas-antam-naik-rp-5-000-gram",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
   },
   {
    "published": "2026-11-16T07:00+07:00",
@@ -286,6 +324,27 @@
    "also_in": []
   },
   {
+   "published": "2026-11-15T08:31+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram",
+   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
    "published": "2026-11-15T08:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -316,6 +375,39 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T09:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "10 Saham Masuk Cum Date Dividen Pekan Ini, Simak Jadwalnya!",
+   "link": "https://www.cnbcindonesia.com/market/20261116090353-17-785449/10-saham-masuk-cum-date-dividen-pekan-ini-simak-jadwalnya",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T08:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Menguat 5% Sepekan: Investor Asing Borong Saham BBCA & BBRI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127779/ihsg-menguat-5-sepekan-investor-asing-borong-saham-bbca-bbri",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA",
+    "BBRI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-16T07:05+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -327,85 +419,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T06:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Schmid The Fed: Tekanan Inflasi AS Masih Tinggi, Tugas Belum Usai",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127773/schmid-the-fed-tekanan-inflasi-as-masih-tinggi-tugas-belum-usai",
-   "score": 5,
-   "categories": [
-    "global",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T05:23+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Rupiah Tertekan, Likuiditas Valas Perbankan Tetap Terjaga",
-   "link": "https://keuangan.kontan.co.id/news/rupiah-tertekan-likuiditas-valas-perbankan-tetap-terjaga",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T16:46+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Defisit APBN 2027 dan Pelemahan Rupiah Bayangi Prospek Yield SBN",
-   "link": "https://investasi.kontan.co.id/news/defisit-apbn-2027-dan-pelemahan-rupiah-bayangi-prospek-yield-sbn",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T13:24+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Indonesian Paradise (INPP) Jual Seluruh Saham Anak Usaha Rp 185,7 Miliar",
-   "link": "https://investasi.kontan.co.id/news/indonesian-paradise-inpp-jual-seluruh-saham-anak-usaha-rp-1857-miliar",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "INPP"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T07:48+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Intip Prospek Saham Gudang Garam (GGRM) Usai Masuk Indeks LQ45",
-   "link": "https://investasi.kontan.co.id/news/intip-prospek-saham-gudang-garam-ggrm-usai-masuk-indeks-lq45",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "GGRM"
-   ],
    "flags": [],
    "also_in": []
   }
