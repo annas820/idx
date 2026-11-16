@@ -1,12 +1,32 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T13:00+07:00",
+ "generated_for": "2026-11-16T15:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 304,
- "kept": 105,
- "dropped_noise": 28,
+ "scanned": 375,
+ "kept": 120,
+ "dropped_noise": 29,
  "items": [
+  {
+   "published": "2026-11-16T13:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Laba Bersih per Saham ASII Bisa Melesat 121% di 2030",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127835/laba-bersih-per-saham-asii-bisa-melesat-121-di-2030",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-16T11:29+07:00",
    "source": "cnbc_indonesia_market",
@@ -146,6 +166,36 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T15:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "FTSE Russel Coret 14 Saham RI, Tapi Pertahankan Status Pasar Modal RI",
+   "link": "https://www.cnbcindonesia.com/market/20261116133032-19-785591/ftse-russel-coret-14-saham-ri-tapi-pertahankan-status-pasar-modal-ri",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T13:15+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG dan Bursa Asia Berguguran Dipicu Sinyal Hawkish The Fed",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127837/ihsg-dan-bursa-asia-berguguran-dipicu-sinyal-hawkish-the-fed",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -373,60 +423,29 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-16T06:20+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Risiko Dana Asing Keluar dari Pasar Saham Membesar Saat Rupiah Melemah",
-   "link": "https://investasi.kontan.co.id/news/risiko-dana-asing-keluar-dari-pasar-saham-membesar-saat-rupiah-melemah",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T05:29+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Intip Rekomendasi Saham dan Target Harga CPIN, JPFA, MAIN Saat Harga Ayam Menanjak",
-   "link": "https://investasi.kontan.co.id/news/intip-rekomendasi-saham-dan-target-harga-cpin-jpfa-main-saat-harga-ayam-menanjak",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "CPIN",
-    "JPFA",
-    "MAIN"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T17:16+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Mirae Asset Sekuritas Prediksi BI Rate Ditahan di 5,75%, Cek Dampaknya ke IHSG",
-   "link": "https://investasi.kontan.co.id/news/mirae-asset-sekuritas-prediksi-bi-rate-ditahan-di-575-cek-dampaknya-ke-ihsg",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-16T13:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Laba Bersih per Saham ASII Bisa Melesat 121% di 2030",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127835/laba-bersih-per-saham-asii-bisa-melesat-121-di-2030",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-16T11:29+07:00",
    "source": "cnbc_indonesia_market",

@@ -1,13 +1,15 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-16T13:00+07:00 WIB | jendela 36 jam | dipindai 304, lolos 105, dibuang sebagai noise 28.
+Berita terbaru: 2026-11-16T15:40+07:00 WIB | jendela 36 jam | dipindai 375, lolos 120, dibuang sebagai noise 29.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **9** T3 11-16 13:30 bloomberg_technoz: Laba Bersih per Saham ASII Bisa Melesat 121% di 2030 [ASII] (pasar/korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127835/laba-bersih-per-saham-asii-bisa-melesat-121-di-2030>
 - **9** T3 11-16 11:29 cnbc_indonesia_market: Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen [ASII] (pasar/korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen>
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 
 ## Teratas
+- **9** T3 11-16 13:30 bloomberg_technoz: Laba Bersih per Saham ASII Bisa Melesat 121% di 2030 [ASII] (pasar/korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127835/laba-bersih-per-saham-asii-bisa-melesat-121-di-2030>
 - **9** T3 11-16 11:29 cnbc_indonesia_market: Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen [ASII] (pasar/korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen>
 - **9** T3 11-16 10:45 cnbc_indonesia_market: Video: Nasib IHSG dan Rupiah Saat Pasar Pantau KTT APEC - Suku Bunga BI (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261116102529-19-785489/video-nasib-ihsg-rupiah-saat-pasar-pantau-ktt-apec--suku-bunga-bi>
 - **9** T3 11-15 16:53 kontan_investasi: Rupiah Melemah dan Efek MSCI Membayangi, Bagaimana Prospek Saham Poultry? (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-dan-efek-msci-membayangi-bagaimana-prospek-saham-poultry>
@@ -16,6 +18,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **7** T3 11-16 05:01 kontan_investasi: Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi>
 - **7** T3 11-15 12:01 kontan_investasi: Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan>
+- **6** T3 11-16 15:30 cnbc_indonesia_market: FTSE Russel Coret 14 Saham RI, Tapi Pertahankan Status Pasar Modal RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116133032-19-785591/ftse-russel-coret-14-saham-ri-tapi-pertahankan-status-pasar-modal-ri>
+- **6** T3 11-16 13:15 bloomberg_technoz: IHSG dan Bursa Asia Berguguran Dipicu Sinyal Hawkish The Fed (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127837/ihsg-dan-bursa-asia-berguguran-dipicu-sinyal-hawkish-the-fed>
 - **6** T3 11-16 13:00 cnbc_indonesia_news: Video: Investasi Pilihan MI Saat IHSG Tertekan MSCI - Era Bunga Tinggi (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261116113852-8-785523/video-investasi-pilihan-mi-saat-ihsg-tertekan-msci--era-bunga-tinggi>
 - **6** T3 11-16 12:45 cnbc_indonesia_market: Nasib 14 Saham Dicoret FTSE Russell, Mayoritas Langsung Longsor (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116122415-17-785548/nasib-14-saham-dicoret-ftse-russell-mayoritas-langsung-longsor>
 - **6** T3 11-16 12:45 cnbc_indonesia_market: Video:IHSG dan Rupiah Awal Pekan Terkoreksi, Sentimen Ini Jadi Perhatian (pasar/kurs) <https://www.cnbcindonesia.com/market/20261116123005-19-785550/videoihsg-rupiah-awal-pekan-terkoreksi-sentimen-ini-jadi-perhatian>
@@ -30,6 +34,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-16 06:47 kontan_investasi: Cermati Sektoral dan Saham yang Terdampak Pelemahan Rupiah (pasar/kurs) <https://investasi.kontan.co.id/news/cermati-sektoral-dan-saham-yang-terdampak-pelemahan-rupiah>
 - **6** T3 11-16 06:42 bloomberg_technoz: Kalender Ekonomi: Sinyal The Fed, Perlambatan China & BI Rate (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127768/kalender-ekonomi-sinyal-the-fed-perlambatan-china-bi-rate>
 - **6** T3 11-16 06:20 cnbc_indonesia_market: FTSE Russell Coret 14 Saham-Status Bursa RI Tetap, Begini Respons BEI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261115222501-17-785409/ftse-russell-coret-14-saham-status-bursa-ri-tetap-begini-respons-bei>
-- **6** T3 11-16 06:20 kontan_investasi: Risiko Dana Asing Keluar dari Pasar Saham Membesar Saat Rupiah Melemah (pasar/kurs) <https://investasi.kontan.co.id/news/risiko-dana-asing-keluar-dari-pasar-saham-membesar-saat-rupiah-melemah>
-- **6** T3 11-16 05:29 kontan_investasi: Intip Rekomendasi Saham dan Target Harga CPIN, JPFA, MAIN Saat Harga Ayam Menanjak [CPIN,JPFA,MAIN] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/intip-rekomendasi-saham-dan-target-harga-cpin-jpfa-main-saat-harga-ayam-menanjak>
-- **6** T3 11-15 17:16 kontan_investasi: Mirae Asset Sekuritas Prediksi BI Rate Ditahan di 5,75%, Cek Dampaknya ke IHSG (kebijakan/pasar) <https://investasi.kontan.co.id/news/mirae-asset-sekuritas-prediksi-bi-rate-ditahan-di-575-cek-dampaknya-ke-ihsg>
