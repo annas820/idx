@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T23:25+07:00",
+ "generated_for": "2026-11-17T05:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 554,
- "kept": 194,
- "dropped_noise": 30,
+ "scanned": 491,
+ "kept": 173,
+ "dropped_noise": 27,
  "items": [
   {
    "published": "2026-11-16T21:07+07:00",
@@ -119,22 +119,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-15T16:53+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Rupiah Melemah dan Efek MSCI Membayangi, Bagaimana Prospek Saham Poultry?",
-   "link": "https://investasi.kontan.co.id/news/rupiah-melemah-dan-efek-msci-membayangi-bagaimana-prospek-saham-poultry",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-16T20:00+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -203,22 +187,6 @@
    "tickers": [
     "ASLI"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T16:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Collins The Fed: Suku Bunga Naik Bertahap, Akan Dinginkan Inflasi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127755/collins-the-fed-suku-bunga-naik-bertahap-akan-dinginkan-inflasi",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "makro"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -305,23 +273,6 @@
    "tier": 3,
    "title": "Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI",
    "link": "https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi",
-   "score": 7,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T12:01+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan",
-   "link": "https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan",
    "score": 7,
    "categories": [
     "kebijakan",
@@ -432,6 +383,51 @@
    "score": 6,
    "categories": [
     "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T16:55+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Rupiah Melemah ke Level Rp 18.268, Pasar Waspadai Sinyal Hawkish The Fed",
+   "link": "https://investasi.kontan.co.id/news/rupiah-melemah-ke-level-rp-18268-pasar-waspadai-sinyal-hawkish-the-fed",
+   "score": 6,
+   "categories": [
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T16:54+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Jelang Rebalancing FTSE, 14 Saham Indonesia Berpotensi Tertekan",
+   "link": "https://investasi.kontan.co.id/news/jelang-rebalancing-ftse-14-saham-indonesia-berpotensi-tertekan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T16:51+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Asei Sebut SBN Masih Menarik bagi Investasi Asuransi di Saat Volatilitas Pasar Saham",
+   "link": "https://keuangan.kontan.co.id/news/asei-sebut-sbn-masih-menarik-bagi-investasi-asuransi-di-saat-volatilitas-pasar-saham",
+   "score": 6,
+   "categories": [
+    "pasar",
     "kurs"
    ],
    "tickers": [],
