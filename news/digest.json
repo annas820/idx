@@ -1,12 +1,32 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T11:08+07:00",
+ "generated_for": "2026-11-16T13:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 246,
- "kept": 86,
- "dropped_noise": 17,
+ "scanned": 304,
+ "kept": 105,
+ "dropped_noise": 28,
  "items": [
+  {
+   "published": "2026-11-16T11:29+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen",
+   "link": "https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-16T10:45+07:00",
    "source": "cnbc_indonesia_market",
@@ -126,6 +146,81 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T13:00+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: Investasi Pilihan MI Saat IHSG Tertekan MSCI - Era Bunga Tinggi",
+   "link": "https://www.cnbcindonesia.com/news/20261116113852-8-785523/video-investasi-pilihan-mi-saat-ihsg-tertekan-msci--era-bunga-tinggi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T12:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Nasib 14 Saham Dicoret FTSE Russell, Mayoritas Langsung Longsor",
+   "link": "https://www.cnbcindonesia.com/market/20261116122415-17-785548/nasib-14-saham-dicoret-ftse-russell-mayoritas-langsung-longsor",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T12:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video:IHSG dan Rupiah Awal Pekan Terkoreksi, Sentimen Ini Jadi Perhatian",
+   "link": "https://www.cnbcindonesia.com/market/20261116123005-19-785550/videoihsg-rupiah-awal-pekan-terkoreksi-sentimen-ini-jadi-perhatian",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T12:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Bos MI Ungkap Efek Keluarnya 8 Saham Indonesia Dari Indeks MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261116113853-19-785521/video-bos-mi-ungkap-efek-keluarnya-8-saham-indonesia-dari-indeks-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T11:58+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ini Faktor-Faktor Pemberat Rupiah Jelang Keputusan BI Rate",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127830/ini-faktor-faktor-pemberat-rupiah-jelang-keputusan-bi-rate",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -329,115 +424,29 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-15T17:02+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Rupiah Tembus Rp 18.200 per Dolar AS, Arus Modal Asing ke Bursa Berpotensi Tertahan",
-   "link": "https://investasi.kontan.co.id/news/rupiah-tembus-rp-18200-per-dolar-as-arus-modal-asing-ke-bursa-berpotensi-tertahan",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T16:53+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Rupiah Melemah, Ini Saham dan Sektor yang Paling Rentan Terdampak",
-   "link": "https://investasi.kontan.co.id/news/rupiah-melemah-ini-saham-dan-sektor-yang-paling-rentan-terdampak",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T16:25+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Harga Ayam Menguat, Cermati Rekomendasi Saham CPIN, JPFA, MAIN",
-   "link": "https://investasi.kontan.co.id/news/harga-ayam-menguat-cermati-rekomendasi-saham-cpin-jpfa-main",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "CPIN",
-    "JPFA",
-    "MAIN"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T16:23+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Pelemahan Rupiah Meningkatkan Risiko Arus Dana Asing Keluar dari Pasar Saham",
-   "link": "https://investasi.kontan.co.id/news/pelemahan-rupiah-meningkatkan-risiko-arus-dana-asing-keluar-dari-pasar-saham",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T14:25+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Kerek Harga di Tengah Tekanan Biaya, Cek Rekomendasi Saham ICBP",
-   "link": "https://investasi.kontan.co.id/news/kerek-harga-di-tengah-tekanan-biaya-cek-rekomendasi-saham-icbp",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ICBP"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T08:31+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram",
-   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-16T11:29+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen",
+   "link": "https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-16T09:18+07:00",
    "source": "kontan_investasi",

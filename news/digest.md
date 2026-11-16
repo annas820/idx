@@ -1,12 +1,14 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-16T11:08+07:00 WIB | jendela 36 jam | dipindai 246, lolos 86, dibuang sebagai noise 17.
+Berita terbaru: 2026-11-16T13:00+07:00 WIB | jendela 36 jam | dipindai 304, lolos 105, dibuang sebagai noise 28.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **9** T3 11-16 11:29 cnbc_indonesia_market: Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen [ASII] (pasar/korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen>
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 
 ## Teratas
+- **9** T3 11-16 11:29 cnbc_indonesia_market: Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen [ASII] (pasar/korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen>
 - **9** T3 11-16 10:45 cnbc_indonesia_market: Video: Nasib IHSG dan Rupiah Saat Pasar Pantau KTT APEC - Suku Bunga BI (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261116102529-19-785489/video-nasib-ihsg-rupiah-saat-pasar-pantau-ktt-apec--suku-bunga-bi>
 - **9** T3 11-15 16:53 kontan_investasi: Rupiah Melemah dan Efek MSCI Membayangi, Bagaimana Prospek Saham Poultry? (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-dan-efek-msci-membayangi-bagaimana-prospek-saham-poultry>
 - **8** T3 11-16 09:35 cnbc_indonesia_market: Kena Denda OJK Rp 2,7 M, Ada Jejak Haji Isam di Emiten ASLI [ASLI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261116091335-17-785453/kena-denda-ojk-rp-27-m-ada-jejak-haji-isam-di-emiten-asli>
@@ -14,6 +16,11 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **7** T3 11-16 05:01 kontan_investasi: Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi>
 - **7** T3 11-15 12:01 kontan_investasi: Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan>
+- **6** T3 11-16 13:00 cnbc_indonesia_news: Video: Investasi Pilihan MI Saat IHSG Tertekan MSCI - Era Bunga Tinggi (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261116113852-8-785523/video-investasi-pilihan-mi-saat-ihsg-tertekan-msci--era-bunga-tinggi>
+- **6** T3 11-16 12:45 cnbc_indonesia_market: Nasib 14 Saham Dicoret FTSE Russell, Mayoritas Langsung Longsor (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116122415-17-785548/nasib-14-saham-dicoret-ftse-russell-mayoritas-langsung-longsor>
+- **6** T3 11-16 12:45 cnbc_indonesia_market: Video:IHSG dan Rupiah Awal Pekan Terkoreksi, Sentimen Ini Jadi Perhatian (pasar/kurs) <https://www.cnbcindonesia.com/market/20261116123005-19-785550/videoihsg-rupiah-awal-pekan-terkoreksi-sentimen-ini-jadi-perhatian>
+- **6** T3 11-16 12:30 cnbc_indonesia_market: Video: Bos MI Ungkap Efek Keluarnya 8 Saham Indonesia Dari Indeks MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116113853-19-785521/video-bos-mi-ungkap-efek-keluarnya-8-saham-indonesia-dari-indeks-msci>
+- **6** T3 11-16 11:58 bloomberg_technoz: Ini Faktor-Faktor Pemberat Rupiah Jelang Keputusan BI Rate (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/127830/ini-faktor-faktor-pemberat-rupiah-jelang-keputusan-bi-rate>
 - **6** T3 11-16 10:00 cnbc_indonesia_market: FTSE Russell Coret 14 Saham RI, Ada Emiten Grup Sinar Mas hingga Salim (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116094952-17-785475/ftse-russell-coret-14-saham-ri-ada-emiten-grup-sinar-mas-hingga-salim>
 - **6** T3 11-16 09:49 kontan_investasi: Penjualan Alfamart Berpotensi Melambat, Simak Rekomendasi Saham AMRT [AMRT] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/penjualan-alfamart-berpotensi-melambat-simak-rekomendasi-saham-amrt>
 - **6** T3 11-16 09:46 cnbc_indonesia_market: Pasca Pengumuman FTSE Russell, 5 Saham RI Ini Bisa Dilirik (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116082251-17-785427/pasca-pengumuman-ftse-russell-5-saham-ri-ini-bisa-dilirik>
@@ -26,9 +33,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-16 06:20 kontan_investasi: Risiko Dana Asing Keluar dari Pasar Saham Membesar Saat Rupiah Melemah (pasar/kurs) <https://investasi.kontan.co.id/news/risiko-dana-asing-keluar-dari-pasar-saham-membesar-saat-rupiah-melemah>
 - **6** T3 11-16 05:29 kontan_investasi: Intip Rekomendasi Saham dan Target Harga CPIN, JPFA, MAIN Saat Harga Ayam Menanjak [CPIN,JPFA,MAIN] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/intip-rekomendasi-saham-dan-target-harga-cpin-jpfa-main-saat-harga-ayam-menanjak>
 - **6** T3 11-15 17:16 kontan_investasi: Mirae Asset Sekuritas Prediksi BI Rate Ditahan di 5,75%, Cek Dampaknya ke IHSG (kebijakan/pasar) <https://investasi.kontan.co.id/news/mirae-asset-sekuritas-prediksi-bi-rate-ditahan-di-575-cek-dampaknya-ke-ihsg>
-- **6** T3 11-15 17:02 kontan_investasi: Rupiah Tembus Rp 18.200 per Dolar AS, Arus Modal Asing ke Bursa Berpotensi Tertahan (pasar/kurs) <https://investasi.kontan.co.id/news/rupiah-tembus-rp-18200-per-dolar-as-arus-modal-asing-ke-bursa-berpotensi-tertahan>
-- **6** T3 11-15 16:53 kontan_investasi: Rupiah Melemah, Ini Saham dan Sektor yang Paling Rentan Terdampak (pasar/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-ini-saham-dan-sektor-yang-paling-rentan-terdampak>
-- **6** T3 11-15 16:25 kontan_investasi: Harga Ayam Menguat, Cermati Rekomendasi Saham CPIN, JPFA, MAIN [CPIN,JPFA,MAIN] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/harga-ayam-menguat-cermati-rekomendasi-saham-cpin-jpfa-main>
-- **6** T3 11-15 16:23 kontan_investasi: Pelemahan Rupiah Meningkatkan Risiko Arus Dana Asing Keluar dari Pasar Saham (pasar/kurs) <https://investasi.kontan.co.id/news/pelemahan-rupiah-meningkatkan-risiko-arus-dana-asing-keluar-dari-pasar-saham>
-- **6** T3 11-15 14:25 kontan_investasi: Kerek Harga di Tengah Tekanan Biaya, Cek Rekomendasi Saham ICBP [ICBP] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/kerek-harga-di-tengah-tekanan-biaya-cek-rekomendasi-saham-icbp>
-- **6** T3 11-15 08:31 kontan_investasi: Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram [ANTM] (komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram>
