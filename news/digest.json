@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T19:00+07:00",
+ "generated_for": "2026-11-16T21:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 505,
- "kept": 170,
+ "scanned": 521,
+ "kept": 172,
  "dropped_noise": 30,
  "items": [
   {
@@ -76,6 +76,24 @@
     "kurs"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T20:00+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Saham Big Banks Kompak Menguat Jelang RDG BI, BBNI Pimpin Kenaikan",
+   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-kompak-menguat-jelang-rdg-bi-bbni-pimpin-kenaikan",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBNI"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -243,6 +261,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T20:38+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Ungkap 3 Tersangka Manipulasi Saham, Dugaan Kerugian Rp6,97 M",
+   "link": "https://www.cnbcindonesia.com/market/20261116203423-17-785766/ojk-ungkap-3-tersangka-manipulasi-saham-dugaan-kerugian-rp697-m",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-16T18:31+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -391,36 +424,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T15:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "FTSE Russel Coret 14 Saham RI, Tapi Pertahankan Status Pasar Modal RI",
-   "link": "https://www.cnbcindonesia.com/market/20261116133032-19-785591/ftse-russel-coret-14-saham-ri-tapi-pertahankan-status-pasar-modal-ri",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T13:49+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Fitch Beri Rating BBB Atas Rencana Obligasi Dolar Milik Freeport, Ini Pendukungnya",
-   "link": "https://industri.kontan.co.id/news/fitch-beri-rating-bbb-atas-rencana-obligasi-dolar-milik-freeport-ini-pendukungnya",
-   "score": 6,
-   "categories": [
-    "kurs",
-    "kredit"
    ],
    "tickers": [],
    "flags": [],

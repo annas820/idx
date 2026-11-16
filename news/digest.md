@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-16T19:00+07:00 WIB | jendela 36 jam | dipindai 505, lolos 170, dibuang sebagai noise 30.
+Berita terbaru: 2026-11-16T21:50+07:00 WIB | jendela 36 jam | dipindai 521, lolos 172, dibuang sebagai noise 30.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -16,6 +16,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-16 11:29 cnbc_indonesia_market: Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen [ASII] (pasar/korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen>
 - **9** T3 11-16 10:45 cnbc_indonesia_market: Video: Nasib IHSG dan Rupiah Saat Pasar Pantau KTT APEC - Suku Bunga BI (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261116102529-19-785489/video-nasib-ihsg-rupiah-saat-pasar-pantau-ktt-apec--suku-bunga-bi>
 - **9** T3 11-15 16:53 kontan_investasi: Rupiah Melemah dan Efek MSCI Membayangi, Bagaimana Prospek Saham Poultry? (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-dan-efek-msci-membayangi-bagaimana-prospek-saham-poultry>
+- **8** T3 11-16 20:00 kontan_keuangan: Saham Big Banks Kompak Menguat Jelang RDG BI, BBNI Pimpin Kenaikan [BBNI] (kebijakan/pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-kompak-menguat-jelang-rdg-bi-bbni-pimpin-kenaikan>
 - **8** T3 11-16 15:21 kontan_industri: Moody’s Beri Rating Baa3 Obligasi Freeport Indonesia, Likuiditas Tembus US$ 4 Miliar (kurs/kredit/makro) <https://industri.kontan.co.id/news/moodys-beri-rating-baa3-obligasi-freeport-indonesia-likuiditas-tembus-us-4-miliar>
 - **8** T3 11-16 12:14 kontan_investasi: Rupiah Melemah, Emiten Poultry Tertekan? Simak Rekomendasi CPIN, JPFA, dan MAIN [CPIN,JPFA,MAIN] (pasar/kurs/emiten) <https://investasi.kontan.co.id/news/rupiah-melemah-emiten-poultry-tertekan-simak-rekomendasi-cpin-jpfa-dan-main>
 - **8** T3 11-16 09:35 cnbc_indonesia_market: Kena Denda OJK Rp 2,7 M, Ada Jejak Haji Isam di Emiten ASLI [ASLI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261116091335-17-785453/kena-denda-ojk-rp-27-m-ada-jejak-haji-isam-di-emiten-asli>
@@ -25,6 +26,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **7** T3 11-16 05:01 kontan_investasi: Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi>
 - **7** T3 11-15 12:01 kontan_investasi: Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan>
+- **6** T3 11-16 20:38 cnbc_indonesia_market: OJK Ungkap 3 Tersangka Manipulasi Saham, Dugaan Kerugian Rp6,97 M (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116203423-17-785766/ojk-ungkap-3-tersangka-manipulasi-saham-dugaan-kerugian-rp697-m>
 - **6** T3 11-16 18:31 kontan_keuangan: Pergerakan Saham dan Yield Obligasi Pengaruhi Investasi Unitlink, Ini Strategi AIA (pasar/kurs) <https://keuangan.kontan.co.id/news/pergerakan-saham-dan-yield-obligasi-pengaruhi-investasi-unitlink-ini-strategi-aia>
 - **6** T3 11-16 18:10 kontan_keuangan: Awal Pekan RDG BI, Saham Big Banks Ditutup di Zona Hijau, Senin (16/11) (kebijakan/pasar) <https://keuangan.kontan.co.id/news/awal-pekan-rdg-bi-saham-big-banks-ditutup-di-zona-hijau-senin-1611>
 - **6** T3 11-16 18:00 kontan_keuangan: Multifinance Perlu Cermati Efek Pelemahan Rupiah terhadap Pendanaan Valuta Asing (pasar/kurs) <https://keuangan.kontan.co.id/news/multifinance-perlu-cermati-efek-pelemahan-rupiah-terhadap-pendanaan-valuta-asing>
@@ -35,5 +37,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-16 16:49 cnbc_indonesia_market: Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116162727-19-785679/video-dongkrak-bisnis-nikel-vale-indonesia-kebut-hilirisasi-hpal>
 - **6** T3 11-16 16:19 kontan_investasi: Kurs Rupiah Tertekan Jelang RDG BI, Suku Bunga Acuan Diproyeksi Tetap 5,75% (kebijakan/kurs) <https://investasi.kontan.co.id/news/kurs-rupiah-tertekan-jelang-rdg-bi-suku-bunga-acuan-diproyeksi-tetap-575>
 - **6** T3 11-16 16:15 cnbc_indonesia_market: Video: MSCI dan FTSE Russel Jadi Perhatian, Bursa Saham RI Harus Apa? (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116152425-19-785635/video-msci-ftse-russel-jadi-perhatian-bursa-saham-ri-harus-apa>
-- **6** T3 11-16 15:30 cnbc_indonesia_market: FTSE Russel Coret 14 Saham RI, Tapi Pertahankan Status Pasar Modal RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116133032-19-785591/ftse-russel-coret-14-saham-ri-tapi-pertahankan-status-pasar-modal-ri>
-- **6** T3 11-16 13:49 kontan_industri: Fitch Beri Rating BBB Atas Rencana Obligasi Dolar Milik Freeport, Ini Pendukungnya (kurs/kredit) <https://industri.kontan.co.id/news/fitch-beri-rating-bbb-atas-rencana-obligasi-dolar-milik-freeport-ini-pendukungnya>
