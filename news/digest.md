@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-16T17:35+07:00 WIB | jendela 36 jam | dipindai 476, lolos 161, dibuang sebagai noise 30.
+Berita terbaru: 2026-11-16T19:00+07:00 WIB | jendela 36 jam | dipindai 505, lolos 170, dibuang sebagai noise 30.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -25,6 +25,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **7** T3 11-16 05:01 kontan_investasi: Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi>
 - **7** T3 11-15 12:01 kontan_investasi: Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan>
+- **6** T3 11-16 18:31 kontan_keuangan: Pergerakan Saham dan Yield Obligasi Pengaruhi Investasi Unitlink, Ini Strategi AIA (pasar/kurs) <https://keuangan.kontan.co.id/news/pergerakan-saham-dan-yield-obligasi-pengaruhi-investasi-unitlink-ini-strategi-aia>
+- **6** T3 11-16 18:10 kontan_keuangan: Awal Pekan RDG BI, Saham Big Banks Ditutup di Zona Hijau, Senin (16/11) (kebijakan/pasar) <https://keuangan.kontan.co.id/news/awal-pekan-rdg-bi-saham-big-banks-ditutup-di-zona-hijau-senin-1611>
+- **6** T3 11-16 18:00 kontan_keuangan: Multifinance Perlu Cermati Efek Pelemahan Rupiah terhadap Pendanaan Valuta Asing (pasar/kurs) <https://keuangan.kontan.co.id/news/multifinance-perlu-cermati-efek-pelemahan-rupiah-terhadap-pendanaan-valuta-asing>
 - **6** T3 11-16 17:30 cnbc_indonesia_market: BEI Gandeng KPEI, Permudah Transaksi Surat Utang (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261116165024-17-785719/bei-gandeng-kpei-permudah-transaksi-surat-utang>
 - **6** T3 11-16 16:55 kontan_investasi: Rupiah Melemah ke Level Rp 18.268, Pasar Waspadai Sinyal Hawkish The Fed (global/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-ke-level-rp-18268-pasar-waspadai-sinyal-hawkish-the-fed>
 - **6** T3 11-16 16:54 kontan_investasi: Jelang Rebalancing FTSE, 14 Saham Indonesia Berpotensi Tertekan (kebijakan/pasar) <https://investasi.kontan.co.id/news/jelang-rebalancing-ftse-14-saham-indonesia-berpotensi-tertekan>
@@ -34,6 +37,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-16 16:15 cnbc_indonesia_market: Video: MSCI dan FTSE Russel Jadi Perhatian, Bursa Saham RI Harus Apa? (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116152425-19-785635/video-msci-ftse-russel-jadi-perhatian-bursa-saham-ri-harus-apa>
 - **6** T3 11-16 15:30 cnbc_indonesia_market: FTSE Russel Coret 14 Saham RI, Tapi Pertahankan Status Pasar Modal RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116133032-19-785591/ftse-russel-coret-14-saham-ri-tapi-pertahankan-status-pasar-modal-ri>
 - **6** T3 11-16 13:49 kontan_industri: Fitch Beri Rating BBB Atas Rencana Obligasi Dolar Milik Freeport, Ini Pendukungnya (kurs/kredit) <https://industri.kontan.co.id/news/fitch-beri-rating-bbb-atas-rencana-obligasi-dolar-milik-freeport-ini-pendukungnya>
-- **6** T3 11-16 13:15 bloomberg_technoz: IHSG dan Bursa Asia Berguguran Dipicu Sinyal Hawkish The Fed (global/pasar) <https://www.bloombergtechnoz.com/detail-news/127837/ihsg-dan-bursa-asia-berguguran-dipicu-sinyal-hawkish-the-fed>
-- **6** T3 11-16 13:00 cnbc_indonesia_news: Video: Investasi Pilihan MI Saat IHSG Tertekan MSCI - Era Bunga Tinggi (kebijakan/pasar) <https://www.cnbcindonesia.com/news/20261116113852-8-785523/video-investasi-pilihan-mi-saat-ihsg-tertekan-msci--era-bunga-tinggi>
-- **6** T3 11-16 12:49 kontan_investasi: Reksadana Saham Anjlok Tertekan Sentimen MSCI, Begini Kata INA MI (kebijakan/pasar) <https://investasi.kontan.co.id/news/reksadana-saham-anjlok-tertekan-sentimen-msci-begini-kata-ina-mi>

@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T17:35+07:00",
+ "generated_for": "2026-11-16T19:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 476,
- "kept": 161,
+ "scanned": 505,
+ "kept": 170,
  "dropped_noise": 30,
  "items": [
   {
@@ -243,6 +243,51 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T18:31+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Pergerakan Saham dan Yield Obligasi Pengaruhi Investasi Unitlink, Ini Strategi AIA",
+   "link": "https://keuangan.kontan.co.id/news/pergerakan-saham-dan-yield-obligasi-pengaruhi-investasi-unitlink-ini-strategi-aia",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T18:10+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Awal Pekan RDG BI, Saham Big Banks Ditutup di Zona Hijau, Senin (16/11)",
+   "link": "https://keuangan.kontan.co.id/news/awal-pekan-rdg-bi-saham-big-banks-ditutup-di-zona-hijau-senin-1611",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T18:00+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Multifinance Perlu Cermati Efek Pelemahan Rupiah terhadap Pendanaan Valuta Asing",
+   "link": "https://keuangan.kontan.co.id/news/multifinance-perlu-cermati-efek-pelemahan-rupiah-terhadap-pendanaan-valuta-asing",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-16T17:30+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -376,51 +421,6 @@
    "categories": [
     "kurs",
     "kredit"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T13:15+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG dan Bursa Asia Berguguran Dipicu Sinyal Hawkish The Fed",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127837/ihsg-dan-bursa-asia-berguguran-dipicu-sinyal-hawkish-the-fed",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T13:00+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Video: Investasi Pilihan MI Saat IHSG Tertekan MSCI - Era Bunga Tinggi",
-   "link": "https://www.cnbcindonesia.com/news/20261116113852-8-785523/video-investasi-pilihan-mi-saat-ihsg-tertekan-msci--era-bunga-tinggi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T12:49+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Reksadana Saham Anjlok Tertekan Sentimen MSCI, Begini Kata INA MI",
-   "link": "https://investasi.kontan.co.id/news/reksadana-saham-anjlok-tertekan-sentimen-msci-begini-kata-ina-mi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
