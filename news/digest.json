@@ -1,12 +1,28 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T09:51+07:00",
+ "generated_for": "2026-11-16T11:08+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 198,
- "kept": 69,
- "dropped_noise": 5,
+ "scanned": 246,
+ "kept": 86,
+ "dropped_noise": 17,
  "items": [
+  {
+   "published": "2026-11-16T10:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Nasib IHSG dan Rupiah Saat Pasar Pantau KTT APEC - Suku Bunga BI",
+   "link": "https://www.cnbcindonesia.com/market/20261116102529-19-785489/video-nasib-ihsg-rupiah-saat-pasar-pantau-ktt-apec--suku-bunga-bi",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-15T16:53+07:00",
    "source": "kontan_investasi",
@@ -58,6 +74,27 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T09:18+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY",
+   "link": "https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "AADI",
+    "INDY",
+    "MDKA"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
    "published": "2026-11-16T05:01+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -86,6 +123,40 @@
     "pasar"
    ],
    "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T10:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "FTSE Russell Coret 14 Saham RI, Ada Emiten Grup Sinar Mas hingga Salim",
+   "link": "https://www.cnbcindonesia.com/market/20261116094952-17-785475/ftse-russell-coret-14-saham-ri-ada-emiten-grup-sinar-mas-hingga-salim",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T09:49+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Penjualan Alfamart Berpotensi Melambat, Simak Rekomendasi Saham AMRT",
+   "link": "https://investasi.kontan.co.id/news/penjualan-alfamart-berpotensi-melambat-simak-rekomendasi-saham-amrt",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "AMRT"
+   ],
    "flags": [
     "petunjuk"
    ],
@@ -125,6 +196,27 @@
    ],
    "also_in": [
     "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-16T08:25+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Daftar Harga Emas Antam Hari Ini (16/11): Naik Rp 5.000 Jadi Rp 2.522.000 Per Gram",
+   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1611-naik-rp-5000-jadi-rp-2522000-per-gram",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
    ]
   },
   {
@@ -343,85 +435,29 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
+  }
+ ],
+ "watchlist_hits": [
   {
-   "published": "2026-11-15T08:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Alasan BEI Tidak Bisa Langsung Menghukum Saham HSC",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127739/alasan-bei-tidak-bisa-langsung-menghukum-saham-hsc",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T06:17+07:00",
+   "published": "2026-11-16T09:18+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "FTSE Russell Depak 14 Saham Indonesia, Status Perlakuan Khusus Dipertahankan",
-   "link": "https://investasi.kontan.co.id/news/ftse-russell-depak-14-saham-indonesia-status-perlakuan-khusus-dipertahankan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T09:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "10 Saham Masuk Cum Date Dividen Pekan Ini, Simak Jadwalnya!",
-   "link": "https://www.cnbcindonesia.com/market/20261116090353-17-785449/10-saham-masuk-cum-date-dividen-pekan-ini-simak-jadwalnya",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T08:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Menguat 5% Sepekan: Investor Asing Borong Saham BBCA & BBRI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127779/ihsg-menguat-5-sepekan-investor-asing-borong-saham-bbca-bbri",
-   "score": 5,
+   "title": "IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY",
+   "link": "https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy",
+   "score": 7,
    "categories": [
     "pasar",
     "emiten"
    ],
    "tickers": [
-    "BBCA",
-    "BBRI"
+    "AADI",
+    "INDY",
+    "MDKA"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T07:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "8 Calon Emiten Antre IPO, 2 Diantaranya Beraset Jumbo",
-   "link": "https://www.cnbcindonesia.com/market/20261116060324-17-785413/8-calon-emiten-antre-ipo-2-diantaranya-beraset-jumbo",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
+   "flags": [
+    "watchlist"
    ],
-   "tickers": [],
-   "flags": [],
    "also_in": []
   }
- ],
- "watchlist_hits": []
+ ]
 }

@@ -1,16 +1,24 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-16T09:51+07:00 WIB | jendela 36 jam | dipindai 198, lolos 69, dibuang sebagai noise 5.
+Berita terbaru: 2026-11-16T11:08+07:00 WIB | jendela 36 jam | dipindai 246, lolos 86, dibuang sebagai noise 17.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
+## Menyentuh watchlist
+- **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
+
 ## Teratas
+- **9** T3 11-16 10:45 cnbc_indonesia_market: Video: Nasib IHSG dan Rupiah Saat Pasar Pantau KTT APEC - Suku Bunga BI (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261116102529-19-785489/video-nasib-ihsg-rupiah-saat-pasar-pantau-ktt-apec--suku-bunga-bi>
 - **9** T3 11-15 16:53 kontan_investasi: Rupiah Melemah dan Efek MSCI Membayangi, Bagaimana Prospek Saham Poultry? (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-dan-efek-msci-membayangi-bagaimana-prospek-saham-poultry>
 - **8** T3 11-16 09:35 cnbc_indonesia_market: Kena Denda OJK Rp 2,7 M, Ada Jejak Haji Isam di Emiten ASLI [ASLI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261116091335-17-785453/kena-denda-ojk-rp-27-m-ada-jejak-haji-isam-di-emiten-asli>
 - **8** T3 11-15 16:00 bloomberg_technoz: Collins The Fed: Suku Bunga Naik Bertahap, Akan Dinginkan Inflasi (kebijakan/global/makro) <https://www.bloombergtechnoz.com/detail-news/127755/collins-the-fed-suku-bunga-naik-bertahap-akan-dinginkan-inflasi>
+- **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **7** T3 11-16 05:01 kontan_investasi: Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi>
 - **7** T3 11-15 12:01 kontan_investasi: Ada RDG BI, Begini Potensi Keputusan dan Efeknya ke IHSG Serta Saham Pilihan (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ada-rdg-bi-begini-potensi-keputusan-dan-efeknya-ke-ihsg-serta-saham-pilihan>
+- **6** T3 11-16 10:00 cnbc_indonesia_market: FTSE Russell Coret 14 Saham RI, Ada Emiten Grup Sinar Mas hingga Salim (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116094952-17-785475/ftse-russell-coret-14-saham-ri-ada-emiten-grup-sinar-mas-hingga-salim>
+- **6** T3 11-16 09:49 kontan_investasi: Penjualan Alfamart Berpotensi Melambat, Simak Rekomendasi Saham AMRT [AMRT] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/penjualan-alfamart-berpotensi-melambat-simak-rekomendasi-saham-amrt>
 - **6** T3 11-16 09:46 cnbc_indonesia_market: Pasca Pengumuman FTSE Russell, 5 Saham RI Ini Bisa Dilirik (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116082251-17-785427/pasca-pengumuman-ftse-russell-5-saham-ri-ini-bisa-dilirik>
 - **6** T3 11-16 08:50 bloomberg_technoz: Harga Emas Antam Naik Rp 5.000/Gram [ANTM] (komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/127783/harga-emas-antam-naik-rp-5-000-gram>
+- **6** T3 11-16 08:25 kontan_investasi: Daftar Harga Emas Antam Hari Ini (16/11): Naik Rp 5.000 Jadi Rp 2.522.000 Per Gram [ANTM] (komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1611-naik-rp-5000-jadi-rp-2522000-per-gram>
 - **6** T3 11-16 07:00 bloomberg_technoz: Kinerja IHSG Dibayangi Sentimen Global & Pengumuman BI Rate (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127774/kinerja-ihsg-dibayangi-sentimen-global-pengumuman-bi-rate>
 - **6** T3 11-16 06:47 kontan_investasi: Cermati Sektoral dan Saham yang Terdampak Pelemahan Rupiah (pasar/kurs) <https://investasi.kontan.co.id/news/cermati-sektoral-dan-saham-yang-terdampak-pelemahan-rupiah>
 - **6** T3 11-16 06:42 bloomberg_technoz: Kalender Ekonomi: Sinyal The Fed, Perlambatan China & BI Rate (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127768/kalender-ekonomi-sinyal-the-fed-perlambatan-china-bi-rate>
@@ -24,8 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-15 16:23 kontan_investasi: Pelemahan Rupiah Meningkatkan Risiko Arus Dana Asing Keluar dari Pasar Saham (pasar/kurs) <https://investasi.kontan.co.id/news/pelemahan-rupiah-meningkatkan-risiko-arus-dana-asing-keluar-dari-pasar-saham>
 - **6** T3 11-15 14:25 kontan_investasi: Kerek Harga di Tengah Tekanan Biaya, Cek Rekomendasi Saham ICBP [ICBP] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/kerek-harga-di-tengah-tekanan-biaya-cek-rekomendasi-saham-icbp>
 - **6** T3 11-15 08:31 kontan_investasi: Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram [ANTM] (komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram>
-- **6** T3 11-15 08:00 bloomberg_technoz: Alasan BEI Tidak Bisa Langsung Menghukum Saham HSC (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127739/alasan-bei-tidak-bisa-langsung-menghukum-saham-hsc>
-- **6** T3 11-15 06:17 kontan_investasi: FTSE Russell Depak 14 Saham Indonesia, Status Perlakuan Khusus Dipertahankan (kebijakan/pasar) <https://investasi.kontan.co.id/news/ftse-russell-depak-14-saham-indonesia-status-perlakuan-khusus-dipertahankan>
-- **5** T3 11-16 09:15 cnbc_indonesia_market: 10 Saham Masuk Cum Date Dividen Pekan Ini, Simak Jadwalnya! (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261116090353-17-785449/10-saham-masuk-cum-date-dividen-pekan-ini-simak-jadwalnya>
-- **5** T3 11-16 08:20 bloomberg_technoz: IHSG Menguat 5% Sepekan: Investor Asing Borong Saham BBCA & BBRI [BBCA,BBRI] (pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/127779/ihsg-menguat-5-sepekan-investor-asing-borong-saham-bbca-bbri>
-- **5** T3 11-16 07:05 cnbc_indonesia_market: 8 Calon Emiten Antre IPO, 2 Diantaranya Beraset Jumbo (pasar/korporasi) <https://www.cnbcindonesia.com/market/20261116060324-17-785413/8-calon-emiten-antre-ipo-2-diantaranya-beraset-jumbo>
