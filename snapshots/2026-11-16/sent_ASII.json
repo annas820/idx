@@ -1,0 +1,23 @@
+{
+  "schema": "idx.sentiment.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-16T11:41:54Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "ASII",
+    "matched_name": "ASTRA INTERNATIONAL",
+    "label": "no_coverage",
+    "score": 0.0,
+    "items": 0,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 0,
+    "oldest": null,
+    "newest": null,
+    "top_positive_terms": [],
+    "top_negative_terms": [],
+    "headlines": [],
+    "method": "lexicon: (positive - negative) / (positive + negative) per headline over title + summary, Indonesian and English finance terms; mean over matched items"
+  }
+}

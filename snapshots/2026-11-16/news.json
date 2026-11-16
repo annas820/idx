@@ -1,0 +1,296 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-16T11:41:21Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 275,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Transaksi Digital Perbankan Melesat pada 2026, Jadi Mesin Penghimpun Dana Murah",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-digital-perbankan-melesat-pada-2026-jadi-mesin-penghimpun-dana-murah",
+        "source": "kontan/keuangan",
+        "published": "2026-11-16T18:38:41+07:00",
+        "summary": "Transaksi digital perbankan melesat pada 2026, menjadi mesin penghimpun dana murah bagi industri perbankan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melesat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Harga Gandum Dunia Naik, UMKM Bakery Paling Rentan Tertekan Biaya Produksi",
+        "url": "https://industri.kontan.co.id/news/harga-gandum-dunia-naik-umkm-bakery-paling-rentan-tertekan-biaya-produksi",
+        "source": "kontan/industri",
+        "published": "2026-11-16T18:37:31+07:00",
+        "summary": "Ketergantungan impor gandum dan pelemahan rupiah meningkatkan biaya produksi, sementara UMKM memiliki ruang terbatas untuk menaikkan harga jual.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -0.3333333333333333,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": [
+          "tertekan",
+          "jual"
+        ]
+      },
+      {
+        "title": "Saham Sektor Konsumsi hingga Transportasi Berpeluang Cuan dari Momen Nataru 2026/2027",
+        "url": "https://investasi.kontan.co.id/news/saham-sektor-konsumsi-hingga-transportasi-berpeluang-cuan-dari-momen-nataru-20262027",
+        "source": "kontan/investasi",
+        "published": "2026-11-16T18:35:59+07:00",
+        "summary": "Momentum nataru membuka peluang pertumbuhan bagi sejumlah emiten seiring meningkatnya aktivitas belanja dan mobilitas masyarakat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "cuan",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Menilik Prospek Kinerja Saham Lapis Kedua Kala Pasar Saham Masih Volatil",
+        "url": "https://investasi.kontan.co.id/news/menilik-prospek-kinerja-saham-lapis-kedua-kala-pasar-saham-masih-volatil",
+        "source": "kontan/investasi",
+        "published": "2026-11-16T18:31:51+07:00",
+        "summary": "Menilik prospek kinerja saham lapis kedua kala pasar saham masih volatil. Saham lapis kedua yang menarik berfundamental kuat, valuasi murah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pergerakan Saham dan Yield Obligasi Pengaruhi Investasi Unitlink, Ini Strategi AIA",
+        "url": "https://keuangan.kontan.co.id/news/pergerakan-saham-dan-yield-obligasi-pengaruhi-investasi-unitlink-ini-strategi-aia",
+        "source": "kontan/keuangan",
+        "published": "2026-11-16T18:31:40+07:00",
+        "summary": "AIA secara berkala melakukan peninjauan eksposur investasi bersama seluruh manajer investasi, dengan mempertimbangkan perkembangan pasar terkini.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Cimory (CMRY) Siapkan Kenaikan Harga Produk, Simak Prospek Sahamnya hingga 2027",
+        "url": "https://investasi.kontan.co.id/news/cimory-cmry-siapkan-kenaikan-harga-produk-simak-prospek-sahamnya-hingga-2027",
+        "source": "kontan/investasi",
+        "published": "2026-11-16T18:27:47+07:00",
+        "summary": "Prospek saham PT Cisarua Mountain Dairy Tbk (CMRY) atau Cimory hingga 2027 masih menarik untuk dicermati.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Sebut Faktor Ini Penyebab Perbedaan Suku Bunga Kredit di Industri Multifinance",
+        "url": "https://keuangan.kontan.co.id/news/ojk-sebut-faktor-ini-penyebab-perbedaan-suku-bunga-kredit-di-industri-multifinance",
+        "source": "kontan/keuangan",
+        "published": "2026-11-16T18:22:47+07:00",
+        "summary": "OJK menyebut faktor ini yang menyebabkan perbedaan suku bunga kredit di industri multifinance, khususnya kredit kendaraan listrik & konvensional.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Tata Kelola Pupuk Dirombak, Alokasi Subsidi Naik Dua Kali Lipat",
+        "url": "https://industri.kontan.co.id/news/tata-kelola-pupuk-dirombak-alokasi-subsidi-naik-dua-kali-lipat",
+        "source": "kontan/industri",
+        "published": "2026-11-16T18:18:50+07:00",
+        "summary": "Alokasi pupuk bersubsidi naik menjadi 9,55 juta ton pada 2026, dibarengi pemangkasan HET 20% dan penyederhanaan distribusi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Intip Prospek Saham Erajaya Swasembada (ERAA) Usai Masuk Indeks LQ45",
+        "url": "https://investasi.kontan.co.id/news/intip-prospek-saham-erajaya-swasembada-eraa-usai-masuk-indeks-lq45",
+        "source": "kontan/investasi",
+        "published": "2026-11-16T18:17:19+07:00",
+        "summary": "Erajaya Swasembada Tbk (ERAA) resmi masuk sebagai salah satu penghuni indeks LQ45, cek prospek sahamnya.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Awal Pekan RDG BI, Saham Big Banks Ditutup di Zona Hijau, Senin (16/11)",
+        "url": "https://keuangan.kontan.co.id/news/awal-pekan-rdg-bi-saham-big-banks-ditutup-di-zona-hijau-senin-1611",
+        "source": "kontan/keuangan",
+        "published": "2026-11-16T18:10:03+07:00",
+        "summary": "Jelang Rapat Dewan Gubernur (RDG) Bank Indonesia (BI), saham bank-bank berkapitalisasi pasar jumbo alias big banks terpantau kompak menguat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Asing Net Sell Saham BUMI Rp 54,88 Miliar, Target Akuisisi Tambang Bauksit Mundur",
+        "url": "https://investasi.kontan.co.id/news/asing-net-sell-saham-bumi-rp-407-miliar-target-akuisisi-tambang-bauksit-mundur",
+        "source": "kontan/investasi",
+        "published": "2026-11-16T18:09:06+07:00",
+        "summary": "Saham BUMI turun 3,68% disertai net sell asing Rp 54,88 miliar, sementara penyelesaian akuisisi tambang bauksit Laman Mining diundur.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -0.3333333333333333,
+        "positive_terms": [
+          "akuisisi"
+        ],
+        "negative_terms": [
+          "turun",
+          "sell"
+        ]
+      },
+      {
+        "title": "Inilah Langkah Kimia Farma Antisipasi Fluktuasi Rupiah yang Makin Bergejolak",
+        "url": "https://industri.kontan.co.id/news/inilah-langkah-kimia-farma-antisipasi-fluktuasi-rupiah-yang-makin-bergejolak",
+        "source": "kontan/industri",
+        "published": "2026-11-16T18:02:18+07:00",
+        "summary": "Kimia Farma berencana mengoptimalkan bahan baku farmasi dari dalam negeri lewat anak usaha Kimia Farma Sungwun Pharmacopia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "POWR Tebar Dividen Rp502,93 Miliar, Simak Prospek Kinerja dan Sahamnya pada 2027",
+        "url": "https://investasi.kontan.co.id/news/powr-tebar-dividen-rp50293-miliar-simak-prospek-kinerja-dan-sahamnya-pada-2027",
+        "source": "kontan/investasi",
+        "published": "2026-11-16T18:00:54+07:00",
+        "summary": "PT Cikarang Listrindo Tbk (POWR) membagikan dividen interim Rp502,93 miliar atau Rp31,27592 per saham. Cek rekomendasi sahamnya.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "dividen"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Multifinance Perlu Cermati Efek Pelemahan Rupiah terhadap Pendanaan Valuta Asing",
+        "url": "https://keuangan.kontan.co.id/news/multifinance-perlu-cermati-efek-pelemahan-rupiah-terhadap-pendanaan-valuta-asing",
+        "source": "kontan/keuangan",
+        "published": "2026-11-16T18:00:33+07:00",
+        "summary": "Pelemahan rupiah yang terjadi belakangan ini berpotensi memberikan dampak terhadap pendanaan multifinance yang berbasis valuta asing.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bos Bank Ungkap 5 Modus Penipuan Terbesar: Jadi Petugas Pajak-Kurir",
+        "url": "https://www.cnbcindonesia.com/market/20261116162741-17-785677/bos-bank-ungkap-5-modus-penipuan-terbesar-jadi-petugas-pajak-kurir",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-16T18:00:00+07:00",
+        "summary": "PT Bank Negara Indonesia (Persero) Tbk membeberkan lima besar modus penipuan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "penipuan"
+        ]
+      },
+      {
+        "title": "Nilai Ganti Rugi Korban Fintech Dana Syariah (DSI) Capai Rp1,07 T",
+        "url": "https://www.cnbcindonesia.com/market/20261116164343-17-785685/nilai-ganti-rugi-korban-fintech-dana-syariah--dsi--capai-rp107-t",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-16T17:55:24+07:00",
+        "summary": "LPSK mencatat ganti rugi Rp1,07 triliun untuk 5.102 korban fintech DSI.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "rugi"
+        ]
+      },
+      {
+        "title": "Ini Kata Asosiasi DPLK Soal Jumlah Dana Pensiun Turun Jadi 179 per Agustus 2026",
+        "url": "https://keuangan.kontan.co.id/news/ini-kata-asosiasi-dplk-soal-jumlah-dana-pensiun-turun-jadi-179-per-agustus-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-16T17:55:13+07:00",
+        "summary": "Berdasarkan data OJK jumlah penyelenggara dana pensiun menurun drastis dari 213 penyelenggara pada 2021 jadi179 per Agustus 2026. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Rugi Bersih BUMA Internasional (DOID) Menyusut 47%, Simak Prospek &Rekomendasi Analis",
+        "url": "https://investasi.kontan.co.id/news/rugi-bersih-buma-internasional-doid-menyusut-47-simak-prospek-rekomendasi-analis",
+        "source": "kontan/investasi",
+        "published": "2026-11-16T17:54:04+07:00",
+        "summary": "Rugi bersih PT BUMA Internasional Grup Tbk (DOID) menyusut 47%, simak prospek dan rekomendasi dari analis.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "rugi"
+        ]
+      },
+      {
+        "title": "Beban Bunga Utang dan Sinyal Hawkish The Fed Tekan Rupiah, Simak Proyeksinya",
+        "url": "https://investasi.kontan.co.id/news/beban-bunga-utang-dan-sinyal-hawkish-the-fed-tekan-rupiah-simak-proyeksinya",
+        "source": "kontan/investasi",
+        "published": "2026-11-16T17:47:41+07:00",
+        "summary": "Beban bunga utang & sinyal Hawkish The Fed menekan rupiah, simak proyeksinya. Investor juga perlu memperhatikan kemampuan pemerintah jaga defisit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "defisit"
+        ]
+      },
+      {
+        "title": "OJK Cermati Sejumlah Bank Revisi Rencana Bisnis, Ini Penyebabnya",
+        "url": "https://keuangan.kontan.co.id/news/ojk-cermati-sejumlah-bank-revisi-rencana-bisnis-ini-penyebabnya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-16T17:45:25+07:00",
+        "summary": "OJK mencermati sejumlah bank menyesuaikan RBB akibat perubahan ekonomi, biaya dana, dan permintaan kredit menjelang 2027.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
