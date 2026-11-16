@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-16T06:42+07:00",
+ "generated_for": "2026-11-16T08:15+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 173,
- "kept": 44,
- "dropped_noise": 6,
+ "scanned": 188,
+ "kept": 61,
+ "dropped_noise": 5,
  "items": [
   {
    "published": "2026-11-15T16:53+07:00",
@@ -56,6 +56,23 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T05:01+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI",
+   "link": "https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi",
+   "score": 7,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
    "published": "2026-11-15T12:01+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -70,6 +87,36 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Kinerja IHSG Dibayangi Sentimen Global & Pengumuman BI Rate",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127774/kinerja-ihsg-dibayangi-sentimen-global-pengumuman-bi-rate",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T06:47+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Cermati Sektoral dan Saham yang Terdampak Pelemahan Rupiah",
+   "link": "https://investasi.kontan.co.id/news/cermati-sektoral-dan-saham-yang-terdampak-pelemahan-rupiah",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -100,6 +147,42 @@
    ],
    "tickers": [],
    "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T06:20+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Risiko Dana Asing Keluar dari Pasar Saham Membesar Saat Rupiah Melemah",
+   "link": "https://investasi.kontan.co.id/news/risiko-dana-asing-keluar-dari-pasar-saham-membesar-saat-rupiah-melemah",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T05:29+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Intip Rekomendasi Saham dan Target Harga CPIN, JPFA, MAIN Saat Harga Ayam Menanjak",
+   "link": "https://investasi.kontan.co.id/news/intip-rekomendasi-saham-dan-target-harga-cpin-jpfa-main-saat-harga-ayam-menanjak",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "CPIN",
+    "JPFA",
+    "MAIN"
+   ],
+   "flags": [
+    "petunjuk"
+   ],
    "also_in": []
   },
   {
@@ -233,6 +316,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T07:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "8 Calon Emiten Antre IPO, 2 Diantaranya Beraset Jumbo",
+   "link": "https://www.cnbcindonesia.com/market/20261116060324-17-785413/8-calon-emiten-antre-ipo-2-diantaranya-beraset-jumbo",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-16T06:40+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -308,105 +406,6 @@
    "tickers": [
     "GGRM"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T07:13+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Pertamina Geothermal Energy (PGEO) Targetkan Free Float 12,5% pada Maret 2027",
-   "link": "https://investasi.kontan.co.id/news/pertamina-geothermal-energy-pgeo-targetkan-free-float-125-pada-maret-2027",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "PGEO"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T15:00+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Sawit Sumbermas Sarana (SSMS) Andalkan Produktivitas dan Hilirisasi Demi Jaga Kinerja",
-   "link": "https://industri.kontan.co.id/news/sawit-sumbermas-sarana-ssms-andalkan-produktivitas-dan-hilirisasi-demi-jaga-kinerja",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "SSMS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T10:55+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "HEAL Fokus Optimalisasi Aset dan Kembangkan Layanan Eksekutif di Kuartal IV-2026",
-   "link": "https://industri.kontan.co.id/news/heal-fokus-optimalisasi-aset-dan-kembangkan-layanan-eksekutif-di-kuartal-iv-2026",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "HEAL"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-15T08:31+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Daftar Harga Emas Antam Hari Ini (15/11): Tak Bergerak di Rp 2.517.000 Per Gram",
-   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1511-tak-bergerak-di-rp-2517000-per-gram",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-14T20:31+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Harga Emas Dunia dan Antam Pekan Depan Dibayangi Penguatan Dolar AS",
-   "link": "https://investasi.kontan.co.id/news/harga-emas-dunia-dan-antam-pekan-depan-dibayangi-penguatan-dolar-as",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T06:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham Asia Dibayangi Tekanan Isu AI dan Rilis Data Ekonomi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127772/saham-asia-dibayangi-tekanan-isu-ai-dan-rilis-data-ekonomi",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }
