@@ -3,10 +3,65 @@
  "generated_for": "2026-11-16T23:25+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 521,
- "kept": 173,
+ "scanned": 554,
+ "kept": 194,
  "dropped_noise": 30,
  "items": [
+  {
+   "published": "2026-11-16T21:07+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Yield US Treasury Tembus 5%, Ajaib Sekuritas Soroti Peluang di Tiga Saham AS",
+   "link": "https://investasi.kontan.co.id/news/yield-us-treasury-tembus-5-ajaib-sekuritas-soroti-peluang-di-tiga-saham-as",
+   "score": 9,
+   "categories": [
+    "global",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T19:55+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Harga Minyak Dunia Berangsur Turun, Simak Prospek dan Rekomendasi Saham TPIA",
+   "link": "https://investasi.kontan.co.id/news/harga-minyak-dunia-berangsur-turun-simak-prospek-dan-rekomendasi-saham-tpia",
+   "score": 9,
+   "categories": [
+    "global",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "TPIA"
+   ],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T18:09+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Asing Net Sell Saham BUMI Rp 54,88 Miliar, Target Akuisisi Tambang Bauksit Mundur",
+   "link": "https://investasi.kontan.co.id/news/asing-net-sell-saham-bumi-rp-407-miliar-target-akuisisi-tambang-bauksit-mundur",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "BUMI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-16T13:30+07:00",
    "source": "bloomberg_technoz",
@@ -168,6 +223,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T21:46+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Saham VISI Melemah Usai Akuisisi Hasna Medika, Direktur Tambah Kepemilikan",
+   "link": "https://investasi.kontan.co.id/news/saham-visi-melemah-usai-akuisisi-hasna-medika-direktur-tambah-kepemilikan",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "VISI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-16T14:02+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -261,6 +334,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-16T22:20+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Asing Masuk Rp 5,63 Triliun, Yield SUN Turun di Tengah Tekanan Rupiah",
+   "link": "https://investasi.kontan.co.id/news/asing-masuk-rp-563-triliun-yield-sun-turun-di-tengah-tekanan-rupiah",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T22:00+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Nasdaq Anjlok 1% di Awal Perdagangan, Saham Teknologi AI Tertekan",
+   "link": "https://investasi.kontan.co.id/news/nasdaq-anjlok-1-di-awal-perdagangan-saham-teknologi-ai-tertekan",
+   "score": 6,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-16T20:38+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -330,100 +433,6 @@
    "categories": [
     "kebijakan",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:55+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Rupiah Melemah ke Level Rp 18.268, Pasar Waspadai Sinyal Hawkish The Fed",
-   "link": "https://investasi.kontan.co.id/news/rupiah-melemah-ke-level-rp-18268-pasar-waspadai-sinyal-hawkish-the-fed",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:54+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Jelang Rebalancing FTSE, 14 Saham Indonesia Berpotensi Tertekan",
-   "link": "https://investasi.kontan.co.id/news/jelang-rebalancing-ftse-14-saham-indonesia-berpotensi-tertekan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:51+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Asei Sebut SBN Masih Menarik bagi Investasi Asuransi di Saat Volatilitas Pasar Saham",
-   "link": "https://keuangan.kontan.co.id/news/asei-sebut-sbn-masih-menarik-bagi-investasi-asuransi-di-saat-volatilitas-pasar-saham",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:49+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL",
-   "link": "https://www.cnbcindonesia.com/market/20261116162727-19-785679/video-dongkrak-bisnis-nikel-vale-indonesia-kebut-hilirisasi-hpal",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:19+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Kurs Rupiah Tertekan Jelang RDG BI, Suku Bunga Acuan Diproyeksi Tetap 5,75%",
-   "link": "https://investasi.kontan.co.id/news/kurs-rupiah-tertekan-jelang-rdg-bi-suku-bunga-acuan-diproyeksi-tetap-575",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: MSCI dan FTSE Russel Jadi Perhatian, Bursa Saham RI Harus Apa?",
-   "link": "https://www.cnbcindonesia.com/market/20261116152425-19-785635/video-msci-ftse-russel-jadi-perhatian-bursa-saham-ri-harus-apa",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
@@ -526,6 +535,24 @@
    ],
    "tickers": [
     "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-16T19:29+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Target Kinerja Astra (ASII) Dinilai Cukup Menantang, Begini Kata Analis",
+   "link": "https://investasi.kontan.co.id/news/target-kinerja-astra-asii-dinilai-cukup-menantang-begini-kata-analis",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
    ],
    "flags": [
     "watchlist"
