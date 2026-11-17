@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T04:45+07:00",
+ "generated_for": "2026-11-18T05:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 579,
- "kept": 217,
- "dropped_noise": 13,
+ "scanned": 553,
+ "kept": 210,
+ "dropped_noise": 12,
  "items": [
   {
    "published": "2026-11-17T07:00+07:00",
@@ -340,6 +340,27 @@
    "also_in": []
   },
   {
+   "published": "2026-11-18T05:00+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Rekomendasi Saham Rabu (18/11): ADRO, HRUM, dan ENRG, Simak Analisisnya",
+   "link": "https://investasi.kontan.co.id/news/rekomendasi-saham-rabu-1811-adro-hrum-dan-enrg-simak-analisisnya",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ADRO",
+    "ENRG",
+    "HRUM"
+   ],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
    "published": "2026-11-17T19:26+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -431,21 +452,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-17T15:28+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "DEN Ungkap Tantangan Regulasi RI dalam Rencana Cadangan Minyak Bersama ASEAN",
-   "link": "https://industri.kontan.co.id/news/den-ungkap-tantangan-regulasi-ri-dalam-rencana-cadangan-minyak-bersama-asean",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -490,25 +496,6 @@
    "also_in": [
     "kontan_investasi"
    ]
-  },
-  {
-   "published": "2026-11-16T16:49+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL",
-   "link": "https://www.cnbcindonesia.com/market/20261116162727-19-785679/video-dongkrak-bisnis-nikel-vale-indonesia-kebut-hilirisasi-hpal",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
   },
   {
    "published": "2026-11-17T09:47+07:00",

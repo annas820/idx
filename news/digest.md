@@ -1,12 +1,11 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-18T04:45+07:00 WIB | jendela 36 jam | dipindai 579, lolos 217, dibuang sebagai noise 13.
+Berita terbaru: 2026-11-18T05:45+07:00 WIB | jendela 36 jam | dipindai 553, lolos 210, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **8** T3 11-17 06:49 kontan_investasi: BRI Danareksa Beri Rekomendasi Saham Beli Astra International (ASII), Ini Penyebabnya [ASII,BBRI] (pasar/emiten; petunjuk, watchlist) <https://investasi.kontan.co.id/news/bri-danareksa-beri-rekomendasi-saham-beli-astra-international-asii-ini-penyebabnya>
 - **6** T3 11-17 13:16 kontan_industri: Intip Strategi dan Target Kinerja Astra International (ASII) Hingga Tahun 2030 [ASII] (emiten; watchlist, terkonfirmasi, juga di kontan_investasi) <https://industri.kontan.co.id/news/intip-strategi-dan-target-kinerja-astra-international-asii-hingga-tahun-2030>
-- **6** T3 11-16 16:49 cnbc_indonesia_market: Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116162727-19-785679/video-dongkrak-bisnis-nikel-vale-indonesia-kebut-hilirisasi-hpal>
 - **4** T3 11-17 09:47 kontan_industri: Astra (ASII) Raih Penghargaan ESG Asia, Ditopang Pemberdayaan Desa & Efisiensi Energi [ASII] (emiten; watchlist) <https://industri.kontan.co.id/news/astra-asii-raih-penghargaan-esg-asia-ditopang-pemberdayaan-desa-efisiensi-energi>
 - **4** T3 11-16 19:29 kontan_investasi: Target Kinerja Astra (ASII) Dinilai Cukup Menantang, Begini Kata Analis [ASII] (emiten; watchlist) <https://investasi.kontan.co.id/news/target-kinerja-astra-asii-dinilai-cukup-menantang-begini-kata-analis>
 
@@ -29,10 +28,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-17 10:49 kontan_keuangan: KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa [BMAS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa>
 - **7** T3 11-17 05:14 kontan_investasi: Harum Energy (HRUM) Hentikan Buyback Saham Lebih Awal, Ini Alasannya [HRUM] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/harum-energy-hrum-hentikan-buyback-saham-lebih-awal-ini-alasannya>
 - **7** T3 11-16 21:46 kontan_investasi: Saham VISI Melemah Usai Akuisisi Hasna Medika, Direktur Tambah Kepemilikan [VISI] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/saham-visi-melemah-usai-akuisisi-hasna-medika-direktur-tambah-kepemilikan>
+- **6** T3 11-18 05:00 kontan_investasi: Rekomendasi Saham Rabu (18/11): ADRO, HRUM, dan ENRG, Simak Analisisnya [ADRO,ENRG,HRUM] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/rekomendasi-saham-rabu-1811-adro-hrum-dan-enrg-simak-analisisnya>
 - **6** T3 11-17 19:26 kontan_keuangan: Kenaikan Yield SBN Tekan Nilai Aset, OJK Minta Asuransi Jaga Strategi Investasi (kebijakan/kurs) <https://keuangan.kontan.co.id/news/kenaikan-yield-sbn-tekan-nilai-aset-ojk-minta-asuransi-jaga-strategi-investasi>
 - **6** T3 11-17 19:00 kontan_investasi: IHSG Diprediksi Sideways hingga Rawan Koreksi pada Rabu (18/11), Menanti Hasil RDG BI (kebijakan/pasar) <https://investasi.kontan.co.id/news/ihsg-diprediksi-sideways-hingga-rawan-koreksi-pada-rabu-1811-menanti-hasil-rdg-bi>
 - **6** T3 11-17 18:54 kontan_investasi: Siapkan Private Placement, Intip Prospek Merdeka Gold Resources (EMAS) [EMAS] (korporasi/komoditas/emiten) <https://investasi.kontan.co.id/news/siapkan-private-placement-intip-prospek-merdeka-gold-resources-emas>
 - **6** T3 11-17 18:07 kontan_keuangan: Aliran Dana ke Saham-Saham Perbankan Beragam Jelang RDG BI, Simak Rekomendasinya (kebijakan/pasar) <https://keuangan.kontan.co.id/news/aliran-dana-ke-saham-saham-perbankan-beragam-jelang-rdg-bi-simak-rekomendasinya>
 - **6** T3 11-17 16:30 bloomberg_technoz: Ekonom Proyeksi BI Rate Naik Demi Jaga Daya Tarik Rupiah (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/128021/ekonom-proyeksi-bi-rate-naik-demi-jaga-daya-tarik-rupiah>
 - **6** T3 11-17 16:17 bloomberg_technoz: Rupiah Ditutup Menguat Tipis Jelang Pengumuman BI Rate Besok (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/128009/rupiah-ditutup-menguat-tipis-jelang-pengumuman-bi-rate-besok>
-- **6** T3 11-17 15:28 kontan_industri: DEN Ungkap Tantangan Regulasi RI dalam Rencana Cadangan Minyak Bersama ASEAN (kebijakan/global) <https://industri.kontan.co.id/news/den-ungkap-tantangan-regulasi-ri-dalam-rencana-cadangan-minyak-bersama-asean>
