@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-17T11:56+07:00 WIB | jendela 36 jam | dipindai 605, lolos 235, dibuang sebagai noise 32.
+Berita terbaru: 2026-11-17T12:55+07:00 WIB | jendela 36 jam | dipindai 639, lolos 245, dibuang sebagai noise 32.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -32,6 +32,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-16 15:21 kontan_industri: Moody’s Beri Rating Baa3 Obligasi Freeport Indonesia, Likuiditas Tembus US$ 4 Miliar (kurs/kredit/makro) <https://industri.kontan.co.id/news/moodys-beri-rating-baa3-obligasi-freeport-indonesia-likuiditas-tembus-us-4-miliar>
 - **8** T3 11-16 12:14 kontan_investasi: Rupiah Melemah, Emiten Poultry Tertekan? Simak Rekomendasi CPIN, JPFA, dan MAIN [CPIN,JPFA,MAIN] (pasar/kurs/emiten) <https://investasi.kontan.co.id/news/rupiah-melemah-emiten-poultry-tertekan-simak-rekomendasi-cpin-jpfa-dan-main>
 - **8** T3 11-16 09:35 cnbc_indonesia_market: Kena Denda OJK Rp 2,7 M, Ada Jejak Haji Isam di Emiten ASLI [ASLI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261116091335-17-785453/kena-denda-ojk-rp-27-m-ada-jejak-haji-isam-di-emiten-asli>
+- **7** T3 11-17 12:36 cnbc_indonesia_market: BEI Soroti Sengketa Lahan Anak Usaha Indika (INDY) di Tambang Emas [INDY] (kebijakan/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261117123308-17-785908/bei-soroti-sengketa-lahan-anak-usaha-indika--indy--di-tambang-emas>
 - **7** T3 11-17 10:49 kontan_keuangan: KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa [BMAS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa>
 - **7** T3 11-17 05:14 kontan_investasi: Harum Energy (HRUM) Hentikan Buyback Saham Lebih Awal, Ini Alasannya [HRUM] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/harum-energy-hrum-hentikan-buyback-saham-lebih-awal-ini-alasannya>
 - **7** T3 11-16 21:46 kontan_investasi: Saham VISI Melemah Usai Akuisisi Hasna Medika, Direktur Tambah Kepemilikan [VISI] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/saham-visi-melemah-usai-akuisisi-hasna-medika-direktur-tambah-kepemilikan>
@@ -39,4 +40,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-16 12:10 kontan_investasi: IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI [AADI,ADMR,BRPT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi>
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **7** T3 11-16 05:01 kontan_investasi: Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi>
-- **6** T3 11-17 11:52 bloomberg_technoz: Rupiah Terlemah Sepanjang Masa, IHSG Menanggung Dampaknya (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127970/rupiah-terlemah-sepanjang-masa-ihsg-menanggung-dampaknya>
