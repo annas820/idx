@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-17T06:40+07:00 WIB | jendela 36 jam | dipindai 489, lolos 173, dibuang sebagai noise 26.
+Berita terbaru: 2026-11-17T07:55+07:00 WIB | jendela 36 jam | dipindai 502, lolos 182, dibuang sebagai noise 27.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -13,6 +13,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **4** T3 11-16 14:59 kontan_investasi: Astra International (ASII) Beberkan Target Kinerja hingga Tahun 2030 [ASII] (emiten; watchlist) <https://investasi.kontan.co.id/news/astra-international-asii-beberkan-target-kinerja-hingga-tahun-2030>
 
 ## Teratas
+- **10** T3 11-17 07:00 bloomberg_technoz: Dividen ANTM Berpotensi Tembus Rp312/Saham, Yield Capai 11% [ANTM] (pasar/kurs/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127926/dividen-antm-berpotensi-tembus-rp312-saham-yield-capai-11>
+- **10** T3 11-17 06:45 bloomberg_technoz: Prediksi IHSG Hari Ini Saat Rupiah Rekor Terendah & Fed Hawkish (global/pasar/kurs; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127911/prediksi-ihsg-hari-ini-saat-rupiah-rekor-terendah-fed-hawkish>
 - **9** T3 11-16 21:07 kontan_investasi: Yield US Treasury Tembus 5%, Ajaib Sekuritas Soroti Peluang di Tiga Saham AS (global/pasar/kurs) <https://investasi.kontan.co.id/news/yield-us-treasury-tembus-5-ajaib-sekuritas-soroti-peluang-di-tiga-saham-as>
 - **9** T3 11-16 19:55 kontan_investasi: Harga Minyak Dunia Berangsur Turun, Simak Prospek dan Rekomendasi Saham TPIA [TPIA] (global/pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/harga-minyak-dunia-berangsur-turun-simak-prospek-dan-rekomendasi-saham-tpia>
 - **9** T3 11-16 18:09 kontan_investasi: Asing Net Sell Saham BUMI Rp 54,88 Miliar, Target Akuisisi Tambang Bauksit Mundur [BUMI] (pasar/korporasi/komoditas/emiten) <https://investasi.kontan.co.id/news/asing-net-sell-saham-bumi-rp-407-miliar-target-akuisisi-tambang-bauksit-mundur>
@@ -28,6 +30,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-16 12:10 kontan_investasi: IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI [AADI,ADMR,BRPT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi>
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **7** T3 11-16 05:01 kontan_investasi: Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi>
+- **6** T3 11-17 07:20 bloomberg_technoz: Hammack The Fed: Suku Bunga Perlu Naik Secara Bertahap (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127927/hammack-the-fed-suku-bunga-perlu-naik-secara-bertahap>
 - **6** T3 11-16 22:20 kontan_investasi: Asing Masuk Rp 5,63 Triliun, Yield SUN Turun di Tengah Tekanan Rupiah (pasar/kurs) <https://investasi.kontan.co.id/news/asing-masuk-rp-563-triliun-yield-sun-turun-di-tengah-tekanan-rupiah>
 - **6** T3 11-16 22:00 kontan_investasi: Nasdaq Anjlok 1% di Awal Perdagangan, Saham Teknologi AI Tertekan (global/pasar) <https://investasi.kontan.co.id/news/nasdaq-anjlok-1-di-awal-perdagangan-saham-teknologi-ai-tertekan>
 - **6** T3 11-16 20:38 cnbc_indonesia_market: OJK Ungkap 3 Tersangka Manipulasi Saham, Dugaan Kerugian Rp6,97 M (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261116203423-17-785766/ojk-ungkap-3-tersangka-manipulasi-saham-dugaan-kerugian-rp697-m>
@@ -35,6 +38,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-16 18:10 kontan_keuangan: Awal Pekan RDG BI, Saham Big Banks Ditutup di Zona Hijau, Senin (16/11) (kebijakan/pasar) <https://keuangan.kontan.co.id/news/awal-pekan-rdg-bi-saham-big-banks-ditutup-di-zona-hijau-senin-1611>
 - **6** T3 11-16 18:00 kontan_keuangan: Multifinance Perlu Cermati Efek Pelemahan Rupiah terhadap Pendanaan Valuta Asing (pasar/kurs) <https://keuangan.kontan.co.id/news/multifinance-perlu-cermati-efek-pelemahan-rupiah-terhadap-pendanaan-valuta-asing>
 - **6** T3 11-16 17:30 cnbc_indonesia_market: BEI Gandeng KPEI, Permudah Transaksi Surat Utang (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261116165024-17-785719/bei-gandeng-kpei-permudah-transaksi-surat-utang>
-- **6** T3 11-16 16:55 kontan_investasi: Rupiah Melemah ke Level Rp 18.268, Pasar Waspadai Sinyal Hawkish The Fed (global/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-ke-level-rp-18268-pasar-waspadai-sinyal-hawkish-the-fed>
-- **6** T3 11-16 16:54 kontan_investasi: Jelang Rebalancing FTSE, 14 Saham Indonesia Berpotensi Tertekan (kebijakan/pasar) <https://investasi.kontan.co.id/news/jelang-rebalancing-ftse-14-saham-indonesia-berpotensi-tertekan>
-- **6** T3 11-16 16:51 kontan_keuangan: Asei Sebut SBN Masih Menarik bagi Investasi Asuransi di Saat Volatilitas Pasar Saham (pasar/kurs) <https://keuangan.kontan.co.id/news/asei-sebut-sbn-masih-menarik-bagi-investasi-asuransi-di-saat-volatilitas-pasar-saham>

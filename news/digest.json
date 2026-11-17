@@ -1,12 +1,49 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-17T06:40+07:00",
+ "generated_for": "2026-11-17T07:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 489,
- "kept": 173,
- "dropped_noise": 26,
+ "scanned": 502,
+ "kept": 182,
+ "dropped_noise": 27,
  "items": [
+  {
+   "published": "2026-11-17T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Dividen ANTM Berpotensi Tembus Rp312/Saham, Yield Capai 11%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127926/dividen-antm-berpotensi-tembus-rp312-saham-yield-capai-11",
+   "score": 10,
+   "categories": [
+    "pasar",
+    "kurs",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T06:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Prediksi IHSG Hari Ini Saat Rupiah Rekor Terendah & Fed Hawkish",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127911/prediksi-ihsg-hari-ini-saat-rupiah-rekor-terendah-fed-hawkish",
+   "score": 10,
+   "categories": [
+    "global",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-16T21:07+07:00",
    "source": "kontan_investasi",
@@ -285,6 +322,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-17T07:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Hammack The Fed: Suku Bunga Perlu Naik Secara Bertahap",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127927/hammack-the-fed-suku-bunga-perlu-naik-secara-bertahap",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-16T22:20+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -383,51 +435,6 @@
    "score": 6,
    "categories": [
     "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:55+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Rupiah Melemah ke Level Rp 18.268, Pasar Waspadai Sinyal Hawkish The Fed",
-   "link": "https://investasi.kontan.co.id/news/rupiah-melemah-ke-level-rp-18268-pasar-waspadai-sinyal-hawkish-the-fed",
-   "score": 6,
-   "categories": [
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:54+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Jelang Rebalancing FTSE, 14 Saham Indonesia Berpotensi Tertekan",
-   "link": "https://investasi.kontan.co.id/news/jelang-rebalancing-ftse-14-saham-indonesia-berpotensi-tertekan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T16:51+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Asei Sebut SBN Masih Menarik bagi Investasi Asuransi di Saat Volatilitas Pasar Saham",
-   "link": "https://keuangan.kontan.co.id/news/asei-sebut-sbn-masih-menarik-bagi-investasi-asuransi-di-saat-volatilitas-pasar-saham",
-   "score": 6,
-   "categories": [
-    "pasar",
     "kurs"
    ],
    "tickers": [],
