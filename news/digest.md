@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-17T10:50+07:00 WIB | jendela 36 jam | dipindai 560, lolos 215, dibuang sebagai noise 30.
+Berita terbaru: 2026-11-17T11:56+07:00 WIB | jendela 36 jam | dipindai 605, lolos 235, dibuang sebagai noise 32.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,6 +10,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-16 12:10 kontan_investasi: IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI [AADI,ADMR,BRPT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi>
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **6** T3 11-16 16:49 cnbc_indonesia_market: Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116162727-19-785679/video-dongkrak-bisnis-nikel-vale-indonesia-kebut-hilirisasi-hpal>
+- **4** T3 11-17 09:47 kontan_industri: Astra (ASII) Raih Penghargaan ESG Asia, Ditopang Pemberdayaan Desa & Efisiensi Energi [ASII] (emiten; watchlist) <https://industri.kontan.co.id/news/astra-asii-raih-penghargaan-esg-asia-ditopang-pemberdayaan-desa-efisiensi-energi>
 - **4** T3 11-16 19:29 kontan_investasi: Target Kinerja Astra (ASII) Dinilai Cukup Menantang, Begini Kata Analis [ASII] (emiten; watchlist) <https://investasi.kontan.co.id/news/target-kinerja-astra-asii-dinilai-cukup-menantang-begini-kata-analis>
 - **4** T3 11-16 14:59 kontan_investasi: Astra International (ASII) Beberkan Target Kinerja hingga Tahun 2030 [ASII] (emiten; watchlist) <https://investasi.kontan.co.id/news/astra-international-asii-beberkan-target-kinerja-hingga-tahun-2030>
 
@@ -23,6 +24,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-16 13:30 bloomberg_technoz: Laba Bersih per Saham ASII Bisa Melesat 121% di 2030 [ASII] (pasar/korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/127835/laba-bersih-per-saham-asii-bisa-melesat-121-di-2030>
 - **9** T3 11-16 11:29 cnbc_indonesia_market: Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen [ASII] (pasar/korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen>
 - **9** T3 11-16 10:45 cnbc_indonesia_market: Video: Nasib IHSG dan Rupiah Saat Pasar Pantau KTT APEC - Suku Bunga BI (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261116102529-19-785489/video-nasib-ihsg-rupiah-saat-pasar-pantau-ktt-apec--suku-bunga-bi>
+- **8** T3 11-17 11:20 cnbc_indonesia_market: Rugikan Rp6,97 M, OJK Tahan Tersangka Manipulasi Saham (kebijakan/pasar; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261117093303-19-785838/rugikan-rp697-m-ojk-tahan-tersangka-manipulasi-saham>
+- **8** T3 11-17 11:02 kontan_investasi: Harga Emas Tertekan Dolar AS dan Ekspektasi Kenaikan Suku Bunga The Fed (kebijakan/global/komoditas) <https://investasi.kontan.co.id/news/harga-emas-tertekan-dolar-as-dan-ekspektasi-kenaikan-suku-bunga-the-fed>
+- **8** T3 11-17 08:50 bloomberg_technoz: OJK Tahan 3 Tersangka Manipulasi Saham, 1 Orang Diusut Polisi (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127939/ojk-tahan-3-tersangka-manipulasi-saham-1-orang-diusut-polisi>
 - **8** T3 11-17 06:49 kontan_investasi: BRI Danareksa Beri Rekomendasi Saham Beli Astra International (ASII), Ini Penyebabnya [ASII,BBRI] (pasar/emiten; petunjuk, watchlist) <https://investasi.kontan.co.id/news/bri-danareksa-beri-rekomendasi-saham-beli-astra-international-asii-ini-penyebabnya>
 - **8** T3 11-16 20:00 kontan_keuangan: Saham Big Banks Kompak Menguat Jelang RDG BI, BBNI Pimpin Kenaikan [BBNI] (kebijakan/pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-kompak-menguat-jelang-rdg-bi-bbni-pimpin-kenaikan>
 - **8** T3 11-16 15:21 kontan_industri: Moody’s Beri Rating Baa3 Obligasi Freeport Indonesia, Likuiditas Tembus US$ 4 Miliar (kurs/kredit/makro) <https://industri.kontan.co.id/news/moodys-beri-rating-baa3-obligasi-freeport-indonesia-likuiditas-tembus-us-4-miliar>
@@ -35,7 +39,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-16 12:10 kontan_investasi: IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI [AADI,ADMR,BRPT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi>
 - **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **7** T3 11-16 05:01 kontan_investasi: Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi>
-- **6** T3 11-17 08:54 kontan_investasi: Daftar Harga Emas Antam Hari Ini (17/11): Turun Rp 5.000 Jadi Rp 2.515.000 Per Gram [ANTM] (komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1711-turun-rp-5000-jadi-rp-2515000-per-gram>
-- **6** T3 11-17 08:50 bloomberg_technoz: OJK Tahan 3 Tersangka Manipulasi Saham, 1 Orang Diusut Polisi (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127939/ojk-tahan-3-tersangka-manipulasi-saham-1-orang-diusut-polisi>
-- **6** T3 11-17 08:48 bloomberg_technoz: Selaras dengan Emas Dunia, Harga Emas Antam Hari Ini Turun [ANTM] (komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/127941/selaras-dengan-emas-dunia-harga-emas-antam-hari-ini-turun>
-- **6** T3 11-17 07:50 kontan_investasi: Intip Rekomendasi Saham dan Prospek Erajaya (ERAA) yang Masuk Indeks LQ45 [ERAA] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/intip-rekomendasi-saham-dan-prospek-erajaya-eraa-yang-masuk-indeks-lq45>
+- **6** T3 11-17 11:52 bloomberg_technoz: Rupiah Terlemah Sepanjang Masa, IHSG Menanggung Dampaknya (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/127970/rupiah-terlemah-sepanjang-masa-ihsg-menanggung-dampaknya>

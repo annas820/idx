@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-17T10:50+07:00",
+ "generated_for": "2026-11-17T11:56+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 560,
- "kept": 215,
- "dropped_noise": 30,
+ "scanned": 605,
+ "kept": 235,
+ "dropped_noise": 32,
  "items": [
   {
    "published": "2026-11-17T07:00+07:00",
@@ -173,6 +173,60 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-17T11:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Rugikan Rp6,97 M, OJK Tahan Tersangka Manipulasi Saham",
+   "link": "https://www.cnbcindonesia.com/market/20261117093303-19-785838/rugikan-rp697-m-ojk-tahan-tersangka-manipulasi-saham",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-17T11:02+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Harga Emas Tertekan Dolar AS dan Ekspektasi Kenaikan Suku Bunga The Fed",
+   "link": "https://investasi.kontan.co.id/news/harga-emas-tertekan-dolar-as-dan-ekspektasi-kenaikan-suku-bunga-the-fed",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T08:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Tahan 3 Tersangka Manipulasi Saham, 1 Orang Diusut Polisi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127939/ojk-tahan-3-tersangka-manipulasi-saham-1-orang-diusut-polisi",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-11-17T06:49+07:00",
@@ -398,79 +452,18 @@
    "also_in": []
   },
   {
-   "published": "2026-11-17T08:54+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Daftar Harga Emas Antam Hari Ini (17/11): Turun Rp 5.000 Jadi Rp 2.515.000 Per Gram",
-   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1711-turun-rp-5000-jadi-rp-2515000-per-gram",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-17T08:50+07:00",
+   "published": "2026-11-17T11:52+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "OJK Tahan 3 Tersangka Manipulasi Saham, 1 Orang Diusut Polisi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127939/ojk-tahan-3-tersangka-manipulasi-saham-1-orang-diusut-polisi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T08:48+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Selaras dengan Emas Dunia, Harga Emas Antam Hari Ini Turun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127941/selaras-dengan-emas-dunia-harga-emas-antam-hari-ini-turun",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
-  },
-  {
-   "published": "2026-11-17T07:50+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Intip Rekomendasi Saham dan Prospek Erajaya (ERAA) yang Masuk Indeks LQ45",
-   "link": "https://investasi.kontan.co.id/news/intip-rekomendasi-saham-dan-prospek-erajaya-eraa-yang-masuk-indeks-lq45",
+   "title": "Rupiah Terlemah Sepanjang Masa, IHSG Menanggung Dampaknya",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127970/rupiah-terlemah-sepanjang-masa-ihsg-menanggung-dampaknya",
    "score": 6,
    "categories": [
     "pasar",
-    "emiten"
+    "kurs"
    ],
-   "tickers": [
-    "ERAA"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   }
  ],
@@ -591,6 +584,24 @@
    ],
    "tickers": [
     "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T09:47+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Astra (ASII) Raih Penghargaan ESG Asia, Ditopang Pemberdayaan Desa & Efisiensi Energi",
+   "link": "https://industri.kontan.co.id/news/astra-asii-raih-penghargaan-esg-asia-ditopang-pemberdayaan-desa-efisiensi-energi",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
    ],
    "flags": [
     "watchlist"
