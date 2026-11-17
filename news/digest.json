@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-17T09:05+07:00",
+ "generated_for": "2026-11-17T10:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 527,
- "kept": 206,
- "dropped_noise": 28,
+ "scanned": 560,
+ "kept": 215,
+ "dropped_noise": 30,
  "items": [
   {
    "published": "2026-11-17T07:00+07:00",
@@ -42,6 +42,25 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T09:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Telisik Kas Seret EMAS Menyusul Rencana Private Placement",
+   "link": "https://www.bloombergtechnoz.com/detail-news/127947/bei-telisik-kas-seret-emas-menyusul-rencana-private-placement",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "EMAS"
+   ],
+   "flags": [],
    "also_in": []
   },
   {
@@ -249,6 +268,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-17T10:49+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa",
+   "link": "https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMAS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-17T05:14+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -430,40 +467,6 @@
    ],
    "tickers": [
     "ERAA"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T07:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Hammack The Fed: Suku Bunga Perlu Naik Secara Bertahap",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127927/hammack-the-fed-suku-bunga-perlu-naik-secara-bertahap",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T06:37+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Cek Rekomendasi Saham dan Prospek Cimory (CMRY) yang Siapkan Kenaikan Harga Produk",
-   "link": "https://investasi.kontan.co.id/news/cek-rekomendasi-saham-dan-prospek-cimory-cmry-yang-siapkan-kenaikan-harga-produk",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "CMRY"
    ],
    "flags": [
     "petunjuk"

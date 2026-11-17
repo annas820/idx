@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-17T09:05+07:00 WIB | jendela 36 jam | dipindai 527, lolos 206, dibuang sebagai noise 28.
+Berita terbaru: 2026-11-17T10:50+07:00 WIB | jendela 36 jam | dipindai 560, lolos 215, dibuang sebagai noise 30.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -16,6 +16,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 ## Teratas
 - **10** T3 11-17 07:00 bloomberg_technoz: Dividen ANTM Berpotensi Tembus Rp312/Saham, Yield Capai 11% [ANTM] (pasar/kurs/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127926/dividen-antm-berpotensi-tembus-rp312-saham-yield-capai-11>
 - **10** T3 11-17 06:45 bloomberg_technoz: Prediksi IHSG Hari Ini Saat Rupiah Rekor Terendah & Fed Hawkish (global/pasar/kurs; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127911/prediksi-ihsg-hari-ini-saat-rupiah-rekor-terendah-fed-hawkish>
+- **9** T3 11-17 09:50 bloomberg_technoz: BEI Telisik Kas Seret EMAS Menyusul Rencana Private Placement [EMAS] (kebijakan/korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127947/bei-telisik-kas-seret-emas-menyusul-rencana-private-placement>
 - **9** T3 11-16 21:07 kontan_investasi: Yield US Treasury Tembus 5%, Ajaib Sekuritas Soroti Peluang di Tiga Saham AS (global/pasar/kurs) <https://investasi.kontan.co.id/news/yield-us-treasury-tembus-5-ajaib-sekuritas-soroti-peluang-di-tiga-saham-as>
 - **9** T3 11-16 19:55 kontan_investasi: Harga Minyak Dunia Berangsur Turun, Simak Prospek dan Rekomendasi Saham TPIA [TPIA] (global/pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/harga-minyak-dunia-berangsur-turun-simak-prospek-dan-rekomendasi-saham-tpia>
 - **9** T3 11-16 18:09 kontan_investasi: Asing Net Sell Saham BUMI Rp 54,88 Miliar, Target Akuisisi Tambang Bauksit Mundur [BUMI] (pasar/korporasi/komoditas/emiten) <https://investasi.kontan.co.id/news/asing-net-sell-saham-bumi-rp-407-miliar-target-akuisisi-tambang-bauksit-mundur>
@@ -27,6 +28,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-16 15:21 kontan_industri: Moody’s Beri Rating Baa3 Obligasi Freeport Indonesia, Likuiditas Tembus US$ 4 Miliar (kurs/kredit/makro) <https://industri.kontan.co.id/news/moodys-beri-rating-baa3-obligasi-freeport-indonesia-likuiditas-tembus-us-4-miliar>
 - **8** T3 11-16 12:14 kontan_investasi: Rupiah Melemah, Emiten Poultry Tertekan? Simak Rekomendasi CPIN, JPFA, dan MAIN [CPIN,JPFA,MAIN] (pasar/kurs/emiten) <https://investasi.kontan.co.id/news/rupiah-melemah-emiten-poultry-tertekan-simak-rekomendasi-cpin-jpfa-dan-main>
 - **8** T3 11-16 09:35 cnbc_indonesia_market: Kena Denda OJK Rp 2,7 M, Ada Jejak Haji Isam di Emiten ASLI [ASLI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261116091335-17-785453/kena-denda-ojk-rp-27-m-ada-jejak-haji-isam-di-emiten-asli>
+- **7** T3 11-17 10:49 kontan_keuangan: KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa [BMAS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa>
 - **7** T3 11-17 05:14 kontan_investasi: Harum Energy (HRUM) Hentikan Buyback Saham Lebih Awal, Ini Alasannya [HRUM] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/harum-energy-hrum-hentikan-buyback-saham-lebih-awal-ini-alasannya>
 - **7** T3 11-16 21:46 kontan_investasi: Saham VISI Melemah Usai Akuisisi Hasna Medika, Direktur Tambah Kepemilikan [VISI] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/saham-visi-melemah-usai-akuisisi-hasna-medika-direktur-tambah-kepemilikan>
 - **7** T3 11-16 14:02 kontan_investasi: IHSG Dibayangi Sentimen Global dan RDG BI, Simak Rekomendasi Saham Pekan Ini (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ihsg-dibayangi-sentimen-global-dan-rdg-bi-simak-rekomendasi-saham-pekan-ini>
@@ -37,5 +39,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-17 08:50 bloomberg_technoz: OJK Tahan 3 Tersangka Manipulasi Saham, 1 Orang Diusut Polisi (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/127939/ojk-tahan-3-tersangka-manipulasi-saham-1-orang-diusut-polisi>
 - **6** T3 11-17 08:48 bloomberg_technoz: Selaras dengan Emas Dunia, Harga Emas Antam Hari Ini Turun [ANTM] (komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/127941/selaras-dengan-emas-dunia-harga-emas-antam-hari-ini-turun>
 - **6** T3 11-17 07:50 kontan_investasi: Intip Rekomendasi Saham dan Prospek Erajaya (ERAA) yang Masuk Indeks LQ45 [ERAA] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/intip-rekomendasi-saham-dan-prospek-erajaya-eraa-yang-masuk-indeks-lq45>
-- **6** T3 11-17 07:20 bloomberg_technoz: Hammack The Fed: Suku Bunga Perlu Naik Secara Bertahap (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/127927/hammack-the-fed-suku-bunga-perlu-naik-secara-bertahap>
-- **6** T3 11-17 06:37 kontan_investasi: Cek Rekomendasi Saham dan Prospek Cimory (CMRY) yang Siapkan Kenaikan Harga Produk [CMRY] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/cek-rekomendasi-saham-dan-prospek-cimory-cmry-yang-siapkan-kenaikan-harga-produk>
