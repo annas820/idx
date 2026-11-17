@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-17T12:55+07:00",
+ "generated_for": "2026-11-17T14:10+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 639,
- "kept": 245,
+ "scanned": 672,
+ "kept": 257,
  "dropped_noise": 32,
  "items": [
   {
@@ -43,6 +43,28 @@
     "petunjuk"
    ],
    "also_in": []
+  },
+  {
+   "published": "2026-11-17T12:36+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Soroti Sengketa Lahan Anak Usaha Indika (INDY) di Tambang Emas",
+   "link": "https://www.cnbcindonesia.com/market/20261117123308-17-785908/bei-soroti-sengketa-lahan-anak-usaha-indika--indy--di-tambang-emas",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INDY"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   },
   {
    "published": "2026-11-17T09:50+07:00",
@@ -317,24 +339,6 @@
    ],
    "tickers": [
     "ASLI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T12:36+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Soroti Sengketa Lahan Anak Usaha Indika (INDY) di Tambang Emas",
-   "link": "https://www.cnbcindonesia.com/market/20261117123308-17-785908/bei-soroti-sengketa-lahan-anak-usaha-indika--indy--di-tambang-emas",
-   "score": 7,
-   "categories": [
-    "kebijakan",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INDY"
    ],
    "flags": [],
    "also_in": []
