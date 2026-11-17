@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-18T05:45+07:00 WIB | jendela 36 jam | dipindai 553, lolos 210, dibuang sebagai noise 12.
+Berita terbaru: 2026-11-18T06:46+07:00 WIB | jendela 36 jam | dipindai 526, lolos 200, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -17,7 +17,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-17 09:50 bloomberg_technoz: BEI Telisik Kas Seret EMAS Menyusul Rencana Private Placement [EMAS] (kebijakan/korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127947/bei-telisik-kas-seret-emas-menyusul-rencana-private-placement>
 - **9** T3 11-16 21:07 kontan_investasi: Yield US Treasury Tembus 5%, Ajaib Sekuritas Soroti Peluang di Tiga Saham AS (global/pasar/kurs) <https://investasi.kontan.co.id/news/yield-us-treasury-tembus-5-ajaib-sekuritas-soroti-peluang-di-tiga-saham-as>
 - **9** T3 11-16 19:55 kontan_investasi: Harga Minyak Dunia Berangsur Turun, Simak Prospek dan Rekomendasi Saham TPIA [TPIA] (global/pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/harga-minyak-dunia-berangsur-turun-simak-prospek-dan-rekomendasi-saham-tpia>
-- **9** T3 11-16 18:09 kontan_investasi: Asing Net Sell Saham BUMI Rp 54,88 Miliar, Target Akuisisi Tambang Bauksit Mundur [BUMI] (pasar/korporasi/komoditas/emiten) <https://investasi.kontan.co.id/news/asing-net-sell-saham-bumi-rp-407-miliar-target-akuisisi-tambang-bauksit-mundur>
 - **8** T3 11-17 11:20 cnbc_indonesia_market: Rugikan Rp6,97 M, OJK Tahan Tersangka Manipulasi Saham (kebijakan/pasar; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261117093303-19-785838/rugikan-rp697-m-ojk-tahan-tersangka-manipulasi-saham>
 - **8** T3 11-17 11:02 kontan_investasi: Harga Emas Tertekan Dolar AS dan Ekspektasi Kenaikan Suku Bunga The Fed (kebijakan/global/komoditas) <https://investasi.kontan.co.id/news/harga-emas-tertekan-dolar-as-dan-ekspektasi-kenaikan-suku-bunga-the-fed>
 - **8** T3 11-17 08:50 bloomberg_technoz: OJK Tahan 3 Tersangka Manipulasi Saham, 1 Orang Diusut Polisi (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127939/ojk-tahan-3-tersangka-manipulasi-saham-1-orang-diusut-polisi>
@@ -28,6 +27,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-17 10:49 kontan_keuangan: KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa [BMAS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa>
 - **7** T3 11-17 05:14 kontan_investasi: Harum Energy (HRUM) Hentikan Buyback Saham Lebih Awal, Ini Alasannya [HRUM] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/harum-energy-hrum-hentikan-buyback-saham-lebih-awal-ini-alasannya>
 - **7** T3 11-16 21:46 kontan_investasi: Saham VISI Melemah Usai Akuisisi Hasna Medika, Direktur Tambah Kepemilikan [VISI] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/saham-visi-melemah-usai-akuisisi-hasna-medika-direktur-tambah-kepemilikan>
+- **6** T3 11-18 06:00 bloomberg_technoz: Pejabat The Fed Tegaskan Tak Perlu Kenaikan Suku Bunga Agresif (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/128046/pejabat-the-fed-tegaskan-tak-perlu-kenaikan-suku-bunga-agresif>
 - **6** T3 11-18 05:00 kontan_investasi: Rekomendasi Saham Rabu (18/11): ADRO, HRUM, dan ENRG, Simak Analisisnya [ADRO,ENRG,HRUM] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/rekomendasi-saham-rabu-1811-adro-hrum-dan-enrg-simak-analisisnya>
 - **6** T3 11-17 19:26 kontan_keuangan: Kenaikan Yield SBN Tekan Nilai Aset, OJK Minta Asuransi Jaga Strategi Investasi (kebijakan/kurs) <https://keuangan.kontan.co.id/news/kenaikan-yield-sbn-tekan-nilai-aset-ojk-minta-asuransi-jaga-strategi-investasi>
 - **6** T3 11-17 19:00 kontan_investasi: IHSG Diprediksi Sideways hingga Rawan Koreksi pada Rabu (18/11), Menanti Hasil RDG BI (kebijakan/pasar) <https://investasi.kontan.co.id/news/ihsg-diprediksi-sideways-hingga-rawan-koreksi-pada-rabu-1811-menanti-hasil-rdg-bi>

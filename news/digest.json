@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T05:45+07:00",
+ "generated_for": "2026-11-18T06:46+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 553,
- "kept": 210,
+ "scanned": 526,
+ "kept": 200,
  "dropped_noise": 12,
  "items": [
   {
@@ -135,25 +135,6 @@
    "flags": [
     "petunjuk"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T18:09+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Asing Net Sell Saham BUMI Rp 54,88 Miliar, Target Akuisisi Tambang Bauksit Mundur",
-   "link": "https://investasi.kontan.co.id/news/asing-net-sell-saham-bumi-rp-407-miliar-target-akuisisi-tambang-bauksit-mundur",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "BUMI"
-   ],
-   "flags": [],
    "also_in": []
   },
   {
@@ -336,6 +317,21 @@
    "tickers": [
     "VISI"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T06:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pejabat The Fed Tegaskan Tak Perlu Kenaikan Suku Bunga Agresif",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128046/pejabat-the-fed-tegaskan-tak-perlu-kenaikan-suku-bunga-agresif",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
