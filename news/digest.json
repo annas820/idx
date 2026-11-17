@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-17T21:10+07:00",
+ "generated_for": "2026-11-17T22:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 817,
- "kept": 299,
+ "scanned": 802,
+ "kept": 288,
  "dropped_noise": 36,
  "items": [
   {
@@ -342,24 +342,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-16T09:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Kena Denda OJK Rp 2,7 M, Ada Jejak Haji Isam di Emiten ASLI",
-   "link": "https://www.cnbcindonesia.com/market/20261116091335-17-785453/kena-denda-ojk-rp-27-m-ada-jejak-haji-isam-di-emiten-asli",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASLI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-17T17:15+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -465,6 +447,27 @@
     "petunjuk"
    ],
    "also_in": []
+  },
+  {
+   "published": "2026-11-16T12:10+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI",
+   "link": "https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "AADI",
+    "ADMR",
+    "BRPT"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -544,27 +547,6 @@
     "AADI",
     "ADMR",
     "BRPT"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T09:18+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY",
-   "link": "https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "AADI",
-    "INDY",
-    "MDKA"
    ],
    "flags": [
     "watchlist"

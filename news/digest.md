@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-17T21:10+07:00 WIB | jendela 36 jam | dipindai 817, lolos 299, dibuang sebagai noise 36.
+Berita terbaru: 2026-11-17T22:30+07:00 WIB | jendela 36 jam | dipindai 802, lolos 288, dibuang sebagai noise 36.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,7 +8,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-16 11:29 cnbc_indonesia_market: Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen [ASII] (pasar/korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen>
 - **8** T3 11-17 06:49 kontan_investasi: BRI Danareksa Beri Rekomendasi Saham Beli Astra International (ASII), Ini Penyebabnya [ASII,BBRI] (pasar/emiten; petunjuk, watchlist) <https://investasi.kontan.co.id/news/bri-danareksa-beri-rekomendasi-saham-beli-astra-international-asii-ini-penyebabnya>
 - **7** T3 11-16 12:10 kontan_investasi: IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI [AADI,ADMR,BRPT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi>
-- **7** T3 11-16 09:18 kontan_investasi: IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY [AADI,INDY,MDKA] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy>
 - **6** T3 11-17 13:16 kontan_industri: Intip Strategi dan Target Kinerja Astra International (ASII) Hingga Tahun 2030 [ASII] (emiten; watchlist, terkonfirmasi, juga di kontan_investasi) <https://industri.kontan.co.id/news/intip-strategi-dan-target-kinerja-astra-international-asii-hingga-tahun-2030>
 - **6** T3 11-16 16:49 cnbc_indonesia_market: Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/market/20261116162727-19-785679/video-dongkrak-bisnis-nikel-vale-indonesia-kebut-hilirisasi-hpal>
 - **6** T3 11-16 14:59 kontan_investasi: Astra International (ASII) Beberkan Target Kinerja hingga Tahun 2030 [ASII] (emiten; watchlist, terkonfirmasi, juga di kontan_industri) <https://investasi.kontan.co.id/news/astra-international-asii-beberkan-target-kinerja-hingga-tahun-2030>
@@ -34,10 +33,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-16 20:00 kontan_keuangan: Saham Big Banks Kompak Menguat Jelang RDG BI, BBNI Pimpin Kenaikan [BBNI] (kebijakan/pasar/emiten) <https://keuangan.kontan.co.id/news/saham-big-banks-kompak-menguat-jelang-rdg-bi-bbni-pimpin-kenaikan>
 - **8** T3 11-16 15:21 kontan_industri: Moody’s Beri Rating Baa3 Obligasi Freeport Indonesia, Likuiditas Tembus US$ 4 Miliar (kurs/kredit/makro) <https://industri.kontan.co.id/news/moodys-beri-rating-baa3-obligasi-freeport-indonesia-likuiditas-tembus-us-4-miliar>
 - **8** T3 11-16 12:14 kontan_investasi: Rupiah Melemah, Emiten Poultry Tertekan? Simak Rekomendasi CPIN, JPFA, dan MAIN [CPIN,JPFA,MAIN] (pasar/kurs/emiten) <https://investasi.kontan.co.id/news/rupiah-melemah-emiten-poultry-tertekan-simak-rekomendasi-cpin-jpfa-dan-main>
-- **8** T3 11-16 09:35 cnbc_indonesia_market: Kena Denda OJK Rp 2,7 M, Ada Jejak Haji Isam di Emiten ASLI [ASLI] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261116091335-17-785453/kena-denda-ojk-rp-27-m-ada-jejak-haji-isam-di-emiten-asli>
 - **7** T3 11-17 17:15 bloomberg_technoz: IFG Life Jual Saham PPRO di Tengah Aksi Merger dengan Inhealth [PPRO] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/128025/ifg-life-jual-saham-ppro-di-tengah-aksi-merger-dengan-inhealth>
 - **7** T3 11-17 16:05 kontan_investasi: Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun [INET] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun>
 - **7** T3 11-17 10:49 kontan_keuangan: KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa [BMAS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa>
 - **7** T3 11-17 05:14 kontan_investasi: Harum Energy (HRUM) Hentikan Buyback Saham Lebih Awal, Ini Alasannya [HRUM] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/harum-energy-hrum-hentikan-buyback-saham-lebih-awal-ini-alasannya>
 - **7** T3 11-16 21:46 kontan_investasi: Saham VISI Melemah Usai Akuisisi Hasna Medika, Direktur Tambah Kepemilikan [VISI] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/saham-visi-melemah-usai-akuisisi-hasna-medika-direktur-tambah-kepemilikan>
 - **7** T3 11-16 14:02 kontan_investasi: IHSG Dibayangi Sentimen Global dan RDG BI, Simak Rekomendasi Saham Pekan Ini (kebijakan/pasar; petunjuk) <https://investasi.kontan.co.id/news/ihsg-dibayangi-sentimen-global-dan-rdg-bi-simak-rekomendasi-saham-pekan-ini>
+- **7** T3 11-16 12:10 kontan_investasi: IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI [AADI,ADMR,BRPT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi>
