@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-17T16:55+07:00",
+ "generated_for": "2026-11-17T17:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 739,
- "kept": 274,
- "dropped_noise": 33,
+ "scanned": 794,
+ "kept": 291,
+ "dropped_noise": 35,
  "items": [
   {
    "published": "2026-11-17T07:00+07:00",
@@ -42,6 +42,22 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T17:25+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Ditekan Harga Minyak dan The Fed Jelang RDG BI, Ini Proyeksi Rupiah hingga Akhir 2026",
+   "link": "https://investasi.kontan.co.id/news/ditekan-harga-minyak-dan-the-fed-jelang-rdg-bi-ini-proyeksi-rupiah-hingga-akhir-2026",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -344,6 +360,42 @@
    "also_in": []
   },
   {
+   "published": "2026-11-17T17:15+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IFG Life Jual Saham PPRO di Tengah Aksi Merger dengan Inhealth",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128025/ifg-life-jual-saham-ppro-di-tengah-aksi-merger-dengan-inhealth",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "PPRO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T16:05+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun",
+   "link": "https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "INET"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-17T10:49+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -403,65 +455,6 @@
    "tier": 3,
    "title": "IHSG Dibayangi Sentimen Global dan RDG BI, Simak Rekomendasi Saham Pekan Ini",
    "link": "https://investasi.kontan.co.id/news/ihsg-dibayangi-sentimen-global-dan-rdg-bi-simak-rekomendasi-saham-pekan-ini",
-   "score": 7,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T12:10+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI",
-   "link": "https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "AADI",
-    "ADMR",
-    "BRPT"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T09:18+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Melemah ke 5.335,1 di Pagi Ini (16/11), Top Losers LQ45: MDKA, AADI, INDY",
-   "link": "https://investasi.kontan.co.id/news/ihsg-melemah-ke-53351-di-pagi-ini-1611-top-losers-lq45-mdka-aadi-indy",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "AADI",
-    "INDY",
-    "MDKA"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T05:01+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Simak Rekomendasi Saham Pilihan dan Proyeksi IHSG Pekan Ini, Pasar Menanti RDG BI",
-   "link": "https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-dan-proyeksi-ihsg-pekan-ini-pasar-menanti-rdg-bi",
    "score": 7,
    "categories": [
     "kebijakan",
@@ -579,6 +572,27 @@
    "also_in": []
   },
   {
+   "published": "2026-11-17T13:16+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Intip Strategi dan Target Kinerja Astra International (ASII) Hingga Tahun 2030",
+   "link": "https://industri.kontan.co.id/news/intip-strategi-dan-target-kinerja-astra-international-asii-hingga-tahun-2030",
+   "score": 6,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist",
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
+  },
+  {
    "published": "2026-11-16T16:49+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -596,6 +610,27 @@
     "watchlist"
    ],
    "also_in": []
+  },
+  {
+   "published": "2026-11-16T14:59+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Astra International (ASII) Beberkan Target Kinerja hingga Tahun 2030",
+   "link": "https://investasi.kontan.co.id/news/astra-international-asii-beberkan-target-kinerja-hingga-tahun-2030",
+   "score": 6,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "ASII"
+   ],
+   "flags": [
+    "watchlist",
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_industri"
+   ]
   },
   {
    "published": "2026-11-17T09:47+07:00",
@@ -621,24 +656,6 @@
    "tier": 3,
    "title": "Target Kinerja Astra (ASII) Dinilai Cukup Menantang, Begini Kata Analis",
    "link": "https://investasi.kontan.co.id/news/target-kinerja-astra-asii-dinilai-cukup-menantang-begini-kata-analis",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T14:59+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Astra International (ASII) Beberkan Target Kinerja hingga Tahun 2030",
-   "link": "https://investasi.kontan.co.id/news/astra-international-asii-beberkan-target-kinerja-hingga-tahun-2030",
    "score": 4,
    "categories": [
     "emiten"
