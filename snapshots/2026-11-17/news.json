@@ -1,0 +1,289 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-17T11:19:16Z",
+  "cached": false,
+  "stale": false,
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 275,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Mayoritas Sahamnya Memerah Saat RUPS, Ini Rekomendasi AMMN, VIVA, MDIA, dan SMAR",
+        "url": "https://investasi.kontan.co.id/news/mayoritas-sahamnya-memerah-saat-rups-ini-rekomendasi-ammn-viva-mdia-dan-smar",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T18:14:22+07:00",
+        "summary": "AMMN, VIVA, MDIA, dan SMAR menjadwalkan penyelenggaraan RUPS pada hari ini, Selasa (17/11/2026). Cek rekomendasi sahamnya.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Delta Giri Wacana (DGWG) Tebar Dividen Interim Rp 114,7 Miliar, Ini Jadwalnya",
+        "url": "https://investasi.kontan.co.id/news/delta-giri-wacana-dgwg-tebar-dividen-interim-rp-1147-miliar-ini-jadwalnya",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T18:10:43+07:00",
+        "summary": "PT Delta Giri Wacana Tbk (DGWG) berencana membagikan dividen interim untuk periode tahun buku 2026 sebesar Rp 114,7 miliar. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "dividen"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Aliran Dana ke Saham-Saham Perbankan Beragam Jelang RDG BI, Simak Rekomendasinya",
+        "url": "https://keuangan.kontan.co.id/news/aliran-dana-ke-saham-saham-perbankan-beragam-jelang-rdg-bi-simak-rekomendasinya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-17T18:07:45+07:00",
+        "summary": "Pergerakan dana investor pada saham-saham perbankan tercatat bervariasi menjelang pengumuman hasil Rapat Dewan Gubernur (RDG) Bank Indonesia (BI).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kinerja Emiten Media Bakrie Masih Tertekan, Simak Prospeknya",
+        "url": "https://investasi.kontan.co.id/news/kinerja-emiten-media-bakrie-masih-tertekan-simak-prospeknya",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T17:58:09+07:00",
+        "summary": "Kinerja VIVA dan MDIA masih tertekan hingga akhir 2026 akibat pergeseran iklan ke digital. Simak prospek dan risiko sahamnya.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "tertekan"
+        ]
+      },
+      {
+        "title": "Mantan Direktur Utama Pegadaian Kuswiyoto Meninggal Dunia",
+        "url": "https://www.cnbcindonesia.com/market/20261117173626-17-786071/mantan-direktur-utama-pegadaian-kuswiyoto-meninggal-dunia",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-17T17:52:27+07:00",
+        "summary": "Mantan Dirut PT Pegadaian, Kuswiyoto, meninggal dunia pada 17 November 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "GDCPay Bidik UMKM, Dorong Transaksi QRIS Jadi Modal Akses Pembiayaan",
+        "url": "https://keuangan.kontan.co.id/news/gdcpay-bidik-umkm-dorong-transaksi-qris-jadi-modal-akses-pembiayaan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-17T17:51:05+07:00",
+        "summary": "Pemanfaatan pembayaran digital melalui QRIS berpotensi membantu pelaku usaha mikro, kecil, dan menengah (UMKM) membangun rekam jejak transaksi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "DXY Berpeluang Tembus ke Level 106, Rupiah dan Valas Utama Terancam Tertekan",
+        "url": "https://investasi.kontan.co.id/news/dxy-berpeluang-tembus-ke-level-106-rupiah-dan-valas-utama-terancam-tertekan",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T17:42:41+07:00",
+        "summary": "Penguatan indeks dolar AS (DXY) masih berpeluang berlanjut hingga akhir 2026. Berikut proyeksi rupiah dan mata uang utama hingga akhir 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "tertekan"
+        ]
+      },
+      {
+        "title": "OJK Proyeksikan Kinerja Industri LKM Masih Berpeluang Tumbuh Positif pada 2027",
+        "url": "https://keuangan.kontan.co.id/news/ojk-proyeksikan-kinerja-industri-lkm-masih-berpeluang-tumbuh-positif-pada-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-11-17T17:37:49+07:00",
+        "summary": "OJK memproyeksikan kinerja industri Lembaga Keuangan Mikro (LKM) masih berpeluang tumbuh positif pada 2027.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "positif"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Hippindo Proyeksikan Transaksi Ritel Tumbuh hingga 20% Saat Nataru 2026/2027",
+        "url": "https://industri.kontan.co.id/news/hippindo-proyeksikan-transaksi-ritel-tumbuh-hingga-20-saat-nataru-20262027",
+        "source": "kontan/industri",
+        "published": "2026-11-17T17:34:47+07:00",
+        "summary": "Hippindo memperkirakan transaksi ritel berpotensi tumbuh hingga 20% pada periode natal dan tahun baru 2026/2027.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Tak Bisa Bayar Kredit Bank Rp10,23 M, RUNS Lepas Aset Gedung",
+        "url": "https://www.cnbcindonesia.com/market/20261117173126-17-786069/tak-bisa-bayar-kredit-bank-rp1023-m-runs-lepas-aset-gedung",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-17T17:34:05+07:00",
+        "summary": "PT Global Sukses Solusi (RUNS) akan melelang aset tanah dan bangunan untuk melunasi utang. Proyeksi peningkatan kas dan modal kerja signifikan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ditekan Harga Minyak dan The Fed Jelang RDG BI, Ini Proyeksi Rupiah hingga Akhir 2026",
+        "url": "https://investasi.kontan.co.id/news/ditekan-harga-minyak-dan-the-fed-jelang-rdg-bi-ini-proyeksi-rupiah-hingga-akhir-2026",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T17:25:08+07:00",
+        "summary": ". Langkah rupiah menjelang penghujung 2026 masih dibayangi awan mendung dari sentimen eksternal dan RDG BI.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Gejolak Politik dan Arah Kebijakan BI Membayangi, Rupiah Diprediksi Melemah",
+        "url": "https://investasi.kontan.co.id/news/gejolak-politik-dan-arah-kebijakan-bi-membayangi-rupiah-diprediksi-melemah",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T17:24:46+07:00",
+        "summary": "Rupiah ditutup menguat tipis pada perdagangan 17 November 2026, tetapi dibayangi ketidakpastian politik dan keputusan suku bunga BI.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": [
+          "melemah"
+        ]
+      },
+      {
+        "title": "Ada Pabrik Penipuan Global, Satu Bos Pegang Ribuan Scammer",
+        "url": "https://www.cnbcindonesia.com/market/20261117162832-17-786039/ada-pabrik-penipuan-global-satu-bos-pegang-ribuan-scammer",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-17T17:23:33+07:00",
+        "summary": "Terdapat \"scam factory\" dengan satu orang mengendalikan ribuan agen penipuan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "penipuan"
+        ]
+      },
+      {
+        "title": "KB Bank Biayai Akuisisi SPBU Shell oleh SEFAS Group, Ini Skemanya",
+        "url": "https://keuangan.kontan.co.id/news/kb-bank-biayai-akuisisi-spbu-shell-oleh-sefas-group-ini-skemanya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-17T17:20:09+07:00",
+        "summary": "KB Bank membiayai akuisisi dan operasional jaringan SPBU Shell di Indonesia oleh SEFAS Group melalui fasilitas kredit modal kerja.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "akuisisi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Dolar AS Kian Perkasa, Rupiah dan Mata Uang Utama Dibayangi Sentimen Global",
+        "url": "https://investasi.kontan.co.id/news/dolar-as-kian-perkasa-rupiah-dan-mata-uang-utama-dibayangi-sentimen-global",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T17:18:40+07:00",
+        "summary": "Penguatan dolar Amerika Serikat (AS) kembali membayangi pergerakan rupiah dan sejumlah mata uang utama dunia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Intermedia Capital (MDIA) Targetkan Pendapatan Capai Rp 560 Miliar di Akhir 2026",
+        "url": "https://investasi.kontan.co.id/news/intermedia-capital-mdia-targetkan-pendapatan-capai-rp-560-miliar-di-akhir-2026",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T17:18:23+07:00",
+        "summary": "MDIA menargetkan pendapatan Rp 550 miliar&ndash;560 miliar pada 2026 di tengah penurunan belanja iklan dan berupaya mencetak laba positif.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "laba",
+          "positif"
+        ],
+        "negative_terms": [
+          "penurunan"
+        ]
+      },
+      {
+        "title": "Visi Media (VIVA) Targetkan Capex Rp 20 Miliar untuk 2027, Ini Fokus Penggunaanya",
+        "url": "https://investasi.kontan.co.id/news/visi-media-viva-targetkan-capex-rp-20-miliar-untuk-2027-ini-fokus-penggunaanya",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T17:14:44+07:00",
+        "summary": "VIVA menargetkan capex Rp 15 miliar-Rp 20 miliar pada 2027 untuk pemeliharaan infrastruktur penyiaran, studio, serta penguatan monetisasi digital.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bidik Kemandirian Energi, Indonesia Kembangkan Tenaga Surya 100 GW dan Biodiesel B50",
+        "url": "https://industri.kontan.co.id/news/bidik-kemandirian-energi-indonesia-kembangkan-tenaga-surya-100-gw-dan-biodiesel-b50",
+        "source": "kontan/industri",
+        "published": "2026-11-17T17:14:23+07:00",
+        "summary": "KTT ASEAN, Prabowo Subianto memaparkan pengembangan energi terbarukan dan program biodiesel B50 sebagai bagian dari gmemperkuat kemandirian energi",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Rupiah Spot Menguat Tipis pada Selasa (17/11), Pasar Menanti Keputusan BI",
+        "url": "https://investasi.kontan.co.id/news/rupiah-spot-menguat-tipis-pada-selasa-1711-pasar-menanti-keputusan-bi",
+        "source": "kontan/investasi",
+        "published": "2026-11-17T17:05:23+07:00",
+        "summary": "Di pasar spot, rupiah berhasil menguat tipis, sementara pada kurs Jakarta Interbank Spot Dollar Rate (JISDOR) justru melanjutkan pelemahan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Trump Inc Ambruk! Investor Ramai-Ramai Kabur",
+        "url": "https://www.cnbcindonesia.com/research/20261117113118-128-785983/trump-inc-ambruk-investor-ramai-ramai-kabur",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-17T16:55:06+07:00",
+        "summary": "Saham dan kripto yang terkait dengan Donald Trump tengah babak belur.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}

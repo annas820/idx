@@ -1,0 +1,71 @@
+{
+  "schema": "idx.technical.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-11-17T11:19:43Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "INDF",
+    "name": "PT Indofood Sukses Makmur Tbk",
+    "currency": "IDR",
+    "as_of": "2026-11-17T09:00:00+07:00",
+    "period": "1y",
+    "candles_used": 240,
+    "price": 7250.0,
+    "change_pct_1d": 1.7543859649122806,
+    "change_pct_1w": 5.454545454545454,
+    "change_pct_1m": 9.433962264150944,
+    "change_pct_3m": -1.3605442176870748,
+    "high_52w": 7600.0,
+    "low_52w": 5850.0,
+    "moving_averages": {
+      "sma20": 6730.0,
+      "sma50": 6858.0,
+      "sma200": 6792.5,
+      "ema20": 6844.139803099189,
+      "ema50": 6854.725896099056,
+      "ema200": 6807.248520866236
+    },
+    "rsi14": 68.95872147622688,
+    "macd": {
+      "line": 79.24883008352936,
+      "signal": 1.3029572459385452,
+      "histogram": 77.94587283759081
+    },
+    "bollinger": {
+      "upper": 7220.051017752234,
+      "middle": 6730.0,
+      "lower": 6239.948982247766,
+      "percent_b": 1.0305570044371464,
+      "bandwidth_pct": 14.563180319531464
+    },
+    "atr14": 197.5527047206521,
+    "volume": {
+      "last": 5346000,
+      "avg20": 6544100,
+      "ratio": 0.816919056860378
+    },
+    "levels": {
+      "support": [
+        7075.0,
+        6600.0,
+        6200.0
+      ],
+      "resistance": [
+        7600.0
+      ]
+    },
+    "trend": "sideways",
+    "signal": {
+      "label": "neutral",
+      "score": 1,
+      "reasons": [
+        "moving averages disagree: no clear trend",
+        "RSI 69 is neutral",
+        "MACD above its signal line (bullish momentum)",
+        "price above the 200-day average",
+        "close above the upper Bollinger band (stretched to the upside)"
+      ]
+    }
+  }
+}

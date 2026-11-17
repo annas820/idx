@@ -1,0 +1,67 @@
+{
+  "schema": "idx.sentiment.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-17T11:19:45Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "ASII",
+    "matched_name": "ASTRA INTERNATIONAL",
+    "label": "negative",
+    "score": -0.167,
+    "items": 2,
+    "positive": 0,
+    "negative": 1,
+    "neutral": 1,
+    "oldest": "2026-11-17T08:48:05+07:00",
+    "newest": "2026-11-17T13:16:53+07:00",
+    "top_positive_terms": [
+      [
+        "menguat",
+        1
+      ]
+    ],
+    "top_negative_terms": [
+      [
+        "melemah",
+        1
+      ],
+      [
+        "turun",
+        1
+      ]
+    ],
+    "headlines": [
+      {
+        "title": "Usai IHSG Ditutup Melemah 0,4%, Simak 5 Saham Pilihan Hari Ini",
+        "url": "https://www.cnbcindonesia.com/market/20261117081513-17-785800/usai-ihsg-ditutup-melemah-04-simak-5-saham-pilihan-hari-ini",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-17T08:48:05+07:00",
+        "summary": "IHSG melemah 0,44% pada 16/11. Sektor Basic Industry turun, sementara saham ASII dan BBRI menguat.",
+        "matched_by": "ticker",
+        "scope": "company",
+        "sentiment": -0.3333333333333333,
+        "positive_terms": [
+          "menguat"
+        ],
+        "negative_terms": [
+          "turun",
+          "melemah"
+        ]
+      },
+      {
+        "title": "Intip Strategi dan Target Kinerja Astra International (ASII) Hingga Tahun 2030",
+        "url": "https://industri.kontan.co.id/news/intip-strategi-dan-target-kinerja-astra-international-asii-hingga-tahun-2030",
+        "source": "kontan/industri",
+        "published": "2026-11-17T13:16:53+07:00",
+        "summary": "Astra International (ASII) siapkan strategi untuk penataan portofolio bisnis dengan target realokasi aset bersih sebesar Rp 10 triliun hingga 2030",
+        "matched_by": "ticker",
+        "scope": "company",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ],
+    "method": "lexicon: (positive - negative) / (positive + negative) per headline over title + summary, Indonesian and English finance terms; mean over matched items"
+  }
+}

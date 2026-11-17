@@ -1,0 +1,48 @@
+{
+  "schema": "idx.sentiment.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-17T11:19:43Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "INCO",
+    "matched_name": "VALE INDONESIA",
+    "label": "neutral",
+    "score": 0.0,
+    "items": 2,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 2,
+    "oldest": "2026-11-16T16:49:16+07:00",
+    "newest": "2026-11-16T17:07:28+07:00",
+    "top_positive_terms": [],
+    "top_negative_terms": [],
+    "headlines": [
+      {
+        "title": "Video: Cara Vale Antisipasi Risiko Gejolak Harga Nikel-Penuhi Pasar EV",
+        "url": "https://www.cnbcindonesia.com/market/20261116162725-19-785695/video-cara-vale-antisipasi-risiko-gejolak-harga-nikel-penuhi-pasar-ev",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-16T17:07:28+07:00",
+        "summary": "Strategi Vale Indonesia Antisipasi Risiko Gejolak Harga Nikel - Penuhi Pasar EV Global",
+        "matched_by": "name",
+        "scope": "company",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Dongkrak Bisnis Nikel, Vale Indonesia Kebut Hilirisasi HPAL",
+        "url": "https://www.cnbcindonesia.com/market/20261116162727-19-785679/video-dongkrak-bisnis-nikel-vale-indonesia-kebut-hilirisasi-hpal",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-16T16:49:16+07:00",
+        "summary": "Dongkrak Bisnis Nikel, Vale Kebut Hilirisasi HPAL di Sorowako, Pomaala dan Bahodopi",
+        "matched_by": "name",
+        "scope": "company",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ],
+    "method": "lexicon: (positive - negative) / (positive + negative) per headline over title + summary, Indonesian and English finance terms; mean over matched items"
+  }
+}
