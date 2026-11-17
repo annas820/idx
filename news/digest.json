@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-17T22:30+07:00",
+ "generated_for": "2026-11-18T04:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 802,
- "kept": 288,
- "dropped_noise": 36,
+ "scanned": 579,
+ "kept": 217,
+ "dropped_noise": 13,
  "items": [
   {
    "published": "2026-11-17T07:00+07:00",
@@ -157,62 +157,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-16T13:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Laba Bersih per Saham ASII Bisa Melesat 121% di 2030",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127835/laba-bersih-per-saham-asii-bisa-melesat-121-di-2030",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T11:29+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen",
-   "link": "https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T10:45+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Nasib IHSG dan Rupiah Saat Pasar Pantau KTT APEC - Suku Bunga BI",
-   "link": "https://www.cnbcindonesia.com/market/20261116102529-19-785489/video-nasib-ihsg-rupiah-saat-pasar-pantau-ktt-apec--suku-bunga-bi",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-17T11:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -301,42 +245,6 @@
    ],
    "tickers": [
     "BBNI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T15:21+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Moody’s Beri Rating Baa3 Obligasi Freeport Indonesia, Likuiditas Tembus US$ 4 Miliar",
-   "link": "https://industri.kontan.co.id/news/moodys-beri-rating-baa3-obligasi-freeport-indonesia-likuiditas-tembus-us-4-miliar",
-   "score": 8,
-   "categories": [
-    "kurs",
-    "kredit",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T12:14+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Rupiah Melemah, Emiten Poultry Tertekan? Simak Rekomendasi CPIN, JPFA, dan MAIN",
-   "link": "https://investasi.kontan.co.id/news/rupiah-melemah-emiten-poultry-tertekan-simak-rekomendasi-cpin-jpfa-dan-main",
-   "score": 8,
-   "categories": [
-    "pasar",
-    "kurs",
-    "emiten"
-   ],
-   "tickers": [
-    "CPIN",
-    "JPFA",
-    "MAIN"
    ],
    "flags": [],
    "also_in": []
@@ -432,85 +340,115 @@
    "also_in": []
   },
   {
-   "published": "2026-11-16T14:02+07:00",
+   "published": "2026-11-17T19:26+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Kenaikan Yield SBN Tekan Nilai Aset, OJK Minta Asuransi Jaga Strategi Investasi",
+   "link": "https://keuangan.kontan.co.id/news/kenaikan-yield-sbn-tekan-nilai-aset-ojk-minta-asuransi-jaga-strategi-investasi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T19:00+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "IHSG Dibayangi Sentimen Global dan RDG BI, Simak Rekomendasi Saham Pekan Ini",
-   "link": "https://investasi.kontan.co.id/news/ihsg-dibayangi-sentimen-global-dan-rdg-bi-simak-rekomendasi-saham-pekan-ini",
-   "score": 7,
+   "title": "IHSG Diprediksi Sideways hingga Rawan Koreksi pada Rabu (18/11), Menanti Hasil RDG BI",
+   "link": "https://investasi.kontan.co.id/news/ihsg-diprediksi-sideways-hingga-rawan-koreksi-pada-rabu-1811-menanti-hasil-rdg-bi",
+   "score": 6,
    "categories": [
     "kebijakan",
     "pasar"
    ],
    "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
+   "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-16T12:10+07:00",
+   "published": "2026-11-17T18:54+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI",
-   "link": "https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi",
-   "score": 7,
+   "title": "Siapkan Private Placement, Intip Prospek Merdeka Gold Resources (EMAS)",
+   "link": "https://investasi.kontan.co.id/news/siapkan-private-placement-intip-prospek-merdeka-gold-resources-emas",
+   "score": 6,
    "categories": [
-    "pasar",
+    "korporasi",
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "AADI",
-    "ADMR",
-    "BRPT"
+    "EMAS"
    ],
-   "flags": [
-    "watchlist"
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T18:07+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Aliran Dana ke Saham-Saham Perbankan Beragam Jelang RDG BI, Simak Rekomendasinya",
+   "link": "https://keuangan.kontan.co.id/news/aliran-dana-ke-saham-saham-perbankan-beragam-jelang-rdg-bi-simak-rekomendasinya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
    ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T16:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ekonom Proyeksi BI Rate Naik Demi Jaga Daya Tarik Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128021/ekonom-proyeksi-bi-rate-naik-demi-jaga-daya-tarik-rupiah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T16:17+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Ditutup Menguat Tipis Jelang Pengumuman BI Rate Besok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128009/rupiah-ditutup-menguat-tipis-jelang-pengumuman-bi-rate-besok",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T15:28+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "DEN Ungkap Tantangan Regulasi RI dalam Rencana Cadangan Minyak Bersama ASEAN",
+   "link": "https://industri.kontan.co.id/news/den-ungkap-tantangan-regulasi-ri-dalam-rencana-cadangan-minyak-bersama-asean",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   }
  ],
  "watchlist_hits": [
-  {
-   "published": "2026-11-16T13:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Laba Bersih per Saham ASII Bisa Melesat 121% di 2030",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127835/laba-bersih-per-saham-asii-bisa-melesat-121-di-2030",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T11:29+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Astra Bongkar Strategi hingga 2030, Mulai Laba per Saham serta Dividen",
-   "link": "https://www.cnbcindonesia.com/market/20261116112358-17-785511/astra-bongkar-strategi-hingga-2030-mulai-laba-per-saham-serta-dividen",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
   {
    "published": "2026-11-17T06:49+07:00",
    "source": "kontan_investasi",
@@ -528,27 +466,6 @@
    ],
    "flags": [
     "petunjuk",
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T12:10+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Melemah 0,87% ke 5.297,8 di Sesi Pertama, Top Losers LQ45: BRPT, ADMR, AADI",
-   "link": "https://investasi.kontan.co.id/news/ihsg-melemah-087-ke-52978-di-sesi-pertama-top-losers-lq45-brpt-admr-aadi",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "AADI",
-    "ADMR",
-    "BRPT"
-   ],
-   "flags": [
     "watchlist"
    ],
    "also_in": []
@@ -592,27 +509,6 @@
     "watchlist"
    ],
    "also_in": []
-  },
-  {
-   "published": "2026-11-16T14:59+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Astra International (ASII) Beberkan Target Kinerja hingga Tahun 2030",
-   "link": "https://investasi.kontan.co.id/news/astra-international-asii-beberkan-target-kinerja-hingga-tahun-2030",
-   "score": 6,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist",
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_industri"
-   ]
   },
   {
    "published": "2026-11-17T09:47+07:00",
