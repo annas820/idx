@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T13:00+07:00",
+ "generated_for": "2026-11-18T14:11+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 627,
- "kept": 252,
+ "scanned": 673,
+ "kept": 266,
  "dropped_noise": 12,
  "items": [
   {
@@ -320,6 +320,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-18T13:16+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Jelang Pengumuman BI Rate, IHSG Menguat 0,4% pada Sesi I",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128107/jelang-pengumuman-bi-rate-ihsg-menguat-0-4-pada-sesi-i",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-18T12:40+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -419,21 +434,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T08:59+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Beberkan Progres Revisi Tarif Premi Asuransi Kendaraan dan Properti",
-   "link": "https://keuangan.kontan.co.id/news/ojk-beberkan-progres-revisi-tarif-premi-asuransi-kendaraan-dan-properti",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
    ],
    "tickers": [],
    "flags": [],
