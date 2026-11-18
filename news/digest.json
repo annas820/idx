@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T20:01+07:00",
+ "generated_for": "2026-11-18T21:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 874,
- "kept": 329,
+ "scanned": 877,
+ "kept": 322,
  "dropped_noise": 29,
  "items": [
   {
@@ -334,25 +334,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-17T08:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Tahan 3 Tersangka Manipulasi Saham, 1 Orang Diusut Polisi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127939/ojk-tahan-3-tersangka-manipulasi-saham-1-orang-diusut-polisi",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
    "published": "2026-11-18T18:46+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -457,6 +438,24 @@
    ],
    "tickers": [
     "PPRO"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-17T16:05+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun",
+   "link": "https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "INET"
    ],
    "flags": [],
    "also_in": []

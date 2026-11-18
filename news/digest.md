@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-18T20:01+07:00 WIB | jendela 36 jam | dipindai 874, lolos 329, dibuang sebagai noise 29.
+Berita terbaru: 2026-11-18T21:20+07:00 WIB | jendela 36 jam | dipindai 877, lolos 322, dibuang sebagai noise 29.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -32,10 +32,10 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-17 16:30 bloomberg_technoz: Ekonom Proyeksi BI Rate Naik Demi Jaga Daya Tarik Rupiah (kebijakan/kurs; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/128021/ekonom-proyeksi-bi-rate-naik-demi-jaga-daya-tarik-rupiah>
 - **8** T3 11-17 11:20 cnbc_indonesia_market: Rugikan Rp6,97 M, OJK Tahan Tersangka Manipulasi Saham (kebijakan/pasar; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261117093303-19-785838/rugikan-rp697-m-ojk-tahan-tersangka-manipulasi-saham>
 - **8** T3 11-17 11:02 kontan_investasi: Harga Emas Tertekan Dolar AS dan Ekspektasi Kenaikan Suku Bunga The Fed (kebijakan/global/komoditas) <https://investasi.kontan.co.id/news/harga-emas-tertekan-dolar-as-dan-ekspektasi-kenaikan-suku-bunga-the-fed>
-- **8** T3 11-17 08:50 bloomberg_technoz: OJK Tahan 3 Tersangka Manipulasi Saham, 1 Orang Diusut Polisi (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/127939/ojk-tahan-3-tersangka-manipulasi-saham-1-orang-diusut-polisi>
 - **7** T3 11-18 18:46 kontan_investasi: Indonesia Kendaraan (IPCC) Tebar Dividen Interim Rp 70,87 Miliar, Potensi Yield 3,89% [IPCC] (kurs/korporasi/emiten) <https://investasi.kontan.co.id/news/indonesia-kendaraan-ipcc-tebar-dividen-interim-rp-7087-miliar-potensi-yield-389>
 - **7** T3 11-18 18:20 kontan_industri: Usai Akuisisi 90% Saham Vivo, AKRA Bakal Sulap 47 SPBU Vivo Jadi BP-AKR [AKRA] (pasar/korporasi/emiten) <https://industri.kontan.co.id/news/usai-akuisisi-90-saham-vivo-akra-bakal-sulap-47-spbu-vivo-jadi-bp-akr>
 - **7** T3 11-18 17:07 kontan_investasi: Stock Split Roda Vivatex (RDTX) akan Bergulir, Jumlah Saham Melonjak Jadi 5,37 Miliar [RDTX] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/stock-split-roda-vivatex-rdtx-akan-bergulir-jumlah-saham-melonjak-jadi-537-miliar>
 - **7** T3 11-18 14:55 cnbc_indonesia_market: Bursa Cecar EMAS, Pembeli Cuma Satu, Kas Operasi Minus [EMAS] (pasar/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261118135952-17-786301/bursa-cecar-emas-pembeli-cuma-satu-kas-operasi-minus>
 - **7** T3 11-18 09:21 kontan_investasi: WIKA Gedung (WEGE) Laporkan Fakta Terkait 2 Perkara PKPU, Ini Detailnya [WEGE,WIKA] (kredit/korporasi/emiten) <https://investasi.kontan.co.id/news/wika-gedung-wege-laporkan-fakta-terkait-2-perkara-pkpu-ini-detailnya>
 - **7** T3 11-17 17:15 bloomberg_technoz: IFG Life Jual Saham PPRO di Tengah Aksi Merger dengan Inhealth [PPRO] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/128025/ifg-life-jual-saham-ppro-di-tengah-aksi-merger-dengan-inhealth>
+- **7** T3 11-17 16:05 kontan_investasi: Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun [INET] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun>
