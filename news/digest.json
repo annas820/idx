@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T06:46+07:00",
+ "generated_for": "2026-11-18T08:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 526,
- "kept": 200,
- "dropped_noise": 12,
+ "scanned": 524,
+ "kept": 207,
+ "dropped_noise": 11,
  "items": [
   {
    "published": "2026-11-17T07:00+07:00",
@@ -118,19 +118,19 @@
    "also_in": []
   },
   {
-   "published": "2026-11-16T19:55+07:00",
+   "published": "2026-11-18T07:22+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "Harga Minyak Dunia Berangsur Turun, Simak Prospek dan Rekomendasi Saham TPIA",
-   "link": "https://investasi.kontan.co.id/news/harga-minyak-dunia-berangsur-turun-simak-prospek-dan-rekomendasi-saham-tpia",
-   "score": 9,
+   "title": "Cermati Rekomendasi Saham dan Prospek Merdeka Gold Resources (EMAS)",
+   "link": "https://investasi.kontan.co.id/news/cermati-rekomendasi-saham-dan-prospek-merdeka-gold-resources-emas",
+   "score": 8,
    "categories": [
-    "global",
     "pasar",
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "TPIA"
+    "EMAS"
    ],
    "flags": [
     "petunjuk"
@@ -321,6 +321,53 @@
    "also_in": []
   },
   {
+   "published": "2026-11-18T07:38+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Simak Rekomendasi Saham dan Prospek Emiten Emas Saat Harga Emas Memudar",
+   "link": "https://investasi.kontan.co.id/news/simak-rekomendasi-saham-dan-prospek-emiten-emas-saat-harga-emas-memudar",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T07:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Diprediksi Konsolidasi, Investor Cermati Keputusan BI Rate",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128054/ihsg-diprediksi-konsolidasi-investor-cermati-keputusan-bi-rate",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T07:04+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Rupiah Diproyeksi Melemah Hari Ini (18/11), Pasar Menanti Hasil RDG BI",
+   "link": "https://investasi.kontan.co.id/news/rupiah-diproyeksi-melemah-hari-ini-1811-pasar-menanti-hasil-rdg-bi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-18T06:00+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -403,51 +450,6 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-17T18:07+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Aliran Dana ke Saham-Saham Perbankan Beragam Jelang RDG BI, Simak Rekomendasinya",
-   "link": "https://keuangan.kontan.co.id/news/aliran-dana-ke-saham-saham-perbankan-beragam-jelang-rdg-bi-simak-rekomendasinya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T16:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ekonom Proyeksi BI Rate Naik Demi Jaga Daya Tarik Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128021/ekonom-proyeksi-bi-rate-naik-demi-jaga-daya-tarik-rupiah",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T16:17+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Ditutup Menguat Tipis Jelang Pengumuman BI Rate Besok",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128009/rupiah-ditutup-menguat-tipis-jelang-pengumuman-bi-rate-besok",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -499,24 +501,6 @@
    "tier": 3,
    "title": "Astra (ASII) Raih Penghargaan ESG Asia, Ditopang Pemberdayaan Desa & Efisiensi Energi",
    "link": "https://industri.kontan.co.id/news/astra-asii-raih-penghargaan-esg-asia-ditopang-pemberdayaan-desa-efisiensi-energi",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T19:29+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Target Kinerja Astra (ASII) Dinilai Cukup Menantang, Begini Kata Analis",
-   "link": "https://investasi.kontan.co.id/news/target-kinerja-astra-asii-dinilai-cukup-menantang-begini-kata-analis",
    "score": 4,
    "categories": [
     "emiten"
