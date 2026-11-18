@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T09:50+07:00",
+ "generated_for": "2026-11-18T10:53+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 546,
- "kept": 222,
+ "scanned": 560,
+ "kept": 226,
  "dropped_noise": 11,
  "items": [
   {
@@ -288,6 +288,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-18T10:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Industri Asuransi Masih Enggan Investasi Saham, OJK Ungkap Penyebabnya",
+   "link": "https://www.cnbcindonesia.com/market/20261118094931-17-786176/industri-asuransi-masih-enggan-investasi-saham-ojk-ungkap-penyebabnya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T09:57+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Dilema BI Tentukan Arah Suku Bunga, Terjepit Kelesuan Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128043/dilema-bi-tentukan-arah-suku-bunga-terjepit-kelesuan-rupiah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-18T09:20+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -419,36 +449,6 @@
    "flags": [
     "petunjuk"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T07:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Diprediksi Konsolidasi, Investor Cermati Keputusan BI Rate",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128054/ihsg-diprediksi-konsolidasi-investor-cermati-keputusan-bi-rate",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T07:04+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Rupiah Diproyeksi Melemah Hari Ini (18/11), Pasar Menanti Hasil RDG BI",
-   "link": "https://investasi.kontan.co.id/news/rupiah-diproyeksi-melemah-hari-ini-1811-pasar-menanti-hasil-rdg-bi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
    "also_in": []
   }
  ],
