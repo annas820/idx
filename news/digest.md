@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-18T21:20+07:00 WIB | jendela 36 jam | dipindai 877, lolos 322, dibuang sebagai noise 29.
+Berita terbaru: 2026-11-18T22:19+07:00 WIB | jendela 36 jam | dipindai 864, lolos 319, dibuang sebagai noise 29.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -11,7 +11,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-17 13:16 kontan_industri: Intip Strategi dan Target Kinerja Astra International (ASII) Hingga Tahun 2030 [ASII] (emiten; watchlist, terkonfirmasi, juga di kontan_investasi) <https://industri.kontan.co.id/news/intip-strategi-dan-target-kinerja-astra-international-asii-hingga-tahun-2030>
 - **4** T3 11-18 12:51 kontan_investasi: Hasil RUPSLB Vale Indonesia (INCO) Rombak Jajaran Pengurus, Ini Susunan Terbarunya [INCO] (emiten; watchlist) <https://investasi.kontan.co.id/news/hasil-rupslb-vale-indonesia-inco-rombak-jajaran-pengurus-ini-susunan-terbarunya>
 - **4** T3 11-18 12:07 cnbc_indonesia_market: Vale Indonesia (INCO) Rombak Direksi dan Komisaris, Cek Susunan Terbaru [INCO] (emiten; watchlist) <https://www.cnbcindonesia.com/market/20261118114730-17-786236/vale-indonesia--inco--rombak-direksi-komisaris-cek-susunan-terbaru>
-- **4** T3 11-17 09:47 kontan_industri: Astra (ASII) Raih Penghargaan ESG Asia, Ditopang Pemberdayaan Desa & Efisiensi Energi [ASII] (emiten; watchlist) <https://industri.kontan.co.id/news/astra-asii-raih-penghargaan-esg-asia-ditopang-pemberdayaan-desa-efisiensi-energi>
 
 ## Teratas
 - **10** T3 11-18 15:37 bloomberg_technoz: Rupiah Ditutup Menguat Usai BI Rate Naik ke 6% (kebijakan/kurs; terkonfirmasi, juga di cnbc_indonesia_market/kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128145/rupiah-ditutup-menguat-usai-bi-rate-naik-ke-6>
@@ -21,7 +20,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-18 11:08 kontan_investasi: BI Diprediksi Tahan Suku Bunga Acuan, Rupiah dan IHSG Masih Dibayangi Tekanan (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/bi-diprediksi-tahan-suku-bunga-acuan-rupiah-dan-ihsg-masih-dibayangi-tekanan>
 - **9** T3 11-17 17:25 kontan_investasi: Ditekan Harga Minyak dan The Fed Jelang RDG BI, Ini Proyeksi Rupiah hingga Akhir 2026 (kebijakan/global/kurs) <https://investasi.kontan.co.id/news/ditekan-harga-minyak-dan-the-fed-jelang-rdg-bi-ini-proyeksi-rupiah-hingga-akhir-2026>
 - **9** T3 11-17 12:36 cnbc_indonesia_market: BEI Soroti Sengketa Lahan Anak Usaha Indika (INDY) di Tambang Emas [INDY] (kebijakan/komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261117123308-17-785908/bei-soroti-sengketa-lahan-anak-usaha-indika--indy--di-tambang-emas>
-- **9** T3 11-17 09:50 bloomberg_technoz: BEI Telisik Kas Seret EMAS Menyusul Rencana Private Placement [EMAS] (kebijakan/korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127947/bei-telisik-kas-seret-emas-menyusul-rencana-private-placement>
 - **8** T3 11-18 16:52 bloomberg_technoz: IHSG Ditutup Melemah Saat BI Rate Naik 25 Bps Jadi 6% (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/128165/ihsg-ditutup-melemah-saat-bi-rate-naik-25-bps-jadi-6>
 - **8** T3 11-18 15:25 cnbc_indonesia_market: DPR Buka Suara Soal Kekhawatiran Gagal Bayar Obligasi Daerah (kurs/kredit/korporasi) <https://www.cnbcindonesia.com/market/20261118141246-17-786306/dpr-buka-suara-soal-kekhawatiran-gagal-bayar-obligasi-daerah>
 - **8** T3 11-18 15:24 bloomberg_technoz: IHSG Balik Merah Usai BI Rate Naik, BBCA Jadi Penopang Utama [BBCA] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/128144/ihsg-balik-merah-usai-bi-rate-naik-bbca-jadi-penopang-utama>
@@ -39,3 +37,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-18 09:21 kontan_investasi: WIKA Gedung (WEGE) Laporkan Fakta Terkait 2 Perkara PKPU, Ini Detailnya [WEGE,WIKA] (kredit/korporasi/emiten) <https://investasi.kontan.co.id/news/wika-gedung-wege-laporkan-fakta-terkait-2-perkara-pkpu-ini-detailnya>
 - **7** T3 11-17 17:15 bloomberg_technoz: IFG Life Jual Saham PPRO di Tengah Aksi Merger dengan Inhealth [PPRO] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/128025/ifg-life-jual-saham-ppro-di-tengah-aksi-merger-dengan-inhealth>
 - **7** T3 11-17 16:05 kontan_investasi: Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun [INET] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun>
+- **7** T3 11-17 10:49 kontan_keuangan: KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa [BMAS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa>

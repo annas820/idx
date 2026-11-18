@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T21:20+07:00",
+ "generated_for": "2026-11-18T22:19+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 877,
- "kept": 322,
+ "scanned": 864,
+ "kept": 319,
  "dropped_noise": 29,
  "items": [
   {
@@ -132,25 +132,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-17T09:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Telisik Kas Seret EMAS Menyusul Rencana Private Placement",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127947/bei-telisik-kas-seret-emas-menyusul-rencana-private-placement",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "EMAS"
-   ],
-   "flags": [],
-   "also_in": []
   },
   {
    "published": "2026-11-18T16:52+07:00",
@@ -459,6 +440,24 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-17T10:49+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa",
+   "link": "https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMAS"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -589,24 +588,6 @@
    ],
    "tickers": [
     "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T09:47+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Astra (ASII) Raih Penghargaan ESG Asia, Ditopang Pemberdayaan Desa & Efisiensi Energi",
-   "link": "https://industri.kontan.co.id/news/astra-asii-raih-penghargaan-esg-asia-ditopang-pemberdayaan-desa-efisiensi-energi",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
    ],
    "flags": [
     "watchlist"
