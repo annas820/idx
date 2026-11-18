@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-18T10:53+07:00 WIB | jendela 36 jam | dipindai 560, lolos 226, dibuang sebagai noise 11.
+Berita terbaru: 2026-11-18T11:55+07:00 WIB | jendela 36 jam | dipindai 595, lolos 239, dibuang sebagai noise 12.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -11,6 +11,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 ## Teratas
 - **10** T3 11-17 07:00 bloomberg_technoz: Dividen ANTM Berpotensi Tembus Rp312/Saham, Yield Capai 11% [ANTM] (pasar/kurs/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/127926/dividen-antm-berpotensi-tembus-rp312-saham-yield-capai-11>
 - **10** T3 11-17 06:45 bloomberg_technoz: Prediksi IHSG Hari Ini Saat Rupiah Rekor Terendah & Fed Hawkish (global/pasar/kurs; petunjuk) <https://www.bloombergtechnoz.com/detail-news/127911/prediksi-ihsg-hari-ini-saat-rupiah-rekor-terendah-fed-hawkish>
+- **9** T3 11-18 11:08 kontan_investasi: BI Diprediksi Tahan Suku Bunga Acuan, Rupiah dan IHSG Masih Dibayangi Tekanan (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/bi-diprediksi-tahan-suku-bunga-acuan-rupiah-dan-ihsg-masih-dibayangi-tekanan>
 - **9** T3 11-17 17:25 kontan_investasi: Ditekan Harga Minyak dan The Fed Jelang RDG BI, Ini Proyeksi Rupiah hingga Akhir 2026 (kebijakan/global/kurs) <https://investasi.kontan.co.id/news/ditekan-harga-minyak-dan-the-fed-jelang-rdg-bi-ini-proyeksi-rupiah-hingga-akhir-2026>
 - **9** T3 11-17 12:36 cnbc_indonesia_market: BEI Soroti Sengketa Lahan Anak Usaha Indika (INDY) di Tambang Emas [INDY] (kebijakan/komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261117123308-17-785908/bei-soroti-sengketa-lahan-anak-usaha-indika--indy--di-tambang-emas>
 - **9** T3 11-17 09:50 bloomberg_technoz: BEI Telisik Kas Seret EMAS Menyusul Rencana Private Placement [EMAS] (kebijakan/korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/127947/bei-telisik-kas-seret-emas-menyusul-rencana-private-placement>
@@ -24,6 +25,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-17 16:05 kontan_investasi: Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun [INET] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun>
 - **7** T3 11-17 10:49 kontan_keuangan: KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa [BMAS] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa>
 - **7** T3 11-17 05:14 kontan_investasi: Harum Energy (HRUM) Hentikan Buyback Saham Lebih Awal, Ini Alasannya [HRUM] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/harum-energy-hrum-hentikan-buyback-saham-lebih-awal-ini-alasannya>
+- **6** T3 11-18 11:20 cnbc_indonesia_market: IHSG Babak Belur, OJK Minta Nasabah Unitlink Tak Gegabah (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261118103940-17-786203/ihsg-babak-belur-ojk-minta-nasabah-unitlink-tak-gegabah>
+- **6** T3 11-18 10:31 kontan_investasi: Skenario BI Rate Naik ke 6% Bisa Dorong Kinerja Pasar Saham dan Pergerakan IHSG (kebijakan/pasar) <https://investasi.kontan.co.id/news/skenario-bi-rate-naik-ke-6-bisa-dorong-kinerja-pasar-saham-dan-pergerakan-ihsg>
 - **6** T3 11-18 10:30 cnbc_indonesia_market: Industri Asuransi Masih Enggan Investasi Saham, OJK Ungkap Penyebabnya (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261118094931-17-786176/industri-asuransi-masih-enggan-investasi-saham-ojk-ungkap-penyebabnya>
 - **6** T3 11-18 09:57 bloomberg_technoz: Dilema BI Tentukan Arah Suku Bunga, Terjepit Kelesuan Rupiah (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/128043/dilema-bi-tentukan-arah-suku-bunga-terjepit-kelesuan-rupiah>
 - **6** T3 11-18 09:20 bloomberg_technoz: Jelang Pengumuman BI Rate, Rupiah Balik Arah ke Zona Hijau (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/128071/jelang-pengumuman-bi-rate-rupiah-balik-arah-ke-zona-hijau>
@@ -31,6 +34,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-18 08:59 kontan_keuangan: OJK Beberkan Progres Revisi Tarif Premi Asuransi Kendaraan dan Properti (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-beberkan-progres-revisi-tarif-premi-asuransi-kendaraan-dan-properti>
 - **6** T3 11-18 08:55 cnbc_indonesia_market: IHSG Bergejolak, OJK Tes Seberapa Kuat Industri Asuransi RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261118080352-17-786130/ihsg-bergejolak-ojk-tes-seberapa-kuat-industri-asuransi-ri>
 - **6** T3 11-18 08:43 bloomberg_technoz: Harga Emas Antam Turun Hari Ini, Tapi Tak Banyak [ANTM] (komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128064/harga-emas-antam-turun-hari-ini-tapi-tak-banyak>
-- **6** T3 11-18 08:43 kontan_investasi: Daftar Harga Emas Antam Hari Ini (18/11): Turun Rp 1.000 Jadi Rp 2.514.000 Per Gram [ANTM] (komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1811-turun-rp-1000-jadi-rp-2514000-per-gram>
-- **6** T3 11-18 08:10 bloomberg_technoz: Pelemahan Masih Bayangi Rupiah, Pasar Cermati Arah BI Rate (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/128059/pelemahan-masih-bayangi-rupiah-pasar-cermati-arah-bi-rate>
-- **6** T3 11-18 07:38 kontan_investasi: Simak Rekomendasi Saham dan Prospek Emiten Emas Saat Harga Emas Memudar (pasar/komoditas; petunjuk) <https://investasi.kontan.co.id/news/simak-rekomendasi-saham-dan-prospek-emiten-emas-saat-harga-emas-memudar>

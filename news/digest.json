@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T10:53+07:00",
+ "generated_for": "2026-11-18T11:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 560,
- "kept": 226,
- "dropped_noise": 11,
+ "scanned": 595,
+ "kept": 239,
+ "dropped_noise": 12,
  "items": [
   {
    "published": "2026-11-17T07:00+07:00",
@@ -42,6 +42,22 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T11:08+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BI Diprediksi Tahan Suku Bunga Acuan, Rupiah dan IHSG Masih Dibayangi Tekanan",
+   "link": "https://investasi.kontan.co.id/news/bi-diprediksi-tahan-suku-bunga-acuan-rupiah-dan-ihsg-masih-dibayangi-tekanan",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -288,6 +304,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-18T11:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "IHSG Babak Belur, OJK Minta Nasabah Unitlink Tak Gegabah",
+   "link": "https://www.cnbcindonesia.com/market/20261118103940-17-786203/ihsg-babak-belur-ojk-minta-nasabah-unitlink-tak-gegabah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T10:31+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Skenario BI Rate Naik ke 6% Bisa Dorong Kinerja Pasar Saham dan Pergerakan IHSG",
+   "link": "https://investasi.kontan.co.id/news/skenario-bi-rate-naik-ke-6-bisa-dorong-kinerja-pasar-saham-dan-pergerakan-ihsg",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-18T10:30+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -397,59 +443,6 @@
    "also_in": [
     "kontan_investasi"
    ]
-  },
-  {
-   "published": "2026-11-18T08:43+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Daftar Harga Emas Antam Hari Ini (18/11): Turun Rp 1.000 Jadi Rp 2.514.000 Per Gram",
-   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1811-turun-rp-1000-jadi-rp-2514000-per-gram",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-18T08:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pelemahan Masih Bayangi Rupiah, Pasar Cermati Arah BI Rate",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128059/pelemahan-masih-bayangi-rupiah-pasar-cermati-arah-bi-rate",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T07:38+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Simak Rekomendasi Saham dan Prospek Emiten Emas Saat Harga Emas Memudar",
-   "link": "https://investasi.kontan.co.id/news/simak-rekomendasi-saham-dan-prospek-emiten-emas-saat-harga-emas-memudar",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
