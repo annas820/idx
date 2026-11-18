@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T08:00+07:00",
+ "generated_for": "2026-11-18T09:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 524,
- "kept": 207,
+ "scanned": 546,
+ "kept": 222,
  "dropped_noise": 11,
  "items": [
   {
@@ -98,22 +98,6 @@
    "tickers": [
     "EMAS"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-16T21:07+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Yield US Treasury Tembus 5%, Ajaib Sekuritas Soroti Peluang di Tiga Saham AS",
-   "link": "https://investasi.kontan.co.id/news/yield-us-treasury-tembus-5-ajaib-sekuritas-soroti-peluang-di-tiga-saham-as",
-   "score": 9,
-   "categories": [
-    "global",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -213,19 +197,20 @@
    "also_in": []
   },
   {
-   "published": "2026-11-16T20:00+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-18T09:21+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "Saham Big Banks Kompak Menguat Jelang RDG BI, BBNI Pimpin Kenaikan",
-   "link": "https://keuangan.kontan.co.id/news/saham-big-banks-kompak-menguat-jelang-rdg-bi-bbni-pimpin-kenaikan",
-   "score": 8,
+   "title": "WIKA Gedung (WEGE) Laporkan Fakta Terkait 2 Perkara PKPU, Ini Detailnya",
+   "link": "https://investasi.kontan.co.id/news/wika-gedung-wege-laporkan-fakta-terkait-2-perkara-pkpu-ini-detailnya",
+   "score": 7,
    "categories": [
-    "kebijakan",
-    "pasar",
+    "kredit",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "BBNI"
+    "WEGE",
+    "WIKA"
    ],
    "flags": [],
    "also_in": []
@@ -303,20 +288,119 @@
    "also_in": []
   },
   {
-   "published": "2026-11-16T21:46+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-18T09:20+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Saham VISI Melemah Usai Akuisisi Hasna Medika, Direktur Tambah Kepemilikan",
-   "link": "https://investasi.kontan.co.id/news/saham-visi-melemah-usai-akuisisi-hasna-medika-direktur-tambah-kepemilikan",
-   "score": 7,
+   "title": "Jelang Pengumuman BI Rate, Rupiah Balik Arah ke Zona Hijau",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128071/jelang-pengumuman-bi-rate-rupiah-balik-arah-ke-zona-hijau",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi",
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T09:07+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Dibuka Menguat Kala Pasar Menanti BI Rate",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128067/ihsg-dibuka-menguat-kala-pasar-menanti-bi-rate",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T08:59+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Beberkan Progres Revisi Tarif Premi Asuransi Kendaraan dan Properti",
+   "link": "https://keuangan.kontan.co.id/news/ojk-beberkan-progres-revisi-tarif-premi-asuransi-kendaraan-dan-properti",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T08:55+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "IHSG Bergejolak, OJK Tes Seberapa Kuat Industri Asuransi RI",
+   "link": "https://www.cnbcindonesia.com/market/20261118080352-17-786130/ihsg-bergejolak-ojk-tes-seberapa-kuat-industri-asuransi-ri",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T08:43+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Turun Hari Ini, Tapi Tak Banyak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128064/harga-emas-antam-turun-hari-ini-tapi-tak-banyak",
+   "score": 6,
+   "categories": [
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "VISI"
+    "ANTM"
    ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-18T08:43+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Daftar Harga Emas Antam Hari Ini (18/11): Turun Rp 1.000 Jadi Rp 2.514.000 Per Gram",
+   "link": "https://investasi.kontan.co.id/news/daftar-harga-emas-antam-hari-ini-1811-turun-rp-1000-jadi-rp-2514000-per-gram",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-18T08:10+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pelemahan Masih Bayangi Rupiah, Pasar Cermati Arah BI Rate",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128059/pelemahan-masih-bayangi-rupiah-pasar-cermati-arah-bi-rate",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -364,90 +448,6 @@
     "kurs"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T06:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pejabat The Fed Tegaskan Tak Perlu Kenaikan Suku Bunga Agresif",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128046/pejabat-the-fed-tegaskan-tak-perlu-kenaikan-suku-bunga-agresif",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T05:00+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Rekomendasi Saham Rabu (18/11): ADRO, HRUM, dan ENRG, Simak Analisisnya",
-   "link": "https://investasi.kontan.co.id/news/rekomendasi-saham-rabu-1811-adro-hrum-dan-enrg-simak-analisisnya",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ADRO",
-    "ENRG",
-    "HRUM"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T19:26+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Kenaikan Yield SBN Tekan Nilai Aset, OJK Minta Asuransi Jaga Strategi Investasi",
-   "link": "https://keuangan.kontan.co.id/news/kenaikan-yield-sbn-tekan-nilai-aset-ojk-minta-asuransi-jaga-strategi-investasi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T19:00+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "IHSG Diprediksi Sideways hingga Rawan Koreksi pada Rabu (18/11), Menanti Hasil RDG BI",
-   "link": "https://investasi.kontan.co.id/news/ihsg-diprediksi-sideways-hingga-rawan-koreksi-pada-rabu-1811-menanti-hasil-rdg-bi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T18:54+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Siapkan Private Placement, Intip Prospek Merdeka Gold Resources (EMAS)",
-   "link": "https://investasi.kontan.co.id/news/siapkan-private-placement-intip-prospek-merdeka-gold-resources-emas",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "EMAS"
-   ],
    "flags": [],
    "also_in": []
   }
