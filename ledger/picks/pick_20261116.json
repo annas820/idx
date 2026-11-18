@@ -1,0 +1,9 @@
+{
+ "schema": "clo.ledger.pick.v1",
+ "signal_date": "20261116",
+ "created_at": "2026-11-18T13:24:52+00:00",
+ "equity_at_close": null,
+ "note": "breadth di bawah 40% (5 sesi atau 1 hari): tidak ada sinyal",
+ "orders": [],
+ "skipped": []
+}

@@ -1,0 +1,150 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261116",
+ "sessions": 24,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "BUVA",
+   "signal_date": "20261116",
+   "close": 308.0,
+   "atr": 37.13,
+   "limit": 289.44,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "CDIA",
+   "signal_date": "20261116",
+   "close": 356.0,
+   "atr": 28.61,
+   "limit": 341.7,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "SGER",
+   "signal_date": "20261116",
+   "close": 640.0,
+   "atr": 48.25,
+   "limit": 615.88,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "INET",
+   "signal_date": "20261116",
+   "close": 187.0,
+   "atr": 16.38,
+   "limit": 178.81,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "FOLK",
+   "signal_date": "20261116",
+   "close": 94.0,
+   "atr": 11.77,
+   "limit": 88.12,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ],
+ "breadth": 0.74,
+ "breadth_1d": 0.27,
+ "regime_ok": false,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "SMGR",
+   "ratio_5d": 0.334,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "ASII",
+   "ratio_5d": 0.311,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "INKP",
+   "ratio_5d": 0.308,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "EXCL",
+   "ratio_5d": 0.298,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "MYOR",
+   "ratio_5d": 0.219,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "BBRI",
+   "ratio_5d": 0.197,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "BRIS",
+   "ratio_5d": 0.172,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "PGAS",
+   "ratio_5d": 0.161,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "INDF",
+   "ratio_5d": 0.146,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "BBNI",
+   "ratio_5d": 0.138,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "LSIP",
+   "ratio_5d": 0.13,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "KLBF",
+   "ratio_5d": 0.118,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "BBCA",
+   "ratio_5d": 0.106,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "SGER",
+   "ratio_5d": 0.103,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "PGEO",
+   "ratio_5d": 0.102,
+   "positive_sessions": 4
+  }
+ ],
+ "status": "breadth di bawah 40% (5 sesi atau 1 hari): tidak ada sinyal"
+}

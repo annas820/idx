@@ -1,0 +1,70 @@
+{
+ "schema": "clo.ledger.pick.v1",
+ "signal_date": "20261117",
+ "created_at": "2026-11-18T13:24:52+00:00",
+ "equity_at_close": 997825,
+ "note": "ok",
+ "orders": [],
+ "skipped": [
+  {
+   "symbol": "EXCL",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "SMGR",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "KLBF",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "BRIS",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "INKP",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "ASII",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "INDF",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "MYOR",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "LSIP",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "BBRI",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "MEDC",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "ESSA",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "BBNI",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "PGAS",
+   "alasan": "slot penuh"
+  },
+  {
+   "symbol": "BMRI",
+   "alasan": "slot penuh"
+  }
+ ]
+}

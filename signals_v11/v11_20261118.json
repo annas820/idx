@@ -1,0 +1,140 @@
+{
+ "version": "CLO-FT-1.1-DRAFT",
+ "signal_date": "20261118",
+ "sessions": 26,
+ "signals": [],
+ "controls": [
+  {
+   "symbol": "SMIL",
+   "signal_date": "20261118",
+   "close": 412.0,
+   "atr": 15.33,
+   "limit": 404.33,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "BUVA",
+   "signal_date": "20261118",
+   "close": 292.0,
+   "atr": 35.02,
+   "limit": 274.49,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "GOTO",
+   "signal_date": "20261118",
+   "close": 27.0,
+   "atr": 1.94,
+   "limit": 26.03,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "ASII",
+   "signal_date": "20261118",
+   "close": 5500.0,
+   "atr": 208.53,
+   "limit": 5395.73,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  },
+  {
+   "symbol": "AMMN",
+   "signal_date": "20261118",
+   "close": 3300.0,
+   "atr": 204.77,
+   "limit": 3197.62,
+   "valid_sessions": 3,
+   "stop_atr": 2.0,
+   "target_atr": 4.0,
+   "hold": 10,
+   "cost": 0.007
+  }
+ ],
+ "breadth": 0.47,
+ "breadth_1d": 0.16,
+ "regime_ok": false,
+ "universe": 100,
+ "would_be_flagged": [
+  {
+   "symbol": "SMGR",
+   "ratio_5d": 0.368,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "INDF",
+   "ratio_5d": 0.259,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "INKP",
+   "ratio_5d": 0.245,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "EXCL",
+   "ratio_5d": 0.243,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "MYOR",
+   "ratio_5d": 0.239,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "KLBF",
+   "ratio_5d": 0.218,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "LSIP",
+   "ratio_5d": 0.212,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "ASII",
+   "ratio_5d": 0.208,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "MEDC",
+   "ratio_5d": 0.175,
+   "positive_sessions": 5
+  },
+  {
+   "symbol": "BRIS",
+   "ratio_5d": 0.159,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "ICBP",
+   "ratio_5d": 0.13,
+   "positive_sessions": 4
+  },
+  {
+   "symbol": "BBCA",
+   "ratio_5d": 0.128,
+   "positive_sessions": 3
+  },
+  {
+   "symbol": "AKRA",
+   "ratio_5d": 0.107,
+   "positive_sessions": 3
+  }
+ ],
+ "status": "breadth di bawah 40% (5 sesi atau 1 hari): tidak ada sinyal"
+}
