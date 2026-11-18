@@ -1,12 +1,52 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T14:11+07:00",
+ "generated_for": "2026-11-18T15:58+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 673,
- "kept": 266,
- "dropped_noise": 12,
+ "scanned": 781,
+ "kept": 303,
+ "dropped_noise": 22,
  "items": [
+  {
+   "published": "2026-11-18T15:37+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rupiah Ditutup Menguat Usai BI Rate Naik ke 6%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128145/rupiah-ditutup-menguat-usai-bi-rate-naik-ke-6",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market",
+    "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-18T14:27+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BI Rate Naik Jadi 6%, Bos BI: Demi Jaga Rupiah dan Inflasi!",
+   "link": "https://www.cnbcindonesia.com/market/20261118142349-17-786311/bi-rate-naik-jadi-6-bos-bi-demi-jaga-rupiah-dan-inflasi",
+   "score": 10,
+   "categories": [
+    "kebijakan",
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
   {
    "published": "2026-11-17T07:00+07:00",
    "source": "bloomberg_technoz",
@@ -42,6 +82,22 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T14:36+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Respons Pasar Usai BI Rate Naik ke 6%, Rupiah & IHSG Menguat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128129/respons-pasar-usai-bi-rate-naik-ke-6-rupiah-ihsg-menguat",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -134,6 +190,94 @@
    "also_in": []
   },
   {
+   "published": "2026-11-18T15:25+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "DPR Buka Suara Soal Kekhawatiran Gagal Bayar Obligasi Daerah",
+   "link": "https://www.cnbcindonesia.com/market/20261118141246-17-786306/dpr-buka-suara-soal-kekhawatiran-gagal-bayar-obligasi-daerah",
+   "score": 8,
+   "categories": [
+    "kurs",
+    "kredit",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T15:24+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Balik Merah Usai BI Rate Naik, BBCA Jadi Penopang Utama",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128144/ihsg-balik-merah-usai-bi-rate-naik-bbca-jadi-penopang-utama",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T15:05+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BI Rate Naik, Rupiah Spot Menguat 0,13% ke Rp 18.232 per Dolar AS, Rabu (18/11)",
+   "link": "https://investasi.kontan.co.id/news/bi-rate-naik-rupiah-spot-menguat-013-ke-rp-18232-per-dolar-as-rabu-1811",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-18T14:50+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Tak Cuma Suku Bunga, BI Keluarkan Jurus Ini Amankan Rupiah dan Inflasi",
+   "link": "https://www.cnbcindonesia.com/market/20261118144710-17-786326/tak-cuma-suku-bunga-bi-keluarkan-jurus-ini-amankan-rupiah-inflasi",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T14:24+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Rupiah Menguat ke Rp18.200/US$ Setelah BI Rate Naik Jadi 6%",
+   "link": "https://www.cnbcindonesia.com/market/20261118140633-17-786302/rupiah-menguat-ke-rp18200-us--setelah-bi-rate-naik-jadi-6",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
    "published": "2026-11-18T07:22+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -152,6 +296,25 @@
     "petunjuk"
    ],
    "also_in": []
+  },
+  {
+   "published": "2026-11-17T16:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ekonom Proyeksi BI Rate Naik Demi Jaga Daya Tarik Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128021/ekonom-proyeksi-bi-rate-naik-demi-jaga-daya-tarik-rupiah",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-11-17T11:20+07:00",
@@ -229,6 +392,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-18T14:55+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bursa Cecar EMAS, Pembeli Cuma Satu, Kas Operasi Minus",
+   "link": "https://www.cnbcindonesia.com/market/20261118135952-17-786301/bursa-cecar-emas-pembeli-cuma-satu-kas-operasi-minus",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "EMAS"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-18T09:21+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -280,162 +461,6 @@
    "tickers": [
     "INET"
    ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T10:49+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa",
-   "link": "https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMAS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T05:14+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Harum Energy (HRUM) Hentikan Buyback Saham Lebih Awal, Ini Alasannya",
-   "link": "https://investasi.kontan.co.id/news/harum-energy-hrum-hentikan-buyback-saham-lebih-awal-ini-alasannya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "HRUM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T13:16+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Jelang Pengumuman BI Rate, IHSG Menguat 0,4% pada Sesi I",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128107/jelang-pengumuman-bi-rate-ihsg-menguat-0-4-pada-sesi-i",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T12:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Dilema BI Rate Bagi IHSG, Positif atau Negatif?",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128100/dilema-bi-rate-bagi-ihsg-positif-atau-negatif",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T11:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "IHSG Babak Belur, OJK Minta Nasabah Unitlink Tak Gegabah",
-   "link": "https://www.cnbcindonesia.com/market/20261118103940-17-786203/ihsg-babak-belur-ojk-minta-nasabah-unitlink-tak-gegabah",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T10:31+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Skenario BI Rate Naik ke 6% Bisa Dorong Kinerja Pasar Saham dan Pergerakan IHSG",
-   "link": "https://investasi.kontan.co.id/news/skenario-bi-rate-naik-ke-6-bisa-dorong-kinerja-pasar-saham-dan-pergerakan-ihsg",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T10:30+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Industri Asuransi Masih Enggan Investasi Saham, OJK Ungkap Penyebabnya",
-   "link": "https://www.cnbcindonesia.com/market/20261118094931-17-786176/industri-asuransi-masih-enggan-investasi-saham-ojk-ungkap-penyebabnya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T09:57+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Dilema BI Tentukan Arah Suku Bunga, Terjepit Kelesuan Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128043/dilema-bi-tentukan-arah-suku-bunga-terjepit-kelesuan-rupiah",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T09:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Jelang Pengumuman BI Rate, Rupiah Balik Arah ke Zona Hijau",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128071/jelang-pengumuman-bi-rate-rupiah-balik-arah-ke-zona-hijau",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T09:07+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Dibuka Menguat Kala Pasar Menanti BI Rate",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128067/ihsg-dibuka-menguat-kala-pasar-menanti-bi-rate",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   }
