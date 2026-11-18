@@ -1,0 +1,291 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-18T11:23:13Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Ajaib Kripto Hadirkan Tokenized Stock Perpetual SpaceX, NVIDIA, Tesla",
+        "url": "https://www.cnbcindonesia.com/market/20261118180005-17-786415/ajaib-kripto-hadirkan-tokenized-stock-perpetual-spacex-nvidia-tesla",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-18T18:12:23+07:00",
+        "summary": "Ajaib Kripto meluncurkan Tokenized Stock Perpetual, menawarkan sembilan pair kontrak dari perusahaan global seperti SpaceX dan Tesla. Akses 24 jam tersedia!",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bukti Orang RI Makin Gemar Belanja Online, Tapi Makin Hemat",
+        "url": "https://www.cnbcindonesia.com/market/20261118165830-17-786396/bukti-orang-ri-makin-gemar-belanja-online-tapi-makin-hemat",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-18T18:00:00+07:00",
+        "summary": "BI mencatat pertumbuhan e-commerce di RI pada Oktober 2026, dengan volume transaksi naik 17% dan nilai transaksi mencapai Rp50,43 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Diskon Hedging BI Diperbesar Bikin Minat Asing Naik, Bank Bidik Peluang Pendapatan",
+        "url": "https://keuangan.kontan.co.id/news/diskon-hedging-bi-diperbesar-bikin-minat-asing-naik-bank-bidik-peluang-pendapatan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T17:58:53+07:00",
+        "summary": "Insentif hedging BI jadi daya tarik investasi di pasar keuangan domestik, mendorong aliran modal asing, transaksi valas, dan pendapatan perbankan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Perkirakan Inflasi Medis Masih Jadi Tantangan untuk Asuransi Kesehatan pada 2027",
+        "url": "https://keuangan.kontan.co.id/news/ojk-perkirakan-inflasi-medis-masih-jadi-tantangan-untuk-asuransi-kesehatan-pada-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T17:28:08+07:00",
+        "summary": "OJK memperkirakan inflasi medis masih menjadi salah satu tantangan yang perlu dicermati industri asuransi kesehatan pada 2027.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Rate Naik Jadi 6%, Ini Kata Para Bankir",
+        "url": "https://www.cnbcindonesia.com/market/20261118172031-17-786408/bi-rate-naik-jadi-6-ini-kata-para-bankir",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-18T17:26:12+07:00",
+        "summary": "BI menaikkan suku bunga acuan menjadi 6%. Bankir menilai langkah ini penting untuk stabilitas ekonomi dan likuiditas perbankan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Budi Gadai Sebut AI Berpotensi Membantu Aktivitas di Industri Pergadaian",
+        "url": "https://keuangan.kontan.co.id/news/budi-gadai-sebut-ai-berpotensi-membantu-aktivitas-di-industri-pergadaian",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T17:24:28+07:00",
+        "summary": "PT Budi Gadai Indonesia asal Sumatera Utara (Sumut) menilai AI memiliki potensi untuk membantu kegiatan bisnis di industri pergadaian.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Aturan Baru Pesangon Terbit, Asosiasi DPLK Usulkan Skema Pengelolaan Dua Lapis",
+        "url": "https://keuangan.kontan.co.id/news/aturan-baru-pesangon-terbit-asosiasi-dplk-usulkan-skema-pengelolaan-dua-lapis",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T17:19:38+07:00",
+        "summary": "DPLK usulkan skema dua lapis pengelolaan dana cadangan pesangon agar hak pekerja terlindungi tanpa memindahkan aset yang telah dikelola DPLK.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Demutualisasi, BEI Buka Pintu Pemegang Saham Baru, Tak Cuma Sekuritas",
+        "url": "https://www.cnbcindonesia.com/market/20261118170657-17-786406/demutualisasi-bei-buka-pintu-pemegang-saham-baru-tak-cuma-sekuritas",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-18T17:18:49+07:00",
+        "summary": "BEI resmi demutualisasi, memisahkan kepemilikan saham dari keanggotaan. Ini membuka peluang bagi non-anggota jadi pemegang saham.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Biaya Hidup Meningkat, Konsumen Kian Ketat Mengatur Keuangan",
+        "url": "https://keuangan.kontan.co.id/news/biaya-hidup-meningkat-konsumen-kian-ketat-mengatur-keuangan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T17:16:32+07:00",
+        "summary": "Sebanyak 76% responden mengaku inflasi berdampak negatif terhadap daya beli mereka, naik dari 59% pada tahun sebelumnya",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.3333333333333333,
+        "positive_terms": [
+          "naik",
+          "beli"
+        ],
+        "negative_terms": [
+          "negatif"
+        ]
+      },
+      {
+        "title": "Ini 10 Raksasa Pemilik Data Center China, Ada Huawei hingga Tencent",
+        "url": "https://www.cnbcindonesia.com/research/20261118145637-128-786361/ini-10-raksasa-pemilik-data-center-china-ada-huawei-hingga-tencent",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-18T17:10:04+07:00",
+        "summary": "China tampaknya tak memberi banyak ruang bagi negara lain dalam persaingan data center,",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Citi Indonesia Dukung Pembiayaan Jumbo Freeport & ZanKore, Bisnis Services Tumbuh 9%",
+        "url": "https://keuangan.kontan.co.id/news/citi-indonesia-dukung-pembiayaan-jumbo-freeport-zankore-bisnis-services-tumbuh-9",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T17:07:55+07:00",
+        "summary": "Citi Indonesia memperkuat bisnis perbankan korporasi melalui dukungan terhadap sejumlah transaksi pembiayaan jumbo.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Pembiayaan Multifinance ke Sektor UMKM Capai Rp 157,34 Triliun per September 2026",
+        "url": "https://keuangan.kontan.co.id/news/pembiayaan-multifinance-ke-sektor-umkm-capai-rp-15734-triliun-per-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T17:03:27+07:00",
+        "summary": "Pembiayaan multifinance ke sektor UMKM mencapai Rp 157,34 triliun per September 2026 atau terkontraksi 3,85%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BEI Ungkap Alasan Cabut Izin Anggota Bursa Paramitra Alfa Sekuritas",
+        "url": "https://www.cnbcindonesia.com/market/20261118165634-17-786395/bei-ungkap-alasan-cabut-izin-anggota-bursa-paramitra-alfa-sekuritas",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-18T16:58:57+07:00",
+        "summary": "BEI cabut izin Paramitra Alfa Sekuritas atas permintaan perusahaan. Namun, status kepemilikan saham di BEI tetap dipertahankan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Banjir Insentif, BI Pede Suku Bunga 6% Tak Langsung Tekan Ekonomi RI",
+        "url": "https://www.cnbcindonesia.com/market/20261118153054-17-786349/banjir-insentif-bi-pede-suku-bunga-6-tak-langsung-tekan-ekonomi-ri",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-18T16:50:00+07:00",
+        "summary": "BI memastikan, tren suku bunga acuan yang kini tengah naik tak serta merta akan menarik ke bawa laju pertumbuhan ekonomi Indonesia",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Produk Asuransi Karbon Mulai Dikembangkan dan Ditawarkan di Pasar Internasional",
+        "url": "https://keuangan.kontan.co.id/news/produk-asuransi-karbon-mulai-dikembangkan-dan-ditawarkan-di-pasar-internasional",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T16:41:10+07:00",
+        "summary": "Produk asuransi karbon mulai dikembangkan dan ditawarkan di pasar internasional, terutama di Eropa. Hal ini untuk memberikan kepastian investor.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Jumlah Penyelenggara Dana Pensiun Susut Jadi 179, Ini Penjelasan OJK",
+        "url": "https://keuangan.kontan.co.id/news/jumlah-penyelenggara-dana-pensiun-susut-jadi-179-ini-penjelasan-ojk",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T16:39:13+07:00",
+        "summary": "OJK menyebut, perubahan jumlah penyelenggara dana pensiun merupakan bagian dari dinamika dan penataan industri.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Waspada Serangan Siber, Siapkan 4 Jurus Jaga Transaksi Digital",
+        "url": "https://www.cnbcindonesia.com/market/20261118153553-17-786362/bi-waspada-serangan-siber-siapkan-4-jurus-jaga-transaksi-digital",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-18T16:38:20+07:00",
+        "summary": "BI meningkatkan kewaspadaan terhadap ancaman siber untuk sistem pembayaran digital.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Citi Indonesia Catat Laba Bersih Rp 1,53 Triliun per September, Intermediasi Terjaga",
+        "url": "https://keuangan.kontan.co.id/news/citi-indonesia-catat-laba-bersih-rp-153-triliun-per-september-intermediasi-terjaga",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T16:34:18+07:00",
+        "summary": "Hingga September 2026, Citi Indonesia membukukan laba sebesar Rp 1,53 triliun, turun 33,07% secara tahunan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "laba"
+        ],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "BPJS Kesehatan Selamatkan Rp 6,52 Triliun dari Kecurangan Program JKN",
+        "url": "https://keuangan.kontan.co.id/news/bpjs-kesehatan-selamatkan-rp-652-triliun-dari-kecurangan-program-jkn",
+        "source": "kontan/keuangan",
+        "published": "2026-11-18T16:30:29+07:00",
+        "summary": "BPJS Kesehatan selamatkan Rp 6,52 triliun dari pencegahan dan penanganan fraud program JKN sepanjang 2025, turun dari Rp 6,69 triliun dari 2024&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun",
+          "fraud"
+        ]
+      },
+      {
+        "title": "4.300 Satwa Asia Terancam Punah, Badak hingga Macan Tutul",
+        "url": "https://www.cnbcindonesia.com/research/20261118152342-128-786355/4300-satwa-asia-terancam-punah-badak-hingga-macan-tutul",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-18T16:25:18+07:00",
+        "summary": "Lebih dari 4.300 spesies satwa di Asia kini masuk dalam kategori terancam punah",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
