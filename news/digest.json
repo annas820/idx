@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T17:58+07:00",
+ "generated_for": "2026-11-18T18:54+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 826,
- "kept": 314,
- "dropped_noise": 27,
+ "scanned": 840,
+ "kept": 312,
+ "dropped_noise": 29,
  "items": [
   {
    "published": "2026-11-18T15:37+07:00",
@@ -64,24 +64,6 @@
     "ANTM"
    ],
    "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T06:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Prediksi IHSG Hari Ini Saat Rupiah Rekor Terendah & Fed Hawkish",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127911/prediksi-ihsg-hari-ini-saat-rupiah-rekor-terendah-fed-hawkish",
-   "score": 10,
-   "categories": [
-    "global",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
    "also_in": []
   },
   {
@@ -390,27 +372,6 @@
    ]
   },
   {
-   "published": "2026-11-17T06:49+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BRI Danareksa Beri Rekomendasi Saham Beli Astra International (ASII), Ini Penyebabnya",
-   "link": "https://investasi.kontan.co.id/news/bri-danareksa-beri-rekomendasi-saham-beli-astra-international-asii-ini-penyebabnya",
-   "score": 8,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ASII",
-    "BBRI"
-   ],
-   "flags": [
-    "petunjuk",
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
    "published": "2026-11-18T14:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -464,30 +425,45 @@
    ],
    "flags": [],
    "also_in": []
-  }
- ],
- "watchlist_hits": [
+  },
   {
-   "published": "2026-11-17T06:49+07:00",
+   "published": "2026-11-17T16:05+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "BRI Danareksa Beri Rekomendasi Saham Beli Astra International (ASII), Ini Penyebabnya",
-   "link": "https://investasi.kontan.co.id/news/bri-danareksa-beri-rekomendasi-saham-beli-astra-international-asii-ini-penyebabnya",
-   "score": 8,
+   "title": "Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun",
+   "link": "https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun",
+   "score": 7,
    "categories": [
     "pasar",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "ASII",
-    "BBRI"
+    "INET"
    ],
-   "flags": [
-    "petunjuk",
-    "watchlist"
-   ],
+   "flags": [],
    "also_in": []
   },
+  {
+   "published": "2026-11-17T10:49+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa",
+   "link": "https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMAS"
+   ],
+   "flags": [],
+   "also_in": []
+  }
+ ],
+ "watchlist_hits": [
   {
    "published": "2026-11-18T17:55+07:00",
    "source": "cnbc_indonesia_news",
