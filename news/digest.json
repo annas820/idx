@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T16:52+07:00",
+ "generated_for": "2026-11-18T17:58+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 808,
- "kept": 310,
- "dropped_noise": 24,
+ "scanned": 826,
+ "kept": 314,
+ "dropped_noise": 27,
  "items": [
   {
    "published": "2026-11-18T15:37+07:00",
@@ -484,6 +484,25 @@
    ],
    "flags": [
     "petunjuk",
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T17:55+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bos Vale Beberkan Strategi Jaga Kinerja di Tengah Gejolak Harga Nikel",
+   "link": "https://www.cnbcindonesia.com/news/20261118160419-4-786368/bos-vale-beberkan-strategi-jaga-kinerja-di-tengah-gejolak-harga-nikel",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
     "watchlist"
    ],
    "also_in": []

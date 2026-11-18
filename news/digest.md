@@ -1,10 +1,11 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-18T16:52+07:00 WIB | jendela 36 jam | dipindai 808, lolos 310, dibuang sebagai noise 24.
+Berita terbaru: 2026-11-18T17:58+07:00 WIB | jendela 36 jam | dipindai 826, lolos 314, dibuang sebagai noise 27.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **8** T3 11-17 06:49 kontan_investasi: BRI Danareksa Beri Rekomendasi Saham Beli Astra International (ASII), Ini Penyebabnya [ASII,BBRI] (pasar/emiten; petunjuk, watchlist) <https://investasi.kontan.co.id/news/bri-danareksa-beri-rekomendasi-saham-beli-astra-international-asii-ini-penyebabnya>
+- **6** T3 11-18 17:55 cnbc_indonesia_news: Bos Vale Beberkan Strategi Jaga Kinerja di Tengah Gejolak Harga Nikel [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118160419-4-786368/bos-vale-beberkan-strategi-jaga-kinerja-di-tengah-gejolak-harga-nikel>
 - **6** T3 11-18 16:45 cnbc_indonesia_news: Dirut Vale Blak-blakan Soal Lonjakan Laba 180% Tembus Rp2,67 Triliun [INCO] (korporasi/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118152825-4-786348/dirut-vale-blak-blakan-soal-lonjakan-laba-180-tembus-rp267-triliun>
 - **6** T3 11-17 13:16 kontan_industri: Intip Strategi dan Target Kinerja Astra International (ASII) Hingga Tahun 2030 [ASII] (emiten; watchlist, terkonfirmasi, juga di kontan_investasi) <https://industri.kontan.co.id/news/intip-strategi-dan-target-kinerja-astra-international-asii-hingga-tahun-2030>
 - **4** T3 11-18 12:51 kontan_investasi: Hasil RUPSLB Vale Indonesia (INCO) Rombak Jajaran Pengurus, Ini Susunan Terbarunya [INCO] (emiten; watchlist) <https://investasi.kontan.co.id/news/hasil-rupslb-vale-indonesia-inco-rombak-jajaran-pengurus-ini-susunan-terbarunya>
