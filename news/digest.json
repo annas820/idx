@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T18:54+07:00",
+ "generated_for": "2026-11-18T20:01+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 840,
- "kept": 312,
+ "scanned": 874,
+ "kept": 329,
  "dropped_noise": 29,
  "items": [
   {
@@ -46,25 +46,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-17T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Dividen ANTM Berpotensi Tembus Rp312/Saham, Yield Capai 11%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/127926/dividen-antm-berpotensi-tembus-rp312-saham-yield-capai-11",
-   "score": 10,
-   "categories": [
-    "pasar",
-    "kurs",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
   },
   {
    "published": "2026-11-18T14:36+07:00",
@@ -372,6 +353,60 @@
    ]
   },
   {
+   "published": "2026-11-18T18:46+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Indonesia Kendaraan (IPCC) Tebar Dividen Interim Rp 70,87 Miliar, Potensi Yield 3,89%",
+   "link": "https://investasi.kontan.co.id/news/indonesia-kendaraan-ipcc-tebar-dividen-interim-rp-7087-miliar-potensi-yield-389",
+   "score": 7,
+   "categories": [
+    "kurs",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "IPCC"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T18:20+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Usai Akuisisi 90% Saham Vivo, AKRA Bakal Sulap 47 SPBU Vivo Jadi BP-AKR",
+   "link": "https://industri.kontan.co.id/news/usai-akuisisi-90-saham-vivo-akra-bakal-sulap-47-spbu-vivo-jadi-bp-akr",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "AKRA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T17:07+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Stock Split Roda Vivatex (RDTX) akan Bergulir, Jumlah Saham Melonjak Jadi 5,37 Miliar",
+   "link": "https://investasi.kontan.co.id/news/stock-split-roda-vivatex-rdtx-akan-bergulir-jumlah-saham-melonjak-jadi-537-miliar",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "RDTX"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-18T14:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -425,51 +460,53 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-17T16:05+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun",
-   "link": "https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INET"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T10:49+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa",
-   "link": "https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMAS"
-   ],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-18T19:30+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara",
+   "link": "https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-18T17:55+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
    "title": "Bos Vale Beberkan Strategi Jaga Kinerja di Tengah Gejolak Harga Nikel",
    "link": "https://www.cnbcindonesia.com/news/20261118160419-4-786368/bos-vale-beberkan-strategi-jaga-kinerja-di-tengah-gejolak-harga-nikel",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T16:47+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Vale Indonesia (INCO) Bersiap Panen Proyek Hilirisasi, Simak Rekomendasi Analis",
+   "link": "https://investasi.kontan.co.id/news/vale-indonesia-inco-bersiap-panen-proyek-hilirisasi-simak-rekomendasi-analis",
    "score": 6,
    "categories": [
     "komoditas",
