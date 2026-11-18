@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T11:55+07:00",
+ "generated_for": "2026-11-18T13:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 595,
- "kept": 239,
+ "scanned": 627,
+ "kept": 252,
  "dropped_noise": 12,
  "items": [
   {
@@ -42,6 +42,22 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T12:01+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Menanti Pengumuman BI Rate, IHSG Menguat Tapi Rupiah Melemah",
+   "link": "https://www.cnbcindonesia.com/market/20261118115359-19-786246/video-menanti-pengumuman-bi-rate-ihsg-menguat-tapi-rupiah-melemah",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -304,6 +320,21 @@
    "also_in": []
   },
   {
+   "published": "2026-11-18T12:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Dilema BI Rate Bagi IHSG, Positif atau Negatif?",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128100/dilema-bi-rate-bagi-ihsg-positif-atau-negatif",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-18T11:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -407,42 +438,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-18T08:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "IHSG Bergejolak, OJK Tes Seberapa Kuat Industri Asuransi RI",
-   "link": "https://www.cnbcindonesia.com/market/20261118080352-17-786130/ihsg-bergejolak-ojk-tes-seberapa-kuat-industri-asuransi-ri",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T08:43+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Turun Hari Ini, Tapi Tak Banyak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128064/harga-emas-antam-turun-hari-ini-tapi-tak-banyak",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
   }
  ],
  "watchlist_hits": [
@@ -487,6 +482,42 @@
    "also_in": [
     "kontan_investasi"
    ]
+  },
+  {
+   "published": "2026-11-18T12:51+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Hasil RUPSLB Vale Indonesia (INCO) Rombak Jajaran Pengurus, Ini Susunan Terbarunya",
+   "link": "https://investasi.kontan.co.id/news/hasil-rupslb-vale-indonesia-inco-rombak-jajaran-pengurus-ini-susunan-terbarunya",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T12:07+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Vale Indonesia (INCO) Rombak Direksi dan Komisaris, Cek Susunan Terbaru",
+   "link": "https://www.cnbcindonesia.com/market/20261118114730-17-786236/vale-indonesia--inco--rombak-direksi-komisaris-cek-susunan-terbaru",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
   },
   {
    "published": "2026-11-17T09:47+07:00",
