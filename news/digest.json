@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T15:58+07:00",
+ "generated_for": "2026-11-18T16:52+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 781,
- "kept": 303,
- "dropped_noise": 22,
+ "scanned": 808,
+ "kept": 310,
+ "dropped_noise": 24,
  "items": [
   {
    "published": "2026-11-18T15:37+07:00",
@@ -188,6 +188,25 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-18T16:52+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Ditutup Melemah Saat BI Rate Naik 25 Bps Jadi 6%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128165/ihsg-ditutup-melemah-saat-bi-rate-naik-25-bps-jadi-6",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-11-18T15:25+07:00",
@@ -445,24 +464,6 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-17T16:05+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun",
-   "link": "https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INET"
-   ],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -483,6 +484,25 @@
    ],
    "flags": [
     "petunjuk",
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T16:45+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Dirut Vale Blak-blakan Soal Lonjakan Laba 180% Tembus Rp2,67 Triliun",
+   "link": "https://www.cnbcindonesia.com/news/20261118152825-4-786348/dirut-vale-blak-blakan-soal-lonjakan-laba-180-tembus-rp267-triliun",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
     "watchlist"
    ],
    "also_in": []
