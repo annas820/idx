@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-18T22:19+07:00",
+ "generated_for": "2026-11-19T05:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 864,
- "kept": 319,
- "dropped_noise": 29,
+ "scanned": 622,
+ "kept": 243,
+ "dropped_noise": 23,
  "items": [
   {
    "published": "2026-11-18T15:37+07:00",
@@ -96,42 +96,20 @@
    "also_in": []
   },
   {
-   "published": "2026-11-17T17:25+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-19T05:24+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Ditekan Harga Minyak dan The Fed Jelang RDG BI, Ini Proyeksi Rupiah hingga Akhir 2026",
-   "link": "https://investasi.kontan.co.id/news/ditekan-harga-minyak-dan-the-fed-jelang-rdg-bi-ini-proyeksi-rupiah-hingga-akhir-2026",
-   "score": 9,
+   "title": "Wall Street Melemah di Tengah Saham Nvidia Anjlok & IPO Anthropic",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128190/wall-street-melemah-di-tengah-saham-nvidia-anjlok-ipo-anthropic",
+   "score": 8,
    "categories": [
-    "kebijakan",
     "global",
-    "kurs"
+    "pasar",
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-17T12:36+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Soroti Sengketa Lahan Anak Usaha Indika (INDY) di Tambang Emas",
-   "link": "https://www.cnbcindonesia.com/market/20261117123308-17-785908/bei-soroti-sengketa-lahan-anak-usaha-indika--indy--di-tambang-emas",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INDY"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   },
   {
    "published": "2026-11-18T16:52+07:00",
@@ -261,57 +239,20 @@
    "also_in": []
   },
   {
-   "published": "2026-11-17T16:30+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-19T05:45+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "Ekonom Proyeksi BI Rate Naik Demi Jaga Daya Tarik Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128021/ekonom-proyeksi-bi-rate-naik-demi-jaga-daya-tarik-rupiah",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-17T11:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Rugikan Rp6,97 M, OJK Tahan Tersangka Manipulasi Saham",
-   "link": "https://www.cnbcindonesia.com/market/20261117093303-19-785838/rugikan-rp697-m-ojk-tahan-tersangka-manipulasi-saham",
-   "score": 8,
+   "title": "Simak Rekomendasi Saham Big Banks Usai BI Kerek Suku Bunga Jadi 6%",
+   "link": "https://keuangan.kontan.co.id/news/simak-rekomendasi-saham-big-banks-usai-bi-kerek-suku-bunga-jadi-6",
+   "score": 7,
    "categories": [
     "kebijakan",
     "pasar"
    ],
    "tickers": [],
    "flags": [
-    "terkonfirmasi"
+    "petunjuk"
    ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-17T11:02+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Harga Emas Tertekan Dolar AS dan Ekspektasi Kenaikan Suku Bunga The Fed",
-   "link": "https://investasi.kontan.co.id/news/harga-emas-tertekan-dolar-as-dan-ekspektasi-kenaikan-suku-bunga-the-fed",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "global",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
    "also_in": []
   },
   {
@@ -406,57 +347,99 @@
    "also_in": []
   },
   {
-   "published": "2026-11-17T17:15+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-18T19:30+07:00",
+   "source": "cnbc_indonesia_news",
    "tier": 3,
-   "title": "IFG Life Jual Saham PPRO di Tengah Aksi Merger dengan Inhealth",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128025/ifg-life-jual-saham-ppro-di-tengah-aksi-merger-dengan-inhealth",
-   "score": 7,
+   "title": "Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara",
+   "link": "https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi",
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "PPRO"
+    "INCO"
    ],
-   "flags": [],
+   "flags": [
+    "watchlist"
+   ],
    "also_in": []
   },
   {
-   "published": "2026-11-17T16:05+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Cakrawala Nexus Akuisisi 29,87% Saham INET Senilai Rp 2 Triliun",
-   "link": "https://investasi.kontan.co.id/news/cakrawala-nexus-akuisisi-2987-saham-inet-senilai-rp-2-triliun",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INET"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-17T10:49+07:00",
+   "published": "2026-11-18T19:27+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
-   "title": "KBank Indonesia (BMAS) Rights Issue Rp 1 Triliun, KBank Siap Serap Seluruh Saham Sisa",
-   "link": "https://keuangan.kontan.co.id/news/kbank-indonesia-bmas-rights-issue-rp-1-triliun-kbank-siap-serap-seluruh-saham-sisa",
-   "score": 7,
+   "title": "Menilik Potensi Asing Melirik Saham Bank di Era Suku Bunga Tinggi",
+   "link": "https://keuangan.kontan.co.id/news/menilik-potensi-asing-melirik-saham-bank-di-era-suku-bunga-tinggi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T19:12+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Pergerakan Saham Bank Variatif Pasca RDG BI, Simak Rekomendasi Berikut",
+   "link": "https://investasi.kontan.co.id/news/pergerakan-saham-bank-variatif-pasca-rdg-bi-simak-rekomendasi-berikut",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T18:55+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Pasar Saham Bisa Dapat Sentimen Positif dari Kenaikan Suku Bunga BI",
+   "link": "https://investasi.kontan.co.id/news/pasar-saham-bisa-dapat-sentimen-positif-dari-kenaikan-suku-bunga-bi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T18:25+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BI Rate Naik Jadi 6%, Pelaku Pasar Ungkap Efeknya ke Saham-Reksa Dana",
+   "link": "https://www.cnbcindonesia.com/market/20261118181107-17-786418/bi-rate-naik-jadi-6-pelaku-pasar-ungkap-efeknya-ke-saham-reksa-dana",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-18T18:23+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Enam Emiten Tebar Dividen Interim, Ini Saham Pilihan Analis Jelang Cum Date",
+   "link": "https://investasi.kontan.co.id/news/enam-emiten-tebar-dividen-interim-ini-saham-pilihan-analis-jelang-cum-date",
+   "score": 6,
    "categories": [
     "pasar",
-    "korporasi",
-    "emiten"
+    "korporasi"
    ],
-   "tickers": [
-    "BMAS"
+   "tickers": [],
+   "flags": [
+    "petunjuk"
    ],
-   "flags": [],
    "also_in": []
   }
  ],
@@ -536,27 +519,6 @@
     "watchlist"
    ],
    "also_in": []
-  },
-  {
-   "published": "2026-11-17T13:16+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Intip Strategi dan Target Kinerja Astra International (ASII) Hingga Tahun 2030",
-   "link": "https://industri.kontan.co.id/news/intip-strategi-dan-target-kinerja-astra-international-asii-hingga-tahun-2030",
-   "score": 6,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "ASII"
-   ],
-   "flags": [
-    "watchlist",
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
   },
   {
    "published": "2026-11-18T12:51+07:00",
