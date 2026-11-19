@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T13:00+07:00",
+ "generated_for": "2026-11-19T14:07+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 740,
- "kept": 285,
- "dropped_noise": 34,
+ "scanned": 772,
+ "kept": 294,
+ "dropped_noise": 35,
  "items": [
   {
    "published": "2026-11-19T10:07+07:00",
@@ -468,6 +468,44 @@
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-19T13:25+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Tungku Dibangun Ulang, Produksi Nikel Matte Vale Tembus 48.114 Ton",
+   "link": "https://www.cnbcindonesia.com/news/20261119130518-4-786611/tungku-dibangun-ulang-produksi-nikel-matte-vale-tembus-48114-ton",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T13:05+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Vale Bakal Operasikan Pabrik Nikel HPAL Baru di Desember 2026",
+   "link": "https://www.cnbcindonesia.com/news/20261119123041-4-786594/vale-bakal-operasikan-pabrik-nikel-hpal-baru-di-desember-2026",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-18T19:30+07:00",
    "source": "cnbc_indonesia_news",

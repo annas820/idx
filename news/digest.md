@@ -1,9 +1,11 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-19T13:00+07:00 WIB | jendela 36 jam | dipindai 740, lolos 285, dibuang sebagai noise 34.
+Berita terbaru: 2026-11-19T14:07+07:00 WIB | jendela 36 jam | dipindai 772, lolos 294, dibuang sebagai noise 35.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **6** T3 11-19 13:25 cnbc_indonesia_news: Tungku Dibangun Ulang, Produksi Nikel Matte Vale Tembus 48.114 Ton [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119130518-4-786611/tungku-dibangun-ulang-produksi-nikel-matte-vale-tembus-48114-ton>
+- **6** T3 11-19 13:05 cnbc_indonesia_news: Vale Bakal Operasikan Pabrik Nikel HPAL Baru di Desember 2026 [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119123041-4-786594/vale-bakal-operasikan-pabrik-nikel-hpal-baru-di-desember-2026>
 - **6** T3 11-18 19:30 cnbc_indonesia_news: Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara>
 - **6** T3 11-18 17:55 cnbc_indonesia_news: Bos Vale Beberkan Strategi Jaga Kinerja di Tengah Gejolak Harga Nikel [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118160419-4-786368/bos-vale-beberkan-strategi-jaga-kinerja-di-tengah-gejolak-harga-nikel>
 - **6** T3 11-18 16:47 kontan_investasi: Vale Indonesia (INCO) Bersiap Panen Proyek Hilirisasi, Simak Rekomendasi Analis [INCO] (komoditas/emiten; watchlist) <https://investasi.kontan.co.id/news/vale-indonesia-inco-bersiap-panen-proyek-hilirisasi-simak-rekomendasi-analis>
