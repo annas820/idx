@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-20T05:45+07:00 WIB | jendela 36 jam | dipindai 624, lolos 228, dibuang sebagai noise 26.
+Berita terbaru: 2026-11-20T06:35+07:00 WIB | jendela 36 jam | dipindai 603, lolos 220, dibuang sebagai noise 23.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -9,7 +9,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-19 13:25 cnbc_indonesia_news: Tungku Dibangun Ulang, Produksi Nikel Matte Vale Tembus 48.114 Ton [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119130518-4-786611/tungku-dibangun-ulang-produksi-nikel-matte-vale-tembus-48114-ton>
 - **6** T3 11-19 13:05 cnbc_indonesia_news: Vale Bakal Operasikan Pabrik Nikel HPAL Baru di Desember 2026 [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119123041-4-786594/vale-bakal-operasikan-pabrik-nikel-hpal-baru-di-desember-2026>
 - **6** T3 11-18 19:30 cnbc_indonesia_news: Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara>
-- **6** T3 11-18 17:55 cnbc_indonesia_news: Bos Vale Beberkan Strategi Jaga Kinerja di Tengah Gejolak Harga Nikel [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118160419-4-786368/bos-vale-beberkan-strategi-jaga-kinerja-di-tengah-gejolak-harga-nikel>
 
 ## Teratas
 - **11** T3 11-19 17:55 kontan_investasi: BI Rate Naik Sudah Naik, Rupiah Masih Tertekan Dihantui Arah Kebijakan The Fed (kebijakan/global/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/bi-rate-naik-sudah-naik-rupiah-masih-tertekan-dihantui-arah-kebijakan-the-fed>
@@ -21,7 +20,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-19 08:00 bloomberg_technoz: IHSG Dibayangi Kenaikan BI Rate & Arah Rupiah (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128201/ihsg-dibayangi-kenaikan-bi-rate-arah-rupiah>
 - **9** T3 11-19 07:46 kontan_investasi: BI Kerek Suku Bunga Jadi 6%, Begini Dampak dan Rekomendasi Saham Pilihan (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_keuangan) <https://investasi.kontan.co.id/news/bi-kerek-suku-bunga-jadi-6-begini-dampak-dan-rekomendasi-saham-pilihan>
 - **9** T3 11-19 05:45 kontan_keuangan: Simak Rekomendasi Saham Big Banks Usai BI Kerek Suku Bunga Jadi 6% (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_investasi) <https://keuangan.kontan.co.id/news/simak-rekomendasi-saham-big-banks-usai-bi-kerek-suku-bunga-jadi-6>
-- **9** T3 11-18 18:20 kontan_industri: Usai Akuisisi 90% Saham Vivo, AKRA Bakal Sulap 47 SPBU Vivo Jadi BP-AKR [AKRA] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://industri.kontan.co.id/news/usai-akuisisi-90-saham-vivo-akra-bakal-sulap-47-spbu-vivo-jadi-bp-akr>
 - **8** T3 11-19 22:07 kontan_investasi: Bursa Wall Street Dibuka Menghijau, IPO Anthropic Bikin Pasar Bergairah (global/pasar/korporasi) <https://investasi.kontan.co.id/news/bursa-wall-street-dibuka-menghijau-ipo-anthropic-bikin-pasar-bergairah>
 - **8** T3 11-19 18:08 cnbc_indonesia_market: OJK Mulai Data Investor Penerima Ganti Rugi Manipulasi Saham (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261119172909-17-786717/ojk-mulai-data-investor-penerima-ganti-rugi-manipulasi-saham>
 - **8** T3 11-19 16:40 bloomberg_technoz: Saham ISAT Sentuh ARB, Dibayangi Pasar Ketat Cip Nvidia [ISAT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/128310/saham-isat-sentuh-arb-dibayangi-pasar-ketat-cip-nvidia>
@@ -37,3 +35,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-19 18:02 kontan_investasi: ARII Private Placement 375 Juta Saham untuk Pendanaan Infrastruktur, Ini Kata Analis [ARII] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/arii-private-placement-375-juta-saham-untuk-pendanaan-infrastruktur-ini-kata-analis>
 - **7** T3 11-19 16:06 kontan_investasi: IHSG Ditutup Turun 1,02% ke 5.194 pad Kamis (19/11), INDY, ISAT, INCO Top Losers LQ45 [INCO,INDY,ISAT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-ditutup-turun-102-ke-5194-pad-kamis-1911-indy-isat-inco-top-losers-lq45>
 - **7** T3 11-19 13:51 kontan_investasi: ARII Siapkan Private Placement 375 Juta Saham, Ini Prospek dan Target Harganya [ARII] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/arii-siapkan-private-placement-375-juta-saham-ini-prospek-dan-target-harganya>
+- **7** T3 11-19 13:31 kontan_investasi: Waskita Beton (WSBP) Gelar Private Placement VII, Terbitkan 54,29 Juta Saham [WSBP] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/waskita-beton-wsbp-gelar-private-placement-vii-terbitkan-5429-juta-saham>

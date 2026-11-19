@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T05:45+07:00",
+ "generated_for": "2026-11-20T06:35+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 624,
- "kept": 228,
- "dropped_noise": 26,
+ "scanned": 603,
+ "kept": 220,
+ "dropped_noise": 23,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -179,28 +179,6 @@
    "tickers": [],
    "flags": [
     "petunjuk",
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
-  },
-  {
-   "published": "2026-11-18T18:20+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Usai Akuisisi 90% Saham Vivo, AKRA Bakal Sulap 47 SPBU Vivo Jadi BP-AKR",
-   "link": "https://industri.kontan.co.id/news/usai-akuisisi-90-saham-vivo-akra-bakal-sulap-47-spbu-vivo-jadi-bp-akr",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "AKRA"
-   ],
-   "flags": [
     "terkonfirmasi"
    ],
    "also_in": [
@@ -477,6 +455,24 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-19T13:31+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Waskita Beton (WSBP) Gelar Private Placement VII, Terbitkan 54,29 Juta Saham",
+   "link": "https://investasi.kontan.co.id/news/waskita-beton-wsbp-gelar-private-placement-vii-terbitkan-5429-juta-saham",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "WSBP"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -564,25 +560,6 @@
    "tier": 3,
    "title": "Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara",
    "link": "https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T17:55+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos Vale Beberkan Strategi Jaga Kinerja di Tengah Gejolak Harga Nikel",
-   "link": "https://www.cnbcindonesia.com/news/20261118160419-4-786368/bos-vale-beberkan-strategi-jaga-kinerja-di-tengah-gejolak-harga-nikel",
    "score": 6,
    "categories": [
     "komoditas",
