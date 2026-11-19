@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-19T20:10+07:00 WIB | jendela 36 jam | dipindai 926, lolos 348, dibuang sebagai noise 39.
+Berita terbaru: 2026-11-19T21:50+07:00 WIB | jendela 36 jam | dipindai 898, lolos 326, dibuang sebagai noise 39.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -21,6 +21,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **10** T3 11-19 07:19 kontan_investasi: Lirik Rekomendasi Saham dan Prospek AKR Corporindo (AKRA) Usai Akuisisi SPBU VIVO [AKRA] (pasar/korporasi/emiten; petunjuk, terkonfirmasi, juga di kontan_industri) <https://investasi.kontan.co.id/news/lirik-rekomendasi-saham-dan-prospek-akr-corporindo-akra-usai-akuisisi-spbu-vivo>
 - **10** T3 11-18 15:37 bloomberg_technoz: Rupiah Ditutup Menguat Usai BI Rate Naik ke 6% (kebijakan/kurs; terkonfirmasi, juga di cnbc_indonesia_market/kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128145/rupiah-ditutup-menguat-usai-bi-rate-naik-ke-6>
 - **10** T3 11-18 14:27 cnbc_indonesia_market: BI Rate Naik Jadi 6%, Bos BI: Demi Jaga Rupiah dan Inflasi! (kebijakan/kurs/makro; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261118142349-17-786311/bi-rate-naik-jadi-6-bos-bi-demi-jaga-rupiah-dan-inflasi>
+- **9** T3 11-19 20:14 kontan_keuangan: BCA Bagikan Dividen Interim Rp 35 per Saham pada Kuartal IV-2026, Cek Jadwalnya [BBCA] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://keuangan.kontan.co.id/news/bca-bagikan-dividen-interim-rp-35-per-saham-pada-kuartal-iv-2026-cek-jadwalnya>
+- **9** T3 11-19 15:20 kontan_investasi: Jasuindo Tiga (JTPE) Bagikan Dividen Interim Rp 10 per Saham, Simak Jadwalnya [JTPE] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_keuangan) <https://investasi.kontan.co.id/news/jasuindo-tiga-jtpe-bagikan-dividen-interim-rp-10-per-saham-simak-jadwalnya>
 - **9** T3 11-19 12:25 cnbc_indonesia_market: Video: BI Rate Naik Jadi 6%, IHSG Volatil dan Rupiah Masih Melemah (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261119121322-19-786588/video-bi-rate-naik-jadi-6-ihsg-volatil-rupiah-masih-melemah>
 - **9** T3 11-19 08:00 bloomberg_technoz: IHSG Dibayangi Kenaikan BI Rate & Arah Rupiah (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128201/ihsg-dibayangi-kenaikan-bi-rate-arah-rupiah>
 - **9** T3 11-19 07:46 kontan_investasi: BI Kerek Suku Bunga Jadi 6%, Begini Dampak dan Rekomendasi Saham Pilihan (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_keuangan) <https://investasi.kontan.co.id/news/bi-kerek-suku-bunga-jadi-6-begini-dampak-dan-rekomendasi-saham-pilihan>
@@ -39,5 +41,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-19 08:35 kontan_keuangan: MSCI Kerek ESG Rating BNI Menjadi AA [BBNI] (kebijakan/kredit/emiten) <https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa>
 - **8** T3 11-19 05:24 bloomberg_technoz: Wall Street Melemah di Tengah Saham Nvidia Anjlok & IPO Anthropic (global/pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/128190/wall-street-melemah-di-tengah-saham-nvidia-anjlok-ipo-anthropic>
 - **8** T3 11-18 16:52 bloomberg_technoz: IHSG Ditutup Melemah Saat BI Rate Naik 25 Bps Jadi 6% (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/128165/ihsg-ditutup-melemah-saat-bi-rate-naik-25-bps-jadi-6>
-- **8** T3 11-18 15:25 cnbc_indonesia_market: DPR Buka Suara Soal Kekhawatiran Gagal Bayar Obligasi Daerah (kurs/kredit/korporasi) <https://www.cnbcindonesia.com/market/20261118141246-17-786306/dpr-buka-suara-soal-kekhawatiran-gagal-bayar-obligasi-daerah>
-- **8** T3 11-18 15:24 bloomberg_technoz: IHSG Balik Merah Usai BI Rate Naik, BBCA Jadi Penopang Utama [BBCA] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/128144/ihsg-balik-merah-usai-bi-rate-naik-bbca-jadi-penopang-utama>

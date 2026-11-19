@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T20:10+07:00",
+ "generated_for": "2026-11-19T21:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 926,
- "kept": 348,
+ "scanned": 898,
+ "kept": 326,
  "dropped_noise": 39,
  "items": [
   {
@@ -107,6 +107,50 @@
    ],
    "also_in": [
     "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-19T20:14+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BCA Bagikan Dividen Interim Rp 35 per Saham pada Kuartal IV-2026, Cek Jadwalnya",
+   "link": "https://keuangan.kontan.co.id/news/bca-bagikan-dividen-interim-rp-35-per-saham-pada-kuartal-iv-2026-cek-jadwalnya",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-19T15:20+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Jasuindo Tiga (JTPE) Bagikan Dividen Interim Rp 10 per Saham, Simak Jadwalnya",
+   "link": "https://investasi.kontan.co.id/news/jasuindo-tiga-jtpe-bagikan-dividen-interim-rp-10-per-saham-simak-jadwalnya",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "JTPE"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
    ]
   },
   {
@@ -431,40 +475,6 @@
    "also_in": [
     "cnbc_indonesia_market"
    ]
-  },
-  {
-   "published": "2026-11-18T15:25+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "DPR Buka Suara Soal Kekhawatiran Gagal Bayar Obligasi Daerah",
-   "link": "https://www.cnbcindonesia.com/market/20261118141246-17-786306/dpr-buka-suara-soal-kekhawatiran-gagal-bayar-obligasi-daerah",
-   "score": 8,
-   "categories": [
-    "kurs",
-    "kredit",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T15:24+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Balik Merah Usai BI Rate Naik, BBCA Jadi Penopang Utama",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128144/ihsg-balik-merah-usai-bi-rate-naik-bbca-jadi-penopang-utama",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
-   ],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
