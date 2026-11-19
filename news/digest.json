@@ -1,12 +1,32 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T17:55+07:00",
+ "generated_for": "2026-11-19T18:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 899,
- "kept": 341,
- "dropped_noise": 38,
+ "scanned": 929,
+ "kept": 354,
+ "dropped_noise": 39,
  "items": [
+  {
+   "published": "2026-11-19T17:55+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BI Rate Naik Sudah Naik, Rupiah Masih Tertekan Dihantui Arah Kebijakan The Fed",
+   "link": "https://investasi.kontan.co.id/news/bi-rate-naik-sudah-naik-rupiah-masih-tertekan-dihantui-arah-kebijakan-the-fed",
+   "score": 11,
+   "categories": [
+    "kebijakan",
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
   {
    "published": "2026-11-19T10:07+07:00",
    "source": "cnbc_indonesia_market",
@@ -232,6 +252,22 @@
    "also_in": []
   },
   {
+   "published": "2026-11-19T18:08+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Mulai Data Investor Penerima Ganti Rugi Manipulasi Saham",
+   "link": "https://www.cnbcindonesia.com/market/20261119172909-17-786717/ojk-mulai-data-investor-penerima-ganti-rugi-manipulasi-saham",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-19T16:40+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -429,44 +465,30 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-18T15:05+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BI Rate Naik, Rupiah Spot Menguat 0,13% ke Rp 18.232 per Dolar AS, Rabu (18/11)",
-   "link": "https://investasi.kontan.co.id/news/bi-rate-naik-rupiah-spot-menguat-013-ke-rp-18232-per-dolar-as-rabu-1811",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-18T14:50+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Tak Cuma Suku Bunga, BI Keluarkan Jurus Ini Amankan Rupiah dan Inflasi",
-   "link": "https://www.cnbcindonesia.com/market/20261118144710-17-786326/tak-cuma-suku-bunga-bi-keluarkan-jurus-ini-amankan-rupiah-inflasi",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-19T16:06+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Ditutup Turun 1,02% ke 5.194 pad Kamis (19/11), INDY, ISAT, INCO Top Losers LQ45",
+   "link": "https://investasi.kontan.co.id/news/ihsg-ditutup-turun-102-ke-5194-pad-kamis-1911-indy-isat-inco-top-losers-lq45",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO",
+    "INDY",
+    "ISAT"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-19T16:20+07:00",
    "source": "bloomberg_technoz",
