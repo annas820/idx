@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-19T21:50+07:00 WIB | jendela 36 jam | dipindai 898, lolos 326, dibuang sebagai noise 39.
+Berita terbaru: 2026-11-19T22:38+07:00 WIB | jendela 36 jam | dipindai 910, lolos 327, dibuang sebagai noise 39.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -31,6 +31,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-18 14:36 bloomberg_technoz: Respons Pasar Usai BI Rate Naik ke 6%, Rupiah & IHSG Menguat (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128129/respons-pasar-usai-bi-rate-naik-ke-6-rupiah-ihsg-menguat>
 - **9** T3 11-18 12:01 cnbc_indonesia_market: Video: Menanti Pengumuman BI Rate, IHSG Menguat Tapi Rupiah Melemah (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261118115359-19-786246/video-menanti-pengumuman-bi-rate-ihsg-menguat-tapi-rupiah-melemah>
 - **9** T3 11-18 11:08 kontan_investasi: BI Diprediksi Tahan Suku Bunga Acuan, Rupiah dan IHSG Masih Dibayangi Tekanan (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/bi-diprediksi-tahan-suku-bunga-acuan-rupiah-dan-ihsg-masih-dibayangi-tekanan>
+- **8** T3 11-19 22:07 kontan_investasi: Bursa Wall Street Dibuka Menghijau, IPO Anthropic Bikin Pasar Bergairah (global/pasar/korporasi) <https://investasi.kontan.co.id/news/bursa-wall-street-dibuka-menghijau-ipo-anthropic-bikin-pasar-bergairah>
 - **8** T3 11-19 18:08 cnbc_indonesia_market: OJK Mulai Data Investor Penerima Ganti Rugi Manipulasi Saham (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261119172909-17-786717/ojk-mulai-data-investor-penerima-ganti-rugi-manipulasi-saham>
 - **8** T3 11-19 16:40 bloomberg_technoz: Saham ISAT Sentuh ARB, Dibayangi Pasar Ketat Cip Nvidia [ISAT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/128310/saham-isat-sentuh-arb-dibayangi-pasar-ketat-cip-nvidia>
 - **8** T3 11-19 11:45 cnbc_indonesia_market: Kena Denda OJK Miliaran Rupiah, Manajemen ASLI Buka Suara [ASLI] (kebijakan/kurs/emiten) <https://www.cnbcindonesia.com/market/20261119114008-17-786572/kena-denda-ojk-miliaran-rupiah-manajemen-asli-buka-suara>
@@ -40,4 +41,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-19 08:42 kontan_keuangan: Diterpa Gagal Bayar, OJK Pantau Ketat Penyelesaian Masalah iGrow, Akseleran & KoinP2P (kebijakan/kredit/korporasi) <https://keuangan.kontan.co.id/news/diterpa-gagal-bayar-ojk-pantau-ketat-penyelesaian-masalah-igrow-akseleran-koinp2p>
 - **8** T3 11-19 08:35 kontan_keuangan: MSCI Kerek ESG Rating BNI Menjadi AA [BBNI] (kebijakan/kredit/emiten) <https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa>
 - **8** T3 11-19 05:24 bloomberg_technoz: Wall Street Melemah di Tengah Saham Nvidia Anjlok & IPO Anthropic (global/pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/128190/wall-street-melemah-di-tengah-saham-nvidia-anjlok-ipo-anthropic>
-- **8** T3 11-18 16:52 bloomberg_technoz: IHSG Ditutup Melemah Saat BI Rate Naik 25 Bps Jadi 6% (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/128165/ihsg-ditutup-melemah-saat-bi-rate-naik-25-bps-jadi-6>

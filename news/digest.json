@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T21:50+07:00",
+ "generated_for": "2026-11-19T22:38+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 898,
- "kept": 326,
+ "scanned": 910,
+ "kept": 327,
  "dropped_noise": 39,
  "items": [
   {
@@ -296,6 +296,22 @@
    "also_in": []
   },
   {
+   "published": "2026-11-19T22:07+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Bursa Wall Street Dibuka Menghijau, IPO Anthropic Bikin Pasar Bergairah",
+   "link": "https://investasi.kontan.co.id/news/bursa-wall-street-dibuka-menghijau-ipo-anthropic-bikin-pasar-bergairah",
+   "score": 8,
+   "categories": [
+    "global",
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-19T18:08+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -456,25 +472,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-18T16:52+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Ditutup Melemah Saat BI Rate Naik 25 Bps Jadi 6%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128165/ihsg-ditutup-melemah-saat-bi-rate-naik-25-bps-jadi-6",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
   }
  ],
  "watchlist_hits": [
