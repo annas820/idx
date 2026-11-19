@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-19T10:50+07:00 WIB | jendela 36 jam | dipindai 671, lolos 268, dibuang sebagai noise 29.
+Berita terbaru: 2026-11-19T12:00+07:00 WIB | jendela 36 jam | dipindai 713, lolos 279, dibuang sebagai noise 33.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -23,6 +23,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-18 14:36 bloomberg_technoz: Respons Pasar Usai BI Rate Naik ke 6%, Rupiah & IHSG Menguat (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128129/respons-pasar-usai-bi-rate-naik-ke-6-rupiah-ihsg-menguat>
 - **9** T3 11-18 12:01 cnbc_indonesia_market: Video: Menanti Pengumuman BI Rate, IHSG Menguat Tapi Rupiah Melemah (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261118115359-19-786246/video-menanti-pengumuman-bi-rate-ihsg-menguat-tapi-rupiah-melemah>
 - **9** T3 11-18 11:08 kontan_investasi: BI Diprediksi Tahan Suku Bunga Acuan, Rupiah dan IHSG Masih Dibayangi Tekanan (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/bi-diprediksi-tahan-suku-bunga-acuan-rupiah-dan-ihsg-masih-dibayangi-tekanan>
+- **8** T3 11-19 11:45 cnbc_indonesia_market: Kena Denda OJK Miliaran Rupiah, Manajemen ASLI Buka Suara [ASLI] (kebijakan/kurs/emiten) <https://www.cnbcindonesia.com/market/20261119114008-17-786572/kena-denda-ojk-miliaran-rupiah-manajemen-asli-buka-suara>
+- **8** T3 11-19 11:45 kontan_keuangan: MSCI Ancam Status Pasar Saham RI, Citi Waspadai Tekanan Likuiditas Perbankan (kebijakan/pasar/makro) <https://keuangan.kontan.co.id/news/msci-ancam-status-pasar-saham-ri-citi-waspadai-tekanan-likuiditas-perbankan>
 - **8** T3 11-19 09:11 kontan_investasi: Harga Emas Antam Turun Rp 3.000, Buyback Ambles Rp 49.000 Per Gram Hari Ini (19/11) [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-3000-buyback-ambles-rp-49000-per-gram-hari-ini-1911>
 - **8** T3 11-19 08:58 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp3.000, Tapi Buyback Anjlok [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128216/harga-emas-antam-hari-ini-turun-rp3-000-tapi-buyback-anjlok>
 - **8** T3 11-19 08:42 kontan_keuangan: Diterpa Gagal Bayar, OJK Pantau Ketat Penyelesaian Masalah iGrow, Akseleran & KoinP2P (kebijakan/kredit/korporasi) <https://keuangan.kontan.co.id/news/diterpa-gagal-bayar-ojk-pantau-ketat-penyelesaian-masalah-igrow-akseleran-koinp2p>
@@ -35,5 +37,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-18 14:50 cnbc_indonesia_market: Tak Cuma Suku Bunga, BI Keluarkan Jurus Ini Amankan Rupiah dan Inflasi (kebijakan/kurs/makro) <https://www.cnbcindonesia.com/market/20261118144710-17-786326/tak-cuma-suku-bunga-bi-keluarkan-jurus-ini-amankan-rupiah-inflasi>
 - **8** T3 11-18 14:24 cnbc_indonesia_market: Rupiah Menguat ke Rp18.200/US$ Setelah BI Rate Naik Jadi 6% (kebijakan/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261118140633-17-786302/rupiah-menguat-ke-rp18200-us--setelah-bi-rate-naik-jadi-6>
 - **8** T3 11-18 07:22 kontan_investasi: Cermati Rekomendasi Saham dan Prospek Merdeka Gold Resources (EMAS) [EMAS] (pasar/komoditas/emiten; petunjuk) <https://investasi.kontan.co.id/news/cermati-rekomendasi-saham-dan-prospek-merdeka-gold-resources-emas>
-- **7** T3 11-18 18:46 kontan_investasi: Indonesia Kendaraan (IPCC) Tebar Dividen Interim Rp 70,87 Miliar, Potensi Yield 3,89% [IPCC] (kurs/korporasi/emiten) <https://investasi.kontan.co.id/news/indonesia-kendaraan-ipcc-tebar-dividen-interim-rp-7087-miliar-potensi-yield-389>
-- **7** T3 11-18 17:07 kontan_investasi: Stock Split Roda Vivatex (RDTX) akan Bergulir, Jumlah Saham Melonjak Jadi 5,37 Miliar [RDTX] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/stock-split-roda-vivatex-rdtx-akan-bergulir-jumlah-saham-melonjak-jadi-537-miliar>

@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T10:50+07:00",
+ "generated_for": "2026-11-19T12:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 671,
- "kept": 268,
- "dropped_noise": 29,
+ "scanned": 713,
+ "kept": 279,
+ "dropped_noise": 33,
  "items": [
   {
    "published": "2026-11-19T10:07+07:00",
@@ -210,6 +210,40 @@
     "kebijakan",
     "pasar",
     "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T11:45+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Kena Denda OJK Miliaran Rupiah, Manajemen ASLI Buka Suara",
+   "link": "https://www.cnbcindonesia.com/market/20261119114008-17-786572/kena-denda-ojk-miliaran-rupiah-manajemen-asli-buka-suara",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kurs",
+    "emiten"
+   ],
+   "tickers": [
+    "ASLI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T11:45+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "MSCI Ancam Status Pasar Saham RI, Citi Waspadai Tekanan Likuiditas Perbankan",
+   "link": "https://keuangan.kontan.co.id/news/msci-ancam-status-pasar-saham-ri-citi-waspadai-tekanan-likuiditas-perbankan",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "makro"
    ],
    "tickers": [],
    "flags": [],
@@ -434,42 +468,6 @@
    "flags": [
     "petunjuk"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T18:46+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Indonesia Kendaraan (IPCC) Tebar Dividen Interim Rp 70,87 Miliar, Potensi Yield 3,89%",
-   "link": "https://investasi.kontan.co.id/news/indonesia-kendaraan-ipcc-tebar-dividen-interim-rp-7087-miliar-potensi-yield-389",
-   "score": 7,
-   "categories": [
-    "kurs",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "IPCC"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T17:07+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Stock Split Roda Vivatex (RDTX) akan Bergulir, Jumlah Saham Melonjak Jadi 5,37 Miliar",
-   "link": "https://investasi.kontan.co.id/news/stock-split-roda-vivatex-rdtx-akan-bergulir-jumlah-saham-melonjak-jadi-537-miliar",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "RDTX"
-   ],
-   "flags": [],
    "also_in": []
   }
  ],
