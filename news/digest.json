@@ -1,12 +1,35 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T06:48+07:00",
+ "generated_for": "2026-11-19T08:05+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 624,
- "kept": 244,
+ "scanned": 608,
+ "kept": 237,
  "dropped_noise": 24,
  "items": [
+  {
+   "published": "2026-11-19T07:19+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Lirik Rekomendasi Saham dan Prospek AKR Corporindo (AKRA) Usai Akuisisi SPBU VIVO",
+   "link": "https://investasi.kontan.co.id/news/lirik-rekomendasi-saham-dan-prospek-akr-corporindo-akra-usai-akuisisi-spbu-vivo",
+   "score": 10,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "AKRA"
+   ],
+   "flags": [
+    "petunjuk",
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_industri"
+   ]
+  },
   {
    "published": "2026-11-18T15:37+07:00",
    "source": "bloomberg_technoz",
@@ -45,6 +68,84 @@
    ],
    "also_in": [
     "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-19T08:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Dibayangi Kenaikan BI Rate & Arah Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128201/ihsg-dibayangi-kenaikan-bi-rate-arah-rupiah",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T07:46+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BI Kerek Suku Bunga Jadi 6%, Begini Dampak dan Rekomendasi Saham Pilihan",
+   "link": "https://investasi.kontan.co.id/news/bi-kerek-suku-bunga-jadi-6-begini-dampak-dan-rekomendasi-saham-pilihan",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk",
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
+   ]
+  },
+  {
+   "published": "2026-11-19T05:45+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Simak Rekomendasi Saham Big Banks Usai BI Kerek Suku Bunga Jadi 6%",
+   "link": "https://keuangan.kontan.co.id/news/simak-rekomendasi-saham-big-banks-usai-bi-kerek-suku-bunga-jadi-6",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk",
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-18T18:20+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Usai Akuisisi 90% Saham Vivo, AKRA Bakal Sulap 47 SPBU Vivo Jadi BP-AKR",
+   "link": "https://industri.kontan.co.id/news/usai-akuisisi-90-saham-vivo-akra-bakal-sulap-47-spbu-vivo-jadi-bp-akr",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "AKRA"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
    ]
   },
   {
@@ -239,23 +340,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-19T05:45+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Simak Rekomendasi Saham Big Banks Usai BI Kerek Suku Bunga Jadi 6%",
-   "link": "https://keuangan.kontan.co.id/news/simak-rekomendasi-saham-big-banks-usai-bi-kerek-suku-bunga-jadi-6",
-   "score": 7,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
    "published": "2026-11-18T18:46+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -269,24 +353,6 @@
    ],
    "tickers": [
     "IPCC"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T18:20+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Usai Akuisisi 90% Saham Vivo, AKRA Bakal Sulap 47 SPBU Vivo Jadi BP-AKR",
-   "link": "https://industri.kontan.co.id/news/usai-akuisisi-90-saham-vivo-akra-bakal-sulap-47-spbu-vivo-jadi-bp-akr",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "AKRA"
    ],
    "flags": [],
    "also_in": []
@@ -347,6 +413,36 @@
    "also_in": []
   },
   {
+   "published": "2026-11-19T07:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Risalah Rapat The Fed Beri Sinyal Kenaikan Suku Bunga Lanjutan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128200/risalah-rapat-the-fed-beri-sinyal-kenaikan-suku-bunga-lanjutan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T07:36+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Investor Asing Net Sell Saham Kala BI Rate Naik Jadi 6%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128199/investor-asing-net-sell-saham-kala-bi-rate-naik-jadi-6",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-18T19:30+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -362,83 +458,6 @@
    ],
    "flags": [
     "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T19:27+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Menilik Potensi Asing Melirik Saham Bank di Era Suku Bunga Tinggi",
-   "link": "https://keuangan.kontan.co.id/news/menilik-potensi-asing-melirik-saham-bank-di-era-suku-bunga-tinggi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T19:12+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Pergerakan Saham Bank Variatif Pasca RDG BI, Simak Rekomendasi Berikut",
-   "link": "https://investasi.kontan.co.id/news/pergerakan-saham-bank-variatif-pasca-rdg-bi-simak-rekomendasi-berikut",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T18:55+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Pasar Saham Bisa Dapat Sentimen Positif dari Kenaikan Suku Bunga BI",
-   "link": "https://investasi.kontan.co.id/news/pasar-saham-bisa-dapat-sentimen-positif-dari-kenaikan-suku-bunga-bi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T18:25+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BI Rate Naik Jadi 6%, Pelaku Pasar Ungkap Efeknya ke Saham-Reksa Dana",
-   "link": "https://www.cnbcindonesia.com/market/20261118181107-17-786418/bi-rate-naik-jadi-6-pelaku-pasar-ungkap-efeknya-ke-saham-reksa-dana",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T18:23+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Enam Emiten Tebar Dividen Interim, Ini Saham Pilihan Analis Jelang Cum Date",
-   "link": "https://investasi.kontan.co.id/news/enam-emiten-tebar-dividen-interim-ini-saham-pilihan-analis-jelang-cum-date",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
    ],
    "also_in": []
   }
