@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-19T08:05+07:00 WIB | jendela 36 jam | dipindai 608, lolos 237, dibuang sebagai noise 24.
+Berita terbaru: 2026-11-19T09:11+07:00 WIB | jendela 36 jam | dipindai 633, lolos 250, dibuang sebagai noise 27.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -22,6 +22,8 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-18 14:36 bloomberg_technoz: Respons Pasar Usai BI Rate Naik ke 6%, Rupiah & IHSG Menguat (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128129/respons-pasar-usai-bi-rate-naik-ke-6-rupiah-ihsg-menguat>
 - **9** T3 11-18 12:01 cnbc_indonesia_market: Video: Menanti Pengumuman BI Rate, IHSG Menguat Tapi Rupiah Melemah (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261118115359-19-786246/video-menanti-pengumuman-bi-rate-ihsg-menguat-tapi-rupiah-melemah>
 - **9** T3 11-18 11:08 kontan_investasi: BI Diprediksi Tahan Suku Bunga Acuan, Rupiah dan IHSG Masih Dibayangi Tekanan (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/bi-diprediksi-tahan-suku-bunga-acuan-rupiah-dan-ihsg-masih-dibayangi-tekanan>
+- **8** T3 11-19 08:42 kontan_keuangan: Diterpa Gagal Bayar, OJK Pantau Ketat Penyelesaian Masalah iGrow, Akseleran & KoinP2P (kebijakan/kredit/korporasi) <https://keuangan.kontan.co.id/news/diterpa-gagal-bayar-ojk-pantau-ketat-penyelesaian-masalah-igrow-akseleran-koinp2p>
+- **8** T3 11-19 08:35 kontan_keuangan: MSCI Kerek ESG Rating BNI Menjadi AA [BBNI] (kebijakan/kredit/emiten) <https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa>
 - **8** T3 11-19 05:24 bloomberg_technoz: Wall Street Melemah di Tengah Saham Nvidia Anjlok & IPO Anthropic (global/pasar/korporasi) <https://www.bloombergtechnoz.com/detail-news/128190/wall-street-melemah-di-tengah-saham-nvidia-anjlok-ipo-anthropic>
 - **8** T3 11-18 16:52 bloomberg_technoz: IHSG Ditutup Melemah Saat BI Rate Naik 25 Bps Jadi 6% (kebijakan/pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.bloombergtechnoz.com/detail-news/128165/ihsg-ditutup-melemah-saat-bi-rate-naik-25-bps-jadi-6>
 - **8** T3 11-18 15:25 cnbc_indonesia_market: DPR Buka Suara Soal Kekhawatiran Gagal Bayar Obligasi Daerah (kurs/kredit/korporasi) <https://www.cnbcindonesia.com/market/20261118141246-17-786306/dpr-buka-suara-soal-kekhawatiran-gagal-bayar-obligasi-daerah>
@@ -34,6 +36,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-18 17:07 kontan_investasi: Stock Split Roda Vivatex (RDTX) akan Bergulir, Jumlah Saham Melonjak Jadi 5,37 Miliar [RDTX] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/stock-split-roda-vivatex-rdtx-akan-bergulir-jumlah-saham-melonjak-jadi-537-miliar>
 - **7** T3 11-18 14:55 cnbc_indonesia_market: Bursa Cecar EMAS, Pembeli Cuma Satu, Kas Operasi Minus [EMAS] (pasar/komoditas/emiten) <https://www.cnbcindonesia.com/market/20261118135952-17-786301/bursa-cecar-emas-pembeli-cuma-satu-kas-operasi-minus>
 - **7** T3 11-18 09:21 kontan_investasi: WIKA Gedung (WEGE) Laporkan Fakta Terkait 2 Perkara PKPU, Ini Detailnya [WEGE,WIKA] (kredit/korporasi/emiten) <https://investasi.kontan.co.id/news/wika-gedung-wege-laporkan-fakta-terkait-2-perkara-pkpu-ini-detailnya>
-- **6** T3 11-19 07:40 bloomberg_technoz: Risalah Rapat The Fed Beri Sinyal Kenaikan Suku Bunga Lanjutan (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/128200/risalah-rapat-the-fed-beri-sinyal-kenaikan-suku-bunga-lanjutan>
-- **6** T3 11-19 07:36 bloomberg_technoz: Investor Asing Net Sell Saham Kala BI Rate Naik Jadi 6% (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/128199/investor-asing-net-sell-saham-kala-bi-rate-naik-jadi-6>
-- **6** T3 11-18 19:30 cnbc_indonesia_news: Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara>
+- **6** T3 11-19 08:58 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp3.000, Tapi Buyback Anjlok [ANTM] (korporasi/komoditas/emiten) <https://www.bloombergtechnoz.com/detail-news/128216/harga-emas-antam-hari-ini-turun-rp3-000-tapi-buyback-anjlok>

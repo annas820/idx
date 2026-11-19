@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T08:05+07:00",
+ "generated_for": "2026-11-19T09:11+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 608,
- "kept": 237,
- "dropped_noise": 24,
+ "scanned": 633,
+ "kept": 250,
+ "dropped_noise": 27,
  "items": [
   {
    "published": "2026-11-19T07:19+07:00",
@@ -193,6 +193,40 @@
     "kurs"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T08:42+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Diterpa Gagal Bayar, OJK Pantau Ketat Penyelesaian Masalah iGrow, Akseleran & KoinP2P",
+   "link": "https://keuangan.kontan.co.id/news/diterpa-gagal-bayar-ojk-pantau-ketat-penyelesaian-masalah-igrow-akseleran-koinp2p",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kredit",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T08:35+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "MSCI Kerek ESG Rating BNI Menjadi AA",
+   "link": "https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kredit",
+    "emiten"
+   ],
+   "tickers": [
+    "BBNI"
+   ],
    "flags": [],
    "also_in": []
   },
@@ -413,52 +447,21 @@
    "also_in": []
   },
   {
-   "published": "2026-11-19T07:40+07:00",
+   "published": "2026-11-19T08:58+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Risalah Rapat The Fed Beri Sinyal Kenaikan Suku Bunga Lanjutan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128200/risalah-rapat-the-fed-beri-sinyal-kenaikan-suku-bunga-lanjutan",
+   "title": "Harga Emas Antam Hari Ini Turun Rp3.000, Tapi Buyback Anjlok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128216/harga-emas-antam-hari-ini-turun-rp3-000-tapi-buyback-anjlok",
    "score": 6,
    "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T07:36+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Investor Asing Net Sell Saham Kala BI Rate Naik Jadi 6%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128199/investor-asing-net-sell-saham-kala-bi-rate-naik-jadi-6",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T19:30+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara",
-   "link": "https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara",
-   "score": 6,
-   "categories": [
+    "korporasi",
     "komoditas",
     "emiten"
    ],
    "tickers": [
-    "INCO"
+    "ANTM"
    ],
-   "flags": [
-    "watchlist"
-   ],
+   "flags": [],
    "also_in": []
   }
  ],
