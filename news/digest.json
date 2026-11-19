@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T22:58+07:00",
+ "generated_for": "2026-11-20T05:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 900,
- "kept": 323,
- "dropped_noise": 38,
+ "scanned": 624,
+ "kept": 228,
+ "dropped_noise": 26,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -67,46 +67,6 @@
    ],
    "also_in": [
     "kontan_industri"
-   ]
-  },
-  {
-   "published": "2026-11-18T15:37+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rupiah Ditutup Menguat Usai BI Rate Naik ke 6%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128145/rupiah-ditutup-menguat-usai-bi-rate-naik-ke-6",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market",
-    "kontan_investasi"
-   ]
-  },
-  {
-   "published": "2026-11-18T14:27+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BI Rate Naik Jadi 6%, Bos BI: Demi Jaga Rupiah dan Inflasi!",
-   "link": "https://www.cnbcindonesia.com/market/20261118142349-17-786311/bi-rate-naik-jadi-6-bos-bi-demi-jaga-rupiah-dan-inflasi",
-   "score": 10,
-   "categories": [
-    "kebijakan",
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
    ]
   },
   {
@@ -246,54 +206,6 @@
    "also_in": [
     "kontan_investasi"
    ]
-  },
-  {
-   "published": "2026-11-18T14:36+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Respons Pasar Usai BI Rate Naik ke 6%, Rupiah & IHSG Menguat",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128129/respons-pasar-usai-bi-rate-naik-ke-6-rupiah-ihsg-menguat",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T12:01+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Menanti Pengumuman BI Rate, IHSG Menguat Tapi Rupiah Melemah",
-   "link": "https://www.cnbcindonesia.com/market/20261118115359-19-786246/video-menanti-pengumuman-bi-rate-ihsg-menguat-tapi-rupiah-melemah",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T11:08+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BI Diprediksi Tahan Suku Bunga Acuan, Rupiah dan IHSG Masih Dibayangi Tekanan",
-   "link": "https://investasi.kontan.co.id/news/bi-diprediksi-tahan-suku-bunga-acuan-rupiah-dan-ihsg-masih-dibayangi-tekanan",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   },
   {
    "published": "2026-11-19T22:07+07:00",
@@ -472,6 +384,99 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-19T22:58+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Prodia (PRDA) Rampungkan Buyback Rp 112,42 Miliar, Saham Tresuri Tembus 8,95%",
+   "link": "https://investasi.kontan.co.id/news/prodia-prda-rampungkan-buyback-rp-11242-miliar-saham-tresuri-tembus-895",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "PRDA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T21:10+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Elnusa (ELSA) Lanjutkan Buyback Saham Mulai Jumat (20/11), Rogoh Kocek Rp 84,5 Miliar",
+   "link": "https://investasi.kontan.co.id/news/elnusa-elsa-lanjutkan-buyback-saham-mulai-jumat-2011-rogoh-kocek-rp-845-miliar",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ELSA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T18:02+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "ARII Private Placement 375 Juta Saham untuk Pendanaan Infrastruktur, Ini Kata Analis",
+   "link": "https://investasi.kontan.co.id/news/arii-private-placement-375-juta-saham-untuk-pendanaan-infrastruktur-ini-kata-analis",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ARII"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T16:06+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "IHSG Ditutup Turun 1,02% ke 5.194 pad Kamis (19/11), INDY, ISAT, INCO Top Losers LQ45",
+   "link": "https://investasi.kontan.co.id/news/ihsg-ditutup-turun-102-ke-5194-pad-kamis-1911-indy-isat-inco-top-losers-lq45",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO",
+    "INDY",
+    "ISAT"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T13:51+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "ARII Siapkan Private Placement 375 Juta Saham, Ini Prospek dan Target Harganya",
+   "link": "https://investasi.kontan.co.id/news/arii-siapkan-private-placement-375-juta-saham-ini-prospek-dan-target-harganya",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ARII"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -581,80 +586,6 @@
    "score": 6,
    "categories": [
     "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T16:47+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Vale Indonesia (INCO) Bersiap Panen Proyek Hilirisasi, Simak Rekomendasi Analis",
-   "link": "https://investasi.kontan.co.id/news/vale-indonesia-inco-bersiap-panen-proyek-hilirisasi-simak-rekomendasi-analis",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T16:45+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Dirut Vale Blak-blakan Soal Lonjakan Laba 180% Tembus Rp2,67 Triliun",
-   "link": "https://www.cnbcindonesia.com/news/20261118152825-4-786348/dirut-vale-blak-blakan-soal-lonjakan-laba-180-tembus-rp267-triliun",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T12:51+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Hasil RUPSLB Vale Indonesia (INCO) Rombak Jajaran Pengurus, Ini Susunan Terbarunya",
-   "link": "https://investasi.kontan.co.id/news/hasil-rupslb-vale-indonesia-inco-rombak-jajaran-pengurus-ini-susunan-terbarunya",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T12:07+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Vale Indonesia (INCO) Rombak Direksi dan Komisaris, Cek Susunan Terbaru",
-   "link": "https://www.cnbcindonesia.com/market/20261118114730-17-786236/vale-indonesia--inco--rombak-direksi-komisaris-cek-susunan-terbaru",
-   "score": 4,
-   "categories": [
     "emiten"
    ],
    "tickers": [
