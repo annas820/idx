@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T12:00+07:00",
+ "generated_for": "2026-11-19T13:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 713,
- "kept": 279,
- "dropped_noise": 33,
+ "scanned": 740,
+ "kept": 285,
+ "dropped_noise": 34,
  "items": [
   {
    "published": "2026-11-19T10:07+07:00",
@@ -88,6 +88,22 @@
    "also_in": [
     "bloomberg_technoz"
    ]
+  },
+  {
+   "published": "2026-11-19T12:25+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: BI Rate Naik Jadi 6%, IHSG Volatil dan Rupiah Masih Melemah",
+   "link": "https://www.cnbcindonesia.com/market/20261119121322-19-786588/video-bi-rate-naik-jadi-6-ihsg-volatil-rupiah-masih-melemah",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-19T08:00+07:00",
@@ -449,26 +465,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-18T07:22+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Cermati Rekomendasi Saham dan Prospek Merdeka Gold Resources (EMAS)",
-   "link": "https://investasi.kontan.co.id/news/cermati-rekomendasi-saham-dan-prospek-merdeka-gold-resources-emas",
-   "score": 8,
-   "categories": [
-    "pasar",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "EMAS"
-   ],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
   }
  ],
  "watchlist_hits": [

@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-19T12:00+07:00 WIB | jendela 36 jam | dipindai 713, lolos 279, dibuang sebagai noise 33.
+Berita terbaru: 2026-11-19T13:00+07:00 WIB | jendela 36 jam | dipindai 740, lolos 285, dibuang sebagai noise 34.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -16,6 +16,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **10** T3 11-19 07:19 kontan_investasi: Lirik Rekomendasi Saham dan Prospek AKR Corporindo (AKRA) Usai Akuisisi SPBU VIVO [AKRA] (pasar/korporasi/emiten; petunjuk, terkonfirmasi, juga di kontan_industri) <https://investasi.kontan.co.id/news/lirik-rekomendasi-saham-dan-prospek-akr-corporindo-akra-usai-akuisisi-spbu-vivo>
 - **10** T3 11-18 15:37 bloomberg_technoz: Rupiah Ditutup Menguat Usai BI Rate Naik ke 6% (kebijakan/kurs; terkonfirmasi, juga di cnbc_indonesia_market/kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128145/rupiah-ditutup-menguat-usai-bi-rate-naik-ke-6>
 - **10** T3 11-18 14:27 cnbc_indonesia_market: BI Rate Naik Jadi 6%, Bos BI: Demi Jaga Rupiah dan Inflasi! (kebijakan/kurs/makro; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261118142349-17-786311/bi-rate-naik-jadi-6-bos-bi-demi-jaga-rupiah-dan-inflasi>
+- **9** T3 11-19 12:25 cnbc_indonesia_market: Video: BI Rate Naik Jadi 6%, IHSG Volatil dan Rupiah Masih Melemah (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261119121322-19-786588/video-bi-rate-naik-jadi-6-ihsg-volatil-rupiah-masih-melemah>
 - **9** T3 11-19 08:00 bloomberg_technoz: IHSG Dibayangi Kenaikan BI Rate & Arah Rupiah (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128201/ihsg-dibayangi-kenaikan-bi-rate-arah-rupiah>
 - **9** T3 11-19 07:46 kontan_investasi: BI Kerek Suku Bunga Jadi 6%, Begini Dampak dan Rekomendasi Saham Pilihan (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_keuangan) <https://investasi.kontan.co.id/news/bi-kerek-suku-bunga-jadi-6-begini-dampak-dan-rekomendasi-saham-pilihan>
 - **9** T3 11-19 05:45 kontan_keuangan: Simak Rekomendasi Saham Big Banks Usai BI Kerek Suku Bunga Jadi 6% (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_investasi) <https://keuangan.kontan.co.id/news/simak-rekomendasi-saham-big-banks-usai-bi-kerek-suku-bunga-jadi-6>
@@ -36,4 +37,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-18 15:05 kontan_investasi: BI Rate Naik, Rupiah Spot Menguat 0,13% ke Rp 18.232 per Dolar AS, Rabu (18/11) (kebijakan/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/bi-rate-naik-rupiah-spot-menguat-013-ke-rp-18232-per-dolar-as-rabu-1811>
 - **8** T3 11-18 14:50 cnbc_indonesia_market: Tak Cuma Suku Bunga, BI Keluarkan Jurus Ini Amankan Rupiah dan Inflasi (kebijakan/kurs/makro) <https://www.cnbcindonesia.com/market/20261118144710-17-786326/tak-cuma-suku-bunga-bi-keluarkan-jurus-ini-amankan-rupiah-inflasi>
 - **8** T3 11-18 14:24 cnbc_indonesia_market: Rupiah Menguat ke Rp18.200/US$ Setelah BI Rate Naik Jadi 6% (kebijakan/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261118140633-17-786302/rupiah-menguat-ke-rp18200-us--setelah-bi-rate-naik-jadi-6>
-- **8** T3 11-18 07:22 kontan_investasi: Cermati Rekomendasi Saham dan Prospek Merdeka Gold Resources (EMAS) [EMAS] (pasar/komoditas/emiten; petunjuk) <https://investasi.kontan.co.id/news/cermati-rekomendasi-saham-dan-prospek-merdeka-gold-resources-emas>
