@@ -1,12 +1,31 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T09:11+07:00",
+ "generated_for": "2026-11-19T10:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 633,
- "kept": 250,
- "dropped_noise": 27,
+ "scanned": 671,
+ "kept": 268,
+ "dropped_noise": 29,
  "items": [
+  {
+   "published": "2026-11-19T10:07+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Belum Bayar Bunga Obligasi dan Sukuk, BEI Gembok Lagi Saham WIKA",
+   "link": "https://www.cnbcindonesia.com/market/20261119094141-17-786526/belum-bayar-bunga-obligasi-dan-sukuk-bei-gembok-lagi-saham-wika",
+   "score": 11,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "kurs",
+    "emiten"
+   ],
+   "tickers": [
+    "WIKA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-19T07:19+07:00",
    "source": "kontan_investasi",
@@ -195,6 +214,50 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-19T09:11+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Harga Emas Antam Turun Rp 3.000, Buyback Ambles Rp 49.000 Per Gram Hari Ini (19/11)",
+   "link": "https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-3000-buyback-ambles-rp-49000-per-gram-hari-ini-1911",
+   "score": 8,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-19T08:58+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Harga Emas Antam Hari Ini Turun Rp3.000, Tapi Buyback Anjlok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128216/harga-emas-antam-hari-ini-turun-rp3-000-tapi-buyback-anjlok",
+   "score": 8,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
   },
   {
    "published": "2026-11-19T08:42+07:00",
@@ -405,61 +468,6 @@
    ],
    "tickers": [
     "RDTX"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T14:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Bursa Cecar EMAS, Pembeli Cuma Satu, Kas Operasi Minus",
-   "link": "https://www.cnbcindonesia.com/market/20261118135952-17-786301/bursa-cecar-emas-pembeli-cuma-satu-kas-operasi-minus",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "EMAS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T09:21+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "WIKA Gedung (WEGE) Laporkan Fakta Terkait 2 Perkara PKPU, Ini Detailnya",
-   "link": "https://investasi.kontan.co.id/news/wika-gedung-wege-laporkan-fakta-terkait-2-perkara-pkpu-ini-detailnya",
-   "score": 7,
-   "categories": [
-    "kredit",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "WEGE",
-    "WIKA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T08:58+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Hari Ini Turun Rp3.000, Tapi Buyback Anjlok",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128216/harga-emas-antam-hari-ini-turun-rp3-000-tapi-buyback-anjlok",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
    ],
    "flags": [],
    "also_in": []
