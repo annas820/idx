@@ -1,0 +1,291 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-19T11:20:51Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Destry Buka-Bukaan Alasan di Balik Keputusan Kenaikan BI Rate, Simak!",
+        "url": "https://www.cnbcindonesia.com/market/20261119180936-17-786737/destry-buka-bukaan-alasan-di-balik-keputusan-kenaikan-bi-rate-simak",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T18:15:00+07:00",
+        "summary": "Kenaikan suku bunga BI merupakan tindakan pre-emptive terhadap tekanan ekonomi yang datang dalam masa mendatang.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Mulai Data Investor Penerima Ganti Rugi Manipulasi Saham",
+        "url": "https://www.cnbcindonesia.com/market/20261119172909-17-786717/ojk-mulai-data-investor-penerima-ganti-rugi-manipulasi-saham",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T18:08:57+07:00",
+        "summary": "OJK mendata investor yang berhak menerima pengembalian dana dari keuntungan tidak sah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "rugi"
+        ]
+      },
+      {
+        "title": "Video: Bos BI Ungkap Soal Rupiah Melemah - Alasan BI Rate Naik ke 6%",
+        "url": "https://www.cnbcindonesia.com/market/20261119172402-19-786713/video-bos-bi-ungkap-soal-rupiah-melemah--alasan-bi-rate-naik-ke-6",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T17:57:26+07:00",
+        "summary": "Bos BI Ungkap Kondisi Rupiah Melemah - Alasan BI Rate Naik Jadi 6%",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": [
+          "melemah"
+        ]
+      },
+      {
+        "title": "Misbakhun Ungkap PR Besar Ekonomi RI, Harus Selesaikan Hal Ini",
+        "url": "https://www.cnbcindonesia.com/market/20261119174357-17-786728/misbakhun-ungkap-pr-besar-ekonomi-ri-harus-selesaikan-hal-ini",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T17:49:40+07:00",
+        "summary": "Ketua Komisi XI DPR, Mukhamad Misbakhun, menyoroti tantangan perekonomian Indonesia dan pentingnya membangun kredibilitas pasar modal serta dukungan untuk UMKM.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: 2 Tahun Prabowo, LPS Bedah Kondisi Bank BUMN, BPD -Bank Digital",
+        "url": "https://www.cnbcindonesia.com/market/20261119153018-19-786668/video-2-tahun-prabowo-lps-bedah-kondisi-bank-bumn-bpd-bank-digital",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T17:43:02+07:00",
+        "summary": "2 Tahun Prabowo, Bos LPS Bedah Kondisi Bank BUMN, Bank Daerah, Bank Digital dan Bank Syariah",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Bos BI Bahas Gejolak Global,BI Rate dan Rupiah di 2 Tahun Prabowo",
+        "url": "https://www.cnbcindonesia.com/market/20261119151759-19-786662/video-bos-bi-bahas-gejolak-globalbi-rate-rupiah-di-2-tahun-prabowo",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T17:31:30+07:00",
+        "summary": "Gubernur BI Bahas Gejolak Global, Kenaikan BI Rate dan Rupiah di 2 Tahun Pemerintahan Prabowo",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Trump, Xi Jinping dan Putin Bertemu: Ini 5 Raksasa Wakil China-Rusia-AS",
+        "url": "https://www.cnbcindonesia.com/research/20261119164333-128-786703/trump-xi-jinping-putin-bertemu-ini-5-raksasa-wakil-china-rusia-as",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-19T17:30:33+07:00",
+        "summary": "Presiden Trump bersama Presiden China Xi Jinping dan Presiden Rusia Vladimir Putin menggelar pertemuan bersejarah pada hari ini",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Asuransi Perlindungan Keanekaragaman Hayati Masih Dalam Tahap Kajian",
+        "url": "https://keuangan.kontan.co.id/news/asuransi-perlindungan-keanekaragaman-hayati-masih-dalam-tahap-kajian",
+        "source": "kontan/keuangan",
+        "published": "2026-11-19T17:28:21+07:00",
+        "summary": "Asuransi perlindungan keanekaragaman hayati dapat menjadi salah satu produk yang bisa dikembangkan industri asuransi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Raup Laba Rp 2,82 Triliun Kuartal III-2026, Target Penyaluran Kredit Direvisi",
+        "url": "https://keuangan.kontan.co.id/news/btn-raup-laba-rp-282-triliun-kuartal-iii-2026-target-penyaluran-kredit-direvisi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-19T17:23:59+07:00",
+        "summary": "BTN membukukan laba bersih Rp 2,82 triliun hingga September 2026, tumbuh 22,6% yoy, ditopang kenaikan kredit dan perbaikan kualitas aset.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "tumbuh",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK-SRO Gelar 20 Pertemuan dengan MSCI, Bahas Apa?",
+        "url": "https://www.cnbcindonesia.com/market/20261119170248-17-786706/ojk-sro-gelar-20-pertemuan-dengan-msci-bahas-apa",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T17:17:49+07:00",
+        "summary": "OJK telah menggelar 20 pertemuan dengan MSCI sepanjang 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Meneku Suahasil dan Kinerja Kemenkeu 2 Tahun Pemerintahan Prabowo",
+        "url": "https://www.cnbcindonesia.com/market/20261119151304-19-786656/video-meneku-suahasil-kinerja-kemenkeu-2-tahun-pemerintahan-prabowo",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T17:11:23+07:00",
+        "summary": "2 Tahun Pemerintahan Prabowo, Menkeu Suahasil: APBN Menumbuhkan, Melindung dan Kredibel",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kenaikan BI Rate Berpotensi Menekan Biaya Dana, Simak Strategi Adira Finance",
+        "url": "https://keuangan.kontan.co.id/news/kenaikan-bi-rate-berpotensi-menekan-biaya-dana-simak-strategi-adira-finance",
+        "source": "kontan/keuangan",
+        "published": "2026-11-19T16:58:18+07:00",
+        "summary": "Adira Finance akan menerapkan strategi pendanaan yang terdiversifikasi untuk mengantisipasi tekanan biaya dana akibat kenaikan BI Rate. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Luncurkan 2 Roadmap Baru PVML, Fokus Ekonomi Syariah-UMKM",
+        "url": "https://www.cnbcindonesia.com/market/20261119162158-17-786693/ojk-luncurkan-2-roadmap-baru-pvml-fokus-ekonomi-syariah-umkm",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T16:57:46+07:00",
+        "summary": "OJK meluncurkan dua roadmap pengembangan industri PVML 2026-2031 untuk dukung UMKM dan ekonomi syariah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Misbakhun Ungkap Profil Wakil Presiden Yang Dibutuhkan Prabowo",
+        "url": "https://www.cnbcindonesia.com/market/20261119161519-19-786686/video-misbakhun-ungkap-profil-wakil-presiden-yang-dibutuhkan-prabowo",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T16:51:20+07:00",
+        "summary": "Misbakhun Ungkap Profil Cawapres Yang Tepat Dampingi Prabowo",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bos BI Buka Suara soal Dunia Makin Tak Pasti, RI Kena Imbas!",
+        "url": "https://www.cnbcindonesia.com/market/20261119151541-17-786659/bos-bi-buka-suara-soal-dunia-makin-tak-pasti-ri-kena-imbas",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T16:50:35+07:00",
+        "summary": "Gubernur BI Destry Damayanti menyoroti ketidakpastian global yang meningkat, dampak inflasi, dan tantangan bagi Indonesia di tengah kondisi ekonomi yang sulit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Tetapkan Empat Prioritas Pengawasan Asuransi ASEAN pada 2027",
+        "url": "https://keuangan.kontan.co.id/news/ojk-tetapkan-empat-prioritas-pengawasan-asuransi-asean-pada-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-11-19T16:40:56+07:00",
+        "summary": "OJK bersama regulator asuransi negara-negara ASEAN menyepakati empat prioritas strategis untuk memperkuat pengawasan industri asuransi pada 2027.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "RoE Asuransi Umum Anjlok dari 20% Jadi 12,7%, Ada Tantangan Profitabilitas Industri",
+        "url": "https://keuangan.kontan.co.id/news/roe-asuransi-umum-anjlok-dari-20-jadi-127-ada-tantangan-profitabilitas-industri",
+        "source": "kontan/keuangan",
+        "published": "2026-11-19T16:37:37+07:00",
+        "summary": "OJK catat profitabilitas asuransi umum tertekan dengan RoE turun jadi 12,7% di semester I-2026, sehingga perlu efisiensi dan pengelolaan risiko",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun",
+          "anjlok",
+          "tertekan"
+        ]
+      },
+      {
+        "title": "OJK Luncurkan Dua Roadmap Perkuat Pengembangan Industri Pembiayaan dan Modal Ventura",
+        "url": "https://keuangan.kontan.co.id/news/ojk-luncurkan-dua-roadmap-perkuat-pengembangan-industri-pembiayaan-dan-modal-ventura",
+        "source": "kontan/keuangan",
+        "published": "2026-11-19T16:37:00+07:00",
+        "summary": "OJK merilis 2 roadmap pengembangan industri Lembaga Pembiayaan, Perusahaan Modal Ventura, Lembaga Keuangan Mikro, & Lembaga Jasa Keuangan Lainnya.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Investor Pasar Modal di Bawah 30 Tahun Tembus 30%, Ini Harapan OJK",
+        "url": "https://www.cnbcindonesia.com/market/20261119162352-17-786687/investor-pasar-modal-di-bawah-30-tahun-tembus-30-ini-harapan-ojk",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T16:26:33+07:00",
+        "summary": "OJK menyatakan tantangan industri keuangan Indonesia meningkat, namun pasar modal tetap kokoh dengan 34,3 juta investor.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bos BI Bawa Kabar Positif: Kredit Ngebut dan Pabrik Ngebul!",
+        "url": "https://www.cnbcindonesia.com/market/20261119152245-17-786676/bos-bi-bawa-kabar-positif-kredit-ngebut-pabrik-ngebul",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-19T16:13:24+07:00",
+        "summary": "Gubernur BI Destry Damayanti optimis perekonomian RI tumbuh. Indeks keyakinan konsumen dan kredit perbankan swasta menunjukkan peningkatan signifikan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "positif",
+          "optimis"
+        ],
+        "negative_terms": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "idx.technical.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-11-19T11:21:24Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "ASII",
+    "name": "PT Astra International Tbk",
+    "currency": "IDR",
+    "as_of": "2026-11-19T09:00:00+07:00",
+    "period": "1y",
+    "candles_used": 240,
+    "price": 5375.0,
+    "change_pct_1d": -2.272727272727273,
+    "change_pct_1w": -1.3761467889908259,
+    "change_pct_1m": 19.444444444444446,
+    "change_pct_3m": 12.21294363256785,
+    "high_52w": 7475.0,
+    "low_52w": 3920.0,
+    "moving_averages": {
+      "sma20": 5079.75,
+      "sma50": 4856.3,
+      "sma200": 5404.45,
+      "ema20": 5174.050612747446,
+      "ema50": 4974.141527483569,
+      "ema200": 5482.972366542107
+    },
+    "rsi14": 58.8408652957417,
+    "macd": {
+      "line": 221.20636052041118,
+      "signal": 173.36076411402175,
+      "histogram": 47.84559640638943
+    },
+    "bollinger": {
+      "upper": 5801.140844133747,
+      "middle": 5079.75,
+      "lower": 4358.359155866253,
+      "percent_b": 0.7046394145427081,
+      "bandwidth_pct": 28.402612102317914
+    },
+    "atr14": 215.53957703955047,
+    "volume": {
+      "last": 53532700,
+      "avg20": 53479555,
+      "ratio": 1.0009937442448802
+    },
+    "levels": {
+      "support": [
+        4870.0,
+        4720.0,
+        4510.0
+      ],
+      "resistance": []
+    },
+    "trend": "sideways",
+    "signal": {
+      "label": "neutral",
+      "score": 0,
+      "reasons": [
+        "moving averages disagree: no clear trend",
+        "RSI 59 is neutral",
+        "MACD above its signal line (bullish momentum)",
+        "price below the 200-day average"
+      ]
+    }
+  }
+}

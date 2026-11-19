@@ -1,0 +1,70 @@
+{
+  "schema": "idx.technical.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-11-19T11:21:20Z",
+  "cached": true,
+  "stale": false,
+  "data": {
+    "symbol": "INCO",
+    "name": "PT Vale Indonesia Tbk",
+    "currency": "IDR",
+    "as_of": "2026-11-19T09:00:00+07:00",
+    "period": "1y",
+    "candles_used": 240,
+    "price": 3210.0,
+    "change_pct_1d": -5.3097345132743365,
+    "change_pct_1w": -13.941018766756033,
+    "change_pct_1m": -14.627659574468085,
+    "change_pct_3m": -38.857142857142854,
+    "high_52w": 7900.0,
+    "low_52w": 2960.0,
+    "moving_averages": {
+      "sma20": 3473.0,
+      "sma50": 3979.2,
+      "sma200": 5209.4,
+      "ema20": 3546.3689985852034,
+      "ema50": 3912.113358914223,
+      "ema200": 4850.865813949107
+    },
+    "rsi14": 35.63183530259694,
+    "macd": {
+      "line": -148.51040812807514,
+      "signal": -170.74195248149024,
+      "histogram": 22.231544353415103
+    },
+    "bollinger": {
+      "upper": 3876.8861225642695,
+      "middle": 3473.0,
+      "lower": 3069.1138774357305,
+      "percent_b": 0.17441317576076237,
+      "bandwidth_pct": 23.258630726419206
+    },
+    "atr14": 206.15972589904567,
+    "volume": {
+      "last": 11180700,
+      "avg20": 12754335,
+      "ratio": 0.8766195963960489
+    },
+    "levels": {
+      "support": [
+        2960.0
+      ],
+      "resistance": [
+        3770.0,
+        4560.0,
+        5275.0
+      ]
+    },
+    "trend": "downtrend",
+    "signal": {
+      "label": "neutral",
+      "score": -1,
+      "reasons": [
+        "price below a falling 50-day average that sits below the 200-day: downtrend",
+        "RSI 36 is neutral",
+        "MACD above its signal line (bullish momentum)",
+        "price below the 200-day average"
+      ]
+    }
+  }
+}
