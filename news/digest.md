@@ -1,9 +1,10 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-19T16:00+07:00 WIB | jendela 36 jam | dipindai 859, lolos 332, dibuang sebagai noise 37.
+Berita terbaru: 2026-11-19T17:00+07:00 WIB | jendela 36 jam | dipindai 884, lolos 344, dibuang sebagai noise 37.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
+- **6** T3 11-19 16:20 bloomberg_technoz: Proyek Nikel Integrasi Vale di Morowali Sudah 42,6%, HPAL 43,7% [INCO] (komoditas/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/128287/proyek-nikel-integrasi-vale-di-morowali-sudah-42-6-hpal-43-7>
 - **6** T3 11-19 13:25 cnbc_indonesia_news: Tungku Dibangun Ulang, Produksi Nikel Matte Vale Tembus 48.114 Ton [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119130518-4-786611/tungku-dibangun-ulang-produksi-nikel-matte-vale-tembus-48114-ton>
 - **6** T3 11-19 13:05 cnbc_indonesia_news: Vale Bakal Operasikan Pabrik Nikel HPAL Baru di Desember 2026 [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119123041-4-786594/vale-bakal-operasikan-pabrik-nikel-hpal-baru-di-desember-2026>
 - **6** T3 11-18 19:30 cnbc_indonesia_news: Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara>
@@ -26,6 +27,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-18 14:36 bloomberg_technoz: Respons Pasar Usai BI Rate Naik ke 6%, Rupiah & IHSG Menguat (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128129/respons-pasar-usai-bi-rate-naik-ke-6-rupiah-ihsg-menguat>
 - **9** T3 11-18 12:01 cnbc_indonesia_market: Video: Menanti Pengumuman BI Rate, IHSG Menguat Tapi Rupiah Melemah (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261118115359-19-786246/video-menanti-pengumuman-bi-rate-ihsg-menguat-tapi-rupiah-melemah>
 - **9** T3 11-18 11:08 kontan_investasi: BI Diprediksi Tahan Suku Bunga Acuan, Rupiah dan IHSG Masih Dibayangi Tekanan (kebijakan/pasar/kurs) <https://investasi.kontan.co.id/news/bi-diprediksi-tahan-suku-bunga-acuan-rupiah-dan-ihsg-masih-dibayangi-tekanan>
+- **8** T3 11-19 16:40 bloomberg_technoz: Saham ISAT Sentuh ARB, Dibayangi Pasar Ketat Cip Nvidia [ISAT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/128310/saham-isat-sentuh-arb-dibayangi-pasar-ketat-cip-nvidia>
 - **8** T3 11-19 11:45 cnbc_indonesia_market: Kena Denda OJK Miliaran Rupiah, Manajemen ASLI Buka Suara [ASLI] (kebijakan/kurs/emiten) <https://www.cnbcindonesia.com/market/20261119114008-17-786572/kena-denda-ojk-miliaran-rupiah-manajemen-asli-buka-suara>
 - **8** T3 11-19 11:45 kontan_keuangan: MSCI Ancam Status Pasar Saham RI, Citi Waspadai Tekanan Likuiditas Perbankan (kebijakan/pasar/makro) <https://keuangan.kontan.co.id/news/msci-ancam-status-pasar-saham-ri-citi-waspadai-tekanan-likuiditas-perbankan>
 - **8** T3 11-19 09:11 kontan_investasi: Harga Emas Antam Turun Rp 3.000, Buyback Ambles Rp 49.000 Per Gram Hari Ini (19/11) [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-3000-buyback-ambles-rp-49000-per-gram-hari-ini-1911>
@@ -38,4 +40,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-18 15:24 bloomberg_technoz: IHSG Balik Merah Usai BI Rate Naik, BBCA Jadi Penopang Utama [BBCA] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/128144/ihsg-balik-merah-usai-bi-rate-naik-bbca-jadi-penopang-utama>
 - **8** T3 11-18 15:05 kontan_investasi: BI Rate Naik, Rupiah Spot Menguat 0,13% ke Rp 18.232 per Dolar AS, Rabu (18/11) (kebijakan/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/bi-rate-naik-rupiah-spot-menguat-013-ke-rp-18232-per-dolar-as-rabu-1811>
 - **8** T3 11-18 14:50 cnbc_indonesia_market: Tak Cuma Suku Bunga, BI Keluarkan Jurus Ini Amankan Rupiah dan Inflasi (kebijakan/kurs/makro) <https://www.cnbcindonesia.com/market/20261118144710-17-786326/tak-cuma-suku-bunga-bi-keluarkan-jurus-ini-amankan-rupiah-inflasi>
-- **8** T3 11-18 14:24 cnbc_indonesia_market: Rupiah Menguat ke Rp18.200/US$ Setelah BI Rate Naik Jadi 6% (kebijakan/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://www.cnbcindonesia.com/market/20261118140633-17-786302/rupiah-menguat-ke-rp18200-us--setelah-bi-rate-naik-jadi-6>

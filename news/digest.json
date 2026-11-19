@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-19T16:00+07:00",
+ "generated_for": "2026-11-19T17:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 859,
- "kept": 332,
+ "scanned": 884,
+ "kept": 344,
  "dropped_noise": 37,
  "items": [
   {
@@ -232,6 +232,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-19T16:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Saham ISAT Sentuh ARB, Dibayangi Pasar Ketat Cip Nvidia",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128310/saham-isat-sentuh-arb-dibayangi-pasar-ketat-cip-nvidia",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ISAT"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-19T11:45+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -446,28 +464,28 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-18T14:24+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Rupiah Menguat ke Rp18.200/US$ Setelah BI Rate Naik Jadi 6%",
-   "link": "https://www.cnbcindonesia.com/market/20261118140633-17-786302/rupiah-menguat-ke-rp18200-us--setelah-bi-rate-naik-jadi-6",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   }
  ],
  "watchlist_hits": [
+  {
+   "published": "2026-11-19T16:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Proyek Nikel Integrasi Vale di Morowali Sudah 42,6%, HPAL 43,7%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128287/proyek-nikel-integrasi-vale-di-morowali-sudah-42-6-hpal-43-7",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
   {
    "published": "2026-11-19T13:25+07:00",
    "source": "cnbc_indonesia_news",
