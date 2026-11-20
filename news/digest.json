@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T22:58+07:00",
+ "generated_for": "2026-11-21T00:46+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 812,
- "kept": 287,
- "dropped_noise": 22,
+ "scanned": 747,
+ "kept": 269,
+ "dropped_noise": 18,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -192,22 +192,6 @@
    ]
   },
   {
-   "published": "2026-11-19T12:25+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: BI Rate Naik Jadi 6%, IHSG Volatil dan Rupiah Masih Melemah",
-   "link": "https://www.cnbcindonesia.com/market/20261119121322-19-786588/video-bi-rate-naik-jadi-6-ihsg-volatil-rupiah-masih-melemah",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-20T18:37+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -350,40 +334,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-19T11:45+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Kena Denda OJK Miliaran Rupiah, Manajemen ASLI Buka Suara",
-   "link": "https://www.cnbcindonesia.com/market/20261119114008-17-786572/kena-denda-ojk-miliaran-rupiah-manajemen-asli-buka-suara",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kurs",
-    "emiten"
-   ],
-   "tickers": [
-    "ASLI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T11:45+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "MSCI Ancam Status Pasar Saham RI, Citi Waspadai Tekanan Likuiditas Perbankan",
-   "link": "https://keuangan.kontan.co.id/news/msci-ancam-status-pasar-saham-ri-citi-waspadai-tekanan-likuiditas-perbankan",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-20T19:41+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -478,6 +428,60 @@
    "also_in": [
     "kontan_investasi"
    ]
+  },
+  {
+   "published": "2026-11-20T10:10+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "VKTR Tegaskan Tak Terlibat dalam Rencana Konsorsium Akuisisi Saham Weda Bay",
+   "link": "https://industri.kontan.co.id/news/vktr-tegaskan-tak-terlibat-dalam-rencana-konsorsium-akuisisi-saham-weda-bay",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "VKTR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T22:58+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Prodia (PRDA) Rampungkan Buyback Rp 112,42 Miliar, Saham Tresuri Tembus 8,95%",
+   "link": "https://investasi.kontan.co.id/news/prodia-prda-rampungkan-buyback-rp-11242-miliar-saham-tresuri-tembus-895",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "PRDA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T21:10+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Elnusa (ELSA) Lanjutkan Buyback Saham Mulai Jumat (20/11), Rogoh Kocek Rp 84,5 Miliar",
+   "link": "https://investasi.kontan.co.id/news/elnusa-elsa-lanjutkan-buyback-saham-mulai-jumat-2011-rogoh-kocek-rp-845-miliar",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ELSA"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
