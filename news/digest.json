@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T11:57+07:00",
+ "generated_for": "2026-11-20T13:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 625,
- "kept": 237,
- "dropped_noise": 22,
+ "scanned": 646,
+ "kept": 243,
+ "dropped_noise": 23,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -402,6 +402,24 @@
    "also_in": []
   },
   {
+   "published": "2026-11-20T12:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Adhi Karya (ADHI) Dapat Gugatan PKPU, Manajemen Buka Suara",
+   "link": "https://www.cnbcindonesia.com/market/20261120120345-17-786945/adhi-karya--adhi--dapat-gugatan-pkpu-manajemen-buka-suara",
+   "score": 7,
+   "categories": [
+    "kredit",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ADHI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-20T11:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -451,24 +469,6 @@
    ],
    "tickers": [
     "PRDA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T21:10+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Elnusa (ELSA) Lanjutkan Buyback Saham Mulai Jumat (20/11), Rogoh Kocek Rp 84,5 Miliar",
-   "link": "https://investasi.kontan.co.id/news/elnusa-elsa-lanjutkan-buyback-saham-mulai-jumat-2011-rogoh-kocek-rp-845-miliar",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ELSA"
    ],
    "flags": [],
    "also_in": []
