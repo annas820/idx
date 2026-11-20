@@ -1,32 +1,12 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-21T00:46+07:00",
+ "generated_for": "2026-11-21T06:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 747,
- "kept": 269,
- "dropped_noise": 18,
+ "scanned": 539,
+ "kept": 187,
+ "dropped_noise": 12,
  "items": [
-  {
-   "published": "2026-11-19T17:55+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BI Rate Naik Sudah Naik, Rupiah Masih Tertekan Dihantui Arah Kebijakan The Fed",
-   "link": "https://investasi.kontan.co.id/news/bi-rate-naik-sudah-naik-rupiah-masih-tertekan-dihantui-arah-kebijakan-the-fed",
-   "score": 11,
-   "categories": [
-    "kebijakan",
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
   {
    "published": "2026-11-20T21:16+07:00",
    "source": "cnbc_indonesia_market",
@@ -170,28 +150,6 @@
    ]
   },
   {
-   "published": "2026-11-19T15:20+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Jasuindo Tiga (JTPE) Bagikan Dividen Interim Rp 10 per Saham, Simak Jadwalnya",
-   "link": "https://investasi.kontan.co.id/news/jasuindo-tiga-jtpe-bagikan-dividen-interim-rp-10-per-saham-simak-jadwalnya",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "JTPE"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
-  },
-  {
    "published": "2026-11-20T18:37+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -296,40 +254,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T18:08+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Mulai Data Investor Penerima Ganti Rugi Manipulasi Saham",
-   "link": "https://www.cnbcindonesia.com/market/20261119172909-17-786717/ojk-mulai-data-investor-penerima-ganti-rugi-manipulasi-saham",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T16:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Saham ISAT Sentuh ARB, Dibayangi Pasar Ketat Cip Nvidia",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128310/saham-isat-sentuh-arb-dibayangi-pasar-ketat-cip-nvidia",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "ISAT"
-   ],
    "flags": [],
    "also_in": []
   },
@@ -482,30 +406,73 @@
    ],
    "flags": [],
    "also_in": []
-  }
- ],
- "watchlist_hits": [
+  },
   {
-   "published": "2026-11-19T16:06+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-20T19:19+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "IHSG Ditutup Turun 1,02% ke 5.194 pad Kamis (19/11), INDY, ISAT, INCO Top Losers LQ45",
-   "link": "https://investasi.kontan.co.id/news/ihsg-ditutup-turun-102-ke-5194-pad-kamis-1911-indy-isat-inco-top-losers-lq45",
-   "score": 7,
+   "title": "OJK Sebut Porsi Investasi Asuransi di Saham Sebesar 15,01% per September 2026",
+   "link": "https://keuangan.kontan.co.id/news/ojk-sebut-porsi-investasi-asuransi-di-saham-sebesar-1501-per-september-2026",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T17:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Ditutup Melemah, Tersengat Pelemahan Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128436/ihsg-ditutup-melemah-tersengat-pelemahan-rupiah",
+   "score": 6,
    "categories": [
     "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T17:15+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Suku Bunga BI Naik Jadi 6%, Kok Rupiah Masih Loyo? Ini Kata Ekonom",
+   "link": "https://www.cnbcindonesia.com/news/20261120163419-4-787038/suku-bunga-bi-naik-jadi-6-kok-rupiah-masih-loyo-ini-kata-ekonom",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T15:55+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bos Vale Beberkan Strategi Bisnis Hadapi Fluktuasi Nikel Dunia",
+   "link": "https://www.cnbcindonesia.com/news/20261120144700-4-787002/bos-vale-beberkan-strategi-bisnis-hadapi-fluktuasi-nikel-dunia",
+   "score": 6,
+   "categories": [
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "INCO",
-    "INDY",
-    "ISAT"
+    "INCO"
    ],
    "flags": [
     "watchlist"
    ],
    "also_in": []
-  },
+  }
+ ],
+ "watchlist_hits": [
   {
    "published": "2026-11-20T15:55+07:00",
    "source": "cnbc_indonesia_news",
@@ -531,63 +498,6 @@
    "tier": 3,
    "title": "Bos Vale Targetkan Pabrik HPAL Nikel Bahodopi Rampung Dibangun Q1-2027",
    "link": "https://www.cnbcindonesia.com/news/20261120135813-4-786985/bos-vale-targetkan-pabrik-hpal-nikel-bahodopi-rampung-dibangun-q1-2027",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T16:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Proyek Nikel Integrasi Vale di Morowali Sudah 42,6%, HPAL 43,7%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128287/proyek-nikel-integrasi-vale-di-morowali-sudah-42-6-hpal-43-7",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T13:25+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Tungku Dibangun Ulang, Produksi Nikel Matte Vale Tembus 48.114 Ton",
-   "link": "https://www.cnbcindonesia.com/news/20261119130518-4-786611/tungku-dibangun-ulang-produksi-nikel-matte-vale-tembus-48114-ton",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T13:05+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Vale Bakal Operasikan Pabrik Nikel HPAL Baru di Desember 2026",
-   "link": "https://www.cnbcindonesia.com/news/20261119123041-4-786594/vale-bakal-operasikan-pabrik-nikel-hpal-baru-di-desember-2026",
    "score": 6,
    "categories": [
     "komoditas",
