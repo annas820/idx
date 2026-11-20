@@ -1,0 +1,282 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-20T11:22:08Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "ACC: Perubahan BI Rate Berpotensi Memengaruhi Biaya Dana Perusahaan",
+        "url": "https://keuangan.kontan.co.id/news/acc-perubahan-bi-rate-berpotensi-memengaruhi-biaya-dana-perusahaan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T18:17:44+07:00",
+        "summary": "ACC mencermati kenaikan BI Rate dan menyiapkan strategi pendanaan 2027. Hingga Oktober 2026, penerbitan obligasi mencapai Rp 3,58 triliun.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Fitur Raya Jejak Hijau dari Bank Raya Ajak Nasabah Semakin Go Green",
+        "url": "https://keuangan.kontan.co.id/news/fitur-raya-jejak-hijau-dari-bank-raya-ajak-nasabah-semakin-go-green",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T17:34:19+07:00",
+        "summary": "Bank Raya Indonesia Tbk (AGRO) telah meluncurkan fitur Raya Jejak Hijau di Aplikasi Raya pada kuartal III-2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Obral Bunga Spesial Bank Berisiko Bikin Cicilan Kredit Makin Mahal",
+        "url": "https://www.cnbcindonesia.com/market/20261120170155-17-787055/obral-bunga-spesial-bank-berisiko-bikin-cicilan-kredit-makin-mahal",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-20T17:17:56+07:00",
+        "summary": "LPS menyoroti praktik pemberian special rate oleh perbankan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Akhirnya Ada Kabar Baik Buat RI di Akhir Pekan, Bikin Senyum-Senyum!",
+        "url": "https://www.cnbcindonesia.com/research/20261120111947-128-786929/akhirnya-ada-kabar-baik-buat-ri-di-akhir-pekan-bikin-senyum-senyum",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-20T17:05:36+07:00",
+        "summary": "Neraca Pembayaran Indonesia kembali surplus US$0,1 miliar pada kuartal III-2026, ditopang membaiknya transaksi berjalan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "surplus"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "3 Pelaku Manipulasi Waran Ditahan OJK, BEI Buka Suara",
+        "url": "https://www.cnbcindonesia.com/market/20261120163849-17-787039/3-pelaku-manipulasi-waran-ditahan-ojk-bei-buka-suara",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-20T16:50:02+07:00",
+        "summary": "Bursa Efek Indonesia (BEI) menanggapi dugaan manipulasi perdagangan waran. BEI tidak mengetahui saksi dalam penyelidikan OJK.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Sasar Pusat Bisnis, BSI Relokasi Kantor Regional Jakarta 2 ke Gatot Subroto",
+        "url": "https://keuangan.kontan.co.id/news/sasar-pusat-bisnis-bsi-relokasi-kantor-regional-jakarta-2-ke-gatot-subroto",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T16:35:14+07:00",
+        "summary": "Guna menyasar pusat bisnis, Bank Syariah Indonesia (BSI) merelokasi kantor regional Jakarta 2 ke Jalan Gatot Subroto.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bursa Saham RI, Singapura, China-Jepang Ditutup Merah: Ini 4 Pemicunya",
+        "url": "https://www.cnbcindonesia.com/research/20261120160002-128-787036/bursa-saham-ri-singapura-china-jepang-ditutup-merah-ini-4-pemicunya",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-20T16:32:00+07:00",
+        "summary": "Bursa saham Asia kompak terjun bebas pada perdagangan Jumat (20/11/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Ungkap 70,6% Perusahaan Asuransi Belum Siap Terapkan Standar IFRS S1 dan S2",
+        "url": "https://keuangan.kontan.co.id/news/ojk-ungkap-706-perusahaan-asuransi-belum-siap-terapkan-standar-ifrs-s1-dan-s2",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T16:11:43+07:00",
+        "summary": "OJK mencatat 70,6% perusahaan PPDP belum memiliki infrastruktur memadai untuk menerapkan standar keberlanjutan IFRS S1 dan S2.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Dorong Lembaga Keuangan Perluas Akses Pembiayaan Industri Perfilman",
+        "url": "https://keuangan.kontan.co.id/news/ojk-dorong-lembaga-keuangan-perluas-akses-pembiayaan-industri-perfilman",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T16:05:22+07:00",
+        "summary": "OJK mendorong perbankan dan lembaga nonbank membiayai industri film melalui securities crowdfunding, joint financing, dan pemanfaatan IP.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "IHSG Ditutup Melemah 0,92% ke Level 5.146,33",
+        "url": "https://www.cnbcindonesia.com/market/20261120151936-17-787030/ihsg-ditutup-melemah-092-ke-level-514633",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-20T16:04:00+07:00",
+        "summary": "IHSG ditutup di zona merah pada Jumat (20/11/2026), turun 0,92% ke level 5.146,33.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun",
+          "melemah"
+        ]
+      },
+      {
+        "title": "Jamkrida Sumbar Melihat Peluang Penjaminan Garap Pembiayaan Proyek Hijau Cukup Besar",
+        "url": "https://keuangan.kontan.co.id/news/jamkrida-sumbar-melihat-peluang-penjaminan-garap-pembiayaan-proyek-hijau-cukup-besar",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T15:49:52+07:00",
+        "summary": "Jamkrida Sumbar menilai peluang penjaminan untuk menggarap sektor pembiayaan proyek hijau cukup besar dengan mempertimbangan beberapa faktor.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pasar Modal Volatil, OJK Minta Perusahaan Perasuransian Lakukan Stress Test",
+        "url": "https://keuangan.kontan.co.id/news/pasar-modal-volatil-ojk-minta-perusahaan-perasuransian-lakukan-stress-test",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T15:31:12+07:00",
+        "summary": "OJK meminta perusahaan perasuransian melakukan stress test dengan menggunakan skenario pergerakan Indeks Harga Saham Gabungan (IHSG).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pesan Makanan hingga Pembayaran, Livin&#8217; Food Permudah Pengalaman Kuliner di Blok M",
+        "url": "https://keuangan.kontan.co.id/news/pesan-makanan-hingga-pembayaran-livin-food-permudah-pengalaman-kuliner-di-blok-m",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T15:29:10+07:00",
+        "summary": "Kolaborasi ini diharapkan dapat memberikan pengalaman yang lebih praktis bagi pengunjung sekaligus mendukung aktivitas usaha tenant lokal.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Khawatir Turun ke \"Standalone Market\", RI Butuh Perbaikan Ini!",
+        "url": "https://www.cnbcindonesia.com/market/20261120150913-19-787013/video-khawatir-turun-ke-standalone-market-ri-butuh-perbaikan-ini",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-20T15:22:53+07:00",
+        "summary": "Pasar Khawatir RI Turun ke \"Standalone Market\", Perbaikan Hal Ini Mendesak!",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Asippindo: Peluang Pembiayaan Proyek Hijau bagi Industri Penjaminan Cukup Besar",
+        "url": "https://keuangan.kontan.co.id/news/asippindo-peluang-pembiayaan-proyek-hijau-bagi-industri-penjaminan-cukup-besar",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T15:21:59+07:00",
+        "summary": "Asippindo menilai peluang pembiayaan proyek hijau bagi industri penjaminan cukup besar dan memiliki prospek pertumbuhan dalam jangka panjang. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Suku Bunga BI Naik Jadi 6%, Ini Dampaknya terhadap Return on Investment Dana Pensiun",
+        "url": "https://keuangan.kontan.co.id/news/suku-bunga-bi-naik-jadi-6-ini-dampaknya-terhadap-return-on-investment-dana-pensiun",
+        "source": "kontan/keuangan",
+        "published": "2026-11-20T15:21:29+07:00",
+        "summary": "Kenaikan suku bunga BI menjadi 6% berdampak ganda terhadap return investasi dana pensiun. ADPI tetap optimistis hingga akhir 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "optimistis",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Intip 5 Keunggulan KBstar, Layanan KB Bank Makin Cepat dan Gak Ribet",
+        "url": "https://www.cnbcindonesia.com/research/20261120092720-128-786957/intip-5-keunggulan-kbstar-layanan-kb-bank-makin-cepat-gak-ribet",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-20T15:20:13+07:00",
+        "summary": "PT Bank KB Indonesia Tbk atau KB Bank terus memperkuat layanan digitalnya untuk mengikuti perubahan kebiasaan nasabah",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bos OJK Buka-Bukaan Ancaman Global yang Mengintai Bank RI",
+        "url": "https://www.cnbcindonesia.com/market/20261120150534-17-787010/bos-ojk-buka-bukaan-ancaman-global-yang-mengintai-bank-ri",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-20T15:18:35+07:00",
+        "summary": "OJK mengungkap risiko yang dihadapi industri perbankan Indonesia akibat tantangan global.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Rupiah Ditutup ke Rp18.260 per Dolar AS Sore Ini",
+        "url": "https://www.cnbcindonesia.com/market/20261120150851-17-787012/rupiah-ditutup-ke-rp18260-per-dolar-as-sore-ini",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-20T15:12:22+07:00",
+        "summary": "Rupiah belum mampu keluar dari tekanan dan mengakhiri perdagangan pekan ini dengan pelemahan pada Jumat (20/11/2026).",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Punya Kepala Kantor Wilayah Jadebek Baru, Mau Dorong Digitalisasi",
+        "url": "https://www.cnbcindonesia.com/market/20261120145919-17-787005/ojk-punya-kepala-kantor-wilayah-jadebek-baru-mau-dorong-digitalisasi",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-20T15:09:19+07:00",
+        "summary": "OJK mengukuhkan Wan Nuzul Fachri sebagai Kepala OJK Jabodebek. Ia sinergi dengan Pemprov DKI dan tingkatkan literasi keuangan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
