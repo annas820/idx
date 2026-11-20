@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T20:00+07:00",
+ "generated_for": "2026-11-20T21:16+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 858,
- "kept": 318,
- "dropped_noise": 29,
+ "scanned": 832,
+ "kept": 301,
+ "dropped_noise": 25,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -43,6 +43,22 @@
    "tickers": [
     "WIKA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T21:16+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Perwakilan Bursa Saham AS Nasdaq Mau Berkantor di BEI",
+   "link": "https://www.cnbcindonesia.com/market/20261120211353-17-787138/perwakilan-bursa-saham-as-nasdaq-mau-berkantor-di-bei",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -200,22 +216,6 @@
    "tier": 3,
    "title": "Video: BI Rate Naik Jadi 6%, IHSG Volatil dan Rupiah Masih Melemah",
    "link": "https://www.cnbcindonesia.com/market/20261119121322-19-786588/video-bi-rate-naik-jadi-6-ihsg-volatil-rupiah-masih-melemah",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T08:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Dibayangi Kenaikan BI Rate & Arah Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128201/ihsg-dibayangi-kenaikan-bi-rate-arah-rupiah",
    "score": 9,
    "categories": [
     "kebijakan",
@@ -403,79 +403,76 @@
    "also_in": []
   },
   {
-   "published": "2026-11-19T09:11+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-20T19:41+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Harga Emas Antam Turun Rp 3.000, Buyback Ambles Rp 49.000 Per Gram Hari Ini (19/11)",
-   "link": "https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-3000-buyback-ambles-rp-49000-per-gram-hari-ini-1911",
-   "score": 8,
+   "title": "Kabar Mau Akuisisi Saham Eramet Bareng Haji Isam, VKTR Buka Suara",
+   "link": "https://www.cnbcindonesia.com/market/20261120193539-17-787127/kabar-mau-akuisisi-saham-eramet-bareng-haji-isam-vktr-buka-suara",
+   "score": 7,
    "categories": [
+    "pasar",
     "korporasi",
-    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "ANTM"
+    "VKTR"
    ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-19T08:58+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Hari Ini Turun Rp3.000, Tapi Buyback Anjlok",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128216/harga-emas-antam-hari-ini-turun-rp3-000-tapi-buyback-anjlok",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
-  },
-  {
-   "published": "2026-11-19T08:42+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Diterpa Gagal Bayar, OJK Pantau Ketat Penyelesaian Masalah iGrow, Akseleran & KoinP2P",
-   "link": "https://keuangan.kontan.co.id/news/diterpa-gagal-bayar-ojk-pantau-ketat-penyelesaian-masalah-igrow-akseleran-koinp2p",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kredit",
-    "korporasi"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-19T08:35+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-20T15:51+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "MSCI Kerek ESG Rating BNI Menjadi AA",
-   "link": "https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa",
-   "score": 8,
+   "title": "Ancora (OKAS) Lepas 60% Saham Bormindo untuk Melunasi Seluruh Utang",
+   "link": "https://investasi.kontan.co.id/news/ancora-okas-lepas-60-saham-bormindo-untuk-melunasi-seluruh-utang",
+   "score": 7,
    "categories": [
-    "kebijakan",
-    "kredit",
+    "pasar",
     "emiten"
    ],
    "tickers": [
-    "BBNI"
+    "OKAS"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
+   "published": "2026-11-20T14:41+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Semen Indonesia (SMGR) Siapkan Dana Rp 250 Miliar untuk Buyback Saham",
+   "link": "https://investasi.kontan.co.id/news/semen-indonesia-smgr-siapkan-dana-rp-250-miliar-untuk-buyback-saham",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "SMGR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T12:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Adhi Karya (ADHI) Dapat Gugatan PKPU, Manajemen Buka Suara",
+   "link": "https://www.cnbcindonesia.com/market/20261120120345-17-786945/adhi-karya--adhi--dapat-gugatan-pkpu-manajemen-buka-suara",
+   "score": 7,
+   "categories": [
+    "kredit",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "ADHI"
    ],
    "flags": [],
    "also_in": []
@@ -588,6 +585,24 @@
    "score": 6,
    "categories": [
     "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T20:50+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bos Vale Buka-bukaan Jurus Topang Industri Baterai EV Dunia",
+   "link": "https://www.cnbcindonesia.com/news/20261120184306-4-787112/bos-vale-buka-bukaan-jurus-topang-industri-baterai-ev-dunia",
+   "score": 4,
+   "categories": [
     "emiten"
    ],
    "tickers": [
