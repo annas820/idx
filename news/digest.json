@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T09:05+07:00",
+ "generated_for": "2026-11-20T10:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 576,
- "kept": 217,
+ "scanned": 591,
+ "kept": 224,
  "dropped_noise": 22,
  "items": [
   {
@@ -179,6 +179,28 @@
    "tickers": [],
    "flags": [
     "petunjuk",
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-20T10:06+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Penyebab Harga Emas Antam & Buyback Turun Hari Ini",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128367/penyebab-harga-emas-antam-buyback-turun-hari-ini",
+   "score": 8,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
     "terkonfirmasi"
    ],
    "also_in": [
@@ -454,24 +476,6 @@
    "flags": [
     "watchlist"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T13:51+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "ARII Siapkan Private Placement 375 Juta Saham, Ini Prospek dan Target Harganya",
-   "link": "https://investasi.kontan.co.id/news/arii-siapkan-private-placement-375-juta-saham-ini-prospek-dan-target-harganya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ARII"
-   ],
-   "flags": [],
    "also_in": []
   }
  ],

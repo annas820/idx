@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-20T09:05+07:00 WIB | jendela 36 jam | dipindai 576, lolos 217, dibuang sebagai noise 22.
+Berita terbaru: 2026-11-20T10:50+07:00 WIB | jendela 36 jam | dipindai 591, lolos 224, dibuang sebagai noise 22.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -19,6 +19,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-19 08:00 bloomberg_technoz: IHSG Dibayangi Kenaikan BI Rate & Arah Rupiah (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128201/ihsg-dibayangi-kenaikan-bi-rate-arah-rupiah>
 - **9** T3 11-19 07:46 kontan_investasi: BI Kerek Suku Bunga Jadi 6%, Begini Dampak dan Rekomendasi Saham Pilihan (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_keuangan) <https://investasi.kontan.co.id/news/bi-kerek-suku-bunga-jadi-6-begini-dampak-dan-rekomendasi-saham-pilihan>
 - **9** T3 11-19 05:45 kontan_keuangan: Simak Rekomendasi Saham Big Banks Usai BI Kerek Suku Bunga Jadi 6% (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_investasi) <https://keuangan.kontan.co.id/news/simak-rekomendasi-saham-big-banks-usai-bi-kerek-suku-bunga-jadi-6>
+- **8** T3 11-20 10:06 bloomberg_technoz: Penyebab Harga Emas Antam & Buyback Turun Hari Ini [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128367/penyebab-harga-emas-antam-buyback-turun-hari-ini>
 - **8** T3 11-19 22:07 kontan_investasi: Bursa Wall Street Dibuka Menghijau, IPO Anthropic Bikin Pasar Bergairah (global/pasar/korporasi) <https://investasi.kontan.co.id/news/bursa-wall-street-dibuka-menghijau-ipo-anthropic-bikin-pasar-bergairah>
 - **8** T3 11-19 18:08 cnbc_indonesia_market: OJK Mulai Data Investor Penerima Ganti Rugi Manipulasi Saham (kebijakan/pasar/korporasi) <https://www.cnbcindonesia.com/market/20261119172909-17-786717/ojk-mulai-data-investor-penerima-ganti-rugi-manipulasi-saham>
 - **8** T3 11-19 16:40 bloomberg_technoz: Saham ISAT Sentuh ARB, Dibayangi Pasar Ketat Cip Nvidia [ISAT] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/128310/saham-isat-sentuh-arb-dibayangi-pasar-ketat-cip-nvidia>
@@ -34,4 +35,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-19 21:10 kontan_investasi: Elnusa (ELSA) Lanjutkan Buyback Saham Mulai Jumat (20/11), Rogoh Kocek Rp 84,5 Miliar [ELSA] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/elnusa-elsa-lanjutkan-buyback-saham-mulai-jumat-2011-rogoh-kocek-rp-845-miliar>
 - **7** T3 11-19 18:02 kontan_investasi: ARII Private Placement 375 Juta Saham untuk Pendanaan Infrastruktur, Ini Kata Analis [ARII] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/arii-private-placement-375-juta-saham-untuk-pendanaan-infrastruktur-ini-kata-analis>
 - **7** T3 11-19 16:06 kontan_investasi: IHSG Ditutup Turun 1,02% ke 5.194 pad Kamis (19/11), INDY, ISAT, INCO Top Losers LQ45 [INCO,INDY,ISAT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-ditutup-turun-102-ke-5194-pad-kamis-1911-indy-isat-inco-top-losers-lq45>
-- **7** T3 11-19 13:51 kontan_investasi: ARII Siapkan Private Placement 375 Juta Saham, Ini Prospek dan Target Harganya [ARII] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/arii-siapkan-private-placement-375-juta-saham-ini-prospek-dan-target-harganya>
