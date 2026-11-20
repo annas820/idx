@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T17:50+07:00",
+ "generated_for": "2026-11-20T18:53+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 801,
- "kept": 304,
- "dropped_noise": 30,
+ "scanned": 855,
+ "kept": 321,
+ "dropped_noise": 29,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -68,6 +68,22 @@
    "also_in": [
     "kontan_industri"
    ]
+  },
+  {
+   "published": "2026-11-20T18:50+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BEI Gandeng Nasdaq Perkuat Pengawasan Perdagangan Saham, Mulai Desember 2026",
+   "link": "https://investasi.kontan.co.id/news/bei-gandeng-nasdaq-perkuat-pengawasan-perdagangan-saham-mulai-desember-2026",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-20T11:55+07:00",
@@ -252,6 +268,22 @@
    "also_in": [
     "kontan_keuangan"
    ]
+  },
+  {
+   "published": "2026-11-20T18:37+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Aksi Jual Saham Teknologi dan Ekspektasi Bunga The Fed Tekan Harga Emas",
+   "link": "https://investasi.kontan.co.id/news/aksi-jual-saham-teknologi-dan-ekspektasi-bunga-the-fed-tekan-harga-emas",
+   "score": 8,
+   "categories": [
+    "global",
+    "pasar",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-20T13:55+07:00",
@@ -456,40 +488,6 @@
    "also_in": [
     "kontan_investasi"
    ]
-  },
-  {
-   "published": "2026-11-19T08:42+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Diterpa Gagal Bayar, OJK Pantau Ketat Penyelesaian Masalah iGrow, Akseleran & KoinP2P",
-   "link": "https://keuangan.kontan.co.id/news/diterpa-gagal-bayar-ojk-pantau-ketat-penyelesaian-masalah-igrow-akseleran-koinp2p",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kredit",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T08:35+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "MSCI Kerek ESG Rating BNI Menjadi AA",
-   "link": "https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kredit",
-    "emiten"
-   ],
-   "tickers": [
-    "BBNI"
-   ],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
