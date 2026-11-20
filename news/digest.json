@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T06:35+07:00",
+ "generated_for": "2026-11-20T07:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 603,
- "kept": 220,
+ "scanned": 584,
+ "kept": 211,
  "dropped_noise": 23,
  "items": [
   {
@@ -541,25 +541,6 @@
    "tier": 3,
    "title": "Vale Bakal Operasikan Pabrik Nikel HPAL Baru di Desember 2026",
    "link": "https://www.cnbcindonesia.com/news/20261119123041-4-786594/vale-bakal-operasikan-pabrik-nikel-hpal-baru-di-desember-2026",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-18T19:30+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara",
-   "link": "https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara",
    "score": 6,
    "categories": [
     "komoditas",

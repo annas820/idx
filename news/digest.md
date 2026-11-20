@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-20T06:35+07:00 WIB | jendela 36 jam | dipindai 603, lolos 220, dibuang sebagai noise 23.
+Berita terbaru: 2026-11-20T07:45+07:00 WIB | jendela 36 jam | dipindai 584, lolos 211, dibuang sebagai noise 23.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -8,7 +8,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-19 16:20 bloomberg_technoz: Proyek Nikel Integrasi Vale di Morowali Sudah 42,6%, HPAL 43,7% [INCO] (komoditas/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/128287/proyek-nikel-integrasi-vale-di-morowali-sudah-42-6-hpal-43-7>
 - **6** T3 11-19 13:25 cnbc_indonesia_news: Tungku Dibangun Ulang, Produksi Nikel Matte Vale Tembus 48.114 Ton [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119130518-4-786611/tungku-dibangun-ulang-produksi-nikel-matte-vale-tembus-48114-ton>
 - **6** T3 11-19 13:05 cnbc_indonesia_news: Vale Bakal Operasikan Pabrik Nikel HPAL Baru di Desember 2026 [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119123041-4-786594/vale-bakal-operasikan-pabrik-nikel-hpal-baru-di-desember-2026>
-- **6** T3 11-18 19:30 cnbc_indonesia_news: Bos Vale Beberkan Pentingnya Optimalisasi Nilai Nikel untuk Negara [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261118170957-4-786405/bos-vale-beberkan-pentingnya-optimalisasi-nilai-nikel-untuk-negara>
 
 ## Teratas
 - **11** T3 11-19 17:55 kontan_investasi: BI Rate Naik Sudah Naik, Rupiah Masih Tertekan Dihantui Arah Kebijakan The Fed (kebijakan/global/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/bi-rate-naik-sudah-naik-rupiah-masih-tertekan-dihantui-arah-kebijakan-the-fed>
