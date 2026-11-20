@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T13:00+07:00",
+ "generated_for": "2026-11-20T14:10+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 646,
- "kept": 243,
- "dropped_noise": 23,
+ "scanned": 717,
+ "kept": 279,
+ "dropped_noise": 25,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -67,6 +67,94 @@
    ],
    "also_in": [
     "kontan_industri"
+   ]
+  },
+  {
+   "published": "2026-11-20T11:55+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "XLSmart (EXCL) Mau Buyback Saham hingga Rp 1 T, Simak Jadwalnya",
+   "link": "https://www.cnbcindonesia.com/market/20261120103514-17-786905/xlsmart--excl--mau-buyback-saham-hingga-rp-1-t-simak-jadwalnya",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "EXCL"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-20T11:27+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BBCA Tebar Dividen Interim Rp35 per Saham, Intip Profil Emiten Perbankan Ini",
+   "link": "https://investasi.kontan.co.id/news/bbca-tebar-dividen-interim-rp35-per-saham-intip-profil-emiten-perbankan-ini",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-20T10:17+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "XLSMART (EXCL) Siapkan Buyback Saham Rp 1 Triliun, Cek Jadwalnya",
+   "link": "https://investasi.kontan.co.id/news/xlsmart-excl-siapkan-buyback-saham-rp-1-triliun-cek-jadwalnya",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "EXCL"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
+  },
+  {
+   "published": "2026-11-20T08:51+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BBCA Tebar Dividen Interim Rp35 per Saham",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128358/bbca-tebar-dividen-interim-rp35-per-saham",
+   "score": 9,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
    ]
   },
   {
@@ -186,6 +274,22 @@
    ]
   },
   {
+   "published": "2026-11-20T13:55+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Dilema BI Naikkan Suku Bunga, Jaga Rupiah Sambil Jinakkan Inflasi",
+   "link": "https://www.cnbcindonesia.com/market/20261120132223-17-786974/dilema-bi-naikkan-suku-bunga-jaga-rupiah-sambil-jinakkan-inflasi",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kurs",
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-20T11:40+07:00",
    "source": "cnbc_indonesia_news",
    "tier": 3,
@@ -221,6 +325,28 @@
    ],
    "also_in": [
     "kontan_investasi"
+   ]
+  },
+  {
+   "published": "2026-11-20T10:06+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Harga Emas Antam Turun Rp 11.000 & Buyback Anjlok Rp 78.000 Per Gram Hari Ini (20/11)",
+   "link": "https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-11000-buyback-anjlok-rp-78000-per-gram-hari-ini-2011",
+   "score": 8,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
    ]
   },
   {
@@ -364,112 +490,6 @@
     "korporasi"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T08:35+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "MSCI Kerek ESG Rating BNI Menjadi AA",
-   "link": "https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kredit",
-    "emiten"
-   ],
-   "tickers": [
-    "BBNI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T05:24+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Wall Street Melemah di Tengah Saham Nvidia Anjlok & IPO Anthropic",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128190/wall-street-melemah-di-tengah-saham-nvidia-anjlok-ipo-anthropic",
-   "score": 8,
-   "categories": [
-    "global",
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T12:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Adhi Karya (ADHI) Dapat Gugatan PKPU, Manajemen Buka Suara",
-   "link": "https://www.cnbcindonesia.com/market/20261120120345-17-786945/adhi-karya--adhi--dapat-gugatan-pkpu-manajemen-buka-suara",
-   "score": 7,
-   "categories": [
-    "kredit",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ADHI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T11:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "XLSmart (EXCL) Mau Buyback Saham hingga Rp 1 T, Simak Jadwalnya",
-   "link": "https://www.cnbcindonesia.com/market/20261120103514-17-786905/xlsmart--excl--mau-buyback-saham-hingga-rp-1-t-simak-jadwalnya",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "EXCL"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T08:51+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BBCA Tebar Dividen Interim Rp35 per Saham",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128358/bbca-tebar-dividen-interim-rp35-per-saham",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-19T22:58+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Prodia (PRDA) Rampungkan Buyback Rp 112,42 Miliar, Saham Tresuri Tembus 8,95%",
-   "link": "https://investasi.kontan.co.id/news/prodia-prda-rampungkan-buyback-rp-11242-miliar-saham-tresuri-tembus-895",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "PRDA"
-   ],
    "flags": [],
    "also_in": []
   }
