@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T21:16+07:00",
+ "generated_for": "2026-11-20T22:48+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 832,
- "kept": 301,
- "dropped_noise": 25,
+ "scanned": 814,
+ "kept": 288,
+ "dropped_noise": 22,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -26,25 +26,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-19T10:07+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Belum Bayar Bunga Obligasi dan Sukuk, BEI Gembok Lagi Saham WIKA",
-   "link": "https://www.cnbcindonesia.com/market/20261119094141-17-786526/belum-bayar-bunga-obligasi-dan-sukuk-bei-gembok-lagi-saham-wika",
-   "score": 11,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "kurs",
-    "emiten"
-   ],
-   "tickers": [
-    "WIKA"
-   ],
-   "flags": [],
-   "also_in": []
   },
   {
    "published": "2026-11-20T21:16+07:00",
@@ -476,6 +457,27 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-20T10:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Ancora (OKAS) Lepas 60% Saham Bormindo Nusantara",
+   "link": "https://www.cnbcindonesia.com/market/20261120090608-17-786877/ancora--okas--lepas-60-saham-bormindo-nusantara",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "OKAS"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_investasi"
+   ]
   }
  ],
  "watchlist_hits": [

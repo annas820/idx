@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-20T21:16+07:00 WIB | jendela 36 jam | dipindai 832, lolos 301, dibuang sebagai noise 25.
+Berita terbaru: 2026-11-20T22:48+07:00 WIB | jendela 36 jam | dipindai 814, lolos 288, dibuang sebagai noise 22.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -15,7 +15,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 
 ## Teratas
 - **11** T3 11-19 17:55 kontan_investasi: BI Rate Naik Sudah Naik, Rupiah Masih Tertekan Dihantui Arah Kebijakan The Fed (kebijakan/global/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/bi-rate-naik-sudah-naik-rupiah-masih-tertekan-dihantui-arah-kebijakan-the-fed>
-- **11** T3 11-19 10:07 cnbc_indonesia_market: Belum Bayar Bunga Obligasi dan Sukuk, BEI Gembok Lagi Saham WIKA [WIKA] (kebijakan/pasar/kurs/emiten) <https://www.cnbcindonesia.com/market/20261119094141-17-786526/belum-bayar-bunga-obligasi-dan-sukuk-bei-gembok-lagi-saham-wika>
 - **9** T3 11-20 21:16 cnbc_indonesia_market: Perwakilan Bursa Saham AS Nasdaq Mau Berkantor di BEI (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261120211353-17-787138/perwakilan-bursa-saham-as-nasdaq-mau-berkantor-di-bei>
 - **9** T3 11-20 18:50 kontan_investasi: BEI Gandeng Nasdaq Perkuat Pengawasan Perdagangan Saham, Mulai Desember 2026 (kebijakan/global/pasar) <https://investasi.kontan.co.id/news/bei-gandeng-nasdaq-perkuat-pengawasan-perdagangan-saham-mulai-desember-2026>
 - **9** T3 11-20 11:55 cnbc_indonesia_market: XLSmart (EXCL) Mau Buyback Saham hingga Rp 1 T, Simak Jadwalnya [EXCL] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.cnbcindonesia.com/market/20261120103514-17-786905/xlsmart--excl--mau-buyback-saham-hingga-rp-1-t-simak-jadwalnya>
@@ -39,3 +38,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-20 15:51 kontan_investasi: Ancora (OKAS) Lepas 60% Saham Bormindo untuk Melunasi Seluruh Utang [OKAS] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/ancora-okas-lepas-60-saham-bormindo-untuk-melunasi-seluruh-utang>
 - **7** T3 11-20 14:41 kontan_investasi: Semen Indonesia (SMGR) Siapkan Dana Rp 250 Miliar untuk Buyback Saham [SMGR] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/semen-indonesia-smgr-siapkan-dana-rp-250-miliar-untuk-buyback-saham>
 - **7** T3 11-20 12:15 cnbc_indonesia_market: Adhi Karya (ADHI) Dapat Gugatan PKPU, Manajemen Buka Suara [ADHI] (kredit/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261120120345-17-786945/adhi-karya--adhi--dapat-gugatan-pkpu-manajemen-buka-suara>
+- **7** T3 11-20 10:20 cnbc_indonesia_market: Ancora (OKAS) Lepas 60% Saham Bormindo Nusantara [OKAS] (pasar/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.cnbcindonesia.com/market/20261120090608-17-786877/ancora--okas--lepas-60-saham-bormindo-nusantara>
