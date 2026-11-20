@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T16:58+07:00",
+ "generated_for": "2026-11-20T17:50+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 786,
- "kept": 303,
- "dropped_noise": 29,
+ "scanned": 801,
+ "kept": 304,
+ "dropped_noise": 30,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -254,26 +254,6 @@
    ]
   },
   {
-   "published": "2026-11-19T05:45+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Simak Rekomendasi Saham Big Banks Usai BI Kerek Suku Bunga Jadi 6%",
-   "link": "https://keuangan.kontan.co.id/news/simak-rekomendasi-saham-big-banks-usai-bi-kerek-suku-bunga-jadi-6",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk",
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
-  },
-  {
    "published": "2026-11-20T13:55+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -490,6 +470,24 @@
     "korporasi"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T08:35+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "MSCI Kerek ESG Rating BNI Menjadi AA",
+   "link": "https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kredit",
+    "emiten"
+   ],
+   "tickers": [
+    "BBNI"
+   ],
    "flags": [],
    "also_in": []
   }

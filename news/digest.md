@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-20T16:58+07:00 WIB | jendela 36 jam | dipindai 786, lolos 303, dibuang sebagai noise 29.
+Berita terbaru: 2026-11-20T17:50+07:00 WIB | jendela 36 jam | dipindai 801, lolos 304, dibuang sebagai noise 30.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -25,7 +25,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-19 12:25 cnbc_indonesia_market: Video: BI Rate Naik Jadi 6%, IHSG Volatil dan Rupiah Masih Melemah (kebijakan/pasar/kurs) <https://www.cnbcindonesia.com/market/20261119121322-19-786588/video-bi-rate-naik-jadi-6-ihsg-volatil-rupiah-masih-melemah>
 - **9** T3 11-19 08:00 bloomberg_technoz: IHSG Dibayangi Kenaikan BI Rate & Arah Rupiah (kebijakan/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128201/ihsg-dibayangi-kenaikan-bi-rate-arah-rupiah>
 - **9** T3 11-19 07:46 kontan_investasi: BI Kerek Suku Bunga Jadi 6%, Begini Dampak dan Rekomendasi Saham Pilihan (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_keuangan) <https://investasi.kontan.co.id/news/bi-kerek-suku-bunga-jadi-6-begini-dampak-dan-rekomendasi-saham-pilihan>
-- **9** T3 11-19 05:45 kontan_keuangan: Simak Rekomendasi Saham Big Banks Usai BI Kerek Suku Bunga Jadi 6% (kebijakan/pasar; petunjuk, terkonfirmasi, juga di kontan_investasi) <https://keuangan.kontan.co.id/news/simak-rekomendasi-saham-big-banks-usai-bi-kerek-suku-bunga-jadi-6>
 - **8** T3 11-20 13:55 cnbc_indonesia_market: Dilema BI Naikkan Suku Bunga, Jaga Rupiah Sambil Jinakkan Inflasi (kebijakan/kurs/makro) <https://www.cnbcindonesia.com/market/20261120132223-17-786974/dilema-bi-naikkan-suku-bunga-jaga-rupiah-sambil-jinakkan-inflasi>
 - **8** T3 11-20 11:40 cnbc_indonesia_news: Video: BI Sebut Keputusan BI-Rate untuk Jaga Rupiah dan Inflasi (kebijakan/kurs/makro) <https://www.cnbcindonesia.com/news/20261120083955-8-786857/video-bi-sebut-keputusan-bi-rate-untuk-jaga-rupiah-dan-inflasi>
 - **8** T3 11-20 10:06 bloomberg_technoz: Penyebab Harga Emas Antam & Buyback Turun Hari Ini [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128367/penyebab-harga-emas-antam-buyback-turun-hari-ini>
@@ -38,3 +37,4 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-19 09:11 kontan_investasi: Harga Emas Antam Turun Rp 3.000, Buyback Ambles Rp 49.000 Per Gram Hari Ini (19/11) [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-3000-buyback-ambles-rp-49000-per-gram-hari-ini-1911>
 - **8** T3 11-19 08:58 bloomberg_technoz: Harga Emas Antam Hari Ini Turun Rp3.000, Tapi Buyback Anjlok [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128216/harga-emas-antam-hari-ini-turun-rp3-000-tapi-buyback-anjlok>
 - **8** T3 11-19 08:42 kontan_keuangan: Diterpa Gagal Bayar, OJK Pantau Ketat Penyelesaian Masalah iGrow, Akseleran & KoinP2P (kebijakan/kredit/korporasi) <https://keuangan.kontan.co.id/news/diterpa-gagal-bayar-ojk-pantau-ketat-penyelesaian-masalah-igrow-akseleran-koinp2p>
+- **8** T3 11-19 08:35 kontan_keuangan: MSCI Kerek ESG Rating BNI Menjadi AA [BBNI] (kebijakan/kredit/emiten) <https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa>
