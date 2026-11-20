@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T18:53+07:00",
+ "generated_for": "2026-11-20T20:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 855,
- "kept": 321,
+ "scanned": 858,
+ "kept": 318,
  "dropped_noise": 29,
  "items": [
   {
@@ -45,29 +45,6 @@
    ],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-19T07:19+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Lirik Rekomendasi Saham dan Prospek AKR Corporindo (AKRA) Usai Akuisisi SPBU VIVO",
-   "link": "https://investasi.kontan.co.id/news/lirik-rekomendasi-saham-dan-prospek-akr-corporindo-akra-usai-akuisisi-spbu-vivo",
-   "score": 10,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "AKRA"
-   ],
-   "flags": [
-    "petunjuk",
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_industri"
-   ]
   },
   {
    "published": "2026-11-20T18:50+07:00",
@@ -248,26 +225,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-19T07:46+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BI Kerek Suku Bunga Jadi 6%, Begini Dampak dan Rekomendasi Saham Pilihan",
-   "link": "https://investasi.kontan.co.id/news/bi-kerek-suku-bunga-jadi-6-begini-dampak-dan-rekomendasi-saham-pilihan",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk",
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
   },
   {
    "published": "2026-11-20T18:37+07:00",
@@ -488,6 +445,40 @@
    "also_in": [
     "kontan_investasi"
    ]
+  },
+  {
+   "published": "2026-11-19T08:42+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Diterpa Gagal Bayar, OJK Pantau Ketat Penyelesaian Masalah iGrow, Akseleran & KoinP2P",
+   "link": "https://keuangan.kontan.co.id/news/diterpa-gagal-bayar-ojk-pantau-ketat-penyelesaian-masalah-igrow-akseleran-koinp2p",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kredit",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-19T08:35+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "MSCI Kerek ESG Rating BNI Menjadi AA",
+   "link": "https://keuangan.kontan.co.id/news/msci-kerek-esg-rating-bni-menjadi-aa",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kredit",
+    "emiten"
+   ],
+   "tickers": [
+    "BBNI"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
