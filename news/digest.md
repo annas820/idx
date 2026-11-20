@@ -1,13 +1,16 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-20T14:10+07:00 WIB | jendela 36 jam | dipindai 717, lolos 279, dibuang sebagai noise 25.
+Berita terbaru: 2026-11-20T15:55+07:00 WIB | jendela 36 jam | dipindai 766, lolos 297, dibuang sebagai noise 28.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **7** T3 11-19 16:06 kontan_investasi: IHSG Ditutup Turun 1,02% ke 5.194 pad Kamis (19/11), INDY, ISAT, INCO Top Losers LQ45 [INCO,INDY,ISAT] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/ihsg-ditutup-turun-102-ke-5194-pad-kamis-1911-indy-isat-inco-top-losers-lq45>
+- **6** T3 11-20 15:55 cnbc_indonesia_news: Bos Vale Beberkan Strategi Bisnis Hadapi Fluktuasi Nikel Dunia [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261120144700-4-787002/bos-vale-beberkan-strategi-bisnis-hadapi-fluktuasi-nikel-dunia>
+- **6** T3 11-20 15:15 cnbc_indonesia_news: Bos Vale Targetkan Pabrik HPAL Nikel Bahodopi Rampung Dibangun Q1-2027 [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261120135813-4-786985/bos-vale-targetkan-pabrik-hpal-nikel-bahodopi-rampung-dibangun-q1-2027>
 - **6** T3 11-19 16:20 bloomberg_technoz: Proyek Nikel Integrasi Vale di Morowali Sudah 42,6%, HPAL 43,7% [INCO] (komoditas/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/128287/proyek-nikel-integrasi-vale-di-morowali-sudah-42-6-hpal-43-7>
 - **6** T3 11-19 13:25 cnbc_indonesia_news: Tungku Dibangun Ulang, Produksi Nikel Matte Vale Tembus 48.114 Ton [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119130518-4-786611/tungku-dibangun-ulang-produksi-nikel-matte-vale-tembus-48114-ton>
 - **6** T3 11-19 13:05 cnbc_indonesia_news: Vale Bakal Operasikan Pabrik Nikel HPAL Baru di Desember 2026 [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261119123041-4-786594/vale-bakal-operasikan-pabrik-nikel-hpal-baru-di-desember-2026>
+- **4** T3 11-20 14:55 cnbc_indonesia_news: Vale Ungkap Proyek HPAL Sorowako Paling Menguntungkan, Ini Alasannya [INCO] (emiten; watchlist) <https://www.cnbcindonesia.com/news/20261120135024-4-786994/vale-ungkap-proyek-hpal-sorowako-paling-menguntungkan-ini-alasannya>
 
 ## Teratas
 - **11** T3 11-19 17:55 kontan_investasi: BI Rate Naik Sudah Naik, Rupiah Masih Tertekan Dihantui Arah Kebijakan The Fed (kebijakan/global/kurs; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/bi-rate-naik-sudah-naik-rupiah-masih-tertekan-dihantui-arah-kebijakan-the-fed>

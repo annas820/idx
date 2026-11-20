@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T14:10+07:00",
+ "generated_for": "2026-11-20T15:55+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 717,
- "kept": 279,
- "dropped_noise": 25,
+ "scanned": 766,
+ "kept": 297,
+ "dropped_noise": 28,
  "items": [
   {
    "published": "2026-11-19T17:55+07:00",
@@ -517,6 +517,44 @@
    "also_in": []
   },
   {
+   "published": "2026-11-20T15:55+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bos Vale Beberkan Strategi Bisnis Hadapi Fluktuasi Nikel Dunia",
+   "link": "https://www.cnbcindonesia.com/news/20261120144700-4-787002/bos-vale-beberkan-strategi-bisnis-hadapi-fluktuasi-nikel-dunia",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T15:15+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bos Vale Targetkan Pabrik HPAL Nikel Bahodopi Rampung Dibangun Q1-2027",
+   "link": "https://www.cnbcindonesia.com/news/20261120135813-4-786985/bos-vale-targetkan-pabrik-hpal-nikel-bahodopi-rampung-dibangun-q1-2027",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
    "published": "2026-11-19T16:20+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -563,6 +601,24 @@
    "score": 6,
    "categories": [
     "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T14:55+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Vale Ungkap Proyek HPAL Sorowako Paling Menguntungkan, Ini Alasannya",
+   "link": "https://www.cnbcindonesia.com/news/20261120135024-4-786994/vale-ungkap-proyek-hpal-sorowako-paling-menguntungkan-ini-alasannya",
+   "score": 4,
+   "categories": [
     "emiten"
    ],
    "tickers": [
