@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-20T22:48+07:00",
+ "generated_for": "2026-11-20T22:58+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 814,
- "kept": 288,
+ "scanned": 812,
+ "kept": 287,
  "dropped_noise": 22,
  "items": [
   {
