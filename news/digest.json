@@ -1,10 +1,10 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-21T09:01+07:00",
+ "generated_for": "2026-11-21T10:48+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 490,
- "kept": 177,
+ "scanned": 481,
+ "kept": 172,
  "dropped_noise": 13,
  "items": [
   {
@@ -220,22 +220,6 @@
    ]
   },
   {
-   "published": "2026-11-19T22:07+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Bursa Wall Street Dibuka Menghijau, IPO Anthropic Bikin Pasar Bergairah",
-   "link": "https://investasi.kontan.co.id/news/bursa-wall-street-dibuka-menghijau-ipo-anthropic-bikin-pasar-bergairah",
-   "score": 8,
-   "categories": [
-    "global",
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-21T08:15+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -386,24 +370,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-19T21:10+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Elnusa (ELSA) Lanjutkan Buyback Saham Mulai Jumat (20/11), Rogoh Kocek Rp 84,5 Miliar",
-   "link": "https://investasi.kontan.co.id/news/elnusa-elsa-lanjutkan-buyback-saham-mulai-jumat-2011-rogoh-kocek-rp-845-miliar",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "ELSA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-20T19:19+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -465,6 +431,40 @@
    "flags": [
     "watchlist"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T15:15+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bos Vale Targetkan Pabrik HPAL Nikel Bahodopi Rampung Dibangun Q1-2027",
+   "link": "https://www.cnbcindonesia.com/news/20261120135813-4-786985/bos-vale-targetkan-pabrik-hpal-nikel-bahodopi-rampung-dibangun-q1-2027",
+   "score": 6,
+   "categories": [
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T12:21+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "BEI Ungkap Temuan soal Emiten di Kasus Manipulasi Waran",
+   "link": "https://www.cnbcindonesia.com/market/20261120121324-17-786948/bei-ungkap-temuan-soal-emiten-di-kasus-manipulasi-waran",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   }
  ],

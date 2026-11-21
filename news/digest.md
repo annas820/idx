@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-21T09:01+07:00 WIB | jendela 36 jam | dipindai 490, lolos 177, dibuang sebagai noise 13.
+Berita terbaru: 2026-11-21T10:48+07:00 WIB | jendela 36 jam | dipindai 481, lolos 172, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -21,7 +21,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **8** T3 11-20 11:40 cnbc_indonesia_news: Video: BI Sebut Keputusan BI-Rate untuk Jaga Rupiah dan Inflasi (kebijakan/kurs/makro) <https://www.cnbcindonesia.com/news/20261120083955-8-786857/video-bi-sebut-keputusan-bi-rate-untuk-jaga-rupiah-dan-inflasi>
 - **8** T3 11-20 10:06 bloomberg_technoz: Penyebab Harga Emas Antam & Buyback Turun Hari Ini [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128367/penyebab-harga-emas-antam-buyback-turun-hari-ini>
 - **8** T3 11-20 10:06 kontan_investasi: Harga Emas Antam Turun Rp 11.000 & Buyback Anjlok Rp 78.000 Per Gram Hari Ini (20/11) [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-11000-buyback-anjlok-rp-78000-per-gram-hari-ini-2011>
-- **8** T3 11-19 22:07 kontan_investasi: Bursa Wall Street Dibuka Menghijau, IPO Anthropic Bikin Pasar Bergairah (global/pasar/korporasi) <https://investasi.kontan.co.id/news/bursa-wall-street-dibuka-menghijau-ipo-anthropic-bikin-pasar-bergairah>
 - **7** T3 11-21 08:15 kontan_keuangan: Laba Bank Mandiri Tumbuh 19,6%, Maybank Sekuritas Rekomendasikan Buy Saham BMRI [BMRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-196-maybank-sekuritas-rekomendasikan-buy-saham-bmri>
 - **7** T3 11-20 19:41 cnbc_indonesia_market: Kabar Mau Akuisisi Saham Eramet Bareng Haji Isam, VKTR Buka Suara [VKTR] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261120193539-17-787127/kabar-mau-akuisisi-saham-eramet-bareng-haji-isam-vktr-buka-suara>
 - **7** T3 11-20 15:51 kontan_investasi: Ancora (OKAS) Lepas 60% Saham Bormindo untuk Melunasi Seluruh Utang [OKAS] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/ancora-okas-lepas-60-saham-bormindo-untuk-melunasi-seluruh-utang>
@@ -30,8 +29,9 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-20 10:20 cnbc_indonesia_market: Ancora (OKAS) Lepas 60% Saham Bormindo Nusantara [OKAS] (pasar/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.cnbcindonesia.com/market/20261120090608-17-786877/ancora--okas--lepas-60-saham-bormindo-nusantara>
 - **7** T3 11-20 10:10 kontan_industri: VKTR Tegaskan Tak Terlibat dalam Rencana Konsorsium Akuisisi Saham Weda Bay [VKTR] (pasar/korporasi/emiten) <https://industri.kontan.co.id/news/vktr-tegaskan-tak-terlibat-dalam-rencana-konsorsium-akuisisi-saham-weda-bay>
 - **7** T3 11-19 22:58 kontan_investasi: Prodia (PRDA) Rampungkan Buyback Rp 112,42 Miliar, Saham Tresuri Tembus 8,95% [PRDA] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/prodia-prda-rampungkan-buyback-rp-11242-miliar-saham-tresuri-tembus-895>
-- **7** T3 11-19 21:10 kontan_investasi: Elnusa (ELSA) Lanjutkan Buyback Saham Mulai Jumat (20/11), Rogoh Kocek Rp 84,5 Miliar [ELSA] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/elnusa-elsa-lanjutkan-buyback-saham-mulai-jumat-2011-rogoh-kocek-rp-845-miliar>
 - **6** T3 11-20 19:19 kontan_keuangan: OJK Sebut Porsi Investasi Asuransi di Saham Sebesar 15,01% per September 2026 (kebijakan/pasar) <https://keuangan.kontan.co.id/news/ojk-sebut-porsi-investasi-asuransi-di-saham-sebesar-1501-per-september-2026>
 - **6** T3 11-20 17:20 bloomberg_technoz: IHSG Ditutup Melemah, Tersengat Pelemahan Rupiah (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/128436/ihsg-ditutup-melemah-tersengat-pelemahan-rupiah>
 - **6** T3 11-20 17:15 cnbc_indonesia_news: Suku Bunga BI Naik Jadi 6%, Kok Rupiah Masih Loyo? Ini Kata Ekonom (kebijakan/kurs) <https://www.cnbcindonesia.com/news/20261120163419-4-787038/suku-bunga-bi-naik-jadi-6-kok-rupiah-masih-loyo-ini-kata-ekonom>
 - **6** T3 11-20 15:55 cnbc_indonesia_news: Bos Vale Beberkan Strategi Bisnis Hadapi Fluktuasi Nikel Dunia [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261120144700-4-787002/bos-vale-beberkan-strategi-bisnis-hadapi-fluktuasi-nikel-dunia>
+- **6** T3 11-20 15:15 cnbc_indonesia_news: Bos Vale Targetkan Pabrik HPAL Nikel Bahodopi Rampung Dibangun Q1-2027 [INCO] (komoditas/emiten; watchlist) <https://www.cnbcindonesia.com/news/20261120135813-4-786985/bos-vale-targetkan-pabrik-hpal-nikel-bahodopi-rampung-dibangun-q1-2027>
+- **6** T3 11-20 12:21 cnbc_indonesia_market: BEI Ungkap Temuan soal Emiten di Kasus Manipulasi Waran (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261120121324-17-786948/bei-ungkap-temuan-soal-emiten-di-kasus-manipulasi-waran>
