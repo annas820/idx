@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-21T08:00+07:00 WIB | jendela 36 jam | dipindai 507, lolos 181, dibuang sebagai noise 12.
+Berita terbaru: 2026-11-21T09:01+07:00 WIB | jendela 36 jam | dipindai 490, lolos 177, dibuang sebagai noise 13.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -16,13 +16,13 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **9** T3 11-20 11:27 kontan_investasi: BBCA Tebar Dividen Interim Rp35 per Saham, Intip Profil Emiten Perbankan Ini [BBCA] (pasar/korporasi/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/bbca-tebar-dividen-interim-rp35-per-saham-intip-profil-emiten-perbankan-ini>
 - **9** T3 11-20 10:17 kontan_investasi: XLSMART (EXCL) Siapkan Buyback Saham Rp 1 Triliun, Cek Jadwalnya [EXCL] (pasar/korporasi/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/xlsmart-excl-siapkan-buyback-saham-rp-1-triliun-cek-jadwalnya>
 - **9** T3 11-20 08:51 bloomberg_technoz: BBCA Tebar Dividen Interim Rp35 per Saham [BBCA] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128358/bbca-tebar-dividen-interim-rp35-per-saham>
-- **9** T3 11-19 20:14 kontan_keuangan: BCA Bagikan Dividen Interim Rp 35 per Saham pada Kuartal IV-2026, Cek Jadwalnya [BBCA] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_investasi) <https://keuangan.kontan.co.id/news/bca-bagikan-dividen-interim-rp-35-per-saham-pada-kuartal-iv-2026-cek-jadwalnya>
 - **8** T3 11-20 18:37 kontan_investasi: Aksi Jual Saham Teknologi dan Ekspektasi Bunga The Fed Tekan Harga Emas (global/pasar/komoditas) <https://investasi.kontan.co.id/news/aksi-jual-saham-teknologi-dan-ekspektasi-bunga-the-fed-tekan-harga-emas>
 - **8** T3 11-20 13:55 cnbc_indonesia_market: Dilema BI Naikkan Suku Bunga, Jaga Rupiah Sambil Jinakkan Inflasi (kebijakan/kurs/makro) <https://www.cnbcindonesia.com/market/20261120132223-17-786974/dilema-bi-naikkan-suku-bunga-jaga-rupiah-sambil-jinakkan-inflasi>
 - **8** T3 11-20 11:40 cnbc_indonesia_news: Video: BI Sebut Keputusan BI-Rate untuk Jaga Rupiah dan Inflasi (kebijakan/kurs/makro) <https://www.cnbcindonesia.com/news/20261120083955-8-786857/video-bi-sebut-keputusan-bi-rate-untuk-jaga-rupiah-dan-inflasi>
 - **8** T3 11-20 10:06 bloomberg_technoz: Penyebab Harga Emas Antam & Buyback Turun Hari Ini [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di kontan_investasi) <https://www.bloombergtechnoz.com/detail-news/128367/penyebab-harga-emas-antam-buyback-turun-hari-ini>
 - **8** T3 11-20 10:06 kontan_investasi: Harga Emas Antam Turun Rp 11.000 & Buyback Anjlok Rp 78.000 Per Gram Hari Ini (20/11) [ANTM] (korporasi/komoditas/emiten; terkonfirmasi, juga di bloomberg_technoz) <https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-11000-buyback-anjlok-rp-78000-per-gram-hari-ini-2011>
 - **8** T3 11-19 22:07 kontan_investasi: Bursa Wall Street Dibuka Menghijau, IPO Anthropic Bikin Pasar Bergairah (global/pasar/korporasi) <https://investasi.kontan.co.id/news/bursa-wall-street-dibuka-menghijau-ipo-anthropic-bikin-pasar-bergairah>
+- **7** T3 11-21 08:15 kontan_keuangan: Laba Bank Mandiri Tumbuh 19,6%, Maybank Sekuritas Rekomendasikan Buy Saham BMRI [BMRI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-196-maybank-sekuritas-rekomendasikan-buy-saham-bmri>
 - **7** T3 11-20 19:41 cnbc_indonesia_market: Kabar Mau Akuisisi Saham Eramet Bareng Haji Isam, VKTR Buka Suara [VKTR] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261120193539-17-787127/kabar-mau-akuisisi-saham-eramet-bareng-haji-isam-vktr-buka-suara>
 - **7** T3 11-20 15:51 kontan_investasi: Ancora (OKAS) Lepas 60% Saham Bormindo untuk Melunasi Seluruh Utang [OKAS] (pasar/emiten; terkonfirmasi, juga di cnbc_indonesia_market) <https://investasi.kontan.co.id/news/ancora-okas-lepas-60-saham-bormindo-untuk-melunasi-seluruh-utang>
 - **7** T3 11-20 14:41 kontan_investasi: Semen Indonesia (SMGR) Siapkan Dana Rp 250 Miliar untuk Buyback Saham [SMGR] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/semen-indonesia-smgr-siapkan-dana-rp-250-miliar-untuk-buyback-saham>

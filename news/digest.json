@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-21T08:00+07:00",
+ "generated_for": "2026-11-21T09:01+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 507,
- "kept": 181,
- "dropped_noise": 12,
+ "scanned": 490,
+ "kept": 177,
+ "dropped_noise": 13,
  "items": [
   {
    "published": "2026-11-20T21:16+07:00",
@@ -128,28 +128,6 @@
    ]
   },
   {
-   "published": "2026-11-19T20:14+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BCA Bagikan Dividen Interim Rp 35 per Saham pada Kuartal IV-2026, Cek Jadwalnya",
-   "link": "https://keuangan.kontan.co.id/news/bca-bagikan-dividen-interim-rp-35-per-saham-pada-kuartal-iv-2026-cek-jadwalnya",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
-  },
-  {
    "published": "2026-11-20T18:37+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -254,6 +232,24 @@
     "korporasi"
    ],
    "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T08:15+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Laba Bank Mandiri Tumbuh 19,6%, Maybank Sekuritas Rekomendasikan Buy Saham BMRI",
+   "link": "https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-196-maybank-sekuritas-rekomendasikan-buy-saham-bmri",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BMRI"
+   ],
    "flags": [],
    "also_in": []
   },
