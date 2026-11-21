@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-21T10:48+07:00",
+ "generated_for": "2026-11-21T19:14+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 481,
- "kept": 172,
- "dropped_noise": 13,
+ "scanned": 516,
+ "kept": 177,
+ "dropped_noise": 14,
  "items": [
   {
    "published": "2026-11-20T21:16+07:00",
@@ -126,6 +126,24 @@
    "also_in": [
     "kontan_investasi"
    ]
+  },
+  {
+   "published": "2026-11-21T18:51+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "MSCI Naikkan ESG Rating BNI Jadi AA, Tegaskan Komitmen Keberlanjutan",
+   "link": "https://www.cnbcindonesia.com/market/20261121184601-17-787212/msci-naikkan-esg-rating-bni-jadi-aa-tegaskan-komitmen-keberlanjutan",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "kredit",
+    "emiten"
+   ],
+   "tickers": [
+    "BBNI"
+   ],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-20T18:37+07:00",
@@ -352,20 +370,47 @@
    "also_in": []
   },
   {
-   "published": "2026-11-19T22:58+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-21T15:45+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Prodia (PRDA) Rampungkan Buyback Rp 112,42 Miliar, Saham Tresuri Tembus 8,95%",
-   "link": "https://investasi.kontan.co.id/news/prodia-prda-rampungkan-buyback-rp-11242-miliar-saham-tresuri-tembus-895",
-   "score": 7,
+   "title": "OJK Ungkap 10 Kasus Baru Perdagangan Saham",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128481/ojk-ungkap-10-kasus-baru-perdagangan-saham",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
+    "kebijakan",
+    "pasar"
    ],
-   "tickers": [
-    "PRDA"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T13:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Gandeng NASDAQ untuk Benahi Pengawasan Perdagangan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128466/bei-gandeng-nasdaq-untuk-benahi-pengawasan-perdagangan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
    ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T13:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Efek Kebijakan The Fed dan BI Rate ke Sektor Perbankan - Tambang",
+   "link": "https://www.cnbcindonesia.com/market/20261118134044-19-786286/video-efek-kebijakan-the-fed-bi-rate-ke-sektor-perbankan--tambang",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -413,59 +458,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-20T15:55+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos Vale Beberkan Strategi Bisnis Hadapi Fluktuasi Nikel Dunia",
-   "link": "https://www.cnbcindonesia.com/news/20261120144700-4-787002/bos-vale-beberkan-strategi-bisnis-hadapi-fluktuasi-nikel-dunia",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T15:15+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos Vale Targetkan Pabrik HPAL Nikel Bahodopi Rampung Dibangun Q1-2027",
-   "link": "https://www.cnbcindonesia.com/news/20261120135813-4-786985/bos-vale-targetkan-pabrik-hpal-nikel-bahodopi-rampung-dibangun-q1-2027",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T12:21+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI Ungkap Temuan soal Emiten di Kasus Manipulasi Waran",
-   "link": "https://www.cnbcindonesia.com/market/20261120121324-17-786948/bei-ungkap-temuan-soal-emiten-di-kasus-manipulasi-waran",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -497,6 +489,24 @@
    "score": 6,
    "categories": [
     "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T16:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Demi Keberlanjutan, Vale Percepat Elektrifikasi Truk Tambang",
+   "link": "https://www.cnbcindonesia.com/market/20261116162726-19-785696/video-demi-keberlanjutan-vale-percepat-elektrifikasi-truk-tambang",
+   "score": 4,
+   "categories": [
     "emiten"
    ],
    "tickers": [
