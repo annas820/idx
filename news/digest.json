@@ -1,12 +1,79 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-21T19:14+07:00",
+ "generated_for": "2026-11-21T22:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 516,
- "kept": 177,
- "dropped_noise": 14,
+ "scanned": 514,
+ "kept": 164,
+ "dropped_noise": 12,
  "items": [
+  {
+   "published": "2026-11-21T19:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Sanksi Manipulasi Transaksi Saham SMDM Senilai Rp4,3 M",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128484/ojk-sanksi-manipulasi-transaksi-saham-smdm-senilai-rp4-3-m",
+   "score": 11,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "SMDM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T20:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Sanksi 7 Pelanggaran Ketentuan Emiten: Total Capai Rp3,7 M",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128487/ojk-sanksi-7-pelanggaran-ketentuan-emiten-total-capai-rp3-7-m",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T14:28+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "OJK Jatuhkan Sanksi ke Emiten Semen BUMN, Denda Capai Rp 550 Juta",
+   "link": "https://investasi.kontan.co.id/news/ojk-jatuhkan-sanksi-ke-emiten-semen-bumn-denda-capai-rp-550-juta",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T05:25+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "BEI Bekerjasama dengan Nasdaq untuk Perkuat Pengawasan Perdagangan Saham",
+   "link": "https://investasi.kontan.co.id/news/bei-bekerjasama-dengan-nasdaq-untuk-perkuat-pengawasan-perdagangan-saham",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-20T21:16+07:00",
    "source": "cnbc_indonesia_market",
@@ -84,48 +151,40 @@
    ]
   },
   {
-   "published": "2026-11-20T10:17+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "XLSMART (EXCL) Siapkan Buyback Saham Rp 1 Triliun, Cek Jadwalnya",
-   "link": "https://investasi.kontan.co.id/news/xlsmart-excl-siapkan-buyback-saham-rp-1-triliun-cek-jadwalnya",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "EXCL"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-20T08:51+07:00",
+   "published": "2026-11-21T20:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "BBCA Tebar Dividen Interim Rp35 per Saham",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128358/bbca-tebar-dividen-interim-rp35-per-saham",
-   "score": 9,
+   "title": "OJK Minta Keuntungan Tak Sah Transaksi Saham SAMF Senilai Rp12 M",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128483/ojk-minta-keuntungan-tak-sah-transaksi-saham-samf-senilai-rp12-m",
+   "score": 8,
    "categories": [
+    "kebijakan",
     "pasar",
-    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "BBCA"
+    "SAMF"
    ],
-   "flags": [
-    "terkonfirmasi"
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T19:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Temukan Manipulasi Transaksi Saham HOMI Senilai Rp6,8 M",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128482/ojk-temukan-manipulasi-transaksi-saham-homi-senilai-rp6-8-m",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
    ],
-   "also_in": [
-    "kontan_investasi"
-   ]
+   "tickers": [
+    "HOMI"
+   ],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-21T18:51+07:00",
@@ -144,6 +203,99 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-21T13:50+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "OJK Bongkar Manipulasi Saham HOMI, SAMF, dan SMDM, Pelaku Wajib Kembalikan Keuntungan",
+   "link": "https://investasi.kontan.co.id/news/ojk-bongkar-manipulasi-saham-homi-samf-dan-smdm-pelaku-wajib-kembalikan-keuntungan",
+   "score": 8,
+   "categories": [
+    "kebijakan",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "HOMI",
+    "SAMF",
+    "SMDM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T09:32+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Harga Emas Antam Sabtu (21/11) Turun Rp 5.000, Harga Buyback Anjlok Rp 50.000",
+   "link": "https://investasi.kontan.co.id/news/harga-emas-antam-sabtu-2111-turun-rp-5000-harga-buyback-anjlok-rp-50000",
+   "score": 8,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-21T06:20+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Saham Rokok Makin Murah, Potensi Dividen Yield Capai 14%, Mana yang Paling Menarik?",
+   "link": "https://investasi.kontan.co.id/news/saham-rokok-makin-murah-potensi-dividen-yield-capai-14-mana-yang-paling-menarik",
+   "score": 8,
+   "categories": [
+    "pasar",
+    "kurs",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T06:20+07:00",
+   "source": "kontan_industri",
+   "tier": 3,
+   "title": "Aturan Tambang dan Ekspor Berubah, Fitch Soroti Risiko Keuangan Emiten di Indonesia",
+   "link": "https://industri.kontan.co.id/news/aturan-tambang-dan-ekspor-berubah-fitch-soroti-risiko-keuangan-emiten-di-indonesia",
+   "score": 8,
+   "categories": [
+    "pasar",
+    "kredit",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T21:51+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Wall Street Dibuka Melemah, Nasdaq Anjlok 1,2% Usai Saham Anthropic Tertekan",
+   "link": "https://investasi.kontan.co.id/news/wall-street-dibuka-melemah-nasdaq-anjlok-12-usai-saham-anthropic-tertekan",
+   "score": 8,
+   "categories": [
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   },
   {
    "published": "2026-11-20T18:37+07:00",
@@ -192,50 +344,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-20T10:06+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Penyebab Harga Emas Antam & Buyback Turun Hari Ini",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128367/penyebab-harga-emas-antam-buyback-turun-hari-ini",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
-  },
-  {
-   "published": "2026-11-20T10:06+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Harga Emas Antam Turun Rp 11.000 & Buyback Anjlok Rp 78.000 Per Gram Hari Ini (20/11)",
-   "link": "https://investasi.kontan.co.id/news/harga-emas-antam-turun-rp-11000-buyback-anjlok-rp-78000-per-gram-hari-ini-2011",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   },
   {
    "published": "2026-11-21T08:15+07:00",
@@ -350,114 +458,6 @@
    "also_in": [
     "kontan_investasi"
    ]
-  },
-  {
-   "published": "2026-11-20T10:10+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "VKTR Tegaskan Tak Terlibat dalam Rencana Konsorsium Akuisisi Saham Weda Bay",
-   "link": "https://industri.kontan.co.id/news/vktr-tegaskan-tak-terlibat-dalam-rencana-konsorsium-akuisisi-saham-weda-bay",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "VKTR"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T15:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Ungkap 10 Kasus Baru Perdagangan Saham",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128481/ojk-ungkap-10-kasus-baru-perdagangan-saham",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T13:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Gandeng NASDAQ untuk Benahi Pengawasan Perdagangan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128466/bei-gandeng-nasdaq-untuk-benahi-pengawasan-perdagangan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T13:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Efek Kebijakan The Fed dan BI Rate ke Sektor Perbankan - Tambang",
-   "link": "https://www.cnbcindonesia.com/market/20261118134044-19-786286/video-efek-kebijakan-the-fed-bi-rate-ke-sektor-perbankan--tambang",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T19:19+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Sebut Porsi Investasi Asuransi di Saham Sebesar 15,01% per September 2026",
-   "link": "https://keuangan.kontan.co.id/news/ojk-sebut-porsi-investasi-asuransi-di-saham-sebesar-1501-per-september-2026",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T17:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Ditutup Melemah, Tersengat Pelemahan Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128436/ihsg-ditutup-melemah-tersengat-pelemahan-rupiah",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T17:15+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Suku Bunga BI Naik Jadi 6%, Kok Rupiah Masih Loyo? Ini Kata Ekonom",
-   "link": "https://www.cnbcindonesia.com/news/20261120163419-4-787038/suku-bunga-bi-naik-jadi-6-kok-rupiah-masih-loyo-ini-kata-ekonom",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": [
