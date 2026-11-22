@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-22T22:46+07:00",
+ "generated_for": "2026-11-23T05:08+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 212,
- "kept": 47,
- "dropped_noise": 6,
+ "scanned": 166,
+ "kept": 35,
+ "dropped_noise": 5,
  "items": [
   {
    "published": "2026-11-21T19:45+07:00",
@@ -32,22 +32,6 @@
    "tier": 3,
    "title": "OJK Sanksi 7 Pelanggaran Ketentuan Emiten: Total Capai Rp3,7 M",
    "link": "https://www.bloombergtechnoz.com/detail-news/128487/ojk-sanksi-7-pelanggaran-ketentuan-emiten-total-capai-rp3-7-m",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T14:28+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "OJK Jatuhkan Sanksi ke Emiten Semen BUMN, Denda Capai Rp 550 Juta",
-   "link": "https://investasi.kontan.co.id/news/ojk-jatuhkan-sanksi-ke-emiten-semen-bumn-denda-capai-rp-550-juta",
    "score": 9,
    "categories": [
     "kebijakan",
@@ -113,26 +97,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-21T13:50+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "OJK Bongkar Manipulasi Saham HOMI, SAMF, dan SMDM, Pelaku Wajib Kembalikan Keuntungan",
-   "link": "https://investasi.kontan.co.id/news/ojk-bongkar-manipulasi-saham-homi-samf-dan-smdm-pelaku-wajib-kembalikan-keuntungan",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "HOMI",
-    "SAMF",
-    "SMDM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-22T07:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -184,62 +148,19 @@
    "also_in": []
   },
   {
-   "published": "2026-11-21T15:45+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-23T04:00+07:00",
+   "source": "kontan_keuangan",
    "tier": 3,
-   "title": "OJK Ungkap 10 Kasus Baru Perdagangan Saham",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128481/ojk-ungkap-10-kasus-baru-perdagangan-saham",
-   "score": 6,
+   "title": "Tren Suku Bunga Sedang Naik, BCA Perkuat Mitigasi Risiko Penyaluran KPR",
+   "link": "https://keuangan.kontan.co.id/news/tren-suku-bunga-sedang-naik-bca-perkuat-mitigasi-risiko-penyaluran-kpr",
+   "score": 5,
    "categories": [
     "kebijakan",
-    "pasar"
+    "emiten"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T14:25+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "OJK Perintahkan Pengembalian Keuntungan Ilegal Rp 23,77 Miliar dari Manipulasi Saham",
-   "link": "https://investasi.kontan.co.id/news/ojk-perintahkan-pengembalian-keuntungan-ilegal-rp-2377-miliar-dari-manipulasi-saham",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
+   "tickers": [
+    "BBCA"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T13:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Gandeng NASDAQ untuk Benahi Pengawasan Perdagangan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128466/bei-gandeng-nasdaq-untuk-benahi-pengawasan-perdagangan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T13:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Efek Kebijakan The Fed dan BI Rate ke Sektor Perbankan - Tambang",
-   "link": "https://www.cnbcindonesia.com/market/20261118134044-19-786286/video-efek-kebijakan-the-fed-bi-rate-ke-sektor-perbankan--tambang",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -306,23 +227,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-21T12:11+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Merdeka Battery (MBMA) Terbitkan Obligasi Rp 2,49 T, Tawarkan Bunga hingga 10,75%",
-   "link": "https://investasi.kontan.co.id/news/merdeka-battery-mbma-terbitkan-obligasi-rp-249-t-tawarkan-bunga-hingga-1075",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "emiten"
-   ],
-   "tickers": [
-    "MBMA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-21T18:03+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -340,21 +244,45 @@
    "also_in": []
   },
   {
-   "published": "2026-11-21T16:00+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-23T05:00+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Video: Demi Keberlanjutan, Vale Percepat Elektrifikasi Truk Tambang",
-   "link": "https://www.cnbcindonesia.com/market/20261116162726-19-785696/video-demi-keberlanjutan-vale-percepat-elektrifikasi-truk-tambang",
-   "score": 4,
+   "title": "Target IHSG Minggu Ini Usai Pekan Lalu Turun Nyaris 4%",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128514/target-ihsg-minggu-ini-usai-pekan-lalu-turun-nyaris-4",
+   "score": 3,
    "categories": [
-    "emiten"
+    "pasar"
    ],
-   "tickers": [
-    "INCO"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T05:00+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BI Rate Naik Jadi 6%, Biaya Dana Multifinance Bisa Ikut Terseret",
+   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-biaya-dana-multifinance-bisa-ikut-terseret",
+   "score": 3,
+   "categories": [
+    "kebijakan"
    ],
-   "flags": [
-    "watchlist"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T04:30+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Kenaikan BI Rate Berpotensi Tekan Kredit Modal Kerja Perbankan",
+   "link": "https://keuangan.kontan.co.id/news/kenaikan-bi-rate-berpotensi-tekan-kredit-modal-kerja-perbankan",
+   "score": 3,
+   "categories": [
+    "kebijakan"
    ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -412,26 +340,63 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  }
- ],
- "watchlist_hits": [
+  },
   {
-   "published": "2026-11-21T16:00+07:00",
+   "published": "2026-11-22T18:19+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BI Rate Naik, Allo Bank Atur Strategi Suku Bunga Deposito Sambil Jaga Margin",
+   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-allo-bank-atur-strategi-suku-bunga-deposito-sambil-jaga-margin",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-22T18:15+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Video: Demi Keberlanjutan, Vale Percepat Elektrifikasi Truk Tambang",
-   "link": "https://www.cnbcindonesia.com/market/20261116162726-19-785696/video-demi-keberlanjutan-vale-percepat-elektrifikasi-truk-tambang",
-   "score": 4,
+   "title": "BI Rate Naik dan Leasing Minta DP Lebih Besar, Kredit Mobil Makin Susah",
+   "link": "https://www.cnbcindonesia.com/market/20261122145550-17-787317/bi-rate-naik-leasing-minta-dp-lebih-besar-kredit-mobil-makin-susah",
+   "score": 3,
    "categories": [
-    "emiten"
+    "kebijakan"
    ],
-   "tickers": [
-    "INCO"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-22T18:09+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Media Asing Sorot Kebakaran Pabrik Permen Milkita di Serang",
+   "link": "https://www.cnbcindonesia.com/news/20261122180605-4-787353/media-asing-sorot-kebakaran-pabrik-permen-milkita-di-serang",
+   "score": 3,
+   "categories": [
+    "pasar"
    ],
-   "flags": [
-    "watchlist"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-22T16:35+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "IHSG Melemah, Transaksi Harian Perusahaan Sekuritas Tertekan",
+   "link": "https://keuangan.kontan.co.id/news/ihsg-melemah-transaksi-harian-perusahaan-sekuritas-tertekan",
+   "score": 3,
+   "categories": [
+    "pasar"
    ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   }
- ]
+ ],
+ "watchlist_hits": []
 }
