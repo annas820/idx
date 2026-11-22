@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-21T22:20+07:00",
+ "generated_for": "2026-11-22T07:00+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 514,
- "kept": 164,
- "dropped_noise": 12,
+ "scanned": 238,
+ "kept": 71,
+ "dropped_noise": 4,
  "items": [
   {
    "published": "2026-11-21T19:45+07:00",
@@ -89,66 +89,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-20T18:50+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Gandeng Nasdaq Perkuat Pengawasan Perdagangan Saham, Mulai Desember 2026",
-   "link": "https://investasi.kontan.co.id/news/bei-gandeng-nasdaq-perkuat-pengawasan-perdagangan-saham-mulai-desember-2026",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T11:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "XLSmart (EXCL) Mau Buyback Saham hingga Rp 1 T, Simak Jadwalnya",
-   "link": "https://www.cnbcindonesia.com/market/20261120103514-17-786905/xlsmart--excl--mau-buyback-saham-hingga-rp-1-t-simak-jadwalnya",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "EXCL"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_investasi"
-   ]
-  },
-  {
-   "published": "2026-11-20T11:27+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BBCA Tebar Dividen Interim Rp35 per Saham, Intip Profil Emiten Perbankan Ini",
-   "link": "https://investasi.kontan.co.id/news/bbca-tebar-dividen-interim-rp35-per-saham-intip-profil-emiten-perbankan-ini",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   },
   {
    "published": "2026-11-21T20:30+07:00",
@@ -298,54 +238,6 @@
    ]
   },
   {
-   "published": "2026-11-20T18:37+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Aksi Jual Saham Teknologi dan Ekspektasi Bunga The Fed Tekan Harga Emas",
-   "link": "https://investasi.kontan.co.id/news/aksi-jual-saham-teknologi-dan-ekspektasi-bunga-the-fed-tekan-harga-emas",
-   "score": 8,
-   "categories": [
-    "global",
-    "pasar",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T13:55+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Dilema BI Naikkan Suku Bunga, Jaga Rupiah Sambil Jinakkan Inflasi",
-   "link": "https://www.cnbcindonesia.com/market/20261120132223-17-786974/dilema-bi-naikkan-suku-bunga-jaga-rupiah-sambil-jinakkan-inflasi",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T11:40+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Video: BI Sebut Keputusan BI-Rate untuk Jaga Rupiah dan Inflasi",
-   "link": "https://www.cnbcindonesia.com/news/20261120083955-8-786857/video-bi-sebut-keputusan-bi-rate-untuk-jaga-rupiah-dan-inflasi",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-21T08:15+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -382,123 +274,167 @@
    "also_in": []
   },
   {
-   "published": "2026-11-20T15:51+07:00",
+   "published": "2026-11-21T18:17+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "Ancora (OKAS) Lepas 60% Saham Bormindo untuk Melunasi Seluruh Utang",
-   "link": "https://investasi.kontan.co.id/news/ancora-okas-lepas-60-saham-bormindo-untuk-melunasi-seluruh-utang",
-   "score": 7,
+   "title": "Rekor Kinerja MBMA Berlanjut, Integrasi Bisnis Nikel Mulai Dongkrak Laba",
+   "link": "https://investasi.kontan.co.id/news/rekor-kinerja-mbma-berlanjut-integrasi-bisnis-nikel-mulai-dongkrak-laba",
+   "score": 6,
    "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "OKAS"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-20T14:41+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Semen Indonesia (SMGR) Siapkan Dana Rp 250 Miliar untuk Buyback Saham",
-   "link": "https://investasi.kontan.co.id/news/semen-indonesia-smgr-siapkan-dana-rp-250-miliar-untuk-buyback-saham",
-   "score": 7,
-   "categories": [
-    "pasar",
     "korporasi",
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "SMGR"
+    "MBMA"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-20T12:15+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-21T17:42+07:00",
+   "source": "kontan_investasi",
    "tier": 3,
-   "title": "Adhi Karya (ADHI) Dapat Gugatan PKPU, Manajemen Buka Suara",
-   "link": "https://www.cnbcindonesia.com/market/20261120120345-17-786945/adhi-karya--adhi--dapat-gugatan-pkpu-manajemen-buka-suara",
-   "score": 7,
+   "title": "Produksi Emas Merdeka Gold (EMAS) Naik, Penjualan Kuartal IV-2026 Diproyeksi Melonjak",
+   "link": "https://investasi.kontan.co.id/news/produksi-emas-merdeka-gold-emas-naik-penjualan-kuartal-iv-2026-diproyeksi-melonjak",
+   "score": 6,
    "categories": [
-    "kredit",
     "korporasi",
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "ADHI"
+    "EMAS"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-20T10:20+07:00",
+   "published": "2026-11-21T15:45+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK Ungkap 10 Kasus Baru Perdagangan Saham",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128481/ojk-ungkap-10-kasus-baru-perdagangan-saham",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T14:25+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "OJK Perintahkan Pengembalian Keuntungan Ilegal Rp 23,77 Miliar dari Manipulasi Saham",
+   "link": "https://investasi.kontan.co.id/news/ojk-perintahkan-pengembalian-keuntungan-ilegal-rp-2377-miliar-dari-manipulasi-saham",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T13:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Gandeng NASDAQ untuk Benahi Pengawasan Perdagangan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128466/bei-gandeng-nasdaq-untuk-benahi-pengawasan-perdagangan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T13:00+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Ancora (OKAS) Lepas 60% Saham Bormindo Nusantara",
-   "link": "https://www.cnbcindonesia.com/market/20261120090608-17-786877/ancora--okas--lepas-60-saham-bormindo-nusantara",
-   "score": 7,
+   "title": "Video: Efek Kebijakan The Fed dan BI Rate ke Sektor Perbankan - Tambang",
+   "link": "https://www.cnbcindonesia.com/market/20261118134044-19-786286/video-efek-kebijakan-the-fed-bi-rate-ke-sektor-perbankan--tambang",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-20T19:19+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Sebut Porsi Investasi Asuransi di Saham Sebesar 15,01% per September 2026",
+   "link": "https://keuangan.kontan.co.id/news/ojk-sebut-porsi-investasi-asuransi-di-saham-sebesar-1501-per-september-2026",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T19:37+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Dapat Peringkat idAAA, Simak Prospek Saham BBNI",
+   "link": "https://keuangan.kontan.co.id/news/dapat-peringkat-idaaa-simak-prospek-saham-bbni",
+   "score": 5,
    "categories": [
     "pasar",
     "emiten"
    ],
    "tickers": [
-    "OKAS"
+    "BBNI"
    ],
-   "flags": [
-    "terkonfirmasi"
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T18:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Australia Lanjutkan Negosiasi Pembatasan Ekspor Gas",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128476/australia-lanjutkan-negosiasi-pembatasan-ekspor-gas",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
    ],
-   "also_in": [
-    "kontan_investasi"
-   ]
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T12:11+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Merdeka Battery (MBMA) Terbitkan Obligasi Rp 2,49 T, Tawarkan Bunga hingga 10,75%",
+   "link": "https://investasi.kontan.co.id/news/merdeka-battery-mbma-terbitkan-obligasi-rp-249-t-tawarkan-bunga-hingga-1075",
+   "score": 5,
+   "categories": [
+    "kurs",
+    "emiten"
+   ],
+   "tickers": [
+    "MBMA"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
-  {
-   "published": "2026-11-20T15:55+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos Vale Beberkan Strategi Bisnis Hadapi Fluktuasi Nikel Dunia",
-   "link": "https://www.cnbcindonesia.com/news/20261120144700-4-787002/bos-vale-beberkan-strategi-bisnis-hadapi-fluktuasi-nikel-dunia",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T15:15+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos Vale Targetkan Pabrik HPAL Nikel Bahodopi Rampung Dibangun Q1-2027",
-   "link": "https://www.cnbcindonesia.com/news/20261120135813-4-786985/bos-vale-targetkan-pabrik-hpal-nikel-bahodopi-rampung-dibangun-q1-2027",
-   "score": 6,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
   {
    "published": "2026-11-21T16:00+07:00",
    "source": "cnbc_indonesia_market",
@@ -523,24 +459,6 @@
    "tier": 3,
    "title": "Bos Vale Buka-bukaan Jurus Topang Industri Baterai EV Dunia",
    "link": "https://www.cnbcindonesia.com/news/20261120184306-4-787112/bos-vale-buka-bukaan-jurus-topang-industri-baterai-ev-dunia",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T14:55+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Vale Ungkap Proyek HPAL Sorowako Paling Menguntungkan, Ini Alasannya",
-   "link": "https://www.cnbcindonesia.com/news/20261120135024-4-786994/vale-ungkap-proyek-hpal-sorowako-paling-menguntungkan-ini-alasannya",
    "score": 4,
    "categories": [
     "emiten"
