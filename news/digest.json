@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-22T14:30+07:00",
+ "generated_for": "2026-11-22T22:46+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 193,
- "kept": 56,
- "dropped_noise": 3,
+ "scanned": 212,
+ "kept": 47,
+ "dropped_noise": 6,
  "items": [
   {
    "published": "2026-11-21T19:45+07:00",
@@ -48,22 +48,6 @@
    "tier": 3,
    "title": "OJK Jatuhkan Sanksi ke Emiten Semen BUMN, Denda Capai Rp 550 Juta",
    "link": "https://investasi.kontan.co.id/news/ojk-jatuhkan-sanksi-ke-emiten-semen-bumn-denda-capai-rp-550-juta",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T05:25+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "BEI Bekerjasama dengan Nasdaq untuk Perkuat Pengawasan Perdagangan Saham",
-   "link": "https://investasi.kontan.co.id/news/bei-bekerjasama-dengan-nasdaq-untuk-perkuat-pengawasan-perdagangan-saham",
    "score": 9,
    "categories": [
     "kebijakan",
@@ -144,78 +128,6 @@
     "HOMI",
     "SAMF",
     "SMDM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T09:32+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Harga Emas Antam Sabtu (21/11) Turun Rp 5.000, Harga Buyback Anjlok Rp 50.000",
-   "link": "https://investasi.kontan.co.id/news/harga-emas-antam-sabtu-2111-turun-rp-5000-harga-buyback-anjlok-rp-50000",
-   "score": 8,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-21T06:20+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Saham Rokok Makin Murah, Potensi Dividen Yield Capai 14%, Mana yang Paling Menarik?",
-   "link": "https://investasi.kontan.co.id/news/saham-rokok-makin-murah-potensi-dividen-yield-capai-14-mana-yang-paling-menarik",
-   "score": 8,
-   "categories": [
-    "pasar",
-    "kurs",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T06:20+07:00",
-   "source": "kontan_industri",
-   "tier": 3,
-   "title": "Aturan Tambang dan Ekspor Berubah, Fitch Soroti Risiko Keuangan Emiten di Indonesia",
-   "link": "https://industri.kontan.co.id/news/aturan-tambang-dan-ekspor-berubah-fitch-soroti-risiko-keuangan-emiten-di-indonesia",
-   "score": 8,
-   "categories": [
-    "pasar",
-    "kredit",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T08:15+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Laba Bank Mandiri Tumbuh 19,6%, Maybank Sekuritas Rekomendasikan Buy Saham BMRI",
-   "link": "https://keuangan.kontan.co.id/news/laba-bank-mandiri-tumbuh-196-maybank-sekuritas-rekomendasikan-buy-saham-bmri",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BMRI"
    ],
    "flags": [],
    "also_in": []
@@ -411,19 +323,93 @@
    "also_in": []
   },
   {
-   "published": "2026-11-21T07:00+07:00",
+   "published": "2026-11-21T18:03+07:00",
    "source": "kontan_investasi",
    "tier": 3,
-   "title": "Intip Strategi Metropolitan Land (MTLA) Pertahankan Kinerja di Era Suku Bunga Tinggi",
-   "link": "https://investasi.kontan.co.id/news/intip-strategi-metropolitan-land-mtla-pertahankan-kinerja-di-era-suku-bunga-tinggi",
-   "score": 5,
+   "title": "Merdeka Copper Gold (MDKA) Kantongi Laba US$ 157 Juta hingga September 2026",
+   "link": "https://investasi.kontan.co.id/news/merdeka-copper-gold-mdka-kantongi-laba-us-157-juta-hingga-september-2026",
+   "score": 4,
    "categories": [
-    "kebijakan",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "MTLA"
+    "MDKA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-21T16:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Demi Keberlanjutan, Vale Percepat Elektrifikasi Truk Tambang",
+   "link": "https://www.cnbcindonesia.com/market/20261116162726-19-785696/video-demi-keberlanjutan-vale-percepat-elektrifikasi-truk-tambang",
+   "score": 4,
+   "categories": [
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-22T20:34+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK: Tingginya NPL Kredit UMKM Berpotensi Memengaruhi Klaim Penjaminan",
+   "link": "https://keuangan.kontan.co.id/news/ojk-tingginya-npl-kredit-umkm-berpotensi-memengaruhi-klaim-penjaminan",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-22T20:18+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BI Rate Naik, BPD DIY Waspadai Perlambatan Kredit Modal Kerja",
+   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-bpd-diy-waspadai-perlambatan-kredit-modal-kerja",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-22T18:33+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BI Rate Naik, NPL KPR Rumah Tapak Berpotensi Tembus 3,5%",
+   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-npl-kpr-rumah-tapak-berpotensi-tembus-35",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-22T18:31+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Kenaikan BI Rate Bayangi Kualitas Kredit KPR Perbankan",
+   "link": "https://keuangan.kontan.co.id/news/kenaikan-bi-rate-bayangi-kualitas-kredit-kpr-perbankan",
+   "score": 3,
+   "categories": [
+    "kebijakan"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
