@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-22T07:00+07:00",
+ "generated_for": "2026-11-22T14:30+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 238,
- "kept": 71,
- "dropped_noise": 4,
+ "scanned": 193,
+ "kept": 56,
+ "dropped_noise": 3,
  "items": [
   {
    "published": "2026-11-21T19:45+07:00",
@@ -64,22 +64,6 @@
    "tier": 3,
    "title": "BEI Bekerjasama dengan Nasdaq untuk Perkuat Pengawasan Perdagangan Saham",
    "link": "https://investasi.kontan.co.id/news/bei-bekerjasama-dengan-nasdaq-untuk-perkuat-pengawasan-perdagangan-saham",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T21:16+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Perwakilan Bursa Saham AS Nasdaq Mau Berkantor di BEI",
-   "link": "https://www.cnbcindonesia.com/market/20261120211353-17-787138/perwakilan-bursa-saham-as-nasdaq-mau-berkantor-di-bei",
    "score": 9,
    "categories": [
     "kebijakan",
@@ -219,25 +203,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-20T21:51+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Wall Street Dibuka Melemah, Nasdaq Anjlok 1,2% Usai Saham Anthropic Tertekan",
-   "link": "https://investasi.kontan.co.id/news/wall-street-dibuka-melemah-nasdaq-anjlok-12-usai-saham-anthropic-tertekan",
-   "score": 8,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
    "published": "2026-11-21T08:15+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -256,20 +221,17 @@
    "also_in": []
   },
   {
-   "published": "2026-11-20T19:41+07:00",
+   "published": "2026-11-22T07:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Kabar Mau Akuisisi Saham Eramet Bareng Haji Isam, VKTR Buka Suara",
-   "link": "https://www.cnbcindonesia.com/market/20261120193539-17-787127/kabar-mau-akuisisi-saham-eramet-bareng-haji-isam-vktr-buka-suara",
-   "score": 7,
+   "title": "OJK Bongkar Lagi Manipulasi Saham, Minta Rp23,7 M Dikembalikan",
+   "link": "https://www.cnbcindonesia.com/market/20261122060224-17-787252/ojk-bongkar-lagi-manipulasi-saham-minta-rp237-m-dikembalikan",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
+    "kebijakan",
+    "pasar"
    ],
-   "tickers": [
-    "VKTR"
-   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -370,15 +332,30 @@
    "also_in": []
   },
   {
-   "published": "2026-11-20T19:19+07:00",
+   "published": "2026-11-22T11:36+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
-   "title": "OJK Sebut Porsi Investasi Asuransi di Saham Sebesar 15,01% per September 2026",
-   "link": "https://keuangan.kontan.co.id/news/ojk-sebut-porsi-investasi-asuransi-di-saham-sebesar-1501-per-september-2026",
-   "score": 6,
+   "title": "OJK Pastikan Penarikan Dana SAL Tak Ganggu Stabilitas Likuiditas Perbankan",
+   "link": "https://keuangan.kontan.co.id/news/ojk-pastikan-penarikan-dana-sal-tak-ganggu-stabilitas-likuiditas-perbankan",
+   "score": 5,
    "categories": [
     "kebijakan",
-    "pasar"
+    "makro"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-22T08:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IEU-CEPA Resmi Diteken, Sawit hingga Tekstil RI Bebas Tarif",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128490/ieu-cepa-resmi-diteken-sawit-hingga-tekstil-ri-bebas-tarif",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
@@ -432,6 +409,23 @@
    ],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-21T07:00+07:00",
+   "source": "kontan_investasi",
+   "tier": 3,
+   "title": "Intip Strategi Metropolitan Land (MTLA) Pertahankan Kinerja di Era Suku Bunga Tinggi",
+   "link": "https://investasi.kontan.co.id/news/intip-strategi-metropolitan-land-mtla-pertahankan-kinerja-di-era-suku-bunga-tinggi",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "MTLA"
+   ],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -441,24 +435,6 @@
    "tier": 3,
    "title": "Video: Demi Keberlanjutan, Vale Percepat Elektrifikasi Truk Tambang",
    "link": "https://www.cnbcindonesia.com/market/20261116162726-19-785696/video-demi-keberlanjutan-vale-percepat-elektrifikasi-truk-tambang",
-   "score": 4,
-   "categories": [
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-20T20:50+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos Vale Buka-bukaan Jurus Topang Industri Baterai EV Dunia",
-   "link": "https://www.cnbcindonesia.com/news/20261120184306-4-787112/bos-vale-buka-bukaan-jurus-topang-industri-baterai-ev-dunia",
    "score": 4,
    "categories": [
     "emiten"
