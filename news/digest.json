@@ -1,12 +1,32 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-23T10:37+07:00",
+ "generated_for": "2026-11-23T21:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 200,
- "kept": 59,
- "dropped_noise": 7,
+ "scanned": 452,
+ "kept": 121,
+ "dropped_noise": 39,
  "items": [
+  {
+   "published": "2026-11-23T11:50+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Gak Alihkan Saham SMCB ke Publik, SMGR Kena Sanksi OJK",
+   "link": "https://www.cnbcindonesia.com/market/20261123102451-17-787489/gak-alihkan-saham-smcb-ke-publik-smgr-kena-sanksi-ojk",
+   "score": 11,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "SMCB",
+    "SMGR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-23T06:20+07:00",
    "source": "cnbc_indonesia_market",
@@ -79,6 +99,246 @@
    "also_in": []
   },
   {
+   "published": "2026-11-23T18:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pasar Sambut Baik Dialog CEO MSCI & Presiden Prabowo, IHSG Hijau",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128650/pasar-sambut-baik-dialog-ceo-msci-presiden-prabowo-ihsg-hijau",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T17:56+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BI Rate Naik Jadi 6%, Begini Respons Gadai ValueMax Soal Tarif Gadai",
+   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-begini-respons-gadai-valuemax-soal-tarif-gadai",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T16:06+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Berencana Revisi Tarif Premi Asuransi Properti dan Kendaraan, Ini Kata Asei",
+   "link": "https://keuangan.kontan.co.id/news/ojk-berencana-revisi-tarif-premi-asuransi-properti-dan-kendaraan-ini-kata-asei",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T15:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bursa Korsel Goyang, Menkeu-Gubernur Bank Sentral Gelar Rapat Darurat",
+   "link": "https://www.cnbcindonesia.com/market/20261123143324-17-787638/bursa-korsel-goyang-menkeu-gubernur-bank-sentral-gelar-rapat-darurat",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T15:05+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Budi Gadai Belum Berencana Naikkan Tarif Pembiayaan Meski BI Rate 6%",
+   "link": "https://keuangan.kontan.co.id/news/budi-gadai-belum-berencana-naikkan-tarif-pembiayaan-meski-bi-rate-6",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T14:13+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Prabowo Telepon Bos MSCI Bicara soal Bursa RI",
+   "link": "https://www.cnbcindonesia.com/market/20261123131832-19-787605/video-prabowo-telepon-bos-msci-bicara-soal-bursa-ri",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T13:53+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Jika RI Turun ke Standalone Market, Ini Efeknya ke IHSG-Rupiah",
+   "link": "https://www.cnbcindonesia.com/market/20261120150912-19-787015/video-jika-ri-turun-ke-standalone-market-ini-efeknya-ke-ihsg-rupiah",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T13:21+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Rupiah Menguat, BI Ungkap Modal Asing US$1 M Masuk dari Lelang SRBI",
+   "link": "https://www.cnbcindonesia.com/news/20261123131351-4-787593/rupiah-menguat-bi-ungkap-modal-asing-us-1-m-masuk-dari-lelang-srbi",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T13:07+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "MSCI Beri Sinyal Positif, Pasar Saham RI Bersiap Bangkit",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128576/msci-beri-sinyal-positif-pasar-saham-ri-bersiap-bangkit",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T13:06+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "IHSG Hijau Kala Bursa Asia Berdarah, Imbas Prabowo - Bos MSCI Bicara",
+   "link": "https://www.cnbcindonesia.com/market/20261123124613-17-787585/ihsg-hijau-kala-bursa-asia-berdarah-imbas-prabowo--bos-msci-bicara",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T12:25+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Surat Utang dan Rupiah Menguat, Usai MSCI Buka Ruang Kompromi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128574/surat-utang-dan-rupiah-menguat-usai-msci-buka-ruang-kompromi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T11:32+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Menkeu AS Bessent:   Fed Berisiko Lakukan Pengetatan Berlebihan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128562/menkeu-as-bessent-fed-berisiko-lakukan-pengetatan-berlebihan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T11:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video:RI dan Uni Eropa Sepakati IEU-CEPA, IHSG dan Rupiah Kompak Menguat",
+   "link": "https://www.cnbcindonesia.com/market/20261123111030-19-787514/videori-dan-uni-eropa-sepakati-ieu-cepa-ihsg-rupiah-kompak-menguat",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T11:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "IHSG Balik Melesat, Kabar Pertemuan Prabowo dan CEO MSCI Jadi Sorotan",
+   "link": "https://www.cnbcindonesia.com/market/20261123111147-17-787517/ihsg-balik-melesat-kabar-pertemuan-prabowo-dan-ceo-msci-jadi-sorotan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T10:51+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "DPR dan Ekonom Puji Langkah BI Naikkan BI Rate untuk Jaga Rupiah",
+   "link": "https://www.cnbcindonesia.com/market/20261123104451-17-787499/dpr-dan-ekonom-puji-langkah-bi-naikkan-bi-rate-untuk-jaga-rupiah",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T10:50+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Breaking: Prabowo Telepon Bos MSCI Bicara soal Bursa RI",
+   "link": "https://www.cnbcindonesia.com/market/20261123104452-17-787500/breaking-prabowo-telepon-bos-msci-bicara-soal-bursa-ri",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-23T10:37+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -137,267 +397,6 @@
    "categories": [
     "kebijakan",
     "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T07:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Bongkar Lagi Manipulasi Saham, Minta Rp23,7 M Dikembalikan",
-   "link": "https://www.cnbcindonesia.com/market/20261122060224-17-787252/ojk-bongkar-lagi-manipulasi-saham-minta-rp237-m-dikembalikan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T08:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "6 Calon Emiten Antre IPO, 2 Perusahaan Beraset Jumbo",
-   "link": "https://www.cnbcindonesia.com/market/20261123060908-17-787401/6-calon-emiten-antre-ipo-2-perusahaan-beraset-jumbo",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T07:40+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Perang Ukraina Mulai Masuk NATO, Kapal Rusia Dibom di Finlandia",
-   "link": "https://www.cnbcindonesia.com/news/20261123070708-4-787407/perang-ukraina-mulai-masuk-nato-kapal-rusia-dibom-di-finlandia",
-   "score": 5,
-   "categories": [
-    "global",
-    "emiten"
-   ],
-   "tickers": [
-    "NATO"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T07:36+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Kalender Ekonomi: Inflasi AS, Manuver Bank Sentral Asia & Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128518/kalender-ekonomi-inflasi-as-manuver-bank-sentral-asia-rupiah",
-   "score": 5,
-   "categories": [
-    "kurs",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T07:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Deretan Saham Masuk Cum Date Dividen Pekan Ini, Cek Daftarnya!",
-   "link": "https://www.cnbcindonesia.com/market/20261123070412-17-787406/deretan-saham-masuk-cum-date-dividen-pekan-ini-cek-daftarnya",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T04:00+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Tren Suku Bunga Sedang Naik, BCA Perkuat Mitigasi Risiko Penyaluran KPR",
-   "link": "https://keuangan.kontan.co.id/news/tren-suku-bunga-sedang-naik-bca-perkuat-mitigasi-risiko-penyaluran-kpr",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "emiten"
-   ],
-   "tickers": [
-    "BBCA"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T11:36+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Pastikan Penarikan Dana SAL Tak Ganggu Stabilitas Likuiditas Perbankan",
-   "link": "https://keuangan.kontan.co.id/news/ojk-pastikan-penarikan-dana-sal-tak-ganggu-stabilitas-likuiditas-perbankan",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "makro"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T08:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IEU-CEPA Resmi Diteken, Sawit hingga Tekstil RI Bebas Tarif",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128490/ieu-cepa-resmi-diteken-sawit-hingga-tekstil-ri-bebas-tarif",
-   "score": 5,
-   "categories": [
-    "global",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:22+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Harga Emas Antam Awali Pekan dengan Kenaikan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128539/harga-emas-antam-awali-pekan-dengan-kenaikan",
-   "score": 4,
-   "categories": [
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:05+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Jadwal RUPS Hari Ini: BYAN Rombak Pengurus, PTRO Bahas Rights Issue",
-   "link": "https://www.cnbcindonesia.com/market/20261123081440-17-787434/jadwal-rups-hari-ini-byan-rombak-pengurus-ptro-bahas-rights-issue",
-   "score": 4,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BYAN",
-    "PTRO"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T08:51+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Sambut Awal Pekan, Simak 5 Saham Pilihan Hari Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261123083712-17-787440/sambut-awal-pekan-simak-5-saham-pilihan-hari-ini",
-   "score": 4,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T08:25+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Rangkuman Rekomendasi Saham Hari Ini, 23 November 2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128532/rangkuman-rekomendasi-saham-hari-ini-23-november-2026",
-   "score": 4,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:52+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Hampir 10 Tahun Tarif Premi Tidak Naik, Rasio Klaim Kendaraan dan Properti Bisa Naik",
-   "link": "https://keuangan.kontan.co.id/news/hampir-10-tahun-tarif-premi-tidak-naik-rasio-klaim-kendaraan-dan-properti-bisa-naik",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:46+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Dibuka Melemah, Rupiah Sukses Balik Arah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128541/dibuka-melemah-rupiah-sukses-balik-arah",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:25+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Pantas Diburu Raksasa Migas Prancis, Segini Potensi Minyak Laut Papua",
-   "link": "https://www.cnbcindonesia.com/news/20261123075953-4-787433/pantas-diburu-raksasa-migas-prancis-segini-potensi-minyak-laut-papua",
-   "score": 3,
-   "categories": [
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:16+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Pagi Ini Rupiah Dibuka ke Rp 18.270 per Dolar AS",
-   "link": "https://www.cnbcindonesia.com/market/20261123091255-17-787458/pagi-ini-rupiah-dibuka-ke-rp-18270-per-dolar-as",
-   "score": 3,
-   "categories": [
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:14+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Senasib Bursa Asia, IHSG Dibuka Merah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128538/senasib-bursa-asia-ihsg-dibuka-merah",
-   "score": 3,
-   "categories": [
-    "pasar"
    ],
    "tickers": [],
    "flags": [],
