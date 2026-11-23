@@ -1,0 +1,290 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-23T11:23:34Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "BI Rate Naik ke 6%, Bunga Special Rate Deposito Berpotensi Ikut Terkerek",
+        "url": "https://keuangan.kontan.co.id/news/bi-rate-naik-ke-6-bunga-special-rate-deposito-berpotensi-ikut-terkerek",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T18:09:42+07:00",
+        "summary": "Kenaikan BI Rate berpotensi mendorong kenaikan bunga khusus atau special rate deposito dan menekan biaya dana (cost of fund/CoF) perbankan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Tokio Marine Life Beberkan Faktor yang Bakal Memengaruhi Kinerja Investasi Unitlink",
+        "url": "https://keuangan.kontan.co.id/news/tokio-marine-life-beberkan-faktor-yang-bakal-memengaruhi-kinerja-investasi-unitlink",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T18:05:12+07:00",
+        "summary": "Tokio Marine mengungkap faktor penggerak unitlink kuartal IV-2026 di tengah tekanan return unitlink saham hingga 17,69%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Rate Naik Jadi 6%, Begini Respons Gadai ValueMax Soal Tarif Gadai",
+        "url": "https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-begini-respons-gadai-valuemax-soal-tarif-gadai",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T17:56:52+07:00",
+        "summary": "BI Rate naik menjadi 6%, Gadai ValueMax mencermati dampaknya terhadap biaya pendanaan dan mempertimbangkan penyesuaian tarif gadai.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: 2 Nama Cawapres Usulan Prabowo: Andi Amran Sulaiman dan Sugiono",
+        "url": "https://www.cnbcindonesia.com/market/20261123173353-19-787726/video-2-nama-cawapres-usulan-prabowo-andi-amran-sulaiman-sugiono",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-23T17:56:12+07:00",
+        "summary": "2 Nama Cawapres Usulan Prabowo: Andi Amran Sulaiman dan Sugiono",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "LPS Alihkan Anggaran Pembangunan Kantor di IKN, Ini Alasannya",
+        "url": "https://www.cnbcindonesia.com/market/20261123171720-17-787718/lps-alihkan-anggaran-pembangunan-kantor-di-ikn-ini-alasannya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-23T17:47:11+07:00",
+        "summary": "LPS mengalihkan anggaran penyediaan gedung kantor di IKN.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Laporan Keuangan Danantara Rilis 25 November 2026",
+        "url": "https://www.cnbcindonesia.com/market/20261123174251-17-787730/laporan-keuangan-danantara-rilis-25-november-2026",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-23T17:45:02+07:00",
+        "summary": "BPI Danantara Indonesia akan rilis laporan keuangan perdana pada 25 November 2026. CEO Rosan Roeslani pastikan laporan lengkap dan terbuka untuk publik.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ini Respons AAUI Soal Adanya Ketentuan Baru Kewajiban Rasio Solvabilitas Minimum",
+        "url": "https://keuangan.kontan.co.id/news/ini-respons-aaui-soal-adanya-ketentuan-baru-kewajiban-rasio-solvabilitas-minimum",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T17:36:54+07:00",
+        "summary": "AAUI menyebut industri asuransi umum mendukung penguatan ketentuan solvabilitas melalui POJK 18 Tahun 2026. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Video: Prabowo Serahkan 2 Nama Calon Wapres Pengganti Gibran ke MPR RI",
+        "url": "https://www.cnbcindonesia.com/market/20261123172437-19-787723/video-prabowo-serahkan-2-nama-calon-wapres-pengganti-gibran-ke-mpr-ri",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-23T17:31:33+07:00",
+        "summary": "Prabowo Serahkan 2 Nama Calon Wapres Pengganti Gibran ke MPR RI",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BNC Soroti Pentingnya AI Mendorong Transformasi Menuju Intelligent Banking",
+        "url": "https://keuangan.kontan.co.id/news/bnc-soroti-pentingnya-ai-mendorong-transformasi-menuju-intelligent-banking",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T16:59:10+07:00",
+        "summary": "Bank Neo Commerce (BNC) dorong pemanfaatan AI untuk mewujudkan layanan perbankan yang lebih personal, efisien, dan aman.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Sok Bersih! 54% Listrik Data Center AS Masih Disokong Batu Bara Cs",
+        "url": "https://www.cnbcindonesia.com/research/20261119094059-128-786545/sok-bersih-54-listrik-data-center-as-masih-disokong-batu-bara-cs",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-23T16:55:17+07:00",
+        "summary": "Studi Harvard mengungkap 54% listrik pusat data terbesar AS masih berasal dari energi fosil. Di tengah lonjakan kebutuhan listrik AI",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Danamon Proyeksikan KPR Tumbuh 5% hingga Akhir 2026",
+        "url": "https://keuangan.kontan.co.id/news/bank-danamon-proyeksikan-kpr-tumbuh-5-hingga-akhir-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T16:54:03+07:00",
+        "summary": "Bank Danamon Indonesia (Danamon) memproyeksikan penyaluran kredit pemilikan rumah (KPR) tumbuh 5% secara tahunan hingga akhir 2026",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Laba Bersih Nobu Bank Melonjak 52,88% Jadi Rp 550 Miliar per September 2026",
+        "url": "https://keuangan.kontan.co.id/news/laba-bersih-nobu-bank-melonjak-5288-jadi-rp-550-miliar-per-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T16:50:48+07:00",
+        "summary": "PT Bank Nationalnobu Tbk (Nobu Bank) membukukan laba bersih sebesar Rp 550,17 miliar hingga September 2026. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melonjak",
+          "laba"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "KB Bank Waspadai Dampak Kenaikan Suku Bunga terhadap Kredit Modal Kerja",
+        "url": "https://keuangan.kontan.co.id/news/kb-bank-waspadai-dampak-kenaikan-suku-bunga-terhadap-kredit-modal-kerja",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T16:35:54+07:00",
+        "summary": "Bank KB Indonesia mulai mencermati dampak kenaikan suku bunga acuan sebesar 6% terhadap permintaan kredit modal kerja.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Profil Ary Bastari, Dirut Baru Bayan Pengganti Low Tuck Kwong",
+        "url": "https://www.cnbcindonesia.com/market/20261123162436-17-787693/profil-ary-bastari-dirut-baru-bayan-pengganti-low-tuck-kwong",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-23T16:32:27+07:00",
+        "summary": "Bayan Resources Tbk. menunjuk Ary Bastari sebagai Direktur Utama baru dalam RUPSLB, menggantikan Low Tuck Kwong.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "low"
+        ]
+      },
+      {
+        "title": "Transaksi Investasi Digital OCBC Naik Jadi 62% per September 2026",
+        "url": "https://keuangan.kontan.co.id/news/transaksi-investasi-digital-ocbc-naik-jadi-62-per-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T16:31:13+07:00",
+        "summary": "Transaksi investasi digital melalui OCBC Mobile naik dari 47% jadi 62% per September 2026. Nilai transaksi obligasi melalui kanal digital naik 2x.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BRI Pacu Kredit Selektif, Laba Bersih Tumbuh 16,8% hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/bri-pacu-kredit-selektif-laba-bersih-tumbuh-168-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T16:25:46+07:00",
+        "summary": "Bank Rakyat Indonesia Tbk (BRI) mencatat penyaluran kredit sebesar Rp 1.647,1 triliun hingga akhir September 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Video:Bedah Jurus Obat Herbal Indonesia Laris Manis Hingga Luar Negeri",
+        "url": "https://www.cnbcindonesia.com/market/20261123154235-19-787676/videobedah-jurus-obat-herbal-indonesia-laris-manis-hingga-luar-negeri",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-23T16:15:22+07:00",
+        "summary": "Bos Jamu Indonesia Ungkap Jurus Obat Herbal Laris Manis Hingga Luar Negeri",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Sompo Syariah Telah Beroparasi, Ekspansi ke Yogyakarta Dimulai",
+        "url": "https://keuangan.kontan.co.id/news/sompo-syariah-mulai-beroparasi-ekspansi-ke-yogyakarta-dimulai",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T16:12:05+07:00",
+        "summary": "Sompo Syariah mulai menjalankan bisnis asuransi umum syariah di Yogyakarta, seiring peluncuran operasional di kota gudeg ini",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "ekspansi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "DBS Indonesia Pimpin SLL Pertama untuk Pembiayaan Akuisisi di Industri Konsumer",
+        "url": "https://keuangan.kontan.co.id/news/dbs-indonesia-pimpin-sll-pertama-untuk-pembiayaan-akuisisi-di-industri-konsumer",
+        "source": "kontan/keuangan",
+        "published": "2026-11-23T16:11:07+07:00",
+        "summary": "DBS Indonesia memimpin Sustainability Linked Loan (SLL) pertama untuk pembiayaan akusisi di industri konsumer.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "akuisisi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Era Baru Dimulai! Sawit hingga Sepatu RI Bakal Serbu Eropa",
+        "url": "https://www.cnbcindonesia.com/research/20261123113511-128-787542/era-baru-dimulai-sawit-hingga-sepatu-ri-bakal-serbu-eropa",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-23T16:10:15+07:00",
+        "summary": "IEU-CEPA resmi diteken. Berikut daftar komoditas ekspor dan impor terbesar Indonesia dengan Uni Eropa, mulai dari sawit, baja, sepatu, hingga obat-obatan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
