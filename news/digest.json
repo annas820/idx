@@ -1,18 +1,18 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-23T05:08+07:00",
+ "generated_for": "2026-11-23T10:37+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 166,
- "kept": 35,
- "dropped_noise": 5,
+ "scanned": 200,
+ "kept": 59,
+ "dropped_noise": 7,
  "items": [
   {
-   "published": "2026-11-21T19:45+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-23T06:20+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "OJK Sanksi Manipulasi Transaksi Saham SMDM Senilai Rp4,3 M",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128484/ojk-sanksi-manipulasi-transaksi-saham-smdm-senilai-rp4-3-m",
+   "title": "Kena Sanksi OJK, Siapa Sosok Dibalik Emiten Indosterling (TECH) ?",
+   "link": "https://www.cnbcindonesia.com/market/20261123060215-17-787399/kena-sanksi-ojk-siapa-sosok-dibalik-emiten-indosterling--tech--",
    "score": 11,
    "categories": [
     "kebijakan",
@@ -21,17 +21,17 @@
     "emiten"
    ],
    "tickers": [
-    "SMDM"
+    "TECH"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-21T20:50+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-23T07:00+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "OJK Sanksi 7 Pelanggaran Ketentuan Emiten: Total Capai Rp3,7 M",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128487/ojk-sanksi-7-pelanggaran-ketentuan-emiten-total-capai-rp3-7-m",
+   "title": "Berantas Manipulasi Saham, BEI Gandeng Tim Khusus dari Nasdaq",
+   "link": "https://www.cnbcindonesia.com/market/20261123060631-17-787400/berantas-manipulasi-saham-bei-gandeng-tim-khusus-dari-nasdaq",
    "score": 9,
    "categories": [
     "kebijakan",
@@ -43,56 +43,102 @@
    "also_in": []
   },
   {
-   "published": "2026-11-21T20:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Minta Keuntungan Tak Sah Transaksi Saham SAMF Senilai Rp12 M",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128483/ojk-minta-keuntungan-tak-sah-transaksi-saham-samf-senilai-rp12-m",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "SAMF"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T19:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Temukan Manipulasi Transaksi Saham HOMI Senilai Rp6,8 M",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128482/ojk-temukan-manipulasi-transaksi-saham-homi-senilai-rp6-8-m",
-   "score": 8,
-   "categories": [
-    "kebijakan",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "HOMI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T18:51+07:00",
+   "published": "2026-11-23T10:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "MSCI Naikkan ESG Rating BNI Jadi AA, Tegaskan Komitmen Keberlanjutan",
-   "link": "https://www.cnbcindonesia.com/market/20261121184601-17-787212/msci-naikkan-esg-rating-bni-jadi-aa-tegaskan-komitmen-keberlanjutan",
-   "score": 8,
+   "title": "BEI 'Gembok' SMBC (BTPN) Usai Putuskan Mau Delisting",
+   "link": "https://www.cnbcindonesia.com/market/20261123095642-17-787471/bei-gembok-smbc--btpn--usai-putuskan-mau-delisting",
+   "score": 7,
    "categories": [
     "kebijakan",
-    "kredit",
+    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "BBNI"
+    "BTPN"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T09:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Likuiditas Ketat, Peringkat Utang Anak Usaha Buma (DOID) Anjlok",
+   "link": "https://www.cnbcindonesia.com/market/20261123090455-17-787457/likuiditas-ketat-peringkat-utang-anak-usaha-buma--doid--anjlok",
+   "score": 7,
+   "categories": [
+    "kredit",
+    "makro",
+    "emiten"
+   ],
+   "tickers": [
+    "DOID"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T10:37+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Tekanan Jual Membayangi, Gimana Nasib IHSG dan Rupiah Awal Pekan?",
+   "link": "https://www.cnbcindonesia.com/market/20261123103024-19-787491/video-tekanan-jual-membayangi-gimana-nasib-ihsg-rupiah-awal-pekan",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T10:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Smelter HPAL Vale di Bahodopi Ditarget Rampung Kuartal I-2027",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128546/smelter-hpal-vale-di-bahodopi-ditarget-rampung-kuartal-i-2027",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T09:50+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Bukan Cuma Naikkan BI Rate, RI Perlu Lakukan Ini agar Rupiah Kuat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128542/bukan-cuma-naikkan-bi-rate-ri-perlu-lakukan-ini-agar-rupiah-kuat",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T06:55+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Perwakilan Nasdaq akan Berkantor di BEI Bulan Depan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128525/perwakilan-nasdaq-akan-berkantor-di-bei-bulan-depan",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -112,38 +158,64 @@
    "also_in": []
   },
   {
-   "published": "2026-11-21T18:17+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-23T08:15+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Rekor Kinerja MBMA Berlanjut, Integrasi Bisnis Nikel Mulai Dongkrak Laba",
-   "link": "https://investasi.kontan.co.id/news/rekor-kinerja-mbma-berlanjut-integrasi-bisnis-nikel-mulai-dongkrak-laba",
-   "score": 6,
+   "title": "6 Calon Emiten Antre IPO, 2 Perusahaan Beraset Jumbo",
+   "link": "https://www.cnbcindonesia.com/market/20261123060908-17-787401/6-calon-emiten-antre-ipo-2-perusahaan-beraset-jumbo",
+   "score": 5,
    "categories": [
-    "korporasi",
-    "komoditas",
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T07:40+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Perang Ukraina Mulai Masuk NATO, Kapal Rusia Dibom di Finlandia",
+   "link": "https://www.cnbcindonesia.com/news/20261123070708-4-787407/perang-ukraina-mulai-masuk-nato-kapal-rusia-dibom-di-finlandia",
+   "score": 5,
+   "categories": [
+    "global",
     "emiten"
    ],
    "tickers": [
-    "MBMA"
+    "NATO"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-21T17:42+07:00",
-   "source": "kontan_investasi",
+   "published": "2026-11-23T07:36+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Produksi Emas Merdeka Gold (EMAS) Naik, Penjualan Kuartal IV-2026 Diproyeksi Melonjak",
-   "link": "https://investasi.kontan.co.id/news/produksi-emas-merdeka-gold-emas-naik-penjualan-kuartal-iv-2026-diproyeksi-melonjak",
-   "score": 6,
+   "title": "Kalender Ekonomi: Inflasi AS, Manuver Bank Sentral Asia & Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128518/kalender-ekonomi-inflasi-as-manuver-bank-sentral-asia-rupiah",
+   "score": 5,
    "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
+    "kurs",
+    "makro"
    ],
-   "tickers": [
-    "EMAS"
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T07:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Deretan Saham Masuk Cum Date Dividen Pekan Ini, Cek Daftarnya!",
+   "link": "https://www.cnbcindonesia.com/market/20261123070412-17-787406/deretan-saham-masuk-cum-date-dividen-pekan-ini-cek-daftarnya",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "korporasi"
    ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -195,200 +267,134 @@
    "also_in": []
   },
   {
-   "published": "2026-11-21T19:37+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-23T09:22+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Dapat Peringkat idAAA, Simak Prospek Saham BBNI",
-   "link": "https://keuangan.kontan.co.id/news/dapat-peringkat-idaaa-simak-prospek-saham-bbni",
-   "score": 5,
+   "title": "Harga Emas Antam Awali Pekan dengan Kenaikan",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128539/harga-emas-antam-awali-pekan-dengan-kenaikan",
+   "score": 4,
    "categories": [
-    "pasar",
+    "komoditas",
     "emiten"
    ],
    "tickers": [
-    "BBNI"
+    "ANTM"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-21T18:30+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-23T09:05+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Australia Lanjutkan Negosiasi Pembatasan Ekspor Gas",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128476/australia-lanjutkan-negosiasi-pembatasan-ekspor-gas",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "komoditas"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-21T18:03+07:00",
-   "source": "kontan_investasi",
-   "tier": 3,
-   "title": "Merdeka Copper Gold (MDKA) Kantongi Laba US$ 157 Juta hingga September 2026",
-   "link": "https://investasi.kontan.co.id/news/merdeka-copper-gold-mdka-kantongi-laba-us-157-juta-hingga-september-2026",
+   "title": "Jadwal RUPS Hari Ini: BYAN Rombak Pengurus, PTRO Bahas Rights Issue",
+   "link": "https://www.cnbcindonesia.com/market/20261123081440-17-787434/jadwal-rups-hari-ini-byan-rombak-pengurus-ptro-bahas-rights-issue",
    "score": 4,
    "categories": [
     "korporasi",
     "emiten"
    ],
    "tickers": [
-    "MDKA"
+    "BYAN",
+    "PTRO"
    ],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-23T05:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Target IHSG Minggu Ini Usai Pekan Lalu Turun Nyaris 4%",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128514/target-ihsg-minggu-ini-usai-pekan-lalu-turun-nyaris-4",
-   "score": 3,
-   "categories": [
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T05:00+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BI Rate Naik Jadi 6%, Biaya Dana Multifinance Bisa Ikut Terseret",
-   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-biaya-dana-multifinance-bisa-ikut-terseret",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T04:30+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Kenaikan BI Rate Berpotensi Tekan Kredit Modal Kerja Perbankan",
-   "link": "https://keuangan.kontan.co.id/news/kenaikan-bi-rate-berpotensi-tekan-kredit-modal-kerja-perbankan",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T20:34+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK: Tingginya NPL Kredit UMKM Berpotensi Memengaruhi Klaim Penjaminan",
-   "link": "https://keuangan.kontan.co.id/news/ojk-tingginya-npl-kredit-umkm-berpotensi-memengaruhi-klaim-penjaminan",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T20:18+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BI Rate Naik, BPD DIY Waspadai Perlambatan Kredit Modal Kerja",
-   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-bpd-diy-waspadai-perlambatan-kredit-modal-kerja",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T18:33+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BI Rate Naik, NPL KPR Rumah Tapak Berpotensi Tembus 3,5%",
-   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-npl-kpr-rumah-tapak-berpotensi-tembus-35",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T18:31+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Kenaikan BI Rate Bayangi Kualitas Kredit KPR Perbankan",
-   "link": "https://keuangan.kontan.co.id/news/kenaikan-bi-rate-bayangi-kualitas-kredit-kpr-perbankan",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T18:19+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BI Rate Naik, Allo Bank Atur Strategi Suku Bunga Deposito Sambil Jaga Margin",
-   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-allo-bank-atur-strategi-suku-bunga-deposito-sambil-jaga-margin",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T18:15+07:00",
+   "published": "2026-11-23T08:51+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "BI Rate Naik dan Leasing Minta DP Lebih Besar, Kredit Mobil Makin Susah",
-   "link": "https://www.cnbcindonesia.com/market/20261122145550-17-787317/bi-rate-naik-leasing-minta-dp-lebih-besar-kredit-mobil-makin-susah",
-   "score": 3,
-   "categories": [
-    "kebijakan"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-22T18:09+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Media Asing Sorot Kebakaran Pabrik Permen Milkita di Serang",
-   "link": "https://www.cnbcindonesia.com/news/20261122180605-4-787353/media-asing-sorot-kebakaran-pabrik-permen-milkita-di-serang",
-   "score": 3,
+   "title": "Sambut Awal Pekan, Simak 5 Saham Pilihan Hari Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261123083712-17-787440/sambut-awal-pekan-simak-5-saham-pilihan-hari-ini",
+   "score": 4,
    "categories": [
     "pasar"
    ],
    "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T08:25+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Rangkuman Rekomendasi Saham Hari Ini, 23 November 2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128532/rangkuman-rekomendasi-saham-hari-ini-23-november-2026",
+   "score": 4,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T09:52+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Hampir 10 Tahun Tarif Premi Tidak Naik, Rasio Klaim Kendaraan dan Properti Bisa Naik",
+   "link": "https://keuangan.kontan.co.id/news/hampir-10-tahun-tarif-premi-tidak-naik-rasio-klaim-kendaraan-dan-properti-bisa-naik",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-22T16:35+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-23T09:46+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "IHSG Melemah, Transaksi Harian Perusahaan Sekuritas Tertekan",
-   "link": "https://keuangan.kontan.co.id/news/ihsg-melemah-transaksi-harian-perusahaan-sekuritas-tertekan",
+   "title": "Dibuka Melemah, Rupiah Sukses Balik Arah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128541/dibuka-melemah-rupiah-sukses-balik-arah",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T09:25+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Pantas Diburu Raksasa Migas Prancis, Segini Potensi Minyak Laut Papua",
+   "link": "https://www.cnbcindonesia.com/news/20261123075953-4-787433/pantas-diburu-raksasa-migas-prancis-segini-potensi-minyak-laut-papua",
+   "score": 3,
+   "categories": [
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T09:16+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Pagi Ini Rupiah Dibuka ke Rp 18.270 per Dolar AS",
+   "link": "https://www.cnbcindonesia.com/market/20261123091255-17-787458/pagi-ini-rupiah-dibuka-ke-rp-18270-per-dolar-as",
+   "score": 3,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T09:14+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Senasib Bursa Asia, IHSG Dibuka Merah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128538/senasib-bursa-asia-ihsg-dibuka-merah",
    "score": 3,
    "categories": [
     "pasar"
@@ -398,5 +404,25 @@
    "also_in": []
   }
  ],
- "watchlist_hits": []
+ "watchlist_hits": [
+  {
+   "published": "2026-11-23T10:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Smelter HPAL Vale di Bahodopi Ditarget Rampung Kuartal I-2027",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128546/smelter-hpal-vale-di-bahodopi-ditarget-rampung-kuartal-i-2027",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "INCO"
+   ],
+   "flags": [
+    "watchlist"
+   ],
+   "also_in": []
+  }
+ ]
 }
