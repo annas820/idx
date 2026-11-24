@@ -1,6 +1,6 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-23T21:20+07:00 WIB | jendela 36 jam | dipindai 452, lolos 121, dibuang sebagai noise 39.
+Berita terbaru: 2026-11-24T09:06+07:00 WIB | jendela 36 jam | dipindai 428, lolos 137, dibuang sebagai noise 35.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
@@ -10,8 +10,13 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **11** T3 11-23 11:50 cnbc_indonesia_market: Gak Alihkan Saham SMCB ke Publik, SMGR Kena Sanksi OJK [SMCB,SMGR] (kebijakan/global/pasar/emiten) <https://www.cnbcindonesia.com/market/20261123102451-17-787489/gak-alihkan-saham-smcb-ke-publik-smgr-kena-sanksi-ojk>
 - **11** T3 11-23 06:20 cnbc_indonesia_market: Kena Sanksi OJK, Siapa Sosok Dibalik Emiten Indosterling (TECH) ? [TECH] (kebijakan/global/pasar/emiten) <https://www.cnbcindonesia.com/market/20261123060215-17-787399/kena-sanksi-ojk-siapa-sosok-dibalik-emiten-indosterling--tech-->
 - **9** T3 11-23 07:00 cnbc_indonesia_market: Berantas Manipulasi Saham, BEI Gandeng Tim Khusus dari Nasdaq (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261123060631-17-787400/berantas-manipulasi-saham-bei-gandeng-tim-khusus-dari-nasdaq>
+- **7** T3 11-24 08:54 cnbc_indonesia_market: Usai MSCI - Presiden Bicara, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261124081410-17-787830/usai-msci--presiden-bicara-simak-5-saham-pilihan-hari-ini>
+- **7** T3 11-24 07:40 bloomberg_technoz: Arah IHSG di Tengah Sentimen MSCI hingga Cawapres (kebijakan/pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/128673/arah-ihsg-di-tengah-sentimen-msci-hingga-cawapres>
+- **7** T3 11-23 13:57 cnbc_indonesia_market: Buyback Saham, Semen Indonesia (SMGR) Siapkan Rp250 Miliar [SMGR] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261123234407-17-787802/buyback-saham-semen-indonesia--smgr--siapkan-rp250-miliar>
 - **7** T3 11-23 10:20 cnbc_indonesia_market: BEI 'Gembok' SMBC (BTPN) Usai Putuskan Mau Delisting [BTPN] (kebijakan/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261123095642-17-787471/bei-gembok-smbc--btpn--usai-putuskan-mau-delisting>
 - **7** T3 11-23 09:35 cnbc_indonesia_market: Likuiditas Ketat, Peringkat Utang Anak Usaha Buma (DOID) Anjlok [DOID] (kredit/makro/emiten) <https://www.cnbcindonesia.com/market/20261123090455-17-787457/likuiditas-ketat-peringkat-utang-anak-usaha-buma--doid--anjlok>
+- **6** T3 11-24 07:59 bloomberg_technoz: MSCI Buka Ruang Kompromi, Net Sell Asing Tetap Tinggi (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/128678/msci-buka-ruang-kompromi-net-sell-asing-tetap-tinggi>
+- **6** T3 11-24 07:00 bloomberg_technoz: Williams The Fed Buka Peluang Kenaikan Suku Bunga Beruntun (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/128669/williams-the-fed-buka-peluang-kenaikan-suku-bunga-beruntun>
 - **6** T3 11-23 18:40 bloomberg_technoz: Pasar Sambut Baik Dialog CEO MSCI & Presiden Prabowo, IHSG Hijau (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/128650/pasar-sambut-baik-dialog-ceo-msci-presiden-prabowo-ihsg-hijau>
 - **6** T3 11-23 17:56 kontan_keuangan: BI Rate Naik Jadi 6%, Begini Respons Gadai ValueMax Soal Tarif Gadai (kebijakan/global) <https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-begini-respons-gadai-valuemax-soal-tarif-gadai>
 - **6** T3 11-23 16:06 kontan_keuangan: OJK Berencana Revisi Tarif Premi Asuransi Properti dan Kendaraan, Ini Kata Asei (kebijakan/global) <https://keuangan.kontan.co.id/news/ojk-berencana-revisi-tarif-premi-asuransi-properti-dan-kendaraan-ini-kata-asei>
@@ -27,8 +32,3 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-23 11:30 cnbc_indonesia_market: Video:RI dan Uni Eropa Sepakati IEU-CEPA, IHSG dan Rupiah Kompak Menguat (pasar/kurs) <https://www.cnbcindonesia.com/market/20261123111030-19-787514/videori-dan-uni-eropa-sepakati-ieu-cepa-ihsg-rupiah-kompak-menguat>
 - **6** T3 11-23 11:15 cnbc_indonesia_market: IHSG Balik Melesat, Kabar Pertemuan Prabowo dan CEO MSCI Jadi Sorotan (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261123111147-17-787517/ihsg-balik-melesat-kabar-pertemuan-prabowo-dan-ceo-msci-jadi-sorotan>
 - **6** T3 11-23 10:51 cnbc_indonesia_market: DPR dan Ekonom Puji Langkah BI Naikkan BI Rate untuk Jaga Rupiah (kebijakan/kurs) <https://www.cnbcindonesia.com/market/20261123104451-17-787499/dpr-dan-ekonom-puji-langkah-bi-naikkan-bi-rate-untuk-jaga-rupiah>
-- **6** T3 11-23 10:50 cnbc_indonesia_market: Breaking: Prabowo Telepon Bos MSCI Bicara soal Bursa RI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261123104452-17-787500/breaking-prabowo-telepon-bos-msci-bicara-soal-bursa-ri>
-- **6** T3 11-23 10:37 cnbc_indonesia_market: Video: Tekanan Jual Membayangi, Gimana Nasib IHSG dan Rupiah Awal Pekan? (pasar/kurs) <https://www.cnbcindonesia.com/market/20261123103024-19-787491/video-tekanan-jual-membayangi-gimana-nasib-ihsg-rupiah-awal-pekan>
-- **6** T3 11-23 10:20 bloomberg_technoz: Smelter HPAL Vale di Bahodopi Ditarget Rampung Kuartal I-2027 [INCO] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/128546/smelter-hpal-vale-di-bahodopi-ditarget-rampung-kuartal-i-2027>
-- **6** T3 11-23 09:50 bloomberg_technoz: Bukan Cuma Naikkan BI Rate, RI Perlu Lakukan Ini agar Rupiah Kuat (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/128542/bukan-cuma-naikkan-bi-rate-ri-perlu-lakukan-ini-agar-rupiah-kuat>
-- **6** T3 11-23 06:55 bloomberg_technoz: Perwakilan Nasdaq akan Berkantor di BEI Bulan Depan (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/128525/perwakilan-nasdaq-akan-berkantor-di-bei-bulan-depan>

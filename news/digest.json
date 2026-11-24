@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-23T21:20+07:00",
+ "generated_for": "2026-11-24T09:06+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 452,
- "kept": 121,
- "dropped_noise": 39,
+ "scanned": 428,
+ "kept": 137,
+ "dropped_noise": 35,
  "items": [
   {
    "published": "2026-11-23T11:50+07:00",
@@ -63,6 +63,58 @@
    "also_in": []
   },
   {
+   "published": "2026-11-24T08:54+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Usai MSCI - Presiden Bicara, Simak 5 Saham Pilihan Hari Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261124081410-17-787830/usai-msci--presiden-bicara-simak-5-saham-pilihan-hari-ini",
+   "score": 7,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-24T07:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Arah IHSG di Tengah Sentimen MSCI hingga Cawapres",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128673/arah-ihsg-di-tengah-sentimen-msci-hingga-cawapres",
+   "score": 7,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "petunjuk"
+   ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T13:57+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Buyback Saham, Semen Indonesia (SMGR) Siapkan Rp250 Miliar",
+   "link": "https://www.cnbcindonesia.com/market/20261123234407-17-787802/buyback-saham-semen-indonesia--smgr--siapkan-rp250-miliar",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "SMGR"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-23T10:20+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
@@ -95,6 +147,36 @@
    "tickers": [
     "DOID"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-24T07:59+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "MSCI Buka Ruang Kompromi, Net Sell Asing Tetap Tinggi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128678/msci-buka-ruang-kompromi-net-sell-asing-tetap-tinggi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-24T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Williams The Fed Buka Peluang Kenaikan Suku Bunga Beruntun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128669/williams-the-fed-buka-peluang-kenaikan-suku-bunga-beruntun",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -318,85 +400,6 @@
    "categories": [
     "kebijakan",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T10:50+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Breaking: Prabowo Telepon Bos MSCI Bicara soal Bursa RI",
-   "link": "https://www.cnbcindonesia.com/market/20261123104452-17-787500/breaking-prabowo-telepon-bos-msci-bicara-soal-bursa-ri",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T10:37+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: Tekanan Jual Membayangi, Gimana Nasib IHSG dan Rupiah Awal Pekan?",
-   "link": "https://www.cnbcindonesia.com/market/20261123103024-19-787491/video-tekanan-jual-membayangi-gimana-nasib-ihsg-rupiah-awal-pekan",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T10:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Smelter HPAL Vale di Bahodopi Ditarget Rampung Kuartal I-2027",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128546/smelter-hpal-vale-di-bahodopi-ditarget-rampung-kuartal-i-2027",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Bukan Cuma Naikkan BI Rate, RI Perlu Lakukan Ini agar Rupiah Kuat",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128542/bukan-cuma-naikkan-bi-rate-ri-perlu-lakukan-ini-agar-rupiah-kuat",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T06:55+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Perwakilan Nasdaq akan Berkantor di BEI Bulan Depan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128525/perwakilan-nasdaq-akan-berkantor-di-bei-bulan-depan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
    ],
    "tickers": [],
    "flags": [],
