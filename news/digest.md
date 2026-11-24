@@ -1,16 +1,14 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-24T19:20+07:00 WIB | jendela 36 jam | dipindai 673, lolos 216, dibuang sebagai noise 37.
+Berita terbaru: 2026-11-25T05:45+07:00 WIB | jendela 36 jam | dipindai 462, lolos 146, dibuang sebagai noise 4.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Menyentuh watchlist
 - **7** T3 11-24 17:30 kontan_investasi: Simak Rekomendasi Teknikal Saham BBRI, INDF, dan PWON untuk Perdagangan Rabu (25/11) [BBRI,INDF,PWON] (pasar/emiten; watchlist) <https://investasi.kontan.co.id/news/simak-rekomendasi-teknikal-saham-bbri-indf-dan-pwon-untuk-perdagangan-rabu-2511>
-- **6** T3 11-23 10:20 bloomberg_technoz: Smelter HPAL Vale di Bahodopi Ditarget Rampung Kuartal I-2027 [INCO] (korporasi/emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/128546/smelter-hpal-vale-di-bahodopi-ditarget-rampung-kuartal-i-2027>
 - **4** T3 11-24 11:32 bloomberg_technoz: Astra dan PMI Perkuat Bantuan Kemanusiaan di NTT [ASII] (emiten; watchlist) <https://www.bloombergtechnoz.com/detail-news/128704/astra-dan-pmi-perkuat-bantuan-kemanusiaan-di-ntt>
 
 ## Teratas
 - **11** T3 11-24 14:16 cnbc_indonesia_market: Belum Bayar Bunga Obligasi, BEI Gembok Lagi Saham Adhi Karya (ADHI) [ADHI] (kebijakan/pasar/kurs/emiten) <https://www.cnbcindonesia.com/market/20261124141502-17-787977/belum-bayar-bunga-obligasi-bei-gembok-lagi-saham-adhi-karya--adhi->
-- **11** T3 11-23 11:50 cnbc_indonesia_market: Gak Alihkan Saham SMCB ke Publik, SMGR Kena Sanksi OJK [SMCB,SMGR] (kebijakan/global/pasar/emiten) <https://www.cnbcindonesia.com/market/20261123102451-17-787489/gak-alihkan-saham-smcb-ke-publik-smgr-kena-sanksi-ojk>
 - **9** T3 11-24 16:15 kontan_investasi: Rupiah Melemah ke Rp 18.230, Sentimen MSCI dan The Fed Jadi Sorotan (kebijakan/global/kurs) <https://investasi.kontan.co.id/news/rupiah-melemah-ke-rp-18230-sentimen-msci-dan-the-fed-jadi-sorotan>
 - **9** T3 11-24 15:58 cnbc_indonesia_market: BSI (BRIS) Akui Rights Issue Berpotensi Tekan Laba Per Saham [BRIS] (pasar/korporasi/emiten; terkonfirmasi, juga di kontan_keuangan) <https://www.cnbcindonesia.com/market/20261124155542-17-788008/bsi--bris--akui-rights-issue-berpotensi-tekan-laba-per-saham>
 - **7** T3 11-24 17:32 kontan_investasi: Perdana Gapura Prima (GPRA) Siapkan Buyback Saham Rp 40 Miliar [GPRA] (pasar/korporasi/emiten) <https://investasi.kontan.co.id/news/perdana-gapura-prima-gpra-siapkan-buyback-saham-rp-40-miliar>
@@ -19,9 +17,6 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **7** T3 11-24 15:15 bloomberg_technoz: IGAR akan Delisting, Rencanakan Pembelian Kembali Saham [IGAR] (pasar/korporasi/emiten) <https://www.bloombergtechnoz.com/detail-news/128744/igar-akan-delisting-rencanakan-pembelian-kembali-saham>
 - **7** T3 11-24 08:54 cnbc_indonesia_market: Usai MSCI - Presiden Bicara, Simak 5 Saham Pilihan Hari Ini (kebijakan/pasar; petunjuk) <https://www.cnbcindonesia.com/market/20261124081410-17-787830/usai-msci--presiden-bicara-simak-5-saham-pilihan-hari-ini>
 - **7** T3 11-24 07:40 bloomberg_technoz: Arah IHSG di Tengah Sentimen MSCI hingga Cawapres (kebijakan/pasar; petunjuk) <https://www.bloombergtechnoz.com/detail-news/128673/arah-ihsg-di-tengah-sentimen-msci-hingga-cawapres>
-- **7** T3 11-23 13:57 cnbc_indonesia_market: Buyback Saham, Semen Indonesia (SMGR) Siapkan Rp250 Miliar [SMGR] (pasar/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261123234407-17-787802/buyback-saham-semen-indonesia--smgr--siapkan-rp250-miliar>
-- **7** T3 11-23 10:20 cnbc_indonesia_market: BEI 'Gembok' SMBC (BTPN) Usai Putuskan Mau Delisting [BTPN] (kebijakan/korporasi/emiten) <https://www.cnbcindonesia.com/market/20261123095642-17-787471/bei-gembok-smbc--btpn--usai-putuskan-mau-delisting>
-- **7** T3 11-23 09:35 cnbc_indonesia_market: Likuiditas Ketat, Peringkat Utang Anak Usaha Buma (DOID) Anjlok [DOID] (kredit/makro/emiten) <https://www.cnbcindonesia.com/market/20261123090455-17-787457/likuiditas-ketat-peringkat-utang-anak-usaha-buma--doid--anjlok>
 - **6** T3 11-24 17:25 kontan_investasi: Andalkan Penjualan via Bullion Bank, Cek Rekomendasi Saham Hartadinata (HRTA) [HRTA] (pasar/emiten; petunjuk) <https://investasi.kontan.co.id/news/andalkan-penjualan-via-bullion-bank-cek-rekomendasi-saham-hartadinata-hrta>
 - **6** T3 11-24 17:15 bloomberg_technoz: IHSG Fluktuatif Sepanjang Hari, Wait and See Pernyataan MSCI (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/128761/ihsg-fluktuatif-sepanjang-hari-wait-and-see-pernyataan-msci>
 - **6** T3 11-24 15:23 bloomberg_technoz: Rupiah Ditutup Melemah, Bayang-Bayang Ancaman MSCI Belum Berakhir (kebijakan/kurs) <https://www.bloombergtechnoz.com/detail-news/128742/rupiah-ditutup-melemah-bayang-bayang-ancaman-msci-belum-berakhir>
@@ -34,3 +29,7 @@ Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 
 - **6** T3 11-24 09:35 cnbc_indonesia_market: OJK Sanksi 1.011 Pelanggar Pasar Modal, Buru Pelaku Baru Tiap 2 Pekan (kebijakan/global) <https://www.cnbcindonesia.com/market/20261124071059-17-787820/ojk-sanksi-1011-pelanggar-pasar-modal-buru-pelaku-baru-tiap-2-pekan>
 - **6** T3 11-24 09:15 cnbc_indonesia_market: Kabar Baik!, OJK Siapkan Pengembalian Dana Korban Manipulasi Saham (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261124070551-17-787819/kabar-baik-ojk-siapkan-pengembalian-dana-korban-manipulasi-saham>
 - **6** T3 11-24 07:59 bloomberg_technoz: MSCI Buka Ruang Kompromi, Net Sell Asing Tetap Tinggi (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/128678/msci-buka-ruang-kompromi-net-sell-asing-tetap-tinggi>
+- **6** T3 11-24 07:59 bloomberg_technoz: Setelah Pertemuan Dengan MSCI, Net Sell Asing Tetap Tinggi (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/128678/setelah-pertemuan-dengan-msci-net-sell-asing-tetap-tinggi>
+- **6** T3 11-24 07:00 bloomberg_technoz: Williams The Fed Buka Peluang Kenaikan Suku Bunga Beruntun (kebijakan/global) <https://www.bloombergtechnoz.com/detail-news/128669/williams-the-fed-buka-peluang-kenaikan-suku-bunga-beruntun>
+- **6** T3 11-23 18:40 bloomberg_technoz: Pasar Sambut Baik Dialog CEO MSCI & Presiden Prabowo, IHSG Hijau (kebijakan/pasar) <https://www.bloombergtechnoz.com/detail-news/128650/pasar-sambut-baik-dialog-ceo-msci-presiden-prabowo-ihsg-hijau>
+- **6** T3 11-23 17:56 kontan_keuangan: BI Rate Naik Jadi 6%, Begini Respons Gadai ValueMax Soal Tarif Gadai (kebijakan/global) <https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-begini-respons-gadai-valuemax-soal-tarif-gadai>

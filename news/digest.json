@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-24T19:20+07:00",
+ "generated_for": "2026-11-25T05:45+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 673,
- "kept": 216,
- "dropped_noise": 37,
+ "scanned": 462,
+ "kept": 146,
+ "dropped_noise": 4,
  "items": [
   {
    "published": "2026-11-24T14:16+07:00",
@@ -22,26 +22,6 @@
    ],
    "tickers": [
     "ADHI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T11:50+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Gak Alihkan Saham SMCB ke Publik, SMGR Kena Sanksi OJK",
-   "link": "https://www.cnbcindonesia.com/market/20261123102451-17-787489/gak-alihkan-saham-smcb-ke-publik-smgr-kena-sanksi-ojk",
-   "score": 11,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "SMCB",
-    "SMGR"
    ],
    "flags": [],
    "also_in": []
@@ -192,60 +172,6 @@
    "flags": [
     "petunjuk"
    ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T13:57+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Buyback Saham, Semen Indonesia (SMGR) Siapkan Rp250 Miliar",
-   "link": "https://www.cnbcindonesia.com/market/20261123234407-17-787802/buyback-saham-semen-indonesia--smgr--siapkan-rp250-miliar",
-   "score": 7,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "SMGR"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T10:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "BEI 'Gembok' SMBC (BTPN) Usai Putuskan Mau Delisting",
-   "link": "https://www.cnbcindonesia.com/market/20261123095642-17-787471/bei-gembok-smbc--btpn--usai-putuskan-mau-delisting",
-   "score": 7,
-   "categories": [
-    "kebijakan",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BTPN"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T09:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Likuiditas Ketat, Peringkat Utang Anak Usaha Buma (DOID) Anjlok",
-   "link": "https://www.cnbcindonesia.com/market/20261123090455-17-787457/likuiditas-ketat-peringkat-utang-anak-usaha-buma--doid--anjlok",
-   "score": 7,
-   "categories": [
-    "kredit",
-    "makro",
-    "emiten"
-   ],
-   "tickers": [
-    "DOID"
-   ],
-   "flags": [],
    "also_in": []
   },
   {
@@ -431,6 +357,66 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-24T07:59+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Setelah Pertemuan Dengan MSCI, Net Sell Asing Tetap Tinggi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128678/setelah-pertemuan-dengan-msci-net-sell-asing-tetap-tinggi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-24T07:00+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Williams The Fed Buka Peluang Kenaikan Suku Bunga Beruntun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128669/williams-the-fed-buka-peluang-kenaikan-suku-bunga-beruntun",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T18:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Pasar Sambut Baik Dialog CEO MSCI & Presiden Prabowo, IHSG Hijau",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128650/pasar-sambut-baik-dialog-ceo-msci-presiden-prabowo-ihsg-hijau",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-23T17:56+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BI Rate Naik Jadi 6%, Begini Respons Gadai ValueMax Soal Tarif Gadai",
+   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-begini-respons-gadai-valuemax-soal-tarif-gadai",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   }
  ],
  "watchlist_hits": [
@@ -449,25 +435,6 @@
     "BBRI",
     "INDF",
     "PWON"
-   ],
-   "flags": [
-    "watchlist"
-   ],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T10:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Smelter HPAL Vale di Bahodopi Ditarget Rampung Kuartal I-2027",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128546/smelter-hpal-vale-di-bahodopi-ditarget-rampung-kuartal-i-2027",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "INCO"
    ],
    "flags": [
     "watchlist"
