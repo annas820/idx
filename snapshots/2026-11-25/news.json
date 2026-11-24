@@ -1,0 +1,287 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-24T20:43:26Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Cegah Pencucian Uang, SIJITU Sukses Screening 75 Juta Nasabah",
+        "url": "https://www.cnbcindonesia.com/market/20261124220214-17-788111/cegah-pencucian-uang-sijitu-sukses-screening-75-juta-nasabah",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-24T22:05:38+07:00",
+        "summary": "PT Sijitu Regtech Asia memperkuat layanan RegTech untuk industri keuangan, membantu identifikasi risiko dan kepatuhan APU/PPT dengan tujuh modul terintegrasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Mantap! CBI Raih Most Innovative Credit Intelligence",
+        "url": "https://www.cnbcindonesia.com/market/20261124212751-17-788109/mantap-cbi-raih-most-innovative-credit-intelligence",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-24T21:33:15+07:00",
+        "summary": "CNBC Indonesia Awards 2026 menghargai CBI sebagai Most Innovative Credit Intelligence, mendukung inklusi keuangan dan inovasi dalam penilaian kredit.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Tetap Optimis, DIM Jaga Portofolio Publik Lewat Diversifikasi Global",
+        "url": "https://www.cnbcindonesia.com/market/20261124211856-17-788108/tetap-optimis-dim-jaga-portofolio-publik-lewat-diversifikasi-global",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-24T21:25:35+07:00",
+        "summary": "PT Danantara Investment Management (DIM) ungkap portofolio investasi yang tahan gejolak pasar, dengan proyeksi laba positif meski di bawah target.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "positif",
+          "optimis"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "ADPI: Dana Pensiun Masih Dapat Penawaran Deposito dengan Bunga Special Rate 6%-7,5%",
+        "url": "https://keuangan.kontan.co.id/news/adpi-dana-pensiun-masih-dapat-penawaran-deposito-dengan-bunga-special-rate-6-75",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T20:41:55+07:00",
+        "summary": "Dana pensiun masih banyak memperoleh penawaran bunga khusus atau special rate dari perbankan untuk penempatan dana pada instrumen deposito. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ini Faktor yang Jadi Pertimbangan Masyarakat Memilih Unitlink Berbasis Valuta Asing",
+        "url": "https://keuangan.kontan.co.id/news/ini-faktor-yang-jadi-pertimbangan-masyarakat-memilih-unitlink-berbasis-valuta-asing",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T20:41:55+07:00",
+        "summary": "Ini sejumlah faktor yang menjadi pertimbangan masyarakat dalam memilih unitlink berbasis valuta asing.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Sebut Penurunan Bunga Fintech Lending Bertujuan Kurangi Beban Biaya Borrower",
+        "url": "https://keuangan.kontan.co.id/news/ojk-sebut-penurunan-bunga-fintech-lending-bertujuan-kurangi-beban-biaya-borrower",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T20:26:12+07:00",
+        "summary": "OJK membatasi bunga pinjol konsumtif maksimal 0,3%. Namun, kenaikan TWP90 menjadi 5,36% memunculkan tantangan bagi industri.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": [
+          "penurunan"
+        ]
+      },
+      {
+        "title": "Pembiayaan Fintech Lending Tumbuh Tinggi, OJK Terus Pantau Berkala Perkembangannya",
+        "url": "https://keuangan.kontan.co.id/news/pembiayaan-fintech-lending-tumbuh-tinggi-ojk-terus-pantau-berkala-perkembangannya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T20:25:14+07:00",
+        "summary": "Outstanding pembiayaan fintech peer to peer (P2P) lending atau pinjaman daring masih tumbuh tinggi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Rapat Bareng Danantara, Prabowo Minta Investasi China US$15 M Diproses",
+        "url": "https://www.cnbcindonesia.com/market/20261124182729-17-788093/rapat-bareng-danantara-prabowo-minta-investasi-china-us-15-m-diproses",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-24T20:19:20+07:00",
+        "summary": "Presiden Prabowo Subianto meminta agar rencana investasi dari China senilai US$15 miliar atau setara Rp273,4 triliun (US$18.227/US$) segera ditindaklanjuti.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ini Tantangan Asuransi Terapkan Aturan Baru Kewajiban Rasio Solvabilitas Minimum",
+        "url": "https://keuangan.kontan.co.id/news/ini-tantangan-asuransi-terapkan-aturan-baru-kewajiban-rasio-solvabilitas-minimum",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T20:12:28+07:00",
+        "summary": "Tantangan utama industri asuransi menjalankan penyesuaian yang cukup besar, yaitu implementasi PSAK 117 dan penerapan kerangka solvabilitas baru.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Peringatan Buat Warga RI, Jangan Kabur Dulu ke Australia!",
+        "url": "https://www.cnbcindonesia.com/research/20261123134057-128-787628/peringatan-buat-warga-ri-jangan-kabur-dulu-ke-australia",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-24T20:10:04+07:00",
+        "summary": "Australia menghadapi ancaman resesi setelah puluhan ribu pekerjaan hilang dan tingkat pengangguran meningkat. Ekonom mulai membunyikan alarm bahaya.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit Himbara ke BUMN Masih Subur, Cermati Risiko Konsentrasi Pembiayaan",
+        "url": "https://keuangan.kontan.co.id/news/kredit-himbara-ke-bumn-masih-subur-cermati-risiko-konsentrasi-pembiayaan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T20:00:49+07:00",
+        "summary": "Eksposur kredit bank-bank Himpunan Bank Milik Negara (Himbara) ke perusahaan pelat merah masih besar. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kejahatan di Sektor Keuangan Makin Kompleks, MMI Hadirkan Solusi Ini!",
+        "url": "https://www.cnbcindonesia.com/market/20261124193941-17-788082/kejahatan-di-sektor-keuangan-makin-kompleks-mmi-hadirkan-solusi-ini",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-24T19:42:28+07:00",
+        "summary": "Industri keuangan menghadapi tekanan dari kejahatan dan regulasi. MMI berkolaborasi dengan SAS untuk solusi manajemen risiko dan fraud di era AI.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "fraud"
+        ]
+      },
+      {
+        "title": "Bisnis Emas BSI Melonjak 84,03% YoY hingga September 2026",
+        "url": "https://keuangan.kontan.co.id/news/bisnis-emas-bsi-melonjak-8403-yoy-hingga-september-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T19:35:28+07:00",
+        "summary": "Hingga September 2026, pendapatan berbasis bisnis emas melalui layanan gadai dan tabungan emas BSI melonjak 84,03% secara tahunan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "melonjak"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "LPS Pastikan Klaim Nasabah BPR yang Dilikuidasi Sudah Dibayarkan",
+        "url": "https://keuangan.kontan.co.id/news/lps-pastikan-klaim-nasabah-bpr-yang-dilikuidasi-sudah-dibayarkan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T19:25:13+07:00",
+        "summary": "LPS telah membayar klaim simpanan nasabah BPR yang dilikuidasi. Sebanyak 14 BPR dan BPRS ditutup sepanjang Januari&ndash;Oktober 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "SIJITU Ungkap Potensi Kejahatan di Sektor Keuangan, Ini Solusinya!",
+        "url": "https://www.cnbcindonesia.com/market/20261124192011-17-788081/sijitu-ungkap-potensi-kejahatan-di-sektor-keuangan-ini-solusinya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-24T19:24:04+07:00",
+        "summary": "Direktur PT Sijitu Regtech Asia, Ricky, menekankan pentingnya teknologi dalam mempercepat proses onboarding jasa keuangan dan meminimalisir risiko human error.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Top! WIKA Jadi Satu-Satunya BUMN Karya Peraih Penghargaan ARA 2025",
+        "url": "https://www.cnbcindonesia.com/market/20261124190834-17-788080/top-wika-jadi-satu-satunya-bumn-karya-peraih-penghargaan-ara-2025",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-24T19:13:31+07:00",
+        "summary": "PT Wijaya Karya (WIKA) meraih Juara 2 dalam kategori BUMN Go Publik Non Keuangan Klaster 3 di Annual Report Award 2025.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "LPS Targetkan Program Penjaminan Polis Aktif pada Semester II 2027",
+        "url": "https://keuangan.kontan.co.id/news/lps-targetkan-program-penjaminan-polis-aktif-pada-semester-ii-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T19:10:36+07:00",
+        "summary": "LPS menargetkan program penjaminan polis asuransi mulai diaktivasi pada semester II-2027. Saat ini tengah menunggu PP untuk landasan pelaksanaan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Simpanan Tumbuh 8,25%, LPS: Dana Korporasi Jadi Penopang Segmen Simpanan Jumbo",
+        "url": "https://keuangan.kontan.co.id/news/simpanan-tumbuh-825-lps-dana-korporasi-jadi-penopang-segmen-simpanan-jumbo",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T19:09:44+07:00",
+        "summary": "LPS mencatat simpanan perbankan nasional tumbuh 8,25% secara tahunan. Pertumbuhan tertinggi tercatat pada kelompok simpanan di atas Rp 5 miliar. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh",
+          "pertumbuhan",
+          "tertinggi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Batal Bangun Kantor di IKN, LPS Pilih Jakarta karena Lebih Feasible",
+        "url": "https://keuangan.kontan.co.id/news/batal-bangun-kantor-di-ikn-lps-pilih-jakarta-karena-lebih-feasible",
+        "source": "kontan/keuangan",
+        "published": "2026-11-24T18:52:19+07:00",
+        "summary": "Batal untuk membangun kantor di IKN, LPS memilih Jakarta karena lebih memungkinkan atau lebih feasible.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Top! CBI Raih Credit Bureau Excellence Award",
+        "url": "https://www.cnbcindonesia.com/market/20261124183024-17-788079/top-cbi-raih-credit-bureau-excellence-award",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-24T18:51:07+07:00",
+        "summary": "CNBC Indonesia menggelar Road to Awards 2026 untuk apresiasi industri asuransi. PT Credit Bureau Indonesia raih penghargaan atas inovasi layanan keuangan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "apresiasi"
+        ],
+        "negative_terms": []
+      }
+    ]
+  }
+}
