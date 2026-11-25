@@ -1,0 +1,1145 @@
+{
+  "schema": "idx.returns.v1",
+  "provider": "yahoo",
+  "fetched_at": "2026-11-25T19:59:52Z",
+  "cached": false,
+  "stale": false,
+  "data": [
+    {
+      "symbol": "AADI",
+      "name": "PT Adaro Andalan Indonesia Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 9900.0,
+      "start": "2024-12-05",
+      "candles_used": 467,
+      "returns": {
+        "1w": -2.7,
+        "1m": -12.97,
+        "3m": -3.41,
+        "6m": 20.36,
+        "ytd": 41.94,
+        "1y": 27.74,
+        "3y": null,
+        "5y": null
+      },
+      "cagr_3y_pct": null,
+      "cagr_5y_pct": null,
+      "volatility_1y_pct": 47.46,
+      "max_drawdown_1y": {
+        "pct": -36.19,
+        "peak_date": "2026-03-30",
+        "trough_date": "2026-06-08",
+        "recovered": true
+      },
+      "max_drawdown_all": {
+        "pct": -44.04,
+        "peak_date": "2024-12-10",
+        "trough_date": "2025-04-08",
+        "recovered": true
+      },
+      "best_day_1y": {
+        "date": "2026-03-30",
+        "pct": 8.86
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -12.39
+      },
+      "high_52w": 12450.0,
+      "low_52w": 6975.0,
+      "pct_from_52w_high": -20.48,
+      "pct_from_52w_low": 41.94,
+      "days_since_52w_high": 76,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -1.51,
+          "1m": -9.34,
+          "3m": 15.97,
+          "6m": 35.3,
+          "ytd": 81.32,
+          "1y": 66.58,
+          "3y": null,
+          "5y": null
+        }
+      }
+    },
+    {
+      "symbol": "INCO",
+      "name": "PT Vale Indonesia Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 3380.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -2.87,
+        "1m": -11.05,
+        "3m": -35.92,
+        "6m": -39.1,
+        "ytd": -34.69,
+        "1y": -12.44,
+        "3y": -26.36,
+        "5y": -31.44
+      },
+      "cagr_3y_pct": -9.7,
+      "cagr_5y_pct": -7.28,
+      "volatility_1y_pct": 71.38,
+      "max_drawdown_1y": {
+        "pct": -61.14,
+        "peak_date": "2026-02-27",
+        "trough_date": "2026-11-04",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -78.79,
+        "peak_date": "2022-04-19",
+        "trough_date": "2025-04-09",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-05-22",
+        "pct": 18.84
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -14.81
+      },
+      "high_52w": 7900.0,
+      "low_52w": 3070.0,
+      "pct_from_52w_high": -57.22,
+      "pct_from_52w_low": 10.1,
+      "days_since_52w_high": 270,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -1.68,
+          "1m": -7.42,
+          "3m": -16.54,
+          "6m": -24.16,
+          "ytd": 4.69,
+          "1y": 26.4,
+          "3y": -1.14,
+          "5y": -9.68
+        }
+      }
+    },
+    {
+      "symbol": "INDF",
+      "name": "PT Indofood Sukses Makmur Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 7175.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -1.03,
+        "1m": 6.3,
+        "3m": -2.71,
+        "6m": 6.69,
+        "ytd": 5.9,
+        "1y": -3.69,
+        "3y": 11.67,
+        "5y": 10.81
+      },
+      "cagr_3y_pct": 3.75,
+      "cagr_5y_pct": 2.08,
+      "volatility_1y_pct": 27.4,
+      "max_drawdown_1y": {
+        "pct": -20.54,
+        "peak_date": "2025-11-26",
+        "trough_date": "2026-03-13",
+        "recovered": true
+      },
+      "max_drawdown_all": {
+        "pct": -30.79,
+        "peak_date": "2025-07-31",
+        "trough_date": "2026-03-13",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-03-31",
+        "pct": 6.72
+      },
+      "worst_day_1y": {
+        "date": "2026-06-02",
+        "pct": -5.05
+      },
+      "high_52w": 7500.0,
+      "low_52w": 5900.0,
+      "pct_from_52w_high": -4.33,
+      "pct_from_52w_low": 21.61,
+      "days_since_52w_high": 76,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": 0.16,
+          "1m": 9.93,
+          "3m": 16.67,
+          "6m": 21.63,
+          "ytd": 45.28,
+          "1y": 35.15,
+          "3y": 36.89,
+          "5y": 32.57
+        }
+      }
+    },
+    {
+      "symbol": "ASII",
+      "name": "PT Astra International Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 5450.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -3.54,
+        "1m": 19.78,
+        "3m": 13.78,
+        "6m": 0.93,
+        "ytd": -18.66,
+        "1y": -15.83,
+        "3y": -4.8,
+        "5y": -12.45
+      },
+      "cagr_3y_pct": -1.63,
+      "cagr_5y_pct": -2.63,
+      "volatility_1y_pct": 45.45,
+      "max_drawdown_1y": {
+        "pct": -44.19,
+        "peak_date": "2026-01-19",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -45.48,
+        "peak_date": "2022-04-28",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-03-25",
+        "pct": 13.79
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -12.34
+      },
+      "high_52w": 7400.0,
+      "low_52w": 4130.0,
+      "pct_from_52w_high": -26.35,
+      "pct_from_52w_low": 31.96,
+      "days_since_52w_high": 309,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -2.35,
+          "1m": 23.41,
+          "3m": 33.16,
+          "6m": 15.87,
+          "ytd": 20.72,
+          "1y": 23.01,
+          "3y": 20.42,
+          "5y": 9.31
+        }
+      }
+    },
+    {
+      "symbol": "BBCA",
+      "name": "PT Bank Central Asia Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 5800.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": 5.45,
+        "1m": 15.42,
+        "3m": -9.38,
+        "6m": -1.69,
+        "ytd": -28.17,
+        "1y": -31.56,
+        "3y": -35.01,
+        "5y": -21.89
+      },
+      "cagr_3y_pct": -13.38,
+      "cagr_5y_pct": -4.82,
+      "volatility_1y_pct": 40.35,
+      "max_drawdown_1y": {
+        "pct": -43.29,
+        "peak_date": "2025-11-25",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -55.98,
+        "peak_date": "2024-09-23",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-06-10",
+        "pct": 9.71
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -14.81
+      },
+      "high_52w": 8500.0,
+      "low_52w": 4820.0,
+      "pct_from_52w_high": -31.76,
+      "pct_from_52w_low": 20.33,
+      "days_since_52w_high": 364,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": 6.64,
+          "1m": 19.05,
+          "3m": 10.0,
+          "6m": 13.25,
+          "ytd": 11.21,
+          "1y": 7.28,
+          "3y": -9.79,
+          "5y": -0.13
+        }
+      }
+    },
+    {
+      "symbol": "BBRI",
+      "name": "PT Bank Rakyat Indonesia (Persero) Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 3100.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": 0.0,
+        "1m": 6.53,
+        "3m": -2.52,
+        "6m": 1.64,
+        "ytd": -15.3,
+        "1y": -22.11,
+        "3y": -42.59,
+        "5y": -26.54
+      },
+      "cagr_3y_pct": -16.89,
+      "cagr_5y_pct": -5.99,
+      "volatility_1y_pct": 37.37,
+      "max_drawdown_1y": {
+        "pct": -36.02,
+        "peak_date": "2026-02-25",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -60.31,
+        "peak_date": "2024-03-13",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-10-20",
+        "pct": 9.84
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -14.84
+      },
+      "high_52w": 3970.0,
+      "low_52w": 2540.0,
+      "pct_from_52w_high": -21.91,
+      "pct_from_52w_low": 22.05,
+      "days_since_52w_high": 272,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": 1.19,
+          "1m": 10.16,
+          "3m": 16.86,
+          "6m": 16.58,
+          "ytd": 24.08,
+          "1y": 16.73,
+          "3y": -17.37,
+          "5y": -4.78
+        }
+      }
+    },
+    {
+      "symbol": "BMRI",
+      "name": "PT Bank Mandiri (Persero) Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 3990.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": 1.27,
+        "1m": 2.31,
+        "3m": -5.0,
+        "6m": -3.16,
+        "ytd": -21.76,
+        "1y": -21.76,
+        "3y": -32.09,
+        "5y": 8.57
+      },
+      "cagr_3y_pct": -12.1,
+      "cagr_5y_pct": 1.66,
+      "volatility_1y_pct": 37.59,
+      "max_drawdown_1y": {
+        "pct": -37.49,
+        "peak_date": "2026-02-24",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -54.9,
+        "peak_date": "2024-09-23",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-06-09",
+        "pct": 10.24
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -14.82
+      },
+      "high_52w": 5375.0,
+      "low_52w": 3360.0,
+      "pct_from_52w_high": -25.77,
+      "pct_from_52w_low": 18.75,
+      "days_since_52w_high": 273,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": 2.46,
+          "1m": 5.94,
+          "3m": 14.38,
+          "6m": 11.78,
+          "ytd": 17.62,
+          "1y": 17.08,
+          "3y": -6.87,
+          "5y": 30.33
+        }
+      }
+    },
+    {
+      "symbol": "BBNI",
+      "name": "PT Bank Negara Indonesia (Persero) Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 3570.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -1.92,
+        "1m": 4.39,
+        "3m": -2.99,
+        "6m": -5.56,
+        "ytd": -18.31,
+        "1y": -18.68,
+        "3y": -31.35,
+        "5y": -0.49
+      },
+      "cagr_3y_pct": -11.78,
+      "cagr_5y_pct": -0.1,
+      "volatility_1y_pct": 37.65,
+      "max_drawdown_1y": {
+        "pct": -36.07,
+        "peak_date": "2026-02-04",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -52.45,
+        "peak_date": "2024-03-13",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-10-20",
+        "pct": 8.78
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -12.9
+      },
+      "high_52w": 4630.0,
+      "low_52w": 2960.0,
+      "pct_from_52w_high": -22.89,
+      "pct_from_52w_low": 20.61,
+      "days_since_52w_high": 293,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -0.73,
+          "1m": 8.02,
+          "3m": 16.39,
+          "6m": 9.38,
+          "ytd": 21.07,
+          "1y": 20.16,
+          "3y": -6.13,
+          "5y": 21.27
+        }
+      }
+    },
+    {
+      "symbol": "TLKM",
+      "name": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 2080.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -4.59,
+        "1m": -7.14,
+        "3m": -20.61,
+        "6m": -28.77,
+        "ytd": -40.23,
+        "1y": -43.78,
+        "3y": -42.54,
+        "5y": -48.0
+      },
+      "cagr_3y_pct": -16.86,
+      "cagr_5y_pct": -12.27,
+      "volatility_1y_pct": 49.26,
+      "max_drawdown_1y": {
+        "pct": -55.08,
+        "peak_date": "2026-01-27",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -62.89,
+        "peak_date": "2022-04-27",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-10-20",
+        "pct": 16.38
+      },
+      "worst_day_1y": {
+        "date": "2026-06-08",
+        "pct": -14.86
+      },
+      "high_52w": 3940.0,
+      "low_52w": 1770.0,
+      "pct_from_52w_high": -47.21,
+      "pct_from_52w_low": 17.51,
+      "days_since_52w_high": 301,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -3.4,
+          "1m": -3.51,
+          "3m": -1.23,
+          "6m": -13.83,
+          "ytd": -0.85,
+          "1y": -4.94,
+          "3y": -17.32,
+          "5y": -26.24
+        }
+      }
+    },
+    {
+      "symbol": "ANTM",
+      "name": "PT Antam (Persero) Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 2670.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -2.2,
+        "1m": -6.64,
+        "3m": -16.3,
+        "6m": -13.59,
+        "ytd": -15.24,
+        "1y": -8.87,
+        "3y": 66.36,
+        "5y": 9.43
+      },
+      "cagr_3y_pct": 18.48,
+      "cagr_5y_pct": 1.82,
+      "volatility_1y_pct": 58.69,
+      "max_drawdown_1y": {
+        "pct": -49.58,
+        "peak_date": "2026-01-26",
+        "trough_date": "2026-11-03",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -58.28,
+        "peak_date": "2022-04-18",
+        "trough_date": "2024-06-14",
+        "recovered": true
+      },
+      "best_day_1y": {
+        "date": "2026-06-09",
+        "pct": 13.83
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -14.72
+      },
+      "high_52w": 4760.0,
+      "low_52w": 2400.0,
+      "pct_from_52w_high": -43.91,
+      "pct_from_52w_low": 11.25,
+      "days_since_52w_high": 302,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -1.01,
+          "1m": -3.01,
+          "3m": 3.08,
+          "6m": 1.35,
+          "ytd": 24.14,
+          "1y": 29.97,
+          "3y": 91.58,
+          "5y": 31.19
+        }
+      }
+    },
+    {
+      "symbol": "PTBA",
+      "name": "PT Bukit Asam (Persero) Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 2920.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -5.81,
+        "1m": -10.98,
+        "3m": 17.74,
+        "6m": 7.35,
+        "ytd": 26.41,
+        "1y": 25.32,
+        "3y": 18.7,
+        "5y": 8.15
+      },
+      "cagr_3y_pct": 5.88,
+      "cagr_5y_pct": 1.58,
+      "volatility_1y_pct": 37.4,
+      "max_drawdown_1y": {
+        "pct": -28.62,
+        "peak_date": "2026-03-31",
+        "trough_date": "2026-07-02",
+        "recovered": true
+      },
+      "max_drawdown_all": {
+        "pct": -53.13,
+        "peak_date": "2022-06-03",
+        "trough_date": "2025-10-15",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-03-25",
+        "pct": 8.59
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -12.77
+      },
+      "high_52w": 3400.0,
+      "low_52w": 2260.0,
+      "pct_from_52w_high": -14.12,
+      "pct_from_52w_low": 29.2,
+      "days_since_52w_high": 49,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -4.62,
+          "1m": -7.35,
+          "3m": 37.12,
+          "6m": 22.29,
+          "ytd": 65.79,
+          "1y": 64.16,
+          "3y": 43.92,
+          "5y": 29.91
+        }
+      }
+    },
+    {
+      "symbol": "ADRO",
+      "name": "PT Alamtri Resources Indonesia Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 2340.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -2.9,
+        "1m": -4.88,
+        "3m": -11.03,
+        "6m": -0.43,
+        "ytd": 29.28,
+        "1y": 24.8,
+        "3y": -7.87,
+        "5y": 34.1
+      },
+      "cagr_3y_pct": -2.7,
+      "cagr_5y_pct": 6.05,
+      "volatility_1y_pct": 39.24,
+      "max_drawdown_1y": {
+        "pct": -22.18,
+        "peak_date": "2026-08-31",
+        "trough_date": "2026-10-16",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -60.39,
+        "peak_date": "2022-10-07",
+        "trough_date": "2025-09-18",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-10-20",
+        "pct": 8.6
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -10.16
+      },
+      "high_52w": 2840.0,
+      "low_52w": 1780.0,
+      "pct_from_52w_high": -17.61,
+      "pct_from_52w_low": 31.46,
+      "days_since_52w_high": 85,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -1.71,
+          "1m": -1.25,
+          "3m": 8.35,
+          "6m": 14.51,
+          "ytd": 68.66,
+          "1y": 63.64,
+          "3y": 17.35,
+          "5y": 55.86
+        }
+      }
+    },
+    {
+      "symbol": "UNVR",
+      "name": "PT Unilever Indonesia Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 1555.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": 0.65,
+        "1m": 11.07,
+        "3m": -13.61,
+        "6m": -11.9,
+        "ytd": -40.19,
+        "1y": -41.76,
+        "3y": -55.95,
+        "5y": -67.74
+      },
+      "cagr_3y_pct": -23.91,
+      "cagr_5y_pct": -20.26,
+      "volatility_1y_pct": 41.55,
+      "max_drawdown_1y": {
+        "pct": -52.17,
+        "peak_date": "2025-12-03",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -81.2,
+        "peak_date": "2022-10-20",
+        "trough_date": "2025-02-28",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-05-06",
+        "pct": 10.06
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -12.58
+      },
+      "high_52w": 2770.0,
+      "low_52w": 1325.0,
+      "pct_from_52w_high": -43.86,
+      "pct_from_52w_low": 17.36,
+      "days_since_52w_high": 340,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": 1.84,
+          "1m": 14.7,
+          "3m": 5.77,
+          "6m": 3.04,
+          "ytd": -0.81,
+          "1y": -2.92,
+          "3y": -30.73,
+          "5y": -45.98
+        }
+      }
+    },
+    {
+      "symbol": "ICBP",
+      "name": "PT Indofood CBP Sukses Makmur Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 7150.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": 3.25,
+        "1m": 19.67,
+        "3m": -7.74,
+        "6m": 4.76,
+        "ytd": -12.8,
+        "1y": -14.37,
+        "3y": -31.41,
+        "5y": -20.11
+      },
+      "cagr_3y_pct": -11.81,
+      "cagr_5y_pct": -4.39,
+      "volatility_1y_pct": 34.07,
+      "max_drawdown_1y": {
+        "pct": -36.34,
+        "peak_date": "2025-11-26",
+        "trough_date": "2026-10-30",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -57.23,
+        "peak_date": "2024-10-18",
+        "trough_date": "2026-10-30",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-05-07",
+        "pct": 5.51
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -9.35
+      },
+      "high_52w": 8600.0,
+      "low_52w": 5475.0,
+      "pct_from_52w_high": -16.86,
+      "pct_from_52w_low": 30.59,
+      "days_since_52w_high": 363,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": 4.44,
+          "1m": 23.3,
+          "3m": 11.64,
+          "6m": 19.7,
+          "ytd": 26.58,
+          "1y": 24.47,
+          "3y": -6.19,
+          "5y": 1.65
+        }
+      }
+    },
+    {
+      "symbol": "AKRA",
+      "name": "PT AKR Corporindo Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 1280.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": 1.59,
+        "1m": -7.91,
+        "3m": -7.91,
+        "6m": -5.19,
+        "ytd": 1.59,
+        "1y": 1.59,
+        "3y": -11.72,
+        "5y": 53.48
+      },
+      "cagr_3y_pct": -4.07,
+      "cagr_5y_pct": 8.95,
+      "volatility_1y_pct": 42.58,
+      "max_drawdown_1y": {
+        "pct": -26.27,
+        "peak_date": "2026-04-30",
+        "trough_date": "2026-06-08",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -51.35,
+        "peak_date": "2024-04-18",
+        "trough_date": "2025-04-09",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-10-21",
+        "pct": 7.02
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -14.97
+      },
+      "high_52w": 1580.0,
+      "low_52w": 1165.0,
+      "pct_from_52w_high": -18.99,
+      "pct_from_52w_low": 9.87,
+      "days_since_52w_high": 208,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": 2.78,
+          "1m": -4.28,
+          "3m": 11.47,
+          "6m": 9.75,
+          "ytd": 40.97,
+          "1y": 40.43,
+          "3y": 13.5,
+          "5y": 75.24
+        }
+      }
+    },
+    {
+      "symbol": "BBTN",
+      "name": "PT Bank Tabungan Negara (Persero) Tbk",
+      "currency": "IDR",
+      "as_of": "2026-11-24",
+      "price": 1020.0,
+      "start": "2021-11-25",
+      "candles_used": 1199,
+      "returns": {
+        "1w": -2.86,
+        "1m": 7.37,
+        "3m": -15.7,
+        "6m": -20.62,
+        "ytd": -13.19,
+        "1y": -15.7,
+        "3y": -19.37,
+        "5y": -36.92
+      },
+      "cagr_3y_pct": -6.92,
+      "cagr_5y_pct": -8.81,
+      "volatility_1y_pct": 44.4,
+      "max_drawdown_1y": {
+        "pct": -42.95,
+        "peak_date": "2026-04-23",
+        "trough_date": "2026-10-19",
+        "recovered": false
+      },
+      "max_drawdown_all": {
+        "pct": -53.53,
+        "peak_date": "2022-04-25",
+        "trough_date": "2025-03-21",
+        "recovered": false
+      },
+      "best_day_1y": {
+        "date": "2026-06-09",
+        "pct": 11.9
+      },
+      "worst_day_1y": {
+        "date": "2026-10-16",
+        "pct": -14.49
+      },
+      "high_52w": 1490.0,
+      "low_52w": 850.0,
+      "pct_from_52w_high": -31.54,
+      "pct_from_52w_low": 20.0,
+      "days_since_52w_high": 215,
+      "benchmark": {
+        "symbol": "^JKSE",
+        "name": "IDX COMPOSITE",
+        "returns": {
+          "1w": -1.19,
+          "1m": -3.63,
+          "3m": -19.38,
+          "6m": -14.94,
+          "ytd": -39.38,
+          "1y": -38.84,
+          "3y": -25.22,
+          "5y": -21.76
+        },
+        "excess": {
+          "1w": -1.67,
+          "1m": 11.0,
+          "3m": 3.68,
+          "6m": -5.68,
+          "ytd": 26.19,
+          "1y": 23.14,
+          "3y": 5.85,
+          "5y": -15.16
+        }
+      }
+    }
+  ]
+}

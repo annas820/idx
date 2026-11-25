@@ -1,0 +1,292 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-25T19:59:53Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Bank BSN Gandeng Barantin Dorong UMKM Go Global",
+        "url": "https://keuangan.kontan.co.id/news/bank-bsn-gandeng-barantin-dorong-umkm-go-global",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T22:43:13+07:00",
+        "summary": "Bank BSN menggandeng Barantin untuk memperluas akses pembiayaan dan layanan perbankan bagi UMKM, sekaligus mendorongnya go global",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Dapen BTN Terapkan Strategi Ini Guna Meningkatkan Kinerja RoI hingga Akhir 2026",
+        "url": "https://keuangan.kontan.co.id/news/dapen-btn-terapkan-strategi-ini-guna-meningkatkan-kinerja-roi-hingga-akhir-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T22:37:26+07:00",
+        "summary": "Dana pensiun (dapen) BTN menerapkan strategi ini guna meningkatkan kinerja Return on Invesment (RoI) hingga akhir 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "KRI Sebut Aturan Baru Kewajiban Rasio Solvabilitas Minimum Perkuat Industri Asuransi",
+        "url": "https://keuangan.kontan.co.id/news/kri-sebut-aturan-baru-kewajiban-rasio-solvabilitas-minimum-perkuat-industri-asuransi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T22:26:36+07:00",
+        "summary": "Lembaga pemeringkat efek, Kredit Rating Indonesia (KRI) sebut aturan baru kewajiban rasio solvabilitas minimum bisa memperkuat industri asuransi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Integrasi Perbankan dan Investasi Dibidik untuk Perluas Akses Keuangan Masyarakat",
+        "url": "https://keuangan.kontan.co.id/news/integrasi-perbankan-dan-investasi-dibidik-untuk-perluas-akses-keuangan-masyarakat",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T21:43:21+07:00",
+        "summary": "Bank SMBC Indonesia dan Ajaib Group menjajaki pengembangan layanan perbankan dan investasi yang lebih terintegrasi bagi masyarakat Indonesia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Jasa Marga Rombak Susunan Direksi, Ini Wajah Manajemen Baru",
+        "url": "https://www.cnbcindonesia.com/market/20261125213010-17-788527/jasa-marga-rombak-susunan-direksi-ini-wajah-manajemen-baru",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-25T21:34:09+07:00",
+        "summary": "Jasa Marga mengumumkan perubahan manajemen. Ari Respati menjabat Direktur Bisnis dan Layanan, Sigit Prastowo sebagai Direktur Keuangan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Asuransi Umum Menilai Penerapan Stress Test Pergerakan IHSG Penting Dilakukan",
+        "url": "https://keuangan.kontan.co.id/news/asuransi-umum-menilai-penerapan-stress-test-pergerakan-ihsg-penting-dilakukan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T21:27:41+07:00",
+        "summary": "AAUI mendukung langkah OJK untuk meminta perusahaan melakukan stress test dengan skenario pergerakan IHSG tertentu.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kaya Minyak Tak Menjamin Makmur, Venezuela Dikepung Utang Rp4.346 T",
+        "url": "https://www.cnbcindonesia.com/research/20261125154018-128-788407/kaya-minyak-tak-menjamin-makmur-venezuela-dikepung-utang-rp4346-t",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-25T20:40:02+07:00",
+        "summary": "Venezuela menyiapkan restrukturisasi utang besar-besaran di tengah beban utang yang mencapai Rp4.346 triliun atau 242% dari PDB.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Tetap Berikan Kredit ke Sektor Padat Karya Meski Upah Minimum Naik Tinggi",
+        "url": "https://keuangan.kontan.co.id/news/bank-tetap-berikan-kredit-ke-sektor-padat-karya-meski-upah-minimum-naik-tinggi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T20:23:43+07:00",
+        "summary": "Bank tetap memberikan kredit ke sektor padat karya meski upah minimum naik tinggi. Langkah bank bakal lebih selektif memilih debitur.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Rate Naik, Bunga Kredit Bank Diprediksi Menyusul pada Desember",
+        "url": "https://keuangan.kontan.co.id/news/bi-rate-naik-bunga-kredit-bank-diprediksi-menyusul-desember",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T20:21:15+07:00",
+        "summary": "Kenaikan suku bunga acuan alias BI Rate diproyeksi akan segera tertransmisi pada kenaikan suku bunga kredit. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Gadai ValueMax Optimistis terhadap Prospek Pertumbuhan Industri Pergadaian pada 2027",
+        "url": "https://keuangan.kontan.co.id/news/gadai-valuemax-optimistis-terhadap-prospek-pertumbuhan-industri-pergadaian-pada-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T20:14:03+07:00",
+        "summary": "Gadai ValueMax optimistis terhadap prospek pertumbuhan industri pergadaian pada 2027. Ini didorong kebutuhan jangka pendek dan akses likuiditas.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan",
+          "optimistis"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Adira Finance: Pembiayaan Baru Kendaraan Roda Empat Rp 11,3 T hingga Oktober 2026",
+        "url": "https://keuangan.kontan.co.id/news/adira-finance-pembiayaan-baru-kendaraan-roda-empat-rp-113-t-hingga-oktober-2026",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T20:10:30+07:00",
+        "summary": "Adira Finance mencatatkan penyaluran pembiayaan baru kendaraan roda empat sebesar Rp 11,3 triliun hingga Oktober 2026.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Rate Naik Jadi 6% Beri Dampak Ganda bagi Investasi Asuransi Umum",
+        "url": "https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-beri-dampak-ganda-bagi-investasi-asuransi-umum",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T19:57:43+07:00",
+        "summary": "Kenaikan BI Rate jadi 6% berpotensi meningkatkan imbal hasil investasi asuransi umum, tetapi juga menekan nilai obligasi dan portofolio saham.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "10 Negara Paling Berpengaruh di Asia, RI Ungguli Malaysia dan Thailand",
+        "url": "https://www.cnbcindonesia.com/research/20261125135254-128-788348/10-negara-paling-berpengaruh-di-asia-ri-ungguli-malaysia-thailand",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-25T19:50:05+07:00",
+        "summary": "Amerika Serikat masih menjadi negara paling berpengaruh di Asia pada 2026, disusul China dan India. Indonesia menempati peringkat kesembilan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Rate Menanjak, Siap-Siap Bunga KPR Bank Mulai Naik",
+        "url": "https://keuangan.kontan.co.id/news/bi-rate-menanjak-siap-siap-bunga-kpr-bank-mulai-naik",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T19:48:43+07:00",
+        "summary": "Transmisi kenaikan suku bunga acuan Bank Indonesia (BI Rate) mulai terjadi. Salah satunya terlihat dari suku bunga KPR yang perlahan naik.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "menanjak",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Hasil Investasi Asuransi Umum Kuartal III-2026 Tertekan, Asei Beberkan Tantangannya",
+        "url": "https://keuangan.kontan.co.id/news/hasil-investasi-asuransi-umum-kuartal-iii-2026-tertekan-asei-beberkan-tantangannya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T19:34:20+07:00",
+        "summary": "Asei Indonesia menilai industri asuransi umum masih menghadapi tantangan dalam mengoptimalkan hasil investasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "tertekan"
+        ]
+      },
+      {
+        "title": "Sejumlah Bank Sesuaikan Biaya Admin Layanan Kartu, Ini Perbandingan Tarifnya",
+        "url": "https://keuangan.kontan.co.id/news/sejumlah-bank-sesuaikan-biaya-admin-layanan-kartu-ini-perbandingan-tarifnya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T19:29:23+07:00",
+        "summary": "Kenaikan biaya administrasi kartu bank jadi strategi bank menjaga pendapatan dan efisiensi operasional, namun berisiko memicu perpindahan nasabah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Penyebab Pertumbuhan DPK Bank Seret, Jauh di Bawah Kredit",
+        "url": "https://www.cnbcindonesia.com/market/20261125165858-17-788459/penyebab-pertumbuhan-dpk-bank-seret-jauh-di-bawah-kredit",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-25T19:10:02+07:00",
+        "summary": "Pertumbuhan DPK perbankan rendah dibandingkan kredit. Winang Budoyo dari Perbanas menjelaskan fenomena makan tabungan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Perbanas: Program Pemerintah Banyak Topang Kredit 2026, Tahun Depan PR Swasta & BUMN",
+        "url": "https://keuangan.kontan.co.id/news/perbanas-program-pemerintah-banyak-topang-kredit-2026-tahun-depan-pr-swasta-bumn",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T18:54:45+07:00",
+        "summary": "Kinerja pertumbuhan kredit industri perbankan yang apik tahun ini belum tentu berlanjut hingga tahun depan. &#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Strategi Kemitraan Olahraga Global Allianz Merambah Indonesia",
+        "url": "https://keuangan.kontan.co.id/news/strategi-kemitraan-olahraga-global-allianz-merambah-indonesia",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T18:54:10+07:00",
+        "summary": "Federasi Hoki Es Indonesia mencatat, 256 pemain terdaftar dan 15 klub, serta mengelola empat liga berjenjang mulai U-12 hingga level elite.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Dapen BTN Nilai Kenaikan BI Rate Jadi 6% Dapat Pengaruhi Pergerakan RoI",
+        "url": "https://keuangan.kontan.co.id/news/dapen-btn-nilai-kenaikan-bi-rate-jadi-6-dapat-pengaruhi-pergerakan-roi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-25T18:53:54+07:00",
+        "summary": "Kenaikan BI Rate menjadi 6% berpotensi menekan ROI dana pensiun dalam jangka pendek, meski membuka peluang imbal hasil investasi lebih tinggi.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      }
+    ]
+  }
+}
