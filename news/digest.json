@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-25T12:20+07:00",
+ "generated_for": "2026-11-25T22:43+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 514,
- "kept": 167,
- "dropped_noise": 3,
+ "scanned": 670,
+ "kept": 168,
+ "dropped_noise": 16,
  "items": [
   {
    "published": "2026-11-25T10:08+07:00",
@@ -81,6 +81,25 @@
    ],
    "also_in": [
     "kontan_keuangan"
+   ]
+  },
+  {
+   "published": "2026-11-25T15:01+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Pastikan Tak Delisting, CIMB Niaga Siapkan Aksi Korporasi Penuhi Free Float 15%",
+   "link": "https://keuangan.kontan.co.id/news/pastikan-tak-delisting-cimb-niaga-siapkan-aksi-korporasi-penuhi-free-float-15",
+   "score": 7,
+   "categories": [
+    "pasar",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
    ]
   },
   {
@@ -160,38 +179,91 @@
    "also_in": []
   },
   {
-   "published": "2026-11-24T08:54+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-25T20:20+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Usai MSCI - Presiden Bicara, Simak 5 Saham Pilihan Hari Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261124081410-17-787830/usai-msci--presiden-bicara-simak-5-saham-pilihan-hari-ini",
-   "score": 7,
+   "title": "Tertekan MSCI, Indef Perkirakan Rupiah di Level 19.100 pada 2027",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128909/tertekan-msci-indef-perkirakan-rupiah-di-level-19-100-pada-2027",
+   "score": 6,
    "categories": [
     "kebijakan",
-    "pasar"
+    "kurs"
    ],
    "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
+   "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-24T07:40+07:00",
+   "published": "2026-11-25T17:10+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Arah IHSG di Tengah Sentimen MSCI hingga Cawapres",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128673/arah-ihsg-di-tengah-sentimen-msci-hingga-cawapres",
-   "score": 7,
+   "title": "Pakar: Kenaikan BI Rate Tak Mampu Bendung Pelemahan Rupiah",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128887/pakar-kenaikan-bi-rate-tak-mampu-bendung-pelemahan-rupiah",
+   "score": 6,
    "categories": [
     "kebijakan",
-    "pasar"
+    "kurs"
    ],
    "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
+   "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-25T16:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Bantah Mau Delisting, CIMB Niaga (BNGA) Siapkan Aksi Korporasi",
+   "link": "https://www.cnbcindonesia.com/market/20261125144645-17-788375/bantah-mau-delisting-cimb-niaga--bnga--siapkan-aksi-korporasi",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BNGA"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
+   ]
+  },
+  {
+   "published": "2026-11-25T15:13+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Sentimen MSCI Masih Panas, Rupiah Anjlok ke Rp 18.300 per USD",
+   "link": "https://www.cnbcindonesia.com/market/20261125144914-19-788377/video-sentimen-msci-masih-panas-rupiah-anjlok-ke-rp-18300-per-usd",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-25T13:20+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Laba Bersih Telkom (TLKM) Jadi Rp9,96 Triliun Semester I-2026",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128852/laba-bersih-telkom-tlkm-jadi-rp9-96-triliun-semester-i-2026",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "TLKM"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-11-25T11:02+07:00",
@@ -206,6 +278,27 @@
    ],
    "tickers": [
     "BBRI"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-25T11:00+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Telkom (TLKM) Cetak Laba Rp9,96 T di Semester I-2026",
+   "link": "https://www.cnbcindonesia.com/market/20261125105610-17-788215/telkom--tlkm--cetak-laba-rp996-t-di-semester-i-2026",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "TLKM"
    ],
    "flags": [
     "terkonfirmasi"
@@ -347,81 +440,6 @@
    "tier": 3,
    "title": "IHSG Balik Arah Jadi Merah, Terbeban Sentimen MSCI",
    "link": "https://www.bloombergtechnoz.com/detail-news/128705/ihsg-balik-arah-jadi-merah-terbeban-sentimen-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-24T11:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ekspektasi Suku Bunga Topang Penguatan Surat Utang Tenor Panjang",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128703/ekspektasi-suku-bunga-topang-penguatan-surat-utang-tenor-panjang",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-24T10:50+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "OJK Akan Umumkan Tersangka Manipulasi Saham Tiap 2 Pekan",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128699/ojk-akan-umumkan-tersangka-manipulasi-saham-tiap-2-pekan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-24T09:48+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ekonom: Tak Cuma BI, Menkeu Dkk Harus Bergerak Kuatkan Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128691/ekonom-tak-cuma-bi-menkeu-dkk-harus-bergerak-kuatkan-rupiah",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-24T09:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Sanksi 1.011 Pelanggar Pasar Modal, Buru Pelaku Baru Tiap 2 Pekan",
-   "link": "https://www.cnbcindonesia.com/market/20261124071059-17-787820/ojk-sanksi-1011-pelanggar-pasar-modal-buru-pelaku-baru-tiap-2-pekan",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-24T09:15+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Kabar Baik!, OJK Siapkan Pengembalian Dana Korban Manipulasi Saham",
-   "link": "https://www.cnbcindonesia.com/market/20261124070551-17-787819/kabar-baik-ojk-siapkan-pengembalian-dana-korban-manipulasi-saham",
    "score": 6,
    "categories": [
     "kebijakan",
