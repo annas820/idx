@@ -1,12 +1,31 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-25T05:45+07:00",
+ "generated_for": "2026-11-25T12:20+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 462,
- "kept": 146,
- "dropped_noise": 4,
+ "scanned": 514,
+ "kept": 167,
+ "dropped_noise": 3,
  "items": [
+  {
+   "published": "2026-11-25T10:08+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Sanksi 4 Pelaku Manipulasi HOMI, Intip Sosok Pengendali Emiten Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261125095909-17-788193/ojk-sanksi-4-pelaku-manipulasi-homi-intip-sosok-pengendali-emiten-ini",
+   "score": 11,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "HOMI"
+   ],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-24T14:16+07:00",
    "source": "cnbc_indonesia_market",
@@ -175,6 +194,75 @@
    "also_in": []
   },
   {
+   "published": "2026-11-25T11:02+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "Kredit Konsumer BRI Tumbuh 9% Jadi Rp 242,9 Triliun per Kuartal III-2026",
+   "link": "https://keuangan.kontan.co.id/news/kredit-konsumer-bri-tumbuh-9-jadi-rp-2429-triliun-per-kuartal-iii-2026",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "emiten"
+   ],
+   "tickers": [
+    "BBRI"
+   ],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
+   "published": "2026-11-25T09:53+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Penyebab Harga Emas Antam Turun & Buyback Anjlok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128811/penyebab-harga-emas-antam-turun-buyback-anjlok",
+   "score": 6,
+   "categories": [
+    "korporasi",
+    "komoditas",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-25T08:20+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "OJK Jatuhkan Sanksi 10 Kasus Pasar Modal, Ini Daftarnya",
+   "link": "https://www.cnbcindonesia.com/market/20261125071004-17-788132/ojk-jatuhkan-sanksi-10-kasus-pasar-modal-ini-daftarnya",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-25T06:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Mayoritas Dewan Regional The Fed Dorong Kenaikan Suku Bunga",
+   "link": "https://www.bloombergtechnoz.com/detail-news/128791/mayoritas-dewan-regional-the-fed-dorong-kenaikan-suku-bunga",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "global"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
    "published": "2026-11-24T17:25+07:00",
    "source": "kontan_investasi",
    "tier": 3,
@@ -338,81 +426,6 @@
    "categories": [
     "kebijakan",
     "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-24T07:59+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "MSCI Buka Ruang Kompromi, Net Sell Asing Tetap Tinggi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128678/msci-buka-ruang-kompromi-net-sell-asing-tetap-tinggi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-24T07:59+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Setelah Pertemuan Dengan MSCI, Net Sell Asing Tetap Tinggi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128678/setelah-pertemuan-dengan-msci-net-sell-asing-tetap-tinggi",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-24T07:00+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Williams The Fed Buka Peluang Kenaikan Suku Bunga Beruntun",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128669/williams-the-fed-buka-peluang-kenaikan-suku-bunga-beruntun",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T18:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Pasar Sambut Baik Dialog CEO MSCI & Presiden Prabowo, IHSG Hijau",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128650/pasar-sambut-baik-dialog-ceo-msci-presiden-prabowo-ihsg-hijau",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-23T17:56+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BI Rate Naik Jadi 6%, Begini Respons Gadai ValueMax Soal Tarif Gadai",
-   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-jadi-6-begini-respons-gadai-valuemax-soal-tarif-gadai",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
    ],
    "tickers": [],
    "flags": [],
