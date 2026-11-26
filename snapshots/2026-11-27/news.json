@@ -1,0 +1,283 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-26T19:43:49Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Akulaku Finance Gandeng Bank Jago Perluas Pembiayaan Digital",
+        "url": "https://keuangan.kontan.co.id/news/akulaku-finance-gandeng-bank-jago-perluas-pembiayaan-digital",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T22:31:00+07:00",
+        "summary": "Akulaku Finance menggandeng Bank Jago untuk memperluas akses pembiayaan digital bagi masyarakat melalui fasilitas pendanaan executing",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Setelah Delisting, Simak Langkah Berikutnya dari Bank SMBC Indonesia",
+        "url": "https://keuangan.kontan.co.id/news/setelah-delisting-simak-langkah-berikutnya-dari-bank-smbc-indonesia",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T22:27:36+07:00",
+        "summary": "SMBC Indonesia akan terus menjalankan rencana kerja jangka panjang untuk mendorong pertumbuhan berkelanjutan",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": [
+          "delisting"
+        ]
+      },
+      {
+        "title": "Tak Hanya Rawat Inap, Asuransi Kesehatan Tanggung ODC",
+        "url": "https://keuangan.kontan.co.id/news/tak-hanya-rawat-inap-asuransi-kesehatan-tanggung-odc",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T21:55:41+07:00",
+        "summary": "Bedah sehari tanpa rawat inap tetap membutuhkan perlindungan finansial. Pastikan asuransi kesehatan mencakup manfaat ODC.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Hasil Lelang Laris Manis, Pemerintah RI Raup Dana Segar Rp35 Triliun",
+        "url": "https://www.cnbcindonesia.com/market/20261126152333-17-788789/hasil-lelang-laris-manis-pemerintah-ri-raup-dana-segar-rp35-triliun",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-26T20:50:00+07:00",
+        "summary": "Total penawaran yang masuk dalam lelang 9 seri surat utang negara pada 24 November 2026 sebesar Rp 70 triliun",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ajaib Group Gandeng SMBC Indonesia dalam Pengembangan Ekosistem Investasi Digital",
+        "url": "https://keuangan.kontan.co.id/news/ajaib-group-gandeng-smbc-indonesia-dalam-pengembangan-ekosistem-investasi-digital",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T20:28:49+07:00",
+        "summary": "Ajaib Group menggandeng SMBC Indonesia dalam mengembangkan ekosistem investasi digital yang lebih terintegrasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Fokus Segmen Konsumtif, Samir Sebut Pembiayaan Digunakan Borrower untuk Modal Usaha",
+        "url": "https://keuangan.kontan.co.id/news/fokus-segmen-konsumtif-samir-sebut-pembiayaan-digunakan-borrower-untuk-modal-usaha",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T20:26:11+07:00",
+        "summary": "Fokus segmen konsumtif atau multiguna, Samir menyebut pembiayaan juga digunakan borrower untuk modal usaha.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Perang Dingin Dimulai! Negara Arab Terancam Konflik hingga 2029",
+        "url": "https://www.cnbcindonesia.com/research/20261126164524-128-788824/perang-dingin-dimulai-negara-arab-terancam-konflik-hingga-2029",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-26T20:20:19+07:00",
+        "summary": "Konflik Amerika Serikat (AS) dan Iran berpotensi berlangsung hingga 2029.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Ini Penyebab Turunnya Porsi Pembiayaan Produktif Fintech Lending",
+        "url": "https://keuangan.kontan.co.id/news/ini-penyebab-turunnya-porsi-pembiayaan-produktif-fintech-lending",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T20:00:02+07:00",
+        "summary": "Porsi pembiayaan produktif fintech lending baru 33,14% per September 2026. Tingginya risiko usaha menjadi salah satu penyebabnya.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BFI Finance Siapkan 70% Laba 2026 untuk Dividen, Ini Perkiraan Hak Investor",
+        "url": "https://keuangan.kontan.co.id/news/bfi-finance-siapkan-70-laba-2026-untuk-dividen-ini-perkiraan-hak-investor",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T19:38:40+07:00",
+        "summary": "BFI Finance (BFIN) menargetkan pembagian dividen 70% dari laba bersih 2026, didukung pertumbuhan laba dan kualitas pembiayaan yang terjaga.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "laba",
+          "pertumbuhan",
+          "dividen"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Bukan Cuma di Bumi, AS-China Kini Berebut Takhta Penguasa Luar Angkasa",
+        "url": "https://www.cnbcindonesia.com/research/20261126161651-128-788822/bukan-cuma-di-bumi-as-china-kini-berebut-takhta-penguasa-luar-angkasa",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-26T19:30:27+07:00",
+        "summary": "Persaingan negara-negara besar untuk menguasai teknologi luar angkasa semakin memanas.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BTN Bayar Bunga Obligasi Rp 5,72 Miliar, Ini Rinciannya",
+        "url": "https://keuangan.kontan.co.id/news/btn-bayar-bunga-obligasi-rp-572-miliar-ini-rinciannya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T19:25:29+07:00",
+        "summary": "BTN membayarkan bunga obligasi Seri B senilai Rp 5,72 miliar secara bersih kepada 22 pemegang obligasi.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "SMBC Indonesia Dukung UMKM Tembus Pasar Ekspor Lewat Daya Fest",
+        "url": "https://keuangan.kontan.co.id/news/smbc-indonesia-dukung-umkm-tembus-pasar-ekspor-lewat-daya-fest",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T19:17:44+07:00",
+        "summary": "SMBC Indonesia bantu UMKM bangkit dari dampak bencana sekaligus membuka peluang bagi produk lokal untuk menembus pasar Jepang",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank Kecil Perkuat Dana Murah untuk Menjaga Likuiditas",
+        "url": "https://keuangan.kontan.co.id/news/bank-kecil-perkuat-dana-murah-untuk-menjaga-likuiditas",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T18:52:44+07:00",
+        "summary": "Bank kecil memperkuat dana murah untuk menjaga likuiditas dan lakukan efisiensi biaya dana di tengah kenaikan suku bung acuan dan persaingan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "UKU: Prospek Pembiayaan Sektor Produktif Tetap Berpeluang Tumbuh ke Depannya",
+        "url": "https://keuangan.kontan.co.id/news/uku-prospek-pembiayaan-sektor-produktif-tetap-berpeluang-tumbuh-ke-depannya",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T18:50:55+07:00",
+        "summary": "Teknologi Merlin Sejahtera (UKU) melihat prospek pembiayaan ke sektor produktif tetap terbuka untuk bertumbuh ke depannya.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "tumbuh"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "BI Rate Naik, Bank Perbesar Penempatan di SBN di Tengah Seleksi Kredit",
+        "url": "https://keuangan.kontan.co.id/news/bi-rate-naik-bank-perbesar-penempatan-di-sbn-di-tengah-seleksi-kredit",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T18:49:32+07:00",
+        "summary": "Kenaikan BI Rate dorong perbankan kerek penempatan dana di SBN & SRBI, meski penyaluran kredit tetap tumbuh dengan selektivitas lebih tinggi.&#8203;",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "naik",
+          "tumbuh",
+          "kenaikan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "1 dari 3 Motor Baru di Vietnam Kini Listrik, Honda-Yamaha Terancam",
+        "url": "https://www.cnbcindonesia.com/research/20261125130232-128-788312/1-dari-3-motor-baru-di-vietnam-kini-listrik-honda-yamaha-terancam",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-26T18:30:24+07:00",
+        "summary": "Jutaan sepeda motor memenuhi jalanan Vietnam setiap hari.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bank NTT Integrasikan Virtual Account ke Mbizmarket",
+        "url": "https://keuangan.kontan.co.id/news/bank-ntt-integrasikan-virtual-account-ke-mbizmarket",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T18:28:33+07:00",
+        "summary": "Bank NTT menggandeng Mbizmarket untuk memperluas pembayaran digital sekaligus membuka peluang pembiayaan UMKM",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "OJK Cabut Izin Usaha Koperasi LKM Agrobisnis Subur Lestari Sejahtera",
+        "url": "https://keuangan.kontan.co.id/news/ojk-cabut-izin-usaha-koperasi-lkm-agrobisnis-subur-lestari-sejahtera",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T18:21:07+07:00",
+        "summary": "OJK mencabut izin usaha koperasi LKM Agrobisnis Subur Lestari Sejahtera di Desa Suru, Kecamatan Geyer, Kabupaten Grobogan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Porsi Pembiayaan Fintech Lending Sektor Produktif Menurun, Ini Kata AFPI",
+        "url": "https://keuangan.kontan.co.id/news/porsi-pembiayaan-fintech-lending-sektor-produktif-menurun-ini-kata-afpi",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T18:19:57+07:00",
+        "summary": "Porsi pembiayaan produktif fintech lending baru 33,14% per September 2026, masih jauh dari target OJK sebesar 40%&ndash;50%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "BFI Finance Perluas Kemitraan Digital untuk Garap Pasar Pembiayaan pada 2027",
+        "url": "https://keuangan.kontan.co.id/news/bfi-finance-perluas-kemitraan-digital-untuk-garap-pasar-pembiayaan-pada-2027",
+        "source": "kontan/keuangan",
+        "published": "2026-11-26T18:18:22+07:00",
+        "summary": "BFI Finance memperluas kemitraan digital untuk menggarap pasar pembiayaan pada 2027 lewat pengembangan produk berbasis aset atau refinancing.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
