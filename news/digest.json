@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-26T16:20+07:00",
+ "generated_for": "2026-11-26T22:31+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 654,
- "kept": 161,
- "dropped_noise": 25,
+ "scanned": 696,
+ "kept": 163,
+ "dropped_noise": 27,
  "items": [
   {
    "published": "2026-11-26T08:10+07:00",
@@ -25,25 +25,6 @@
    "also_in": []
   },
   {
-   "published": "2026-11-25T10:08+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Sanksi 4 Pelaku Manipulasi HOMI, Intip Sosok Pengendali Emiten Ini",
-   "link": "https://www.cnbcindonesia.com/market/20261125095909-17-788193/ojk-sanksi-4-pelaku-manipulasi-homi-intip-sosok-pengendali-emiten-ini",
-   "score": 11,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "HOMI"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
    "published": "2026-11-26T08:45+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
@@ -59,6 +40,22 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-26T17:00+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Bos BI Akui Efek The Fed dan MSCI Bikin Rupiah Terlemah Sepanjang Masa",
+   "link": "https://www.cnbcindonesia.com/news/20261126165324-4-788823/bos-bi-akui-efek-the-fed-dan-msci-bikin-rupiah-terlemah-sepanjang-masa",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -123,6 +120,111 @@
    "also_in": [
     "cnbc_indonesia_market"
    ]
+  },
+  {
+   "published": "2026-11-26T20:40+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Destry Soal Pelemahan Rupiah: Sentimen Global dan MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129047/destry-soal-pelemahan-rupiah-sentimen-global-dan-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-26T20:15+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Danantara Perkirakan Jadi Pemegang Saham BEI Semester I - 2027",
+   "link": "https://www.cnbcindonesia.com/news/20261126190747-8-788878/danantara-perkirakan-jadi-pemegang-saham-bei-semester-i--2027",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-26T18:49+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "BI Rate Naik, Bank Perbesar Penempatan di SBN di Tengah Seleksi Kredit",
+   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-bank-perbesar-penempatan-di-sbn-di-tengah-seleksi-kredit",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-26T17:51+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "BEI Perkuat Pengawasan Perdagangan Saham dan Transparansi",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129041/bei-perkuat-pengawasan-perdagangan-saham-dan-transparansi",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-26T17:08+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "BI Ungkap Inflow Dana Asing Tembus US$1 M, tapi Rupiah Masih Tertekan",
+   "link": "https://www.cnbcindonesia.com/news/20261126170339-4-788828/bi-ungkap-inflow-dana-asing-tembus-us-1-m-tapi-rupiah-masih-tertekan",
+   "score": 6,
+   "categories": [
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-26T16:35+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Menkeu Bongkar Biang Kerok yang Buat Rupiah Anjlok Dekati Rp18.400/US$",
+   "link": "https://www.cnbcindonesia.com/market/20261126152830-17-788792/menkeu-bongkar-biang-kerok-yang-buat-rupiah-anjlok-dekati-rp18400-us-",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-26T16:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ekonom: Rupiah Jebol, Peluang BI Naikkan Suku Bunga Terbuka",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129033/ekonom-rupiah-jebol-peluang-bi-naikkan-suku-bunga-terbuka",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-26T15:10+07:00",
@@ -330,118 +432,6 @@
    "also_in": [
     "bloomberg_technoz"
    ]
-  },
-  {
-   "published": "2026-11-25T09:53+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Penyebab Harga Emas Antam Turun & Buyback Anjlok",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128811/penyebab-harga-emas-antam-turun-buyback-anjlok",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
-   ],
-   "tickers": [
-    "ANTM"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-25T08:20+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "OJK Jatuhkan Sanksi 10 Kasus Pasar Modal, Ini Daftarnya",
-   "link": "https://www.cnbcindonesia.com/market/20261125071004-17-788132/ojk-jatuhkan-sanksi-10-kasus-pasar-modal-ini-daftarnya",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-25T06:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Mayoritas Dewan Regional The Fed Dorong Kenaikan Suku Bunga",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128791/mayoritas-dewan-regional-the-fed-dorong-kenaikan-suku-bunga",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "global"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T15:58+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "BEI Ungkap Nasib IPO Andalan Artha (ANDA), Meleset dari Jadwal",
-   "link": "https://www.bloombergtechnoz.com/detail-news/129029/bei-ungkap-nasib-ipo-andalan-artha-anda-meleset-dari-jadwal",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T14:34+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Sah! UNVR Setujui Pembatalan Saham Treasuri di RUPSLB",
-   "link": "https://www.cnbcindonesia.com/market/20261126142905-17-788757/sah-unvr-setujui-pembatalan-saham-treasuri-di-rupslb",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "UNVR"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T12:22+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BSI (BRIS) Terbitkan 6,8 Miliar Saham Tanpa Pembeli Siaga, Dilusi Maksimal 12,85%",
-   "link": "https://keuangan.kontan.co.id/news/bsi-bris-terbitkan-68-miliar-saham-tanpa-pembeli-siaga-dilusi-maksimal-1285",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
-   ],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T07:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Proyeksi Laba Danantara (DIM) 2027 dan Skenario Jika IHSG Sentuh 6.000",
-   "link": "https://www.cnbcindonesia.com/market/20261125222503-17-788529/proyeksi-laba-danantara--dim--2027-dan-skenario-jika-ihsg-sentuh-6000",
-   "score": 5,
-   "categories": [
-    "pasar",
-    "korporasi"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
   }
  ],
  "watchlist_hits": []
