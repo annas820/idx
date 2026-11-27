@@ -1,0 +1,288 @@
+{
+  "schema": "idx.news.v1",
+  "provider": "news",
+  "fetched_at": "2026-11-27T19:33:06Z",
+  "cached": false,
+  "stale": false,
+  "warnings": [
+    "kontan/investasi: HTTP 403",
+    "kontan/industri: HTTP 403"
+  ],
+  "data": {
+    "symbol": null,
+    "matched_name": null,
+    "sources": [
+      "kontan/investasi",
+      "kontan/keuangan",
+      "kontan/industri",
+      "cnbcindonesia/market",
+      "cnbcindonesia/research"
+    ],
+    "scanned": 225,
+    "company_matches": 0,
+    "company_only": false,
+    "items": [
+      {
+        "title": "Demi Selamatkan Status Bursa RI, OJK Sudah 20 Kali Temui MSCI",
+        "url": "https://www.cnbcindonesia.com/market/20261128000155-17-789260/demi-selamatkan-status-bursa-ri-ojk-sudah-20-kali-temui-msci",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-28T00:03:54+07:00",
+        "summary": "OJK intensif berkomunikasi dengan MSCI untuk reformasi pasar modal Indonesia. Fokus pada transparansi, tata kelola, dan penegakan hukum yang lebih kuat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Bos BSI (BRIS) Ungkap Kisi-Kisi Kinerja 2027",
+        "url": "https://www.cnbcindonesia.com/market/20261127232024-17-789257/bos-bsi--bris--ungkap-kisi-kisi-kinerja-2027",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T23:27:10+07:00",
+        "summary": "Direktur Utama BSI, Anggoro Eko Cahyo, proyeksikan pertumbuhan pembiayaan dobel digit hingga 2027, meski likuiditas tetap ketat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "3 Orang Ditahan di Kasus Goreng Saham DSSA, Ini Kata OJK",
+        "url": "https://www.cnbcindonesia.com/market/20261127225210-17-789255/3-orang-ditahan-di-kasus-goreng-saham-dssa-ini-kata-ojk",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T22:54:11+07:00",
+        "summary": "OJK apresiasi penegakan hukum oleh Bareskrim yang menetapkan tiga tersangka dalam kasus manipulasi saham DSSA. Diharapkan pengusutan terus berlanjut.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "apresiasi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Prabowo Minta Bankir ke Lapangan, OJK: Sejalan Perluasan Kredit Daerah",
+        "url": "https://www.cnbcindonesia.com/market/20261127223600-17-789253/prabowo-minta-bankir-ke-lapangan-ojk-sejalan-perluasan-kredit-daerah",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T22:38:17+07:00",
+        "summary": "OJK merespons pernyataan Presiden Prabowo agar bankir turun ke lapangan. Fokus pada perekonomian masyarakat, terutama sektor pertanian",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Ramai Isu Gagal Tarik Dana, OJK: Masalah Persepsi, Bukan Solvabilitas",
+        "url": "https://www.cnbcindonesia.com/market/20261127223208-17-789252/ramai-isu-gagal-tarik-dana-ojk-masalah-persepsi-bukan-solvabilitas",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T22:35:22+07:00",
+        "summary": "OJK menanggapi isu penarikan dana di bank kecil, menegaskan masalah terkait persepsi, bukan solvabilitas.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Menkeu Suahasil Ungkap Proses Pencairan BSU Rp900,000: Segera Cair",
+        "url": "https://www.cnbcindonesia.com/market/20261127212718-17-789245/menkeu-suahasil-ungkap-proses-pencairan-bsu-rp900000-segera-cair",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T21:28:38+07:00",
+        "summary": "Menteri Keuangan Suahasil Nazara memastikan, pencairan bantuan subsidi upah (BSU) dari pemerintah senilai Rp900 ribu akan segera cair.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Kredit Multiguna Perbankan Melambat, Daya Beli dan Kenaikan Suku Bunga Jadi Tantangan",
+        "url": "https://keuangan.kontan.co.id/news/kredit-multiguna-perbankan-melambat-daya-beli-dan-kenaikan-suku-bunga-jadi-tantangan",
+        "source": "kontan/keuangan",
+        "published": "2026-11-27T21:14:31+07:00",
+        "summary": "Pada Oktober 2026, penyaluran kredit multiguna tercatat sebesar Rp 1.438,1 triliun atau tumbuh 6,2% secara tahunan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.5,
+        "positive_terms": [
+          "tumbuh",
+          "kenaikan",
+          "beli"
+        ],
+        "negative_terms": [
+          "melambat"
+        ]
+      },
+      {
+        "title": "Singgung Pelanggaran Pasar Modal, Prabowo: 60 Orang Diperiksa",
+        "url": "https://www.cnbcindonesia.com/market/20261127210416-17-789242/singgung-pelanggaran-pasar-modal-prabowo-60-orang-diperiksa",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T21:07:01+07:00",
+        "summary": "Presiden Prabowo menegaskan tindakan tegas terhadap praktik manipulasi saham di Indonesia. Puluhan pelaku sedang diperiksa.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Prabowo Apresiasi Pimpinan BI, Wujudkan Kerja Sama yang Sangat Baik",
+        "url": "https://www.cnbcindonesia.com/market/20261127205053-17-789240/prabowo-apresiasi-pimpinan-bi-wujudkan-kerja-sama-yang-sangat-baik",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T21:04:22+07:00",
+        "summary": "Prabowo mengapresiasi BI atas upayanya dalam menjaga stabilitas sistem keuangan serta mendorong pertumbuhan ekonomi melalui sinergi dengan pemerintah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "pertumbuhan",
+          "apresiasi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Prabowo Desak LKPP Jadi Badan Pengadaan, Ternyata Alasannya!",
+        "url": "https://www.cnbcindonesia.com/market/20261127202759-17-789231/prabowo-desak-lkpp-jadi-badan-pengadaan-ternyata-alasannya",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T21:00:28+07:00",
+        "summary": "Presiden Prabowo Subianto dorong pembentukan lembaga pengadaan barang dan jasa pemerintah untuk efisiensi belanja APBN yang mencapai 30%.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Presiden Prabowo Kritik Kredit Himbara Hanya Berputar di Debitur yang Sama",
+        "url": "https://keuangan.kontan.co.id/news/presiden-prabowo-kritik-kredit-himbara-hanya-berputar-di-debitur-yang-sama",
+        "source": "kontan/keuangan",
+        "published": "2026-11-27T20:59:31+07:00",
+        "summary": "Prabowo menilai penyaluran kredit Himbara masih didominasi debitur yang sama dan meminta bankir memperluas pembiayaan ke sektor riil.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Rokok Kalahkan Batu Bara! Kok Bisa Setoran ke Negara Lebih Jumbo?",
+        "url": "https://www.cnbcindonesia.com/research/20261127191304-128-789202/rokok-kalahkan-batu-bara-kok-bisa-setoran-ke-negara-lebih-jumbo",
+        "source": "cnbcindonesia/research",
+        "published": "2026-11-27T20:50:32+07:00",
+        "summary": "Organisasi Kerja Sama dan Pembangunan Ekonomi (OECD) mendorong Indonesia memperluas pungutan cukai,",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Momen Prabowo Berapi-Api Beri Pesan ke Bankir: Rakyat Kita Tidak Bodoh",
+        "url": "https://www.cnbcindonesia.com/market/20261127203900-17-789235/momen-prabowo-berapi-api-beri-pesan-ke-bankir-rakyat-kita-tidak-bodoh",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T20:47:35+07:00",
+        "summary": "Presiden Prabowo Subianto memberikan pesan khusus kepada para bankir di bank-bank BUMN, supaya mengelola dengan baik uang milik rakyat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Prabowo: Sudah Kaya Masih Main Goreng Saham, Rakyat Kecil Jadi Korban",
+        "url": "https://www.cnbcindonesia.com/market/20261127204333-17-789238/prabowo-sudah-kaya-masih-main-goreng-saham-rakyat-kecil-jadi-korban",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T20:46:49+07:00",
+        "summary": "Presiden Prabowo Subianto soroti praktik goreng saham yang merugikan masyarakat kecil. Ia menekankan pentingnya pengawasan pasar modal.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Prabowo Minta Bankir BUMN Lebih Membumi, Turun ke Sawah-Lihat Nelayan",
+        "url": "https://www.cnbcindonesia.com/market/20261127204128-17-789236/prabowo-minta-bankir-bumn-lebih-membumi-turun-ke-sawah-lihat-nelayan",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T20:44:42+07:00",
+        "summary": "Presiden Prabowo Subianto mendorong bankir BUMN untuk turun ke lapangan.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "turun"
+        ]
+      },
+      {
+        "title": "Prabowo: Karhutla Buatan Manusia, Saya Periksa Ratusan Korporasi!",
+        "url": "https://www.cnbcindonesia.com/market/20261127202926-17-789229/prabowo-karhutla-buatan-manusia-saya-periksa-ratusan-korporasi",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T20:32:32+07:00",
+        "summary": "Presiden Prabowo Subianto secara tegas menyampaikan Kebakaran Hutan dan Lahan (Karhutla) adalah buatan manusia.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Tiga Asuransi BUMN Merger, Bagaimana Nasib Pegawai?",
+        "url": "https://www.cnbcindonesia.com/market/20261127192010-17-789203/tiga-asuransi-bumn-merger-bagaimana-nasib-pegawai",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T20:30:12+07:00",
+        "summary": "Tiga perusahaan asuransi, Jasindo, BRINS, dan Jasaraharja Putera, rencanakan merger efektif 1 Januari 2027.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      },
+      {
+        "title": "Pesan Prabowo ke Bank BUMN: Jaga Uang Rakyat!",
+        "url": "https://www.cnbcindonesia.com/market/20261127202621-17-789228/pesan-prabowo-ke-bank-bumn-jaga-uang-rakyat",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T20:28:37+07:00",
+        "summary": "Presiden Prabowo Subianto mengingatkan bank-bank milik negara untuk bersih dari korupsi dan menjaga uang rakyat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": -1.0,
+        "positive_terms": [],
+        "negative_terms": [
+          "korupsi"
+        ]
+      },
+      {
+        "title": "Pesan Prabowo Buat BI: Harus Independen, Tapi Jaga Kepentingan Bangsa",
+        "url": "https://www.cnbcindonesia.com/market/20261127201138-17-789223/pesan-prabowo-buat-bi-harus-independen-tapi-jaga-kepentingan-bangsa",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T20:14:33+07:00",
+        "summary": "Presiden Prabowo Subianto menekankan pentingnya independensi Bank Indonesia sambil menjaga kepentingan bangsa. Dia apresiasi sinergi BI dan pemerintah.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 1.0,
+        "positive_terms": [
+          "apresiasi"
+        ],
+        "negative_terms": []
+      },
+      {
+        "title": "Prabowo: SDA Kita, Harus Kita yang Kelola Sendiri!",
+        "url": "https://www.cnbcindonesia.com/market/20261127200832-17-789222/prabowo-sda-kita-harus-kita-yang-kelola-sendiri",
+        "source": "cnbcindonesia/market",
+        "published": "2026-11-27T20:11:31+07:00",
+        "summary": "Presiden Prabowo Subianto menegaskan Sumber Daya Alam (SDA) di Indonesia harus dikelola sendiri agar mampu terciptanya kesejahteraan rakyat.",
+        "matched_by": "all",
+        "scope": "market",
+        "sentiment": 0.0,
+        "positive_terms": [],
+        "negative_terms": []
+      }
+    ]
+  }
+}
