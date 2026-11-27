@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-27T18:55+07:00",
+ "generated_for": "2026-11-28T00:03+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 619,
- "kept": 166,
- "dropped_noise": 19,
+ "scanned": 580,
+ "kept": 153,
+ "dropped_noise": 8,
  "items": [
   {
    "published": "2026-11-27T05:47+07:00",
@@ -22,41 +22,6 @@
    ],
    "tickers": [],
    "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T08:10+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "IHSG Berpotensi Lanjut Melemah: Tekanan Rupiah, Tarif AS, & MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128935/ihsg-berpotensi-lanjut-melemah-tekanan-rupiah-tarif-as-msci",
-   "score": 12,
-   "categories": [
-    "kebijakan",
-    "global",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T08:45+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Prediksi IHSG Hari Ini Kala Rupiah Tertekan dan Ancaman Tarif AS",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128940/prediksi-ihsg-hari-ini-kala-rupiah-tertekan-dan-ancaman-tarif-as",
-   "score": 10,
-   "categories": [
-    "global",
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [
-    "petunjuk"
-   ],
    "also_in": []
   },
   {
@@ -130,26 +95,22 @@
    ]
   },
   {
-   "published": "2026-11-26T10:05+07:00",
+   "published": "2026-11-27T22:54+07:00",
    "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "Rights Issue, BSI (BRIS) Mau Terbitkan 6,8 Miliar Saham",
-   "link": "https://www.cnbcindonesia.com/market/20261126094836-17-788595/rights-issue-bsi--bris--mau-terbitkan-68-miliar-saham",
-   "score": 9,
+   "title": "3 Orang Ditahan di Kasus Goreng Saham DSSA, Ini Kata OJK",
+   "link": "https://www.cnbcindonesia.com/market/20261127225210-17-789255/3-orang-ditahan-di-kasus-goreng-saham-dssa-ini-kata-ojk",
+   "score": 8,
    "categories": [
+    "kebijakan",
     "pasar",
-    "korporasi",
     "emiten"
    ],
    "tickers": [
-    "BRIS"
+    "DSSA"
    ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "kontan_keuangan"
-   ]
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-27T10:00+07:00",
@@ -185,6 +146,21 @@
    "tickers": [
     "BBHI"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-28T00:03+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Demi Selamatkan Status Bursa RI, OJK Sudah 20 Kali Temui MSCI",
+   "link": "https://www.cnbcindonesia.com/market/20261128000155-17-789260/demi-selamatkan-status-bursa-ri-ojk-sudah-20-kali-temui-msci",
+   "score": 6,
+   "categories": [
+    "kebijakan",
+    "pasar"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
@@ -339,33 +315,30 @@
    "also_in": []
   },
   {
-   "published": "2026-11-26T09:33+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-27T21:46+07:00",
+   "source": "cnbc_indonesia_news",
    "tier": 3,
-   "title": "Harga Emas Antam Cuma Naik Rp2.000, Tapi Buyback 10 Kali Lipatnya",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128953/harga-emas-antam-cuma-naik-rp2-000-tapi-buyback-10-kali-lipatnya",
-   "score": 6,
+   "title": "Menkeu Suahasil Buka Suara soal Subsidi BBM Jadi Beban APBN",
+   "link": "https://www.cnbcindonesia.com/news/20261127213603-4-789248/menkeu-suahasil-buka-suara-soal-subsidi-bbm-jadi-beban-apbn",
+   "score": 5,
    "categories": [
-    "korporasi",
-    "komoditas",
-    "emiten"
+    "kebijakan",
+    "makro"
    ],
-   "tickers": [
-    "ANTM"
-   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-26T08:35+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-27T21:00+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Trump Tebar Tarif Baru, Bursa Asia Justru Kompak Menguat",
-   "link": "https://www.cnbcindonesia.com/market/20261126074200-17-788563/trump-tebar-tarif-baru-bursa-asia-justru-kompak-menguat",
-   "score": 6,
+   "title": "Pasokan Bahan Bakar Global Pulih, Laba Kilang Minyak Anjlok",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129145/pasokan-bahan-bakar-global-pulih-laba-kilang-minyak-anjlok",
+   "score": 5,
    "categories": [
     "global",
-    "pasar"
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
@@ -417,6 +390,21 @@
    "tickers": [
     "DSSA"
    ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-27T16:20+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: Trump Ancam Naikkan Tarif Impor China 40%, Ini Alasannya",
+   "link": "https://www.cnbcindonesia.com/news/20261127144329-8-789090/video-trump-ancam-naikkan-tarif-impor-china-40-ini-alasannya",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
    "flags": [],
    "also_in": []
   }
