@@ -1,12 +1,29 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-26T22:31+07:00",
+ "generated_for": "2026-11-27T09:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 696,
- "kept": 163,
- "dropped_noise": 27,
+ "scanned": 451,
+ "kept": 137,
+ "dropped_noise": 15,
  "items": [
+  {
+   "published": "2026-11-27T05:47+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "IHSG Dibayangi Pelemahan Rupiah, Harga Minyak, Hingga MSCI",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129054/ihsg-dibayangi-pelemahan-rupiah-harga-minyak-hingga-msci",
+   "score": 12,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar",
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
   {
    "published": "2026-11-26T08:10+07:00",
    "source": "bloomberg_technoz",
@@ -40,6 +57,22 @@
    "flags": [
     "petunjuk"
    ],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-27T09:30+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Data Free Float Tak Akurat, BEI Sanksi 5 Emitan Ini",
+   "link": "https://www.cnbcindonesia.com/market/20261127091911-17-788952/data-free-float-tak-akurat-bei-sanksi-5-emitan-ini",
+   "score": 9,
+   "categories": [
+    "kebijakan",
+    "global",
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [],
    "also_in": []
   },
   {
@@ -103,23 +136,19 @@
    ]
   },
   {
-   "published": "2026-11-25T15:01+07:00",
-   "source": "kontan_keuangan",
+   "published": "2026-11-27T06:21+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Pastikan Tak Delisting, CIMB Niaga Siapkan Aksi Korporasi Penuhi Free Float 15%",
-   "link": "https://keuangan.kontan.co.id/news/pastikan-tak-delisting-cimb-niaga-siapkan-aksi-korporasi-penuhi-free-float-15",
-   "score": 7,
+   "title": "Reli Teknologi Saham Asia, Proyeksi di Tengah Kenaikan Minyak",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129057/reli-teknologi-saham-asia-proyeksi-di-tengah-kenaikan-minyak",
+   "score": 6,
    "categories": [
-    "pasar",
-    "korporasi"
+    "global",
+    "pasar"
    ],
    "tickers": [],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
+   "flags": [],
+   "also_in": []
   },
   {
    "published": "2026-11-26T20:40+07:00",
@@ -305,133 +334,85 @@
    "also_in": []
   },
   {
-   "published": "2026-11-25T20:20+07:00",
+   "published": "2026-11-27T07:30+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Tertekan MSCI, Indef Perkirakan Rupiah di Level 19.100 pada 2027",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128909/tertekan-msci-indef-perkirakan-rupiah-di-level-19-100-pada-2027",
-   "score": 6,
+   "title": "Inflasi Tokyo Melonjak, Peluang Kenaikan Suku Bunga BOJ Menguat",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129063/inflasi-tokyo-melonjak-peluang-kenaikan-suku-bunga-boj-menguat",
+   "score": 5,
    "categories": [
     "kebijakan",
-    "kurs"
+    "makro"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-25T17:10+07:00",
+   "published": "2026-11-27T05:08+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Pakar: Kenaikan BI Rate Tak Mampu Bendung Pelemahan Rupiah",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128887/pakar-kenaikan-bi-rate-tak-mampu-bendung-pelemahan-rupiah",
-   "score": 6,
+   "title": "Investor Asing Diam-diam Borong Saham BBCA hingga ANTM",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129053/investor-asing-diam-diam-borong-saham-bbca-hingga-antm",
+   "score": 5,
    "categories": [
-    "kebijakan",
-    "kurs"
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "ANTM",
+    "BBCA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-26T20:27+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Lawan Ancaman Tarif Dagang 18% Trump, RI Mau Subsidi Bahan Baku Impor",
+   "link": "https://www.cnbcindonesia.com/news/20261126201500-4-788891/lawan-ancaman-tarif-dagang-18-trump-ri-mau-subsidi-bahan-baku-impor",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-25T16:35+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-26T18:50+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Bantah Mau Delisting, CIMB Niaga (BNGA) Siapkan Aksi Korporasi",
-   "link": "https://www.cnbcindonesia.com/market/20261125144645-17-788375/bantah-mau-delisting-cimb-niaga--bnga--siapkan-aksi-korporasi",
-   "score": 6,
+   "title": "BI Buka Suara Soal Kemungkinan Kenaikan BI Rate Akhir Tahun",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129044/bi-buka-suara-soal-kemungkinan-kenaikan-bi-rate-akhir-tahun",
+   "score": 5,
    "categories": [
-    "korporasi",
-    "emiten"
+    "kebijakan"
    ],
-   "tickers": [
-    "BNGA"
-   ],
+   "tickers": [],
    "flags": [
     "terkonfirmasi"
    ],
    "also_in": [
-    "kontan_keuangan"
+    "cnbc_indonesia_news"
    ]
   },
   {
-   "published": "2026-11-25T15:13+07:00",
-   "source": "cnbc_indonesia_market",
+   "published": "2026-11-26T18:00+07:00",
+   "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "Video: Sentimen MSCI Masih Panas, Rupiah Anjlok ke Rp 18.300 per USD",
-   "link": "https://www.cnbcindonesia.com/market/20261125144914-19-788377/video-sentimen-msci-masih-panas-rupiah-anjlok-ke-rp-18300-per-usd",
-   "score": 6,
+   "title": "Ekspor Minyak Rusia Tembus 3,65 Juta Bph, Pasokan Global Surplus",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129019/ekspor-minyak-rusia-tembus-3-65-juta-bph-pasokan-global-surplus",
+   "score": 5,
    "categories": [
-    "kebijakan",
-    "kurs"
+    "global",
+    "komoditas"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-25T13:20+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Laba Bersih Telkom (TLKM) Jadi Rp9,96 Triliun Semester I-2026",
-   "link": "https://www.bloombergtechnoz.com/detail-news/128852/laba-bersih-telkom-tlkm-jadi-rp9-96-triliun-semester-i-2026",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "TLKM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
-  },
-  {
-   "published": "2026-11-25T11:02+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "Kredit Konsumer BRI Tumbuh 9% Jadi Rp 242,9 Triliun per Kuartal III-2026",
-   "link": "https://keuangan.kontan.co.id/news/kredit-konsumer-bri-tumbuh-9-jadi-rp-2429-triliun-per-kuartal-iii-2026",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BBRI"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
-  },
-  {
-   "published": "2026-11-25T11:00+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Telkom (TLKM) Cetak Laba Rp9,96 T di Semester I-2026",
-   "link": "https://www.cnbcindonesia.com/market/20261125105610-17-788215/telkom--tlkm--cetak-laba-rp996-t-di-semester-i-2026",
-   "score": 6,
-   "categories": [
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "TLKM"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "bloomberg_technoz"
-   ]
   }
  ],
  "watchlist_hits": []
