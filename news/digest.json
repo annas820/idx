@@ -1,18 +1,18 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-28T10:06+07:00",
+ "generated_for": "2026-11-28T19:40+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 356,
- "kept": 98,
- "dropped_noise": 6,
+ "scanned": 408,
+ "kept": 99,
+ "dropped_noise": 9,
  "items": [
   {
-   "published": "2026-11-27T05:47+07:00",
-   "source": "bloomberg_technoz",
+   "published": "2026-11-28T16:00+07:00",
+   "source": "cnbc_indonesia_market",
    "tier": 3,
-   "title": "IHSG Dibayangi Pelemahan Rupiah, Harga Minyak, Hingga MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/129054/ihsg-dibayangi-pelemahan-rupiah-harga-minyak-hingga-msci",
+   "title": "Video: Jika Suku Bunga the Fed Naik, Efek Ini Dirasakan IHSG dan Rupiah",
+   "link": "https://www.cnbcindonesia.com/market/20261125105701-19-788221/video-jika-suku-bunga-the-fed-naik-efek-ini-dirasakan-ihsg-rupiah",
    "score": 12,
    "categories": [
     "kebijakan",
@@ -94,6 +94,44 @@
    "also_in": []
   },
   {
+   "published": "2026-11-28T17:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "OJK: Akan Ada 5 Bank Syariah Baru 2027, Hasil Spin Off & Merger",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129172/ojk-akan-ada-5-bank-syariah-baru-2027-hasil-spin-off-merger",
+   "score": 7,
+   "categories": [
+    "kebijakan",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "kontan_keuangan"
+   ]
+  },
+  {
+   "published": "2026-11-28T08:53+07:00",
+   "source": "kontan_keuangan",
+   "tier": 3,
+   "title": "OJK Proyeksi Bakal Ada 3-5 Bank Umum Syariah Baru 2027, Hasil Spin Off dan Merger",
+   "link": "https://keuangan.kontan.co.id/news/ojk-proyeksi-bakal-ada-3-5-bank-umum-syariah-baru-2027-hasil-spin-off-dan-merger",
+   "score": 7,
+   "categories": [
+    "kebijakan",
+    "korporasi"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
+  },
+  {
    "published": "2026-11-27T18:38+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
@@ -136,36 +174,6 @@
    "categories": [
     "pasar",
     "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-27T06:21+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Reli Teknologi Saham Asia, Proyeksi di Tengah Kenaikan Minyak",
-   "link": "https://www.bloombergtechnoz.com/detail-news/129057/reli-teknologi-saham-asia-proyeksi-di-tengah-kenaikan-minyak",
-   "score": 6,
-   "categories": [
-    "global",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-28T08:53+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "OJK Proyeksi Bakal Ada 3-5 Bank Umum Syariah Baru 2027, Hasil Spin Off dan Merger",
-   "link": "https://keuangan.kontan.co.id/news/ojk-proyeksi-bakal-ada-3-5-bank-umum-syariah-baru-2027-hasil-spin-off-dan-merger",
-   "score": 5,
-   "categories": [
-    "kebijakan",
-    "korporasi"
    ],
    "tickers": [],
    "flags": [],

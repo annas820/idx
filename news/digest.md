@@ -1,19 +1,19 @@
 # Digest berita (disaring otomatis)
 
-Berita terbaru: 2026-11-28T10:06+07:00 WIB | jendela 36 jam | dipindai 356, lolos 98, dibuang sebagai noise 6.
+Berita terbaru: 2026-11-28T19:40+07:00 WIB | jendela 36 jam | dipindai 408, lolos 99, dibuang sebagai noise 9.
 Skor = bobot kategori + kode saham + watchlist + konfirmasi lintas sumber. Tier 3 = media lokal. `petunjuk` = rekomendasi pihak lain, bukan dasar keputusan. Judul saja; buka tautan untuk isi.
 
 ## Teratas
-- **12** T3 11-27 05:47 bloomberg_technoz: IHSG Dibayangi Pelemahan Rupiah, Harga Minyak, Hingga MSCI (kebijakan/global/pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/129054/ihsg-dibayangi-pelemahan-rupiah-harga-minyak-hingga-msci>
+- **12** T3 11-28 16:00 cnbc_indonesia_market: Video: Jika Suku Bunga the Fed Naik, Efek Ini Dirasakan IHSG dan Rupiah (kebijakan/global/pasar/kurs) <https://www.cnbcindonesia.com/market/20261125105701-19-788221/video-jika-suku-bunga-the-fed-naik-efek-ini-dirasakan-ihsg-rupiah>
 - **9** T3 11-27 11:35 cnbc_indonesia_market: Tak Cuma Beri Sanksi, BEI Juga Gembok 5 Saham Ini Gegara Free Float (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261127103029-17-788986/tak-cuma-beri-sanksi-bei-juga-gembok-5-saham-ini-gegara-free-float>
 - **9** T3 11-27 09:30 cnbc_indonesia_market: Data Free Float Tak Akurat, BEI Sanksi 5 Emitan Ini (kebijakan/global/pasar) <https://www.cnbcindonesia.com/market/20261127091911-17-788952/data-free-float-tak-akurat-bei-sanksi-5-emitan-ini>
 - **8** T3 11-27 22:54 cnbc_indonesia_market: 3 Orang Ditahan di Kasus Goreng Saham DSSA, Ini Kata OJK [DSSA] (kebijakan/pasar/emiten) <https://www.cnbcindonesia.com/market/20261127225210-17-789255/3-orang-ditahan-di-kasus-goreng-saham-dssa-ini-kata-ojk>
 - **8** T3 11-27 10:00 bloomberg_technoz: Data Free Float Tidak Sesuai, BEI Suspensi FIRE hingga KPIG [FIRE,KPIG] (kebijakan/pasar/emiten) <https://www.bloombergtechnoz.com/detail-news/129077/data-free-float-tidak-sesuai-bei-suspensi-fire-hingga-kpig>
+- **7** T3 11-28 17:30 bloomberg_technoz: OJK: Akan Ada 5 Bank Syariah Baru 2027, Hasil Spin Off & Merger (kebijakan/korporasi; terkonfirmasi, juga di kontan_keuangan) <https://www.bloombergtechnoz.com/detail-news/129172/ojk-akan-ada-5-bank-syariah-baru-2027-hasil-spin-off-merger>
+- **7** T3 11-28 08:53 kontan_keuangan: OJK Proyeksi Bakal Ada 3-5 Bank Umum Syariah Baru 2027, Hasil Spin Off dan Merger (kebijakan/korporasi; terkonfirmasi, juga di bloomberg_technoz) <https://keuangan.kontan.co.id/news/ojk-proyeksi-bakal-ada-3-5-bank-umum-syariah-baru-2027-hasil-spin-off-dan-merger>
 - **7** T3 11-27 18:38 kontan_keuangan: Allo Bank (BBHI) Telah Buyback Saham Rp 293 Miliar, Segini Dana yang Tersisa [BBHI] (pasar/korporasi/emiten) <https://keuangan.kontan.co.id/news/allo-bank-bbhi-telah-buyback-saham-rp-293-miliar-segini-dana-yang-tersisa>
 - **6** T3 11-28 00:03 cnbc_indonesia_market: Demi Selamatkan Status Bursa RI, OJK Sudah 20 Kali Temui MSCI (kebijakan/pasar) <https://www.cnbcindonesia.com/market/20261128000155-17-789260/demi-selamatkan-status-bursa-ri-ojk-sudah-20-kali-temui-msci>
 - **6** T3 11-27 17:45 bloomberg_technoz: Saham Big Caps & Apresiasi Rupiah Jadi Pendorong Penguatan IHSG (pasar/kurs) <https://www.bloombergtechnoz.com/detail-news/129128/saham-big-caps-apresiasi-rupiah-jadi-pendorong-penguatan-ihsg>
-- **6** T3 11-27 06:21 bloomberg_technoz: Reli Teknologi Saham Asia, Proyeksi di Tengah Kenaikan Minyak (global/pasar) <https://www.bloombergtechnoz.com/detail-news/129057/reli-teknologi-saham-asia-proyeksi-di-tengah-kenaikan-minyak>
-- **5** T3 11-28 08:53 kontan_keuangan: OJK Proyeksi Bakal Ada 3-5 Bank Umum Syariah Baru 2027, Hasil Spin Off dan Merger (kebijakan/korporasi) <https://keuangan.kontan.co.id/news/ojk-proyeksi-bakal-ada-3-5-bank-umum-syariah-baru-2027-hasil-spin-off-dan-merger>
 - **5** T3 11-28 08:15 cnbc_indonesia_market: KPK Geruduk Kantor Pusat Djarum, Saham BCA Bakal Diambil Alih? [BBCA] (pasar/emiten) <https://www.cnbcindonesia.com/market/20261127222118-17-789251/kpk-geruduk-kantor-pusat-djarum-saham-bca-bakal-diambil-alih>
 - **5** T3 11-28 08:01 bloomberg_technoz: OJK Sebut 60 Orang Diperiksa Polisi dalam Kasus DSSA [DSSA] (kebijakan/emiten) <https://www.bloombergtechnoz.com/detail-news/129154/ojk-sebut-60-orang-diperiksa-polisi-dalam-kasus-dssa>
 - **5** T3 11-28 07:45 cnbc_indonesia_news: Prabowo: Sudah Kaya Masih Goreng-Goreng Saham, Rakyat Jadi Korban! (pasar; terkonfirmasi, juga di cnbc_indonesia_market) <https://www.cnbcindonesia.com/news/20261128061150-4-789262/prabowo-sudah-kaya-masih-goreng-goreng-saham-rakyat-jadi-korban>
