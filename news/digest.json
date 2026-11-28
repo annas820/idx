@@ -1,11 +1,11 @@
 {
  "schema": "clo.news.digest.v1",
- "generated_for": "2026-11-28T00:03+07:00",
+ "generated_for": "2026-11-28T10:06+07:00",
  "window_hours": 36,
  "min_score": 3,
- "scanned": 580,
- "kept": 153,
- "dropped_noise": 8,
+ "scanned": 356,
+ "kept": 98,
+ "dropped_noise": 6,
  "items": [
   {
    "published": "2026-11-27T05:47+07:00",
@@ -55,44 +55,6 @@
    "tickers": [],
    "flags": [],
    "also_in": []
-  },
-  {
-   "published": "2026-11-26T17:00+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Bos BI Akui Efek The Fed dan MSCI Bikin Rupiah Terlemah Sepanjang Masa",
-   "link": "https://www.cnbcindonesia.com/news/20261126165324-4-788823/bos-bi-akui-efek-the-fed-dan-msci-bikin-rupiah-terlemah-sepanjang-masa",
-   "score": 9,
-   "categories": [
-    "kebijakan",
-    "global",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T12:03+07:00",
-   "source": "kontan_keuangan",
-   "tier": 3,
-   "title": "BSI (BRIS) Rights Issue Maksimal 6,8 Miliar Saham, Siap Perkuat Modal",
-   "link": "https://keuangan.kontan.co.id/news/bsi-bris-rights-issue-maksimal-68-miliar-saham-siap-perkuat-modal",
-   "score": 9,
-   "categories": [
-    "pasar",
-    "korporasi",
-    "emiten"
-   ],
-   "tickers": [
-    "BRIS"
-   ],
-   "flags": [
-    "terkonfirmasi"
-   ],
-   "also_in": [
-    "cnbc_indonesia_market"
-   ]
   },
   {
    "published": "2026-11-27T22:54+07:00",
@@ -195,124 +157,71 @@
    "also_in": []
   },
   {
-   "published": "2026-11-26T20:40+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Destry Soal Pelemahan Rupiah: Sentimen Global dan MSCI",
-   "link": "https://www.bloombergtechnoz.com/detail-news/129047/destry-soal-pelemahan-rupiah-sentimen-global-dan-msci",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T20:15+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "Danantara Perkirakan Jadi Pemegang Saham BEI Semester I - 2027",
-   "link": "https://www.cnbcindonesia.com/news/20261126190747-8-788878/danantara-perkirakan-jadi-pemegang-saham-bei-semester-i--2027",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "pasar"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T18:49+07:00",
+   "published": "2026-11-28T08:53+07:00",
    "source": "kontan_keuangan",
    "tier": 3,
-   "title": "BI Rate Naik, Bank Perbesar Penempatan di SBN di Tengah Seleksi Kredit",
-   "link": "https://keuangan.kontan.co.id/news/bi-rate-naik-bank-perbesar-penempatan-di-sbn-di-tengah-seleksi-kredit",
-   "score": 6,
+   "title": "OJK Proyeksi Bakal Ada 3-5 Bank Umum Syariah Baru 2027, Hasil Spin Off dan Merger",
+   "link": "https://keuangan.kontan.co.id/news/ojk-proyeksi-bakal-ada-3-5-bank-umum-syariah-baru-2027-hasil-spin-off-dan-merger",
+   "score": 5,
    "categories": [
     "kebijakan",
-    "kurs"
+    "korporasi"
    ],
    "tickers": [],
    "flags": [],
    "also_in": []
   },
   {
-   "published": "2026-11-26T17:51+07:00",
+   "published": "2026-11-28T08:15+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "KPK Geruduk Kantor Pusat Djarum, Saham BCA Bakal Diambil Alih?",
+   "link": "https://www.cnbcindonesia.com/market/20261127222118-17-789251/kpk-geruduk-kantor-pusat-djarum-saham-bca-bakal-diambil-alih",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "BBCA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-28T08:01+07:00",
    "source": "bloomberg_technoz",
    "tier": 3,
-   "title": "BEI Perkuat Pengawasan Perdagangan Saham dan Transparansi",
-   "link": "https://www.bloombergtechnoz.com/detail-news/129041/bei-perkuat-pengawasan-perdagangan-saham-dan-transparansi",
-   "score": 6,
+   "title": "OJK Sebut 60 Orang Diperiksa Polisi dalam Kasus DSSA",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129154/ojk-sebut-60-orang-diperiksa-polisi-dalam-kasus-dssa",
+   "score": 5,
    "categories": [
     "kebijakan",
+    "emiten"
+   ],
+   "tickers": [
+    "DSSA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-28T07:45+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Prabowo: Sudah Kaya Masih Goreng-Goreng Saham, Rakyat Jadi Korban!",
+   "link": "https://www.cnbcindonesia.com/news/20261128061150-4-789262/prabowo-sudah-kaya-masih-goreng-goreng-saham-rakyat-jadi-korban",
+   "score": 5,
+   "categories": [
     "pasar"
    ],
    "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T17:08+07:00",
-   "source": "cnbc_indonesia_news",
-   "tier": 3,
-   "title": "BI Ungkap Inflow Dana Asing Tembus US$1 M, tapi Rupiah Masih Tertekan",
-   "link": "https://www.cnbcindonesia.com/news/20261126170339-4-788828/bi-ungkap-inflow-dana-asing-tembus-us-1-m-tapi-rupiah-masih-tertekan",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
+   "flags": [
+    "terkonfirmasi"
    ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T16:35+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Menkeu Bongkar Biang Kerok yang Buat Rupiah Anjlok Dekati Rp18.400/US$",
-   "link": "https://www.cnbcindonesia.com/market/20261126152830-17-788792/menkeu-bongkar-biang-kerok-yang-buat-rupiah-anjlok-dekati-rp18400-us-",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T16:30+07:00",
-   "source": "bloomberg_technoz",
-   "tier": 3,
-   "title": "Ekonom: Rupiah Jebol, Peluang BI Naikkan Suku Bunga Terbuka",
-   "link": "https://www.bloombergtechnoz.com/detail-news/129033/ekonom-rupiah-jebol-peluang-bi-naikkan-suku-bunga-terbuka",
-   "score": 6,
-   "categories": [
-    "kebijakan",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
-  },
-  {
-   "published": "2026-11-26T15:10+07:00",
-   "source": "cnbc_indonesia_market",
-   "tier": 3,
-   "title": "Video: IHSG Reli Saat Rupiah Lesu, Ada Sentimen Apa?",
-   "link": "https://www.cnbcindonesia.com/market/20261126145619-19-788781/video-ihsg-reli-saat-rupiah-lesu-ada-sentimen-apa",
-   "score": 6,
-   "categories": [
-    "pasar",
-    "kurs"
-   ],
-   "tickers": [],
-   "flags": [],
-   "also_in": []
+   "also_in": [
+    "cnbc_indonesia_market"
+   ]
   },
   {
    "published": "2026-11-27T21:46+07:00",
@@ -343,6 +252,24 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-27T20:46+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Prabowo: Sudah Kaya Masih Main Goreng Saham, Rakyat Kecil Jadi Korban",
+   "link": "https://www.cnbcindonesia.com/market/20261127204333-17-789238/prabowo-sudah-kaya-masih-main-goreng-saham-rakyat-kecil-jadi-korban",
+   "score": 5,
+   "categories": [
+    "pasar"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "cnbc_indonesia_news"
+   ]
   },
   {
    "published": "2026-11-27T18:55+07:00",
@@ -407,6 +334,86 @@
    "tickers": [],
    "flags": [],
    "also_in": []
+  },
+  {
+   "published": "2026-11-27T14:10+07:00",
+   "source": "cnbc_indonesia_news",
+   "tier": 3,
+   "title": "Video: Tekan Candu Impor Minyak -BBM, Transisi Energi RI Kian Mendesak",
+   "link": "https://www.cnbcindonesia.com/news/20261127102732-8-788969/video-tekan-candu-impor-minyak-bbm-transisi-energi-ri-kian-mendesak",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-27T13:54+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Saham Dian Swastatika Sentosa (DSSA) Anjlok 6,7%, Ada Pemeriksaan?",
+   "link": "https://www.cnbcindonesia.com/market/20261127135001-17-789051/saham-dian-swastatika-sentosa--dssa--anjlok-67-ada-pemeriksaan",
+   "score": 5,
+   "categories": [
+    "pasar",
+    "emiten"
+   ],
+   "tickers": [
+    "DSSA"
+   ],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-27T12:30+07:00",
+   "source": "bloomberg_technoz",
+   "tier": 3,
+   "title": "Ekspor Gas ke Singapura Dibuka Lagi, RI Hadapi Dilema HGBT",
+   "link": "https://www.bloombergtechnoz.com/detail-news/129089/ekspor-gas-ke-singapura-dibuka-lagi-ri-hadapi-dilema-hgbt",
+   "score": 5,
+   "categories": [
+    "kebijakan",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-27T12:05+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Harga Minyak Naik Lagi - Harga Batu Bara Tembus USD 150 Per Ton",
+   "link": "https://www.cnbcindonesia.com/market/20261127114708-19-789015/video-harga-minyak-naik-lagi--harga-batu-bara-tembus-usd-150-per-ton",
+   "score": 5,
+   "categories": [
+    "global",
+    "komoditas"
+   ],
+   "tickers": [],
+   "flags": [],
+   "also_in": []
+  },
+  {
+   "published": "2026-11-27T11:56+07:00",
+   "source": "cnbc_indonesia_market",
+   "tier": 3,
+   "title": "Video: Rupiah Sentuh Rekor Terlemah Sepanjang Masa Rp18.370 per USD",
+   "link": "https://www.cnbcindonesia.com/market/20261127114714-19-789016/video-rupiah-sentuh-rekor-terlemah-sepanjang-masa-rp18370-per-usd",
+   "score": 5,
+   "categories": [
+    "kurs"
+   ],
+   "tickers": [],
+   "flags": [
+    "terkonfirmasi"
+   ],
+   "also_in": [
+    "bloomberg_technoz"
+   ]
   }
  ],
  "watchlist_hits": []
